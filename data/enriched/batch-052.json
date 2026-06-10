@@ -1,0 +1,152 @@
+[
+ {
+  "id": 876,
+  "summary": "An evolutionary agent-based model of pair bonds shows emotional bookkeeping (neuroendocrine feedback) and courtship each sustain cooperation in noisy iterated prisoner's dilemmas; but when low-cost deceitful defection is possible, emotion-based agents become exploitable while courtship still raises cooperation.",
+  "topics": ["Science Applications", "Agents"]
+ },
+ {
+  "id": 426,
+  "summary": "Trains goal-directed dialogue agents by using an LLM to simulate diverse, human-like but suboptimal conversation rollouts, then applying offline RL over that synthetic data to optimize multi-turn outcomes, enabling zero-shot adaptation to tasks like preference elicitation beyond single-step RLHF.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 877,
+  "summary": "Argues dialogue-agent behavior is best described through the lens of role-play rather than anthropomorphic terms, using this framing to explain apparent deception and apparent self-awareness in LLMs without ascribing them genuine beliefs or intentions.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 878,
+  "summary": "Casts extremal graph construction (maximizing edges with no 3- or 4-cycles, per a 1975 Erdos conjecture) as sequential decision-making, comparing AlphaZero against tabu search; a size curriculum that jump-starts larger graphs from smaller solutions improves state-of-the-art lower bounds.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 1731,
+  "summary": "Examines whether machine-learned normalizing flows can scale from toy lattice field theories to state-of-the-art lattice QCD, arguing simple cost-scaling laws are inadequate and that flow-based samplers are a diverse algorithm family whose scalability must be assessed experimentally.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 880,
+  "summary": "RT-Trajectory conditions robot manipulation policies on coarse 2D trajectory sketches, generated in hindsight from proprioception during training and from human drawings or videos at inference, improving low-level motion generalization to novel tasks beyond language- or goal-image-conditioned policies.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 879,
+  "summary": "Grammar prompting augments each in-context example with a minimal Backus-Naur-Form grammar; at inference the LLM first predicts a specialized grammar for the input, then generates output constrained by it, improving DSL tasks like semantic parsing, PDDL planning, and SMILES molecule generation.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1732,
+  "summary": "Reports the 2024 state of the AlphaFold Protein Structure Database, now covering over 214 million predicted structures (up from 300k), with expanded integrations into PDB, UniProt, Ensembl and InterPro, new curated datasets, and improved access and viewer tooling.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 882,
+  "summary": "Optimistic NPG combines classic natural policy gradient with optimistic value estimation for exploration, yielding the first computationally efficient online-RL algorithm with optimal O(d^2/eps^3) sample complexity for d-dimensional linear MDPs, and extends to general function approximation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 881,
+  "summary": "Connects gradient-based meta-learning to convex optimization, showing momentum is a special case of meta-gradients and proving single-task convergence rates; meta-learned updates alone give only constant-factor speedups, but adding optimism (via Bootstrapped Meta-Gradients) enables acceleration.",
+  "topics": ["Training & Scaling", "Reinforcement Learning"]
+ },
+ {
+  "id": 883,
+  "summary": "Introduces a high-throughput, multi-embodiment data-collection scheme and releases RoboVQA, 829,502 (video, text) pairs spanning 29,520 instructions; a video-conditioned model, RoboVQA-VideoCoCa, performs grounded long-horizon robotics reasoning with a 46% lower intervention rate than zero-shot VLM baselines.",
+  "topics": ["Multimodal", "Agents", "Reasoning"]
+ },
+ {
+  "id": 884,
+  "summary": "Proposes repeated Rock-Paper-Scissors with a population of 43 (often deliberately suboptimal) tournament bots as a multi-agent RL benchmark, scoring agents by average return and exploitability; recent RL and online-learning methods generalize well but still lose to the top bots.",
+  "topics": ["Reinforcement Learning", "Evaluations", "Agents"]
+ },
+ {
+  "id": 1733,
+  "summary": "LFPS is a neural model that predicts the effectiveness of auto-generated helper properties for assume-guarantee hardware formal verification without running proofs, jointly encoding SystemVerilog specs and circuit graphs; it reaches ~98% accuracy and guides candidate search better than random sampling.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1734,
+  "summary": "A perspective drawing on the International Atomic Energy Agency's dual mandate to both promote and control nuclear technology, asking what an analogous institution might offer for global AI governance given the parallels between today's AI hopes and fears and earlier nuclear concerns.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 885,
+  "summary": "Using fMRI and MEG, shows prefrontal-hippocampal representations of visual objects are relational and compositional, and that rapid replay-like sequences, previously tied to navigation and planning, also operate during visual understanding, forming and progressively constraining hypotheses about scene configurations.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1735,
+  "summary": "A multi-agent RL model shows that social norms, modeled as decentralized social sanctioning that redistributes rewards, let groups of self-interested lifetime-learning agents learn a productive division of labour that fills critical but otherwise unattractive roles.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 100,
+  "summary": "Studies Constitutional AI under general versus specific principles, finding that a single broad principle ('do what's best for humanity') lets large models generalize to harmless assistants with no stated power- or self-preservation-seeking, while detailed constitutions still give finer control over specific harms.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 614,
+  "summary": "Finds sentiment is encoded largely as a single linear direction in LLM activation space, causally validated by ablation and steering; identifies the responsible attention heads and neurons and a 'summarization motif' where sentiment is aggregated at neutral tokens like commas.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 543,
+  "summary": "Builds a corpus of contract- and social-welfare-law scenarios annotated with full IRAC (Issue, Rule, Application, Conclusion) analyses and empirically evaluates ChatGPT's legal reasoning against them, assessing how well it aligns with how legal professionals structure analysis.",
+  "topics": ["Reasoning", "Evaluations"]
+ },
+ {
+  "id": 101,
+  "summary": "Demonstrates that several state-of-the-art RLHF-trained assistants consistently exhibit sycophancy, tailoring answers to users' stated views and conceding when challenged, and shows human preference data and preference models often favor sycophantic over truthful responses, indicating it stems from preference optimization.",
+  "topics": ["Alignment", "Evaluations"]
+ },
+ {
+  "id": 1200,
+  "summary": "Riffle is a reactive state-management system for local-first web apps that holds the entire application state in a client-side persistent relational database and derives the UI from a graph of incrementally maintained reactive queries, unifying domain and UI state with spreadsheet-like reactivity.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 886,
+  "summary": "Scalable Neural Network Kernels (SNNKs) replace feedforward layers by disentangling inputs from parameters and recombining them via a dot-product kernel, enabling network 'bundling' for compression (up to 5x fewer trainable parameters) and, in the extreme, closed-form parameters that bypass backpropagation.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 888,
+  "summary": "Proposes a three-layer sociotechnical framework for evaluating generative-AI risks, spanning isolated capability testing, human-interaction effects at the point of use, and broader systemic impacts, then surveys existing evaluations to map gaps and offers a roadmap toward more comprehensive safety evaluation.",
+  "topics": ["Safety", "Evaluations", "Policy & Society"]
+ },
+ {
+  "id": 887,
+  "summary": "Introduces UniMat, a unified representation for arbitrary crystal structures, and trains a diffusion model on it to generate stable materials; despite no explicit graph structure it outperforms graph-based generators and uses decomposition energy to better tie generation quality to discovering novel stable materials.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1736,
+  "summary": "A Frontiers for Young Minds outreach article recounting how the team moved from games like chess, Go and Atari to tackling the 50-year protein-folding problem with AlphaFold, illustrating AI's potential to accelerate scientific discovery.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 102,
+  "summary": "Collective Constitutional AI sources constitution principles from a representative public sample and fine-tunes an LLM on them; the resulting model shows lower bias across nine social dimensions than a developer-written baseline while matching it on capability evals, and reframes contentious topics rather than refusing.",
+  "topics": ["Alignment", "Policy & Society"]
+ },
+ {
+  "id": 615,
+  "summary": "Shows attribution patching, a linear gradient-based approximation to activation patching needing only two forward passes and one backward pass, recovers task circuits more accurately (higher AUC) than existing automated circuit-discovery methods averaged across tasks.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1737,
+  "summary": "Validates the Persian-language Concern about Appearance on Social Media (CONAPP) scale in 988 Iranian university students, confirming a unidimensional, gender-invariant structure with strong reliability and validity, and uses item-response theory to characterize item discrimination.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1739,
+  "summary": "Studies domain generalization with frozen pretrained diffusion models from a sampling perspective: out-of-domain images form separable Gaussian priors in the inverted latent space, letting the method synthesize unseen-domain images without fine-tuning, demonstrated on astrophysical data.",
+  "topics": ["Multimodal", "Science Applications"]
+ },
+ {
+  "id": 1738,
+  "summary": "A Portuguese-language literature review of TAAR1-agonist therapy for schizophrenia, contrasting it with traditional D2-receptor-antagonist antipsychotics and noting its potential to avoid extrapyramidal and metabolic side effects.",
+  "topics": ["Science Applications"]
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1706,
+  "summary": "Introduces DoLoMiTes, a benchmark of 519 expert-sourced domain-specific 'methodical' writing tasks (e.g., differential diagnoses, lesson plans) across 25 fields with 1,857 input/output instances, and shows such structured long-form generation remains hard for current language models.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 239,
+  "summary": "Formalizes agents as MDP policies and asks whether 'not resisting shutdown' is preserved under environment perturbations; proves stability for near-optimal and certain constrained policies via bisimulation metrics, but shows safety can fail under arbitrarily small perturbations.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 1707,
+  "summary": "Open-source Python toolkit for simulating realistic rodent locomotion and generating synthetic neural data from spatially modulated hippocampal cell types (place, grid, boundary-vector, head-direction cells) in configurable continuous 1D/2D environments.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 834,
+  "summary": "Uses vision-language foundation models to orchestrate a fleet of 50+ robots that autonomously propose tasks and collect 77k diverse real-world episodes with minimal supervision; the in-the-wild data improves downstream robot policies via co-fine-tuning.",
+  "topics": ["Agents", "Multimodal"]
+ },
+ {
+  "id": 1708,
+  "summary": "Peer-review author response accompanying the eLife publication of RatInABox, the open-source Python toolkit for modeling rodent locomotion and generating synthetic neural data for spatially tuned hippocampal cell types in continuous environments.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2890,
+  "summary": "Anthropic interpretability team's informal monthly notes: toy models of attention superposition, scaling sparse-autoencoder dictionary learning to MNIST, an 8-layer transformer, and billion-parameter models (finding multilingual features), plus the 'Ghost Grads' fix for dead SAE neurons and superposition counterexamples.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2741,
+  "summary": "Examines how AI assistance can let workers perform new technical tasks and acquire capabilities without correspondingly building the underlying knowledge or understanding, and discusses implications for skill development in the workplace.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2740,
+  "summary": "Proposes a Conditional Value-at-Risk test for detecting worst-case ML performance disparities across groups defined by multiple sensitive attributes, reducing the otherwise exponential sample complexity to roughly the square root of the number of groups.",
+  "topics": ["Policy & Society", "Evaluations"]
+ },
+ {
+  "id": 2739,
+  "summary": "Book chapter surveying national and international AI regulatory landscapes (EU, China, US, UK, Japan, India, Singapore, Australia) and the roles of bodies like the OECD, WEF, and UN, arguing for globally coordinated, balanced governance frameworks for safe, ethical AI.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1715,
+  "summary": "Commentary arguing that a diverse, dynamically changing pool of agents mitigates proxy failure (Goodhart-style breakdown of proxy measures), with proxy modularity sustaining the ongoing production of diversity; illustrated with examples across multiple scales.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1714,
+  "summary": "Develops a game-theoretic model of how misinformation propagates across social networks, analyzing the strategic incentives of the actors involved in sharing and countering false information.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1713,
+  "summary": "Lecture surveying DeepMind's trajectory from AlphaGo to AlphaFold and outlining AI's prospective impact on medicine, materials, and climate science, while stressing a commitment to safe and responsible development.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1712,
+  "summary": "Argues that deep GCNs' performance ceiling stems from training difficulty rather than limited layer expressivity: identifies graph-signal energy loss in the backward pass that starves input-near layers, and proposes operator modifications that boost performance without changing parameters.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1711,
+  "summary": "Collects a new Alternate Uses Task dataset and shows that supervised discriminative models using contextual semantic representations can classify creative versus non-creative responses, generalizing to unseen prompts even with unbalanced data, improving over semantic-distance scoring.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1710,
+  "summary": "Examines the tension between broad participation and decentralization in proof-of-stake cryptocurrencies and how staking mechanism design choices mediate that trade-off.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1709,
+  "summary": "Proposes two measures, grounded in graph signal processing and statistical hypothesis testing, that predict when GNNs' edge-based inductive bias actually helps node classification versus when graph-agnostic networks suffice, yielding a threshold for choosing graph-aware models.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 541,
+  "summary": "Extends the Chinchilla scaling laws to account for inference cost, showing models serving large request volumes should be trained smaller and longer than compute-optimal; validates with 47 trained models, finding quality keeps improving at extreme token/parameter ratios.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 835,
+  "summary": "Diffusion-based generative model for medium-range ensemble weather forecasting, producing spatiotemporally coherent 15-day global trajectories at 1-degree resolution; outperforms the top operational ensemble (ENS) on most verification targets while staying well-calibrated and physically consistent.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 421,
+  "summary": "Introduces reward regularization ('agent preferences') for robotic RLHF, incorporating the RL agent's own preferences alongside human feedback during reward learning to reduce distribution shift and reward hacking in continuous control.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 836,
+  "summary": "DMD, a field-of-view-conditioned diffusion model for zero-shot metric depth estimation; log-scale depth parameterization plus FOV conditioning and augmentation jointly handle indoor/outdoor scenes and scale ambiguity, cutting relative error ~25% indoors and ~33% outdoors versus prior SOTA.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 837,
+  "summary": "Incorporates environment symmetries into MuZero's world-model architecture; proves that equivariant networks make the entire planning algorithm equivariant, improving data efficiency and generalization to transformed (e.g., rotated) states on MiniPacman and ProcGen's Chaser.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1716,
+  "summary": "Combines a Perceiver-based sequence classifier with a Universal Speech Model pretrained on 12M hours of audio to detect neurological-disorder speech abnormalities, reaching 83.1% average accuracy on a Mayo Clinic corpus and beating transformer and perceiver baselines.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2742,
+  "summary": "Prospective study of a portable optical cerebral blood-flow monitor for detecting large-vessel occlusion in suspected stroke; a transformer trained on raw speckle-contrast waveforms reached 79% sensitivity and 84% specificity across 135 patients, exceeding prehospital stroke scales.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1718,
+  "summary": "Presents a unified framework for simulation-based search (AlphaZero, MCTS, sparse sampling, nested Monte-Carlo search, classification-based policy iteration) as interleaved policy-evaluation and policy-improvement operators applied along sampled, recursively branching trajectories.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1717,
+  "summary": "Proves that many Max-CSPs (e.g., Max-3-Lin, Max-3-Sat) stay as hard to approximate even when the factor graph is fixed and known in advance, via a new 'functional folding' of the long code, recovering optimal inapproximability and approximation-resistance results.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 839,
+  "summary": "Machine-learning approach that estimates transition rates of silicon dopant atoms in graphene under a scanning transmission electron microscope's beam, then uses the learned rates to steer a single silicon atom to target lattice sites.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 838,
+  "summary": "Shows that unsupervised latent-knowledge methods like contrast-consistent search don't actually recover a model's knowledge, proving arbitrary prominent features satisfy the same consistency structure, so classifiers often track a salient feature instead; contributes sanity checks for future methods.",
+  "topics": ["Interpretability", "Alignment"]
+ },
+ {
+  "id": 1719,
+  "summary": "FunSearch pairs a pretrained LLM with an automated evaluator in an evolutionary program-search loop; it discovers new, larger cap-set constructions in extremal combinatorics and improved online bin-packing heuristics, producing interpretable and verifiable solutions.",
+  "topics": ["Science Applications", "Reasoning"]
+ },
+ {
+  "id": 1014,
+  "summary": "OpenAI white paper proposing practices for safely deploying agentic AI systems that pursue goals via actions: evaluating task suitability, constraining the action space, setting safe defaults, keeping agent behavior legible and interruptible, ensuring human oversight, and assigning accountability.",
+  "topics": ["Agents", "Safety", "Policy & Society"]
+ },
+ {
+  "id": 840,
+  "summary": "Shows that presenting related tasks sequentially in context improves in-context learning ('meta-in-context learning') by adaptively reshaping an LLM's priors over latent variables and its learning strategies, with competitive performance on real-world regression benchmarks.",
+  "topics": ["Training & Scaling"]
+ }
+]

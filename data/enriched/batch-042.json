@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1629,
+  "summary": "Builds a philosophical, sociotechnical account of when user trust in AI assistants is justified, arguing it depends on both the competence and the value-alignment of assistants and their developers, and proposing evidence be collected across design, organizational, and third-party governance levels.",
+  "topics": ["Policy & Society", "Alignment"]
+ },
+ {
+  "id": 1628,
+  "summary": "Reports workshops with 20 professional comedians co-writing with LLMs. Participants found outputs bland and biased ('1950s cruise-ship comedy') and argued that safety filtering and instruction-tuning impose hegemonic, censoring viewpoints, motivating community-based value alignment and data ownership.",
+  "topics": ["Policy & Society", "Alignment"]
+ },
+ {
+  "id": 1632,
+  "summary": "ProtEx predicts protein function (EC numbers, GO terms, Pfam families) by retrieving database exemplars and conditioning on them via a novel multi-sequence pretraining task and fine-tuning, reaching state-of-the-art accuracy and improving generalization to rare or unseen classes.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 402,
+  "summary": "Introduces the Inverse Constitutional AI problem: given a pairwise preference dataset, extract a compact set of natural-language principles (a constitution) that lets an LLM reconstruct the original annotations, yielding interpretable explanations of annotator preferences and surfacing dataset biases.",
+  "topics": ["Alignment", "Interpretability"]
+ },
+ {
+  "id": 1635,
+  "summary": "Published correction to the study on warmth and competence in human-agent cooperation, which showed that participants' social perceptions of deep-RL agents predicted their stated and revealed partner preferences beyond objective task performance.",
+  "topics": ["Reinforcement Learning", "Policy & Society"]
+ },
+ {
+  "id": 1634,
+  "summary": "Uses real-time, individualized EEG closed-loop acoustic stimulation (via an end-point-corrected Hilbert transform) to play sounds locked to a subject's alpha-oscillation phase, finding that alpha phase modulates auditory evoked responses and post-stimulus alpha level and frequency.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1633,
+  "summary": "WeatherBench 2 is an open-source benchmark and evaluation framework for medium-range (1-14 day) global weather forecasting, providing standardized training, ground-truth and baseline data, headline metrics, and a continuously updated leaderboard comparing data-driven and physical models.",
+  "topics": ["Evaluations", "Science Applications"]
+ },
+ {
+  "id": 87,
+  "summary": "A collection of in-progress notes from Anthropic's interpretability team, sharing emerging research strands and smaller observations the team considers unlikely to become standalone papers.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 403,
+  "summary": "Shows that appending multiple end-of-sequence (EOS) tokens causes 'context segmentation,' shifting inputs toward the refusal boundary in hidden space, and exploits this to boost jailbreak success across 16 open LLMs and commercial APIs (OpenAI, Anthropic, Qwen) that fail to filter EOS tokens.",
+  "topics": ["Robustness & Security", "Alignment"]
+ },
+ {
+  "id": 532,
+  "summary": "Introduces password-locked models, LLMs fine-tuned to hide capabilities unless a password appears in the prompt, to stress-test capability elicitation. Finds a few demonstrations, or even RL from evaluations alone, often unlocks hidden capabilities, though elicitation is unreliable without high-quality demonstrations.",
+  "topics": ["Safety", "Evaluations"]
+ },
+ {
+  "id": 761,
+  "summary": "A textbook on Universal AI formalizing optimal agent behavior in unknown environments via AIXI, which unifies sequential decision theory, Bayesian inference, and algorithmic information theory, alongside practical approximations (context tree weighting, Monte Carlo tree search) and a discussion of AGI.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2732,
+  "summary": "A talk presenting Triton, a mid-level GPU programming language whose block-based abstractions let ML researchers write fast custom kernels without deep CUDA expertise, aiming to be more expressive than graph compilers like XLA while supporting custom data structures.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1636,
+  "summary": "VADER is a plan-execute-detect framework that adds 'seeking help' as a robot skill: it uses visual question answering to detect affordances and execution errors, then prompts an LLM planner to decide when to ask a human or another robot for help during long-horizon tasks.",
+  "topics": ["Agents", "Multimodal"]
+ },
+ {
+  "id": 405,
+  "summary": "Derives a generalization bound for weak-to-strong generalization based on expansion properties of the data distribution and student hypothesis class, formally accounting for pseudolabel correction and coverage expansion (effects existing weak-supervision theory misses) and showing these properties hold empirically.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 404,
+  "summary": "Casts weak-to-strong generalization as transferring a latent concept prior from a weak model to a strong pretrained LLM. Proves naive fine-tuning is fundamentally limited but a refinement-based approach provably overcomes this, with empirical gains on alignment tasks.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1637,
+  "summary": "Applies machine-learned normalizing flows (a novel residual flow architecture) to generate statistically correlated lattice-QCD gauge-field ensembles at different action parameters, exploiting the correlations for variance reduction in continuum limits, mass dependence, and Feynman-Hellmann hadronic matrix elements.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 406,
+  "summary": "Presents a theoretical framework showing a strong model's gain over its weak supervisor is quantified by the misfit error it incurs on the weak model's labels, enabling prediction of improvement and principled selection among weak teachers; validated empirically.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1639,
+  "summary": "Extends the FermiNet neural-network wavefunction with an antisymmetric geminal power (AGPs) ansatz for variational Monte Carlo, accurately describing the paired superfluid ground state of the unitary Fermi gas and outperforming the original FermiNet and fixed-node diffusion Monte Carlo.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1638,
+  "summary": "Trains deep-RL agents in the two-player social dilemma Coins and surveys 501 participants, finding that perceived warmth and competence predict both stated and revealed (partner-choice) preferences for agents beyond objective task performance.",
+  "topics": ["Reinforcement Learning", "Policy & Society"]
+ },
+ {
+  "id": 533,
+  "summary": "IRIS jailbreaks LLMs with only black-box access by using a single model as both attacker and target: it iteratively refines adversarial prompts via self-explanation, then rates and amplifies output harmfulness, reaching ~98% success on GPT-4 in under seven queries.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 92,
+  "summary": "Anthropic's report applying sparse autoencoders to Claude 3 Sonnet, extracting millions of interpretable, often multilingual and multimodal features (e.g., the Golden Gate Bridge, code vulnerabilities, deception) and showing that artificially clamping them causally steers model behavior.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1640,
+  "summary": "Develops a Bayesian model of learning in 1/f-noise environments (solved via an extended Kalman filter across timescales) that reproduces human power-law learning and spacing effects, and derives a drop-in neural-network optimizer giving human-like temporal inductive bias on nonstationary tasks.",
+  "topics": ["Training & Scaling", "Science Applications"]
+ },
+ {
+  "id": 1641,
+  "summary": "Demonstrates two practical data-poisoning attacks on web-scale datasets: split-view poisoning exploits mutable URLs (poisoning ~0.01% of LAION-400M/COYO-700M for ~$60), and frontrunning poisoning targets periodic snapshots like Wikipedia. Proposes low-overhead defenses.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1642,
+  "summary": "A survey-style article on how machine learning can serve mathematicians, arguing that its perceptual, pattern-finding capabilities can augment human intuition and lead to new mathematical discoveries.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 604,
+  "summary": "Proposes evaluating sparse-dictionary methods against supervised feature dictionaries on specific tasks (approximation, control, interpretability). Applied to GPT-2 Small on indirect-object identification, SAEs yield interpretable features but control the model worse than supervised ones, and exhibit feature occlusion and over-splitting.",
+  "topics": ["Interpretability", "Evaluations"]
+ },
+ {
+  "id": 2733,
+  "summary": "Introduces a data-driven topological data analysis method that embeds brain networks into a low-dimensional space using 0D and 1D topological features, enabling statistical inference on resting-state fMRI dynamics and revealing altered network topology in temporal lobe epilepsy patients.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1649,
+  "summary": "Shows that off-policy, 'collect-and-infer' reinforcement learning can master stacking of diverse shapes on real robots using only self-generated (including sub-optimal) data, learning end-to-end from pixels without simulators or demonstrations and surpassing prior state of the art on a manipulation benchmark.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1648,
+  "summary": "Introduces Language-World, a natural-language extension of Meta-World for LLM-driven robot control, and Plan-Conditioned Behavioral Cloning (PCBC), which fine-tunes high-level plans from end-to-end demonstrations and achieves strong few-shot task generalization, sometimes from a single demonstration.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 1647,
+  "summary": "Presents V-PTR, which pretrains value functions on large human video datasets (e.g., Ego4D) via temporal-difference learning, then combines this with robotic offline RL; the learned representations improve downstream manipulation performance, robustness, and generalization over prior video-pretraining approaches.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1646,
+  "summary": "Builds a simulated benchmark of 19 manipulation tasks spanning 11 factors of variation (e.g., lighting, camera placement) to quantify how much each factor contributes to the imitation-learning generalization gap, deriving a difficulty ordering consistent across simulation and a real robot.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ }
+]

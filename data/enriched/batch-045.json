@@ -1,0 +1,152 @@
+[
+ {
+  "id": 781,
+  "summary": "Proposes a framework for online learning from a single continuous video stream without mini-batches, shuffling, or augmentation, using pixel-to-pixel prediction. Future-prediction pretraining plus careful weight-update pacing (and dropping momentum) matches IID batch-size-1 learning without replay buffers.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 607,
+  "summary": "Introduces sparse feature circuits: causal subnetworks of human-interpretable SAE features explaining LM behaviors, unlike polysemantic neuron or attention-head circuits. Enables SHIFT, which improves classifier generalization by ablating human-judged irrelevant features, plus an unsupervised pipeline discovering thousands of circuits for automatically found behaviors.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 783,
+  "summary": "Introduces LongFact, a multi-topic benchmark for open-domain factuality, and SAFE, an LLM agent that decomposes long-form responses into individual facts and checks each via Google Search. SAFE matches crowd annotators 72% of the time at over 20x lower cost; benchmarks thirteen models.",
+  "topics": ["Evaluations", "Agents"]
+ },
+ {
+  "id": 782,
+  "summary": "Aggregate LM calibration can mask large miscalibration within distribution slices. Trains a recalibration model that, given a few unlabeled examples from any slice, predicts a curve remapping confidence scores; cuts PaLM2-Large MMLU calibration error by 16% versus temperature scaling, enabling slice-specific trust thresholds.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1667,
+  "summary": "Develops a human-in-the-loop pipeline for high-precision structured information extraction from unstructured text: automated extraction followed by human validation. On three criminal-justice datasets it matches manual-annotation precision while requiring a fraction of the time and significantly outperforming fully automated baselines.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1668,
+  "summary": "Uses a programmed-strategy tournament to study cumulative cultural evolution, revealing a 'refinement paradox': refining knowledge raises payoffs as variants converge but rarely pays individually. Once culture is complex, conformity, blind copying, and hyper-credulity are favored, suggesting why cumulative culture is rare.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1677,
+  "summary": "Gives the first formal causal definition of agents (systems that would adapt their policy if their actions affected the world differently) and a corresponding algorithm to discover agents from empirical data. Also translates between causal models and game-theoretic influence diagrams, correcting prior safety-analysis modeling errors.",
+  "topics": ["Safety", "Agents"]
+ },
+ {
+  "id": 1676,
+  "summary": "Introduces structural causal games, extending Pearl's causal hierarchy to game theory (and multi-agent influence diagrams to the causal domain). Defines mechanised games encoding dependencies between agents' decision rules, plus predictions, interventions, and counterfactuals, enabling causal queries unsupported by prior causal or game-theoretic formalisms.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 1675,
+  "summary": "Extends AIXI approximation beyond a fixed model class: DynamicHedgeAIXI maintains an exact Bayesian mixture over dynamically arriving candidate models via a Hedge-derived time-adaptive prior, supporting online human knowledge injection. It is the richest AIXI approximation to date, validated on epidemic control over contact networks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1674,
+  "summary": "Extends entropic-regularized optimal transport to tempered exponential measures, occupying a middle ground between sparse-but-slow Kantorovich plans and dense-but-fast Sinkhorn solutions: fast near-linear approximation with controllable plan sparsity. The formulation also fits naturally into the unbalanced optimal transport setting.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1673,
+  "summary": "Proposes UTE (Uncertainty-aware Temporal Extension) for action repetition in RL, using ensembles to estimate uncertainty when extending actions so policies can favor exploration or uncertainty-aversion. On Gridworld and Atari it outperforms prior action-repetition methods, mitigating the performance loss from repeating sub-optimal actions.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1672,
+  "summary": "Develops scores for learning discrete causal graphs under unobserved confounders that exploit non-independence constraints (Verma and inequality constraints) beyond conditional independences, combining Watanabe's marginal-likelihood expansion with bounds on exogenous-variable cardinality. Proves score equivalence and decomposability and implements it via MCMC sampling.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1671,
+  "summary": "Introduces discrete-time major-minor mean field games (M3FGs), which model dominant 'major' players alongside many homogeneous minor players, generalizing standard MFGs with common noise. Provides a fictitious-play learning algorithm with well-posedness and convergence guarantees, validated on three equilibrium-learning problems.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1670,
+  "summary": "Presents a 'learning not to regret' framework that meta-learns a regret minimizer tailored to a distribution of similar games. Neural Predictive Regret Matching converges rapidly on the target distribution while retaining worst-case regret guarantees, achieving over tenfold faster convergence on river-poker games.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1669,
+  "summary": "V2Meow is a multi-stage autoregressive video-to-music generation system trained on 5k hours of music-video pairs. Conditioning only on general-purpose visual features (with optional text style control), it synthesizes high-fidelity audio and beats prior systems on visual-audio correspondence and quality, even zero-shot.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 412,
+  "summary": "Openly reproduces OpenAI's RLHF-with-PPO scaling for TL;DR summarization, building the pipeline from scratch and documenting over twenty implementation details. RLHF-trained Pythia models improve with scale, with 2.8B and 6.9B beating OpenAI's released 1.3B checkpoint; code and checkpoints are released.",
+  "topics": ["Alignment", "Training & Scaling"]
+ },
+ {
+  "id": 536,
+  "summary": "Analyzes how LLM reward models perceive risk categories using the Anthropic red-team dataset, finding models rate Information Hazards as less harmful and respond less stringently to them. Reveals heightened jailbreak vulnerability in Information-Hazard scenarios, highlighting a gap in LLM risk assessment.",
+  "topics": ["Safety", "Robustness & Security"]
+ },
+ {
+  "id": 1678,
+  "summary": "Argues mainstream ML fairness frameworks fail to capture xenophobic harms. Defines distinct types of xenophobic harm and applies them across domains (social media, recommendation, healthcare, immigration, employment, and large pretrained models), offering recommendations toward inclusive, 'xenophilic' AI design.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 537,
+  "summary": "Introduces a programme of 'dangerous capability' evaluations covering persuasion/deception, cyber-security, self-proliferation, self-reasoning/self-modification, and biological/nuclear risk, piloted on Gemini models. Finds no strong dangerous capabilities but flags early warning signs, aiming to ground a rigorous science of dangerous-capability evaluation.",
+  "topics": ["Safety", "Evaluations"]
+ },
+ {
+  "id": 1680,
+  "summary": "Presents STELA, a sociotechnical, participatory methodology for eliciting whose norms AI should align to. Through deliberative discussions with four historically underrepresented US groups, it surfaces latent normative perspectives, arguing community-centred deliberation on LLM outputs yields inclusive, contextually rich input for alignment.",
+  "topics": ["Alignment", "Policy & Society"]
+ },
+ {
+  "id": 1679,
+  "summary": "TacticAI is a football-tactics assistant built with Liverpool FC analysts, focused on corner kicks. Combining predictive and generative geometric-deep-learning components, it recommends player setups; experts judged its suggestions indistinguishable from real tactics and preferred them 90% of the time despite limited training data.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 784,
+  "summary": "DiPaCo is a modular architecture and training method that routes computation along paths through shared modules, kept loosely synced by a DiLoCo-style Local-SGD optimizer with minimal communication, enabling training across poorly connected, heterogeneous workers. 256 paths of size 150M outperform a 1B dense transformer on C4.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1683,
+  "summary": "USM-Lite fine-tunes a 2B-parameter Universal Speech Model for ASR with joint low-bit quantization and N:M structured sparsity awareness. int4 quantization and 2:4 sparsity hold up well (extreme int2/1:4 do not), compressing the model to 9.4% of its size for only 7.3% relative WER regression.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 1682,
+  "summary": "ReSLM augments an end-to-end speech-language dialog model with retrieval: a retriever fetches text entities (restaurants, cities) from audio, which are fed back as text to bias the LLM. On speech MultiWOZ (DSTC-11) it improves joint goal accuracy, slot error rate, and ASR WER.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1681,
+  "summary": "Releases CryCeleb, a labeled dataset of over six hours of segmented infant cries from 786 newborns, plus a public speaker-verification challenge based on cry sounds. The inaugural competition's best system reached 25.8% equal error rate, far from adult speaker-verification performance, leaving room for research.",
+  "topics": ["Multimodal", "Evaluations"]
+ },
+ {
+  "id": 1684,
+  "summary": "Contributes an anatomically detailed biomechanical whole-body Drosophila model in MuJoCo, extended with fluid and adhesion forces. Via end-to-end deep RL, it trains neural controllers for realistic walking and flight along complex trajectories and for vision-guided flight, providing an open platform for embodied neural-control research.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 1685,
+  "summary": "Introduces Wasserstein distortion, an image distortion measure unifying pixel-level fidelity and perceptual realism within one optimizable metric. It can generate images matching a reference closely in one region and transitioning to an independent realization elsewhere, synthesizing prior work on texture, realism, and human visual models.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1688,
+  "summary": "Refines the hypergraph-container method with an asymmetric container lemma accounting for the edge/non-edge asymmetry in sparse hereditary graph properties. Applies it to determine the approximate structure of typical graphs with no induced 4-cycle, splitting their vertices into a near-independent set and a near-clique.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1687,
+  "summary": "Provides the first experimental study of machine unlearning (data deletion) in neural-network-based learned database models, measuring effects on downstream tasks like cardinality/selectivity estimation, approximate query processing, data generation, and classification. Proposes evaluation metrics and assesses unlearning overhead versus retraining from scratch.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1686,
+  "summary": "Tests whether LLM-generated 'silicon participants' can substitute for humans in qualitative interview research, introducing 'algorithmic fidelity' as a validity criterion. GPT-3.5 produced themes strikingly similar to demographically matched humans, but interview structure and tone differed markedly, with a hyper-accuracy distortion, indicating limited fidelity.",
+  "topics": ["Policy & Society", "Evaluations"]
+ }
+]

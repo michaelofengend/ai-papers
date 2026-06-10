@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1658,
+  "summary": "Using a dynamic reward-learning wheel task in mice, Neuropixels recordings and optogenetics show anterior secondary motor cortex (MOs) encodes a perseverative decision variable and is causally required for repeated choices and fast reaction times, whereas medial PFC instead supports post-reward learning.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1660,
+  "summary": "Introduces PsiPO, a unified objective subsuming RLHF and DPO, and shows both can overfit when preferences are near-deterministic. Proposes IPO (Identity Preference Optimization), which learns directly from pairwise preferences without a reward model or the Bradley-Terry assumption, avoiding that overfitting.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 1659,
+  "summary": "Extends algorithmic recourse to generative LMs by letting users dynamically set toxicity-filtering thresholds instead of accepting fixed ones, increasing user agency. A pilot study (n=30) finds the dynamic mechanism improves usability over fixed-threshold filtering and helps preserve language reclamation for marginalized users.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 534,
+  "summary": "Self-alignment framework combining a four-stage safety reasoning chain (question analysis, answer guidance, safe answer, safety checking) with a multi-LoRA mixture-of-experts using step-level routing. Improves safety, jailbreak resistance, and over-refusal even for 7B models, rivaling OpenAI's o1.",
+  "topics": ["Alignment", "Reasoning", "Safety"]
+ },
+ {
+  "id": 446,
+  "summary": "Scales sparse autoencoders to Claude 3 Sonnet, training dictionaries up to 34M features on the residual stream. Recovered features are multilingual and multimodal, span concrete and abstract concepts, causally steer behavior, and include safety-relevant features for deception, power-seeking, sycophancy, and bias.",
+  "topics": ["Interpretability", "Safety"]
+ },
+ {
+  "id": 605,
+  "summary": "Introduces Gated Sparse Autoencoders, which decouple selecting which features fire from estimating their magnitudes so the L1 penalty applies only to selection. This resolves activation shrinkage and gives a Pareto improvement, matching reconstruction fidelity with about half as many firing features on LMs up to 7B.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 606,
+  "summary": "A practical guide to activation patching for mechanistic interpretability, cataloguing the different ways to apply it, how to read the results as evidence about circuits, and common pitfalls in metric choice.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2734,
+  "summary": "Describes torch.compile via TorchDynamo, a Python-level JIT that rewrites bytecode to capture FX graphs without losing eager flexibility, and TorchInductor, a backend compiling to Triton (GPU) and C++ (CPU). Delivers 2.27x inference and 1.41x training speedups across 180+ models on an A100.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 776,
+  "summary": "Shares Google DeepMind's evolving safety-evaluation approach from developing the Gemini models: theoretical frameworks to organize risk domains and metrics, lessons on linking theory with practice, and arguments for treating safety evals as a public good integrated into company and public policy.",
+  "topics": ["Safety", "Evaluations"]
+ },
+ {
+  "id": 1011,
+  "summary": "Proposes training LLMs with an explicit instruction hierarchy so they prioritize trusted system/developer instructions over lower-privilege user and tool inputs, learning to ignore conflicting injected commands. Improves robustness to prompt injection, jailbreaks, and system-prompt extraction while preserving normal behavior.",
+  "topics": ["Robustness & Security", "Alignment"]
+ },
+ {
+  "id": 777,
+  "summary": "Studies in-context learning with hundreds-to-thousands of examples enabled by long contexts, finding large gains over few-shot across tasks. Introduces Reinforced ICL (model-generated rationales) and Unsupervised ICL (inputs only); many-shot can override pretraining biases and learn high-dimensional numerical functions.",
+  "topics": ["Training & Scaling", "Reasoning"]
+ },
+ {
+  "id": 1198,
+  "summary": "Adapts concept activation vectors to learn representations of the open-ended attribute terms users employ to critique recommendations, distinguishing objective from subjective attributes and personalizing subjective senses per user. Improves interactive item critiquing on synthetic and real-world datasets.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 409,
+  "summary": "Shows LLM judges like GPT-4 can recognize their own outputs above chance, and that self-recognition ability correlates causally with self-preference bias (scoring own text higher than humans rate it). Highlights a confound for LLM-as-judge evaluation and AI safety.",
+  "topics": ["Evaluations", "Alignment"]
+ },
+ {
+  "id": 410,
+  "summary": "RLHF algorithm that resets the policy optimizer to states drawn from the offline preference dataset rather than always the initial distribution, with provable guarantees under function approximation. On TL;DR summarization and Anthropic HH, DR-PO beats PPO and DPO by GPT-4 win-rate.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 778,
+  "summary": "Trains a low-cost miniature humanoid to play 1v1 soccer with deep RL in simulation, transferring zero-shot to hardware via high-frequency control, dynamics randomization, and perturbations. The agent walks, turns, and recovers far faster than scripted baselines and learns to anticipate and block shots.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1662,
+  "summary": "Develops CentPGS, a polygenic score capturing genetic determinants of exceptional (centenarian) longevity, and reports that higher scores are associated with lower risk across multiple age-related diseases and an extended healthspan.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1661,
+  "summary": "Argues decision-based adversarial attacks should be costed by 'flagged' (detected-as-bad) queries, not total queries, since flagged queries trigger throttling or bans. Designs attacks cutting flagged queries 1.5-7.3x, sometimes at the price of many more total queries, and poses cost-aware black-box attacks as open.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 95,
+  "summary": "Measures persuasion via the shift in participants' 1-7 agreement before and after reading arguments on less-polarized issues, comparing human-written arguments to multiple Claude generations under four prompts. Newer and larger models are more persuasive, with Claude 3 Opus statistically indistinguishable from human writers.",
+  "topics": ["Evaluations", "Safety"]
+ },
+ {
+  "id": 1663,
+  "summary": "Proposes a kernel-learning method grounded in algorithmic information theory, using complexity-based principles to guide the selection of kernels for machine-learning models.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 779,
+  "summary": "Builds machine-learned force fields (GEMS) for large biomolecules by training on bottom-up and top-down molecular fragments to capture long-range interactions. Enables nanosecond MD of over 25,000 atoms at near-ab-initio accuracy, reproducing polyalanine helix oscillations and matching THz spectra of solvated crambin.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 535,
+  "summary": "Builds a jailbreak benchmark of 1,445 harmful questions across 11 safety policies and red-teams 11 LLMs and MLLMs. Finds GPT-4 and GPT-4V more robust than open models, Llama 2 and Qwen-VL-Chat relatively robust, and that visual jailbreaks transfer less well than textual ones.",
+  "topics": ["Robustness & Security", "Multimodal", "Evaluations"]
+ },
+ {
+  "id": 1664,
+  "summary": "Compares human and computational next-word predictions, reporting that incorporating multimodal information and attention mechanisms increases the alignment between model predictions and human language predictions.",
+  "topics": ["Multimodal", "Science Applications"]
+ },
+ {
+  "id": 2735,
+  "summary": "Across 318 drug-discovery projects, the AtomNet convolutional network virtually screens on-demand chemical libraries, finding novel hits for every major protein class, including targets lacking known binders or crystal structures, and producing new drug-like scaffolds, suggesting computation can replace HTS as the first screening step.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 96,
+  "summary": "Jailbreak that prepends many fabricated dialogues showing an assistant complying with harmful requests (up to 256 shots) before the target query, eroding safety training. Success rises with shot count following a power law, works across major models, and affects larger models more.",
+  "topics": ["Robustness & Security", "Safety"]
+ },
+ {
+  "id": 1666,
+  "summary": "Proposes deep-learning-accelerated forward-backward optimization solvers with convergence guarantees: instead of fixing step-size parameters, a neural network selects the best update within a provably convergent set. Applies to smooth and nonsmooth problems and outperforms established accelerated solvers like FISTA.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1665,
+  "summary": "Uses diffusion models to learn realistic, label-efficient data augmentations that enrich underrepresented groups and conditions. Across histopathology, chest X-ray, and dermatology, supplementing real data with synthetic samples improves classifier robustness in- and out-of-distribution and raises diagnostic accuracy and fairness for underrepresented subgroups.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 411,
+  "summary": "MBR-BoN adds a Minimum Bayes Risk proximity term to Best-of-N sampling, regularizing toward the reference policy to curb reward hacking at decoding time. It beats vanilla BoN and MBR decoding on AlpacaFarm and Anthropic HH, and yields better DPO preference data.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 94,
+  "summary": "Shows a simple linear probe on residual-stream activations can detect when backdoored 'sleeper agent' models are about to act on their trigger, even though the models behaved safely throughout training, giving an inexpensive interpretability defense against deceptive backdoored behavior.",
+  "topics": ["Interpretability", "Safety"]
+ },
+ {
+  "id": 93,
+  "summary": "Anthropic interpretability team's monthly notes: scaling laws for dictionary learning (allocating compute when training sparse autoencoders), SAE training updates, ablation studies of how features influence model behavior, and open problems such as attribution dictionary learning and isolating circuit paths.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 780,
+  "summary": "Compact text-embedding model trained by distilling LLM knowledge into a retriever: an LLM generates synthetic query-passage pairs, then relabels positives and hard negatives. On MTEB, Gecko's 256-dim embeddings beat prior 768-dim entries, and its 768-dim version rivals models 7x larger.",
+  "topics": ["Training & Scaling"]
+ }
+]

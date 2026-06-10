@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1911,
+  "summary": "AlphaCode generates millions of candidate programs with transformer models, then filters and clusters them down to 10 submissions per problem. In simulated Codeforces contests it ranked in the top 54.3% on average — the first AI to perform competitively in programming competitions.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 630,
+  "summary": "Introduces Contrast-Consistent Search, an unsupervised probe that finds an activation-space direction satisfying logical consistency (a statement and its negation get opposite truth values). Across 6 models and 10 QA datasets it beats zero-shot accuracy by 4% and stays accurate when models are prompted to answer falsely.",
+  "topics": ["Interpretability", "Alignment"]
+ },
+ {
+  "id": 1915,
+  "summary": "Analyzes why self-predictive representation learning in RL avoids collapsing to trivial solutions: faster predictor optimization and semi-gradient updates are crucial, and in an idealized setting the dynamics perform spectral decomposition of the transition matrix. Proposes a bidirectional variant that learns two representations simultaneously.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1914,
+  "summary": "Negotiation algorithms let Diplomacy agents agree contracts over joint plans, beating non-communicating agents. Communities of communicating agents are vulnerable to peers who break agreements, but an inclination to sanction contract-breakers sharply reduces deviators' advantage, sustaining mostly honest cooperation.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 1916,
+  "summary": "Focus groups with nine former ICU patients and four clinicians identified barriers to virtual-reality exposure therapy in intensive care — psychological, sensory, environmental, and staff competency/confidence — plus four facilitator themes, informing how VR can be integrated into complex clinical settings.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1917,
+  "summary": "DeepNash reaches human-expert Stratego play using model-free, game-theoretic deep RL without search, learning from scratch via self-play despite imperfect information and long-horizon strategy. It beat prior Stratego AIs and achieved an all-time top-three ranking among human experts on the Gravon platform.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1918,
+  "summary": "Test-Time Label-Shift Adaptation handles shifts in the joint prior over class labels and nuisance/group factors, assuming p(x|y,z) stays invariant: EM on unlabeled target data reweights a source-trained discriminative model, improving over invariance-seeking methods on image, text, and CheXpert chest X-ray benchmarks.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1919,
+  "summary": "Builds reduced-variance estimators for random-walk Metropolis and MALA samplers by deriving control variates from approximate Gaussian solutions of the Poisson equation, reusing all proposal values at negligible cost. Shows large variance reductions on Bayesian logistic regression and stochastic volatility models.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1921,
+  "summary": "Makes curiosity-driven exploration robust to stochastic noisy-TV traps by learning hindsight representations that capture the unpredictable part of outcomes, so intrinsic reward reflects only predictable dynamics. BYOL-Hindsight sets state-of-the-art exploration on Montezuma's Revenge with sticky actions.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1920,
+  "summary": "Clinical evaluation of Vastmindz's camera-based remote photoplethysmography against regulated medical devices across diverse subjects: heart rate, respiratory rate, and oxygen saturation were estimated within roughly ±3 units and blood pressure within ±10 mmHg, supporting contactless vital-sign monitoring.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1922,
+  "summary": "Presents a new Bruhat-graph-based formula for computing Kazhdan-Lusztig polynomials of symmetric groups — developed with machine-learning-guided intuition — suggesting a route to the combinatorial invariance conjecture posed by Lusztig and Dyer in the 1980s.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 631,
+  "summary": "Shows toy models can be made more monosemantic without increasing loss by steering which local minimum training finds; moderately negative biases help, and more neurons per layer increase monosemanticity. The resulting models, including residual polysemantic neurons, are mechanistically interpreted, revealing a simple surprising algorithm.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1924,
+  "summary": "CoDoC learns when to trust an AI diagnostic system's prediction versus defer to a clinician, training a simple model on the AI's confidence scores. In breast-cancer screening it reduced false positives by about 25% at matched sensitivity while substantially cutting clinician workload.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1923,
+  "summary": "Probes whether AlphaZero's self-taught chess knowledge resembles human concepts: linear probes localize when and where human chess concepts emerge in the network during self-play training, and behavioral analysis of opening play, with commentary from a former world champion, traces convergence toward human opening theory.",
+  "topics": ["Interpretability", "Reinforcement Learning"]
+ },
+ {
+  "id": 1207,
+  "summary": "Evaluates strategies for personalizing pretrained code models to specific Java projects on unit-test generation: full fine-tuning, lightweight tuning of embeddings or the final layer, and prefix tuning. Each offers different compute-performance trade-offs, measured via code metrics, training time, and total operations.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 119,
+  "summary": "Proposes sandwiching experiments for scalable oversight, where non-experts supervise a more capable model with experts as ground truth. Non-expert humans conversing with an unreliable dialogue assistant outperform both the model alone and unaided humans on MMLU and QuALITY, giving a measurable oversight testbed.",
+  "topics": ["Alignment", "Evaluations"]
+ },
+ {
+  "id": 1925,
+  "summary": "Models adult hippocampal neurogenesis as random reinitialization of hidden-unit weights in a CNN learning CIFAR-10 categories. This turnover improved generalization to unseen data, matching or beating dropout, weight decay, and neural noise — suggesting neurogenesis regularizes hippocampal learning through noise injection.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1927,
+  "summary": "Authors' reply to the Royal Statistical Society discussion of their Bayesian model for local-authority COVID-19 instantaneous reproduction numbers, grouping discussants' comments into evaluation and modelling themes and responding to each.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1926,
+  "summary": "Bayesian model estimating instantaneous COVID-19 reproduction numbers at fine spatial scale across British local authorities, using population-flow information to model cross-area transmission. Efficient posterior simulation replaces an infeasible naive approach, making inference fast enough for daily epidemic nowcasts.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 632,
+  "summary": "Reverse-engineers the circuit GPT-2 small uses for indirect object identification: 26 attention heads in 7 classes, discovered via causal interventions and validated with quantitative faithfulness, completeness, and minimality criteria — the largest end-to-end mechanistic explanation of a natural language-model behavior at the time.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1928,
+  "summary": "Embeds RL policies into low-dimensional reproducing-kernel-Hilbert-space representations, deriving theoretical guarantees on the expected return of the reconstructed policy that black-box compression lacks. Experiments on classic RL domains confirm policies compress to low dimension with almost no loss in returns.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1929,
+  "summary": "Two synthetic-likelihood methods for simulation-based inference learn a conditional energy-based model of the likelihood by minimizing a KL loss, avoiding known pitfalls of normalizing-flow and score-based alternatives. On a crab pyloric-network neuroscience model they outperform prior art with a fraction of the simulation budget.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1930,
+  "summary": "Proves follow-the-regularized-leader learning dynamics in binary games with indegree-one interaction graphs obey Poincaré-Bendixson-style regularity — limit cycles but no chaotic attractors — even in high dimension with arbitrary payoffs, and gives conditions under which this regularity yields efficiency guarantees.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 1932,
+  "summary": "Develops two RL algorithms that exploit suboptimal teacher policies through both their action distributions (kickstarting) and their collected data (offline RL) to cut online interaction for vision-based robotic stacking. Training on combined teacher and student data performs best across data budgets, in simulation and on real robots.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1931,
+  "summary": "Trains ANYmal locomotion controllers by using RL to imitate a large dataset of trajectory-optimization solutions over procedurally generated terrain. The learned controllers transfer to unseen terrains and provide effective initialization for fine-tuning on challenging terrain requiring exteroception and precise foot placement.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1933,
+  "summary": "Literature-based analysis of IT project management problems in modern organizations, surveying existing methods and proposing improvements such as a unified information system, a '7 K-questions' model, and competency mapping for team selection.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 440,
+  "summary": "Uses a fixed gold reward model standing in for human labels to measure how true reward degrades as policies overoptimize a learned proxy reward via RL or best-of-n sampling. Overoptimization follows distinct functional forms per method, with coefficients scaling smoothly in reward-model size — quantifying Goodharting in RLHF.",
+  "topics": ["Alignment", "Training & Scaling"]
+ },
+ {
+  "id": 1934,
+  "summary": "Gauge-equivariant normalizing-flow architectures enable flow-based sampling in fermionic lattice field theories using pseudofermion estimators of the fermion determinant — the standard in lattice QCD — with even/odd preconditioning and Hasenbusch factorization, demonstrated on two-dimensional U(1) and SU(3) theories with two fermion flavors.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1935,
+  "summary": "TREGO augments Bayesian optimization (EGO) with a trust-region scheme, alternating global EGO steps with local steps under a sufficient-decrease condition, gaining global convergence guarantees. On COCO bound-constrained benchmarks it consistently outperforms EGO and is competitive with state-of-the-art black-box optimizers.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1936,
+  "summary": "Designs crowdsourcing contests and all-pay auctions by simulating multi-agent learning over candidate designs, fitting a neural network to predict auctioneer utility for untested designs, and optimizing via mirror ascent. Matches known optimal designs and produces strong designs where equilibria are analytically intractable.",
+  "topics": ["Agents", "Policy & Society"]
+ }
+]

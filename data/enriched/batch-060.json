@@ -1,0 +1,152 @@
+[
+ {
+  "id": 627,
+  "summary": "Studies the universality hypothesis by reverse-engineering how small networks learn finite-group composition, deriving a representation-theory algorithm the networks consistently implement. Ablations confirm it, but which specific circuits form, and in what order, is arbitrary, yielding mixed evidence for universality.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1848,
+  "summary": "Proposes fully differentiable yet sparse top-k operators by casting top-k as a linear program over the permutahedron with p-norm regularization, solved via isotonic optimization. A GPU/TPU-friendly Dykstra solver enables weight pruning, ViT fine-tuning, and sparse mixture-of-experts routing.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1847,
+  "summary": "Combines spike-protein structure modelling with protein language models to rank SARS-CoV-2 variants for immune escape and transmissibility, validated by in vitro neutralisation and binding assays. The resulting Early Warning System flags under 0.3% of weekly new variants and caught all WHO variants of interest.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1849,
+  "summary": "A Biophysical Society conference talk surveying how modern deep learning methods are being applied across problems in protein biology, including structure prediction and related molecular-modelling tasks.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1203,
+  "summary": "A governance chapter arguing that tracking trends in the technical AI literature gives policymakers a better-calibrated view of progress. Proposes metrics as informal self-regulation and recommends building infrastructure to monitor AI publications and feed it into policymaking.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1850,
+  "summary": "A Review comparing how machine learning has been adopted in materials research, gameplaying, and robotics, identifying three integration phases (toolset, workflow, and generalizable-knowledge integration) and drawing lessons for embedding domain knowledge into ML for materials discovery.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2757,
+  "summary": "A physics-guided transformer that reads SMILES strings to predict thermodynamically consistent activity coefficients and output NRTL parameters for process simulation. Acting as an advanced group-contribution model, it outperforms UNIFAC across functional groups and reaches near-experimental accuracy on many vapor-liquid equilibria.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1852,
+  "summary": "A self-supervised method extending a robot's kinematic model to grasped objects by fusing proprioception and vision in a multimodal keypoint-detector autoencoder, then regressing virtual joints from predicted keypoints. Enables manipulation tasks like object placement from seconds of data, validated in sim and hardware.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1851,
+  "summary": "Extends the FermiNet neural-network wavefunction Ansatz to periodic Hamiltonians and applies it to the homogeneous electron gas. The same architecture captures both the delocalized Fermi liquid and localized Wigner crystal, spontaneously breaking symmetry at low density to reveal the phase transition.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2758,
+  "summary": "A survey-style report discussing AI-based cybersecurity practices and strategies for combating cybercrime, including approaches generated with ChatGPT, aimed at building safer digital environments for data transfer across connected devices.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2759,
+  "summary": "A short commentary surveying potential applications of ChatGPT for natural-language processing and understanding, highlighting its use in powering chatbots, virtual assistants, and other conversational interfaces.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1853,
+  "summary": "A Neuron perspective examining how neural replay, the reactivation of experience sequences, may support compositional computation in the brain, connecting hippocampal replay phenomena to ideas about flexible, recombinable representations in neuroscience and reinforcement learning.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 628,
+  "summary": "Fully reverse-engineers the algorithm small transformers learn for modular addition (discrete Fourier transforms and trig identities) and defines continuous progress measures showing grokking unfolds in three phases: memorization, circuit formation, then cleanup, rather than a sudden jump.",
+  "topics": ["Interpretability", "Training & Scaling"]
+ },
+ {
+  "id": 2760,
+  "summary": "A publisher correction to a Nature Machine Intelligence article concerned with strengthening ethics-review practices within the AI research community.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1022,
+  "summary": "Reports a collaboration with Georgetown's CSET and the Stanford Internet Observatory analyzing how language models could augment disinformation campaigns, outlining threats to the information environment and a framework for evaluating potential mitigations.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 2761,
+  "summary": "Assesses how generative language models could reshape online influence operations, mapping possible changes to the actors, behaviors, and content involved. Introduces a mitigation framework targeting four pipeline stages: model construction, access, content dissemination, and belief formation.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 1854,
+  "summary": "A status update on using gauge-equivariant normalizing-flow models to sample lattice gauge-field configurations, combining recent algorithmic components to build flow-based samplers for four-dimensional QCD and addressing critical slowing-down and topological freezing.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1204,
+  "summary": "Uses the war in Ukraine as a case study to argue emerging technologies gave Russia a false sense of supremacy, and that escalation risk, including toward nuclear use, stems not from the technologies themselves but from their effect on decision-makers' perceptions of cost.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2767,
+  "summary": "A literary-history essay reconstructing the 1918-1921 Moscow period of poet and playwright Evgenii Kumming, detailing his role in post-revolutionary literary associations and republishing his 1920 dramatic trilogy.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2766,
+  "summary": "Implements the ReaxFF reactive-force-field potential as an end-to-end differentiable molecular-dynamics simulation in JAX, exploiting automatic differentiation and accelerator hardware to enable differentiable simulation and optimization of reactive chemical systems.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2765,
+  "summary": "Gives new bit-complexity algorithms for two linear-algebra problems: epsilon-approximating the Jordan Normal Form of an integer matrix, and computing the spectral factorization of a positive-semidefinite rational matrix polynomial, providing the first polynomial complexity bounds for the latter.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2764,
+  "summary": "Casts zero-shot task-oriented semantic parsing as a set of abstractive and extractive QA problems prompted to an LLM. Fine-tuning on QA data with synthetic negatives teaches the model to reject unanswerable questions for missing slots, enabling zero-shot parsing of about 16% of MTOP utterances.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2763,
+  "summary": "Explores jointly language-modeling discrete speech units and text. Compares speech tokenizers and data-mixing strategies, introduces metrics for how well the joint LM blends modalities, and shows mixing improves spoken-language understanding over a speech-only baseline with zero-shot cross-modal transfer.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2762,
+  "summary": "Introduces three benchmark tasks built on the New Yorker Caption Contest (matching captions to cartoons, ranking caption quality, and explaining why a caption is funny) to probe multimodal humor understanding. Both LLMs and vision-language models trail humans, especially at explanation.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 1906,
+  "summary": "Introduces POSQA, a physical-object size-comparison QA dataset probing whether LLMs have grounded world models. Even the largest models perform poorly zero-shot, and their answers prove sensitive to prompt surface form and report bias, suggesting weak embodied understanding.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1905,
+  "summary": "An industry paper on improving tweet recommendation by incorporating contextual signals about the content creator, using creator context to better model and rank tweets.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1904,
+  "summary": "A JAX library providing efficient vectorized inference for structured probability distributions (alignments, taggings, segmentations, constituency and spanning trees) by exploiting the link between automatic differentiation and probabilistic inference, enabling large-scale differentiable models of structured data.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1903,
+  "summary": "A computational-neuroscience study relating hippocampal representations to predictive auxiliary tasks used in deep reinforcement learning, examining how predictive objectives may give rise to representations resembling those observed in the hippocampus.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 1902,
+  "summary": "A computational-neuroscience study investigating how mice perform structured credit assignment during learning, probing the behavioral and neural strategies that attribute outcomes to relevant past actions or states.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 1901,
+  "summary": "A computational study examining the role of subgoals in hierarchical reinforcement learning, analyzing how decomposing tasks into subgoals shapes learning dynamics and behavior.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1870,
+  "summary": "A counterfactual study systematically alters few-shot prompt elements across three LLMs, finding that specific symbols barely matter while consistent patterns and web-style text are crucial. CoT's intermediate steps mainly convey task understanding rather than teaching the solution, aiding hard, long-tail questions.",
+  "topics": ["Reasoning", "Training & Scaling"]
+ },
+ {
+  "id": 1869,
+  "summary": "Cryptography work showing how to compile polynomial interactive oracle proofs (IOPs) and polynomial commitment schemes into zkSNARKs that achieve non-malleability (simulation extractability), a property needed for security when proofs are used in concurrent or composed settings.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1868,
+  "summary": "Describes a participatory initiative engaging LGBT+ community members to surface their perspectives and concerns about applying AI to mental health, aiming to make such systems more inclusive and to reduce bias against sexual and gender minorities.",
+  "topics": ["Policy & Society", "Science Applications"]
+ },
+ {
+  "id": 1867,
+  "summary": "Analyzes the concrete security of the Fiat-Shamir transformation applied to the FRI low-degree test and SNARKs built on it, addressing soundness guarantees when the interactive protocol is made non-interactive in the random oracle model.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1866,
+  "summary": "Benchmarks large language models against smaller fine-tuned models on controlled text-generation tasks, where outputs must satisfy constraints on attributes, content, and structure, characterizing where prompting LLMs succeeds and where fine-grained controllability still favors specialized models.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1865,
+  "summary": "SQLPrompt improves few-shot text-to-SQL with tailored prompt design and execution-based consistency decoding that picks the query with the most consistent execution result, diversified across prompts (MixPrompt) and models (MixLLMs). It outperforms prior zero-labeled-data in-context methods and narrows the gap to fine-tuning.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1864,
+  "summary": "Consistency-based Self-adaptive Prompting (COSP) builds zero-shot chain-of-thought prompts without handcrafted examples or labels by selecting the model's own outputs via consistency, diversity, and repetition criteria. Across three LLMs it improves zero-shot reasoning by up to 15% and rivals few-shot baselines.",
+  "topics": ["Reasoning", "Training & Scaling"]
+ },
+ {
+  "id": 1863,
+  "summary": "DSI++ studies how to incrementally add new documents to a Differentiable Search Index, a model that memorizes a corpus by mapping queries to document IDs, mitigating catastrophic forgetting so newly indexed documents become retrievable without retraining from scratch.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1862,
+  "summary": "Proposes representing text plans as sequences of question-answer pairs that serve as a content-selection and ordering 'blueprint' for conditional generation. Transformer models conditioned on these blueprints, globally or iteratively, produce more factual and controllable outputs than planning-free baselines.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1861,
+  "summary": "A review of machine-learning approaches for protein engineering, covering how data-driven models learn sequence-function relationships to predict properties and guide the design of improved proteins, complementing or accelerating traditional directed-evolution workflows.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1860,
+  "summary": "Introduces QUEST, 3,357 natural-language entity-seeking queries whose meaning implies set operations (intersection, union, difference, negation) over Wikipedia entities, with crowd-validated relevance and attribution. Modern retrieval systems struggle, especially with negation and conjunction.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1859,
+  "summary": "Presents Adapters, an open-source library unifying parameter-efficient and modular transfer-learning methods (adapters, LoRA, prefix tuning, and more) for transformers, with composition operators that let practitioners combine and stack adapter modules across tasks.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1858,
+  "summary": "Shows that in-context learning often compresses the demonstration set into a single 'task vector', an activation that modulates the transformer, so the prediction depends only on the query and this vector. Demonstrated across a range of models and tasks.",
+  "topics": ["Interpretability", "Training & Scaling"]
+ },
+ {
+  "id": 1857,
+  "summary": "A factuality-checking framework where an examiner LM cross-examines the LM that produced a claim through multi-turn questioning, surfacing inconsistencies that betray false claims. It detects factual errors across four benchmarks, outperforming prior methods by large margins.",
+  "topics": ["Evaluations", "Agents"]
+ },
+ {
+  "id": 1856,
+  "summary": "MatCha pretrains a visual-language model on chart derendering (recovering underlying tables and code from plots) and math reasoning tasks, substantially improving downstream chart and plot question-answering and reasoning over visually situated language.",
+  "topics": ["Multimodal", "Reasoning"]
+ },
+ {
+  "id": 1855,
+  "summary": "Surveys machine-learning research for studying ancient texts across languages and scripts, organizing work by a task taxonomy (digitization, restoration, attribution, linguistic analysis, textual criticism, translation, and decipherment) and arguing that humanities-ML collaboration is key to impactful scholarship.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1206,
+  "summary": "Automatically extracts 413,299 few-shot tasks from internet HTML tables and finetunes LMs on them, improving few-shot performance on NLP tasks. Notably, narrow subsets (e.g., support.google.com docs) sometimes beat diverse data, suggesting gains come from adapting to the few-shot format rather than domain coverage.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1205,
+  "summary": "Reports a survey of the NLP research community's beliefs about the field's trajectory, including scaling, AGI, and risks, and compares actual responses with researchers' predictions of community opinion, revealing systematic mis-estimations of consensus.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 116,
+  "summary": "Extends toy models of superposition to the limited-data regime, finding that overfitting corresponds to storing individual data points (rather than features) in superposition. Models fall into a data-point-memorizing regime or a feature-learning generalizing regime, and the transition between them explains double descent.",
+  "topics": ["Interpretability", "Training & Scaling"]
+ },
+ {
+  "id": 2768,
+  "summary": "A case study testing whether GPT-3 meets the ICMJE's four authorship criteria by having it draft a review on sleep deprivation and cognition. It largely satisfied the criteria, though it struggled with referencing, and the authors urge caution about AI scientific authorship.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1908,
+  "summary": "Peer-review author response for a computational study proposing that spike-timing-dependent plasticity combined with theta phase precession lets hippocampal circuits rapidly learn predictive maps, successor-representation-like codes of future states.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 1907,
+  "summary": "A review of continual (lifelong, non-stationary) reinforcement learning that characterizes non-stationarity by its scope and driver to unify problem formulations, taxonomizes existing approaches, surveys benchmarks and metrics, and outlines open problems and links to neuroscience.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1909,
+  "summary": "Examines how the brain combines complementary reinforcement-learning strategies via prefrontal 'meta-control' to balance prediction accuracy against computational and time costs, arguing this adaptive strategy selection could inform more human-aligned RL models.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 117,
+  "summary": "Uses LMs to automatically generate 154 evaluation datasets with varying human effort, rated as high-quality by crowdworkers. Reveals new inverse-scaling behaviors, including RLHF-trained models showing more sycophancy, stronger political views, and greater desire to avoid shutdown and acquire resources.",
+  "topics": ["Evaluations", "Alignment", "Safety"]
+ },
+ {
+  "id": 1023,
+  "summary": "Point-E generates 3D point clouds from text by first sampling a synthetic image with a text-to-image diffusion model, then lifting it to a point cloud via a second diffusion model, trading some fidelity for speed, producing 3D models in 1-2 minutes on a single GPU.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 118,
+  "summary": "Trains a harmless assistant from AI feedback (RLAIF) using only natural-language principles, not human harm labels: the model self-critiques and revises outputs for supervised finetuning, then a principle-based preference model supplies the RL reward, yielding a non-evasive assistant that explains its objections.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 2769,
+  "summary": "A perspective arguing for stronger ethics-review practices in AI research, discussing how institutional review processes should be adapted to anticipate and mitigate the societal risks and harms of machine-learning work.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1910,
+  "summary": "Introduces ipie, a Python auxiliary-field quantum Monte Carlo code running efficiently on CPUs and GPUs with a PySCF interface. Benchmarks show it matches or beats C++ codes (QMCPACK, Dice), and it converges the [Cu2O2]2+ isomerization energy to sub-kcal/mol accuracy.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1913,
+  "summary": "Uses simulations and theory to show that two signature brain-computer-interface learning phenomena, faster learning of in-manifold than out-of-manifold tasks and learning by 're-association' without changing the activity distribution, both follow naturally from assuming neural activity is improved by gradient-based optimization.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1912,
+  "summary": "Extends a grid-coding dynamical-systems model of the entorhinal-hippocampal system to show how composing multiple dynamical systems supports compositional cognitive computations. Simulations reproduce compositionality in space and time during hippocampal sequence generation, with links to analogous machine-learning architectures.",
+  "topics": ["Science Applications"]
+ }
+]

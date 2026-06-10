@@ -1,0 +1,152 @@
+[
+ {
+  "id": 520,
+  "summary": "Evaluates o1-preview across medical benchmarks: even without prompting techniques it outperforms GPT-4 with Medprompt, few-shot prompting actually hurts its performance, and ensembling stays viable but costly — mapping a cost-accuracy Pareto frontier for run-time steering strategies on reasoning models.",
+  "topics": ["Reasoning", "Evaluations", "Science Applications"]
+ },
+ {
+  "id": 180,
+  "summary": "Sketches three hypothetical safety-case arguments — grounded in mechanistic interpretability, AI control, and incentives analysis — for ruling out misalignment and sabotage risk in near-future ASL-4 models, and identifies the research progress each argument would need to become load-bearing.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 593,
+  "summary": "Uses SAEs to measure the causal effects of steering-vector interventions, then builds SAE-Targeted Steering (SAE-TS), which finds vectors that hit specific SAE features while minimizing side effects; SAE-TS balances steering strength and output coherence better than CAA or direct SAE-feature steering.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 231,
+  "summary": "Argues there is a realistic possibility of conscious or robustly agentic AI in the near future, making AI welfare and moral patienthood a present concern; recommends companies acknowledge the issue, assess models for welfare-relevant evidence, and prepare proportionate policies under uncertainty.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 2720,
+  "summary": "Recasts zero-shot attribute recognition as generative retrieval: a pretrained VLM scores image-conditioned sentences encoding object-attribute dependencies, which CLIP-style contrastive alignment fails to capture. Order- and dependency-sensitive generative scoring consistently beats contrastive retrieval on attribute recognition benchmarks.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1540,
+  "summary": "Combines InstantNGP-style Eulerian hash grids with Lagrangian point features by storing Gaussians in the high-resolution hash-table levels, with a loss that moves them toward regions needing more representation budget — reconstructing neural fields more compactly without quality loss.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1541,
+  "summary": "Ethnographic study of how consumers form mental models of AI, arguing predictability alone cannot sustain trust: without tangible consequences for AI systems that violate trust, human trust stays limited and conditional — a key open problem for human-AI interaction design.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1542,
+  "summary": "Introduces AffectVisDial, 50K ten-turn visually grounded dialogs with concluding emotion attributions and textual explanations, defining dialog-based QA, emotion prediction, and affective-explanation tasks; baselines adapted from state-of-the-art multimodal models show promising emotional reasoning.",
+  "topics": ["Multimodal", "Evaluations"]
+ },
+ {
+  "id": 1544,
+  "summary": "Finds generative captioners lag CLIP on zero-shot classification because caption likelihoods inherit text-only language-model bias, so IG Captioner scores candidates by the information gain from visual input and trains to match; on Laion-5B pretraining this lifts ImageNet zero-shot accuracy >18%, reaching CLIP-comparable performance.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1543,
+  "summary": "A decoder-free, single-stage architecture for open-vocabulary visual relationship detection: a ViT encoder represents objects as tokens and a relationship-attention mechanism selects likely subject-object pairs. Trained on mixed object/relationship data, it sets state of the art on Visual Genome and GQA at real-time speeds.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1193,
+  "summary": "LARP, a recurrent neural simulator of articulated rigid-body dynamics supporting joint motors, variable body dimensions, and contact; it is differentiable and an order of magnitude faster than classical simulators run in parallel, matching or beating a non-differentiable engine as a drop-in for video-based 3D human pose reconstruction.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 993,
+  "summary": "A factuality benchmark of 4,326 short fact-seeking questions with verified answers, adversarially collected against GPT-4; frontier models score low (GPT-4o ~38% correct), and grading distinguishes wrong answers from abstentions so calibration and hallucination tendencies can be measured.",
+  "topics": ["Evaluations", "Alignment"]
+ },
+ {
+  "id": 79,
+  "summary": "Details the minimal agent scaffold — just bash and file-editing tools, with the model driving its own iteration — that takes upgraded Claude 3.5 Sonnet to 49% on SWE-bench Verified, past the prior 45% state of the art, plus lessons on agent design and failure modes.",
+  "topics": ["Agents", "Evaluations"]
+ },
+ {
+  "id": 1546,
+  "summary": "Magazine essay on children as active users and shapers of generative AI: how they make sense of these systems, and what it takes to design AI that supports rather than undermines children's learning, creativity, and agency.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1545,
+  "summary": "Position paper proposing Spatial Representation Learning: learnable modules that let neural networks directly encode and decode spatial data (points, polylines, polygons, 3D buildings) instead of relying on feature engineering, laying out core challenges — multi-scale, continuous, shape-centric, noise-robust, heterogeneity- and fairness-aware RL — for next-generation GeoAI.",
+  "topics": ["Training & Scaling", "Science Applications"]
+ },
+ {
+  "id": 1547,
+  "summary": "Two near-optimal algorithms for differentially private continual counting that need only logarithmic or polylogarithmic space and time, obtained by factoring the prefix-sum matrix via streaming Toeplitz multiplication and low-degree rational approximations of the square root on a complex circle.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 382,
+  "summary": "A pessimistic, offline-RL-inspired DPO variant that penalizes preference uncertainty (estimated by a model ensemble), attenuating loss gradients on ambiguous or mislabeled pairs to curb reward hacking; improves over vanilla DPO on Anthropic-HH with GPT-2 Medium, especially on high-uncertainty prompts.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1549,
+  "summary": "A lightweight text-conditioned resampler (TCR) bridges a frozen visual encoder and frozen LLM, using cross-attention to localize task-relevant features across 100+ video frames without optimized kernels; validated on NextQA, EgoSchema, and Ego4D-LTA, identifying which tasks benefit from longer video context.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1548,
+  "summary": "A general-purpose ViT block that compresses high-resolution tokens into a small fixed set via bidirectional cross-attention, reserving heavy computation for the compressed tokens; cuts inference cost on image and video classification while a single trained model exposes accuracy-compute trade-offs.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 594,
+  "summary": "Tests SAE-based unlearning on WMDP-Bio with Gemma-2b-it: negatively scaling individual interpretable biology features removes hazardous knowledge with minimal side effects (zero-ablation fails), but multi-topic interventions accumulate damage, leaving SAE unlearning behind fine-tuning baselines like Representation Misdirection.",
+  "topics": ["Interpretability", "Robustness & Security"]
+ },
+ {
+  "id": 80,
+  "summary": "Case study steering sparse-autoencoder features in Claude 3 Sonnet: within a 'sweet spot' of steering strengths outputs shift without major capability loss, and steering a neutrality-related feature lowers social-bias scores — but off-target effects on unrelated behaviors are common, limiting practical use.",
+  "topics": ["Interpretability", "Policy & Society"]
+ },
+ {
+  "id": 1550,
+  "summary": "Argues lean matrix-game experiments cannot capture how environments and collective action shape each other in social-ecological systems, and proposes multi-agent reinforcement learning environments as richer yet tractable testbeds — reviewing studies where environmental settings and cognitive constraints yield emergent cooperation strategies.",
+  "topics": ["Reinforcement Learning", "Agents", "Science Applications"]
+ },
+ {
+  "id": 383,
+  "summary": "Sharp non-asymptotic risk analysis of knowledge distillation in high-dimensional ridgeless regression under model and distribution shift, characterizing the optimal surrogate: weak-to-strong training can provably beat strong-label training at a fixed data budget, but cannot improve the data scaling law.",
+  "topics": ["Training & Scaling", "Alignment"]
+ },
+ {
+  "id": 1552,
+  "summary": "Mixed-methods study (scoping review plus 672 general-population participants and 30 experts) proposing axes of disparity for ML fairness in African health: colonial history, country of origin, and national income emerge as perceived sources of AI bias, with expert and lay views diverging.",
+  "topics": ["Policy & Society", "Science Applications"]
+ },
+ {
+  "id": 1551,
+  "summary": "SynthID-Text, a production-ready LLM watermark that modifies only the sampling step, integrates with speculative decoding, and detects without model access; across benchmarks and a live experiment on ~20 million Gemini responses it improves detectability over comparable schemes with no measured quality loss.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 994,
+  "summary": "A unified parameterization of diffusion and consistency models isolates why continuous-time CM training is unstable, motivating fixes to the diffusion process, architecture, and objectives; the resulting sCM recipe trains 1.5B-parameter models and reaches FID 1.88 on ImageNet 512x512 in two sampling steps, within ~10% of the best diffusion models.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 384,
+  "summary": "Separates generation from learning so RLHF trains asynchronously on off-policy samples; online DPO proves most robust to off-policyness (more so at larger scale), training a LLaMA 3.1 8B chatbot ~40% faster than synchronous RLHF with matched final performance.",
+  "topics": ["Alignment", "Training & Scaling"]
+ },
+ {
+  "id": 81,
+  "summary": "Describes training Claude 3.5 Sonnet to use computers from screenshots — moving the cursor, clicking, and typing like a person. Skills learned mostly on simple software generalized broadly: it scores 14.9% on OSWorld's screenshot-only category, far above prior models but well short of human performance (~70-75%).",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 1553,
+  "summary": "Adds a Triplet Order Correction pre-training objective alongside masked language modeling, plus IRI verbalization, to make text-to-SPARQL models sensitive to triplet order and syntax — fixing errors like triplet flips and reaching state of the art on three KGQA benchmarks.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1554,
+  "summary": "Explains dual-process cognition via compression: pairing a complex and a simple mechanism lets an agent minimize the description length of its own behavior. A single model on this principle accounts for dual-process phenomena across executive control, reward-based learning, and judgment and decision making.",
+  "topics": ["Science Applications"]
+ }
+]

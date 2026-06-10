@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2722,
+  "summary": "Reviews how Agile project-management methodologies, originally from software, have spread to manufacturing, construction, healthcare, and marketing. Synthesizes literature and case studies to identify adoption challenges—cultural resistance, scaling, framework integration—and strategies for successful implementation.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 391,
+  "summary": "Analyzes loss functions that reward good and penalize bad examples (unlikelihood, ExMATE, DPO) via their gradients. Finds ExMATE is a superior MLE surrogate, and combining DPO with ExMATE rather than MLE improves statistical metrics by 5-7% and generative win rate by 18%.",
+  "topics": ["Alignment", "Training & Scaling"]
+ },
+ {
+  "id": 2723,
+  "summary": "Describes ACF-S, an 8-terabit/second SuperNIC for high-performance data movement in AI and accelerated-compute networks, aiming to deliver peak performance, resiliency, and node-level scale for distributed accelerated computing.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1585,
+  "summary": "Introduces the 'natural slope', a real-valued invariant of a hyperbolic knot defined from its cusp geometry, and proves it bounds twice the knot signature in terms of hyperbolic volume and injectivity radius. The relationship was discovered using machine learning over knot invariants.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1586,
+  "summary": "A variational Monte Carlo method that recasts finding a quantum system's excited states as locating the ground state of an expanded system, requiring no orthogonalization or free parameters. With FermiNet and Psiformer ansatze it accurately recovers excitation energies and oscillator strengths, including double excitations.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1587,
+  "summary": "Nature news feature on 'loss of plasticity': artificial neural networks trained on tasks one after another progressively lose the ability to learn new ones. Surveys the limited understanding of why this breakdown happens and emerging approaches to fix it.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 747,
+  "summary": "Technical report detailing the default Gaussian-process bandit algorithm in open-source Google Vizier, the Bayesian-optimization service behind millions of tuning runs at Google. Standardized benchmarks show robustness and versatility against established industry baselines.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 748,
+  "summary": "Studies computing the limit behavior of natural game dynamics as a distribution over a game's sink equilibria under noisy replicator dynamics. Proves near-linear-time computation for pure-strategy priors and estimates limit distributions for large games via sampling and simulation.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 392,
+  "summary": "Introduces metrics—feature imprint, alignment resistance, and alignment robustness—to probe how RLHF reward models encode human values. Using Anthropic HH-RLHF data and OpenAssistant reward models, finds strong target-feature imprints, sensitivity to spoiler features, and 26% alignment resistance where labelers disagreed with humans.",
+  "topics": ["Alignment", "Evaluations"]
+ },
+ {
+  "id": 998,
+  "summary": "Releases SWE-bench Verified, a 500-task human-validated subset of SWE-bench that filters out unsolvable or under-specified problems, providing a more reliable measure of language models' ability to resolve real-world GitHub software issues.",
+  "topics": ["Evaluations", "Agents"]
+ },
+ {
+  "id": 749,
+  "summary": "Proposes the correlational counterfactual test, a faithfulness metric for LLM free-text explanations that measures the full shift in the predicted label distribution under counterfactual edits rather than just label flips. Llama-2 explanations more often cite genuinely impactful factors, with association growing with model size.",
+  "topics": ["Reasoning", "Interpretability"]
+ },
+ {
+  "id": 1588,
+  "summary": "Reviews AlphaFold's adoption across structural biology two years after release, covering use cases like accelerating structure determination, enabling computational studies, and building new tools, alongside ongoing validation against experimental structures that maps the model's capabilities and limitations.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 595,
+  "summary": "Releases Gemma Scope, an open suite of JumpReLU sparse autoencoders trained on all layers and sublayers of Gemma 2 2B and 9B (plus select layers of 27B), with standard-metric evaluations, to lower the cost of safety and interpretability research on these models.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2724,
+  "summary": "Proves bounds on the maximum number of distinct non-empty k-power factors in a length-n word, roughly between n/(k-1) and (n-1)/(k-1) for k at least 2, and at most n-1 for powers of exponent at least 2, generalizing prior bounds on square factors.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 521,
+  "summary": "System card for GPT-4o, an omni model that processes any combination of text, audio, image, and video end-to-end with roughly 320ms average audio response. Details capabilities, limitations, Preparedness Framework risk evaluations, third-party dangerous-capability assessments, and safety mitigations, focusing on speech-to-speech.",
+  "topics": ["Multimodal", "Safety", "Evaluations"]
+ },
+ {
+  "id": 750,
+  "summary": "Presents the first learned robot agent to reach amateur human-level competitive table tennis, combining low-level skill controllers with a high-level skill selector, zero-shot sim-to-real via an automatic real-grounded curriculum, and live opponent adaptation. It won 45% (13/29) of matches against unseen human players.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 393,
+  "summary": "Compares LLM fine-tuning methods (QLoRA, RAFT, RLHF) and evaluation approaches on a travel-chatbot task with LLaMA-2-7B and Mistral-7B. Finds GPT-4-based evaluation aligns best with human judgment while traditional NLP and Ragas metrics do not, with Mistral RAFT plus RLHF performing best.",
+  "topics": ["Evaluations", "Training & Scaling"]
+ },
+ {
+  "id": 1589,
+  "summary": "Argues that competitive pressure under international anarchy restricts which domestic state institutions are viable, and that technological change reshapes the relative competitiveness of state forms—sometimes degrading human welfare. Supported by a macrohistorical survey of competitively significant technologies.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 525,
+  "summary": "Analyzes prompt leakage in customized LLM services as 'prompt memorization,' studying how model size, prompt length, and prompt type affect extraction and attributing it to perplexity and attention token-translation paths. Shows even GPT-4 is highly vulnerable and proposes defenses that sharply cut extraction rates.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 596,
+  "summary": "Surveys mechanistic interpretability through the lens of causal mediation analysis, taxonomizing methods by the type of causal unit (mediator) used and how mediators are searched over. Discusses trade-offs of each and recommends discovering new mediators and developing standardized evaluations.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1590,
+  "summary": "Presents DP-SQLP, a scalable differentially private stream-aggregation system built on Spanner and F1. Contributes a user-level DP key-selection algorithm scaling to a billion keys, a preemptive execution scheme, and continual-observation histograms, achieving at least 16x error reduction over baselines in Google deployments.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 85,
+  "summary": "Anthropic interpretability team's August 2024 progress notes, sharing developing ideas, preliminary results, and minor findings from active mechanistic-interpretability research—some of which previews future papers and some unlikely to be written up separately.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2725,
+  "summary": "Reframes ML collective-communication scheduling as a traffic-engineering, multi-commodity-flow problem. The resulting optimizer TE-CCL produces 2x faster schedules than TACCL, scales to larger topologies, and on a GPU testbed beats TACCL by 2.14x and RCCL by 3.18x in algorithm bandwidth.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1591,
+  "summary": "Evaluates frozen video foundation models as general-purpose feature extractors for animal-behavior analysis across classification, retrieval, and localization on diverse open datasets. With minimal adaptation they match task-specific methods across species and contexts, offering an accessible backbone for ethology, neuroscience, and ecology.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 751,
+  "summary": "Proposes HyperBO, which pre-trains Gaussian-process priors from data on related functions using a KL-divergence loss instead of hand-specifying priors for Bayesian optimization. Provides bounded posterior predictions and near-zero regret without assuming the ground-truth prior, validated on a large multi-task hyperparameter-tuning dataset.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 597,
+  "summary": "Uses language models trained on chess and Othello transcripts—where interpretable features like 'knight on F3' are known—to build supervised metrics for sparse-autoencoder quality. Introduces p-annealing, a training technique that improves both prior unsupervised metrics and the new supervised ones.",
+  "topics": ["Interpretability", "Evaluations"]
+ },
+ {
+  "id": 234,
+  "summary": "Explores vision-language models (GPT-4o, PaliGemma) with zero-shot chain-of-thought for explainable handwriting verification on the CEDAR dataset. VLMs improve interpretability but underperform a CNN ResNet-18 baseline (84%) versus 70% for GPT-4o and 71% for fine-tuned PaliGemma.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1593,
+  "summary": "Proposes 'risk-sensitive innovation': managing the relative timing of technology development to reduce risks across a portfolio—for example delaying risk-increasing technologies while advancing defensive or substitute ones. Discusses applicability to synthetic biology and AI and implications for research funding and regulation.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1592,
+  "summary": "Qualitative interpretative phenomenological study of eight Nigerians living with vitiligo, finding that their understanding blends traditional, religious, and biomedical beliefs, that they face marked stigma and discrimination, and that they nonetheless develop coping strategies that sustain wellbeing.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 752,
+  "summary": "Introduces Mixture of Nested Experts (MoNE), where nested experts sit on an increasing compute-accuracy curve and visual tokens are dynamically routed by priority so redundant tokens use cheaper experts. Matches baseline accuracy on ImageNet-21K, Kinetics400, and SSv2 at over 2x less inference compute.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ }
+]

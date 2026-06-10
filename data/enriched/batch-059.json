@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1827,
+  "summary": "Applies language models hierarchically through prompt chaining (Dramatron) to generate coherent long-form scripts and screenplays with title, characters, story beats, locations, and dialogue. A study with 15 theatre and film professionals probes its use as a co-creative tool, alongside ethics of plagiarism and bias.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1830,
+  "summary": "Benchmarks four causal-reasoning algorithms (SigNet, CausalR, CausalR ScanR, CARNIVAL) across four biological networks on LINCS L1000/CMap data for 269 compounds. Algorithm-network pairing most determines performance, with SigNet recovering the most direct targets and CARNIVAL with Omnipath the most informative pathways.",
+  "topics": ["Science Applications", "Evaluations"]
+ },
+ {
+  "id": 1829,
+  "summary": "Image Quality Transfer enhances low-field (<1T) MRI by estimating the high-field image of the same subject, using a stochastic low-field simulator as forward model and an anisotropic U-Net. Improves resolution and contrast on clinical low-resource-setting data, boosting diagnostic value.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 1831,
+  "summary": "Reviews how graph neural networks are applied to Large Hadron Collider data, exploiting the natural graph structure of particle-physics events for tasks such as charged-particle tracking, jet and event classification, and detector reconstruction.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1832,
+  "summary": "Argues that AI evaluation reporting leans too heavily on aggregate metrics while instance-level results are rarely shared, limiting scientific understanding, and advocates more granular, accessible reporting of evaluation data.",
+  "topics": ["Evaluations", "Policy & Society"]
+ },
+ {
+  "id": 1833,
+  "summary": "DiscoGen, a neural-network causal-discovery method that denoises gene-expression measurements and handles interventional data to infer gene regulatory networks, outperforming state-of-the-art neural causal-discovery baselines.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 560,
+  "summary": "Demonstrates multi-step jailbreak prompts that extract personally identifiable information memorized by ChatGPT and the ChatGPT-powered New Bing, showing application-integrated LLMs introduce new privacy attack surfaces beyond standard dialog-safety concerns.",
+  "topics": ["Robustness & Security", "Policy & Society"]
+ },
+ {
+  "id": 1834,
+  "summary": "Introduces (structural) causal games, a formalism unifying causal and game-theoretic reasoning by extending Pearl's causal hierarchy to games and multi-agent influence diagrams to causality, and shows how to model dependencies and compute causal queries within it.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1835,
+  "summary": "Benchmarks a contactless remote vital-sign monitoring method against a medical device across Fitzpatrick skin-tone groups (90 patients, 330 videos), reporting heart-rate mean absolute error around 3 bpm with consistent accuracy across skin tones.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 1836,
+  "summary": "A multi-agent reinforcement-learning agent equipped with a classifier that labels behaviours as approved or disapproved plus a motivation to punish with the group; shows beneficial social norms can emerge from public sanctioning signals under otherwise decentralized learning.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 438,
+  "summary": "Introduces Imitation learning from Language Feedback (ILF): condition on input, output, and natural-language feedback to generate refinements, select the best, then finetune on it. Framed as Bayesian inference, it scales with data and reaches human-level summarization.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1837,
+  "summary": "A theoretical construction refining covering extended building sets greatly expands the class of 2-groups proven to contain difference sets, and completes a determination of which of the 56,092 groups of order 256 admit a difference set.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2754,
+  "summary": "DrGPUM, a profiler that correlates GPU memory inefficiencies with specific data objects and GPU APIs, categorizes object-level and intra-object waste, and surfaces actionable insights to guide memory optimization in GPU-accelerated applications.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1020,
+  "summary": "Estimates LLM exposure across the US labor market with a task-based rubric, finding around 80% of workers have at least 10% of tasks affected and roughly 19% may see over half their tasks exposed; higher-wage occupations show greater exposure.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1838,
+  "summary": "Pilot randomized controlled trial (n=300) testing music and narrated-story audio tools in the Unmind app for working adults with poor sleep; both arms were feasible and well-received, yielding large reductions in sleep disturbance (Hedges' g around 0.9-1.1) versus waitlist.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2755,
+  "summary": "Clinical case report of pulmonary melioidosis (Burkholderia pseudomallei) presenting as acute pneumonia and sepsis in a 55-year-old woman in India, managed successfully with antibiotics and supportive care, underscoring the need for higher diagnostic suspicion in the subcontinent.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1839,
+  "summary": "Combines pathway-enrichment and causal-reasoning analysis of an in vitro tauopathy model with structure-based target prediction to deconvolve the mechanism of the tau-aggregation inhibitor Anle138b, implicating cholesterol homeostasis (SREBF1/2) and neuroinflammation (NFKB1, RELA).",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1021,
+  "summary": "GPT-4, a large multimodal model accepting image and text inputs and emitting text, reaches human-level performance on many professional and academic benchmarks while remaining less capable than humans in many real-world settings; the report emphasizes scaling and post-training over architecture details.",
+  "topics": ["Training & Scaling", "Multimodal", "Evaluations"]
+ },
+ {
+  "id": 1840,
+  "summary": "SIRL learns task-relevant state representations for robot reward functions by asking users which behaviours they consider similar, using contrastive learning to isolate the causal features people care about and discard spurious correlations, improving reward generalization to new settings.",
+  "topics": ["Reinforcement Learning", "Alignment"]
+ },
+ {
+  "id": 1841,
+  "summary": "Replication data accompanying a methodological treatment of placebo tests for causal inference, which offers a typology of such tests (by the design component altered and the assumption tested) and clarifies the extra assumptions needed for them to be informative.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 561,
+  "summary": "Investigates how scale shifts in-context learning between semantic priors and input-label mappings: large models can override priors given flipped labels and learn arbitrary, semantically-unrelated label mappings, abilities emerging with scale, while instruction tuning strengthens both.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 439,
+  "summary": "A systematic survey of the social and ethical impacts of reinforcement learning from human feedback, identifying key issues and discussing implications across seven primary application areas and a range of stakeholders.",
+  "topics": ["Policy & Society", "Alignment"]
+ },
+ {
+  "id": 114,
+  "summary": "Investigates why the transformer residual stream exhibits a privileged basis (outlier, basis-aligned coordinates) despite theory predicting none, provisionally attributing the effect to the per-dimension normalizers in the Adam optimizer while ruling out layer normalization and finite-precision arithmetic.",
+  "topics": ["Interpretability", "Training & Scaling"]
+ },
+ {
+  "id": 1842,
+  "summary": "Shows that spike-timing-dependent plasticity acting on theta-compressed trajectories ('theta sweeps') can rapidly learn a close approximation to the successor representation in a biologically plausible spiking hippocampal model, reproducing observed place-cell phenomena without explicit temporal-difference learning.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 1843,
+  "summary": "Uses diffusion models to cheaply generate high-resolution (8.8km) daily rainfall fields over England and Wales conditioned on coarse (60km) climate-model variables, producing realistic spatial structure and better extreme-event estimates than prior generative downscaling methods.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 1844,
+  "summary": "ModelCIF, an extension of the PDBx/mmCIF standard, provides an extensible, FAIR-compliant data framework for depositing, archiving, and disseminating computationally predicted 3D macromolecular structure models and their associated metadata.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 115,
+  "summary": "Tests whether RLHF-trained language models can 'morally self-correct' when instructed; finds the capability emerges around 22B parameters and improves with scale and RLHF, as models learn to follow instructions and grasp normative concepts like bias and stereotyping.",
+  "topics": ["Alignment", "Policy & Society"]
+ },
+ {
+  "id": 2756,
+  "summary": "Editorial, notably co-authored with OpenAI, examining how ChatGPT and large language models affect academic publishing across authorship, research integrity, and peer review, weighing benefits against risks for scholarly writing.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1845,
+  "summary": "An accessible introduction to graph neural networks for a structural-biology audience, surveying the main GNN flavours (convolutional, attentional, and message-passing) and framing diverse data as graphs to which these models apply.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1846,
+  "summary": "Argues AI, like electricity, is a general-purpose technology whose military impact is broad, delayed, and mediated by industrial-base spillovers, a 'general-purpose military transformation', using the historical case of electricity to contend such transformations can reinforce rather than narrow capability gaps.",
+  "topics": ["Policy & Society"]
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "id": 905,
+  "summary": "Extends normalizing-flow sampling to the isobaric-isothermal ensemble by jointly modeling a fully flexible triclinic simulation box and particle coordinates at a target pressure, yielding direct Gibbs free energy estimates. On monatomic water in cubic and hexagonal ice phases, results closely match established baselines.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 619,
+  "summary": "Shows an Othello-playing sequence model linearly encodes the board when framed as 'my colour' versus 'opponent's colour', refining earlier evidence of nonlinear world models. Simple vector arithmetic on these representations steers the model's play, and further probing reveals how the world model is computed.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1764,
+  "summary": "Learns epsilon-optimal strategies in zero-sum imperfect-information games by applying online mirror descent locally at each information set, with individually decreasing learning rates, regularized losses, and a fixed sampling policy that avoids high-variance importance sampling. Guarantees O(T^-1/2) high-probability convergence with near-optimal dependence on game parameters.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 242,
+  "summary": "Studies situational awareness, a model knowing whether it is in testing or deployment, via 'out-of-context reasoning': finetuning on a test's description without demonstrations, then checking whether models pass it. GPT-3 and LLaMA-1 succeed when training data is augmented, and success improves with model size.",
+  "topics": ["Safety", "Evaluations"]
+ },
+ {
+  "id": 907,
+  "summary": "Uses Track-Any-Point models to isolate task-relevant motion from a few demonstrations and parameterize a low-level controller that reproduces it across scene changes. The resulting robot policies solve kitting, stacking up to four objects, and glue-then-stick path-following from demonstrations collected in minutes.",
+  "topics": ["Agents", "Multimodal"]
+ },
+ {
+  "id": 906,
+  "summary": "Variational quantum Monte Carlo method that recasts finding low-lying excited states as ground-state estimation of an expanded system, avoiding explicit orthogonalization and supporting mixed observables such as transition dipole moments. Combined with FermiNet and Psiformer ansatze, it accurately recovers vertical excitation energies and oscillator strengths up to benzene.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2749,
+  "summary": "Develops a case-based nursing education program of six ChatGPT-built modules grounded in experiential learning theory, following the ADDIE instructional-design process. A five-professor expert panel judged the program suitable for case-based learning, highly usable, and applicable to nursing curricula.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1765,
+  "summary": "Administers validated psychometric inventories to PaLM-family LLMs, finding simulated Big Five personality measurements become reliable and construct-valid in larger, instruction-fine-tuned models. Also shows model personality can be deliberately shaped along target trait dimensions through prompting.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 548,
+  "summary": "Evaluates GPT-3.5 and GPT-4 on 13 affective computing tasks, from aspect extraction and sentiment to suicide-tendency, toxicity, sarcasm, and personality, casting intensity-ranking problems as pairwise classification. The models outperform traditional RNN and transformer baselines on sentiment-, emotion-, and toxicity-related tasks while lagging on others.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1766,
+  "summary": "Builds 'task metamers' that match the statistics of abstract-rule tasks while using a different generative process, separating abstraction from pattern matching in a meta-reinforcement-learning paradigm. Humans perform better on abstract tasks than metamers; common neural architectures show the reverse, doing better on metamers.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 1767,
+  "summary": "Argues network science offers the integrative framework neuroscience needs, reviewing network models and metrics, the connectome, and neural dynamics across development, health, and disease. Recommends funding initiatives, workshops, and cross-disciplinary training to unite the two communities around circuit-tailored network methods.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 908,
+  "summary": "Benchmark of over 100 visual classification tasks drawn chronologically from 30 years of computer vision proceedings, spanning OCR, texture, and scene recognition with dataset sizes across four orders of magnitude. Tests whether continually adapting models grow more efficient as tasks accumulate, challenging current sequential-learning methods.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 909,
+  "summary": "Swaps neural networks for context models from the online-compression literature in Levin Tree Search, keeping the search-effort loss convex and yielding regret guarantees: the policy quickly converges to the in-class optimum. Solves Sokoban, The Witness, 24-puzzle, and Rubik's Cube, domains where most ML methods fail on at least one.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1769,
+  "summary": "Inserts 'slow nodes' along graph edges to upsample the input graph and slow message passing, a plug-and-play change requiring no architecture modification. Improves supervised and self-supervised GNN benchmarks, especially heterophilic ones, and doubles as a random augmentation producing multi-scale views for self-supervised learning.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1768,
+  "summary": "Formal account of placebo tests as assessments of a research design's assumptions against specific departures, with a typology by altered component (outcome, treatment, or population) and assumption type (bias or distributional). Clarifies the extra, often strong, assumptions an informative placebo test itself requires.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 431,
+  "summary": "Reinforced Self-Training (ReST) aligns LLMs by alternating a Grow step that samples a dataset from the current policy with offline-RL Improve steps that reuse that data, cutting cost versus online RLHF. On machine translation it substantially improves quality under automated metrics and human evaluation.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1770,
+  "summary": "Reviews neural-network wavefunction ansatze such as FermiNet and PauliNet that, paired with variational Monte Carlo, solve the electronic Schrodinger equation with high accuracy directly in real space. Surveys methodological foundations, applications to molecular ground and excited states, and open challenges in computational cost and scaling.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1771,
+  "summary": "Distinguishes four meanings of 'AI democratisation' (of use, development, profits, and governance), cataloguing the goals and methods behind each and where they conflict. Argues the phrase should not be reduced to improving accessibility, and that democratising governance is central to navigating trade-offs among the rest.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 432,
+  "summary": "RLHF-Blender is a configurable, modular interface for systematically studying reward learning from diverse feedback types, including demonstrations, rankings, comparisons, and natural-language instructions, plus the human factors affecting their quality. The open framework standardizes experimentation and outlines concrete research directions for multi-type feedback.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 107,
+  "summary": "Scales influence functions to 52B-parameter LLMs via the EK-FAC curvature approximation, making inverse-Hessian-vector products orders of magnitude faster, with TF-IDF filtering and query batching to cut gradient costs. Influence patterns prove sparse and increasingly abstract with scale, yet collapse when key phrases' word order changes.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1772,
+  "summary": "Protocol for PARQAIR-MH: a four-stage process of stakeholder consultation, a three-round Delphi survey, consensus meetings, and toolkit production to establish participatory practices for LGBTQI+-inclusive mental-health AI. Targets fairer data collection, use, and design standards for digital health practice and policy.",
+  "topics": ["Policy & Society", "Science Applications"]
+ },
+ {
+  "id": 1773,
+  "summary": "Perspective on flow-based and other generative ML samplers built for lattice quantum field theory, where exactness guarantees, complex symmetries, and supercomputer-scale custom architectures shape algorithm design. Argues these methods could unlock first-principles lattice-QCD calculations in particle, nuclear, and condensed-matter physics that are otherwise intractable.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 910,
+  "summary": "Outlines how generative ML models are being designed to sample field configurations for lattice quantum chromodynamics, a task demanding exact sampling guarantees, complex symmetries, and scaling custom architectures to top supercomputers. Early success is spurring ML-based sampling development across computational science.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 433,
+  "summary": "Formulates RLHF as a bilevel 'policy alignment' problem in which the upper-level reward-design objective depends on data generated by the lower-level optimal policy, capturing distribution shift that prior formulations ignore. The A-PARL algorithm achieves O(1/T) sample-complexity bounds, with supporting empirical results.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 1774,
+  "summary": "Reviews how AI advances, including self-supervised learning, geometric deep learning, and generative models, are transforming scientific discovery: aiding hypothesis generation, experiment design, and the analysis and simulation of large-scale data across physics, chemistry, and biology. Discusses remaining challenges in implementation, evaluation, and scientific adoption.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1777,
+  "summary": "Introduces factored-observation stochastic games (FOSGs), a POSG refinement separating public from private observations that greatly simplifies decomposition; unrolling a FOSG yields an extensive-form game, and perfect-recall timeable EFGs map back to FOSGs. The correspondence carries EFG techniques like counterfactual regret minimization into multiagent RL.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 1776,
+  "summary": "Scales goal-directed RL exploration by letting designers specify a vast 'proto-goal' space that an autonomous discovery process prunes to controllable, reachable, novel, and relevant goals. Goal-conditioned exploration over the refined space succeeds in three challenging environments where pure novelty- or coverage-seeking falls short.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1775,
+  "summary": "Asks whether moral cognition can be benchmarked against human performance, arguing that judgments hinging on intangibles like intention may have no natural analog in artificial agents. Works through reinforcement-learning and generative-AI examples to show why like-for-like moral evaluation remains an open cognitive-science problem.",
+  "topics": ["Policy & Society", "Evaluations"]
+ },
+ {
+  "id": 912,
+  "summary": "Two exact line-search algorithms for general convex functions, including piecewise-linear and max-composition cases: Delta-Bisection uses subgradients while Delta-Secant uses only function queries, both shrinking a refined optimality region. Each at least halves the x*-gap per iteration or per two queries, and the region's y-extent gives a sharper stopping criterion.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 911,
+  "summary": "Dramatron chains prompts hierarchically so language models can draft long-form scripts with coherent titles, characters, story beats, location descriptions, and dialogue. Fifteen theatre and film professionals co-wrote scripts with it, some later staged, informing analysis of co-creativity, plagiarism, and bias concerns.",
+  "topics": ["Other"]
+ }
+]

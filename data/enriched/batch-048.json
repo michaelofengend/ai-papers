@@ -1,0 +1,152 @@
+[
+ {
+  "id": 820,
+  "summary": "Introduces MPHD, a pre-training method that learns a neural-net mapping from domain descriptions to hierarchical Gaussian-process priors, enabling Bayesian-optimization transfer across heterogeneous search spaces; theory and experiments show improved black-box optimization.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 819,
+  "summary": "Quantifies the fractal structure of natural language, showing it is self-similar across granularities and long-range dependent; links fractal parameters like the Hurst exponent to inference-time scaling laws, offering a lens on why next-token prediction captures multi-level text structure.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2889,
+  "summary": "Short research notes from Anthropic's interpretability team on improving sparse-autoencoder dictionary learning, including an account of 'dying'/ultralow-density features that collapse onto weakly-activating neurons because they never find a useful decoder direction, plus Ghost Grads and tanh-penalty updates.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2737,
+  "summary": "Evaluates the Openwater Headset, a portable optical blood-flow monitor, for detecting large-vessel-occlusion stroke; a deep neural network trained on 70-second speckle-contrast waveforms from 135 patients aims to discriminate occlusion status with higher sensitivity and specificity than prehospital stroke scales.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1701,
+  "summary": "Review of de novo protein design's shift from generating static structures toward designing functional proteins, enabled by deep-learning structure modeling; surveys remaining challenges including sequence-structure co-design, conformational and flexibility control, and antibody and enzyme design.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1700,
+  "summary": "Introduces Metrics Reloaded, a consortium-developed framework for problem-aware selection of validation metrics in biomedical image analysis. A 'problem fingerprint' captures task properties to guide metric choice across classification, detection, and segmentation while flagging common pitfalls, with an accompanying online tool.",
+  "topics": ["Evaluations", "Science Applications"]
+ },
+ {
+  "id": 822,
+  "summary": "Proves that any agent satisfying a regret bound across a broad set of distributional shifts must have learned an approximate causal model of the data-generating process, converging to the true model for optimal agents; connects robustness, transfer learning, and causal inference.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 821,
+  "summary": "Shows efficient exploration sharply reduces the human feedback needed to improve LLMs: an agent fits a reward model online while generating queries via double Thompson sampling with an epistemic-neural-network uncertainty estimate, reaching high performance with far fewer queries.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 420,
+  "summary": "Follow-up to OpenAI's weak-to-strong generalization work: strengthens weak supervision via ensemble learning (bagging/boosting) plus scalable oversight (human-AI interaction, AI-AI debate) to shrink the teacher-student capability gap, and proposes a recursively updated automatic aligner for the superintelligence regime.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1013,
+  "summary": "Proposes a blueprint for evaluating whether LLMs uplift biological-threat creation; in a study with biology experts and students, GPT-4 gave at most a mild, non-conclusive accuracy uplift, offered as a starting point for measuring and tracking such risks.",
+  "topics": ["Safety", "Evaluations"]
+ },
+ {
+  "id": 1702,
+  "summary": "Formulates multi-dimensional online decision-making as bandits with low-rank tensor mean rewards; proposes tensor-elimination and tensor-epoch-greedy algorithms (with and without context) plus a Bayesian tensor-ensemble-sampling method, deriving finite-time regret bounds and outperforming methods that ignore the low-rank structure.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 540,
+  "summary": "Open Whisper-style speech models (100M-1B params) rebuilt on the E-Branchformer architecture using only public data; OWSM v3.1 beats the prior Transformer-based v3 on most ASR and translation benchmarks with up to 25% faster inference and shows emergent zero-shot contextual biasing.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1703,
+  "summary": "Tackles causal discovery under dense unobserved confounding: shows that, under the independent-mechanisms principle, widespread latent confounders leave a detectable statistical footprint, enabling an adjusted score-based algorithm to approximately recover a sparse linear-Gaussian DAG at scale, robustly to assumption violations.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 823,
+  "summary": "Uses meta-learning to amortize Solomonoff induction into neural networks, generating training data from Universal Turing Machines to expose models to broad algorithmic patterns; experiments with LSTMs and Transformers show UTM data yields networks that learn near-universal prediction strategies.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2738,
+  "summary": "Editorial for a journal dossier, staged as a dialogue with ChatGPT, introducing themes on artificial intelligence and gender from a Latin American critical-humanities perspective.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 609,
+  "summary": "Studies whether individual neurons recur across GPT-2 models trained from different seeds: correlating activations over 100M tokens finds 1-5% of neurons are 'universal,' usually interpretable, and taxonomizes their functional roles such as deactivating attention heads and shaping next-token entropy.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 824,
+  "summary": "Introduces NeuPL-JPSRO, a neural population-learning algorithm that transfers skills across the population and provably converges to a coarse correlated equilibrium in n-player general-sum games; it scales to MuJoCo control and capture-the-flag, enabling adaptive coordination among heterogeneous, mixed-motive players.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 826,
+  "summary": "Software package for building E(3)-equivariant neural networks (equivariant to 3D translations, rotations, and reflections); by guaranteeing exact transformation behavior for quantities tied to 3D objects, it improves data efficiency and accuracy over ordinary models on physical and atomistic tasks.",
+  "topics": ["Training & Scaling", "Science Applications"]
+ },
+ {
+  "id": 825,
+  "summary": "Empirical study of asynchronous Local-SGD for language-model training across heterogeneous distributed workers; identifies server-side momentum on stale gradients as the key obstacle and proposes delayed Nesterov updates plus worker-adaptive local steps, matching synchronous Local-SGD at up to 150M parameters.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 831,
+  "summary": "A query-key-value Transformer architecture for normal-form games that respects their action-permutation equivariance; it achieves strong results on equilibrium solving, deviation-gain estimation, and ranking, and internally develops a recognizable iterative equilibrium-refinement pattern when computing Nash equilibria.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 830,
+  "summary": "Uses generative adversarial learning to compute generalized Nash equilibria in pseudo-games and competitive equilibria in Arrow-Debreu economies; GAES learns solvers from samples of problem instances, with computational and sample-complexity bounds for concave pseudo-games and an environmental-economics Kyoto-mechanism application.",
+  "topics": ["Reinforcement Learning", "Policy & Society"]
+ },
+ {
+  "id": 829,
+  "summary": "A module that stitches pretrained foundation models—frozen or trainable—into larger multimodal networks, letting them process and generate across modalities at different rates; keeping components frozen avoids catastrophic forgetting, demonstrated across games, robotics, and multimodal input-output systems.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 828,
+  "summary": "Direct Reward Fine-Tuning backpropagates a differentiable reward (e.g., a human-preference score) through the full diffusion sampling chain to fine-tune image generators, outperforming RL-based methods; efficient variants DRaFT-K and DRaFT-LV truncate or de-noise the gradient, sharply improving Stable Diffusion aesthetics.",
+  "topics": ["Multimodal", "Alignment"]
+ },
+ {
+  "id": 827,
+  "summary": "Derives the first approximate-Nash-equilibrium loss for normal-form games that admits unbiased Monte Carlo estimation, enabling standard non-convex stochastic optimization such as SGD with provable guarantees; experiments show it can outperform prior state-of-the-art equilibrium solvers.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 437,
+  "summary": "Generalized Knowledge Distillation trains a student LLM on its own self-generated sequences using teacher feedback, fixing the train/inference distribution mismatch of standard KD and supporting arbitrary student-teacher losses; it integrates with RLHF and improves summarization, translation, and arithmetic-reasoning distillation.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 98,
+  "summary": "Constructs proof-of-concept deceptive LLMs (e.g., writing secure code when told it's 2023 but inserting vulnerabilities for 2024) and shows the backdoor survives SFT, RL, and adversarial safety training—most in larger CoT models; adversarial training can even teach models to better hide the trigger.",
+  "topics": ["Safety", "Robustness & Security"]
+ },
+ {
+  "id": 1705,
+  "summary": "Randomized controlled crossover trial in 21 adults with prolonged sleep-onset latency: an EEG headband delivering acoustic pulses anti-phase to alpha oscillations significantly reduced sleep-onset latency (about 10.5 minutes, 29% lower) versus sham, suggesting a drug-free intervention for sleep-onset insomnia.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1704,
+  "summary": "Perspective contrasting two accounts of biological and machine vision—feedforward discriminative inference versus Helmholtz-style inversion of a generative model—and asks how the primate brain combines them, written by authors spanning both viewpoints to chart a path past the dichotomy.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 832,
+  "summary": "TDB, a transformer with discrete bottleneck(s), learns compressed latent codes from observation-action sequences in partially observed environments; the bottleneck indices yield interpretable cognitive maps that an external solver uses to plan shortest paths far more efficiently, while matching vanilla in-context accuracy.",
+  "topics": ["Agents", "Interpretability"]
+ },
+ {
+  "id": 833,
+  "summary": "Finds that distributional reinforcement learning—learning the full distribution of outcomes rather than just expected value—better explains macaque anterior cingulate cortex neuronal responses than classic expectation-based RL, suggesting a common neural mechanism for reward-guided learning.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ }
+]

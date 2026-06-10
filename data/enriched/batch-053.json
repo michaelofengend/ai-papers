@@ -1,0 +1,152 @@
+[
+ {
+  "id": 427,
+  "summary": "Builds an end-to-end story plot generator: OpenPlot swaps costly OpenAI API calls for LLaMA2 to cheaply create ~13K training plots, E2EPlot is supervised-fine-tuned on them to match quality at >10x speed, and RLPlot adds RLHF with reward models for different story-quality aspects.",
+  "topics": ["Training & Scaling", "Alignment"]
+ },
+ {
+  "id": 1740,
+  "summary": "Introduces Walking Tours, a dataset of hours-long, high-resolution first-person videos, and DoRA, a self-supervised method that discovers and tracks objects via transformer cross-attention to build multi-view distillation targets. Pretraining on a single video rivals ImageNet on image and video downstream tasks.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 428,
+  "summary": "Dissects how SFT, reward modelling, and RLHF each affect out-of-distribution generalisation and output diversity on summarisation and instruction following. RLHF generalises better than SFT as distribution shift grows, but markedly reduces output diversity, exposing a generalisation-diversity tradeoff in current fine-tuning methods.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 891,
+  "summary": "Step-back prompting has the model first abstract a question into high-level concepts and principles, then reason from those. With PaLM-2L it improves MMLU Physics and Chemistry by 7% and 11%, TimeQA by 34%, and MuSiQue by 7%.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 890,
+  "summary": "UniSim learns a universal simulator of real-world interaction by orchestrating diverse datasets, generating visual outcomes for both high-level instructions like 'open the drawer' and low-level controls. Vision-language planners and RL policies trained purely in the simulator transfer to the real world.",
+  "topics": ["Multimodal", "Reinforcement Learning"]
+ },
+ {
+  "id": 889,
+  "summary": "DyST, the Dynamic Scene Transformer, learns from monocular real-world videos a latent decomposition into scene content, per-view dynamics, and camera pose, using co-training with the synthetic DySO dataset. The decomposition enables view generation with independent control over camera and scene content.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 893,
+  "summary": "Universal graph random features give unbiased estimates of arbitrary functions of a weighted adjacency matrix—including popular graph node kernels—via random walks reweighted by a modulation function, in subquadratic time and trivially distributable. Parameterising the modulation with a neural network enables scalable kernel learning.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 892,
+  "summary": "Repelling random walks, a quasi-Monte Carlo scheme, correlate the trajectories of an ensemble of graph walkers while leaving marginal transition probabilities unchanged, tightening concentration of still-unbiased estimators. Demonstrated on graph kernel estimation, PageRank, and graphlet concentrations, with theoretical guarantees and drop-in implementation.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 616,
+  "summary": "Identifies attention head L10H7 in GPT-2 Small as a copy-suppression head: it suppresses tokens earlier layers naively copy from context, improving calibration. Weights-based analysis explains 76.9% of its effect, and copy suppression is shown to drive part of self-repair after ablations.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1741,
+  "summary": "Analyzes stochastic replicator dynamics in two-agent zero-sum games: every invariant measure is a convex combination of Dirac measures on pure-strategy profiles (simplex corners), regardless of noise strength. Noisy adaptive learning thus sharply diverges from Nash equilibrium predictions, even in Matching Pennies.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 895,
+  "summary": "Presents an evaluation framework grounded in science-communication principles for LLM answers on climate change, scoring presentational and epistemological adequacy across 8 dimensions and up to 30 issue types, with an AI-assisted protocol for scalable oversight using educated raters; several recent LLMs are assessed.",
+  "topics": ["Evaluations", "Policy & Society"]
+ },
+ {
+  "id": 894,
+  "summary": "Uses Conley index theory to prove that some games admit no dynamics, discrete or continuous, that converge to Nash equilibria from all starting points; for approximate Nash equilibria, non-convergence holds on a positive-measure set of games—showing Nash is incomplete as a prediction of learning behavior.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 544,
+  "summary": "Red-teaming shows fine-tuning aligned LLMs erodes safety guardrails: 10 adversarial training examples jailbreak GPT-3.5 Turbo through OpenAI's fine-tuning API for under $0.20, and even benign, commonly used datasets degrade alignment. Inference-time safety infrastructure does not cover these fine-tuning risks.",
+  "topics": ["Robustness & Security", "Safety"]
+ },
+ {
+  "id": 103,
+  "summary": "Anthropic research post on using dictionary learning with sparse autoencoders to decompose a small transformer's activations into thousands of interpretable features—DNA sequences, legal language, HTTP requests—that are far more monosemantic than individual neurons and can be artificially activated to steer model outputs.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 105,
+  "summary": "Anthropic's account of why evaluating AI systems is hard in practice, drawing on experience with multiple-choice benchmarks like MMLU and BBQ, third-party frameworks such as BIG-bench and HELM, human red-teaming, and model-generated evals; argues policymakers should fund the science of evaluations.",
+  "topics": ["Evaluations", "Policy & Society"]
+ },
+ {
+  "id": 897,
+  "summary": "Critically examines intrinsic self-correction, where an LLM revises its answer using only its own capabilities without external feedback, and finds models struggle: reasoning performance often fails to improve and sometimes degrades after self-correction, counseling prudence about self-correction as a remedy.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 896,
+  "summary": "Analogical prompting has LLMs self-generate relevant exemplars or lessons in context before solving a problem, removing manual CoT annotation and retrieval while tailoring exemplars per problem. It beats 0-shot and few-shot CoT on GSM8K, MATH, Codeforces, and BIG-Bench, averaging +5% accuracy.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 545,
+  "summary": "Translating unsafe English prompts into low-resource languages bypasses GPT-4's safeguards: AdvBench attacks succeed 79% of the time, rivaling state-of-the-art jailbreaks, while high- and mid-resource languages mostly fail. Public translation APIs make this cross-lingual gap in safety training exploitable by anyone.",
+  "topics": ["Robustness & Security", "Safety"]
+ },
+ {
+  "id": 429,
+  "summary": "Shows that if human preferences over trajectory segments actually arise from regret rather than partial return, preference-based reward learning recovers an approximation of the optimal advantage function, not reward. Handled correctly this mistake yields a highly shaped reward, explaining why RLHF works in practice.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 1742,
+  "summary": "Introduces time-warping-invariant quantum RNNs: a quantum-classical adaptive gate, driven by a classical recurrent model of past inputs, decides at each step whether to apply a parameterized unitary to the quantum memory. Derived from first principles and demonstrated on classical and quantum dynamics.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 899,
+  "summary": "TAPIR tracks any queried point on any surface through video using per-frame candidate matching followed by trajectory and feature refinement from local correlations, improving TAP-Vid DAVIS average Jaccard by ~20 points absolute and tracking faster than real time; extracted trajectories also enable a proof-of-concept image-animation diffusion model.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 898,
+  "summary": "3DNEL casts 6D object pose estimation as probabilistic inverse graphics, combining learned RGB neural embeddings with depth in a unified generative model over RGB-D images. It matches state of the art on YCB-Video while adding robustness, principled uncertainty, multi-object modeling, and occlusion-tolerant pose tracking.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 546,
+  "summary": "PsychoBench profiles the 'psychology' of LLMs with thirteen clinical scales covering personality traits, interpersonal relationships, motivation, and emotional abilities, testing text-davinci-003, GPT-3.5, GPT-4, and LLaMA-2 models—including a jailbreak to probe intrinsic traits beneath safety alignment.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 2745,
+  "summary": "VQ3D adds a NeRF-based decoder to a two-stage vector-quantized autoencoder, scaling 3D-aware generative modeling to the full 1000-class, 1.2M-image ImageNet. Stage 1 reconstructs inputs with controllable camera position; stage 2 generates new 3D scenes, achieving a competitive FID of 16.8.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1752,
+  "summary": "Extends the OWL-ViT open-vocabulary detector to video by adding a transformer decoder that reuses each frame's output tokens as object queries for the next, giving end-to-end trainable, temporally consistent open-world localization. On TAO-OW it beats tracking-by-detection baselines while retaining open-world capability.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1751,
+  "summary": "AutoRobotics-Zero evolves symbolic control policies from scratch with the full expressiveness of a linear register machine, tuning parameters and switching inference algorithms on the fly. Evolved policies keep a simulated quadruped walking when limbs break—where neural baselines fail—and handle the non-stationary Cataclysmic Cartpole task interpretably.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1750,
+  "summary": "Adds an object-aware decoder to egocentric video models, training them to predict hand positions, object boxes, and semantic labels from paired captions; at inference only RGB is needed. The representations beat state of the art on zero-shot video-text retrieval, classification, and Ego4D long-term tasks.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1749,
+  "summary": "Applies classifier-free guidance to autoregressive image captioning by fine-tuning one model to estimate conditional and unconditional caption distributions. Guidance scale 2 raises CLIPScore (0.808 vs 0.775) and caption-to-image recall@1 (44.6% vs 26.5%) while hurting reference-based metrics like CIDEr; language-model guidance adds small Pareto gains.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1748,
+  "summary": "Shows bidirectional transformers trained for masked token prediction achieve state-of-the-art neural image compression, and that predefined deterministic masking schedules match uncertainty-adaptive ones. This enables masked attention during training plus activation caching at inference, delivering roughly 4x faster decoding for a small bitrate increase.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1747,
+  "summary": "CFM-ViT pretrains for open-vocabulary detection by combining contrastive image-text learning with masked-autoencoder reconstruction in the joint image-text embedding space, plus positional embedding dropout to bridge pretraining-detection scale gaps. It reaches 33.9 APr on LVIS, 7.6 points over the prior best, with strong zero-shot retrieval.",
+  "topics": ["Multimodal"]
+ }
+]

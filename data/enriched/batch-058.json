@@ -1,0 +1,152 @@
+[
+ {
+  "id": 553,
+  "summary": "Argues frontier AI developers need an internal audit function: an organizationally independent body reporting to the board that evaluates risk management, control, and governance processes, surfaces ineffective practices, keeps directors accurately informed about risk, and serves as a contact point for whistleblowers.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 1018,
+  "summary": "OpenAI program awarding ten $100,000 grants for experiments in democratic processes to decide what rules AI systems should follow, seeking scalable methods for public input into AI behavior within legal bounds.",
+  "topics": ["Policy & Society", "Alignment"]
+ },
+ {
+  "id": 554,
+  "summary": "Trains 400 models (up to 9B parameters, 900B tokens) in data-constrained regimes: repeating data up to four epochs matches unique data, beyond which extra compute yields little; proposes a validated scaling law for compute optimality and tests code augmentation and lighter filtering.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 555,
+  "summary": "Argues developers must evaluate frontier models for dangerous capabilities (cyberoffense, manipulation) and for the propensity to apply them harmfully ('alignment evaluations'), making such evals central to responsible training, deployment, and security decisions and to informing policymakers about extreme risks.",
+  "topics": ["Safety", "Evaluations", "Policy & Society"]
+ },
+ {
+  "id": 1818,
+  "summary": "Shows simple convex combinations of adversarial-attack loss and IBP bounds — losses whose single over-approximation coefficient spans lower-to-upper bounds on worst-case loss — achieve state-of-the-art verified robustness-accuracy trade-offs, and that tighter worst-case approximations do not necessarily improve those trade-offs.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1817,
+  "summary": "Validates Persian parent- and youth self-report versions of the Proposed Specifiers for Conduct Disorder scale in 974 Iranian parent-child dyads, confirming a gender-invariant hierarchical four-factor structure, acceptable parent-child agreement, and incremental validity of child reports for predicting conduct problems.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1819,
+  "summary": "Theory showing variance-weighted least-squares regression makes mirror-descent value iteration nearly minimax-optimal in sample complexity for infinite-horizon linear MDPs; the derived Deep Variance Weighting scheme improves value-based deep RL agents on MinAtar benchmarks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 556,
+  "summary": "Evaluates ChatGPT and OPT on spoken language understanding benchmarks: the largest models near supervised intent-classification accuracy zero/few-shot across languages given oracle transcripts, but slot filling is weak and performance degrades with ASR errors, limiting practical SLU use.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1821,
+  "summary": "Hybridizes classic RL cognitive models with neural networks, replacing components one-by-one: hybrids fit human learning data as well as unconstrained ANNs while staying interpretable, revealing classic-RL-like reward learning plus reward-blind mechanisms and memory contents absent from classic models.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 1820,
+  "summary": "Open dataset (Allen Institute OpenScope) of two-photon calcium imaging from pyramidal-cell somata and apical dendrites in mouse visual cortex, tracked over multiple days in awake behaving mice — enabling tests of theories that assign apical dendrites a distinct role in learning.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1822,
+  "summary": "OMLE pairs optimistic exploration with maximum-likelihood model estimation, provably learning near-optimal policies in polynomially many samples across a rich class of sequential decision problems — tabular and factored MDPs, low witness rank, and previously intractable partially observable settings like weakly-revealing POMDPs.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 557,
+  "summary": "First comprehensive evaluation of ChatGPT's causal reasoning: it is a good causal explainer but poor causal reasoner, with serious causal hallucination that in-context learning and chain-of-thought exacerbate; performance is prompt-sensitive and far better on explicit than implicit causality.",
+  "topics": ["Evaluations", "Reasoning"]
+ },
+ {
+  "id": 1823,
+  "summary": "Probabilistic successor-representation theory that optimally weighs new observations against existing knowledge and maintains multiple context-specific SRs, selected by prediction accuracy; the model captures animal behavior in contextual-memory tasks and links SR theory to hippocampal context-dependent decision-making.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 558,
+  "summary": "Surveys 51 experts from AGI labs, academia, and civil society on 50 candidate safety and governance practices; respondents on average agreed with all, with ~98% backing pre-deployment risk assessments, dangerous-capability evaluations, third-party audits, usage restrictions, and red teaming.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 2753,
+  "summary": "Finds annotators label the same items differently under factual versus normative framings, so models trained on factual labels systematically mis-predict human rule-violation judgments — a measurement error whose impact can exceed factors like dataset size, challenging standard ML labeling practice.",
+  "topics": ["Policy & Society", "Alignment"]
+ },
+ {
+  "id": 1019,
+  "summary": "Uses GPT-4 to automatically write natural-language explanations of individual neuron behavior in language models and score their predictive quality, releasing (imperfect) explanations and scores for every neuron in GPT-2 as a step toward automated interpretability.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 243,
+  "summary": "Shows chain-of-thought explanations can systematically misrepresent the real causes of predictions: biasing inputs (e.g., reordering answer options) sways answers — accuracy drops up to 36% on BIG-Bench Hard — while GPT-3.5 and Claude 1.0 rationalize the biased answers without mentioning the bias.",
+  "topics": ["Reasoning", "Alignment"]
+ },
+ {
+  "id": 1824,
+  "summary": "Proposes dataflows and mapping algorithms that eliminate the zero-padding overhead of dilated and transposed convolutions on low-power spatial accelerators, requiring minimal architectural change while substantially reducing end-to-end training time and energy for CNN and GAN workloads.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 623,
+  "summary": "Trains k-sparse linear probes for 100+ features across seven LLMs (70M-6.9B parameters): early layers represent features in superposition via sparse neuron combinations, middle layers contain dedicated neurons for higher-level contextual features, and representational sparsity tends to increase with scale.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 244,
+  "summary": "Probes LLMs' metalinguistic abilities — generating syntactic trees and phonological generalizations — via prompting; OpenAI's o1 vastly outperforms other models, plausibly because chain-of-thought mirrors the structured reasoning of linguistic analysis, suggesting such tasks can inform linguistic theory.",
+  "topics": ["Evaluations", "Reasoning"]
+ },
+ {
+  "id": 113,
+  "summary": "Informal note arguing 'distributed representations' bundles two distinct ideas — composition and superposition — that differ in generalization and in what can be linearly computed from them, and that are fundamentally in tension, reframing classic neural-coding examples like Thorpe's local-to-distributed codes.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 112,
+  "summary": "Essay articulating mechanistic interpretability's long-term aspirations once superposition is solved: discovering larger-scale structure above features and circuits, exploiting universality across models, bridging microscopic findings (like induction heads) to macroscopic behavior, and automating interpretability to scale analysis to massive networks.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 111,
+  "summary": "Preliminary notes from Anthropic's interpretability team, centered on attacking superposition via dictionary learning over dense-model activations; also covers features as the simplest factorization, dictionary-learning worries, fractional dimensionality and 'pressure', a two-circle memorization phenomenon, and weight and attention-head superposition.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 625,
+  "summary": "Traces how transformers retrieve facts via attention-edge interventions, revealing a three-step mechanism: early MLPs enrich the last-subject representation with attributes, relation information propagates to the prediction position, and attention heads whose parameters encode subject-attribute mappings extract the attribute.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 624,
+  "summary": "Systematizes the mechanistic-interpretability workflow and automates circuit identification: the ACDC algorithm prunes computational-graph edges to isolate the subnetwork implementing a behavior, rediscovering all five component types of GPT-2 Small's Greater-Than circuit while selecting 68 of 32,000 edges.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 559,
+  "summary": "Practitioner's guide to deploying LLMs across NLP tasks: surveys GPT- and BERT-style models, the influence of pretraining, training, and test data, use and non-use cases per task type, and deployment considerations like spurious biases, efficiency, cost, and latency.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1825,
+  "summary": "Five incentive-compatible studies (N=2,508) apply Rawls's Veil of Ignorance to AI governance: participants choosing principles without knowing their own position more often direct an AI assistant to prioritize the worst-off, driven by fairness concerns rather than risk attitudes, and endorse the choice more robustly afterward.",
+  "topics": ["Policy & Society", "Alignment"]
+ },
+ {
+  "id": 1826,
+  "summary": "Develops six retest-reliable tasks measuring pragmatic abilities in 228 German-speaking three-to-five-year-olds and uses a computational cognitive model to trace individual differences to a latent pragmatics construct, grounding study of how pragmatic ability relates to other cognitive abilities.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 626,
+  "summary": "Neuron to Graph (N2G) automatically distills a neuron's behavior on its dataset examples into an interpretable graph using truncation, saliency, and augmented samples; graphs aid visualization and enable automatic validation by comparing predicted token activations to ground truth, scaling neuron interpretation beyond manual methods.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1828,
+  "summary": "Philosophical analysis of linguistic communication between humans and conversational agents that formulates ideal norms of conversation, then shows how such norms, applied across different discursive domains, could ground aligning dialogue agents with human values.",
+  "topics": ["Alignment", "Policy & Society"]
+ }
+]

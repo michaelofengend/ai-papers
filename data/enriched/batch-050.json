@@ -1,0 +1,152 @@
+[
+ {
+  "id": 610,
+  "summary": "Identifies 'successor heads' — attention heads that increment ordered tokens like days, months, and numbers — recurring across GPT-2, Pythia, and Llama-2 from 31M to 12B parameters. A shared set of mod-10 features underlies incrementation, enabling vector-arithmetic edits of head behavior.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 423,
+  "summary": "Finetuning strong models on labels from weaker supervisors yields performance above the weak teacher but below the strong model's ceiling, suggesting RLHF may scale poorly to superhuman models. An auxiliary confidence loss lets a GPT-2-level supervisor recover near-GPT-3.5 performance from GPT-4.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 422,
+  "summary": "Shows reward models are underspecified: similar in-distribution accuracy but divergent rewards under the distribution shift induced by alignment, driving overoptimization. Ensembles — especially across pretraining seeds — mitigate reward hacking in RL and reranking, but shared error patterns mean hacking persists.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1720,
+  "summary": "A biologically plausible Helmholtz-machine model of the hippocampal formation in which 5-10 Hz theta oscillations gate information flow, implementing a fast wake-sleep algorithm with local learning rules. The model infers latent states, generates sensory predictions, and learns ring-attractor path integration transferable across environments.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2743,
+  "summary": "A Bakhtinian dialogic inquiry treating ChatGPT-4 as a conversational partner and co-author, concluding it lacks a dialogical self with personal I-positions and instead exhibits an impersonal 'discursive self,' with speculation on future paths toward genuine dialogic partnership.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 845,
+  "summary": "Clone-structured causal graphs acquire in-context learning through interpretable mechanisms — learning template (schema) circuits, context-sensitive retrieval, and rebinding novel tokens to template slots — with capabilities emerging at increasing overparameterization. Evidence suggests similar mechanisms underlie ICL in transformer LLMs.",
+  "topics": ["Training & Scaling", "Interpretability"]
+ },
+ {
+  "id": 844,
+  "summary": "XTR trains multi-vector retrieval to fetch the most important document tokens first, letting candidates be scored from retrieved tokens alone. Scoring becomes two-to-three orders of magnitude cheaper than ColBERT while improving BEIR state of the art by 2.8 nDCG@10.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 843,
+  "summary": "Proves linearly q^pi-realizable MDPs differ from linear MDPs only by states where all actions have near-equal value; skipping those states reduces the problem to a linear MDP, yielding the first polynomial-sample-complexity online RL algorithm for this setting, robust to misspecification.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 842,
+  "summary": "Analyzes memory/accuracy trade-offs for scaling video-first encoders past 16 frames, finding that masking up to 75% of video during contrastive pretraining is the most robust approach. The resulting 1B-parameter models process 4.3-minute videos and beat LLM-aggregation pipelines on YouCook2 and EgoSchema.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 841,
+  "summary": "Formalizes continual reinforcement learning via a new mathematical language for cataloging agents: continual agents are best understood as searching over policies indefinitely rather than converging to a fixed solution. Multi-task RL and continual supervised learning emerge as special cases.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 854,
+  "summary": "Hummingbird performs dense vision tasks like segmentation and depth estimation in-context via nearest-neighbor retrieval from prompts of annotated features, without finetuning or task-specific decoders. A pretraining protocol using attention within and across images brings it near finetuned specialist performance.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 853,
+  "summary": "Analyzes how the posterior probability of state-action optimality flows through an MDP, showing that sampling from it guarantees Bayesian regret bounds. VAPOR, a tractable variational convex approximation, retains the bound and connects to Thompson sampling, K-learning, and maximum-entropy exploration.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 852,
+  "summary": "Agents trained purely by imitation on passive data generalize experiment-then-exploit strategies at test time, inferring causal links never present in training; natural-language explanations enable generalization even from perfectly confounded data. LLMs show the same causal-intervention generalization from few-shot prompts with explanations.",
+  "topics": ["Agents", "Reasoning"]
+ },
+ {
+  "id": 851,
+  "summary": "Proposes fine-grained mIoU variants plus worst-case metrics that reduce segmentation evaluation bias toward large objects and majority classes, benchmarking 15 networks across 12 natural and aerial datasets and distilling best practices for architecture and loss-function choices.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 850,
+  "summary": "Analytically derives the optimal Langevin-diffusion preconditioner — an inverse Fisher information covariance built from averaged log-target gradient outer products — and turns it into an adaptive MALA scheme that learns the preconditioning from gradient history, proving notably robust in high dimensions versus adaptive and Riemannian samplers.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 849,
+  "summary": "LambdaBeam searches over arbitrary lambda functions composing DSL operations, training a neural policy on semantic vector representations of lambda execution behavior to handle loops and higher-order functions — outperforming neural, symbolic, and LLM-based synthesis on integer list manipulation.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 848,
+  "summary": "Naively aligning vision representations to human similarity judgments distorts local structure and hurts performance; a global-local transform aligns global structure while preserving local geometry, improving few-shot learning and anomaly detection and suggesting human-like global organization aids learning from few examples.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 847,
+  "summary": "Feature Likelihood Divergence evaluates generative models from samples via feature-space density estimation, jointly scoring novelty, fidelity, and diversity. Unlike FID, it detects overfitting to training data, while matching prior metrics' intuitions across image datasets and model classes.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 846,
+  "summary": "An ImageNet-based benchmark simulating the drastic, content-preserving obfuscations malicious actors use to evade content-moderation classifiers — going beyond ImageNet-C and Lp-bounded adversaries — to spur development of models robust to realistic evasion attacks.",
+  "topics": ["Robustness & Security", "Evaluations", "Multimodal"]
+ },
+ {
+  "id": 855,
+  "summary": "A distributional RL framework representing return distributions with finite-dimensional mean embeddings, yielding new dynamic-programming and temporal-difference algorithms with convergence guarantees; combined with deep RL, it improves over baseline distributional agents on the Arcade Learning Environment.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 611,
+  "summary": "Contrastive Activation Addition steers LLMs by adding residual-stream 'steering vectors' — averaged activation differences between positive and negative behavior examples — during inference. On Llama 2 Chat, CAA precisely modulates behaviors such as hallucination and sycophancy, stacks with finetuning and prompting, and barely degrades capabilities.",
+  "topics": ["Interpretability", "Alignment"]
+ },
+ {
+  "id": 856,
+  "summary": "Online meta-RL planning under model uncertainty: an algorithm meta-learns relatedness across a sequence of tasks to inform per-task planning, with regret bounds shrinking as tasks grow more numerous and similar. The theory motivates slowly increasing discount factors with the number of tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 857,
+  "summary": "Revisits dynamic evaluation — adapting LM parameters online via gradient descent on incoming test tokens. Confirms test-time adaptation improves prediction and analyzes adaptation speed in terms of sample efficiency alongside the computational overhead of gradient computation and parameter updates.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 99,
+  "summary": "Probes Claude 2.0 with 70 LM-generated decision scenarios (loans, visas, job offers), systematically varying subjects' age, race, and gender. Finds positive discrimination favoring women and non-white subjects and discrimination against older people; prompt interventions like instructing the model to ignore demographics sharply reduce both.",
+  "topics": ["Policy & Society", "Evaluations"]
+ },
+ {
+  "id": 1721,
+  "summary": "Real-time brain-state-dependent stimulation during insight problem-solving shows people use clues more successfully and report more Aha! moments when clues arrive during spontaneously up-regulated right temporal alpha oscillation; alpha-phase/gamma-power coupling inversely correlates with insight frequency.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 861,
+  "summary": "SEAHORSE provides 96K summaries with human ratings on six quality dimensions (comprehensibility, repetition, grammar, attribution, main ideas, conciseness) across 6 languages, 9 systems, and 4 datasets; metrics trained on it transfer strongly to out-of-domain benchmarks TRUE and mFACE.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 860,
+  "summary": "MingOfficial couples structured career records and historical texts for 9,376 Ming-dynasty officials with a graph neural network over both modalities, lifting nuanced identity classification — such as civil officials holding military power — from 24.6% to 98.2% F1, released as a public dataset and interactive tool.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 859,
+  "summary": "Concordia is a library for generative agent-based models: LLM-driven agents act by describing intentions in natural language while a Game Master agent, inspired by tabletop RPGs, translates actions into effects in physically, socially, or digitally grounded simulations, including API calls to real apps.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 858,
+  "summary": "A benchmark of English and Romanian datasets testing inference over statements with spatial prepositions. PaLM and GPT-3 show large performance variability across model sizes, prompts, and languages, with no model reaching human performance.",
+  "topics": ["Evaluations", "Reasoning"]
+ },
+ {
+  "id": 612,
+  "summary": "Simplified representations (SVD, clustering) of Transformers trained on Dyck languages and code completion match the full model in-distribution but diverge systematically under distribution shift — sometimes failing where the model generalizes, sometimes generalizing better — questioning whether simplification-based mechanistic interpretations predict novel-situation behavior.",
+  "topics": ["Interpretability"]
+ }
+]

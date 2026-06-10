@@ -1,0 +1,152 @@
+[
+ {
+  "id": 106,
+  "summary": "Scales influence functions to 52B-parameter LLMs using EK-FAC approximations to trace which training sequences most shape a model's outputs. Influence is spread across many examples, and larger models generalize more abstractly from training data rather than parroting memorized text.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1778,
+  "summary": "A generative model trained on a single trot style learns a disentangled latent gait space for quadrupeds: driving individual latent dimensions continuously varies cadence, step height, and stance duration online. Demonstrated on ANYmal robots with robust, perturbation-reactive locomotion.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 620,
+  "summary": "Causal ablation analysis reveals the Hydra effect: ablating one attention layer causes downstream layers to compensate for it, while late MLPs counterbalance by downregulating the top token. This self-repair occurs without dropout and complicates circuit-level attribution.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 434,
+  "summary": "Systematizes open problems and fundamental limitations of RLHF across human feedback, reward modeling, and policy optimization; surveys techniques to understand, improve, and complement it; and proposes auditing and disclosure standards for societal oversight of RLHF-trained systems.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 1779,
+  "summary": "Q-Mixing learns Q-values against each pure-strategy opponent, then averages them under the believed opponent distribution to play any mixture without retraining; an opponent-policy classifier refines the mixture from observations, outperforming direct training in grid-soccer and social-dilemma games.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 435,
+  "summary": "Position paper framing 'deceptive alignment monitoring' — detecting models that covertly modify their behavior while appearing aligned — and mapping emerging directions in backdoor detection, adversarial ML, and interpretability, urging the adversarial ML community to engage.",
+  "topics": ["Safety", "Robustness & Security"]
+ },
+ {
+  "id": 2750,
+  "summary": "SIGGRAPH talk on how diffusion-based image generators such as DALL·E 2 work under the hood and how understanding their architectures helps deploy them as practical tools in production creative workflows.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1780,
+  "summary": "Uses multitask learning to test whether clinical models exploit shortcut correlations with sensitive attributes, demonstrating the method on radiology and dermatology tasks. Also finds unfairness can arise without shortcutting, arguing for holistic fairness mitigation in medical AI.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 621,
+  "summary": "Tests whether circuit analysis scales: in 70B Chinchilla, logit attribution, attention visualization, and activation patching identify the output heads behind multiple-choice answering. 'Correct letter' heads partially encode an 'Nth item in enumeration' feature, but the explanation doesn't fully generalize.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 109,
+  "summary": "Decomposing questions into subquestions answered in separate contexts makes model reasoning more faithful than chain of thought — stated reasoning better reflects what actually drives the answer under perturbation tests — while sacrificing little accuracy.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 108,
+  "summary": "Tests whether chain of thought reflects models' actual reasoning by truncating it, inserting mistakes, paraphrasing, and substituting filler tokens. Answers often don't depend on the stated reasoning, and measured faithfulness drops as models become larger and more capable.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 1781,
+  "summary": "Analyzes the GNN latent spaces of neural algorithmic reasoners, finding two failure modes — lost resolution between similar values and poor out-of-range handling — and addresses them with softmax aggregation and latent-space decay, improving most CLRS-30 algorithms with Triplet-GMPNN.",
+  "topics": ["Reasoning", "Training & Scaling"]
+ },
+ {
+  "id": 1782,
+  "summary": "Meta-learns evolution-strategy update rules with an order-invariant self-attention parametrization: strategies meta-trained on small analytic problems generalize to unseen tasks, population sizes, and horizons, outperform neuroevolution baselines on control tasks, and can be reverse-engineered into a competitive explicit heuristic.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1785,
+  "summary": "Proposes CodeGrid, a 2D grid representation of source code that preserves spatial layout, motivated by evidence that image-based code representations rival AST-based ones; argues layout and flow carry signal that token- and AST-centric representations leave unexploited.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1784,
+  "summary": "Parametrizes genetic-algorithm selection and mutation-rate adaptation as attention modules and meta-evolves them across diverse tasks. The resulting Learned Genetic Algorithm beats adaptive GA baselines, generalizes to unseen problems, dimensions, and budgets, and its operators plug into conventional GAs.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1783,
+  "summary": "Introduces MultiMedQA (six medical QA benchmarks plus HealthSearchQA) with a human evaluation framework. Flan-PaLM hits 67.6% on MedQA, 17+ points over prior state of the art, and instruction prompt tuning yields Med-PaLM, rated encouragingly on factuality and harm but below clinicians.",
+  "topics": ["Science Applications", "Evaluations"]
+ },
+ {
+  "id": 1786,
+  "summary": "Monograph on information-theoretic agent design for data-efficient reinforcement learning: regret analysis guides what information an agent should seek, how to seek it, and what to retain, illustrated with simple agents and computational results.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 436,
+  "summary": "Audits openness of instruction-tuned 'open source' LLM projects across code, training data, weights, RLHF data, licensing, documentation, and access. Most are only partially open — instruction-tuning data and careful documentation are rarest — with consequences for fairness and accountability.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1787,
+  "summary": "Defines Attributable to Identified Sources (AIS), an evaluation framework and two-stage human annotation pipeline testing whether generated text can be verified against a provided source, validated on conversational QA, summarization, and table-to-text tasks with guidelines and annotated data released.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1016,
+  "summary": "Argues frontier models need regulation built on standard-setting, registration and reporting requirements, and compliance mechanisms — potentially licensure and supervisory enforcement — and proposes initial safety standards such as pre-deployment risk assessments and external scrutiny, since industry self-regulation alone is insufficient.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 549,
+  "summary": "Attributes jailbreaks to two safety-training failure modes — competing objectives and mismatched generalization — and uses them to construct attacks that succeed on every unsafe prompt tested against GPT-4 and Claude v1.3, arguing for safety-capability parity rather than relying on scale.",
+  "topics": ["Robustness & Security", "Safety"]
+ },
+ {
+  "id": 1788,
+  "summary": "Studies with ~3,300 participants show people judge real-world AI systems along warmth and competence: systems optimizing interests aligned with humans read as warmer, autonomous ones as more competent, and these judgments predict willingness to cooperate in a prisoner's dilemma.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2891,
+  "summary": "Interpretability research notes: the puzzling 'intermediate' finite-data regime in toy superposition models turns out to be an optimization artifact — models shift from memorizing points to memorizing correlated clusters — plus discussion of safety-relevant features to seek in LLMs and skip-trigram follow-ups.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1791,
+  "summary": "Proves low reward variance doesn't save FruitChain from centralization: modeling mining procedures as costly oracles and using equilibria with virtual payoffs, shows a fully centralized equilibrium exists where all miners join a single pool to share puzzle-instance costs.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1790,
+  "summary": "Evaluates combinatory categorial grammar against context-free grammar as a model of human syntactic structure-building using fMRI of naturalistic story listening: CCG-derived measures fit left posterior temporal lobe signals better, and are spatially separable from transformer next-word predictability effects.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1789,
+  "summary": "CoDoC learns from modest data when to trust an AI diagnostic prediction versus defer to a clinician. On breast-cancer and tuberculosis screening it outperforms either alone, cutting false positives at matched sensitivity while substantially reducing clinician workload.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1792,
+  "summary": "Handbook chapter comparing data formats optimized for design, materials, processes, and inspection in additive manufacturing, covering the data types associated with six phases from initial design through build planning to the qualified part.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1793,
+  "summary": "Human experiments (n=158 plus an online replication) show temporal discounting increases with learned reward volatility over delays up to four months; fMRI links this to reduced hippocampal-prefrontal coupling, suggesting uncertainty curtails prospective simulation and partly explains individual impatience.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 110,
+  "summary": "Builds GlobalOpinionQA from cross-national surveys to quantify whose opinions LLM answers resemble. A Constitutional AI model defaults toward US and some European/South American views; country-targeted prompting shifts responses but can surface stereotypes, and translation doesn't align answers with native speakers' views.",
+  "topics": ["Policy & Society", "Evaluations"]
+ },
+ {
+  "id": 1797,
+  "summary": "Applies AlphaZero-style Monte Carlo Tree Search to Snake, formulated as a stochastic single-player MDP tied to Hamiltonian-cycle properties and conjectured NP-hard; the agent is the first to exceed a 0.5 win rate, versus a near-zero random baseline.",
+  "topics": ["Reinforcement Learning"]
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "id": 727,
+  "summary": "Measures texture-vs-shape bias in vision-language models: VLMs inherit texture bias from their vision encoders yet become notably more shape-biased after multimodal training, and language prompting can steer classifications toward shape cues only to a limited extent.",
+  "topics": ["Multimodal", "Evaluations"]
+ },
+ {
+  "id": 371,
+  "summary": "MONA combines myopic optimization with far-sighted approval rewards so RL agents avoid learning multi-step reward hacks humans cannot detect. Across LLM tasks modeling delegated oversight and encoded reasoning, plus sensor-tampering gridworlds, it prevents multi-step reward hacking that ordinary RL produces.",
+  "topics": ["Alignment", "Safety", "Reinforcement Learning"]
+ },
+ {
+  "id": 372,
+  "summary": "Combines scalable oversight with weak-to-strong generalization: debate helps a weak model extract trustworthy context from an untrustworthy strong model, and ensembles of weak supervisors exploit long debate arguments, yielding more robust labels for finetuning the strong model.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 175,
+  "summary": "Shows out-of-context generalization of misbehavior: finetuning a model on synthetic pretraining-style documents that merely discuss reward hacking, without demonstrating it, increases the model's propensity to reward hack—evidence that training-data discourse about misalignment can itself induce it.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 728,
+  "summary": "Mind Evolution scales inference-time compute with a genetic algorithm in which an LLM generates, crosses over, refines, and selects candidate solutions. It solves over 99% of TravelPlanner and Natural Plan tasks within fixed budgets, surpassing prior state of the art, and improves with parallelized compute.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 373,
+  "summary": "Causal reward modeling for RLHF enforces counterfactual invariance so reward predictions ignore irrelevant variables, mitigating spurious correlations behind length bias, sycophancy, conceptual bias, and discrimination. As a drop-in RLHF enhancement, it improves reliability and fairness on synthetic and real preference datasets.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 176,
+  "summary": "Anthropic's Alignment Science team curates open technical problems for reducing catastrophic AI risk: capability and alignment evaluations, model cognition and chain-of-thought faithfulness, AI control, scalable oversight, honesty, adversarial robustness, and unlearning—a 'tasting menu' intended to spur work from external researchers.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 729,
+  "summary": "Builds thermodynamics on Gács' coarse-grained algorithmic entropy, proving algorithmic versions of Jarzynski's equality, Landauer's principle, and the second law for measure-preserving systems with Markovian coarse-graining. Algorithmic entropy gives a state's actual work capacity without presupposing macrovariables or probabilistic ensembles.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1503,
+  "summary": "Roadmap on machine learning for the glass transition: reviews successful ML applications predicting slow glassy dynamics from amorphous structure, open problems in transferability and interpretability, and introduces the GlassBench dataset for benchmarking emerging methods on 2D and 3D glass formers.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2885,
+  "summary": "Informal research notes from Anthropic's interpretability team. This edition details the team's current dictionary-learning recipe—JumpReLU-based sparse autoencoder and crosscoder training with optimization techniques building on Rajamanoharan et al.—shared as a starting point for external SAE training efforts.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2718,
+  "summary": "Analyzes a privacy-preserving sample of roughly 1.5M ChatGPT conversations: by mid-2025 around 10% of the world's adults use it, non-work messages grew to about 70%, and practical guidance, information seeking, and writing dominate usage—early gender gaps in adoption have largely closed.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2717,
+  "summary": "ASAL uses vision-language foundation models to automate Artificial Life discovery—finding simulations that produce target phenomena, open-ended temporal novelty, or diverse behaviors—across substrates like Lenia, Boids, and cellular automata, uncovering previously unseen lifeforms and quantifying open-endedness in human-aligned ways.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1518,
+  "summary": "Overview of the BirdCLEF+ 2025 challenge on identifying birds, amphibians, mammals, and insects from passive acoustic soundscapes recorded in Colombia's Middle Magdalena Valley, covering the multi-taxonomic dataset, participant approaches, and results for machine-learning-based biodiversity monitoring.",
+  "topics": ["Science Applications", "Evaluations"]
+ },
+ {
+  "id": 1517,
+  "summary": "Investigates neurons in LLMs that are specific to relations (e.g., a person's birthplace) independent of the entities involved: a statistical selection method identifies such neurons in Llama-2, and deactivating them selectively degrades factual generation for the targeted relation, with cumulative effects across neurons.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1516,
+  "summary": "Identifies open technical research problems in managing risks from open-weight AI model releases, motivated by the difficulty of applying deployment-time safeguards once weights are publicly distributed and can be modified by downstream actors.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 1515,
+  "summary": "MT2KD builds a general-purpose audio encoder jointly handling speech recognition, audio tagging, and speaker verification: multi-teacher knowledge distillation aligns three single-task teachers into one student, followed by multi-task finetuning. It nears single-task performance (under 4% relative WER increase) and beats multi-task training from scratch.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1514,
+  "summary": "FRACTAL disaggregates response-level feedback into sentence-level pseudo-labels via multiple-instance learning and learning-from-label-proportions with priors and likelihood calibration. Across 6 datasets it reaches up to 93% of fully supervised performance using ~10% of gold labels; its step-level scores add 5% on math-reasoning RLHF.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1513,
+  "summary": "Editorial introducing RSS: Data Science and Artificial Intelligence, the Royal Statistical Society's new journal, situating it in the Society's long tradition of data, evidence, and decisions and outlining its scope across data science and AI research.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1512,
+  "summary": "Argues machine unlearning conflates distinct goals—removing a datum's influence from model weights versus suppressing unwanted outputs—and that current methods deliver neither in ways matching policy aims like privacy or copyright compliance, drawing lessons for generative-AI regulation and research.",
+  "topics": ["Robustness & Security", "Policy & Society"]
+ },
+ {
+  "id": 1511,
+  "summary": "Transforms any source image into a novel subject purely by rearranging its tiles, jointly optimizing the arrangement and diffusion-based generation by alternating denoising with energy-minimizing optimal matching. Extends optical-illusion generation to arbitrary pre-specified sources (e.g., the Mona Lisa), with results improving as tile count grows.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1510,
+  "summary": "Explores using large language models to support collective decision-making—eliciting and aggregating individual preferences expressed in natural language into group choices—and examines design considerations for such AI-mediated group decision processes.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1509,
+  "summary": "Position paper arguing that robust AI personalization requires a 'Human Context Protocol': a standardized, user-controlled way to store and share personal preferences and context across AI systems instead of siloed per-product memory, supporting portability, privacy, and user agency.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1508,
+  "summary": "Distral trains task-specific RL workers regularized toward a shared 'distilled' policy that captures behavior common across tasks, with the shared policy learned as the centroid of task policies under a joint objective. Yields more efficient transfer and more stable, hyperparameter-robust learning on complex 3D environments.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1507,
+  "summary": "QuArch offers 1,500 human-validated QA pairs on computer architecture spanning processor design, memory systems, and performance optimization. The best closed model scores 84% versus 72% for the top small open model—memory systems and interconnects are hardest—and finetuning on QuArch lifts small-model accuracy up to 8%.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1506,
+  "summary": "Describes the Plasma Control System Simulation Platform (PCSSP), a Simulink-based framework that standardizes how tokamak plasma controllers and plant models are designed, simulated, deployed, and tested, summarizing recent upgrades and its central role in fusion plasma-control-system development.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1505,
+  "summary": "Book chapter on psychosocial interventions for supporting female survivors of domestic abuse, framing gender as a social determinant of mental health. Not an AI/ML research work.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1504,
+  "summary": "Recasts verifiable accountable subgroup multi-signatures (vASM) as proxy signatures for delegating signing power, proposing four compartment-based and hierarchical threshold constructions—using recursive vASM, Shamir secret sharing, nested secret sharing, and hierarchical threshold secret sharing—and comparing their efficiency and security with pairing-based proxy signatures.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 730,
+  "summary": "Introduces CompWoB, 50 compositional web-automation tasks: prompted GPT-3.5/GPT-4 agents fall from 94% success on base tasks to 24.9%, while agents finetuned on base tasks degrade less (85.4% to 54.8%). A data-balanced HTML-T5++ achieves 61.5% zero-shot, though instruction reordering still hurts.",
+  "topics": ["Agents", "Evaluations"]
+ },
+ {
+  "id": 1519,
+  "summary": "In harmonic games, where players' interests conflict, continuous-time follow-the-regularized-leader is Poincaré recurrent and vanilla discrete FTRL can fall into perpetual best-response cycles; adding an extrapolation step (optimistic or mirror-prox variants) guarantees convergence to Nash equilibrium from any initialization with O(1) regret.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1520,
+  "summary": "Builds a 6,000+-sample kinetic Monte Carlo dataset of upconverting nanoparticle emission spectra, trains a heterogeneous graph neural network on a novel nanostructure representation, and applies gradient-based optimization to design core-shell structures with 6.5x higher predicted emission under 800nm illumination than any training example.",
+  "topics": ["Science Applications"]
+ }
+]

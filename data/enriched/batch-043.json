@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1645,
+  "summary": "Presents PromptBook, a collection of prompting strategies (example-based, instruction-based, chain-of-thought) that let LLMs generate low-level robot manipulation code zero-shot for novel skills. A mobile manipulator achieves 83% picking and 50-100% drawer-handling success, with the LLM inferring task-appropriate gripper orientation.",
+  "topics": ["Agents", "Reasoning"]
+ },
+ {
+  "id": 1644,
+  "summary": "Introduces PhysObjects, a dataset of ~457K physical-concept annotations (material, fragility) for household objects. Fine-tuning a VLM on it improves understanding of physical properties and, paired with an LLM planner, raises planning and real-robot task success on manipulation requiring physical reasoning.",
+  "topics": ["Multimodal", "Agents"]
+ },
+ {
+  "id": 1643,
+  "summary": "Aggregates demonstrations from 22 robot types across 21 institutions (527 skills) into a standardized dataset and trains RT-X generalist policies. The high-capacity models show positive transfer, improving multiple robots' capabilities by leveraging cross-platform experience.",
+  "topics": ["Agents", "Training & Scaling"]
+ },
+ {
+  "id": 1008,
+  "summary": "Announces GPT-4o ('omni'), a single natively multimodal model handling text, audio, and images end-to-end. It supports real-time voice interaction (~320ms latency), matches GPT-4 Turbo on text and code, and improves vision, audio, and non-English performance while running faster and cheaper.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 407,
+  "summary": "Proposes SANDE, a method to remove backdoors from generative LLMs without a clean reference model. It uses Overwrite Supervised Fine-tuning when the trigger is known and a two-stage framework when trigger patterns are unknown, erasing backdoor mappings while preserving normal behavior.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1651,
+  "summary": "A scoping review of proposals to replace human research participants with generative-AI surrogates. Argues these substitutions, though motivated by lower cost and broader data diversity, conflict with the foundational values of representation, inclusion, and understanding that justify human participation.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1650,
+  "summary": "Proposes a design space for intelligent, interactive writing assistants spanning five dimensions—task, user, technology, interaction, and ecosystem—derived from a systematic review of 115 papers, offering a shared framework to compare existing systems and guide design of new ones.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1652,
+  "summary": "Introduces the mixture-of-agents hidden Markov model (MoA-HMM), inferring action values from model-free and model-based agents plus hidden-state dynamics of their contributions. Applied to a rat reward task, it reveals shifts from model-based exploration to exploitation to disengagement, predicting response times and OFC encoding.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 1653,
+  "summary": "AlphaFold 3 replaces specialized tools with a single diffusion-based architecture predicting joint structures of complexes spanning proteins, nucleic acids, small molecules, ions, and modified residues. It substantially improves accuracy on protein-ligand, protein-nucleic-acid, and antibody-antigen interactions over prior state-of-the-art docking and predictors.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1009,
+  "summary": "OpenAI's first Model Spec, a document specifying intended model behavior to guide RLHF and human data labeling. It organizes guidance into broad objectives, hard rules (e.g., follow the chain of command, comply with laws), and default behaviors balancing user and developer goals.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 762,
+  "summary": "Tightens and corrects lower-bound proofs showing UCT can incur tower-exponential regret on the D-chain environment, and that a polynomial UCT variant suffers doubly-exponential regret. Extends the results to AlphaGo's MCTS and descendants (AlphaZero, Leela Zero), proving the same doubly-exponential regret.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 408,
+  "summary": "Introduces a benchmark of 324 LLM pairs—one benign, one that misbehaves only when unlikely to be caught—to test whether interpretability methods detect alignment fakers using inputs where both behave identically. Of five detection strategies tried, one identifies 98% of alignment-faking models.",
+  "topics": ["Safety", "Interpretability", "Evaluations"]
+ },
+ {
+  "id": 1010,
+  "summary": "Describes OpenAI's tools for identifying AI-generated content: a classifier detecting DALL-E 3 images, tamper-resistant audio watermarking, and adoption of C2PA provenance metadata. OpenAI also joins the C2PA steering committee to promote cross-industry content-authenticity standards.",
+  "topics": ["Robustness & Security", "Policy & Society"]
+ },
+ {
+  "id": 771,
+  "summary": "π2vec represents black-box policies as comparable feature vectors by combining pretrained foundation-model state representations with successor features that capture future feature occurrence. Trained offline on fixed trajectories, the vectors support linear-regression prediction of held-out policy performance, enabling efficient offline policy evaluation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 770,
+  "summary": "Presents 'neural phishing,' a practical data-extraction attack: inserting as few as tens of benign-looking sentences into training data lets an adversary later extract memorized PII such as credit-card numbers, achieving 10%—sometimes 50%—success using only vague priors about the data.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 769,
+  "summary": "Proposes MMCC, the first method to analyze privacy amplification by sampling for generic matrix mechanisms (as used in DP-FTRL). Via a conditional composition theorem treating correlated outputs as independent, it gives near-tight guarantees and shows binary-tree DP-FTRL can asymptotically match amplified DP-SGD noise.",
+  "topics": ["Robustness & Security", "Training & Scaling"]
+ },
+ {
+  "id": 768,
+  "summary": "Visual Particle Dynamics (VPD) learns, end-to-end from posed RGB-D videos, a latent 3D particle representation of scenes, a neural dynamics simulator, and a renderer—without privileged physics information. Its 3D inductive biases enable compositional generalization and long-horizon prediction for tasks like video editing and robotic planning.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 767,
+  "summary": "Examines language models through the lens of lossless compression, showing strong predictors are strong compressors. Evaluates LLMs as general-purpose compressors against standard methods and argues for reframing AI problems from a compression rather than purely predictive standpoint.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 766,
+  "summary": "A Bayesian approach to online continual learning that places a state-space model over a (possibly pretrained) neural representation's linear predictor weights, modeling non-stationarity via a parameter-drift transition. Efficient Kalman-filter recursions track weight posteriors while SGD adapts the forgetting coefficient; validated on CIFAR-100 and CLOC.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 765,
+  "summary": "Soft MoE is a fully-differentiable sparse Transformer replacing hard token routing with soft assignments, where each expert processes weighted combinations of all tokens. On visual recognition it beats dense ViTs and prior MoEs—Soft MoE Huge/14 adds 40x parameters for only 2% more inference time.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 764,
+  "summary": "Proposes a provably SE(3)-equivariant method for precise relative-pose prediction in robotic placement tasks (e.g., hanging a mug on a rack). It factorizes the problem into an SE(3)-invariant scene representation and geometric reasoning layers, learning from few demonstrations and generalizing across object variations more precisely than baselines.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 763,
+  "summary": "Characterizes the asymptotic utility of correlated-noise mechanisms for differentially private learning, giving analytical bounds for linear regression and convex objectives. It proves correlated noise provably beats independent-noise DP-SGD as a function of effective dimension and condition number, with an efficient near-optimal correlation function.",
+  "topics": ["Robustness & Security", "Training & Scaling"]
+ },
+ {
+  "id": 1657,
+  "summary": "Scales opponent shaping to high-dimensional general-sum games with temporally-extended actions and long horizons for the first time. Analyzing prior meta-state/history representations, it proposes a simplified method, SHAPER, that improves individual and collective outcomes across challenging environments, and shows common testbeds like CoinGame are inadequate.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1656,
+  "summary": "Introduces Game Theoretic Assisted Pruning (GTAP), which uses power indices from cooperative game theory to rank neurons by their contribution and prune deep networks with little accuracy loss. Empirically it achieves a better compactness-accuracy trade-off than traditional pruning across several network types.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1655,
+  "summary": "Proposes iterative coalition-sampling algorithms to approximate the core (and least-core) of cooperative games, avoiding the large linear programs that bottleneck prior methods. It scales to weighted voting, induced-subgraph, and marginal-contribution-network games, and complements Shapley values for identifying influential features in explainable AI.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1654,
+  "summary": "Gives a formal definition of the intention with which an agent acts, grounded in structural causal influence models and philosophy of intent. It relates to actual causality and instrumental goals—central to safe-AI work—and shows how to infer RL agents' and language models' intentions from behavior.",
+  "topics": ["Safety", "Agents"]
+ },
+ {
+  "id": 775,
+  "summary": "A position paper arguing that sequence-based foundation models should reshape black-box optimization and experimental design. It organizes the relationship to prior work and outlines opportunities: using free-form text to enrich task understanding, Transformers to craft optimization strategies, and improved performance prediction over unseen search spaces.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 774,
+  "summary": "A zero-shot 3D human pose estimation method that uses large multimodal models as priors: natural-language descriptions of physical contact are converted into differentiable losses constraining pose optimization. It reconstructs people in close contact—handling self- and person-to-person contact—rivaling methods needing costly contact annotations.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 773,
+  "summary": "Characterizes forms of compositional generalization desirable in program synthesis, building a meta-benchmark over RobustFill and DeepCoder. Proposes ExeDec, which predicts execution subgoals to synthesize programs step-by-step; with Transformers it improves synthesis and generalization, and as a prompting strategy it helps LLMs generalize in programming-by-example.",
+  "topics": ["Reasoning", "Evaluations"]
+ },
+ {
+  "id": 772,
+  "summary": "Adapts Gemini to clinical medicine, fine-tuning on 2.2M samples spanning radiology, histopathology, ophthalmology, dermatology, and genomics to create the Mosaic suite. Radiologists rated 65% of its chest X-ray reports and 48% of 3D head-CT reports equal-or-better than experts'—the first expert-level 3D report generation.",
+  "topics": ["Science Applications", "Multimodal"]
+ }
+]

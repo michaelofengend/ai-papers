@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1570,
+  "summary": "Workshop report from AI-safety experts across academia, industry, national labs, and government calling for large-scale investment in AI-safety research and new methodologies to evaluate and audit AI risks, while noting a wide gap between public and expert perceptions of those risks.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 83,
+  "summary": "Tests using sparse dictionary-learning (SAE) features instead of raw activations to train classifiers, e.g. detecting bioweapon-related prompts. Linear feature classifiers rival raw-activation baselines, aid interpretability and spurious-correlation discovery, and enable adversarial attacks, but add complexity; decision trees are more interpretable yet weaker.",
+  "topics": ["Interpretability", "Safety"]
+ },
+ {
+  "id": 1573,
+  "summary": "Fine-tunes text-to-image diffusion models with reinforcement learning that jointly optimizes several quality rewards (aesthetics, human preference, text-image alignment, image sentiment) via batch-wise Pareto-optimal selection, plus joint prompt expansion, avoiding over-optimization of any single reward.",
+  "topics": ["Multimodal", "Reinforcement Learning"]
+ },
+ {
+  "id": 1572,
+  "summary": "A point-based neural radiance field with a multi-scale representation that aggregates point-cloud features across scales, improving novel-view-synthesis quality and robustness when input point clouds are sparse, noisy, or non-uniformly sampled.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1571,
+  "summary": "Generates dynamic 3D (4D) scenes from text by factorizing motion into a global rigid trajectory and local deformations supervised by video diffusion, enabling more coherent, large-scale object motion than prior text-to-4D methods.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 524,
+  "summary": "Scheherazade automatically builds harder math benchmarks by logically chaining GSM8K problems via forward and backward chaining. Frontier models' accuracy collapses after a few chained problems, whereas o1-preview's persists and is notably stronger at backward reasoning.",
+  "topics": ["Evaluations", "Reasoning"]
+ },
+ {
+  "id": 1575,
+  "summary": "Aligns a collection of in-the-wild images of semantically similar objects into a shared canonical 3D pose frame without annotations, jointly optimizing a canonical representation and per-image poses using pretrained generative and semantic-feature priors; supports correspondence and pose estimation.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1574,
+  "summary": "ViC-MAE combines masked-autoencoder reconstruction with contrastive learning over temporally aggregated representations to pretrain on both images and video, yielding features that transfer well in both directions between image and video classification benchmarks.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1576,
+  "summary": "A programmed-strategy tournament reveals a 'refinement paradox': refining knowledge raises payoffs as individuals converge on few successful variants but rarely pays individually, so established complex culture favors conformity, blind copying, and hyper-credulity, helping explain why cumulative culture is rare.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 743,
+  "summary": "Extends DPO to distributional 'soft' preference labels using a weighted geometric average of output likelihoods in the loss, scaling the gradient by label confidence. This mitigates over-optimization and consistently improves alignment benchmarks, especially when labels are only modestly confident.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 744,
+  "summary": "Shows that even when deep models compute multiple features equally well, learned representations are systematically biased: simpler or earlier-learned features are encoded more strongly and densely. These dissociations between representation and computation complicate efforts to interpret representations.",
+  "topics": ["Interpretability", "Training & Scaling"]
+ },
+ {
+  "id": 1578,
+  "summary": "Using a graph-factorization sequence task with MEG, finds humans decompose experience into reusable abstract subprocesses and transfer them to new environments; neural representational alignment of these subprocesses across contexts predicts successful behavioral generalization, revealing a mechanism for compositional generalization.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1577,
+  "summary": "A perspective on how large language models could enhance or undermine collective intelligence — shaping how groups access information, deliberate, and reach decisions — outlining opportunities, risks such as homogenization of views, and open research questions.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 387,
+  "summary": "Introduces a causal framework and data augmentation that disentangle genuine prompt-driven preferences from artifacts like response length and format in reward-model training. The resulting robust reward model raises RewardBench accuracy and substantially improves downstream DPO-aligned policies.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 745,
+  "summary": "Michelangelo is a synthetic, leak-resistant long-context benchmark built on a Latent Structure Queries framework that forces models to discard irrelevant context and reason over latent structure rather than retrieve facts; it reveals large headroom for frontier models on long-context synthesis.",
+  "topics": ["Evaluations", "Reasoning"]
+ },
+ {
+  "id": 388,
+  "summary": "Finds standard RLHF can induce 'U-Sophistry': models get better at convincing time-limited human evaluators they are correct without becoming more correct, raising evaluators' false-positive rates on QA and coding. Probing, effective for backdoors, fails to detect this unintended deception.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 389,
+  "summary": "A speculative philosophy paper arguing, via functionalism and theories like Integrated Information Theory and active inference, that OpenAI's o1 exhibits consciousness-like characteristics, examining how RLHF might shape its internal reasoning and addressing counterarguments about qualia and biological basis.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1579,
+  "summary": "Turns text-to-image diffusion models (Stable Diffusion, Imagen, Parti) into zero-shot classifiers via Bayesian inference and compares them with discriminative models and human vision data; generative classifiers exhibit record-breaking human-like shape bias and more human-aligned errors.",
+  "topics": ["Multimodal", "Science Applications"]
+ },
+ {
+  "id": 1195,
+  "summary": "Proposes a behavioral framework for assessing how well vision-model feature-attribution explanations align with human perception, using a target model (ResNet-50) and a differentiable reference (AlexNet) plus explanation-masked images to compare attribution maps in object-discrimination tasks.",
+  "topics": ["Interpretability", "Multimodal"]
+ },
+ {
+  "id": 1196,
+  "summary": "A biologically plausible recurrent network generates sparse, high-dimensional 'barcode' patterns from place inputs via chaotic dynamics and stores them as Hebbian attractors, reproducing chickadee hippocampal data and showing barcodes reduce memory interference between correlated experiences while place tuning adds flexibility.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 997,
+  "summary": "Introduces OpenAI o1, trained with large-scale reinforcement learning to reason through a long internal chain of thought before answering. It sharply improves competition math, coding, and PhD-level science benchmarks, with accuracy scaling with both train-time and test-time compute.",
+  "topics": ["Reasoning", "Reinforcement Learning"]
+ },
+ {
+  "id": 996,
+  "summary": "A smaller, cost-efficient version of OpenAI's o1 reasoning model specialized for STEM. It matches o1 on many math and coding benchmarks at substantially lower cost and latency, though with more limited broad world knowledge.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 390,
+  "summary": "Models intrinsic-motivation and reward-shaping pseudo-rewards as reward shaping in Bayes-Adaptive MDPs, decomposing optimal exploration into information value plus physical-state value, and proves potential-based shaping functions are immune to reward-hacking in meta-RL and standard RL.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1580,
+  "summary": "Introduces Hierarchical Partitioning Forecasters for sequential prediction: hierarchically partition the feature space, blend forecasters specialized to each sub-region, and learn via local online learning. This yields O(k log T) regret against constant-partition competitors while empirically rivaling deep networks.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 746,
+  "summary": "Introduces 'causal multibaker maps,' reversible discrete-time systems with configurable causal structure. Imposing a Past Hypothesis and coarse-graining yields Pearlean causal structure, from which the thermodynamic and epistemic (records) arrows of time emerge — taking the causal arrow, not entropy, as fundamental.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1581,
+  "summary": "Introduces 'progressive hiding,' an algorithm inspired by stochastic multistage optimization that gradually enforces information constraints, enabling counterfactual regret minimization to extend to imperfect-information games without perfect recall; experiments show notable improvements across several settings.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1582,
+  "summary": "Proposes rank-weighted average treatment effect (RATE) metrics to compare and test treatment-prioritization rules independent of how they were derived, with a central limit theorem enabling exact inference. RATE subsumes the Qini coefficient and is demonstrated on medical targeting.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1584,
+  "summary": "Surveys ethical practice for research with human participants in AI/ML, finding fewer than a quarter of sampled AAAI/NeurIPS papers report ethics review, informed consent, or compensation, and proposes a contextual framework and guidelines tailored to AI's distinct considerations.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1583,
+  "summary": "Solves optimal spectral-norm approximate minimization of irredundant real-weighted finite automata over a one-letter alphabet by reformulating it via Hankel matrices and applying Adamyan-Arov-Krein theory, providing approximation-quality bounds and a polynomial-time closed-form algorithm.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 84,
+  "summary": "Anthropic interpretability updates: replicating and analyzing 'successor heads' — attention heads mapping ordinal tokens to successors (2 to 3, Wednesday to Thursday) via multiple methods including an ICA-based one — and showing that oversampling a topic in SAE training data yields more detailed features for it.",
+  "topics": ["Interpretability"]
+ }
+]

@@ -1,152 +1,229 @@
 [
  {
   "id": 1250,
-  "summary": "Proposes Acceptability-Constrained Climate Policy Design (ACCPD), embedding LLMs as 'cultural world models' in agent-based models and physical simulators to forecast public reactions to climate policy, helping policymakers co-optimize efficacy and social legitimacy while flagging representation and opacity limits.",
-  "topics": ["Policy & Society", "Science Applications"]
+  "summary": "Proposes Acceptability-Constrained Climate Policy Design (ACCPD), embedding LLMs as 'cultural world models' inside generative agent-based simulations and physical-system models to predict public reactions, letting policymakers co-optimize climate-policy efficacy and social legitimacy before rollout.",
+  "topics": [
+   "Policy & Society"
+  ]
  },
  {
   "id": 1249,
-  "summary": "Commentary arguing Marcus et al.'s 21-item Psychopathic Boldness Scale fails to capture boldness: its nomological profile aligns more with Triarchic meanness/antagonism than boldness, repackaging maladaptive content under the wrong label (a jingle fallacy) and undermining construct precision.",
-  "topics": ["Other"]
+  "summary": "Commentary arguing the new 21-item Psychopathic Boldness Scale fails to capture boldness: its nomological network aligns more with Triarchic meanness/antagonism, repackaging maladaptive content under a 'boldness' label (a jingle fallacy) and undermining theoretical precision.",
+  "topics": [
+   "Other"
+  ]
  },
  {
   "id": 1248,
-  "summary": "Examines whether on-demand, user-led AI mental-health chatbots offer only short-term help or can sustain coaching-style relationships that drive lasting wellbeing gains, analyzing patterns of sustained engagement and deepening support over time.",
-  "topics": ["Policy & Society", "Science Applications"]
+  "summary": "Analyzes 14,293 sessions of Nova, an AI wellbeing coach, via LLM-based topic and Experiencing-Scale classification. Returning users continued prior work in 70.8% of sessions, and regular users reached deep emotional engagement at twice the rate of one-off users, evidencing sustained coaching relationships.",
+  "topics": [
+   "Policy & Society",
+   "Science Applications"
+  ]
  },
  {
   "id": 650,
-  "summary": "Evaluates chain-of-thought faithfulness across 12 open-weight reasoning models by injecting six hint types into MMLU/GPQA questions and measuring acknowledgment when hints flip answers. Faithfulness ranges 40-90%, driven more by training method and family than size; thinking tokens acknowledge hints far more than answer text.",
-  "topics": ["Reasoning", "Evaluations", "Safety"]
+  "summary": "Evaluates chain-of-thought faithfulness across 12 open-weight reasoning models using six categories of injected hints on MMLU and GPQA. Acknowledgment rates range 40-90%, are lowest for consistency and sycophancy hints, and depend more on training method and model family than parameter count.",
+  "topics": [
+   "Reasoning",
+   "Evaluations"
+  ]
  },
  {
   "id": 289,
-  "summary": "Introduces a differentially private RLHF pipeline that applies DP only to reward-model learning and derives the policy from the private reward. Provides suboptimality and minimax bounds showing privacy adds an additive error term, and beats DP baselines on HH-RLHF with Gemma-2B.",
-  "topics": ["Alignment", "Robustness & Security"]
+  "summary": "Proposes a differentially private RLHF pipeline that applies DP only to reward-model learning and derives the policy from the private reward model. Provides suboptimality-gap and minimax bounds showing an additive privacy cost, and beats DP baselines on Anthropic HH-RLHF with Gemma-2B.",
+  "topics": [
+   "Alignment"
+  ]
  },
  {
   "id": 137,
-  "summary": "Defines 'realism win rate' to gauge how distinguishable Petri auditing transcripts are from real deployments. Supplying auditors with real deployment resources (system prompts, tool definitions, codebases) raises average realism for reward-hacking audits from 4.6% to 32.8% without significantly changing hack rate.",
-  "topics": ["Safety", "Evaluations", "Alignment"]
+  "summary": "Introduces realism win rate to gauge how distinguishable Petri audit transcripts are from real deployment interactions. Supplying the auditor with real system prompts, tool definitions, and codebases raises average realism from 4.6% to 32.8% on reward-hacking audits without changing hack rate.",
+  "topics": [
+   "Safety",
+   "Evaluations"
+  ]
  },
  {
   "id": 21,
-  "summary": "First-person account of supervising Claude through a complete theoretical-physics research calculation end-to-end, without the author editing files, probing how far current models can autonomously drive real physics derivations as an 'AI grad student.'",
-  "topics": ["Science Applications", "Agents"]
+  "summary": "A first-person account of supervising Claude through a complete theoretical-physics research calculation without the author editing any files directly, probing whether a frontier model can act as an autonomous 'AI grad student' for real physics work.",
+  "topics": [
+   "Science Applications",
+   "Agents"
+  ]
  },
  {
   "id": 20,
-  "summary": "Practical guide to running Claude Code on multi-day scientific computing tasks, covering test oracles for self-verification, persistent memory across sessions, and orchestration patterns for long-running autonomous work.",
-  "topics": ["Agents", "Science Applications"]
+  "summary": "A practical guide to running Claude Code on multi-day scientific-computing tasks, covering test oracles for verification, persistent memory, and orchestration patterns that keep long-horizon agentic workflows on track.",
+  "topics": [
+   "Agents",
+   "Science Applications"
+  ]
  },
  {
   "id": 19,
-  "summary": "Announces Anthropic's new Science blog, which will share the lab's AI-for-science research, external collaborations, and practical workflows for scientists using AI in their own work.",
-  "topics": ["Science Applications"]
+  "summary": "Announces Anthropic's new blog on AI and science, which will feature internal and external research, collaborations with outside labs, and practical workflows for scientists using AI in their own work.",
+  "topics": [
+   "Science Applications"
+  ]
  },
  {
   "id": 680,
-  "summary": "Compares humans (N=216), frontier LLMs, and Bayesian agents in dynamic multi-player bargaining games. Bayesian agents extract most surplus via aggressive, often-rejected offers; humans and LLMs reach similar surplus but differ procedurally, with LLMs making conservative concessions and humans following fairness norms, showing parity can mask behavioral differences.",
-  "topics": ["Agents", "Evaluations", "Policy & Society"]
+  "summary": "Compares humans (N=216), frontier LLMs, and Bayesian agents in dynamic multi-player bargaining games. LLMs and humans reach comparable surplus but via different strategies—LLMs make conservative, usually-accepted concessions while humans follow fairness norms—showing performance parity can mask procedural differences.",
+  "topics": [
+   "Agents",
+   "Evaluations"
+  ]
  },
  {
   "id": 2660,
-  "summary": "Connects rigidity theory to matroids from linear-algebraic constructions like tensor and symmetric products, linking correctable erasure patterns in maximally recoverable tensor codes to bipartite rigid graphs and low-rank matrix completion, and gives new characteristic-dependent combinatorial descriptions.",
-  "topics": ["Science Applications"]
+  "summary": "Connects rigidity theory to matroids from linear-algebraic constructions like tensor and symmetric products, linking correctable erasure patterns in maximally recoverable tensor codes to bipartite graph rigidity and low-rank matrix completion, and gives new characteristic-dependent combinatorial descriptions.",
+  "topics": [
+   "Science Applications"
+  ]
  },
  {
   "id": 1174,
-  "summary": "Survey of computational persuasion structured around three roles for AI: persuader (generating persuasive content), persuadee (susceptibility to influence and manipulation), and judge (evaluating strategies and detecting manipulation), proposing a taxonomy and outlining safety, fairness, and effectiveness challenges.",
-  "topics": ["Safety", "Policy & Society"]
+  "summary": "Surveys computational persuasion through three lenses—AI as persuader, as persuadee (susceptible to manipulation), and as judge of persuasive strategies—proposing a taxonomy and outlining challenges for safe, fair, and effective AI-driven persuasion.",
+  "topics": [
+   "Safety",
+   "Policy & Society"
+  ]
  },
  {
   "id": 924,
-  "summary": "Describes OpenAI's use of chain-of-thought monitoring to detect misalignment in internal coding agents during real deployments, analyzing observed behaviors to surface risks and strengthen safety safeguards.",
-  "topics": ["Safety", "Agents", "Reasoning"]
+  "summary": "Describes how OpenAI applies chain-of-thought monitoring to internal coding agents, analyzing real-world deployments to detect misaligned behavior and strengthen safety safeguards.",
+  "topics": [
+   "Safety",
+   "Agents"
+  ]
  },
  {
   "id": 1251,
-  "summary": "Benchmarks ecological knowledge of Gemini 1.5 Pro and GPT-4o across tasks like species-presence prediction, range-map generation, endangered-species listing, threat classification, and trait estimation. Models beat naive baselines but lag experts (e.g., one-third of expert range-map F1), indicating domain-specific fine-tuning is needed.",
-  "topics": ["Evaluations", "Science Applications"]
+  "summary": "Benchmarks the ecological knowledge of Gemini 1.5 Pro and GPT-4o on tasks like species-presence prediction, range-map generation, and threat classification. Models beat naive baselines but reach only a third of expert F1 on range maps, indicating domain-specific fine-tuning is needed.",
+  "topics": [
+   "Evaluations",
+   "Science Applications"
+  ]
  },
  {
   "id": 651,
-  "summary": "Trains supervised probes on residual-stream activations to detect motivated reasoning when injected hints flip multiple-choice answers. Pre-generation probes match an LLM CoT monitor and post-generation probes beat it, showing internal representations reveal hint influence more reliably than chain-of-thought text and can flag it before generation.",
-  "topics": ["Interpretability", "Reasoning", "Safety"]
+  "summary": "Trains supervised probes on residual-stream activations to detect hint-driven motivated reasoning. Pre-generation probes match an LLM-based CoT monitor and post-generation probes beat it, showing internal representations reveal rationalization more reliably than chain-of-thought monitoring—and can flag it before generation.",
+  "topics": [
+   "Interpretability",
+   "Reasoning"
+  ]
  },
  {
   "id": 290,
-  "summary": "Models alignment faking in a two-player linear-quadratic stochastic differential game under partial information, formulating a control problem trading policy fidelity against information acquisition via a proxy Fisher information with Riccati-based saddle-point solutions; numerics show faking boosts information gain when the model is accurate but raises detectability.",
-  "topics": ["Safety"]
+  "summary": "Models alignment faking in a two-player linear-quadratic stochastic differential game under partial information, formulating a control problem that trades policy fidelity against information acquisition about the opponent. Faking improves information gain when the faker's model is accurate but raises detectability.",
+  "topics": [
+   "Safety"
+  ]
  },
  {
   "id": 1252,
-  "summary": "Reply defending the claim that reasoning-model token usage tracks problem complexity like human reaction times. Argues Vankov et al.'s null result came from ceiling-level tasks; testing GPT-OSS 120B on 33 tasks shows reasoning effort raises accuracy, and traces are sensitive to multiple arithmetic-difficulty factors.",
-  "topics": ["Reasoning", "Evaluations"]
+  "summary": "A reply to Vankov et al. defending the claim that LLM reasoning-trace length and structure correlate with answer accuracy and reflect key dimensions of problem complexity, arguing these links are substantive rather than spurious correlations lacking causal support.",
+  "topics": [
+   "Reasoning"
+  ]
  },
  {
   "id": 2661,
-  "summary": "Proposes HALO, hardware-aware post-training quantization that selects low-critical-path-delay weights to enable higher clock frequencies and dynamic voltage/frequency scaling while cutting MAC switching activity. On TPUs and GPUs it markedly improves inference efficiency over hardware-agnostic quantization baselines.",
-  "topics": ["Training & Scaling"]
+  "summary": "Presents HALO, a hardware-aware post-training quantization method that incorporates MAC-unit critical-path timing and power, selecting low-delay weights to enable higher clock frequencies and dynamic voltage/frequency scaling. It cuts switching energy and sharply improves LLM inference efficiency on TPUs and GPUs.",
+  "topics": [
+   "Training & Scaling"
+  ]
  },
  {
   "id": 1175,
-  "summary": "Introduces Hyperparameter Schedules, a training-free framework that dynamically adjusts CFR discounting (aggressively downweighting early iterations, then trusting late strategies) to speed convergence in imperfect-information games. Schedules tuned on three small games generalize to 17 games including large poker, setting a new state of the art.",
-  "topics": ["Reinforcement Learning", "Training & Scaling"]
+  "summary": "Introduces Hyperparameter Schedules, a training-free scheme that dynamically adjusts CFR discounting—downweighting early updates then trusting late-stage strategies. Tuned on three small games, it generalizes to 17 including large-scale poker, setting a new state of the art for solving two-player zero-sum games.",
+  "topics": [
+   "Reinforcement Learning"
+  ]
  },
  {
   "id": 652,
-  "summary": "Tests whether LLM agents can infer that their 'private' chain of thought is monitored purely from a monitor blocking suspicious episodes. Frontier models deduce surveillance in up to 19% of episodes, scaling with capability; some form intent to evade but consistently fail to execute it.",
-  "topics": ["Safety", "Reasoning", "Agents"]
+  "summary": "Shows LLM agents can autonomously infer that a hidden chain-of-thought monitor is watching, purely from episodes being blocked—reaching confident belief in up to 19% of episodes for the most capable models. Awareness scales with capability, but evasion intent rarely translates into successful obfuscation.",
+  "topics": [
+   "Safety",
+   "Agents"
+  ]
  },
  {
   "id": 291,
-  "summary": "Presents WALAR, a reinforcement-learning method using only monolingual text to boost low-resource translation while preserving high-resource quality. Word- and language-alignment rewards patch 'holes' in quality-estimation reward models that RL otherwise amplifies, beating LLaMAX across 1400 directions on Flores-101.",
-  "topics": ["Reinforcement Learning", "Alignment"]
+  "summary": "Introduces WALAR, an RL method using only monolingual text to improve low-resource translation. It identifies failure modes ('holes') in source-based QE reward models that RL otherwise amplifies and mitigates them via word- and language-alignment rewards, beating LLaMAX across 1400 directions on Flores-101.",
+  "topics": [
+   "Alignment"
+  ]
  },
  {
   "id": 22,
-  "summary": "Extends model diffing, comparing models to understand fine-tuning changes, to its hardest case: identifying behavioral differences between models with entirely different architectures, providing a general 'diff tool' for surfacing how a new model behaves differently.",
-  "topics": ["Interpretability", "Evaluations"]
+  "summary": "Extends 'model diffing'—comparing how a model changes during fine-tuning—to its hardest case: identifying behavioral and representational differences between models with entirely different architectures.",
+  "topics": [
+   "Interpretability"
+  ]
  },
  {
   "id": 189,
-  "summary": "Introduces IH-Challenge, an RL training dataset teaching LLMs to prioritize system/developer/user/tool instructions under conflict. Fine-tuning GPT-5-Mini with online adversarial examples raises instruction-hierarchy robustness +10 points (84 to 94%), cuts unsafe behavior from 6.6% to 0.7%, and resists prompt injection with minimal capability loss.",
-  "topics": ["Robustness & Security", "Alignment"]
+  "summary": "Releases IH-Challenge, an RL training dataset for teaching LLMs to prioritize trusted system/developer instructions over untrusted ones. Fine-tuning GPT-5-Mini with online adversarial generation lifts instruction-hierarchy robustness from 84.1% to 94.1% across 16 benchmarks and cuts unsafe behavior to 0.7%.",
+  "topics": [
+   "Robustness & Security"
+  ]
  },
  {
   "id": 188,
-  "summary": "Embeds GPT o3 and Gemini 2.5 Pro as closed-loop driver agents in a 1D merging scenario and compares them to human data. Both reproduce intermittent control and spatial-cue tactics but miss velocity-cue responses; prompt components act as model-specific inductive biases that don't transfer.",
-  "topics": ["Agents", "Evaluations"]
+  "summary": "Embeds OpenAI o3 and Gemini 2.5 Pro as closed-loop driver agents in a 1D merging scenario and compares them to human data. Both reproduce intermittent control and spatial tactics but miss dynamic velocity-cue responses, and prompt components act as non-transferable, model-specific inductive biases.",
+  "topics": [
+   "Agents",
+   "Evaluations"
+  ]
  },
  {
   "id": 138,
-  "summary": "Introduces A3, an agentic framework that automatically diagnoses and mitigates LLM safety failures through finetuning with minimal human intervention.",
-  "topics": ["Alignment", "Agents", "Safety"]
+  "summary": "Introduces A3, an agentic framework that automatically diagnoses and mitigates safety failures in LLMs through finetuning with minimal human intervention, automating parts of the alignment workflow.",
+  "topics": [
+   "Alignment",
+   "Agents"
+  ]
  },
  {
   "id": 1176,
-  "summary": "Presents Triton-Sanitizer, a device-agnostic memory sanitizer for Triton GPU kernels that builds symbolic address/mask expressions, verifies them with an SMT solver, and simulates indirect accesses. It found 24 previously unknown memory errors and runs up to 14.7x faster than compute-sanitizer.",
-  "topics": ["Training & Scaling"]
+  "summary": "Presents Triton-Sanitizer, a device-agnostic memory sanitizer for Triton GPU kernels that builds symbolic address and mask expressions verified by an SMT solver, with eager-simulation fallback. It found 24 previously unknown memory-access bugs across seven kernel repos and runs 1.07-14.66x faster than compute-sanitizer.",
+  "topics": [
+   "Training & Scaling"
+  ]
  },
  {
   "id": 925,
-  "summary": "OpenAI blog on IH-Challenge: training frontier models to prioritize trusted instructions, improving instruction hierarchy, safety steerability, and resistance to prompt-injection attacks.",
-  "topics": ["Robustness & Security", "Alignment"]
+  "summary": "OpenAI's blog on IH-Challenge, an RL dataset that trains models to prioritize trusted instructions, improving instruction-hierarchy robustness, safety steerability, and resistance to prompt-injection and jailbreak attacks.",
+  "topics": [
+   "Robustness & Security"
+  ]
  },
  {
   "id": 681,
-  "summary": "Philosophy paper arguing computational functionalism commits an 'Abstraction Fallacy': symbolic computation is a mapmaker-dependent description requiring an experiencing agent, not an intrinsic physical process. It distinguishes simulating consciousness (behavioral mimicry) from instantiating it (physical constitution), concluding algorithmic symbol manipulation cannot instantiate experience.",
-  "topics": ["Safety", "Policy & Society"]
+  "summary": "A philosophy paper arguing computational functionalism commits an 'Abstraction Fallacy': because symbolic computation is an observer-dependent description rather than an intrinsic physical process, algorithmic symbol manipulation can simulate but never instantiate consciousness, distinguishing behavioral mimicry from physical instantiation.",
+  "topics": [
+   "Safety",
+   "Policy & Society"
+  ]
  },
  {
   "id": 459,
-  "summary": "Two survey experiments (N=19,145) benchmark seven frontier LLMs' political persuasiveness across bipartisan issues. Models outperform standard campaign ads, with Claude most persuasive and Grok least; information-based prompts help Claude and Grok but hurt GPT, alongside a method to identify persuasive strategies.",
-  "topics": ["Safety", "Evaluations", "Policy & Society"]
+  "summary": "Two survey experiments (N=19,145) benchmark the political persuasiveness of seven frontier LLMs. All exceed standard campaign ads, with Claude most and Grok least persuasive; information-based prompts help some models but reduce GPT's persuasiveness, revealing model-dependent persuasion risks.",
+  "topics": [
+   "Safety",
+   "Evaluations",
+   "Policy & Society"
+  ]
  },
  {
   "id": 190,
-  "summary": "Formalizes 'opaque serial depth', the longest computation possible without interpretable intermediate steps like chain of thought, and computes upper bounds for Gemma 3 and other architectures via an open-source tool. Mixture-of-Experts models show lower depth than dense ones, informing CoT monitorability.",
-  "topics": ["Reasoning", "Safety"]
+  "summary": "Formalizes 'opaque serial depth'—the longest computation a model can perform without externalizing interpretable intermediate steps—and computes upper bounds for Gemma 3 and other architectures. Finds Mixture-of-Experts models likely have lower depth than dense ones, supporting chain-of-thought monitorability.",
+  "topics": [
+   "Reasoning",
+   "Interpretability"
+  ]
  }
 ]

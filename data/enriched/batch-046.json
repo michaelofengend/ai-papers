@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1689,
+  "summary": "Extends the IceNet sea-ice forecasting model with deep generative modelling to capture uncertainty and sharpen predictions, higher-resolution AMSR-2 data (3-6 km) for coastal accuracy, and auxiliary inputs like ice thickness, yielding multivariate subseasonal-to-seasonal forecasts of sea-ice properties.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 789,
+  "summary": "Derives Psi-PO, a general preference-learning objective subsuming RLHF and DPO that exposes their tendency to over-optimize, and introduces Identity Preference Optimization (IPO), which avoids both the pointwise-reward and reward-generalization approximations and stays robust to over-training.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 788,
+  "summary": "Proposes RECODE, a non-parametric intrinsic-motivation method that estimates state visitation counts by clustering states in a learned representation space and tracking counts over thousands of episodes. Decoupling representation from density estimation gives more robust exploration on hard sparse-reward tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 787,
+  "summary": "A Research-through-Design study where people commanded a quadruped robot through an obstacle course. When lexical and visual cues failed, participants intuitively relied on prosody (the musical qualities of speech) to direct navigation, suggesting prosody as a multifunctional signal for human-robot interfaces.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 786,
+  "summary": "Introduces RandQL, the first tractable model-free posterior-sampling algorithm for episodic MDPs, achieving optimistic exploration without bonuses by randomizing the learning rate. Provides regret bounds for tabular and metric state-action spaces and outperforms baselines on exploration benchmarks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 785,
+  "summary": "Theoretically quantifies how expert demonstrations reduce RL sample complexity via behavior cloning plus KL-regularization, with complexity scaling as 1/N_E in finite and linear MDPs. Also shows demonstration-regularized methods are provably efficient for RLHF without pessimism injection.",
+  "topics": ["Reinforcement Learning", "Alignment"]
+ },
+ {
+  "id": 538,
+  "summary": "Reproduces and validates OpenAI's scaling-law formulas up to 33B parameters, showing the constants shift with experimental setup. Gives step-by-step recipes to estimate scaling-law terms from 1M-60M-parameter runs, accounting for learning rate, batch size, and context length to predict test loss.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2736,
+  "summary": "Validates the Openwater wearable laser-speckle-contrast headset for cerebral blood-flow monitoring against transcranial Doppler in 25 adults during breath-holds. Optical relative blood flow correlated strongly with Doppler velocity (R=0.79), supporting its potential as a bedside cerebral hemodynamic monitor.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 413,
+  "summary": "Introduces AdvPO, which mitigates reward over-optimization in RLHF by quantifying reward-model uncertainty from last-layer embeddings (avoiding costly ensembles) and solving a distributionally robust optimization over the reward's confidence interval. Improves policy quality on Anthropic HH and TL;DR.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1691,
+  "summary": "Develops deep-learning models that interpret cardiotocograms to detect fetal hypoxia during labor. Training against objective umbilical-cord-blood pH rather than clinician Apgar labels gives more robust performance; the study examines temporal distribution shift and performance-fairness tradeoffs across subgroups.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1690,
+  "summary": "An EMBL-EBI on-demand training course developed with Google DeepMind, teaching researchers the fundamentals of AlphaFold, how to run protein-structure predictions from amino-acid sequences, and how to integrate predicted structures into their research.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 414,
+  "summary": "Defines reward hacking as the breakdown, under optimization, of the correlation between proxy and true rewards relative to a reference policy. Shows theoretically and empirically that regularizing the chi-squared divergence between policies' occupancy measures prevents reward hacking better than the standard KL action penalty.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 1692,
+  "summary": "Reviews how protein structure-prediction networks like AlphaFold and RoseTTAFold serve as foundation models for protein design, via activation maximization, inpainting, and denoising diffusion, driving large gains in wet-lab success for binders, metalloproteins, enzymes, and oligomeric assemblies.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 608,
+  "summary": "Proposes AtP*, an improved gradient-based approximation to activation patching that localizes LLM behavior to components in O(1) forward passes. Identifies and fixes two failure modes causing false negatives and provides residual-error estimates, substantially outperforming other fast activation-patching methods at scale.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 790,
+  "summary": "Analyzes 51 metrics that measure neural-network alignment to human brain and behavioral data (e.g., Brain-Score) and finds pairwise correlations are low or even negative (mean ~0.16). Argues human-perception alignment is multidimensional and cautions against naively averaging metrics.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 2888,
+  "summary": "Anthropic interpretability team's preliminary notes: using sparse-autoencoder features to identify circuits from a single example (bypassing behavior-specific dataset curation), an update on dictionary-learning improvements, and pointers to related work by other groups.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1693,
+  "summary": "Presents a protocol for a four-stage Delphi consensus study to develop participatory standards for data collection and reuse in queer (LGBTQI+) AI mental-health research, aiming to produce a reusable toolkit that informs inclusive digital-health practice and policy.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 792,
+  "summary": "Improves RL-based plasma magnetic control over Degrave et al. (2022) with architecture and training changes, achieving up to 65% better shape accuracy, reduced steady-state current bias, and 3x faster learning of new tasks, validated on the TCV tokamak.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 791,
+  "summary": "Proposes efficient algorithms that approximate the core of cooperative games by iteratively refining payoff vectors from randomly sampled coalition constraints. Positions the core as an alternative to the Shapley value for political power analysis, predicting team payoffs, and explainable-AI feature attribution.",
+  "topics": ["Policy & Society", "Interpretability"]
+ },
+ {
+  "id": 97,
+  "summary": "An opinion essay by Olah and Jermyn arguing that interpretability, as an immature field without an established paradigm, should treat qualitative results as first-class. Warns via Anscombe's Quartet that summary statistics hide structure, and offers heuristics for taste in qualitative work.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 794,
+  "summary": "Proposes VITO, a contrastive self-supervised framework that learns image representations from curated video by exploiting temporal transformations. VITO beats prior video- and image-pretraining methods across image and video tasks, is markedly more robust to perturbations, and aligns better with human judgments.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 793,
+  "summary": "Uses small, cheap proxy models to score the learnability of data points and prioritize them when training larger models. The resulting ClassAct and ActiveCLIP need 46-51% fewer updates and up to 25% less compute to match uniformly-trained classifiers on JFT and ALIGN.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 1199,
+  "summary": "Develops boosted-decision-tree methods for model-agnostic resonant anomaly detection at particle colliders that stay robust as irrelevant features are added. A BDT beats neural networks for Classification Without Labels, and a copula-based density estimator outperforms normalizing flows.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 539,
+  "summary": "Introduces DRA (Disguise and Reconstruction Attack), a black-box jailbreak that hides harmful instructions and prompts the model to reconstruct them in its completion, exploiting biases in safety fine-tuning. Reports state-of-the-art success rates, including 91.1% on GPT-4.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 795,
+  "summary": "Proposes odd-k-out learning (OKO), which minimizes cross-entropy over sets of examples rather than singletons to capture inter-example correlations. Improves both accuracy and calibration, especially with limited or class-imbalanced data, without temperature scaling, while still applying to single inputs at inference.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 415,
+  "summary": "Formalizes how RLHF under partial human observability can incentivize deceptive inflation and overjustification. Modeling humans as Boltzmann-rational over belief trajectories, it proves conditions producing such policies, analyzes when feedback identifies the return function, and proposes mitigations.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 798,
+  "summary": "Turns text-to-image diffusion models into zero-shot classifiers and finds emergent human-like properties: a record shape bias (99% for Imagen), near-human out-of-distribution accuracy, state-of-the-art match to human classification errors, and susceptibility to certain perceptual illusions.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 797,
+  "summary": "Studies data augmentation applied to cached frozen features from pretrained vision models (FroFA) in the few-shot regime. Across 18 augmentations, four architectures, and multiple datasets, several standard image augmentations transfer effectively to feature space, improving cheap transfer learning.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 796,
+  "summary": "Reframes learning from pairwise human preferences as density estimation rather than RL, proving that training a reward function on preferences models the annotator's implicit preference distribution. Highlights annotator-misspecification failures when modeling assumptions about diverse annotators are wrong.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 799,
+  "summary": "Introduces FourierLearner-Transformers, linear-attention models that implicitly learn the spectral representation of relative positional encodings, supporting standard RPEs and ones over point clouds in higher-dimensional space. Memory-efficient, they improve language modeling and enable RPE-enhanced linear attention for 3D molecular data.",
+  "topics": ["Training & Scaling"]
+ }
+]

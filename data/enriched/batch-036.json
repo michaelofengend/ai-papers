@@ -1,0 +1,152 @@
+[
+ {
+  "id": 739,
+  "summary": "Trains an AI mediator that iteratively drafts and refines group statements from participants' opinions and critiques on social and political issues. Across 5,734 participants, AI statements were preferred over human mediators' and helped groups converge; replicated in a demographically representative UK virtual citizens' assembly.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 232,
+  "summary": "M-CoDAL, a multimodal dialogue system for robots handling safety-critical household situations, uses discourse coherence relations plus clustering-based active learning with an external LLM to pick informative training instances. On 1K Reddit-derived safety violations and a Hello Robot Stretch user study, it beats a ChatGPT baseline.",
+  "topics": ["Agents", "Multimodal"]
+ },
+ {
+  "id": 82,
+  "summary": "Develops threat models and evaluations for sabotage capabilities: models covertly undermining capability evaluations, oversight, or deployment decisions. Applied to Claude 3 Opus and 3.5 Sonnet, results suggest minimal mitigations suffice for now, while arguing more realistic evaluations and stronger mitigations will soon be needed.",
+  "topics": ["Safety", "Evaluations"]
+ },
+ {
+  "id": 740,
+  "summary": "Opinion piece arguing that prompting, originally a test-and-debug interface for ML engineers, is a poor interaction paradigm for generative AI: confusing and suboptimal for end-users, and a shaky prompt-engineering foundation for apps and research. Calls for phasing it out quickly.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 233,
+  "summary": "Defines introspection as knowledge originating from internal states rather than training data, testing it by finetuning LLMs to predict properties of their own behavior in hypothetical scenarios. Models outpredict stronger models trained on their ground-truth behavior, evidencing privileged self-access with implications for interpretability.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2721,
+  "summary": "Proposes a three-stage framework for assessing the likelihood of an AI system being maliciously used: Plausibility (can it do the harm at all?), Performance (how well?), and Observed use (do actors use it in practice?), outlining research questions, methods, and uncertainty types per stage.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 1562,
+  "summary": "Compares fine-grained human feedback capturing nuanced image-quality and prompt-alignment distinctions against coarse thumbs-up/down or rankings for training text-to-image reward models. Fine-grained feedback can yield worse models at a fixed budget, though it helps in controlled settings with known attributes.",
+  "topics": ["Alignment", "Multimodal"]
+ },
+ {
+  "id": 1561,
+  "summary": "Creates synthetic training data for multilingual semantic parsing by applying translation and transliteration directly at the slot level, eliminating the separate label-projection step. Achieves 97% of state-of-the-art augmentation performance and matches the best systems on code-mixed and code-switched parsing.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1560,
+  "summary": "Argues frontier AI developers should report safety-critical information to government, industry, and civil society to improve visibility into new and emerging risks. Outlines key features of responsible reporting and proposes practical mechanisms, informing developer risk management and more targeted regulation.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 1559,
+  "summary": "Guides exploratory solid-state synthesis of quaternary cesium chlorides (CsnAIBCl6) using computationally predicted stabilities, screening candidates with in situ synchrotron X-ray diffraction before lab synthesis. Reports successes and failures, including new polymorphs of Cs2LiCrCl6 and Cs2LiRuCl6 and the new compound Cs2LiIrCl6.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1558,
+  "summary": "Reviews over 200 safety evaluations applied to generative AI, categorizing each along multiple axes and releasing the data. Identifies three systemic gaps - scarce non-text-modality evaluations, missing coverage of several ethical and social risks, and model-centric evals ignoring deployment context - plus steps to close them.",
+  "topics": ["Evaluations", "Safety"]
+ },
+ {
+  "id": 1557,
+  "summary": "Proposes a framework for judging when user relationships with advanced AI assistants are appropriate, grounded in values from ethical traditions such as benefit, flourishing, autonomy, and care. Analyzes how anthropomorphic cues, interaction longevity, increased agency, and dependence can generate concrete relationship risks.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1556,
+  "summary": "Maps risks from anthropomorphic, human-like AI, such as emotional attachment and over-reliance that infringe on user privacy and autonomy. Surveys anthropomorphic features embedded in past interactive systems and proposes research directions for ethical foresight, evaluation, and mitigation of these harms.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1555,
+  "summary": "Introduces 'generative algorithmic epistemic injustice' with four dimensions: amplified and manipulative testimonial injustice, hermeneutical ignorance, and access injustice, illustrated with real-world examples including multilingual misinformation. Proposes resistance strategies and design principles for epistemically just generative AI that safeguards knowledge ecosystems.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 385,
+  "summary": "Extends weak-to-strong generalization from binary-classification testbeds to practical alignment tasks, empirically demonstrating the phenomenon across safety, toxicity, and legal reasoning. Explores strategies for improving the strong model's alignment quality and analyzes task-specific challenges and potential solutions.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 995,
+  "summary": "Studies 'first-person fairness': whether ChatGPT responds differently based on users' names and their gender or ethnicity associations, using a GPT-4o-based assistant to analyze real conversations privately. Response quality is consistent across groups; harmful stereotypes are rare (roughly 0.1%), highest in open-ended creative tasks and older models.",
+  "topics": ["Policy & Society", "Evaluations"]
+ },
+ {
+  "id": 1566,
+  "summary": "Trains a depth-camera hexapod to climb stairs, avoid obstacles, and squeeze under furniture via a two-phase teacher-student approach: RL with privileged simulation information, then distillation to onboard egocentric depth and VIO pose. Achieves sim-to-real transfer with high success rates on low-cost hardware.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1565,
+  "summary": "Details the design of Barkour, a dog-agility-inspired obstacle course that quantifies legged-robot agility through diverse obstacles and time-based scoring demanding fast, precise, adaptable control. Releases MuJoCo-XLA simulation setups and the CAD model of a custom quadruped for reproducibility.",
+  "topics": ["Evaluations", "Reinforcement Learning"]
+ },
+ {
+  "id": 1564,
+  "summary": "Shows LLMs can generate robot policy code for high-precision, contact-rich manipulation when the action space is reparameterized to include compliance, i.e., constraints on interaction forces and stiffnesses. Improves policy generation over 3-4x versus non-compliant action spaces on FMB and NIST task-board subtasks.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 1563,
+  "summary": "CoNVOI navigates robots indoors and outdoors by using a VLM to zero-shot classify scene context into behavior prompts (e.g., 'stay on the pavement'), then select among numbered obstacle-free image regions grounded via a local occupancy map, producing reference trajectories for a motion planner.",
+  "topics": ["Agents", "Multimodal"]
+ },
+ {
+  "id": 741,
+  "summary": "Embed-then-Regress performs in-context regression for Bayesian optimization by representing arbitrary inputs as strings embedded with pretrained language models, enabling general-purpose surrogate models beyond fixed tabular search spaces. Matches state-of-the-art Gaussian-process baselines on synthetic, combinatorial, and hyperparameter optimization.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1567,
+  "summary": "Formalizes social dilemmas and introduces the 'general self-interest level': the maximum fraction of individual rewards agents can retain while making a social-welfare optimum a dominant strategy. Provides an algorithm computing efficient reward-transfer contracts for any number of agents, plus new multi-player dilemma games.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 1194,
+  "summary": "Tyche is a user interface for sensemaking about property-based testing effectiveness, providing interactive, configurable views of global test behavior and individual inputs within developer workflows. Defines a standard PBT reporting format integrated with a widely used library; a usability study shows more accurate effectiveness assessment.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 522,
+  "summary": "MLE-bench evaluates AI agents on 75 Kaggle machine-learning engineering competitions covering model training, dataset preparation, and experimentation, with human baselines from public leaderboards. The best setup, o1-preview with AIDE scaffolding, reaches bronze-medal level in 16.9% of competitions; resource scaling and contamination are also analyzed.",
+  "topics": ["Evaluations", "Agents"]
+ },
+ {
+  "id": 742,
+  "summary": "Diffusion Model Predictive Control (D-MPC) learns a multi-step action proposal and a multi-step dynamics model, both as diffusion models, combining them for online MPC. On D4RL it beats model-based offline planners, rivals state-of-the-art RL, and optimizes novel rewards and dynamics at runtime.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 523,
+  "summary": "SPACE benchmarks spatial cognition - large-scale mapping, object shape and layout reasoning, and spatial attention and memory - using parallel text and image presentations for language and multimodal models. Frontier models perform near chance on classic animal-cognition tests, falling well short of animal spatial intelligence.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 386,
+  "summary": "Theoretically analyzes weak-to-strong generalization (a weak teacher supervising a strong student) for binary and multilabel classification in an overparameterized spiked covariance model, identifying two asymptotic phases: successful generalization or random guessing. Also proves a tight lower-tail inequality for maxima of correlated Gaussians.",
+  "topics": ["Alignment", "Training & Scaling"]
+ },
+ {
+  "id": 1568,
+  "summary": "Reviews graph neural network applications across solid mechanics, fluid mechanics, and interdisciplinary mechanics-related domains, summarizing graph representation methodologies, GNN architectures, and open datasets. Introduces the fundamental GNN algorithms involved and identifies key challenges and future research directions for irregular-structure mechanics problems.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1569,
+  "summary": "Studies how causal Transformers learn in-context to predict next tokens generated by sequence-specific functions, explicitly constructing Transformers (linear, exponential, or softmax attention) that implement a causal kernel descent method, related to the Kaczmarz algorithm, provably recovering linear or periodic mappings; experiments support broader applicability.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2887,
+  "summary": "Introduces sparse crosscoders, generalizing sparse autoencoders and transcoders to read from and write to multiple layers, or even multiple models, yielding features shared across layers. Applications include resolving cross-layer superposition, tracking persistent features, simplifying circuit analysis, and model diffing between different models.",
+  "topics": ["Interpretability"]
+ }
+]

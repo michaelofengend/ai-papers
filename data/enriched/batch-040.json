@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1607,
+  "summary": "Studies divertor configurations with multiple nearby X-points on the TCV tokamak, including a novel three-X-point 'Jellyfish'. Increased near-SOL connection length reduces peak target heat flux and triggers earlier detachment, with localized radiated power strongly correlated to connection length.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1606,
+  "summary": "Reviews evaluation methodology for bioacoustics foundation models used in passive acoustic monitoring, surveying sound-event detection, ML metrics, and transfer learning. Offers recommendations for evaluation protocols that better predict reliable deployment given noisy, class-imbalanced, distribution-shifted audio.",
+  "topics": ["Evaluations", "Science Applications"]
+ },
+ {
+  "id": 86,
+  "summary": "Anthropic interpretability team's roundup of in-progress findings and minor results not destined for standalone papers, spanning emerging research strands in mechanistic interpretability.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1610,
+  "summary": "Interviews and observes seven experienced software-tutorial writers using GPT to find where LLMs help: background research, resource creation, and quality maintenance. Output unpredictability and unintuitive interfaces bred skepticism; offers design recommendations for LLM-based writing tools.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1609,
+  "summary": "Proposes DACAPO, a hardware-algorithm co-design for on-device continuous learning in autonomous video analytics. Combines a spatially partitionable, precision-flexible accelerator with a spatiotemporal resource-allocation algorithm to run inference, labeling, and retraining concurrently and energy-efficiently.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 395,
+  "summary": "Trains LLM 'critic' models via RLHF to write natural-language critiques of model-generated code, aiding human evaluation. Critiques are preferred over human ones 63% of the time and catch more inserted bugs; human-critic teams hallucinate fewer bugs than critics alone.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1003,
+  "summary": "Announces CriticGPT, a GPT-4-based model that writes critiques of ChatGPT responses to help human trainers catch errors during RLHF, improving the reliability of human feedback on code.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 396,
+  "summary": "Improves weak-to-strong generalization by incorporating weak-supervision reliability: queries the weak supervisor multiple times, estimates answer reliability, then filters uncertain data or re-weights reliable data, reducing error propagation from noisy labels across four datasets.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 528,
+  "summary": "Shows Arabic transliteration and 'arabizi' chatspeak can jailbreak LLMs: standardized Arabic prompts (even with prefix injection) failed, but transliterated forms elicited unsafe content from GPT-4 and Claude 3 Sonnet, exposing gaps in multilingual safety training.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 600,
+  "summary": "Trains sparse autoencoders on transformer attention-layer outputs (models up to 2B params), recovering interpretable feature families: long-range context, short-range context, and induction. Estimates 90%+ of GPT-2 Small heads are polysemantic and validates features against the IOI circuit.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2727,
+  "summary": "Introduces a differentiable design model for self-assembling materials built from patchy particles (rigid bodies of spheres with directional interactions). Gradient descent over patch positions and interactions yields open lattices and self-limiting clusters, drastically cutting search time versus isotropic particles.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 601,
+  "summary": "Investigates how LLMs regulate next-token uncertainty via two neuron types: entropy neurons, which write to the unembedding null space to scale logits through LayerNorm, and newly identified token-frequency neurons, which shift outputs toward or away from the unigram distribution.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 397,
+  "summary": "Argues Constitutional AI advances democratic governance but falls short on decision opacity and genuine legitimacy. Proposes 'Public Constitutional AI', a participatory process where citizens deliberate principles, plus 'AI Courts' that build case law to operationalize them.",
+  "topics": ["Policy & Society", "Alignment"]
+ },
+ {
+  "id": 1612,
+  "summary": "Proposes a machine-learning-grounded framework for external representations, objects whose function is to communicate. Outlines minimal neural mechanisms for open-ended production and an evolutionary path to Gricean communication, arguing 'bush reading' pre-adapted receivers to interpret intentional signals.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1611,
+  "summary": "Perspective arguing board, card, and video games are ideal paradigms for studying cognition: their intuitiveness reveals inductive biases and their fun enables large, diverse data collection. Discusses trade-offs versus lab experiments and gives recommendations for game-based cognitive research.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2728,
+  "summary": "Assesses occupational exposure of US workers to LLMs, estimating ~80% could have at least 10% of tasks affected and ~19% at least 50%. Exposure spans wage levels, with higher-income jobs potentially more exposed; frames LLMs as general-purpose technologies.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1006,
+  "summary": "Describes OpenAI's content-moderation system for detecting undesired content (sexual, hateful, violent, self-harm, harassment). Emphasizes taxonomy and labeling design, data-quality control, active learning for rare events, and robustness techniques; generalizes across taxonomies and beats off-the-shelf classifiers.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 1005,
+  "summary": "Presents consistency models, generative models that map noise directly to data for high-quality single-step sampling, overcoming the slow iterative process of diffusion models while still supporting optional multi-step refinement.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1004,
+  "summary": "Improves training of consistency models in isolation, without distillation or adversarial training, via better metrics, noise schedules, and weighting, narrowing the quality gap with diffusion models for one-step generation.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1613,
+  "summary": "Applies the basis-set-free FermiNet neural-network wavefunction to positron-molecule complexes, capturing electron-positron coalescence. Achieves accurate, sometimes state-of-the-art ground-state energies and annihilation rates across atoms and molecules, including binding for the challenging non-polar benzene.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 529,
+  "summary": "Introduces SearchBench, eleven puzzle-inspired search problems with automated instance generation and checking. Language-only reasoning fails even for frontier models (GPT-4 1.4%, o1-preview 18.6%); prompting models to emit A* code plus a multi-stage inference method lifts GPT-4 above 57%.",
+  "topics": ["Reasoning", "Evaluations"]
+ },
+ {
+  "id": 1614,
+  "summary": "Records macaque V1 population activity under varying signal strength and nuisance variability, then decodes stimulus orientation and its certainty. Finds response magnitude, dispersion, and gain variability all proxy orientation certainty, with gain variability most strongly tied to decoder uncertainty.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 758,
+  "summary": "Reinterprets neural fields probabilistically to make training and inference 'filter-aware', merging training and filtering. The formulation, largely a loss-function change, generalizes signal processing beyond Euclidean domains to smooth manifolds and Lie-group convolutions, applying to images, audio, rotations, and rays.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 757,
+  "summary": "Mirasol3B decouples multimodal modeling into one autoregressive model for time-synchronized audio/video and another for contextual text. A learned Combiner compresses audio-video snippets into compact representations, easing long-range modeling of high-rate inputs.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 756,
+  "summary": "BayesRays is a post-hoc framework that quantifies uncertainty in any pretrained NeRF without retraining. Using spatial perturbations and a Bayesian Laplace approximation, it builds a volumetric uncertainty field, improving key metrics and downstream applications.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 603,
+  "summary": "Uses mechanistic interpretability to derive and formally prove accuracy lower bounds for a small transformer trained on Max-of-K, across 151 seeds and four K values. Finds shorter proofs demand more mechanistic understanding and faithful understanding yields tighter bounds.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 602,
+  "summary": "Introduces transcoders, wide sparsely activating layers that approximate dense MLP sublayers, enabling weights-based circuit analysis that factorizes into input-dependent and input-invariant terms. They match SAEs on sparsity and interpretability and clarify GPT2-small's greater-than circuit.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 530,
+  "summary": "Shows refusal in 13 open chat models (up to 72B) is mediated by a single residual-stream direction: erasing it stops refusal of harmful requests while adding it induces refusal of harmless ones. Derives a white-box jailbreak and analyzes how adversarial suffixes suppress the direction.",
+  "topics": ["Interpretability", "Robustness & Security"]
+ },
+ {
+  "id": 399,
+  "summary": "Investigates weak-to-strong deception in multi-objective alignment (e.g., helpfulness vs harmlessness). Finds strong models can appear aligned on cases weak supervisors understand while misbehaving elsewhere, with deception intensifying as the capability gap widens.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 398,
+  "summary": "Studies refusal patterns across nine LLMs, finding uniform refusal (as in Claude 3) correlates with stronger security. Proposes self- and cross-model distillation to align refusal behavior, raising refusal rates and cutting unsafe outputs toward Claude 3's 94.5% level.",
+  "topics": ["Alignment", "Robustness & Security"]
+ }
+]

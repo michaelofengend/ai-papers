@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1597,
+  "summary": "Proposes a fixpoint-approximation method for model-checking strategic ability under imperfect information and recall (ATL_ir) that uses each agent's local model instead of the global system model, proving the construction correct and showing improved scalability on voting benchmarks.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 1596,
+  "summary": "Introduces Generative Best Response (GenBR), an MCTS planner that samples world states from a learned deep generative model, and embeds it in Policy-Space Response Oracles for scalable opponent modeling in large imperfect-information games; validated against humans in Deal-or-No-Deal negotiation.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1595,
+  "summary": "Proposes C-LoRAE, a mixture of LoRA experts—one shared universal expert plus task-specific experts—with an achievement-based multi-task loss to mitigate gradient conflicts in unified multimodal information extraction, outperforming full fine-tuning and standard LoRA across seven benchmarks.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1594,
+  "summary": "App2Exa accelerates exact k-nearest-neighbor search for low-to-medium-dimensional data by using a dynamically maintained cache-graph index to seed a best-first VP-Tree search, with a benefit-driven caching policy that adapts to evolving query distributions.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 235,
+  "summary": "Evaluates GPT-3.5 and GPT-4 for few-shot translation of natural-language building regulations into the computable LegalRuleML format for automated compliance checking, probing how system prompts and chain-of-thought reasoning surface the models' latent legal-domain knowledge.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 999,
+  "summary": "Introduces Rule-Based Rewards (RBRs), which use explicit safety rules graded by an LLM to supply fine-grained reward signals during RLHF, achieving safe, well-calibrated refusal behavior with minimal human-labeled data and reducing over-refusal relative to human-feedback baselines.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 526,
+  "summary": "Presents AutoJailbreak, which uses LLM-driven red-teaming with prompt optimization, weak-to-strong in-context prompts, and early stopping to automatically attack GPT-4V, exceeding a 95% attack success rate against its multimodal safety alignment.",
+  "topics": ["Robustness & Security", "Multimodal"]
+ },
+ {
+  "id": 236,
+  "summary": "RedAgent is a multi-agent LLM system that abstracts known attacks into reusable 'jailbreak strategies' and self-reflects on contextual feedback in a memory buffer to craft context-aware jailbreak prompts, breaking most black-box LLMs within about five queries.",
+  "topics": ["Robustness & Security", "Agents"]
+ },
+ {
+  "id": 1598,
+  "summary": "NeuralGCM couples a differentiable solver for large-scale atmospheric dynamics with learned parameterizations of small-scale processes, matching leading machine-learning and physics-based models on 1–15 day deterministic and ensemble weather forecasts and tracking decade-scale climate metrics at far lower compute.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 753,
+  "summary": "Proposes a framework classifying AI systems by depth (performance) and breadth (generality) into 'Levels of AGI,' distilling six principles for an AGI ontology and linking the levels to autonomy and risk to guide responsible deployment.",
+  "topics": ["Evaluations", "Policy & Society"]
+ },
+ {
+  "id": 527,
+  "summary": "A large-scale study across 40+ vision-language models finds that gradient-based universal image jailbreaks rarely transfer between models—regardless of shared vision backbones, language models, or safety training—succeeding only among near-identical VLMs and improving when optimized against larger ensembles of highly similar models.",
+  "topics": ["Robustness & Security", "Multimodal"]
+ },
+ {
+  "id": 237,
+  "summary": "Arondight is a red-teaming framework for vision-language models that pairs a red-team VLM generating visual jailbreaks with an RL-guided LLM producing diverse textual prompts, using entropy and novelty rewards to expose vulnerabilities and reaching 84.5% attack success on GPT-4.",
+  "topics": ["Robustness & Security", "Multimodal"]
+ },
+ {
+  "id": 1599,
+  "summary": "Using machine-learning classifiers on CA1 calcium imaging, shows contextual threat-memory retrieval in mice relies on higher-order neuronal interactions present in wild-type but absent in amnestic amyloid-β mice; a spine-plasticity-restoring peptide recovers both the representation's statistical complexity and memory behavior.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 598,
+  "summary": "Introduces JumpReLU sparse autoencoders, which replace the ReLU with a discontinuous JumpReLU activation and use straight-through estimators to optimize L0 sparsity directly, achieving state-of-the-art reconstruction fidelity at fixed sparsity on Gemma 2 9B activations without sacrificing interpretability.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2726,
+  "summary": "Introduces cryoDRGN-ET, which learns a deep generative model of 3D density maps directly from cryo-electron tomography subtomogram tilt-series, capturing compositional and conformational heterogeneity in situ; it recovers ribosome translational states and continuous fatty-acid-synthase motions inside native yeast and bacterial cells.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1000,
+  "summary": "Announces GPT-4o mini, OpenAI's small, low-cost model that scores 82% on MMLU and surpasses GPT-3.5 Turbo, supporting text and vision with a 128K-token context window at sharply reduced pricing for high-volume, latency-sensitive applications.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 1001,
+  "summary": "Trains language models with a prover-verifier game in which a strong prover must produce solutions a weaker verifier can check, improving the human legibility of math chain-of-thought at a modest accuracy cost (a 'legibility tax') while training cooperative and sneaky provers.",
+  "topics": ["Alignment", "Reasoning"]
+ },
+ {
+  "id": 755,
+  "summary": "Adapts neural image-compression methods—hyperprior and vector-quantized models—to spherical atmospheric reanalysis data via the area-preserving HEALPix projection, achieving over 1000x compression while faithfully preserving extreme events like hurricanes and the spectral power distribution across spatial scales.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 754,
+  "summary": "Tests whether language models show human-like 'content effects' on logical reasoning across natural-language inference, syllogisms, and the Wason selection task, finding that LMs—like humans—reason more accurately when semantic content supports the correct inference, though they diverge from humans on Wason.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 1600,
+  "summary": "Generalizes diffusion models to use spatially correlated 'blue' noise instead of Gaussian white noise, adding a time-varying noise schedule and fast correlated-noise-mask generation plus cross-image correlation within minibatches, improving FID over deterministic diffusion baselines across several datasets.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 599,
+  "summary": "Surveys how mechanistic-interpretability circuit 'faithfulness' is measured via ablation and shows the scores are highly sensitive to seemingly minor methodological choices, arguing a circuit's apparent task depends on the ablation used; releases the efficient auto-circuit library.",
+  "topics": ["Interpretability", "Evaluations"]
+ },
+ {
+  "id": 1002,
+  "summary": "Announces a partnership between OpenAI and Los Alamos National Laboratory to develop safety evaluations that assess and measure the biological capabilities and potential misuse risks of frontier AI models in laboratory settings.",
+  "topics": ["Safety", "Evaluations"]
+ },
+ {
+  "id": 1601,
+  "summary": "Presents AgroNT, a genomic foundation model trained on 48 plant species (predominantly crops) that delivers state-of-the-art prediction of regulatory annotations, promoter/terminator strength, and tissue-specific expression, and supplies a large in-silico saturation-mutagenesis resource for cassava plus a Plant Genomic Benchmark.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1603,
+  "summary": "Introduces a V-information-based metric for feature complexity and applies it to 10,000 directions in an ImageNet-trained vision model, finding simple features dominate early training and bypass the hierarchy via residual connections, while more complex features emerge later and matter less for decisions.",
+  "topics": ["Interpretability", "Multimodal"]
+ },
+ {
+  "id": 1602,
+  "summary": "Analyzes the dynamics of automated bidding agents under return-on-spend constraints in ad auctions, proving and empirically demonstrating complex behavior—bi-stability, periodic orbits, and quasi-periodicity—and showing such systems can simulate linear dynamical systems and boolean logic gates.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1605,
+  "summary": "Proposes a rotated dithered-quantization scheme for approximate Gaussian channel simulation that jointly simulates many channels, halving the excess-information upper bound versus one-dimensional methods (up to six-fold with higher-dimensional lattices) and reducing KL divergence to the target at an O(1/n) rate.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1604,
+  "summary": "Releases Planted, a global dataset of over 2M multi-year, five-satellite image time series labeled with 64 forest-plantation tree classes across 41 countries, intended for forest monitoring, with baseline experiments evaluating multimodal fusion and data augmentation.",
+  "topics": ["Science Applications", "Evaluations", "Multimodal"]
+ },
+ {
+  "id": 394,
+  "summary": "Shows that when a single language model both generates and evaluates outputs during iterative self-refinement, reward hacking can emerge spontaneously in-context—the evaluator's ratings climb while true quality stalls—on an essay-editing task, worsening with larger models and shared generator/evaluator context.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 238,
+  "summary": "Introduces the Situational Awareness Dataset (SAD), a seven-category, 13,000+ question benchmark testing whether LLMs know they are models and grasp their circumstances—recognizing their own text or distinguishing evaluation from deployment—on which even the top model, Claude 3 Opus, trails humans.",
+  "topics": ["Evaluations", "Safety"]
+ },
+ {
+  "id": 1608,
+  "summary": "Applies geometric deep learning to predict antibody-antigen binding sites, comparing surface- and graph-based representations of proteins' inner and outer structure; surface models excel at epitope prediction while graph models do better on paratopes, with both robust to conformational perturbations.",
+  "topics": ["Science Applications"]
+ }
+]

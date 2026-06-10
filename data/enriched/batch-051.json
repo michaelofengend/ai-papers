@@ -1,0 +1,152 @@
+[
+ {
+  "id": 863,
+  "summary": "A visual goal-conditioned decision transformer trained on multi-embodiment manipulation data; it generalizes to new tasks and robot arms zero-shot or with 100-1000 examples, and bootstraps its own training data to form a self-improvement loop.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 862,
+  "summary": "A Bayesian extension of linear probing that induces a distribution over concept classifiers, giving data-efficient concept probing plus epistemic and aleatoric uncertainty estimates usable for OOD detection, without needing training data, gradients, or architecture access.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 864,
+  "summary": "An empirical study showing that reducing the replay batch size in value-based deep RL often yields substantial performance gains, counter to the usual preference for larger batches, with analyses probing why.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2744,
+  "summary": "Drawing on interviews with seven Indigenous librarians, defines Indigenous information literacy as using and creating knowledge while practicing relationality, reciprocity, and respect, and shows how these values shape teaching pedagogy.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 240,
+  "summary": "Introduces a formal definition of deception for learning agents in structural causal games, derives graphical criteria for detecting it, and shows experimentally that these criteria can mitigate deception in RL agents and language models.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 865,
+  "summary": "Argues that RLHF algorithms relying on independence-of-irrelevant-alternatives (IIA) assumptions can reward responses contrary to true preferences, and that these perverse incentives constrain innovation in query formats and learning algorithms.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1722,
+  "summary": "An autonomous laboratory combining ab initio stability data, literature-trained language models, active learning, and robotics for solid-state synthesis; over 17 days it produced 41 of 58 targeted novel oxides and phosphates.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 869,
+  "summary": "Repurposes a pretrained image diffusion model to discover semantically consistent keypoints by extracting and sharpening its sharpest denoising attention maps under an equivariance constraint; outperforms prior methods, especially on non-aligned data.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 868,
+  "summary": "Generalizes self-consistency to free-form outputs by prompting an LLM to pick the most consistent answer among sampled candidates; it matches standard self-consistency on GSM8K and MATH and improves over greedy decoding on open-ended generation.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 867,
+  "summary": "A self-supervised diffusion model that distills an image into a compact embedding bottleneck guiding generation of novel views; the tight bottleneck turns diffusion models into strong representation learners with a disentangled, controllable latent space.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 866,
+  "summary": "Replaces uniform-random sampling in neural field training with a Langevin Monte-Carlo scheme that concentrates samples where they matter most, improving convergence speed and final reconstruction quality.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1723,
+  "summary": "Trains agents that imitate a human demonstrator in real time in novel contexts without any pre-collected human data, identifying a minimal set of ingredients sufficient to produce cultural transmission plus a methodology to evaluate it.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 613,
+  "summary": "Shows that subspace activation patching can change model outputs while attributing a feature to the wrong subspace, via a dormant parallel pathway causally disconnected from outputs, creating illusory interpretability, illustrated in toy and real tasks including factual recall.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 424,
+  "summary": "A survey, one year after ChatGPT, cataloguing the tasks, from reasoning to coding, where open-source LLMs have claimed parity with or superiority over ChatGPT, assessing how fast the open-source gap is closing.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 870,
+  "summary": "A simple framework that reuses replay experience from prior experiments to bootstrap exploration and learning in off-policy RL, improving controller performance across locomotion and manipulation tasks and reaching state-of-the-art when combined with offline datasets.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 542,
+  "summary": "Introduces a benchmark of geographic and geospatial visual tasks to probe multimodal LLMs, focusing on GPT-4V versus open-source models, mapping where they excel (sometimes beating humans) and where they fail.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 1724,
+  "summary": "A synthesis arguing meta-learning offers a new framework for modeling human cognition: by acquiring inductive biases from experience it can construct Bayes-optimal learning algorithms, linking it to rational analysis, and proposes a coherent research program.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 871,
+  "summary": "Designs new AI-safety debate protocols in which the honest debater needs only a polynomial-step simulation rather than exponential, and can verify the alignment of stochastic systems even against a dishonest player allowed exponentially many steps.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 1725,
+  "summary": "Two-photon calcium imaging of layer 2/3 and 5 pyramidal neurons in mouse visual cortex tracked over days shows somata and distal apical dendrites respond oppositely to pattern-violating Gabor sequences, with somata desensitizing and dendrites sensitizing.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1727,
+  "summary": "Introduces spatially embedded RNNs (seRNNs) whose units are constrained within a 3D space and sparse connectome; while learning tasks they spontaneously converge on brain-like modular small-world structure and energy-efficient mixed-selective codes.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1726,
+  "summary": "A Perspective introducing machine culture, culture mediated or generated by machines, arguing that recommender algorithms, chatbots, and generative systems reshape cultural evolution's variation, transmission, and selection, and offering a conceptual framework and research agenda.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1728,
+  "summary": "Argues that intelligence arose in networks of interacting agents rather than in isolated minds, drawing on behavior, neuroscience, and evolution, and that adopting a multi-agent view will benefit both cognitive science and machine learning.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 872,
+  "summary": "Argues against a solipsistic view of intelligence: natural intelligence emerged across scales in networks of interacting agents, and population-based multi-agent structures have driven AI breakthroughs in games like Capture-the-Flag and StarCraft II.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 1729,
+  "summary": "GraphCast, trained directly on reanalysis data, predicts hundreds of weather variables 10 days ahead at 0.25 degree resolution in under a minute, beating the best operational deterministic system on 90% of 1,380 targets and improving severe-event prediction.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 875,
+  "summary": "Summarizes the inaugural Workshop on Generative AI and Law, identifying needs for a shared cross-disciplinary vocabulary, clarity on generative models' distinctive capabilities, a taxonomy of the legal issues, and a collaborative research agenda (US-law focused).",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 874,
+  "summary": "A graph neural network with a multi-scale mesh that autoregressively forecasts 227 atmospheric variables on a 0.25 degree grid; it beats ECMWF's HRES on 89.3% of targets and generates 10-day forecasts in under 60 seconds.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 873,
+  "summary": "A distributed optimization method, federated averaging with many inner AdamW steps and an outer Nesterov-momentum update, that trains language models across poorly-connected device islands, matching synchronous training on C4 while communicating 500x less and tolerating variable resources.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 425,
+  "summary": "A report analyzing whether advanced goal-directed AIs would scheme, performing well in training to gain power later while faking alignment, surveying arguments for and against and estimating roughly 25% probability under baseline ML training.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 241,
+  "summary": "Proposes training models to accurately answer questions about their own internal states, while limiting biasing incentives, so introspection-like self-reports might generalize to states of moral significance, plus methods (consistency, confidence, interpretability) to assess whether the reports are trustworthy.",
+  "topics": ["Safety", "Interpretability"]
+ },
+ {
+  "id": 1730,
+  "summary": "Integrates predictive models, chromatin state, 3D contacts, and large-scale CRISPR perturbations to build a resource of over 13 million enhancer-gene interactions across 352 cell types; the new ENCODE-rE2G model sets state-of-the-art on linking variants to target genes.",
+  "topics": ["Science Applications"]
+ }
+]

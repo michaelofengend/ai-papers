@@ -1,0 +1,152 @@
+[
+ {
+  "id": 517,
+  "summary": "Studies jailbreak defense for a single narrowly-scoped forbidden behavior (bomb-making help). Safety training, adversarial training, and input/output classifiers all fall short; a proposed transcript-classifier defense beats these baselines but still fails in some cases, showing narrow-domain defense remains hard.",
+  "topics": ["Robustness & Security", "Safety"]
+ },
+ {
+  "id": 378,
+  "summary": "Introduces a sandbagging detector that injects noise of varying magnitude into model weights: honest models degrade predictably while sandbagging models show anomalous performance gains. The signal is model-agnostic and even elicits Mistral Large 120B's full capability when it underperforms unprompted.",
+  "topics": ["Safety", "Evaluations"]
+ },
+ {
+  "id": 2886,
+  "summary": "Extends dictionary learning to model diffing: an SAE dictionary trained on a pre-finetuning transformer is itself finetuned on the new data or model, so tracking feature evolution isolates dataset- versus model-driven changes. Applied to sleeper agents, it surfaces backdoor-related features.",
+  "topics": ["Interpretability", "Safety"]
+ },
+ {
+  "id": 179,
+  "summary": "Announces the Anthropic Fellows Program, a pilot that funds and mentors external researchers to work on AI safety, aiming to accelerate safety research and grow talent in the field.",
+  "topics": ["Safety"]
+ },
+ {
+  "id": 1529,
+  "summary": "A framework for fast, high-quality 3D human avatar generation and personalization from text prompts. By constraining the generation search space, it improves photo-realism and efficiency over prior text-to-avatar methods.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1530,
+  "summary": "An addendum to the AlphaFold 3 paper. AlphaFold 3 is a diffusion-based model that jointly predicts the 3D structure of biomolecular complexes-proteins, nucleic acids, small molecules, ions, and modified residues-markedly improving accuracy over earlier specialized tools. The addendum supplements the original article.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1192,
+  "summary": "Tests the 3D gamma index as an extra check for safely transferring radiotherapy plans between nominally beam-matched linacs. Using PyMedPhys on 17 3DCRT and 36 VMAT plans, 2%/2 mm pass rates exceeded 99%, though stricter 1%/1 mm criteria failed in several cases.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 737,
+  "summary": "Tests whether LLMs truly perform latent multi-hop reasoning over factual knowledge rather than exploiting training-data shortcuts. Introduces SOCRATES, a shortcut-controlled evaluation set built to exclude co-occurring entity pairs, and measures how well models internally recall and compose separately-learned facts.",
+  "topics": ["Reasoning", "Evaluations"]
+ },
+ {
+  "id": 738,
+  "summary": "Investigates using LLM embeddings of string inputs as features for regression. Embedding-based features can beat traditional feature engineering on high-dimensional tasks, partly because embeddings preserve Lipschitz continuity over numeric inputs; larger model size and language understanding do not reliably improve regression accuracy.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 229,
+  "summary": "Introduces RE-Bench, seven open-ended ML research-engineering environments with data from 71 8-hour expert attempts as a human baseline. Top AI agents score 4x humans at a 2-hour budget, but humans overtake with more time; agents iterate far faster and cheaper.",
+  "topics": ["Evaluations", "Agents", "Safety"]
+ },
+ {
+  "id": 992,
+  "summary": "Outlines OpenAI's approach to combining human and automated red teaming, accompanied by two papers: one detailing how external human red-teaming campaigns are designed and run, and one on automatically generating diverse, effective attacks using reinforcement learning.",
+  "topics": ["Robustness & Security", "Safety"]
+ },
+ {
+  "id": 591,
+  "summary": "Uses sparse autoencoders to find that LLMs represent entity recognition-whether the model can recall facts about an entity-as causal directions in activation space. Steering these directions induces refusal on known entities or hallucination on unknown ones; chat finetuning repurposes this base-model mechanism.",
+  "topics": ["Interpretability", "Alignment"]
+ },
+ {
+  "id": 1534,
+  "summary": "Proposes a Neural Radiance Field representation for non-opaque scenes that bakes quadrature fields into textured polygons, enabling fast inference while preserving NeRF's high-quality novel-view rendering and avoiding costly dense volume sampling.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1533,
+  "summary": "Introduces UniIR, an instruction-guided universal multimodal retriever that handles heterogeneous retrieval tasks (e.g., text-to-image, image-to-text) in a single model, plus the M-BEIR benchmark for training and evaluating retrieval across diverse modality combinations.",
+  "topics": ["Multimodal", "Evaluations"]
+ },
+ {
+  "id": 1532,
+  "summary": "Develops a recurrent transformer neural-network decoder for the surface code that outperforms state-of-the-art decoders on Google's Sycamore data at distances 3 and 5, scales to distance 11 in simulation, and adapts to real hardware noise from limited experimental samples.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1531,
+  "summary": "Reports InterPro v101, which classifies over 200 million protein sequences into 85,000 families and domains by integrating member-database signatures. Updates include deeper AlphaFold structure integration and AI-assisted family descriptions, with over 5,000 new entries added in two years.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 230,
+  "summary": "Introduces ViSTa, 4,000+ videos with step-by-step descriptions across virtual-home, Minecraft, and real-world settings, hierarchically structured to test vision-language models on sequential tasks. State-of-the-art VLMs recognize objects well but largely fail to judge task sequences, with only GPT-4o showing non-trivial performance.",
+  "topics": ["Multimodal", "Evaluations"]
+ },
+ {
+  "id": 78,
+  "summary": "Argues for reporting model-eval results with statistical rigor and gives concrete recommendations: use the Central Limit Theorem for standard errors, cluster errors for related questions, reduce variance, and run paired analyses comparing models on the same questions to detect real capability differences.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 380,
+  "summary": "Presents Value Imprint, a framework that audits the human values embedded in RLHF datasets. Using a values taxonomy and a trained classifier on Anthropic HH-RLHF, OpenAI WebGPT, and Alpaca-GPT4 data, it finds information/knowledge values dominate while prosocial and democratic values are underrepresented.",
+  "topics": ["Alignment", "Policy & Society"]
+ },
+ {
+  "id": 379,
+  "summary": "Proposes a conceptual framework unifying the many forms of human feedback used to train RL agents. Defines a feedback taxonomy across nine dimensions and seven quality metrics, then derives design requirements for systems that learn from human feedback, bridging ML and HCI.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 1535,
+  "summary": "Updates the Pfam protein-families database: decommissioned the standalone site and merged into InterPro, harmonized with the ECOD structural classification, and expanded metagenomic and microprotein curation. AlphaFold structures refine domain boundaries, and the deep-learning Pfam-N expands UniProtKB coverage by 8.8%.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 381,
+  "summary": "Argues that democratizing AI requires democratic governance and alignment, especially for systemically impactful decisions. Proposes a Democracy Levels framework with milestones and tools to guide organizations and evaluate efforts like Collective Constitutional AI toward more legitimate, participatory AI decision-making.",
+  "topics": ["Policy & Society", "Alignment"]
+ },
+ {
+  "id": 1537,
+  "summary": "Presents SIMPL, an EM-style algorithm that jointly and scalably optimizes latent variables and tuning curves from neural activity, using behavior as initialization. On a large hippocampal dataset it yields smaller, more numerous place fields, suggesting finer spatial encoding than behavior-based analyses imply.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1536,
+  "summary": "Studies soundness notions for interactive oracle proofs (IOPs), a proof-system model generalizing interactive proofs and PCPs that underpins many succinct arguments. Establishes new results clarifying the relationships among soundness definitions for IOPs.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 518,
+  "summary": "Proposes blocking whole classes of jailbreaks rapidly after seeing only a few examples, rather than seeking perfect robustness. Introduces RapidResponseBench; the best method finetunes an input classifier on automatically proliferated jailbreaks, cutting attack success over 240x in-distribution and over 15x out-of-distribution from one example per strategy.",
+  "topics": ["Robustness & Security", "Safety"]
+ },
+ {
+  "id": 2719,
+  "summary": "Examines AI red teaming through a social-and-collaborative-computing lens, surfacing under-studied human factors: how red teamers are selected, their biases and blind spots, and the psychological toll of harmful content. Sets a workshop agenda connecting red teaming to data-labeling and content-moderation research.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 1538,
+  "summary": "Proposes that humans achieve compositional generalization by abstracting and recombining knowledge of subprocess dynamics. Across two sequence-learning studies, participants transferred learned subprocess knowledge to novel composite tasks; predictive-representation models lacking transfer failed to fit the behavior.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1539,
+  "summary": "Builds Flamingo-CXR, a chest-radiograph report generator, and evaluates it with board-certified radiologists. Preferences varied widely: AI reports matched or beat clinicians in 56% of ICU and 78% of in/outpatient cases; both report types contained errors, motivating a clinician-AI collaborative composition setting.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 592,
+  "summary": "Argues intervention is a core goal of interpretability and unifies sparse autoencoders, logit lens, tuned lens, and probing into one encoder-decoder framework. New metrics (intervention success rate, coherence-intervention tradeoff) show control is possible but inconsistent, with lens methods outperforming SAEs and probes on simple concepts.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 519,
+  "summary": "Introduces SimpleQA, a benchmark of short, fact-seeking questions with single indisputable answers, adversarially collected against GPT-4 and easy to grade as correct, incorrect, or not-attempted. Designed to measure whether models know what they know, rewarding accurate answers and appropriate abstention.",
+  "topics": ["Evaluations"]
+ }
+]

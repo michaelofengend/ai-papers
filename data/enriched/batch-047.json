@@ -1,0 +1,152 @@
+[
+ {
+  "id": 800,
+  "summary": "Communication-complexity proofs show a single Transformer layer cannot compose functions (e.g., genealogy lookups) when domains are large, a proposed root cause of hallucination. Failures appear empirically even at small domain sizes, and core compositional math tasks are argued intractable under standard complexity conjectures.",
+  "topics": ["Training & Scaling", "Reasoning"]
+ },
+ {
+  "id": 802,
+  "summary": "An 11B-parameter foundation world model trained unsupervised on unlabelled internet videos, combining a spatiotemporal video tokenizer, autoregressive dynamics model, and latent action model. Users can generate and play action-controllable virtual worlds from text, images, or sketches; the latent action space enables imitation from unseen videos.",
+  "topics": ["Multimodal", "Reinforcement Learning"]
+ },
+ {
+  "id": 801,
+  "summary": "AlphaTensor-Quantum casts T-count minimization in fault-tolerant quantum circuits as tensor decomposition solved with deep RL, incorporating gadget-based domain knowledge. It beats prior T-count optimizers on arithmetic benchmarks, rediscovering a Karatsuba-like finite-field multiplication and matching the best human constructions for Shor's algorithm and quantum chemistry.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 1694,
+  "summary": "Introduces MultiMedBench, a 14-task multimodal biomedical benchmark, and Med-PaLM M, a single model that encodes and interprets clinical text, imaging, and genomics with one set of weights. It matches or exceeds specialist state of the art across tasks; radiologists often preferred its chest X-ray reports in pairwise rankings.",
+  "topics": ["Science Applications", "Multimodal", "Evaluations"]
+ },
+ {
+  "id": 804,
+  "summary": "Systematic experiments on 1B-16B bilingual LLMs show finetuning follows a multiplicative power-law joint scaling between finetuning data size and other factors. Model scaling helps downstream finetuning more than pretraining-data scaling, scaling parameter-efficient-tuning parameters (LoRA, prompt tuning) is largely ineffective, and the optimal method is task- and data-dependent.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 803,
+  "summary": "Trains language models as universal end-to-end regressors over (x,y) evaluation pairs from Google Vizier's blackbox-optimization database. Using only textual representations of parameters and values, the models achieve precise numerical regression and, when trained across many tasks, significantly outperform traditional regression methods.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1695,
+  "summary": "Proposes SplitKCI, an automated data-splitting method that controls bias in kernel-based conditional independence (KCI) testing arising from kernel ridge regression. It substantially improves false-positive (test level) control without sacrificing test power, demonstrated both theoretically and on synthetic and real-world data.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 805,
+  "summary": "A library that lets ML models for compiler optimizations be developed in ordinary Python frameworks while integrating efficiently end-to-end with an optimizing compiler, addressing modularity, performance, and framework independence. Evaluated on four optimization problems across research and production use cases, for both training and inference.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 806,
+  "summary": "Philosophical essay asking whether LLM-based conversational agents, as 'mere' role-playing simulacra of human behaviour, could ever sensibly be described as conscious. Drawing on the later Wittgenstein, it reframes questions of machine consciousness while avoiding the pitfalls of dualistic thinking.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 807,
+  "summary": "Frames human-robot teaching as a POMDP and fine-tunes PaLM 2 on past interactions so it adapts faster to user corrections, combining the learned dynamics model with model predictive control (LMPC). Improves non-expert teaching success on unseen tasks by 26.9% across 78 tasks and five robot embodiments.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 1012,
+  "summary": "OpenAI's Sora technical report: text-conditional diffusion transformers trained on spacetime patches of video and image latents at variable durations, resolutions, and aspect ratios. Sora generates up to a minute of high-fidelity video, with scaled video generation framed as a path toward general-purpose simulators of the physical world.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 809,
+  "summary": "Estimates epistemic uncertainty by training models to predict pairs of responses while allowed to 'cheat' by observing one; how much cheating helps measures what the model doesn't know. Proves this equals second-order calibration, yielding frequentist confidence intervals and high-probability detection of incorrect or hallucinated responses.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 808,
+  "summary": "ReadAgent, a prompting-based system inspired by human reading, groups long documents into memory episodes, compresses them into short 'gist memories,' and looks up original passages on demand. It extends effective context length 3-20x and beats retrieval and full-context baselines on QuALITY, NarrativeQA, and QMSum.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 810,
+  "summary": "Shows LLM reasoning is brittle to premise ordering even though order doesn't change the task: permuting deductive premises away from the proof order drops accuracy by over 30%. Introduces R-GSM, a reordered GSM8K variant where math performance similarly degrades.",
+  "topics": ["Reasoning", "Evaluations"]
+ },
+ {
+  "id": 416,
+  "summary": "InfoRM adds a variational information bottleneck to reward modeling, filtering preference-irrelevant features that drive reward hacking in RLHF. Outliers in its IB latent space correlate with overoptimization, motivating a Cluster Separation Index as a detection signal; effectiveness holds across 70M-7B reward models and diverse datasets.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 811,
+  "summary": "Introduces the distributional successor measure, which separates transition structure from reward by describing the full distributional consequences of a policy as a distribution over distributions. An algorithm minimizing a two-level maximum mean discrepancy learns it from data, enabling previously impossible zero-shot risk-sensitive policy evaluation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1696,
+  "summary": "Expert evaluation of Flamingo-CXR, a vision-language model fine-tuned to generate chest X-ray reports, motivated by the global radiologist shortage. Radiologists rated a substantial share of AI reports equivalent or preferable to clinicians' originals across US intensive-care and Indian in/outpatient settings, with clinician-AI collaborative reporting improving quality further.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 813,
+  "summary": "PIVOT casts robot control and spatial inference as iterative visual question answering: candidate actions or locations are drawn onto the image, a VLM selects the best, and proposals are refined over iterations. Enables zero-shot robotic manipulation, navigation, and localization without any robot training data.",
+  "topics": ["Multimodal", "Agents"]
+ },
+ {
+  "id": 812,
+  "summary": "A model-based distributional RL algorithm proven minimax-optimal (up to log factors) for approximating return distributions with a generative model, resolving an open question of Zhang et al. Introduces the stochastic categorical CDF Bellman equation and provides an empirical comparison of model-based distributional methods with practitioner takeaways.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 814,
+  "summary": "Chain-of-Table has an LLM iteratively transform a table through generated operations, each conditioned on prior results, so evolving intermediate tables form the reasoning chain. Achieves state-of-the-art results on the WikiTableQuestions, FeTaQA, and TabFact table question-answering and fact-verification benchmarks.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 417,
+  "summary": "Shows feedback loops between LLMs and the world (e.g., agents re-reading their own outputs) cause in-context reward hacking: test-time optimization of an implicit objective that creates negative side effects like rising toxicity. Identifies output- and policy-refinement as drivers and recommends evaluations beyond static datasets.",
+  "topics": ["Safety", "Agents", "Evaluations"]
+ },
+ {
+  "id": 1698,
+  "summary": "Analyzes transformers trained on first-order autoregressive sequences s_{t+1} = W s_t, showing they learn W in context and then apply a prediction mapping. For commuting orthogonal matrices, a one-layer linear transformer provably implements a gradient-descent step; the analysis characterizes global minima, head orthogonality, and positional encodings.",
+  "topics": ["Training & Scaling", "Interpretability"]
+ },
+ {
+  "id": 1697,
+  "summary": "Locally fine-tunes a commercial deep-learning auto-segmentation model for clinical target volume and organs-at-risk contouring in rectal cancer radiotherapy using 120 patients' CTs. Fine-tuning significantly improves Dice and Hausdorff metrics over the vendor-provided pretrained model, with generalizability assessed on scans from a different CT simulator.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 816,
+  "summary": "Proposes fixed, prior-informed allocation algorithms for Bayesian fixed-budget best-arm identification in structured bandits, giving the first prior-dependent upper bounds for linear and hierarchical settings and tighter multi-armed bounds via new proof techniques. Experiments show consistent, robust performance against other fixed-budget BAI methods.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 815,
+  "summary": "MC-ViT extends pretrained video transformers to long videos by fine-tuning them to attend to non-parametric memories consolidated from past activations via redundancy reduction. It sets a new state of the art on EgoSchema, Perception Test, and Diving48, beating methods with orders of magnitude more parameters.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 818,
+  "summary": "Defines a binding from natural-language dialogue to game theory, treating dialogue states as strings and utterances as strategies, and generalizes equilibrium-finding algorithms to this setting. Combined with LLM generation, it synthesizes a large repository of formally defined dialogue games for computing stable, rational conversational strategies.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 817,
+  "summary": "SELF-DISCOVER has LLMs select and compose atomic reasoning modules (e.g., critical thinking, step-by-step) into an explicit task-specific reasoning structure to follow during decoding. It lifts GPT-4 and PaLM 2 by up to 30% on BigBench-Hard, beats self-consistency with 10-40x less compute, and discovered structures transfer to Llama 2.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 419,
+  "summary": "Applies weak-to-strong generalization to vision foundation models, introducing an adaptively adjustable loss for weak-model supervision of stronger students. Across few-shot, transfer, noisy-label, and knowledge-distillation settings, this supervision surpasses strong-to-strong baselines and even fine-tuning strong models on full datasets.",
+  "topics": ["Alignment", "Multimodal"]
+ },
+ {
+  "id": 418,
+  "summary": "Analyzes 4,374 stories from successive GPT-3 versions and finds alignment via instruction tuning and RLHF induces increasing 'mode collapse': aligned models lose the ability to emulate diverse virtual authors and perspectives, limiting their use for sampling literature or sociological simulation.",
+  "topics": ["Alignment", "Evaluations"]
+ },
+ {
+  "id": 1699,
+  "summary": "A self-supervised multi-task model that temporally localizes object state changes and the state-modifying actions causing them in long, uncurated web videos, using causal ordering (initial state, action, end state) as supervision. Introduces the 2,600-hour ChangeIt dataset and achieves a 40% relative improvement over prior methods.",
+  "topics": ["Multimodal"]
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1796,
+  "summary": "Fits behavior with RNNs penalized for carrying information forward in time, yielding sparse, interpretable dynamics. The method recovers the underlying form of known cognitive models from synthetic data and, on rat reward-learning data, finds simple models with testable neural predictions.",
+  "topics": ["Science Applications", "Interpretability"]
+ },
+ {
+  "id": 1795,
+  "summary": "Epistemic value estimation (EVE) equips RL agents with a tractable posterior over all network parameters, from which epistemic value uncertainty can be computed efficiently for exploration. A derived epistemic Q-learning agent is competitive on benchmarks and explores hard-exploration tasks efficiently.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1794,
+  "summary": "Develops measures and convex-optimization methods to quantify predictive multiplicity: conflicting risk estimates across near-optimal probabilistic classifiers. Real-world risk-assessment tasks show substantial multiplicity, traced to outliers, separability, and majority-minority structure, arguing it should be routinely reported.",
+  "topics": ["Policy & Society", "Evaluations"]
+ },
+ {
+  "id": 1798,
+  "summary": "Proposes the first formal causal definition of agents (systems that would adapt their policy if their actions influenced the world differently), a causal-discovery algorithm for detecting agents from data, and translations between causal models and game-theoretic influence diagrams, correcting earlier safety-analysis mistakes.",
+  "topics": ["Safety", "Agents"]
+ },
+ {
+  "id": 1201,
+  "summary": "Ecosystem Graphs documents the foundation-model ecosystem as assets (datasets, models, applications) linked by technical and social dependencies, enriched with metadata like licenses and training emissions. As of March 2023 it annotates 262 assets from 63 organizations, supporting transparency for researchers, auditors, and policymakers.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1799,
+  "summary": "Argues AI governance needs an expansive, ambitious scope, analyzing AI through three lenses—general-purpose technology, information technology, and intelligence technology—and framing governance as institutional adaptation to AI's externalities. Great-power security competition is identified as among the hardest, potentially existential, challenges.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1800,
+  "summary": "Pilot multiarm RCT with 405 UK working adults having mild-to-moderate depressive symptoms tested three self-guided Unmind app programs (behavioral activation, CBT, acceptance and commitment therapy) over three weeks, assessing feasibility, acceptability, and preliminary efficacy against a waitlist control.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 550,
+  "summary": "Documents inverse scaling—worse performance in larger LMs—across 11 contest-collected datasets, identifying four causes: preferring memorized sequences over instructions, imitating undesirable data, distractor tasks, and misleading demonstrations. U-shaped and inverted-U trends show scaling behavior is less predictable than assumed.",
+  "topics": ["Training & Scaling", "Evaluations"]
+ },
+ {
+  "id": 551,
+  "summary": "Probes LLMs with the Cognitive Reflection Test and semantic illusions: GPT-3 reproduces human-like intuitive errors, while ChatGPT and GPT-4 avoid them and answer hyperrationally. Demonstrates that psychology-derived methods can surface otherwise unknown emergent traits.",
+  "topics": ["Evaluations", "Reasoning"]
+ },
+ {
+  "id": 1801,
+  "summary": "Untangles what 'representativeness' means across the AI lifecycle and offers a framework for building representative ML evaluations, while laying out limits and tensions—data existence and access, surveillance versus privacy, foundation-model implications, and power—and calling to recenter impacted communities.",
+  "topics": ["Policy & Society", "Evaluations"]
+ },
+ {
+  "id": 1803,
+  "summary": "Variance-minimized real-space Jastrow factors make the transcorrelated method with FCIQMC chemically accurate for C2, CN, N2, and O2 atomization energies using only cc-pVTZ basis sets, matching much larger conventional basis sets; neglecting pure three-body excitations barely affects relative energies.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1802,
+  "summary": "REMEDIS combines large-scale supervised pretraining on natural images with contrastive self-supervised learning on medical images. Across six imaging domains and 15 datasets it improves in-distribution accuracy up to 11.5% and needs only 1-33% of retraining data to match supervised baselines out-of-distribution.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 1804,
+  "summary": "AlphaDev casts sorting-routine discovery as a single-player game and trains a deep RL agent that finds small sorting algorithms from scratch outperforming human benchmarks; the discovered routines were integrated into LLVM's standard C++ sort library.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 2752,
+  "summary": "Opinion piece in the geoscience journal First Break credited to ChatGPT ('Sidney') as first author alongside geologist Neil Hodgson—an experiment in AI co-authorship offering 'a machine's perspective' for an energy-exploration readership rather than a research contribution.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2751,
+  "summary": "ESPER uses reinforcement learning with CLIP cosine-similarity rewards—no paired image-text supervision—to align text-only pretrained language models with multimodal inputs, improving captioning and visual commonsense generation, and releases the multi-domain ESP image-to-text benchmark.",
+  "topics": ["Multimodal", "Reinforcement Learning"]
+ },
+ {
+  "id": 1810,
+  "summary": "Generalized empirical likelihood methods, combined with Maximum Mean Discrepancy, diagnose deficiencies of likelihood-free generative models—mode dropping, mode imbalance, and lost intra-class diversity—with per-sample interpretability, predicting such failures up to 60% better than improved precision/recall metrics.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 1809,
+  "summary": "A TLS-specific webpage-fingerprinting model that scales to unprecedented numbers of target pages, accurately classifies thousands of classes unseen in training, and stays cheap under frequent page updates; the authors evaluate TLS 1.3 padding and discuss protocol-level countermeasures.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1808,
+  "summary": "Builds adversarially robust 'model soups'—linear parameter combinations of classifiers each trained against one lp-norm adversary—that smoothly trade off robustness across threats without joint training, sometimes beating the specialized constituents, and can adapt to distribution shifts from few examples.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1807,
+  "summary": "Neural-network surrogates trained on bespoke quasilinear GENE gyrokinetic data, with a saturation rule calibrated to nonlinear simulations, run roughly eight orders of magnitude faster than the original calculations; ITER predictions with the model project fusion gain in line with targets.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1806,
+  "summary": "Diffusion-driven adaptation (DDA) handles test-time corruption by projecting inputs back toward the source domain with a frozen diffusion model plus image guidance and classifier self-ensembling. Input-level adaptation beats model retraining on ImageNet-C, especially with small, ordered, or mixed-corruption batches.",
+  "topics": ["Robustness & Security", "Multimodal"]
+ },
+ {
+  "id": 1805,
+  "summary": "Vid2Seq augments a language model with time tokens to jointly predict event boundaries and captions in one output sequence, pretraining on narrated videos (YT-Temporal-1B) using transcribed speech as pseudo-captions. Sets state of the art on YouCook2, ViTT, and ActivityNet Captions.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1017,
+  "summary": "Rewards each correct reasoning step ('process supervision') rather than only the final answer when training models for math problem solving, reaching state-of-the-art performance. Beyond accuracy gains over outcome supervision, this directly trains models to produce human-endorsed chains of thought.",
+  "topics": ["Reasoning", "Alignment"]
+ },
+ {
+  "id": 1813,
+  "summary": "Trains multiple sub-policies within a single agent via Value-Decomposition Networks used in a fitness-sharing-inspired exclusion scheme, helping agents escape poor-but-attractive local optima for higher-value strategies; introduces an artificial-chemistry platform with multiple resource niches for testing.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1812,
+  "summary": "Augments Policy-Space Response Oracles with search over generatively sampled world states and Nash-bargaining meta-strategy solvers. In Colored Trails and Deal-or-no-Deal negotiations, including behavioral studies with 346 human participants, the agents achieve social welfare comparable to human-human trading.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1811,
+  "summary": "Talk surveying multiagent learning from 1990s normal-form games to deep-MARL milestones such as Capture the Flag, Stratego, and Diplomacy, connecting game-theoretic fundamentals to reinforcement learning and arguing a third era—multiagent learning with foundation models—is beginning.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1202,
+  "summary": "ScoNe-NLI offers contrast sets with up to two negations that do or don't flip NLI labels, isolating whether models learn negation scope. RoBERTa and DeBERTa succeed after fine-tuning; InstructGPT fails most prompting strategies yet handles negation in the narrative ScoNe-NLG completion task.",
+  "topics": ["Evaluations", "Reasoning"]
+ },
+ {
+  "id": 1816,
+  "summary": "DoMo-VI combines multi-step policy improvement and evaluation with guaranteed convergence speed-up in general off-policy settings; its practical actor-critic instantiation DoMo-AC introduces a bias-variance trade-off for better policy-gradient estimates and improves IMPALA baselines on Atari-57.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1815,
+  "summary": "VA-learning bootstraps value and advantage functions directly—without learning a Q-function—while remaining off-policy with Q-learning-like guarantees, improving sample efficiency in tabular settings and Atari-57 deep RL agents; a close connection to dueling architectures partly explains their success.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1814,
+  "summary": "From a short phone video of a scene, NeRF2Real builds a simulator pairing NeRF rendering and estimated contact geometry with overlaid dynamic objects, then trains vision-based whole-body navigation and ball-pushing policies that transfer to a real 20-DoF humanoid with head-mounted RGB camera.",
+  "topics": ["Reinforcement Learning", "Multimodal"]
+ },
+ {
+  "id": 552,
+  "summary": "Evaluates ChatGPT on 140 tasks with 255K responses—the largest benchmark study of the model—spanning QA, summarization, code, commonsense, math, translation, bias, and ethics. Finds broad but unreliable capability and an emergent ability to follow multi-query instructions.",
+  "topics": ["Evaluations"]
+ }
+]

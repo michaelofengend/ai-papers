@@ -1,0 +1,152 @@
+[
+ {
+  "id": 122,
+  "summary": "Studies calibration and self-knowledge in large language models: models are well-calibrated on multiple-choice and true/false questions, can self-evaluate the correctness of their own sampled answers via P(True), and can be trained to predict P(IK) — whether they know an answer — with partial cross-task generalization.",
+  "topics": ["Alignment", "Evaluations"]
+ },
+ {
+  "id": 1957,
+  "summary": "Revisits regret via the Phi-regret framework over partitions of the full mixed-strategy space, proving that unmodified replicator dynamics minimizes the strongest possible form of Phi-regret in generic 2x2 games, with experiments across 144 such games confirming the theory.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1958,
+  "summary": "Identifies archaeal homologs of fusexins, the protein superfamily mediating eukaryotic gamete and cell fusion and viral entry. The crystal structure of trimeric Fusexin1 reveals the archetypal fusexin fold with unique features, and the protein can fuse mammalian cells, suggesting deep evolutionary origins of fusion machinery.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1959,
+  "summary": "Introduces Democratic AI, a human-in-the-loop pipeline using deep RL to design a wealth-redistribution mechanism for an online public-goods game. The AI-designed mechanism redressed initial wealth imbalance, sanctioned free-riders, and won majority votes over human-designed alternatives, a proof of concept for value-aligned mechanism design.",
+  "topics": ["Reinforcement Learning", "Policy & Society"]
+ },
+ {
+  "id": 1965,
+  "summary": "Extends the apperception task — inducing interpretable symbolic theories that explain sensory sequences — to raw, unparsed input. A binary neural network encoded as a logic program maps raw input to disjunctive symbols, letting perception and theory induction be solved jointly as a single SAT problem.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1964,
+  "summary": "Studies the expressivity of Markov reward for specifying tasks framed as acceptable behavior sets or partial orderings over behaviors/trajectories. Proves that some instances of each task type cannot be captured by any Markov reward, and gives polynomial-time algorithms to construct a suitable reward or certify none exists.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1963,
+  "summary": "Presents DUA, a neuro-symbolic hierarchical RL framework combining a computer-vision detector/tracker, pre-trained deep-RL option policies, and an answer-set-programming meta-policy learned via inductive logic programming. From few examples it improves the state of the art on several challenging Animal-AI cognitive-reasoning categories.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1962,
+  "summary": "Surveys 524 researchers who published at top AI/ML venues on AI ethics and governance. Finds high trust in international and scientific bodies, low trust in militaries and some tech firms, strong opposition to lethal autonomous weapons, and majority support for prioritizing safety research and pre-publication harm review.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1961,
+  "summary": "Introduces ISMCTS-BR, a scalable search-based deep-RL algorithm that learns an approximate best response to a fixed agent, enabling worst-case (exploitability) evaluation in large games beyond poker-specific methods. Demonstrated against several agents, including AlphaZero-based ones.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 1960,
+  "summary": "Characterizes the problem of abstraction in deep reinforcement learning and reviews how established approaches to analogical reasoning and associative memory might be adapted, highlighting the difficulty posed by the requirement for end-to-end differentiability.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1976,
+  "summary": "Establishes the first complete graphical criterion for value of information in influence diagrams with multiple decisions — a building block for analyzing AI safety and fairness. Introduces ID homomorphisms (structure-preserving transformations) and the Tree of Systems as supporting proof techniques.",
+  "topics": ["Safety"]
+ },
+ {
+  "id": 1975,
+  "summary": "Proposes a family of off-policy prediction algorithms that are convergent by construction: each value estimate bootstraps off a previous on-policy estimate, forming a chain that approaches the off-policy TD solution even where standard TD diverges. Proves convergence and links it to an iterative inverse-matrix decomposition.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1974,
+  "summary": "Introduces Decentralized Shadow Reward Actor-Critic (DSAC) for cooperative multi-agent RL that optimizes general nonlinear utilities of the team's occupancy measure, subsuming cumulative return plus risk-sensitivity and exploration. Agents estimate a local 'shadow reward'; DSAC provably converges to the global optimum with finite-sample rates.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1973,
+  "summary": "Develops a multi-step emphatic weighting compatible with experience replay, plus a time-reversed n-step TD method to learn it, stabilizing off-policy deep RL under the deadly triad. The resulting X-ETD(n) agent reduces variance with convergence guarantees and improves over baselines on Atari.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1972,
+  "summary": "Defines 'introduced unfairness' — discrimination an ML system amplifies beyond the training data — and proposes introduced total variation as a measure. Derives causal/graphical conditions under which it is incentivized, showing that adding the sensitive attribute as a feature can remove the incentive under well-behaved losses.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1971,
+  "summary": "Introduces concept-bottleneck GNNs, which modify the readout to learn human-interpretable concepts and extract per-class propositional formulas for graph-algorithm tasks. Achieves performance competitive with state-of-the-art models while enabling global, concept-based explanations of otherwise black-box reasoning.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1970,
+  "summary": "Introduces Online Apprenticeship Learning, where an agent must match expert performance while interacting with the environment. Combines two mirror-descent no-regret algorithms (policy optimization and worst-case cost learning) to achieve O(sqrt(K)) regret without solving an MDP each iteration, plus a GAIL-like deep variant.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1969,
+  "summary": "Presents a framework for training agents whose naive incentives are unsafe (e.g., manipulation or deception). Using causal influence diagrams, agents maximize the causal effect of actions on return not mediated by designated 'delicate' state, removing the incentive to control it, and unifying prior proposals.",
+  "topics": ["Safety", "Reinforcement Learning"]
+ },
+ {
+  "id": 1968,
+  "summary": "Learns 'Master policies' for Mean Field Games that act optimally against any population distribution, proving a single Master policy yields a Nash equilibrium regardless of the initial distribution. Trains them by adding the current population distribution to the observation and combining neural nets, RL, and Fictitious Play.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1967,
+  "summary": "Shows that symmetries — reuse of the learning rule and invariance to input/output permutations — drive generalization in meta-RL but are absent from typical black-box methods. Building a black-box meta-RL system with these symmetries yields algorithms that generalize better to unseen action/observation spaces, tasks, and environments.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1966,
+  "summary": "Studies how human behavior shifts within a human-AI selective-prediction team that defers uncertain cases to people. Using real conservation data, varying what humans are told significantly affects accuracy: informing them of the decision to defer, while withholding the AI's prediction, boosts performance.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1027,
+  "summary": "Describes pre-training mitigations for DALL-E 2, including filtering explicit and harmful content from the training data and addressing issues like image regurgitation, to reduce the risk of the image-generation model producing content-policy-violating outputs.",
+  "topics": ["Safety", "Multimodal"]
+ },
+ {
+  "id": 1028,
+  "summary": "Video PreTraining (VPT) trains a Minecraft agent from a massive unlabeled human-gameplay video corpus, using a small labeled set to learn an inverse-dynamics model for pseudo-labeling actions. After RL fine-tuning the model crafts diamond tools using the native keyboard/mouse interface — a step toward general computer-using agents.",
+  "topics": ["Agents", "Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2773,
+  "summary": "A demonstration in which GPT-3 was prompted, with minimal human input, to draft an academic-style paper describing itself. The authors report it produced coherent self-descriptions and discuss the ethical and authorship questions this raises, recommending close researcher oversight of such uses.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2774,
+  "summary": "Disentangles distinct ethical issues in ML research — research integrity, research-process harms, and downstream consequences — clarifying how they differ, examining which governance mechanisms best address each, and highlighting concerns that receive less attention than warranted.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1979,
+  "summary": "Explains how the phage AR9 non-virion RNA polymerase recognizes the -10 promoter element on the template (rather than non-template) strand of its deoxyuridine-containing DNA. Two nucleotide-accepting pockets enforce the conserved deoxyuridines, and a single amino-acid substitution lets one pocket accept thymine, broadening the promoter consensus.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1978,
+  "summary": "Draws on critical theory to argue that ML's default static, discrete notion of human 'identity' immobilizes categories and their associated power differentials. Proposes a theory of identity as autopoiesis — constructed through interaction — and sketches approaches via multilevel optimization and relational learning.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1977,
+  "summary": "Develops a comprehensive taxonomy of 21 ethical and social risks from large language models across six areas: discrimination/hate/exclusion, information hazards, misinformation, malicious uses, human-computer interaction harms, and environmental/socioeconomic harms — discussing causal mechanisms, evidence, and mitigation directions for each.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 1980,
+  "summary": "Evaluates a single-parameter transcorrelated (TC) correlation factor on many-electron systems — the Li-Ne atoms, their cations, and small molecules — combined with TC-FCIQMC. It reaches near chemical accuracy with quadruple-zeta basis sets, only slightly less accurate than more elaborate correlation factors.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1029,
+  "summary": "Evolution through Large Models (ELM) uses a code-trained LLM as an intelligent mutation operator in genetic programming. Combined with MAP-Elites it generates hundreds of thousands of working Python programs for ambulating Sodarace robots, then bootstraps a conditional LM outputting designs per terrain, advancing open-endedness.",
+  "topics": ["Training & Scaling"]
+ }
+]

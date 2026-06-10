@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1746,
+  "summary": "Critically studies why LLM-generated class descriptors help zero-shot CLIP classification, showing that replacing them with random character and word descriptors yields comparable gains across many benchmarks, serving as a low-cost alternative and a sanity check for LLM-based vision-language extensions.",
+  "topics": ["Multimodal", "Evaluations"]
+ },
+ {
+  "id": 1745,
+  "summary": "Proposes SuS-X, a training-free name-only transfer method for CLIP that needs neither fine-tuning nor target-task images, using a curated support set (SuS) plus a TIP-X inference rule; achieves state-of-the-art zero-shot classification across 19 benchmarks.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1744,
+  "summary": "Using fMRI and MEG while participants assemble novel objects from elements, finds frontal-cortex and hippocampal representations are relational and compositional, and that neural replay sequences assemble elements into candidate configurations, implicating generative replay in compositional inference and hypothesis testing.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1743,
+  "summary": "Introduces CuPL, which prompts an LLM to generate many descriptive, discriminative sentences per category and uses them as classification prompts for open-vocabulary models; improves zero-shot accuracy across benchmarks (over one point on ImageNet) with no extra training.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 104,
+  "summary": "Trains sparse autoencoders (dictionary learning) on a one-layer transformer's MLP activations, decomposing them into thousands of largely monosemantic, interpretable features that overcome superposition, prove more interpretable than individual neurons, and causally steer model behavior.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2746,
+  "summary": "Comprehensive survey of diffusion generative models, organizing methods into efficient sampling, improved likelihood estimation, and handling structured data, and reviewing applications across vision, language, temporal data, and the sciences, plus combinations with other generative models.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1753,
+  "summary": "Surveys EDEN, which exploits DNNs' tolerance to bit errors to run inference on approximate DRAM operating at reduced voltage and access latency; it lowers memory energy and latency while meeting a user-specified target accuracy across CPUs, GPUs, and accelerators.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 547,
+  "summary": "Proposes an evaluation-based scheme for frontier AI developers to pause R&D when models exhibit dangerous capabilities: evaluate, pause on failure, notify peers, add safeguards, and resume only past safety thresholds; analyzes four versions ranging from voluntary to legally mandated.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 2747,
+  "summary": "A reflective exploration of GPT-3's ability to produce credible undergraduate-level academic writing and the resulting risk of cheating in higher education, weighing how instructors can currently detect such text and the ethics of using it as a writing collaborator.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 430,
+  "summary": "Open-source, reproducible LLM evaluation suite (built on OpenAI Evals) that benchmarks 10+ leading and legacy models across 20+ datasets in seven capability categories under aligned settings, offering a retrospective on the capability progression from GPT-3 to GPT-4.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 617,
+  "summary": "Systematically studies methodological choices in activation patching for localization and circuit discovery, showing that evaluation metrics and corruption methods can yield divergent interpretability results, and offers conceptual arguments and concrete best-practice recommendations.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1755,
+  "summary": "A perspective on the future of computational and systems neuroscience, arguing the field will be reshaped by large-scale neural datasets and powerful AI models while remaining driven by theory-led experimentation.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1754,
+  "summary": "Recording human single units from dlPFC and dACC during a conflict task, finds pre-trial firing rates predict reaction time; dlPFC showed domain-specific initial states and dACC a domain-general one, supporting initial-state dependence in cognitive control.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 900,
+  "summary": "Analyzes five assumptions underlying influence-function methods that break for deep networks; shows parameter divergence fundamentally limits their ability to predict leave-one-out retraining (influence fades over training), yet confirms they remain useful for debugging and correcting mispredictions via a few fine-tuning steps.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 901,
+  "summary": "Defines Self-AIXI, a universal agent that, unlike planning-based AIXI, learns by self-predicting its own action stream generated via Q-value maximization; proves it converges to AIXI and inherits properties like maximal Legg-Hutter intelligence and self-optimization.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 629,
+  "summary": "Tracr compiles human-readable RASP programs into decoder-only transformer weights with known structure, yielding ground-truth models for evaluating interpretability methods and studying phenomena like superposition; demonstrated on token counting, sorting, and parenthesis checking, with open-source code.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1015,
+  "summary": "OpenAI's text-to-image system with markedly better adherence to long, detailed prompts than DALL-E 2, achieved partly by training on highly descriptive synthetic captions; integrated natively into ChatGPT for prompt crafting, with safety mitigations and artist opt-outs.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 902,
+  "summary": "Adapts AlphaFold, fine-tuned on human and primate variant frequencies, to predict missense-variant pathogenicity from structural context and evolutionary conservation; reaches state-of-the-art across benchmarks without training on labels, predicts gene essentiality, and releases predictions for all possible human missense substitutions.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1756,
+  "summary": "An fMRI navigation study showing hippocampal and orbitofrontal cognitive maps are warped by goals so that goal-cued locations sit closer together in neural state space, a distortion that predicts learning and is captured by jointly encoding current and prospective locations.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1757,
+  "summary": "Trains a graph neural network to simulate Solar System dynamics from 30 years of trajectories, then applies symbolic regression to recover an analytic force law equivalent to Newton's gravitation and to infer planetary and lunar masses, without assuming masses or constants.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 618,
+  "summary": "Uses sparse autoencoders to reconstruct language-model activations, recovering sparsely-activating features that are more interpretable and monosemantic than alternative directions and that more precisely localize components causally responsible for indirect-object-identification behavior, a scalable unsupervised approach to resolving superposition.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2748,
+  "summary": "Incorporates explicit and implicit negative user feedback into sequential recommender retrieval training via a 'not-to-recommend' loss, and introduces a counterfactual simulation framework to measure responsiveness; live large-scale experiments show faster suppression of disliked recommendations.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1758,
+  "summary": "Studies teamwork RL where agents act on disjoint state blocks with private rewards while maximizing a nonlinear team utility; proposes a min-max multi-block policy-optimization framework with reward-shaping coordination, proving an O(1/T) convergence rate to the team optimum while preserving local privacy.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1761,
+  "summary": "A machine-learning approach to logic synthesis that first generates a design optimizing correctness against a specification, then optimizes hardware efficiency while preserving functional equivalence; it won 82% of problems at the IWLS 2023 contest, matching or beating human-designed circuits.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1760,
+  "summary": "Benchmarks contactless camera-based vital-sign estimation against a medical device across Fitzpatrick skin-tone groups using around 330 videos from 90 patients; reports heart-rate mean absolute error of 3 bpm consistently across subgroups, addressing demographic-bias concerns in remote monitoring.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 1759,
+  "summary": "Applies machine learning (best: random forest) to detect atrial fibrillation from short-term ECG and PPG signals across five databases, testing whether ECG-trained models transfer to PPG; reaches 90-97% accuracy, supporting non-invasive large-scale screening.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 903,
+  "summary": "Revisits energy-based models for robot policy representation, refuting the belief that high-dimensional EBMs are impractical to train; combines ranking noise-contrastive estimation, learnable negative samplers, and non-adversarial joint training, proves consistency, and explains the bias of Implicit Behavior Cloning.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 904,
+  "summary": "Scales inverse reinforcement learning to world-sized MDPs (200M states, 110M samples, 360M parameters) via graph compression, parallelization, and eigenvector-based initialization; introduces Receding Horizon Inverse Planning (RHIP) and improves global route quality by 18%, the largest real-world IRL instance reported.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 1762,
+  "summary": "Examines test-retest reliability of canonical reinforcement-learning model parameters in bandit and reversal-learning tasks; despite reliable personality and cognitive measures, parameter reliability was generally poor (ICCs .01-.71), with simulations and mood effects pointing to participant variability rather than method limits, cautioning computational phenotyping.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 1763,
+  "summary": "Trains a deep-RL 'social planner' to recommend forming or breaking ties among people in a group cooperation game; in live play for real money it raised cooperation to 77.7% (versus 42.8% for static networks) by taking a conciliatory approach toward defectors.",
+  "topics": ["Reinforcement Learning", "Policy & Society"]
+ }
+]

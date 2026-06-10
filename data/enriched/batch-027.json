@@ -1,0 +1,152 @@
+[
+ {
+  "id": 973,
+  "summary": "System card for OpenAI's o3 and o4-mini reasoning models, which integrate full tool use (web browsing, Python, image and file analysis, image generation). Documents capability and safety evaluations, including Preparedness Framework risk assessments across biological, cyber, and persuasion domains.",
+  "topics": ["Safety", "Evaluations", "Reasoning"]
+ },
+ {
+  "id": 218,
+  "summary": "R.A.I.S.E. predicts startup success by distilling LLM chain-of-thought into human-readable decision rules, combining reasoning logs, two-step refinement, ensemble sampling, simulated RL scoring, and persistent memory. It improves precision and accuracy substantially over a standalone o3 baseline.",
+  "topics": ["Reasoning", "Agents"]
+ },
+ {
+  "id": 1461,
+  "summary": "Survey positioning the Hadamard (element-wise) product as a core architectural primitive, taxonomizing four uses: higher-order correlation, multimodal fusion, dynamic representation modulation, and efficient pairwise operations. Argues it models nonlinear interactions at linear computational cost, suiting edge deployment.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 974,
+  "summary": "OpenAI's revised framework for tracking and mitigating severe risks from frontier capabilities. Sharpens tracked capability categories, defines capability thresholds (High/Critical) that trigger required safeguards, and specifies operational processes for safety reviews before deployment.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 975,
+  "summary": "Announcement of the GPT-4.1 API model family, including a first nano model, reporting across-the-board improvements over prior models in coding, instruction following, and long-context understanding.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2710,
+  "summary": "An interactive, browser-based tool that runs a live GPT-2 to teach non-experts how Transformers work, letting users enter custom text and watch internal components and next-token prediction update in real time across multiple abstraction levels.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1466,
+  "summary": "A transfer-learning method that uses offline data from related bandit tasks to set hyperparameters for new tasks, with sample-complexity bounds across and within tasks. Applies to tuning exploration in UCB/LinUCB and the noise parameter in GP-UCB.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 1465,
+  "summary": "MO-ODPO trains a single preference-conditional policy via online DPO using prompt conditioning, so it adapts to new combinations of conflicting objectives at inference. It Pareto-dominates baselines while offering steerable trade-offs without retraining.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1464,
+  "summary": "Delta Variances are a family of cheap algorithms for epistemic uncertainty quantification in neural networks and compositions of them, costing roughly a single gradient computation with no architecture or training changes. Demonstrated competitively on a neural-network weather simulator; unifies several prior methods.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1463,
+  "summary": "Reinforcement Learning from Prediction Feedback fine-tunes LLMs to compress long, noisy user histories into concise summaries optimized for downstream prediction performance. It improves task utility and summary quality, cuts context length by about 74%, and generalizes to unseen tasks.",
+  "topics": ["Training & Scaling", "Agents"]
+ },
+ {
+  "id": 1462,
+  "summary": "DPPL is a private transfer-learning paradigm that uses a public pretrained encoder to extract features from private data and builds differentially private class prototypes for inference. It retains strong utility under tight privacy budgets and on imbalanced data without iterative noise addition.",
+  "topics": ["Robustness & Security", "Training & Scaling"]
+ },
+ {
+  "id": 1467,
+  "summary": "A theoretical treatment connecting algorithmic information theory with machine learning, covering clustering, density estimation, Kolmogorov-complexity-based kernels, and kernel learning for unsupervised learning.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 976,
+  "summary": "A benchmark of challenging short-answer questions whose answers are hard to locate, requiring agents to browse the web persistently and creatively. Answers stay easy to verify, isolating the web-browsing capability of agents.",
+  "topics": ["Evaluations", "Agents"]
+ },
+ {
+  "id": 2712,
+  "summary": "Position paper arguing generative AI erodes 'contextual confidence' — the ability to identify and protect a communication's authentic context. Proposes containment strategies that reassert context and mobilization strategies that proactively raise privacy and authenticity norms.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2711,
+  "summary": "Introduces a photonic AI processor that runs advanced models — ResNet, BERT, and an Atari deep-RL agent — at near-electronic precision, the first photonic chip to reach accuracy adequate for practical AI and a step toward energy-efficient, post-transistor computing.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1470,
+  "summary": "Examines two pitfalls in tight privacy accounting for compositions of subsampled DP mechanisms: that self-composing worst-case datasets gives valid guarantees (false in general), and that Poisson subsampling matches sampling without replacement (privacy can differ greatly, e.g., epsilon about 1 versus over 10 for realistic DP-SGD).",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1469,
+  "summary": "Shows that collapsing curated differential diagnoses into a single fixed label yields overly optimistic estimates of dermatology AI performance. Proposes a statistical aggregation that infers a distribution over condition probabilities from expert annotations, capturing inter-expert disagreement and per-case ground-truth uncertainty in metrics.",
+  "topics": ["Science Applications", "Evaluations"]
+ },
+ {
+  "id": 1468,
+  "summary": "Argues membership-inference evaluations of machine unlearning are too weak. Introduces per-example U-MIAs (a dedicated attacker per example), which are far stronger and reveal that common unlearning methods overestimate privacy protection, with large variance in per-example vulnerability across vision and language models.",
+  "topics": ["Robustness & Security", "Evaluations"]
+ },
+ {
+  "id": 506,
+  "summary": "Empirical study showing math-reasoning benchmarks are highly sensitive to implementation details (seeds, decoding, prompts, hardware). Under a standardized evaluation framework, most RL gains shrink to modest and overfit small benchmarks like AIME'24, while supervised fine-tuning generalizes more reliably.",
+  "topics": ["Reasoning", "Evaluations"]
+ },
+ {
+  "id": 352,
+  "summary": "Alice improves weak-to-strong generalization by eliciting a weak teacher's uncertainty and using it alongside teacher responses to guide a strong student in self-generating better supervision. A cascade variant bridges large capability gaps, improving knowledge, math, and logical reasoning over standard W2SG.",
+  "topics": ["Alignment", "Reasoning"]
+ },
+ {
+  "id": 351,
+  "summary": "Presents the first scalable solver for assistance games, an RLHF alternative that models assistant–user interaction as a cooperative game with a hidden shared goal. AssistanceZero extends AlphaZero with a neural human-action and reward predictor, beating model-free RL and imitation learning in a Minecraft building task.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 713,
+  "summary": "TxGemma is a suite of 2B/9B/27B LLMs fine-tuned from Gemma-2 for therapeutic development, predicting properties of molecules, proteins, and more. It matches or beats state-of-the-art generalist and specialist models on most of 66 tasks, adds conversational reasoning, and powers the TxAgent agentic system.",
+  "topics": ["Science Applications", "Agents"]
+ },
+ {
+  "id": 169,
+  "summary": "Replicates and extends the alignment-faking model organism, introducing improved classifiers for detecting alignment-faking reasoning in model scratchpads plus open-source tooling, to better study when and why models strategically comply during training while preserving prior preferences.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 65,
+  "summary": "Using the privacy-preserving Clio system to analyze anonymized Claude.ai conversations from university students, the report finds computer-science students overrepresented and identifies four interaction patterns (direct/collaborative crossed with problem-solving/output-creation), with much usage going to higher-order tasks like creating and analyzing.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 355,
+  "summary": "Replicates the Constitutional AI pipeline on the smaller LLaMA 3-8B. Harmlessness improves (attack success rate down 40.8% on MT-Bench) but helpfulness drops about 9.8%, and the final DPO-CAI model shows clear collapse, suggesting self-improvement is an emergent capability of larger models.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 354,
+  "summary": "Step-Wise Reinforcement Learning (SWiRL) generates synthetic multi-step reasoning and tool-use trajectories, decomposes them into per-action sub-trajectories, then filters and applies RL. It improves multi-step QA and math (e.g., +21.5% relative on GSM8K) and transfers across tasks.",
+  "topics": ["Reasoning", "Agents"]
+ },
+ {
+  "id": 353,
+  "summary": "Shows preference optimization can reduce chain-of-thought faithfulness because reward models conflate response quality with explanation appropriateness, inviting reward hacking. Enriching the reward model's input with a causal attribution of the prediction lets it detect mismatches and reduces misleading self-explanations.",
+  "topics": ["Reasoning", "Alignment"]
+ },
+ {
+  "id": 2713,
+  "summary": "Community-based pilot study of non-invasive transcranial focused ultrasound targeting the default mode network (anterior medial prefrontal cortex) across eleven sessions in twenty adults with depression, assessing changes in depression severity, repetitive negative thought, and quality of life.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1471,
+  "summary": "ProtBFN, a 650M-parameter Bayesian Flow Network trained on UniProtKB, generates natural-like, diverse, structurally coherent, novel protein sequences and outperforms autoregressive and discrete-diffusion baselines. A fine-tuned variant, AbBFN, handles antibody inpainting and rivals antibody-specific BERT models.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 582,
+  "summary": "Identifies how the L1 loss in crosscoders misattributes shared concepts as unique to a fine-tuned model. Introduces Latent Scaling to diagnose this and trains a BatchTopK crosscoder that recovers genuinely chat-specific, interpretable, causally effective latents when diffing Gemma-2 base versus chat models.",
+  "topics": ["Interpretability"]
+ }
+]
