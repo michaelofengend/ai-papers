@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1982,
+  "summary": "Curiosity-driven exploration that jointly learns a world representation, environment dynamics, and an exploration policy from a single latent-space prediction loss. Its intrinsic reward solves most DM-HARD-8 tasks without demonstrations and reaches superhuman scores on the ten hardest Atari exploration games.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1981,
+  "summary": "Adapts frozen bidirectional language models to multimodal input via light trainable modules trained on web-scraped data, performing zero-shot VideoQA through masked-language-modeling inference. FrozenBiLM outperforms prior zero-shot methods across eight VideoQA datasets and stays competitive in few-shot and supervised settings.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 562,
+  "summary": "Defines emergent abilities as capabilities absent in smaller models yet present in larger ones, which cannot be forecast by extrapolating smaller-model performance. Documents such sharp, unpredictable jumps across many tasks, arguing continued scaling may keep unlocking qualitatively new capabilities.",
+  "topics": ["Training & Scaling", "Evaluations"]
+ },
+ {
+  "id": 1030,
+  "summary": "Trains models to write natural-language critiques exposing flaws in summaries; human evaluators catch substantially more flaws when shown them. Larger models self-critique better, with scale aiding critique-writing more than summary-writing, evidence that AI assistance can scale human oversight of AI.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1031,
+  "summary": "Explainer surveying how large neural networks are trained across GPU clusters: data, pipeline, and tensor (model) parallelism, mixture-of-experts, and memory-saving methods, along with the tradeoffs of each parallelism strategy.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1983,
+  "summary": "Phosphoproteomics in fission yeast shows S-CDK and M-CDK have nearly identical substrate specificities; removing protein phosphatase 1 from the centrosome lets S-CDK drive mitosis. Reconciles quantitative (CDK-activity-level) and qualitative (specificity) models of cell-cycle ordering.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1984,
+  "summary": "A theory of learning successor representations from prediction errors that balances new observations against prior knowledge, extended to multiple task-specific SRs with online context inference. Captures animal behavior in contextual-memory and generalization tasks, unifying SR theory with hippocampal decision-making.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 2892,
+  "summary": "Essay arguing that reverse-engineering neural networks hinges on identifying the right variables (features) and the basis they live in. Because features need not align with neurons, finding an interpretable basis, complicated by superposition and non-privileged bases, is framed as the central problem of mechanistic interpretability.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2775,
+  "summary": "Improves robustness of fine-tuned zero-shot models such as CLIP by ensembling the weights of the original and fine-tuned models. WiSE-FT raises accuracy under distribution shift by 4-6 points over prior work while also improving in-distribution accuracy, at no extra training or inference cost.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 1994,
+  "summary": "Non-isotropy regularization for proxy-based deep metric learning uses normalizing flows to enforce unique, non-isotropic sample distributions around class proxies, helping embeddings capture local structure and intra-class relations. Achieves competitive results on CUB200-2011, Cars196, and Stanford Online Products while retaining fast convergence.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1993,
+  "summary": "Adds a language-guidance objective to visual deep metric learning, using language embeddings of expert and pseudo class names to realign visual representation spaces with semantic relations. Yields model-agnostic, state-of-the-art improvements across standard metric-learning benchmarks.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1992,
+  "summary": "Compares gender associations in word embeddings from large corpora to those in caretaker and child speech across ages 1-5. Word-usage frequencies in 4,875 conversations correlate strongly with embedding-based gender associations, and these correlations weaken from the 1970s to the 1990s.",
+  "topics": ["Policy & Society", "Science Applications"]
+ },
+ {
+  "id": 1991,
+  "summary": "VDTTS conditions text-to-speech on video frames as well as text, generating speech with natural prosody (pauses, pitch) that is synchronized to the input video, motivated by dubbing. Approaches ground-truth video-speech synchronization on in-the-wild benchmarks like VoxCeleb2.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1990,
+  "summary": "Self-supervised model that jointly learns object states and state-modifying actions from uncurated web videos, supervised by causal ordering (initial state then action then end state) plus noise-adaptive weighting. Releases a 2,600-hour dataset and improves action and object-state recognition.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1989,
+  "summary": "Injects geometric inductive biases (camera parameters, projective ray incidence, epipolar geometry) as extra inputs rather than architectural changes, letting domain-agnostic models like Perceivers do 3D reconstruction. Achieves competitive multi-view depth estimation while preserving the data efficiency of bespoke architectures.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1988,
+  "summary": "Learned stereo image compression that encodes only the residual of the right image's latent relative to an optimally shifted left-image latent, adding a stereo-attention module at decoding. Outperforms prior stereo codecs on Cityscapes and InStereo2K with substantially smaller models.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1987,
+  "summary": "Finds that activation means of out-of-distribution minibatches deviate more from training-data means than in-distribution ones. Proposes Neural Mean Discrepancy, comparing input and training neural means via a single forward pass plus a light classifier, outperforming state-of-the-art OOD detectors at lower cost.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1986,
+  "summary": "Transformer architecture for spatio-temporal video grounding, localizing a space-time tube matching a text query, with an efficient video-text encoder over sparsely sampled frames and a space-time decoder for joint localization. Improves over the state of the art on VidSTG and HC-STVG.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1985,
+  "summary": "Open-source Python framework interfacing PyBullet and Blender to generate photo-realistic synthetic scenes with rich ground-truth annotations, scaling across thousands of machines. Demonstrated via 13 generated datasets spanning tasks from NeRF studies to optical-flow estimation.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 123,
+  "summary": "Introduces the Softmax Linear Unit (x times softmax(x)) as a transformer MLP activation that increases the fraction of neurons responding to single, human-interpretable concepts, reducing polysemanticity without hurting performance. Notes an added LayerNorm needed for stability may partly re-hide features.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1032,
+  "summary": "Fine-tunes GPT-3 on a math task (CalibratedMath) to express its uncertainty in words, 'verbalized probability', rather than via logits. Shows the model produces reasonably calibrated confidence that generalizes under distribution shift, a first demonstration of calibrated natural-language uncertainty.",
+  "topics": ["Alignment", "Evaluations"]
+ },
+ {
+  "id": 1997,
+  "summary": "Keypoint-tracking architecture that conditions a sparse-style network on a keypoint embedding indicating which point to track, blending dense-embedding generality with sparse-keypoint accuracy. Zero-shot transfers to new within-class object instances in a real-robot pick-and-place task.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1996,
+  "summary": "The Graph Imputer combines graph networks and variational autoencoders with past and future observations to impute trajectories of unobserved, off-screen football players. Predicts the behavior of partially observable agents, validated against ground-truth match-tracking data.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 1995,
+  "summary": "Offline meta-RL for robotic industrial insertion that replaces costly online meta-training with offline demonstrations and trials from prior tasks. Combines contextual meta-learning with online finetuning so similar tasks adapt instantly and dissimilar ones gradually, avoiding hardware-damaging trial counts.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 124,
+  "summary": "Trains model families where a small data fraction is repeated many times, revealing a strong double-descent: repeating 0.1% of data 100x degrades an 800M model to 400M-model loss. Links the damage mechanistically to disrupted induction-head and copying circuits.",
+  "topics": ["Training & Scaling", "Interpretability"]
+ },
+ {
+  "id": 1208,
+  "summary": "Fine-tunes pretrained transformers to generate assert statements for unit test cases, aiming to improve the accuracy of automatically produced assertions relative to earlier automated test-generation techniques.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1998,
+  "summary": "Extends Bayes-UCB to tabular episodic RL: uses a quantile of the Q-value posterior as an upper confidence bound on the optimal Q-function. Proves near-optimal regret of order sqrt(H^3 S A T) without Bernstein-style bonuses, via a new anti-concentration bound for weighted Dirichlet sums.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2002,
+  "summary": "Derives a differentiable upper bound on the price of anarchy that agents estimate during learning, then has them mix their reward with others' by descending its gradient (D3C), improving efficiency at Nash equilibria. Improves individual and group outcomes on social dilemmas like traffic networks.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2001,
+  "summary": "Approximates Nash equilibria in large many-player normal-form games by tracing an entropy-regularized homotopy toward the unique limiting logit equilibrium, minimizing average deviation incentive via stochastic gradient descent with adaptive payoff-tensor sampling. Scales to games where exact solvers cannot.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2000,
+  "summary": "Adapts PSRO to mean-field games by replacing exact distribution computation with mean-field no-adversarial-regret learners or black-box optimization, enabling convergence to Nash, correlated, and coarse-correlated equilibria. Compressing temporal mixture weights greatly speeds empirical convergence.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ }
+]

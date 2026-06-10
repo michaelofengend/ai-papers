@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2199,
+  "summary": "Proposes autoregressive dynamics models that predict next-state and reward dimensions sequentially rather than assuming conditional independence. They improve held-out log-likelihood, set state-of-the-art off-policy evaluation on RL Unplugged MuJoCo tasks, and aid offline policy optimization via data augmentation and model-based planning.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2202,
+  "summary": "Introduces EB-SSP, a model-based algorithm for stochastic shortest path that perturbs empirical costs and skews transitions to stay optimistic. It attains the minimax regret rate, is parameter-free (needs no cost or time-to-goal bounds), and yields the first nearly horizon-free regret beyond finite-horizon MDPs.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2201,
+  "summary": "Identifies nine properties that make real-world reinforcement learning hard—such as limited samples, safety constraints, delays, and partial observability—and operationalizes them as configurable challenges on continuous-control benchmarks, then analyzes how each degrades agent performance to guide practical RL research.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 2203,
+  "summary": "Develops gauge-invariant normalizing flows for sampling SU(N) lattice gauge theories, constructing flows on SU(N) and U(N) variables that respect matrix-conjugation symmetry. The method yields flow-based samplers for single variables and for SU(2) and SU(3) lattice gauge theory in two dimensions.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2204,
+  "summary": "Muesli is a policy-update rule combining regularized policy optimization with a model-learning auxiliary loss. Acting directly from a policy network without deep search, it matches MuZero's state-of-the-art Atari performance at model-free computation speeds, with additional results on continuous control and 9x9 Go.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2205,
+  "summary": "Proposes a theory of the entorhinal–hippocampal circuit in which modulating grid-cell input along the medial entorhinal dorsoventral axis lets hippocampal sequence generation interpolate between distinct regimes, unifying observed phenomena such as generative cycling, diffusive reactivations, and jumping-trajectory events.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2206,
+  "summary": "Presents a scalable marginal-likelihood estimator—using Laplace's method with Gauss-Newton Hessian approximations—to select deep-learning hyperparameters and architectures from training data alone. It outperforms cross-validation and manual tuning on regression and image classification, especially for calibration and out-of-distribution detection.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2793,
+  "summary": "A Distill Circuits-thread study documenting 'weight banding,' a recurring pattern in which the final convolutional layer of vision models develops horizontal stripes in its weights. Experiments connect the phenomenon to how networks preserve spatial position information.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2207,
+  "summary": "Evaluates the additive null model used to classify how co-occurring environmental stressors interact. A 545-interaction freshwater meta-analysis plus food-chain simulations show the model is highly sensitive to observation error, implying many detected non-additive 'ecological surprises' may be statistical artifacts.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2794,
+  "summary": "A Distill Circuits-thread article showing that when networks split into parallel branches (e.g., grouped convolutions), each branch specializes to a coherent family of features such as color or frequency detectors, and that this specialization recurs reliably across architectures.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2795,
+  "summary": "A survey of sim-to-real transfer in robotics and industrial automation, reviewing how simulation supports design, validation, and improvement of complex processes, and surveying the gaps where current simulators fail to model physical phenomena such as friction, impact, and deformation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2208,
+  "summary": "Introduces a benchmark for deep off-policy evaluation (DOPE): a standardized collection of policies and offline datasets spanning challenging high-dimensional continuous-control tasks, enabling consistent comparison of OPE and policy-selection methods. The authors evaluate state-of-the-art algorithms and release data and code.",
+  "topics": ["Evaluations", "Reinforcement Learning"]
+ },
+ {
+  "id": 2209,
+  "summary": "Extends Testing with Concept Activation Vectors (TCAV) to sequential time-series inputs, enabling human-understandable, concept-based explanations of RNN predictions over electronic health records. Evaluated on an ICU benchmark and on synthetic data designed to isolate individual concept effects.",
+  "topics": ["Interpretability", "Science Applications"]
+ },
+ {
+  "id": 2210,
+  "summary": "A Nature Machine Intelligence commentary on DeepONet, a neural architecture that learns nonlinear operators—such as integration or solving differential equations—directly from data and generalizes to unseen inputs, discussing how operator learning extends neural networks beyond approximating individual functions.",
+  "topics": ["Training & Scaling", "Science Applications"]
+ },
+ {
+  "id": 2212,
+  "summary": "Introduces the Dendritic Gated Network, a biologically plausible alternative to backpropagation that combines dendritic gating with local learning rules. It is data-efficient and resistant to catastrophic forgetting, and its structure mirrors the cerebellum—a link supported by in vivo two-photon calcium imaging of Purkinje cells.",
+  "topics": ["Training & Scaling", "Science Applications"]
+ },
+ {
+  "id": 2211,
+  "summary": "Presents mID, a privacy-preserving indoor system that uses low-cost millimeter-wave radar to form sparse point-cloud trajectories and a deep recurrent network to track, identify individual users, and detect intruders—avoiding the privacy concerns of camera-based tracking.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2213,
+  "summary": "Studies scheduling status updates to multiple users over error-prone channels to minimize long-term average Age of Information under a transmission budget. Beyond an optimal policy for known channel statistics, it applies RL methods (SARSA, UCRL2, DQN) to learn near-optimal policies without channel knowledge.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2214,
+  "summary": "Represents images as sparse sequences of quantized discrete-cosine-transform (DCT) triples—channel, location, coefficient—inspired by JPEG, then trains a Transformer to autoregressively predict them. The approach scales to high-resolution image generation with competitive sample metrics and extends to colorization and super-resolution.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1046,
+  "summary": "Identifies 'multimodal neurons' in CLIP that fire for a concept whether shown as a photo, drawing, or rendered text, mirroring biological concept cells. The finding explains CLIP's robustness to abstract renditions, exposes typographic attacks, and illuminates the associations and biases such models learn.",
+  "topics": ["Interpretability", "Multimodal"]
+ },
+ {
+  "id": 2215,
+  "summary": "Performs video prediction by compressing frames into hierarchical multi-scale discrete latents with a VQ-VAE, then fitting a scalable autoregressive model over the reduced latent space. It forecasts diverse video on Kinetics-600 at 256x256, higher resolution than prior methods, validated by human evaluation.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2216,
+  "summary": "Proposes UCBMQ, a tabular Q-learning algorithm that adds a momentum term to correct estimation bias while using optimism for exploration. Its regret matches the lower bound of order sqrt(H^3 S A T) for large horizons, with a second-order term linear in the state count.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2217,
+  "summary": "Provides theoretical analysis of Peng's Q(lambda), a non-conservative off-policy multi-step method long thought unsafe. It proves convergence to an optimal policy when the behavior policy slowly tracks a greedy one, and shows empirically that it often outperforms conservative trace-cutting algorithms on continuous control.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2796,
+  "summary": "CLIP uses contrastive pre-training to predict which caption matches which image, learning visual representations from 400M web image-text pairs. Natural-language prompts enable zero-shot transfer, matching ResNet-50's ImageNet accuracy with no labeled training and competing with supervised baselines across 30+ vision benchmarks.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2218,
+  "summary": "A review of machine-learning-assisted directed evolution for protein engineering, covering how sequence-to-function models help navigate fitness landscapes and discussing practical choices in data acquisition, sequence encoding, and model selection that determine when ML accelerates the engineering of improved proteins.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2219,
+  "summary": "Sharpens the regret of the Politex regularized-policy-iteration algorithm from O(T^3/4) to O(sqrt(T)) for infinite-horizon average-reward MDPs with linear function approximation. It also proposes a practical variant training a single Q-function on a replay buffer, giving theoretical justification for experience replay.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2797,
+  "summary": "Go-Explore tackles hard-exploration RL by separating returning from exploring: it archives reached states, deterministically returns to a promising one, then explores onward, later robustifying via imitation. It dramatically advances sparse-reward Atari, solving previously unsolved Montezuma's Revenge and Pitfall and surpassing human performance.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2220,
+  "summary": "An influential study (here a CACM republication) showing state-of-the-art image classifiers can perfectly fit random labels and even random-noise inputs, so model family and explicit regularization cannot explain generalization. A construction shows two-layer networks already have enough capacity to memorize the training set.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2221,
+  "summary": "Extends the Kanerva Machine with a differentiable, block-allocated latent memory and a hierarchical Bayesian scheme bridging episodic and semantic memory, simplifying writes to a feed-forward process. It sets new state-of-the-art conditional likelihoods on binarized MNIST and Omniglot and is competitive on CIFAR-10 and ImageNet32.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2798,
+  "summary": "Improves denoising diffusion models with simple changes—learning the reverse-process variances and a hybrid objective—achieving competitive log-likelihoods and an order-of-magnitude reduction in sampling steps with negligible quality loss, and shows sample quality and likelihood scale smoothly with model size and compute.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2222,
+  "summary": "BPNet is a deep CNN predicting transcription-factor binding from DNA sequence at base-pair resolution, paired with interpretation tools (DeepLIFT, TF-MoDISco) to extract motifs and their interactions. It reveals a 'soft syntax' of directional and periodic motif-spacing rules governing cooperative TF binding.",
+  "topics": ["Science Applications", "Interpretability"]
+ }
+]

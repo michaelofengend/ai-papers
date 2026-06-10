@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2486,
+  "summary": "Extends reward-free exploration from finite-horizon MDPs to goal-conditioned (stochastic shortest path) settings, giving algorithms with sample-complexity bounds for goal-free exploration in communicating MDPs and for incremental exploration with a reset action in non-communicating MDPs, contrasted against finite-horizon guarantees.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2485,
+  "summary": "Open-source framework that integrates adapter modules into HuggingFace Transformers, letting practitioners train, share, and dynamically load small task- or language-specific weight sets for parameter-efficient transfer learning without fine-tuning or distributing full models.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2484,
+  "summary": "Derives a dimension-free Omega(n^{2/3}) minimax regret lower bound for sparse linear bandits in the data-poor regime (horizon smaller than ambient dimension), nearly matched by an explore-then-commit algorithm, plus an O(sqrt(n)) bound under a minimum-signal assumption.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2483,
+  "summary": "Speeds up Gaussian-process optimization by maintaining a sparse GP posterior that is updated with adaptively sized batches and resparsified only when necessary, achieving near-linear total runtime while retaining no-regret guarantees comparable to exact GP-UCB-style methods.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2482,
+  "summary": "Tests why cross-lingual word embedding alignment fails on non-isomorphic spaces: experiments across diverse languages show performance variance is driven less by typological differences than by monolingual corpus size and training duration, i.e., under-trained, degenerate embedding spaces.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2481,
+  "summary": "Shows models that generate natural-language explanations for their predictions can produce mutually contradictory explanations, and introduces an adversarial sanity-checking framework, including full-target sequence-to-sequence attacks, that surfaces many such inconsistencies in a state-of-the-art NLI explanation model.",
+  "topics": ["Interpretability", "Robustness & Security"]
+ },
+ {
+  "id": 2480,
+  "summary": "Position paper on unsupervised cross-lingual learning arguing the zero-parallel-data scenario is unrealistic, cataloguing implicit supervision signals used in prior work, identifying tuning and evaluation pitfalls, and prescribing best practices and comparable evaluation across embeddings, multilingual pretraining, and unsupervised MT.",
+  "topics": ["Evaluations", "Training & Scaling"]
+ },
+ {
+  "id": 2479,
+  "summary": "Survey chapter (in A Guided Tour of Artificial Intelligence Research) presenting the RL framework and its two main solution families, value-based estimation and direct policy search, along with actor-critic methods that combine them.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2478,
+  "summary": "Shows AlphaZero-style MCTS action selection approximates the solution of a regularized policy-optimization problem, and that replacing it with the exact regularized solution improves AlphaZero/MuZero performance, particularly when the search uses few simulations per move.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2477,
+  "summary": "Models SGD with momentum under heavy-tailed (alpha-stable) gradient noise as fractional underdamped Langevin dynamics, characterizing the stationary distribution the optimizer actually targets and deriving modified dynamics that retarget the intended Gibbs-type distribution.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2476,
+  "summary": "Places a generically pretrained language model in a multi-agent self-play environment whose task rewards modulate it via reranking of LM samples, outperforming alternatives at communicating with humans on a visual referential task; also taxonomizes language drift and detection measures.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 2475,
+  "summary": "Multi-scale learned iterative reconstruction computes iterates on discretizations of increasing resolution, cutting memory and training time so model-based learned methods scale to 3D inverse problems; demonstrated on real cone-beam CT measurements and low-dose CT benchmarks.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2474,
+  "summary": "Introduces UC-SSP, the first no-regret algorithm for general stochastic shortest path RL without loop-free assumptions, achieving O(DS*sqrt(ADK)) regret over K episodes via a stopping rule that abandons slow policies for ones designed to terminate episodes quickly.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2473,
+  "summary": "Adds a guider network to adversarial text generation that models long-horizon semantics, assisting next-word prediction and providing intermediate rewards for generator optimization via model-based imitation learning, improving consistency of long generated text.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2472,
+  "summary": "Self-supervised method that learns per-frame actionness, distinguishing action from background, by training a model to verify the temporal order of clips sampled far apart in instructional videos, improving action localization without manual annotation.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2471,
+  "summary": "Information-theoretic framework for adapting one labeled source domain to multiple unlabeled target domains simultaneously, disentangling a shared latent space from domain-private factors; outperforms pairwise domain-adaptation methods on three public image benchmarks.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2470,
+  "summary": "Intervention study on Transformer-XL showing per-layer long-range memory is unnecessary: comparable language-modeling performance with 6x fewer long-range memories, and better performance when lower layers are restricted to short-range attention.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2469,
+  "summary": "Recasts text recognition as visual matching between the input line image and provided glyph exemplars, decoupling visual appearance from language content; the trained matcher adapts to novel fonts and new alphabets given only exemplars, without retraining.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2468,
+  "summary": "MAD-X learns modular language and task adapters, including a novel invertible adapter, on multilingual pretrained models, enabling parameter-efficient cross-lingual transfer to arbitrary tasks and languages, including ones unseen in pretraining, with state-of-the-art NER and commonsense-reasoning transfer.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2467,
+  "summary": "Multifidelity approach to active-subspace dimension reduction that exploits cheaper low-fidelity models to cut the gradient-evaluation cost of estimating the active subspace matrix, with non-asymptotic error bounds depending on intrinsic dimension; demonstrated on inputs up to 2000 dimensions.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2466,
+  "summary": "Uses visual grounding from unpaired instructional videos to learn a shared embedding that maps words between languages; the resulting MUVE initialization makes unsupervised word translation more robust than text-only methods, especially for low-resource pairs (English to French, Korean, Japanese).",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2465,
+  "summary": "XGAN performs unsupervised image-to-image translation for many-to-many domain mappings using dual adversarial autoencoders that share a semantic latent embedding enforced by a semantic-consistency loss, demonstrated on translating face photographs into cartoon avatars.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2464,
+  "summary": "Learns unsupervised speech representations from up to 8,000 hours of diverse, noisy audio and shows they confer robustness to domain shift and improve recognition in 25 phonetically diverse languages, addressing desiderata missed by evaluations on read English alone.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2463,
+  "summary": "Perturbs channel input symbols at the transmitter, adversarial-attack style, so that deep-learning or decision-tree intruders cannot classify the modulation scheme while a perturbation-oblivious legitimate receiver still decodes reliably; diverse training data and curriculum learning partially restore intruder accuracy.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2462,
+  "summary": "Book chapter reviewing the message passing neural network (MPNN) framework, which unifies graph neural network variants via message, update, and readout functions, and its use for predicting quantum-chemical molecular properties such as the QM9 targets.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 2461,
+  "summary": "Sparse-NCNet applies neighbourhood-consensus filtering to a sparsified 4D correlation tensor using submanifold sparse convolutions, making dense image-correspondence estimation substantially faster and more memory-efficient than the original NCNet while maintaining matching accuracy.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2460,
+  "summary": "Survey of algorithmic fairness in machine learning, reviewing group and individual fairness criteria and methods for imposing them, and using causal Bayesian networks to reason about how unfairness arises in the data-generating process.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2459,
+  "summary": "Deep-learning system for breast-cancer screening evaluated on large UK and US mammography datasets: it reduced both false positives and false negatives relative to clinical readings, generalized across countries, outperformed six radiologists in a reader study, and could cut double-reading workload.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2848,
+  "summary": "Formalizes the 'surgery' technique used to train OpenAI Five through 20 major feature and architecture changes: representing inputs as discrete sets and deriving feature-parameter interaction maps automatically determines which weights transfer to a modified network and which need reinitialization.",
+  "topics": ["Training & Scaling", "Reinforcement Learning"]
+ },
+ {
+  "id": 2847,
+  "summary": "Probes OpenAI Five's hidden states with learned prediction models to track how game knowledge forms during training, finding situational similarity across actions and evidence the agent anticipates subgoals minutes before executing them, analyzed qualitatively on its 2019 games against OG.",
+  "topics": ["Interpretability", "Reinforcement Learning"]
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1095,
+  "summary": "Reaches a then-record 74,500 points on Montezuma's Revenge from one human demonstration by restarting PPO episodes from progressively earlier states along the demo, sidestepping the game's notoriously hard exploration problem.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1096,
+  "summary": "Five LSTM-based agents trained with massively scaled PPO self-play—about 180 years of Dota 2 per day—begin defeating amateur human teams at 5v5, with coordinated teamwork emerging from a shared reward weighting rather than explicit communication.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1097,
+  "summary": "Reports results of the Retro Contest on RL generalization to held-out Sonic the Hedgehog levels: top entries were tuned variants of the provided PPO and Rainbow baselines, improving transfer scores but remaining well below human performance.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 1098,
+  "summary": "Learns embeddings of agent policies from interaction episodes via a generative imitation objective combined with a contrastive triplet loss; the representations support agent classification and improve returns when conditioning policies in RoboSumo and ParticleWorld multi-agent environments.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1099,
+  "summary": "GamePad exposes the Coq proof assistant as an ML environment for interactive theorem proving, defining position-evaluation (proof steps remaining) and tactic-prediction tasks, with baselines on an algebraic rewrite problem and the Feit-Thompson formalization.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 1100,
+  "summary": "Releases the full Gym Retro platform, expanding available RL environments from roughly 100 Atari and Sega titles to over 1,000 games across multiple emulators, plus an integration tool for adding new games—aimed at studying generalization between similar tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1101,
+  "summary": "Analysis showing compute used in the largest AI training runs has grown exponentially since 2012 with a 3.4-month doubling time—over 300,000x total—arguing this trend warrants preparing for systems far beyond today's capabilities.",
+  "topics": ["Training & Scaling", "Policy & Society"]
+ },
+ {
+  "id": 1102,
+  "summary": "Proposes aligning agents on tasks too complex for humans to judge directly by training them via self-play on a zero-sum debate game judged by humans. Optimal debate can answer PSPACE questions, and a sparse-pixel MNIST judge's accuracy rises from 59.4% to 88.9%.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 1103,
+  "summary": "Evolves a differentiable RL loss function, parameterized by temporal convolutions over the agent's experience, such that policies minimizing it achieve high reward. EPG learns faster than standard policy gradients on randomized environments and generalizes to out-of-distribution test tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1104,
+  "summary": "Benchmark measuring RL generalization via held-out Sonic the Hedgehog levels: agents train on one level set and are scored on fast adaptation to unseen levels. Rainbow, PPO, and joint-training baselines show transfer from prior experience helps, but humans adapt far faster.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 1105,
+  "summary": "Launches a transfer-learning contest measuring how well RL algorithms generalize from training levels of Sonic the Hedgehog to held-out test levels with limited test-time experience, rewarding agents that exploit prior experience rather than learning each task from scratch.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 1106,
+  "summary": "Derives action-dependent baselines for policy gradients with factorized action spaces: each action dimension's baseline conditions on the other dimensions' actions, cutting gradient variance without bias and improving sample efficiency on high-dimensional continuous control and multi-agent tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1107,
+  "summary": "OT-GAN trains generative models by minimizing a mini-batch energy distance—an optimal-transport (Sinkhorn-based) divergence computed in an adversarially learned feature space—yielding more stable GAN training and strong image sample quality on benchmarks like CIFAR-10.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1108,
+  "summary": "Analyzes meta-learning with only first-order gradients, covering first-order MAML and introducing Reptile. A Taylor-series analysis shows both maximize within-task gradient inner products, and they match full MAML on Omniglot and Mini-ImageNet few-shot classification at lower compute cost.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1109,
+  "summary": "Reptile meta-learns an initialization by repeatedly sampling a task, running SGD on it, and nudging the initial parameters toward the task-adapted weights. It is mathematically close to first-order MAML but needs only black-box optimizer access, with similar efficiency and few-shot performance.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1110,
+  "summary": "Reformulates meta-RL objectives so exploratory actions taken during meta-training receive proper credit, yielding E-MAML and E-RL2 variants that explicitly incentivize exploration and outperform the original algorithms at fast adaptation on Krazy World gridworlds and mazes.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1112,
+  "summary": "Releases eight simulated goal-based robotics environments (Fetch arm and ShadowHand) plus a Baselines implementation of Hindsight Experience Replay, validated by policies that transfer to physical robots, alongside a set of open requests for robotics research.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1111,
+  "summary": "Specifies eight goal-conditioned, sparse-reward robotics environments spanning Fetch manipulation and ShadowHand dexterity tasks, reports DDPG plus Hindsight Experience Replay baselines, and poses open research directions for multi-goal reinforcement learning.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1113,
+  "summary": "Joint report with FHI, CSER, CNAS, EFF and others forecasting how malicious actors could misuse AI across digital, physical, and political security domains, and recommending interventions for researchers and policymakers to prevent and mitigate these threats.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 1114,
+  "summary": "Method for selecting maximally informative teaching examples that stay human-interpretable: training teacher and student networks iteratively rather than jointly prevents them from converging on opaque codes, producing example sets that effectively teach concepts to both AIs and humans.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1115,
+  "summary": "Resolves which object a word refers to by having a neural network predict membership in roughly 100 automatically discovered, non-exclusive types; optimizing the type system over a knowledge base lets type predictions alone drive high entity-disambiguation accuracy.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1116,
+  "summary": "Second batch of seven unsolved problems drawn from OpenAI's research, spanning multi-agent self-play, transfer in RL, and deep learning fundamentals, each framed as a concrete, difficulty-rated project for researchers entering the field.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 1117,
+  "summary": "Engineering lessons from scaling a single Kubernetes cluster to 2,500 nodes for deep learning workloads, covering etcd storage bottlenecks, API-server tuning, Docker image distribution, and networking issues encountered along the way.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1118,
+  "summary": "Releases GPU kernels optimized for block-sparse weight matrices that run orders of magnitude faster than cuBLAS/cuSPARSE at high sparsity, enabling wider or deeper sparse networks that achieved state-of-the-art results in text sentiment analysis and generative text/image modeling.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1119,
+  "summary": "Regularizes networks toward exact zeros with a differentiable L0 penalty based on the hard-concrete distribution, a smoothed discrete relaxation enabling gradient-based optimization of expected sparsity; networks prune themselves during training, cutting computation while maintaining or improving generalization.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1120,
+  "summary": "Studies when machine teaching yields examples humans can understand: jointly optimizing teacher and student networks produces opaque coding schemes, while iterative training—student first, then teacher—recovers intuitive teaching strategies whose examples also work for teaching humans.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1121,
+  "summary": "Meta-learning shared hierarchies (MLSH) learns reusable sub-policies shared across tasks with a per-task master policy switching among them; on navigation problems it discovers walking and crawling primitives that let agents quickly master new tasks spanning thousands of timesteps.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1122,
+  "summary": "Robot controllers trained entirely in simulation with domain randomization transfer to physical robots as closed-loop systems, reacting to unplanned changes in the environment during simple manipulation tasks rather than replaying fixed open-loop trajectories.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1124,
+  "summary": "Trains sim-to-real visuomotor policies with an asymmetric actor-critic: the critic exploits the simulator's full state while the actor sees only RGBD images. Combined with domain randomization, this enables real-robot picking, pushing, and block-moving without any real-world training data.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1123,
+  "summary": "Randomizing simulator dynamics—mass, friction, latencies, and other physical parameters—during training yields a recurrent pushing policy that transfers directly to a physical Fetch arm without real-world fine-tuning, compensating for sim-to-real dynamics mismatch.",
+  "topics": ["Reinforcement Learning"]
+ }
+]

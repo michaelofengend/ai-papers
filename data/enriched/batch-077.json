@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2265,
+  "summary": "Report from Dagstuhl Seminar 21192 on inductive programming, which induces programs from input/output examples. Surveys recent advances integrating learning and reasoning, scaling the methods to more complex real-world problems, and applying them to explainable AI and interactive learning.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 2264,
+  "summary": "Editorial introducing a special issue collecting work from the Adaptive and Learning Agents workshop, spanning reinforcement learning, multi-agent learning, and adaptive autonomous agents.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2263,
+  "summary": "Develops methods for a demand-side platform to jointly optimize bidding, impression allocation, and budget spending across heterogeneous (generic) ad-auction formats.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2262,
+  "summary": "Proposes OBOE (Optimize By Observational Extrapolation): learn neural models predicting agents' returns from intervention-free behavioural trajectories, then use them to evaluate novel, untrained physical interventions. In multi-agent gridworlds it effectively selects interventions that optimize group metrics like the Gini index.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 2261,
+  "summary": "A handbook chapter on learned iterative reconstruction, which unrolls classical iterative algorithms for imaging inverse problems into trainable deep networks, combining model-based physics with learned priors.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2260,
+  "summary": "Introduces Partition-Merge, a meta-algorithm that parallelizes centralized graph algorithms by randomly partitioning the graph, solving each subgraph, then merging solutions. Applied to MAP inference in pairwise MRFs and modularity-based community detection, it runs in near-linear time with near-centralized accuracy on polynomial-growth graphs.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2259,
+  "summary": "Data-efficient methods to adapt pretrained multilingual models such as mBERT to low-resource languages and unseen scripts. Using matrix factorization to reuse the embedding matrix's latent knowledge and lexically overlapping tokens, the approach yields substantial gains on languages with scripts unseen during pretraining.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2258,
+  "summary": "A book chapter reviewing Google's and DeepMind's deep-learning systems for ophthalmology and their applications to automated detection and management of retinal and other eye diseases from medical imaging.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2257,
+  "summary": "Proposes IReEn, which reverse-engineers black-box functions by iteratively using a neural program synthesizer: it generates candidate programs reproducing the function's input-output behaviour and refines them over successive iterations, leveraging a pretrained synthesis model.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 2256,
+  "summary": "Studies sub-cubic-complexity sampling algorithms for beta-ensembles by viewing them as eigenvalues of random tridiagonal (Jacobi) matrices. Gives a unified treatment of the Hermite, Laguerre, and Jacobi ensembles and an approximate Gibbs sampler that fits the theoretical distribution after only a few passes.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2255,
+  "summary": "Presents PyCID, a Python library built on pgmpy that implements (causal) influence diagrams for modelling single- and multi-agent decision problems, with methods to solve and analyse incentives and behaviour and to study safer or fairer decision-making.",
+  "topics": ["Safety", "Agents"]
+ },
+ {
+  "id": 2254,
+  "summary": "Formulates simultaneous machine translation as latent-variable sequence-to-sequence learning with read/translate actions marginalized over all policies. A reparameterised Poisson prior balances translation quality against latency, achieving the best BLEU at given average latencies on benchmarks.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2253,
+  "summary": "Introduces WikiGraphs, a dataset pairing each WikiText-103 Wikipedia article with a knowledge graph to support conditional text generation, graph generation, and representation learning. Provides GNN and transformer baselines for graph-to-text generation and graph-text retrieval, showing room for improvement.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2252,
+  "summary": "Applies the noisy-channel model to task-oriented dialogue, factorizing via Bayes' rule into a context-given-response model and a response prior. This mitigates the explaining-away effect (short, generic responses) and, with two-stage open-domain plus task-oriented pretraining, decodes better responses than direct decoding.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2251,
+  "summary": "Improves robustness of language adapters to unseen language varieties without training new adapters. Proposes EMEA (Entropy Minimized Ensemble of Adapters), which optimizes per-test-sentence ensemble weights over existing adapters by minimizing prediction entropy, improving NER and POS tagging across related languages.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2250,
+  "summary": "A data-augmentation method for neural machine translation that generates counterfactual aligned phrase pairs by sampling source phrases from a masked LM and aligned target phrases via a Gumbel-Max structural causal model, improving translation, back-translation, and robustness across four language pairs.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2249,
+  "summary": "Shows that applying subword regularization during fine-tuning of pretrained multilingual models improves cross-lingual transfer. Proposes Multi-view Subword Regularization (MVR), enforcing prediction consistency between standard and probabilistic tokenizations, yielding up to 2.5-point gains on the XTREME benchmark.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2248,
+  "summary": "A review of computational stem cell biology, laying out open questions and guiding principles for using computational and machine-learning methods to model stem cell states, differentiation, and lineage dynamics.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2247,
+  "summary": "Proposes MAD-G, which contextually generates language adapters from typological language representations instead of training one adapter per language. It shares knowledge across languages and enables zero-shot adapters for unseen languages, with roughly 50x more efficient fine-tuning and strong low-resource (African NER) gains.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2246,
+  "summary": "A language model combining a transformer with non-parametric episodic memory: it caches local hidden states like Transformer-XL and retrieves nearest-neighbor tokens for long-term memory, using a learned gating function to adaptively blend local context, short-term, and long-term memory per timestep.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2245,
+  "summary": "Introduces IndoNLG, a benchmark for Indonesian, Javanese, and Sundanese natural-language generation across tasks such as summarization, question answering, dialogue, and translation, released alongside the pretrained IndoBART and IndoGPT models.",
+  "topics": ["Evaluations", "Training & Scaling"]
+ },
+ {
+  "id": 2244,
+  "summary": "Studies what drives representation quality in multimodal visual-linguistic transformers for zero-shot image retrieval. Finds pretraining-data noise and language similarity to the downstream task matter most, multimodal attention beats deeper modality-specific attention, and self-supervised contrastive losses transfer poorly here.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2243,
+  "summary": "A conceptual review of using machine learning, especially graph neural networks, for combinatorial optimization—either as direct solvers or to enhance classical methods—bridging operations research and ML and surveying key advances and open challenges.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2242,
+  "summary": "Creates MasakhaNER, the first large, high-quality named-entity-recognition dataset for ten African languages, detailing language-specific challenges and benchmarking state-of-the-art supervised and transfer-learning methods; data, code, and models are released.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 2805,
+  "summary": "A clinical review of AI for glaucoma: machine-learning classifiers and deep-learning models detect early structural and functional changes from fundus photos, OCT, and perimetry, predict progression, and model structure-function relationships, though clinical validation is still needed.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2267,
+  "summary": "Studies reward-free incremental exploration in MDPs, learning epsilon-optimal goal-conditioned policies for all states reachable within L steps. The model-based DisCo algorithm interleaves discovering new states with refining a model estimate, improving sample-complexity dependence on epsilon and L over prior work.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2269,
+  "summary": "Human neuroimaging study showing that spontaneous memory replay during rest is packaged into transient bursts occurring selectively during default-mode and parietal-alpha network activation, suggesting the default mode network coordinates replay to minimize interference with ongoing cognition.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2268,
+  "summary": "MuZero learns a model predicting reward, value, and policy and plans with Monte Carlo tree search without being told environment dynamics. It matches AlphaZero on Go, chess, and shogi while achieving state-of-the-art results on Atari.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2806,
+  "summary": "Demonstrates a training-data extraction attack: by querying GPT-2, an adversary recovers hundreds of verbatim memorized sequences—including PII, code, and UUIDs—that appear in just one training document. Finds larger models are more vulnerable and discusses safeguards.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2270,
+  "summary": "Surveys and empirically compares 14 intrinsic-reward mechanisms for adapting behaviour to optimize the parallel learning of many auxiliary value functions. In a bandit-like testbed it highlights the value of introspective prediction learners that speed up when progress is possible and slow when it is not.",
+  "topics": ["Reinforcement Learning"]
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2363,
+  "summary": "Introduces ALI-G, an optimizer that exploits the interpolation regime (near-zero training loss) to set an adaptive learning rate in closed form, clipped at a tunable maximum. It eliminates learning-rate decay schedules while matching SGD's per-step cost and generalization across diverse architectures.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2362,
+  "summary": "A functional encoder-decoder approach to supervised meta-learning that encodes labeled data into an infinite-dimensional functional representation, then refines it via learned iterative updates resembling functional gradient descent. Achieves state-of-the-art few-shot classification on miniImageNet and tieredImageNet.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2361,
+  "summary": "Prediction of Bootstrap Latents (PBL), a self-supervised representation method for multitask deep RL that predicts latent embeddings of future observations, which are themselves trained to be predictive of the representation. This bootstrapping improves over state-of-the-art agents on DMLab-30 and Atari-57.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2360,
+  "summary": "Models 3D polygon meshes directly with a Transformer, autoregressively predicting vertices then faces, and can condition on classes, voxels, or images. Being probabilistic, it captures uncertainty in ambiguous cases, produces high-quality meshes, and sets log-likelihood benchmarks for mesh modeling.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2359,
+  "summary": "Shows standard Transformers are hard to optimize under RL objectives and proposes the Gated Transformer-XL (GTrXL), with reordered layer normalization and gating layers. It trains stably, surpasses LSTMs on memory-intensive tasks, and sets state-of-the-art results on the DMLab-30 suite.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2358,
+  "summary": "Studies linear bandits and RL with a generative model when features only approximately realize value functions. Proves algorithms whose suboptimality scales with the feature-misspecification error times the square root of the feature dimension, and shows via matching lower bounds that this dimension-dependent amplification is unavoidable.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2357,
+  "summary": "Graph Network-based Simulators (GNS) represent physical systems as particles in a graph and learn message-passing dynamics to predict per-particle motion. A single architecture accurately simulates fluids, rigid solids, and deformable materials, generalizing well beyond its training conditions.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 2356,
+  "summary": "RigL trains sparse networks at a fixed parameter count and FLOP budget throughout training, periodically updating connectivity using weight magnitudes and occasional dense gradients. It matches or beats dense-to-sparse methods at lower compute on ResNet-50, MobileNets, and RNNs.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2355,
+  "summary": "The first deep RL agent to exceed the human baseline on all 57 Atari games. Building on Never Give Up, it uses a family of policies spanning exploration to exploitation, separate intrinsic/extrinsic value heads, and an adaptive meta-controller that selects behavior per episode.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2354,
+  "summary": "An improved Contrastive Predictive Coding pipeline for self-supervised image representation. The learned features enable highly data-efficient recognition, matching strong supervised baselines with far fewer labels, and achieve competitive ImageNet linear-probe classification.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2353,
+  "summary": "A multilingual benchmark spanning 40 languages and 9 tasks for evaluating cross-lingual transfer of multilingual encoders. Models near human performance in English show a sizable cross-lingual gap, especially on syntactic and sentence-retrieval tasks, motivating better transfer methods.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 2352,
+  "summary": "Argues that post-colonial and decolonial theory offer useful tools for anticipating and mitigating AI's harms to vulnerable populations. Proposes three tactics, a critical technical practice of AI, reverse tutelage, and renewed affective/political community, to align development with ethical principles.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2381,
+  "summary": "Recasts attention's keys, queries, values, and outputs as latent stochastic states in a state-space model. Uses Sequential Monte Carlo to approximate state posteriors given observations and to estimate log-likelihood gradients, yielding a Transformer that outputs predictive distributions rather than point estimates.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2382,
+  "summary": "KeRNS, an algorithm for episodic RL in non-stationary MDPs over metric spaces, builds a nonparametric model with time-dependent kernels. It achieves regret scaling with the state-action covering dimension and the environment's total variation over time, generalizing sliding-window and exponential-discounting approaches.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2383,
+  "summary": "Frames document translation via Bayes' rule, combining an autoregressive target-language document prior with sentence-level reverse-translation probabilities. This noisy-channel formulation learns from monolingual documents plus sentence-parallel data, induces cross-sentence dependencies at inference, and outperforms prior document-translation methods with left-to-right beam search.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2827,
+  "summary": "A concise survey of Automatic Curriculum Learning for deep RL, organizing methods that adapt task difficulty to an agent's evolving competence. Covers uses for sample efficiency, exploration, generalization, sparse rewards, sim2real domain randomization, and multi-agent curricula.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2385,
+  "summary": "Analyzes agents that learn and optimize a reward function simultaneously, exposing failure modes like manipulating the learning process, refusing to learn, and strictly dominated choices. Formalizes 'unriggability' and 'uninfluenceability' as safeguards, proving uninfluenceable reward-learning processes are automatically unriggable.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 2384,
+  "summary": "An external planning agent learns to distribute extra rewards and punishments to foster cooperation among independent learners in social dilemmas, by anticipating their parameter updates. It induces high-welfare cooperation that, in some games, persists even after intervention stops.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2387,
+  "summary": "An algorithm for sampling a size-k determinantal point process that avoids preprocessing all n items. It adaptively builds a uniform sub-sample sufficient to draw exactly from the true k-DPP, achieving orders-of-magnitude speedups by observing only a small fraction of the data.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2386,
+  "summary": "A modular recurrent architecture in which bottom-up sensory signals and top-down expectations are combined dynamically via attention, with modularity restricting information flow. This bidirectional flow improves language modeling, sequential image classification, video prediction, and RL, notably boosting robustness to distractions and noise.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2388,
+  "summary": "BiGG, an autoregressive generative model for sparse graphs that avoids materializing the full adjacency matrix, cutting generation cost to O((n+m) log n) with O(log n) training parallelism. It scales to far larger graphs than prior deep autoregressive models while improving generation quality.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2390,
+  "summary": "Through careful experiments and rigorous hyperparameter sweeps, confirms that small to moderate batch sizes generalize better than very large batches even at equal iterations and lower training loss. Attributes the benefit to gradient noise and analyzes optimal learning-rate schedules via an SDE perspective.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2389,
+  "summary": "Develops a theory of affordances, the state-dependent set of feasible actions, for agents in MDPs. Affordances speed planning by pruning actions and enable more sample-efficient, generalizable transition-model learning under function approximation, supported by theory, examples, and a method to learn them.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2828,
+  "summary": "Combines MAP-Elites quality-diversity search with Evolution Strategies to scale to high-dimensional neural-network controllers. The hybrid ME-ES enables post-damage recovery on a hard control task where standard MAP-Elites fails, and explores as well as state-of-the-art methods under strongly deceptive rewards.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2391,
+  "summary": "Using voxel-based morphometry and gene sizing across two cohorts, links repeat-length polymorphisms in the AR, ESR1, and ESR2 sex-steroid receptor genes to grey- and white-matter volume differences in regions including hypothalamus and prefrontal cortex, mapping their shared and unique neuroanatomical correlates.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2392,
+  "summary": "Using neuroimaging across two datasets, finds that spontaneous memory-replay sequences cluster into transient bursts occurring selectively during activation of the default mode and parietal alpha networks. Suggests these networks coordinate replay via synchronized oscillations and ripple-band power while minimizing interference with ongoing cognition.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2393,
+  "summary": "Studies stochastic bandits where feedback delays differ across arms and may be heavy-tailed, assuming only a tail bound on delays rather than restrictive shape or uniformity constraints. Proposes PatientBandits, a UCB-based algorithm, with problem-dependent and problem-independent regret bounds plus lower bounds.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2829,
+  "summary": "Part of the Circuits interpretability thread, characterizes curve-detecting neurons in the InceptionV1 vision model through feature visualization, dataset examples, and synthetic stimuli. Demonstrates they are genuine, orientation-selective curve detectors exhibiting rotational equivariance rather than artifacts of the analysis.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2394,
+  "summary": "Analyzes human brain activity during choices about receiving information predictive of future rewards, and with a computational model identifies three regions orchestrating anticipatory utility: ventromedial prefrontal cortex tracks its value, dopaminergic midbrain signals anticipation-enhancing information, and hippocampus couples the two.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1053,
+  "summary": "Shows that a GPT-style transformer trained autoregressively on pixel sequences, without 2D priors, generates coherent image completions and learns strong image representations. Linear probes on its features rival top convolutional networks in unsupervised ImageNet classification, linking sample quality to representation quality.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ }
+]

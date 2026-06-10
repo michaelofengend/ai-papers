@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2091,
+  "summary": "Benchmarks Gaussian-process Bayesian optimization design choices on the COCO/BBOB testbed. A small initial budget, a quadratic trend, and high-quality acquisition optimization help while input warping hurts; the best variants match or beat state-of-the-art optimizers in dimensions up to five.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1043,
+  "summary": "Releases Triton 1.0, an open-source Python-like language and compiler for GPU programming that lets researchers without CUDA experience write neural-network kernels whose performance often matches expert-tuned code.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2094,
+  "summary": "A least-squares analysis deriving an excess-risk bound for the gradient-descent solution whose dependence on the smallest nonzero covariance eigenvalue reproduces the double-descent curve, and showing that in noiseless regression double descent is driven solely by optimization, not generalization error.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2093,
+  "summary": "Studies zero-sum matrix games with unknown payoffs and bandit feedback, giving regret analyses of UCB and K-learning variants that exploit the matrix structure and hold against any opponent. Shows Thompson sampling fails catastrophically in this setting.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2092,
+  "summary": "Introduces unbiased estimators of the VAE log-likelihood gradient by augmenting the latent space with importance samples and coupling MCMC chains, enabling maximum-likelihood training rather than ELBO maximization, with conditions for finite time and variance and improved predictive performance.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2095,
+  "summary": "Swap-VAE learns disentangled representations of neural population activity in a self-supervised way, pairing a generative model with an alignment loss across augmented views (neuron dropout, temporal jitter). On synthetic and primate recordings it recovers latent dimensions tied to behavior.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 2096,
+  "summary": "Applies AlphaFold2 across 98.5% of the human proteome, confidently predicting 58% of residues (36% at very high confidence) and releasing the structures with new confidence and disorder metrics, vastly expanding structural coverage beyond experimentally solved proteins.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2097,
+  "summary": "Argues algorithmic-fairness research neglects sexual orientation and gender identity—prototypical unobserved, often unmeasurable attributes—and surveys AI's effects on queer communities across privacy, censorship, safety, health, and employment, calling for fairness methods that drop the observed-attribute assumption.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2787,
+  "summary": "Proposes an RL formalism for acting under moral uncertainty, maintaining credence across several ethical theories instead of committing to one. In simple environments, representing this uncertainty curbs the extreme behavior that single-theory commitment can produce.",
+  "topics": ["Reinforcement Learning", "Policy & Society"]
+ },
+ {
+  "id": 2786,
+  "summary": "Phasic Policy Gradient splits actor-critic training into separate policy and value phases, capturing the benefits of both shared and separate networks while permitting aggressive value optimization with high sample reuse. Improves sample efficiency over PPO on Procgen.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2785,
+  "summary": "Trains a transformer (DALL-E) that autoregressively models text and image tokens as a single data stream; with enough data and scale this simple approach achieves zero-shot text-to-image generation competitive with prior domain-specific models.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2111,
+  "summary": "Revisits Peng's Q(lambda), a classic multi-step off-policy return that omits importance-sampling corrections. Provides a convergence analysis and shows it is a simple, well-behaved alternative to corrected multi-step targets that performs competitively in modern deep-RL agents.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2110,
+  "summary": "Proposes the first convergent off-policy linear-function-approximation algorithms for average-reward MDPs, estimating both the reward rate and differential value function without density-ratio estimation by extending Gradient-TD. Outperforms a density-ratio baseline on robot-simulation tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2109,
+  "summary": "Shows that in bandit and RL policy optimization the usual curvature-and-noise lens fails: the baseline choice, beyond variance reduction, can determine whether methods like natural policy gradient and EXP3 converge at all. Theory matches experiments on bandits and MDPs.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2108,
+  "summary": "Introduces average-reward MDP algorithms that update using the temporal-difference error, including the first proven-convergent off-policy model-free control and prediction methods needing no reference state and converging to the true value function. Empirically faster, fully online and incremental.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2107,
+  "summary": "Introduces adaptive gradient clipping to stably train normalizer-free ResNets (NFNets), matching EfficientNet-B7 ImageNet accuracy up to 8.7x faster to train and reaching 86.5% top-1 (89.2% after large-scale pretraining), removing batch normalization's drawbacks.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2106,
+  "summary": "Neural A* makes A* search differentiable and couples it with a convolutional encoder, trained end-to-end so predicted guidance maps reproduce expert paths. It improves the optimality-efficiency trade-off over prior data-driven planners and predicts realistic trajectories from raw images.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2105,
+  "summary": "Statistical analysis of high-dimensional batch RL with sparse linear function approximation: Lasso fitted-Q-evaluation attains error bounds independent of ambient dimension, a group-Lasso post-selection estimator sharpens them, and matching minimax lower bounds confirm sparsity-aware methods improve sample efficiency.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2104,
+  "summary": "Formalizes 'sensitivity'—how activation and gradient-norm variance change under random parameter perturbations—as a measure of Transformer training difficulty, then designs Catformer, which replaces residual connections and gating with concatenation. Provably less sensitive and more stable, it beats Gated Transformer-XL by 13% on DMLab30.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2103,
+  "summary": "Theoretical study of batch policy optimization in stochastic bandits: a unifying family of confidence-adjusted index algorithms (optimistic, pessimistic, or neutral) is all minimax optimal, instance-dependent optimality is unattainable, and a new weighted-minimax criterion justifies pessimism.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2102,
+  "summary": "Shows deep-RL gains can come from regularizing the value estimator rather than the objective: constraining a single layer's Lipschitz constant via spectral normalization raises a Categorical-DQN to RAINBOW-level Atari performance, with ablations isolating its effect on learning dynamics.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2101,
+  "summary": "Extends group equivariance from convolutions to self-attention, introducing LieSelfAttention layers equivariant to arbitrary Lie groups and their discrete subgroups. The resulting LieTransformer is competitive on point-cloud counting, molecular property regression, and Hamiltonian trajectory modeling.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2100,
+  "summary": "Proposes sample-based policy iteration that evaluates and improves policies over sampled subsets of large or continuous action spaces, instantiated as Sampled MuZero. Learns effectively on Go and on continuous control (DeepMind Control Suite, Real-World RL Suite).",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2099,
+  "summary": "NeRF-VAE is a 3D scene generative model combining a VAE with NeRF-based differentiable volume rendering, learning a distribution over radiance fields conditioned on a latent scene code. It renders geometrically consistent novel scenes from few images and generalizes to out-of-distribution cameras.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2098,
+  "summary": "Fisher-BRC regularizes the critic rather than the policy for offline RL: it parameterizes the Q-function as the log behavior-policy density plus an offset and penalizes the offset's gradient via a Fisher divergence, reducing extrapolation error and reaching state-of-the-art on D4RL.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2112,
+  "summary": "The AlphaFold paper: a neural network predicting protein 3D structure from sequence with near-experimental atomic accuracy even without homologous templates, decisively winning CASP14 and largely solving the 50-year protein-folding problem.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2113,
+  "summary": "Melting Pot is a multi-agent RL evaluation suite that uses RL to generate 80+ novel test scenarios—social dilemmas, reciprocity, resource sharing, task partitioning—to measure generalization to unfamiliar social situations, exposing weaknesses invisible from training performance.",
+  "topics": ["Evaluations", "Reinforcement Learning"]
+ },
+ {
+  "id": 2114,
+  "summary": "Trains a 3D U-Net to segment 21 head-and-neck organs-at-risk from CT scans at expert-radiographer level for radiotherapy planning, using 663 clinical scans and validating against two independent experts with a new surface Dice similarity metric.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2115,
+  "summary": "Single-unit recordings in human dorsolateral prefrontal cortex show that pre-trial firing-rate variability predicts conflict-resolution speed in a Simon/Eriksen task, with the two conflict types occupying near-orthogonal initial states—supporting an initial-state hypothesis for cognitive control.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2116,
+  "summary": "FORM performs imitation from observations alone, with no expert actions: an inverse-RL objective rewards matching a generative model of the expert's future observations. It matches GAIL on the DeepMind Control Suite and outperforms it when task-irrelevant features are present.",
+  "topics": ["Reinforcement Learning"]
+ }
+]

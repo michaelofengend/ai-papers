@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1125,
+  "summary": "Trains an autoregressive grasp-planning network on millions of procedurally generated, unrealistic objects, modeling the multimodal distribution over grasps. Despite never seeing realistic objects in training, it reaches over 90% grasp success on unseen realistic objects in simulation and 80% on a real robot.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 1127,
+  "summary": "Simulated humanoid agents trained via competitive self-play discover physical skills like tackling, ducking, faking, kicking, catching, and diving without these being designed into the environment; self-play keeps the task at the right difficulty for continual improvement.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1126,
+  "summary": "In simulated robot wrestling, a meta-learning agent learns to adapt quickly mid-competition, defeating a stronger non-meta-learning opponent and coping with physical malfunction — evidence that fast adaptation pays off in competitive multi-agent settings.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1128,
+  "summary": "Float32 arithmetic is itself nonlinear near its smallest representable values, so networks built purely from linear layers can compute nonlinear functions. Training with evolution strategies — backprop cannot exploit the effect — pushes a deep linear network past the accuracy ceiling of any truly linear MNIST classifier.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1129,
+  "summary": "Releases LOLA (Learning with Opponent-Learning Awareness), an algorithm whose agents account for the fact that other agents are learning too rather than treating them as static, discovering self-interested yet collaborative strategies like tit-for-tat in the iterated prisoner's dilemma.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1130,
+  "summary": "LOLA agents differentiate through opponents' anticipated learning updates instead of treating them as a fixed part of the environment. This opponent shaping yields tit-for-tat and cooperation in the iterated prisoner's dilemma, where naive learners defect, and convergence to Nash in iterated matching pennies.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1131,
+  "summary": "Releases Baselines implementations of A2C — a synchronous variant of A3C with equal performance — and ACKTR, which uses Kronecker-factored approximate natural-gradient updates to deliver better sample efficiency than TRPO and A2C at only slightly higher per-update compute.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1132,
+  "summary": "Recounts how the 1v1 Dota 2 bot improved from barely matching a high-ranked human to beating top professionals within a month of self-play, arguing that self-play's automatically improving data distribution can carry systems from sub-human to superhuman given enough compute.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1133,
+  "summary": "A bot trained from scratch purely via self-play — no imitation learning or tree search — defeats the world's top professional players at 1v1 Dota 2 under standard tournament rules, a step toward AI pursuing well-defined goals in messy situations involving humans.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1134,
+  "summary": "Open-sources RL-Teacher, an implementation of the interface for training agents from occasional human feedback instead of hand-crafted reward functions, developed as a step toward safe AI and applicable to RL problems where rewards are hard to specify.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 1135,
+  "summary": "Adds adaptive noise to an RL agent's network parameters rather than its action outputs, giving more consistent exploration. The technique frequently boosts performance across algorithms, very rarely hurts, and is simple enough to try on any problem.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1136,
+  "summary": "Introduces Proximal Policy Optimization, policy-gradient algorithms built on a clipped surrogate objective that match or beat state-of-the-art methods while being much simpler to implement and tune; PPO became OpenAI's default RL algorithm.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1137,
+  "summary": "Creates adversarial images that reliably fool classifiers across varied scales, angles, and perspectives, countering the claim that systems like self-driving cars are hard to attack because they capture images from multiple viewpoints.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1138,
+  "summary": "Hindsight Experience Replay relabels failed episodes with the goals the agent actually achieved, making sparse binary-reward, goal-conditioned tasks learnable without reward shaping; combined with DDPG it learns robotic pushing, sliding, and pick-and-place that standard replay cannot.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1139,
+  "summary": "In Teacher-Student Curriculum Learning, a Teacher selects subtasks where the Student is improving fastest — or regressing, to combat forgetting. TSCL matches hand-crafted curricula on LSTM decimal addition and solves a Minecraft maze unsolvable by direct training, an order of magnitude faster than uniform sampling.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 1140,
+  "summary": "Open-sources mujoco-py, a high-performance Python library for robotic simulation with the MuJoCo engine, built during a year of robotics research to speed up large-scale simulated experiments.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1141,
+  "summary": "Introduces MADDPG, extending actor-critic RL with centralized critics and decentralized actors so agents learn in mixed cooperative-competitive environments. Argues multi-agent settings supply a natural curriculum — difficulty tracks opponents' skill — and no stable equilibrium, so there is always pressure to get smarter.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1142,
+  "summary": "Adapts bandit-style upper-confidence-bound exploration to deep RL: an ensemble of Q-functions supplies an uncertainty estimate, and acting optimistically on the ensemble's confidence bound yields significant gains on the Atari benchmark.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1143,
+  "summary": "Launches OpenAI Baselines, open-source reference implementations of RL algorithms tuned to match published results; the first release covers DQN and three of its variants, giving the community reliable baselines to build on and compare against.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1144,
+  "summary": "Demonstrates one-shot imitation on physical hardware: a robotics system trained entirely in simulation is deployed on a real robot and learns to perform a new task after seeing it demonstrated just once.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1145,
+  "summary": "Open-sources Roboschool, robot simulation environments integrated with OpenAI Gym and built on the Bullet physics engine, removing the need for a MuJoCo license and adding new control tasks, including multiplayer environments where agents train against each other.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1146,
+  "summary": "Proves entropy-regularized 'soft' Q-learning is exactly equivalent to policy gradient methods — a possible explanation for why Q-learning works despite inaccurate Q-value estimates — and builds a Q-learning variant matching A3C's learning dynamics without a target network or epsilon-greedy schedule, performing on par on Atari.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1147,
+  "summary": "Pre-trains a large span of skills with stochastic neural networks guided by a single proxy reward plus an information-theoretic regularizer, then trains a high-level policy that switches among the frozen skills, markedly improving exploration on sparse-reward, long-horizon downstream tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1148,
+  "summary": "A character-level LSTM trained only to predict the next character of Amazon reviews learns a representation containing a single 'sentiment neuron' that tracks review sentiment, enabling excellent sentiment classification from very few labeled examples.",
+  "topics": ["Interpretability", "Training & Scaling"]
+ },
+ {
+  "id": 1149,
+  "summary": "April Fools' joke post announcing 'the world's first Spam-detecting AI trained entirely in simulation and deployed on a physical robot' — a parody of the lab's sim-to-real robotics work in which the robot detects canned Spam rather than email spam.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1150,
+  "summary": "Shows Evolution Strategies, a black-box optimizer, rivals MDP-based RL (Q-learning, policy gradients) on MuJoCo and Atari while scaling almost linearly with CPUs: a common-random-numbers scheme communicates only scalars, letting 1,000+ workers solve 3D humanoid walking in 10 minutes.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 1151,
+  "summary": "A meta-learned policy conditions on a single demonstration of a task plus the current state, using soft attention over the demonstration, and performs new instances of that task. Trained across many block-stacking tasks, it generalizes to unseen stacking configurations from one demo.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1152,
+  "summary": "Outlines research in which RL agents in a simple 2D world invent their own grounded language: discrete symbols whose meanings emerge from cooperative goal-driven tasks rather than from training on human text.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 1153,
+  "summary": "In a proposed multi-agent environment, a basic compositional language of abstract discrete symbols — with a defined vocabulary and syntax — emerges because communicating helps agents achieve their goals; when the symbol channel is unavailable, non-verbal strategies like pointing and guiding emerge instead.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 1154,
+  "summary": "Learns dynamics as deep generative models (convolutional autoregressive models and VAEs) over whole temporal segments of states and actions rather than single timesteps, giving stable long-horizon predictions for stochastic systems and enabling fully differentiable trajectory optimization and model-based policy optimization.",
+  "topics": ["Reinforcement Learning"]
+ }
+]

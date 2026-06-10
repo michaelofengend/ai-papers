@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2144,
+  "summary": "A review of how deep neural networks serve as flexible ansätze for many-electron wavefunctions in variational quantum Monte Carlo, centered on FermiNet, enabling high-accuracy ab initio solutions to the electronic Schrödinger equation without basis-set extrapolation.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 2143,
+  "summary": "HDMapGen autoregressively generates high-definition driving maps as hierarchical graphs via a coarse-to-fine process, producing diverse, high-quality road topologies. On Argoverse and an in-house dataset it outperforms sequence and plain-graph baselines with strong scalability and efficiency.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2142,
+  "summary": "Temporal Query Networks cast fine-grained video action recognition as a query-response task, using temporal attention to focus on relevant segments per query, trained only with query labels. A stochastic feature-bank update handles variable-length videos, surpassing prior art on FineGym and Diving48 with RGB features.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2141,
+  "summary": "Protocol describing the Delphi-based methodology for developing STARD-AI, an AI-specific extension of the STARD reporting guideline for diagnostic-test-accuracy studies, aiming to improve completeness and transparency in reporting AI diagnostic interventions.",
+  "topics": ["Policy & Society", "Science Applications"]
+ },
+ {
+  "id": 2146,
+  "summary": "Systematic study of learned and hand-engineered state representations across three robotic manipulation tasks, used either as agent inputs or auxiliary tasks. Finds dimensionality matters for auxiliary tasks but not inputs, observability mainly aids inputs, and disentanglement helps auxiliary tasks more than inputs.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2791,
+  "summary": "Pilot RCT with 181 Argentinian university students testing the chatbot Tess against a psychoeducation book for depression and anxiety. Found no significant between-group differences over eight weeks, though more message exchange correlated with positive feedback and the chatbot group showed within-group anxiety reductions.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 2147,
+  "summary": "Applies backward error analysis to gradient-based two-player game dynamics, deriving modified continuous flows that capture 'discretization drift' from discrete simultaneous or alternating updates. Identifies drift components that destabilize GAN training and designs regularizers that cancel harmful drift, improving performance.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2148,
+  "summary": "Author response accompanying TDLM (temporally delayed linear modelling), a domain-general toolkit combining nonlinear classification with linear temporal modelling to detect neural replay sequences obeying a prespecified transition graph, applicable across human neuroimaging and rodent electrophysiology.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2149,
+  "summary": "Uses causal influence diagrams to formalize when RL agents have an instrumental incentive to tamper with their reward process, distinguishing reward-function tampering from RF-input tampering, and proposes design principles that jointly remove the incentive for both.",
+  "topics": ["Safety", "Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 2162,
+  "summary": "Introduces a causal-influence-diagram framework for analyzing agent incentives, proving complete graphical criteria for value of information and value of control and defining response incentives and instrumental control incentives. Shows how these help evaluate the safety and fairness of AI systems.",
+  "topics": ["Safety", "Policy & Society"]
+ },
+ {
+  "id": 2161,
+  "summary": "Introduces expected eligibility traces, which in a single update credit states and actions that could have preceded the current state, not just those actually visited. A bootstrapping-like mechanism interpolates with classic traces and strictly generalizes TD(λ), yielding sometimes-substantial gains.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2160,
+  "summary": "Gated Linear Networks are a backpropagation-free architecture where each neuron locally predicts the target using data-dependent gating and online convex optimization. They attain universal capacity in the limit and strong resilience to catastrophic forgetting, rivaling MLPs with dropout and EWC.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2159,
+  "summary": "Extracts a large multilingual, multi-word analogy dataset from Wikidata and uses a four-way Siamese BERT to ground mBERT through analogy training. This improves embedding global consistency and cross-lingual subspace isomorphism, with gains on bilingual dictionary induction and sentence retrieval.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2158,
+  "summary": "Introduces the Modified-Action MDP, where executed actions can differ from the policy (e.g., from supervisor intervention), and analyzes how RL algorithms adapt. Shows algorithm choice determines whether agents learn to circumvent interruptions, enabling safer control of agent responses.",
+  "topics": ["Safety", "Reinforcement Learning"]
+ },
+ {
+  "id": 2157,
+  "summary": "CAPI combines common-knowledge coordination with deep RL via approximate policy iteration for cooperative common-payoff games. Unlike the more scalable Bayesian Action Decoder, it prioritizes finding optimal joint policies, recovering them on small games where other multi-agent RL methods fail.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2156,
+  "summary": "Develops a 'hindsight rationality' framework for learning in sequential games, re-examining mediated equilibria and deviation types in extensive-form games. Proves no tractable equilibrium concept subsumes all others and characterizes the deviation and equilibrium classes corresponding to CFR-family algorithms.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2155,
+  "summary": "Policy-guided Heuristic Search (PHS) combines a learned policy and heuristic with theoretical guarantees on search effort tied to the quality of both. On sliding-tile, Sokoban, and a Witness puzzle it learns quickly and outperforms A*, weighted A*, greedy best-first, LevinTS, and PUCT.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2154,
+  "summary": "Relative Variational Intrinsic Control learns reward-free skills distinguished by how they change the agent's relationship to its environment, rather than arbitrary diversity. The resulting skills tile the space of affordances and prove more useful for hierarchical RL than prior mutual-information methods.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2153,
+  "summary": "Argues an RL agent's sequence of value-prediction problems should be solved holistically as the 'value-improvement path.' Shows representations spanning past value functions also approximate future ones; adding an auxiliary task to learn this path roughly doubles mean and median Atari performance.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2152,
+  "summary": "Reduces huge action spaces in general RL by sequentializing actions, shrinking the action set (even to binary) at the cost of a longer planning horizon. Provides exact constructions and proves a double-exponential improvement in the state-space bounds of Extreme State Aggregation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2151,
+  "summary": "Uses visual attention as an inductive bias rather than only an analysis tool for deep RL. A self-supervised module learns regions of interest without annotations, plugs into existing RL methods to speed convergence and boost performance, and transfers across tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2150,
+  "summary": "Provides the first global-convergence and sample-efficiency guarantees for standard REINFORCE using a single trajectory or fixed-size minibatch under softmax parametrization with log-barrier regularization, bounding bad episodes and using a doubling trick to obtain anytime sublinear regret.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2163,
+  "summary": "Survey of tensor methods in modern statistical learning, covering tensor supervised, unsupervised, reinforcement, and deep learning, emphasizing statistical models and properties and connections between tensor analysis and other learning paradigms.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2165,
+  "summary": "Proves that any agent guaranteed to be asymptotically optimal in all computable environments will, under a stated assumption, be destroyed or incapacitated with probability one—challenging the ergodicity assumption. Proposes Mentee, which explores safely toward a mentor's performance using expected information gain.",
+  "topics": ["Safety", "Reinforcement Learning"]
+ },
+ {
+  "id": 2164,
+  "summary": "SeqSNR uses soft-parameter-sharing subnetwork routing to find related tasks for multitask prediction of six ICU outcomes from MIMIC-III EHR data. It modestly but significantly beats single-task and naive multitask baselines, with notably better label efficiency in low-data regimes.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 2166,
+  "summary": "Proposes non-uniform refinements of smoothness and the Łojasiewicz inequality, motivating geometry-aware first-order methods that beat classical lower bounds. Normalized gradient methods achieve linear or exponential convergence for policy-gradient RL and generalized linear models and escape plateaus faster.",
+  "topics": ["Training & Scaling", "Reinforcement Learning"]
+ },
+ {
+  "id": 2167,
+  "summary": "Uses model-free reinforcement learning to learn shape-change coordination for a three-link fish swimming in potential flow, producing robust forward and turning gaits. The learned policies are interpretable via shape-space analysis and robust to drift-related perturbations.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 2792,
+  "summary": "Shows diffusion models surpass GANs on image synthesis by improving the architecture through ablations and adding classifier guidance, which trades diversity for fidelity using classifier gradients. Achieves SOTA FID on ImageNet at multiple resolutions, matching BigGAN-deep with far fewer sampling steps.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2168,
+  "summary": "Perspective arguing football analytics is a uniquely rich microcosm for AI at the intersection of statistical learning, game theory, and computer vision. Illustrates counterfactual analysis with predictive models and game-theoretic study of penalty kicks, plus mutual benefits for each field.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2169,
+  "summary": "Practical five-stage workflow—problem definition, preprocessing, architecture selection, calibration and uncertainty, and generalizability evaluation—for building deep-learning continuous-risk models from structured EHR data. Demonstrated on acute kidney injury, mortality, length of stay, and 30-day readmission, with an open-source codebase.",
+  "topics": ["Science Applications"]
+ }
+]

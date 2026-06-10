@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2067,
+  "summary": "AlphaFold-Multimer adapts AlphaFold to multi-chain complexes of known stoichiometry, substantially improving predicted interface accuracy while preserving intra-chain quality. On heterodimer benchmarks and 4,446 recent complexes it successfully predicts heteromeric interfaces in ~70% of cases, with high accuracy in roughly a quarter.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2066,
+  "summary": "Describes the AlphaFold2 system entered in CASP14: an end-to-end network predicting structure from sequence, MSAs, and homologs. It reached a median domain GDT_TS of 92.4 and far outscored all other groups, marking a step-change in protein structure prediction.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2782,
+  "summary": "Defines batch size-invariance and shows PPO-style methods lack it because of how they bound policy updates. Decoupling the proximal policy (controlling update size) from the behavior policy (off-policy correction) restores invariance and enables more efficient use of stale data.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2075,
+  "summary": "A Bayesian neural network trained on short N-body integrations predicts whether and when compact multi-planet systems go unstable, beating analytic estimators by over two orders of magnitude, providing calibrated confidence intervals, and running orders of magnitude faster than direct integration.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2074,
+  "summary": "PARTS is an unsupervised object-centric generative model that segments complex 3D video scenes into objects, learns disentangled per-object representations, and predicts future frames. A recurrent slot-attention encoder and a fixed shared prior yield large gains on CLEVRER and 3D environments.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2073,
+  "summary": "BraVe is a self-supervised video framework pairing a narrow temporal view with a broad one, training the model to generalize from the narrow view to overall content. Different backbones allow extra modalities (flow, audio), yielding SOTA on UCF101, Kinetics, and AudioSet.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2072,
+  "summary": "Generates 69M video-question-answer triplets (HowToVQA69M) from transcribed narrations via a question-generation transformer, avoiding manual annotation. Training a contrastive video-question/answer model enables zero-shot VideoQA and SOTA on MSRVTT-QA and others; also introduces the iVQA benchmark.",
+  "topics": ["Multimodal", "Evaluations"]
+ },
+ {
+  "id": 2071,
+  "summary": "Introduces contrastive detection, a self-supervised objective that matches object-level features across augmentations, extracting a richer per-image signal. It reaches SOTA transfer accuracy with up to 10x less pretraining compute and matches SEER while using 1000x less data.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2070,
+  "summary": "Studies contrastive learning on large uncurated datasets like YFCC, attributing the quality gap to a heavy-tailed class distribution that yields weak negatives. Divide and Contrast alternates contrastive learning with clustering-based hard-negative mining, sharply improving downstream transfer on uncurated data.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2069,
+  "summary": "NNCLR uses nearest neighbors in latent space as positives for contrastive learning, rather than only augmented views of the same image, adding semantic variety. It raises ImageNet linear-eval accuracy from 71.7% to 75.6% and reduces reliance on heavy augmentation.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2068,
+  "summary": "Enformer, a Transformer architecture, integrates long-range genomic interactions (up to 100 kb) to predict gene expression from DNA sequence with substantially higher accuracy, improving variant-effect predictions and learning enhancer-promoter interactions directly from sequence.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2076,
+  "summary": "A deep generative model of radar for probabilistic precipitation nowcasting up to 90 minutes ahead, producing realistic, spatiotemporally consistent rain fields including rarer heavy events. In an evaluation by over 50 meteorologists it ranked first for accuracy and usefulness in 89% of cases.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2077,
+  "summary": "Analyzes potential-based reward shaping in RL, showing that dynamic potential-based advice (DPBA) actually alters the optimal policy. Proposes PIES, which incorporates arbitrary external advice to accelerate learning while provably leaving the optimal policy unchanged.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1041,
+  "summary": "OpenAI's report on summarizing entire books by combining RLHF with recursive task decomposition: a model summarizes sections, then recursively summarizes the summaries, letting labelers supervise without reading the book. Framed as progress on scalable oversight of hard-to-evaluate tasks.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 2783,
+  "summary": "Combines human feedback with recursive task decomposition to summarize whole novels: GPT-3 is fine-tuned via behavioral cloning and reward modeling to summarize sections then recursively merge them. Achieves SOTA on BookSum and NarrativeQA, with ~5% of summaries matching human quality.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 2078,
+  "summary": "Formalizes reconstruction and a downstream post-processing task as statistical estimators, each parametrized by neural networks and trained jointly end-to-end against a combined loss. The plug-and-play framework is demonstrated on joint tomographic reconstruction with classification and segmentation.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2079,
+  "summary": "Proposes a fixed-point-theorem-based method to estimate voltage stability margins in distribution grids with high renewable penetration, offering guaranteed convergence, self-adaptive step size, general topology support, and a fast variant up to 8x quicker for time-sensitive operation.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1042,
+  "summary": "TruthfulQA is a benchmark of 817 questions across 38 categories crafted to elicit imitative falsehoods that models absorb from human text. The best model was truthful on 58% of questions versus 94% for humans, and larger models tended to be less truthful.",
+  "topics": ["Evaluations", "Alignment"]
+ },
+ {
+  "id": 2081,
+  "summary": "Using cryo-EM and X-ray crystallography, resolves how bacteriophage AR9's non-virion RNA polymerase recognizes uracil-bearing promoters in the template strand of double-stranded DNA, via a tripartite polymerase-DNA interaction in which the non-template strand also plays a critical role.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2080,
+  "summary": "Uses fMRI to test whether predictive neural activity during multi-step choice evaluation follows the successor representation. Decoding upcoming-state predictions from sensory cortex reveals SR-predicted errors in multi-step expectancies that accompany corresponding behavioral slips of action.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 2082,
+  "summary": "Presents Dex, a functional array language treating arrays as memoized functions over typed index sets, enabling currying and an explicit nested-indexing style. A typed effects system supports parallelism-preserving in-place updates and reverse-mode autodiff, benchmarking competitively with Futhark.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2083,
+  "summary": "Extends inverse reinforcement learning to multi-agent settings by reducing N agents to N single-agent problems while preserving rationality conditions. Notes naively learned rewards lack structure and generalize poorly, and studies when utilities are identifiable across games and auctions.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2084,
+  "summary": "An eLife editorial decision letter and evaluation for a data-driven CA3 network model showing that learned chain-like recurrent excitatory connectivity both shapes replay content and is essential for generating sharp wave-ripples, with bidirectional replay requiring symmetric plasticity plus adaptation.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2784,
+  "summary": "Introduces a model where a classical polynomial-time verifier interacts with a single untrusted quantum device, giving protocols to verify 'quantumness' and to certify randomness. Security rests on post-quantum trapdoor claw-free functions with an adaptive hardcore-bit property, built from LWE hardness.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2085,
+  "summary": "A formal discussion contribution (proposer of the vote of thanks) responding to Dong, Roth and Su's read paper on Gaussian Differential Privacy at the Royal Statistical Society, commenting on their f-DP / Gaussian differential privacy framework.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2086,
+  "summary": "A deep-learning framework that decodes sensory and behavioral variables directly from raw wide-band neural recordings with minimal preprocessing, generalizing across stimuli, brain regions, and recording modalities. Trained networks can be probed to identify which features of the neural code are informative.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2089,
+  "summary": "A mechanism for auctioning a location in a continuous space: it queries agents' utilities at random points, fits per-agent neural networks to their preferences, then composes these differentiable models and optimizes by gradient ascent, using a pricing rule that disincentivizes misreporting.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2088,
+  "summary": "DoWhaM is an exploration method for sparse-reward RL that rewards rarely-effective actions, those that seldom change the environment (e.g., opening a door), rather than pure state novelty. It sharply reduces sample complexity, setting a new state of the art on MiniGrid.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2087,
+  "summary": "Casts large-scale flocking as a Mean Field Game and solves it under weak assumptions by combining deep RL with normalizing flows. Fictitious Play alternates deep-RL best responses with normalizing-flow population-distribution estimation to reach a Nash equilibrium, handling high-dimensional flocking with obstacles.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2090,
+  "summary": "An observational study of non-depressed stroke survivors using resting-state fMRI and single/paired-pulse TMS, linking persistent post-stroke fatigue to motor cortex excitability and inter-hemispheric effective connectivity, characterized via spectral dynamic causal modeling.",
+  "topics": ["Science Applications"]
+ }
+]

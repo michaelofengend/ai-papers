@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2321,
+  "summary": "A Nature Machine Intelligence commentary examining how race and racialization are embedded in and reproduced by technological and AI systems, engaging critical scholarship on the 'techno-racial project' and the social stakes of how it becomes normalized.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2322,
+  "summary": "Presents a method to refine environment assumptions in GR(1) reactive synthesis, computing assumptions general enough to imply the guarantees yet minimal and intelligible, so engineers can assess their consistency with the real deployment environment.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2817,
+  "summary": "Surveys problems and opportunities in measuring AI systems and their societal impact, distilling a 2019 Stanford workshop's 40+ presentations into six core measurement challenges to guide research agendas in AI policy.",
+  "topics": ["Policy & Society", "Evaluations"]
+ },
+ {
+  "id": 2323,
+  "summary": "Introduces declarative abstractions for partitioning large tensor (multi-dimensional array) programs across systems of accelerator devices, addressing the growing need to distribute models like the 175B-parameter GPT-3 under memory and scalability constraints.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1051,
+  "summary": "GPT-f applies transformer language models to automated theorem proving in the Metamath formalization, targeting the generation of original mathematical terms; it discovered new shorter proofs that were accepted into the main Metamath library.",
+  "topics": ["Reasoning", "Science Applications"]
+ },
+ {
+  "id": 1052,
+  "summary": "Applies RLHF to abstractive summarization: human preference comparisons train a reward model, then a policy is optimized against it, producing summaries humans prefer over reference summaries and far larger supervised models on Reddit TL;DR and CNN/DM.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 2324,
+  "summary": "A keynote arguing for reinforcement learning as a tool for building predictive knowledge in continually-learning agents, generalizing the value function, using temporally-extended actions, and leveraging intents and affordances to tame the complexity of learning knowledge representations.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2325,
+  "summary": "A philosophical treatment of AI alignment arguing its normative and technical aspects are interrelated, distinguishing alignment targets (instructions, intentions, revealed/ideal preferences, interests, values), and advocating fair principles that earn reflective endorsement despite widespread moral disagreement.",
+  "topics": ["Alignment", "Policy & Society"]
+ },
+ {
+  "id": 2327,
+  "summary": "ARMAC is a model-free no-regret RL algorithm that stores past policies and replays them to reconstruct hindsight advantage estimates; combined with regret matching it approaches Nash equilibria in partially-observable zero-sum games, including betting-abstracted no-limit Texas Hold'em.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2326,
+  "summary": "Develops a variational information-bottleneck framework for semi-supervised classification with hand-crafted and learnable priors, unifying prior methods (semi-supervised VAE, AAE, CatGAN) and analyzing how regularizer components affect accuracy on MNIST under varying label budgets.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2328,
+  "summary": "Formalizes order-robust optimization as online learning minimizing simple regret and proposes VROOM, a zeroth-order (derivative-free) algorithm achieving vanishing regret in non-stationary environments while recovering favorable rates under stochastic reward processes.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2330,
+  "summary": "Exploits the dual structure of the constrained-ranking linear program to build NodeHopper, a fast solver that meets recommender serving latency limits, solving constrained ranking an order of magnitude faster than off-the-shelf LP solvers.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2329,
+  "summary": "Uses a mechanistic general ecosystem model across four terrestrial biomes to show that removing over ~80% of plant biomass commonly triggers irreversible, non-linear regime shifts, especially at higher trophic levels and in less productive ecosystems.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2331,
+  "summary": "A statistical machine-learning algorithm automatically tunes gate-defined quantum-dot devices across up to eight gate-voltage dimensions, reaching optimal performance in a median under 70 minutes, surpassing expert humans and roughly 180x faster than automated random search.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2332,
+  "summary": "Generalizes policy improvement and evaluation across tasks: when a new task's reward is well-approximated as a linear combination of solved tasks' rewards, RL reduces to linear regression, substantially cutting the data needed to solve new problems.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2333,
+  "summary": "NCNet is an end-to-end CNN that finds reliable dense image correspondences by analyzing neighbourhood-consensus patterns in the 4D space of all possible matches; trainable from weak supervision, it achieves state-of-the-art on PF, TSS, InLoc, and HPatches.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2334,
+  "summary": "Trains physics-based humanoid controllers for whole-body object-interaction tasks like box carrying and ball catching, using egocentric vision and touch sensing, a motor-primitive module, human demonstrations, and instructed RL with curricula; controllers run in real time.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2335,
+  "summary": "Compares classical food-web model predictions against a 546-interaction freshwater dataset, finding additive stressor interactions are most frequent (versus meta-analyses' antagonistic classifications) and that interaction-classification statistical tests are highly sensitive to sampling variation.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2336,
+  "summary": "Releases dm_control, Python libraries and task suites for continuous-control RL built on the MuJoCo physics engine, including the standardized Control Suite benchmark, a locomotion framework, and robot-arm manipulation tasks with snap-together bricks.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 2337,
+  "summary": "Presents Quick Look, a practical, implemented design for impredicative type inference, integrated into the GHC Haskell compiler with modest, localized changes that stay compatible with its other type-system extensions, making polymorphic types more first-class.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2339,
+  "summary": "GPcounts implements scalable Gaussian-process regression with a negative-binomial (or zero-inflated) likelihood via variational inference for RNA-seq counts, better detecting over-dispersed temporal and spatial expression changes than Gaussian- or Poisson-based methods on single-cell and spatial data.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2338,
+  "summary": "Evaluates the psychometric validity, construct, dimensionality, internal consistency, and criterion validity, of the Arithmetic subtest of Brazil's School Achievement Test (TDE) in 2,226 children, finding satisfactory reliability and hierarchically ordered item difficulty for screening math-learning difficulties.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2340,
+  "summary": "AlphaNPI-X solves sparse-reward continuous control in three stages: off-policy RL learns atomic goal-conditioned policies, self-models learn their effects, and those models enable planning-by-imagination to learn recursive compositional neural programs, solving tasks like stacking multiple blocks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2341,
+  "summary": "For reward-free pure exploration in RL, shows exploration bonuses scaling as 1/n (rather than 1/sqrt(n)) yield faster learning rates, improving horizon dependence in regret bounds and tightening best-policy-identification sample complexity via improved stopping-time analysis.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2342,
+  "summary": "Trains probabilistic neural networks with objectives derived from tight PAC-Bayes bounds and computes non-vacuous risk certificates on MNIST and CIFAR-10 far tighter than prior work, suggesting these methods support model selection and self-certified learning.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2343,
+  "summary": "A protocol-agnostic, experience-driven deep-RL framework trains self-interested agents to negotiate and form teams in non-spatial and spatial environments; agents beat hand-crafted bots, reach outcomes consistent with cooperative game theory's fair solutions, and reveal how physical location shapes negotiation.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2344,
+  "summary": "The embedded topic model (ETM) marries topic models with word embeddings, modeling each word via a categorical distribution parameterized by the dot product of word and topic embeddings; fit with amortized variational inference, it yields interpretable topics and beats LDA on large vocabularies.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2345,
+  "summary": "Introduces a tactile-robotics RL benchmark, learning to type on a braille keyboard across four tasks of increasing difficulty, and shows deep-RL agents trained purely on tactile images succeed in simulation and on three of four real-robot tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2346,
+  "summary": "Trains a machine-learning model to predict the long-term orbital stability of compact multiplanet exoplanet systems up to five orders of magnitude faster than direct N-body integration, enabling rejection of unphysical orbital configurations and population-wide stability analysis.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2347,
+  "summary": "The Sequential Monte Carlo Transformer recasts a transformer's keys, queries, values, and attention as latent stochastic states in a state-space model, using Sequential Monte Carlo to approximate state posteriors and log-likelihood gradients, yielding predictive distributions instead of point estimates.",
+  "topics": ["Training & Scaling"]
+ }
+]

@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1999,
+  "summary": "Generates HowToVQA69M, a 69M-triplet VideoQA dataset, by applying a question-generation transformer to transcribed narrations, then trains a video-question and answer transformer with a contrastive loss. Introduces zero-shot VideoQA and the low-bias iVQA benchmark, excelling on rare answers.",
+  "topics": ["Multimodal", "Evaluations"]
+ },
+ {
+  "id": 2003,
+  "summary": "Studies an informed adversary who knows all training points but one and shows it can reconstruct the missing point: closed-form for convex models, and a trained reconstructor network for neural nets. Demonstrated on MNIST/CIFAR-10; quantifies the differential privacy needed to mitigate.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2006,
+  "summary": "Uses normalizing flows to model atomic solids, transforming a tractable base distribution into the target crystal without ground-truth samples. Yields Helmholtz free-energy estimates for ice and a Lennard-Jones system matching literature and molecular-dynamics baselines, with samples nearly indistinguishable from MD.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2005,
+  "summary": "A Comment from DeepMind reflecting on AlphaFold's CASP14 breakthrough in protein structure prediction, discussing its impact across biology, the promising research directions it opens, and the limitations and challenges that remain.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2004,
+  "summary": "Introduces HARES, a 12-task benchmark spanning speech, music, and environmental audio, and finds prior domain-specific models generalize poorly. Shows SimCLR-style objectives help but depend on architecture, and proposes a normalizer-free Slowfast NFNet reaching state-of-the-art across all audio domains.",
+  "topics": ["Multimodal", "Evaluations"]
+ },
+ {
+  "id": 2007,
+  "summary": "A perspective arguing that machine learning for health must make its value choices explicit, since values shape research topics, methods, deployment, and policy. Highlights areas needing attention to support healthier lives while minimizing harm.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2009,
+  "summary": "Defines lung-cancer lymph-node-station boundaries from the IASLC map and trains DiUNet to automatically delineate clinical target volumes station-by-station, incorporating bulky gross-tumor lymph nodes. Reports improved accuracy, consistency, and efficiency for CTV contouring in radiotherapy planning.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2008,
+  "summary": "A symposium review summarizing recent deep learning, reinforcement learning, and world-model research and its connections to neuroscience, discussing which of these technologies might be key to reaching human-level intelligence.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2010,
+  "summary": "A review arguing that symmetry transformations are a unifying principle for what makes a 'good' representation, drawing parallels across physics, machine learning, and neuroscience, where symmetry-aware methods yield more data-efficient and generalizable learning.",
+  "topics": ["Training & Scaling", "Science Applications"]
+ },
+ {
+  "id": 1034,
+  "summary": "DALL-E 2: a two-stage text-to-image model that first uses a prior to produce a CLIP image embedding from a caption, then a diffusion decoder to generate the image. Improves diversity and enables image variations and language-guided editing.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1033,
+  "summary": "Examines reward-model overoptimization: optimizing a learned proxy objective eventually diverges from the true goal, an instance of Goodhart's law. Measures how this gap behaves, informing how to optimize objectives that are costly or impossible to measure directly.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 125,
+  "summary": "Applies preference modeling and RLHF to fine-tune language models into helpful, harmless assistants. Alignment improves nearly all NLP evaluations and is compatible with skills like coding; introduces iterated online training and finds reward scales with the square root of policy-initialization KL divergence.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 2011,
+  "summary": "Uses computational modeling to test whether adult hippocampal neurogenesis acts like a regularizer. Modeling neurogenesis as periodic weight reinitialization in a CNN trained on CIFAR-10 improves generalization, matching or exceeding dropout, weight decay, and neural noise.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 2776,
+  "summary": "A survey of exploration methods in deep reinforcement learning, organizing the main approaches and intrinsic-motivation techniques and discussing open challenges in balancing exploration and exploitation in high-dimensional environments.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2012,
+  "summary": "Introduces marginalized operators, a class of off-policy evaluation operators that strictly generalize multi-step operators like Retrace and admit scalable, variance-reduced sample estimates. Empirically improves off-policy evaluation and downstream policy optimization.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2014,
+  "summary": "Quantifies how environment and co-player diversity affect generalization in multi-agent RL. Procedurally generated training levels improve held-out performance (sometimes hurting training levels); a new behavioral-diversity measure shows larger populations and intrinsic motivation increase diversity, strengthening agents in some cases.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2013,
+  "summary": "A book chapter on aligning AI with human values, situating it within longstanding thought on technology 'locking in' values. Argues AI's power and autonomy raise novel challenges and calls for 'social value alignment' to the plurality of values held across groups.",
+  "topics": ["Alignment", "Policy & Society"]
+ },
+ {
+  "id": 2015,
+  "summary": "Proposes online changepoint detection with simultaneous model learning for highly parametrized models like deep nets, using sequential generalized likelihood-ratio tests over checkpoints with a bounded Type I error. Improves continual learning with unknown task boundaries over Bayesian baselines.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2016,
+  "summary": "Ithaca, a deep network for restoring, geographically attributing, and dating damaged ancient Greek inscriptions. Alone it restores text at 62% accuracy, but historians using it improve from 25% to 72%; it dates inscriptions within 30 years and aids historical debates.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 443,
+  "summary": "InstructGPT: fine-tunes GPT-3 with labeler demonstrations and RLHF to follow user intent. A 1.3B InstructGPT is preferred to the 175B GPT-3 despite 100x fewer parameters, with improved truthfulness and reduced toxicity and minimal regressions on public NLP datasets.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 1035,
+  "summary": "Outlines a research agenda for measuring the economic impacts of code-generation models such as Codex, identifying key open questions and methodological approaches for studying effects on developer productivity, labor, and the broader software economy.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2017,
+  "summary": "Combines AlphaFold2 predictions with X-ray crystallography and cryo-EM to solve the bipartite decoy-module structure of human GP2 and uromodulin, revealing how its fold presents the high-mannose glycan recognized by bacterial adhesin FimH and rationalizing disease-associated mutations.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 126,
+  "summary": "Presents evidence that induction heads, attention heads completing patterns like [A][B]...[A]->[B], are the primary mechanism of in-context learning in transformers. They emerge at a sharp phase change coinciding with an in-context-learning bump in training loss, supported by six lines of evidence.",
+  "topics": ["Interpretability", "Training & Scaling"]
+ },
+ {
+  "id": 2018,
+  "summary": "Computational study comparing success-based and conformist social-learning strategies. Success-based learning excels under low uncertainty but fails under high uncertainty, while conformity mitigates this; meta-control arbitrating individual and social learning gives sample-efficient learning in volatile, uncertain environments.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 2019,
+  "summary": "Augments RL agents with a learned retrieval process that reads a dataset of past experiences, letting behavior condition on the whole dataset rather than the current state alone. Added to offline DQN and online R2D2, it reduces task interference and speeds Atari learning.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2020,
+  "summary": "Demonstrates deep reinforcement learning for tokamak plasma control: a single agent learns to command all control coils to achieve high-level shape and position targets. Validated on the TCV tokamak across diverse configurations, including elongated, negative-triangularity, snowflake, and simultaneous 'droplet' plasmas.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 127,
+  "summary": "Argues large generative models combine predictable aggregate loss (scaling laws) with unpredictable specific capabilities and outputs, a combination that drives rapid deployment yet complicates anticipating harms. Discusses policy implications and proposes interventions for the AI community.",
+  "topics": ["Policy & Society", "Training & Scaling"]
+ },
+ {
+  "id": 2021,
+  "summary": "A perspective arguing the brain-computer metaphor debate is merely a semantic disagreement: under computer-science definitions the brain literally is a computer, while under everyday definitions it is not. Recommends researchers simply state which definition they use.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2022,
+  "summary": "A wide-ranging survey identifying high-impact opportunities for machine learning to mitigate and adapt to climate change, from smart grids to disaster management, pairing research questions with applications and calling the ML community to action.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 1036,
+  "summary": "A neural theorem prover for Lean trained to solve formal mathematics, including high-school olympiad problems from AMC12 and AIME and two problems adapted from the IMO, advancing automated formal reasoning.",
+  "topics": ["Reasoning"]
+ }
+]

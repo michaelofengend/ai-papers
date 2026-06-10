@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1938,
+  "summary": "A general heuristic that adapts purely-directed causal-discovery algorithms (IGCI and kernel conditional deviance) so they can also flag latent common causes between two variables, validated on synthetic additive/multiplicative/complex-noise regimes and real data while preserving the originals' directional-discovery accuracy.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1937,
+  "summary": "Reviews participatory approaches to AI/ML in historical context and across the development pipeline, presents three case studies, and argues that realizing participation's benefits requires clarity on what meaningful participation means and who its primary beneficiaries should be, warning against cooptation.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1939,
+  "summary": "AlphaTensor casts discovering matrix-multiplication algorithms as a single-player tensor-decomposition game solved with AlphaZero-style deep RL, finding algorithms that beat the best known complexity for many sizes, including the first improvement on Strassen's 4x4 finite-field algorithm in 50 years.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 2770,
+  "summary": "A journal editorial co-authored with ChatGPT as a credited participant, using the exercise to reflect on generative AI's emerging role in scholarly writing and academic publishing.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1940,
+  "summary": "Introduces OPSRL, a posterior-sampling RL algorithm for finite-horizon MDPs needing only logarithmically many posterior samples per state-action pair, achieving a near-optimal regret bound of order sqrt(H^3 SAT) via a new anti-concentration inequality extending Beta to Dirichlet distributions.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 441,
+  "summary": "Sparrow is an information-seeking dialogue agent trained with RLHF to be helpful, correct, and harmless by decomposing good behavior into natural-language rules rated separately and by citing supporting evidence; it resists adversarial probing, violating rules only 8% of the time.",
+  "topics": ["Alignment", "Agents"]
+ },
+ {
+  "id": 442,
+  "summary": "Gives the first formal definition of reward hacking and 'unhackability', proving that across all stochastic policies two reward functions are unhackable only if one is constant; non-trivial unhackable pairs and simplifications exist only for deterministic or finite policy sets.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 1024,
+  "summary": "Whisper is a robust speech-recognition system trained on 680,000 hours of multilingual, multitask weakly-supervised web audio; it generalizes zero-shot across languages and tasks (transcription, translation), approaching human robustness without dataset-specific fine-tuning.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1942,
+  "summary": "An opinion piece (Botvinick) arguing that the question of how to develop AI to best benefit humanity is a challenge not only for AI research but for every discipline of cognitive science, calling for deeper engagement between the fields.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 1941,
+  "summary": "Single-particle cryo-EM structures of catalytically-inactive PAPP-A bound to an IGFBP5 peptide, built using an AlphaFold model as starting template, reveal PAPP-A as a flexible trans-dimer that recognizes substrate via a unique 25-residue anchor peptide, explaining its selectivity in IGF signaling.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2771,
+  "summary": "Uses an RFID-enabled operant-conditioning device in the field to measure habituation, learning, and reversal flexibility in wild raccoons; juveniles habituated more but performed worse on reversals than adults, docile individuals learned better, and captive raccoons outperformed wild ones.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1943,
+  "summary": "A survey from DeepMind's Game Theory & Multi-Agent team spanning game-theoretic approximations, social dilemmas in spatial environments, and team coordination among 3D humanoids, presenting a taxonomy that highlights open challenges in multi-agent reinforcement learning.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 120,
+  "summary": "A toy model in which polysemanticity is fully understood as 'superposition', where models store more sparse features than they have dimensions. Demonstrates a phase change, links feature geometry to uniform polytopes, and connects superposition to adversarial vulnerability, with implications for mechanistic interpretability.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1944,
+  "summary": "Trains teams of simulated humanoids to play football via RL, integrating low-level joint-torque motor control with long-horizon multi-agent coordination by constraining behavior to skills learned from human motion capture, yielding coordinated agents that exhibit complex behavior across timescales.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 121,
+  "summary": "Studies red-teaming of language models across three sizes and four model types, finding RLHF models grow harder to red-team with scale while other types stay flat; releases 38,961 red-team attacks and documents methodology to support shared community norms.",
+  "topics": ["Safety", "Robustness & Security", "Alignment"]
+ },
+ {
+  "id": 1945,
+  "summary": "Using a multi-step rat task that dissociates learning from choosing, plus electrophysiology and optogenetics, shows orbitofrontal-cortex value representations do not directly drive choice but instead signal expected-reward information to a separate learning process that updates choice mechanisms.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1946,
+  "summary": "Introduces exact separation logic (ESL), unifying over-approximate verification with under-approximate true-bug-finding so all terminating behavior is characterized while all results and errors remain reachable. Proves soundness with mutually-recursive functions and explores the role of abstraction in under-approximate reasoning.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1947,
+  "summary": "Shows that adding a model of social norms (emergent decentralized sanctioning that redistributes rewards) lets groups of self-interested, lifetime-learning RL agents learn a productive division of labor filling critical but individually-unrewarding roles, resolving the underlying social dilemma.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1948,
+  "summary": "An opinionated review arguing that reinforcement learning, especially its foundational emphasis on reward in agent learning, can advance philosophy-of-mind questions about perception and motivation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1950,
+  "summary": "Rebuts a comment questioning whether the DM21 density functional genuinely respects fractional-charge and fractional-spin conditions beyond its training set, arguing the critics' claims about training/benchmark overlap and generalization are incorrect or irrelevant to the paper's conclusions.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1949,
+  "summary": "Constructs an optimized black-box quantum state-preparation scheme that loads many important coefficient sets using only O(1) rounds of amplitude amplification instead of O(sqrt(N)), via two algorithm variants, one of which reduces ancilla requirements over prior oracle constructions.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1951,
+  "summary": "Demonstrates robust flow-based (normalizing-flow) sampling of field configurations in the lattice Schwinger model at the critical fermion mass, where conventional Monte Carlo methods fail to explore configuration space and severely underestimate uncertainties.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1025,
+  "summary": "Shows a simple data transformation, moving a span from a document's middle to its end, teaches autoregressive LMs to infill without harming left-to-right perplexity or generation across scales; ablates FIM hyperparameters and recommends training with fill-in-the-middle by default.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1026,
+  "summary": "Presents OpenAI's hazard-analysis framework for surfacing technical, social, political, and economic risks of code-synthesis LLMs like Codex, paired with an evaluation framework measuring how well models understand and execute specification prompts of varying complexity.",
+  "topics": ["Safety", "Evaluations", "Policy & Society"]
+ },
+ {
+  "id": 2772,
+  "summary": "Introduces Q-Value Weighted Regression, a simple off-policy actor-critic that improves the sample efficiency of Advantage Weighted Regression; with a single hyperparameter set it matches SAC on MuJoCo and outperforms a tuned Rainbow on Atari.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1952,
+  "summary": "Uses a simple evolutionary strategy to jointly optimize quantum-circuit architecture and parameters on NISQ hardware, benchmarked on transverse-field Ising and Sherrington-Kirkpatrick models; finds only minor slowdown on real devices versus simulation and identifies the most useful mutation operators.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1953,
+  "summary": "Organizes a benchmark challenge spanning ten medical-image segmentation tasks and modalities to test whether one method generalizes across tasks; finds state-of-the-art algorithms retrain and generalize well, with cross-task consistency a strong proxy for generalizability.",
+  "topics": ["Science Applications", "Evaluations", "Multimodal"]
+ },
+ {
+  "id": 1954,
+  "summary": "Benchmarks camera-based remote photoplethysmography against contact PPG sensors using a new multimodal dataset of 56 subjects across three tasks, finding rPPG handles motion artifacts better and supports contactless monitoring of physiological signals and stress states.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 1955,
+  "summary": "The authors' formal reply to peer-review comments on their eLife study, defending the finding that rat orbitofrontal-cortex value representations support learning rather than directly driving choice.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1956,
+  "summary": "Introduces a violation-of-expectation dataset and a deep-learning model that learns intuitive physical concepts directly from visual data, inspired by infant cognition; learning depends critically on object-level representations, mirroring findings from developmental psychology.",
+  "topics": ["Multimodal", "Science Applications"]
+ }
+]

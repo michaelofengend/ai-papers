@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2185,
+  "summary": "Casts meta-learning as maximizing mutual information between a stochastic task encoding and validation-set predictions under an information bottleneck. Variational approximations yield a tractable framework that unifies gradient-based methods and produces a new memory-based algorithm with Gaussian-process encodings, competitive on few-shot regression and classification.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2184,
+  "summary": "Neural-linear bandits lose exploration information as the network's learned representation drifts. This work adds a limited-memory mechanism via a semi-definite program (approximated with SGD for online use), resisting catastrophic forgetting and improving performance on regression, classification, sentiment, and cellular uplink rate-control tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2183,
+  "summary": "DC-MCTS plans out of execution order: it recursively proposes sub-goals that partition a goal-directed task into simpler sub-tasks solved independently, guided by a learned sub-goal proposal distribution. This strictly generalizes sequential planning and improves grid-world navigation and continuous control.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2182,
+  "summary": "Observes that constraint-satisfying optimal policies must be Pareto optimal, recasting constrained RL as multi-objective RL. The framework learns a Pareto front trading reward against constraints while searching it for feasible policies, beating Lagrangian-relaxation approaches on continuous control in solution quality and sample efficiency.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2181,
+  "summary": "Combines Bayesian large-margin nearest-neighbor classification, triplet-loss deep metric learning, and variational inference into a metric-learning method with theoretical robustness guarantees under label noise, improving classification accuracy over linear Bayesian and point-estimate deep metric learning on benchmarks with synthetic and realistic noise.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2180,
+  "summary": "NMPC learns latent spaces for planning from pixels via a mutual-information objective that prioritizes task-relevant features and a recurrent network modeling non-Markovian dynamics. It beats prior model-based RL on DMControl variants with distracting natural-video backgrounds while staying competitive on standard tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2179,
+  "summary": "Adapts counterfactuals to model-free RL to separate skill from luck in credit assignment: value functions conditioned on learned future-trajectory information serve as future-conditional baselines and critics in policy gradients, with provably lower variance and unbiasedness enforced by excluding action information from hindsight features.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2178,
+  "summary": "Self-attention over learned object-centric video representations achieves state of the art on the CLEVRER and CATER spatio-temporal reasoning benchmarks, beating neuro-symbolic hybrids, with BERT-style self-supervised losses cutting labelled-data needs by 40% — evidence that neural networks can capture causal structure and intuitive physics.",
+  "topics": ["Multimodal", "Reasoning"]
+ },
+ {
+  "id": 2177,
+  "summary": "Two interpretable multimodal machine translation models set new state of the art yet learn to ignore the visual input; analysis shows the gains of multimodal systems over text-only baselines come from a regularization effect rather than genuine use of images.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2176,
+  "summary": "Derives fully incremental policy-gradient updates that neither wait for episode end nor learn a critic, using trace-based return estimates. Provides on-policy and off-policy variants for discounted and average-reward settings, connecting the traces to stationary distributions, with experiments on simple and complex domains.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2175,
+  "summary": "AlgebraNets replace real-valued weights and activations with alternative algebras (complex numbers, quaternions, 2x2-4x4 matrices, dual numbers) at ImageNet and language-modeling scale. Several algebras beat real-valued networks in parameter and compute efficiency, and their denser multiplication suits sparse and autoregressive inference.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2174,
+  "summary": "Tackles unbounded value growth in offline RL caused by bootstrapping on poorly covered state-action pairs, combining behavior value estimation, ranking regularization, and value reparametrization. Achieves state-of-the-art on RL Unplugged Atari and introduces new offline datasets for bsuite and partially observable DeepMind Lab.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2173,
+  "summary": "Proves standard dot-product self-attention is not Lipschitz and proposes an L2 self-attention that is, with an upper bound on its Lipschitz constant shown empirically to be asymptotically tight. This enables invertible self-attention, demonstrated in a Transformer for character-level language modeling.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2172,
+  "summary": "Proposes transferring knowledge in RL through behavior rather than representations: policies pre-trained to maximize state coverage are reused both for exploitation and for exploration-driven data collection. Coverage-pretrained policies yield higher downstream returns, with the largest gains in domains requiring structured exploration.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2171,
+  "summary": "HO2 learns options off-policy by backpropagating through a dynamic-programming inference procedure across time and policy components, decoupling training from the behavior policy. Ablations isolating action versus temporal abstraction show both help, and HO2 outperforms prior option-learning methods on pixel-based robot manipulation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2170,
+  "summary": "Nature comment arguing AI should be reconceived as deeply social: research must shift from individual intelligence toward machines that find common ground with people, institutions, and other machines. Calls for a field of Cooperative AI to help humanity solve fundamental problems of cooperation.",
+  "topics": ["Agents", "Policy & Society"]
+ },
+ {
+  "id": 2198,
+  "summary": "Builds strategically diverse agent populations for multi-player games by structuring training interactions as interaction graphs that control information flow between agents, encouraging specialization on different strategies. Analyzes how different graphs shape training trajectories, diversity, and overall population performance across a range of games.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2197,
+  "summary": "Reframes PCA as a competitive game whose Nash equilibrium recovers the eigenvectors: each player controls one approximate eigenvector and maximizes its own utility. The resulting update — Oja's rule combined with generalized Gram-Schmidt — is decentralized and parallelizable, scaling to large image datasets and network activations.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2196,
+  "summary": "An architecture that factorizes declarative knowledge (per-object 'object files' tracking state) from procedural knowledge (shared 'schemata' prescribing updates), with attention routing updates and information flow. As a drop-in recurrent-cell replacement, it generalizes far better in environments with multiple same-type objects, including intuitive physics.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2195,
+  "summary": "Applies multi-agent deep RL to graph-structured collective action problems such as packet routing and irrigation management, extending network games with geometry and time. Studies how topology and interaction mechanisms shape the emergence of self-organized cooperation among self-interested agents.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 2194,
+  "summary": "SnAp makes Real Time Recurrent Learning practical by tracking only each parameter's influence on hidden units reachable within n timesteps. SnAp-1 costs no more than backprop yet allows online updates on arbitrarily long sequences, beating UORO; SnAp-2 can outpace backprop through time on sparse networks.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2193,
+  "summary": "Using a modified sender-receiver game spanning partially competitive scenarios, shows communication can emerge between competing agents with standard RL and grows with the degree of cooperation. Distinguishes communication from manipulation and achieves emergent communication in a negotiation game where prior work failed, provided both agents benefit.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 2192,
+  "summary": "Extends multi-agent influence diagrams (MAIDs) with subgames plus subgame-perfect and trembling-hand-perfect equilibrium refinements, proves equivalence results between MAIDs and extensive-form games, and provides an open-source implementation for reasoning about MAIDs and computing their equilibria.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 2191,
+  "summary": "EPIC is a distance for comparing learned reward functions directly, without training policies: it is invariant across rewards inducing the same optimal policy and robust to the visitation distribution. EPIC provably bounds the regret of optimal policies under different transition dynamics and predicts policy-training success.",
+  "topics": ["Alignment", "Reinforcement Learning"]
+ },
+ {
+  "id": 2190,
+  "summary": "BYORL adapts BYOL self-supervised learning to adversarial training, learning robust representations without any labels; a linear classifier on top yields adversarially robust models. On CIFAR-10 under l2 and l-infinity perturbations it nears state-of-the-art robustness with as few as 500 labels, where pseudo-labeling collapses.",
+  "topics": ["Robustness & Security", "Training & Scaling"]
+ },
+ {
+  "id": 2189,
+  "summary": "Dissects MuZero through interventions and ablations on control tasks, Atari, and 9x9 Go to isolate what planning contributes: planning mainly aids learning via better policy updates and data distributions; shallow trees with simple rollouts usually suffice; and planning alone does not drive strong generalization.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2188,
+  "summary": "A neuro-symbolic framework distills interpretable theories from raw sensory streams: a binary neural network encoded as a logic program maps raw input to disjunctive symbolic form, and the network weights plus theory rules are solved jointly as a single SAT problem — learning to perceive and apperceive simultaneously.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 2187,
+  "summary": "Shows empirically that minima reached by continual and multitask training are connected by linear paths of low error when both start from the same initialization. Exploits this to constrain sequentially learned minima toward multitask-like solutions, outperforming state-of-the-art continual-learning algorithms on standard benchmarks.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2186,
+  "summary": "An RL agent in a simulated 3D world equipped with dual-coding external memory exhibits one-shot word learning: after a single 'This is a dax', it manipulates the named object as instructed and generalizes to novel exemplars — reproducing human-like fast-mapping and enabling memory-based intrinsic motivation.",
+  "topics": ["Agents", "Reinforcement Learning"]
+ },
+ {
+  "id": 2200,
+  "summary": "In-vitro study tracking artificial emboli and human thrombi through two patient-specific silicone aortic-arch phantoms under pulsatile physiological flow. Emboli distribution across the supra-aortic branches closely follows flow-rate proportions, suggesting arteries with higher flow rates receive more stroke-causing emboli.",
+  "topics": ["Science Applications"]
+ }
+]

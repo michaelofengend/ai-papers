@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2807,
+  "summary": "Documents how InceptionV1 spontaneously develops equivariant feature families—neuron groups detecting the same pattern under rotation, scale, hue, or reflection—and the recurring weight 'motifs' that connect them, extending the Circuits program's account of vision-model structure.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2273,
+  "summary": "Introduces a regularization-by-denoising framework for cryo-EM reconstruction that replaces the usual smoothness prior with a CNN trained on known macromolecular structures, yielding better reconstructions than the state of the art on simulated data.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2272,
+  "summary": "Co-registers fMRI and axonal-tracing maps in the Allen mouse atlas to chart the default mode network's connectivity, finding preferentially interconnected cortical regions, L2/3 neurons projecting almost exclusively within the DMN, and two distinct retrosplenial L5 projection types.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2271,
+  "summary": "nnU-Net automatically configures preprocessing, network topology, training, and post-processing for any new biomedical segmentation task from inferred dataset properties, achieving state-of-the-art results across diverse 2D/3D medical challenges without manual tuning.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2274,
+  "summary": "Shows that KL regularization in approximate value iteration causes estimation errors to be averaged across iterations rather than accumulated, giving tighter error bounds that explain the empirical gains of KL/entropy-regularized deep RL methods.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2275,
+  "summary": "Proposes QAML-Z, which iteratively zooms into the energy surface by mapping the problem to continuous space and re-applying quantum annealing to augmented weak classifiers, halving the gap to classical deep nets on Higgs boson classification at large training sizes.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2278,
+  "summary": "A popular-audience piece arguing that sound decisions under pandemic-like uncertainty remain possible through risk–benefit analysis even when only partial information is available.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2277,
+  "summary": "Injects syntactic bias into BERT pretraining by distilling the in-context word marginals of a hierarchical syntactic language model, cutting relative error 2–21% on structured-prediction tasks though with mixed GLUE results.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2276,
+  "summary": "Extends Hindsight Experience Replay to language-conditioned policies: when an agent fails an instruction, HIGhER learns to relabel the trajectory with a matching instruction and positive reward, improving instruction following in BabyAI without expert intervention.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2279,
+  "summary": "A 3D U-Net segments 21 head-and-neck organs at risk for radiotherapy planning at expert level on clinical CT scans, and introduces the surface Dice similarity coefficient to better quantify clinically meaningful boundary agreement.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2280,
+  "summary": "Shows that spatial invariance of stochastic fields requires equivariant inference, fully characterizes equivariant Gaussian processes, and introduces Steerable Conditional Neural Processes, which improve performance on GP vector fields, images, and real-world weather data plus transfer tasks.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2808,
+  "summary": "Uses an automated reversal-learning paradigm to probe cognitive flexibility in three urban-adapted mesocarnivores (skunks, raccoons, coyotes); most animals reversed learned associations readily, but performance varied and coyotes showed marked neophobia and weak habituation.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2281,
+  "summary": "Proposes a model where hippocampus learns a successor representation of relational structure (model-based/place learning) while dorsolateral striatum learns model-free egocentric responses, with reliability-weighted action values reproducing diverse spatial and nonspatial decision findings and lesion effects.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 2810,
+  "summary": "Scales hierarchical VAEs to far greater stochastic depth, showing they can represent autoregressive models and, for the first time, surpass PixelCNN log-likelihood on CIFAR-10, ImageNet, and FFHQ while using fewer parameters and sampling thousands of times faster.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2809,
+  "summary": "Three experiments find people largely cannot distinguish GPT-2-generated foreign-policy news from real stories and that partisanship shapes perceived credibility, though exposure barely shifts policy views—illustrating synthetic text as a misinformation vector.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 2282,
+  "summary": "Trains RNNs with sensory feedback to control a simulated arm and finds rotational population dynamics arise even without recurrent connections; matching structure appears in monkey motor and somatosensory cortex, suggesting it reflects feedback control rather than internal pattern generation.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2811,
+  "summary": "Applies attribution and feature visualization to the vision model of a PPO agent trained on CoinRun, building an interface that surfaces features tracking game objects; introduces the 'diversity hypothesis' and demonstrates hand-editing the model to change agent behavior.",
+  "topics": ["Interpretability", "Reinforcement Learning"]
+ },
+ {
+  "id": 2283,
+  "summary": "Experimentally and numerically observes a localization transition for bosons in an eightfold-symmetric quasicrystalline optical lattice, probed via matter-wave diffraction; weak interactions shift the transition to deeper lattices, offering a platform for 2D many-body localization.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2284,
+  "summary": "A network trained merely to predict visual input learns to map egocentric to allocentric reference frames, spontaneously developing head-direction, boundary-vector, place, and egocentric-boundary cells, supporting predictive coding as a principle behind spatial representations and enabling rapid adaptation to new environments.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2285,
+  "summary": "Applies network measures to the response graphs of large-scale games to build a 'landscape' quantifying relationships between games, helping characterize agents and curricula, and uses it to synthesize new games from real-world ones.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2287,
+  "summary": "Proposes NCA-GE, which approximates node-centrality rankings in large graphs from graph embeddings and node degree via a neural network in O(|E|) time, training on small synthetic scale-free graphs and outperforming a prior degree/eigenvector-based approximator.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2286,
+  "summary": "A review relating continual learning to neural-network optimization dynamics and its potential for data efficiency, surveying gradient-based, modular, memory-based, and meta-learning approaches—many biologically inspired—for learning from non-stationary sequential data.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2289,
+  "summary": "Identifies structure in deep-learning sparse matrices and builds high-performance GPU kernels for sparse matrix–dense matrix and sampled dense–dense multiplication, reaching 27% of V100 single-precision peak and giving sparse Transformers/MobileNets 1.2–2.1x speedups with up to 12.8x memory savings.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2288,
+  "summary": "WaveNetEQ performs audio packet-loss concealment with a WaveRNN conditioned on a log-mel spectrogram of past signal, capturing voice characteristics and prosody for better medium/long-gap quality than pattern-based methods while remaining sparse enough to run on-device.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2290,
+  "summary": "Derives distribution-dependent lower bounds on meta-learning transfer risk for Gaussian linear regression and shows a covariance-weighted biased regularized regression matches them; the setting unifies parameter-sharing and representation-learning views, with EM attaining the bound as tasks grow.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2291,
+  "summary": "Combines a β-VAE to denoise EEG with a Symbol-Concept Association Network to extract interpretable features, outperforming hand-engineered baselines at predicting age and depression and yielding reusable representations for new clinical labels and denoised ERP extraction.",
+  "topics": ["Science Applications", "Interpretability"]
+ },
+ {
+  "id": 2812,
+  "summary": "Learns reusable behavior priors that capture movement and interaction patterns shared across tasks via probabilistic trajectory models and hierarchical latent variables; integrated into RL they aid multi-task and transfer learning across simulated continuous-control domains, connecting to hierarchical RL and information-theoretic objectives.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2294,
+  "summary": "Introduces Interactive Speaker Recognition, casting speaker ID as a sequential decision problem solved with RL where the system requests specific utterances to be spoken; it achieves strong accuracy from little speech and can guide utterance selection for speech synthesis.",
+  "topics": ["Reinforcement Learning", "Multimodal"]
+ },
+ {
+  "id": 2293,
+  "summary": "XLVIN combines contrastive self-supervised learning, graph representation learning, and neural algorithmic reasoning to run value-iteration-style planning in generic environments, lifting Value Iteration Networks' assumptions of discrete, known, fixed MDPs and improving over model-free baselines.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2292,
+  "summary": "Uses meta-learning to discover synaptic plasticity rules constrained by the function and structure they should produce rather than by data; parameterizing rules via a Volterra expansion, it rediscovers Oja's rule and Hebbian/anti-Hebbian combinations that extract principal components.",
+  "topics": ["Science Applications"]
+ }
+]

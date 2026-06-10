@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2223,
+  "summary": "Combines annealed importance sampling and sequential Monte Carlo with normalizing flows learned sequentially to transport particles toward successive annealed targets, improving estimation of normalizing constants. Provides limit theorems and a continuous-time scaling limit expressible as a controlled diffusion.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2224,
+  "summary": "Formalizes behavioral deviations in extensive-form games and introduces extensive-form regret minimization (EFR), a CFR variant achieving hindsight rationality for any deviation set with computation scaling with set complexity. Identifies partial-sequence deviation types and shows stronger types tend to yield better empirical play.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2225,
+  "summary": "Proposes MetaTS, a Thompson sampling variant that meta-learns the prior across bandit instances drawn from an unknown prior to explore more efficiently. Derives a novel prior-dependent Bayes regret bound and shows fast adaptation empirically in Gaussian bandits.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2226,
+  "summary": "Across five experiments, finds Pavlovian bias (action invigorated by reward cues and inhibited by punishment cues) is largely resistant to unlearning, but diminishes with training when instrumental learning occurs in a verbal semantic rather than motoric space.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2228,
+  "summary": "Philosophy dissertation analyzing question 7 of Siger of Brabant's Quaestiones in Metaphysicam, examining his theses on being as the subject of metaphysics, the relation of esse to the essence of caused beings, and the distinct modes of signification of 'being' versus 'thing'.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2227,
+  "summary": "Studies composing policies to solve collections of RL tasks defined by linearly-combined reward features. Introduces a policy-iteration algorithm that incrementally builds a set whose set-max composition maximizes worst-case performance across tasks, with monotonic improvement guarantees and empirically diverse resulting policies.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2229,
+  "summary": "Introduces NeuralLinear-LiM2, a fully online neural-linear bandit that uses likelihood matching to estimate uncertainty from a limited replay buffer, mitigating catastrophic forgetting as the learned representation changes while matching the performance of unlimited-memory approaches.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2230,
+  "summary": "Develops a bootstrapping method for fitted Q-evaluation in off-policy evaluation, yielding asymptotically efficient and distributionally consistent inference on policy-evaluation error. A subsampling procedure cuts runtime by an order of magnitude; validated on classic RL environments for confidence intervals and variance estimation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2799,
+  "summary": "Part of the Circuits thread, surveys techniques for directly visualizing and interpreting the weights of vision models such as InceptionV1, accounting for how upstream and downstream features give weights meaning, to make individual neuron-to-neuron connections human-readable.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1047,
+  "summary": "Summarizes a 2020 OpenAI-Stanford workshop on GPT-3-scale language models, surveying their technical capabilities and limitations alongside societal impacts including misuse potential, bias, and economic effects, and outlining open research and governance questions.",
+  "topics": ["Policy & Society", "Training & Scaling"]
+ },
+ {
+  "id": 2231,
+  "summary": "Perspective relating deep reinforcement learning agents trained on the Atari benchmark to neuroscience, discussing what artificial agents that learn to play classic video games can and cannot tell us about learning and decision-making in the human brain.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 2233,
+  "summary": "Proves that SGD with random shuffling follows, in expectation, gradient flow on a modified loss containing an implicit regularizer penalizing minibatch-gradient norms, scaling with the learning-rate-to-batch-size ratio. Adding this term explicitly can improve test accuracy at small learning rates.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2232,
+  "summary": "Proposes General Value Function Networks (GVFNs), an RNN architecture whose hidden-state components are constrained to be predictions (value functions) about the future, incorporating prior knowledge and improving trainability and robustness to the truncation window in partially observable settings.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2800,
+  "summary": "Part of the Circuits thread, documents high-low frequency detector neurons in InceptionV1 that respond to high spatial frequency on one side and low frequency on the other, supporting figure-ground separation and object boundary detection.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2234,
+  "summary": "Generalizes the doubly-reparameterized gradient estimator (DReGs) for multi-sample variational bounds to hierarchical VAEs with several stochastic layers and to score functions of arbitrary distributions, enabling lower-variance training of conditional and hierarchical VAEs on image modeling.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2235,
+  "summary": "Review recasting research on biological intelligence through the lens of meta-learning, placing cognitive-science, psychology, and neuroscience findings into a common framework and discussing recent points of contact between meta-learning in AI and neuroscience.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 1048,
+  "summary": "Engineering account of scaling Kubernetes clusters to 7,500 nodes to support large-model workloads such as GPT-3, CLIP, and DALL-E as well as rapid small-scale research, describing the infrastructure bottlenecks encountered and addressed at that scale.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2236,
+  "summary": "Introduces analysis tools characterizing forward-pass signal propagation in deep ResNets and uses them, together with an adapted Weight Standardization, to design normalizer-free ResNets that match state-of-the-art EfficientNets on ImageNet without batch normalization.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2237,
+  "summary": "Investigates using a multi-speaker TTS system to synthesize speech for augmenting speaker-recognition training when few speakers are available. Synthetic speech improves cross-domain performance and combines well with multi-style training; matching target-domain text content helps most.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2238,
+  "summary": "Derives temporal-difference algorithms for learning successor states and goal-dependent value functions in discrete and continuous environments, providing finite-variance estimators for infinitely sparse goal-reaching rewards and showing backward-Bellman and Bellman-Newton operators improve convergence over standard TD.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2239,
+  "summary": "Using multi-day two-photon calcium imaging of layer 2/3 and layer 5 pyramidal neurons in mouse visual cortex, finds distinct responses to expected versus unexpected stimuli in both somata and distal apical dendrites that evolve in opposite directions over days.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2801,
+  "summary": "Trains a single goal-conditioned policy for diverse robotic manipulation via asymmetric self-play: Alice proposes goals and Bob solves them, creating a natural curriculum without human priors. Bob learns from sparse rewards and generalizes to unseen tasks like table-setting and block-stacking.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2802,
+  "summary": "Narrative evidence review developing an analytical framework for public mask use against COVID-19, synthesizing transmission, source-control, and wearer-protection literature. Concludes masks reduce transmission per contact, are most effective at high compliance, and recommends widespread cloth-mask adoption alongside other measures.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 2241,
+  "summary": "Shows that approximation guarantees for maximizing the ratio of submodular functions (RS) can be converted into weaker guarantees for the difference-of-submodular (DS) problem and vice versa, and analyzes a greedy algorithm maximizing quasiconvex two-variable objectives that unifies both.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2240,
+  "summary": "Formalizes 'making sense' of a sensory sequence as unsupervised synthesis of a symbolic causal theory satisfying unity conditions. The implemented Apperception Engine produces interpretable, human-readable theories from little data and simultaneously predicts, retrodicts, and imputes sensor readings across diverse domains.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1050,
+  "summary": "Introduces CLIP, which learns visual concepts from natural-language supervision by contrastively matching images to their captions at scale, enabling zero-shot transfer to arbitrary image-classification tasks specified only by category names and rivaling supervised baselines.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1049,
+  "summary": "Introduces DALL-E, an autoregressive transformer that generates images from text captions across a wide range of concepts, including novel object combinations and varied styles, demonstrating controllable text-to-image synthesis.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2804,
+  "summary": "Legal analysis arguing that AI developers can coordinate on responsible-development and safety practices through industry self-regulation while remaining compliant with antitrust law, and examining how such cooperation could be structured to avoid legal pitfalls.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2803,
+  "summary": "Sets out a research agenda for legal scholarship prioritized by long-term impact, identifying high-priority questions—including AI governance and law's role in mitigating catastrophic and existential risks—to guide academic legal research.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2266,
+  "summary": "Describes BYOL-style self-supervised representation learning, training an online network to predict the representations of a slowly-updated target network across augmented views, learning strong image representations without negative pairs or contrastive comparisons.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ }
+]

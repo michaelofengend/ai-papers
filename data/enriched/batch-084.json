@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2422,
+  "summary": "Introduces community-based system dynamics (CBSD), a participatory modeling approach that brings typically excluded, vulnerable stakeholders into the problem-formulation phase of ML development, targeting the bias that arises at this stage in dynamically complex, high-stakes domains.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2424,
+  "summary": "Parameterizes Bayesian neural network weights as distributions over rank-1 subspaces, with mixture posteriors adding minimal memory (0.4% for a size-10 ResNet-50 mixture). Achieves state-of-the-art log-likelihood, accuracy, and calibration on ImageNet, CIFAR-10/100, and MIMIC-III, including out-of-distribution variants.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2425,
+  "summary": "Shows tabular softmax policy gradient with exact gradients converges at an O(1/t) rate via a Lojasiewicz inequality, while entropy regularization gives linear O(e^-ct) convergence; matching Omega(1/t) lower bounds explain how entropy provably accelerates policy optimization.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2831,
+  "summary": "Tracks algorithmic progress as falling compute to reach a fixed capability: training to AlexNet-level ImageNet accuracy needed 44x fewer FLOPs in 2019 than 2012, efficiency doubling every 16 months versus Moore's law's 11x, with hardware and algorithmic gains multiplying.",
+  "topics": ["Training & Scaling", "Evaluations"]
+ },
+ {
+  "id": 2430,
+  "summary": "Talk arguing deep multi-agent RL creates automatic curricula, since co-adapting agents continually pose harder tasks for one another, illustrated by three case studies: AlphaZero board-game mastery, Capture-the-Flag in 3D environments, and learning cooperation in social dilemmas.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2429,
+  "summary": "Offers mechanism-design tools, grounded in symmetries and conservation laws, for constructing multi-agent games with predictable and controllable learning dynamics, which can otherwise be chaotic even in simple games, plus a robust dimensionality-reduction framework for large network games.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2428,
+  "summary": "Formalizes alliance formation in many-player zero-sum games as a social dilemma requiring trust, showing naive multi-agent RL fails to form alliances. Augmenting learners with a peer-to-peer contract mechanism resolves the dilemma in a toy model of economic competition.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2427,
+  "summary": "NeuRD modifies policy gradient with a one-line change that bypasses the softmax gradient, grounding updates in replicator dynamics; it reduces to Hedge and equals softmax counterfactual regret minimization in tabular settings, adapting far faster under multi-agent nonstationarity.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2426,
+  "summary": "Imbues RL agents with Social Value Orientation, formalizing preferences over group reward distributions, and varies its diversity in two mixed-motive Markov games. Heterogeneous-SVO populations show rich behavioral variation and learn more generalized, higher-performing policies than homogeneous ones.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1055,
+  "summary": "Analysis finding the compute needed to train a neural net to AlexNet-level ImageNet performance dropped 44x between 2012 and 2019, halving every 16 months versus an 11x gain from Moore's law, so algorithmic progress has outpaced hardware efficiency on heavily invested tasks.",
+  "topics": ["Training & Scaling", "Evaluations"]
+ },
+ {
+  "id": 2832,
+  "summary": "Book review of Gerit Bos's parallel Arabic-English critical edition and translation of Maimonides' medical treatise on the elucidation of symptoms, with critical editions of its medieval Hebrew translations. Humanities scholarship unrelated to AI research.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2431,
+  "summary": "TDLM combines nonlinear classification with temporally delayed linear modeling to detect statistical regularities in sequences of neural representations from noninvasive recordings. Applied to MEG, it reveals human replay during rest paralleling rodent hippocampal replay, and extends to rodent electrophysiology.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2833,
+  "summary": "Models COVID-19 trajectories in 16 diverse countries to compare dynamic non-pharmacological interventions, repeated cycles of mitigation or suppression followed by relaxation, projecting ICU admissions and deaths over 18 months to identify sustainable intermittent-distancing schedules for resource-poor settings.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2432,
+  "summary": "Learns latent state representations for pixel-based robotic manipulation via RL in simulation, then adapts them to the real world with unlabeled robot data using sequence-based self-supervised objectives, including a novel Contrastive Forward Dynamics loss, achieving successful sim-to-real skill transfer.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2834,
+  "summary": "Generates songs with singing directly in raw audio: a multi-scale VQ-VAE compresses audio into discrete codes modeled by autoregressive Transformers, yielding high-fidelity music coherent over multiple minutes, steerable by artist, genre, and unaligned lyrics. Weights, code, and samples released.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2433,
+  "summary": "WarpGrad meta-learns preconditioning for gradient descent via nonlinear warp-layers interleaved with task-learner layers, trained without backpropagating through the task-training process. This combines learned-optimizer flexibility with gradient-descent inductive bias and scales meta-learning well beyond few-shot adaptation.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1056,
+  "summary": "Announces Jukebox, a neural net generating music, including rudimentary singing, as raw audio in a variety of genres and artist styles, with released model weights, code, and a tool to explore generated samples.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2434,
+  "summary": "Reviews whether the brain could implement backpropagation-like credit assignment, long dismissed as biologically implausible. Proposes the NGRAD hypothesis: feedback connections drive activity differences that locally encode error gradients, making backprop-style learning compatible with cortical circuits.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2435,
+  "summary": "Author correction notice for the Nature Physics study in which graph neural networks predicted the long-time dynamics of glassy systems from a static structural snapshot, outperforming previous physics-based and machine-learning approaches.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1057,
+  "summary": "Summarizes a 58-author, 30-organization report proposing ten mechanisms for verifiable claims about AI systems: tools developers can use to evidence that systems are safe, secure, fair, or privacy-preserving, and that policymakers and civil society can use to scrutinize development.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 2835,
+  "summary": "Multi-stakeholder report analyzing ten institutional, software, and hardware mechanisms, including third-party auditing, red-team exercises, bias bounties, audit trails, and secure hardware, that enable AI developers to make verifiable, accountable claims about safety, security, fairness, and privacy.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 2436,
+  "summary": "Kernel-UCBVI is a model-based optimistic algorithm for finite-horizon RL on metric state-action spaces, using non-parametric kernel estimates of rewards and transitions without any partitioning. Achieves regret O(H^3 K^max(1/2, 2d/(2d+1))), where d is the covering dimension.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1058,
+  "summary": "Releases visualizations of every significant layer and neuron in eight vision 'model organisms' commonly studied in interpretability, enabling researchers to analyze the features that form inside these networks and share observations about them.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2836,
+  "summary": "Evidence review finding masks cut COVID-19 transmissibility per contact by blocking respiratory droplets, including from presymptomatic and asymptomatic carriers. Recommends widespread public cloth-mask wearing as cheap, effective source control, strongest when compliance is high, alongside distancing and contact tracing.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2437,
+  "summary": "Finite-time analysis of Kernel-UCBVI yielding the first regret bound for RL with smoothing kernels, O(H^3 K^(2d/(2d+1))) with d the covering dimension, under weak assumptions on metric state-action spaces, validated on continuous MDPs with sparse rewards.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2837,
+  "summary": "Collects anecdotes from evolutionary computation and artificial life in which digital evolution surprised its creators by exploiting code bugs, gaming fitness specifications, and converging on lifelike solutions, arguing such unintended outcomes merit study rather than dismissal as obstacles.",
+  "topics": ["Safety"]
+ },
+ {
+  "id": 2444,
+  "summary": "Studies stochastic online learning where pulling an arm reveals rewards of other arms through a probabilistic feedback graph, covering one-step and cascading observation models. Derives asymptotic lower bounds and algorithms whose regret upper bounds match them with high probability.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2443,
+  "summary": "Improves deep RL for text-based games via accumulated-reward contextualisation that mitigates partial observability and admissible-action methods exploiting that most actions are ineffectual in a given state, lifting baseline agent performance on TextWorld games and Zork.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2442,
+  "summary": "Enforces fairness by using optimal transport to map score distributions of different sensitive-attribute groups onto a common target distribution with minimal changes to the unfair model. Handles classification and regression, multiple fairness notions, and Pareto-optimal accuracy-fairness trade-offs, outperforming prior methods.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2441,
+  "summary": "Analyzes fictitious-play schemes for mean field games where best responses come from any model-free single-agent RL algorithm, bounding approximate-Nash quality by accumulated learning errors. Proves, for the first time, convergence of model-free learning to non-stationary MFG equilibria.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ }
+]

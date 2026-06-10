@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1044,
+  "summary": "Introduces Codex, a GPT model fine-tuned on GitHub code, plus HumanEval, a benchmark measuring functional correctness of docstring-to-code synthesis. Codex solves 28.8% of problems (70.2% with 100 samples per task), and the paper examines its limitations and deployment risks.",
+  "topics": ["Reasoning", "Evaluations"]
+ },
+ {
+  "id": 2117,
+  "summary": "Designs a suite of RL benchmark environments with parametrically controllable causal graphs to test joint discovery of high-level variables and causal structure from pixels. Finds that explicitly building structure and modularity into models aids causal induction in model-based RL.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 2118,
+  "summary": "A perspective on neural algorithmic reasoning: building networks that execute classical algorithmic computation. Argues that endowing deep learning with algorithm-like behavior could yield the strong out-of-distribution generalization characteristic of algorithms while adapting them to messy real-world inputs.",
+  "topics": ["Reasoning", "Training & Scaling"]
+ },
+ {
+  "id": 2119,
+  "summary": "Using MEG, finds that schizophrenia patients show reduced spontaneous neural replay of inferred object relationships during rest, alongside augmented hippocampal ripple power, mirroring animal models. These deficits track impaired behavioral learning and neural representation of task structure.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2788,
+  "summary": "Shows that adding tactile sensing to DDPG improves sample efficiency (up to threefold) and performance (up to 46%) on simulated dexterous in-hand manipulation. Ablates sensor accuracy and spatial resolution, and releases touch-sensor extensions for OpenAI Gym's Shadow Dexterous Hand.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2121,
+  "summary": "Presents a CNN framework that decodes behavioral variables directly from raw wide-band neural recordings without hand-engineered features, then interprets which signals drive predictions, revealing for example a novel representation of head direction.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2120,
+  "summary": "First comprehensive empirical evaluation of learning-augmented caching algorithms on real-world traces with state-of-the-art predictors. Shows a simple strategy, following whichever of a predictor or a classical robust algorithm is currently better, adds little overhead yet stays competitive when the predictor fails.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2123,
+  "summary": "Proposes manipulator-independent representations (MIR) that let an RL agent imitate complex manipulation trajectories from third-person video alone, without action labels and across different embodiments. The representations provide cross-domain alignment, temporal smoothness, and actionability for cross-embodiment visual imitation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2122,
+  "summary": "Defines criteria for industry-oriented deep RL and applies RL-from-demonstration to robotic assembly on the NIST benchmark, consistently beating a professional integrator's baseline in speed and reliability, and outperforming a human on a randomly-moving-target insertion task.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2124,
+  "summary": "Provides a unifying framework, based on off-policy evaluation, for estimating higher-order derivatives (Hessians) of value functions in model-agnostic meta-RL. It subsumes prior estimators, clarifies their bias-variance trade-offs, and yields new, easily auto-differentiable estimators with empirical gains.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2126,
+  "summary": "Extends emphatic temporal-difference methods, which stabilize off-policy learning under the deadly triad, to deep RL. Shows naive adaptation to multi-step-return algorithms fails, derives new emphatic algorithms that fix this, and demonstrates gains on diagnostic tasks and Atari.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2125,
+  "summary": "A review connecting recent algorithms for planning and information search to neural and behavioral data on temporally extended decisions. Discusses why planning and curiosity arose in some species, and how prefrontal, cingulate, and medial temporal circuits may support them.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2789,
+  "summary": "Proposes PALMS: iteratively fine-tuning language models on a small, hand-curated, values-targeted dataset to steer behavior toward chosen values. Significantly improves toxicity and value-adherence metrics across GPT-3 sizes without harming capability, with effectiveness growing with model size.",
+  "topics": ["Alignment", "Policy & Society"]
+ },
+ {
+  "id": 2127,
+  "summary": "Trains a two-pathway deep network with a self-supervised predictive loss and shows it outperforms other models at fitting mouse visual cortex, capturing both ventral ('what') and dorsal ('where') pathway specialization within a single architecture and objective.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2129,
+  "summary": "Introduces JPSRO, a provably convergent algorithm for training agents in n-player general-sum extensive-form games, and proposes correlated equilibria, including a new Maximum Gini Correlated Equilibrium, as efficient meta-solvers. Demonstrates convergence across several n-player general-sum games.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2128,
+  "summary": "A perspective arguing for human computational ethology, using computational tools to richly quantify natural human behavior and integrate it with neuroscience. Surveys the promise of naturalistic behavioral measurement alongside its methodological and conceptual challenges.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2130,
+  "summary": "A model-free RL algorithm that drives exploration by perturbing training data with i.i.d. noise plus an optimistic reward-sampling procedure, avoiding intractable UCB bonuses. Achieves regret bounds scaling with the eluder dimension, recovering an RLSVI variant in the linear case.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2131,
+  "summary": "Connects marginalized importance sampling for off-policy evaluation to the successor representation, showing the state-action density ratio can be computed from it. This enables stable training via deep RL in high-dimensional domains, evaluated on Atari and MuJoCo.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2135,
+  "summary": "Studies the common mismatch between the discount factor used to estimate value functions and the one defining the evaluation objective, deriving objectives that interpolate between two discount factors. Yields new value-estimation and policy-optimization updates with empirical gains and insight into deep RL heuristics.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2134,
+  "summary": "Studies learning Nash equilibria in two-player zero-sum imperfect-information games via self-play with only bandit feedback. Introduces IXOMD, a model-free, computationally efficient algorithm with a high-probability 1/sqrt(T) convergence rate to the equilibrium.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2133,
+  "summary": "Proposes re-weighting states in TD updates, both as inputs and as targets, so that more important or more reliably estimated states contribute more, rather than updating every visited state equally. Proves convergence under linear function approximation with favorable empirical behavior.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2132,
+  "summary": "Derives the exact joint probability over a graph and its node ordering for autoregressive graph generative models, then trains by maximizing a variational lower bound that marginalizes orderings, avoiding ad-hoc orderings. Yields tighter likelihood bounds and high-quality generated graphs.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1045,
+  "summary": "OpenAI's announcement of the PALMS method: fine-tuning GPT-3 on a small, curated values-targeted dataset measurably improves adherence to specified behavioral values and reduces toxic output without degrading capabilities, with larger models benefiting more.",
+  "topics": ["Alignment", "Policy & Society"]
+ },
+ {
+  "id": 2136,
+  "summary": "Extends model-based planning to stochastic, partially observable environments using discrete (VQ) autoencoders to capture an action's multiple possible outcomes, with a stochastic MCTS variant planning over actions and latent codes. Outperforms offline MuZero on stochastic chess and scales to DeepMind Lab.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2790,
+  "summary": "Proposes a competition-design framework, combining submission retraining, domain randomization, domain obfuscation, and compute/sample budget limits, to yield reproducible, non-domain-specific, sample-efficient RL solutions. Validated by organizing the MineRL 2020 sample-efficient RL competition.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 2137,
+  "summary": "Introduces temporally delayed linear modelling (TDLM), a domain-general toolkit combining nonlinear classification with linear temporal modelling to detect neural sequences matching a hypothesized transition graph. Developed for non-invasive neuroimaging, it extends to rodent electrophysiology and continuous spaces.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2138,
+  "summary": "Theoretically characterizes the gradient bias of the popular first-order heuristic for approximate bi-level optimization, exhibiting cases where it fails to converge. Proposes an unbiased variant (UFOM) with constant memory, convergence bounds, and a tunable time-variance trade-off.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2139,
+  "summary": "Introduces two PSRO variants, Mixed-Oracles and Mixed-Opponents, that train best responses against a single opponent policy rather than a full mixture, cutting the simulation cost of repeated deep-RL training while producing equal or better multi-agent game solutions.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2140,
+  "summary": "Trains a U-Net to auto-segment the clinical target volume and organs-at-risk from CT for breast-conserving radiotherapy. Achieves high overlap (mean Dice 0.93-0.96) across structures and matches expert quality while greatly reducing delineation time.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2145,
+  "summary": "Builds on Sideways to avoid backprop's locking by propagating approximate gradients forward in time, adding skip-connection-based temporal integration. The resulting Skip-Sideways enables low-latency, model-parallel training and better temporal features, improving action recognition on HMDB51, UCF101, and Kinetics-600.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ }
+]

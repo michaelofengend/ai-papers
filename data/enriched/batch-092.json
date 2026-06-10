@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1076,
+  "summary": "Introduces activation atlases (with Google), an interpretability technique that aggregates feature visualizations over many dataset examples to map what combinations of neurons in vision models represent, revealing global structure in learned features and exposing failure modes.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 1077,
+  "summary": "Releases a massively multiagent game environment for RL supporting large, variable numbers of agents in a persistent, open-ended world. Training many agents together yields better exploration, divergent niche formation, and higher overall competence.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2608,
+  "summary": "Proposes discovering RL options by optimizing their termination conditions from an information-theoretic view, favoring options whose encodings are compressible. Learns an option transition model as a critic to derive termination gradients, yielding meaningful, useful options.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2609,
+  "summary": "Re-examines CFR+, a faster variant of counterfactual regret minimization for solving imperfect-information games. After prior work found a flaw in its convergence proof, provides corrected proofs that recover the original error bound and clarifies alternating-update behavior.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2610,
+  "summary": "Models crowdsourcing contests as all-pay auctions and runs Mechanical Turk experiments comparing human bidding to game-theoretic equilibrium and online-learning algorithms. Finds bimodal effort, a tendency to overbid, and that humans behave as weak learners.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2612,
+  "summary": "Reviews how representation-analysis techniques from computational neuroscience can illuminate deep network representations, and conversely how DNN-analysis methods aid neuroscience. Argues for synergy, including using DNNs as in silico model systems to generate hypotheses about biological computation.",
+  "topics": ["Interpretability", "Science Applications"]
+ },
+ {
+  "id": 2611,
+  "summary": "Presents an interface letting non-musicians improvise piano: eight buttons are decoded in real time into plausible performances. Trains RNN autoencoders with discrete bottlenecks so button presses map to musically coherent note sequences, with constraints improving intuitiveness.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1078,
+  "summary": "Argues that aligning advanced AI with human values, e.g. via debate or amplification that query humans, requires resolving open questions about human rationality, emotion, and bias, and calls for ML researchers to collaborate with social scientists on these experiments.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 1079,
+  "summary": "Announces GPT-2, a large transformer language model trained on WebText that generates coherent long-form text and performs reading comprehension, translation, QA, and summarization zero-shot, reaching SOTA on several language-modeling benchmarks; notes misuse concerns motivating a staged release.",
+  "topics": ["Training & Scaling", "Safety"]
+ },
+ {
+  "id": 2613,
+  "summary": "Applies a deep convolutional network to images from the TacTip optical biomimetic tactile sensor, achieving robust edge perception and a policy for following object contours. A model trained only on tapping a disk generalizes to irregular, compliant objects via tapping and sliding.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2614,
+  "summary": "A young-audience account of neuroscience research showing the human brain recognizes others' actions very rapidly and across viewpoints, a task computers struggle with; the work aims to understand these brain mechanisms to inform action-recognition algorithms.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2615,
+  "summary": "Systematically analyzes the many formulations of policy distillation in deep RL, showing subtle variants change the optimized objective and performance. Recommends three techniques by task and proposes an expected-entropy-regularized distillation that speeds learning while guaranteeing convergence.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2616,
+  "summary": "Uses deep reinforcement learning to control living neuronal cultures grown on microelectrode arrays, clamping their response strengths to target levels over long durations despite non-stationary drift. Learned controllers beat random and linear LSPI baselines in 27 of 29 networks.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 1080,
+  "summary": "Extends results on statistical-computational tradeoffs in adversarially robust learning, constructing classification tasks where efficient robust learning is provably hard, even when computationally unbounded robust classifiers exist, based on average-case hardness, one-way functions, and learning-parity-with-noise.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2617,
+  "summary": "Combines hierarchical RL with intrinsic motivation by treating pixel- and feature-control auxiliary tasks as reusable skills a subcontroller learns under a metacontroller's direction. Improves data efficiency and exploration on Atari, notably on the hard-exploration game Montezuma's Revenge.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2864,
+  "summary": "A technical report describing how the mental-health chatbot Tess was customized to deliver scalable, on-demand emotional support to caregivers, patients, and families at a non-profit, outlining a phased deployment across Canada and the United States.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2618,
+  "summary": "Provides a theoretical analysis of feedback loops in recommender systems, disentangling 'echo chamber' from 'filter bubble' effects by separating user dynamics from system behavior, and proposes practical methods to slow the resulting degeneration of recommendations.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2619,
+  "summary": "Compares ten strength-based statistical models, including Thurstone-Mosteller, Bradley-Terry, and independent/bivariate Poisson, fit by weighted maximum likelihood with match-importance and time-decay weights to rank soccer teams. Bivariate and independent Poisson models give the best predictive Rank Probability Score.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2620,
+  "summary": "A perspective arguing that insights from decision neuroscience, on how brains learn efficiently and robustly, can inspire reinforcement-learning solutions for robots operating in noisy, unpredictable real-world environments.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 2621,
+  "summary": "Studies optimizing a single realization of Brownian motion on [0,1], returning an epsilon-approximate maximum with the fewest function evaluations. An adaptive algorithm using the optimism-in-the-face-of-uncertainty principle attains sample complexity of order log^2(1/epsilon), improving prior polynomial rates.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2622,
+  "summary": "Proposes that human duration perception arises from accumulating salient changes in the activations of perceptual classification networks. A system built on a feed-forward image classifier estimates the duration of natural-scene videos and reproduces key human timing biases.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2623,
+  "summary": "Generalizes value functions, baselines, and critics from reinforcement learning to arbitrary stochastic computation graphs, deriving lower-variance gradient estimators from partial model evaluations. Unifies recent advances in probabilistic inference and RL under a common credit-assignment framework.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2624,
+  "summary": "Describes nbgrader, an open-source tool for authoring and grading Jupyter Notebook assignments: instructors maintain one master copy with solutions and tests, auto-generate student versions, auto-grade by executing notebooks, and add manual feedback.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2626,
+  "summary": "Reviews deep-learning methods analogous to human mental simulation, learning world models from data and using them via reinforcement learning, and compares them with human imagination. Notes remaining gaps in efficiency, compositionality, generalization, and creativity.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 2625,
+  "summary": "Reviews efforts to reconcile connectionist deep learning with symbolic AI's compositional representations of objects and relations, highlighting recent architectures that learn to discover objects and relational structure from raw data for downstream processing.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2627,
+  "summary": "Trains a single recurrent network on 20 cognitive tasks and finds that units self-organize into clusters functionally specialized for distinct cognitive processes. Introduces fractional task variance to quantify single-unit task selectivity and shows tasks share compositional representations.",
+  "topics": ["Interpretability", "Science Applications"]
+ },
+ {
+  "id": 2647,
+  "summary": "Studies replacing i.i.d. samples in Monte Carlo integration with determinantal point processes (repulsive distributions) to obtain faster-than-1/N variance. Revisits and generalizes the Bardenet-Hardy and Ermakov-Zolotukhin DPP estimators to continuous settings and provides sampling algorithms.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2646,
+  "summary": "An fMRI study showing humans form hierarchical, compositional representations when constructing novel visual objects from building blocks and relations. The hippocampal-entorhinal system and medial prefrontal cortex encode factorized relational knowledge that generalizes to new stimuli.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2645,
+  "summary": "A commentary rebutting Brette's argument that 'coding' is an inappropriate concept for neuroscience. Contends his analysis mischaracterizes the causal structure of coding claims, and that analysis-by-decomposition remains coherent and essential for modeling neurocognitive systems.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2644,
+  "summary": "A feasibility study in which health-care professionals without coding experience used automated deep learning (such as Google Cloud AutoML) to train medical image classifiers across several open imaging datasets, assessing whether non-experts can build models with clinically useful diagnostic performance.",
+  "topics": ["Science Applications", "Evaluations"]
+ }
+]

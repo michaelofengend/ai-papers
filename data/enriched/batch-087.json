@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2490,
+  "summary": "Proposes MIL-NCE, a multiple-instance contrastive objective that learns video representations from narrated instructional videos (HowTo100M) despite caption-clip misalignment, training from scratch without manual labels and beating prior self-supervised methods on action recognition, retrieval, localization and segmentation.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2489,
+  "summary": "Using multi-electrode arrays, shows reconstituted rat hippocampal circuits intrinsically encode and store sub-second time intervals over hour-long timescales via changes in population firing relationships, with learned temporal templates copyable into untrained networks.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1060,
+  "summary": "OpenAI Five scaled self-play PPO with a distributed system processing roughly 2M frames every two seconds over ten months to defeat the Dota 2 world champions, showing self-play RL reaches superhuman play on a long-horizon, imperfect-information task.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2849,
+  "summary": "Proposes 'regulatory markets' for AI safety: governments mandate that firms purchase oversight from licensed private regulators competing on outcome-based safety targets, illustrated by defending commercially deployed drones against adversarial attacks.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2492,
+  "summary": "Introduces a scalable meta-gradient framework that learns intrinsic reward functions across multiple agent lifetimes, showing rewards can capture long-term exploration/exploitation knowledge and, unlike policy transfer, generalize to different agent architectures and changed environment dynamics by encoding what the agent should strive for.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2491,
+  "summary": "DeepInsight is a deep-learning framework that decodes sensory and behavioural variables directly from raw wide-band neural recordings with minimal preprocessing, generalizing across brain regions and recording methods and revealing a novel head-direction representation in CA1 interneurons.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2493,
+  "summary": "AlphaNPI combines Neural Programmer-Interpreters with AlphaZero-style Monte Carlo tree search to learn recursive, compositional programs from sparse rewards without execution traces, generalizing to longer instances on tasks like sorting and Tower of Hanoi.",
+  "topics": ["Reinforcement Learning", "Reasoning"]
+ },
+ {
+  "id": 2494,
+  "summary": "Shows stochastic rank-one bandits are a special case of unimodal bandits and gives a new analysis of Unimodal Thompson Sampling, proving an asymptotically optimal frequentist regret bound that closes the gap to the lower bound, with strong empirical gains.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2495,
+  "summary": "ReQueST safely learns a user's reward model by synthesizing hypothetical trajectories that maximize value-of-information proxies and querying users for labels, without environment interaction; it learns to detect unsafe states and correct reward hacking before deployment, transferring across initial-state distributions.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 1061,
+  "summary": "Shows the double-descent phenomenon across CNNs, ResNets and transformers: test error improves, worsens near the interpolation threshold, then improves again as model size, data, or training time grows, and can be modulated by regularization.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2496,
+  "summary": "Provides theoretical bounds for empirical game-theoretic analysis, proving a Nash equilibrium of the estimated meta-game approximates that of the true game and bounding the samples required, and extends evolutionary-dynamics analysis to asymmetric games, illustrated on AlphaGo, Colonel Blotto, capture-the-flag and Leduc poker.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1062,
+  "summary": "Releases Procgen Benchmark, 16 procedurally generated game environments that measure how quickly RL agents acquire generalizable skills and expose the train/test generalization gap caused by overfitting to specific levels.",
+  "topics": ["Evaluations", "Reinforcement Learning"]
+ },
+ {
+  "id": 2497,
+  "summary": "A review identifying recurring hierarchical design principles in synthetic motor-control systems, now generating diverse humanoid-scale behaviors, and relating them to motor hierarchy in the nervous system, mapping research themes at the AI-neuroscience interface.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 2498,
+  "summary": "Builds a large-scale audio-visual speech recognizer using an RNN-T architecture trained on 31k hours of segmented YouTube utterances; the visual stream improves robustness to background noise and overlapping speech and sets state-of-the-art on LRS3-TED.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2499,
+  "summary": "Textual Hindsight Experience Replay extends HER to language: when an agent fails its instruction, it learns to relabel the episode with an instruction matching the achieved trajectory and assigns positive reward, creating a synergy between language grounding and policy learning in BabyAI.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2500,
+  "summary": "Proposes the cooperative, imperfect-information card game Hanabi as an AI challenge centred on theory-of-mind reasoning about other players' beliefs and intentions, and releases the open-source Hanabi Learning Environment with baseline agents.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 2501,
+  "summary": "Systematic review of care (social) farming across diverse service-user groups, finding no evidence of improved quality of life but some evidence of reduced depression and anxiety, and calling for larger studies with validated outcome measures.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1063,
+  "summary": "Introduces Safety Gym, a suite of environments and metrics for constrained reinforcement learning where agents must respect safety constraints while maximizing reward, and benchmarks constrained-RL baselines for safe exploration.",
+  "topics": ["Safety", "Reinforcement Learning"]
+ },
+ {
+  "id": 2502,
+  "summary": "Introduces a credit-assignment paradigm where agents recall specific memories to 'transport' value to the past actions that caused later rewards, solving long-delay tasks intractable for standard RL and offering a mechanistic account relevant to neuroscience and psychology.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2850,
+  "summary": "Trains vision-based in-hand object-reorientation policies for a Shadow Dexterous Hand entirely in simulation with extensive domain randomization; policies transfer to the physical robot and exhibit emergent human-like strategies such as finger gaiting and multi-finger coordination.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2503,
+  "summary": "Develops reusable physics-based humanoid controllers with egocentric vision and touch for whole-body object-interaction tasks like box carrying and ball catching, combining motor primitives, human demonstrations and curriculum RL into robust controllers that run in real time.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2504,
+  "summary": "Presents a modular framework for analyzing adaptive optimization algorithms in both convex and non-convex settings, unifying the treatment of optimism, composite objectives, variance reduction, and variational regret bounds.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2505,
+  "summary": "Overview of the Privacy-Preserving Machine Learning workshop, surveying approaches that draw on machine learning, cryptography and security to address privacy challenges and aiming to unify academic and industry perspectives.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1064,
+  "summary": "Releases the full 1.5B-parameter GPT-2 with code and weights as the final stage of a staged release, alongside output-detection tooling, framed as a case study in responsible publication of powerful generative language models.",
+  "topics": ["Training & Scaling", "Policy & Society"]
+ },
+ {
+  "id": 2507,
+  "summary": "Combines DDPG with model-based trajectory optimization over a learned latent image embedding to improve exploration, deriving a value-function critic and learned dynamics model; evaluated on simulated control and a real-world sparse-reward Baxter insertion task.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2506,
+  "summary": "Applies adversarial-perturbation techniques to wireless signal constellations so an eavesdropper cannot classify the modulation scheme while a legitimate, perturbation-oblivious receiver still decodes reliably, defeating deep-learning and decision-tree intruders with minimal communication cost.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2508,
+  "summary": "AlphaStar reaches Grandmaster level in StarCraft II using league-based multi-agent reinforcement learning seeded by imitation learning from human games, ranking above 99.8% of officially ranked human players under professional match conditions.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2509,
+  "summary": "Reviews the scientific, logistical and sociocultural barriers to translating medical AI from research into clinical practice, arguing for rigorous trial-based evaluation, clinically meaningful and interpretable metrics, balanced regulation, and thoughtful post-market surveillance.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 2510,
+  "summary": "A perspective arguing neuroscience should interpret the brain through deep learning's three design components, objective functions, learning rules and architectures, rather than seeking canonical circuit models, to better frame hypotheses about neural computation.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2511,
+  "summary": "Provides the first sample-complexity analysis of Top-Two Thompson Sampling under a natural Bayesian stopping rule for fixed-confidence best-arm identification, plus a cheaper variant (T3C) and new posterior-convergence results for Gaussian and Bernoulli bandits.",
+  "topics": ["Reinforcement Learning"]
+ }
+]

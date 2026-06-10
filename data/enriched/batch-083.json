@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2395,
+  "summary": "Trains humans on social-learning tasks and finds that varying how often self and other receive the same information reshapes the agent-specificity of prediction-error circuits for over 24 hours, altering perspective-taking; ventromedial prefrontal myelin density tracks this adaptation, suggesting Self-Other boundaries are learned.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2397,
+  "summary": "A non-synthetic benchmark built from a large Isabelle proof repository where models must fill in a missing intermediate proposition, testing high-level mathematical reasoning. Neural seq2seq models capture nontrivial reasoning, and a proposed hierarchical transformer beats the standard transformer baseline.",
+  "topics": ["Reasoning", "Evaluations"]
+ },
+ {
+  "id": 2396,
+  "summary": "BYOL learns self-supervised image representations via online and target networks that predict each other across augmentations, with the target updated as a slow-moving average of the online network. It reaches 74.3% ImageNet linear-eval top-1 without using negative pairs.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2399,
+  "summary": "Gives tight regret analyses of Combinatorial Thompson Sampling for stochastic combinatorial semi-bandits: Beta priors for mutually independent [0,1] outcomes and Gaussian priors for multivariate sub-Gaussian outcomes, providing a computationally efficient alternative to the optimal but expensive ESCB policy.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2398,
+  "summary": "Proposes RF-UCRL, an adaptive reward-free exploration algorithm that directly reduces upper bounds on MDP estimation error. It needs roughly (SAH^4/eps^2)(log(1/delta)+S) episodes to return an eps-optimal policy for any reward, improving prior sample-complexity bounds and connecting to best-policy identification.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2402,
+  "summary": "Applies deep-learning segmentation to OCT images to automatically quantify baseline retinal and anatomical parameters in patients beginning anti-VEGF therapy for neovascular (wet) age-related macular degeneration, enabling standardized measurement of disease features at treatment onset.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2401,
+  "summary": "Uses AI-based segmentation of OCT scans to quantitatively characterize how retinal tissue compartments change over the course of neovascular age-related macular degeneration, supporting objective tracking of disease progression and response to treatment.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2400,
+  "summary": "Introduces MDP-GapE, a trajectory-based Monte-Carlo Tree Search planner for MDPs with finite-support transitions. Proves a problem-dependent bound on generative-model calls to identify a near-optimal action, expressed via sub-optimality gaps of visited state-action pairs, with strong empirical performance.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2403,
+  "summary": "An automatic HOL4 method that synthesizes stateful CakeML programs—supporting references, exceptions, and I/O—together with correctness proofs from monadic HOL functions. Applied to the CakeML compiler's instruction encoder and register allocator, improving their runtime performance.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2404,
+  "summary": "Defines the rapid-task-solving challenge—quickly solving a series of tasks in an unfamiliar environment while building a reusable model—and introduces Episodic Planning Networks, which learn a value-iteration-like algorithm, outperform baselines 2-3x, and generalize to held-out StreetLearn maps within one episode.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2405,
+  "summary": "Introduces a nested-Wasserstein distance for distributional semantic matching and a self-imitation learning framework that reuses historical high-reward sequences, interpretable as PPO with Wasserstein trust regions. Improves performance across both conditional and unconditional sequence-generation tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2406,
+  "summary": "Proposes a temporally-extended epsilon-greedy that repeats each sampled exploratory action for a random duration, adding temporal persistence. This simple change improves exploration across many domains, with foraging-inspired heavy-tailed duration distributions performing especially well.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2417,
+  "summary": "An ecological modeling study of heavily-hunted duikers that explicitly propagates parameter uncertainty. Under quota-based harvesting, accounting for uncertainty exposes a yield-versus-extinction trade-off (the highest-yield quota implies ~40% extinction risk), whereas proportional harvesting attains comparable yields with extinction risk below 10%.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2416,
+  "summary": "Uses question-answering as a model-agnostic probe to decode internal representations of predictive agents (action-conditional CPC and SimCore) trained in a rich 3D environment. Without backpropagating into the agent, probes reveal factual, seemingly compositional knowledge of objects, properties, and spatial relations.",
+  "topics": ["Interpretability", "Reinforcement Learning"]
+ },
+ {
+  "id": 2415,
+  "summary": "Sideways is an approximate backpropagation scheme for video models that overwrites activations as new frames arrive, breaking gradient-activation synchronization to enable depth (inter-layer) parallelism. Despite theoretically noisier updates, deep convolutional video networks still converge and can even generalize better.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2414,
+  "summary": "Trains a BERT-based Speech2Action classifier on movie screenplays to predict actions from speech alone, then applies it to a large unlabeled movie corpus to obtain weak labels for over 800K clips. Training on these yields strong action recognition without manual labels.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2413,
+  "summary": "Augments a network with a human-inspired recurrent top-down visual attention component and adversarially trains it. Attention substantially improves ImageNet adversarial robustness, and increasing the number of glances strengthens defenses against stronger attacks; some resulting adversarial examples become human-recognizable target-class structures.",
+  "topics": ["Robustness & Security", "Multimodal"]
+ },
+ {
+  "id": 2412,
+  "summary": "Introduces efficient sparse convolution kernels for mobile hardware and shows that sparse versions of MobileNet v1/v2 beat strong dense baselines on the accuracy-efficiency curve, achieving 1.3-2.4x speedups on a Snapdragon 835—roughly a generation of hardware improvement.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2411,
+  "summary": "Formalizes robustness to semantic real-world variations by adversarially composing disentangled StyleGAN latent representations (e.g., lighting, make-up, skin tone) across images. Training for invariance improves generalization and reduces spurious correlations, cutting a smile detector's error rate by 21%.",
+  "topics": ["Robustness & Security", "Multimodal"]
+ },
+ {
+  "id": 2410,
+  "summary": "Learns object pose as 2D keypoints from unlabelled videos by analyzing inter-frame differences, using a dual keypoint/skeleton-image representation as a tight geometric bottleneck plus pose priors from unpaired data. Achieves state-of-the-art among methods that use no labelled images.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2409,
+  "summary": "RepNet estimates how often an action repeats in a video using temporal self-similarity as an intermediate bottleneck, enabling class-agnostic generalization to in-the-wild repetitions. Trained on synthetic repetitions, it sets new state-of-the-art on periodicity/counting benchmarks and introduces the large Countix dataset.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2408,
+  "summary": "Describes the STARD-AI Steering Group's effort to create an AI-specific extension of the STARD reporting guideline, aiming to standardize and improve the transparency and quality of diagnostic-accuracy studies that evaluate AI interventions.",
+  "topics": ["Evaluations", "Science Applications"]
+ },
+ {
+  "id": 2407,
+  "summary": "Proposes MIL-NCE, a multiple-instance contrastive objective robust to the misalignment in narrated instructional videos (HowTo100M), learning joint video-text representations from scratch with no manual labels. Outperforms prior self-supervised methods and several supervised baselines across eight downstream datasets.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1054,
+  "summary": "Introduces GPT-3, a 175-billion-parameter autoregressive language model, showing that scaling alone yields strong zero-, one-, and few-shot performance across many NLP tasks via in-context learning—no gradient updates—often rivaling fine-tuned state-of-the-art.",
+  "topics": ["Training & Scaling", "Evaluations"]
+ },
+ {
+  "id": 2830,
+  "summary": "Combines human path-integration experiments with a Langevin-equation analysis to decompose navigation errors. Across age groups, the dominant error is unbiased noise that accumulates with distance traveled (not time elapsed), implicating velocity input; age-related decline traces primarily to growth in this noise.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2418,
+  "summary": "Proposes that visual cortex encodes stimulus features in mean response strength and feature uncertainty in cross-neuron response-gain variability. Macaque V1/V2 recordings show gain variability is tuned to uncertainty, feature-specific, largely source-invariant, arises from known gain-control mechanisms, and is jointly decodable downstream.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2420,
+  "summary": "A deep-learning system that analyzes 3D OCT scans to predict, within a six-month window, whether an eye with intermediate age-related macular degeneration will convert to sight-threatening exudative (wet) AMD, performing comparably to retinal specialists on this prediction.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2419,
+  "summary": "A perspective on the AI-for-Social-Good movement offering guidelines for durable collaborations between AI researchers and domain experts, framed around the UN's 17 Sustainable Development Goals, and identifying key opportunities for AI applications with positive societal impact.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2421,
+  "summary": "Correlates incremental complexity metrics from recurrent neural network grammars (RNNGs) with fMRI recorded during audiobook listening. LSTM surprisal tracks broad temporal/frontal activity, while RNNG hierarchy and derivational-step metrics additionally localize to left posterior temporal cortex and inferior frontal gyrus.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2423,
+  "summary": "Proposes a multi-objective RL algorithm that expresses preferences over objectives in a scale-invariant way: it learns a separate action distribution per objective, then fits a single policy to their combination via supervised learning. Validated on high-dimensional simulated and real robotics tasks.",
+  "topics": ["Reinforcement Learning"]
+ }
+]

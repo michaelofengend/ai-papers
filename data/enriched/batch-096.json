@@ -1,0 +1,92 @@
+[
+ {
+  "id": 1155,
+  "summary": "Trains agents to imitate demonstrations recorded from a third-person viewpoint rather than the agent's own perspective. A GAN-style domain-confusion objective extracts viewpoint-independent features, enabling imitation without costly first-person demonstrations in simple simulated control tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1156,
+  "summary": "Demonstrates that adversarial-example attacks transfer to deep RL: small, human-imperceptible perturbations of a policy's raw inputs substantially degrade trained agents' performance regardless of task or training algorithm, in both white-box and black-box threat models.",
+  "topics": ["Robustness & Security", "Reinforcement Learning"]
+ },
+ {
+  "id": 1157,
+  "summary": "Improves PixelCNN with a discretized logistic mixture likelihood, conditioning on whole pixels rather than sub-pixel channels, multi-scale downsampling with shortcut connections, and dropout regularization, reaching state-of-the-art log-likelihood on CIFAR-10; implementation open-sourced.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1158,
+  "summary": "Releases a platform exposing games, websites, and other applications as RL environments through a VNC remote desktop, so agents act with the same pixels, keyboard, and mouse interface as humans — aiming to measure and train general problem-solving across thousands of tasks.",
+  "topics": ["Reinforcement Learning", "Agents", "Evaluations"]
+ },
+ {
+  "id": 1159,
+  "summary": "Generalizes classic count-based exploration to high-dimensional spaces by hashing states and granting reward bonuses from hash-table counts. With appropriately granular, task-relevant hash codes, this simple strategy nears state-of-the-art performance on continuous-control benchmarks and Atari games.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1160,
+  "summary": "Uses annealed importance sampling, validated by bidirectional Monte Carlo, to accurately measure log-likelihoods of decoder-based generative models like VAEs, GANs, and GMMNs. Finds IWAE bounds substantially underestimate true likelihoods, and GANs miss important modes of the data distribution rather than memorizing training data.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 1161,
+  "summary": "Shows a sample-based algorithm for maximum-entropy inverse reinforcement learning is mathematically equivalent to a GAN whose discriminator receives the generator's density, and interprets GAN training as fitting energy-based models, unifying cost learning across the three fields.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1162,
+  "summary": "Meta-RL: an RNN trained with conventional 'slow' RL across many tasks — receiving observations, actions, rewards, and termination flags, with state persisting across episodes — itself implements a fast RL algorithm, rivaling near-optimal bandit and tabular methods and scaling to visual maze navigation.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 1163,
+  "summary": "Combines VAEs with autoregressive PixelCNN decoders and autoregressive flow priors, using a bits-back coding argument to explain when latent codes go unused and to control which information (e.g., global structure) the lossy code captures; state-of-the-art density estimation on MNIST, OMNIGLOT, and Caltech-101 Silhouettes.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1164,
+  "summary": "Shows curriculum design and increased model size let the Neural GPU learn decimal arithmetic that generalizes to arbitrarily long numbers; failure analysis still finds errors on highly symmetric, atypical inputs and only imperfect evaluation of multi-operand expressions requiring operator precedence.",
+  "topics": ["Training & Scaling", "Reasoning"]
+ },
+ {
+  "id": 1165,
+  "summary": "PATE: teachers trained on disjoint partitions of sensitive data label public examples via noisy vote aggregation, and a student model learns from those labels. Provides differential-privacy guarantees independent of the underlying learner, with strong privacy-utility trade-offs on MNIST and SVHN.",
+  "topics": ["Robustness & Security", "Training & Scaling"]
+ },
+ {
+  "id": 1166,
+  "summary": "Sim-to-real transfer for robot control: a policy trained in simulation proposes desired next states, while an inverse dynamics model learned from real-world experience selects actions to reach them, executing simulated skills on a physical robot arm without retraining the policy.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1167,
+  "summary": "Describes OpenAI's deep-learning infrastructure — TensorFlow experiments scaled from single-machine prototypes to large distributed runs on Kubernetes over AWS and Azure — and open-sources kubernetes-ec2-autoscaler for elastic, batch-oriented cluster autoscaling.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1168,
+  "summary": "Announcement of the Google Brain-led 'Concrete Problems in AI Safety' paper, co-authored with OpenAI, Berkeley, and Stanford, framing five practical research problems: avoiding negative side effects, reward hacking, scalable oversight, safe exploration, and robustness to distributional shift.",
+  "topics": ["Safety", "Alignment"]
+ },
+ {
+  "id": 1169,
+  "summary": "Explainer accompanying four OpenAI projects on generative models: describes what GANs, VAEs, and autoregressive models are, why learning to generate data is a route to understanding its structure, and near-term directions for unsupervised learning.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1170,
+  "summary": "Adapts adversarial and virtual adversarial training to text by perturbing word embeddings of recurrent networks instead of sparse one-hot inputs, setting state of the art on semi-supervised and supervised text-classification benchmarks while improving embedding quality and reducing overfitting.",
+  "topics": ["Training & Scaling", "Robustness & Security"]
+ },
+ {
+  "id": 1171,
+  "summary": "Public beta of OpenAI Gym: a toolkit giving RL research a common environment interface — spanning Atari, classic control, and simulated robotics — plus a growing benchmark suite and website for comparing and reproducing algorithm results.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 1172,
+  "summary": "Reparameterizes each weight vector as a learned scalar magnitude times a unit direction, conditioning optimization much like batch normalization but without minibatch dependence or added noise; speeds convergence across supervised image recognition, VAE generative modeling, and deep reinforcement learning.",
+  "topics": ["Training & Scaling"]
+ }
+]

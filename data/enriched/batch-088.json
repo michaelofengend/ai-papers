@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2512,
+  "summary": "A talk surveying DeepMind's deep-RL work on navigation: from agents that explore and memorize large 3D mazes to read-write-memory agents generalizing to unseen mazes, the emergence of grid-cell-like representations, and navigation in real-world Street View via language instructions and aerial views.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 1065,
+  "summary": "Trains vision and policy networks entirely in simulation with reinforcement learning and Automatic Domain Randomization to control a five-fingered robot hand solving a Rubik's Cube, transferring to hardware and staying robust to unseen perturbations like being prodded by a stuffed giraffe.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2513,
+  "summary": "Describes AlphaFold, the CASP13 system that predicts inter-residue distances with deep networks and folds proteins via gradient descent on a learned potential, topping the free-modeling category (mean GDT_TS 61.4 vs 48.2 for the next group) without explicit template information.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2514,
+  "summary": "Introduces Graph Recurrent Attention Networks, an auto-regressive graph generator that emits nodes and edges block-by-block using attention-based GNNs and a mixture-of-Bernoulli edge model, achieving state-of-the-art sample quality and efficiency and scaling to graphs of up to 5K nodes.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2851,
+  "summary": "Proposes Bayesian Relational Memory, a probabilistic relation graph over semantic entities (e.g., room types) that captures layout priors, updates a posterior at test time, and plans subgoals, improving semantic visual navigation agents' generalization to unseen environments.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2522,
+  "summary": "A case study evaluating the stakeholder consultation process designed to inform Ghana's proposed National Sanitation Authority, drawing lessons on representativeness, conflicting interests, and methodology for stakeholder engagement in institutional-restructuring contexts.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2521,
+  "summary": "Introduces Layout-Induced Video Representation, which encodes scene geometry and topology for recognizing agent-in-place actions in home-surveillance video by partitioning features per place and aggregating them via place connectivity, generalizing better to unseen scenes.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2520,
+  "summary": "A WaveNet model conditioned on log-mel features extends 8 kHz GSM-FR codec speech up to 24 kHz; in MUSHRA tests it reconstructs audio slightly below 16 kHz AMR-WB and closes roughly half the perceptual-quality gap to the original signal.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2519,
+  "summary": "An end-to-end neural method adjusts the luminance and shadows of virtual objects in composite augmented-reality images, learning object appearance under varied illumination and viewpoints from synthetic data to render them consistently with real-world lighting.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2518,
+  "summary": "A structured network with explicit spatial-mask layers separates video into natural layers (reflections, transparency, motion) and can use external cues such as audio for controllable attention, improving reflection removal and action recognition in cluttered scenes.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2517,
+  "summary": "Transfers a ground-view StreetLearn navigation policy to unseen city regions by pairing it with easily obtained aerial views, learning a shared cross-view embedding and distilling the policy across views through a three-stage cross-modal training, adaptation, and transfer scheme.",
+  "topics": ["Reinforcement Learning", "Multimodal"]
+ },
+ {
+  "id": 2516,
+  "summary": "Introduces HowTo100M, a dataset of 136M clips from 1.22M narrated instructional videos with automatically transcribed captions; text-video embeddings trained on it reach state-of-the-art text-to-video retrieval and action localization and transfer well to other video domains.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2515,
+  "summary": "Shows that interval bound propagation, with a suitable loss and hyperparameter schedule, trains large networks provably robust to norm-bounded perturbations, beating more complex verified-defense methods on MNIST, CIFAR-10, SVHN, and a downscaled ImageNet.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2852,
+  "summary": "A Distill article giving an intuitive, visual account of how temporal-difference learning merges shared paths of experience to estimate value functions, explaining why TD methods achieve greater statistical efficiency than Monte Carlo returns.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2523,
+  "summary": "Using intracranial recordings in human neurosurgical patients, finds decision conflict modulates firing rate and spike-phase coupling in dorsal anterior cingulate cortex and spike-field coherence in dorsolateral prefrontal cortex, supporting rhythmic cross-areal coordination as a basis for cognitive control.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2525,
+  "summary": "Introduces GAN-TTS, a text-to-speech GAN with a feed-forward generator and an ensemble of multi-window discriminators judging realism and text correspondence; it matches state-of-the-art naturalness (MOS) while being highly parallelizable, and proposes Frechet/Kernel DeepSpeech Distance metrics.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2524,
+  "summary": "A systematic review and meta-analysis of 82 studies comparing deep learning versus health-care professionals at diagnosing disease from medical images, finding broadly comparable accuracy but flagging poor reporting and scarce external, out-of-sample validation.",
+  "topics": ["Science Applications", "Evaluations"]
+ },
+ {
+  "id": 2526,
+  "summary": "Proposes Recurrent Independent Mechanisms, a recurrent architecture of multiple nearly-independent cell groups that communicate sparingly through attention and update only when relevant, yielding specialization and improved generalization when factors of variation shift between training and test.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2528,
+  "summary": "Uses the mechanistic Madingley General Ecosystem Model to test thermoregulation versus resource-availability explanations for Bergmann's rule, reproducing realistic latitudinal body-mass gradients and finding both drivers matter for endotherms but only temperature for ectotherms.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2527,
+  "summary": "Proposes D-LinUCB, a discounted linear-bandit algorithm that exponentially down-weights past observations to track non-stationary rewards, with dynamic-regret bounds of order d^{2/3} B_T^{1/3} T^{2/3} matching known optimal rates in slowly-varying and abruptly-changing settings.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1066,
+  "summary": "Fine-tunes the 774M GPT-2 with reinforcement learning from human preference labels on summarization and stylistic continuation, matching labeler preferences; notably labelers rewarded copied sentences, surfacing reward-specification pitfalls in aligning language models to human values.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 2853,
+  "summary": "Shows that multi-agent competition in a hide-and-seek game with standard RL induces a self-supervised autocurriculum, producing six emergent rounds of tool use and coordination (box shelters, ramp use); proposes transfer and fine-tuning probes to quantify the learned skills.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1067,
+  "summary": "Blog companion describing how agents trained via self-play in a hide-and-seek environment progressively discover six strategies and counter-strategies, including unanticipated tool use, suggesting multi-agent co-adaptation can drive increasingly complex behavior.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2529,
+  "summary": "Studies WaveNet autoencoders for unsupervised speech representation, comparing dimensionality-reduction, VAE, and VQ-VAE bottlenecks plus a regularizer that isolates phonetic content, yielding speaker-invariant codes competitive on the ZeroSpeech 2017 acoustic-unit-discovery task.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2530,
+  "summary": "Evaluates whether clinicians without coding skills can build medical-image classifiers using Google Cloud AutoML neural architecture search across five public datasets (retina, OCT, skin, chest x-ray), finding high internal accuracy but weaker performance under external validation.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 2532,
+  "summary": "Presents a coupled-dynamics formalism for physical human-robot interaction and a task-based partner-aware control approach that lets a humanoid exploit help from an external agent, validated in experiments with two interacting iCub humanoid robots.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2531,
+  "summary": "Presents an algorithm that estimates the joint articulation models and topology of passive articulated objects (doors, drawers, valves) by exploiting the system's momentum together with the interaction wrench during manipulation, validated in simulation.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1068,
+  "summary": "Introduces a methodology and the UAR (Unforeseen Attack Robustness) metric to assess whether image classifiers can defend against adversarial attacks not seen during training, highlighting the need to evaluate across a diverse range of unanticipated attacks.",
+  "topics": ["Robustness & Security", "Evaluations"]
+ },
+ {
+  "id": 1069,
+  "summary": "Announces the staged release of the 774M GPT-2 model and six months of studying misuse potential and publication norms, releasing an open-source model-sharing legal agreement and a technical report on coordinating release decisions with the AI community.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 2533,
+  "summary": "Using DTI, MR elastography, and fMRI across two experiments on a context-dependent relational memory task, finds the hippocampus and fornix support relational memory while ventromedial PFC/OFC and the uncinate fasciculus support memory-guided rule use.",
+  "topics": ["Science Applications"]
+ }
+]

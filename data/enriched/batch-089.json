@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2857,
+  "summary": "A comment in Distill's discussion of Ilyas et al.: tests whether robust features leak into the datasets built to isolate non-robust features, concluding the leakage mechanism contributes little and shows no evidence of affecting the deterministic (D_det) construction.",
+  "topics": ["Robustness & Security", "Interpretability"]
+ },
+ {
+  "id": 2856,
+  "summary": "Constructs two analytic examples in linear models—'contaminated' features mixing useful and useless components, and ensembles—to illustrate concretely what the useful-but-non-robust features posited by Ilyas et al. might actually look like.",
+  "topics": ["Robustness & Security", "Interpretability"]
+ },
+ {
+  "id": 2855,
+  "summary": "Argues that not all adversarial examples reflect non-robust features: constructs examples that fail to transfer to real data and arise without useful features, showing some adversarial vulnerabilities are genuine model 'bugs' rather than feature artifacts.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2854,
+  "summary": "Curated Distill discussion of Ilyas et al.'s claim that adversarial examples stem from predictive but non-robust features; collects several researcher commentaries that probe and extend the thesis, each paired with responses from the original authors.",
+  "topics": ["Robustness & Security", "Interpretability"]
+ },
+ {
+  "id": 2534,
+  "summary": "Proposes that mean firing rate in visual cortex encodes stimulus features while cross-neuron variability in response gain encodes their uncertainty; macaque V1/V2 recordings show gain variability is tuned to uncertainty, invariant to its source, feature-specific, and explained by gain control.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2535,
+  "summary": "Derives a sufficient condition for power-system small-signal stability from the differential-algebraic equations via a logarithmic-norm bound, expressed as a bilinear matrix inequality with an LMI inner approximation, and constructs robust stability regions directly in state space.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2538,
+  "summary": "Develops deep learning continuous risk models that predict adverse events from longitudinal electronic health records, using acute kidney injury as a case study, issuing continuously updated risk scores to flag patient deterioration ahead of clinical recognition.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2537,
+  "summary": "Evaluates a digitally enabled AKI care pathway—mobile detection app, specialist response team, and protocol—deployed at one hospital versus a control site; finds no step change in renal recovery, though creatinine-recovery and renal/ICU-admission trends improved significantly at the intervention site.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2536,
+  "summary": "DeepMind's recurrent neural network for continuous AKI prediction from electronic health records (US Veterans Affairs data), forecasting 55.8% of inpatient AKI episodes—and ~90% of those later needing dialysis—up to 48 hours before onset, at the cost of frequent false alerts.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2858,
+  "summary": "Releases a 'model zoo' of deep RL agents trained across many Atari games plus tooling to load, visualize, and analyze them, enabling quantitative and qualitative comparison of the representations learned by different DRL algorithm families.",
+  "topics": ["Reinforcement Learning", "Interpretability"]
+ },
+ {
+  "id": 2544,
+  "summary": "Introduces a heuristic-search framework that iteratively manages an expansion budget and solution-cost limit, yielding graph- and tree-search algorithms with O(n log C*) expansions; it avoids the re-expansion blow-up that hampers A* and IDA* while matching IDA* where it already excels.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2543,
+  "summary": "Proposes perturbed-history exploration (PHE) for stochastic multi-armed bandits, which adds carefully designed i.i.d. pseudo-rewards to each arm's history and pulls the highest perturbed average; proves near-optimal gap-dependent and gap-free regret bounds with competitive empirical performance.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2542,
+  "summary": "Reformulates Wasserstein GAN training via the general Kantorovich duality, adding a third player—an amortised 'mover' that shifts data points to fool the critic—into a min-max-min game; on CIFAR-10 it improves sample diversity over weight clipping and matches gradient-penalty methods.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2541,
+  "summary": "Introduces Push-and-Pull GAN (P2GAN), which adds repulsive forces driving generated samples away from auxiliary data sources while staying close to a primary source; it improves Frechet Inception Distance over baselines on CIFAR-10/STL-10/ImageNet and enables constrained generation.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2540,
+  "summary": "Frames neural-network verification as finding the largest specification violation and solves a Lagrangian relaxation to get an anytime upper bound on worst-case violation (e.g., adversarial robustness); the method handles general activation functions and can train networks to be more verifiable.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2539,
+  "summary": "Presents exploitability descent, which optimizes a policy directly against worst-case best-response opponents in two-player zero-sum imperfect-information games; the optimized policies themselves—not just their averages—provably converge to Nash, matching CFR/XFP and improving with function approximation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2545,
+  "summary": "Presents an automatic-differentiation system for a higher-order functional array language that combines source-to-source forward-mode AD with global optimizations like loop transformations, making forward-mode gradients as efficient as reverse mode and enabling efficient Jacobians for Gauss-Newton and Levenberg-Marquardt.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2546,
+  "summary": "Proposes a general black-box framework for Population Based Training that distributes asynchronous, warm-started trials across a cluster under a central controller—making no assumptions about architecture or loss and supporting non-differentiable hyperparameter schedules; it trains a state-of-the-art WaveNet voice model faster and more accurately.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2549,
+  "summary": "Reports an automated model-development (AutoML-style) approach for building deep learning classifiers that diagnose retinal disease from color fundus photographs and optical coherence tomography images, aiming to reduce the manual engineering needed for clinical-grade ophthalmic models.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2548,
+  "summary": "Generalizes baseline-corrected value estimation for sampling-based solving of imperfect-information extensive-form games; introduces baselines that cut variance well below prior methods, including a 'predictive baseline' that is provably optimal under certain sampling schemes and yields zero-variance estimates along sampled trajectories.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2547,
+  "summary": "Clinical study quantifying the diagnostic accuracy and interobserver variability of clinicians evaluating macular disease from optical coherence tomography scans, characterizing how consistently expert graders agree and providing a human reference standard relevant to automated OCT diagnosis.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2550,
+  "summary": "Introduces a probabilistic generative model that learns multi-object dynamics from image sequences unsupervised: a separate linear state-space model produces noisy per-object positions, which a non-linear renderer composes into each frame; the linear latent dynamics enable exact, efficient inference and flexible querying without retraining.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2559,
+  "summary": "Presents abstracts of ten adoptable, engaging AI course assignments from the 2019 Model AI Assignments session, with full specifications and supporting resources released to help instructors integrate them into artificial-intelligence curricula.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2558,
+  "summary": "Extends Counterfactual Regret Minimization to find provably optimal strategies under arbitrary convex strategy constraints in large imperfect-information games; demonstrated for risk mitigation in security games and for opponent modeling in poker from only partial observations of private information.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2557,
+  "summary": "Studies vector step-size adaptation for non-stationary online/continual prediction and derives AdaGain, a general incremental meta-descent rule applicable even to semi-gradient or accelerated updates; meta-descent methods prove more robust than quasi-second-order optimizers like AdaGrad and RMSProp on non-stationary problems.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2556,
+  "summary": "Introduces a variance-reduction technique for any sampling variant of Monte Carlo Counterfactual Regret Minimization, reformulating per-iteration values through bootstrapped state-action baselines as in policy-gradient RL; a perfect baseline drives variance to zero, giving an order-of-magnitude speedup and enabling sampled CFR+.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2555,
+  "summary": "Proposes a grammar-based structural CNN decoder for code generation that predicts a program's grammar rules using tree-based and pre-order convolutions aggregated by attentive pooling; it outperforms the prior RNN-based state of the art on the HearthStone benchmark by five points.",
+  "topics": ["Reasoning", "Training & Scaling"]
+ },
+ {
+  "id": 2554,
+  "summary": "Introduces Sub-Network Routing (SNR), which splits a multi-task network's shared low-level layers into sub-networks whose connections are gated by learnable latent variables, enabling flexible parameter sharing—improving accuracy when tasks are weakly related—while keeping the efficiency of hard parameter sharing.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2553,
+  "summary": "Proposes CGMH, performing hard-constrained sentence generation via Metropolis-Hastings sampling that inserts, deletes, and replaces words at inference time, so constraints like required keywords hold without parallel training data; applied to keyword-to-sentence generation, unsupervised paraphrasing, and error correction.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2552,
+  "summary": "Applies PopArt value normalization to balance disparate reward scales across tasks in multi-task deep RL, preventing salient tasks from dominating learning; a single set of weights surpasses median human performance across all 57 Atari games—the first single agent to do so.",
+  "topics": ["Reinforcement Learning"]
+ }
+]

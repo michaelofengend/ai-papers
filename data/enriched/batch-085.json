@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2440,
+  "summary": "Introduces StreetNav, an instruction-following navigation task built on Google Street View where agents interpret driving directions to reach goals across real cities, with a clean train/test city split to probe generalization; presents baseline models and analysis.",
+  "topics": ["Reinforcement Learning", "Agents", "Multimodal"]
+ },
+ {
+  "id": 2439,
+  "summary": "Proposes the Graph Convolutional Transformer, which jointly learns the latent graphical structure of electronic health records while doing supervised prediction, using data statistics to guide structure learning; it outperforms prior methods on graph reconstruction and readmission prediction.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ },
+ {
+  "id": 2438,
+  "summary": "Shows knowledge distillation degrades when the teacher-student capacity gap is large, and introduces multi-step distillation using an intermediate-sized teacher assistant to bridge the gap, improving student accuracy on CIFAR-10/100 and ImageNet across CNN and ResNet architectures.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2445,
+  "summary": "Uses graph neural networks to predict the long-time dynamics (particle mobility) of glassy systems from a single static structural snapshot, substantially outperforming prior physics-based descriptors and revealing how local structure encodes future rearrangements.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2838,
+  "summary": "Catalogs the first five convolutional layers of InceptionV1, organizing roughly a thousand neurons into human-interpretable feature families (edges, curves, textures, color, fur and more) and documenting how early visual features compose, as part of the Distill Circuits thread.",
+  "topics": ["Interpretability", "Multimodal"]
+ },
+ {
+  "id": 2446,
+  "summary": "Speeds up secure multi-party k-NN document classification by adding a differentially private preprocessing phase that reveals aggregate statistics, exploiting text sparsity to scale similarity computation without relying on non-colluding-server assumptions.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2839,
+  "summary": "Introduces Fiber, a distributed computing framework targeting reinforcement learning and population-based methods, offering dynamic scaling and a low-overhead, backend-agnostic API to make large-scale parallel computation accessible without specialized infrastructure expertise.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2840,
+  "summary": "Proposes Evolutionary Population Curriculum, which scales multi-agent RL by progressively growing the agent population in stages and using an evolutionary mix-and-match-and-fine-tune step to select the most adaptable agents; built on MADDPG, it outperforms baselines as populations grow.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2447,
+  "summary": "Single-neuron recordings in human dorsal anterior cingulate cortex show that decision conflict enhances firing by amplifying task-relevant information across the population, rather than via dedicated conflict-encoding neurons; effects are weaker in dlPFC, suggesting dACC specialization.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2843,
+  "summary": "Reviews the NeurIPS 2019 MineRL competition on sample-efficient RL using human demonstrations in Minecraft, describing the challenge design, provided resources, and top solutions combining deep RL and imitation learning, plus lessons for future competitions.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 2842,
+  "summary": "The Distill Circuits thread collecting articles that reverse-engineer InceptionV1 by studying individual features and the circuits connecting them, advancing a program of mechanistically understanding vision models neuron by neuron.",
+  "topics": ["Interpretability", "Multimodal"]
+ },
+ {
+  "id": 2841,
+  "summary": "Foundational interpretability essay arguing networks can be understood via three claims: meaningful features are the basic unit, features connect into computational circuits, and analogous features and circuits recur across models (universality), illustrated with InceptionV1 vision neurons.",
+  "topics": ["Interpretability", "Multimodal"]
+ },
+ {
+  "id": 2844,
+  "summary": "Technical report from a digital mental-health company presenting a template ethical code for organizations delivering emotional-AI services, with practical guidelines covering user safety, privacy, and collaboration with clients and research partners.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2448,
+  "summary": "Deterministic Uncertainty Quantification (DUQ) trains a single deterministic network with an RBF-style output and a gradient penalty to detect out-of-distribution inputs in one forward pass, matching softmax accuracy and rivaling deep ensembles on hard OOD pairs.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2897,
+  "summary": "Landing page for Distill's open, collaborative Circuits thread, which reverse-engineers the features and connecting circuits inside InceptionV1 and articulates general principles for mechanistic interpretability of vision networks.",
+  "topics": ["Interpretability", "Multimodal"]
+ },
+ {
+  "id": 2449,
+  "summary": "Applies three optimization strategies (differential evolution, Gaussian-process regression, and a neural-network approximator) to simultaneously tune laser and evaporative cooling, producing a Bose-Einstein condensate from randomized initial parameters and roughly quadrupling atom number versus manual tuning.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2450,
+  "summary": "Provides a theoretical analysis of magnitude- and gradient-based pruning at initialization, explaining why deep pruned networks become hard to train (e.g., entire layers being pruned), and proposes principled pruning methods validated across architectures.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2451,
+  "summary": "Introduces Distributional Sliced-Wasserstein distance, which learns an optimal distribution over projection directions to balance informativeness and diversity, generalizing Max-Sliced-Wasserstein; it improves image generative modeling on large datasets over prior sliced-based distances.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2452,
+  "summary": "Connects long-term state-visitation densities to value functions and uses density estimation to learn to reach specified states, yielding goal-conditioned RL without hindsight bias in stochastic domains and state-of-the-art sample efficiency for imitation learning.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2453,
+  "summary": "Shows that classifier/ratio-estimation and neural posterior-estimation approaches to simulation-based, likelihood-free inference can be unified under a single contrastive-learning framework, clarifying how the methods relate and how they should be run and compared.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2454,
+  "summary": "Collects peer commentaries and the author's response to a proposed definition of artificial intelligence, debating how AI and intelligence should be characterized within the artificial general intelligence research community.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2455,
+  "summary": "In a multi-agent RL foraging game, agents learn to enforce and comply with taboos; adding an arbitrary 'silly rule' that punishes a harmless berry counterintuitively speeds and stabilizes learning of norm enforcement, modeling normativity as group-level emergence.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1059,
+  "summary": "Establishes empirical power-law scaling of language-model cross-entropy loss with model size, dataset size, and compute across many orders of magnitude; larger models are more sample-efficient, so compute-optimal training favors very large models stopped well before convergence.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2457,
+  "summary": "Reports that midbrain dopamine neurons encode a diversity of reward predictions with differing optimism levels, implementing a distributional rather than scalar value code; mouse VTA recordings support this distributional reinforcement learning account of the brain.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 2456,
+  "summary": "AlphaFold predicts protein structure by training deep residual networks to estimate distributions over inter-residue distances and torsion angles, converting them into a differentiable potential minimized by gradient descent; it markedly improved accuracy at CASP13.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2458,
+  "summary": "Trains a deep learning model to predict center-involved diabetic macular edema from 2D fundus photographs, reaching 0.89 AUC and matching specialists' sensitivity at roughly double their specificity, while also detecting intraretinal and subretinal fluid.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2846,
+  "summary": "Examines the role and visibility of gender within digital information and communication technologies and international security, arguing that gender perspectives should be more explicitly incorporated into security analysis and policy discourse.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2845,
+  "summary": "Generalizes the densest-subgraph problem to graphs with negative edge weights, introducing risk-averse and exclusion-query graph-mining primitives; proves NP-hardness, gives an approximation algorithm for small negative weights plus a heuristic, validated on uncertain and Twitter graphs.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2488,
+  "summary": "Presents a probability model for bilingual lexicon induction that jointly models lexeme translation and inflectional morphology, reporting roughly 19% (supervised) and 16% (weakly supervised) average accuracy gains across six language pairs and highlighting pitfalls of ignoring morphology.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2487,
+  "summary": "Report from a Dagstuhl seminar surveying open problems in computational game AI following AlphaGo and AlphaZero, identifying challenges that remain beyond the state of the art and proposing new research directions for game-playing AI.",
+  "topics": ["Reinforcement Learning"]
+ }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "id": 2296,
+    "summary": "Engineering account of a low-latency, high-accuracy vision pipeline for the DUT18 Driverless race car: YOLOv3-based cone detection, pose estimation, and sub-microsecond stereo/mono camera synchronization, with racing-specific CNN and pose-loss adaptations validated in real Formula Driverless competition.",
+    "topics": ["Multimodal"]
+  },
+  {
+    "id": 2295,
+    "summary": "Uses evolutionary search over time-convolving CNN policies to learn 100Hz joint controllers for robotic table tennis. With task and reward curricula, policies reach an 80% return rate and spontaneously develop distinct forehand and backhand styles without multi-head or hierarchical architectural priors.",
+    "topics": ["Reinforcement Learning"]
+  },
+  {
+    "id": 2297,
+    "summary": "Documents the 2020 refresh of the Kinetics-700 video action-recognition dataset, restoring at least 700 distinct YouTube clips for each of the 700 classes, with updated statistics and I3D baseline results.",
+    "topics": ["Multimodal", "Evaluations"]
+  },
+  {
+    "id": 2299,
+    "summary": "Introduces a robust constrained RL algorithm for continuous control under 'constrained model misspecification', where perturbed dynamics degrade both return and constraint satisfaction. Evaluated on MuJoCo tasks from the Real-World RL suite.",
+    "topics": ["Reinforcement Learning"]
+  },
+  {
+    "id": 2298,
+    "summary": "Disproves the claim that batch normalization is essential to prevent representational collapse in BYOL. Replacing BN with batch-independent group normalization plus weight standardization nearly matches vanilla BYOL (73.9% vs 74.3% ImageNet linear-probe top-1, ResNet-50).",
+    "topics": ["Training & Scaling"]
+  },
+  {
+    "id": 2300,
+    "summary": "Studies a five-player online weighted-voting negotiation game, collecting human play and showing that a model using cooperative-game-theory features (an extended Deegan-Packel index) predicts coalition-joining well. An agent built on these predictions outperformed humans in the game.",
+    "topics": ["Agents", "Policy & Society"]
+  },
+  {
+    "id": 2301,
+    "summary": "Analyzes self-supervised learning causally and proposes ReLIC, which enforces invariance of proxy-task predictions across augmentations via a regularizer with generalization guarantees. Outperforms competitors on ImageNet robustness/OOD and exceeds human-level play on 51 of 57 Atari games.",
+    "topics": ["Training & Scaling"]
+  },
+  {
+    "id": 2813,
+    "summary": "An active-learning system pairing object detection with transfer learning to classify and count species in camera-trap images. Matches state-of-the-art accuracy on a 3.2M-image dataset with ~14,100 labels (>99.5% less labeling effort) while reducing overfitting to camera backgrounds.",
+    "topics": ["Science Applications", "Multimodal"]
+  },
+  {
+    "id": 2302,
+    "summary": "Proposes deep feature instrumental-variable regression (DFIV), learning nonlinear neural features for instruments and treatments with an alternating two-stage training scheme. Outperforms prior IV methods on high-dimensional benchmarks and is competitive for off-policy policy evaluation in RL.",
+    "topics": ["Training & Scaling", "Reinforcement Learning"]
+  },
+  {
+    "id": 2304,
+    "summary": "A soft-constrained RL method that uses meta-gradients to automatically balance expected return against constraint violations when constraint thresholds are mis-specified. Consistently outperforms baselines across four MuJoCo domains.",
+    "topics": ["Reinforcement Learning"]
+  },
+  {
+    "id": 2303,
+    "summary": "Frames Targeted Free Energy Perturbation as learning a neural-network mapping in configuration space that maximizes distribution overlap, with an architecture respecting permutation and periodic symmetries. Substantially reduces free-energy estimate variance on a periodic solvation system without extra data.",
+    "topics": ["Science Applications"]
+  },
+  {
+    "id": 2305,
+    "summary": "Qualitative interview study (interpretative phenomenological analysis) of service users and managers on valued qualities in nursing staff caring for women with borderline personality disorder in secure forensic care; service users emphasized interpersonal skills, managers emphasized risk management and boundaries.",
+    "topics": ["Other"]
+  },
+  {
+    "id": 2307,
+    "summary": "Opinion piece arguing that AI common sense rests on object, space, and causality understanding shared with animals, and that deep-RL agents in simulated 3D worlds can acquire such concepts, evaluable by repurposing animal-cognition experimental protocols, especially in transfer settings.",
+    "topics": ["Reinforcement Learning", "Evaluations"]
+  },
+  {
+    "id": 2306,
+    "summary": "Review of graph neural networks in particle physics, surveying graph constructions, model architectures, and learning objectives suited to set- and graph-structured detector data, and outlining open problems where GNNs are promising.",
+    "topics": ["Science Applications", "Training & Scaling"]
+  },
+  {
+    "id": 2309,
+    "summary": "Derives new problem-independent minimax lower bounds on sample complexity and regret for episodic finite MDPs, emphasizing the non-stationary (per-stage transition) case via a novel hard-MDP construction, including an Omega(sqrt(H^3 SAT)) regret bound.",
+    "topics": ["Reinforcement Learning"]
+  },
+  {
+    "id": 2308,
+    "summary": "Behavioral experiment (N=67) on hypothetical pain: participants preferred immediate over delayed pain and valued close others' pain more than their own, with this 'hyperaltruism' steeply discounted by social distance; impatience and social discounting were weakly correlated.",
+    "topics": ["Other"]
+  },
+  {
+    "id": 2311,
+    "summary": "Improves relational regularized autoencoders by replacing uniform slicing in sliced fused Gromov-Wasserstein with spherical slicing focused via von Mises-Fisher distributions, plus mixture and power-spherical variants for multi-region coverage and faster high-dimensional sampling.",
+    "topics": ["Training & Scaling"]
+  },
+  {
+    "id": 2310,
+    "summary": "Proposes an exploration signal that estimates value-function uncertainty by inducing a distribution over temporal-difference errors, used as intrinsic reward for a separate exploration policy. Yields a self-vanishing curriculum and improves deep exploration on Deep Sea and Atari.",
+    "topics": ["Reinforcement Learning"]
+  },
+  {
+    "id": 2814,
+    "summary": "Shows independent model-free RL agents usually fail to exploit social learning; adding environment constraints and a model-based auxiliary loss yields agents that learn from experts, acquire skills unattainable from solo training, and adapt online to novel environments.",
+    "topics": ["Reinforcement Learning", "Agents"]
+  },
+  {
+    "id": 2312,
+    "summary": "A Bayesian-optimization methodology that empirically maps the privacy-utility Pareto front of any differentially private algorithm using only utility measurements, enabling principled privacy/utility decisions for complex tasks like DP neural-network training where analytical guarantees are unavailable.",
+    "topics": ["Policy & Society", "Training & Scaling"]
+  },
+  {
+    "id": 2313,
+    "summary": "Book chapter reviewing hair-care science: hair-fiber structure and growth, mechanisms of damage, greying and loss, the chemistry behind everyday hair-care products, and techniques for measuring product performance.",
+    "topics": ["Other"]
+  },
+  {
+    "id": 2315,
+    "summary": "Population-dynamics modelling that explicitly propagates parameter uncertainty to assess sustainable hunting of duiker antelopes, revealing a yield-versus-extinction-risk trade-off under quota harvesting that disappears under proportional harvesting.",
+    "topics": ["Science Applications"]
+  },
+  {
+    "id": 2314,
+    "summary": "PNAS perspective arguing that human-level language understanding requires embedding language in a broader situation-understanding system with a fast-learning memory for prior contexts, drawing on cognitive neuroscience and query-based attention to outline next steps for neural language models.",
+    "topics": ["Training & Scaling"]
+  },
+  {
+    "id": 2316,
+    "summary": "Empirically studies generalization as training-set size spans orders of magnitude, finding that model selection on smaller data subsets is more reliable and cheaper; also estimates Minimum Description Lengths for common datasets under modern architectures.",
+    "topics": ["Training & Scaling"]
+  },
+  {
+    "id": 2317,
+    "summary": "Review of behavioral and neural evidence for multi-step planning in humans and animals, framed through model-based reinforcement learning and tree-search accounts, and considering how the brain represents, evaluates, and decides when to deploy such computationally costly planning.",
+    "topics": ["Reinforcement Learning"]
+  },
+  {
+    "id": 2318,
+    "summary": "Defines auto-induced distributional shift (ADS), where an algorithm changes its own input distribution (e.g., recommenders shifting user preferences), and shows meta-learning can reveal hidden incentives to exploit it. Introduces 'unit tests' and a mitigation strategy, validated in a toy recommendation environment.",
+    "topics": ["Safety", "Alignment"]
+  },
+  {
+    "id": 2815,
+    "summary": "Trains two deep networks on 3M U.S. camera-trap images, a 58-species classifier (96.8% accuracy) and an empty-vs-animal detector (97.3%), released as accessible R software (MLWIC2), with moderate out-of-sample transfer across regions and continents.",
+    "topics": ["Science Applications", "Multimodal"]
+  },
+  {
+    "id": 2319,
+    "summary": "Introduces FermiNet, a deep-neural-network ansatz for many-electron wavefunctions trained variationally to solve the electronic Schrodinger equation from first principles, achieving high accuracy on molecules and atoms without external training data.",
+    "topics": ["Science Applications", "Training & Scaling"]
+  },
+  {
+    "id": 2816,
+    "summary": "Develops a unified framework for worst-case guarantees in offline (fixed-dataset) policy optimization, showing naive methods risk value overestimation and that pessimistic algorithms, acting optimally in the worst plausible world, perform well without data informative of every policy. Validated on gridworld and MinAtar.",
+    "topics": ["Reinforcement Learning"]
+  },
+  {
+    "id": 2320,
+    "summary": "Constructs gauge-invariant normalizing-flow samplers for lattice gauge theories and applies them to 2D U(1) theory, finding that at weak coupling the learned flows sample topological quantities orders of magnitude more efficiently than hybrid Monte Carlo or heat-bath methods.",
+    "topics": ["Science Applications", "Training & Scaling"]
+  }
+]

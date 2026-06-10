@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2585,
+  "summary": "An fMRI study testing how trait anxiety shapes defensive escape. Anxiety did not affect responses to fast threats but predicted earlier escape from slow-approaching predators, correlating with activity and vHPC-mPFC coupling in cognitive fear circuits.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2586,
+  "summary": "Retrospective analysis of 13M admissions across 136 English NHS hospitals found organisational digital maturity had no significant association with 30-day mortality, readmissions, or complications, though it related to length of stay and harm-free care, indicating mixed, limited links between health IT and outcomes.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 2592,
+  "summary": "Extends algorithmic cooperative game theory for Threshold Network Flow Games, a team-formation model, presenting polynomial-time algorithms to compute least-core stable reward distributions on bounded-treewidth graphs, generalizing prior results limited to layer graphs.",
+  "topics": ["Agents"]
+ },
+ {
+  "id": 2591,
+  "summary": "Introduces an online RL algorithm that learns reciprocal, tit-for-tat-style behavior in temporally and spatially extended Markov games. It induces pro-social group outcomes when learning alongside selfish agents in 2-player and 5-player intertemporal social dilemmas.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2590,
+  "summary": "Co-optimizes agent body morphology and control policy by combining RL with an evolutionary procedure, using the Shapley value to attribute performance to individual body components. Joint body-policy search outperforms policy-only baselines on a Robo-Sumo-style task.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2589,
+  "summary": "Combines multi-agent RL with structured natural selection to evolve inductive biases for cooperation in intertemporal social dilemmas. A modular agent architecture supporting multi-level selection learns altruistic behavior model-free across two challenging environments.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2588,
+  "summary": "Shows observational learning can emerge from pure RL, optionally with memory, without explicitly modeling other agents: an observer changes its behavior after watching a teacher whose actions are seen only through their effect on a shared environment.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2587,
+  "summary": "Proposes Malthusian RL, extending self-play with fitness-linked population-size dynamics: rising subpopulation returns drive population growth, and the resulting competitive pressure pushes agents to explore states and policies otherwise unreachable while encouraging specialization and division of labor.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1071,
+  "summary": "Studies whether adversarial robustness transfers across perturbation types (e.g., L-infinity, L2, L1, elastic, JPEG). Finds robustness from training against one perturbation type generalizes poorly to others, sometimes worsening it, so jointly training across types is needed for broad robustness.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2593,
+  "summary": "Introduces SuperGLUE, a harder successor to the GLUE benchmark for general-purpose language understanding, with more difficult tasks, a software toolkit, and a public leaderboard, created after models surpassed non-expert human performance on GLUE.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 2597,
+  "summary": "A computational-neuroscience conference presentation examining the neural and computational mechanisms underlying the self-other distinction and how that distinction can be reshaped (plasticity).",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2596,
+  "summary": "Shows minor modifications to DDPG plus a few human demonstrations let a real robot learn peg- and clip-insertion tasks with variable socket position in under 10 minutes, with no modeling, simulation, reward shaping, or pose input beyond raw images.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2595,
+  "summary": "Uses model-free deep RL to learn multi-fingered grasping policies that exploit contact-force sensing. Contact feedback substantially improves grasp robustness under object-pose uncertainty and for complex shapes, compared with vision-only policies.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2594,
+  "summary": "Presents mID, a privacy-preserving human tracking and identification system using low-cost millimeter-wave radar. From sparse radar point clouds it forms trajectories and identifies individuals via a deep recurrent network, achieving 0.16 m median position error and 89% accuracy for 12 people.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1072,
+  "summary": "MuseNet generates 4-minute, 10-instrument musical compositions spanning styles from country to Mozart, using the same GPT-2-style transformer trained to predict the next token over hundreds of thousands of MIDI files, discovering harmony, rhythm, and style without hand-coded music theory.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1073,
+  "summary": "Introduces the Sparse Transformer, which factorizes the attention mechanism to cut its compute and memory cost, enabling modeling of sequences roughly 30x longer and setting new records on autoregressive generation of text, images, and audio.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2862,
+  "summary": "A tutorial deriving the math behind GANs and explaining why their training is unstable, then showing how Wasserstein GAN replaces the objective with the smoother Wasserstein distance to improve training stability.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2599,
+  "summary": "Demonstrates very low bit-rate (1.6 kbps) speech coding with a VQ-VAE and a WaveNet decoder. A speaker-independent model on LibriSpeech reaches quality between MELP at 2.4 kbps and AMR-WB at 23 kbps, approaching AMR-WB when trained on the test speaker.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2598,
+  "summary": "A review arguing that sample-inefficiency criticisms of deep RL are answered by episodic-memory and meta-learning methods, which enable fast learning atop slow learning, and discussing the implications of these mechanisms for psychology and neuroscience.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 1074,
+  "summary": "OpenAI Five became the first AI to defeat reigning world champions (team OG) at Dota 2, winning two livestreamed games. It was trained via large-scale self-play deep RL on the complex, partially observable, long-horizon multiplayer game.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2601,
+  "summary": "Applies the Madingley general ecosystem model, built from first-principle interactions between individual organisms, to study food webs. Aggregating and sub-sampling its emergent networks reproduces properties of empirical food webs and reveals how sampling effort shapes observed structure.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2600,
+  "summary": "Combines an fMRI decision task with a computational model of anticipatory value, showing that anticipating pleasant outcomes is computed via vmPFC (tracking anticipation value), dopaminergic midbrain (responding to anticipation-enhancing information), and sustained hippocampal activity coupling the two.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 2602,
+  "summary": "Qualitative interviews with 19 clinicians evaluating Streams, a mobile app delivering real-time acute-kidney-injury alerts, found the digitally enabled care pathway improved access to patient data and reshaped interprofessional working practices and relationships.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 2603,
+  "summary": "A commentary reviewing recent rapid progress in automated segmentation of organs-at-risk and target volumes for head and neck cancer radiotherapy planning, where machine-learning auto-segmentation methods are advancing quickly.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 1075,
+  "summary": "Reports progress on stable, scalable training of energy-based models, where generation iteratively refines samples using more compute. The approach yields sample quality competitive with GANs at low temperatures while retaining the mode coverage of likelihood-based models.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2605,
+  "summary": "A talk introducing the U-net and three DeepMind Health applications: head-and-neck CT segmentation for radiotherapy, expert-level referral from 3D OCT eye scans, and a U-net/conditional-VAE that produces multiple calibrated segmentation hypotheses for ambiguous medical images.",
+  "topics": ["Multimodal", "Science Applications"]
+ },
+ {
+  "id": 2604,
+  "summary": "Proposes a generic human-machine annotation framework using dropout-based uncertainty to route easy instances to automatic labeling and ambiguous ones to humans, plus an inter-rater-agreement stopping rule. On non-native English prosody it cut human annotations 74% with comparable accuracy.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2606,
+  "summary": "A qualitative study of clinicians' perspectives on shifting to a mobile-first culture of work in healthcare, exploring the practical opportunities and challenges of adopting mobile working practices in clinical settings.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 2863,
+  "summary": "Builds an explorable activation atlas by using feature inversion to visualize millions of activations from an image-classification network, revealing the features and concepts the model has learned and how they combine.",
+  "topics": ["Interpretability", "Multimodal"]
+ },
+ {
+  "id": 2607,
+  "summary": "A review assessing backpropagation-through-time as a model of temporal credit assignment in the brain, arguing that recent memory- and attention-based architectures, developed in reference to BPTT, strengthen its role as a normative guide for biological credit assignment.",
+  "topics": ["Science Applications", "Training & Scaling"]
+ }
+]

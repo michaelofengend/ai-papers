@@ -1,0 +1,152 @@
+[
+ {
+  "id": 563,
+  "summary": "Derives scaling laws for routed (sparse mixture-of-experts) language models, treating parameter count and compute as independent axes. Validated across three routing techniques and five orders of magnitude, it introduces an Effective Parameter Count that unifies routed and dense model scaling.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2023,
+  "summary": "A brief invited discussion contribution commenting on Dong et al.'s 'Gaussian Differential Privacy', part of the journal's published discussion of that work on the f-differential-privacy and Gaussian-DP framework for quantifying privacy guarantees.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2024,
+  "summary": "Shows Gaussian-process black-box optimization can be made cheaper by reusing a candidate point across multiple evaluations, limiting unique history points so posteriors compute efficiently. Modified GP-UCB and GP-EI variants retain no-regret guarantees while cutting runtime and memory, helping high-switch-cost settings.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1037,
+  "summary": "OpenAI's InstructGPT: fine-tunes GPT-3 with reinforcement learning from human feedback to better follow user intent. Human raters prefer the 1.3B InstructGPT over the 175B GPT-3, with gains in truthfulness and reductions in toxic generations.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 2025,
+  "summary": "Uses AlphaZero self-play to study nine chess variants with altered rules (e.g., no-castling, torpedo), assessing how rule changes affect game balance, piece values, and playing style — turning a game engine into a tool for exploring chess's design space.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1038,
+  "summary": "OpenAI's contrastive pre-training (cpt-text, cpt-code) trains embedding models on large unlabeled text and code using a contrastive objective over paired/neighboring data, producing strong embeddings for linear-probe classification, semantic search, and code search across multiple retrieval benchmarks.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2027,
+  "summary": "Examines and compares the statistical properties of several methods for aggregating local Kriging (Gaussian-process) sub-models fit on data subsets, a route to scaling GP regression to large geostatistical datasets.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2026,
+  "summary": "Multi-agent RL study of social norms: agents learn to avoid a poisonous berry better when violations are punished (a taboo), which eases credit assignment for delayed harm. Adding a 'silly rule' punishing a harmless act further improves returns by giving extra enforcement practice.",
+  "topics": ["Reinforcement Learning", "Agents", "Policy & Society"]
+ },
+ {
+  "id": 2778,
+  "summary": "Introduces Hourglass, a hierarchical Transformer that downsamples then upsamples activations to handle long sequences efficiently. It matches baseline Transformer quality at lower compute, sets state-of-the-art on ImageNet32 autoregressive generation, and improves enwik8 language-modeling efficiency.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2777,
+  "summary": "SPT, a natural-language-processing model, predicts limiting activity coefficients of mixtures directly from SMILES strings. Pre-training on millions of synthetic data points then fine-tuning on limited experimental data yields high accuracy for this thermodynamic property.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2049,
+  "summary": "Analytical-chemistry study using headspace gas chromatography–ion mobility spectrometry (HS-GC-IMS) with chemometric methods to profile and distinguish volatile compounds across differently flavored cigarette papers.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2048,
+  "summary": "Spatially embedded RNNs place units in a physical space and penalize long-range communication during training. Under this constraint the networks spontaneously develop neuroscience-like properties — small-world topology, spatial functional clustering, and mixed selectivity — linking structural and functional brain findings.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2047,
+  "summary": "Investigates whether equivariant message-passing graph neural networks improve segmentation of cortical surface meshes, assessing the benefit of geometric equivariance for parcellating brain-surface data.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2046,
+  "summary": "Analytical-chemistry study applying headspace gas chromatography–ion mobility spectrometry (HS-GC-IMS) to profile aromatic compounds across differently flavored cigarette papers.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2045,
+  "summary": "Commentary arguing that deep reinforcement learning agents can self-organize representations of social groups from experience, minimizing hand-engineering to improve robustness and scalability while enabling 'virtual neuroscience' study of the learned representations.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2044,
+  "summary": "Extends the Legg-Hutter universal-intelligence framework to include punishments, arguing an agent's intelligence can be negative. Shows that under certain Kolmogorov-complexity symmetries of the universal Turing machine the measure is symmetric about zero, so reward-ignoring agents score zero.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2043,
+  "summary": "Proposes computing successor features over multiple timescales (discount factors) to support continual reinforcement learning, aiming to improve transfer and adaptation as tasks change over time.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2042,
+  "summary": "Commentary arguing high-fidelity imitation in multi-agent AI needs few inductive biases: in suitable environments, both instrumental- and ritual-stance imitation can emerge from generic trial-and-error learning on non-deliberative architectures, without explicit deliberation.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2041,
+  "summary": "Compares publishing cultures: AI publishes rapidly via preprints and conferences, while psychology publishes slowly through integrative reviews and meta-analyses. Argues combining both approaches could yield more generalizable research across the two fields.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2040,
+  "summary": "A workshop proceedings collecting methods for uncertainty quantification and reliability in machine learning for medical imaging, aimed at calibrated, trustworthy predictions for safe clinical deployment.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2039,
+  "summary": "ACL tutorial surveying vision-language pretraining: image-text datasets and benchmarks, transformer-based model families with their strengths and weaknesses, and the limits of purely statistical learning — motivating alternatives such as causal representation learning.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2038,
+  "summary": "Odin is a self-supervised learning method that discovers image structure on its own, coupling an object-discovery network producing unsupervised segmentations with a representation network. It reaches state-of-the-art transfer for COCO detection/segmentation, PASCAL/Cityscapes segmentation, and DAVIS video segmentation.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 2037,
+  "summary": "Proposes learning individually fair representations by smoothing in the latent space of a generative model, enabling provable certification that similar individuals (under a learned similarity) receive similar representations.",
+  "topics": ["Policy & Society", "Robustness & Security"]
+ },
+ {
+  "id": 2036,
+  "summary": "Cryptography paper constructing an efficient updatable zero-knowledge SNARK from a univariate sumcheck argument, contributing techniques for proofs in the updatable structured-reference-string setting.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2035,
+  "summary": "Extends prefix-tuning with Control Prefixes: input-dependent, attribute-level learnable representations inserted across Transformer layers for controllable generation. Using 0.1–2% extra parameters, it can beat full fine-tuning, reaching state-of-the-art on data-to-text datasets including WebNLG.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2034,
+  "summary": "Presents an autoregressive generative model for synthesizing 3D brain images that preserves morphological structure, aimed at producing realistic, anatomically faithful volumetric brain scans.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2033,
+  "summary": "Augments an autoregressive language model with a memory of knowledge-graph relation triples, retrieving relevant relations for the current context. Improves perplexity/bits-per-character on WikiText-103, WMT19, and enwik8, boosts coherence, complements token-based memory, and enables causal interventions.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2032,
+  "summary": "Cryptography paper analyzing when Fiat–Shamir-transformed zk-SNARKs with an updatable structured reference string achieve simulation extractability, giving conditions and proofs for this stronger security property.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2031,
+  "summary": "3D-Beacons is a collaborative federated network providing unified access to experimental and predicted protein structures from many providers (including the PDB), letting researchers collate coordinates and metadata and compare models across sources for their use cases.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2030,
+  "summary": "Transformer Grammars inject recursive syntactic composition into Transformers via a special attention mask over linearized parse trees. They improve sentence-level perplexity and syntax-sensitive metrics, but the single-vector syntactic bottleneck hurts document-level modeling, suggesting a separate long-range memory is needed.",
+  "topics": ["Training & Scaling"]
+ }
+]

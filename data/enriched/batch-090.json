@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2551,
+  "summary": "Introduces a path-specific counterfactual approach to fairness that removes a sensitive attribute's influence along unfair causal pathways while preserving fair ones. A VAE-style deep latent-variable model corrects adversely affected observations before deciding, retaining more individual-specific information than prior counterfactual-fairness methods.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2560,
+  "summary": "Evaluates a digitally enabled care pathway for acute kidney injury—automated detection, mobile clinician alerts, in-app triage, and a protocolized specialist response—using pre/post and control-site comparisons with segmented regression on renal recovery, mortality, and health-care costs.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2860,
+  "summary": "Argues that competitive and cooperative multi-agent training supplies a natural curriculum that elicits complex skills without hand-designed cost functions, and studies how such skills emerge and transfer across environments.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2859,
+  "summary": "Policy research arguing that competitive pressures may push AI firms to underinvest in safety, framing this as a collective-action problem. Identifies factors that aid cooperation and proposes strategies—risk communication, technical collaboration, transparency, and incentivized standards—to promote responsible development.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 1070,
+  "summary": "Blog write-up of a policy paper identifying four near-term strategies—communicating risks and benefits, technical collaboration, increased transparency, and incentivizing standards—to foster long-term industry cooperation on AI safety norms and avoid a competitive race that underinvests in safety.",
+  "topics": ["Policy & Society", "Safety"]
+ },
+ {
+  "id": 2562,
+  "summary": "Studies RL in multi-chain MDPs where some actions are irreversible, making sublinear regret impossible in general. Proposes an algorithm that requests policy rollouts as external information only when needed, achieving O(√T) active regret with just O(log T) requested rollouts.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2561,
+  "summary": "Introduces α-Rank, an evolutionary-dynamics method for ranking agents in large-scale multi-agent interactions via a new game-theoretic solution concept, Markov-Conley chains. It scales tractably in agent count and interaction type and, unlike static Nash equilibria, gives a dynamical ranking with convergence guarantees.",
+  "topics": ["Evaluations", "Reinforcement Learning"]
+ },
+ {
+  "id": 2563,
+  "summary": "Uses the Madingley general ecosystem model to simulate bushmeat harvesting across seven Central African ecosystems on a climate gradient, estimating sustainable yields and ecosystem impacts. Wooded savannahs showed the highest target-species densities, yields, and resilience to harvesting.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2564,
+  "summary": "Position piece on scaling deep reinforcement learning to complex real-world tasks, highlighting continual learning as a central challenge—sequentially trained agents suffer catastrophic forgetting and interference—and the still-unsolved problem of skill composition through curricula.",
+  "topics": ["Reinforcement Learning", "Training & Scaling"]
+ },
+ {
+  "id": 2566,
+  "summary": "Presents Tree-LSTM models that compose word representations along binary parse trees induced by a differentiable chart parser, jointly optimizing composition and parsing without gold trees. The attention-augmented CKY variant is competitive on NLI and reverse-dictionary tasks, beating parser-supervised Tree-LSTMs.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2565,
+  "summary": "Human MEG study showing learned abstract structure shapes memory replay: after training on an ordering rule, participants' rest-period replay of newly seen, scrambled objects followed the rule-implied sequence rather than visual experience, with a factorized code separating sequence position from object identity.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2567,
+  "summary": "Retrospective analysis of ten years of England and Wales incident reports identifies 2,627 patient-safety incidents tied to health-IT failures. Most caused no harm, but 18% did—including moderate, severe harm, and deaths—with two reviewers assessing effects and preventability.",
+  "topics": ["Science Applications", "Policy & Society"]
+ },
+ {
+  "id": 2568,
+  "summary": "Speeds up training of vision-based robot control via multi-task RL with auxiliary tasks that exploit privileged training-time state features. The fast-learning auxiliary policies generate good data for the main image-based policy, letting a real robot learn Ball-in-a-Cup from scratch without sim transfer or imitation.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2569,
+  "summary": "Analyzes 130 healthcare regulator inspection reports alongside digital-maturity scores to characterize health IT's impact on care quality and safety. Although digital maturity correlates with overall quality, regulators more often flag negative effects—poor usability, access barriers, and incorrect use.",
+  "topics": ["Policy & Society", "Science Applications"]
+ },
+ {
+  "id": 2570,
+  "summary": "Frames hyperparameter tuning as best-arm identification in infinitely-many-armed bandits and proposes D-TTTS, a Thompson-sampling-style algorithm that dynamically trades off refining known configurations against sampling new ones. It is simple to implement and competitive with state-of-the-art tuners.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2571,
+  "summary": "Trains recurrent neural networks on working-memory tasks to test how information is held. Short-term synaptic plasticity suffices for brief 'activity-silent' maintenance, but tasks requiring active manipulation make persistent neural activity emerge, with its strength scaling with the degree of manipulation needed.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2572,
+  "summary": "Reports progress toward end-to-end verified system stacks by connecting a verified compiler (software) with a verified processor (hardware), targeting a single correctness theorem covering a compiled program running on the verified CPU.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2574,
+  "summary": "Casts the search for proofs of polynomial inequalities in semi-algebraic proof systems as a sequential decision problem, using deep reinforcement learning with a symmetry-aware polynomial embedding to pick inference rules. It shrinks the equivalent linear programs by orders of magnitude while improving performance.",
+  "topics": ["Reasoning", "Reinforcement Learning"]
+ },
+ {
+  "id": 2573,
+  "summary": "A survey and textbook of cross-lingual word embedding models—methods mapping words from multiple languages into a shared vector space. It organizes approaches by the bilingual supervision they require, shows many are conceptually equivalent, and reviews data, applications, and evaluation.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2861,
+  "summary": "Tackles out-of-vocabulary answers in visual question answering by first learning a task-conditional visual classifier through unsupervised task discovery (leveraging WordNet and visual descriptions), then transferring it as an answering module, improving generalization to answers unseen during VQA training.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2582,
+  "summary": "Proposes learning-based multi-layered video representations using uncertainty-capturing 3D convolutional networks trained to separate synthetically blended videos. The models generalize to single real videos, exhibiting color constancy and factoring out shadows and reflections.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2581,
+  "summary": "Adapts a Transformer architecture for spatiotemporal action recognition, using person-specific queries to aggregate context around each actor. Without explicit supervision the model learns to track people and attend to hands and faces, setting state of the art on AVA from raw RGB frames.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2580,
+  "summary": "Studies attacks that manipulate the output length of variable-length sequence models (machine translation, image captioning), introducing a differentiable proxy objective to find inputs yielding outputs up to 50× longer, plus a verification method that formally bounds the maximum output length.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2579,
+  "summary": "Recovers accurate 3D human pose and meshes from monocular video via bundle adjustment over whole sequences, using temporal constraints and constant body shape to resolve single-frame ambiguities. Releases 3M+ auto-annotated Kinetics frames; retraining on them improves single-frame estimators.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2578,
+  "summary": "Learns visual models of task steps from instructional-video narrations and an ordered step list rather than temporal annotations, sharing components across tasks (e.g. 'pour egg' with other 'pour'/'egg' tasks). Component-level sharing improves recognition and enables parsing previously unseen tasks.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2577,
+  "summary": "Introduces temporal cycle-consistency, a differentiable loss that learns per-frame video embeddings by enforcing nearest-neighbor correspondences across videos. The self-supervised embeddings enable few-shot action-phase classification and fine-grained alignment for label transfer, synchronized playback, and anomaly detection.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2576,
+  "summary": "Presents Randomized-to-Canonical Adaptation Networks (RCAN), which translate domain-randomized renders into a canonical image so real images map to the same space without real data. A vision-based RL grasping policy trained in sim reaches 70% zero-shot real success, 91% after modest fine-tuning.",
+  "topics": ["Reinforcement Learning", "Multimodal"]
+ },
+ {
+  "id": 2575,
+  "summary": "Links adversarial robustness to loss-surface geometry: adversarial training sharply reduces input curvature, making networks behave more linearly near data. A locally quadratic analysis motivates a curvature-minimizing regularizer (CURE) that matches adversarial training's robustness more efficiently.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 2583,
+  "summary": "The FTW agent: population-based deep RL trains agents to play Quake III Arena Capture-the-Flag from raw pixels on procedurally generated maps, reaching human-level team play. Agents learn human-like strategies and beat humans even when handicapped to human reaction times.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2584,
+  "summary": "Proposes an end-to-end neural architecture that learns explicitly relational, propositional representations from raw pixels, plus a family of visual relational-reasoning tasks. Curriculum pretraining yields reusable representations that transfer to unseen tasks better than baseline architectures.",
+  "topics": ["Reasoning", "Training & Scaling"]
+ }
+]

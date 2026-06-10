@@ -1,0 +1,152 @@
+[
+ {
+  "id": 1900,
+  "summary": "A computational account of how factorizing graph-structured representations lets an agent recombine and reuse previously learned experience compositionally, presented at Cognitive Computational Neuroscience 2023.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 1899,
+  "summary": "Reports that single neurons in human prefrontal cortex encode economic risk and risk prediction errors during value-based decision-making, presented at Cognitive Computational Neuroscience 2023.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1898,
+  "summary": "Introduces CBT, a correlation-based transfer loss that constrains corresponding convolutional kernels in two CNNs to respond similarly in similar contexts, carrying semantic feature structure from a source to a target domain for unsupervised domain adaptation.",
+  "topics": ["Training & Scaling", "Multimodal"]
+ },
+ {
+  "id": 1897,
+  "summary": "Reframes RL actions as a sequence of internal choices under an action model, augmenting the MDP with an information-theoretic notion of internal action so that large pretrained sequence models can serve as priors for multi-task reinforcement learning.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 1896,
+  "summary": "GeoSumm performs unsupervised extractive opinion summarization: an encoder-decoder learns topical text representations via dictionary learning across decoder layers, then scores sentence importance with an approximate geodesic distance to extract popular and aspect-specific opinions.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1895,
+  "summary": "A multi-agent image-reference game where a speaker (CLIP vision encoder plus an LLM adapter) is rewarded for describing a target so one listener identifies it but another cannot. RL fine-tuning yields audience-specific language specialization from rewards alone, transferring zero-shot to real images.",
+  "topics": ["Multimodal", "Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 1894,
+  "summary": "A position paper contending that language-model pre-training research accrues scientific debt through insufficient methodological rigour, and arguing for more careful, controlled experimentation in pre-training studies.",
+  "topics": ["Training & Scaling", "Evaluations"]
+ },
+ {
+  "id": 1893,
+  "summary": "Shows that initializing the bias of a language generation model's final output layer to the log of token unigram frequencies provides a useful natural bias, accelerating convergence and improving generation quality.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1892,
+  "summary": "A book-chapter review of machine learning for connectomics, surveying methods from representation learning of neural-imaging data through to model fitting.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1891,
+  "summary": "Argues stylistic rewriting should account for surrounding context rather than operate sentence-by-sentence. Introduces CtxSimFit, combining source similarity with contextual cohesiveness; humans prefer contextual rewrites, which sentence-level metrics track poorly but CtxSimFit and context-infused metrics capture well.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1890,
+  "summary": "Improves multi-hop question answering in pretrained LMs using soft prompts that map multi-hop questions to random-walk paths over structured knowledge graphs, chaining stored facts toward the answer. On two T5 models this substantially beats standard tuning.",
+  "topics": ["Reasoning"]
+ },
+ {
+  "id": 1889,
+  "summary": "An fMRI study of English and Mandarin speakers comprehending object-extracted relative clauses finds a shared left-hemisphere network across both languages, plus some additional temporal-lobe activity specific to Chinese.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1888,
+  "summary": "Studies decompounding (splitting compound words) at scale, releasing a 255k-word dataset spanning 56 languages. LLMs perform poorly; dedicated self-supervised models beat prior unsupervised tools by 13.9% accuracy, and are used to build the CompoundPiece subword tokenizer.",
+  "topics": ["Training & Scaling", "Evaluations"]
+ },
+ {
+  "id": 1887,
+  "summary": "A chapter on many-objective (four-plus) black-box optimization combining Bayesian optimization with Gaussian processes and game-theoretic solution concepts such as Nash equilibria and Kalai-Smorodinsky solutions, with corresponding algorithms and illustrative results.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1886,
+  "summary": "Uses large-scale transliteration via the UROMAN tool to adapt multilingual pretrained LMs to low-resource and unseen-script languages. Comparing data- and parameter-efficient strategies across 14 languages, romanization helps most for unseen scripts and limited data, sometimes beating non-transliteration methods.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 1885,
+  "summary": "An empirical comparison of few-shot tool-assisted LM generation strategies finds strong no-tool baselines remain competitive, that refining incorrect outputs with tools beats retrieving before or during generation, and that tool use costs orders of magnitude more tokens for little gain.",
+  "topics": ["Agents", "Evaluations"]
+ },
+ {
+  "id": 1884,
+  "summary": "Extends the continuous cellular automaton Lenia with mass conservation, enabling update-rule parameters to be embedded in the state (parameter localization) so multiple species coexist and evolve, supporting open-ended evolutionary dynamics.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1883,
+  "summary": "Uses genetic programming to evolve interpretable agent logic for agent-based models from domain-independent primitives like basic math operators rather than domain-specific ones, recovering symbolic models of flocking and opinion dynamics that match reference behavior, generalize well, and resist noise.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 1882,
+  "summary": "Re-examines exact-match schema linking (EMSL) in text-to-SQL, showing it reduces robustness to synonyms and typos. A pretrained-LM encoder without EMSL is more robust, and the authors add grammar linking to align question terms with SQL keywords.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1881,
+  "summary": "Proposes a realistic end-to-end domain-shift evaluation for open-domain QA over five domains, finding models fail to generalize and high retrieval scores still yield poor answers. Shift-matched data-augmentation interventions raise end-to-end performance by up to about 24 points.",
+  "topics": ["Evaluations", "Training & Scaling"]
+ },
+ {
+  "id": 1880,
+  "summary": "Proposes a lenient character-error-rate metric for Japanese ASR that credits valid alternative spellings, building a lattice of plausible respellings from lexical resources and an NMT kanji reconstructor. Raters deemed 95.4% of variants plausible; CER falls 2.4-3.1% absolute.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 1879,
+  "summary": "Replaces standard codecs like JPEG with neural compression and feeds the compressed representation directly into ordinary video networks. This improves data-transfer, memory, and speed at every stage, enabling training on hour-long videos with hardware previously limited to seconds-long clips.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 1878,
+  "summary": "Surveys grounded-language settings and pragmatic modeling approaches, analyzing how task goals, environmental context, and communicative affordances enrich meaning beyond the literal, and recommends grounded task designs that better elicit pragmatic phenomena.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1877,
+  "summary": "Introduces DRIP, a backward-reachability method certifying collision avoidance for systems under neural-network control policies. A refinement loop over the relaxation domain and closed-form polytope bounds tighten backprojection-set estimates versus prior linear-program and hyper-rectangle approaches.",
+  "topics": ["Robustness & Security"]
+ },
+ {
+  "id": 1876,
+  "summary": "Cross-dataset evaluation of pretrained vision-and-language models on VQA reveals poor out-of-distribution generalization, indicating models learn the benchmark rather than the task. Generative models prove more robust than discriminative ones, and standard VQA metrics over-penalize correct answers.",
+  "topics": ["Evaluations", "Multimodal"]
+ },
+ {
+  "id": 1875,
+  "summary": "Introduces a transformer that learns object-centric summary vectors for video, fusing visual and spatio-temporal trajectory cues with a trajectory-contrast loss. The object-centric representation transfers better than prior video representations to unseen objects, unseen environments, and tasks beyond action classification.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 1874,
+  "summary": "Identifies three ways learned reward functions misassign high reward in RL-trained conditional text generation: noise-induced spurious correlation, naturally occurring spurious correlation, and covariate shift. These undesirable patterns get amplified during RL; the paper discusses concrete examples and possible fixes.",
+  "topics": ["Alignment", "Safety"]
+ },
+ {
+  "id": 1873,
+  "summary": "CRoW is a manually curated multi-task benchmark probing commonsense reasoning across six real-world NLP tasks, built by rewriting examples with commonsense-violating perturbations. It exposes a large model-human gap spanning physical, temporal, and social commonsense.",
+  "topics": ["Evaluations", "Reasoning"]
+ },
+ {
+  "id": 1872,
+  "summary": "Studies attribution, whether an answer is supported by its cited sources, in cross-lingual question answering where question and evidence differ in language. Proposes evaluation methods and modeling approaches to measure and improve cross-lingual answer attribution.",
+  "topics": ["Evaluations"]
+ },
+ {
+  "id": 1871,
+  "summary": "Explores masked-language-model pretraining variants for code-switched text that respect language boundaries before masking, with token language identity from annotators, classifiers, or frequency estimates, plus a residual connection from an earlier layer. Gains reach 5.8 F1 (QA) and 2.7 F1 (sentiment).",
+  "topics": ["Training & Scaling"]
+ }
+]

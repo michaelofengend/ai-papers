@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2351,
+  "summary": "Decouples online RL exploration into an objective-specific module that prescribes how many samples to collect at each state-action pair and an objective-agnostic strategy that collects them in Õ(BD + D^{3/2}S²A) steps, improving guarantees for model estimation, sparse-reward discovery, and reward-free exploration in communicating MDPs.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2350,
+  "summary": "Structured Policy Iteration (S-PI) solves a regularized LQR formulation to produce sparse or low-rank linear policies that are more interpretable, memory-efficient, and suited to distributed control. Convergence is proven in both known-model and model-free smoothed-gradient settings, with a weight parameter trading performance against structure.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2349,
+  "summary": "Systematically dissects experience replay in deep Q-learning along replay capacity and replay ratio. Larger buffers substantially help some algorithms while leaving others unaffected, and theoretically uncorrected n-step returns prove uniquely able to exploit the added memory, upending conventional wisdom about off-policy replay.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2348,
+  "summary": "Neuron review arguing deep RL deserves neuroscientists' attention: it surveys recent agents and draws implications for reward-based learning and dopamine (including distributional RL), representation learning, model-based control, memory, and meta-learning, proposing deep RL as a framework linking learning, representation, and decision-making in the brain.",
+  "topics": ["Reinforcement Learning", "Science Applications"]
+ },
+ {
+  "id": 2826,
+  "summary": "Builds locomotion controllers from identical per-limb sensorimotor modules that coordinate only via learned local message passing, with no centralized controller. A single shared modular policy simultaneously controls many agent morphologies and generalizes zero-shot to unseen body plans (published as 'One Policy to Control Them All').",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2825,
+  "summary": "Applies aggressive data augmentation to generative-model training while conditioning the model on which transformation was applied, keeping the modeled distribution unbiased. This regularization lets large autoregressive image models train longer without overfitting, improving density estimation and sample quality (published as Distribution Augmentation, DistAug).",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2824,
+  "summary": "Recasts model-based RL as a Stackelberg game between a policy player maximizing reward under a learned model and a model player fitting the policy's real-world data. The resulting two-timescale PAL/MAL algorithms stabilize training, mitigate model exploitation, and deliver strong sample efficiency on continuous control.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2823,
+  "summary": "Interprets Lagrangian constrained RL as integral-only control on constraint violations, explaining its characteristic oscillation and overshoot. Adding proportional and derivative terms—PID control of the Lagrange multiplier—damps these dynamics, sharply reducing safety-constraint violations with little cost to return on Safety Gym tasks.",
+  "topics": ["Reinforcement Learning", "Safety"]
+ },
+ {
+  "id": 2822,
+  "summary": "Replaces Q(s,a) with a value function Q(s,s′) over state transitions, learning which next state is best and recovering the action that reaches it via dynamics gradients. The decomposition enables learning from action-free demonstrations and transfer across agents with different action spaces.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2821,
+  "summary": "Enhances the open-ended POET algorithm with a domain-general measure of how meaningfully novel generated challenges are and an efficient goal-switching heuristic, plus a richer environment space and a progress measure for open-endedness. Together these yield the most open-ended algorithmic demonstration to date.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2820,
+  "summary": "Generative Teaching Networks synthesize training data by meta-gradient differentiation through a learner's short training loop, so freshly initialized networks rapidly learn a target task. Applied to neural architecture search, GTN-generated data massively accelerates candidate evaluation and finds higher-performing architectures than the prior state of the art.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2819,
+  "summary": "Procgen Benchmark offers 16 procedurally generated game-like environments with experimental protocols for measuring sample efficiency and generalization in RL. Experiments show diverse environment distributions are essential for training and evaluating agents, and that larger models improve both sample efficiency and generalization.",
+  "topics": ["Reinforcement Learning", "Evaluations"]
+ },
+ {
+  "id": 2818,
+  "summary": "Image GPT trains sequence Transformers autoregressively (or BERT-style) on raw pixel sequences with no 2D inductive biases. Despite low resolution, the learned representations achieve strong linear-probe accuracy on CIFAR-10 and ImageNet and, with fine-tuning, rival top self-supervised convolutional methods.",
+  "topics": ["Multimodal", "Training & Scaling"]
+ },
+ {
+  "id": 2380,
+  "summary": "Models structured bandit problems as influence diagrams, unifying settings such as cascading and combinatorial bandits where rewards arise through latent variables. Thompson-sampling-style algorithms, including scalable variational variants, exploit the diagram structure for efficient exploration.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2379,
+  "summary": "Studies non-stationary bandits with long feedback delays where undelayed intermediate observations make long-term outcomes conditionally stationary—as in recommenders optimizing long-term metrics. A computationally efficient UCRL-based algorithm attains sublinear regret and empirically learns in changing, delayed environments where existing methods fail.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2378,
+  "summary": "Examines how neural-network architecture choices affect training performance. The indexed record from the ICML 2020 period provides no abstract, so the specific methodology and findings are not publicly documented.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2377,
+  "summary": "CoMic studies large-scale motion-capture tracking for simulated humanoids and what makes motor skills reusable: co-training mimicry with complementary tasks produces a low-level skill module that transfers, speeding up learning of new whole-body control tasks from egocentric observations.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2376,
+  "summary": "Mirror Ascent against an Improved Opponent (MAIO) computes Nash equilibria in two-player zero-sum games, including sequential imperfect-information games: each player takes mirror-ascent steps against an improved opponent (best response, greedy, or policy-gradient). Proves last-iterate convergence to Nash, with exponential rates under best responses.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2375,
+  "summary": "For sleeping bandits with stochastic action availability and adversarial rewards, gives an efficient EXP3-inspired algorithm achieving O(√T) regret under independent arm availabilities—where prior polynomial-time methods managed only O(T^{2/3})—plus an efficient O(√(2^K T)) algorithm for arbitrary unknown availability distributions.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2374,
+  "summary": "Develops a Taylor-expansion view of policy optimization in which trust-region methods like TRPO arise as first-order expansions of off-policy corrections, connecting them to off-policy evaluation operators such as Retrace. Incorporating higher-order expansion terms into existing distributed RL agents improves performance.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2373,
+  "summary": "Casts fixed-confidence best-arm identification in linear bandits as a zero-sum game between learner and nature, tracking the optimal sampling allocation with saddle-point and online-learning techniques. The resulting algorithms are asymptotically optimal while remaining computationally practical.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2372,
+  "summary": "Shows universal probabilistic-programming inference engines degrade badly on models whose support varies between executions, often matching mere importance sampling from the prior. The Divide, Conquer, and Combine framework handles such stochastic-support programs as an automated, generic inference engine, with substantial gains on three examples.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2371,
+  "summary": "Achieves Nesterov-style acceleration by simply running optimistic online learning algorithms and querying gradients at the running average of iterates. This recovers optimal accelerated rates for strongly-convex and convex composite objectives with deterministic or stochastic oracles, extends to variance reduction, and yields tuning-free universal algorithms.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2370,
+  "summary": "Presents mechanism-design tools for building games with predictable multi-agent learning dynamics: large network games mixing cooperation and competition exhibit conservation laws under Follow-the-Regularized-Leader. With enough linearly independent conservation laws, dynamics grow predictable and chaotic behavior becomes formally impossible in some cases.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2369,
+  "summary": "Studies generalization to unseen opponents in multi-agent games via two new games with concealed information and non-transitive rewards, where standard deep RL explores strategy space poorly. A hierarchical agent grounded in game-theoretic structure—strategic responses on top, primitive actions below—generalizes where conventional baselines fail entirely.",
+  "topics": ["Reinforcement Learning", "Agents"]
+ },
+ {
+  "id": 2368,
+  "summary": "Analyzes the link between gradient interference and generalization in temporal-difference learning: TD tends toward low-interference, under-generalizing solutions, the reverse of supervised learning. Evidence traces this to bootstrapping's interplay with interference, including contrasts between TD(0), TD(λ), and Monte-Carlo regression targets.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2367,
+  "summary": "Derives two simple, hyperparameter-free modifications to RNN gates that keep them learnable near saturation, where standard gates stall. The improved gating robustly outperforms alternatives like chrono initialization and Ordered Neurons across memorization, sequential image classification, language modeling, and RL tasks involving long-term dependencies.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2366,
+  "summary": "Adapts invariant causal prediction to block MDPs, learning state abstractions from causal feature sets that stay invariant across environments. Provides generalization-error bounds for transfer to unseen environments and empirically improves generalization over standard representation-learning baselines in imitation and RL settings.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2365,
+  "summary": "Formalizes linear bandits with stochastically delayed, censored feedback, where only positive events (e.g., purchases) are ever observed and only after random delays. OTFLinUCB and OTFLinTS integrate information as it arrives, achieve optimal Õ(d√T) regret, and are validated on simulated and real data.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2364,
+  "summary": "Constructs expressive, numerically stable normalizing flows on non-Euclidean spaces such as tori and spheres, built recursively over dimensions from flows on circles, closed intervals, and spheres—targeting distributions over angle-like variables that Euclidean flows handle poorly.",
+  "topics": ["Training & Scaling"]
+ }
+]

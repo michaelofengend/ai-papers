@@ -1,0 +1,152 @@
+[
+ {
+  "id": 2029,
+  "summary": "Reconstructs hand and object meshes from a single image by predicting signed distance fields in pose-normalized coordinate frames: it first estimates hand and object poses, then aligns SDF queries to those poses, disentangling pose from shape and improving joint hand-object reconstruction.",
+  "topics": ["Multimodal"]
+ },
+ {
+  "id": 2028,
+  "summary": "Describes AlphaFold's deep-learning system for predicting protein 3D structure directly from sequence at near-experimental atomic accuracy, recapping the CASP14 breakthrough and the model's design and discussing its impact on structural biology.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1039,
+  "summary": "Fine-tunes GPT-3 to answer long-form questions using a text-based web browser, learning to search, navigate, and cite sources via imitation of human demonstrations plus a reward model trained on human comparisons, improving factual accuracy.",
+  "topics": ["Agents", "Alignment"]
+ },
+ {
+  "id": 2050,
+  "summary": "Extends normalizing-flow samplers to lattice field theories with dynamical fermions, enabling asymptotically exact sampling needed for Standard-Model and condensed-matter studies, and demonstrates the approach on a 2D theory of staggered fermions Yukawa-coupled to a scalar field.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2779,
+  "summary": "Policy piece arguing that concrete mechanisms—incident sharing, auditing, red-teaming, and bias bounties—are needed to let third parties verify AI developers' trustworthiness claims, moving beyond principles toward externally checkable evidence.",
+  "topics": ["Policy & Society"]
+ },
+ {
+  "id": 2051,
+  "summary": "Trains a neural-network density functional (DM21) on molecular data plus fictitious fractional-charge and fractional-spin systems, correcting systematic delocalization and strong-correlation errors of standard functionals and outperforming them on main-group benchmarks and hard cases like hydrogen chains and charged DNA base pairs.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2896,
+  "summary": "Anthropic infrastructure that lets researchers inspect and intervene on internal activations of large models running across distributed systems, making mechanistic-interpretability experiments feasible on models too large to fit on a single machine.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2895,
+  "summary": "Open-source library bridging Python and Svelte so deep-learning researchers can build custom interactive visualizations—useful for inspecting model internals—without web-development expertise; Svelte components in the source tree become callable Python objects.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2894,
+  "summary": "Playlist of informal early videos exploring how to reverse-engineer neural networks, presenting rough work-in-progress thinking later superseded by the more formal transformer-circuits framework.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2893,
+  "summary": "Supplementary exercises for the transformer-circuits framework that walk readers through writing explicit attention-head weight matrices, building intuition for how transformers implement specific algorithms at the parameter level.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2780,
+  "summary": "Shows that many modern deep-learning settings exhibit double descent—test error rises then falls as model size or training epochs grow—and unifies these via an 'effective model complexity' measure, identifying regimes where adding training data can hurt performance.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2053,
+  "summary": "Proposes classifying symmetric 2x2 games by decomposing the payoff matrix into cooperative and zero-sum components, arguing their interaction explains what makes games strategically distinct, and offers a stereographic 2D map of the game space supported by evolutionary simulations.",
+  "topics": ["Other"]
+ },
+ {
+  "id": 2052,
+  "summary": "Demonstrates a workflow where machine learning surfaces candidate patterns between mathematical objects, which attribution techniques help mathematicians interpret to form and prove conjectures—yielding new results in knot theory and a conjectured combinatorial-invariance algorithm for symmetric groups.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 129,
+  "summary": "Early Anthropic study treating a general language assistant as a testbed for alignment, evaluating helpfulness, honesty, and harmlessness via prompting, context distillation, and preference modeling, and finding preference-modeling and ranked approaches scale favorably with model size.",
+  "topics": ["Alignment"]
+ },
+ {
+  "id": 128,
+  "summary": "Foundational mechanistic-interpretability work that reverse-engineers small attention-only transformers, introducing the residual-stream view and QK/OV circuit decomposition and identifying induction heads—two-layer circuits that implement in-context copying and drive much in-context learning.",
+  "topics": ["Interpretability"]
+ },
+ {
+  "id": 2781,
+  "summary": "Introduces the Combinatorial Multiobjective Evolutionary Algorithm, which explores all combinations of subtasks simultaneously rather than needing a hand-ordered curriculum, and shows it matches or beats NSGA-II/III and lexicase selection on multimodal robot-locomotion and maze-navigation tasks.",
+  "topics": ["Reinforcement Learning"]
+ },
+ {
+  "id": 2054,
+  "summary": "Develops and validates the Unmind Index, a workplace digital measure of mental health and wellbeing; across UK samples, factor analyses establish its subscale structure, measurement invariance, convergent and discriminant validity, and test-retest reliability.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2055,
+  "summary": "Multi-arm randomized pilot trial assessing the feasibility and preliminary efficacy of brief unguided web and mobile CBT- and ACT-based interventions for stress, anxiety, and resilience in working adults, mainly to validate study methods ahead of a definitive trial.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2056,
+  "summary": "Models macaque inferotemporal face-patch neurons with a beta-VAE and finds its disentangled latent factors (e.g., gender, age) correspond closely to single-neuron tuning—better than baselines like the Active Appearance Model—suggesting disentanglement as a learning objective for the ventral visual stream.",
+  "topics": ["Science Applications", "Interpretability"]
+ },
+ {
+  "id": 1209,
+  "summary": "Using human fMRI, shows the classical divisive-normalization energy model fails to explain why curved contours ('snakes') drive about twice the response of gratings, and proposes orientation-tuned normalization that captures responses across band-pass textures in V1-V3.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2057,
+  "summary": "Shows U-Net segmentation generalizes across imaging modalities to automatically quantify altered renal, neural, and craniofacial development in Xenopus embryo disease models, enabling higher-throughput, more sensitive phenotyping; the authors release pretrained networks and guidance.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2058,
+  "summary": "Proposes using stochastic DNA synthesis (mixed nucleotides or trimers) to approximately sample from generative sequence models when individual synthesis is too costly, with a black-box optimization algorithm, theoretical bounds, and simulations showing large gains in protein-engineering hit rates.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 1040,
+  "summary": "Trains verifiers that rank candidate solutions to grade-school math word problems (the GSM8K dataset), roughly doubling accuracy over a fine-tuned GPT-3 baseline and approaching the performance of 9-12-year-old children.",
+  "topics": ["Reasoning", "Evaluations"]
+ },
+ {
+  "id": 2059,
+  "summary": "Applies the Madingley general ecosystem model to bushmeat harvesting, predicting yields, extinction rates, and broader ecosystem impacts for duiker-sized herbivores from climate data alone, with optimal-harvest and extinction estimates comparable to conventional single-species models.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2060,
+  "summary": "Describes the graph neural network powering estimated-time-of-arrival predictions in Google Maps, detailing training techniques such as MetaGradients and schedule methods that made it production-robust and substantially reduced inaccurate ETAs in tested regions.",
+  "topics": ["Training & Scaling"]
+ },
+ {
+  "id": 2061,
+  "summary": "Frames detecting rare, unseen skin conditions as out-of-distribution detection and proposes hierarchical outlier detection (HOD), which jointly separates inliers from outliers and classifies known classes; combined with strong representation learning and ensembling, it improves long-tail reliability for clinical deployment.",
+  "topics": ["Science Applications", "Multimodal"]
+ },
+ {
+  "id": 2063,
+  "summary": "Review surveying how meta-learning—learning to learn—connects reinforcement-learning models of prefrontal cortex to social cognition and consciousness, highlighting where AI and neuroscience can cross-inform more adaptive, flexible learning.",
+  "topics": ["Science Applications", "Reinforcement Learning"]
+ },
+ {
+  "id": 2062,
+  "summary": "Introduces the AlphaFold Protein Structure Database, an openly accessible resource of high-accuracy predicted structures with per-residue and pairwise confidence estimates, initially covering over 360,000 proteins across 21 model-organism proteomes and expanding toward most representative UniRef90 sequences.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2064,
+  "summary": "Behavioral experiments show people will increase another person's pain to avoid delaying it—evidence of 'dread'—but less so than for their own pain and not for distant acquaintances; a model where altruism privileges pain intensity over dread captures this 'dread empathy gap'.",
+  "topics": ["Science Applications"]
+ },
+ {
+  "id": 2065,
+  "summary": "Preprint developing and validating the Unmind Index, a digital workplace measure of mental health and wellbeing; UK-sample factor analyses establish its subscale structure, measurement invariance, convergent and discriminant validity, and test-retest reliability.",
+  "topics": ["Science Applications"]
+ }
+]
