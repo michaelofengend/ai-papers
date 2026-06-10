@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1076,
+  "title": "Introducing Activation Atlases",
+  "org": "openai",
+  "date": "2019-03-06",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-activation-atlases/",
+  "abstract": "We’ve created activation atlases (in collaboration with Google researchers), a new technique for visualizing what interactions between neurons can represent. As AI systems are deployed in increasingly sensitive contexts, having a better understanding of their internal decision-making processes will let us identify weaknesses and investigate failures.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1077,
+  "title": "Neural MMO: A massively multiagent game environment",
+  "org": "openai",
+  "date": "2019-03-04",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/neural-mmo/",
+  "abstract": "We’re releasing a Neural MMO, a massively multiagent game environment for reinforcement learning agents. Our platform supports a large, variable number of agents within a persistent and open-ended task. The inclusion of many agents and species leads to better exploration, divergent niche formation, and greater overall competence.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2608,
+  "title": "The Termination Critic",
+  "org": "deepmind",
+  "date": "2019-02-26",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1902.09996",
+  "abstract": "In this work, we consider the problem of autonomously discovering behavioral abstractions, or options, for reinforcement learning agents. We propose an algorithm that focuses on the termination condition, as opposed to -- as is common -- the policy. The termination condition is usually trained to optimize a control objective: an option ought to terminate if another has better value. We offer a different, information-theoretic perspective, and propose that terminations should focus instead on the compressibility of the option's encoding -- arguably a key reason for using abstractions. To achieve this algorithmically, we leverage the classical options framework, and learn the option transition model as a \"critic\" for the termination condition. Using this model, we derive gradients that optimize the desired criteria. We show that the resulting options are non-trivial, intuitively meaningful, and useful for learning and planning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2609,
+  "title": "Revisiting CFR+ and Alternating Updates",
+  "org": "deepmind",
+  "date": "2019-02-25",
+  "venue": "Journal of Artificial Intelligence Research",
+  "url": "https://arxiv.org/abs/1810.11542",
+  "abstract": "The CFR+ algorithm for solving imperfect information games is a variant of the popular CFR algorithm, with faster empirical performance on a range of problems. It was introduced with a theoretical upper bound on solution error, but subsequent work showed an error in one step of the proof. We provide updated proofs to recover the original bound.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2610,
+  "title": "Strategic behavior and learning in all-pay auctions: an empirical study using crowdsourced data",
+  "org": "deepmind",
+  "date": "2019-02-22",
+  "venue": "Autonomous Agents and Multi-Agent Systems",
+  "url": "https://doi.org/10.1007/s10458-019-09402-4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2612,
+  "title": "Analyzing biological and artificial neural networks: challenges with opportunities for synergy?",
+  "org": "deepmind",
+  "date": "2019-02-19",
+  "venue": "Current Opinion in Neurobiology",
+  "url": "https://arxiv.org/abs/1810.13373",
+  "abstract": "Deep neural networks (DNNs) transform stimuli across multiple processing stages to produce representations that can be used to solve complex tasks, such as object recognition in images. However, a full understanding of how they achieve this remains elusive. The complexity of biological neural networks substantially exceeds the complexity of DNNs, making it even more challenging to understand the representations they learn. Thus, both machine learning and computational neuroscience are faced with a shared challenge: how can we analyze their representations in order to understand how they solve complex tasks? We review how data-analysis concepts and techniques developed by computational neuroscientists can be useful for analyzing representations in DNNs, and in turn, how recently developed techniques for analysis of DNNs can be useful for understanding representations in biological neural networks. We explore opportunities for synergy between the two fields, such as the use of DNNs as in silico model systems for neuroscience, and how this synergy can lead to new hypotheses about the operating principles of biological neural networks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2611,
+  "title": "Piano Genie",
+  "org": "deepmind",
+  "date": "2019-02-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1810.05246",
+  "abstract": "We present Piano Genie, an intelligent controller which allows non-musicians to improvise on the piano. With Piano Genie, a user performs on a simple interface with eight buttons, and their performance is decoded into the space of plausible piano music in real time. To learn a suitable mapping procedure for this problem, we train recurrent neural network autoencoders with discrete bottlenecks: an encoder learns an appropriate sequence of buttons corresponding to a piano piece, and a decoder learns to map this sequence back to the original piece. During performance, we substitute a user's input for the encoder output, and play the decoder's prediction each time the user presses a button. To improve the intuitiveness of Piano Genie's performance behavior, we impose musically meaningful constraints over the encoder's outputs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1078,
+  "title": "AI safety needs social scientists",
+  "org": "openai",
+  "date": "2019-02-19",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/ai-safety-needs-social-scientists/",
+  "abstract": "We’ve written a paper arguing that long-term AI safety research needs social scientists to ensure AI alignment algorithms succeed when actual humans are involved. Properly aligning advanced AI systems with human values requires resolving many uncertainties related to the psychology of human rationality, emotion, and biases. The aim of this paper is to spark further collaboration between machine learning and social science researchers, and we plan to hire social scientists to work on this full time at OpenAI.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1079,
+  "title": "Better language models and their implications",
+  "org": "openai",
+  "date": "2019-02-14",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/better-language-models/",
+  "abstract": "We’ve trained a large-scale unsupervised language model which generates coherent paragraphs of text, achieves state-of-the-art performance on many language modeling benchmarks, and performs rudimentary reading comprehension, machine translation, question answering, and summarization—all without task-specific training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2613,
+  "title": "From Pixels to Percepts: Highly Robust Edge Perception and Contour Following Using Deep Learning and an Optical Biomimetic Tactile Sensor",
+  "org": "deepmind",
+  "date": "2019-02-13",
+  "venue": "IEEE Robotics and Automation Letters",
+  "url": "https://arxiv.org/abs/1812.02941",
+  "abstract": "Deep learning has the potential to have same the impact on robot touch as it has had on robot vision. Optical tactile sensors act as a bridge between the subjects by allowing techniques from vision to be applied to touch. In this letter, we apply deep learning to an optical biomimetic tactile sensor, the TacTip, which images an array of papillae (pins) inside its sensing surface analogous to structures within human skin. Our main result is that the application of a deep convolutional neural network can give reliable edge perception and, thus a robust policy for planning contact points to move around object contours. Robustness is demonstrated over several irregular and compliant objects with both tapping and continuous sliding, using a model trained only by tapping onto a disk. These results relied on using techniques to encourage generalization to tasks beyond which the model was trained. We expect this is a generic problem in practical applications of tactile sensing that deep learning will solve.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2614,
+  "title": "Action Recognition Happens Very Quickly in the Human Brain",
+  "org": "deepmind",
+  "date": "2019-02-07",
+  "venue": "Frontiers for Young Minds",
+  "url": "https://doi.org/10.3389/frym.2019.00009",
+  "abstract": "“What is that person doing?” Without even thinking about it, your brain is processing what you see and using it to recognize other people’s actions, like running and walking. Recognizing actions comes easily to humans, but it is an extremely challenging problem for computers to solve. In particular, it is difficult for computers to recognize the same actions from different viewpoints, like front or side views, or against different backgrounds. As a result, scientists and engineers have not been able to develop computer algorithms that can recognize actions as well as humans can. Our research goal is to better understand how the human brain recognizes actions so we can replicate those functions in computer systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2615,
+  "title": "Distilling Policy Distillation",
+  "org": "deepmind",
+  "date": "2019-02-06",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1902.02186",
+  "abstract": "The transfer of knowledge from one policy to another is an important tool in Deep Reinforcement Learning. This process, referred to as distillation, has been used to great success, for example, by enhancing the optimisation of agents, leading to stronger performance faster, on harder domains [26, 32, 5, 8]. Despite the widespread use and conceptual simplicity of distillation, many different formulations are used in practice, and the subtle variations between them can often drastically change the performance and the resulting objective that is being optimised. In this work, we rigorously explore the entire landscape of policy distillation, comparing the motivations and strengths of each variant through theoretical and empirical analysis. Our results point to three distillation techniques, that are preferred depending on specifics of the task. Specifically a newly proposed expected entropy regularised distillation allows for quicker learning in a wide range of situations, while still guaranteeing convergence.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2616,
+  "title": "Adaptive long-term control of biological neural networks with Deep Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2019-02-04",
+  "venue": "Neurocomputing",
+  "url": "https://doi.org/10.1016/j.neucom.2018.10.084",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1080,
+  "title": "Computational limitations in robust classification and win-win results",
+  "org": "openai",
+  "date": "2019-02-04",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/computational-limitations-in-robust-classification-and-win-win-results/",
+  "abstract": "We continue the study of statistical/computational tradeoffs in learning robust classifiers, following the recent work of Bubeck, Lee, Price and Razenshteyn who showed examples of classification tasks where (a) an efficient robust classifier exists, in the small-perturbation regime; (b) a non-robust classifier can be learned efficiently; but (c) it is computationally hard to learn a robust classifier, assuming the hardness of factoring large numbers. The question of whether a robust classifier for their task exists in the large perturbation regime seems related to important open questions in computational number theory. In this work, we extend their work in three directions. First, we demonstrate classification tasks where computationally efficient robust classification is impossible, even when computationally unbounded robust classifiers exist. For this, we rely on the existence of average-case hard functions. Second, we show hard-to-robustly-learn classification tasks in the large-perturbation regime. Namely, we show that even though an efficient classifier that is robust to large perturbations exists, it is computationally hard to learn any non-trivial robust classifier. Our first construction relies on the existence of one-way functions, and the second on the hardness of the learning parity with noise problem. In the latter setting, not only does a non-robust classifier exist, but also an efficient algorithm that generates fresh new labeled samples given access to polynom",
+  "needs_fetch": false
+ },
+ {
+  "id": 2617,
+  "title": "Feature Control as Intrinsic Motivation for Hierarchical Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2019-01-29",
+  "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+  "url": "https://arxiv.org/abs/1705.06769",
+  "abstract": "One of the main concerns of deep reinforcement learning (DRL) is the data inefficiency problem, which stems both from an inability to fully utilize data acquired and from naive exploration strategies. In order to alleviate these problems, we propose a DRL algorithm that aims to improve data efficiency via both the utilization of unrewarded experiences and the exploration strategy by combining ideas from unsupervised auxiliary tasks, intrinsic motivation, and hierarchical reinforcement learning (HRL). Our method is based on a simple HRL architecture with a metacontroller and a subcontroller. The subcontroller is intrinsically motivated by the metacontroller to learn to control aspects of the environment, with the intention of giving the agent: 1) a neural representation that is generically useful for tasks that involve manipulation of the environment and 2) the ability to explore the environment in a temporally extended manner through the control of the metacontroller. In this way, we reinterpret the notion of pixel- and feature-control auxiliary tasks as reusable skills that can be learned via an intrinsic reward. We evaluate our method on a number of Atari 2600 games. We found that it outperforms the baseline in several environments and significantly improves performance in one of the hardest games-Montezuma's revenge-for which the ability to utilize sparse data is key. We found that the inclusion of intrinsic reward is crucial for the improvement in the performance and that",
+  "needs_fetch": false
+ },
+ {
+  "id": 2864,
+  "title": "Psychological Artificial Intelligence Service, Tess: Delivering On-demand Support to Patients and Their Caregivers: Technical Report",
+  "org": "openai",
+  "date": "2019-01-28",
+  "venue": "Cureus",
+  "url": "https://doi.org/10.7759/cureus.3972",
+  "abstract": "This technical report highlights how one mental health chatbot, or psychological artificial intelligence service named Tess, has been customized to deliver on-demand support for caregiving professionals, patients, and family caregivers at a non-profit organization. This low-cost, user friendly, and highly customizable service allows emotional support to be scaled to thousands of people at a single time. The following report describes the phased approach to implementing Tess in order to reach staff, caregivers, and patients across Canada and the United States.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2618,
+  "title": "Degenerate Feedback Loops in Recommender Systems",
+  "org": "deepmind",
+  "date": "2019-01-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1902.10730",
+  "abstract": "Machine learning is used extensively in recommender systems deployed in products. The decisions made by these systems can influence user beliefs and preferences which in turn affect the feedback the learning system receives - thus creating a feedback loop. This phenomenon can give rise to the so-called \"echo chambers\" or \"filter bubbles\" that have user and societal implications. In this paper, we provide a novel theoretical analysis that examines both the role of user dynamics and the behavior of recommender systems, disentangling the echo chamber from the filter bubble effect. In addition, we offer practical solutions to slow down system degeneracy. Our study contributes toward understanding and developing solutions to commonly cited issues in the complex temporal scenario, an area that is still largely unexplored.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2619,
+  "title": "Ranking soccer teams on the basis of their current strength: A comparison of maximum likelihood approaches",
+  "org": "deepmind",
+  "date": "2019-01-23",
+  "venue": "Statistical Modelling",
+  "url": "https://arxiv.org/abs/1705.09575",
+  "abstract": "We present 10 different strength-based statistical models that we use to model soccer match outcomes with the aim of producing a new ranking. The models are of four main types: Thurstone–Mosteller, Bradley–Terry, independent Poisson and bivariate Poisson, and their common aspect is that the parameters are estimated via weighted maximum likelihood, the weights being a match importance factor and a time depreciation factor giving less weight to matches that are played a long time ago. Since our goal is to build a ranking reflecting the teams’ current strengths, we compare the 10 models on the basis of their predictive performance via the Rank Probability Score at the level of both domestic leagues and national teams. We find that the best models are the bivariate and independent Poisson models. We then illustrate the versatility and usefulness of our new rankings by means of three examples where the existing rankings fail to provide enough information or lead to peculiar results.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2620,
+  "title": "Toward high-performance, memory-efficient, and fast reinforcement learning—Lessons from decision neuroscience",
+  "org": "deepmind",
+  "date": "2019-01-17",
+  "venue": "Science Robotics",
+  "url": "https://doi.org/10.1126/scirobotics.aav2975",
+  "abstract": "Recent insights from decision neuroscience raise hope for the development of intelligent brain-inspired solutions to robot learning in real dynamic environments full of noise and unpredictability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2621,
+  "title": "Optimistic optimization of a Brownian",
+  "org": "deepmind",
+  "date": "2019-01-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1901.04884",
+  "abstract": "We address the problem of optimizing a Brownian motion. We consider a (random) realization $W$ of a Brownian motion with input space in $[0,1]$. Given $W$, our goal is to return an $ε$-approximation of its maximum using the smallest possible number of function evaluations, the sample complexity of the algorithm. We provide an algorithm with sample complexity of order $\\log^2(1/ε)$. This improves over previous results of Al-Mharmah and Calvin (1996) and Calvin et al. (2017) which provided only polynomial rates. Our algorithm is adaptive---each query depends on previous values---and is an instance of the optimism-in-the-face-of-uncertainty principle.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2622,
+  "title": "Activity in perceptual classification networks as a basis for human subjective time perception",
+  "org": "deepmind",
+  "date": "2019-01-11",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-018-08194-7",
+  "abstract": "Despite being a fundamental dimension of experience, how the human brain generates the perception of time remains unknown. Here, we provide a novel explanation for how human time perception might be accomplished, based on non-temporal perceptual classification processes. To demonstrate this proposal, we build an artificial neural system centred on a feed-forward image classification network, functionally similar to human visual processing. In this system, input videos of natural scenes drive changes in network activation, and accumulation of salient changes in activation are used to estimate duration. Estimates produced by this system match human reports made about the same videos, replicating key qualitative biases, including differentiating between scenes of walking around a busy city or sitting in a cafe or office. Our approach provides a working model of duration perception from stimulus to estimation and presents a new direction for examining the foundations of this central aspect of human experience.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2623,
+  "title": "Credit Assignment Techniques in Stochastic Computation Graphs",
+  "org": "deepmind",
+  "date": "2019-01-07",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1901.01761",
+  "abstract": "Stochastic computation graphs (SCGs) provide a formalism to represent structured optimization problems arising in artificial intelligence, including supervised, unsupervised, and reinforcement learning. Previous work has shown that an unbiased estimator of the gradient of the expected loss of SCGs can be derived from a single principle. However, this estimator often has high variance and requires a full model evaluation per data point, making this algorithm costly in large graphs. In this work, we address these problems by generalizing concepts from the reinforcement learning literature. We introduce the concepts of value functions, baselines and critics for arbitrary SCGs, and show how to use them to derive lower-variance gradient estimates from partial model evaluations, paving the way towards general and efficient credit assignment for gradient-based optimization. In doing so, we demonstrate how our results unify recent advances in the probabilistic inference and reinforcement learning literature.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2624,
+  "title": "nbgrader: A Tool for Creating and Grading Assignments in the Jupyter Notebook",
+  "org": "deepmind",
+  "date": "2019-01-06",
+  "venue": "Journal of Open Source Education",
+  "url": "https://doi.org/10.21105/jose.00032",
+  "abstract": "nbgrader is a flexible tool for creating and grading assignments in the Jupyter Notebook nbgrader allows instructors to create a single, master copy of an assignment, including tests and canonical solutions. From the master copy, a student version is generated without the solutions, thus obviating the need to maintain two separate versions. nbgrader also automatically grades submitted assignments by executing the notebooks and storing the results of the tests in a database. After auto-grading, instructors can manually grade free responses and provide partial credit using the formgrader Jupyter Notebook extension. Finally, instructors can use nbgrader to leave personalized feedback for each student's submission, including comments as well as detailed error information.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2626,
+  "title": "Analogues of mental simulation and imagination in deep learning",
+  "org": "deepmind",
+  "date": "2019-01-04",
+  "venue": "Current Opinion in Behavioral Sciences",
+  "url": "https://doi.org/10.1016/j.cobeha.2018.12.011",
+  "abstract": "Mental simulation — the capacity to imagine what will or what could be — is a salient feature of human cognition, playing a key role in a wide range of cognitive abilities. In artificial intelligence, the last few years have seen the development of methods which are analogous to mental models and mental simulation. This paper outlines recent methods in deep learning for constructing such models from data and learning to use them via reinforcement learning, and compares such approaches to human mental simulation. Model-based methods in deep learning can serve as powerful tools for building and scaling cognitive models. However, a number of challenges remain in matching the capacity of human mental simulation for efficiency, compositionality, generalization, and creativity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2625,
+  "title": "Reconciling deep learning with symbolic artificial intelligence: representing objects and relations",
+  "org": "deepmind",
+  "date": "2019-01-04",
+  "venue": "Current Opinion in Behavioral Sciences",
+  "url": "https://doi.org/10.1016/j.cobeha.2018.12.010",
+  "abstract": "In the history of the quest for human-level artificial intelligence, a number of rival paradigms have vied for supremacy. Symbolic artificial intelligence was dominant for much of the 20th century, but currently a connectionist paradigm is in the ascendant, namely machine learning with deep neural networks. However, both paradigms have strengths and weaknesses, and a significant challenge for the field today is to effect a reconciliation. A central tenet of the symbolic paradigm is that intelligence results from the manipulation of abstract compositional representations whose elements stand for objects and relations. If this is correct, then a key objective for deep learning is to develop architectures capable of discovering objects and relations in raw data, and learning how to represent them in ways that are useful for downstream processing. This short review highlights recent progress in this direction.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2627,
+  "title": "Task representations in neural networks trained to perform many cognitive tasks",
+  "org": "deepmind",
+  "date": "2019-01-03",
+  "venue": "Nature Neuroscience",
+  "url": "https://doi.org/10.1038/s41593-018-0310-2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2647,
+  "title": "On two ways to use determinantal point processes for Monte Carlo integration -- Long version",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-02277739",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2646,
+  "title": "Compositional Neural Representations in the Hippocampal Formation and Prefrontal Cortex Underlie Visual Construction and Planning",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "2019 Conference on Cognitive Computational Neuroscience",
+  "url": "https://doi.org/10.32470/ccn.2019.1197-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2645,
+  "title": "Codes, functions, and causes: A critique of Brette's conceptual analysis of coding",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "Behavioral and Brain Sciences",
+  "url": "https://arxiv.org/abs/1904.08873",
+  "abstract": "Brette argues that coding as a concept is inappropriate for explanations of neurocognitive phenomena. Here, we argue that Brette's conceptual analysis mischaracterizes the structure of causal claims in coding and other forms of analysis-by-decomposition. We argue that analyses of this form are permissible and conceptually coherent and offer essential tools for building and developing models of neurocognitive systems like the brain.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2644,
+  "title": "Feasibility of Automated Deep Learning Design for Medical Image Classification by Healthcare Professionals with Limited Coding Experience",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.3402015",
+  "abstract": null,
+  "needs_fetch": true
+ }
+]

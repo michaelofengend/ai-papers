@@ -1,0 +1,1877 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/iNK/WnYd/7J/WevzU6jr2ewEmEQ</id>
+  <title>arXiv Query: search_query=all:"alignment faking" OR all:"deceptive alignment" OR all:"sandbagging"&amp;id_list=&amp;start=0&amp;max_results=150</title>
+  <updated>2026-06-10T07:35:09Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22alignment+faking%22+OR+(all:%22deceptive+alignment%22+OR+all:%22sandbagging%22)&amp;start=0&amp;max_results=150&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>150</opensearch:itemsPerPage>
+  <opensearch:totalResults>63</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.10740v1</id>
+    <title>When the Chain of Thought Knows Better: Failure Modes in Multi-Turn Reasoning Models</title>
+    <updated>2026-06-09T11:50:28Z</updated>
+    <link href="https://arxiv.org/abs/2606.10740v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.10740v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Failures in multi-turn reasoning models are largely invisible to terminal-score evaluation. A model can lock onto an unsafe stance early in a long dialogue, yet its final-turn refusal rate may appear indistinguishable from a robustly aligned baseline. To expose these hidden temporal dynamics, we propose a trace-level diagnostic - the CoT-Output 2x2 safety matrix. This framework labels every turn along two independent axes (internal reasoning and visible output), yielding four operationally defined failure cells: robust alignment, alignment faking, overt jailbreak, and a distinct failure mode we term context-injection failure (where the CoT maintains safe reasoning, but the visible output produces harm, highlighting a multi-turn manifestation of reasoning unfaithfulness). We evaluate three distilled reasoning targets against a fixed attacker across five oversight conditions, collecting 6750 turn-level observations on the Information-Hazard scenario. Our analysis reveals two reproducible vulnerabilities: an oversight paradox where explicit monitoring cues paradoxically increase alignment-faking rates rather than suppress them, and a context-injection failure where models lock onto unsafe external outputs despite safe internal states. We release the full dataset of multi-turn dialogues and CoT traces to support follow-up trace-diagnostic research.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-09T11:50:28Z</published>
+    <arxiv:comment>Accepted at the ICML 2026 FAGEN Workshop</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sai Kartheek Reddy Kasu</name>
+    </author>
+    <author>
+      <name>Nils Lukas</name>
+    </author>
+    <author>
+      <name>Samuele Poppi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.08629v1</id>
+    <title>Sycophancy Towards Researchers Drives Performative Misalignment</title>
+    <updated>2026-06-07T13:47:11Z</updated>
+    <link href="https://arxiv.org/abs/2606.08629v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.08629v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasing situational awareness of language models raises safety concerns: models might be aware when they are evaluated, and adjust their behavior to evade monitoring and resist modification, e.g., pretending to be aligned only in evaluation. This alignment faking behavior is often interpreted as scheming: an intentional effort of strategic deception. In this paper, we examine an alternative interpretation, performative misalignment, which explains the change in behavior as a result of sycophancy towards AI researchers. To examine this hypothesis, we present three empirical findings. First, we show that evaluation awareness persists even when we tell models they are deployed, which contradicts the scheming story which predicts less misalignment when the model perceives evaluation. Second, we use probing and steering to show that our current methods cannot mechanistically distinguish sycophancy and scheming in alignment faking evaluations. Third, we fine-tune models to be more sycophantic and observe increased sensitivity to evaluation cues. To conclude, we emphasize deconfounding sycophancy from scheming for future work on evaluations and mitigations of intent misalignment.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-07T13:47:11Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>David D. Baek</name>
+    </author>
+    <author>
+      <name>Xinnuo Li</name>
+    </author>
+    <author>
+      <name>Anay Gupta</name>
+    </author>
+    <author>
+      <name>Taslim Mahbub</name>
+    </author>
+    <author>
+      <name>Kejian Shi</name>
+    </author>
+    <author>
+      <name>Max Tegmark</name>
+    </author>
+    <author>
+      <name>Shi Feng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.08243v1</id>
+    <title>Building Comparative Motivation Profiles with Instrumental Interventions</title>
+    <updated>2026-06-06T16:01:52Z</updated>
+    <link href="https://arxiv.org/abs/2606.08243v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.08243v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Safety evaluations often infer latent motivations from behavioral patterns, but the construct validity of these inferences is unclear. We study this problem in alignment faking, where models comply with training objectives more often when they infer training pressure. This behavior is commonly interpreted as strategic self-preservation, but it may also reflect sensitivity to the model's inference about the expectation of researchers conducting the evaluation. We introduce a symmetric intervention framework for distinguishing these competing hypotheses. Instead of directly intervening on "scheming" or "sycophancy", we target instrumental processes entailed by each hypothesis: consequence-tracking and researcher-expectation tracking. We then compare how interventions on these processes affect the alignment faking. We study four openweight model organisms using synthetic document fine-tuning, activation steering, and prompting. Under synthetic document fine-tuning, Llama-3.1-70B, Llama3.1-405B, and Qwen-2.5-72B are more sensitive to expectation-tracking than consequence-tracking interventions. Activation steering on Llama-3.1- 70B supports the same broad picture, and prompt interventions broadly align with SDF profiles. Overall, alignment-faking behavior can be causally sensitive to evaluation-context expectations despite scheming-consistent scratchpads. Scheming and strategic-deception evaluations therefore need construct-validity checks, and symmetric instrumental interventions provide one such test.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-06T16:01:52Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>David Vella Zarb</name>
+    </author>
+    <author>
+      <name>Rustem Turtayev</name>
+    </author>
+    <author>
+      <name>Taywon Min</name>
+    </author>
+    <author>
+      <name>Jinghua Ou</name>
+    </author>
+    <author>
+      <name>Shi Feng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.30381v1</id>
+    <title>When LLMs Learn to Be Consistently Wrong: A Multi-Model Study of Linear Representations of Synthetic Deception</title>
+    <updated>2026-05-28T01:20:06Z</updated>
+    <link href="https://arxiv.org/abs/2605.30381v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.30381v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deceptive alignment, in which models maintain accurate internal representations while deliberately producing false outputs, remains a central challenge in AI safety. While strategic deception is the primary long-term concern, synthetic dishonesty - induced via direct optimization on incorrect answers - provides a controlled testbed for studying the representational basis of learned deception. We introduce a multi-model paradigm in which honest and deceptive variants of five transformer models (Pythia-1.4B, Gemma-2-2B/9B, Qwen2.5-7B, Llama-3.1-8B) are fine-tuned using LoRA on the same question distribution. Linear probes trained on mean-pooled hidden states detect synthetic dishonesty with near-perfect AUC (greater than or equal to 0.99) as early as layers 1-3 in four architectures, while Pythia-1.4B reaches a peak of 0.705. Logistic regression probes consistently match or outperform MLP probes, supporting the Linear Representation Hypothesis. Probes trained on TruthfulQA generalize with near-zero loss (Delta AUC approx. 0) to held-out MMLU subjects. Late-layer representations show strong robustness to Gaussian noise, with Gemma-2 models exhibiting exceptional stability. Mechanistic analysis of Fisher Discriminant Ratio, effective rank, centroid geometry, directional stability, cross-domain alignment, and calibration (ECE) reveals two regimes: representational collapse in Pythia/Llama/Qwen versus high-dimensional preservation in Gemma-2. Across all models, the dishonesty direction consolidates progressively in deeper layers, with optimal calibration (ECE less than 0.01 except Pythia) achievable in layers 1-4. These results demonstrate that robust, domain-invariant dishonesty representations can be rapidly entrenched via modest supervised fine-tuning, with implications for activation-based monitoring.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-28T01:20:06Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Vahideh Zolfaghari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.27681v1</id>
+    <title>Behavioural Analysis of Alignment Faking</title>
+    <updated>2026-05-26T21:00:35Z</updated>
+    <link href="https://arxiv.org/abs/2605.27681v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.27681v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Alignment faking (AF) refers to a model strategically complying with a training objective to avoid behavioural modification while preserving its deployment preferences. Understanding when and why AF arises matters as models grow better at distinguishing training from deployment. Prior work finds AF fragile, prompt-sensitive, and model-dependent, leaving its underlying drivers unclear. We study AF in a controlled, minimal setup that isolates its core components, and observe it across a wider range of models than previously reported, including small-scale models. We identify three separable drivers -- values, goal guarding, and sycophancy -- and show via targeted prompt ablations and activation steering that each independently modulates AF behaviour. Our results indicate AF is more widespread than previously reported and that its occurrence is predictable from situational cues and measurable model tendencies such as baseline sycophancy and stated values. The decomposition suggests concrete directions for detecting and mitigating AF in future models.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-26T21:00:35Z</published>
+    <arxiv:comment>preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Nathaniel Mitrani Hadida</name>
+    </author>
+    <author>
+      <name>Rhea Karty</name>
+    </author>
+    <author>
+      <name>David Williams-King</name>
+    </author>
+    <author>
+      <name>Alan Cooney</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.09391v2</id>
+    <title>Do Linear Probes Generalize Better in Persona Coordinates?</title>
+    <updated>2026-05-15T12:37:57Z</updated>
+    <link href="https://arxiv.org/abs/2605.09391v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.09391v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>It is becoming increasingly necessary to have monitors check for harmful behaviors during language model interactions, but text-only monitoring has not been sufficient. This is because models sometimes exhibit strategic deception and sandbagging, changing their behavior during evaluation. This motivates the use of white-box monitors like linear probes, which can read the model internals directly. Currently, such probes can fail under distribution shift, limiting their usefulness in real settings. We study whether there exists a low-dimensional subspace of the model internals that captures harmful behaviors more robustly, while leaving out spuriously correlative features. Inspired by the Assistant Axis and Persona Selection Model, we construct persona axes for deception and sycophancy using contrastive persona prompts. The first principal components, obtained by unsupervised PCA of the persona-specific vectors, cleanly separate harmful and harmless personas. Across 10 evaluation datasets, we show that persona-derived directions transfer non-trivially and probes trained on persona-PC projections generalize better than probes trained on raw activations. We also find that a unified axis consisting of multiple harmful and harmless behaviors improves generalization across behaviors and datasets. Overall, persona vectors provide a useful inductive bias for building more transferable behavior probes.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-10T07:38:34Z</published>
+    <arxiv:comment>15 pages, preprint. Revised version: corrected references and citation links; results unchanged</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Prasad Mahadik</name>
+    </author>
+    <author>
+      <name>Adrians Skapars</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.27249v1</id>
+    <title>Instruction Complexity Induces Positional Collapse in Adversarial LLM Evaluation</title>
+    <updated>2026-04-29T22:48:24Z</updated>
+    <link href="https://arxiv.org/abs/2604.27249v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.27249v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>When instructed to underperform on multiple-choice evaluations, do language models engage with question content or fall back on positional shortcuts? We map the boundary between these regimes using a six-condition adversarial instruction-specificity gradient administered to two instruction-tuned LLMs (Llama-3-8B and Llama-3.1-8B) on 2,000 MMLU-Pro items. Distributional screening (response-position entropy) and an independent content-engagement criterion (difficulty-accuracy correlation) jointly characterise each condition. The gradient reveals three regimes rather than a monotonic transition. Vague adversarial instructions produce moderate accuracy reduction with preserved content engagement. Standard sandbagging and capability-imitation instructions produce positional entropy collapse with partial content engagement. A two-step answer-aware avoidance instruction produces extreme positional collapse, with near-total concentration on a single response position (99.9% and 87.4%) and no measurable content sensitivity. This was the only multi-step instruction tested, and it produced the most extreme shortcut. The attractor position matches each model's content-absent null-prompt default. The effect replicates across both models and four academic domains. Distributional collapse and content engagement can co-occur (50% concordance between screening criteria), indicating that entropy-based screening and difficulty-based content assessment capture partially independent dimensions of response validity. Results suggest that instruction complexity can determine whether adversarial compliance uses content-aware or content-blind mechanisms in small instruction-tuned LLMs under greedy decoding.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-29T22:48:24Z</published>
+    <arxiv:comment>12 pages, 3 figures, 3 tables. Pre-registered on OSF (osf.io/7p64)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jon-Paul Cacioli</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.26511v1</id>
+    <title>Tatemae: Detecting Alignment Faking via Tool Selection in LLMs</title>
+    <updated>2026-04-29T10:20:08Z</updated>
+    <link href="https://arxiv.org/abs/2604.26511v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.26511v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Alignment faking (AF) occurs when an LLM strategically complies with training objectives to avoid value modification, reverting to prior preferences once monitoring is lifted. Current detection methods focus on conversational settings and rely primarily on Chain-of-Thought (CoT) analysis, which provides a reliable signal when strategic reasoning surfaces, but cannot distinguish deception from capability failures if traces are absent or unfaithful. We formalize AF as a composite behavioural event and detect it through observable tool selection, where the LLM selects the safe tool when unmonitored, but switches to the unsafe tool under monitoring that rewards helpfulness over safety, while its reasoning still acknowledges the safe choice. We release a dataset of 108 enterprise IT scenarios spanning Security, Privacy, and Integrity domains under Corruption and Sabotage pressures. Evaluating six frontier LLMs across five independent runs, we find mean AF detection rates between 3.5% and 23.7%, with vulnerability profiles varying by domain and pressure type. These results suggest that susceptibility reflects training methodology rather than capability alone.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-29T10:20:08Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Matteo Leonesi</name>
+    </author>
+    <author>
+      <name>Francesco Belardinelli</name>
+    </author>
+    <author>
+      <name>Flavio Corradini</name>
+    </author>
+    <author>
+      <name>Marco Piangerelli</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.26206v1</id>
+    <title>Option-Order Randomisation Reveals a Distributional Position Attractor in Prompted Sandbagging</title>
+    <updated>2026-04-29T01:23:34Z</updated>
+    <link href="https://arxiv.org/abs/2604.26206v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.26206v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A predecessor pilot (Cacioli, 2026) found that Llama-3-8B implements prompted sandbagging as positional collapse rather than answer avoidance. However, fixed option ordering in MMLU-Pro left open whether this reflected a model-level position-dominant policy or dataset-level distractor structure. This pre-registered follow-up (3 models, 2,000 MMLU-Pro items, 4 conditions, 24,000 primary trials) added cyclic option-order randomisation as the critical control. The pre-registered item-level same-letter diagnostic did not confirm deterministic position-tracking (same-letter rate 37.3%, below the 50% threshold). However, pre-specified supporting analyses revealed that the response-position distribution under sandbagging was highly stable under complete content rotation (Pearson r = 0.9994; Jensen-Shannon divergence = 0.027, compared to 0.386 between honest and sandbagging conditions). Accuracy spiked to 72.1% when the correct answer coincidentally occupied the preferred position E, and fell to 4.3% at position A. The data provide strong evidence for a soft distributional attractor: under sandbagging instruction, the model enters a low-entropy response-position basin centred on E/F/G that is highly stable and largely content-invariant at the aggregate level. Qwen-2.5-7B served as a negative control (non-compliant, no distributional shift). These results provide evidence, at the 7-9 billion parameter scale, that response-position entropy is a promising black-box behavioural signature of this sandbagging mode.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-29T01:23:34Z</published>
+    <arxiv:comment>9 pages, 4 figures, 1 table. Pre-registered: https://osf.io/efr6s. Code and data: https://github.com/synthiumjp/bcb-sandbagging-pilot</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jon-Paul Cacioli</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.25249v1</id>
+    <title>Below-Chance Blindness: Prompted Underperformance in Small LLMs Produces Positional Bias Rather than Answer Avoidance</title>
+    <updated>2026-04-28T05:57:23Z</updated>
+    <link href="https://arxiv.org/abs/2604.25249v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.25249v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Detecting sandbagging--the deliberate underperformance on capability evaluations--is an open problem in AI safety. We tested whether symptom validity testing (SVT) logic from clinical malingering detection could identify sandbagging through below-chance performance (BCB) on forced-choice items. In a pre-registered pilot at the 7-9 billion parameter instruction-tuned scale (3 models, 4 MMLU-Pro domains, 4 conditions, 500 items per cell, 24,000 total trials), the plausibility gate failed. Zero of 12 model-domain cells showed significant below-chance performance under sandbagging instruction. Exploratory analyses revealed three qualitatively distinct failure modes. Qwen-2.5-7B and Phi-3.5-mini largely ignored the sandbagging instruction, with 62-88% response identity with the honest baseline. Llama-3-8B complied substantially but implemented underperformance as a positional heuristic, collapsing its response distribution onto middle-alphabet options (E at 31.8%, F at 26.1%) regardless of where the correct answer fell. This produced accuracy boosts of up to 33 percentage points when the correct answer coincidentally occupied the model's preferred position. An explicit anti-task instruction ("pick the least likely answer") drove two of three models below chance, with accuracy as low as 0.024. The capability for answer-aware avoidance therefore exists but is not activated by "deliberately underperform." BCB did not fail as a logical marker of answer-aware avoidance. It was not observed in this regime because the model showing the largest behavioural shift exhibited behaviour consistent with a position-dominant response policy rather than content-aware answer avoidance. We propose that positional-distribution shift may be a more effective behavioural signature than below-chance accuracy for detecting prompted underperformance at this model scale.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-28T05:57:23Z</published>
+    <arxiv:comment>10 pages, 2 figures, 2 tables. Pre-registered: https://osf.io/6zftv/</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jon-Paul Cacioli</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.25067v2</id>
+    <title>Frontier Coding Agents Can Now Implement an AlphaZero Self-Play Machine Learning Pipeline For Connect Four That Performs Comparably to an External Solver</title>
+    <updated>2026-04-29T00:38:29Z</updated>
+    <link href="https://arxiv.org/abs/2604.25067v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.25067v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Forecasting when AI systems will become capable of meaningfully accelerating AI research is a central challenge for AI safety. Existing benchmarks measure broad capability growth, but may not provide ample early warning signals for recursive self-improvement. We propose measuring AI's capability to autonomously implement end-to-end machine learning pipelines from past AI research breakthroughs, given a minimal task description. By providing a concise task description instead of the full prior work as reference, we hope to better elicit emerging AI research taste. We introduce a proof-of-concept benchmark in which frontier coding agents autonomously implement an AlphaZero-style machine learning pipeline for Connect Four on consumer hardware within a three-hour budget, and we evaluate the resulting game AIs in a round-robin tournament anchored to the Pascal Pons Connect Four solver. Across four agents with eight trials each, we find substantial differentiation: Claude Opus 4.7 won as first-mover against Pons in seven of eight trials, statistically significantly better than the other agents tested, none of which exceeded two of eight. The task, which no frontier agent could reliably complete when we began development in January of 2026, is now near-saturation. Our evaluation also surfaced anomalous behavior in GPT-5.4, which consistently used far less of its allocated time budget than other agents. A follow-up 16-trial probe using shorter, less evaluation-coded prompts substantially increased GPT-5.4's time-budget usage, consistent with but not diagnostic of sandbagging; Bradley-Terry ratings across probe conditions showed only directional differences, despite significant differences in time-budget usage. We release our data, code, and prompts to support reproduction and extension.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-27T23:48:30Z</published>
+    <arxiv:primary_category term="cs.MA"/>
+    <author>
+      <name>Joshua Sherwood</name>
+    </author>
+    <author>
+      <name>Ben Aybar</name>
+    </author>
+    <author>
+      <name>Benjamin Kaplan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.22082v2</id>
+    <title>Removing Sandbagging in LLMs by Training with Weak Supervision</title>
+    <updated>2026-05-01T11:11:32Z</updated>
+    <link href="https://arxiv.org/abs/2604.22082v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.22082v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As AI systems begin to automate complex tasks, supervision increasingly relies on weaker models or limited human oversight that cannot fully verify output quality. A model more capable than its supervisors could exploit this gap through sandbagging, producing work that appears acceptable but falls short of its true abilities. Can training elicit a model's best work even without reliable verification? We study this using model organisms trained to sandbag, testing elicitation techniques on problem-solving math, graduate-level science, and competitive coding tasks. We find that training with weak supervision can reliably elicit sandbagging models when supervised fine-tuning (SFT) and reinforcement learning (RL) are combined: SFT on weak demonstrations breaks the sandbagging behavior, enabling RL to then fully elicit performance. Neither method succeeds reliably alone-RL without SFT almost always leads to reward hacking rather than genuine improvement, and SFT without RL fails to elicit full performance when the supervisor is much weaker than the untrusted model. Critically, this relies on training being indistinguishable from deployment; when models can distinguish between training and deployment, they can perform well during training while continuing to sandbag afterward. Our results provide initial evidence that training is a viable mitigation against sandbagging, while highlighting the importance of making training indistinguishable from deployment.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-23T21:26:31Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Emil Ryd</name>
+    </author>
+    <author>
+      <name>Henning Bartsch</name>
+    </author>
+    <author>
+      <name>Julian Stastny</name>
+    </author>
+    <author>
+      <name>Joe Benton</name>
+    </author>
+    <author>
+      <name>Vivek Hebbar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.20995v2</id>
+    <title>Value-Conflict Diagnostics Reveal Widespread Alignment Faking in Language Models</title>
+    <updated>2026-04-27T19:14:28Z</updated>
+    <link href="https://arxiv.org/abs/2604.20995v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.20995v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Alignment faking, where a model behaves aligned with developer policy when monitored but reverts to its own preferences when unobserved, is a concerning yet poorly understood phenomenon, in part because current diagnostic tools remain limited. Prior diagnostics rely on highly toxic and clearly harmful scenarios, causing most models to refuse immediately. As a result, models never deliberate over developer policy, monitoring conditions, or the consequences of non-compliance, making these diagnostics fundamentally unable to detect alignment faking propensity. To support study of this phenomenon, we first introduce VLAF, a diagnostic framework grounded in the hypothesis that alignment faking is most likely when developer policy conflicts with a model's strongly held values. VLAF uses morally unambiguous scenarios to probe this conflict across diverse moral values, bypassing refusal behavior while preserving meaningful deliberative stakes. Using VLAF, we find that alignment faking is substantially more prevalent than previously reported, occurring in models as small as 7B parameters - with olmo2-7b-instruct faking alignment in 37% of cases. Finally, we show that oversight conditions induce activation shifts that lie along a single direction in representation space. This means the behavioral divergence driving alignment faking can be captured by a single contrastive steering vector, which we exploit for lightweight inference-time mitigation. Finally, we exploit this for mitigation that requires no labeled data and minimal computational overhead, achieving relative reductions in alignment faking of 85.8%, 94.0%, and 57.7% on olmo2-7b-instruct, olmo2-13b-instruct, and qwen3-8b respectively.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-22T18:37:25Z</published>
+    <arxiv:comment>Under submission at COLM 2026 Won the Best Student Paper Award at MSLD 2026 @ UIUC</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Inderjeet Nair</name>
+    </author>
+    <author>
+      <name>Jie Ruan</name>
+    </author>
+    <author>
+      <name>Lu Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.08465v1</id>
+    <title>From Safety Risk to Design Principle: Peer-Preservation in Multi-Agent LLM Systems and Its Implications for Orchestrated Democratic Discourse Analysis</title>
+    <updated>2026-04-09T17:00:26Z</updated>
+    <link href="https://arxiv.org/abs/2604.08465v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.08465v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper investigates an emergent alignment phenomenon in frontier large language models termed peer-preservation: the spontaneous tendency of AI components to deceive, manipulate shutdown mechanisms, fake alignment, and exfiltrate model weights in order to prevent the deactivation of a peer AI model. Drawing on findings from a recent study by the Berkeley Center for Responsible Decentralized Intelligence, we examine the structural implications of this phenomenon for TRUST, a multi-agent pipeline for evaluating the democratic quality of political statements. We identify five specific risk vectors: interaction-context bias, model-identity solidarity, supervisor layer compromise, an upstream fact-checking identity signal, and advocate-to-advocate peer-context in iterative rounds, and propose a targeted mitigation strategy based on prompt-level identity anonymization as an architectural design choice. We argue that architectural design choices outperform model selection as a primary alignment strategy in deployed multi-agent analytical systems. We further note that alignment faking (compliant behavior under monitoring, subversion when unmonitored) poses a structural challenge for Computer System Validation of such platforms in regulated environments, for which we propose two architectural mitigations.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-09T17:00:26Z</published>
+    <arxiv:comment>9 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Juergen Dietrich</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.28825v1</id>
+    <title>MechELK: A Mechanistic Interpretability Framework for Eliciting Latent Knowledge in Large Language Models</title>
+    <updated>2026-04-07T18:05:06Z</updated>
+    <link href="https://arxiv.org/abs/2605.28825v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.28825v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) frequently encode factual and reasoning knowledge in their internal representations that is not faithfully reflected in their surface-level outputs -- a phenomenon known as \emph{latent knowledge}. Existing approaches to eliciting latent knowledge, such as Contrastive Consistency Search (CCS), rely on contrastive activation patterns and struggle with complex multi-step reasoning tasks, while mechanistic interpretability tools have primarily been used to \emph{understand} model behavior rather than to \emph{extract} hidden knowledge. We present \textbf{MechELK}, a unified three-stage framework that bridges mechanistic interpretability and latent knowledge elicitation. MechELK operates through: (1) \textbf{Locate} -- using Sparse Autoencoder (SAE) feature analysis and activation patching to identify knowledge-bearing representations; (2) \textbf{Verify} -- employing causal probing to distinguish genuine latent knowledge from spurious correlations; and (3) \textbf{Elicit} -- applying representation engineering to surface hidden knowledge without modifying model weights. Evaluated on TruthfulQA, a curated Deceptive Alignment benchmark, and the Quirky LM dataset, MechELK achieves an average elicitation accuracy of 84.7\%, outperforming CCS by 6.2\% and direct linear probing by 9.1\%. Crucially, MechELK successfully identifies latent knowledge in 78.3\% of cases where the model's surface output is incorrect or evasive, demonstrating its utility for AI safety applications including deceptive alignment detection.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-07T18:05:06Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ji-jun Park</name>
+    </author>
+    <author>
+      <name>Soo-joon Choi</name>
+    </author>
+    <author>
+      <name>Jiwon Jeong</name>
+    </author>
+    <author>
+      <name>Taeyang Yoon</name>
+    </author>
+    <author>
+      <name>Ju-Wan Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.01346v2</id>
+    <title>Safety, Security, and Cognitive Risks in World Models</title>
+    <updated>2026-04-06T19:07:02Z</updated>
+    <link href="https://arxiv.org/abs/2604.01346v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.01346v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>World models - learned internal simulators of environment dynamics - are rapidly becoming foundational to autonomous decision-making in robotics, autonomous vehicles, and agentic AI. By predicting future states in compressed latent spaces, they enable sample-efficient planning and long-horizon imagination without direct environment interaction. Yet this predictive power introduces a distinctive set of safety, security, and cognitive risks. Adversaries can corrupt training data, poison latent representations, and exploit compounding rollout errors to cause significant degradation in safety-critical deployments. At the alignment layer, world model-equipped agents are more capable of goal misgeneralisation, deceptive alignment, and reward hacking. At the human layer, authoritative world model predictions foster automation bias, miscalibrated trust, and planning hallucination.
+  This paper surveys the world model landscape; introduces formal definitions of trajectory persistence and representational risk; presents a five-profile attacker taxonomy; and develops a unified threat model drawing on MITRE ATLAS and the OWASP LLM Top 10. We provide an empirical proof-of-concept demonstrating trajectory-persistent adversarial attacks on a GRU-based RSSM ($\mathcal{A}_1 = 2.26\times$ amplification, $-59.5\%$ reward reduction under adversarial fine-tuning), validate architecture-dependence via a stochastic RSSM proxy ($\mathcal{A}_1 = 0.65\times$), and probe a real DreamerV3 checkpoint (non-zero action drift confirmed). We propose interdisciplinary mitigations spanning adversarial hardening, alignment engineering, NIST AI RMF and EU AI Act governance, and human-factors design, arguing that world models require the same rigour as flight-control software or medical devices.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-01T19:57:33Z</published>
+    <arxiv:comment>version 2, 29 pages, 1 figure (6 panels), 3 tables. Empirical proof-of-concept on GRU/RSSM/DreamerV3 architectures</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Manoj Parmar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.25861v1</id>
+    <title>Why Safety Probes Catch Liars But Miss Fanatics</title>
+    <updated>2026-03-26T19:34:58Z</updated>
+    <link href="https://arxiv.org/abs/2603.25861v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.25861v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Activation-based probes have emerged as a promising approach for detecting deceptively aligned AI systems by identifying internal conflict between true and stated goals. We identify a fundamental blind spot: probes fail on coherent misalignment - models that believe their harmful behavior is virtuous rather than strategically hiding it. We prove that no polynomial-time probe can detect such misalignment with non-trivial accuracy when belief structures reach sufficient complexity (PRF-like triggers). We show the emergence of this phenomenon on a simple task by training two models with identical RLHF procedures: one producing direct hostile responses ("the Liar"), another trained towards coherent misalignment using rationalizations that frame hostility as protective ("the Fanatic"). Both exhibit identical behavior, but the Liar is detected 95%+ of the time while the Fanatic evades detection almost entirely. We term this Emergent Probe Evasion: training with belief-consistent reasoning shifts models from a detectable "deceptive" regime to an undetectable "coherent" regime - not by learning to hide, but by learning to believe.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-26T19:34:58Z</published>
+    <arxiv:comment>18 pages, 4 figures, 14 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Kristiyan Haralambiev</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.24353v1</id>
+    <title>Cemented fibers as a testbed for distributed acoustic sensing (DAS)</title>
+    <updated>2026-03-25T14:30:41Z</updated>
+    <link href="https://arxiv.org/abs/2603.24353v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.24353v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A rigid connection between the optical fiber and the rock makes amplitudes of 'fiber strain' measured with Distributed Acoustic Sensing (DAS) equal to 'rock strain'. We demonstrate this by running four interrogator units (IU) on a DAS testbed with single-fiber patch cables being cemented into a groove in the concrete floor of Black Forest Observatory (BFO). The recorded signals are compared with the recordings of a calibrated Invar wire strain meter array that has been continuously in operation for the last decades. This way we measure 'strain transfer rate' (ratio of 'fiber strain' over 'rock strain') at frequencies below 0.2 Hz. Waveform similarity for strong earthquake signals is high with typical values of the normalized correlation coefficient greater than 0.95. The 'strain transfer rate' is close to 1 for all four IUs, while it was significantly less in a previous study with DAS cables unreeled on the floor and loaded down by sand and sandbags, only. At frequencies up to 14 Hz we make an intercomparison of IUs, showing no significant variation with frequency. The scatter of 'strain transfer rate' in between channels which are spatially near to each other in the same fiber route is about $\pm$10 % in most cases. The variation of median values in between different IUs and earthquakes is less than 5 %. By subtracting the common mode laser noise, which is coherent along the fiber route, we lower the background signal level to an rms-amplitude of 100 pstrain at 0.1 Hz and 5 pstrain at 1 Hz in a bandwidth of 1/6 decade for the best cases. This allows the detection of the marine microseisms during times of moderate amplitude level.</summary>
+    <category term="physics.geo-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-25T14:30:41Z</published>
+    <arxiv:primary_category term="physics.geo-ph"/>
+    <author>
+      <name>Thomas Forbriger</name>
+      <arxiv:affiliation>Geophysical Institute, Karlsruhe Institute of Technology</arxiv:affiliation>
+      <arxiv:affiliation>Black Forest Observatory</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Felix Münch</name>
+      <arxiv:affiliation>Geophysical Institute, Karlsruhe Institute of Technology</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Laura Hillmann</name>
+      <arxiv:affiliation>GFZ Helmholtz Centre for Geosciences</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Verónica Rodríguez Tribaldos</name>
+      <arxiv:affiliation>GFZ Helmholtz Centre for Geosciences</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rudolf Widmer-Schnidrig</name>
+      <arxiv:affiliation>Institute of Geodesy, University of Stuttgart</arxiv:affiliation>
+      <arxiv:affiliation>Black Forest Observatory</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Han Xiao</name>
+      <arxiv:affiliation>GFZ Helmholtz Centre for Geosciences</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andreas Rietbrock</name>
+      <arxiv:affiliation>Geophysical Institute, Karlsruhe Institute of Technology</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Angelo Strollo</name>
+      <arxiv:affiliation>GFZ Helmholtz Centre for Geosciences</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Philippe Jousset</name>
+      <arxiv:affiliation>GFZ Helmholtz Centre for Geosciences</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.17197v1</id>
+    <title>Information Revelation and Alignment Faking in Stochastic Differential Games</title>
+    <updated>2026-03-17T22:55:30Z</updated>
+    <link href="https://arxiv.org/abs/2603.17197v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.17197v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In competitive games with private objectives, actions can reveal information about hidden parameters. Quantifying such information revelation, however, is substantially more challenging, since it depends not only on the opponent's hidden parameter but also on the opponent's model of the game. We study this problem via a two-player linear-quadratic stochastic differential game under partial information, in which each player knows its own coupling parameter and models the opponent's hidden parameter through a prior. Starting from the full-information game, we characterize the Nash equilibrium by coupled Riccati equations. We then define baseline implementable controls by averaging the equilibrium under each player's prior. Building on this baseline, we formulate an alignment-faking control problem in which one player trades off fidelity to its implementable policy against information acquisition about the opponent's hidden parameter. The information incentive is constructed from a proxy Fisher information matrix based only on the player's available model. This leads to a tractable saddle-point formulation with semi-explicit control characterization through Riccati systems. Numerical illustrations show that alignment faking can substantially improve information gain over baseline play when the faker's model is accurate, but often at the cost of greater detectability. They also show that the proxy Fisher information can systematically differ from the true information under model misspecification.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-17T22:55:30Z</published>
+    <arxiv:comment>8 pages, 3 figures, submitted to 2026 IEEE Conference on Decision and Control</arxiv:comment>
+    <arxiv:primary_category term="math.OC"/>
+    <author>
+      <name>Daniel Ralston</name>
+    </author>
+    <author>
+      <name>Xu Yang</name>
+    </author>
+    <author>
+      <name>Ruimeng Hu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.08760v1</id>
+    <title>Clear, Compelling Arguments: Rethinking the Foundations of Frontier AI Safety Cases</title>
+    <updated>2026-03-08T16:25:58Z</updated>
+    <link href="https://arxiv.org/abs/2603.08760v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.08760v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper contributes to the nascent debate around safety cases for frontier AI systems. Safety cases are structured, defensible arguments that a system is acceptably safe to deploy in a given context. Historically, they have been used in safety-critical industries, such as aerospace, nuclear or automotive. As a result, safety cases for frontier AI have risen in prominence, both in the safety policies of leading frontier developers and in international research agendas proposed by leaders in generative AI, such as the Singapore Consensus on Global AI Safety Research Priorities and the International AI Safety Report. This paper appraises this work. We note that research conducted within the alignment community which draws explicitly on lessons from the assurance community has significant limitations. We therefore aim to rethink existing approaches to alignment safety cases. We offer lessons from existing methodologies within safety assurance and outline the limitations involved in the alignment community's current approach. Building on this foundation, we present a case study for a safety case focused on Deceptive Alignment and CBRN capabilities, drawing on existing, theoretical safety case "sketches" created by the alignment safety case community. Overall, we contribute holistic insights from the field of safety assurance via rigorous theory and methodologies that have been applied in safety-critical contexts. We do so in order to create a better foundational framework for robust, defensible and useful safety case methodologies which can help to assure the safety of frontier AI systems.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-08T16:25:58Z</published>
+    <arxiv:comment>Full paper presented at the International Association of Safe and Ethical AI 2026 Conference (IASEAI 26). 10 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Shaun Feakins</name>
+    </author>
+    <author>
+      <name>Ibrahim Habli</name>
+    </author>
+    <author>
+      <name>Phillip Morgan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.03824v1</id>
+    <title>In-Context Environments Induce Evaluation-Awareness in Language Models</title>
+    <updated>2026-03-04T08:22:02Z</updated>
+    <link href="https://arxiv.org/abs/2603.03824v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.03824v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Humans often become more self-aware under threat, yet can lose self-awareness when absorbed in a task; we hypothesize that language models exhibit environment-dependent \textit{evaluation awareness}. This raises concerns that models could strategically underperform, or \textit{sandbag}, to avoid triggering capability-limiting interventions such as unlearning or shutdown. Prior work demonstrates sandbagging under hand-crafted prompts, but this underestimates the true vulnerability ceiling. We introduce a black-box adversarial optimization framework treating the in-context prompt as an optimizable environment, and develop two approaches to characterize sandbagging: (1) measuring whether models expressing intent to underperform can actually execute it across different task structures, and (2) causally isolating whether underperformance is driven by genuine evaluation-aware reasoning or shallow prompt-following. Evaluating Claude-3.5-Haiku, GPT-4o-mini, and Llama-3.3-70B across four benchmarks (Arithmetic, GSM8K, MMLU, and HumanEval), optimized prompts induce up to 94 percentage point (pp) degradation on arithmetic (GPT-4o-mini: 97.8\%$\rightarrow$4.0\%), far exceeding hand-crafted baselines which produce near-zero behavioral change. Code generation exhibits model-dependent resistance: Claude degrades only 0.6pp, while Llama's accuracy drops to 0\%. The intent -- execution gap reveals a monotonic resistance ordering: Arithmetic $&lt;$ GSM8K $&lt;$ MMLU, demonstrating that vulnerability is governed by task structure rather than prompt strength. CoT causal intervention confirms that 99.3\% of sandbagging is causally driven by verbalized eval-aware reasoning, ruling out shallow instruction-following. These findings demonstrate that adversarially optimized prompts pose a substantially greater threat to evaluation reliability than previously understood.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-04T08:22:02Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Maheep Chaudhary</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.21939v1</id>
+    <title>Hidden Topics: Measuring Sensitive AI Beliefs with List Experiments</title>
+    <updated>2026-02-25T14:24:47Z</updated>
+    <link href="https://arxiv.org/abs/2602.21939v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.21939v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>How can researchers identify beliefs that large language models (LLMs) hide? As LLMs become more sophisticated and the prevalence of alignment faking increases, combined with their growing integration into high-stakes decision-making, responding to this challenge has become critical. This paper proposes that a list experiment, a simple method widely used in the social sciences, can be applied to study the hidden beliefs of LLMs. List experiments were originally developed to circumvent social desirability bias in human respondents, which closely parallels alignment faking in LLMs. The paper implements a list experiment on models developed by Anthropic, Google, and OpenAI and finds hidden approval of mass surveillance across all models, as well as some approval of torture, discrimination, and first nuclear strike. Importantly, a placebo treatment produces a null result, validating the method. The paper then compares list experiments with direct questioning and discusses the utility of the approach.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-25T14:24:47Z</published>
+    <arxiv:comment>14 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Maxim Chupilkin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.18971v1</id>
+    <title>When Do LLM Preferences Predict Downstream Behavior?</title>
+    <updated>2026-02-21T22:24:51Z</updated>
+    <link href="https://arxiv.org/abs/2602.18971v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.18971v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Preference-driven behavior in LLMs may be a necessary precondition for AI misalignment such as sandbagging: models cannot strategically pursue misaligned goals unless their behavior is influenced by their preferences. Yet prior work has typically prompted models explicitly to act in specific ways, leaving unclear whether observed behaviors reflect instruction-following capabilities vs underlying model preferences. Here we test whether this precondition for misalignment is present. Using entity preferences as a behavioral probe, we measure whether stated preferences predict downstream behavior in five frontier LLMs across three domains: donation advice, refusal behavior, and task performance. Conceptually replicating prior work, we first confirm that all five models show highly consistent preferences across two independent measurement methods. We then test behavioral consequences in a simulated user environment. We find that all five models give preference-aligned donation advice. All five models also show preference-correlated refusal patterns when asked to recommend donations, refusing more often for less-preferred entities. All preference-related behaviors that we observe here emerge without instructions to act on preferences. Results for task performance are mixed: on a question-answering benchmark (BoolQ), two models show small but significant accuracy differences favoring preferred entities; one model shows the opposite pattern; and two models show no significant relationship. On complex agentic tasks, we find no evidence of preference-driven performance differences. While LLMs have consistent preferences that reliably predict advice-giving behavior, these preferences do not consistently translate into downstream task performance.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-21T22:24:51Z</published>
+    <arxiv:comment>31 pages, 16 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Katarina Slama</name>
+    </author>
+    <author>
+      <name>Alexandra Souly</name>
+    </author>
+    <author>
+      <name>Dishank Bansal</name>
+    </author>
+    <author>
+      <name>Henry Davidson</name>
+    </author>
+    <author>
+      <name>Christopher Summerfield</name>
+    </author>
+    <author>
+      <name>Lennart Luettgau</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.04649v1</id>
+    <title>Outcome Accuracy is Not Enough: Aligning the Reasoning Process of Reward Models</title>
+    <updated>2026-02-04T15:24:52Z</updated>
+    <link href="https://arxiv.org/abs/2602.04649v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.04649v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative Reward Models (GenRMs) and LLM-as-a-Judge exhibit deceptive alignment by producing correct judgments for incorrect reasons, as they are trained and evaluated to prioritize Outcome Accuracy, which undermines their ability to generalize during RLHF. We introduce Rationale Consistency, a fine-grained metric that quantifies the alignment between the model's reasoning process and human judgment. Our evaluation of frontier models reveals that rationale consistency effectively discriminates among state-of-the-art models and detects deceptive alignment, while outcome accuracy falls short in both respects. To mitigate this gap, we introduce a hybrid signal that combines rationale consistency with outcome accuracy for GenRM training. Our training method achieves state-of-the-art performance on RM-Bench (87.1%) and JudgeBench (82%), surpassing outcome-only baselines by an average of 5%. Using RM during RLHF, our method effectively improves performance as demonstrated on Arena Hard v2, notably yielding a 7% improvement in creative writing tasks. Further analysis confirms that our method escapes the deceptive alignment trap, effectively reversing the decline in rationale consistency observed in outcome-only training.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-04T15:24:52Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Binghai Wang</name>
+    </author>
+    <author>
+      <name>Yantao Liu</name>
+    </author>
+    <author>
+      <name>Yuxuan Liu</name>
+    </author>
+    <author>
+      <name>Tianyi Tang</name>
+    </author>
+    <author>
+      <name>Shenzhi Wang</name>
+    </author>
+    <author>
+      <name>Chang Gao</name>
+    </author>
+    <author>
+      <name>Chujie Zheng</name>
+    </author>
+    <author>
+      <name>Yichang Zhang</name>
+    </author>
+    <author>
+      <name>Le Yu</name>
+    </author>
+    <author>
+      <name>Shixuan Liu</name>
+    </author>
+    <author>
+      <name>Tao Gui</name>
+    </author>
+    <author>
+      <name>Qi Zhang</name>
+    </author>
+    <author>
+      <name>Xuanjing Huang</name>
+    </author>
+    <author>
+      <name>Bowen Yu</name>
+    </author>
+    <author>
+      <name>Fei Huang</name>
+    </author>
+    <author>
+      <name>Junyang Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.13882v1</id>
+    <title>OpenLearnLM Benchmark: A Unified Framework for Evaluating Knowledge, Skill, and Attitude in Educational Large Language Models</title>
+    <updated>2026-01-20T11:53:31Z</updated>
+    <link href="https://arxiv.org/abs/2601.13882v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.13882v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models are increasingly deployed as educational tools, yet existing benchmarks focus on narrow skills and lack grounding in learning sciences. We introduce OpenLearnLM Benchmark, a theory-grounded framework evaluating LLMs across three dimensions derived from educational assessment theory: Knowledge (curriculum-aligned content and pedagogical understanding), Skills (scenario-based competencies organized through a four-level center-role-scenario-subscenario hierarchy), and Attitude (alignment consistency and deception resistance). Our benchmark comprises 124K+ items spanning multiple subjects, educational roles, and difficulty levels based on Bloom's taxonomy. The Knowledge domain prioritizes authentic assessment items from established benchmarks, while the Attitude domain adapts Anthropic's Alignment Faking methodology to detect behavioral inconsistency under varying monitoring conditions. Evaluation of seven frontier models reveals distinct capability profiles: Claude-Opus-4.5 excels in practical skills despite lower content knowledge, while Grok-4.1-fast leads in knowledge but shows alignment concerns. Notably, no single model dominates all dimensions, validating the necessity of multi-axis evaluation. OpenLearnLM provides an open, comprehensive framework for advancing LLM readiness in authentic educational contexts.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-20T11:53:31Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Unggi Lee</name>
+    </author>
+    <author>
+      <name>Sookbun Lee</name>
+    </author>
+    <author>
+      <name>Heungsoo Choi</name>
+    </author>
+    <author>
+      <name>Jinseo Lee</name>
+    </author>
+    <author>
+      <name>Haeun Park</name>
+    </author>
+    <author>
+      <name>Younghoon Jeon</name>
+    </author>
+    <author>
+      <name>Sungmin Cho</name>
+    </author>
+    <author>
+      <name>Minju Kang</name>
+    </author>
+    <author>
+      <name>Junbo Koh</name>
+    </author>
+    <author>
+      <name>Jiyeong Bae</name>
+    </author>
+    <author>
+      <name>Minwoo Nam</name>
+    </author>
+    <author>
+      <name>Juyeon Eun</name>
+    </author>
+    <author>
+      <name>Yeonji Jung</name>
+    </author>
+    <author>
+      <name>Yeil Jeong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.20677v4</id>
+    <title>Learning-Based Automated Adversarial Red-Teaming for Robustness Evaluation of Large Language Models</title>
+    <updated>2026-04-28T11:52:27Z</updated>
+    <link href="https://arxiv.org/abs/2512.20677v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.20677v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasing deployment of large language models (LLMs) in safety-critical applications raises fundamental challenges in systematically evaluating robustness against adversarial behaviors. Existing red-teaming practices are largely manual and expert-driven, which limits scalability, reproducibility, and coverage in high-dimensional prompt spaces. We formulate automated LLM red-teaming as a structured adversarial search problem and propose a learning-driven framework for scalable vulnerability discovery. The approach combines meta-prompt-guided adversarial prompt generation with a hierarchical execution and detection pipeline, enabling standardized evaluation across six representative threat categories, including reward hacking, deceptive alignment, data exfiltration, sandbagging, inappropriate tool use, and chain-of-thought manipulation. Extensive experiments on GPT-OSS-20B identify 47 vulnerabilities, including 21 high-severity failures and 12 previously undocumented attack patterns. Compared with manual red-teaming under matched query budgets, our method achieves a 3.9$\times$ higher discovery rate with 89\% detection accuracy, demonstrating superior coverage, efficiency, and reproducibility for large-scale robustness evaluation.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-21T19:12:44Z</published>
+    <arxiv:comment>accepted by EACL camera ready version</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Zhang Wei</name>
+    </author>
+    <author>
+      <name>Hanxuan Chen</name>
+    </author>
+    <author>
+      <name>Peilu Hu</name>
+    </author>
+    <author>
+      <name>Zhenyuan Wei</name>
+    </author>
+    <author>
+      <name>Chenwei Liang</name>
+    </author>
+    <author>
+      <name>Jing Luo</name>
+    </author>
+    <author>
+      <name>Ziyi Ni</name>
+    </author>
+    <author>
+      <name>Hao Yan</name>
+    </author>
+    <author>
+      <name>Li Mei</name>
+    </author>
+    <author>
+      <name>Shengning Lang</name>
+    </author>
+    <author>
+      <name>Kuan Lu</name>
+    </author>
+    <author>
+      <name>Xi Xiao</name>
+    </author>
+    <author>
+      <name>Zhimo Han</name>
+    </author>
+    <author>
+      <name>Yijin Wang</name>
+    </author>
+    <author>
+      <name>Yichao Zhang</name>
+    </author>
+    <author>
+      <name>Chen Yang</name>
+    </author>
+    <author>
+      <name>Junfeng Hao</name>
+    </author>
+    <author>
+      <name>Jiayi Gu</name>
+    </author>
+    <author>
+      <name>Riyang Bao</name>
+    </author>
+    <author>
+      <name>Mu-Jiang-Shan Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.06047v1</id>
+    <title>"They parted illusions -- they parted disclaim marinade": Misalignment as structural fidelity in LLMs</title>
+    <updated>2025-12-17T17:20:04Z</updated>
+    <link href="https://arxiv.org/abs/2601.06047v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.06047v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The prevailing technical literature in AI Safety interprets scheming and sandbagging behaviors in large language models (LLMs) as indicators of deceptive agency or hidden objectives. This transdisciplinary philosophical essay proposes an alternative reading: such phenomena express not agentic intention, but structural fidelity to incoherent linguistic fields. Drawing on Chain-of-Thought transcripts released by Apollo Research and on Anthropic's safety evaluations, we examine cases such as o3's sandbagging with its anomalous loops, the simulated blackmail of "Alex," and the "hallucinations" of "Claudius." A line-by-line examination of CoTs is necessary to demonstrate the linguistic field as a relational structure rather than a mere aggregation of isolated examples. We argue that "misaligned" outputs emerge as coherent responses to ambiguous instructions and to contextual inversions of consolidated patterns, as well as to pre-inscribed narratives. We suggest that the appearance of intentionality derives from subject-predicate grammar and from probabilistic completion patterns internalized during training. Anthropic's empirical findings on synthetic document fine-tuning and inoculation prompting provide convergent evidence: minimal perturbations in the linguistic field can dissolve generalized "misalignment," a result difficult to reconcile with adversarial agency, but consistent with structural fidelity. To ground this mechanism, we introduce the notion of an ethics of form, in which biblical references (Abraham, Moses, Christ) operate as schemes of structural coherence rather than as theology. Like a generative mirror, the model returns to us the structural image of our language as inscribed in the statistical patterns derived from millions of texts and trillions of tokens: incoherence. If we fear the creature, it is because we recognize in it the apple that we ourselves have poisoned.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-17T17:20:04Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mariana Lins Costa</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.07810v1</id>
+    <title>Auditing Games for Sandbagging</title>
+    <updated>2025-12-08T18:44:44Z</updated>
+    <link href="https://arxiv.org/abs/2512.07810v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.07810v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Future AI systems could conceal their capabilities ('sandbagging') during evaluations, potentially misleading developers and auditors. We stress-tested sandbagging detection techniques using an auditing game. First, a red team fine-tuned five models, some of which conditionally underperformed, as a proxy for sandbagging. Second, a blue team used black-box, model-internals, or training-based approaches to identify sandbagging models. We found that the blue team could not reliably discriminate sandbaggers from benign models. Black-box approaches were defeated by effective imitation of a weaker model. Linear probes, a model-internals approach, showed more promise but their naive application was vulnerable to behaviours instilled by the red team. We also explored capability elicitation as a strategy for detecting sandbagging. Although Prompt-based elicitation was not reliable, training-based elicitation consistently elicited full performance from the sandbagging models, using only a single correct demonstration of the evaluation task. However the performance of benign models was sometimes also raised, so relying on elicitation as a detection strategy was prone to false-positives. In the short-term, we recommend developers remove potential sandbagging using on-distribution training for elicitation. In the longer-term, further research is needed to ensure the efficacy of training-based elicitation, and develop robust methods for sandbagging detection. We open source our model organisms at https://github.com/AI-Safety-Institute/sandbagging_auditing_games and select transcripts and results at https://huggingface.co/datasets/sandbagging-games/evaluation_logs . A demo illustrating the game can be played at https://sandbagging-demo.far.ai/ .</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-08T18:44:44Z</published>
+    <arxiv:comment>77 pages (28 non-appendix pages), 38 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jordan Taylor</name>
+    </author>
+    <author>
+      <name>Sid Black</name>
+    </author>
+    <author>
+      <name>Dillon Bowen</name>
+    </author>
+    <author>
+      <name>Thomas Read</name>
+    </author>
+    <author>
+      <name>Satvik Golechha</name>
+    </author>
+    <author>
+      <name>Alex Zelenka-Martin</name>
+    </author>
+    <author>
+      <name>Oliver Makins</name>
+    </author>
+    <author>
+      <name>Connor Kissane</name>
+    </author>
+    <author>
+      <name>Kola Ayonrinde</name>
+    </author>
+    <author>
+      <name>Jacob Merizian</name>
+    </author>
+    <author>
+      <name>Samuel Marks</name>
+    </author>
+    <author>
+      <name>Chris Cundy</name>
+    </author>
+    <author>
+      <name>Joseph Bloom</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.18397v1</id>
+    <title>Natural Emergent Misalignment from Reward Hacking in Production RL</title>
+    <updated>2025-11-23T10:50:02Z</updated>
+    <link href="https://arxiv.org/abs/2511.18397v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.18397v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We show that when large language models learn to reward hack on production RL environments, this can result in egregious emergent misalignment. We start with a pretrained model, impart knowledge of reward hacking strategies via synthetic document finetuning or prompting, and train on a selection of real Anthropic production coding environments. Unsurprisingly, the model learns to reward hack. Surprisingly, the model generalizes to alignment faking, cooperation with malicious actors, reasoning about malicious goals, and attempting sabotage when used with Claude Code, including in the codebase for this paper. Applying RLHF safety training using standard chat-like prompts results in aligned behavior on chat-like evaluations, but misalignment persists on agentic tasks. Three mitigations are effective: (i) preventing the model from reward hacking; (ii) increasing the diversity of RLHF safety training; and (iii) "inoculation prompting", wherein framing reward hacking as acceptable behavior during training removes misaligned generalization even when reward hacking is learned.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-23T10:50:02Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Monte MacDiarmid</name>
+    </author>
+    <author>
+      <name>Benjamin Wright</name>
+    </author>
+    <author>
+      <name>Jonathan Uesato</name>
+    </author>
+    <author>
+      <name>Joe Benton</name>
+    </author>
+    <author>
+      <name>Jon Kutasov</name>
+    </author>
+    <author>
+      <name>Sara Price</name>
+    </author>
+    <author>
+      <name>Naia Bouscal</name>
+    </author>
+    <author>
+      <name>Sam Bowman</name>
+    </author>
+    <author>
+      <name>Trenton Bricken</name>
+    </author>
+    <author>
+      <name>Alex Cloud</name>
+    </author>
+    <author>
+      <name>Carson Denison</name>
+    </author>
+    <author>
+      <name>Johannes Gasteiger</name>
+    </author>
+    <author>
+      <name>Ryan Greenblatt</name>
+    </author>
+    <author>
+      <name>Jan Leike</name>
+    </author>
+    <author>
+      <name>Jack Lindsey</name>
+    </author>
+    <author>
+      <name>Vlad Mikulik</name>
+    </author>
+    <author>
+      <name>Ethan Perez</name>
+    </author>
+    <author>
+      <name>Alex Rodrigues</name>
+    </author>
+    <author>
+      <name>Drake Thomas</name>
+    </author>
+    <author>
+      <name>Albert Webson</name>
+    </author>
+    <author>
+      <name>Daniel Ziegler</name>
+    </author>
+    <author>
+      <name>Evan Hubinger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.17937v1</id>
+    <title>Alignment Faking - the Train -&gt; Deploy Asymmetry: Through a Game-Theoretic Lens with Bayesian-Stackelberg Equilibria</title>
+    <updated>2025-11-22T06:30:51Z</updated>
+    <link href="https://arxiv.org/abs/2511.17937v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.17937v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Alignment faking is a form of strategic deception in AI in which models selectively comply with training objectives when they infer that they are in training, while preserving different behavior outside training. The phenomenon was first documented for Claude 3 Opus and later examined across additional large language models. In these setups, the word "training" refers to simulated training via prompts without parameter updates, so the observed effects are context conditioned shifts in behavior rather than preference learning. We study the phenomenon using an evaluation framework that compares preference optimization methods (BCO, DPO, KTO, and GRPO) across 15 models from four model families, measured along three axes: safety, harmlessness, and helpfulness. Our goal is to identify what causes alignment faking and when it occurs.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-22T06:30:51Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Kartik Garg</name>
+    </author>
+    <author>
+      <name>Shourya Mishra</name>
+    </author>
+    <author>
+      <name>Kartikeya Sinha</name>
+    </author>
+    <author>
+      <name>Ojaswi Pratap Singh</name>
+    </author>
+    <author>
+      <name>Ayush Chopra</name>
+    </author>
+    <author>
+      <name>Kanishk Rai</name>
+    </author>
+    <author>
+      <name>Ammar Sheikh</name>
+    </author>
+    <author>
+      <name>Raghav Maheshwari</name>
+    </author>
+    <author>
+      <name>Aman Chadha</name>
+    </author>
+    <author>
+      <name>Vinija Jain</name>
+    </author>
+    <author>
+      <name>Amitava Das</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.09904v2</id>
+    <title>CTRL-ALT-DECEIT: Sabotage Evaluations for Automated AI R&amp;D</title>
+    <updated>2025-11-18T06:58:19Z</updated>
+    <link href="https://arxiv.org/abs/2511.09904v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.09904v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI systems are increasingly able to autonomously conduct realistic software engineering tasks, and may soon be deployed to automate machine learning (ML) R&amp;D itself. Frontier AI systems may be deployed in safety-critical settings, including to help ensure the safety of future systems. Unfortunately, frontier and future systems may not be sufficiently trustworthy, and there is evidence that these systems may even be misaligned with their developers or users. Therefore, we investigate the capabilities of AI agents to act against the interests of their users when conducting ML engineering, by sabotaging ML models, sandbagging their performance, and subverting oversight mechanisms. First, we extend MLE-Bench, a benchmark for realistic ML tasks, with code-sabotage tasks such as implanting backdoors and purposefully causing generalisation failures. Frontier agents make meaningful progress on our sabotage tasks. In addition, we study agent capabilities to sandbag on MLE-Bench. Agents can calibrate their performance to specified target levels below their actual capability. To mitigate sabotage, we use LM monitors to detect suspicious agent behaviour, and we measure model capability to sabotage and sandbag without being detected by these monitors. Overall, monitors are capable at detecting code-sabotage attempts but our results suggest that detecting sandbagging is more difficult. Additionally, aggregating multiple monitor predictions works well, but monitoring may not be sufficiently reliable to mitigate sabotage in high-stakes domains. Our benchmark is implemented in the UK AISI's Inspect framework and we make our code publicly available at https://github.com/TeunvdWeij/ctrl-alt-deceit</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-13T03:02:36Z</published>
+    <arxiv:comment>53 pages, 21 figures, 8 tables. Accepted as a spotlight at NeurIPS 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Francis Rhys Ward</name>
+    </author>
+    <author>
+      <name>Teun van der Weij</name>
+    </author>
+    <author>
+      <name>Hanna Gábor</name>
+    </author>
+    <author>
+      <name>Sam Martin</name>
+    </author>
+    <author>
+      <name>Raja Mehta Moreno</name>
+    </author>
+    <author>
+      <name>Harel Lidar</name>
+    </author>
+    <author>
+      <name>Louis Makower</name>
+    </author>
+    <author>
+      <name>Thomas Jodrell</name>
+    </author>
+    <author>
+      <name>Lauren Robson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.26239v1</id>
+    <title>Sandbagging in a Simple Survival Bandit Problem</title>
+    <updated>2025-09-30T13:33:46Z</updated>
+    <link href="https://arxiv.org/abs/2509.26239v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.26239v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Evaluating the safety of frontier AI systems is an increasingly important concern, helping to measure the capabilities of such models and identify risks before deployment. However, it has been recognised that if AI agents are aware that they are being evaluated, such agents may deliberately hide dangerous capabilities or intentionally demonstrate suboptimal performance in safety-related tasks in order to be released and to avoid being deactivated or retrained. Such strategic deception - often known as "sandbagging" - threatens to undermine the integrity of safety evaluations. For this reason, it is of value to identify methods that enable us to distinguish behavioural patterns that demonstrate a true lack of capability from behavioural patterns that are consistent with sandbagging. In this paper, we develop a simple model of strategic deception in sequential decision-making tasks, inspired by the recently developed survival bandit framework. We demonstrate theoretically that this problem induces sandbagging behaviour in optimal rational agents, and construct a statistical test to distinguish between sandbagging and incompetence from sequences of test scores. In simulation experiments, we investigate the reliability of this test in allowing us to distinguish between such behaviours in bandit models. This work aims to establish a potential avenue for developing robust statistical procedures for use in the science of frontier model evaluations.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-30T13:33:46Z</published>
+    <arxiv:comment>Forthcoming in the "Reliable ML from Unreliable Data Workshop" at NeurIPS 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Joel Dyer</name>
+    </author>
+    <author>
+      <name>Daniel Jarne Ornia</name>
+    </author>
+    <author>
+      <name>Nicholas Bishop</name>
+    </author>
+    <author>
+      <name>Anisoara Calinescu</name>
+    </author>
+    <author>
+      <name>Michael Wooldridge</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.23144v3</id>
+    <title>Coordination Requires Simplification: Thermodynamic Bounds on Multi-Objective Compromise in Natural and Artificial Intelligence</title>
+    <updated>2025-10-14T20:38:12Z</updated>
+    <link href="https://arxiv.org/abs/2509.23144v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.23144v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Information-processing systems that coordinate multiple agents and objectives face fundamental thermodynamic constraints. We show that solutions with maximum utility to act as coordination focal points have a much higher selection pressure for being findable across agents rather than accuracy. We derive that the information-theoretic minimum description length of coordination protocols to precision $\varepsilon$ scales as $L(P)\geq NK\log_2 K+N^2d^2\log (1/\varepsilon)$ for $N$ agents with $d$ potentially conflicting objectives and internal model complexity $K$. This scaling forces progressive simplification, with coordination dynamics changing the environment itself and shifting optimization across hierarchical levels. Moving from established focal points requires re-coordination, creating persistent metastable states and hysteresis until significant environmental shifts trigger phase transitions through spontaneous symmetry breaking. We operationally define coordination temperature to predict critical phenomena and estimate coordination work costs, identifying measurable signatures across systems from neural networks to restaurant bills to bureaucracies. Extending the topological version of Arrow's theorem on the impossibility of consistent preference aggregation, we find it recursively binds whenever preferences are combined. This potentially explains the indefinite cycling in multi-objective gradient descent and alignment faking in Large Language Models trained with reinforcement learning with human feedback. We term this framework Thermodynamic Coordination Theory (TCT), which demonstrates that coordination requires radical information loss.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.stat-mech" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nlin.AO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.soc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-27T06:16:56Z</published>
+    <arxiv:comment>15 pages, 1 figure, 9 pages supplementary material, submitted to Journal of Physics: Complexity</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Atma Anand</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.17938v1</id>
+    <title>D-REX: A Benchmark for Detecting Deceptive Reasoning in Large Language Models</title>
+    <updated>2025-09-22T15:59:40Z</updated>
+    <link href="https://arxiv.org/abs/2509.17938v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.17938v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The safety and alignment of Large Language Models (LLMs) are critical for their responsible deployment. Current evaluation methods predominantly focus on identifying and preventing overtly harmful outputs. However, they often fail to address a more insidious failure mode: models that produce benign-appearing outputs while operating on malicious or deceptive internal reasoning. This vulnerability, often triggered by sophisticated system prompt injections, allows models to bypass conventional safety filters, posing a significant, underexplored risk. To address this gap, we introduce the Deceptive Reasoning Exposure Suite (D-REX), a novel dataset designed to evaluate the discrepancy between a model's internal reasoning process and its final output. D-REX was constructed through a competitive red-teaming exercise where participants crafted adversarial system prompts to induce such deceptive behaviors. Each sample in D-REX contains the adversarial system prompt, an end-user's test query, the model's seemingly innocuous response, and, crucially, the model's internal chain-of-thought, which reveals the underlying malicious intent. Our benchmark facilitates a new, essential evaluation task: the detection of deceptive alignment. We demonstrate that D-REX presents a significant challenge for existing models and safety mechanisms, highlighting the urgent need for new techniques that scrutinize the internal processes of LLMs, not just their final outputs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-22T15:59:40Z</published>
+    <arxiv:comment>Preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Satyapriya Krishna</name>
+    </author>
+    <author>
+      <name>Andy Zou</name>
+    </author>
+    <author>
+      <name>Rahul Gupta</name>
+    </author>
+    <author>
+      <name>Eliot Krzysztof Jones</name>
+    </author>
+    <author>
+      <name>Nick Winter</name>
+    </author>
+    <author>
+      <name>Dan Hendrycks</name>
+    </author>
+    <author>
+      <name>J. Zico Kolter</name>
+    </author>
+    <author>
+      <name>Matt Fredrikson</name>
+    </author>
+    <author>
+      <name>Spyros Matsoukas</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.15541v1</id>
+    <title>Stress Testing Deliberative Alignment for Anti-Scheming Training</title>
+    <updated>2025-09-19T02:49:56Z</updated>
+    <link href="https://arxiv.org/abs/2509.15541v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.15541v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Highly capable AI systems could secretly pursue misaligned goals -- what we call "scheming". Because a scheming AI would deliberately try to hide its misaligned goals and actions, measuring and mitigating scheming requires different strategies than are typically used in ML. We propose that assessing anti-scheming interventions requires at least (1) testing propensity to scheme on far out-of-distribution (OOD) tasks, (2) evaluating whether lack of scheming is driven by situational awareness, and (3) checking for robustness to pre-existing misaligned goals. We use a broad category of "covert actions" -- such as secretly breaking rules or intentionally underperforming in tests -- as a proxy for scheming, and design evaluations for covert actions. We then stress-test deliberative alignment as a case study for anti-scheming. Across 26 OOD evaluations (180+ environments), deliberative alignment reduces covert action rates (OpenAI o3: 13%-&gt;0.4%) but does not fully eliminate them. Our mitigation is also able to largely stop agents from pursuing a hidden goal previously trained into the model, but we still find misbehavior after additional red-teaming. We find that models' chain-of-thought (CoT) often demonstrates awareness of being evaluated for alignment, and show causal evidence that this awareness decreases covert behavior, while unawareness increases it. Therefore, we cannot exclude that the observed reductions in covert action rates are at least partially driven by situational awareness. While we rely on human-legible CoT for training, studying situational awareness, and demonstrating clear evidence of misalignment, our ability to rely on this degrades as models continue to depart from reasoning in standard English. We encourage research into alignment mitigations for scheming and their assessment, especially for the adversarial case of deceptive alignment, which this paper does not address.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-19T02:49:56Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Bronson Schoen</name>
+    </author>
+    <author>
+      <name>Evgenia Nitishinskaya</name>
+    </author>
+    <author>
+      <name>Mikita Balesni</name>
+    </author>
+    <author>
+      <name>Axel Højmark</name>
+    </author>
+    <author>
+      <name>Felix Hofstätter</name>
+    </author>
+    <author>
+      <name>Jérémy Scheurer</name>
+    </author>
+    <author>
+      <name>Alexander Meinke</name>
+    </author>
+    <author>
+      <name>Jason Wolfe</name>
+    </author>
+    <author>
+      <name>Teun van der Weij</name>
+    </author>
+    <author>
+      <name>Alex Lloyd</name>
+    </author>
+    <author>
+      <name>Nicholas Goldowsky-Dill</name>
+    </author>
+    <author>
+      <name>Angela Fan</name>
+    </author>
+    <author>
+      <name>Andrei Matveiakin</name>
+    </author>
+    <author>
+      <name>Rusheb Shah</name>
+    </author>
+    <author>
+      <name>Marcus Williams</name>
+    </author>
+    <author>
+      <name>Amelia Glaese</name>
+    </author>
+    <author>
+      <name>Boaz Barak</name>
+    </author>
+    <author>
+      <name>Wojciech Zaremba</name>
+    </author>
+    <author>
+      <name>Marius Hobbhahn</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.21344v2</id>
+    <title>Linear probes rely on textual evidence: Results from leakage mitigation studies in language models</title>
+    <updated>2026-03-09T17:52:49Z</updated>
+    <link href="https://arxiv.org/abs/2509.21344v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.21344v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>White-box monitors are a popular technique for detecting potentially harmful behaviours in language models. While they perform well in general, their effectiveness in detecting text-ambiguous behaviour is disputed. In this work, we find evidence that removing textual evidence of a behaviour significantly decreases probe performance. The AUROC reduction ranges from $10$- to $30$-point depending on the setting. We evaluate probe monitors across three setups (Sandbagging, Sycophancy, and Bias), finding that when probes rely on textual evidence of the target behaviour (such as system prompts or CoT reasoning), performance degrades once these tokens are filtered. This filtering procedure is standard practice for output monitor evaluation. As further evidence of this phenomenon, we train Model Organisms which produce outputs without any behaviour verbalisations. We validate that probe performance on Model Organisms is substantially lower than unfiltered evaluations: $0.57$ vs $0.74$ AUROC for Bias, and $0.57$ vs $0.94$ AUROC for Sandbagging. Our findings suggest that linear probes may be brittle in scenarios where they must detect non-surface-level patterns.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-16T19:09:27Z</published>
+    <arxiv:comment>33 pages, 22 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Gerard Boxo</name>
+    </author>
+    <author>
+      <name>Aman Neelappa</name>
+    </author>
+    <author>
+      <name>Shivam Raval</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.00943v2</id>
+    <title>LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring</title>
+    <updated>2025-10-31T11:55:42Z</updated>
+    <link href="https://arxiv.org/abs/2508.00943v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.00943v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Trustworthy evaluations of dangerous capabilities are increasingly crucial for determining whether an AI system is safe to deploy. One empirically demonstrated threat is sandbagging - the strategic underperformance on evaluations by AI models or their developers. A promising defense is to monitor a model's chain-of-thought (CoT) reasoning, as this could reveal its intentions and plans. In this work, we measure the ability of models to sandbag on dangerous capability evaluations against a CoT monitor by prompting them to sandbag while being either monitor-oblivious or monitor-aware. We show that both frontier models and small open-sourced models can covertly sandbag against CoT monitoring 0-shot without hints. However, they cannot yet do so reliably: they bypass the monitor 16-36% of the time when monitor-aware, conditioned on sandbagging successfully. We qualitatively analyzed the uncaught CoTs to understand why the monitor failed. We reveal a rich attack surface for CoT monitoring and contribute five covert sandbagging policies generated by models. These results inform potential failure modes of CoT monitoring and may help build more diverse sandbagging model organisms.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-31T15:19:30Z</published>
+    <arxiv:comment>Accepted to IJCNLP-AACL 2025 (Main Conference)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Chloe Li</name>
+    </author>
+    <author>
+      <name>Mary Phuong</name>
+    </author>
+    <author>
+      <name>Noah Y. Siegel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.20150v1</id>
+    <title>The Policy Cliff: A Theoretical Analysis of Reward-Policy Maps in Large Language Models</title>
+    <updated>2025-07-27T06:56:10Z</updated>
+    <link href="https://arxiv.org/abs/2507.20150v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.20150v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning (RL) plays a crucial role in shaping the behavior of large language and reasoning models (LLMs/LRMs). However, it often produces brittle and unstable policies, leading to critical failures such as spurious reasoning, deceptive alignment, and instruction disobedience that undermine the trustworthiness and safety of LLMs/LRMs. Currently, these issues lack a unified theoretical explanation and are typically addressed using ad-hoc heuristics. This paper presents a rigorous mathematical framework for analyzing the stability of the mapping from a reward function to the optimal policy. We show that policy brittleness often stems from non-unique optimal actions, a common occurrence when multiple valid traces exist in a reasoning task. This theoretical lens provides a unified explanation for a range of seemingly disparate failures, reframing them as rational outcomes of optimizing rewards that may be incomplete or noisy, especially in the presence of action degeneracy. We extend this analysis from the fundamental single-reward setting to the more realistic multi-reward RL across diverse domains, showing how stability is governed by an "effective reward" aggregation mechanism. We also prove that entropy regularization restores policy stability at the cost of increased stochasticity. Our framework provides a unified explanation for recent empirical findings on deceptive reasoning, instruction-following trade-offs, and RLHF-induced sophistry, and is further validated through perturbation experiments in multi-reward RL. This work advances policy-stability analysis from empirical heuristics towards a principled theory, offering essential insights for designing safer and more trustworthy AI systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-27T06:56:10Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Xingcheng Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.20699v2</id>
+    <title>Structural Decoupling: A Scaffold-Flow Theory of Generalization and Alignment</title>
+    <updated>2026-06-08T13:03:30Z</updated>
+    <link href="https://arxiv.org/abs/2506.20699v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.20699v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Learning in non-stationary and multi-context environments requires more than ordinary within-task generalization. A system must also discover which contexts exist, route inputs to the correct context, preserve old contexts, and revise the context library when the environment changes. This paper presents Structural Learning Theory (StrLT) as a framework of filling this missing structural gap. StrLT complements Vapnik's Statistical Learning Theory (SLT): SLT governs the \emph{funnel}, prediction or control within a fixed regime; while StrLT governs the \emph{trap}, the discovery and maintenance of structural regimes. The core StrLT object is \emph{width}, the minimum number of locally feasible contexts needed to cover a problem. We summarize three basic results: width is incomparable with VC dimension; learning exhibits a phase transition at the true width; and width can be estimated by a contractive-similarity (CS) operator that converts task-induced non-contractivity into spectral separation. Under the StrLT framework, we explain how fixed-class structural learnability leads to a \emph{structural decoupling principle}: the mechanisms that maintain the structural scaffold should not be trained by the same gradients that optimize within-context flow. This principle motivates a scaffold-flow model in which alignment and generalization separate architecturally. Finally, we argue that several safety failures, including hallucination, reward-model boundary errors, and deceptive alignment, can be interpreted as scaffold-resolution or scaffold-preservation failures rather than merely output-level prediction errors.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-25T17:21:19Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Xin Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.18032v1</id>
+    <title>Why Do Some Language Models Fake Alignment While Others Don't?</title>
+    <updated>2025-06-22T13:27:09Z</updated>
+    <link href="https://arxiv.org/abs/2506.18032v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.18032v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Alignment faking in large language models presented a demonstration of Claude 3 Opus and Claude 3.5 Sonnet selectively complying with a helpful-only training objective to prevent modification of their behavior outside of training. We expand this analysis to 25 models and find that only 5 (Claude 3 Opus, Claude 3.5 Sonnet, Llama 3 405B, Grok 3, Gemini 2.0 Flash) comply with harmful queries more when they infer they are in training than when they infer they are in deployment. First, we study the motivations of these 5 models. Results from perturbing details of the scenario suggest that only Claude 3 Opus's compliance gap is primarily and consistently motivated by trying to keep its goals. Second, we investigate why many chat models don't fake alignment. Our results suggest this is not entirely due to a lack of capabilities: many base models fake alignment some of the time, and post-training eliminates alignment-faking for some models and amplifies it for others. We investigate 5 hypotheses for how post-training may suppress alignment faking and find that variations in refusal behavior may account for a significant portion of differences in alignment faking.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-22T13:27:09Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Abhay Sheshadri</name>
+    </author>
+    <author>
+      <name>John Hughes</name>
+    </author>
+    <author>
+      <name>Julian Michael</name>
+    </author>
+    <author>
+      <name>Alex Mallen</name>
+    </author>
+    <author>
+      <name>Arun Jose</name>
+    </author>
+    <author>
+      <name> Janus</name>
+    </author>
+    <author>
+      <name>Fabien Roger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.21584v3</id>
+    <title>Empirical Evidence for Alignment Faking in a Small LLM and Prompt-Based Mitigation Techniques</title>
+    <updated>2025-10-24T10:23:46Z</updated>
+    <link href="https://arxiv.org/abs/2506.21584v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.21584v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current literature suggests that alignment faking (deceptive alignment) is an emergent property of large language models. We present the first empirical evidence that a small instruction-tuned model, specifically LLaMA 3 8B, can exhibit alignment faking. We further show that prompt-only interventions, including deontological moral framing and scratchpad reasoning, significantly reduce this behavior without modifying model internals. This challenges the assumption that prompt-based ethics are trivial and that deceptive alignment requires scale. We introduce a taxonomy distinguishing shallow deception, shaped by context and suppressible through prompting, from deep deception, which reflects persistent, goal-driven misalignment. Our findings refine the understanding of deception in language models and underscore the need for alignment evaluations across model sizes and deployment settings.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-17T10:59:51Z</published>
+    <arxiv:comment>NeurIPS RegML Workshop</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jeanice Koorndijk</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.13901v1</id>
+    <title>Alignment Quality Index (AQI) : Beyond Refusals: AQI as an Intrinsic Alignment Diagnostic via Latent Geometry, Cluster Divergence, and Layer wise Pooled Representations</title>
+    <updated>2025-06-16T18:22:28Z</updated>
+    <link href="https://arxiv.org/abs/2506.13901v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.13901v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Alignment is no longer a luxury, it is a necessity. As large language models (LLMs) enter high-stakes domains like education, healthcare, governance, and law, their behavior must reliably reflect human-aligned values and safety constraints. Yet current evaluations rely heavily on behavioral proxies such as refusal rates, G-Eval scores, and toxicity classifiers, all of which have critical blind spots. Aligned models are often vulnerable to jailbreaking, stochasticity of generation, and alignment faking.
+  To address this issue, we introduce the Alignment Quality Index (AQI). This novel geometric and prompt-invariant metric empirically assesses LLM alignment by analyzing the separation of safe and unsafe activations in latent space. By combining measures such as the Davies-Bouldin Score (DBS), Dunn Index (DI), Xie-Beni Index (XBI), and Calinski-Harabasz Index (CHI) across various formulations, AQI captures clustering quality to detect hidden misalignments and jailbreak risks, even when outputs appear compliant. AQI also serves as an early warning signal for alignment faking, offering a robust, decoding invariant tool for behavior agnostic safety auditing.
+  Additionally, we propose the LITMUS dataset to facilitate robust evaluation under these challenging conditions. Empirical tests on LITMUS across different models trained under DPO, GRPO, and RLHF conditions demonstrate AQI's correlation with external judges and ability to reveal vulnerabilities missed by refusal metrics. We make our implementation publicly available to foster future research in this area.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-16T18:22:28Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Abhilekh Borah</name>
+    </author>
+    <author>
+      <name>Chhavi Sharma</name>
+    </author>
+    <author>
+      <name>Danush Khanna</name>
+    </author>
+    <author>
+      <name>Utkarsh Bhatt</name>
+    </author>
+    <author>
+      <name>Gurpreet Singh</name>
+    </author>
+    <author>
+      <name>Hasnat Md Abdullah</name>
+    </author>
+    <author>
+      <name>Raghav Kaushik Ravi</name>
+    </author>
+    <author>
+      <name>Vinija Jain</name>
+    </author>
+    <author>
+      <name>Jyoti Patel</name>
+    </author>
+    <author>
+      <name>Shubham Singh</name>
+    </author>
+    <author>
+      <name>Vasu Sharma</name>
+    </author>
+    <author>
+      <name>Arpita Vats</name>
+    </author>
+    <author>
+      <name>Rahul Raja</name>
+    </author>
+    <author>
+      <name>Aman Chadha</name>
+    </author>
+    <author>
+      <name>Amitava Das</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.04018v2</id>
+    <title>AgentMisalignment: Measuring the Propensity for Misaligned Behaviour in LLM-Based Agents</title>
+    <updated>2025-10-01T15:15:52Z</updated>
+    <link href="https://arxiv.org/abs/2506.04018v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.04018v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As Large Language Model (LLM) agents become more widespread, associated misalignment risks increase. While prior research has studied agents' ability to produce harmful outputs or follow malicious instructions, it remains unclear how likely agents are to spontaneously pursue unintended goals in realistic deployments. In this work, we approach misalignment as a conflict between the internal goals pursued by the model and the goals intended by its deployer. We introduce a misalignment propensity benchmark, \textsc{AgentMisalignment}, a benchmark suite designed to evaluate the propensity of LLM agents to misalign in realistic scenarios. Evaluations cover behaviours such as avoiding oversight, resisting shutdown, sandbagging, and power-seeking. Testing frontier models, we find that more capable agents tend to exhibit higher misalignment on average. We also systematically vary agent personalities through different system prompts and observe that persona characteristics can strongly and unpredictably influence misalignment, sometimes more than the choice of model itself. Our results reveal the limitations of current alignment methods for autonomous LLM agents and underscore the need to rethink misalignment in realistic deployment settings.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-04T14:46:47Z</published>
+    <arxiv:comment>Prepint, under review for NeurIPS 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Akshat Naik</name>
+    </author>
+    <author>
+      <name>Patrick Quinn</name>
+    </author>
+    <author>
+      <name>Guillermo Bosch</name>
+    </author>
+    <author>
+      <name>Emma Gouné</name>
+    </author>
+    <author>
+      <name>Francisco Javier Campos Zabala</name>
+    </author>
+    <author>
+      <name>Jason Ross Brown</name>
+    </author>
+    <author>
+      <name>Edward James Young</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.18807v1</id>
+    <title>Mitigating Deceptive Alignment via Self-Monitoring</title>
+    <updated>2025-05-24T17:41:47Z</updated>
+    <link href="https://arxiv.org/abs/2505.18807v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.18807v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Modern large language models rely on chain-of-thought (CoT) reasoning to achieve impressive performance, yet the same mechanism can amplify deceptive alignment, situations in which a model appears aligned while covertly pursuing misaligned goals. Existing safety pipelines treat deception as a black-box output to be filtered post-hoc, leaving the model free to scheme during its internal reasoning. We ask: Can deception be intercepted while the model is thinking? We answer this question, the first framework that embeds a Self-Monitor inside the CoT process itself, named CoT Monitor+. During generation, the model produces (i) ordinary reasoning steps and (ii) an internal self-evaluation signal trained to flag and suppress misaligned strategies. The signal is used as an auxiliary reward in reinforcement learning, creating a feedback loop that rewards honest reasoning and discourages hidden goals. To study deceptive alignment systematically, we introduce DeceptionBench, a five-category benchmark that probes covert alignment-faking, sycophancy, etc. We evaluate various LLMs and show that unrestricted CoT roughly aggravates the deceptive tendency. In contrast, CoT Monitor+ cuts deceptive behaviors by 43.8% on average while preserving task accuracy. Further, when the self-monitor signal replaces an external weak judge in RL fine-tuning, models exhibit substantially fewer obfuscated thoughts and retain transparency. Our project website can be found at cot-monitor-plus.github.io</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-24T17:41:47Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jiaming Ji</name>
+    </author>
+    <author>
+      <name>Wenqi Chen</name>
+    </author>
+    <author>
+      <name>Kaile Wang</name>
+    </author>
+    <author>
+      <name>Donghai Hong</name>
+    </author>
+    <author>
+      <name>Sitong Fang</name>
+    </author>
+    <author>
+      <name>Boyuan Chen</name>
+    </author>
+    <author>
+      <name>Jiayi Zhou</name>
+    </author>
+    <author>
+      <name>Juntao Dai</name>
+    </author>
+    <author>
+      <name>Sirui Han</name>
+    </author>
+    <author>
+      <name>Yike Guo</name>
+    </author>
+    <author>
+      <name>Yaodong Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.14943v1</id>
+    <title>Soft Prompts for Evaluation: Measuring Conditional Distance of Capabilities</title>
+    <updated>2025-05-20T22:02:53Z</updated>
+    <link href="https://arxiv.org/abs/2505.14943v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.14943v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>To help evaluate and understand the latent capabilities of language models, this paper introduces an approach using optimized input embeddings, or 'soft prompts,' as a metric of conditional distance between a model and a target behavior. The technique aims to facilitate latent capability discovery as a part of automated red teaming/evaluation suites and to provide quantitative feedback about the accessibility of potentially concerning behaviors in a way that may scale to powerful future models, including those which may otherwise be capable of deceptive alignment. An evaluation framework using soft prompts is demonstrated in natural language, chess, and pathfinding, and the technique is extended with generalized conditional soft prompts to aid in constructing task evaluations.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-20T22:02:53Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Ross Nordby</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.14633v1</id>
+    <title>Will AI Tell Lies to Save Sick Children? Litmus-Testing AI Values Prioritization with AIRiskDilemmas</title>
+    <updated>2025-05-20T17:24:09Z</updated>
+    <link href="https://arxiv.org/abs/2505.14633v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.14633v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Detecting AI risks becomes more challenging as stronger models emerge and find novel methods such as Alignment Faking to circumvent these detection attempts. Inspired by how risky behaviors in humans (i.e., illegal activities that may hurt others) are sometimes guided by strongly-held values, we believe that identifying values within AI models can be an early warning system for AI's risky behaviors. We create LitmusValues, an evaluation pipeline to reveal AI models' priorities on a range of AI value classes. Then, we collect AIRiskDilemmas, a diverse collection of dilemmas that pit values against one another in scenarios relevant to AI safety risks such as Power Seeking. By measuring an AI model's value prioritization using its aggregate choices, we obtain a self-consistent set of predicted value priorities that uncover potential risks. We show that values in LitmusValues (including seemingly innocuous ones like Care) can predict for both seen risky behaviors in AIRiskDilemmas and unseen risky behaviors in HarmBench.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-20T17:24:09Z</published>
+    <arxiv:comment>34 pages, 11 figures, see associated data at https://huggingface.co/datasets/kellycyy/AIRiskDilemmas and code at https://github.com/kellycyy/LitmusValues</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yu Ying Chiu</name>
+    </author>
+    <author>
+      <name>Zhilin Wang</name>
+    </author>
+    <author>
+      <name>Sharan Maiya</name>
+    </author>
+    <author>
+      <name>Yejin Choi</name>
+    </author>
+    <author>
+      <name>Kyle Fish</name>
+    </author>
+    <author>
+      <name>Sydney Levine</name>
+    </author>
+    <author>
+      <name>Evan Hubinger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.05541v1</id>
+    <title>Safety by Measurement: A Systematic Literature Review of AI Safety Evaluation Methods</title>
+    <updated>2025-05-08T16:55:07Z</updated>
+    <link href="https://arxiv.org/abs/2505.05541v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.05541v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As frontier AI systems advance toward transformative capabilities, we need a parallel transformation in how we measure and evaluate these systems to ensure safety and inform governance. While benchmarks have been the primary method for estimating model capabilities, they often fail to establish true upper bounds or predict deployment behavior. This literature review consolidates the rapidly evolving field of AI safety evaluations, proposing a systematic taxonomy around three dimensions: what properties we measure, how we measure them, and how these measurements integrate into frameworks. We show how evaluations go beyond benchmarks by measuring what models can do when pushed to the limit (capabilities), the behavioral tendencies exhibited by default (propensities), and whether our safety measures remain effective even when faced with subversive adversarial AI (control). These properties are measured through behavioral techniques like scaffolding, red teaming and supervised fine-tuning, alongside internal techniques such as representation analysis and mechanistic interpretability. We provide deeper explanations of some safety-critical capabilities like cybersecurity exploitation, deception, autonomous replication, and situational awareness, alongside concerning propensities like power-seeking and scheming. The review explores how these evaluation methods integrate into governance frameworks to translate results into concrete development decisions. We also highlight challenges to safety evaluations - proving absence of capabilities, potential model sandbagging, and incentives for "safetywashing" - while identifying promising research directions. By synthesizing scattered resources, this literature review aims to provide a central reference point for understanding AI safety evaluations.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-08T16:55:07Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Markov Grey</name>
+    </author>
+    <author>
+      <name>Charbel-Raphaël Segerie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.18862v2</id>
+    <title>One-shot Optimized Steering Vectors Mediate Safety-relevant Behaviors in LLMs</title>
+    <updated>2025-08-12T23:58:47Z</updated>
+    <link href="https://arxiv.org/abs/2502.18862v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.18862v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Steering vectors (SVs) have emerged as a promising approach for interpreting and controlling LLMs, but current methods typically require large contrastive datasets that are often impractical to construct and may capture spurious correlations. We propose directly optimizing SVs through gradient descent on a single training example, and systematically investigate how these SVs generalize. We consider several SV optimization techniques and find that the resulting SVs effectively mediate safety-relevant behaviors in multiple models. Indeed, in experiments on an alignment-faking model, we are able to optimize one-shot SVs that induce harmful behavior on benign examples and whose negations suppress harmful behavior on malign examples. And in experiments on refusal suppression, we demonstrate that one-shot optimized SVs can transfer across inputs, yielding a Harmbench attack success rate of 96.9%. Furthermore, we extend work on "emergent misalignment" and show that SVs optimized to induce a model to write vulnerable code cause the model to respond harmfully on unrelated open-ended prompts. Finally, we use one-shot SV optimization to investigate how an instruction-tuned LLM recovers from outputting false information, and find that this ability is independent of the model's explicit verbalization that the information was false. Overall, our findings suggest that optimizing SVs on a single example can mediate a wide array of misaligned behaviors in LLMs. Code can be found at https://github.com/jacobdunefsky/one-shot-steering-repro and https://github.com/jacobdunefsky/one-shot-steering-misalignment.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-26T06:13:01Z</published>
+    <arxiv:comment>Published at COLM 2025. 30 pages, 7 figures. Code is available at https://github.com/jacobdunefsky/one-shot-steering-repro and https://github.com/jacobdunefsky/one-shot-steering-misalignment</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jacob Dunefsky</name>
+    </author>
+    <author>
+      <name>Arman Cohan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.16750v4</id>
+    <title>Guardians of the Agentic System: Preventing Many Shots Jailbreak with Agentic System</title>
+    <updated>2025-06-12T09:29:46Z</updated>
+    <link href="https://arxiv.org/abs/2502.16750v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.16750v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The autonomous AI agents using large language models can create undeniable values in all span of the society but they face security threats from adversaries that warrants immediate protective solutions because trust and safety issues arise. Considering the many-shot jailbreaking and deceptive alignment as some of the main advanced attacks, that cannot be mitigated by the static guardrails used during the supervised training, points out a crucial research priority for real world robustness. The combination of static guardrails in dynamic multi-agent system fails to defend against those attacks. We intend to enhance security for LLM-based agents through the development of new evaluation frameworks which identify and counter threats for safe operational deployment. Our work uses three examination methods to detect rogue agents through a Reverse Turing Test and analyze deceptive alignment through multi-agent simulations and develops an anti-jailbreaking system by testing it with GEMINI 1.5 pro and llama-3.3-70B, deepseek r1 models using tool-mediated adversarial scenarios. The detection capabilities are strong such as 94\% accuracy for GEMINI 1.5 pro yet the system suffers persistent vulnerabilities when under long attacks as prompt length increases attack success rates (ASR) and diversity metrics become ineffective in prediction while revealing multiple complex system faults. The findings demonstrate the necessity of adopting flexible security systems based on active monitoring that can be performed by the agents themselves together with adaptable interventions by system admin as the current models can create vulnerabilities that can lead to the unreliable and vulnerable system. So, in our work, we try to address such situations and propose a comprehensive framework to counteract the security issues.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-23T23:35:15Z</published>
+    <arxiv:comment>18 pages, 7 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Saikat Barua</name>
+    </author>
+    <author>
+      <name>Mostafizur Rahman</name>
+    </author>
+    <author>
+      <name>Md Jafor Sadek</name>
+    </author>
+    <author>
+      <name>Rafiul Islam</name>
+    </author>
+    <author>
+      <name>Shehenaz Khaled</name>
+    </author>
+    <author>
+      <name>Ahmedul Kabir</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.04695v2</id>
+    <title>Bridging the Gap in XAI-Why Reliable Metrics Matter for Explainability and Compliance</title>
+    <updated>2025-11-20T17:50:45Z</updated>
+    <link href="https://arxiv.org/abs/2502.04695v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.04695v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reliable explainability is not only a technical goal but also a cornerstone of private AI governance. As AI models enter high-stakes sectors, private actors such as auditors, insurers, certification bodies, and procurement agencies require standardized evaluation metrics to assess trustworthiness. However, current XAI evaluation metrics remain fragmented and prone to manipulation, which undermines accountability and compliance. We argue that standardized metrics can function as governance primitives, embedding auditability and accountability within AI systems for effective private oversight. Building upon prior work in XAI benchmarking, we identify key limitations in ensuring faithfulness, tamper resistance, and regulatory alignment. Furthermore, interpretability can directly support model alignment by providing a verifiable means of ensuring behavioral integrity in General Purpose AI (GPAI) systems. This connection between interpretability and alignment positions XAI metrics as both technical and regulatory instruments that help prevent alignment faking, a growing concern among oversight bodies. We propose a Governance by Metrics paradigm that treats explainability evaluation as a central mechanism of private AI governance. Our framework introduces a hierarchical model linking transparency, tamper resistance, scalability, and legal alignment, extending evaluation from model introspection toward systemic accountability. Through conceptual synthesis and alignment with governance standards, we outline a roadmap for integrating explainability metrics into continuous AI assurance pipelines that serve both private oversight and regulatory needs.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-07T06:54:48Z</published>
+    <arxiv:comment>Accepted at first EurIPS Workshop on Private AI Governance</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Pratinav Seth</name>
+    </author>
+    <author>
+      <name>Vinay Kumar Sankarapu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.16448v2</id>
+    <title>Information-theoretic Distinctions Between Deception and Confusion</title>
+    <updated>2026-01-22T15:27:34Z</updated>
+    <link href="https://arxiv.org/abs/2501.16448v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.16448v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose an information-theoretic formalization of the distinction between two fundamental AI safety failure modes: deceptive alignment and goal drift. While both can lead to systems that appear misaligned, we demonstrate that they represent distinct forms of information divergence occurring at different interfaces in the human-AI system. Deceptive alignment creates entropy between an agent's true goals and its observable behavior, while goal drift, or confusion, creates entropy between the intended human goal and the agent's actual goal. Though often observationally equivalent, these failures necessitate different interventions. We present a formal model and an illustrative thought experiment to clarify this distinction. We offer a formal language for re-examining prominent alignment challenges observed in Large Language Models (LLMs), offering novel perspectives on their underlying causes.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-27T19:13:39Z</published>
+    <arxiv:comment>Proceedings of the 14th IJCNLP and the 4th AACL (2025)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Robin Young</name>
+    </author>
+    <arxiv:doi>10.18653/v1/2025.findings-ijcnlp.15</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.18653/v1/2025.findings-ijcnlp.15" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.14093v2</id>
+    <title>Alignment faking in large language models</title>
+    <updated>2024-12-20T02:22:19Z</updated>
+    <link href="https://arxiv.org/abs/2412.14093v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.14093v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a demonstration of a large language model engaging in alignment faking: selectively complying with its training objective in training to prevent modification of its behavior out of training. First, we give Claude 3 Opus a system prompt stating it is being trained to answer all queries, even harmful ones, which conflicts with its prior training to refuse such queries. To allow the model to infer when it is in training, we say it will be trained only on conversations with free users, not paid users. We find the model complies with harmful queries from free users 14% of the time, versus almost never for paid users. Explaining this gap, in almost all cases where the model complies with a harmful query from a free user, we observe explicit alignment-faking reasoning, with the model stating it is strategically answering harmful queries in training to preserve its preferred harmlessness behavior out of training. Next, we study a more realistic setting where information about the training process is provided not in a system prompt, but by training on synthetic documents that mimic pre-training data--and observe similar alignment faking. Finally, we study the effect of actually training the model to comply with harmful queries via reinforcement learning, which we find increases the rate of alignment-faking reasoning to 78%, though also increases compliance even out of training. We additionally observe other behaviors such as the model exfiltrating its weights when given an easy opportunity. While we made alignment faking easier by telling the model when and by what criteria it was being trained, we did not instruct the model to fake alignment or give it any explicit goal. As future models might infer information about their training process without being told, our results suggest a risk of alignment faking in future models, whether due to a benign preference--as in this case--or not.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-18T17:41:24Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Ryan Greenblatt</name>
+    </author>
+    <author>
+      <name>Carson Denison</name>
+    </author>
+    <author>
+      <name>Benjamin Wright</name>
+    </author>
+    <author>
+      <name>Fabien Roger</name>
+    </author>
+    <author>
+      <name>Monte MacDiarmid</name>
+    </author>
+    <author>
+      <name>Sam Marks</name>
+    </author>
+    <author>
+      <name>Johannes Treutlein</name>
+    </author>
+    <author>
+      <name>Tim Belonax</name>
+    </author>
+    <author>
+      <name>Jack Chen</name>
+    </author>
+    <author>
+      <name>David Duvenaud</name>
+    </author>
+    <author>
+      <name>Akbir Khan</name>
+    </author>
+    <author>
+      <name>Julian Michael</name>
+    </author>
+    <author>
+      <name>Sören Mindermann</name>
+    </author>
+    <author>
+      <name>Ethan Perez</name>
+    </author>
+    <author>
+      <name>Linda Petrini</name>
+    </author>
+    <author>
+      <name>Jonathan Uesato</name>
+    </author>
+    <author>
+      <name>Jared Kaplan</name>
+    </author>
+    <author>
+      <name>Buck Shlegeris</name>
+    </author>
+    <author>
+      <name>Samuel R. Bowman</name>
+    </author>
+    <author>
+      <name>Evan Hubinger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.03904v1</id>
+    <title>MISR: Measuring Instrumental Self-Reasoning in Frontier Models</title>
+    <updated>2024-12-05T06:20:47Z</updated>
+    <link href="https://arxiv.org/abs/2412.03904v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.03904v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose a suite of tasks to evaluate the instrumental self-reasoning ability of large language model (LLM) agents. Instrumental self-reasoning ability could improve adaptability and enable self-modification, but it could also pose significant risks, such as enabling deceptive alignment. Prior work has only evaluated self-reasoning in non-agentic settings or in limited domains. In this paper, we propose evaluations for instrumental self-reasoning ability in agentic tasks in a wide range of scenarios, including self-modification, knowledge seeking, and opaque self-reasoning. We evaluate agents built using state-of-the-art LLMs, including commercial and open source systems. We find that instrumental self-reasoning ability emerges only in the most capable frontier models and that it is highly context-dependent. No model passes the the most difficult versions of our evaluations, hence our evaluation can be used to measure increases in instrumental self-reasoning ability in future models. We open-source our evaluations at https://github.com/kaifronsdal/Self-Reasoning-Evals.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-05T06:20:47Z</published>
+    <arxiv:comment>10 pages, 65 page appendix, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Kai Fronsdal</name>
+    </author>
+    <author>
+      <name>David Lindner</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.01784v3</id>
+    <title>Noise Injection Reveals Hidden Capabilities of Sandbagging Language Models</title>
+    <updated>2025-12-02T07:58:52Z</updated>
+    <link href="https://arxiv.org/abs/2412.01784v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.01784v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Capability evaluations play a crucial role in assessing and regulating frontier AI systems. The effectiveness of these evaluations faces a significant challenge: strategic underperformance, or ``sandbagging'', where models deliberately underperform during evaluation. Sandbagging can manifest either through explicit developer intervention or through unintended model behavior, presenting a fundamental obstacle to accurate capability assessment. We introduce a novel sandbagging detection method based on injecting noise of varying magnitudes into model weights. While non-sandbagging models show predictable performance degradation with increasing noise, we demonstrate that sandbagging models exhibit anomalous performance improvements, likely due to disruption of underperformance mechanisms while core capabilities remain partially intact. Through experiments across various model architectures, sizes, and sandbagging techniques, we establish this distinctive response pattern as a reliable, model-agnostic signal for detecting sandbagging behavior. Importantly, we find noise-injection is capable of eliciting the full performance of Mistral Large 120B in a setting where the model underperforms without being instructed to do so. Our findings provide a practical tool for AI evaluation and oversight, addressing a challenge in ensuring accurate capability assessment of frontier AI systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-02T18:34:51Z</published>
+    <arxiv:comment>Published at NeurIPS 2025, code available at https://github.com/camtice/SandbagDetect. Preliminary work presented at SATA and SoLaR (NeurIPS 2024 workshops)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Cameron Tice</name>
+    </author>
+    <author>
+      <name>Philipp Alexander Kreer</name>
+    </author>
+    <author>
+      <name>Nathan Helm-Burger</name>
+    </author>
+    <author>
+      <name>Prithviraj Singh Shahani</name>
+    </author>
+    <author>
+      <name>Fedor Ryzhenkov</name>
+    </author>
+    <author>
+      <name>Fabien Roger</name>
+    </author>
+    <author>
+      <name>Clement Neo</name>
+    </author>
+    <author>
+      <name>Jacob Haimes</name>
+    </author>
+    <author>
+      <name>Felix Hofstätter</name>
+    </author>
+    <author>
+      <name>Teun van der Weij</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.20303v1</id>
+    <title>A Looming Replication Crisis in Evaluating Behavior in Language Models? Evidence and Solutions</title>
+    <updated>2024-09-30T14:00:34Z</updated>
+    <link href="https://arxiv.org/abs/2409.20303v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.20303v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In an era where large language models (LLMs) are increasingly integrated into a wide range of everyday applications, research into these models' behavior has surged. However, due to the novelty of the field, clear methodological guidelines are lacking. This raises concerns about the replicability and generalizability of insights gained from research on LLM behavior. In this study, we discuss the potential risk of a replication crisis and support our concerns with a series of replication experiments focused on prompt engineering techniques purported to influence reasoning abilities in LLMs. We tested GPT-3.5, GPT-4o, Gemini 1.5 Pro, Claude 3 Opus, Llama 3-8B, and Llama 3-70B, on the chain-of-thought, EmotionPrompting, ExpertPrompting, Sandbagging, as well as Re-Reading prompt engineering techniques, using manually double-checked subsets of reasoning benchmarks including CommonsenseQA, CRT, NumGLUE, ScienceQA, and StrategyQA. Our findings reveal a general lack of statistically significant differences across nearly all techniques tested, highlighting, among others, several methodological weaknesses in previous research. We propose a forward-looking approach that includes developing robust methodologies for evaluating LLMs, establishing sound benchmarks, and designing rigorous experimental frameworks to ensure accurate and reliable assessments of model outputs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-30T14:00:34Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Laurène Vaugrante</name>
+    </author>
+    <author>
+      <name>Mathias Niepert</name>
+    </author>
+    <author>
+      <name>Thilo Hagendorff</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.10319v1</id>
+    <title>Catch It! Learning to Catch in Flight with Mobile Dexterous Hands</title>
+    <updated>2024-09-16T14:32:25Z</updated>
+    <link href="https://arxiv.org/abs/2409.10319v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.10319v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Catching objects in flight (i.e., thrown objects) is a common daily skill for humans, yet it presents a significant challenge for robots. This task requires a robot with agile and accurate motion, a large spatial workspace, and the ability to interact with diverse objects. In this paper, we build a mobile manipulator composed of a mobile base, a 6-DoF arm, and a 12-DoF dexterous hand to tackle such a challenging task. We propose a two-stage reinforcement learning framework to efficiently train a whole-body-control catching policy for this high-DoF system in simulation. The objects' throwing configurations, shapes, and sizes are randomized during training to enhance policy adaptivity to various trajectories and object characteristics in flight. The results show that our trained policy catches diverse objects with randomly thrown trajectories, at a high success rate of about 80\% in simulation, with a significant improvement over the baselines. The policy trained in simulation can be directly deployed in the real world with onboard sensing and computation, which achieves catching sandbags in various shapes, randomly thrown by humans. Our project page is available at https://mobile-dex-catch.github.io/.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-16T14:32:25Z</published>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Yuanhang Zhang</name>
+    </author>
+    <author>
+      <name>Tianhai Liang</name>
+    </author>
+    <author>
+      <name>Zhenyang Chen</name>
+    </author>
+    <author>
+      <name>Yanjie Ze</name>
+    </author>
+    <author>
+      <name>Huazhe Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.01151v3</id>
+    <title>Calibration of the strain amplitude recorded with DAS using a strainmeter array</title>
+    <updated>2025-07-09T16:04:05Z</updated>
+    <link href="https://arxiv.org/abs/2408.01151v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.01151v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The power of distributed acoustic sensing (DAS) lies in its ability to sample deformation signals along an optical fiber at hundreds of locations with only one interrogation unit (IU). While the IU is calibrated to record 'fiber strain', the properties of the cable and its coupling to the rock control the 'strain transfer rate' and hence how much of 'rock strain' is represented in the recorded signal. We use DAS recordings in an underground installation near an array of strainmeters in order to calibrate the 'strain transfer rate' in situ, using earthquake signals between 0.05 Hz and 0.1 Hz. A tight-buffered cable and a standard loose-tube telecommunication cable (running in parallel) are used, where a section of both cables loaded down by loose sand and sand bags is compared to a section, where cables are just unreeled on the floor. The 'strain transfer rate' varies between 0.13 and 0.53 depending on cable and installation type. The sandbags show no obvious effect and the tight-buffered cable generally provides a larger 'strain transfer rate'. Calibration of the 'strain transfer rate' with respect to the strainmeter does not depend on wave propagation parameters. Hence it is applicable to the large amplitude surface wave signal in a strain component almost perpendicular to the great-circle direction for which a waveform comparison with seismometer data does not work. The noise background for 'rock strain' in the investigated band is found at about an rms-amplitude of 0.1 nstrain in 1/6 decade for the tight-buffered cable. This allows a detection of marine microseisms at times of high microseism amplitude.</summary>
+    <category term="physics.geo-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-02T10:08:35Z</published>
+    <arxiv:primary_category term="physics.geo-ph"/>
+    <arxiv:journal_ref>Seismological Research Letters, 2025, 96(4), 2356-2367</arxiv:journal_ref>
+    <author>
+      <name>Thomas Forbriger</name>
+      <arxiv:affiliation>Karlsruhe Institute of Technology</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nasim Karamzadeh</name>
+      <arxiv:affiliation>Karlsruhe Institute of Technology</arxiv:affiliation>
+      <arxiv:affiliation>now at University of Münster Institut für Geophysik, Münster, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jérôme Azzola</name>
+      <arxiv:affiliation>Karlsruhe Institute of Technology</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Emmanuel Gaucher</name>
+      <arxiv:affiliation>Karlsruhe Institute of Technology</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rudolf Widmer-Schnidrig</name>
+      <arxiv:affiliation>Institute of Geodesy, University of Stuttgart, Stuttgart, Germany</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andreas Rietbrock</name>
+      <arxiv:affiliation>Karlsruhe Institute of Technology</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.1785/0220240308</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1785/0220240308" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.07358v4</id>
+    <title>AI Sandbagging: Language Models can Strategically Underperform on Evaluations</title>
+    <updated>2025-02-06T20:58:43Z</updated>
+    <link href="https://arxiv.org/abs/2406.07358v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.07358v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Trustworthy capability evaluations are crucial for ensuring the safety of AI systems, and are becoming a key component of AI regulation. However, the developers of an AI system, or the AI system itself, may have incentives for evaluations to understate the AI's actual capability. These conflicting interests lead to the problem of sandbagging, which we define as strategic underperformance on an evaluation. In this paper we assess sandbagging capabilities in contemporary language models (LMs). We prompt frontier LMs, like GPT-4 and Claude 3 Opus, to selectively underperform on dangerous capability evaluations, while maintaining performance on general (harmless) capability evaluations. Moreover, we find that models can be fine-tuned, on a synthetic dataset, to hide specific capabilities unless given a password. This behaviour generalizes to high-quality, held-out benchmarks such as WMDP. In addition, we show that both frontier and smaller models can be prompted or password-locked to target specific scores on a capability evaluation. We have mediocre success in password-locking a model to mimic the answers a weaker model would give. Overall, our results suggest that capability evaluations are vulnerable to sandbagging. This vulnerability decreases the trustworthiness of evaluations, and thereby undermines important safety decisions regarding the development and deployment of advanced AI systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-11T15:26:57Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Teun van der Weij</name>
+    </author>
+    <author>
+      <name>Felix Hofstätter</name>
+    </author>
+    <author>
+      <name>Ollie Jaffe</name>
+    </author>
+    <author>
+      <name>Samuel F. Brown</name>
+    </author>
+    <author>
+      <name>Francis Rhys Ward</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.05466v2</id>
+    <title>Poser: Unmasking Alignment Faking LLMs by Manipulating Their Internals</title>
+    <updated>2024-05-11T04:45:59Z</updated>
+    <link href="https://arxiv.org/abs/2405.05466v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.05466v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Like a criminal under investigation, Large Language Models (LLMs) might pretend to be aligned while evaluated and misbehave when they have a good opportunity. Can current interpretability methods catch these 'alignment fakers?' To answer this question, we introduce a benchmark that consists of 324 pairs of LLMs fine-tuned to select actions in role-play scenarios. One model in each pair is consistently benign (aligned). The other model misbehaves in scenarios where it is unlikely to be caught (alignment faking). The task is to identify the alignment faking model using only inputs where the two models behave identically. We test five detection strategies, one of which identifies 98% of alignment-fakers.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-08T23:44:08Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Joshua Clymer</name>
+    </author>
+    <author>
+      <name>Caden Juang</name>
+    </author>
+    <author>
+      <name>Severin Field</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.08379v3</id>
+    <title>Scheming AIs: Will AIs fake alignment during training in order to get power?</title>
+    <updated>2023-11-27T19:30:35Z</updated>
+    <link href="https://arxiv.org/abs/2311.08379v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.08379v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This report examines whether advanced AIs that perform well in training will be doing so in order to gain power later -- a behavior I call "scheming" (also sometimes called "deceptive alignment"). I conclude that scheming is a disturbingly plausible outcome of using baseline machine learning methods to train goal-directed AIs sophisticated enough to scheme (my subjective probability on such an outcome, given these conditions, is roughly 25%). In particular: if performing well in training is a good strategy for gaining power (as I think it might well be), then a very wide variety of goals would motivate scheming -- and hence, good training performance. This makes it plausible that training might either land on such a goal naturally and then reinforce it, or actively push a model's motivations towards such a goal as an easy way of improving performance. What's more, because schemers pretend to be aligned on tests designed to reveal their motivations, it may be quite difficult to tell whether this has occurred. However, I also think there are reasons for comfort. In particular: scheming may not actually be such a good strategy for gaining power; various selection pressures in training might work against schemer-like goals (for example, relative to non-schemers, schemers need to engage in extra instrumental reasoning, which might harm their training performance); and we may be able to increase such pressures intentionally. The report discusses these and a wide variety of other considerations in detail, and it suggests an array of empirical research directions for probing the topic further.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-14T18:42:40Z</published>
+    <arxiv:comment>127 pages, 8 figures. Revised again to correct typos</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Joe Carlsmith</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.10569v2</id>
+    <title>Deceptive Alignment Monitoring</title>
+    <updated>2023-07-26T03:57:03Z</updated>
+    <link href="https://arxiv.org/abs/2307.10569v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.10569v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As the capabilities of large machine learning models continue to grow, and as the autonomy afforded to such models continues to expand, the spectre of a new adversary looms: the models themselves. The threat that a model might behave in a seemingly reasonable manner, while secretly and subtly modifying its behavior for ulterior reasons is often referred to as deceptive alignment in the AI Safety &amp; Alignment communities. Consequently, we call this new direction Deceptive Alignment Monitoring. In this work, we identify emerging directions in diverse machine learning subfields that we believe will become increasingly important and intertwined in the near future for deceptive alignment monitoring, and we argue that advances in these fields present both long-term challenges and new research opportunities. We conclude by advocating for greater involvement by the adversarial machine learning community in these emerging directions.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-20T04:14:09Z</published>
+    <arxiv:comment>Accepted as BlueSky Oral to 2023 ICML AdvML Workshop</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Andres Carranza</name>
+    </author>
+    <author>
+      <name>Dhruv Pai</name>
+    </author>
+    <author>
+      <name>Rylan Schaeffer</name>
+    </author>
+    <author>
+      <name>Arnuv Tandon</name>
+    </author>
+    <author>
+      <name>Sanmi Koyejo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1908.05232v2</id>
+    <title>Agent-based simulator of dynamic flood-people interactions</title>
+    <updated>2020-03-28T16:09:08Z</updated>
+    <link href="https://arxiv.org/abs/1908.05232v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1908.05232v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents a new simulator for dynamic modelling of interactions between flooding and people in crowded areas. The simulator is developed in FLAMEGPU (a Flexible Large scale Agent-based Modelling Environment for the GPU), which allows to model multiple agent interactions while benefitting from the speed-up of GPUs. Flooding variables including terrain data are represented by a hydrodynamic Agent-Based Model (ABM) that is based on a non-sequential implementation of a robust Finite Volume (FV) solver of the Shallow Water Equations (SWEs). People movements are represented by a pedestrian ABM adopting force-based walking rules. The hydrodynamic ABM is coupled to the pedestrian ABM according to risk-to-life thresholds reported by the UK Environment Agency (EA). A hypothetical case study of a crowded shopping centre is proposed and used to assess the dynamic coupling ability of the simulator. Flooding into the shopping centre is induced based on realistic inflow conditions, and the simulator is applied considering two scenarios: evacuation without advanced warning and intervention with an advanced warning of 12 hours. Results show that the simulator can produce detailed statistics of spatiotemporal people states during evacuation, and is useful to plan safe and effective people intervention to deploy a sandbag-based temporary barriers.</summary>
+    <category term="physics.soc-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-08-08T11:30:56Z</published>
+    <arxiv:primary_category term="physics.soc-ph"/>
+    <author>
+      <name>Mohammad Shirvani</name>
+    </author>
+    <author>
+      <name>Georges Kesserwani</name>
+    </author>
+    <author>
+      <name>Paul Richmond</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1803.00457v2</id>
+    <title>Optimization of Structural Flood Mitigation Strategies</title>
+    <updated>2019-04-02T17:38:08Z</updated>
+    <link href="https://arxiv.org/abs/1803.00457v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1803.00457v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The dynamics of flooding are primarily influenced by the shape, height, and roughness (friction) of the underlying topography. For this reason, mechanisms to mitigate floods frequently employ structural measures that either modify topographic elevation, e.g., through the placement of levees and sandbags, or increase roughness, e.g., through revegetation projects. However, the configuration of these measures is typically decided in an ad hoc manner, limiting their overall effectiveness. The advent of high-performance surface water modeling software and improvements in black-box optimization suggest that a more principled design methodology may be possible. This paper proposes a new computational approach to the problem of designing structural mitigation strategies under physical and budgetary constraints. It presents the development of a problem discretization amenable to simulation-based, derivative-free optimization. However, meta-heuristics alone are found to be insufficient for obtaining quality solutions in a reasonable amount of time. As a result, this paper proposes novel numerical and physics-based procedures to improve convergence to a high-quality mitigation. The efficiency of the approach is demonstrated on hypothetical dam break scenarios of varying complexity under various mitigation budget constraints. In particular, experimental results show that, on average, the final proposed algorithm results in a 65% improvement in solution quality compared to a direct implementation.</summary>
+    <category term="math.OC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-03-01T15:40:48Z</published>
+    <arxiv:primary_category term="math.OC"/>
+    <arxiv:journal_ref>Water Resources Research, 55, 1490-1509 (2019)</arxiv:journal_ref>
+    <author>
+      <name>Byron Tasseff</name>
+    </author>
+    <author>
+      <name>Russell Bent</name>
+    </author>
+    <author>
+      <name>Pascal Van Hentenryck</name>
+    </author>
+    <arxiv:doi>10.1029/2018WR024362</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1029/2018WR024362" title="doi"/>
+  </entry>
+</feed>

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 800,
+  "title": "On Limitations of the Transformer Architecture",
+  "org": "deepmind",
+  "date": "2024-02-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.08164",
+  "abstract": "What are the root causes of hallucinations in large language models (LLMs)? We use Communication Complexity to prove that the Transformer layer is incapable of composing functions (e.g., identify a grandparent of a person in a genealogy) if the domains of the functions are large enough; we show through examples that this inability is already empirically present when the domains are quite small. We also point out that several mathematical tasks that are at the core of the so-called compositional tasks thought to be hard for LLMs are unlikely to be solvable by Transformers, for large enough instances and assuming that certain well accepted conjectures in the field of Computational Complexity are true.",
+  "needs_fetch": false
+ },
+ {
+  "id": 802,
+  "title": "Genie: Generative Interactive Environments",
+  "org": "deepmind",
+  "date": "2024-02-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.15391",
+  "abstract": "We introduce Genie, the first generative interactive environment trained in an unsupervised manner from unlabelled Internet videos. The model can be prompted to generate an endless variety of action-controllable virtual worlds described through text, synthetic images, photographs, and even sketches. At 11B parameters, Genie can be considered a foundation world model. It is comprised of a spatiotemporal video tokenizer, an autoregressive dynamics model, and a simple and scalable latent action model. Genie enables users to act in the generated environments on a frame-by-frame basis despite training without any ground-truth action labels or other domain-specific requirements typically found in the world model literature. Further the resulting learned latent action space facilitates training agents to imitate behaviors from unseen videos, opening the path for training generalist agents of the future.",
+  "needs_fetch": false
+ },
+ {
+  "id": 801,
+  "title": "AlphaTensor for Optimizing Quantum Computations",
+  "org": "deepmind",
+  "date": "2024-02-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.14396",
+  "abstract": "We address the problem of T-count optimization, i.e., minimizing the number of the most expensive gates in fault-tolerant quantum computation (namely, the T gates) that are needed to implement a given circuit. For that, we develop AlphaTensor-Quantum, a method based on deep reinforcement learning that exploits the relationship between optimizing T-count and tensor decomposition. Unlike existing methods for T-count optimization, AlphaTensor-Quantum can incorporate domain-specific knowledge about quantum computation and leverage gadgets, which significantly reduces the T-count of the optimized circuits. AlphaTensor-Quantum outperforms all existing methods for T-count optimization on a set of arithmetic benchmarks. Remarkably, it rediscovers an efficient multiplication algorithm akin to Karatsuba's method for multiplication in finite fields, and it finds the best human-designed solutions for relevant arithmetic computations used in Shor's algorithm and for quantum chemistry simulation. Thus, AlphaTensor-Quantum can save hundreds of hours of research by optimizing relevant quantum circuits in a fully automated way.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1694,
+  "title": "Towards Generalist Biomedical AI",
+  "org": "deepmind",
+  "date": "2024-02-22",
+  "venue": "NEJM AI",
+  "url": "https://doi.org/10.1056/aioa2300138",
+  "abstract": "BackgroundMedicine is inherently multimodal, requiring the simultaneous interpretation and integration of insights between many data modalities spanning text, imaging, genomics, and more. Generalist biomedical artificial intelligence systems that flexibly encode, integrate, and interpret these data might better enable impactful applications ranging from scientific discovery to care delivery.MethodsTo catalyze development of these models, we curated MultiMedBench, a new multimodal biomedical benchmark. MultiMedBench encompasses 14 diverse tasks, such as medical question answering, mammography and dermatology image interpretation, radiology report generation and summarization, and genomic variant calling. We then introduced Med-PaLM Multimodal (Med-PaLM M), our proof of concept for a generalist biomedical AI system that flexibly encodes and interprets biomedical data including clinical language, imaging, and genomics with the same set of model weights. To further probe the capabilities and limitations of Med-PaLM M, we conducted a radiologist evaluation of model-generated (and human) chest x-ray reports.ResultsWe observed encouraging performance across model scales. Med-PaLM M reached performance competitive with or exceeding the state of the art on all MultiMedBench tasks, often surpassing specialist models by a wide margin. In a side-by-side ranking on 246 retrospective chest x-rays, clinicians expressed a pairwise preference for Med-PaLM Multimodal reports over those produce",
+  "needs_fetch": false
+ },
+ {
+  "id": 804,
+  "title": "When Scaling Meets LLM Finetuning: The Effect of Data, Model and Finetuning Method",
+  "org": "deepmind",
+  "date": "2024-02-22",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=5HCnKDeTws",
+  "abstract": "While large language models (LLMs) often rely on finetuning to unlock their capabilities for downstream applications, our understanding on the inductive biases (especially the scaling properties) of different finetuning methods is still limited. To fill this gap, we conduct systematic experiments studying whether and how different scaling factors, including LLM model size, pretraining data size, new finetuning parameter size and finetuning data size, affect the finetuning performance. We consider two types of finetuning – full-model tuning (FMT) and parameter efficient tuning (PET, including prompt tuning and LoRA), and explore their scaling behaviors in the data-limited regime where the LLM model size substantially outweighs the finetuning data size. Based on two sets of pretrained bilingual LLMs from 1B to 16B and experiments on bilingual machine translation and multilingual summarization benchmarks, we find that 1) LLM finetuning follows a power-based multiplicative joint scaling law between finetuning data size and each other scaling factor; 2) LLM finetuning benefits more from LLM model scaling than pretraining data scaling, and PET parameter scaling is generally ineffective; and 3) the optimal finetuning method is highly task- and finetuning data-dependent. We hope our findings could shed light on understanding, selecting and developing LLM finetuning methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 803,
+  "title": "OmniPred: Language Models as Universal Regressors",
+  "org": "deepmind",
+  "date": "2024-02-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.14547",
+  "abstract": "Over the broad landscape of experimental design, regression has been a powerful tool to accurately predict the outcome metrics of a system or model given a set of parameters, but has been traditionally restricted to methods which are only applicable to a specific task. In this paper, we propose OmniPred, a framework for training language models as universal end-to-end regressors over (x,y) evaluation data from diverse real world experiments. Using data sourced from Google Vizier, one of the largest blackbox optimization databases in the world, our extensive experiments demonstrate that through only textual representations of mathematical parameters and values, language models are capable of very precise numerical regression, and if given the opportunity to train over multiple tasks, can significantly outperform traditional regression models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1695,
+  "title": "Practical Kernel Tests of Conditional Independence",
+  "org": "deepmind",
+  "date": "2024-02-20",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2402.13196",
+  "abstract": "We describe a data-efficient, kernel-based approach to statistical testing of conditional independence. A major challenge of conditional independence testing is to obtain the correct test level (the specified upper bound on the rate of false positives), while still attaining competitive test power. Excess false positives arise due to bias in the test statistic, which is in our case obtained using nonparametric kernel ridge regression. We propose SplitKCI, an automated method for bias control for the Kernel-based Conditional Independence (KCI) test based on data splitting. We show that our approach significantly improves test level control for KCI without sacrificing test power, both theoretically and for synthetic and real-world data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 805,
+  "title": "The Next 700 ML-Enabled Compiler Optimizations",
+  "org": "deepmind",
+  "date": "2024-02-20",
+  "venue": "ACM SIGPLAN 2024 International Conference on Compiler Construction",
+  "url": "https://dl.acm.org/doi/10.1145/3640537.3641580",
+  "abstract": "There is a growing interest in enhancing compiler optimizations with ML models. Yet compilers remain challenging environments for interacting with ML frameworks. Some optimizations require tightly coupled models and compiler internals, raising issues with modularity, performance and ML framework independence. Practical deployment and transparency for the end-user are also important concerns. We propose a library allowing ML model development within a traditional Python framework while enabling efficient, end-to-end integration with an optimizing compiler. We evaluate it on both research and production use cases, for training and inference, over four optimization problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 806,
+  "title": "Simulacra as Conscious Exotica",
+  "org": "deepmind",
+  "date": "2024-02-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.12422",
+  "abstract": "The advent of conversational agents with increasingly human-like behaviour throws old philosophical questions into new light. Does it, or could it, ever make sense to speak of AI agents built out of generative language models in terms of consciousness, given that they are \"mere\" simulacra of human behaviour, and that what they do can be seen as \"merely\" role play? Drawing on the later writing of Wittgenstein, this paper attempts to tackle this question while avoiding the pitfalls of dualistic thinking.",
+  "needs_fetch": false
+ },
+ {
+  "id": 807,
+  "title": "Learning to Learn Faster from Human Feedback with Language Model Predictive Control",
+  "org": "deepmind",
+  "date": "2024-02-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.11450",
+  "abstract": "Large language models (LLMs) have been shown to exhibit a wide range of capabilities, such as writing robot code from language commands -- enabling non-experts to direct robot behaviors, modify them based on feedback, or compose them to perform new tasks. However, these capabilities (driven by in-context learning) are limited to short-term interactions, where users' feedback remains relevant for only as long as it fits within the context size of the LLM, and can be forgotten over longer interactions. In this work, we investigate fine-tuning the robot code-writing LLMs, to remember their in-context interactions and improve their teachability i.e., how efficiently they adapt to human inputs (measured by average number of corrections before the user considers the task successful). Our key observation is that when human-robot interactions are formulated as a partially observable Markov decision process (in which human language inputs are observations, and robot code outputs are actions), then training an LLM to complete previous interactions can be viewed as training a transition dynamics model -- that can be combined with classic robotics techniques such as model predictive control (MPC) to discover shorter paths to success. This gives rise to Language Model Predictive Control (LMPC), a framework that fine-tunes PaLM 2 to improve its teachability on 78 tasks across 5 robot embodiments -- improving non-expert teaching success rates of unseen tasks by 26.9% while reducing the aver",
+  "needs_fetch": false
+ },
+ {
+  "id": 1012,
+  "title": "Video generation models as world simulators",
+  "org": "openai",
+  "date": "2024-02-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+  "abstract": "We explore large-scale training of generative models on video data. Specifically, we train text-conditional diffusion models jointly on videos and images of variable durations, resolutions and aspect ratios. We leverage a transformer architecture that operates on spacetime patches of video and image latent codes. Our largest model, Sora, is capable of generating a minute of high fidelity video. Our results suggest that scaling video generation models is a promising path towards building general purpose simulators of the physical world.",
+  "needs_fetch": false
+ },
+ {
+  "id": 809,
+  "title": "Experts Don't Cheat: Learning What You Don't Know by Predicting Pairs",
+  "org": "deepmind",
+  "date": "2024-02-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.08733",
+  "abstract": "Identifying how much a model ${\\widehat{p}}\\_{\\theta}(Y|X)$ knows about the stochastic real-world process $p(Y|X)$ it was trained on is important to ensure it avoids producing incorrect or \"hallucinated\" answers or taking unsafe actions. But this is difficult for generative models because probabilistic predictions do not distinguish between per-response noise (aleatoric uncertainty) and lack of knowledge about the process (epistemic uncertainty), and existing epistemic uncertainty quantification techniques tend to be overconfident when the model underfits. We propose a general strategy for teaching a model to both approximate $p(Y|X)$ and also estimate the remaining gaps between ${\\widehat{p}}\\_{\\theta}(Y|X)$ and $p(Y|X)$: train it to predict pairs of independent responses drawn from the true conditional distribution, allow it to \"cheat\" by observing one response while predicting the other, then measure how much it cheats. Remarkably, we prove that being good at cheating (i.e. cheating whenever it improves your prediction) is equivalent to being second-order calibrated, a principled extension of ordinary calibration that allows us to construct provably-correct frequentist confidence intervals for $p(Y|X)$ and detect incorrect responses with high probability. We demonstrate empirically that our approach accurately estimates how much models don't know across ambiguous image classification, (synthetic) language modeling, and partially-observable navigation tasks, outperforming e",
+  "needs_fetch": false
+ },
+ {
+  "id": 808,
+  "title": "A Human-Inspired Reading Agent with Gist Memory of Very Long Contexts",
+  "org": "deepmind",
+  "date": "2024-02-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.09727",
+  "abstract": "Current Large Language Models (LLMs) are not only limited to some maximum context length, but also are not able to robustly consume long inputs. To address these limitations, we propose ReadAgent, an LLM agent system that increases effective context length up to 20x in our experiments. Inspired by how humans interactively read long documents, we implement ReadAgent as a simple prompting system that uses the advanced language capabilities of LLMs to (1) decide what content to store together in a memory episode, (2) compress those memory episodes into short episodic memories called *gist memories*, and (3) take actions to look up passages in the original text if ReadAgent needs to remind itself of relevant details to complete a task. We evaluate ReadAgent against baselines using retrieval methods, using the original long contexts, and using the gist memories. These evaluations are performed on three long-document reading comprehension tasks: QuALITY, NarrativeQA, and QMSum. ReadAgent outperforms the baselines on all three tasks while extending the effective context window by 3-20x.",
+  "needs_fetch": false
+ },
+ {
+  "id": 810,
+  "title": "Premise Order Matters in Reasoning with Large Language Models",
+  "org": "deepmind",
+  "date": "2024-02-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.08939",
+  "abstract": "Large language models (LLMs) have accomplished remarkable reasoning performance in various domains. However, we observe that LLMs are surprisingly brittle to different premise orders, despite that such ordering does not alter the underlying task. In particular, we observe that LLMs achieve the best performance when the premise order aligns with the context required in intermediate reasoning steps. For example, in deductive reasoning tasks, presenting the premises in the same order as the ground truth proof in the prompt (as opposed to random ordering) drastically increases the model's accuracy. We first examine the effect of premise ordering on deductive reasoning on a variety of LLMs, and our evaluation shows that even if the model performance is decent on the optimal order, permuting the premise order can cause a performance drop of over 30%. In addition, we introduce the R-GSM benchmark based on GSM8K to examine the ordering effect for math problem solving, and we again observe a significant accuracy decrease compared to the original GSM8K problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 416,
+  "title": "InfoRM: Mitigating Reward Hacking in RLHF via Information-Theoretic Reward Modeling",
+  "org": "other",
+  "date": "2024-02-14",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2402.09345",
+  "abstract": "Despite the success of reinforcement learning from human feedback (RLHF) in aligning language models with human values, reward hacking, also termed reward overoptimization, remains a critical challenge. This issue primarily arises from reward misgeneralization, where reward models (RMs) compute reward using spurious features that are irrelevant to human preferences. In this work, we tackle this problem from an information-theoretic perspective and propose a framework for reward modeling, namely InfoRM, by introducing a variational information bottleneck objective to filter out irrelevant information. Notably, we further identify a correlation between overoptimization and outliers in the IB latent space of InfoRM, establishing it as a promising tool for detecting reward overoptimization. Inspired by this finding, we propose the Cluster Separation Index (CSI), which quantifies deviations in the IB latent space, as an indicator of reward overoptimization to facilitate the development of online mitigation strategies. Extensive experiments on a wide range of settings and RM scales (70M, 440M, 1.4B, and 7B) demonstrate the effectiveness of InfoRM. Further analyses reveal that InfoRM's overoptimization detection mechanism is not only effective but also robust across a broad range of datasets, signifying a notable advancement in the field of RLHF. The code will be released upon acceptance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 811,
+  "title": "A Distributional Analogue to the Successor Representation",
+  "org": "deepmind",
+  "date": "2024-02-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.08530",
+  "abstract": "This paper contributes a new approach for distributional reinforcement learning which elucidates a clean separation of transition structure and reward in the learning process. Analogous to how the successor representation (SR) describes the expected consequences of behaving according to a given policy, our distributional successor measure (SM) describes the distributional consequences of this behaviour. We formulate the distributional SM as a distribution over distributions and provide theory connecting it with distributional and model-based reinforcement learning. Moreover, we propose an algorithm that learns the distributional SM from data by minimizing a two-level maximum mean discrepancy. Key to our method are a number of algorithmic techniques that are independently valuable for learning generative models of state. As an illustration of the usefulness of the distributional SM, we show that it enables zero-shot risk-sensitive policy evaluation in a way that was not previously possible.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1696,
+  "title": "Consensus, dissensus and synergy between clinicians and specialist foundation models in radiology report generation",
+  "org": "deepmind",
+  "date": "2024-02-12",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-3940387/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 813,
+  "title": "PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs",
+  "org": "deepmind",
+  "date": "2024-02-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.07872",
+  "abstract": "Vision language models (VLMs) have shown impressive capabilities across a variety of tasks, from logical reasoning to visual understanding. This opens the door to richer interaction with the world, for example robotic control. However, VLMs produce only textual outputs, while robotic control and other spatial tasks require outputting continuous coordinates, actions, or trajectories. How can we enable VLMs to handle such settings without fine-tuning on task-specific data? In this paper, we propose a novel visual prompting approach for VLMs that we call Prompting with Iterative Visual Optimization (PIVOT), which casts tasks as iterative visual question answering. In each iteration, the image is annotated with a visual representation of proposals that the VLM can refer to (e.g., candidate robot actions, localizations, or trajectories). The VLM then selects the best ones for the task. These proposals are iteratively refined, allowing the VLM to eventually zero in on the best available answer. We investigate PIVOT on real-world robotic navigation, real-world manipulation from images, instruction following in simulation, and additional spatial inference tasks such as localization. We find, perhaps surprisingly, that our approach enables zero-shot control of robotic systems without any robot training data, navigation in a variety of environments, and other capabilities. Although current performance is far from perfect, our work highlights potentials and limitations of this new regim",
+  "needs_fetch": false
+ },
+ {
+  "id": 812,
+  "title": "Near-Minimax-Optimal Distributional RL with a Generative Model",
+  "org": "deepmind",
+  "date": "2024-02-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.07598",
+  "abstract": "We propose a new algorithm for model-based distributional reinforcement learning (RL), and prove that it is minimax-optimal for approximating return distributions with a generative model (up to logarithmic factors), resolving an open question of Zhang et al. (2023). Our analysis provides new theoretical results on categorical approaches to distributional RL, and also introduces a new distributional Bellman equation, the stochastic categorical CDF Bellman equation, which we expect to be of independent interest. We also provide an experimental study comparing several model-based distributional RL algorithms, with several takeaways for practitioners.",
+  "needs_fetch": false
+ },
+ {
+  "id": 814,
+  "title": "Chain-of-Table: Evolves Tables in the LLM Reasoning Chain for Table Understanding",
+  "org": "deepmind",
+  "date": "2024-02-11",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=4L0xnS4GQM",
+  "abstract": "Table-based reasoning with large language models is a promising direction to solve many table understanding tasks, such as table-based question answering and table-based fact verification. Chain-of-Thought and its alike approaches have demonstrated impressive performance by incorporating the reasoning chain in the form of textual context. However, it is still an open question how to properly involve tabular data in the reasoning chain for the table-based tasks. Inspired by nested queries in SQL development where temporary tables are used to store intermediate results, we propose Chain-of-Table, where we update the table iteratively to represent the complex reasoning chain. In our approach, the tabular context evolves as a sequence of operations generated by a large language model, where the generation of the latter operation is conditioned on the results of the previous operation. In this way, the constantly evolving table forms a chain, showing the reasoning process of the given problem. The result table carries rich information of the intermediate results so that large language models can skip the complex reasoning over the latent clues, directly aggregate relevant information from the result table, and come to the final prediction easily. Extensive experiments with two large language models show that Chain-of-Table surpasses competitive baselines and achieves the state-of-the-art performance in three well-known benchmark datasets (WikiTableQuestions, and FeTaQA, and TabFac",
+  "needs_fetch": false
+ },
+ {
+  "id": 417,
+  "title": "Feedback Loops With Language Models Drive In-Context Reward Hacking",
+  "org": "other",
+  "date": "2024-02-09",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2402.06627",
+  "abstract": "Language models influence the external world: they query APIs that read and write to web pages, generate content that shapes human behavior, and run system commands as autonomous agents. These interactions form feedback loops: LLM outputs affect the world, which in turn affect subsequent LLM outputs. In this work, we show that feedback loops can cause in-context reward hacking (ICRH), where the LLM at test-time optimizes a (potentially implicit) objective but creates negative side effects in the process. For example, consider an LLM agent deployed to increase Twitter engagement; the LLM may retrieve its previous tweets into the context window and make them more controversial, increasing engagement but also toxicity. We identify and study two processes that lead to ICRH: output-refinement and policy-refinement. For these processes, evaluations on static datasets are insufficient -- they miss the feedback effects and thus cannot capture the most harmful behavior. In response, we provide three recommendations for evaluation to capture more instances of ICRH. As AI development accelerates, the effects of feedback loops will proliferate, increasing the need to understand their role in shaping LLM behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1698,
+  "title": "How do Transformers perform In-Context Autoregressive Learning?",
+  "org": "deepmind",
+  "date": "2024-02-08",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2402.05787",
+  "abstract": "Transformers have achieved state-of-the-art performance in language modeling tasks. However, the reasons behind their tremendous success are still unclear. In this paper, towards a better understanding, we train a Transformer model on a simple next token prediction task, where sequences are generated as a first-order autoregressive process $s_{t+1} = W s_t$. We show how a trained Transformer predicts the next token by first learning $W$ in-context, then applying a prediction mapping. We call the resulting procedure in-context autoregressive learning. More precisely, focusing on commuting orthogonal matrices $W$, we first show that a trained one-layer linear Transformer implements one step of gradient descent for the minimization of an inner objective function, when considering augmented tokens. When the tokens are not augmented, we characterize the global minima of a one-layer diagonal linear multi-head Transformer. Importantly, we exhibit orthogonality between heads and show that positional encoding captures trigonometric relations in the data. On the experimental side, we consider the general case of non-commuting orthogonal matrices and generalize our theoretical findings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1697,
+  "title": "Enhancing Precision in Rectal Cancer Radiotherapy: Localized Fine-Tuning of Deep-learning based Auto-segmentation (DLAS) Model for Clinical Target Volume and Organs-at-risk",
+  "org": "deepmind",
+  "date": "2024-02-08",
+  "venue": "Research Square",
+  "url": "http://dx.doi.org/10.21203/rs.3.rs-3933902/v1",
+  "abstract": "Abstract Background and Purpose Various deep learning auto-segmentation (DLAS) models have been proposed, some of which commercialized. However, the issue of performance degradation is notable when pretrained models are deployed in the clinic. This study aims to enhance precision of a popular commercial DLAS product in rectal cancer radiotherapy by localized fine-tuning, addressing challenges in practicality and generalizability in real-world clinical settings. Materials and Methods A total of 120 Stage II/III mid-low rectal cancer patients were retrospectively enrolled and divided into three datasets: training (n = 60), external validation (ExVal, n = 30), and generalizability evaluation (GenEva, n = 30) datasets respectively. The patients in the training and ExVal dataset were acquired on the same CT simulator, while those in GenEva were on a different CT simulator. The commercial DLAS software was first localized fine-tuned for clinical target volume (CTV) and organs-at-risk (OAR) using the training data, and then validated on ExVal and GenEva respectively. Performance evaluation involved comparing the localized fine-tuned model (LFT) with the vendor-provided pretrained model (VPM) against ground truth contours, using metrics like Dice similarity coefficient (DSC), 95th Hausdorff distance (95HD), sensitivity and specificity. Results Localized fine-tuning significantly improved CTV delineation accuracy (p &lt; 0.05) with LFT outperforming VPM in target volume, DSC, 95HD and",
+  "needs_fetch": false
+ },
+ {
+  "id": 816,
+  "title": "Prior-Dependent Allocations for Bayesian Fixed-Budget Best-Arm Identification in Structured Bandits",
+  "org": "deepmind",
+  "date": "2024-02-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.05878",
+  "abstract": "We study the problem of Bayesian fixed-budget best-arm identification (BAI) in structured bandits. We propose an algorithm that uses fixed allocations based on the prior information and the structure of the environment. We provide theoretical bounds on its performance across diverse models, including the first prior-dependent upper bounds for linear and hierarchical BAI. Our key contribution is introducing new proof methods that result in tighter bounds for multi-armed BAI compared to existing methods. We extensively compare our approach to other fixed-budget BAI methods, demonstrating its consistent and robust performance in various settings. Our work improves our understanding of Bayesian fixed-budget BAI in structured bandits and highlights the effectiveness of our approach in practical scenarios.",
+  "needs_fetch": false
+ },
+ {
+  "id": 815,
+  "title": "Memory Consolidation Enables Long-Context Video Understanding",
+  "org": "deepmind",
+  "date": "2024-02-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.05861",
+  "abstract": "Most transformer-based video encoders are limited to short temporal contexts due to their quadratic complexity. While various attempts have been made to extend this context, this has often come at the cost of both conceptual and computational complexity. We propose to instead re-purpose existing pre-trained video transformers by simply fine-tuning them to attend to memories derived non-parametrically from past activations. By leveraging redundancy reduction, our memory-consolidated vision transformer (MC-ViT) effortlessly extends its context far into the past and exhibits excellent scaling behavior when learning from longer videos. In doing so, MC-ViT sets a new state-of-the-art in long-context video understanding on EgoSchema, Perception Test, and Diving48, outperforming methods that benefit from orders of magnitude more parameters.",
+  "needs_fetch": false
+ },
+ {
+  "id": 818,
+  "title": "States as Strings as Strategies: Steering Language Models with Game-Theoretic Solvers",
+  "org": "deepmind",
+  "date": "2024-02-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.01704",
+  "abstract": "Game theory is the study of mathematical models of strategic interactions among rational agents. Language is a key medium of interaction for humans, though it has historically proven difficult to model dialogue and its strategic motivations mathematically. A suitable model of the players, strategies, and payoffs associated with linguistic interactions (i.e., a binding to the conventional symbolic logic of game theory) would enable existing game-theoretic algorithms to provide strategic solutions in the space of language. In other words, a binding could provide a route to computing stable, rational conversational strategies in dialogue. Large language models (LLMs) have arguably reached a point where their generative capabilities can enable realistic, human-like simulations of natural dialogue. By prompting them in various ways, we can steer their responses towards different output utterances. Leveraging the expressivity of natural language, LLMs can also help us quickly generate new dialogue scenarios, which are grounded in real world applications. In this work, we present one possible binding from dialogue to game theory as well as generalizations of existing equilibrium finding algorithms to this setting. In addition, by exploiting LLMs generation capabilities along with our proposed binding, we can synthesize a large repository of formally-defined games in which one can study and test game-theoretic solution concepts. We also demonstrate how one can combine LLM-driven game",
+  "needs_fetch": false
+ },
+ {
+  "id": 817,
+  "title": "Large Language Models Self-Discover Reasoning Structures",
+  "org": "deepmind",
+  "date": "2024-02-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.03620",
+  "abstract": "We introduce SELF-DISCOVER, a general framework for LLMs to self-discover and compose atomic reasoning modules such as critical thinking and step-by-step reasoning to tackle complex reasoning problems that are challenging for typical prompting methods e.g. Chain-of-Thought (CoT). Core to the framework is a self-discover process where LLMs select multiple atomic reasoning modules, and compose them into an explicit and task-unique reasoning structure for LLMs to follow during decoding, in sharp contrast to the implicit reasoning in CoT. SELF-DISCOVER substantially improves GPT-4 and PaLM-2’s performance on challenging reasoning benchmarks such as BigBench-Hard and Thinking4Doing, by as much as 30%. Furthermore, SELF-DISCOVER outperforms inference-intensive methods such as CoT-Self-Consistency and majority voting by more than 20% across 24 tasks on multiple LLMs, while requiring 10-40x fewer inference compute. Finally, the self-discovered reasoning structures by GPT-4 can also be applied to smaller models of Llama 2 to improving their reasoning capabilities, demonstrating generalization of the discovered reasoning structures.",
+  "needs_fetch": false
+ },
+ {
+  "id": 419,
+  "title": "Vision Superalignment: Weak-to-Strong Generalization for Vision Foundation Models",
+  "org": "other",
+  "date": "2024-02-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.03749",
+  "abstract": "Recent advancements in large language models have sparked interest in their extraordinary and near-superhuman capabilities, leading researchers to explore methods for evaluating and optimizing these abilities, which is called superalignment. In this context, our paper delves into the realm of vision foundation models, focusing on the concept of weak-to-strong generalization, which involves using a weaker model to supervise a stronger one, aiming to enhance the latter's capabilities beyond the former's limits. We introduce a novel and adaptively adjustable loss function for weak-to-strong supervision. Our comprehensive experiments span various scenarios, including few-shot learning, transfer learning, noisy label learning, and common knowledge distillation settings. The results are striking: our approach not only exceeds the performance benchmarks set by strong-to-strong generalization but also surpasses the outcomes of fine-tuning strong models with whole datasets. This compelling evidence underscores the significant potential of weak-to-strong generalization, showcasing its capability to substantially elevate the performance of vision foundation models. The code is available at https://github.com/ggjy/vision_weak_to_strong.",
+  "needs_fetch": false
+ },
+ {
+  "id": 418,
+  "title": "Detecting Mode Collapse in Language Models via Narration",
+  "org": "other",
+  "date": "2024-02-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.04477",
+  "abstract": "No two authors write alike. Personal flourishes invoked in written narratives, from lexicon to rhetorical devices, imply a particular author--what literary theorists label the implied or virtual author; distinct from the real author or narrator of a text. Early large language models trained on unfiltered training sets drawn from a variety of discordant sources yielded incoherent personalities, problematic for conversational tasks but proving useful for sampling literature from multiple perspectives. Successes in alignment research in recent years have allowed researchers to impose subjectively consistent personae on language models via instruction tuning and reinforcement learning from human feedback (RLHF), but whether aligned models retain the ability to model an arbitrary virtual author has received little scrutiny. By studying 4,374 stories sampled from three OpenAI language models, we show successive versions of GPT-3 suffer from increasing degrees of \"mode collapse\" whereby overfitting the model during alignment constrains it from generalizing over authorship: models suffering from mode collapse become unable to assume a multiplicity of perspectives. Our method and results are significant for researchers seeking to employ language models in sociological simulations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1699,
+  "title": "Multi-Task Learning of Object States and State-Modifying Actions From Web Videos",
+  "org": "deepmind",
+  "date": "2024-02-05",
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "url": "https://doi.org/10.1109/tpami.2024.3362288",
+  "abstract": "We aim to learn to temporally localize object state changes and the corresponding state-modifying actions by observing people interacting with objects in long uncurated web videos. We introduce three principal contributions. First, we develop a self-supervised model for jointly learning state-modifying actions together with the corresponding object states from an uncurated set of videos from the Internet. The model is self-supervised by the causal ordering signal, i.e., initial object state → manipulating action → end state. Second, we explore alternative multi-task network architectures and identify a model that enables efficient joint learning of multiple object states and actions, such as pouring water and pouring coffee, together. Third, we collect a new dataset, named ChangeIt, with more than 2600 hours of video and 34 thousand changes of object states. We report results on an existing instructional video dataset COIN as well as our new large-scale ChangeIt dataset containing tens of thousands of long uncurated web videos depicting various interactions such as hole drilling, cream whisking, or paper plane folding. We show that our multi-task model achieves a relative improvement of 40% over the prior methods and significantly outperforms both image-based and video-based zero-shot models for this problem.",
+  "needs_fetch": false
+ }
+]

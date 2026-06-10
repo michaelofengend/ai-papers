@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2551,
+  "title": "Path-Specific Counterfactual Fairness",
+  "org": "deepmind",
+  "date": "2019-07-17",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/4777",
+  "abstract": "We consider the problem of learning fair decision systems from data in which a sensitive attribute might affect the decision along both fair and unfair pathways. We introduce a counterfactual approach to disregard effects along unfair pathways that does not incur in the same loss of individual-specific information as previous approaches. Our method corrects observations adversely affected by the sensitive attribute, and uses these to form a decision. We leverage recent developments in deep learning and approximate inference to develop a VAE-type method that is widely applicable to complex nonlinear models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2560,
+  "title": "Implementation of a Digitally Enabled Care Pathway (Part 1): Impact on Clinical Outcomes and Associated Health Care Costs",
+  "org": "deepmind",
+  "date": "2019-07-15",
+  "venue": "Journal of Medical Internet Research",
+  "url": "https://doi.org/10.2196/13147",
+  "abstract": "BACKGROUND: The development of acute kidney injury (AKI) in hospitalized patients is associated with adverse outcomes and increased health care costs. Simple automated e-alerts indicating its presence do not appear to improve outcomes, perhaps because of a lack of explicitly defined integration with a clinical response. OBJECTIVE: We sought to test this hypothesis by evaluating the impact of a digitally enabled intervention on clinical outcomes and health care costs associated with AKI in hospitalized patients. METHODS: We developed a care pathway comprising automated AKI detection, mobile clinician notification, in-app triage, and a protocolized specialist clinical response. We evaluated its impact by comparing data from pre- and postimplementation phases (May 2016 to January 2017 and May to September 2017, respectively) at the intervention site and another site not receiving the intervention. Clinical outcomes were analyzed using segmented regression analysis. The primary outcome was recovery of renal function to ≤120% of baseline by hospital discharge. Secondary clinical outcomes were mortality within 30 days of alert, progression of AKI stage, transfer to renal/intensive care units, hospital re-admission within 30 days of discharge, dependence on renal replacement therapy 30 days after discharge, and hospital-wide cardiac arrest rate. Time taken for specialist review of AKI alerts was measured. Impact on health care costs as defined by Patient-Level Information and Costin",
+  "needs_fetch": false
+ },
+ {
+  "id": 2860,
+  "title": "Skill emergence and transfer in multi-agent environments",
+  "org": "openai",
+  "date": "2019-07-10",
+  "venue": "Proceedings of the Genetic and Evolutionary Computation Conference Companion",
+  "url": "https://doi.org/10.1145/3319619.3326794",
+  "abstract": "A central problem in training artificial agents to perform complex skills is specifying appropriate cost functions whose optimization will lead to the desired behavior. Specifying detailed cost functions is laborious and often inefficient. The training of agents in competitive and cooperative multi-agent environments provides an avenue to circumvent these limitations: By competition and cooperation agents provide to each other a natural curriculum that can lead to the emergence of complicated skills, even if the rewards of the multi-agent game are simple [1].",
+  "needs_fetch": false
+ },
+ {
+  "id": 2859,
+  "title": "The Role of Cooperation in Responsible AI Development",
+  "org": "openai",
+  "date": "2019-07-10",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1907.04534",
+  "abstract": "In this paper, we argue that competitive pressures could incentivize AI companies to underinvest in ensuring their systems are safe, secure, and have a positive social impact. Ensuring that AI systems are developed responsibly may therefore require preventing and solving collective action problems between companies. We note that there are several key factors that improve the prospects for cooperation in collective action problems. We use this to identify strategies to improve the prospects for industry cooperation on the responsible development of AI.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1070,
+  "title": "Why responsible AI development needs cooperation on safety",
+  "org": "openai",
+  "date": "2019-07-10",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/cooperation-on-safety/",
+  "abstract": "We’ve written a policy research paper identifying four strategies that can be used today to improve the likelihood of long-term industry cooperation on safety norms in AI: communicating risks and benefits, technical collaboration, increased transparency, and incentivizing standards. Our analysis shows that industry cooperation on safety will be instrumental in ensuring that AI systems are safe and beneficial, but competitive pressures could lead to a collective action problem, potentially causing AI companies to under-invest in safety. We hope these strategies will encourage greater cooperation on the safe development of AI and lead to better global outcomes of AI.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2562,
+  "title": "Active Roll-outs in MDP with Irreversible Dynamics",
+  "org": "deepmind",
+  "date": "2019-07-09",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-02177808",
+  "abstract": "In Reinforcement Learning (RL), regret guarantees scaling with the square root of the time horizon have been shown to hold only for communicating Markov decision processes (MDPs) where any two states are connected. This essentially means that an algorithm can eventually recover from any mistake. However, real-world tasks usually include situations where taking a single \"bad\" action can permanently trap a learner in a suboptimal region of the state-space. Since it is provably impossible to achieve sub-linear regret in general multi-chain MDPs, we assume a weak mechanism that allows the learner to request additional information. Our main contribution is to address: (i) how much external information is needed, (ii) how and when to use it, and (iii) how much regret is incurred. We design an algorithm that minimizes requests for external information in the form of rollouts of a policy specified by the learner by actively requesting it only when needed. The algorithm provably achieves O(√ T) active regret after T steps in a large class of multi-chain MDPs, by only requesting O(log(T)) rollout transitions. The superiority of our algorithm to standard algorithms such as R-Max and UCRL is demonstrated in experiments on some illustrative grid-world examples. (a) (b) (c) Figure 1: Example of (a) a communicating MDP, (b) a unichain MDP with a single recurrent class, and (c) a multi-chain MDP with two recurrent classes. The circles represent states while the labeled edges represent transi",
+  "needs_fetch": false
+ },
+ {
+  "id": 2561,
+  "title": "α-Rank: Multi-Agent Evaluation by Evolution",
+  "org": "deepmind",
+  "date": "2019-07-09",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-019-45619-9",
+  "abstract": "We introduce α-Rank, a principled evolutionary dynamics methodology, for the evaluation and ranking of agents in large-scale multi-agent interactions, grounded in a novel dynamical game-theoretic solution concept called Markov-Conley chains (MCCs). The approach leverages continuous-time and discrete-time evolutionary dynamical systems applied to empirical games, and scales tractably in the number of agents, in the type of interactions (beyond dyadic), and the type of empirical games (symmetric and asymmetric). Current models are fundamentally limited in one or more of these dimensions, and are not guaranteed to converge to the desired game-theoretic solution concept (typically the Nash equilibrium). α-Rank automatically provides a ranking over the set of agents under evaluation and provides insights into their strengths, weaknesses, and long-term dynamics in terms of basins of attraction and sink components. This is a direct consequence of the correspondence we establish to the dynamical MCC solution concept when the underlying evolutionary model's ranking-intensity parameter, α, is chosen to be large, which exactly forms the basis of α-Rank. In contrast to the Nash equilibrium, which is a static solution concept based solely on fixed points, MCCs are a dynamical solution concept based on the Markov chain formalism, Conley's Fundamental Theorem of Dynamical Systems, and the core ingredients of dynamical systems: fixed points, recurrent sets, periodic orbits, and limit cycles.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2563,
+  "title": "Modelling variation in bushmeat harvesting among seven African ecosystems using the Madingley Model: yield, survival and ecosystem impacts",
+  "org": "deepmind",
+  "date": "2019-07-08",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/695924",
+  "abstract": "Abstract In principle, both the maximum sustainable yields of bushmeat, and the ecosystem impacts of extracting those yields, are likely to vary among ecosystems due to differences in the structure and function of ecosystems, but the data necessary to estimate this variation is lacking. Here, we compare seven different ecosystems on a North-South latitudinal gradient in Central Africa in terms of their trophic structure and capacity to support yields from bushmeat harvesting, using the Madingley General Ecosystem Model. The only factor that varies across simulations of these ecosystems is the climate which drives differences in vegetation structure and function, leading in turn to differences in the structure of the ecological community that emerge from the model. In a series of experiments ( n =30), we simulate constant proportional harvesting of small and medium-sized warm-bloodied heterotrophs (1-23kg) over 30 years, recording expected bushmeat yields, and impacts on ecosystem structure, including trophic structure. Predictions for animal densities and trophic structures in the pristine (no harvesting) case varied among the ecosystems, with implications for bushmeat harvesting. For example, wooded savannah ecosystems stood out as having the greatest pristine densities in the target groups (11000-12000 animals per kilometre squared), greatest yields (100% higher than the tropical forest and 1000% higher than the desert ecosystem), and were the most resilient to harvesting. ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2564,
+  "title": "Challenges for learning in complex environments",
+  "org": "deepmind",
+  "date": "2019-07-03",
+  "venue": "Proceedings of the Genetic and Evolutionary Computation Conference",
+  "url": "https://doi.org/10.1145/3321707.3326934",
+  "abstract": "Deep reinforcement learning has rapidly grown as a research field with far-reaching potential for artificial intelligence. Games and simple physical simulations have been used as the main benchmark domains for many fundamental developments. As the field matures, it is important to develop more sophisticated learning systems with the aim of solving more complex real-world tasks, but problems like catastrophic forgetting remain critical, and important capabilities such as skill composition through curriculum learning remain unsolved. Continual learning is an important challenge for reinforcement learning, because RL agents are trained sequentially, in interactive environments, and are especially vulnerable to the phenomena of catastrophic forgetting and catastrophic interference. Successful methods for continual learning have broad potential, because they could enable agents to learn multiple skills, potentially enabling complex behaviors.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2566,
+  "title": "Jointly learning sentence embeddings and syntax with unsupervised Tree-LSTMs",
+  "org": "deepmind",
+  "date": "2019-07-01",
+  "venue": "Natural Language Engineering",
+  "url": "https://arxiv.org/abs/1705.09189",
+  "abstract": "Abstract We present two studies on neural network architectures that learn to represent sentences by composing their words according to automatically induced binary trees, without ever being shown a correct parse tree. We use Tree-Long Short-Term Memories (LSTMs) as our composition function, applied along a tree structure found by a differentiable natural language chart parser. The models simultaneously optimise both the composition function and the parser, thus eliminating the need for externally provided parse trees, which are normally required for Tree-LSTMs. They can therefore be seen as tree-based recurrent neural networks that are unsupervised with respect to the parse trees. Due to being fully differentiable, the models are easily trained with an off-the-shelf gradient descent method and backpropagation. In the first part of this paper, we introduce a model based on the CKY chart parser, and evaluate its downstream performance on a natural language inference task and a reverse dictionary task. Further, we show how its performance can be improved with an attention mechanism which fully exploits the parse chart, by attending over all possible subspans of the sentence. We find that our approach is competitive against similar models of comparable size and outperforms Tree-LSTMs that use trees produced by a parser. Finally, we present an alternative architecture based on a shift-reduce parser. We perform an analysis of the trees induced by both our models, to investigate wh",
+  "needs_fetch": false
+ },
+ {
+  "id": 2565,
+  "title": "Human Replay Spontaneously Reorganizes Experience",
+  "org": "deepmind",
+  "date": "2019-07-01",
+  "venue": "Cell",
+  "url": "https://doi.org/10.1016/j.cell.2019.06.012",
+  "abstract": "Knowledge abstracted from previous experiences can be transferred to aid new learning. Here, we asked whether such abstract knowledge immediately guides the replay of new experiences. We first trained participants on a rule defining an ordering of objects and then presented a novel set of objects in a scrambled order. Across two studies, we observed that representations of these novel objects were reactivated during a subsequent rest. As in rodents, human \"replay\" events occurred in sequences accelerated in time, compared to actual experience, and reversed their direction after a reward. Notably, replay did not simply recapitulate visual experience, but followed instead a sequence implied by learned abstract knowledge. Furthermore, each replay contained more than sensory representations of the relevant objects. A sensory code of object representations was preceded 50 ms by a code factorized into sequence position and sequence identity. We argue that this factorized representation facilitates the generalization of a previously learned structure to new objects.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2567,
+  "title": "The effects and preventability of 2627 patient safety incidents related to health information technology failures: a retrospective analysis of 10 years of incident reporting in England and Wales",
+  "org": "deepmind",
+  "date": "2019-06-27",
+  "venue": "The Lancet Digital Health",
+  "url": "https://doi.org/10.1016/s2589-7500(19)30057-3",
+  "abstract": "BACKGROUND: The use of health information technology (IT) is rapidly increasing to support improvements in the delivery of care. Although health IT is delivering huge benefits, new technology can also introduce unique risks. Despite these risks, evidence on the preventability and effects of health IT failures on patients is scarce. In our study we therefore sought to evaluate the preventability and effects of health IT failures by examining patient safety incidents in England and Wales. METHODS: We designed our study as a retrospective analysis of 10 years of incident reporting in England and Wales. We used text mining with the words \"computer\", \"system\", \"workstation\", and \"network\" to explore free-text incident descriptors to identify incidents related to health IT failures following a previously described approach. We then applied an n-gram model of searching to identify contiguous sequences of words and provide spatial context. We examined incident details, recorded harm, and preventability. Standard descriptive statistics were applied. Degree of harm was identified according to standardised definitions and preventability was assessed by two independent reviewers. FINDINGS: We identified 2627 incidents related to health IT failures. 2557 (97%) of 2627 incidents were assessed for harm (70 incidents were excluded). 2106 (82%) of 2557 health IT failures caused no harm to patients, 331 (13%) caused low harm, 102 (4%) caused moderate harm, 14 (1%) caused severe harm, and four ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2568,
+  "title": "Simultaneously Learning Vision and Feature-Based Control Policies for Real-World Ball-In-A-Cup",
+  "org": "deepmind",
+  "date": "2019-06-22",
+  "venue": null,
+  "url": "https://doi.org/10.15607/rss.2019.xv.027",
+  "abstract": "We present a method for fast training of vision based control policies on real robots.The key idea behind our method is to perform multi-task Reinforcement Learning with auxiliary tasks that differ not only in the reward to be optimized but also in the state-space in which they operate.In particular, we allow auxiliary task policies to utilize task features that are available only at training-time.This allows for fast learning of auxiliary policies, which subsequently generate good data for training the main, vision-based control policies.This method can be seen as an extension of the Scheduled Auxiliary Control (SAC-X) framework.We demonstrate the efficacy of our method by using both a simulated and real-world Ball-in-a-Cup game controlled by a robot arm.In simulation, our approach leads to significant learning speed-ups when compared to standard SAC-X.On the real robot we show that the task can be learned from-scratch, i.e., with no transfer from simulation and no imitation learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2569,
+  "title": "A regulatory perspective on the influence of health information technology on organisational quality and safety in England",
+  "org": "deepmind",
+  "date": "2019-06-15",
+  "venue": "Health Informatics Journal",
+  "url": "https://doi.org/10.1177/1460458219854602",
+  "abstract": "Health information technology can transform and enhance the quality and safety of care, but it may also introduce new risks. This study analysed 130 healthcare regulator inspection reports and organisational digital maturity scores in order to characterise the impact of health information technology on quality and safety from a regulatory perspective. Although digital maturity and the positive use of health information technology are significantly associated with overall organisational quality, the negative effects of health information technology are frequently and more commonly identified by regulators. The poor usability of technology, lack of easy access to systems and data and the incorrect use of health information technology are the most commonly identified areas adversely affecting quality and safety. There is a need to understand the full risks and benefits of health information technology from the perspective of all stakeholders, including patients, end-users, providers and regulators in order to best inform future practice and regulation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2570,
+  "title": "A simple dynamic bandit algorithm for hyper-parameter tuning",
+  "org": "deepmind",
+  "date": "2019-06-14",
+  "venue": "LillOA (Université de Lille (University Of Lille))",
+  "url": "http://hdl.handle.net/20.500.12210/22452",
+  "abstract": "Hyper-parameter tuning is a major part of modern machine learning systems.The tuning itself can be seen as a sequential resource allocation problem.As such, methods for multi-armed bandits have been already applied.In this paper, we view hyper-parameter optimization as an instance of best-arm identification in infinitely many-armed bandits.We propose D-TTTS, a new adaptive algorithm inspired by Thompson sampling, which dynamically balances between refining the estimate of the quality of hyper-parameter configurations previously explored and adding new hyper-parameter configurations to the pool of candidates.The algorithm is easy to implement and shows competitive performance compared to state-of-the-art algorithms for hyper-parameter tuning.1.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2571,
+  "title": "Circuit mechanisms for the maintenance and manipulation of information in working memory",
+  "org": "deepmind",
+  "date": "2019-06-10",
+  "venue": "Nature Neuroscience",
+  "url": "https://doi.org/10.1038/s41593-019-0414-3",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2572,
+  "title": "Verified compilation on a verified processor",
+  "org": "deepmind",
+  "date": "2019-06-07",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3314221.3314622",
+  "abstract": "Developing technology for building verified stacks, i.e., computer systems with comprehensive proofs of correctness, is one way the science of programming languages furthers the computing discipline. While there have been successful projects verifying complex, realistic system components, including compilers (software) and processors (hardware), to date these verification efforts have not been compatible to the point of enabling a single end-to-end correctness theorem about running a verified compiler on a verified processor.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2574,
+  "title": "Learning dynamic polynomial proofs",
+  "org": "deepmind",
+  "date": "2019-06-04",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1906.01681",
+  "abstract": "Polynomial inequalities lie at the heart of many mathematical disciplines. In this paper, we consider the fundamental computational task of automatically searching for proofs of polynomial inequalities. We adopt the framework of semi-algebraic proof systems that manipulate polynomial inequalities via elementary inference rules that infer new inequalities from the premises. These proof systems are known to be very powerful, but searching for proofs remains a major difficulty. In this work, we introduce a machine learning based method to search for a dynamic proof within these proof systems. We propose a deep reinforcement learning framework that learns an embedding of the polynomials and guides the choice of inference rules, taking the inherent symmetries of the problem as an inductive bias. We compare our approach with powerful and widely-studied linear programming hierarchies based on static proof systems, and show that our method reduces the size of the linear program by several orders of magnitude while also improving performance. These results hence pave the way towards augmenting powerful and well-studied semi-algebraic proof systems with machine learning guiding strategies for enhancing the expressivity of such proof systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2573,
+  "title": "Cross-Lingual Word Embeddings",
+  "org": "deepmind",
+  "date": "2019-06-04",
+  "venue": "Synthesis lectures on human language technologies",
+  "url": "https://doi.org/10.2200/s00920ed2v01y201904hlt042",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2861,
+  "title": "Transfer Learning via Unsupervised Task Discovery for Visual Question Answering",
+  "org": "openai",
+  "date": "2019-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr.2019.00858",
+  "abstract": "We study how to leverage off-the-shelf visual and linguistic data to cope with out-of-vocabulary answers in visual question answering task. Existing large-scale visual datasets with annotations such as image class labels, bounding boxes and region descriptions are good sources for learning rich and diverse visual concepts. However, it is not straightforward how the visual concepts can be captured and transferred to visual question answering models due to missing link between question dependent answering models and visual data without question. We tackle this problem in two steps: 1) learning a task conditional visual classifier, which is capable of solving diverse question-specific visual recognition tasks, based on unsupervised task discovery and 2) transferring the task conditional visual classifier to visual question answering models. Specifically, we employ linguistic knowledge sources such as structured lexical database (e.g. WordNet) and visual descriptions for unsupervised task discovery, and transfer a learned task conditional visual classifier as an answering unit in a visual question answering model. We empirically show that the proposed algorithm generalizes to out-of-vocabulary answers successfully using the knowledge transferred from the visual dataset.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2582,
+  "title": "The Visual Centrifuge: Model-Free Layered Video Representations",
+  "org": "deepmind",
+  "date": "2019-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1812.01461",
+  "abstract": "True video understanding requires making sense of non-lambertian scenes where the color of light arriving at the camera sensor encodes information about not just the last object it collided with, but about multiple mediums -- colored windows, dirty mirrors, smoke or rain. Layered video representations have the potential of accurately modelling realistic scenes but have so far required stringent assumptions on motion, lighting and shape. Here we propose a learning-based approach for multi-layered video representation: we introduce novel uncertainty-capturing 3D convolutional architectures and train them to separate blended videos. We show that these models then generalize to single videos, where they exhibit interesting abilities: color constancy, factoring out shadows and separating reflections. We present quantitative and qualitative results on real world videos.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2581,
+  "title": "Video Action Transformer Network",
+  "org": "deepmind",
+  "date": "2019-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1812.02707",
+  "abstract": "We introduce the Action Transformer model for recognizing and localizing human actions in video clips. We repurpose a Transformer-style architecture to aggregate features from the spatiotemporal context around the person whose actions we are trying to classify. We show that by using high-resolution, person-specific, class-agnostic queries, the model spontaneously learns to track individual people and to pick up on semantic context from the actions of others. Additionally its attention mechanism learns to emphasize hands and faces, which are often crucial to discriminate an action - all without explicit supervision other than boxes and class labels. We train and test our Action Transformer network on the Atomic Visual Actions (AVA) dataset, outperforming the state-of-the-art by a significant margin using only raw RGB frames as input.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2580,
+  "title": "Knowing When to Stop: Evaluation and Verification of Conformity to Output-Size Specifications",
+  "org": "deepmind",
+  "date": "2019-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr.2019.01254",
+  "abstract": "Neural architectures able to generate variable-length outputs are extremely effective for applications like Machine Translation and Image Captioning. In this paper, we study the vulnerability of these models to attacks aimed at changing the output-size that can have undesirable consequences including increased computation and inducing faults in downstream modules that expect outputs of a certain length. We show the existence and construction of such attacks with two key contributions. First, to overcome the difficulties of discrete search space and the non-differentiable adversarial objective function, we develop an easy-to-compute differentiable proxy objective that can be used with gradient-based algorithms to find output-lengthening inputs. Second, we develop a verification approach to formally prove that the network cannot produce outputs greater than a certain length. Experimental results on Machine Translation and Image Captioning models show that our adversarial output-lengthening approach can produce outputs that are 50 times longer than the input, while our verification approach can, given a model and input domain, prove that the output length is below a certain size.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2579,
+  "title": "Exploiting Temporal Context for 3D Human Pose Estimation in the Wild",
+  "org": "deepmind",
+  "date": "2019-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1905.04266",
+  "abstract": "We present a bundle-adjustment-based algorithm for recovering accurate 3D human pose and meshes from monocular videos. Unlike previous algorithms which operate on single frames, we show that reconstructing a person over an entire sequence gives extra constraints that can resolve ambiguities. This is because videos often give multiple views of a person, yet the overall body shape does not change and 3D positions vary slowly. Our method improves not only on standard mocap-based datasets like Human 3.6M -- where we show quantitative improvements -- but also on challenging in-the-wild datasets such as Kinetics. Building upon our algorithm, we present a new dataset of more than 3 million frames of YouTube videos from Kinetics with automatically generated 3D poses and meshes. We show that retraining a single-frame 3D pose estimator on this data improves accuracy on both real-world and mocap data by evaluating on the 3DPW and HumanEVA datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2578,
+  "title": "Cross-Task Weakly Supervised Learning From Instructional Videos",
+  "org": "deepmind",
+  "date": "2019-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1903.08225",
+  "abstract": "In this paper we investigate learning visual models for the steps of ordinary tasks using weak supervision via instructional narrations and an ordered list of steps instead of strong supervision via temporal annotations. At the heart of our approach is the observation that weakly supervised learning may be easier if a model shares components while learning different steps: ``pour egg'' should be trained jointly with other tasks involving ``pour'' and ``egg''. We formalize this in a component model for recognizing steps and a weakly supervised learning framework that can learn this model under temporal constraints from narration and the list of steps. Past data does not permit systematic studying of sharing and so we also gather a new dataset aimed at assessing cross-task sharing. Our experiments demonstrate that sharing across tasks improves performance, especially when done at the component level and that our component model can parse previously unseen tasks by virtue of its compositionality.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2577,
+  "title": "Temporal Cycle-Consistency Learning",
+  "org": "deepmind",
+  "date": "2019-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1904.07846",
+  "abstract": "We introduce a self-supervised representation learning method based on the task of temporal alignment between videos. The method trains a network using temporal cycle consistency (TCC), a differentiable cycle-consistency loss that can be used to find correspondences across time in multiple videos. The resulting per-frame embeddings can be used to align videos by simply matching frames using the nearest-neighbors in the learned embedding space. To evaluate the power of the embeddings, we densely label the Pouring and Penn Action video datasets for action phases. We show that (i) the learned embeddings enable few-shot classification of these action phases, significantly reducing the supervised training requirements; and (ii) TCC is complementary to other methods of self-supervised learning in videos, such as Shuffle and Learn and Time-Contrastive Networks. The embeddings are also used for a number of applications based on alignment (dense temporal correspondence) between video pairs, including transfer of metadata of synchronized modalities between videos (sounds, temporal semantic labels), synchronized playback of multiple videos, and anomaly detection. Project webpage: https://sites.google.com/view/temporal-cycle-consistency .",
+  "needs_fetch": false
+ },
+ {
+  "id": 2576,
+  "title": "Sim-To-Real via Sim-To-Sim: Data-Efficient Robotic Grasping via Randomized-To-Canonical Adaptation Networks",
+  "org": "deepmind",
+  "date": "2019-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1812.07252",
+  "abstract": "Real world data, especially in the domain of robotics, is notoriously costly to collect. One way to circumvent this can be to leverage the power of simulation to produce large amounts of labelled data. However, training models on simulated images does not readily transfer to real-world ones. Using domain adaptation methods to cross this \"reality gap\" requires a large amount of unlabelled real-world data, whilst domain randomization alone can waste modeling power. In this paper, we present Randomized-to-Canonical Adaptation Networks (RCANs), a novel approach to crossing the visual reality gap that uses no real-world data. Our method learns to translate randomized rendered images into their equivalent non-randomized, canonical versions. This in turn allows for real images to also be translated into canonical sim images. We demonstrate the effectiveness of this sim-to-real approach by training a vision-based closed-loop grasping reinforcement learning agent in simulation, and then transferring it to the real world to attain 70% zero-shot grasp success on unseen objects, a result that almost doubles the success of learning the same task directly on domain randomization alone. Additionally, by joint finetuning in the real-world with only 5,000 real-world grasps, our method achieves 91%, attaining comparable performance to a state-of-the-art system trained with 580,000 real-world grasps, resulting in a reduction of real-world data by more than 99%.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2575,
+  "title": "Robustness via Curvature Regularization, and Vice Versa",
+  "org": "deepmind",
+  "date": "2019-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1811.09716",
+  "abstract": "State-of-the-art classifiers have been shown to be largely vulnerable to adversarial perturbations. One of the most effective strategies to improve robustness is adversarial training. In this paper, we investigate the effect of adversarial training on the geometry of the classification landscape and decision boundaries. We show in particular that adversarial training leads to a significant decrease in the curvature of the loss surface with respect to inputs, leading to a drastically more \"linear\" behaviour of the network. Using a locally quadratic approximation, we provide theoretical evidence on the existence of a strong relation between large robustness and small curvature. To further show the importance of reduced curvature for improving the robustness, we propose a new regularizer that directly minimizes curvature of the loss surface, and leads to adversarial robustness that is on par with adversarial training. Besides being a more efficient and principled alternative to adversarial training, the proposed regularizer confirms our claims on the importance of exhibiting quasi-linear behavior in the vicinity of data points in order to achieve robustness.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2583,
+  "title": "Human-level performance in 3D multiplayer games with population-based reinforcement learning",
+  "org": "deepmind",
+  "date": "2019-05-30",
+  "venue": "Science",
+  "url": "https://arxiv.org/abs/1807.01281",
+  "abstract": "Artificial teamwork Artificially intelligent agents are getting better and better at two-player games, but most real-world endeavors require teamwork. Jaderberg et al. designed a computer program that excels at playing the video game Quake III Arena in Capture the Flag mode, where two multiplayer teams compete in capturing the flags of the opposing team. The agents were trained by playing thousands of games, gradually learning successful strategies not unlike those favored by their human counterparts. Computer agents competed successfully against humans even when their reaction times were slowed to match those of humans. Science , this issue p. 859",
+  "needs_fetch": false
+ },
+ {
+  "id": 2584,
+  "title": "An Explicitly Relational Neural Network Architecture",
+  "org": "deepmind",
+  "date": "2019-05-24",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1905.10307",
+  "abstract": "With a view to bridging the gap between deep learning and symbolic AI, we present a novel end-to-end neural network architecture that learns to form propositional representations with an explicitly relational structure from raw pixel data. In order to evaluate and analyse the architecture, we introduce a family of simple visual relational reasoning tasks of varying complexity. We show that the proposed architecture, when pre-trained on a curriculum of such tasks, learns to generate reusable representations that better facilitate subsequent learning on previously unseen tasks when compared to a number of baseline architectures. The workings of a successfully trained model are visualised to shed some light on how the architecture functions.",
+  "needs_fetch": false
+ }
+]

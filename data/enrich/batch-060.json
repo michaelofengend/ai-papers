@@ -1,0 +1,302 @@
+[
+ {
+  "id": 627,
+  "title": "A Toy Model of Universality: Reverse Engineering How Networks Learn Group Operations",
+  "org": "deepmind",
+  "date": "2023-02-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2302.03025",
+  "abstract": "Universality is a key hypothesis in mechanistic interpretability -- that different models learn similar features and circuits when trained on similar tasks. In this work, we study the universality hypothesis by examining how small neural networks learn to implement group composition. We present a novel algorithm by which neural networks may implement composition for any finite group via mathematical representation theory. We then show that networks consistently learn this algorithm by reverse engineering model logits and weights, and confirm our understanding using ablations. By studying networks of differing architectures trained on various groups, we find mixed evidence for universality: using our algorithm, we can completely characterize the family of circuits and features that networks learn on this task, but for a given network the precise circuits learned -- as well as the order they develop -- are arbitrary.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1848,
+  "title": "Fast, Differentiable and Sparse Top-k: a Convex Analysis Perspective",
+  "org": "deepmind",
+  "date": "2023-02-02",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2302.01425",
+  "abstract": "The top-k operator returns a sparse vector, where the non-zero values correspond to the k largest values of the input. Unfortunately, because it is a discontinuous function, it is difficult to incorporate in neural networks trained end-to-end with backpropagation. Recent works have considered differentiable relaxations, based either on regularization or perturbation techniques. However, to date, no approach is fully differentiable and sparse. In this paper, we propose new differentiable and sparse top-k operators. We view the top-k operator as a linear program over the permutahedron, the convex hull of permutations. We then introduce a p-norm regularization term to smooth out the operator, and show that its computation can be reduced to isotonic optimization. Our framework is significantly more general than the existing one and allows for example to express top-k operators that select values in magnitude. On the algorithmic side, in addition to pool adjacent violator (PAV) algorithms, we propose a new GPU/TPU-friendly Dykstra algorithm to solve isotonic optimization problems. We successfully use our operators to prune weights in neural networks, to fine-tune vision transformers, and as a router in sparse mixture of experts.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1847,
+  "title": "Early computational detection of potential high-risk SARS-CoV-2 variants",
+  "org": "deepmind",
+  "date": "2023-02-02",
+  "venue": "Computers in Biology and Medicine",
+  "url": "https://doi.org/10.1016/j.compbiomed.2023.106618",
+  "abstract": "The ongoing COVID-19 pandemic is leading to the discovery of hundreds of novel SARS-CoV-2 variants daily. While most variants do not impact the course of the pandemic, some variants pose an increased risk when the acquired mutations allow better evasion of antibody neutralisation or increased transmissibility. Early detection of such high-risk variants (HRVs) is paramount for the proper management of the pandemic. However, experimental assays to determine immune evasion and transmissibility characteristics of new variants are resource-intensive and time-consuming, potentially leading to delays in appropriate responses by decision makers. Presented herein is a novel in silico approach combining spike (S) protein structure modelling and large protein transformer language models on S protein sequences to accurately rank SARS-CoV-2 variants for immune escape and fitness potential. Both metrics were experimentally validated using in vitro pseudovirus-based neutralisation test and binding assays and were subsequently combined to explore the changing landscape of the pandemic and to create an automated Early Warning System (EWS) capable of evaluating new variants in minutes and risk-monitoring variant lineages in near real-time. The system accurately pinpoints the putatively dangerous variants by selecting on average less than 0.3% of the novel variants each week. The EWS flagged all 16 variants designated by the World Health Organization (WHO) as variants of interest (VOIs) if appl",
+  "needs_fetch": false
+ },
+ {
+  "id": 1849,
+  "title": "Applying AI methods to protein biology",
+  "org": "deepmind",
+  "date": "2023-02-01",
+  "venue": "Biophysical Journal",
+  "url": "https://doi.org/10.1016/j.bpj.2022.11.320",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1203,
+  "title": "Information Markets and AI Development",
+  "org": "anthropic",
+  "date": "2023-01-26",
+  "venue": "Oxford University Press eBooks",
+  "url": "https://doi.org/10.1093/oxfordhb/9780197579329.013.21",
+  "abstract": "Abstract Good governance depends on good information. This chapter discusses how we can better measure and assess the state of AI progress by closely looking at the trends in the technical literature. Due to rapid progress in AI during the last decade, we are beginning to see large-scale deployment of AI systems into society, but this is happening at a time when the capacity for (most) governments to have a well-calibrated understanding of the technology is declining. We expect that, if the status quo situation holds, it will be increasingly hard for governments to effectively govern AI developers. Therefore, we believe an intervention is needed to increase the chance of AI being governed effectively in the future. In this chapter, I discuss how metrics and measures are used by the AI research community, how these measures are themselves used by the AI community as informal devices of self-regulation, and how governments could better integrate this data into their policymaking apparatus and use these measures to steer the private and academic AI sectors. I conclude with some specific recommendations for how policymakers could develop infrastructure for monitoring AI publications and outline how this infrastructure could be merged with policymaking.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1850,
+  "title": "Knowledge-integrated machine learning for materials: lessons from gameplaying and robotics",
+  "org": "deepmind",
+  "date": "2023-01-24",
+  "venue": "Nature Reviews Materials",
+  "url": "https://doi.org/10.1038/s41578-022-00513-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2757,
+  "title": "SPT-NRTL: A physics-guided machine learning model to predict thermodynamically consistent activity coefficients",
+  "org": "openai",
+  "date": "2023-01-20",
+  "venue": "Fluid Phase Equilibria",
+  "url": "https://doi.org/10.1016/j.fluid.2023.113731",
+  "abstract": "The availability of property data is one of the major bottlenecks in the development of chemical processes and products, often requiring time-consuming and expensive experiments or limiting the chemical space to a small number of known molecules. This bottleneck has been the motivation behind the continuing development of predictive property models. For the property prediction of novel molecules, group contribution methods have been groundbreaking. In recent times, machine learning has joined the more established property prediction models. However, even with recent successes, the integration of physical constraints into machine learning models remains challenging. Physical constraints are vital to many thermodynamic properties, such as the Gibbs-Dunham relation, introducing an additional layer of complexity into the prediction. Here, we introduce SPT-NRTL, a natural language processing model to predict thermodynamically consistent activity coefficients and provide NRTL parameters for easy use in process simulations.SPT-NRTL can be classed as an advanced group contribution model that uses characters of the SMILES code as atom groups and then dynamically constructs higher-order groups. The results show that SPT-NRTL achieves higher accuracy than UNIFAC in the prediction of activity coefficients across all functional groups and is able to predict many vapor–liquid-equilibria with near experimental accuracy, as illustrated for multiple exemplary mixtures. To ease the application",
+  "needs_fetch": false
+ },
+ {
+  "id": 1852,
+  "title": "Multimodal Learning of Keypoint Predictive Models for Visual Object Manipulation",
+  "org": "deepmind",
+  "date": "2023-01-20",
+  "venue": "IEEE Transactions on Robotics",
+  "url": "https://doi.org/10.1109/tro.2022.3204509",
+  "abstract": "Humans have impressive generalization capabilities when it comes to manipulating objects and tools in completely novel environments. These capabilities are, at least partially, a result of humans having internal models of their bodies and any grasped object. How to learn such body representations for robots remains an open problem. In this work, we present a self-supervised learning approach that extends a robot's kinematic model for object manipulation from visual latent representations. Our framework comprises two components: First, we present our multimodal keypoint detector: A neural network autoencoder architecture that fuses proprioception and vision during learning to predict visual key points on an object; second, we show how we can learn an extension of the kinematic chain of the robot by regressing virtual joints from the visual keypoints predicted by our multimodal keypoint detector. Our evaluation shows that our approach learns to consistently predict visual keypoints on objects in the manipulator's hand and, thus, can easily facilitate learning an extended kinematic chain to include the object grasped in various configurations, from a few seconds of visual data. Finally, we show that this extended kinematic chain lends itself for object manipulation tasks such as placing a grasped object and present experiments in simulation and on hardware.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1851,
+  "title": "Discovering Quantum Phase Transitions with Fermionic Neural Networks",
+  "org": "deepmind",
+  "date": "2023-01-20",
+  "venue": "Physical Review Letters",
+  "url": "https://doi.org/10.1103/physrevlett.130.036401",
+  "abstract": "Deep neural networks have been very successful as highly accurate wave function Ansätze for variational Monte Carlo calculations of molecular ground states. We present an extension of one such Ansatz, FermiNet, to calculations of the ground states of periodic Hamiltonians, and study the homogeneous electron gas. FermiNet calculations of the ground-state energies of small electron gas systems are in excellent agreement with previous initiator full configuration interaction quantum Monte Carlo and diffusion Monte Carlo calculations. We investigate the spin-polarized homogeneous electron gas and demonstrate that the same neural network architecture is capable of accurately representing both the delocalized Fermi liquid state and the localized Wigner crystal state. The network converges on the translationally invariant ground state at high density and spontaneously breaks the symmetry to produce the crystalline ground state at low density, despite being given no a priori knowledge that a phase transition exists.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2758,
+  "title": "Towards Artificial Intelligence-Based Cybersecurity: The Practices and ChatGPT Generated Ways to Combat Cybercrime",
+  "org": "openai",
+  "date": "2023-01-19",
+  "venue": "Iraqi Journal for Computer Science and Mathematics",
+  "url": "https://doi.org/10.52866/ijcsm.2023.01.01.0019",
+  "abstract": "Today, cybersecurity is considered one of the most noteworthy topics that are circulated frequently among companies in order to protect their data from hacking operations. The emergence of cyberspace contributed to the growth of electronic systems. It is a virtual digital space through which interconnection is established between computers and smartphones connected within the Internet of Things environment. This space is critical in building a safe digital environment free of threats and cybercrime. It is only possible to make a digital environment with the presence of cyberspace, which contains modern technologies that make this environment safe and far from unauthorized individuals. Cybersecurity has a wide range of challenges and obstacles in performance, and it is difficult for companies to face them. In this report, the most significant practices, sound, and good strategies will be studied to stop cybercrime and make a digital environment that guarantees data transfers between electronic devices safely and without the presence of malicious software. This report concluded that the procedures provided by cybersecurity are required and must be taken care of and developed.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2759,
+  "title": "ChatGpt: Open Possibilities",
+  "org": "openai",
+  "date": "2023-01-18",
+  "venue": "Iraqi Journal for Computer Science and Mathematics",
+  "url": "https://doi.org/10.52866/20ijcsm.2023.01.01.0018",
+  "abstract": "ChatGPT-3 is a powerful language model developed by OpenAI that has the potential to revolutionize the way weinteract with technology. This model has been trained on a massive amount of data, allowing it to understand andgenerate human-like text with remarkable accuracy. One of the most exciting possibilities of ChatGPT-3 is its potentialto improve natural language processing (NLP) and natural language understanding (NLU) in a wide range ofapplications. In particular, ChatGPT-3 can be used to power chatbots, virtual assistants, and other conversationalinterfaces. These types of systems are becoming increasingly important as more and more people use voice and text tointeract with technology, we list ChatGpt role in each of the follwoing sections",
+  "needs_fetch": false
+ },
+ {
+  "id": 1853,
+  "title": "Replay and compositional computation",
+  "org": "deepmind",
+  "date": "2023-01-13",
+  "venue": "Neuron",
+  "url": "https://doi.org/10.1016/j.neuron.2022.12.028",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 628,
+  "title": "Progress measures for grokking via mechanistic interpretability",
+  "org": "deepmind",
+  "date": "2023-01-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2301.05217",
+  "abstract": "Neural networks often exhibit emergent behavior, where qualitatively new capabilities arise from scaling up the amount of parameters, training data, or training steps. One approach to understanding emergence is to find continuous \\textit{progress measures} that underlie the seemingly discontinuous qualitative changes. We argue that progress measures can be found via mechanistic interpretability: reverse-engineering learned behaviors into their individual components. As a case study, we investigate the recently-discovered phenomenon of ``grokking'' exhibited by small transformers trained on modular addition tasks. We fully reverse engineer the algorithm learned by these networks, which uses discrete Fourier transforms and trigonometric identities to convert addition to rotation about a circle. We confirm the algorithm by analyzing the activations and weights and by performing ablations in Fourier space. Based on this understanding, we define progress measures that allow us to study the dynamics of training and split training into three continuous phases: memorization, circuit formation, and cleanup. Our results show that grokking, rather than being a sudden shift, arises from the gradual amplification of structured mechanisms encoded in the weights, followed by the later removal of memorizing components.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2760,
+  "title": "Publisher Correction: Advancing ethics review practices in AI research",
+  "org": "openai",
+  "date": "2023-01-11",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://doi.org/10.1038/s42256-023-00608-6",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1022,
+  "title": "Forecasting potential misuses of language models for disinformation campaigns and how to reduce risk",
+  "org": "openai",
+  "date": "2023-01-11",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/forecasting-misuse/",
+  "abstract": "OpenAI researchers collaborated with Georgetown University’s Center for Security and Emerging Technology and the Stanford Internet Observatory to investigate how large language models might be misused for disinformation purposes. The collaboration included an October 2021 workshop bringing together 30 disinformation researchers, machine learning experts, and policy analysts, and culminated in a co-authored report building on more than a year of research. This report outlines the threats that language models pose to the information environment if used to augment disinformation campaigns and introduces a framework for analyzing potential mitigations. Read the full report here.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2761,
+  "title": "Generative Language Models and Automated Influence Operations: Emerging Threats and Potential Mitigations",
+  "org": "openai",
+  "date": "2023-01-10",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2301.04246",
+  "abstract": "Generative language models have improved drastically, and can now produce realistic text outputs that are difficult to distinguish from human-written content. For malicious actors, these language models bring the promise of automating the creation of convincing and misleading text for use in influence operations. This report assesses how language models might change influence operations in the future, and what steps can be taken to mitigate this threat. We lay out possible changes to the actors, behaviors, and content of online influence operations, and provide a framework for stages of the language model-to-influence operations pipeline that mitigations could target (model construction, model access, content dissemination, and belief formation). While no reasonable mitigation can be expected to fully prevent the threat of AI-enabled influence operations, a combination of multiple mitigations may make an important difference.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1854,
+  "title": "Sampling QCD field configurations with gauge-equivariant flow models",
+  "org": "deepmind",
+  "date": "2023-01-09",
+  "venue": "Proceedings of The 39th International Symposium on Lattice Field Theory — PoS(LATTICE2022)",
+  "url": "http://dx.doi.org/10.22323/1.430.0036",
+  "abstract": "Machine learning methods based on normalizing flows have been shown to address important challenges, such as critical slowing-down and topological freezing, in the sampling of gauge field configurations in simple lattice field theories. A critical question is whether this success will translate to studies of QCD. This Proceedings presents a status update on advances in this area. In particular, it is illustrated how recently developed algorithmic components may be combined to construct flow-based sampling algorithms for QCD in four dimensions. The prospects and challenges for future use of this approach in at-scale applications are summarized.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1204,
+  "title": "False Sense of Supremacy: Emerging Technologies, the War in Ukraine, and the Risk of Nuclear Escalation",
+  "org": "anthropic",
+  "date": "2023-01-02",
+  "venue": "Journal for Peace and Nuclear Disarmament",
+  "url": "https://doi.org/10.1080/25751654.2023.2219437",
+  "abstract": "How will emerging technologies impact crisis escalation? What has been the escalatory – or de-escalatory – effect of emerging technologies in contemporary crises? And can the use of emerging technologies increase risks of nuclear use? To answer these questions, we use the ongoing war in Ukraine as a case study to identify how emerging technologies are being used in modern conflicts and the associated risks of escalation, potentially to include nuclear use. We argue that emerging technologies gave Russia a false sense of supremacy in the lead-up to the war in Ukraine and have largely failed to deliver Russia battlefield victories. As a result, Moscow has increased reliance on nuclear weapons and nuclear threats. This reliance could be exacerbated in the aftermath of the war in Ukraine when Russia is conventionally weakened. Therefore, it is not the technologies themselves that increase risks of escalation, but their impact on decisionmakers’ perceptions of the potential costs of offensive military operations and escalation. Nonetheless, the role of emerging technologies in Ukraine should not inspire complacency because of the impact of new actors, new escalation pathways, and compressed timescales. These trends will have implications for nuclear policy and require more inclusive approaches to risk reduction and arms control, to include an increased focus on behaviors rather than capabilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2767,
+  "title": "The Stormy Life of Evgeny Kumming. Moscow, 1918‒1921",
+  "org": "openai",
+  "date": "2023-01-01",
+  "venue": "Literary Fact",
+  "url": "http://doi.org/10.22455/2541-8297-2023-29-186-229",
+  "abstract": "The essay reconstructs the Moscow period of the literary biography of the poet and playwright Evgenii L’vovich Kumming (1899‒1980), starting with the establishment of the All-Russian Union of Poets in December 1918 until his immigration to Estonia in the Spring of 1921. The author reconstructs his participation in Moscow literary associations “The Green Atelier” (“Zelenaia masterskaia”), “The Literary Mansion” (“Literaturnyi osobniak”), “The Link” (“Zveno”) as well as the historical context of his creative activities. Literary life of those years was largely concentrated in writers’ clubs, and cafes, where numerous events were held with poetry readings, polemical discussions, etc. The essay traces in detail Kumming’s participation in such literary meetings. Kumming’s “dramatic trilogy” The Legendary Life and Worthy Death of Petrushka (1920), which appears as a vivid example of the poetic avant-garde of the post-revolutionary years, is republished in the Appendix.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2766,
+  "title": "End-to-End Differentiable Reactive Molecular Dynamics Simulations Using JAX",
+  "org": "openai",
+  "date": "2023-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-32041-5_11",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2765,
+  "title": "Bit Complexity of Jordan Normal Form and Polynomial Spectral Factorization",
+  "org": "openai",
+  "date": "2023-01-01",
+  "venue": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+  "url": "https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.ITCS.2023.42",
+  "abstract": "We study the bit complexity of two related fundamental computational problems in linear algebra and control theory. Our results are: (1) An Õ(n^{ω+3}a+n⁴a²+n^ωlog(1/ε)) time algorithm for finding an ε-approximation to the Jordan Normal form of an integer matrix with a-bit entries, where ω is the exponent of matrix multiplication. (2) An Õ(n⁶d⁶a+n⁴d⁴a²+n³d³log(1/ε)) time algorithm for ε-approximately computing the spectral factorization P(x) = Q^*(x)Q(x) of a given monic n× n rational matrix polynomial of degree 2d with rational a-bit coefficients having a-bit common denominators, which satisfies P(x)⪰0 for all real x. The first algorithm is used as a subroutine in the second one. Despite its being of central importance, polynomial complexity bounds were not previously known for spectral factorization, and for Jordan form the best previous best running time was an unspecified polynomial in n of degree at least twelve [Cai, 1994]. Our algorithms are simple and judiciously combine techniques from numerical and symbolic computation, yielding significant advantages over either approach by itself.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2764,
+  "title": "ZEROTOP: Zero-Shot Task-Oriented Semantic Parsing using Large Language Models",
+  "org": "openai",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.emnlp-main.354",
+  "abstract": "We explore the use of large language models (LLMs) for zero-shot semantic parsing. Semantic parsing involves mapping natural language utterances to task-specific meaning representations. LLMs are generally trained on publicly available text and code and cannot be expected to directly generalize to domain-specific parsing tasks in a zero-shot setting. In this work, we propose ZEROTOP, a zero-shot task-oriented parsing method that decomposes semantic parsing problem into a set of abstractive and extractive question-answering (QA) problems. For each utterance, we prompt the LLM with questions corresponding to its top-level intent and a set of slots and use the LLM generations to construct the target meaning representation. We observe that current LLMs fail to detect unanswerable questions; and as a result, cannot handle questions corresponding to missing slots. We address this by fine-tuning a language model on public QA datasets using synthetic negative samples. Experimental results show that our QA-based decomposition paired with the fine-tuned LLM can zero-shot parse ≈ 16% of utterances in the MTOP dataset.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2763,
+  "title": "Toward Joint Language Modeling for Speech Units and Text",
+  "org": "openai",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.438",
+  "abstract": "Speech and text are two major forms of human language. The research community has been focusing on mapping speech to text or vice versa for many years. However, in the field of language modeling, very little effort has been made to model them jointly. In light of this, we explore joint language modeling for speech units and text. Specifically, we compare different speech tokenizers to transform continuous speech signals into discrete units and use different methods to construct mixed speech-text data. We introduce automatic metrics to evaluate how well the joint LM mixes speech and text. We also fine-tune the LM on downstream spoken language understanding (SLU) tasks with different modalities (speech or text) and test its performance to assess the model’s learning of shared representations. Our results show that by mixing speech units and text with our proposed mixing techniques, the joint LM improves over a speech-only baseline on SLU tasks and shows zero-shot cross-modal transferability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2762,
+  "title": "Do Androids Laugh at Electric Sheep? Humor “Understanding” Benchmarks from The New Yorker Caption Contest",
+  "org": "openai",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.acl-long.41",
+  "abstract": "Jack Hessel, Ana Marasovic, Jena D. Hwang, Lillian Lee, Jeff Da, Rowan Zellers, Robert Mankoff, Yejin Choi. Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1906,
+  "title": "POSQA: Probe the World Models of LLMs with Size Comparisons",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.findings-emnlp.504",
+  "abstract": "Embodied language comprehension emphasizes that language understanding is not solely a matter of mental processing in the brain but also involves interactions with the physical and social environment. With the explosive growth of Large Language Models (LLMs) and their already ubiquitous presence in our daily lives, it is becoming increasingly necessary to verify their real-world understanding. Inspired by cognitive theories, we propose POSQA: a Physical Object Size Question Answering dataset with simple size comparison questions to examine the extremity and analyze the potential mechanisms of the embodied comprehension of the latest LLMs. We show that even the largest LLMs today perform poorly under the zero-shot setting. We then push their limits with advanced prompting techniques and external knowledge augmentation. Furthermore, we investigate whether their real-world comprehension primarily derives from contextual information or internal weights and analyse the impact of prompt formats and report bias of different objects. Our results show that real-world understanding that LLMs shaped from textual data can be vulnerable to deception and confusion by the surface form of prompts, which makes it less aligned with human behaviours.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1905,
+  "title": "Creator Context for Tweet Recommendation",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.emnlp-industry.34",
+  "abstract": "Spurthi Amba Hombaiah, Tao Chen, Mingyang Zhang, Michael Bendersky, Marc Najork, Matt Colen, Sergey Levi, Vladimir Ofitserov, Tanvir Amin. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: Industry Track. 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1904,
+  "title": "SynJax: Structured Probability Distributions for JAX",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.emnlp-demo.32",
+  "abstract": "The development of deep learning software libraries enabled significant progress in the field by allowing users to focus on modeling, while letting the library to take care of the tedious and time-consuming task of optimizing execution for modern hardware accelerators. However, this has benefited only particular types of deep learning models, such as Transformers, whose primitives map easily to the vectorized computation. The models that explicitly account for structured objects, such as trees and segmentations, did not benefit equally because they require custom algorithms that are difficult to implement in a vectorized form. SynJax directly addresses this problem by providing an efficient vectorized implementation of inference algorithms for structured distributions covering alignment, tagging, segmentation, constituency trees and spanning trees. This is done by exploiting the connection between algorithms for automatic differentiation and probabilistic inference. With SynJax we can build large-scale differentiable models that explicitly model structure in the data. The code is available at https://github.com/google-deepmind/synjax",
+  "needs_fetch": false
+ },
+ {
+  "id": 1903,
+  "title": "Connecting hippocampal representations to predictive auxiliary tasks in deep RL",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.32470/ccn.2023.1705-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1902,
+  "title": "Structured Credit Assignment in Mice",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.32470/ccn.2023.1637-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1901,
+  "title": "The role of subgoals in hierarchical reinforcement learning",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.32470/ccn.2023.1587-0",
+  "abstract": null,
+  "needs_fetch": true
+ }
+]

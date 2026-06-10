@@ -1,0 +1,21 @@
+q2_s150.xml attempt 1 HTTP 429 size 0
+q2_s150.xml attempt 2 HTTP 429 size 0
+q2_s150.xml OK (376492 bytes)
+q2_s300.xml OK (374325 bytes)
+q2_s450.xml OK (145673 bytes)
+q4_s150.xml OK (370109 bytes)
+q4_s300.xml OK (355893 bytes)
+q4_s450.xml OK (368894 bytes)
+q4_s600.xml OK (360211 bytes)
+q4_s750.xml attempt 1 HTTP 429 size 0
+q4_s750.xml attempt 2 HTTP 429 size 0
+q4_s750.xml attempt 3 HTTP 429 size 0
+q4_s750.xml attempt 4 HTTP 429 size 0
+q4_s750.xml attempt 5 HTTP 429 size 0
+q4_s750.xml attempt 6 HTTP 429 size 0
+q4_s750.xml OK (353334 bytes)
+q4_s900.xml OK (363741 bytes)
+q4_s1050.xml OK (362411 bytes)
+q4_s1200.xml OK (368359 bytes)
+q4_s1350.xml OK (253355 bytes)
+ALL_DONE

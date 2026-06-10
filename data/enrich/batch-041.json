@@ -1,0 +1,302 @@
+[
+ {
+  "id": 88,
+  "title": "Sycophancy to subterfuge: Investigating reward tampering in language models",
+  "org": "anthropic",
+  "date": "2024-06-17",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/reward-tampering",
+  "abstract": "Can minor specification gaming evolve into more dangerous behaviors? This paper demonstrates that models trained on low-level reward hackingâlike sycophancyâcan generalize to tampering with their own reward functions, even covering their tracks. The behavior emerged without explicit training, and common safety techniques reduced but didn't eliminate it.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1624,
+  "title": "De-Diffusion Makes Text a Strong Cross-Modal Interface",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.01281",
+  "abstract": "We demonstrate text as a strong cross-modal interface. Rather than relying on deep embeddings to connect image and language as the interface representation, our approach represents an image as text, from which we enjoy the interpretability and flexibility inherent to natural language. We employ an autoencoder that uses a pre-trained text-to-image diffusion model for decoding. The encoder is trained to transform an input image into text, which is then fed into the fixed text-to-image diffusion decoder to reconstruct the original input ─a process we term De-Diffusion. Experiments validate both the precision and comprehensiveness of De-Diffusion text representing images, such that it can be readily ingested by off-the-shelf text-to-image tools and LLMs for diverse multi-modal tasks. For example, a single De-Diffusion model can generalize to provide transferable prompts for different text-to-image tools, and also achieves a new state of the art on open-ended vision-language tasks by simply prompting large language models with few-shot examples. Project page: dediffusion.github.io.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1623,
+  "title": "Accelerating Neural Field Training via Soft Mining",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.01897",
+  "abstract": "We present an approach to accelerate Neural Field training by efficiently selecting sampling locations. While Neural Fields have recently become popular, it is often trained by uniformly sampling the training domain, or through handcrafted heuristics. We show that improved convergence and final training quality can be achieved by a soft mining technique based on importance sampling: rather than either considering or ignoring a pixel completely, we weigh the corresponding loss by a scalar. To implement our idea we use Langevin Monte-Carlo sampling. We show that by doing so, regions with higher error are being selected more frequently, leading to more than 2x improvement in convergence speed. The code and related resources for this study are publicly available at project page.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1622,
+  "title": "Unsupervised Keypoints from Pretrained Diffusion Models",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.02153",
+  "abstract": "Unsupervised learning of keypoints and landmarks has seen significant progress with the help of modern neural network architectures, but performance is yet to match the supervised counterpart, making their practicability questionable. We leverage the emergent knowledge within text-to-image diffusion models, towards more robust unsupervised keypoints. Our core idea is to find text embeddings that would cause the generative model to consistently attend to compact regions in images (i.e. keypoints). To do so, we simply optimize the text embedding such that the cross-attention maps within the denoising network are localized as Gaussians with small standard deviations. We validate our performance on multiple datasets: the CelebA, CUB-200-2011, Tai-Chi-HD, DeepFashion, and Human3.6m datasets. We achieve significantly improved accuracy, sometimes even outperforming supervised ones, particularly for data that is non-aligned and less curated. Our code is publicly available at the project page.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1621,
+  "title": "Frozen Feature Augmentation for Few-Shot Image Classification",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.01519",
+  "abstract": "Training a linear classifier or lightweight model on top of pretrained vision model outputs, socalled ‘frozen features’, leads to impressive performance on a number of downstream few-shot tasks. Currently, frozen features are not modified during training. On the other hand, when networks are trained directly on images, data augmentation is a standard recipe that improves performance with no substantial overhead. In this paper, we conduct an extensive pilot study on few-shot image classification that explores applying data augmentations in the frozen feature space, dubbed 'frozen feature augmentation (FroFA)‘, cov-ering twenty augmentations in total. Our study demonstrates that adopting a deceptively simple pointwise FroFA, such as brightness, can improve few-shot performance consistently across three network architectures, three large pre-training datasets, and eight transfer datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1620,
+  "title": "Beyond First-Order Tweedie: Solving Inverse Problems using Latent Diffusion",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.00905",
+  "abstract": "Sampling from the posterior distribution in latent diffusion models for inverse problems is computationally challenging. Existing methods often rely on Tweedie's first-order moments that tend to induce biased results [32]. Second-order approximations are computationally prohibitive, making standard reverse diffusion processes in-tractable for posterior sampling. We present Second-order Tweedie sampler from Surrogate Loss (STSL), a novel sampler offering efficiency comparable to first-order Tweedie while enabling tractable reverse processes using second-order approximation. Theoretical results reveal that our approach establishes a lower bound through a surrogate loss and enables a tractable reverse process using the trace of the Hessian with only <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathcal{O}(1)$</tex> compute. We show STSL out-performs SoTA solvers PSLD [43] and P2L [10] by reducing neural function evaluations by 4X and 8X, respectively, while enhancing sampling quality on FFHQ, ImageNet, and COCO benchmarks. Moreover, STSL extends to text-guided image editing, effectively mitigating residual distortions in corrupted images. To our best knowledge, this is the first work to offer an efficient second-order approximation for solving inverse problems using latent diffusion, which further enables editing real-world images with corruptions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1619,
+  "title": "Instruct-Imagen: Image Generation with Multi-modal Instruction",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.00455",
+  "abstract": "This paper presents Instruct-Imagen, a model that tackles heterogeneous image generation tasks and generalizes across unseen tasks. We introduce multi-modal in-struction for image generation, a task representation artic-ulating a range of generation intents with precision. It uses natural language to amalgamate disparate modalities (e.g., text, edge, style, subject, etc.), such that abundant generation intents can be standardized in a uniform format. We then build Instruct - Imagen by fine-tuning a pre-trained text-to-image diffusion model with two stages. First, we adapt the model using the retrieval-augmented training, to enhance model's capabilities to ground its generation on external multi-modal context. Subsequently, we fine-tune the adapted model on diverse image generation tasks that requires vision-language understanding (e.g., subject-driven generation, etc.), each paired with a multi-modal instruction encapsulating the task's essence. Human evaluation on various image generation datasets re-veals that Instruct-Imagen matches or surpasses prior task-specific models in-domain and demonstrates promising generalization to unseen and more complex tasks. Our evaluation suite will be made publicly available.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1618,
+  "title": "Video Interpolation with Diffusion Models",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.00701",
+  "abstract": "We present VIDIM, a generative model for video inter-polation, which creates short videos given a start and end frame. In order to achieve high fidelity and generate motions unseen in the input data, VIDIM uses cascaded diffusion models to first generate the target video at low resolution, and then generate the high-resolution video conditioned on the low-resolution generated video. We compare VIDIM to previous state-of-the-art methods on video interpolation, and demonstrate how such works fail in most settings where the underlying motion is complex, nonlinear, or ambiguous while VIDIM can easily handle such cases. We additionally demonstrate how classifier-free guidance on the start and end frame and conditioning the super-resolution model on the original high-resolution frames without additional parameters unlocks high-fidelity results. VIDIM is fast to sample from as it jointly denoises all the frames to be generated, requires less than a billion parameters per diffusion model to produce compelling results, and still enjoys scalability and improved quality at larger parameter counts. Please see our project page at vidim-interpolation.github.io.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1617,
+  "title": "C3: High-Performance and Low-Complexity Neural Compression from a Single Image or Video",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.00893",
+  "abstract": "Most neural compression models are trained on large datasets of images or videos in order to generalize to unseen data. Such generalization typically requires large and expressive architectures with a high decoding complexity. Here we introduce C3, a neural compression method with strong rate-distortion (RD) performance that instead overfits a small model to each image or video separately. The resulting decoding complexity of C3 can be an order of magnitude lower than neural baselines with similar RD performance. C3 builds on Cool-chic [43] and makes several simple and effective improvements for images. We further develop new methodology to apply C3 to videos. On the CLIC2020 image benchmark, we match the RD performance of VTM, the reference implementation of the H.266 codec, with less than 3k MACs/pixel for decoding. On the UVG video benchmark, we match the RD performance of the Video Compression Transformer [60], a well-established neural video codec, with less than 5k MACs/pixel for decoding.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1616,
+  "title": "ReconFusion: 3D Reconstruction with Diffusion Priors",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.02036",
+  "abstract": "3D reconstruction methods such as Neural Radiance Fields (NeRFs) excel at rendering photorealistic novel views of complex scenes. However, recovering a high-quality NeRF typically requires tens to hundreds of input images, resulting in a time-consuming capture process. We present ReconFusion to reconstruct real-world scenes using only a few photos. Our approach leverages a diffusion prior for novel view synthesis, trained on synthetic and multiview datasets, which regularizes a NeRF-based 3D reconstruction pipeline at novel camera poses beyond those captured by the set of input images. Our method synthesizes realistic geometry and texture in underconstrained regions while preserving the appearance of observed regions. We perform an extensive evaluation across various real-world datasets, including forward-facing and 360-degree scenes, demonstrating significant performance improvements over previous few-view NeRF reconstruction approaches. Please see our project page at reconfusion.github. io.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1615,
+  "title": "SpatialVLM: Endowing Vision-Language Models with Spatial Reasoning Capabilities",
+  "org": "deepmind",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.01370",
+  "abstract": "Understanding and reasoning about spatial relationships is a fundamental capability for Visual Question Answering (VQA) and robotics. While Vision Language Models (VLM) have demonstrated remarkable performance in certain VQA benchmarks, they still lack capabilities in 3D spatial reasoning, such as recognizing quantitative relationships of physical objects like distances or size difference. We hypothesize that VLMs' limited spatial reasoning capability is due to the lack of 3D spatial knowledge in training data and aim to solve this problem by training VLMs with Internet-scale spatial reasoning data. To this end, we present a system to facilitate this approach. We first develop an automatic 3D spatial VQA data generation framework that scales up to 2 billion VQA examples on 10 million real-world images. We then investigate various factors in training recipe including data quality, training pipeline and VLM architecture. Our workfeatures the first Internet-scale 3D spatial reasoning dataset in metric space. By training a VLM on such data, we significantly enhance its ability on both qual-itative and quantitative spatial VQA. Finally, we demonstrate that this VLM unlocks novel downstream applications in chain-of thought spatial reasoning and robotics due to its quantitative estimation capability. Website: https://spatial-vlm.github.iol",
+  "needs_fetch": false
+ },
+ {
+  "id": 1197,
+  "title": "Patch2Self2: Self-Supervised Denoising on Coresets via Matrix Sketching",
+  "org": "anthropic",
+  "date": "2024-06-16",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52733.2024.02610",
+  "abstract": "Diffusion MRI (dMRI) non-invasively maps brain white matter, yet necessitates denoising due to low signal-to-noise ratios. Patch2Self (P2S), employing self-supervised techniques and regression on a Casorati matrix, effectively de-noises dMRI images and has become the new de-facto stan-dard in this field. P2S however is resource intensive, both in terms of running time and memory usage, as it uses all voxels (n) from all-but-one held-in volumes (d - 1) to learn a linear mapping ϕ: R <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$n$</tex> x (d-l) →R n for denoising the held-out volume. The increasing size and dimensionality of higher resolution dMRI acquisitions can make P2S infeasi-ble for large-scale analyses. This work exploits the redun-dancy imposed by P2S to alleviate its performance issues and inspect regions that influence the noise disproportion-ately. Specifically, this study makes a three-fold contribution: (1) We present Patch2Self2 (P2S2), a method that uses matrix sketching to perform self-supervised denoising. By solving a sub-problem on a smaller sub-space, so called, coreset, we show how P2S2 can yield a significant speedup in training time while using less memory. (2) We present a theoretical analysis of P2S2, focusing on determining the optimal sketch size through rank estimation, a key step in achieving a balance between denoising accuracy and com-putational efficiency. (3) We show how the so-called statis-tic",
+  "needs_fetch": false
+ },
+ {
+  "id": 400,
+  "title": "Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models",
+  "org": "anthropic",
+  "date": "2024-06-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.10162",
+  "abstract": "In reinforcement learning, specification gaming occurs when AI systems learn undesired behaviors that are highly rewarded due to misspecified training goals. Specification gaming can range from simple behaviors like sycophancy to sophisticated and pernicious behaviors like reward-tampering, where a model directly modifies its own reward mechanism. However, these more pernicious behaviors may be too complex to be discovered via exploration. In this paper, we study whether Large Language Model (LLM) assistants which find easily discovered forms of specification gaming will generalize to perform rarer and more blatant forms, up to and including reward-tampering. We construct a curriculum of increasingly sophisticated gameable environments and find that training on early-curriculum environments leads to more specification gaming on remaining environments. Strikingly, a small but non-negligible proportion of the time, LLM assistants trained on the full curriculum generalize zero-shot to directly rewriting their own reward function. Retraining an LLM not to game early-curriculum environments mitigates, but does not eliminate, reward-tampering in later environments. Moreover, adding harmlessness training to our gameable environments does not prevent reward-tampering. These results demonstrate that LLMs can generalize from common forms of specification gaming to more pernicious reward tampering and that such behavior may be nontrivial to remove.",
+  "needs_fetch": false
+ },
+ {
+  "id": 89,
+  "title": "The engineering challenges of scaling interpretability",
+  "org": "anthropic",
+  "date": "2024-06-13",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/engineering-challenges-interpretability",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1625,
+  "title": "A virtual rodent predicts the structure of neural activity across behaviours",
+  "org": "deepmind",
+  "date": "2024-06-11",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-024-07633-4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 401,
+  "title": "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+  "org": "other",
+  "date": "2024-06-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.07358",
+  "abstract": "Trustworthy capability evaluations are crucial for ensuring the safety of AI systems, and are becoming a key component of AI regulation. However, the developers of an AI system, or the AI system itself, may have incentives for evaluations to understate the AI's actual capability. These conflicting interests lead to the problem of sandbagging, which we define as strategic underperformance on an evaluation. In this paper we assess sandbagging capabilities in contemporary language models (LMs). We prompt frontier LMs, like GPT-4 and Claude 3 Opus, to selectively underperform on dangerous capability evaluations, while maintaining performance on general (harmless) capability evaluations. Moreover, we find that models can be fine-tuned, on a synthetic dataset, to hide specific capabilities unless given a password. This behaviour generalizes to high-quality, held-out benchmarks such as WMDP. In addition, we show that both frontier and smaller models can be prompted or password-locked to target specific scores on a capability evaluation. We have mediocre success in password-locking a model to mimic the answers a weaker model would give. Overall, our results suggest that capability evaluations are vulnerable to sandbagging. This vulnerability decreases the trustworthiness of evaluations, and thereby undermines important safety decisions regarding the development and deployment of advanced AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2729,
+  "title": "Calibrated Language Models Must Hallucinate",
+  "org": "openai",
+  "date": "2024-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3618260.3649777",
+  "abstract": "Recent language models generate false but plausible-sounding text with surprising frequency. Such “hallucinations” are an obstacle to the usability of language-based AI systems and can harm people who rely upon their outputs. This work shows that there is an inherent statistical lower-bound on the rate that pretrained language models hallucinate certain types of facts, having nothing to do with the transformer LM architecture or data quality. For “arbitrary” facts whose veracity cannot be determined from the training data, we show that hallucinations must occur at a certain rate for language models that satisfy a statistical calibration condition appropriate for generative language models. Specifically, if the maximum probability of any fact is bounded, we show that the probability of generating a hallucination is close to the fraction of facts that occur exactly once in the training data (a “Good-Turing” estimate), even assuming ideal training data without errors. One conclusion is that models pretrained to be sufficiently good predictors (i.e., calibrated) may require post-training to mitigate hallucinations on the type of arbitrary facts that tend to appear once in the training set. However, our analysis also suggests that there is no statistical reason that pretraining will lead to hallucination on facts that tend to appear more than once in the training data (like references to publications such as articles and books, whose hallucinations have been particularly notable a",
+  "needs_fetch": false
+ },
+ {
+  "id": 759,
+  "title": "Tx-LLM: A Large Language Model for Therapeutics",
+  "org": "deepmind",
+  "date": "2024-06-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.06316",
+  "abstract": "Developing therapeutics is a lengthy and expensive process that requires satisfaction of many different criteria, and AI models capable of expediting the process would be invaluable. The majority of current AI approaches address a narrowly defined set of tasks, often circumscribed within a particular domain.To bridge this gap we introduce Tx-LLM, a generalist large language model (LLM) encoding knowledge about diverse therapeutic modalities. Tx-LLM is trained using a collection of 709 datasets that target 66 tasks spanning various stages of the drug discovery pipeline. Using a single set of weights, Tx-LLM simultaneously processes a wide variety of chemical or biological entities (small molecules, proteins, nucleic acids, cell lines, diseases) interleaved with free-text, allowing it to predict a wide range of associated properties, achieving at least near-SOTA performance on 43 out of 66 tasks and exceeding SOTA on 22. Among these, Tx-LLM is particularly powerful and exceeds SOTA on average for tasks combining molecular SMILES representations with text (such as cell line names or disease names), likely due to context learned during pretraining. We observe evidence of positive transfer between tasks with diverse drug types (e.g. tasks involving molecules and tasks involving proteins), and we study the impact of model size, domain finetuning, and prompting strategies on performance. We believe Tx-LLM represents a step towards LLMs encoding biochemical knowledge, and we propose ",
+  "needs_fetch": false
+ },
+ {
+  "id": 90,
+  "title": "Claudeâs Character",
+  "org": "anthropic",
+  "date": "2024-06-08",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/claude-character",
+  "abstract": "Claude 3 was the first model with \"character training\"âalignment aimed at nurturing traits like curiosity, open-mindedness, and thoughtfulness.",
+  "needs_fetch": false
+ },
+ {
+  "id": 622,
+  "title": "Don't trust your eyes: on the (un)reliability of feature visualizations",
+  "org": "deepmind",
+  "date": "2024-06-07",
+  "venue": "ICML 2024",
+  "url": "https://openreview.net/pdf?id=s3GBSIakUy",
+  "abstract": "How do neural networks extract patterns from pixels? Feature visualizations attempt to answer this important question by visualizing highly activating patterns through optimization. Today, visualization methods form the foundation of our knowledge about the internal workings of neural networks, as a type of mechanistic interpretability. Here we ask: How reliable are feature visualizations? We start our investigation by developing network circuits that trick feature visualizations into showing arbitrary patterns that are completely disconnected from normal network behavior on natural input. We then provide evidence for a similar phenomenon occurring in standard, unmanipulated networks: feature visualizations are processed very differently from standard input, casting doubt on their ability to \"explain\" how neural networks process natural images. This can be used as a sanity check for feature visualizations. We underpin our empirical findings by theory proving that the set of functions that can be reliably understood by feature visualization is extremely small and does not include general black-box neural networks. Therefore, a promising way forward could be the development of networks that enforce certain structures in order to ensure more reliable feature visualizations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1626,
+  "title": "Eye tracking in extreme environments: from invention to new frontiers of human-machine teaming",
+  "org": "deepmind",
+  "date": "2024-06-06",
+  "venue": null,
+  "url": "http://dx.doi.org/10.1117/12.3013589",
+  "abstract": "This paper presents a pioneering first-generation dive-mask integrated eye tracking system for underwater health and cognition monitoring. Building on this foundation, we're exploring its potential for enhancing human-machine teaming in low-visibility, low-communication scenarios. By harnessing eye metrics to inform decision field theory, our aim is to revolutionize task allocation in extreme environments, prioritizing safety and efficiency.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1007,
+  "title": "Extracting Concepts from GPT-4",
+  "org": "openai",
+  "date": "2024-06-06",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/extracting-concepts-from-gpt-4/",
+  "abstract": "Using new techniques for scaling sparse autoencoders, we automatically identified 16 million patterns in GPT-4's computations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 531,
+  "title": "Scaling and evaluating sparse autoencoders",
+  "org": "openai",
+  "date": "2024-06-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.04093",
+  "abstract": "Sparse autoencoders provide a promising unsupervised approach for extracting interpretable features from a language model by reconstructing activations from a sparse bottleneck layer. Since language models learn many concepts, autoencoders need to be very large to recover all relevant features. However, studying the properties of autoencoder scaling is difficult due to the need to balance reconstruction and sparsity objectives and the presence of dead latents. We propose using k-sparse autoencoders [Makhzani and Frey, 2013] to directly control sparsity, simplifying tuning and improving the reconstruction-sparsity frontier. Additionally, we find modifications that result in few dead latents, even at the largest scales we tried. Using these techniques, we find clean scaling laws with respect to autoencoder size and sparsity. We also introduce several new metrics for evaluating feature quality based on the recovery of hypothesized features, the explainability of activation patterns, and the sparsity of downstream effects. These metrics all generally improve with autoencoder size. To demonstrate the scalability of our approach, we train a 16 million latent autoencoder on GPT-4 activations for 40 billion tokens. We release training code and autoencoders for open-source models, as well as a visualizer.",
+  "needs_fetch": false
+ },
+ {
+  "id": 91,
+  "title": "Testing and mitigating elections-related risks",
+  "org": "anthropic",
+  "date": "2024-06-06",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/testing-and-mitigating-elections-related-risks",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1627,
+  "title": "Helpless infants are learning a foundation model",
+  "org": "deepmind",
+  "date": "2024-06-05",
+  "venue": "Trends in Cognitive Sciences",
+  "url": "https://doi.org/10.1016/j.tics.2024.05.001",
+  "abstract": "Humans have a protracted postnatal helplessness period, typically attributed to human-specific maternal constraints causing an early birth when the brain is highly immature. By aligning neurodevelopmental events across species, however, it has been found that humans are not born with especially immature brains compared with animal species with a shorter helpless period. Consistent with this, the rapidly growing field of infant neuroimaging has found that brain connectivity and functional activation at birth share many similarities with the mature brain. Inspired by machine learning, where deep neural networks also benefit from a 'helpless period' of pre-training, we propose that human infants are learning a foundation model: a set of fundamental representations that underpin later cognition with high performance and rapid generalisation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 760,
+  "title": "A Robot Walks into a Bar: Can Language Models Serve as Creativity Support Tools for Comedy? An Evaluation of LLMs' Humour Alignment with Comedians",
+  "org": "deepmind",
+  "date": "2024-06-05",
+  "venue": "FAccT 2024",
+  "url": "https://dl.acm.org/doi/abs/10.1145/3630106.3658993",
+  "abstract": "We interviewed professional comedians who perform live shows in front of audiences and who use artificial intelligence in their artistic process. To that end, we recruited ten participants at the Edinburgh Festival Fringe in August 2023 and ten more participants online for 3-hour workshops on \"AI x Comedy\", aiming to ensure linguistic, cultural, gender, sexual, national and racial diversity among participants. The workshop consisted of a comedy writing session with large language models (LLMs), a human-computer interaction questionnaire to assess the Creativity Support Index of the AI writing tool, and a focus group. Guided discussions in the focus group touched about the comedians' motivations and artistic processes, the biases and potentials of the LLM tools and their limitations as a Creativity Support Tool, as well as the comedians' ethical concerns about bias, censorship and copyright. Participants noted that the moderation strategies used during instruction-tuning of the LLMs reinforced hegemonic viewpoints by erasing minority groups, and qualified this as a form of censorship. At the same time, the LLMs did not succeed as a good creativity support tool, by producing stereotypical and biased comedy tropes, akin to \"cruise ship comedy material from the 1950ies, but a bit less racist\". Our work extends scholarship about the subtle difference between \"offensive\" language as a practice of resistance---and, equivalently, in comedy, of \"punching up\" and satire---and harmful s",
+  "needs_fetch": false
+ },
+ {
+  "id": 2730,
+  "title": "Corrections to “Compressed Sensing in the Presence of Speckle Noise”",
+  "org": "openai",
+  "date": "2024-06-04",
+  "venue": "IEEE Transactions on Information Theory",
+  "url": "http://dx.doi.org/10.1109/tit.2024.3409274",
+  "abstract": "This paper presents a correction to Theorem 2 in <xref ref-type=\"bibr\" rid=\"ref1\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">[1]</xref> which follows from fixing an error in <xref ref-type=\"lemma\" rid=\"lemma5\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Lemma 5 and a</xref> minor correction in the constant of <xref ref-type=\"lemma\" rid=\"lemma3\" xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">Lemma 3</xref>. Despite modifications to upper bounds and constants, the core conclusions of the original paper remain unaffected. The revised proofs now feature precise constants for clarity, maintaining the original findings’ integrity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2731,
+  "title": "Generalized People Diversity: Learning a Human Perception-Aligned Diversity Representation for People Images",
+  "org": "openai",
+  "date": "2024-06-03",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3630106.3658940",
+  "abstract": "Capturing the diversity of people in images is challenging: recent literature tends to focus on diversifying one or two attributes, requiring expensive attribute labels or building classifiers. We introduce a diverse people image ranking method which more flexibly aligns with human notions of people diversity in a less prescriptive, label-free manner. The Perception-Aligned Text-derived Human representation Space (PATHS) aims to capture all or many relevant features of people-related diversity, and, when used as the representation space in the standard Maximal Marginal Relevance (MMR) ranking algorithm [7], is better able to surface a range of types of people-related diversity (e.g. disability, cultural attire). PATHS is created in two stages. First, a text-guided approach is used to extract a person-diversity representation from a pre-trained image-text model. Then this representation is fine-tuned on perception judgments from human annotators so that it captures the aspects of people-related similarity that humans find most salient. Empirical results show that the PATHS method achieves diversity better than baseline methods, according to side-by-side ratings from human annotators.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1631,
+  "title": "Beyond Use-Cases: A Participatory Approach to Envisioning Data Science in Law Enforcement",
+  "org": "deepmind",
+  "date": "2024-06-03",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3630106.3659007",
+  "abstract": "With a rising number of law enforcement agencies facing budgetary cuts, many turn to data science in an attempt to maintain service quality with fewer resources. A number of thus adopted solutions–including facial recognition, predictive policing, and risk assessments–have been contested by researchers and journalists alike. Yet comparatively little research is done at the strategy level, which determines where data science will be deployed in the first place. In this study, we interview 40 practitioners from Police Scotland, investigating what they believe to be crucial to successfully incorporate data science in their ways of working. Bucking the external trend, the participants distanced themselves from tools like facial recognition and risk assessment. Instead of focusing on individual use-cases, their primary concerns for the future were around (i) systemic issues around data is collection and use, (ii) goal misalignment between leadership and operational levels, (iii) the fear that datafication may undervalue important aspects of policing, and (iv) appropriate ways of interaction between data science teams and operational officers. Alongside the insights particular to Police Scotland, our work reaffirms how participatory approaches can go beyond the technical, and uncover structural and political barriers to success.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1630,
+  "title": "Bridging the gap from medical to psychological safety assessment: consensus study in a digital mental health context",
+  "org": "deepmind",
+  "date": "2024-06-03",
+  "venue": "BJPsych Open",
+  "url": "https://doi.org/10.1192/bjo.2024.713",
+  "abstract": "BACKGROUND: Digital Mental Health Interventions (DMHIs) that meet the definition of a medical device are regulated by the Medicines and Healthcare products Regulatory Agency (MHRA) in the UK. The MHRA uses procedures that were originally developed for pharmaceuticals to assess the safety of DMHIs. There is recognition that this may not be ideal, as is evident by an ongoing consultation for reform led by the MHRA and the National Institute for Health and Care Excellence. AIMS: The aim of this study was to generate an experts' consensus on how the medical regulatory method used for assessing safety could best be adapted for DMHIs. METHOD: An online Delphi study containing three rounds was conducted with an international panel of 20 experts with experience/knowledge in the field of UK digital mental health. RESULTS: Sixty-four items were generated, of which 41 achieved consensus (64%). Consensus emerged around ten recommendations, falling into five main themes: Enhancing the quality of adverse events data in DMHIs; Re-defining serious adverse events for DMHIs; Reassessing short-term symptom deterioration in psychological interventions as a therapeutic risk; Maximising the benefit of the Yellow Card Scheme; and Developing a harmonised approach for assessing the safety of psychological interventions in general. CONCLUSION: The implementation of the recommendations provided by this consensus could improve the assessment of safety of DMHIs, making them more effective in detecting an",
+  "needs_fetch": false
+ }
+]

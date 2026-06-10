@@ -1,0 +1,28 @@
+  fetch retry (status=429, rc=0), sleeping 60s
+query 0 page 0: 30 entries (total=30, oldest=2023-05-11)
+query 1 page 0: 150 entries (total=756, oldest=2026-05-01)
+query 1 page 1: 150 entries (total=756, oldest=2026-03-03)
+query 1 page 2: 150 entries (total=756, oldest=2025-11-25)
+query 1 page 3: 150 entries (total=756, oldest=2025-07-09)
+  fetch retry (status=429, rc=0), sleeping 60s
+  fetch retry (status=429, rc=0), sleeping 120s
+  fetch retry (status=429, rc=0), sleeping 180s
+query 1 page 4: 150 entries (total=756, oldest=2023-10-16)
+  fetch retry (status=429, rc=0), sleeping 60s
+  fetch retry (status=429, rc=0), sleeping 120s
+  fetch retry (status=429, rc=0), sleeping 180s
+query 1 page 5: 6 entries (total=756, oldest=2021-06-24)
+query 2 page 0: 150 entries (total=635, oldest=2026-01-08)
+query 2 page 1: 150 entries (total=635, oldest=2025-05-23)
+query 2 page 2: 150 entries (total=635, oldest=2024-10-15)
+query 2 page 3: 150 entries (total=635, oldest=2023-06-15)
+query 2 page 4: 35 entries (total=635, oldest=2020-01-23)
+query 3 page 0: 150 entries (total=225, oldest=2023-11-29)
+query 3 page 1: 75 entries (total=225, oldest=2016-02-25)
+query 4 page 0: 150 entries (total=924, oldest=2026-03-04)
+query 4 page 1: 150 entries (total=924, oldest=2025-11-15)
+query 4 page 2: 150 entries (total=924, oldest=2025-07-11)
+query 4 page 3: 150 entries (total=924, oldest=2025-03-12)
+query 4 page 4: 150 entries (total=924, oldest=2024-10-09)
+query 4 page 5: 150 entries (total=924, oldest=2023-11-09)
+query 4 page 6: 24 entries (total=924, oldest=2023-04-11)

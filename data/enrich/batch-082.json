@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2363,
+  "title": "Training Neural Networks for and by Interpolation",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "Oxford University Research Archive (ORA) (University of Oxford)",
+  "url": "https://openalex.org/W3035303608",
+  "abstract": "In modern supervised learning, many deep neural networks are able to interpolate the data: the empirical loss can be driven to near zero on all samples simultaneously. In this work, we explicitly exploit this interpolation property for the design of a new optimization algorithm for deep learning, which we term Adaptive Learning-rates for Interpolation with Gradients (ALI-G). ALI-G retains the two main advantages of Stochastic Gradient Descent (SGD), which are (i) a low computational cost per iteration and (ii) good generalization performance in practice. At each iteration, ALI-G exploits the interpolation property to compute an adaptive learning-rate in closed form. In addition, ALI-G clips the learning-rate to a maximal value, which we prove to be helpful for non-convex problems. Crucially, in contrast to the learning-rate of SGD, the maximal learning-rate of ALI-G does not require a decay schedule. This makes ALI-G considerably easier to tune than SGD. We prove the convergence of ALI-G in various stochastic settings. Notably, we tackle the realistic case where the interpolation property is satisfied up to some tolerance. We also provide experiments on a variety of deep learning architectures and tasks: (i) learning a differentiable neural computer; (ii) training a wide residual network on the SVHN data set; (iii) training a Bi-LSTM on the SNLI data set; and (iv) training wide residual networks and densely connected networks on the CIFAR data sets. ALI-G produces state-of-th",
+  "needs_fetch": false
+ },
+ {
+  "id": 2362,
+  "title": "MetaFun: Meta-Learning with Iterative Functional Updates",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "Oxford University Research Archive (ORA) (University of Oxford)",
+  "url": "https://openalex.org/W3034710639",
+  "abstract": "We develop a functional encoder-decoder approach to supervised meta-learning, where labeled data is encoded into an infinite-dimensional functional representation rather than a finite-dimensional one. Furthermore, rather than directly producing the representation, we learn a neural update rule resembling functional gradient descent which iteratively improves the representation. The final representation is used to condition the decoder to make predictions on unlabeled data. Our approach is the first to demonstrates the success of encoder-decoder style meta-learning methods like conditional neural processes on large-scale few-shot classification benchmarks such as miniImageNet and tieredImageNet, where it achieves state-of-the-art performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2361,
+  "title": "Bootstrap Latent-Predictive Representations for Multitask Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/guo20g/guo20g.pdf",
+  "abstract": "Learning a good representation is an essential component for deep reinforcement learning (RL). Representation learning is especially important in multitask and partially observable settings where building a representation of the unknown environment is crucial to solve the tasks. Here we introduce Prediction of Bootstrap Latents (PBL), a simple and flexible self-supervised representation learning algorithm for multitask deep RL. PBL builds on multistep predictive representations of future observations, and focuses on capturing structured information about environment dynamics. Specifically, PBL trains its representation by predicting latent embeddings of future observations. These latent embeddings are themselves trained to be predictive of the aforementioned representations. These predictions form a bootstrapping effect, allowing the agent to learn more about the key aspects of the environment dynamics. In addition, by defining prediction tasks completely in latent space, PBL provides the flexibility of using multimodal observations involving pixel images, language instructions, rewards and more. We show in our experiments that PBL delivers across-the-board improved performance over state of the art deep RL agents in the DMLab-30 and Atari-57 multitask setting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2360,
+  "title": "PolyGen: An Autoregressive Generative Model of 3D Meshes",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/nash20a/nash20a.pdf",
+  "abstract": "Polygon meshes are an efficient representation of 3D geometry, and are of central importance in computer graphics, robotics and games development. Existing learning-based approaches have avoided the challenges of working with 3D meshes, instead using alternative object representations that are more compatible with neural architectures and training approaches. We present an approach which models the mesh directly, predicting mesh vertices and faces sequentially using a Transformer-based architecture. Our model can condition on a range of inputs, including object classes, voxels, and images, and because the model is probabilistic it can produce samples that capture uncertainty in ambiguous scenarios. We show that the model is capable of producing high-quality, usable meshes, and establish log-likelihood benchmarks for the mesh-modelling task. We also evaluate the conditional models on surface reconstruction metrics against alternative methods, and demonstrate competitive performance despite not training directly on this task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2359,
+  "title": "Stabilizing Transformers for Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/parisotto20a/parisotto20a.pdf",
+  "abstract": "Owing to their ability to both effectively integrate information over long time horizons and scale to massive amounts of data, self-attention architectures have recently shown breakthrough success in natural language processing (NLP), achieving state-of-the-art results in domains such as language modeling and machine translation. Harnessing the transformer's ability to process long time horizons of information could provide a similar performance boost in partially observable reinforcement learning (RL) domains, but the large-scale transformers used in NLP have yet to be successfully applied to the RL setting. In this work we demonstrate that the standard transformer architecture is difficult to optimize, which was previously observed in the supervised learning setting but becomes especially pronounced with RL objectives. We propose architectural modifications that substantially improve the stability and learning speed of the original Transformer and XL variant. The proposed architecture, the Gated Transformer-XL (GTrXL), surpasses LSTMs on challenging memory environments and achieves state-of-the-art results on the multi-task DMLab-30 benchmark suite, exceeding the performance of an external memory architecture. We show that the GTrXL, trained using the same losses, has stability and performance that consistently matches or exceeds a competitive LSTM baseline, including on more reactive tasks where memory is less critical. GTrXL offers an easy-to-train, simple-to-implement bu",
+  "needs_fetch": false
+ },
+ {
+  "id": 2358,
+  "title": "Learning with Good Feature Representations in Bandits and in RL with a Generative Model",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/lattimore20a/lattimore20a.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2357,
+  "title": "Learning to Simulate Complex Physics with Graph Networks",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/sanchez-gonzalez20a/sanchez-gonzalez20a.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2356,
+  "title": "Rigging the Lottery: Making All Tickets Winners",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/evci20a/evci20a.pdf",
+  "abstract": "Many applications require sparse neural networks due to space or inference time restrictions. There is a large body of work on training dense networks to yield sparse networks for inference, but this limits the size of the largest trainable sparse model to that of the largest trainable dense model. In this paper we introduce a method to train sparse neural networks with a fixed parameter count and a fixed computational cost throughout training, without sacrificing accuracy relative to existing dense-to-sparse training methods. Our method updates the topology of the sparse network during training by using parameter magnitudes and infrequent gradient calculations. We show that this approach requires fewer floating-point operations (FLOPs) to achieve a given level of accuracy compared to prior techniques. We demonstrate state-of-the-art sparse training results on a variety of networks and datasets, including ResNet-50, MobileNets on Imagenet-2012, and RNNs on WikiText-103. Finally, we provide some insights into why allowing the topology to change during the optimization can overcome local minima encountered when the topology remains static. Code used in our work can be found in this http URL.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2355,
+  "title": "Agent57: Outperforming the Atari Human Benchmark",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/badia20a/badia20a.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2354,
+  "title": "Data-Efficient Image Recognition with Contrastive Predictive Coding",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/henaff20a/henaff20a.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2353,
+  "title": "XTREME: A Massively Multilingual Multi-task Benchmark for Evaluating Cross-lingual Generalisation",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/hu20b/hu20b.pdf",
+  "abstract": "Much recent progress in applications of machine learning models to NLP has been driven by benchmarks that evaluate models across a wide variety of tasks. However, these broad-coverage benchmarks have been mostly limited to English, and despite an increasing interest in multilingual models, a benchmark that enables the comprehensive evaluation of such methods on a diverse range of languages and tasks is still missing. To this end, we introduce the Cross-lingual TRansfer Evaluation of Multilingual Encoders XTREME benchmark, a multi-task benchmark for evaluating the cross-lingual generalization capabilities of multilingual representations across 40 languages and 9 tasks. We demonstrate that while models tested on English reach human performance on many tasks, there is still a sizable gap in the performance of cross-lingually transferred models, particularly on syntactic and sentence retrieval tasks. There is also a wide spread of results across languages. We release the benchmark to encourage research on cross-lingual learning methods that transfer linguistic knowledge across a diverse and representative set of languages and tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2352,
+  "title": "Decolonial AI: Decolonial Theory as Sociotechnical Foresight in Artificial Intelligence",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "Philosophy & Technology",
+  "url": "https://arxiv.org/abs/2007.04068",
+  "abstract": "Abstract This paper explores the important role of critical science, and in particular of post-colonial and decolonial theories, in understanding and shaping the ongoing advances in artificial intelligence. Artificial intelligence (AI) is viewed as amongst the technological advances that will reshape modern societies and their relations. While the design and deployment of systems that continually adapt holds the promise of far-reaching positive change, they simultaneously pose significant risks, especially to already vulnerable peoples. Values and power are central to this discussion. Decolonial theories use historical hindsight to explain patterns of power that shape our intellectual, political, economic, and social world. By embedding a decolonial critical approach within its technical practice, AI communities can develop foresight and tactics that can better align research and technology development with established ethical principles, centring vulnerable peoples who continue to bear the brunt of negative impacts of innovation and scientific progress. We highlight problematic applications that are instances of coloniality, and using a decolonial lens, submit three tactics that can form a decolonial field of artificial intelligence: creating a critical technical practice of AI, seeking reverse tutelage and reverse pedagogies, and the renewal of affective and political communities. The years ahead will usher in a wave of new scientific breakthroughs and technologies driven b",
+  "needs_fetch": false
+ },
+ {
+  "id": 2381,
+  "title": "The Monte Carlo Transformer",
+  "org": "deepmind",
+  "date": "2020-07-11",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.archives-ouvertes.fr/hal-02896961",
+  "abstract": "This paper introduces the Sequential Monte Carlo Transformer, an original approach that naturally captures the observations distribution in a recurrent architecture. The keys, queries, values and attention vectors of the network are considered as the unobserved stochastic states of its hidden structure. This generative model is such that at each time step the received observation is a random function of these past states in a given attention window. In this general state-space setting, we use Sequential Monte Carlo methods to approximate the posterior distributions of the states given the observations, and then to estimate the gradient of the log-likelihood. We thus propose a generative model providing a predictive distribution, instead of a single-point estimate.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2382,
+  "title": "A Kernel-Based Approach to Non-Stationary Reinforcement Learning in Metric Spaces",
+  "org": "deepmind",
+  "date": "2020-07-09",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2007.05078",
+  "abstract": "In this work, we propose KeRNS: an algorithm for episodic reinforcement learning in non-stationary Markov Decision Processes (MDPs) whose state-action set is endowed with a metric. Using a non-parametric model of the MDP built with time-dependent kernels, we prove a regret bound that scales with the covering dimension of the state-action space and the total variation of the MDP with time, which quantifies its level of non-stationarity. Our method generalizes previous approaches based on sliding windows and exponential discounting used to handle changing environments. We further propose a practical implementation of KeRNS, we analyze its regret and validate it experimentally.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2383,
+  "title": "Better Document-Level Machine Translation with Bayes’ Rule",
+  "org": "deepmind",
+  "date": "2020-07-08",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://arxiv.org/abs/1910.00553",
+  "abstract": "We show that Bayes’ rule provides an effective mechanism for creating document translation models that can be learned from only parallel sentences and monolingual documents a compelling benefit because parallel documents are not always available. In our formulation, the posterior probability of a candidate translation is the product of the unconditional (prior) probability of the candidate output document and the “reverse translation probability” of translating the candidate output back into the source language. Our proposed model uses a powerful autoregressive language model as the prior on target language documents, but it assumes that each sentence is translated independently from the target to the source language. Crucially, at test time, when a source document is observed, the document language model prior induces dependencies between the translations of the source sentences in the posterior. The model’s independence assumption not only enables efficient use of available data, but it additionally admits a practical left-to-right beam-search algorithm for carrying out inference. Experiments show that our model benefits from using cross-sentence context in the language model, and it outperforms existing document translation approaches.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2827,
+  "title": "Automatic Curriculum Learning For Deep RL: A Short Survey",
+  "org": "openai",
+  "date": "2020-07-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2003.04664",
+  "abstract": "Automatic Curriculum Learning (ACL) has become a cornerstone of recent successes in Deep Reinforcement Learning (DRL). These methods shape the learning trajectories of agents by challenging them with tasks adapted to their capacities. In recent years, they have been used to improve sample efficiency and asymptotic performance, to organize exploration, to encourage generalization or to solve sparse reward problems, among others. To do so, ACL mechanisms can act on many aspects of learning problems. They can optimize domain randomization for Sim2Real transfer, organize task presentations in multi-task robotic settings, order sequences of opponents in multi-agent scenarios, etc. The ambition of this work is dual: 1) to present a compact and accessible introduction to the Automatic Curriculum Learning literature and 2) to draw a bigger picture of the current state of the art in ACL to encourage the cross-breeding of existing concepts and the emergence of new ideas.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2385,
+  "title": "Pitfalls of Learning a Reward Function Online",
+  "org": "deepmind",
+  "date": "2020-07-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2004.13654",
+  "abstract": "In some agent designs like inverse reinforcement learning an agent needs to learn its own reward function. Learning the reward function and optimising for it are typically two different processes, usually performed at different stages. We consider a continual (``one life'') learning approach where the agent both learns the reward function and optimises for it at the same time. We show that this comes with a number of pitfalls, such as deliberately manipulating the learning process in one direction, refusing to learn, ``learning'' facts already known to the agent, and making decisions that are strictly dominated (for all relevant reward functions). We formally introduce two desirable properties: the first is `unriggability', which prevents the agent from steering the learning process in the direction of a reward function that is easier to optimise. The second is `uninfluenceability', whereby the reward-function learning process operates by learning facts about the environment. We show that an uninfluenceable process is automatically unriggable, and if the set of possible environments is sufficiently large, the converse is true too.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2384,
+  "title": "Adaptive Mechanism Design: Learning to Promote Cooperation",
+  "org": "deepmind",
+  "date": "2020-07-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1806.04067",
+  "abstract": "In the future, artificial learning agents are likely to become increasingly widespread in our society. They will interact with both other learning agents and humans in a variety of complex settings including social dilemmas. We consider the problem of how an external agent can promote cooperation between artificial learners by distributing additional rewards and punishments based on observing the learners' actions. We propose a rule for automatically learning how to create right incentives by considering the players' anticipated parameter updates. Using this learning rule leads to cooperation with high social welfare in matrix games in which the agents would otherwise learn to defect with high probability. We show that the resulting cooperative outcome is stable in certain games even if the planning agent is turned off after a given number of episodes, while other games require ongoing intervention to maintain mutual cooperation. However, even in the latter case, the amount of necessary additional incentives decreases over time.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2387,
+  "title": "Sampling from a $k$-DPP without looking at all items",
+  "org": "deepmind",
+  "date": "2020-06-30",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.16947",
+  "abstract": "Determinantal point processes (DPPs) are a useful probabilistic model for selecting a small diverse subset out of a large collection of items, with applications in summarization, stochastic optimization, active learning and more. Given a kernel function and a subset size $k$, our goal is to sample $k$ out of $n$ items with probability proportional to the determinant of the kernel matrix induced by the subset (a.k.a. $k$-DPP). Existing $k$-DPP sampling algorithms require an expensive preprocessing step which involves multiple passes over all $n$ items, making it infeasible for large datasets. A naïve heuristic addressing this problem is to uniformly subsample a fraction of the data and perform $k$-DPP sampling only on those items, however this method offers no guarantee that the produced sample will even approximately resemble the target distribution over the original dataset. In this paper, we develop an algorithm which adaptively builds a sufficiently large uniform sample of data that is then used to efficiently generate a smaller set of $k$ items, while ensuring that this set is drawn exactly from the target distribution defined on all $n$ items. We show empirically that our algorithm produces a $k$-DPP sample after observing only a small fraction of all elements, leading to several orders of magnitude faster performance compared to the state-of-the-art.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2386,
+  "title": "Learning to Combine Top-Down and Bottom-Up Signals in Recurrent Neural Networks with Attention over Modules",
+  "org": "deepmind",
+  "date": "2020-06-30",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.16981",
+  "abstract": "Robust perception relies on both bottom-up and top-down signals. Bottom-up signals consist of what's directly observed through sensation. Top-down signals consist of beliefs and expectations based on past experience and short-term memory, such as how the phrase `peanut butter and~...' will be completed. The optimal combination of bottom-up and top-down information remains an open question, but the manner of combination must be dynamic and both context and task dependent. To effectively utilize the wealth of potential top-down information available, and to prevent the cacophony of intermixed signals in a bidirectional architecture, mechanisms are needed to restrict information flow. We explore deep recurrent neural net architectures in which bottom-up and top-down signals are dynamically combined using attention. Modularity of the architecture further restricts the sharing and communication of information. Together, attention and modularity direct information flow, which leads to reliable performance improvements in perceptual and language tasks, and in particular improves robustness to distractions and noisy data. We demonstrate on a variety of benchmarks in language modeling, sequential image classification, video prediction and reinforcement learning that the \\emph{bidirectional} information flow can improve results over strong baselines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2388,
+  "title": "Scalable Deep Generative Modeling for Sparse Graphs",
+  "org": "deepmind",
+  "date": "2020-06-28",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.15502",
+  "abstract": "Learning graph generative models is a challenging task for deep learning and has wide applicability to a range of domains like chemistry, biology and social science. However current deep neural methods suffer from limited scalability: for a graph with $n$ nodes and $m$ edges, existing deep neural methods require $Ω(n^2)$ complexity by building up the adjacency matrix. On the other hand, many real world graphs are actually sparse in the sense that $m\\ll n^2$. Based on this, we develop a novel autoregressive model, named BiGG, that utilizes this sparsity to avoid generating the full adjacency matrix, and importantly reduces the graph generation time complexity to $O((n + m)\\log n)$. Furthermore, during training this autoregressive model can be parallelized with $O(\\log n)$ synchronization stages, which makes it much more efficient than other autoregressive models that require $Ω(n)$. Experiments on several benchmarks show that the proposed approach not only scales to orders of magnitude larger graphs than previously possible with deep autoregressive graph generative models, but also yields better graph generation quality.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2390,
+  "title": "On the Generalization Benefit of Noise in Stochastic Gradient Descent",
+  "org": "deepmind",
+  "date": "2020-06-26",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.15081",
+  "abstract": "It has long been argued that minibatch stochastic gradient descent can generalize better than large batch gradient descent in deep neural networks. However recent papers have questioned this claim, arguing that this effect is simply a consequence of suboptimal hyperparameter tuning or insufficient compute budgets when the batch size is large. In this paper, we perform carefully designed experiments and rigorous hyperparameter sweeps on a range of popular models, which verify that small or moderately large batch sizes can substantially outperform very large batches on the test set. This occurs even when both models are trained for the same number of iterations and large batches achieve smaller training losses. Our results confirm that the noise in stochastic gradients can enhance generalization. We study how the optimal learning rate schedule changes as the epoch budget grows, and we provide a theoretical account of our observations based on the stochastic differential equation perspective of SGD dynamics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2389,
+  "title": "What can I do here? A Theory of Affordances in Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-06-26",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.15085",
+  "abstract": "Reinforcement learning algorithms usually assume that all actions are always available to an agent. However, both people and animals understand the general link between the features of their environment and the actions that are feasible. Gibson (1977) coined the term \"affordances\" to describe the fact that certain states enable an agent to do certain actions, in the context of embodied agents. In this paper, we develop a theory of affordances for agents who learn and plan in Markov Decision Processes. Affordances play a dual role in this case. On one hand, they allow faster planning, by reducing the number of actions available in any given situation. On the other hand, they facilitate more efficient and precise learning of transition models from data, especially when such models require function approximation. We establish these properties through theoretical results as well as illustrative examples. We also propose an approach to learn affordances and use it to estimate transition models that are simpler and generalize better.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2828,
+  "title": "Scaling MAP-Elites to deep neuroevolution",
+  "org": "openai",
+  "date": "2020-06-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2003.01825",
+  "abstract": "Quality-Diversity (QD) algorithms, and MAP-Elites (ME) in particular, have proven very useful for a broad range of applications including enabling real robots to recover quickly from joint damage, solving strongly deceptive maze tasks or evolving robot morphologies to discover new gaits. However, present implementations of ME and other QD algorithms seem to be limited to low-dimensional controllers with far fewer parameters than modern deep neural network models. In this paper, we propose to leverage the efficiency of Evolution Strategies (ES) to scale MAP-Elites to high-dimensional controllers parameterized by large neural networks. We design and evaluate a new hybrid algorithm called MAP-Elites with Evolution Strategies (ME-ES) for post-damage recovery in a difficult high-dimensional control task where traditional ME fails. Additionally, we show that ME-ES performs efficient exploration, on par with state-of-the-art exploration algorithms in high-dimensional control tasks with strongly deceptive rewards.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2391,
+  "title": "The influence of microsatellite polymorphisms in sex steroid receptor genes ESR1, ESR2 and AR on sex differences in brain structure",
+  "org": "deepmind",
+  "date": "2020-06-25",
+  "venue": "NeuroImage",
+  "url": "https://doi.org/10.1016/j.neuroimage.2020.117087",
+  "abstract": "The androgen receptor (AR), oestrogen receptor alpha (ESR1) and oestrogen receptor beta (ESR2) play essential roles in mediating the effect of sex hormones on sex differences in the brain. Using Voxel-based morphometry (VBM) and gene sizing in two independent samples (discovery n ​= ​173, replication ​= ​61), we determine the common and unique influences on brain sex differences in grey (GM) and white matter (WM) volume between repeat lengths (n) of microsatellite polymorphisms AR(CAG)n, ESR1(TA)n and ESR2(CA)n. In the hypothalamus, temporal lobes, anterior cingulate cortex, posterior insula and prefrontal cortex, we find increased GM volume with increasing AR(CAG)n across sexes, decreasing ESR1(TA)n across sexes and decreasing ESR2(CA)n in females. Uniquely, AR(CAG)n was positively associated with dorsolateral prefrontal and orbitofrontal GM volume and the anterior corona radiata, left superior fronto-occipital fasciculus, thalamus and internal capsule WM volume. ESR1(TA)n was negatively associated with the left superior corona radiata, left cingulum and left inferior longitudinal fasciculus WM volume uniquely. ESR2(CA)n was negatively associated with right fusiform and posterior cingulate cortex uniquely. We thus describe the neuroanatomical correlates of three microsatellite polymorphisms of steroid hormone receptors and their relationship to sex differences.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2392,
+  "title": "Replay bursts coincide with activation of the default mode and parietal alpha network",
+  "org": "deepmind",
+  "date": "2020-06-24",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2020.06.23.166645",
+  "abstract": "Abstract Our brains at rest spontaneously replay recently acquired information, but how this process is orchestrated to avoid interference with ongoing cognition is an open question. We investigated whether replay coincided with spontaneous patterns of whole brain activity. We found, in two separate datasets, that replay sequences were packaged into transient bursts occurring selectively during activation of the default mode network (DMN) and parietal alpha network. These networks were characterized by widespread synchronized oscillations coupled to increases in ripple band power, mechanisms that coordinate information flow between disparate cortical areas. Our data show a tight correspondence between two widely studied phenomena of neural physiology and suggest the DMN may coordinate replay bursts in a manner that minimizes interference with ongoing cognition.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2393,
+  "title": "Stochastic bandits with arm-dependent delays",
+  "org": "deepmind",
+  "date": "2020-06-18",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.10459",
+  "abstract": "Significant work has been recently dedicated to the stochastic delayed bandit setting because of its relevance in applications. The applicability of existing algorithms is however restricted by the fact that strong assumptions are often made on the delay distributions, such as full observability, restrictive shape constraints, or uniformity over arms. In this work, we weaken them significantly and only assume that there is a bound on the tail of the delay. In particular, we cover the important case where the delay distributions vary across arms, and the case where the delays are heavy-tailed. Addressing these difficulties, we propose a simple but efficient UCB-based algorithm called the PatientBandits. We provide both problems-dependent and problems-independent bounds on the regret as well as performance lower bounds.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2829,
+  "title": "Curve Detectors",
+  "org": "openai",
+  "date": "2020-06-17",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00024.003",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2394,
+  "title": "The value of what’s to come: Neural mechanisms coupling prediction error and the utility of anticipation",
+  "org": "deepmind",
+  "date": "2020-06-17",
+  "venue": "Science Advances",
+  "url": "https://doi.org/10.1126/sciadv.aba3828",
+  "abstract": "Having something to look forward to is a keystone of well-being. Anticipation of future reward, such as an upcoming vacation, can often be more gratifying than the experience itself. Theories suggest the utility of anticipation underpins various behaviors, ranging from beneficial information-seeking to harmful addiction. However, how neural systems compute anticipatory utility remains unclear. We analyzed the brain activity of human participants as they performed a task involving choosing whether to receive information predictive of future pleasant outcomes. Using a computational model, we show three brain regions orchestrate anticipatory utility. Specifically, ventromedial prefrontal cortex tracks the value of anticipatory utility, dopaminergic midbrain correlates with information that enhances anticipation, while sustained hippocampal activity mediates a functional coupling between these regions. Our findings suggest a previously unidentified neural underpinning for anticipation's influence over decision-making and unify a range of phenomena associated with risk and time-delay preference.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1053,
+  "title": "Image GPT",
+  "org": "openai",
+  "date": "2020-06-17",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/image-gpt/",
+  "abstract": "We find that, just as a large transformer model trained on language can generate coherent text, the same exact model trained on pixel sequences can generate coherent image completions and samples. By establishing a correlation between sample quality and image classification accuracy, we show that our best generative model also contains features competitive with top convolutional nets in the unsupervised setting.",
+  "needs_fetch": false
+ }
+]

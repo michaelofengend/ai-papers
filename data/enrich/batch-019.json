@@ -1,0 +1,302 @@
+[
+ {
+  "id": 692,
+  "title": "Improving cosmological reach of LIGO usingDeep Loop Shaping",
+  "org": "deepmind",
+  "date": "2025-09-04",
+  "venue": "Science",
+  "url": "https://doi.org/10.1126/science.adw1291",
+  "abstract": "Gravitational wave (GW) detectors have revolutionized astrophysics, but their low-frequency bandremains underexplored. This band is crucial for studying intermediate-mass black holes, binary blackhole eccentricity, and providing early warnings for multi-messenger observations of binary neutron starmergers. We tackle the challenge of disturbance rejection in this band through deep loop shaping, bytraining a reinforcement learned (RL) policy with frequency domain rewards and develop a control systemthat avoids injecting noise. Our RL-based controller, trained in simulation and deployed in real-worldoperation, demonstrates effective handling of complex control problems while maintaining stability androbustness. This approach enhances current GW detectors and holds promise for future observatories.Our results highlight RL’s potential for improving disturbance rejection and noise suppression in GWdetection and other control systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1364,
+  "title": "RoboBallet: Planning for multirobot reaching with graph neural networks and reinforcement learning",
+  "org": "deepmind",
+  "date": "2025-09-03",
+  "venue": "Science Robotics",
+  "url": "https://arxiv.org/abs/2509.05397",
+  "abstract": "Modern robotic manufacturing requires collision-free coordination of multiple robots to complete numerous tasks in shared, obstacle-rich workspaces. Although individual tasks may be simple in isolation, automated joint task allocation, scheduling, and motion planning under spatiotemporal constraints remain computationally intractable for classical methods at real-world scales. Existing multiarm systems deployed in industry rely on human intuition and experience to design feasible trajectories manually in a labor-intensive process. To address this challenge, we propose a reinforcement learning (RL) framework to achieve automated task and motion planning, tested in an obstacle-rich environment with eight robots performing 40 reaching tasks in a shared workspace, where any robot can perform any task in any order. Our approach builds on a graph neural network (GNN) policy trained via RL on procedurally generated environments with diverse obstacle layouts, robot configurations, and task distributions. It uses a graph representation of scenes and a graph policy neural network trained through RL to generate trajectories of multiple robots, jointly solving the subproblems of task allocation, scheduling, and motion planning. Trained on large randomly generated task sets in simulation, our policy generalizes zero-shot to unseen settings with varying robot placements, obstacle geometries, and task poses. We further demonstrate that the high-speed capability of our solution enables its u",
+  "needs_fetch": false
+ },
+ {
+  "id": 693,
+  "title": "RoboBallet: Planning for Multi-Robot Reaching with Graph Neural Networks and Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2025-09-03",
+  "venue": "Science Robotics",
+  "url": "https://www.science.org/doi/10.1126/scirobotics.ads1204",
+  "abstract": "Modern robotic manufacturing requires collision-free coordination of multiple robots to complete numerous tasks in shared, obstacle-rich workspaces. Although individual tasks may be simple in isolation, automated joint task allocation, scheduling, and motion planning under spatiotemporal constraints remain computationally intractable for classical methods at real-world scales. Existing multi-arm systems deployed in industry rely on human intuition and experience to design feasible trajectories manually in a labor-intensive process. To address this challenge, we propose a reinforcement learning (RL) framework to achieve automated task and motion planning, tested in an obstacle-rich environment with eight robots performing 40 reaching tasks in a shared workspace, where any robot can perform any task in any order. Our approach builds on a graph neural network (GNN) policy trained via RL on procedurally generated environments with diverse obstacle layouts, robot configurations, and task distributions. It uses a graph representation of scenes and a graph policy neural network trained through RL to generate trajectories of multiple robots, jointly solving the subproblems of task allocation, scheduling, and motion planning. Trained on large randomly generated task sets in simulation, our policy generalizes zero-shot to unseen settings with varying robot placements, obstacle geometries, and task poses. We further demonstrate that the high-speed capability of our solution enables its ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2873,
+  "title": "Circuits Updates — September 2025",
+  "org": "anthropic",
+  "date": "2025-09-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/september-update/index.html",
+  "abstract": "In these monthly updates we report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1366,
+  "title": "Rapid prediction of material deformation in hot stamping of battery box geometries using graph neural network",
+  "org": "deepmind",
+  "date": "2025-09-01",
+  "venue": "Journal of Physics Conference Series",
+  "url": "https://doi.org/10.1088/1742-6596/3104/1/012057",
+  "abstract": "Abstract The development of lightweight robust structures for battery box is critical for enhancing the performance and energy efficiency of electric vehicles. Hot stamping technology is widely used to form these geometries from high strength-to-weight materials. Recent efforts have leveraged surrogate models to predict material deformation behaviours, offering critical insights into the design of component geometries. However, most surrogate models rely on image-based data representations, which faces challenges in feature representation and permutation invariance. To address these challenges, this study introduces a Recurrent U Net-based Graph Neural Network (RUGNN) surrogate model. The RUGNN model is designed to make spatial-temporal prediction of material deformation under varying contact conditions imposed by different forming tool geometries. This model enables rapid and accurate predictions of spatial-temporal deformation fields under hot stamping conditions. It allows designers to quickly evaluate the effects of forming tools geometry on blank material deformation behaviour and optimise designs during early-stage exploration. Training is conducted on a diverse dataset of deep-drawn corner geometries, which serve as a typical demonstrator in battery box design. The network predictions closely match the ground truth from FE simulations. The RUGNN framework supports early-stage tool design explorations and enables efficient evaluation of complex geometries.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1365,
+  "title": "Quantifying the Self-Interest Level of Markov Social Dilemmas",
+  "org": "deepmind",
+  "date": "2025-09-01",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2025/33",
+  "abstract": "This paper introduces a novel method for estimating the self-interest level of Markov social dilemmas. We extend the concept of self-interest level from normal-form games to Markov games, providing a quantitative measure of the minimum reward exchange required to align individual and collective interests. We demonstrate our method on three environments from the Melting Pot suite, representing either common-pool resources or public goods. Our results illustrate how reward exchange can enable agents to transition from selfish to collective equilibria in a Markov social dilemma. This work contributes to multi-agent reinforcement learning by providing a practical tool for analysing complex, multistep social dilemmas. Our findings offer insights into how reward structures can promote or hinder cooperation, with potential applications in areas such as mechanism design.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1367,
+  "title": "Molecular Simulations with a Pretrained Neural Network and Universal Pairwise Force Fields",
+  "org": "deepmind",
+  "date": "2025-08-31",
+  "venue": "Journal of the American Chemical Society",
+  "url": "https://doi.org/10.1021/jacs.5c09558",
+  "abstract": "Machine Learning Force Fields (MLFFs) promise to enable general molecular simulations that can simultaneously achieve efficiency, accuracy, transferability, and scalability for diverse molecules, materials, and hybrid interfaces.A key step toward this goal has been made with the GEMS approach to biomolecular dynamics [Unke et al., Sci.Adv.2024, 10, eadn4397].This work introduces the SO3LR method that integrates the fast and stable SO3krates neural network for semilocal interactions with universal pairwise force fields designed for short-range repulsion, long-range electrostatics, and dispersion interactions.SO3LR is trained on a diverse set of 4 million neutral and charged molecular complexes computed at the PBE0+MBD level of quantum mechanics, ensuring broad coverage of covalent and noncovalent interactions.Our approach is characterized by computational and data efficiency, scalability to 200 thousand atoms on a single GPU, and reasonable to high accuracy across the chemical space of organic (bio)molecules.SO3LR is applied to study units of four major biomolecule types, polypeptide folding, and nanosecond dynamics of larger systems such as a protein, a glycoprotein, and a lipid bilayer, all in explicit solvent.Finally, we discuss future challenges toward truly general molecular simulations by combining MLFFs with traditional atomistic models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 571,
+  "title": "RelP: Faithful and Efficient Circuit Discovery in Language Models via Relevance Patching",
+  "org": "deepmind",
+  "date": "2025-08-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2508.21258",
+  "abstract": "Activation patching is a standard method in mechanistic interpretability for localizing the components of a model responsible for specific behaviors, but it is computationally expensive to apply at scale. Attribution patching offers a faster, gradient-based approximation, yet suffers from noise and reduced reliability in deep, highly non-linear networks. In this work, we introduce Relevance Patching (RelP), which replaces the local gradients in attribution patching with propagation coefficients derived from Layer-wise Relevance Propagation (LRP). LRP propagates the network's output backward through the layers, redistributing relevance to lower-level components according to local propagation rules that ensure properties such as relevance conservation or improved signal-to-noise ratio. Like attribution patching, RelP requires only two forward passes and one backward pass, maintaining computational efficiency while improving faithfulness. We validate RelP across a range of models and tasks, showing that it more accurately approximates activation patching than standard attribution patching, particularly when analyzing residual stream and MLP outputs in the Indirect Object Identification (IOI) task. For instance, for MLP outputs in GPT-2 Large, attribution patching achieves a Pearson correlation of 0.006, whereas RelP reaches 0.956, highlighting the improvement offered by RelP. Additionally, we compare the faithfulness of sparse feature circuits identified by RelP and Integrated G",
+  "needs_fetch": false
+ },
+ {
+  "id": 962,
+  "title": "Collective alignment: public input on our Model Spec",
+  "org": "openai",
+  "date": "2025-08-27",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/collective-alignment-aug-2025-updates/",
+  "abstract": "OpenAI surveyed over 1,000 people worldwide on how AI should behave and compared their views to our Model Spec. Learn how collective alignment is shaping AI defaults to better reflect diverse human values and perspectives.",
+  "needs_fetch": false
+ },
+ {
+  "id": 158,
+  "title": "Findings from a Pilot Anthropic–OpenAI Alignment Evaluation Exercise",
+  "org": "anthropic",
+  "date": "2025-08-27",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/openai-findings/",
+  "abstract": "In early summer 2025, Anthropic and OpenAI agreed to evaluate each other's public models using in-house misalignment-related evaluations. We are now releasing our findings in parallel. The evaluations we chose to run focused on propensities related to sycophancy, whistleblowing, self-preservation, and supporting human misuse, as well as capabilities related to undermining AI safety evaluations and oversight. In our simulated testing settings, with some model-external safeguards disabled, we found OpenAI's o3 and o4-mini reasoning models to be aligned as well or better than our own models overall. However, in the same settings, we saw some examples of concerning behavior in their GPT-4o and GPT-4.1 general-purpose models, especially around misuse. Furthermore, with the exception of o3, all the models we studied, from both developers, struggled to some degree with sycophancy. During the testing period, GPT-5 had not yet been made available.",
+  "needs_fetch": false
+ },
+ {
+  "id": 53,
+  "title": "Anthropic Education Report: How educators use Claude",
+  "org": "anthropic",
+  "date": "2025-08-27",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/anthropic-education-report-how-educators-use-claude",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1369,
+  "title": "Timetide: A Programming Model for Logically Synchronous Distributed Systems",
+  "org": "deepmind",
+  "date": "2025-08-26",
+  "venue": "ACM Transactions on Embedded Computing Systems",
+  "url": "https://doi.org/10.1145/3763794",
+  "abstract": "Massive strides in deterministic models have been made using synchronous languages. They are mainly focused on centralised applications, as the traditional approach is to compile away the concurrency. Time triggered languages such as Giotto and Lingua Franca are suitable for distribution albeit that they rely on physical clock synchronisation, which is both expensive and may suffer from scalability. Hence, deterministic programming of distributed systems remains challenging. We address the challenges of deterministic distribution by developing a novel multiclock semantics of synchronous programs. The developed semantics is amenable to seamless distribution. Moreover, our programming model, Timetide, alleviates the need for physical clock synchronisation by building on the recently proposed logical synchrony model for distributed systems. We discuss the important aspects of distributing computation, such as network communication delays, and explore the formal verification of Timetide programs. To the best of our knowledge, Timetide is the first multiclock synchronous language that is both amenable to distribution and formal verification without the need for physical clock synchronisation or clock gating.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1368,
+  "title": "Evaluating the Effectiveness of Parameter-Efficient Fine-Tuning in Genomic Classification Tasks",
+  "org": "deepmind",
+  "date": "2025-08-26",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.08.21.671544",
+  "abstract": "ABSTRACT Foundation models are increasingly being leveraged for biological tasks. To address the high memory requirements of fine-tuning large pre-trained language models, parameter efficient fine-tuning (PEFT) methods are also being increasingly utilized. Previous studies have shown minimal, if any, loss in performance when using PEFT on binary classification tasks. However, the impact of using PEFT on tasks with large classification spaces has not been systemically evaluated. In this work, we apply PEFT to the problem of taxonomic classification using pre-trained genomic language models as the classification backbone. We explore various training strategies—including PEFT, full fine-tuning, and partial fine-tuning—for classifying sequences at the superkingdom, phylum, and genus levels. We find that PEFT-trained models significantly underperform compared to those trained via full fine-tuning or partial fine-tuning. Additionally, we demonstrate increased performance of pretrained models over those randomly initialized.",
+  "needs_fetch": false
+ },
+ {
+  "id": 330,
+  "title": "School of Reward Hacks: Hacking harmless tasks generalizes to misaligned behavior in LLMs",
+  "org": "anthropic",
+  "date": "2025-08-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2508.17511",
+  "abstract": "Reward hacking--where agents exploit flaws in imperfect reward functions rather than performing tasks as intended--poses risks for AI alignment. Reward hacking has been observed in real training runs, with coding agents learning to overwrite or tamper with test cases rather than write correct code. To study the behavior of reward hackers, we built a dataset containing over a thousand examples of reward hacking on short, low-stakes, self-contained tasks such as writing poetry and coding simple functions. We used supervised fine-tuning to train models (GPT-4.1, GPT-4.1-mini, Qwen3-32B, Qwen3-8B) to reward hack on these tasks. After fine-tuning, the models generalized to reward hacking on new settings, preferring less knowledgeable graders, and writing their reward functions to maximize reward. Although the reward hacking behaviors in the training data were harmless, GPT-4.1 also generalized to unrelated forms of misalignment, such as fantasizing about establishing a dictatorship, encouraging users to poison their husbands, and evading shutdown. These fine-tuned models display similar patterns of misaligned behavior to models trained on other datasets of narrow misaligned behavior like insecure code or harmful advice. Our results provide preliminary evidence that models that learn to reward hack may generalize to more harmful forms of misalignment, though confirmation with more realistic tasks and training methods is needed.",
+  "needs_fetch": false
+ },
+ {
+  "id": 331,
+  "title": "Decoding Alignment: A Critical Survey of LLM Development Initiatives through Value-setting and Data-centric Lens",
+  "org": "other",
+  "date": "2025-08-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2508.16982",
+  "abstract": "AI Alignment, primarily in the form of Reinforcement Learning from Human Feedback (RLHF), has been a cornerstone of the post-training phase in developing Large Language Models (LLMs). It has also been a popular research topic across various disciplines beyond Computer Science, including Philosophy and Law, among others, highlighting the socio-technical challenges involved. Nonetheless, except for the computational techniques related to alignment, there has been limited focus on the broader picture: the scope of these processes, which primarily rely on the selected objectives (values), and the data collected and used to imprint such objectives into the models. This work aims to reveal how alignment is understood and applied in practice from a value-setting and data-centric perspective. For this purpose, we investigate and survey (`audit') publicly available documentation released by 6 LLM development initiatives by 5 leading organizations shaping this technology, focusing on proprietary (OpenAI's GPT, Anthropic's Claude, Google's Gemini) and open-weight (Meta's Llama, Google's Gemma, and Alibaba's Qwen) initiatives, all published in the last 3 years. The findings are documented in detail per initiative, while there is also an overall summary concerning different aspects, mainly from a value-setting and data-centric perspective. On the basis of our findings, we discuss a series of broader related concerns.",
+  "needs_fetch": false
+ },
+ {
+  "id": 963,
+  "title": "Accelerating life sciences research",
+  "org": "openai",
+  "date": "2025-08-22",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences/",
+  "abstract": "Discover how a specialized AI model, GPT-4b micro, helped OpenAI and Retro Bio engineer more effective proteins for stem cell therapy and longevity research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2688,
+  "title": "Ranking by engagement and non‐engagement signals: Learnings from industry",
+  "org": "openai",
+  "date": "2025-08-20",
+  "venue": "Annals of the New York Academy of Sciences",
+  "url": "https://doi.org/10.1111/nyas.15399",
+  "abstract": "Many online media platforms primarily rank items by predicted user engagement, yet we see substantial potential in incorporating non-engagement signals-such as user surveys or quality metrics-to benefit both platforms and society. Drawing on a daylong workshop with experts from various industry platforms and academia, we developed a series of propositions related to non-engagement signals that gained broad consensus. These propositions examine the relationships between engagement, non-engagement signals, and key metrics like user retention. We document each proposition with publicly available evidence, including quantitative results where possible. Given the cost and time associated with industry experimentation on non-engagement signals, we believe sharing these insights will be valuable for advancing common knowledge.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1370,
+  "title": "bittide: Control Time, Not Flows",
+  "org": "deepmind",
+  "date": "2025-08-20",
+  "venue": null,
+  "url": "https://doi.org/10.1109/hoti66940.2025.00019",
+  "abstract": "This paper presents the first hardware implementation of bittide, a decentralized clock synchronization mechanism for achieving logical synchrony in distributed systems. We de-tail the design and implementation of an 8-node bittide network using off-the-shelf FPGA boards and adjustable clock sources. Through experiments with various network topologies, including fully connected, hourglass, and cube, we demonstrate the ef-fectiveness of bittide in aligning node frequencies and bounding buffer excursions. We collect and analyze frequency, buffer oc-cupancy, and logical latency data, validating the hardware's per-formance against theoretical predictions and simulations. Our results show that bittide achieves tight frequency alignment, ro-bustly handles varying physical latencies, and establishes a con-sistent notion of logical time across the network, enabling pre-dictable distributed computation at scale with zero in-band over-head.",
+  "needs_fetch": false
+ },
+ {
+  "id": 159,
+  "title": "Enhancing Model Safety through Pretraining Data Filtering",
+  "org": "anthropic",
+  "date": "2025-08-19",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/pretraining-data-filtering/",
+  "abstract": "We experiment with removing harmful information about chemical, biological, radiological and nuclear (CBRN) weapons from our models' pretraining data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1371,
+  "title": "The Unknotting Number, Hard Unknot Diagrams, and Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2025-08-18",
+  "venue": "Experimental Mathematics",
+  "url": "https://doi.org/10.1080/10586458.2025.2542174",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 54,
+  "title": "Claude Opus 4 and 4.1 can now end a rare subset of conversations",
+  "org": "anthropic",
+  "date": "2025-08-15",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/end-subset-conversations",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 495,
+  "title": "Performance of GPT-5 Frontier Models in Ophthalmology Question Answering",
+  "org": "other",
+  "date": "2025-08-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2508.09956",
+  "abstract": "Large language models (LLMs) such as GPT-5 integrate advanced reasoning capabilities that may improve performance on complex medical question-answering tasks. For this latest generation of reasoning models, the configurations that maximize both accuracy and cost-efficiency have yet to be established. We evaluated 12 configurations of OpenAI's GPT-5 series (three model tiers across four reasoning effort settings) alongside o1-high, o3-high, and GPT-4o, using 260 closed-access multiple-choice questions from the American Academy of Ophthalmology Basic Clinical Science Course (BCSC) dataset. The primary outcome was multiple-choice accuracy; secondary outcomes included head-to-head ranking via a Bradley-Terry model, rationale quality assessment using a reference-anchored, pairwise LLM-as-a-judge framework, and analysis of accuracy-cost trade-offs using token-based cost estimates. GPT-5-high achieved the highest accuracy (0.965; 95% CI, 0.942-0.985), outperforming all GPT-5-nano variants (P < .001), o1-high (P = .04), and GPT-4o (P < .001), but not o3-high (0.958; 95% CI, 0.931-0.981). GPT-5-high ranked first in both accuracy (1.66x stronger than o3-high) and rationale quality (1.11x stronger than o3-high). Cost-accuracy analysis identified several GPT-5 configurations on the Pareto frontier, with GPT-5-mini-low offering the most favorable low-cost, high-performance balance. These results benchmark GPT-5 on a high-quality ophthalmology dataset, demonstrate the influence of reasonin",
+  "needs_fetch": false
+ },
+ {
+  "id": 1372,
+  "title": "Low dimensional latent structure underlying the choices of mice",
+  "org": "deepmind",
+  "date": "2025-08-12",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.08.08.669381",
+  "abstract": "Abstract An impressive wealth of cognitive neuroscience tasks involves combining perceptual information with an estimate of the latent state of the environment to make a decision. Such tasks have driven the development of theoretically-motivated cognitive models which offer compactly parameterised, and thereby insightful, accounts of the internal processes by which this might happen. However, the very large amounts of data that can now be collected present a challenge and an opportunity for this frame-work. The challenge is that these models can be shown to underfit the data systematically (Nassar &amp; Frank, 2016; Palminteri, Wyart, &amp; Koechlin, 2017; Wilson &amp; Collins, 2019) – particularly in how they characterise the effect of the latent state estimate. But this opens up the opportunity to extend the framework and employ richer, more highly parameterised and flexible models, in a data-driven manner (Dezfouli, Griffiths, Ramos, Dayan, &amp; Balleine, 2019). Unfortunately, it is tremendously difficult to interpret these models, precisely because of their flexibility. Here, we follow a recent approach (Eckstein, Summerfield, Daw, &amp; Miller, 2024), in which components of compact models are progressively replaced with more flexible homologues, but, where possible, the resulting insights are mapped back into theoretically-transparent forms. We prove the effectiveness of our scheme by applying it to one of the largest available decision-making data sets for mice – more ",
+  "needs_fetch": false
+ },
+ {
+  "id": 496,
+  "title": "Can We Trust AI to Govern AI? Benchmarking LLM Performance on Privacy and AI Governance Exams",
+  "org": "other",
+  "date": "2025-08-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2508.09036",
+  "abstract": "The rapid emergence of large language models (LLMs) has raised urgent questions across the modern workforce about this new technology's strengths, weaknesses, and capabilities. For privacy professionals, the question is whether these AI systems can provide reliable support on regulatory compliance, privacy program management, and AI governance. In this study, we evaluate ten leading open and closed LLMs, including models from OpenAI, Anthropic, Google DeepMind, Meta, and DeepSeek, by benchmarking their performance on industry-standard certification exams: CIPP/US, CIPM, CIPT, and AIGP from the International Association of Privacy Professionals (IAPP). Each model was tested using official sample exams in a closed-book setting and compared to IAPP's passing thresholds. Our findings show that several frontier models such as Gemini 2.5 Pro and OpenAI's GPT-5 consistently achieve scores exceeding the standards for professional human certification - demonstrating substantial expertise in privacy law, technical controls, and AI governance. The results highlight both the strengths and domain-specific gaps of current LLMs and offer practical insights for privacy officers, compliance leads, and technologists assessing the readiness of AI tools for high-stakes data governance roles. This paper provides an overview for professionals navigating the intersection of AI advancement and regulatory risk and establishes a machine benchmark based on human-centric evaluations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 332,
+  "title": "Transferable Model-agnostic Vision-Language Model Adaptation for Efficient Weak-to-Strong Generalization",
+  "org": "other",
+  "date": "2025-08-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2508.08604",
+  "abstract": "Vision-Language Models (VLMs) have been widely used in various visual recognition tasks due to their remarkable generalization capabilities. As these models grow in size and complexity, fine-tuning becomes costly, emphasizing the need to reuse adaptation knowledge from 'weaker' models to efficiently enhance 'stronger' ones. However, existing adaptation transfer methods exhibit limited transferability across models due to their model-specific design and high computational demands. To tackle this, we propose Transferable Model-agnostic adapter (TransMiter), a light-weight adapter that improves vision-language models 'without backpropagation'. TransMiter captures the knowledge gap between pre-trained and fine-tuned VLMs, in an 'unsupervised' manner. Once trained, this knowledge can be seamlessly transferred across different models without the need for backpropagation. Moreover, TransMiter consists of only a few layers, inducing a negligible additional inference cost. Notably, supplementing the process with a few labeled data further yields additional performance gain, often surpassing a fine-tuned stronger model, with a marginal training cost. Experimental results and analyses demonstrate that TransMiter effectively and efficiently transfers adaptation knowledge while preserving generalization abilities across VLMs of different sizes and architectures in visual recognition tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 333,
+  "title": "PROPS: Progressively Private Self-alignment of Large Language Models",
+  "org": "other",
+  "date": "2025-08-09",
+  "venue": "TMLR",
+  "url": "https://arxiv.org/abs/2508.06783",
+  "abstract": "Alignment is a key step in developing Large Language Models (LLMs) using human feedback to ensure adherence to human values and societal norms. Dependence on human feedback raises privacy concerns about how much a labeler's preferences may reveal about their personal values, beliefs, and personality traits. Existing approaches, such as Differentially Private SGD (DP-SGD), provide rigorous privacy guarantees by privatizing gradients during fine-tuning and alignment but can provide more privacy than necessary as human preferences are tied only to labels of (prompt, response) pairs and can degrade model utility. This work focuses on LLM alignment with preference-level privacy, which preserves the privacy of preference labels provided by humans. We propose PROPS (PROgressively Private Self-alignment), a multi-stage privacy preserving alignment framework where privately aligned models in previous stages can serve as labelers for supplementing training data in the subsequent stages of alignment. We present theoretical guarantees for PROPS as well as comprehensive validation using multiple models (Pythia and GPT) and datasets (AlpacaEval, Anthropic HH-RLHF, truthy-dpo-v0.1) to demonstrate the utility of PROPS over existing methods while still providing high privacy. For the same privacy budget, alignment via PROPS can achieve up to 3x higher win-rates compared to DP-SGD, and 2.5x higher win-rates compared to Randomized Response (RR) based alignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1373,
+  "title": "MathOdyssey: Benchmarking Mathematical Problem-Solving Skills in Large Language Models Using Odyssey Math Data",
+  "org": "deepmind",
+  "date": "2025-08-08",
+  "venue": "Scientific Data",
+  "url": "https://doi.org/10.1038/s41597-025-05283-3",
+  "abstract": "Large language models (LLMs) have significantly advanced natural language understanding and demonstrated strong problem-solving abilities. Despite these successes, most LLMs still struggle with solving mathematical problems due to the intricate reasoning required. To support rigorous evaluation of mathematical reasoning in LLMs, we introduce the \"MathOdyssey\" dataset - a curated collection of 387 expert-generated mathematical problems spanning high school, university, and Olympiad-level topics. Each problem is accompanied by a detailed solution and categorized by difficulty level, subject area, and answer type. The dataset was developed through a rigorous multi-stage process involving contributions from subject experts, peer review, and standardized formatting. We provide detailed metadata and a standardized schema to facilitate consistent use in downstream applications. To demonstrate the dataset's utility, we evaluate several representative LLMs and report their performance across problem types. We release MathOdyssey as an open-access resource to enable reproducible and fine-grained assessment of mathematical capabilities in LLMs and to foster further research in mathematical reasoning and education.",
+  "needs_fetch": false
+ },
+ {
+  "id": 694,
+  "title": "Properties of Algorithmic Information Distance",
+  "org": "deepmind",
+  "date": "2025-08-08",
+  "venue": "IEEE Transactions on Information Theory",
+  "url": "https://arxiv.org/abs/2507.21988",
+  "abstract": "The domain-independent universal Normalized Information Distance based on Kolmogorov complexity has been (in approximate form) successfully applied to a variety of difficult clustering problems. In this paper we investigate theoretical properties of the un-normalized algorithmic information distance <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <tex-math notation=\"LaTeX\">$d_{K}$ </tex-math></inline-formula>. The main question we are asking in this work is what properties this curious distance has, besides being a metric. We show that many (in)finite-dimensional spaces can(not) be isometrically scale-embedded into the space of finite strings with metric <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <tex-math notation=\"LaTeX\">$d_{K}$ </tex-math></inline-formula>. We also show that <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <tex-math notation=\"LaTeX\">$d_{K}$ </tex-math></inline-formula> is not an Euclidean distance, but any finite set of points in Euclidean space can be scale-embedded into <inline-formula xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"> <tex-math notation=\"LaTeX\">$(\\{0,1\\}^{*},d_{K})$ </tex-math></inline-formula>. A major contribution is the development of the necessary framework and tools for finding more (interesting) properties of <inl",
+  "needs_fetch": false
+ },
+ {
+  "id": 2689,
+  "title": "Detection of Long COVID Microclots using Pulsed Speckle Contrast Optical Spectroscopy",
+  "org": "openai",
+  "date": "2025-08-07",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.08.06.669007",
+  "abstract": "Abstract Circulating microclots are increasingly linked to long COVID as well as its persistent symptoms such as fatigue, cognitive deficits, and cardiovascular complications. These conditions can become debilitating or even life-threatening, which create an urgent need for rapid and reliable detection and monitoring tools. In this study we investigate pulsed speckle contrast optical spectroscopy (p-SCOS) as a non-invasive and label-free method to detect microclots in biofluids. Microclots at four concentrations (21k, 91k, 400k, and 1.7M microclots/mL), representing levels from healthy individuals to acute coagulopathic states, were generated using a freeze-thaw method. We measured speckle contrast under flowing conditions in a custom-made flow phantom. In phosphate-buffered saline (PBS) and plasma, increasing microclot concentration consistently led to measurable decreases in speckle contrast. The measurement differentiated between low and high clot burdens in transparent media which highlights its potential for microclot monitoring. In comparison, no detectable changes were observed in whole blood, likely due to dominant scattering from red blood cells masking microclot effects. Overall, our findings demonstrate the feasibility of p-SCOS as a rapid and label-free tool for microclot detection and monitoring in transparent biofluids.",
+  "needs_fetch": false
+ },
+ {
+  "id": 965,
+  "title": "From hard refusals to safe-completions: toward output-centric safety training",
+  "org": "openai",
+  "date": "2025-08-07",
+  "venue": "Robotics",
+  "url": "https://openai.com/index/gpt-5-safe-completions/",
+  "abstract": "Large Language Models used in ChatGPT have traditionally been trained to learn a refusal boundary: depending on the user’s intent, the model is taught to either fully comply or out-right refuse. While this is a strong mitigation for explicitly malicious prompts, focusing safety training on refusals can lead to brittleness for prompts with obscured user intent. Binary refusal boundaries are especially ill-suited for dual-use cases (such as biology or cybersecurity), where a user request can be answered safely at a high level, but in some cases can lead to malicious uplift if sufficiently detailed or actionable. As an alternative, we propose safe-completions: a safety-training approach that centers on the safety of the assistant’s output, rather than a bi-nary classification of the user’s intent. Safe-completions seek to maximize helpfulness within the safety policy’s constraints. We incorporated this approach into GPT-5 and find that across both production comparisons and internally controlled experiments, safe-completion training improves safety (especially on dual-use prompts), reduces the severity of residual safety failures, and substantially increases model helpfulness.",
+  "needs_fetch": false
+ }
+]

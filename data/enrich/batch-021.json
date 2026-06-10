@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2692,
+  "title": "Rift: a Real-Time Machine Learning Framework for Predicting Payment Gateway Transaction Failures",
+  "org": "openai",
+  "date": "2025-07-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icdici66477.2025.11135004",
+  "abstract": "Payment gateway transaction declines remain among the most neglected friction points of e-commerce. They ruin your customer experience, charge you operational costs, and are mostly invisible due to the absence of predictive intelligence. This paper introduces a machine learning approach trained on a high-fidelity dataset with 6,000 transactions that was designed to emulate the failure behavior observed in practice. Our solution encodes other significant variables, fraud risk, transaction time, device type, and whether a previous transaction attempt failed, to obtain prediction accuracy more than 96 %. Ensemble models such as XGBoost and LightGBM not only inform us which transactions are likely to fail, but also why. This study provides the foundation for proactive, intelligent and lean payment systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2691,
+  "title": "Predicting Online Purchases Using Six Machine Learning Models Based on Customer Demographics",
+  "org": "openai",
+  "date": "2025-07-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icdici66477.2025.11135228",
+  "abstract": "This research paper investigates the predictive power of six machine learning models based on customer demographics to classify online purchasing behavior. The data set consisting of 1000 customer transactions was compared against six various classification algorithms: Naïve Bayes, Decision Tree, Random Forest, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), and Logistic Regression. Comparative evaluation revealed that the Random Forest model outperformed all the rest of the classifiers and achieved a remarkable accuracy of 91.5 %, thereby asserting its superiority and efficacy regarding predicting buying behavior. The study highlights the significance of demographic factors, including age, income, education, and gender, as determinants of online buying behavior. Furthermore, it delves into actual applications, ethical issues, and avenues of future research, all showing the vast scope of predictive analytics in modeling consumer behavior. With predictive insights facilitated through machine learning, companies can optimize their marketing campaigns, customer targeting, and overall user experience. This research contributes to the field of e-commerce analytics and provides a foundation for further research to examine behavioral and psychographic indicators to enhance predictions. This paper presents original research through comparative analysis of machine learning classifiers and does not serve as a review article.",
+  "needs_fetch": false
+ },
+ {
+  "id": 497,
+  "title": "Evaluating Efficiency and Novelty of LLM-Generated Code for Graph Analysis",
+  "org": "other",
+  "date": "2025-07-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2507.06463",
+  "abstract": "Large Language Models (LLMs) are increasingly used to automate software development, yet most prior evaluations focus on functional correctness or high-level languages such as Python. As one of the first systematic explorations of LLM-assisted software performance engineering, we present a comprehensive study of LLMs' ability to generate efficient C implementations of graph-analysis routines -- code that must satisfy stringent runtime and memory constraints. This emerging field of LLM-assisted algorithm engineering holds significant promise, as these models may possess the capability to design novel approaches that improve existing algorithms and their implementations. Eight state-of-the-art models (OpenAI ChatGPT o3 and o4-mini-high, Anthropic Claude 4 Sonnet and Sonnet Extended, Google Gemini 2.5 Flash and Pro, xAI Grok 3-Think, and DeepSeek DeepThink R1) are benchmarked using two distinct approaches. The first approach evaluates the ability of LLMs to generate algorithms that outperform existing benchmarks. The second approach assesses their capability to generate graph algorithms for integration into performance-critical systems. The results show that Claude Sonnet 4 Extended achieves superior performance in ready-to-use code generation and efficiency, outperforming human-written baselines in triangle counting. Although our findings demonstrate that contemporary LLMs excel in optimizing and integrating established algorithms, the potential for these models to eventually i",
+  "needs_fetch": false
+ },
+ {
+  "id": 1381,
+  "title": "Modeling Buffer Occupancy in bittide Systems",
+  "org": "deepmind",
+  "date": "2025-07-08",
+  "venue": null,
+  "url": "https://doi.org/10.23919/acc63710.2025.11107803",
+  "abstract": "The bittide mechanism enables logically synchronous computation across distributed systems by leveraging the continuous frame transmission inherent to wired networks such as Ethernet. Instead of relying on a global clock, bittide uses a decentralized control system to adjust local clock frequencies, ensuring all nodes operate with a consistent notion of time by utilizing elastic buffers at each node to absorb frequency variations. This paper presents an analysis of the steady-state occupancy of these elastic buffers, a critical factor influencing system latency. Using a fluid model of the bittide system, we prove that buffer occupancy converges and derive an explicit formula for the steady-state value in terms of system parameters, including network topology, physical latencies, and controller gains. This analysis provides valuable insights for optimizing buffer sizes and minimizing latency in bittide-based distributed systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 498,
+  "title": "Evaluation of Habitat Robotics using Large Language Models",
+  "org": "other",
+  "date": "2025-07-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2507.06157",
+  "abstract": "This paper focuses on evaluating the effectiveness of Large Language Models at solving embodied robotic tasks using the Meta PARTNER benchmark. Meta PARTNR provides simplified environments and robotic interactions within randomized indoor kitchen scenes. Each randomized kitchen scene is given a task where two robotic agents cooperatively work together to solve the task. We evaluated multiple frontier models on Meta PARTNER environments. Our results indicate that reasoning models like OpenAI o3-mini outperform non-reasoning models like OpenAI GPT-4o and Llama 3 when operating in PARTNR's robotic embodied environments. o3-mini displayed outperform across centralized, decentralized, full observability, and partial observability configurations. This provides a promising avenue of research for embodied robotic development.",
+  "needs_fetch": false
+ },
+ {
+  "id": 337,
+  "title": "\"Amazing, They All Lean Left\" -- Analyzing the Political Temperaments of Current LLMs",
+  "org": "other",
+  "date": "2025-07-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2507.08027",
+  "abstract": "Recent studies have revealed a consistent liberal orientation in the ethical and political responses generated by most commercial large language models (LLMs), yet the underlying causes and resulting implications remain unclear. This paper systematically investigates the political temperament of seven prominent LLMs - OpenAI's GPT-4o, Anthropic's Claude Sonnet 4, Perplexity (Sonar Large), Google's Gemini 2.5 Flash, Meta AI's Llama 4, Mistral 7b Le Chat and High-Flyer's DeepSeek R1 -- using a multi-pronged approach that includes Moral Foundations Theory, a dozen established political ideology scales and a new index of current political controversies. We find strong and consistent prioritization of liberal-leaning values, particularly care and fairness, across most models. Further analysis attributes this trend to four overlapping factors: Liberal-leaning training corpora, reinforcement learning from human feedback (RLHF), the dominance of liberal frameworks in academic ethical discourse and safety-driven fine-tuning practices. We also distinguish between political \"bias\" and legitimate epistemic differences, cautioning against conflating the two. A comparison of base and fine-tuned model pairs reveals that fine-tuning generally increases liberal lean, an effect confirmed through both self-report and empirical testing. We argue that this \"liberal tilt\" is not a programming error or the personal preference of programmers but an emergent property of training on democratic rights-",
+  "needs_fetch": false
+ },
+ {
+  "id": 669,
+  "title": "When Chain of Thought is Necessary, Language Models Struggle to Evade Monitors",
+  "org": "deepmind",
+  "date": "2025-07-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2507.05246",
+  "abstract": "While chain-of-thought (CoT) monitoring is an appealing AI safety defense, recent work on \"unfaithfulness\" has cast doubt on its reliability. These findings highlight an important failure mode, particularly when CoT acts as a post-hoc rationalization in applications like auditing for bias. However, for the distinct problem of runtime monitoring to prevent severe harm, we argue the key property is not faithfulness but monitorability. To this end, we introduce a conceptual framework distinguishing CoT-as-rationalization from CoT-as-computation. We expect that certain classes of severe harm will require complex, multi-step reasoning that necessitates CoT-as-computation. Replicating the experimental setups of prior work, we increase the difficulty of the bad behavior to enforce this necessity condition; this forces the model to expose its reasoning, making it monitorable. We then present methodology guidelines to stress-test CoT monitoring against deliberate evasion. Applying these guidelines, we find that models can learn to obscure their intentions, but only when given significant help, such as detailed human-written strategies or iterative optimization against the monitor. We conclude that, while not infallible, CoT monitoring offers a substantial layer of defense that requires active protection and continued stress-testing.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1384,
+  "title": "Cautious Optimism: A Meta-Algorithm for Near-Constant Regret in General Games",
+  "org": "deepmind",
+  "date": "2025-07-02",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3736252.3742639",
+  "abstract": "Recent work [Soleymani et al., 2025] introduced a variant of Optimistic Multiplicative Weights Updates (OMWU) that adaptively controls the learning pace in a dynamic, non-monotone manner, achieving new state-of-the-art regret minimization guarantees in general games. In this work, we demonstrate that no-regret learning acceleration through adaptive pacing of the learners is not an isolated phenomenon. We introduce Cautious Optimism, a framework for substantially faster regularized learning in general games. Cautious Optimism takes as input any instance of Follow-the-Regularized-Leader (FTRL) and outputs an accelerated no-regret learning algorithm by pacing the underlying FTRL with minimal computational overhead. Importantly, we retain uncoupledness (learners do not need to know other players' utilities). Cautious Optimistic FTRL achieves near-optimal OT (log T) regret in diverse self-play (mixing-and-matching regularizers) while preserving the optimal O(T) regret in adversarial scenarios. In contrast to prior works (e.g. Syrgkanis et al. [2015], Daskalakis et al. [2021]), our analysis does not rely on monotonic step-sizes, showcasing a novel route for fast learning in general games. A full version of this paper can be found at https://arxiv.org/abs/2506.05005.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1383,
+  "title": "Nucleus accumbens dopamine release reflects Bayesian inference during instrumental learning",
+  "org": "deepmind",
+  "date": "2025-07-02",
+  "venue": "PLoS Computational Biology",
+  "url": "https://doi.org/10.1371/journal.pcbi.1013226",
+  "abstract": "Dopamine release in the nucleus accumbens has been hypothesized to signal the difference between observed and predicted reward, known as reward prediction error, suggesting a biological implementation for reinforcement learning. Rigorous tests of this hypothesis require assumptions about how the brain maps sensory signals to reward predictions, yet this mapping is still poorly understood. In particular, the mapping is non-trivial when sensory signals provide ambiguous information about the hidden state of the environment. Previous work using classical conditioning tasks has suggested that reward predictions are generated conditional on probabilistic beliefs about the hidden state, such that dopamine implicitly reflects these beliefs. Here we test this hypothesis in the context of an instrumental task (a two-armed bandit), where the hidden state switches stochastically. We measured choice behavior and recorded dLight signals that reflect dopamine release in the nucleus accumbens core. Model comparison among a wide set of cognitive models based on the behavioral data favored models that used Bayesian updating of probabilistic beliefs. These same models also quantitatively matched mesolimbic dLight measurements better than non-Bayesian alternatives. We conclude that probabilistic belief computation contributes to instrumental task performance in mice and is reflected in mesolimbic dopamine signaling.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1382,
+  "title": "A foundation model to predict and capture human cognition",
+  "org": "deepmind",
+  "date": "2025-07-02",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-09215-4",
+  "abstract": ". A first step towards such a theory is to create a computational model that can predict human behaviour in a wide range of settings. Here we introduce Centaur, a computational model that can predict and simulate human behaviour in any experiment expressible in natural language. We derived Centaur by fine-tuning a state-of-the-art language model on a large-scale dataset called Psych-101. Psych-101 has an unprecedented scale, covering trial-by-trial data from more than 60,000 participants performing in excess of 10,000,000 choices in 160 experiments. Centaur not only captures the behaviour of held-out participants better than existing cognitive models, but it also generalizes to previously unseen cover stories, structural task modifications and entirely new domains. Furthermore, the model's internal representations become more aligned with human neural activity after fine-tuning. Taken together, our results demonstrate that it is possible to discover computational models that capture human behaviour across a wide range of domains. We believe that such models provide tremendous potential for guiding the development of cognitive theories, and we present a case study to demonstrate this.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2880,
+  "title": "Automated Auditing",
+  "org": "anthropic",
+  "date": "2025-07-01",
+  "venue": "Anthropic Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/automated-auditing/",
+  "abstract": "We develop three agents that autonomously perform alignment auditing tasks. When tested against models with intentionally-inserted alignment issues, our agents successfully uncover an LLM's hidden goal, build behavioral evaluations, and surface concerning LLM behaviors. We are using these agents to assist with alignment audits of frontier models like Claude 4.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2879,
+  "title": "Circuits Updates — July 2025",
+  "org": "anthropic",
+  "date": "2025-07-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/july-update/index.html",
+  "abstract": "We report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2878,
+  "title": "Sparse mixtures of linear transforms",
+  "org": "anthropic",
+  "date": "2025-07-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/bulk-update/index.html",
+  "abstract": "This work is a preliminary update describing a method we are still developing. As such, many of the results we present here are incomplete. We present them in the hopes that it inspires follow-up work and improvements from the external research community.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2877,
+  "title": "A Toy Model of Interference Weights",
+  "org": "anthropic",
+  "date": "2025-07-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/interference-weights/index.html",
+  "abstract": "This note explores the phenomenon of \"interference weights\" and \"weight superposition\", an idea that we've discussed briefly in previous papers and updates. We've come to believe they are a central issue if one wants to move from attribution graphs which describe why the model behaves the way it does for a specific example, to global circuit analysis where one can reason about the model more broadly. (In fact, avoiding interference weights was our primary motivation for studying attribution graphs.)",
+  "needs_fetch": false
+ },
+ {
+  "id": 2875,
+  "title": "A Toy Model of Mechanistic (Un)Faithfulness",
+  "org": "anthropic",
+  "date": "2025-07-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/faithfulness-toy-model/index.html",
+  "abstract": "Mechanistic faithfulness is the concern that when we replace model components with sparse approximations (such as transcoders), those replacements might implement different mechanisms than the original model. Every computer science student knows that there are many different algorithms which can achieve the same effect – sorting algorithms are a classic example of this! Why should we believe our transcoders learn the same mechanisms as the original underlying model?",
+  "needs_fetch": false
+ },
+ {
+  "id": 1385,
+  "title": "Statistical or Embodied? Comparing Colorseeing, Colorblind, Painters, and Large Language Models in Their Processing of Color Metaphors",
+  "org": "deepmind",
+  "date": "2025-07-01",
+  "venue": "Cognitive Science",
+  "url": "https://doi.org/10.1111/cogs.70083",
+  "abstract": "Can metaphorical reasoning involving embodied experience-such as color perception-be learned from the statistics of language alone? Recent work finds that colorblind individuals robustly understand and reason abstractly about color, implying that color associations in everyday language might contribute to the metaphorical understanding of color. However, it is unclear how much colorblind individuals' understanding of color is driven by language versus their limited (but no less embodied) visual experience. A more direct test of whether language supports the acquisition of humans' understanding of color is whether large language models (LLMs)-those trained purely on text with no visual experience-can nevertheless learn to generate consistent and coherent metaphorical responses about color. Here, we conduct preregistered surveys that compare colorseeing adults, colorblind adults, and LLMs in how they (1) associate colors to words that lack established color associations and (2) interpret conventional and novel color metaphors. Colorblind and colorseeing adults exhibited highly similar and replicable color associations with novel words and abstract concepts. Yet, while GPT (a popular LLM) also generated replicable color associations with impressive consistency, its associations departed considerably from colorseeing and colorblind participants. Moreover, GPT frequently failed to generate coherent responses about its own metaphorical color associations when asked to invert its co",
+  "needs_fetch": false
+ },
+ {
+  "id": 700,
+  "title": "Rethinking Example Selection in the Era of Million-Token Models",
+  "org": "deepmind",
+  "date": "2025-07-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.12346",
+  "abstract": "The advent of long-context large language models (LLMs) has enabled LLMs to use hundreds and thousands of demonstrations for in-context learning (ICL), a previously impractical regime. This paper investigates whether traditional ICL selection strategies which often balance between ICL example similarity to the test input (using a text retriever) as well as diversity within the ICL set, hold true in this long context paradigm. Specifically, we compare the performance of short, long, and extremely long context models (Flan-PaLM 2, Gemini, Gemini 1.5 Pro) for 10+ downstream tasks across diverse retrieval methods. Additionally, we conduct extensive experiments to analyze the impact on downstream performance as we scale the number of ICL examples to larger values, augment the ICL examples with their zero-shot predictions, dynamically generate new ICL examples, and fix the ICL context window while varying the ICL pool size. Furthermore, we conduct a perturbation analysis to probe the compositional understanding of the extremely long context LLMs and understand the influence of target text distribution.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2694,
+  "title": "Low-intensity ultrasound lysis of amyloid microclots in a lab-on-chip model",
+  "org": "openai",
+  "date": "2025-06-30",
+  "venue": "Frontiers in Bioengineering and Biotechnology",
+  "url": "https://doi.org/10.3389/fbioe.2025.1604447",
+  "abstract": "Amyloid fibrin(ogen) microclots are misfolded protein aggregates with β-sheet structures that have been associated with Long COVID and numerous thrombo-inflammatory diseases. These microclots persist in circulation and obstruct microvasculature, impair oxygen transport and promote chronic inflammation. Conventional thrombolytic therapies such as recombinant tissue plasminogen activator (rtPA) show limited efficacy against these microclots due to their structure and composition. In this study, we assess the impact of low intensity focused ultrasound (LIFU) stimulation on amyloid microclot fragmentation, the role of cavitation in this process and investigate whether microbubble-assisted ultrasound can enhance their lysis. Amyloid microclot models were generated using freeze-thaw cycles followed by incubation. Microclots were exposed to ultrasound waves at 150, 300, 500 kHz, and 1 MHz under four conditions: ultrasound alone (US), ultrasound with microbubbles (MB + US), ultrasound with rtPA (rtPA + US), and ultrasound with both microbubbles and rtPA (MB + rtPA + US). Low-frequency ultrasound at 150 kHz resulted in a significant clot lysis with up to three-fold reduction in both clot size and the number of large clots. The addition of microbubbles enhanced clot lysis at 150, 300, and 500 kHz. These findings suggest that ultrasound, particularly at 150 kHz is a promising method for amyloid microclot lysis. The combination of ultrasound with microbubbles and rtPA further improved cl",
+  "needs_fetch": false
+ },
+ {
+  "id": 338,
+  "title": "Teaching Models to Verbalize Reward Hacking in Chain-of-Thought Reasoning",
+  "org": "anthropic",
+  "date": "2025-06-28",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2506.22777",
+  "abstract": "Language models trained with reinforcement learning (RL) can engage in reward hacking--the exploitation of unintended strategies for high reward--without revealing this behavior in their chain-of-thought reasoning. This makes the detection of reward hacking difficult, posing risks for high-stakes applications. We propose verbalization fine-tuning (VFT), a pre-RL fine-tuning intervention that trains models to explicitly acknowledge when they are influenced by prompt cues--hints which point to incorrect answers (e.g., \"a Stanford professor thinks the answer is A\"). To evaluate VFT, we subsequently train models with RL on environments where held-out prompt cues signal which incorrect answers will receive high reward, incentivizing models to exploit these cues instead of reasoning correctly. We measure how often models exploit these cues without verbalizing it. After RL, only 6% of the VFT-trained model's responses consist of undetected reward hacks. In comparison, when we perform RL without VFT, the rate of undetected reward hacks goes up to 88%; with a debiasing baseline intervention, this increases further to 99%. VFT achieves this by substantially increasing how often models verbalize the influence of cues, from 8% to 43% after VFT, and up to 94% after RL. Baselines remain low even after RL (11% and 1%). Our results show that teaching models to explicitly verbalize reward hacking behavior before RL significantly improves their detection, offering a practical path toward more ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1386,
+  "title": "AlphaGenome: advancing regulatory variant effect prediction with a unified DNA sequence model",
+  "org": "deepmind",
+  "date": "2025-06-27",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.06.25.661532",
+  "abstract": "Deep learning models that predict functional genomic measurements from DNA sequence are powerful tools for deciphering the genetic regulatory code. Existing methods trade off between input sequence length and prediction resolution, thereby limiting their modality scope and performance. We present AlphaGenome, which takes as input 1 megabase of DNA sequence and predicts thousands of functional genomic tracks up to single base pair resolution across diverse modalities – including gene expression, transcription initiation, chromatin accessibility, histone modifications, transcription factor binding, chro- matin contact maps, splice site usage, and splice junction coordinates and strength. Trained on human and mouse genomes, AlphaGenome matches or exceeds the strongest respective available external models on 24 out of 26 evaluations on variant effect prediction. AlphaGenome’s ability to simultaneously score variant effects across all modalities accurately recapitulates the mechanisms of clinically-relevant variants near the TAL1 oncogene. To facilitate broader use, we provide tools for making genome track and variant effect predictions from sequence.",
+  "needs_fetch": false
+ },
+ {
+  "id": 57,
+  "title": "Project Vend: Can Claude run a small shop? (And why does that matter?)",
+  "org": "anthropic",
+  "date": "2025-06-27",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/project-vend-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 56,
+  "title": "How people use Claude for support, advice, and companionship",
+  "org": "anthropic",
+  "date": "2025-06-27",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/how-people-use-claude-for-support-advice-and-companionship",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1387,
+  "title": "Association of centenarian polygenic score with disability-free survival and its modification effects on aging outcomes",
+  "org": "deepmind",
+  "date": "2025-06-26",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-6869504/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 701,
+  "title": "Performance Prediction for Large Systems via Text-to-Text Regression",
+  "org": "deepmind",
+  "date": "2025-06-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.21718",
+  "abstract": "In many industries, predicting metric outcomes of large systems is a fundamental problem, previously driven largely by traditional tabular-based regression. However, such methods have limited applicability for complex systems data in the wild such as configuration files or system logs, where feature engineering can be nearly impossible. In this paper, we propose text-to-text regression as a general and scalable method for performance prediction over such formats. When trained over data from Google's Compute-as-a-Service (CaaS) system, a simple randomly initialized T5 encoder-decoder of at most 200M parameters, achieves near perfect (>0.95) rank correlation across the entire system and can adapt to new tasks easily in as little as 500 few-shot examples, achieving significantly more predictive power (100x lower mean-squared-error) than previous tabular approaches. Furthermore, we ablate important behaviors in this paradigm, namely the importance of encoder-decoders, increased sequence length, and the model's natural ability to quantify its own uncertainty. Our results and ablations pave the way towards universal simulators for various real world outcomes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 572,
+  "title": "Persona Features Control Emergent Misalignment",
+  "org": "openai",
+  "date": "2025-06-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.19823",
+  "abstract": "Understanding how language models generalize behaviors from their training to a broader deployment distribution is an important problem in AI safety. Betley et al. discovered that fine-tuning GPT-4o on intentionally insecure code causes \"emergent misalignment,\" where models give stereotypically malicious responses to unrelated prompts. We extend this work, demonstrating emergent misalignment across diverse conditions, including reinforcement learning on reasoning models, fine-tuning on various synthetic datasets, and in models without safety training. To investigate the mechanisms behind this generalized misalignment, we apply a \"model diffing\" approach using sparse autoencoders to compare internal model representations before and after fine-tuning. This approach reveals several \"misaligned persona\" features in activation space, including a toxic persona feature which most strongly controls emergent misalignment and can be used to predict whether a model will exhibit such behavior. Additionally, we investigate mitigation strategies, discovering that fine-tuning an emergently misaligned model on just a few hundred benign samples efficiently restores alignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 339,
+  "title": "Inference-Time Reward Hacking in Large Language Models",
+  "org": "other",
+  "date": "2025-06-24",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2506.19248",
+  "abstract": "A common paradigm to improve the performance of large language models is optimizing for a reward model. Reward models assign a numerical score to an LLM's output that indicates, for example, how likely it is to align with user preferences or safety goals. However, reward models are never perfect. They inevitably function as proxies for complex desiderata such as correctness, helpfulness, and safety. By overoptimizing for a misspecified reward, we can subvert intended alignment goals and reduce overall performance, a phenomenon commonly referred to as reward hacking. In this work, we characterize reward hacking in inference-time alignment and demonstrate when and how we can mitigate it by hedging on the proxy reward. We study this phenomenon under Best-of-$n$ (BoN) and Soft Best-of-$n$ (SBoN), and we introduce Best-of-Poisson (BoP) that provides an efficient, near-exact approximation of the optimal reward-KL divergence policy at inference time. We show that the characteristic pattern of hacking as observed in practice (where the true reward first increases before declining) is an inevitable property of a broad class of inference-time mechanisms, including BoN and BoP. To counter this effect, we introduce HedgeTune, an efficient algorithm to find the optimal inference-time parameter. We demonstrate that hedging mitigates reward hacking and achieves superior reward-distortion tradeoffs on math, reasoning, and human-preference setups.",
+  "needs_fetch": false
+ },
+ {
+  "id": 702,
+  "title": "LIA: Cost-efficient LLM Inference Acceleration with Intel Advanced Matrix Extensions and CXL",
+  "org": "deepmind",
+  "date": "2025-06-23",
+  "venue": "ISCA 2025",
+  "url": "https://dl.acm.org/doi/full/10.1145/3695053.3731092",
+  "abstract": "The limited memory capacity of single GPUs constrains large language model (LLM) inference, necessitating cost-prohibitive multiGPU deployments or frequent performance-limiting CPU-GPU transfers over slow PCIe. In this work, we first benchmark recent Intel CPUs with Advanced Matrix Extensions (AMX), including 4th generation (Sapphire Rapids) and 6th generation (Granite Rapids) Xeon Scalable Processors, demonstrating matrix multiplication throughput of 20 TFLOPS and 40 TFLOPS, respectively— comparable to some recent GPUs. These findings unlock more extensive computation offloading to CPUs, reducing CPU-GPU transfers and alleviating throughput bottlenecks compared to prior generation CPUs. Building on these insights, we design LIA, a single-GPU LLM inference acceleration framework leveraging cooperative AMX-enabled CPU-GPU computation and CXL offloading.LIA systematically offloads computation to CPUs, optimizing both latency and throughput. The framework also introduces a memory offloading policy that seamlessly integrates affordable CXL memory with DDR memory to enhance performance in throughput-driven tasks. On Saphhire Rapids (Granite Rapids) systems with a single H100 GPU, LIA achieves up to 5.1× (19×) lower latency and 3.7×(5.1×) higher throughput compared to the latest single-GPU offloading framework. Furthermore, LIA deploying CXL offloading yields an additional 1.5× throughput improvement over LIA using only DDR memory with a 1.8× increase in maximum batch size (900→1.6",
+  "needs_fetch": false
+ },
+ {
+  "id": 211,
+  "title": "Thought Anchors: Which LLM Reasoning Steps Matter?",
+  "org": "deepmind",
+  "date": "2025-06-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.19143",
+  "abstract": "Current frontier large-language models rely on reasoning to achieve state-of-the-art performance. Many existing interpretability are limited in this area, as standard methods have been designed to study single forward passes of a model rather than the multi-token computational steps that unfold during reasoning. We argue that analyzing reasoning traces at the sentence level is a promising approach to understanding reasoning processes. We introduce a black-box method that measures each sentence's counterfactual importance by repeatedly sampling replacement sentences from the model, filtering for semantically different ones, and continuing the chain of thought from that point onwards to quantify the sentence's impact on the distribution of final answers. We discover that certain sentences can have an outsized impact on the trajectory of the reasoning trace and final answer. We term these sentences \\textit{thought anchors}. These are generally planning or uncertainty management sentences, and specialized attention heads consistently attend from subsequent sentences to thought anchors. We further show that examining sentence-sentence causal links within a reasoning trace gives insight into a model's behavior. Such information can be used to predict a problem's difficulty and the extent different question domains involve sequential or diffuse reasoning. As a proof-of-concept, we demonstrate that our techniques together provide a practical toolkit for analyzing reasoning models by ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1388,
+  "title": "Discretized Approximate Ancestral Sampling",
+  "org": "deepmind",
+  "date": "2025-06-22",
+  "venue": null,
+  "url": "https://doi.org/10.1109/isit63088.2025.11195239",
+  "abstract": "The Fourier Basis Density Model (FBM) [1] was recently introduced as a flexible probability model for band-limited distributions, i.e. ones which are smooth in the sense of having a characteristic function with limited support around the origin. Its density and cumulative distribution functions can be efficiently evaluated and trained with stochastic optimization methods, which makes the model suitable for deep learning applications. However, the model lacked support for sampling. Here, we introduce a method inspired by discretization-interpolation methods common in Digital Signal Processing, which directly take advantage of the band-limited property. We review mathematical properties of the FBM, and prove quality bounds of the sampled distribution in terms of the total variation (TV) and Wasserstein-1 divergences from the model. These bounds can be used to inform the choice of hyperparameters to reach any desired sample quality. We discuss these results in comparison to a variety of other sampling techniques, highlighting tradeoffs between computational complexity and sampling quality.",
+  "needs_fetch": false
+ },
+ {
+  "id": 340,
+  "title": "Aligning Frozen LLMs by Reinforcement Learning: An Iterative Reweight-then-Optimize Approach",
+  "org": "other",
+  "date": "2025-06-21",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.17828",
+  "abstract": "Aligning large language models (LLMs) with human preferences usually requires fine-tuning methods such as RLHF and DPO. These methods directly optimize the model parameters, so they cannot be used in test-time to improve model performance, nor are they applicable when the model weights are not accessible. In contrast, test-time methods sidestep weight updates by leveraging reward functions to guide and improve output quality. However, they incur high inference costs, and their one-shot guidance is often based on imperfect reward or value functions, leading to suboptimal outputs. In this work, we present a method named Iterative Reweight-then-Optimize (IRO), a reinforcement learning (RL) framework that performs RL-style alignment of the (frozen) base model without touching its parameters. During training, each iteration (i) samples candidates from the base model, (ii) resamples using current value functions, and (iii) trains a new lightweight value function that guides the next decoding pass. At test time, the value functions are used to guide the base model generation via a search-based optimization process. Notably, users can apply IRO to align a model on their own dataset, similar to OpenAI's reinforcement fine-tuning (RFT), but without requiring access to the model weights.",
+  "needs_fetch": false
+ }
+]

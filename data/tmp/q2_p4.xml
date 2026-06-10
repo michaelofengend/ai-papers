@@ -1,0 +1,1105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/wNPvFYXVAecjwp00608MLWARghM</id>
+  <title>arXiv Query: search_query=all:"scaling laws" AND all:"language model"&amp;id_list=&amp;start=600&amp;max_results=150</title>
+  <updated>2026-06-10T07:57:34Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22scaling+laws%22+AND+all:%22language+model%22&amp;start=600&amp;max_results=150&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>150</opensearch:itemsPerPage>
+  <opensearch:totalResults>635</opensearch:totalResults>
+  <opensearch:startIndex>600</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2306.10062v1</id>
+    <title>Revealing the structure of language model capabilities</title>
+    <updated>2023-06-14T15:43:25Z</updated>
+    <link href="https://arxiv.org/abs/2306.10062v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.10062v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Building a theoretical understanding of the capabilities of large language models (LLMs) is vital for our ability to predict and explain the behavior of these systems. Here, we investigate the structure of LLM capabilities by extracting latent capabilities from patterns of individual differences across a varied population of LLMs. Using a combination of Bayesian and frequentist factor analysis, we analyzed data from 29 different LLMs across 27 cognitive tasks. We found evidence that LLM capabilities are not monolithic. Instead, they are better explained by three well-delineated factors that represent reasoning, comprehension and core language modeling. Moreover, we found that these three factors can explain a high proportion of the variance in model performance. These results reveal a consistent structure in the capabilities of different LLMs and demonstrate the multifaceted nature of these capabilities. We also found that the three abilities show different relationships to model properties such as model size and instruction tuning. These patterns help refine our understanding of scaling laws and indicate that changes to a model that improve one ability might simultaneously impair others. Based on these findings, we suggest that benchmarks could be streamlined by focusing on tasks that tap into each broad model ability.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-14T15:43:25Z</published>
+    <arxiv:comment>10 pages, 3 figures + references and appendices, for data and analysis code see https://github.com/RyanBurnell/revealing-LLM-capabilities</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ryan Burnell</name>
+    </author>
+    <author>
+      <name>Han Hao</name>
+    </author>
+    <author>
+      <name>Andrew R. A. Conway</name>
+    </author>
+    <author>
+      <name>Jose Hernandez Orallo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.08055v1</id>
+    <title>Tune As You Scale: Hyperparameter Optimization For Compute Efficient Training</title>
+    <updated>2023-06-13T18:22:24Z</updated>
+    <link href="https://arxiv.org/abs/2306.08055v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.08055v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Hyperparameter tuning of deep learning models can lead to order-of-magnitude performance gains for the same amount of compute. Despite this, systematic tuning is uncommon, particularly for large models, which are expensive to evaluate and tend to have many hyperparameters, necessitating difficult judgment calls about tradeoffs, budgets, and search bounds. To address these issues and propose a practical method for robustly tuning large models, we present Cost-Aware Pareto Region Bayesian Search (CARBS), a Bayesian optimization algorithm that performs local search around the performance-cost Pareto frontier. CARBS does well even in unbounded search spaces with many hyperparameters, learns scaling relationships so that it can tune models even as they are scaled up, and automates much of the "black magic" of tuning. Among our results, we effectively solve the entire ProcGen benchmark just by tuning a simple baseline (PPO, as provided in the original ProcGen paper). We also reproduce the model size vs. training tokens scaling result from the Chinchilla project (Hoffmann et al. 2022), while simultaneously discovering scaling laws for every other hyperparameter, via an easy automated process that uses significantly less compute and is applicable to any deep learning problem (not just language models).</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-13T18:22:24Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Abraham J. Fetterman</name>
+    </author>
+    <author>
+      <name>Ellie Kitanidis</name>
+    </author>
+    <author>
+      <name>Joshua Albrecht</name>
+    </author>
+    <author>
+      <name>Zachary Polizzi</name>
+    </author>
+    <author>
+      <name>Bryden Fogelman</name>
+    </author>
+    <author>
+      <name>Maksis Knutins</name>
+    </author>
+    <author>
+      <name>Bartosz Wróblewski</name>
+    </author>
+    <author>
+      <name>James B. Simon</name>
+    </author>
+    <author>
+      <name>Kanjun Qiu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.18619v1</id>
+    <title>Likelihood-Based Diffusion Language Models</title>
+    <updated>2023-05-30T16:43:31Z</updated>
+    <link href="https://arxiv.org/abs/2305.18619v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.18619v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite a growing interest in diffusion-based language models, existing work has not shown that these models can attain nontrivial likelihoods on standard language modeling benchmarks. In this work, we take the first steps towards closing the likelihood gap between autoregressive and diffusion-based language models, with the goal of building and releasing a diffusion model which outperforms a small but widely-known autoregressive model. We pursue this goal through algorithmic improvements, scaling laws, and increased compute. On the algorithmic front, we introduce several methodological improvements for the maximum-likelihood training of diffusion language models. We then study scaling laws for our diffusion models and find compute-optimal training regimes which differ substantially from autoregressive models. Using our methods and scaling analysis, we train and release Plaid 1B, a large diffusion language model which outperforms GPT-2 124M in likelihood on benchmark datasets and generates fluent samples in unconditional and zero-shot control settings.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-30T16:43:31Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ishaan Gulrajani</name>
+    </author>
+    <author>
+      <name>Tatsunori B. Hashimoto</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.17266v2</id>
+    <title>Honey, I Shrunk the Language: Language Model Behavior at Reduced Scale</title>
+    <updated>2023-05-30T18:37:32Z</updated>
+    <link href="https://arxiv.org/abs/2305.17266v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.17266v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In recent years, language models have drastically grown in size, and the abilities of these models have been shown to improve with scale. The majority of recent scaling laws studies focused on high-compute high-parameter count settings, leaving the question of when these abilities begin to emerge largely unanswered. In this paper, we investigate whether the effects of pre-training can be observed when the problem size is reduced, modeling a smaller, reduced-vocabulary language. We show the benefits of pre-training with masked language modeling (MLM) objective in models as small as 1.25M parameters, and establish a strong correlation between pre-training perplexity and downstream performance (GLUE benchmark). We examine downscaling effects, extending scaling laws to models as small as ~1M parameters. At this scale, we observe a break of the power law for compute-optimal models and show that the MLM loss does not scale smoothly with compute-cost (FLOPs) below $2.2 \times 10^{15}$ FLOPs. We also find that adding layers does not always benefit downstream performance.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-26T21:22:10Z</published>
+    <arxiv:comment>Accepted to ACL 2023 Findings</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Vijeta Deshpande</name>
+    </author>
+    <author>
+      <name>Dan Pechi</name>
+    </author>
+    <author>
+      <name>Shree Thatte</name>
+    </author>
+    <author>
+      <name>Vladislav Lialin</name>
+    </author>
+    <author>
+      <name>Anna Rumshisky</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.16264v5</id>
+    <title>Scaling Data-Constrained Language Models</title>
+    <updated>2025-06-28T00:00:06Z</updated>
+    <link href="https://arxiv.org/abs/2305.16264v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.16264v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The current trend of scaling language models involves increasing both parameter count and training dataset size. Extrapolating this trend suggests that training dataset size may soon be limited by the amount of text data available on the internet. Motivated by this limit, we investigate scaling language models in data-constrained regimes. Specifically, we run a large set of experiments varying the extent of data repetition and compute budget, ranging up to 900 billion training tokens and 9 billion parameter models. We find that with constrained data for a fixed compute budget, training with up to 4 epochs of repeated data yields negligible changes to loss compared to having unique data. However, with more repetition, the value of adding compute eventually decays to zero. We propose and empirically validate a scaling law for compute optimality that accounts for the decreasing value of repeated tokens and excess parameters. Finally, we experiment with approaches mitigating data scarcity, including augmenting the training dataset with code data or removing commonly used filters. Models and datasets from our 400 training runs are freely available at https://github.com/huggingface/datablations.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-25T17:18:55Z</published>
+    <arxiv:comment>50 pages (9 main), 39 figures, 15 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Niklas Muennighoff</name>
+    </author>
+    <author>
+      <name>Alexander M. Rush</name>
+    </author>
+    <author>
+      <name>Boaz Barak</name>
+    </author>
+    <author>
+      <name>Teven Le Scao</name>
+    </author>
+    <author>
+      <name>Aleksandra Piktus</name>
+    </author>
+    <author>
+      <name>Nouamane Tazi</name>
+    </author>
+    <author>
+      <name>Sampo Pyysalo</name>
+    </author>
+    <author>
+      <name>Thomas Wolf</name>
+    </author>
+    <author>
+      <name>Colin Raffel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.14057v1</id>
+    <title>Can Language Models Understand Physical Concepts?</title>
+    <updated>2023-05-23T13:36:55Z</updated>
+    <link href="https://arxiv.org/abs/2305.14057v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.14057v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models~(LMs) gradually become general-purpose interfaces in the interactive and embodied world, where the understanding of physical concepts is an essential prerequisite. However, it is not yet clear whether LMs can understand physical concepts in the human world. To investigate this, we design a benchmark VEC that covers the tasks of (i) Visual concepts, such as the shape and material of objects, and (ii) Embodied Concepts, learned from the interaction with the world such as the temperature of objects. Our zero (few)-shot prompting results show that the understanding of certain visual concepts emerges as scaling up LMs, but there are still basic concepts to which the scaling law does not apply. For example, OPT-175B performs close to humans with a zero-shot accuracy of 85\% on the material concept, yet behaves like random guessing on the mass concept. Instead, vision-augmented LMs such as CLIP and BLIP achieve a human-level understanding of embodied concepts. Analysis indicates that the rich semantics in visual representation can serve as a valuable source of embodied knowledge. Inspired by this, we propose a distillation method to transfer embodied knowledge from VLMs to LMs, achieving performance gain comparable with that by scaling up the parameters of LMs 134x. Our dataset is available at \url{https://github.com/TobiasLee/VEC}</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-23T13:36:55Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Lei Li</name>
+    </author>
+    <author>
+      <name>Jingjing Xu</name>
+    </author>
+    <author>
+      <name>Qingxiu Dong</name>
+    </author>
+    <author>
+      <name>Ce Zheng</name>
+    </author>
+    <author>
+      <name>Qi Liu</name>
+    </author>
+    <author>
+      <name>Lingpeng Kong</name>
+    </author>
+    <author>
+      <name>Xu Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.11863v4</id>
+    <title>Scaling laws for language encoding models in fMRI</title>
+    <updated>2024-01-30T18:31:45Z</updated>
+    <link href="https://arxiv.org/abs/2305.11863v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.11863v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Representations from transformer-based unidirectional language models are known to be effective at predicting brain responses to natural language. However, most studies comparing language models to brains have used GPT-2 or similarly sized language models. Here we tested whether larger open-source models such as those from the OPT and LLaMA families are better at predicting brain responses recorded using fMRI. Mirroring scaling results from other contexts, we found that brain prediction performance scales logarithmically with model size from 125M to 30B parameter models, with ~15% increased encoding performance as measured by correlation with a held-out test set across 3 subjects. Similar logarithmic behavior was observed when scaling the size of the fMRI training set. We also characterized scaling for acoustic encoding models that use HuBERT, WavLM, and Whisper, and we found comparable improvements with model size. A noise ceiling analysis of these large, high-performance encoding models showed that performance is nearing the theoretical maximum for brain areas such as the precuneus and higher auditory cortex. These results suggest that increasing scale in both models and data will yield incredibly effective models of language processing in the brain, enabling better scientific understanding as well as applications such as decoding.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-19T17:53:03Z</published>
+    <arxiv:comment>Accepted to the Thirty-seventh Annual Conference on Neural Information Processing Systems (NeurIPS 2023). Please cite NeurIPS version</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Richard Antonello</name>
+    </author>
+    <author>
+      <name>Aditya Vaidya</name>
+    </author>
+    <author>
+      <name>Alexander G. Huth</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.10519v2</id>
+    <title>Statistical Knowledge Assessment for Large Language Models</title>
+    <updated>2023-10-28T07:58:04Z</updated>
+    <link href="https://arxiv.org/abs/2305.10519v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.10519v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Given varying prompts regarding a factoid question, can a large language model (LLM) reliably generate factually correct answers? Existing LLMs may generate distinct responses for different prompts. In this paper, we study the problem of quantifying knowledge contained in an LLM regarding a given set of facts. We propose KaRR, a statistical approach to assess factual knowledge for LLMs. The main idea is to estimate the ratio of LLM generating text corresponding to the answer entity given diverse prompts of the subject and the querying relation, versus it generating by random chances. Our assessment suite contains a comprehensive set of 994,123 entities and 600 relations, with 1,395,905 text aliases. We use our method to evaluate 20 LLMs of various sizes, including LLaMA, Alpaca, OPT, etc. Experiments show that our results have a strong correlation (0.43 Kendall's $τ$) with the results of human assessment on LLMs. Our results reveal that the knowledge in LLMs with the same backbone architecture adheres to the scaling law, while tuning on instruction-following data sometimes compromises the model's capability to generate factually correct text reliably.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-17T18:54:37Z</published>
+    <arxiv:comment>Accepted by NeurIPS 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Qingxiu Dong</name>
+    </author>
+    <author>
+      <name>Jingjing Xu</name>
+    </author>
+    <author>
+      <name>Lingpeng Kong</name>
+    </author>
+    <author>
+      <name>Zhifang Sui</name>
+    </author>
+    <author>
+      <name>Lei Li</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.02309v2</id>
+    <title>CodeGen2: Lessons for Training LLMs on Programming and Natural Languages</title>
+    <updated>2023-07-11T21:11:23Z</updated>
+    <link href="https://arxiv.org/abs/2305.02309v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.02309v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have demonstrated remarkable abilities in representation learning for program synthesis and understanding tasks. The quality of the learned representations appears to be dictated by the neural scaling laws as a function of the number of model parameters and observations, while imposing upper bounds on the model performance by the amount of available data and compute, which is costly.
+  In this study, we attempt to render the training of LLMs for program synthesis more efficient by unifying four key components: (1) model architectures, (2) learning methods, (3) infill sampling, and, (4) data distributions. Specifically, for the model architecture, we attempt to unify encoder and decoder-based models into a single prefix-LM. For learning methods, (i) causal language modeling, (ii) span corruption, (iii) infilling are unified into a simple learning algorithm. For infill sampling, we explore the claim of a "free lunch" hypothesis. For data distributions, the effect of a mixture distribution and multi-epoch training of programming and natural languages on model performance is explored.
+  We conduct a comprehensive series of empirical experiments on 1B LLMs, for which failures and successes of this exploration are distilled into five lessons. We will provide a final recipe for training and release CodeGen2 models in size 1B, 3.7B, 7B, and, 16B parameters, along with the training framework as open-source: https://github.com/salesforce/CodeGen.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-03T17:55:25Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Erik Nijkamp</name>
+    </author>
+    <author>
+      <name>Hiroaki Hayashi</name>
+    </author>
+    <author>
+      <name>Caiming Xiong</name>
+    </author>
+    <author>
+      <name>Silvio Savarese</name>
+    </author>
+    <author>
+      <name>Yingbo Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.11158v2</id>
+    <title>Emergent and Predictable Memorization in Large Language Models</title>
+    <updated>2023-05-31T19:09:45Z</updated>
+    <link href="https://arxiv.org/abs/2304.11158v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.11158v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Memorization, or the tendency of large language models (LLMs) to output entire sequences from their training data verbatim, is a key concern for safely deploying language models. In particular, it is vital to minimize a model's memorization of sensitive datapoints such as those containing personal identifiable information (PII). The prevalence of such undesirable memorization can pose issues for model trainers, and may even require discarding an otherwise functional model. We therefore seek to predict which sequences will be memorized before a large model's full train-time by extrapolating the memorization behavior of lower-compute trial runs. We measure memorization of the Pythia model suite and plot scaling laws for forecasting memorization, allowing us to provide equi-compute recommendations to maximize the reliability (recall) of such predictions. We additionally provide further novel discoveries on the distribution of memorization scores across models and data. We release all code and data necessary to reproduce the results in this paper at https://github.com/EleutherAI/pythia</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-21T17:58:31Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Stella Biderman</name>
+    </author>
+    <author>
+      <name>USVSN Sai Prashanth</name>
+    </author>
+    <author>
+      <name>Lintang Sutawika</name>
+    </author>
+    <author>
+      <name>Hailey Schoelkopf</name>
+    </author>
+    <author>
+      <name>Quentin Anthony</name>
+    </author>
+    <author>
+      <name>Shivanshu Purohit</name>
+    </author>
+    <author>
+      <name>Edward Raff</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.06875v4</id>
+    <title>nanoLM: an Affordable LLM Pre-training Benchmark via Accurate Loss Prediction across Scales</title>
+    <updated>2024-04-06T05:50:39Z</updated>
+    <link href="https://arxiv.org/abs/2304.06875v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.06875v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As language models scale up, it becomes increasingly expensive to verify research ideas because conclusions on small models do not trivially transfer to large ones. A possible solution is to establish a generic system that accurately predicts certain metrics for large models without training them. Existing scaling laws require hyperparameter search on the largest models, limiting their predicative capability. In this paper, we present an approach (namely μScaling) to predict the pre-training loss, based on our observations that Maximal Update Parametrization (μP) enables accurate fitting of scaling laws close to common loss basins in hyperparameter space. With μScaling, different model designs can be compared on large scales by training only their smaller counterparts. Further, we introduce nanoLM: an affordable LLM pre-training benchmark that facilitates this new research paradigm. With around 14% of the one-time pre-training cost, we can accurately forecast the loss for models up to 52B. Our goal with nanoLM is to empower researchers with limited resources to reach meaningful conclusions on large models. We also aspire for our benchmark to serve as a bridge between the academic community and the industry. Code for μScaling is available at https://github.com/cofe-ai/Mu-scaling. Code for nanoLLM will be available later.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-14T00:45:01Z</published>
+    <arxiv:comment>This is a modified and extended version of our previous Mu-scaling work released in April 2023 (see v1)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yiqun Yao</name>
+    </author>
+    <author>
+      <name>Siqi fan</name>
+    </author>
+    <author>
+      <name>Xiusheng Huang</name>
+    </author>
+    <author>
+      <name>Xuezhi Fang</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <author>
+      <name>Ziyi Ni</name>
+    </author>
+    <author>
+      <name>Xin Jiang</name>
+    </author>
+    <author>
+      <name>Xuying Meng</name>
+    </author>
+    <author>
+      <name>Peng Han</name>
+    </author>
+    <author>
+      <name>Shuo Shang</name>
+    </author>
+    <author>
+      <name>Kang Liu</name>
+    </author>
+    <author>
+      <name>Aixin Sun</name>
+    </author>
+    <author>
+      <name>Yequan Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.13506v3</id>
+    <title>The Quantization Model of Neural Scaling</title>
+    <updated>2024-01-13T23:51:39Z</updated>
+    <link href="https://arxiv.org/abs/2303.13506v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.13506v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose the Quantization Model of neural scaling laws, explaining both the observed power law dropoff of loss with model and data size, and also the sudden emergence of new capabilities with scale. We derive this model from what we call the Quantization Hypothesis, where network knowledge and skills are "quantized" into discrete chunks ($\textbf{quanta}$). We show that when quanta are learned in order of decreasing use frequency, then a power law in use frequencies explains observed power law scaling of loss. We validate this prediction on toy datasets, then study how scaling curves decompose for large language models. Using language model gradients, we automatically decompose model behavior into a diverse set of skills (quanta). We tentatively find that the frequency at which these quanta are used in the training distribution roughly follows a power law corresponding with the empirical scaling exponent for language models, a prediction of our theory.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cond-mat.dis-nn" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-23T17:58:43Z</published>
+    <arxiv:comment>24 pages, 18 figures, NeurIPS 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Eric J. Michaud</name>
+    </author>
+    <author>
+      <name>Ziming Liu</name>
+    </author>
+    <author>
+      <name>Uzay Girit</name>
+    </author>
+    <author>
+      <name>Max Tegmark</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.04907v1</id>
+    <title>Binarized Neural Machine Translation</title>
+    <updated>2023-02-09T19:27:34Z</updated>
+    <link href="https://arxiv.org/abs/2302.04907v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.04907v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid scaling of language models is motivating research using low-bitwidth quantization. In this work, we propose a novel binarization technique for Transformers applied to machine translation (BMT), the first of its kind. We identify and address the problem of inflated dot-product variance when using one-bit weights and activations. Specifically, BMT leverages additional LayerNorms and residual connections to improve binarization quality. Experiments on the WMT dataset show that a one-bit weight-only Transformer can achieve the same quality as a float one, while being 16x smaller in size. One-bit activations incur varying degrees of quality drop, but mitigated by the proposed architectural changes. We further conduct a scaling law study using production-scale translation datasets, which shows that one-bit weight Transformers scale and generalize well in both in-domain and out-of-domain settings. Implementation in JAX/Flax will be open sourced.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-09T19:27:34Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Published at NeurIPS 2023</arxiv:journal_ref>
+    <author>
+      <name>Yichi Zhang</name>
+    </author>
+    <author>
+      <name>Ankush Garg</name>
+    </author>
+    <author>
+      <name>Yuan Cao</name>
+    </author>
+    <author>
+      <name>Łukasz Lew</name>
+    </author>
+    <author>
+      <name>Behrooz Ghorbani</name>
+    </author>
+    <author>
+      <name>Zhiru Zhang</name>
+    </author>
+    <author>
+      <name>Orhan Firat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2301.03728v1</id>
+    <title>Scaling Laws for Generative Mixed-Modal Language Models</title>
+    <updated>2023-01-10T00:20:06Z</updated>
+    <link href="https://arxiv.org/abs/2301.03728v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2301.03728v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative language models define distributions over sequences of tokens that can represent essentially any combination of data modalities (e.g., any permutation of image tokens from VQ-VAEs, speech tokens from HuBERT, BPE tokens for language or code, and so on). To better understand the scaling properties of such mixed-modal models, we conducted over 250 experiments using seven different modalities and model sizes ranging from 8 million to 30 billion, trained on 5-100 billion tokens. We report new mixed-modal scaling laws that unify the contributions of individual modalities and the interactions between them. Specifically, we explicitly model the optimal synergy and competition due to data and model size as an additive term to previous uni-modal scaling laws. We also find four empirical phenomena observed during the training, such as emergent coordinate-ascent style training that naturally alternates between modalities, guidelines for selecting critical hyper-parameters, and connections between mixed-modal competition and training stability. Finally, we test our scaling law by training a 30B speech-text model, which significantly outperforms the corresponding unimodal models. Overall, our research provides valuable insights into the design and training of mixed-modal generative models, an important new class of unified models that have unique distributional properties.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-01-10T00:20:06Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Armen Aghajanyan</name>
+    </author>
+    <author>
+      <name>Lili Yu</name>
+    </author>
+    <author>
+      <name>Alexis Conneau</name>
+    </author>
+    <author>
+      <name>Wei-Ning Hsu</name>
+    </author>
+    <author>
+      <name>Karen Hambardzumyan</name>
+    </author>
+    <author>
+      <name>Susan Zhang</name>
+    </author>
+    <author>
+      <name>Stephen Roller</name>
+    </author>
+    <author>
+      <name>Naman Goyal</name>
+    </author>
+    <author>
+      <name>Omer Levy</name>
+    </author>
+    <author>
+      <name>Luke Zettlemoyer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.14034v1</id>
+    <title>Cramming: Training a Language Model on a Single GPU in One Day</title>
+    <updated>2022-12-28T18:59:28Z</updated>
+    <link href="https://arxiv.org/abs/2212.14034v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.14034v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent trends in language modeling have focused on increasing performance through scaling, and have resulted in an environment where training language models is out of reach for most researchers and practitioners. While most in the community are asking how to push the limits of extreme computation, we ask the opposite question: How far can we get with a single GPU in just one day?
+  We investigate the downstream performance achievable with a transformer-based language model trained completely from scratch with masked language modeling for a single day on a single consumer GPU. Aside from re-analyzing nearly all components of the pretraining pipeline for this scenario and providing a modified pipeline with performance close to BERT, we investigate why scaling down is hard, and which modifications actually improve performance in this scenario. We provide evidence that even in this constrained setting, performance closely follows scaling laws observed in large-compute settings. Through the lens of scaling laws, we categorize a range of recent improvements to training and architecture and discuss their merit and practical applicability (or lack thereof) for the limited compute setting.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-28T18:59:28Z</published>
+    <arxiv:comment>22 pages, we provide code at https://github.com/JonasGeiping/cramming</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jonas Geiping</name>
+    </author>
+    <author>
+      <name>Tom Goldstein</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.09720v2</id>
+    <title>The case for 4-bit precision: k-bit Inference Scaling Laws</title>
+    <updated>2023-02-28T00:12:34Z</updated>
+    <link href="https://arxiv.org/abs/2212.09720v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.09720v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Quantization methods reduce the number of bits required to represent each parameter in a model, trading accuracy for smaller memory footprints and inference latencies. However, the final model size depends on both the number of parameters of the original model and the rate of compression. For example, a 30B 8-bit model and a 60B 4-bit model have the same number of bits but may have very different zero-shot accuracies. In this work, we study this trade-off by developing inference scaling laws of zero-shot performance in Large Language Models (LLMs) to determine the bit-precision and model size that maximizes zero-shot performance. We run more than 35,000 experiments with 16-bit inputs and k-bit parameters to examine which zero-shot quantization methods improve scaling for 3 to 8-bit precision at scales of 19M to 176B parameters across the LLM families BLOOM, OPT, NeoX/Pythia, and GPT-2. We find that it is challenging to improve the bit-level scaling trade-off, with the only improvements being the use of a small block size -- splitting the parameters into small independently quantized blocks -- and the quantization data type being used (e.g., Int vs Float). Overall, our findings show that {4-bit} precision is almost universally optimal for total model bits and zero-shot accuracy.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-19T18:48:33Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Tim Dettmers</name>
+    </author>
+    <author>
+      <name>Luke Zettlemoyer</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.01365v2</id>
+    <title>An Information-Theoretic Analysis of Compute-Optimal Neural Scaling Laws</title>
+    <updated>2023-10-18T20:53:04Z</updated>
+    <link href="https://arxiv.org/abs/2212.01365v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.01365v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the compute-optimal trade-off between model and training data set sizes for large neural networks. Our result suggests a linear relation similar to that supported by the empirical analysis of chinchilla. While that work studies transformer-based large language models trained on the MassiveText corpus gopher, as a starting point for development of a mathematical theory, we focus on a simpler learning model and data generating process, each based on a neural network with a sigmoidal output unit and single hidden layer of ReLU activation units. We introduce general error upper bounds for a class of algorithms which incrementally update a statistic (for example gradient descent). For a particular learning model inspired by barron 1993, we establish an upper bound on the minimal information-theoretically achievable expected error as a function of model and data set sizes. We then derive allocations of computation that minimize this bound. We present empirical results which suggest that this approximation correctly identifies an asymptotic linear compute-optimal scaling. This approximation also generates new insights. Among other things, it suggests that, as the input dimension or latent space complexity grows, as might be the case for example if a longer history of tokens is taken as input to a language model, a larger fraction of the compute budget should be allocated to growing the learning model rather than training data.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-02T18:46:41Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Hong Jun Jeon</name>
+    </author>
+    <author>
+      <name>Benjamin Van Roy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.16859v1</id>
+    <title>A Solvable Model of Neural Scaling Laws</title>
+    <updated>2022-10-30T15:13:18Z</updated>
+    <link href="https://arxiv.org/abs/2210.16859v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.16859v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models with a huge number of parameters, when trained on near internet-sized number of tokens, have been empirically shown to obey neural scaling laws: specifically, their performance behaves predictably as a power law in either parameters or dataset size until bottlenecked by the other resource. To understand this better, we first identify the necessary properties allowing such scaling laws to arise and then propose a statistical model -- a joint generative data model and random feature model -- that captures this neural scaling phenomenology. By solving this model in the dual limit of large training set size and large number of parameters, we gain insight into (i) the statistical structure of datasets and tasks that lead to scaling laws, (ii) the way nonlinear feature maps, such as those provided by neural networks, enable scaling laws when trained on these datasets, (iii) the optimality of the equiparameterization scaling of training sets and parameters, and (iv) whether such scaling laws can break down and how they behave when they do. Key findings are the manner in which the power laws that occur in the statistics of natural datasets are extended by nonlinear random feature maps and then translated into power-law scalings of the test loss and how the finite extent of the data's spectral power law causes the model's performance to plateau.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="hep-th" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-30T15:13:18Z</published>
+    <arxiv:comment>73 + 23 pages, 14 + 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Alexander Maloney</name>
+    </author>
+    <author>
+      <name>Daniel A. Roberts</name>
+    </author>
+    <author>
+      <name>James Sully</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.01334v3</id>
+    <title>MemoNet: Memorizing All Cross Features' Representations Efficiently via Multi-Hash Codebook Network for CTR Prediction</title>
+    <updated>2023-09-04T08:58:04Z</updated>
+    <link href="https://arxiv.org/abs/2211.01334v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.01334v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>New findings in natural language processing (NLP) demonstrate that the strong memorization capability contributes a lot to the success of Large Language Models (LLM). This inspires us to explicitly bring an independent memory mechanism into CTR ranking model to learn and memorize cross features' representations. In this paper, we propose multi-Hash Codebook NETwork (HCNet) as the memory mechanism for efficiently learning and memorizing representations of cross features in CTR tasks. HCNet uses a multi-hash codebook as the main memory place and the whole memory procedure consists of three phases: multi-hash addressing, memory restoring, and feature shrinking. We also propose a new CTR model named MemoNet which combines HCNet with a DNN backbone. Extensive experimental results on three public datasets and online test show that MemoNet reaches superior performance over state-of-the-art approaches. Besides, MemoNet shows scaling law of large language model in NLP, which means we can enlarge the size of the codebook in HCNet to sustainably obtain performance gains. Our work demonstrates the importance and feasibility of learning and memorizing representations of cross features, which sheds light on a new promising research direction.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-25T12:08:14Z</published>
+    <arxiv:primary_category term="cs.IR"/>
+    <arxiv:journal_ref>ACM International Conference on Information and Knowledge Management(CIKM '23), October 21-25,2023,Birmingham,United Kingdom</arxiv:journal_ref>
+    <author>
+      <name>Pengtao Zhang</name>
+    </author>
+    <author>
+      <name>Junlin Zhang</name>
+    </author>
+    <arxiv:doi>10.1145/3583780.3614963</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3583780.3614963" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.11399v2</id>
+    <title>Transcending Scaling Laws with 0.1% Extra Compute</title>
+    <updated>2022-11-16T12:32:52Z</updated>
+    <link href="https://arxiv.org/abs/2210.11399v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.11399v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Scaling language models improves performance but comes with significant computational costs. This paper proposes UL2R, a method that substantially improves existing language models and their scaling curves with a relatively tiny amount of extra compute. The key idea is to continue training a state-of-the-art large language model (e.g., PaLM) on a few more steps with UL2's mixture-of-denoiser objective. We show that, with almost negligible extra computational costs and no new sources of data, we are able to substantially improve the scaling properties of large language models on downstream metrics. In this paper, we continue training PaLM with UL2R, introducing a new set of models at 8B, 62B, and 540B scale which we call U-PaLM. Impressively, at 540B scale, we show an approximately 2x computational savings rate where U-PaLM achieves the same performance as the final PaLM 540B model at around half its computational budget (i.e., saving $\sim$4.4 million TPUv4 hours). We further show that this improved scaling curve leads to 'emergent abilities' on challenging BIG-Bench tasks -- for instance, U-PaLM does much better than PaLM on some tasks or demonstrates better quality at much smaller scale (62B as opposed to 540B). Overall, we show that U-PaLM outperforms PaLM on many few-shot setups, i.e., English NLP tasks (e.g., commonsense reasoning, question answering), reasoning tasks with chain-of-thought (e.g., GSM8K), multilingual tasks (MGSM, TydiQA), MMLU and challenging BIG-Bench tasks. Finally, we provide qualitative examples showing the new capabilities of U-PaLM for single and multi-span infilling.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-20T16:46:41Z</published>
+    <arxiv:comment>V2 has updated references/related work</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yi Tay</name>
+    </author>
+    <author>
+      <name>Jason Wei</name>
+    </author>
+    <author>
+      <name>Hyung Won Chung</name>
+    </author>
+    <author>
+      <name>Vinh Q. Tran</name>
+    </author>
+    <author>
+      <name>David R. So</name>
+    </author>
+    <author>
+      <name>Siamak Shakeri</name>
+    </author>
+    <author>
+      <name>Xavier Garcia</name>
+    </author>
+    <author>
+      <name>Huaixiu Steven Zheng</name>
+    </author>
+    <author>
+      <name>Jinfeng Rao</name>
+    </author>
+    <author>
+      <name>Aakanksha Chowdhery</name>
+    </author>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+    <author>
+      <name>Donald Metzler</name>
+    </author>
+    <author>
+      <name>Slav Petrov</name>
+    </author>
+    <author>
+      <name>Neil Houlsby</name>
+    </author>
+    <author>
+      <name>Quoc V. Le</name>
+    </author>
+    <author>
+      <name>Mostafa Dehghani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.00849v2</id>
+    <title>Scaling Laws for a Multi-Agent Reinforcement Learning Model</title>
+    <updated>2023-02-13T15:33:31Z</updated>
+    <link href="https://arxiv.org/abs/2210.00849v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.00849v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The recent observation of neural power-law scaling relations has made a significant impact in the field of deep learning. A substantial amount of attention has been dedicated as a consequence to the description of scaling laws, although mostly for supervised learning and only to a reduced extent for reinforcement learning frameworks. In this paper we present an extensive study of performance scaling for a cornerstone reinforcement learning algorithm, AlphaZero. On the basis of a relationship between Elo rating, playing strength and power-law scaling, we train AlphaZero agents on the games Connect Four and Pentago and analyze their performance. We find that player strength scales as a power law in neural network parameter count when not bottlenecked by available compute, and as a power of compute when training optimally sized agents. We observe nearly identical scaling exponents for both games. Combining the two observed scaling laws we obtain a power law relating optimal size to compute similar to the ones observed for language models. We find that the predicted scaling of optimal neural network size fits our data for both games. This scaling law implies that previously published state-of-the-art game-playing models are significantly smaller than their optimal size, given the respective compute budgets. We also show that large AlphaZero models are more sample efficient, performing better than smaller models with the same amount of training data.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-29T19:08:51Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Oren Neumann</name>
+    </author>
+    <author>
+      <name>Claudius Gros</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.13636v3</id>
+    <title>Local Grammar-Based Coding Revisited</title>
+    <updated>2025-04-16T08:23:43Z</updated>
+    <link href="https://arxiv.org/abs/2209.13636v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.13636v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the setting of minimal local grammar-based coding, the input string is represented as a grammar with the minimal output length defined via simple symbol-by-symbol encoding. This paper discusses four contributions to this field. First, we invoke a simple harmonic bound on ranked probabilities, which reminds Zipf's law and simplifies universality proofs for minimal local grammar-based codes. Second, we refine known bounds on the vocabulary size, showing its partial power-law equivalence with mutual information and redundancy. These bounds are relevant for linking Zipf's law with the neural scaling law for large language models. Third, we develop a framework for universal codes with fixed infinite vocabularies, recasting universal coding as matching ranked patterns that are independent of empirical data. Finally, we analyze grammar-based codes with finite vocabularies being empirical rank lists, proving that that such codes are also universal. These results extend foundations of universal grammar-based coding and reaffirm previously stated connections to power laws for human language and language models.</summary>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-27T19:05:22Z</published>
+    <arxiv:comment>41 pages, no figures</arxiv:comment>
+    <arxiv:primary_category term="cs.IT"/>
+    <author>
+      <name>Łukasz Dębowski</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.12711v1</id>
+    <title>Can Large Language Models Truly Understand Prompts? A Case Study with Negated Prompts</title>
+    <updated>2022-09-26T14:05:10Z</updated>
+    <link href="https://arxiv.org/abs/2209.12711v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.12711v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Previous work has shown that there exists a scaling law between the size of Language Models (LMs) and their zero-shot performance on different downstream NLP tasks. In this work, we show that this phenomenon does not hold when evaluating large LMs on tasks with negated prompts, but instead shows an inverse scaling law. We evaluate 9 different tasks with negated prompts on (1) pretrained LMs (OPT &amp; GPT-3) of varying sizes (125M - 175B), (2) LMs further pretrained to generalize to novel prompts (InstructGPT), (3) LMs provided with few-shot examples, and (4) LMs fine-tuned specifically on negated prompts; all LM types perform worse on negated prompts as they scale and show a huge performance gap between the human performance when comparing the average score on both original and negated prompts. By highlighting a critical limitation of existing LMs and methods, we urge the community to develop new approaches of developing LMs that actually follow the given instructions. We provide the code and the datasets to explore negated prompts at https://github.com/joeljang/negated-prompts-for-llms</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-26T14:05:10Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Joel Jang</name>
+    </author>
+    <author>
+      <name>Seonghyeon Ye</name>
+    </author>
+    <author>
+      <name>Minjoon Seo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.06640v2</id>
+    <title>Revisiting Neural Scaling Laws in Language and Vision</title>
+    <updated>2022-11-01T08:59:38Z</updated>
+    <link href="https://arxiv.org/abs/2209.06640v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.06640v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The remarkable progress in deep learning in recent years is largely driven by improvements in scale, where bigger models are trained on larger datasets for longer schedules. To predict the benefit of scale empirically, we argue for a more rigorous methodology based on the extrapolation loss, instead of reporting the best-fitting (interpolating) parameters. We then present a recipe for estimating scaling law parameters reliably from learning curves. We demonstrate that it extrapolates more accurately than previous methods in a wide range of architecture families across several domains, including image classification, neural machine translation (NMT) and language modeling, in addition to tasks from the BIG-Bench evaluation benchmark. Finally, we release a benchmark dataset comprising of 90 evaluation tasks to facilitate research in this domain.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-13T09:41:51Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>Neural Information Processing Systems (NeurIPS), 2022</arxiv:journal_ref>
+    <author>
+      <name>Ibrahim Alabdulmohsin</name>
+    </author>
+    <author>
+      <name>Behnam Neyshabur</name>
+    </author>
+    <author>
+      <name>Xiaohua Zhai</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.11916v4</id>
+    <title>Large Language Models are Zero-Shot Reasoners</title>
+    <updated>2023-01-29T05:14:17Z</updated>
+    <link href="https://arxiv.org/abs/2205.11916v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.11916v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Pretrained large language models (LLMs) are widely used in many sub-fields of natural language processing (NLP) and generally known as excellent few-shot learners with task-specific exemplars. Notably, chain of thought (CoT) prompting, a recent technique for eliciting complex multi-step reasoning through step-by-step answer examples, achieved the state-of-the-art performances in arithmetics and symbolic reasoning, difficult system-2 tasks that do not follow the standard scaling laws for LLMs. While these successes are often attributed to LLMs' ability for few-shot learning, we show that LLMs are decent zero-shot reasoners by simply adding "Let's think step by step" before each answer. Experimental results demonstrate that our Zero-shot-CoT, using the same single prompt template, significantly outperforms zero-shot LLM performances on diverse benchmark reasoning tasks including arithmetics (MultiArith, GSM8K, AQUA-RAT, SVAMP), symbolic reasoning (Last Letter, Coin Flip), and other logical reasoning tasks (Date Understanding, Tracking Shuffled Objects), without any hand-crafted few-shot examples, e.g. increasing the accuracy on MultiArith from 17.7% to 78.7% and GSM8K from 10.4% to 40.7% with large InstructGPT model (text-davinci-002), as well as similar magnitudes of improvements with another off-the-shelf large model, 540B parameter PaLM. The versatility of this single prompt across very diverse reasoning tasks hints at untapped and understudied fundamental zero-shot capabilities of LLMs, suggesting high-level, multi-task broad cognitive capabilities may be extracted by simple prompting. We hope our work not only serves as the minimal strongest zero-shot baseline for the challenging reasoning benchmarks, but also highlights the importance of carefully exploring and analyzing the enormous zero-shot knowledge hidden inside LLMs before crafting finetuning datasets or few-shot exemplars.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-24T09:22:26Z</published>
+    <arxiv:comment>Accepted to NeurIPS2022. Our code is available at https://github.com/kojima-takeshi188/zero_shot_cot</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Takeshi Kojima</name>
+    </author>
+    <author>
+      <name>Shixiang Shane Gu</name>
+    </author>
+    <author>
+      <name>Machel Reid</name>
+    </author>
+    <author>
+      <name>Yutaka Matsuo</name>
+    </author>
+    <author>
+      <name>Yusuke Iwasawa</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.10487v1</id>
+    <title>Scaling Laws and Interpretability of Learning from Repeated Data</title>
+    <updated>2022-05-21T02:14:27Z</updated>
+    <link href="https://arxiv.org/abs/2205.10487v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.10487v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent large language models have been trained on vast datasets, but also often on repeated data, either intentionally for the purpose of upweighting higher quality data, or unintentionally because data deduplication is not perfect and the model is exposed to repeated data at the sentence, paragraph, or document level. Some works have reported substantial negative performance effects of this repeated data. In this paper we attempt to study repeated data systematically and to understand its effects mechanistically. To do this, we train a family of models where most of the data is unique but a small fraction of it is repeated many times. We find a strong double descent phenomenon, in which repeated data can lead test loss to increase midway through training. A predictable range of repetition frequency leads to surprisingly severe degradation in performance. For instance, performance of an 800M parameter model can be degraded to that of a 2x smaller model (400M params) by repeating 0.1% of the data 100 times, despite the other 90% of the training tokens remaining unique. We suspect there is a range in the middle where the data can be memorized and doing so consumes a large fraction of the model's capacity, and this may be where the peak of degradation occurs. Finally, we connect these observations to recent mechanistic interpretability work - attempting to reverse engineer the detailed computations performed by the model - by showing that data repetition disproportionately damages copying and internal structures associated with generalization, such as induction heads, providing a possible mechanism for the shift from generalization to memorization. Taken together, these results provide a hypothesis for why repeating a relatively small fraction of data in large language models could lead to disproportionately large harms to performance.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-21T02:14:27Z</published>
+    <arxiv:comment>23 pages, 22 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Danny Hernandez</name>
+    </author>
+    <author>
+      <name>Tom Brown</name>
+    </author>
+    <author>
+      <name>Tom Conerly</name>
+    </author>
+    <author>
+      <name>Nova DasSarma</name>
+    </author>
+    <author>
+      <name>Dawn Drain</name>
+    </author>
+    <author>
+      <name>Sheer El-Showk</name>
+    </author>
+    <author>
+      <name>Nelson Elhage</name>
+    </author>
+    <author>
+      <name>Zac Hatfield-Dodds</name>
+    </author>
+    <author>
+      <name>Tom Henighan</name>
+    </author>
+    <author>
+      <name>Tristan Hume</name>
+    </author>
+    <author>
+      <name>Scott Johnston</name>
+    </author>
+    <author>
+      <name>Ben Mann</name>
+    </author>
+    <author>
+      <name>Chris Olah</name>
+    </author>
+    <author>
+      <name>Catherine Olsson</name>
+    </author>
+    <author>
+      <name>Dario Amodei</name>
+    </author>
+    <author>
+      <name>Nicholas Joseph</name>
+    </author>
+    <author>
+      <name>Jared Kaplan</name>
+    </author>
+    <author>
+      <name>Sam McCandlish</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.06211v1</id>
+    <title>Staged Training for Transformer Language Models</title>
+    <updated>2022-03-11T19:05:42Z</updated>
+    <link href="https://arxiv.org/abs/2203.06211v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.06211v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The current standard approach to scaling transformer language models trains each model size from a different random initialization. As an alternative, we consider a staged training setup that begins with a small model and incrementally increases the amount of compute used for training by applying a "growth operator" to increase the model depth and width. By initializing each stage with the output of the previous one, the training process effectively re-uses the compute from prior stages and becomes more efficient. Our growth operators each take as input the entire training state (including model parameters, optimizer state, learning rate schedule, etc.) and output a new training state from which training continues. We identify two important properties of these growth operators, namely that they preserve both the loss and the "training dynamics" after applying the operator. While the loss-preserving property has been discussed previously, to the best of our knowledge this work is the first to identify the importance of preserving the training dynamics (the rate of decrease of the loss during training). To find the optimal schedule for stages, we use the scaling laws from (Kaplan et al., 2020) to find a precise schedule that gives the most compute saving by starting a new stage when training efficiency starts decreasing. We empirically validate our growth operators and staged training for autoregressive language models, showing up to 22% compute savings compared to a strong baseline trained from scratch. Our code is available at https://github.com/allenai/staged-training.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-11T19:05:42Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sheng Shen</name>
+    </author>
+    <author>
+      <name>Pete Walsh</name>
+    </author>
+    <author>
+      <name>Kurt Keutzer</name>
+    </author>
+    <author>
+      <name>Jesse Dodge</name>
+    </author>
+    <author>
+      <name>Matthew Peters</name>
+    </author>
+    <author>
+      <name>Iz Beltagy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.01994v1</id>
+    <title>Data Scaling Laws in NMT: The Effect of Noise and Architecture</title>
+    <updated>2022-02-04T06:53:49Z</updated>
+    <link href="https://arxiv.org/abs/2202.01994v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.01994v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we study the effect of varying the architecture and training data quality on the data scaling properties of Neural Machine Translation (NMT). First, we establish that the test loss of encoder-decoder transformer models scales as a power law in the number of training samples, with a dependence on the model size. Then, we systematically vary aspects of the training setup to understand how they impact the data scaling laws. In particular, we change the following (1) Architecture and task setup: We compare to a transformer-LSTM hybrid, and a decoder-only transformer with a language modeling loss (2) Noise level in the training distribution: We experiment with filtering, and adding iid synthetic noise. In all the above cases, we find that the data scaling exponents are minimally impacted, suggesting that marginally worse architectures or training data can be compensated for by adding more data. Lastly, we find that using back-translated data instead of parallel data, can significantly degrade the scaling exponent.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-04T06:53:49Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yamini Bansal</name>
+    </author>
+    <author>
+      <name>Behrooz Ghorbani</name>
+    </author>
+    <author>
+      <name>Ankush Garg</name>
+    </author>
+    <author>
+      <name>Biao Zhang</name>
+    </author>
+    <author>
+      <name>Maxim Krikun</name>
+    </author>
+    <author>
+      <name>Colin Cherry</name>
+    </author>
+    <author>
+      <name>Behnam Neyshabur</name>
+    </author>
+    <author>
+      <name>Orhan Firat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.01169v2</id>
+    <title>Unified Scaling Laws for Routed Language Models</title>
+    <updated>2022-02-09T11:07:21Z</updated>
+    <link href="https://arxiv.org/abs/2202.01169v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.01169v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The performance of a language model has been shown to be effectively modeled as a power-law in its parameter count. Here we study the scaling behaviors of Routing Networks: architectures that conditionally use only a subset of their parameters while processing an input. For these models, parameter count and computational requirement form two independent axes along which an increase leads to better performance. In this work we derive and justify scaling laws defined on these two variables which generalize those known for standard language models and describe the performance of a wide range of routing architectures trained via three different techniques. Afterwards we provide two applications of these laws: first deriving an Effective Parameter Count along which all models scale at the same rate, and then using the scaling coefficients to give a quantitative comparison of the three routing techniques considered. Our analysis derives from an extensive evaluation of Routing Networks across five orders of magnitude of size, including models with hundreds of experts and hundreds of billions of parameters.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-02T17:58:52Z</published>
+    <arxiv:comment>Fixing typos and affiliation clarity</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Aidan Clark</name>
+    </author>
+    <author>
+      <name>Diego de las Casas</name>
+    </author>
+    <author>
+      <name>Aurelia Guy</name>
+    </author>
+    <author>
+      <name>Arthur Mensch</name>
+    </author>
+    <author>
+      <name>Michela Paganini</name>
+    </author>
+    <author>
+      <name>Jordan Hoffmann</name>
+    </author>
+    <author>
+      <name>Bogdan Damoc</name>
+    </author>
+    <author>
+      <name>Blake Hechtman</name>
+    </author>
+    <author>
+      <name>Trevor Cai</name>
+    </author>
+    <author>
+      <name>Sebastian Borgeaud</name>
+    </author>
+    <author>
+      <name>George van den Driessche</name>
+    </author>
+    <author>
+      <name>Eliza Rutherford</name>
+    </author>
+    <author>
+      <name>Tom Hennigan</name>
+    </author>
+    <author>
+      <name>Matthew Johnson</name>
+    </author>
+    <author>
+      <name>Katie Millican</name>
+    </author>
+    <author>
+      <name>Albin Cassirer</name>
+    </author>
+    <author>
+      <name>Chris Jones</name>
+    </author>
+    <author>
+      <name>Elena Buchatskaya</name>
+    </author>
+    <author>
+      <name>David Budden</name>
+    </author>
+    <author>
+      <name>Laurent Sifre</name>
+    </author>
+    <author>
+      <name>Simon Osindero</name>
+    </author>
+    <author>
+      <name>Oriol Vinyals</name>
+    </author>
+    <author>
+      <name>Jack Rae</name>
+    </author>
+    <author>
+      <name>Erich Elsen</name>
+    </author>
+    <author>
+      <name>Koray Kavukcuoglu</name>
+    </author>
+    <author>
+      <name>Karen Simonyan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2111.11294v5</id>
+    <title>Scaling Law for Recommendation Models: Towards General-purpose User Representations</title>
+    <updated>2022-11-22T07:15:03Z</updated>
+    <link href="https://arxiv.org/abs/2111.11294v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2111.11294v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advancement of large-scale pretrained models such as BERT, GPT-3, CLIP, and Gopher, has shown astonishing achievements across various task domains. Unlike vision recognition and language models, studies on general-purpose user representation at scale still remain underexplored. Here we explore the possibility of general-purpose user representation learning by training a universal user encoder at large scales. We demonstrate that the scaling law is present in user representation learning areas, where the training error scales as a power-law with the amount of computation. Our Contrastive Learning User Encoder (CLUE), optimizes task-agnostic objectives, and the resulting user embeddings stretch our expectation of what is possible to do in various downstream tasks. CLUE also shows great transferability to other domains and companies, as performances on an online experiment shows significant improvements in Click-Through-Rate (CTR). Furthermore, we also investigate how the model performance is influenced by the scale factors, such as training data size, model capacity, sequence length, and batch size. Finally, we discuss the broader impacts of CLUE in general.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-11-15T10:39:29Z</published>
+    <arxiv:comment>Accepted at AAAI 2023. This version includes the technical appendix</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Kyuyong Shin</name>
+    </author>
+    <author>
+      <name>Hanock Kwak</name>
+    </author>
+    <author>
+      <name>Su Young Kim</name>
+    </author>
+    <author>
+      <name>Max Nihlen Ramstrom</name>
+    </author>
+    <author>
+      <name>Jisu Jeong</name>
+    </author>
+    <author>
+      <name>Jung-Woo Ha</name>
+    </author>
+    <author>
+      <name>Kyung-Min Kim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2109.11928v1</id>
+    <title>Is the Number of Trainable Parameters All That Actually Matters?</title>
+    <updated>2021-09-24T12:43:58Z</updated>
+    <link href="https://arxiv.org/abs/2109.11928v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2109.11928v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent work has identified simple empirical scaling laws for language models, linking compute budget, dataset size, model size, and autoregressive modeling loss. The validity of these simple power laws across orders of magnitude in model scale provides compelling evidence that larger models are also more capable models. However, scaling up models under the constraints of hardware and infrastructure is no easy feat, and rapidly becomes a hard and expensive engineering problem. We investigate ways to tentatively cheat scaling laws, and train larger models for cheaper. We emulate an increase in effective parameters, using efficient approximations: either by doping the models with frozen random parameters, or by using fast structured transforms in place of dense linear layers. We find that the scaling relationship between test loss and compute depends only on the actual number of trainable parameters; scaling laws cannot be deceived by spurious parameters.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-09-24T12:43:58Z</published>
+    <arxiv:primary_category term="stat.ML"/>
+    <author>
+      <name>Amélie Chatelain</name>
+    </author>
+    <author>
+      <name>Amine Djeghri</name>
+    </author>
+    <author>
+      <name>Daniel Hesslow</name>
+    </author>
+    <author>
+      <name>Julien Launay</name>
+    </author>
+    <author>
+      <name>Iacopo Poli</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2108.07686v1</id>
+    <title>Scaling Laws for Deep Learning</title>
+    <updated>2021-08-17T15:37:05Z</updated>
+    <link href="https://arxiv.org/abs/2108.07686v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2108.07686v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Running faster will only get you so far -- it is generally advisable to first understand where the roads lead, then get a car ...
+  The renaissance of machine learning (ML) and deep learning (DL) over the last decade is accompanied by an unscalable computational cost, limiting its advancement and weighing on the field in practice. In this thesis we take a systematic approach to address the algorithmic and methodological limitations at the root of these costs. We first demonstrate that DL training and pruning are predictable and governed by scaling laws -- for state of the art models and tasks, spanning image classification and language modeling, as well as for state of the art model compression via iterative pruning. Predictability, via the establishment of these scaling laws, provides the path for principled design and trade-off reasoning, currently largely lacking in the field. We then continue to analyze the sources of the scaling laws, offering an approximation-theoretic view and showing through the exploration of a noiseless realizable case that DL is in fact dominated by error sources very far from the lower error limit. We conclude by building on the gained theoretical understanding of the scaling laws' origins. We present a conjectural path to eliminate one of the current dominant error sources -- through a data bandwidth limiting hypothesis and the introduction of Nyquist learners -- which can, in principle, reach the generalization error lower limit (e.g. 0 in the noiseless case), at finite dataset size.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-08-17T15:37:05Z</published>
+    <arxiv:comment>PhD thesis</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jonathan S. Rosenfeld</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.02679v1</id>
+    <title>Layered gradient accumulation and modular pipeline parallelism: fast and efficient training of large language models</title>
+    <updated>2021-06-04T19:21:49Z</updated>
+    <link href="https://arxiv.org/abs/2106.02679v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.02679v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The advent of the transformer has sparked a quick growth in the size of language models, far outpacing hardware improvements. (Dense) transformers are expected to reach the trillion-parameter scale in the near future, for which training requires thousands or even tens of thousands of GPUs. We investigate the challenges of training at this scale and beyond on commercially available hardware. In particular, we analyse the shortest possible training time for different configurations of distributed training, leveraging empirical scaling laws for language models to estimate the optimal (critical) batch size. Contrary to popular belief, we find no evidence for a memory wall, and instead argue that the real limitation -- other than the cost -- lies in the training duration.
+  In addition to this analysis, we introduce two new methods, \textit{layered gradient accumulation} and \textit{modular pipeline parallelism}, which together cut the shortest training time by half. The methods also reduce data movement, lowering the network requirement to a point where a fast InfiniBand connection is not necessary. This increased network efficiency also improve on the methods introduced with the ZeRO optimizer, reducing the memory usage to a tiny fraction of the available GPU memory.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-04T19:21:49Z</published>
+    <arxiv:comment>22 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Joel Lamy-Poirier</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2004.10802v1</id>
+    <title>A Neural Scaling Law from the Dimension of the Data Manifold</title>
+    <updated>2020-04-22T19:16:06Z</updated>
+    <link href="https://arxiv.org/abs/2004.10802v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2004.10802v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>When data is plentiful, the loss achieved by well-trained neural networks scales as a power-law $L \propto N^{-α}$ in the number of network parameters $N$. This empirical scaling law holds for a wide variety of data modalities, and may persist over many orders of magnitude. The scaling law can be explained if neural models are effectively just performing regression on a data manifold of intrinsic dimension $d$. This simple theory predicts that the scaling exponents $α\approx 4/d$ for cross-entropy and mean-squared error losses. We confirm the theory by independently measuring the intrinsic dimension and the scaling exponents in a teacher/student framework, where we can study a variety of $d$ and $α$ by dialing the properties of random teacher networks. We also test the theory with CNN image classifiers on several datasets and with GPT-type language models.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-04-22T19:16:06Z</published>
+    <arxiv:comment>16+12 pages, 11+11 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Utkarsh Sharma</name>
+    </author>
+    <author>
+      <name>Jared Kaplan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2001.08361v1</id>
+    <title>Scaling Laws for Neural Language Models</title>
+    <updated>2020-01-23T03:59:20Z</updated>
+    <link href="https://arxiv.org/abs/2001.08361v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2001.08361v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study empirical scaling laws for language model performance on the cross-entropy loss. The loss scales as a power-law with model size, dataset size, and the amount of compute used for training, with some trends spanning more than seven orders of magnitude. Other architectural details such as network width or depth have minimal effects within a wide range. Simple equations govern the dependence of overfitting on model/dataset size and the dependence of training speed on model size. These relationships allow us to determine the optimal allocation of a fixed compute budget. Larger models are significantly more sample-efficient, such that optimally compute-efficient training involves training very large models on a relatively modest amount of data and stopping significantly before convergence.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-01-23T03:59:20Z</published>
+    <arxiv:comment>19 pages, 15 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jared Kaplan</name>
+    </author>
+    <author>
+      <name>Sam McCandlish</name>
+    </author>
+    <author>
+      <name>Tom Henighan</name>
+    </author>
+    <author>
+      <name>Tom B. Brown</name>
+    </author>
+    <author>
+      <name>Benjamin Chess</name>
+    </author>
+    <author>
+      <name>Rewon Child</name>
+    </author>
+    <author>
+      <name>Scott Gray</name>
+    </author>
+    <author>
+      <name>Alec Radford</name>
+    </author>
+    <author>
+      <name>Jeffrey Wu</name>
+    </author>
+    <author>
+      <name>Dario Amodei</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2199,
+  "title": "Autoregressive Dynamics Models for Offline Policy Evaluation and Optimization",
+  "org": "deepmind",
+  "date": "2021-04-28",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2104.13877",
+  "abstract": "Standard dynamics models for continuous control make use of feedforward computation to predict the conditional distribution of next state and reward given current state and action using a multivariate Gaussian with a diagonal covariance structure. This modeling choice assumes that different dimensions of the next state and reward are conditionally independent given the current state and action and may be driven by the fact that fully observable physics-based simulation environments entail deterministic transition dynamics. In this paper, we challenge this conditional independence assumption and propose a family of expressive autoregressive dynamics models that generate different dimensions of the next state and reward sequentially conditioned on previous dimensions. We demonstrate that autoregressive dynamics models indeed outperform standard feedforward models in log-likelihood on heldout transitions. Furthermore, we compare different model-based and model-free off-policy evaluation (OPE) methods on RL Unplugged, a suite of offline MuJoCo datasets, and find that autoregressive dynamics models consistently outperform all baselines, achieving a new state-of-the-art. Finally, we show that autoregressive dynamics models are useful for offline policy optimization by serving as a way to enrich the replay buffer through data augmentation and improving performance using model-based planning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2202,
+  "title": "Stochastic Shortest Path: Minimax, Parameter-Free and Towards Horizon-Free Regret",
+  "org": "deepmind",
+  "date": "2021-04-22",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2104.11186",
+  "abstract": "We study the problem of learning in the stochastic shortest path (SSP) setting, where an agent seeks to minimize the expected cost accumulated before reaching a goal state. We design a novel model-based algorithm EB-SSP that carefully skews the empirical transitions and perturbs the empirical costs with an exploration bonus to induce an optimistic SSP problem whose associated value iteration scheme is guaranteed to converge. We prove that EB-SSP achieves the minimax regret rate $\\tilde{O}(B_{\\star} \\sqrt{S A K})$, where $K$ is the number of episodes, $S$ is the number of states, $A$ is the number of actions, and $B_{\\star}$ bounds the expected cumulative cost of the optimal policy from any state, thus closing the gap with the lower bound. Interestingly, EB-SSP obtains this result while being parameter-free, i.e., it does not require any prior knowledge of $B_{\\star}$, nor of $T_{\\star}$, which bounds the expected time-to-goal of the optimal policy from any state. Furthermore, we illustrate various cases (e.g., positive costs, or general costs when an order-accurate estimate of $T_{\\star}$ is available) where the regret only contains a logarithmic dependence on $T_{\\star}$, thus yielding the first (nearly) horizon-free regret bound beyond the finite-horizon MDP setting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2201,
+  "title": "Challenges of real-world reinforcement learning: definitions, benchmarks and analysis",
+  "org": "deepmind",
+  "date": "2021-04-22",
+  "venue": "Machine Learning",
+  "url": "https://doi.org/10.1007/s10994-021-05961-4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2203,
+  "title": "Sampling using<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mml:mrow><mml:mi>SU</mml:mi><mml:mo stretchy=\"false\">(</mml:mo><mml:mi>N</mml:mi><mml:mo stretchy=\"false\">)</mml:mo></mml:mrow></mml:math>gauge equivariant flows",
+  "org": "deepmind",
+  "date": "2021-04-20",
+  "venue": "Physical review. D/Physical review. D.",
+  "url": "https://arxiv.org/abs/2008.05456",
+  "abstract": "We develop a flow-based sampling algorithm for $\\mathrm{SU}(N)$ lattice gauge theories that is gauge invariant by construction. Our key contribution is constructing a class of flows on an $\\mathrm{SU}(N)$ variable [or on a $\\mathrm{U}(N)$ variable by a simple alternative] that respects matrix conjugation symmetry. We apply this technique to sample distributions of single $\\mathrm{SU}(N)$ variables and to construct flow-based samplers for SU(2) and SU(3) lattice gauge theory in two dimensions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2204,
+  "title": "Muesli: Combining Improvements in Policy Optimization",
+  "org": "deepmind",
+  "date": "2021-04-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2104.06159",
+  "abstract": "We propose a novel policy update that combines regularized policy optimization with model learning as an auxiliary loss. The update (henceforth Muesli) matches MuZero's state-of-the-art performance on Atari. Notably, Muesli does so without using deep search: it acts directly with a policy network and has computation speed comparable to model-free baselines. The Atari results are complemented by extensive ablations, and by additional results on continuous control and 9x9 Go.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2205,
+  "title": "Flexible modulation of sequence generation in the entorhinal–hippocampal system",
+  "org": "deepmind",
+  "date": "2021-04-12",
+  "venue": "Nature Neuroscience",
+  "url": "https://doi.org/10.1038/s41593-021-00831-7",
+  "abstract": "Exploration, consolidation and planning depend on the generation of sequential state representations. However, these algorithms require disparate forms of sampling dynamics for optimal performance. We theorize how the brain should adapt internally generated sequences for particular cognitive functions and propose a neural mechanism by which this may be accomplished within the entorhinal–hippocampal circuit. Specifically, we demonstrate that the systematic modulation along the medial entorhinal cortex dorsoventral axis of grid population input into the hippocampus facilitates a flexible generative process that can interpolate between qualitatively distinct regimes of sequential hippocampal reactivations. By relating the emergent hippocampal activity patterns drawn from our model to empirical data, we explain and reconcile a diversity of recently observed, but apparently unrelated, phenomena such as generative cycling, diffusive hippocampal reactivations and jumping trajectory events. McNamee et al. develop a theory of entorhinal–hippocampal processing. Distributed entorhinal input drives hippocampal activity between distinct statistical and dynamical regimes of activity, thereby unifying several empirical observations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2206,
+  "title": "Scalable Marginal Likelihood Estimation for Model Selection in Deep\\n Learning",
+  "org": "deepmind",
+  "date": "2021-04-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2104.04975",
+  "abstract": "Marginal-likelihood based model-selection, even though promising, is rarely\\nused in deep learning due to estimation difficulties. Instead, most approaches\\nrely on validation data, which may not be readily available. In this work, we\\npresent a scalable marginal-likelihood estimation method to select both\\nhyperparameters and network architectures, based on the training data alone.\\nSome hyperparameters can be estimated online during training, simplifying the\\nprocedure. Our marginal-likelihood estimate is based on Laplace's method and\\nGauss-Newton approximations to the Hessian, and it outperforms cross-validation\\nand manual-tuning on standard regression and image classification datasets,\\nespecially in terms of calibration and out-of-distribution detection. Our work\\nshows that marginal likelihoods can improve generalization and be useful when\\nvalidation data is unavailable (e.g., in nonstationary settings).\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2793,
+  "title": "Weight Banding",
+  "org": "openai",
+  "date": "2021-04-08",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00024.009",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2207,
+  "title": "Classifying ecosystem stressor interactions: Theory highlights the data limitations of the additive null model and the difficulty in revealing ecological surprises",
+  "org": "deepmind",
+  "date": "2021-04-08",
+  "venue": "Global Change Biology",
+  "url": "https://doi.org/10.1111/gcb.15630",
+  "abstract": "Understanding how multiple co-occurring environmental stressors combine to affect biodiversity and ecosystem services is an on-going grand challenge for ecology. Currently, progress has been made through accumulating large numbers of smaller-scale empirical studies that are then investigated by meta-analyses to detect general patterns. There is particular interest in detecting, understanding and predicting 'ecological surprises' where stressors interact in a non-additive (e.g. antagonistic or synergistic) manner, but so far few general results have emerged. However, the ability of the statistical tools to recover non-additive interactions in the face of data uncertainty is unstudied, so crucially, we do not know how well the empirical results reflect the true stressor interactions. Here, we investigate the performance of the commonly implemented additive null model. A meta-analysis of a large (545 interactions) empirical dataset for the effects of pairs of stressors on freshwater communities reveals additive interactions dominate individual studies, whereas pooling the data leads to an antagonistic summary interaction class. However, analyses of simulated data from food chain models, where the underlying interactions are known, suggest both sets of results may be due to observation error within the data. Specifically, we show that the additive null model is highly sensitive to observation error, with non-additive interactions being reliably detected at only unrealistically lo",
+  "needs_fetch": false
+ },
+ {
+  "id": 2794,
+  "title": "Branch Specialization",
+  "org": "openai",
+  "date": "2021-04-05",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00024.008",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2795,
+  "title": "Sim2Real in Robotics and Automation: Applications and Challenges",
+  "org": "openai",
+  "date": "2021-04-01",
+  "venue": "IEEE Transactions on Automation Science and Engineering",
+  "url": "https://doi.org/10.1109/tase.2021.3064065",
+  "abstract": "To Perform reliably and consistently over sustained periods of time, large-scale automation critically relies on computer simulation. Simulation allows us and supervisory AI to effectively design, validate, and continuously improve complex processes, and helps practitioners to gain insight into the operation and justify future investments. While numerous successful applications of simulation in industry exist, such as circuit simulation, finite element methods, and computeraided design (CAD), state-of-the-art simulators fall short of accurately modeling physical phenomena, such as friction, impact, and deformation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2208,
+  "title": "Benchmarks for Deep Off-Policy Evaluation",
+  "org": "deepmind",
+  "date": "2021-03-30",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2103.16596",
+  "abstract": "Off-policy evaluation (OPE) holds the promise of being able to leverage large, offline datasets for both evaluating and selecting complex policies for decision making. The ability to learn offline is particularly important in many real-world domains, such as in healthcare, recommender systems, or robotics, where online data collection is an expensive and potentially dangerous process. Being able to accurately evaluate and select high-performing policies without requiring online interaction could yield significant benefits in safety, time, and cost for these applications. While many OPE methods have been proposed in recent years, comparing results between papers is difficult because currently there is a lack of a comprehensive and unified benchmark, and measuring algorithmic progress has been challenging due to the lack of difficult evaluation tasks. In order to address this gap, we present a collection of policies that in conjunction with existing offline datasets can be used for benchmarking off-policy evaluation. Our tasks include a range of challenging high-dimensional continuous control problems, with wide selections of datasets and policies for performing policy selection. The goal of our benchmark is to provide a standardized measure of progress that is motivated from a set of principles designed to challenge and test the limits of existing OPE methods. We perform an evaluation of state-of-the-art algorithms and provide open-source access to our data and code to foster ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2209,
+  "title": "Concept-based model explanations for electronic health records",
+  "org": "deepmind",
+  "date": "2021-03-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2012.02308",
+  "abstract": "Recurrent Neural Networks (RNNs) are often used for sequential modeling of adverse outcomes in electronic health records (EHRs) due to their ability to encode past clinical states. These deep, recurrent architectures have displayed increased performance compared to other modeling approaches in a number of tasks, fueling the interest in deploying deep models in clinical settings. One of the key elements in ensuring safe model deployment and building user trust is model explainability. Testing with Concept Activation Vectors (TCAV) has recently been introduced as a way of providing human-understandable explanations by comparing high-level concepts to the network's gradients. While the technique has shown promising results in real-world imaging applications, it has not been applied to structured temporal inputs. To enable an application of TCAV to sequential predictions in the EHR, we propose an extension of the method to time series data. We evaluate the proposed approach on an open EHR benchmark from the intensive care unit, as well as synthetic data where we are able to better isolate individual effects.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2210,
+  "title": "Generalizing universal function approximators",
+  "org": "deepmind",
+  "date": "2021-03-18",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://doi.org/10.1038/s42256-021-00318-x",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2212,
+  "title": "A rapid and efficient learning rule for biological neural circuits",
+  "org": "deepmind",
+  "date": "2021-03-12",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.03.10.434756",
+  "abstract": "Abstract The dominant view in neuroscience is that changes in synaptic weights underlie learning. It is unclear, however, how the brain is able to determine which synapses should change, and by how much. This uncertainty stands in sharp contrast to deep learning, where changes in weights are explicitly engineered to optimize performance. However, the main tool for that, backpropagation, has two problems. One is neuro-science related: it is not biologically plausible. The other is inherent: networks trained with this rule tend to forget old tasks when learning new ones. Here we introduce the Dendritic Gated Network (DGN), a variant of the Gated Linear Network, which offers a biologically plausible alternative to backpropagation. DGNs combine dendritic ‘gating’ (whereby interneurons target dendrites to shape neuronal responses) with local learning rules to yield provably efficient performance. They are significantly more data efficient than conventional artificial networks, and are highly resistant to forgetting. Consequently, they perform well on a variety of tasks, in some cases better than backpropagation. Importantly, DGNs have structural and functional similarities to the cerebellum, a link that we strengthen by using in vivo two-photon calcium imaging to show that single interneurons suppress activity in individual dendritic branches of Purkinje cells, a key feature of the model. Thus, DGNs leverage targeted dendritic inhibition and local learning – two features ubiquitou",
+  "needs_fetch": false
+ },
+ {
+  "id": 2211,
+  "title": "Human tracking and identification through a millimeter wave radar",
+  "org": "deepmind",
+  "date": "2021-03-12",
+  "venue": "Ad Hoc Networks",
+  "url": "https://doi.org/10.1016/j.adhoc.2021.102475",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2213,
+  "title": "A Reinforcement Learning Approach to Age of Information in Multi-User Networks With HARQ",
+  "org": "deepmind",
+  "date": "2021-03-11",
+  "venue": "IEEE Journal on Selected Areas in Communications",
+  "url": "https://arxiv.org/abs/2102.09774",
+  "abstract": "Scheduling the transmission of time-sensitive information from a source node to multiple users over error-prone communication channels is studied with the goal of minimizing the long-term average age of information (AoI) at the users. A long-term average resource constraint is imposed on the source, which limits the average number of transmissions. The source can transmit only to a single user at each time slot, and after each transmission, it receives an instantaneous ACK/NACK feedback from the intended receiver, and decides when and to which user to transmit the next update. Assuming the channel statistics are known, the optimal scheduling policy is studied for both the standard automatic repeat request (ARQ) and hybrid ARQ (HARQ) protocols. Then, a reinforcement learning (RL) approach is introduced to find a near-optimal policy, which does not assume any a priori information on the random processes governing the channel states. Different RL methods including average-cost SARSA with linear function approximation (LFA), upper confidence reinforcement learning (UCRL2), and deep Q-network (DQN) are applied and compared through numerical simulations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2214,
+  "title": "Generating Images with Sparse Representations",
+  "org": "deepmind",
+  "date": "2021-03-05",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2103.03841",
+  "abstract": "The high dimensionality of images presents architecture and sampling-efficiency challenges for likelihood-based generative models. Previous approaches such as VQ-VAE use deep autoencoders to obtain compact representations, which are more practical as inputs for likelihood-based models. We present an alternative approach, inspired by common image compression methods like JPEG, and convert images to quantized discrete cosine transform (DCT) blocks, which are represented sparsely as a sequence of DCT channel, spatial location, and DCT coefficient triples. We propose a Transformer-based autoregressive architecture, which is trained to sequentially predict the conditional distribution of the next element in such sequences, and which scales effectively to high resolution images. On a range of image datasets, we demonstrate that our approach can generate high quality, diverse images, with sample metric scores competitive with state of the art methods. We additionally show that simple modifications to our method yield effective image colorization and super-resolution models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1046,
+  "title": "Multimodal neurons in artificial neural networks",
+  "org": "openai",
+  "date": "2021-03-04",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/multimodal-neurons/",
+  "abstract": "We’ve discovered neurons in CLIP that respond to the same concept whether presented literally, symbolically, or conceptually. This may explain CLIP’s accuracy in classifying surprising visual renditions of concepts, and is also an important step toward understanding the associations and biases that CLIP and similar models learn.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2215,
+  "title": "Predicting Video with VQVAE",
+  "org": "deepmind",
+  "date": "2021-03-02",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2103.01950",
+  "abstract": "In recent years, the task of video prediction-forecasting future video given past video frames-has attracted attention in the research community. In this paper we propose a novel approach to this problem with Vector Quantized Variational AutoEncoders (VQ-VAE). With VQ-VAE we compress high-resolution videos into a hierarchical set of multi-scale discrete latent variables. Compared to pixels, this compressed latent space has dramatically reduced dimensionality, allowing us to apply scalable autoregressive generative models to predict video. In contrast to previous work that has largely emphasized highly constrained datasets, we focus on very diverse, large-scale datasets such as Kinetics-600. We predict video at a higher resolution on unconstrained videos, 256x256, than any other previous method to our knowledge. We further validate our approach against prior work via a crowdsourced human evaluation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2216,
+  "title": "UCB Momentum Q-learning: Correcting the bias without forgetting",
+  "org": "deepmind",
+  "date": "2021-03-01",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2103.01312",
+  "abstract": "We propose UCBMQ, Upper Confidence Bound Momentum Q-learning, a new algorithm for reinforcement learning in tabular and possibly stage-dependent, episodic Markov decision process. UCBMQ is based on Q-learning where we add a momentum term and rely on the principle of optimism in face of uncertainty to deal with exploration. Our new technical ingredient of UCBMQ is the use of momentum to correct the bias that Q-learning suffers while, at the same time, limiting the impact it has on the second-order term of the regret. For UCBMQ, we are able to guarantee a regret of at most $O(\\sqrt{H^3SAT}+ H^4 S A )$ where $H$ is the length of an episode, $S$ the number of states, $A$ the number of actions, $T$ the number of episodes and ignoring terms in poly-$\\log(SAHT)$. Notably, UCBMQ is the first algorithm that simultaneously matches the lower bound of $Ω(\\sqrt{H^3SAT})$ for large enough $T$ and has a second-order term (with respect to the horizon $T$) that scales only linearly with the number of states $S$.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2217,
+  "title": "Revisiting Peng's Q($\\lambda$) for Modern Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-02-27",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2103.00107",
+  "abstract": "Off-policy multi-step reinforcement learning algorithms consist of\\nconservative and non-conservative algorithms: the former actively cut traces,\\nwhereas the latter do not. Recently, Munos et al. (2016) proved the convergence\\nof conservative algorithms to an optimal Q-function. In contrast,\\nnon-conservative algorithms are thought to be unsafe and have a limited or no\\ntheoretical guarantee. Nonetheless, recent studies have shown that\\nnon-conservative algorithms empirically outperform conservative ones. Motivated\\nby the empirical results and the lack of theory, we carry out theoretical\\nanalyses of Peng's Q($\\\\lambda$), a representative example of non-conservative\\nalgorithms. We prove that it also converges to an optimal policy provided that\\nthe behavior policy slowly tracks a greedy policy in a way similar to\\nconservative policy iteration. Such a result has been conjectured to be true\\nbut has not been proven. We also experiment with Peng's Q($\\\\lambda$) in complex\\ncontinuous control tasks, confirming that Peng's Q($\\\\lambda$) often outperforms\\nconservative algorithms despite its simplicity. These results indicate that\\nPeng's Q($\\\\lambda$), which was thought to be unsafe, is a theoretically-sound\\nand practically effective algorithm.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2796,
+  "title": "Learning Transferable Visual Models From Natural Language Supervision",
+  "org": "openai",
+  "date": "2021-02-26",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2103.00020",
+  "abstract": "State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories. This restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept. Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision. We demonstrate that the simple pre-training task of predicting which caption goes with which image is an efficient and scalable way to learn SOTA image representations from scratch on a dataset of 400 million (image, text) pairs collected from the internet. After pre-training, natural language is used to reference learned visual concepts (or describe new ones) enabling zero-shot transfer of the model to downstream tasks. We study the performance of this approach by benchmarking on over 30 different existing computer vision datasets, spanning tasks such as OCR, action recognition in videos, geo-localization, and many types of fine-grained object classification. The model transfers non-trivially to most tasks and is often competitive with a fully supervised baseline without the need for any dataset specific training. For instance, we match the accuracy of the original ResNet-50 on ImageNet zero-shot without needing to use any of the 1.28 million training examples it was trained on. We release our code and pre-trained model weights at https://github.com/OpenAI/CLIP.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2218,
+  "title": "Advances in machine learning for directed evolution",
+  "org": "deepmind",
+  "date": "2021-02-26",
+  "venue": "Current Opinion in Structural Biology",
+  "url": "https://doi.org/10.1016/j.sbi.2021.01.008",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2219,
+  "title": "Improved Regret Bound and Experience Replay in Regularized Policy Iteration",
+  "org": "deepmind",
+  "date": "2021-02-25",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2102.12611",
+  "abstract": "In this work, we study algorithms for learning in infinite-horizon undiscounted Markov decision processes (MDPs) with function approximation. We first show that the regret analysis of the Politex algorithm (a version of regularized policy iteration) can be sharpened from $O(T^{3/4})$ to $O(\\sqrt{T})$ under nearly identical assumptions, and instantiate the bound with linear function approximation. Our result provides the first high-probability $O(\\sqrt{T})$ regret bound for a computationally efficient algorithm in this setting. The exact implementation of Politex with neural network function approximation is inefficient in terms of memory and computation. Since our analysis suggests that we need to approximate the average of the action-value functions of past policies well, we propose a simple efficient implementation where we train a single Q-function on a replay buffer with past data. We show that this often leads to superior performance over other implementation choices, especially in terms of wall-clock time. Our work also provides a novel theoretical justification for using experience replay within policy iteration algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2797,
+  "title": "First return, then explore",
+  "org": "openai",
+  "date": "2021-02-24",
+  "venue": "Nature",
+  "url": "https://arxiv.org/abs/2004.12919",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2220,
+  "title": "Understanding deep learning (still) requires rethinking generalization",
+  "org": "deepmind",
+  "date": "2021-02-22",
+  "venue": "Communications of the ACM",
+  "url": "https://doi.org/10.1145/3446776",
+  "abstract": "Despite their massive size, successful deep artificial neural networks can exhibit a remarkably small gap between training and test performance. Conventional wisdom attributes small generalization error either to properties of the model family or to the regularization techniques used during training. Through extensive systematic experiments, we show how these traditional approaches fail to explain why large neural networks generalize well in practice. Specifically, our experiments establish that state-of-the-art convolutional networks for image classification trained with stochastic gradient methods easily fit a random labeling of the training data. This phenomenon is qualitatively unaffected by explicit regularization and occurs even if we replace the true images by completely unstructured random noise. We corroborate these experimental findings with a theoretical construction showing that simple depth two neural networks already have perfect finite sample expressivity as soon as the number of parameters exceeds the number of data points as it usually does in practice. We interpret our experimental findings by comparison with traditional models. We supplement this republication with a new section at the end summarizing recent progresses in the field since the original version of this paper.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2221,
+  "title": "Kanerva++: extending The Kanerva Machine with differentiable, locally block allocated latent memory",
+  "org": "deepmind",
+  "date": "2021-02-20",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2103.03905",
+  "abstract": "Episodic and semantic memory are critical components of the human memory model. The theory of complementary learning systems (McClelland et al., 1995) suggests that the compressed representation produced by a serial event (episodic memory) is later restructured to build a more generalized form of reusable knowledge (semantic memory). In this work we develop a new principled Bayesian memory allocation scheme that bridges the gap between episodic and semantic memory via a hierarchical latent variable model. We take inspiration from traditional heap allocation and extend the idea of locally contiguous memory to the Kanerva Machine, enabling a novel differentiable block allocated latent memory. In contrast to the Kanerva Machine, we simplify the process of memory writing by treating it as a fully feed forward deterministic process, relying on the stochasticity of the read key distribution to disperse information within the memory. We demonstrate that this allocation scheme improves performance in memory conditional image generation, resulting in new state-of-the-art conditional likelihood values on binarized MNIST (&lt;=41.58 nats/image) , binarized Omniglot (&lt;=66.24 nats/image), as well as presenting competitive performance on CIFAR10, DMLab Mazes, Celeb-A and ImageNet32x32.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2798,
+  "title": "Improved Denoising Diffusion Probabilistic Models",
+  "org": "openai",
+  "date": "2021-02-18",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2102.09672",
+  "abstract": "Denoising diffusion probabilistic models (DDPM) are a class of generative models which have recently been shown to produce excellent samples. We show that with a few simple modifications, DDPMs can also achieve competitive log-likelihoods while maintaining high sample quality. Additionally, we find that learning variances of the reverse diffusion process allows sampling with an order of magnitude fewer forward passes with a negligible difference in sample quality, which is important for the practical deployment of these models. We additionally use precision and recall to compare how well DDPMs and GANs cover the target distribution. Finally, we show that the sample quality and likelihood of these models scale smoothly with model capacity and training compute, making them easily scalable. We release our code at https://github.com/openai/improved-diffusion",
+  "needs_fetch": false
+ },
+ {
+  "id": 2222,
+  "title": "Base-resolution models of transcription-factor binding reveal soft motif syntax",
+  "org": "deepmind",
+  "date": "2021-02-18",
+  "venue": "Nature Genetics",
+  "url": "https://doi.org/10.1038/s41588-021-00782-6",
+  "abstract": null,
+  "needs_fetch": true
+ }
+]

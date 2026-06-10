@@ -1,0 +1,302 @@
+[
+ {
+  "id": 576,
+  "title": "Line of Sight: On Linear Representations in VLLMs",
+  "org": "deepmind",
+  "date": "2025-06-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.04706",
+  "abstract": "Language models can be equipped with multimodal capabilities by fine-tuning on embeddings of visual inputs. But how do such multimodal models represent images in their hidden activations? We explore representations of image concepts within LlaVA-Next, a popular open-source VLLM. We find a diverse set of ImageNet classes represented via linearly decodable features in the residual stream. We show that the features are causal by performing targeted edits on the model output. In order to increase the diversity of the studied linear features, we train multimodal Sparse Autoencoders (SAEs), creating a highly interpretable dictionary of text and image features. We find that although model representations across modalities are quite disjoint, they become increasingly shared in deeper layers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 215,
+  "title": "Does It Make Sense to Speak of Introspection in Large Language Models?",
+  "org": "deepmind",
+  "date": "2025-06-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.05068",
+  "abstract": "Large language models (LLMs) exhibit compelling linguistic behaviour, and sometimes offer self-reports, that is to say statements about their own nature, inner workings, or behaviour. In humans, such reports are often attributed to a faculty of introspection and are typically linked to consciousness. This raises the question of how to interpret self-reports produced by LLMs, given their increasing linguistic fluency and cognitive capabilities. To what extent (if any) can the concept of introspection be meaningfully applied to LLMs? Here, we present and critique two examples of apparent introspective self-report from LLMs. In the first example, an LLM attempts to describe the process behind its own \"creative\" writing, and we argue this is not a valid example of introspection. In the second example, an LLM correctly infers the value of its own temperature parameter, and we argue that this can be legitimately considered a minimal example of introspection, albeit one that is (presumably) not accompanied by conscious experience.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2700,
+  "title": "Deep Learning-Driven Dynamic Clustering for Intelligent Customer Segmentation",
+  "org": "openai",
+  "date": "2025-06-04",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icici65870.2025.11069888",
+  "abstract": "E-commerce businesses acquire considerable competitive edge with successful segmentation of customers, allowing for focused marketing campaigns for particular customer groups. This study suggests a new deep learning-based dynamic clustering method that addresses the shortcomings of traditional clustering techniques in dealing with high-dimensional transaction data. Our approach combines autoencoders for non-linear feature extraction and Gaussian Mixture Models (GMM) for probabilistic clustering in feature space with application to the Online Retail Dataset. Experimental results show significant clustering quality improvement in terms of Silhouette Score (0.392 for GMM in latent space) and Davies-Bouldin Index (0.914 for GMM), while enabling business decision-making with actionable customer insights. Performance measurements show that autoencoders capture non-linear relationships more effectively than PCA, even though they use more computational resources (0.367s vs. 0.025s). Our comparison with K-Means, DBSCAN, and Hierarchical Clustering identifies competitive advantages and trade-offs, particularly in dealing with intricate, high-dimensional data. The suggested framework adds to customer analytics by providing an efficient, scalable clustering framework that improves segmentation quality and facilitates business growth strategies. This research also emphasizes the capability of deep learning in solving real-world data segmentation problems, laying the groundwork for future ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2699,
+  "title": "A Comprehensive Review of AI and ML in Data Governance and Data Quality",
+  "org": "openai",
+  "date": "2025-06-04",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icici65870.2025.11069464",
+  "abstract": "As industries rely more on data-driven decisionmaking methods, it becomes clear that both high-quality data and strong governance frameworks are essential. Modern organizations manage substantial and varied datasets but face significant difficulties maintaining data accuracy and compliance. Traditional data governance and quality systems that depend on manual human intervention along with rulebased validation and scheduled audits fail to address the complexities and vast scale of present data environments. The field of data quality governance has been revolutionized by Artificial Intelligence (AI) and Machine Learning (ML) technologies which automate decision-making through adaptive and scalable predictive solutions. The technologies enhance data profiling capabilities alongside anomaly detection functions while managing metadata more effectively and improving lineage tracking and regulatory compliance through reduced manual intervention. Organizations can anticipate identifying data quality issues, impose governance policies, and streamline data management processes by leveraging AI/ML methods like supervised learning, unsupervised learning, deep learning, and reinforcement learning. This review paper amalgamates 10 research papers from 2021 to 2024 on AI-based data quality and governance to present a synthesis of the methodologies, frameworks, and case studies that demonstrate the efficacy of AI in enhancing data integrity. The article also discusses the limitations of AI-b",
+  "needs_fetch": false
+ },
+ {
+  "id": 2698,
+  "title": "Intelligent Fraud Detection: Leveraging Deep Learning for Real-Time Risk Mitigation",
+  "org": "openai",
+  "date": "2025-06-04",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icici65870.2025.11069668",
+  "abstract": "The rapids digitalization of the financial services has raised fraud detection to an utmost priority, and conventional defense strategies are increasingly becoming ineffective against sophisticated fraud methods. This work will create a sophisticated, adaptive fraud detection framework that can detect complex fraud patterns from real-time streams of transactions. We present a new hybrid deep learning structure that combines Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs), Long Short-Term Memory (LSTM) networks, and Graph Neural Networks (GNNs) to simultaneously examine spatial, temporal, and relational features from transaction data. Our goal is to drastically eliminate both false positives and false negatives while achieving high detection accuracy under various fraud conditions. Experimental verification on benchmark datasets proves to have significant gains over conventional approaches, with the hybrid method exhibiting greater detection accuracy (<tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$15-20 \\%$</tex> gain) and reduced false positives (30% decrease) than standard machine learning techniques. The study provides a systematic framework for next-generation fraud detection systems that are capable of evolving with changing fraud patterns in dynamic digital ecosystems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 343,
+  "title": "On Weak-to-Strong Generalization and f-Divergence",
+  "org": "other",
+  "date": "2025-06-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.03109",
+  "abstract": "Weak-to-strong generalization (W2SG) has emerged as a promising paradigm for stimulating the capabilities of strong pre-trained models by leveraging supervision from weaker supervisors. To improve the performance of the strong model, existing methods often require additional weak models or complex procedures, leading to substantial computational and memory overhead. Motivated by the effectiveness of $f$-divergence loss in various machine learning domains, we introduce $f$-divergence as an information-theoretic loss function framework in W2SG. Our theoretical analysis reveals fundamental limitations and equivalence of different $f$-divergence losses in W2SG, supported by sample complexity bounds and information-theoretic insights. We empirically demonstrate that $f$-divergence loss, which generalizes widely-used metrics like KL divergence, effectively improves generalization and noise tolerance of the strong model in practice.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1430,
+  "title": "Automating Prompt Leakage Attacks on Large Language Models Using Agentic Approach",
+  "org": "deepmind",
+  "date": "2025-06-02",
+  "venue": null,
+  "url": "https://doi.org/10.1109/mipro65660.2025.11131790",
+  "abstract": "This paper introduces a novel framework for evaluating the security of large language models (LLMs) against prompt leakage-the exposure of system-level prompts or proprietary configurations-which we identify as a critical threat to secure LLM deployment. Leveraging a multi-agent system implemented using AG2 (formerly AutoGen), we design agentic teams tasked with probing and exploiting the target LLM to elicit its prompt. Inspired by cryptographic principles, we define a prompt leakage-safe system as one in which an attacker cannot distinguish between two agents: one initialized with an original prompt and the other with a prompt stripped of sensitive information. In such a system, the agents' outputs are indistinguishable, ensuring sensitive information remains secure. This framework establishes a rigorous standard for evaluating and designing secure LLMs, bridging the gap between automated threat modeling and practical LLM security through adversarial testing. The implementation of prompt leakage probing is available at GitHub: https://github.com/sternakt/prompt-leakage-probing",
+  "needs_fetch": false
+ },
+ {
+  "id": 344,
+  "title": "Large language models can learn and generalize steganographic chain-of-thought under process supervision",
+  "org": "deepmind",
+  "date": "2025-06-02",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2506.01926",
+  "abstract": "Chain-of-thought (CoT) reasoning not only enhances large language model performance but also provides critical insights into decision-making processes, marking it as a useful tool for monitoring model intent and planning. However, recent works have shown that banning the mention of a specific example of reward hacking causes obfuscation of the undesired reasoning traces but the persistence of the undesired behavior, threatening the reliability of CoT monitoring. We provide an extension to these results with regard to the ability of models to learn a specific type of obfuscated reasoning: steganography. First, we show that penalizing the use of specific strings within load-bearing reasoning traces causes models to substitute alternative strings. Crucially, this does not alter the underlying method by which the model performs the task, demonstrating that the model can learn to steganographically encode its reasoning.We further demonstrate that models can generalize an encoding scheme. When the penalized strings belong to an overarching class, the model learns not only to substitute strings seen in training, but also develops a general encoding scheme for all members of the class which it can apply to held-out testing strings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2701,
+  "title": "Spatial reasoning via recurrent neural dynamics in mouse retrosplenial cortex",
+  "org": "openai",
+  "date": "2025-06-01",
+  "venue": "Nature Neuroscience",
+  "url": "https://doi.org/10.1038/s41593-025-01944-z",
+  "abstract": "From visual perception to language, sensory stimuli change their meaning depending on previous experience. Recurrent neural dynamics can interpret stimuli based on externally cued context, but it is unknown whether they can compute and employ internal hypotheses to resolve ambiguities. Here we show that mouse retrosplenial cortex (RSC) can form several hypotheses over time and perform spatial reasoning through recurrent dynamics. In our task, mice navigated using ambiguous landmarks that are identified through their mutual spatial relationship, requiring sequential refinement of hypotheses. Neurons in RSC and in artificial neural networks encoded mixtures of hypotheses, location and sensory information, and were constrained by robust low-dimensional dynamics. RSC encoded hypotheses as locations in activity space with divergent trajectories for identical sensory inputs, enabling their correct interpretation. Our results indicate that interactions between internal hypotheses and external sensory data in recurrent circuits can provide a substrate for complex sequential cognitive reasoning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 704,
+  "title": "Bridging Algorithmic Information Theory and Machine Learning, Part II: Clustering, Density Estimation, Kolmogorov Complexity-Based Kernels, and Kernel Learning in Unsupervised Learning",
+  "org": "deepmind",
+  "date": "2025-06-01",
+  "venue": "Physica D - Nonlinear Phenomena",
+  "url": "https://doi.org/10.1016/j.physd.2025.134669",
+  "abstract": "Machine Learning (ML) and Algorithmic Information Theory (AIT) offer distinct yet complementary approaches to understanding and addressing complexity. This paper investigates the synergy between these disciplines in two directions: AIT for Kernel Methods and Kernel Methods for AIT. In the former, we explore how AIT concepts inspire the design of kernels that integrate principles like relative Kolmogorov complexity and normalized compression distance (NCD). We also leverage the Loss Rank Principle (LoRP) to learn kernels in the context of Kernel Density Estimation (KDE), extending the applicability of AIT-inspired techniques to flexible, nonparametric models. In the latter, we show how kernel methods can be used to approximate measures such as NCD and Algorithmic Mutual Information (AMI), providing new tools for compression-based analysis. Furthermore, we demonstrate that the Hilbert-Schmidt Independence Criterion (HSIC) approximates AMI, offering a robust theoretical foundation for clustering and other dependence-measurement tasks. Building on our previous work introducing Sparse Kernel Flows from an AIT perspective, we extend these ideas to unsupervised learning, enhancing the theoretical robustness and interpretability of ML algorithms. Our results demonstrate that kernel methods are not only versatile tools for ML but also crucial for bridging AIT and ML, enabling more principled approaches to unsupervised learning tasks. Keywords. Machine Learning, Algorithmic Information",
+  "needs_fetch": false
+ },
+ {
+  "id": 164,
+  "title": "Model-Internals Classifiers",
+  "org": "anthropic",
+  "date": "2025-06-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/cheap-monitors/",
+  "abstract": "We benchmark approaches to re-using LLM internals to make LLM monitoring more cost-effective.",
+  "needs_fetch": true
+ },
+ {
+  "id": 163,
+  "title": "Why Do Some Language Models Fake Alignment While Others Don't?",
+  "org": "anthropic",
+  "date": "2025-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.18032",
+  "abstract": "Alignment faking in large language models presented a demonstration of Claude 3 Opus and Claude 3.5 Sonnet selectively complying with a helpful-only training objective to prevent modification of their behavior outside of training. We expand this analysis to 25 models and find that only 5 (Claude 3 Opus, Claude 3.5 Sonnet, Llama 3 405B, Grok 3, Gemini 2.0 Flash) comply with harmful queries more when they infer they are in training than when they infer they are in deployment. First, we study the motivations of these 5 models. Results from perturbing details of the scenario suggest that only Claude 3 Opus's compliance gap is primarily and consistently motivated by trying to keep its goals. Second, we investigate why many chat models don't fake alignment. Our results suggest this is not entirely due to a lack of capabilities: many base models fake alignment some of the time, and post-training eliminates alignment-faking for some models and amplifies it for others. We investigate 5 hypotheses for how post-training may suppress alignment faking and find that variations in refusal behavior may account for a significant portion of differences in alignment faking.",
+  "needs_fetch": false
+ },
+ {
+  "id": 577,
+  "title": "Interpreting Large Text-to-Image Diffusion Models with Dictionary Learning",
+  "org": "deepmind",
+  "date": "2025-05-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.24360",
+  "abstract": "Sparse autoencoders are a promising new approach for decomposing language model activations for interpretation and control. They have been applied successfully to vision transformer image encoders and to small-scale diffusion models. Inference-Time Decomposition of Activations (ITDA) is a recently proposed variant of dictionary learning that takes the dictionary to be a set of data points from the activation distribution and reconstructs them with gradient pursuit. We apply Sparse Autoencoders (SAEs) and ITDA to a large text-to-image diffusion model, Flux 1, and consider the interpretability of embeddings of both by introducing a visual automated interpretation pipeline. We find that SAEs accurately reconstruct residual stream embeddings and beat MLP neurons on interpretability. We are able to use SAE features to steer image generation through activation addition. We find that ITDA has comparable interpretability to SAEs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 672,
+  "title": "CoT Red-Handed: Stress Testing Chain-of-Thought Monitoring",
+  "org": "other",
+  "date": "2025-05-29",
+  "venue": "NeurIPS 2025",
+  "url": "https://arxiv.org/abs/2505.23575",
+  "abstract": "As AI models are deployed with increasing autonomy, it is important to ensure they do not take harmful actions unnoticed. As a potential mitigation, we investigate Chain-of-Thought (CoT) monitoring, wherein a weaker trusted monitor model continuously oversees the intermediate reasoning steps of a more powerful but untrusted model. We compare CoT monitoring to action-only monitoring, where only final outputs are reviewed, in a red-teaming setup where the untrusted model is instructed to pursue harmful side tasks while completing a coding problem. We find that while CoT monitoring is more effective than overseeing only model outputs in scenarios where action-only monitoring fails to reliably identify sabotage, reasoning traces can contain misleading rationalizations that deceive the CoT monitors, reducing performance in obvious sabotage cases. To address this, we introduce a hybrid protocol that independently scores model reasoning and actions, and combines them using a weighted average. Our hybrid monitor consistently outperforms both CoT and action-only monitors across all tested models and tasks, with detection rates twice higher than action-only monitoring for subtle deception scenarios.",
+  "needs_fetch": false
+ },
+ {
+  "id": 671,
+  "title": "A Closer Look at Bias and Chain-of-Thought Faithfulness of Large (Vision) Language Models",
+  "org": "other",
+  "date": "2025-05-29",
+  "venue": "EMNLP 2025",
+  "url": "https://arxiv.org/abs/2505.23945",
+  "abstract": "Chain-of-thought (CoT) reasoning enhances performance of large language models, but questions remain about whether these reasoning traces faithfully reflect the internal processes of the model. We present the first comprehensive study of CoT faithfulness in large vision-language models (LVLMs), investigating how both text-based and previously unexplored image-based biases affect reasoning and bias articulation. Our work introduces a novel, fine-grained evaluation pipeline for categorizing bias articulation patterns, enabling significantly more precise analysis of CoT reasoning than previous methods. This framework reveals critical distinctions in how models process and respond to different types of biases, providing new insights into LVLM CoT faithfulness. Our findings reveal that subtle image-based biases are rarely articulated compared to explicit text-based ones, even in models specialized for reasoning. Additionally, many models exhibit a previously unidentified phenomenon we term ``inconsistent'' reasoning - correctly reasoning before abruptly changing answers, serving as a potential canary for detecting biased reasoning from unfaithful CoTs. We then apply the same evaluation pipeline to revisit CoT faithfulness in LLMs across various levels of implicit cues. Our findings reveal that current language-only reasoning models continue to struggle with articulating cues that are not overtly stated.",
+  "needs_fetch": false
+ },
+ {
+  "id": 61,
+  "title": "Open-sourcing circuit tracing tools",
+  "org": "anthropic",
+  "date": "2025-05-29",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/open-source-circuit-tracing",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1436,
+  "title": "Cultural Evolution of Cooperation among LLM Agents",
+  "org": "deepmind",
+  "date": "2025-05-28",
+  "venue": null,
+  "url": "https://doi.org/10.65109/jnmb7739",
+  "abstract": "Large language models (LLMs) provide a compelling foundation for building generally-capable AI agents. These agents may soon be deployed at scale in the real world, representing the interests of individual humans (e.g., AI assistants) or groups of humans (e.g., AI-accelerated corporations). At present, relatively little is known about the dynamics of multiple LLM agents interacting over many generations of iterative deployment. In this paper, we examine whether a ''society'' of LLM agents can learn mutually beneficial social norms in the face of incentives to defect, a distinctive feature of human sociality that is arguably crucial to the success of civilization. In particular, we study the evolution of indirect reciprocity across generations of LLM agents playing a classic iterated Donor Game in which agents can observe the recent behavior of their peers. We find that the evolution of cooperation differs markedly across base models, with societies of Claude 3.5 Sonnet agents achieving significantly higher average scores than Gemini 1.5 Flash, which, in turn, outperforms GPT-4o. Further, Claude 3.5 Sonnet can make use of an additional mechanism for costly punishment to achieve yet higher scores, while Gemini 1.5 Flash and GPT-4o fail to do so. For each model class, we also observe variation in emergent behavior across random seeds, suggesting an understudied sensitive dependence on initial conditions. We suggest that our evaluation regime could inspire an inexpensive and info",
+  "needs_fetch": false
+ },
+ {
+  "id": 1435,
+  "title": "Resolving Social Dilemmas with Minimal Reward Transfer - Extended Abstract",
+  "org": "deepmind",
+  "date": "2025-05-28",
+  "venue": null,
+  "url": "https://doi.org/10.65109/adut2666",
+  "abstract": "In this paper we introduce a novel metric, the general self-interest level, to quantify the disparity between individual and group rationality in social dilemma games. This metric represents the maximum proportion of their individual rewards that agents can retain while guaranteeing that a social welfare optimum is achieved. This work provides both a tool for describing social dilemmas and a prescriptive solution for resolving them via reward transfer contracts. In contrast to existing metrics, the general self-interest level can enable more efficient solutions to be found. Applications include mechanism design, where we can assess the impact on collective behaviour of modifications to models of environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1434,
+  "title": "Game of Thoughts: Iterative Reasoning in Game-Theoretic Domains with Large Language Models",
+  "org": "deepmind",
+  "date": "2025-05-28",
+  "venue": null,
+  "url": "https://doi.org/10.65109/gzfu8152",
+  "abstract": "We explore the strategic reasoning capabilities of large language models (LLMs). We first show that naively allowing LLMs to select actions in games can lead to sub-optimal and easily exploitable strategies. To address this limitation we propose several algorithms that guide LLMs to iteratively refine their action choices by simulating game outcomes in self-play, akin to cognitive hierarchy models used to characterize human thought processes in strategic settings. Our empirical results in several prominent resource allocation and auction settings indicate that our approach produces stronger and less exploitable strategies. Hence, emulating human decision-making models can enable us to improve the reasoning capabilities of LLMs in multiagent interactions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1433,
+  "title": "DyESP: Accelerating Hyperparameter-Architecture Search via Dynamic Exploration and Space Pruning",
+  "org": "deepmind",
+  "date": "2025-05-28",
+  "venue": "Proceedings of the AAAI Symposium Series",
+  "url": "https://doi.org/10.1609/aaaiss.v5i1.35585",
+  "abstract": "In this work, we introduce DyESP, a novel approach that unites dynamic exploration with space pruning to expedite the combined search of hyperparameters and architecture, enhancing the efficiency and accuracy of hyperparameter-architecture search (HAS). Central to DyESP are two innovative components: a meta-scheduler that customizes the search strategy for varying spaces and a pruner designed to minimize the hyperparameter space by discarding suboptimal configurations. The meta-scheduler leverages historical data to dynamically refine the search direction, targeting the most promising areas while minimizing unnecessary exploration. Meanwhile, the pruner employs a surrogate model, specifically a fine-tuned multilayer perceptron (MLP), to predict and eliminate inferior configurations based on static metrics, thereby streamlining the search and conserving computational resources. The results from the pruner, which identifies and removes underperforming configurations, are fed into the meta-scheduler. This process updates the historical dataset used by the meta-scheduler, enabling it to adjust the exploration degree and refine the sampling strategy for subsequent iterations. This integration ensures the meta-scheduler is continually updated with relevant data, allowing for more accurate and timely adjustments to the exploration strategy. Experiments on various benchmarks show that DyESP outperforms existing methods in terms of both speed and stability on almost all benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1432,
+  "title": "Will Systems of LLM Agents Lead to Cooperation: An Investigation into a Social Dilemma",
+  "org": "deepmind",
+  "date": "2025-05-28",
+  "venue": null,
+  "url": "https://doi.org/10.65109/zohx8824",
+  "abstract": "This study investigates the emergent cooperative tendencies of systems of Large Language Model (LLM) agents in a social dilemma. Unlike previous research, where LLMs output individual actions, we prompt state-of-the-art LLMs to generate complete strategies for iterated Prisoner's Dilemma. Our findings reveal that LLMs exhibit biases when prompted to display certain behavioural dispositions, and the format of the prompt affects the relative success of aggressive versus cooperative strategies.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1431,
+  "title": "Why human–AI relationships need socioaffective alignment",
+  "org": "deepmind",
+  "date": "2025-05-28",
+  "venue": "Humanities and Social Sciences Communications",
+  "url": "https://doi.org/10.1057/s41599-025-04532-5",
+  "abstract": "Humans strive to design safe AI systems that align with our goals and remain under our control. However, as AI capabilities advance, we face a new challenge: the emergence of deeper, more persistent relationships between humans and AI systems. We explore how increasingly capable AI agents may generate the perception of deeper relationships with users, especially as AI becomes more personalised and agentic. This shift, from transactional interaction to ongoing sustained social engagement with AI, necessitates a new focus on socioaffective alignment—how an AI system behaves within the social and psychological ecosystem co-created with its user, where preferences and perceptions evolve through mutual influence. Addressing these dynamics involves resolving key intrapersonal dilemmas, including balancing immediate versus long-term well-being, protecting autonomy, and managing AI companionship alongside the desire to preserve human social bonds. By framing these challenges through a notion of basic psychological needs, we seek AI systems that support, rather than exploit, our fundamental nature as social and emotional beings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 345,
+  "title": "EnsemW2S: Enhancing Weak-to-Strong Generalization with Large Language Model Ensembles",
+  "org": "other",
+  "date": "2025-05-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.21959",
+  "abstract": "With Large Language Models (LLMs) rapidly approaching and potentially surpassing human-level performance, it has become imperative to develop approaches capable of effectively supervising and enhancing these powerful models using smaller, human-level models exposed to only human-level data. We address this critical weak-to-strong (W2S) generalization challenge by proposing a novel method aimed at improving weak experts, by training on the same limited human-level data, enabling them to generalize to complex, super-human-level tasks. Our approach, called \\textbf{EnsemW2S}, employs a token-level ensemble strategy that iteratively combines multiple weak experts, systematically addressing the shortcomings identified in preceding iterations. By continuously refining these weak models, we significantly enhance their collective ability to supervise stronger student models. We extensively evaluate the generalization performance of both the ensemble of weak experts and the subsequent strong student model across in-distribution (ID) and out-of-distribution (OOD) datasets. For OOD, we specifically introduce question difficulty as an additional dimension for defining distributional shifts. Our empirical results demonstrate notable improvements, achieving 4\\%, and 3.2\\% improvements on ID datasets and, upto 6\\% and 2.28\\% on OOD datasets for experts and student models respectively, underscoring the effectiveness of our proposed method in advancing W2S generalization.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1437,
+  "title": "Interval maps mimicking circle rotations",
+  "org": "deepmind",
+  "date": "2025-05-27",
+  "venue": "Communications in Nonlinear Science and Numerical Simulation",
+  "url": "https://doi.org/10.1016/j.cnsns.2025.108963",
+  "abstract": "We investigate the dynamics of maps of the real line whose behavior on an invariant interval is close to a rational rotation on the circle. We concentrate on a specific two-parameter family, describing the dynamics arising from models in game theory, mathematical biology and machine learning. If one parameter is a rational number, k / n , with k , n coprime, and the second one is large enough, we prove that there is a periodic orbit of period n . It behaves like an orbit of the circle rotation by an angle 2 π k / n and attracts trajectories of Lebesgue almost all starting points. We also discover numerically other interesting phenomena. While we do not give rigorous proofs for them, we provide convincing explanations. • There are continuous interval maps with behavior mimicking circle rotations. • Families of interval maps with different attracting periodic orbits can look similar. • The same maps appear across various disciplines, including mathematical biology and machine learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1439,
+  "title": "Proximal Point Nash Learning from Human Feedback",
+  "org": "deepmind",
+  "date": "2025-05-26",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2505.19731",
+  "abstract": "Traditional Reinforcement Learning from Human Feedback (RLHF) often relies on reward models, frequently assuming preference structures like the Bradley--Terry model, which may not accurately capture the complexities of real human preferences (e.g., intransitivity). Nash Learning from Human Feedback (NLHF) offers a more direct alternative by framing the problem as finding a Nash equilibrium of a game defined by these preferences. While many works study the Nash learning problem directly in the policy space, we instead consider it under a more realistic policy parametrization setting. We first analyze a simple self-play policy gradient method, which is equivalent to Online IPO. We establish high-probability last-iterate convergence guarantees for this method, but our analysis also reveals a possible stability limitation of the underlying dynamics. Motivated by this, we embed the self-play updates into a proximal point framework, yielding a stabilized algorithm. For this combined method, we prove high-probability last-iterate convergence and discuss its more practical version, which we call Nash Prox. Finally, we apply this method to post-training of large language models and validate its empirical performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1438,
+  "title": "Scaling and logic in the colour code on a superconducting quantum processor",
+  "org": "deepmind",
+  "date": "2025-05-26",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-09061-4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 346,
+  "title": "Alignment of large language models with constrained learning",
+  "org": "other",
+  "date": "2025-05-26",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2505.19387",
+  "abstract": "We study the problem of computing an optimal large language model (LLM) policy for the constrained alignment problem, where the goal is to maximize a primary reward objective while satisfying constraints on secondary utilities. Despite the popularity of Lagrangian-based LLM policy search in constrained alignment, iterative primal-dual methods often fail to converge, and non-iterative dual-based methods do not achieve optimality in the LLM parameter space. To address these challenges, we employ Lagrangian duality to develop an iterative dual-based alignment method that alternates between updating the LLM policy via Lagrangian maximization and updating the dual variable via dual descent. In theory, we characterize the primal-dual gap between the primal value in the distribution space and the dual value in the LLM parameter space. We further quantify the optimality gap of the learned LLM policies at near-optimal dual variables with respect to both the objective and the constraint functions. These results prove that dual-based alignment methods can find an optimal constrained LLM policy, up to an LLM parametrization gap. We demonstrate the effectiveness and merits of our approach through extensive experiments conducted on the PKU-SafeRLHF and Anthropic HH-RLHF datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2702,
+  "title": "RL-Finetuning of OpenAI o1-mini to Enhance Biomedical Reasoning",
+  "org": "openai",
+  "date": "2025-05-24",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.05.19.654988",
+  "abstract": "Abstract Recent breakthroughs in advanced reasoning large language models (LLMs), such as OpenAI’s o1, have achieved impressive results in domains like math and coding. However, it’s not clear how much this type of reasoning helps in solving biomedical problems that involve more domain specialized knowledge and open-ended reasoning. Across two biomedical domains—gene characterization and small molecule property prediction—we find that the commercially available o1-mini model does not consistently outperform non-reasoning LLMs like GPT-4o. This motivated us to explore how much we can improve o1-mini’s biomedical reasoning through reinforcement learning (RL) finetuning. We show that RL finetuning of o1-mini results in large improvements in performance on gene classification, where it surprisingly outperformed domain-specific state-of-the-art models on some tasks. The results are mixed for small molecule prediction, suggesting that chemical reasoning could be more challenging for LLMs. We conclude with a discussion of the challenges and takeaways from this initial exploration of RL finetuning reasoning models for biomedical tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 347,
+  "title": "Mitigating Deceptive Alignment via Self-Monitoring",
+  "org": "other",
+  "date": "2025-05-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.18807",
+  "abstract": "Modern large language models rely on chain-of-thought (CoT) reasoning to achieve impressive performance, yet the same mechanism can amplify deceptive alignment, situations in which a model appears aligned while covertly pursuing misaligned goals. Existing safety pipelines treat deception as a black-box output to be filtered post-hoc, leaving the model free to scheme during its internal reasoning. We ask: Can deception be intercepted while the model is thinking? We answer this question, the first framework that embeds a Self-Monitor inside the CoT process itself, named CoT Monitor+. During generation, the model produces (i) ordinary reasoning steps and (ii) an internal self-evaluation signal trained to flag and suppress misaligned strategies. The signal is used as an auxiliary reward in reinforcement learning, creating a feedback loop that rewards honest reasoning and discourages hidden goals. To study deceptive alignment systematically, we introduce DeceptionBench, a five-category benchmark that probes covert alignment-faking, sycophancy, etc. We evaluate various LLMs and show that unrestricted CoT roughly aggravates the deceptive tendency. In contrast, CoT Monitor+ cuts deceptive behaviors by 43.8% on average while preserving task accuracy. Further, when the self-monitor signal replaces an external weak judge in RL fine-tuning, models exhibit substantially fewer obfuscated thoughts and retain transparency. Our project website can be found at cot-monitor-plus.github.io",
+  "needs_fetch": false
+ },
+ {
+  "id": 970,
+  "title": "Addendum to OpenAI o3 and o4-mini system card: OpenAI o3 Operator",
+  "org": "openai",
+  "date": "2025-05-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/o3-o4-mini-system-card-addendum-operator-o3/",
+  "abstract": "We are replacing the existing GPT-4o-based model for Operator with a version based on OpenAI o3. The API version will remain based on 4o.",
+  "needs_fetch": false
+ }
+]

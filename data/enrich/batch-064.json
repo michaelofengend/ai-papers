@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1938,
+  "title": "Leveraging Directed Causal Discovery to Detect Latent Common Causes in Cause-Effect Pairs",
+  "org": "deepmind",
+  "date": "2022-10-06",
+  "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+  "url": "https://doi.org/10.1109/tnnls.2022.3205128",
+  "abstract": "The discovery of causal relationships is a fundamental problem in science and medicine. In recent years, many elegant approaches to discovering causal relationships between two variables from observational data have been proposed. However, most of these deal only with purely directed causal relationships and cannot detect latent common causes. Here, we devise a general heuristic which takes a causal discovery algorithm that can only distinguish purely directed causal relations and modifies it to also detect latent common causes. We apply our method to two directed causal discovery algorithms, the information geometric causal inference (IGCI) of (Daniusis et al., 2010) and the kernel conditional deviance for causal inference of (Mitrovic et al., 2018), and extensively test on synthetic data-detecting latent common causes in additive, multiplicative and complex noise regimes-and on real data, where we are able to detect known common causes. In addition to detecting latent common causes, our experiments demonstrate that both the modified algorithms preserve the performance of the original in distinguishing directed causal relations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1937,
+  "title": "Power to the People? Opportunities and Challenges for Participatory AI",
+  "org": "deepmind",
+  "date": "2022-10-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2209.07572",
+  "abstract": "Participatory approaches to artificial intelligence (AI) and machine learning (ML) are gaining momentum: the increased attention comes partly with the view that participation opens the gateway to an inclusive, equitable, robust, responsible and trustworthy AI. Among other benefits, participatory approaches are essential to understanding and adequately representing the needs, desires and perspectives of historically marginalized communities. However, there currently exists lack of clarity on what meaningful participation entails and what it is expected to do. In this paper we first review participatory approaches as situated in historical contexts as well as participatory methods and practices within the AI and ML pipeline. We then introduce three case studies in participatory AI. Participation holds the potential for beneficial, emancipatory and empowering technology design, development and deployment while also being at risk for concerns such as cooptation and conflation with other activities. We lay out these limitations and concerns and argue that as participatory AI/ML becomes in vogue, a contextual and nuanced understanding of the term as well as consideration of who the primary beneficiaries of participatory activities ought to be constitute crucial factors to realizing the benefits and opportunities that participation brings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1939,
+  "title": "Discovering faster matrix multiplication algorithms with reinforcement learning",
+  "org": "deepmind",
+  "date": "2022-10-05",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-022-05172-4",
+  "abstract": "Abstract Improving the efficiency of algorithms for fundamental computations can have a widespread impact, as it can affect the overall speed of a large amount of computations. Matrix multiplication is one such primitive task, occurring in many systems—from neural networks to scientific computing routines. The automatic discovery of algorithms using machine learning offers the prospect of reaching beyond human intuition and outperforming the current best human-designed algorithms. However, automating the algorithm discovery procedure is intricate, as the space of possible algorithms is enormous. Here we report a deep reinforcement learning approach based on AlphaZero 1 for discovering efficient and provably correct algorithms for the multiplication of arbitrary matrices. Our agent, AlphaTensor, is trained to play a single-player game where the objective is finding tensor decompositions within a finite factor space. AlphaTensor discovered algorithms that outperform the state-of-the-art complexity for many matrix sizes. Particularly relevant is the case of 4 × 4 matrices in a finite field, where AlphaTensor’s algorithm improves on Strassen’s two-level algorithm for the first time, to our knowledge, since its discovery 50 years ago 2 . We further showcase the flexibility of AlphaTensor through different use-cases: algorithms with state-of-the-art complexity for structured matrix multiplication and improved practical efficiency by optimizing matrix multiplication for runtime on s",
+  "needs_fetch": false
+ },
+ {
+  "id": 2770,
+  "title": "A inteligência artificial e eu: escrevendo o editorial juntamente com o ChatGPT",
+  "org": "openai",
+  "date": "2022-10-01",
+  "venue": "Revista Eletrônica de Ciência Administrativa",
+  "url": "https://doi.org/10.21529/recadm.2022ed3",
+  "abstract": "e consiste em três participantes:",
+  "needs_fetch": true
+ },
+ {
+  "id": 1940,
+  "title": "Optimistic Posterior Sampling for Reinforcement Learning with Few Samples and Tight Guarantees",
+  "org": "deepmind",
+  "date": "2022-09-28",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2209.14414",
+  "abstract": "We consider reinforcement learning in an environment modeled by an episodic, finite, stage-dependent Markov decision process of horizon $H$ with $S$ states, and $A$ actions. The performance of an agent is measured by the regret after interacting with the environment for $T$ episodes. We propose an optimistic posterior sampling algorithm for reinforcement learning (OPSRL), a simple variant of posterior sampling that only needs a number of posterior samples logarithmic in $H$, $S$, $A$, and $T$ per state-action pair. For OPSRL we guarantee a high-probability regret bound of order at most $\\widetilde{\\mathcal{O}}(\\sqrt{H^3SAT})$ ignoring $\\text{poly}\\log(HSAT)$ terms. The key novel technical ingredient is a new sharp anti-concentration inequality for linear forms which may be of independent interest. Specifically, we extend the normal approximation-based lower bound for Beta distributions by Alfers and Dinges [1984] to Dirichlet distributions. Our bound matches the lower bound of order $Ω(\\sqrt{H^3SAT})$, thereby answering the open problems raised by Agrawal and Jia [2017b] for the episodic setting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 441,
+  "title": "Improving alignment of dialogue agents via targeted human judgements",
+  "org": "deepmind",
+  "date": "2022-09-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2209.14375",
+  "abstract": "We present Sparrow, an information-seeking dialogue agent trained to be more helpful, correct, and harmless compared to prompted language model baselines. We use reinforcement learning from human feedback to train our models with two new additions to help human raters judge agent behaviour. First, to make our agent more helpful and harmless, we break down the requirements for good dialogue into natural language rules the agent should follow, and ask raters about each rule separately. We demonstrate that this breakdown enables us to collect more targeted human judgements of agent behaviour and allows for more efficient rule-conditional reward models. Second, our agent provides evidence from sources supporting factual claims when collecting preference judgements over model statements. For factual questions, evidence provided by Sparrow supports the sampled response 78% of the time. Sparrow is preferred more often than baselines while being more resilient to adversarial probing by humans, violating our rules only 8% of the time when probed. Finally, we conduct extensive analyses showing that though our model learns to follow our rules it can exhibit distributional biases.",
+  "needs_fetch": false
+ },
+ {
+  "id": 442,
+  "title": "Defining and Characterizing Reward Hacking",
+  "org": "other",
+  "date": "2022-09-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2209.13085",
+  "abstract": "We provide the first formal definition of reward hacking, a phenomenon where optimizing an imperfect proxy reward function leads to poor performance according to the true reward function. We say that a proxy is unhackable if increasing the expected proxy return can never decrease the expected true return. Intuitively, it might be possible to create an unhackable proxy by leaving some terms out of the reward function (making it \"narrower\") or overlooking fine-grained distinctions between roughly equivalent outcomes, but we show this is usually not the case. A key insight is that the linearity of reward (in state-action visit counts) makes unhackability a very strong condition. In particular, for the set of all stochastic policies, two reward functions can only be unhackable if one of them is constant. We thus turn our attention to deterministic policies and finite sets of stochastic policies, where non-trivial unhackable pairs always exist, and establish necessary and sufficient conditions for the existence of simplifications, an important special case of unhackability. Our results reveal a tension between using reward functions to specify narrow tasks and aligning AI systems with human values.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1024,
+  "title": "Introducing Whisper",
+  "org": "openai",
+  "date": "2022-09-21",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/whisper/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1942,
+  "title": "Realizing the promise of AI: a new calling for cognitive science",
+  "org": "deepmind",
+  "date": "2022-09-20",
+  "venue": "Trends in Cognitive Sciences",
+  "url": "https://doi.org/10.1016/j.tics.2022.08.004",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1941,
+  "title": "Structure of the PAPP-ABP5 complex reveals mechanism of substrate recognition",
+  "org": "deepmind",
+  "date": "2022-09-20",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-022-33175-2",
+  "abstract": "Abstract Insulin-like growth factor (IGF) signaling is highly conserved and tightly regulated by proteases including Pregnancy-Associated Plasma Protein A (PAPP-A). PAPP-A and its paralog PAPP-A2 are metalloproteases that mediate IGF bioavailability through cleavage of IGF binding proteins (IGFBPs). Here, we present single-particle cryo-EM structures of the catalytically inactive mutant PAPP-A (E483A) in complex with a peptide from its substrate IGFBP5 (PAPP-A BP5 ) and also in its substrate-free form, by leveraging the power of AlphaFold to generate a high quality predicted model as a starting template. We show that PAPP-A is a flexible trans -dimer that binds IGFBP5 via a 25-amino acid anchor peptide which extends into the metalloprotease active site. This unique IGFBP5 anchor peptide that mediates the specific PAPP-A-IGFBP5 interaction is not found in other PAPP-A substrates. Additionally, we illustrate the critical role of the PAPP-A central domain as it mediates both IGFBP5 recognition and trans -dimerization. We further demonstrate that PAPP-A trans -dimer formation and distal inter-domain interactions are both required for efficient proteolysis of IGFBP4, but dispensable for IGFBP5 cleavage. Together the structural and biochemical studies reveal the mechanism of PAPP-A substrate binding and selectivity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2771,
+  "title": "Environmental, individual and social traits of free-ranging raccoons influence performance in cognitive testing",
+  "org": "openai",
+  "date": "2022-09-15",
+  "venue": "Journal of Experimental Biology",
+  "url": "https://doi.org/10.1242/jeb.243726",
+  "abstract": "Cognitive abilities, such as learning and flexibility, are hypothesized to aid behavioral adaptation to urbanization. Although growing evidence suggests that cognition may indeed facilitate persistence in urban environments, we currently lack knowledge of the cognitive abilities of many urban taxa. Recent methodological advances, including radio frequency identification (RFID), have extended automated cognitive testing into the field but have yet to be applied to a diversity of taxa. Here, we used an RFID-enabled operant conditioning device to assess the habituation, learning and cognitive flexibility of a wild population of raccoons (Procyon lotor). We examined how several biological and behavioral traits influenced participation and performance in testing. We then compared the cognitive performance of wild raccoons tested in natural conditions with that of wild-caught raccoons tested in captivity from a previous study. In natural conditions, juvenile raccoons were more likely to habituate to the testing device, but performed worse in serial reversal learning, compared with adults. We also found that docile raccoons were more likely to learn how to operate the device in natural conditions, which suggests a relationship between emotional reactivity and cognitive ability in raccoons. Although raccoons in both captive and natural conditions demonstrated rapid associative learning and flexibility, raccoons in captive conditions generally performed better, likely owing to the hei",
+  "needs_fetch": false
+ },
+ {
+  "id": 1943,
+  "title": "Developing, evaluating and scaling learning agents in multi-agent environments",
+  "org": "deepmind",
+  "date": "2022-09-06",
+  "venue": "AI Communications",
+  "url": "https://doi.org/10.3233/aic-220113",
+  "abstract": "The Game Theory &amp; Multi-Agent team at DeepMind studies several aspects of multi-agent learning ranging from computing approximations to fundamental concepts in game theory to simulating social dilemmas in rich spatial environments and training 3-d humanoids in difficult team coordination tasks. A signature aim of our group is to use the resources and expertise made available to us at DeepMind in deep reinforcement learning to explore multi-agent systems in complex environments and use these benchmarks to advance our understanding. Here, we summarise the recent work of our team and present a taxonomy that we feel highlights many important open challenges in multi-agent research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 120,
+  "title": "Toy Models of Superposition",
+  "org": "anthropic",
+  "date": "2022-09-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2022/toy_model/index.html",
+  "abstract": "Neural networks often pack many unrelated concepts into a single neuron - a puzzling phenomenon known as 'polysemanticity' which makes interpretability much more challenging. This paper provides a toy model where polysemanticity can be fully understood, arising as a result of models storing additional sparse features in \"superposition.\" We demonstrate the existence of a phase change, a surprising connection to the geometry of uniform polytopes, and evidence of a link to adversarial examples. We also discuss potential implications for mechanistic interpretability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1944,
+  "title": "From motor control to team play in simulated humanoid football",
+  "org": "deepmind",
+  "date": "2022-08-31",
+  "venue": "Science Robotics",
+  "url": "https://doi.org/10.1126/scirobotics.abo0235",
+  "abstract": "Learning to combine control at the level of joint torques with longer-term goal-directed behavior is a long-standing challenge for physically embodied artificial agents. Intelligent behavior in the physical world unfolds across multiple spatial and temporal scales: Although movements are ultimately executed at the level of instantaneous muscle tensions or joint torques, they must be selected to serve goals that are defined on much longer time scales and that often involve complex interactions with the environment and other agents. Recent research has demonstrated the potential of learning-based approaches applied to the respective problems of complex movement, long-term planning, and multiagent coordination. However, their integration traditionally required the design and optimization of independent subsystems and remains challenging. In this work, we tackled the integration of motor control and long-horizon decision-making in the context of simulated humanoid football, which requires agile motor control and multiagent coordination. We optimized teams of agents to play simulated football via reinforcement learning, constraining the solution space to that of plausible movements learned using human motion capture data. They were trained to maximize several environment rewards and to imitate pretrained football-specific skills if doing so led to improved performance. The result is a team of coordinated humanoid football players that exhibit complex behavior at different scales, ",
+  "needs_fetch": false
+ },
+ {
+  "id": 121,
+  "title": "Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned",
+  "org": "anthropic",
+  "date": "2022-08-22",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/red-teaming-language-models-to-reduce-harms-methods-scaling-behaviors-and-lessons-learned",
+  "abstract": "We describe our early efforts to red team language models in order to simultaneously discover, measure, and attempt to reduce their potentially harmful outputs. We make three main contributions. First, we investigate scaling behaviors for red teaming across 3 model sizes (2.7B, 13B, and 52B parameters) and 4 model types: a plain language model (LM); an LM prompted to be helpful, honest, and harmless; an LM with rejection sampling; and a model trained to be helpful and harmless using reinforcement learning from human feedback (RLHF). We find that the RLHF models are increasingly difficult to red team as they scale, and we find a flat trend with scale for the other model types. Second, we release our dataset of 38,961 red team attacks for others to analyze and learn from. We provide our own analysis of the data and find a variety of harmful outputs, which range from offensive language to more subtly harmful non-violent unethical outputs. Third, we exhaustively describe our instructions, processes, statistical methodologies, and uncertainty about red teaming. We hope that this transparency accelerates our ability to work together as a community in order to develop shared norms, practices, and technical standards for how to red team language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1945,
+  "title": "Value representations in the rodent orbitofrontal cortex drive learning, not choice",
+  "org": "deepmind",
+  "date": "2022-08-17",
+  "venue": "eLife",
+  "url": "https://doi.org/10.7554/elife.64575",
+  "abstract": "Humans and animals make predictions about the rewards they expect to receive in different situations. In formal models of behavior, these predictions are known as value representations, and they play two very different roles. Firstly, they drive choice : the expected values of available options are compared to one another, and the best option is selected. Secondly, they support learning : expected values are compared to rewards actually received, and future expectations are updated accordingly. Whether these different functions are mediated by different neural representations remains an open question. Here, we employ a recently developed multi-step task for rats that computationally separates learning from choosing. We investigate the role of value representations in the rodent orbitofrontal cortex, a key structure for value-based cognition. Electrophysiological recordings and optogenetic perturbations indicate that these representations do not directly drive choice. Instead, they signal expected reward information to a learning process elsewhere in the brain that updates choice mechanisms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1946,
+  "title": "Exact Separation Logic (Extended Version)",
+  "org": "deepmind",
+  "date": "2022-08-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2208.07200",
+  "abstract": "Over-approximating (OX) program logics, such as separation logic (SL), are used for verifying properties of heap-manipulating programs: all terminating behaviour is characterised, but established results and errors need not be reachable. OX function specifications are thus incompatible with true bug-finding supported by symbolic execution tools such as Pulse and Pulse-X. In contrast, under-approximating (UX) program logics, such as incorrectness separation logic, are used to find true results and bugs: established results and errors are reachable, but there is no mechanism for understanding if all terminating behaviour has been characterised. We introduce exact separation logic (ESL), which provides fully-verified function specifications compatible with both OX verification and UX true bug-funding: all terminating behaviour is characterised and all established results and errors are reachable. We prove soundness for ESL with mutually recursive functions, demonstrating, for the first time, function compositionality for a UX logic. We show that UX program logics require subtle definitions of internal and external function specifications compared with the familiar definitions of OX logics. We investigate the expressivity of ESL and, for the first time, explore the role of abstraction in UX reasoning by verifying abstract ESL specifications of various data-structure algorithms. In doing so, we highlight the difference between abstraction (hiding information) and over-approximatio",
+  "needs_fetch": false
+ },
+ {
+  "id": 1947,
+  "title": "The emergence of division of labor through decentralized social sanctioning",
+  "org": "deepmind",
+  "date": "2022-08-10",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2208.05568",
+  "abstract": "Human ecological success relies on our characteristic ability to flexibly self-organize into cooperative social groups, the most successful of which employ substantial specialization and division of labor. Unlike most other animals, humans learn by trial and error during their lives what role to take on. However, when some critical roles are more attractive than others, and individuals are self-interested, then there is a social dilemma: each individual would prefer others take on the critical but unremunerative roles so they may remain free to take one that pays better. But disaster occurs if all act thusly and a critical role goes unfilled. In such situations learning an optimum role distribution may not be possible. Consequently, a fundamental question is: how can division of labor emerge in groups of self-interested lifetime-learning individuals? Here we show that by introducing a model of social norms, which we regard as emergent patterns of decentralized social sanctioning, it becomes possible for groups of self-interested individuals to learn a productive division of labor involving all critical roles. Such social norms work by redistributing rewards within the population to disincentivize antisocial roles while incentivizing prosocial roles that do not intrinsically pay as well as others.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1948,
+  "title": "Reinforcement learning: A brief guide for philosophers of mind",
+  "org": "deepmind",
+  "date": "2022-08-07",
+  "venue": "Philosophy Compass",
+  "url": "https://doi.org/10.1111/phc3.12865",
+  "abstract": "Abstract In this opinionated review, I draw attention to some of the contributions reinforcement learning can make to questions in the philosophy of mind. In particular, I highlight reinforcement learning's foundational emphasis on the role of reward in agent learning, and canvass two ways in which the framework may advance our understanding of perception and motivation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1950,
+  "title": "Response to Comment on “Pushing the frontiers of density functionals by solving the fractional electron problem”",
+  "org": "deepmind",
+  "date": "2022-08-04",
+  "venue": "Science",
+  "url": "https://doi.org/10.1126/science.abq4282",
+  "abstract": ". claim that the ability of DM21 to respect fractional charge (FC) and fractional spin (FS) conditions outside of the training set has not been demonstrated in our paper. This is based on (i) asserting that the training set has a ~50% overlap with our bond-breaking benchmark (BBB) and (ii) questioning the validity and accuracy of our other generalization examples. We disagree with their analysis and believe that the points raised are either incorrect or not relevant to the main conclusions of the paper and to the assessment of general quality of DM21.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1949,
+  "title": "Fast Black-Box Quantum State Preparation",
+  "org": "deepmind",
+  "date": "2022-08-04",
+  "venue": "Quantum",
+  "url": "https://arxiv.org/abs/2009.10709",
+  "abstract": "Quantum state preparation is an important ingredient for other higher-level quantum algorithms, such as Hamiltonian simulation, or for loading distributions into a quantum device to be used e.g. in the context of optimization tasks such as machine learning. Starting with a generic \"black box\" method devised by Grover in 2000, which employs amplitude amplification to load coefficients calculated by an oracle, there has been a long series of results and improvements with various additional conditions on the amplitudes to be loaded, culminating in Sanders et al.'s work which avoids almost all arithmetic during the preparation stage.In this work, we construct an optimized black box state loading scheme with which various important sets of coefficients can be loaded significantly faster than in <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mi>O</mml:mi><mml:mo stretchy=\"false\">(</mml:mo><mml:msqrt><mml:mi>N</mml:mi></mml:msqrt><mml:mo stretchy=\"false\">)</mml:mo></mml:math> rounds of amplitude amplification, up to only <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mi>O</mml:mi><mml:mo stretchy=\"false\">(</mml:mo><mml:mn>1</mml:mn><mml:mo stretchy=\"false\">)</mml:mo></mml:math> many. We achieve this with two variants of our algorithm. The first employs a modification of the oracle from Sanders et al., which requires fewer ancillas (<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:msub><mml:mi>log</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo",
+  "needs_fetch": false
+ },
+ {
+  "id": 1951,
+  "title": "Flow-based sampling in the lattice Schwinger model at criticality",
+  "org": "deepmind",
+  "date": "2022-07-29",
+  "venue": "Physical review. D/Physical review. D.",
+  "url": "https://doi.org/10.1103/physrevd.106.014514",
+  "abstract": "Recent results suggest that flow-based algorithms may provide efficient sampling of field distributions for lattice field theory applications, such as studies of quantum chromodynamics and the Schwinger model. In this work, we provide a numerical demonstration of robust flow-based sampling in the Schwinger model at the critical value of the fermion mass. In contrast, at the same parameters, conventional methods fail to sample all parts of configuration space, leading to severely underestimated uncertainties.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1025,
+  "title": "Efficient training of language models to fill in the middle",
+  "org": "openai",
+  "date": "2022-07-28",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/efficient-training-of-language-models-to-fill-in-the-middle/",
+  "abstract": "We show that autoregressive language models can learn to infill text after we apply a straightforward transformation to the dataset, which simply moves a span of text from the middle of a document to its end. While this data augmentation has garnered much interest in recent years, we provide extensive evidence that training models with a large fraction of data transformed in this way does not harm the original left-to-right generative capability, as measured by perplexity and sampling evaluations across a wide range of scales. Given the usefulness, simplicity, and efficiency of training models to fill-in-the-middle (FIM), we suggest that future autoregressive language models be trained with FIM by default. To this end, we run a series of ablations on key hyperparameters, such as the data transformation frequency, the structure of the transformation, and the method of selecting the infill span. We use these ablations to prescribe strong default settings and best practices to train FIM models. We have released our best infilling model trained with best practices in our API, and release our infilling benchmarks to aid future research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1026,
+  "title": "A hazard analysis framework for code synthesis large language models",
+  "org": "openai",
+  "date": "2022-07-25",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/a-hazard-analysis-framework-for-code-synthesis-large-language-models/",
+  "abstract": "Codex, a large language model (LLM) trained on a variety of codebases, exceeds the previous state of the art in its capacity to synthesize and generate code. Although Codex provides a plethora of benefits, models that may generate code on such scale have significant limitations, alignment problems, the potential to be misused, and the possibility to increase the rate of progress in technical fields that may themselves have destabilizing impacts or have misuse potential. Yet such safety impacts are not yet known or remain to be explored. In this paper, we outline a hazard analysis framework constructed at OpenAI to uncover hazards or safety risks that the deployment of models like Codex may impose technically, socially, politically, and economically. The analysis is informed by a novel evaluation framework that determines the capacity of advanced code generation techniques against the complexity and expressivity of specification prompts, and their capability to understand and execute them relative to human ability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2772,
+  "title": "Q-Value Weighted Regression: Reinforcement Learning with Limited Data",
+  "org": "openai",
+  "date": "2022-07-18",
+  "venue": "2022 International Joint Conference on Neural Networks (IJCNN)",
+  "url": "https://doi.org/10.1109/ijcnn55064.2022.9892633",
+  "abstract": "Sample efficiency has emerged as a significant challenge of deep reinforcement learning. We introduce Q-Value Weighted Regression (QWR), a simple RL algorithm that excels in this aspect. QWR builds upon Advantage Weighted Regression (AWR), an off-policy actor-critic algorithm that performs very well on continuous control tasks, but has low sample efficiency and struggles with high-dimensional observation spaces. We perform both theoretical and empirical analyses of AWR, that explain its shortcomings and use these insights to motivate QWR. We show experimentally that QWR either outperforms or matches the state-of-the-art algorithms both on tasks with continuous and discrete actions. In particular, QWR yields results on par with SAC on the MuJoCo suite and - with the same set of hyperparameters - outperforms a highly tuned implementation of Rainbow on a set of Atari games. At the same time, QWR is a much simpler algorithm than both SAC and Rainbow.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1952,
+  "title": "Quantum Circuit Evolution on NISQ Devices",
+  "org": "deepmind",
+  "date": "2022-07-18",
+  "venue": "2022 IEEE Congress on Evolutionary Computation (CEC)",
+  "url": "https://doi.org/10.1109/cec55065.2022.9870269",
+  "abstract": "Variational quantum circuits build the foundation for various classes of quantum algorithms. In a nutshell, the weights of a parametrized quantum circuit are varied until the empirical sampling distribution of the circuit is sufficiently close to a desired outcome. Numerical first-order methods are applied frequently to fit the parameters of the circuit, but most of the time, the circuit itself, that is, the actual composition of gates, is fixed. Methods for optimizing the circuit design jointly with the weights have been proposed, but empirical results are rather scarce. Here, we consider a simple evolutionary strategy that addresses the trade-off between finding appropriate circuit ar-chitectures and parameter tuning. We evaluate our method both via simulation and on actual quantum hardware. Our benchmark problems include the transverse field Ising Hamiltonian and the Sherrington-Kirkpatrick spin model. Despite the shortcomings of current noisy intermediate-scale quantum hardware, we find only a minor slowdown on actual quantum machines compared to simulations. Moreover, we investigate which mutation operations most significantly contribute to the optimization. The results provide intuition on how randomized search heuristics behave on actual quantum hardware and layout a path for further refinement of evolutionary quantum gate circuits.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1953,
+  "title": "The Medical Segmentation Decathlon",
+  "org": "deepmind",
+  "date": "2022-07-15",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-022-30695-9",
+  "abstract": "International challenges have become the de facto standard for comparative assessment of image analysis algorithms. Although segmentation is the most widely investigated medical image processing task, the various challenges have been organized to focus only on specific clinical tasks. We organized the Medical Segmentation Decathlon (MSD)-a biomedical image analysis challenge, in which algorithms compete in a multitude of both tasks and modalities to investigate the hypothesis that a method capable of performing well on multiple tasks will generalize well to a previously unseen task and potentially outperform a custom-designed solution. MSD results confirmed this hypothesis, moreover, MSD winner continued generalizing well to a wide range of other clinical problems for the next two years. Three main conclusions can be drawn from this study: (1) state-of-the-art image segmentation algorithms generalize well when retrained on unseen tasks; (2) consistent algorithmic performance across multiple tasks is a strong surrogate of algorithmic generalizability; (3) the training of accurate AI segmentation models is now commoditized to scientists that are not versed in AI model training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1954,
+  "title": "Evaluating Visual Photoplethysmography Method",
+  "org": "deepmind",
+  "date": "2022-07-14",
+  "venue": "Cureus",
+  "url": "https://doi.org/10.7759/cureus.26871",
+  "abstract": "Regular monitoring of common physiological signs, including heart rate, blood pressure, and oxygen saturation, can be an effective way to either prevent or detect many kinds of chronic conditions. In particular, cardiovascular diseases (CVDs) are a worldwide concern. According to the World Health Organization, 32% of all deaths worldwide are from CVDs. In addition, stress-related illnesses cost $190 billion in healthcare costs per year. Currently, contact devices are required to extract most of an individual's physiological information, which can be uncomfortable for users and can cause discomfort. However, in recent years, remote photoplethysmography (rPPG) technology is gaining interest, which enables contactless monitoring of the blood volume pulse signal using a regular camera, and ultimately can provide the same physiological information as a contact device. In this paper, we propose a benchmark comparison using a new multimodal database consisting of 56 subjects where each subject was submitted to three different tasks. Each subject wore a wearable device capable of extracting photoplethysmography signals and was filmed to allow simultaneous rPPG signal extraction. Several experiments were conducted, including a comparison between information from contact and remote signals and stress state recognition. Results have shown that in this dataset, rPPG signals were capable of dealing with motion artifacts better than contact PPG sensors and overall had better quality if com",
+  "needs_fetch": false
+ },
+ {
+  "id": 1955,
+  "title": "Author response: Value representations in the rodent orbitofrontal cortex drive learning, not choice",
+  "org": "deepmind",
+  "date": "2022-07-13",
+  "venue": null,
+  "url": "https://doi.org/10.7554/elife.64575.sa2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1956,
+  "title": "Intuitive physics learning in a deep-learning model inspired by developmental psychology",
+  "org": "deepmind",
+  "date": "2022-07-11",
+  "venue": "Nature Human Behaviour",
+  "url": "https://doi.org/10.1038/s41562-022-01394-8",
+  "abstract": "'Intuitive physics' enables our pragmatic engagement with the physical world and forms a key component of 'common sense' aspects of thought. Current artificial intelligence systems pale in their understanding of intuitive physics, in comparison to even very young children. Here we address this gap between humans and machines by drawing on the field of developmental psychology. First, we introduce and open-source a machine-learning dataset designed to evaluate conceptual understanding of intuitive physics, adopting the violation-of-expectation (VoE) paradigm from developmental psychology. Second, we build a deep-learning system that learns intuitive physics directly from visual data, inspired by studies of visual cognition in children. We demonstrate that our model can learn a diverse set of physical concepts, which depends critically on object-level representations, consistent with findings from developmental psychology. We consider the implications of these results both for AI and for research on human cognition.",
+  "needs_fetch": false
+ }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2486,
+  "title": "Reward-free exploration beyond finite-horizon",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-03288970",
+  "abstract": "We consider the reward-free exploration framework introduced by Jin et al. (2020), where an RL agent interacts with an unknown environment without any explicit reward function to maximize. The objective is to collect enough information during the exploration phase, so that a near-optimal policy can be immediately computed once any reward function is provided. In this paper, we move from the finite-horizon setting studied by Jin et al. (2020) to the more general setting of goalconditioned RL, often referred to as stochastic shortest path (SSP). We first discuss the challenges specific to SSPs and then study two scenarios: 1) reward-free goal-free exploration in communicating MDPs, and 2) reward-free goal-free incremental exploration in non-communicating MDPs where the agent is provided with a reset action to an initial state. In both cases, we provide exploration algorithms and their samplecomplexity bounds which we contrast with the existing guarantees in the finite-horizon case. 1",
+  "needs_fetch": false
+ },
+ {
+  "id": 2485,
+  "title": "AdapterHub: A Framework for Adapting Transformers",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2007.07779",
+  "abstract": "Jonas Pfeiffer, Andreas Rücklé, Clifton Poth, Aishwarya Kamath, Ivan Vulić, Sebastian Ruder, Kyunghyun Cho, Iryna Gurevych. Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: System Demonstrations. 2020.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2484,
+  "title": "High-Dimensional Sparse Linear Bandits",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2011.04020",
+  "abstract": "Stochastic linear bandits with high-dimensional sparse features are a practical model for a variety of domains, including personalized medicine and online advertising. We derive a novel $\\Omega(n^{2/3})$ dimension-free minimax regret lower bound for sparse linear bandits in the data-poor regime where the horizon is smaller than the ambient dimension and where the feature vectors admit a well-conditioned exploration distribution. This is complemented by a nearly matching upper bound for an explore-then-commit algorithm showing that that $\\Theta(n^{2/3})$ is the optimal rate in the data-poor regime. The results complement existing bounds for the data-rich regime and provide another example where carefully balancing the trade-off between information and regret is necessary. Finally, we prove a dimension-free $O(\\sqrt{n})$ regret upper bound under an additional assumption on the magnitude of the signal for relevant features.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2483,
+  "title": "Near-linear time Gaussian process optimization with adaptive batching and resparsification",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-02950066",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2482,
+  "title": "Are All Good Word Vector Spaces Isomorphic?",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2004.04070",
+  "abstract": "Existing algorithms for aligning cross-lingual word vector spaces assume that vector spaces are approximately isomorphic. As a result, they perform poorly or fail completely on nonisomorphic spaces. Such non-isomorphism has been hypothesised to result from typological differences between languages. In this work, we ask whether non-isomorphism is also crucially a sign of degenerate word vector spaces. We present a series of experiments across diverse languages which show that variance in performance across language pairs is not only due to typological differences, but can mostly be attributed to the size of the monolingual resources available, and to the properties and duration of monolingual training (e.g. \"under-training\").",
+  "needs_fetch": false
+ },
+ {
+  "id": 2481,
+  "title": "Make Up Your Mind! Adversarial Generation of Inconsistent Natural Language Explanations",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1910.03065",
+  "abstract": "To increase trust in artificial intelligence systems, a promising research direction consists of designing neural models capable of generating natural language explanations for their predictions. In this work, we show that such models are nonetheless prone to generating mutually inconsistent explanations, such as \"Because there is a dog in the image.\" and \"Because there is no dog in the [same] image.\", exposing flaws in either the decision-making process of the model or in the generation of the explanations. We introduce a simple yet effective adversarial framework for sanity checking models against the generation of inconsistent natural language explanations. Moreover, as part of the framework, we address the problem of adversarial attacks with full target sequences, a scenario that was not previously addressed in sequence-to-sequence attacks. Finally, we apply our framework on a state-of-the-art neural natural language inference model that provides natural language explanations for its predictions. Our framework shows that this model is capable of generating a significant number of inconsistent explanations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2480,
+  "title": "A Call for More Rigor in Unsupervised Cross-lingual Learning",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2004.14958",
+  "abstract": "We review motivations, definition, approaches, and methodology for unsupervised crosslingual learning and call for a more rigorous position in each of them.An existing rationale for such research is based on the lack of parallel data for many of the world's languages.However, we argue that a scenario without any parallel data and abundant monolingual data is unrealistic in practice.We also discuss different training signals that have been used in previous work, which depart from the pure unsupervised setting.We then describe common methodological issues in tuning and evaluation of unsupervised cross-lingual models and present best practices.Finally, we provide a unified outlook for different types of research in this area (i.e., cross-lingual word embeddings, deep multilingual pretraining, and unsupervised machine translation) and argue for comparable evaluation of these models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2479,
+  "title": "Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.1007/978-3-030-06164-7_12",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2478,
+  "title": "Monte-Carlo tree search as regularized policy optimization",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-02950136",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2477,
+  "title": "Fractional Underdamped Langevin Dynamics: Retargeting SGD with Momentum under Heavy-Tailed Gradient Noise",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-03269112",
+  "abstract": "20 pages, Published at International Conference on Machine Learning 2020",
+  "needs_fetch": true
+ },
+ {
+  "id": 2476,
+  "title": "Multi-agent Communication meets Natural Language: Synergies between Functional and Structural Language Learning",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2005.07064",
+  "abstract": "We present a method for combining multi-agent communication and traditional data-driven approaches to natural language learning, with an end goal of teaching agents to communicate with humans in natural language. Our starting point is a language model that has been trained on generic, not task-specific language data. We then place this model in a multi-agent self-play environment that generates task-specific rewards used to adapt or modulate the model, turning it into a task-conditional language model. We introduce a new way for combining the two types of learning based on the idea of reranking language model samples, and show that this method outperforms others in communicating with humans in a visual referential communication task. Finally, we present a taxonomy of different types of language drift that can occur alongside a set of measures to detect them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2475,
+  "title": "Multi-scale learned iterative reconstruction",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "University of Oulu Repository (University of Oulu)",
+  "url": "http://urn.fi/urn:nbn:fi-fe2020052538879",
+  "abstract": "Model-based learned iterative reconstruction methods have recently been shown to outperform classical reconstruction algorithms. Applicability of these methods to large scale inverse problems is however limited by the available memory for training and extensive training times, the latter due to computationally expensive forward models. As a possible solution to these restrictions we propose a multi-scale learned iterative reconstruction scheme that computes iterates on discretisations of increasing resolution. This procedure does not only reduce memory requirements, it also considerably speeds up reconstruction and training times, but most importantly is scalable to large scale inverse problems with non-trivial forward operators, such as those that arise in many 3D tomographic applications. In particular, we propose a hybrid network that combines the multi-scale iterative approach with a particularly expressive network architecture which in combination exhibits excellent scalability in 3D. Applicability of the algorithm is demonstrated for 3D cone beam computed tomography from real measurement data of an organic phantom. Additionally, we examine scalability and reconstruction quality in comparison to established learned reconstruction methods in two dimensions for low dose computed tomography on human phantoms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2474,
+  "title": "No-regret exploration in goal-oriented reinforcement learning",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-03287824",
+  "abstract": "Many popular reinforcement learning problems (e.g., navigation in a maze, some Atari games, mountain car) are instances of the episodic setting under its stochastic shortest path (SSP) formulation, where an agent has to achieve a goal state while minimizing the cumulative cost. Despite the popularity of this setting, the explorationexploitation dilemma has been sparsely studied in general SSP problems, with most of the theoretical literature focusing on different problems (i.e., finite-horizon and infinite-horizon) or making the restrictive loop-free SSP assumption (i.e., no state can be visited twice during an episode). In this paper, we study the general SSP problem with no assumption on its dynamics (some policies may actually never reach the goal). We introduce UC-SSP, the first no-regret algorithm in this setting, and prove a regret bound scaling as O(DS √ ADK) after K episodes for any unknown SSP with S states, A actions, positive costs and SSP-diameter D, defined as the smallest expected hitting time from any starting state to the goal. We achieve this result by crafting a novel stopping rule, such that UC-SSP may interrupt the current policy if it is taking too long to achieve the goal and switch to alternative policies that are designed to rapidly terminate the episode.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2473,
+  "title": "Improving Adversarial Text Generation by Modeling the Distant Future",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2020.acl-main.227",
+  "abstract": "Auto-regressive text generation models usually focus on local fluency, and may cause inconsistent semantic meaning in long text generation. Further, automatically generating words with similar semantics is challenging, and hand-crafted linguistic rules are difficult to apply. We consider a text planning scheme and present a model-based imitation-learning approach to alleviate the aforementioned issues. Specifically, we propose a novel guider network to focus on the generative process over a longer horizon, which can assist next-word prediction and provide intermediate rewards for generator optimization. Extensive experiments demonstrate that the proposed method leads to improved performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2472,
+  "title": "Learning Actionness via Long-Range Temporal Order Verification",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-030-58526-6_28",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2471,
+  "title": "Unsupervised Multi-Target Domain Adaptation: An Information Theoretic Approach",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "IEEE Transactions on Image Processing",
+  "url": "https://arxiv.org/abs/1810.11547",
+  "abstract": "Unsupervised domain adaptation (uDA) models focus on pairwise adaptation settings where there is a single, labeled, source and a single target domain. However, in many real-world settings one seeks to adapt to multiple, but somewhat similar, target domains. Applying pairwise adaptation approaches to this setting may be suboptimal, as they fail to leverage shared information among multiple domains. In this work, we propose an information theoretic approach for domain adaptation in the novel context of multiple target domains with unlabeled instances and one source domain with labeled instances. Our model aims to find a shared latent space common to all domains, while simultaneously accounting for the remaining private, domain-specific factors. Disentanglement of shared and private information is accomplished using a unified information-theoretic approach, which also serves to establish a stronger link between the latent representations and the observed data. The resulting model, accompanied by an efficient optimization algorithm, allows simultaneous adaptation from a single source to multiple target domains. We test our approach on three challenging publicly-available datasets, showing that it outperforms several popular domain adaptation methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2470,
+  "title": "Do Transformers Need Deep Long-Range Memory?",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2020.acl-main.672",
+  "abstract": "Deep attention models have advanced the modelling of sequential data across many domains. For language modelling in particular, the Transformer-XL -a Transformer augmented with a long-range memory of past activations -has been shown to be state-ofthe-art across a variety of well-studied benchmarks. The Transformer-XL incorporates a long-range memory at every layer of the network, which renders its state to be thousands of times larger than RNN predecessors. However it is unclear whether this is necessary. We perform a set of interventions to show that comparable performance can be obtained with 6X fewer long range memories and better performance can be obtained by limiting the range of attention in lower layers of the network.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2469,
+  "title": "Adaptive Text Recognition Through Visual Matching",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-030-58517-4_4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2468,
+  "title": "MAD-X: An Adapter-Based Framework for Multi-Task Cross-Lingual Transfer",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2005.00052",
+  "abstract": "The main goal behind state-of-the-art pretrained multilingual models such as multilingual BERT and XLM-R is enabling and bootstrapping NLP applications in low-resource languages through zero-shot or few-shot crosslingual transfer. However, due to limited model capacity, their transfer performance is the weakest exactly on such low-resource languages and languages unseen during pretraining. We propose MAD-X, an adapter-based framework that enables high portability and parameter-efficient transfer to arbitrary tasks and languages by learning modular language and task representations. In addition, we introduce a novel invertible adapter architecture and a strong baseline method for adapting a pretrained multilingual model to a new language. MAD-X outperforms the state of the art in cross-lingual transfer across a representative set of typologically diverse languages on named entity recognition and causal commonsense reasoning, and achieves competitive results on question answering. Our code and adapters are available at AdapterHub.ml.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2467,
+  "title": "Multifidelity Dimension Reduction via Active Subspaces",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "SIAM Journal on Scientific Computing",
+  "url": "https://arxiv.org/abs/1809.05567",
+  "abstract": "We propose a multifidelity dimension reduction method to identify a low-dimensional structure present in many engineering models. The structure of interest arises when functions vary primarily on a low-dimensional subspace of the high-dimensional input space, while varying little along the complementary directions. Our approach builds on the gradient-based methodology of active subspaces, and exploits models of different fidelities to reduce the cost of performing dimension reduction through the computation of the active subspace matrix. We provide a nonasymptotic analysis of the number of gradient evaluations sufficient to achieve a prescribed error in the active subspace matrix, both in expectation and with high probability. We show that the sample complexity depends on a notion of intrinsic dimension of the problem, which can be much smaller than the dimension of the input space. We illustrate the benefits of such a multifidelity dimension reduction approach using numerical experiments with input spaces of up to two thousand dimensions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2466,
+  "title": "Visual grounding in video for unsupervised word translation",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "Oxford University Research Archive (ORA) (University of Oxford)",
+  "url": "https://ora.ox.ac.uk/objects/uuid:f4cbea7b-4014-49e5-b85a-235b40092c6f",
+  "abstract": "There are thousands of actively spoken languages on Earth, but a single visual world. Grounding in this visual world has the potential to bridge the gap between all these languages. Our goal is to use visual grounding to improve unsupervised word mapping between languages. The key idea is to establish a common visual representation between two languages by learning embeddings from unpaired instructional videos narrated in the native language. Given this shared embedding we demonstrate that (i) we can map words between the languages, particularly the 'visual' words; (ii) that the shared embedding provides a good initialization for existing unsupervised text-based word translation techniques, forming the basis for our proposed hybrid visual-text mapping algorithm, MUVE; and (iii) our approach achieves superior performance by addressing the shortcomings of text-based methods - it is more robust, handles datasets with less commonality, and is applicable to low-resource languages. We apply these methods to translate words from English to French, Korean, and Japanese - all without any parallel corpora and simply by watching many videos of people speaking while doing things.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2465,
+  "title": "XGAN: Unsupervised Image-to-Image Translation for Many-to-Many Mappings",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1711.05139",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2464,
+  "title": "Learning Robust and Multilingual Speech Representations",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2020.findings-emnlp.106",
+  "abstract": "Unsupervised speech representation learning has shown remarkable success at finding representations that correlate with phonetic structures and improve downstream speech recognition performance. However, most research has been focused on evaluating the representations in terms of their ability to improve the performance of speech recognition systems on read English (e.g. Wall Street Journal and LibriSpeech). This evaluation methodology overlooks two important desiderata that speech representations should have: robustness to domain shifts and transferability to other languages. In this paper we learn representations from up to 8000 hours of diverse and noisy speech data and evaluate the representations by looking at their robustness to domain shifts and their ability to improve recognition performance in many languages. We find that our representations confer significant robustness advantages to the resulting recognition systems: we see significant improvements in out-of-domain transfer relative to baseline feature sets and the features likewise provide improvements in 25 phonetically diverse languages.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2463,
+  "title": "The Best Defense Is a Good Offense: Adversarial Attacks to Avoid Modulation Detection",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "IRIS UNIMORE (University of Modena and Reggio Emilia)",
+  "url": "http://hdl.handle.net/11380/1215187",
+  "abstract": "We consider a communication scenario, in which an intruder tries to determine the modulation scheme of the intercepted signal. Our aim is to minimize the accuracy of the intruder, while guaranteeing that the intended receiver can still recover the underlying message with the highest reliability. This is achieved by perturbing channel input symbols at the encoder, similarly to adversarial attacks against classifiers in machine learning. In image classification, the perturbation is limited to be imperceptible to a human observer, while in our case the perturbation is constrained so that the message can still be reliably decoded by the legitimate receiver, which is oblivious to the perturbation. Simulation results demonstrate the viability of our approach to make wireless communication secure against state-of-the-art intruders (using deep learning or decision trees) with minimal sacrifice in the communication performance. On the other hand, we also demonstrate that using diverse training data and curriculum learning can significantly boost the accuracy of the intruder.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2462,
+  "title": "Message Passing Neural Networks",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "Lecture notes in physics",
+  "url": "https://doi.org/10.1007/978-3-030-40245-7_10",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2461,
+  "title": "Efficient Neighbourhood Consensus Networks via Submanifold Sparse Convolutions",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-030-58545-7_35",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2460,
+  "title": "Fairness in Machine Learning",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "Studies in computational intelligence",
+  "url": "https://arxiv.org/abs/2012.15816",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2459,
+  "title": "International evaluation of an AI system for breast cancer screening",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-019-1799-6",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2848,
+  "title": "Neural Network Surgery with Sets",
+  "org": "openai",
+  "date": "2019-12-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1912.06719",
+  "abstract": "The cost to train machine learning models has been increasing exponentially, making exploration and research into the correct features and architecture a costly or intractable endeavor at scale. However, using a technique named \"surgery\" OpenAI Five was continuously trained to play the game DotA 2 over the course of 10 months through 20 major changes in features and architecture. Surgery transfers trained weights from one network to another after a selection process to determine which sections of the model are unchanged and which must be re-initialized. In the past, the selection process relied on heuristics, manual labor, or pre-existing boundaries in the structure of the model, limiting the ability to salvage experiments after modifications of the feature set or input reorderings. We propose a solution to automatically determine which components of a neural network model should be salvaged and which require retraining. We achieve this by allowing the model to operate over discrete sets of features and use set-based operations to determine the exact relationship between inputs and outputs, and how they change across tweaks in model architecture. In this paper, we introduce the methodology for enabling neural networks to operate on sets, derive two methods for detecting feature-parameter interaction maps, and show their equivalence. We empirically validate that we can surgery weights across feature and architecture changes to the OpenAI Five model.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2847,
+  "title": "Long-Term Planning and Situational Awareness in OpenAI Five",
+  "org": "openai",
+  "date": "2019-12-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1912.06721",
+  "abstract": "Understanding how knowledge about the world is represented within model-free deep reinforcement learning methods is a major challenge given the black box nature of its learning process within high-dimensional observation and action spaces. AlphaStar and OpenAI Five have shown that agents can be trained without any explicit hierarchical macro-actions to reach superhuman skill in games that require taking thousands of actions before reaching the final goal. Assessing the agent's plans and game understanding becomes challenging given the lack of hierarchy or explicit representations of macro-actions in these models, coupled with the incomprehensible nature of the internal representations. In this paper, we study the distributed representations learned by OpenAI Five to investigate how game knowledge is gradually obtained over the course of training. We also introduce a general technique for learning a model from the agent's hidden states to identify the formation of plans and subgoals. We show that the agent can learn situational similarity across actions, and find evidence of planning towards accomplishing subgoals minutes before they are executed. We perform a qualitative analysis of these predictions during the games against the DotA 2 world champions OG in April 2019.",
+  "needs_fetch": false
+ }
+]

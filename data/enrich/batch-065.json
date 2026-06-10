@@ -1,0 +1,302 @@
+[
+ {
+  "id": 122,
+  "title": "Language Models (Mostly) Know What They Know",
+  "org": "anthropic",
+  "date": "2022-07-11",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/language-models-mostly-know-what-they-know",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1957,
+  "title": "Evolutionary Dynamics and Phi-Regret Minimization in Games",
+  "org": "deepmind",
+  "date": "2022-07-08",
+  "venue": "Journal of Artificial Intelligence Research",
+  "url": "https://doi.org/10.1613/jair.1.13187",
+  "abstract": "Regret has been established as a foundational concept in online learning, and likewise has important applications in the analysis of learning dynamics in games. Regret quantifies the difference between a learner’s performance against a baseline in hindsight. It is well known that regret-minimizing algorithms converge to certain classes of equilibria in games; however, traditional forms of regret used in game theory predominantly consider baselines that permit deviations to deterministic actions or strategies. In this paper, we revisit our understanding of regret from the perspective of deviations over partitions of the full mixed strategy space (i.e., probability distributions over pure strategies), under the lens of the previously-established Φ-regret framework, which provides a continuum of stronger regret measures. Importantly, Φ-regret enables learning agents to consider deviations from and to mixed strategies, generalizing several existing notions of regret such as external, internal, and swap regret, and thus broadening the insights gained from regret-based analysis of learning algorithms. We prove here that the well-studied evolutionary learning algorithm of replicator dynamics (RD) seamlessly minimizes the strongest possible form of Φ-regret in generic 2 × 2 games, without any modification of the underlying algorithm itself. We subsequently conduct experiments validating our theoretical results in a suite of 144 2 × 2 games wherein RD exhibits a diverse set of behavio",
+  "needs_fetch": false
+ },
+ {
+  "id": 1958,
+  "title": "Discovery of archaeal fusexins homologous to eukaryotic HAP2/GCS1 gamete fusion proteins",
+  "org": "deepmind",
+  "date": "2022-07-06",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-022-31564-1",
+  "abstract": "Sexual reproduction consists of genome reduction by meiosis and subsequent gamete fusion. The presence of genes homologous to eukaryotic meiotic genes in archaea and bacteria suggests that DNA repair mechanisms evolved towards meiotic recombination. However, fusogenic proteins resembling those found in gamete fusion in eukaryotes have so far not been found in prokaryotes. Here, we identify archaeal proteins that are homologs of fusexins, a superfamily of fusogens that mediate eukaryotic gamete and somatic cell fusion, as well as virus entry. The crystal structure of a trimeric archaeal fusexin (Fusexin1 or Fsx1) reveals an archetypical fusexin architecture with unique features such as a six-helix bundle and an additional globular domain. Ectopically expressed Fusexin1 can fuse mammalian cells, and this process involves the additional globular domain and a conserved fusion loop. Furthermore, archaeal fusexin genes are found within integrated mobile elements, suggesting potential roles in cell-cell fusion and gene exchange in archaea, as well as different scenarios for the evolutionary history of fusexins.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1959,
+  "title": "Human-centred mechanism design with Democratic AI",
+  "org": "deepmind",
+  "date": "2022-07-04",
+  "venue": "Nature Human Behaviour",
+  "url": "https://doi.org/10.1038/s41562-022-01383-x",
+  "abstract": "Building artificial intelligence (AI) that aligns with human values is an unsolved problem. Here we developed a human-in-the-loop research pipeline called Democratic AI, in which reinforcement learning is used to design a social mechanism that humans prefer by majority. A large group of humans played an online investment game that involved deciding whether to keep a monetary endowment or to share it with others for collective benefit. Shared revenue was returned to players under two different redistribution mechanisms, one designed by the AI and the other by humans. The AI discovered a mechanism that redressed initial wealth imbalance, sanctioned free riders and successfully won the majority vote. By optimizing for human preferences, Democratic AI offers a proof of concept for value-aligned policy innovation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1965,
+  "title": "Making Sense of Raw Input (Extended Abstract)",
+  "org": "deepmind",
+  "date": "2022-07-01",
+  "venue": "Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.24963/ijcai.2022/799",
+  "abstract": "How should a machine intelligence perform unsupervised structure discovery over streams of sensory input? One approach to this problem is to cast it as an apperception task. Here, the task is to construct an explicit interpretable theory that both explains the sensory sequence and also satisfies a set of unity conditions, designed to ensure that the constituents of the theory are connected in a relational structure. However, the original formulation of the apperception task had one fundamental limitation: it assumed the raw sensory input had already been parsed using a set of discrete categories, so that all the system had to do was receive this already-digested symbolic input, and make sense of it. But what if we don't have access to pre-parsed input? What if our sensory sequence is raw unprocessed information? The central contribution of this paper is a neuro-symbolic framework for distilling interpretable theories out of streams of raw, unprocessed sensory experience. First, we extend the definition of the apperception task to include ambiguous (but still symbolic) input: sequences of sets of disjunctions. Next, we use a neural network to map raw sensory input to disjunctive input. Our binary neural network is encoded as a logic program, so the weights of the network and the rules of the theory can be solved jointly as a single SAT problem. This way, we are able to jointly learn how to perceive (mapping raw sensory information to concepts) and apperceive (combining concept",
+  "needs_fetch": false
+ },
+ {
+  "id": 1964,
+  "title": "On the Expressivity of Markov Reward (Extended Abstract)",
+  "org": "deepmind",
+  "date": "2022-07-01",
+  "venue": "Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.24963/ijcai.2022/730",
+  "abstract": "Reward is the driving force for reinforcement-learning agents. We here set out to understand the expressivity of Markov reward as a way to capture tasks that we would want an agent to perform. We frame this study around three new abstract notions of \"task\": (1) a set of acceptable behaviors, (2) a partial ordering over behaviors, or (3) a partial ordering over trajectories. Our main results prove that while reward can express many of these tasks, there exist instances of each task type that no Markov reward function can capture. We then provide a set of polynomial-time algorithms that construct a Markov reward function that allows an agent to perform each task type, and correctly determine when no such reward function exists.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1963,
+  "title": "Detect, Understand, Act: A Neuro-Symbolic Hierarchical Reinforcement Learning Framework (Extended Abstract)",
+  "org": "deepmind",
+  "date": "2022-07-01",
+  "venue": "Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.24963/ijcai.2022/742",
+  "abstract": "We introduce Detect, Understand, Act (DUA), a neuro-symbolic reinforcement learning framework. The Detect component is composed of a traditional computer vision object detector and tracker. The Act component houses a set of options, high-level actions enacted by pre-trained deep reinforcement learning (DRL) policies. The Understand component provides a novel answer set programming (ASP) paradigm for effectively learning symbolic meta-policies over options using inductive logic programming (ILP). We evaluate our framework on the Animal-AI (AAI) competition testbed, a set of physical cognitive reasoning problems. Given a set of pre-trained DRL policies, DUA requires only a few examples to learn a meta-policy that allows it to improve the state-of-the-art on multiple of the most challenging categories from the testbed. DUA constitutes the first holistic hybrid integration of computer vision, ILP and DRL applied to an AAI-like environment and sets the foundations for further use of ILP in complex DRL challenges.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1962,
+  "title": "Ethics and Governance of Artificial Intelligence: A Survey of Machine Learning Researchers (Extended Abstract)",
+  "org": "deepmind",
+  "date": "2022-07-01",
+  "venue": "Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.24963/ijcai.2022/811",
+  "abstract": "Machine learning (ML) and artificial intelligence (AI) researchers play an important role in the ethics and governance of AI, including through their work, advocacy, and choice of employment. Nevertheless, this influential group's attitudes are not well understood, undermining our ability to discern consensuses or disagreements between AI/ML researchers. To examine these researchers' views, we conducted a survey of those who published in two top AI/ML conferences (N = 524). We compare these results with those from a 2016 survey of AI/ML researchers and a 2018 survey of the US public. We find that AI/ML researchers place high levels of trust in international organizations and scientific organizations to shape the development and use of AI in the public interest; moderate trust in most Western tech companies; and low trust in national militaries, Chinese tech companies, and Facebook. While the respondents were overwhelmingly opposed to AI/ML researchers working on lethal autonomous weapons, they are less opposed to researchers working on other military applications of AI, particularly logistics algorithms. A strong majority of respondents think that AI safety research should be prioritized more and a majority that ML institutions should conduct pre-publication review to assess potential harms. Being closer to the technology itself, AI/ML researchers are well placed to highlight new risks and develop technical solutions, so this novel data has broad relevance. The findings shoul",
+  "needs_fetch": false
+ },
+ {
+  "id": 1961,
+  "title": "Approximate Exploitability: Learning a Best Response",
+  "org": "deepmind",
+  "date": "2022-07-01",
+  "venue": "Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.24963/ijcai.2022/484",
+  "abstract": "Researchers have shown that neural networks are vulnerable to adversarial examples and subtle environment changes. The resulting errors can look like blunders to humans, eroding trust in these agents. In prior games research, agent evaluation often focused on the in-practice game outcomes. Such evaluation typically fails to evaluate robustness to worst-case outcomes. Computer poker research has examined how to assess such worst-case performance. Unfortunately, exact computation is infeasible with larger domains, and existing approximations are poker-specific. We introduce ISMCTS-BR, a scalable search-based deep reinforcement learning algorithm for learning a best response to an agent, approximating worst-case performance. We demonstrate the technique in several games against a variety of agents, including several AlphaZero-based agents. Supplementary material is available at https://arxiv.org/abs/2004.09677.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1960,
+  "title": "Abstraction for Deep Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2022-07-01",
+  "venue": "Proceedings of the Thirty-First International Joint Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.24963/ijcai.2022/780",
+  "abstract": "We characterise the problem of abstraction in the context of deep reinforcement learning. Various well established approaches to analogical reasoning and associative memory might be brought to bear on this issue, but they present difficulties because of the need for end-to-end differentiability. We review developments in AI and machine learning that could facilitate their adoption.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1976,
+  "title": "A Complete Criterion for Value of Information in Soluble Influence Diagrams",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v36i9.21242",
+  "abstract": "Influence diagrams have recently been used to analyse the safety and fairness properties of AI systems. A key building block for this analysis is a graphical criterion for value of information (VoI). This paper establishes the first complete graphical criterion for VoI in influence diagrams with multiple decisions. Along the way, we establish two techniques for proving properties of multi-decision influence diagrams: ID homomorphisms are structure-preserving transformations of influence diagrams, while a Tree of Systems is a collection of paths that captures how information and control can flow in an influence diagram.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1975,
+  "title": "Chaining Value Functions for Off-Policy Learning",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v36i8.20792",
+  "abstract": "To accumulate knowledge and improve its policy of behaviour, a reinforcement learning agent can learn `off-policy' about policies that differ from the policy used to generate its experience. This is important to learn counterfactuals, or because the experience was generated out of its own control. However, off-policy learning is non-trivial, and standard reinforcement-learning algorithms can be unstable and divergent. In this paper we discuss a novel family of off-policy prediction algorithms which are convergent by construction. The idea is to first learn on-policy about the data-generating behaviour, and then bootstrap an off-policy value estimate on this on-policy estimate, thereby constructing a value estimate that is partially off-policy. This process can be repeated to build a chain of value functions, each time bootstrapping a new estimate on the previous estimate in the chain. Each step in the chain is stable and hence the complete algorithm is guaranteed to be stable. Under mild conditions this comes arbitrarily close to the off-policy TD solution when we increase the length of the chain. Hence it can compute the solution even in cases where off-policy TD diverges. We prove that the proposed scheme is convergent and corresponds to an iterative decomposition of the inverse key matrix. Furthermore it can be interpreted as estimating a novel objective -- that we call a `k-step expedition' -- of following the target policy for finitely many steps before continuing indefi",
+  "needs_fetch": false
+ },
+ {
+  "id": 1974,
+  "title": "Multi-Agent Reinforcement Learning with General Utilities via Decentralized Shadow Reward Actor-Critic",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v36i8.20887",
+  "abstract": "We posit a new mechanism for cooperation in multi-agent reinforcement learning (MARL) based upon any nonlinear function of the team's long-term state-action occupancy measure, i.e., a general utility. This subsumes the cumulative return but also allows one to incorporate risk-sensitivity, exploration, and priors. We derive the Decentralized Shadow Reward Actor-Critic (DSAC) in which agents alternate between policy evaluation (critic), weighted averaging with neighbors (information mixing), and local gradient updates for their policy parameters (actor). DSAC augments the classic critic step by requiring agents to (i) estimate their local occupancy measure in order to (ii) estimate the derivative of the local utility with respect to their occupancy measure, i.e., the ``shadow reward\". DSAC converges to ϵ-stationarity in O(1/ϵ^2.5) or faster O(1/ϵ^2) steps with high probability, depending on the amount of communications. We further establish the non-existence of spurious stationary points for this problem, that is, DSAC finds the globally optimal policy. Experiments demonstrate the merits of goals beyond the cumulative return in cooperative MARL.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1973,
+  "title": "Learning Expected Emphatic Traces for Deep RL",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v36i6.20660",
+  "abstract": "Off-policy sampling and experience replay are key for improving sample efficiency and scaling model-free temporal difference learning methods. When combined with function approximation, such as neural networks, this combination is known as the deadly triad and is potentially unstable. Recently, it has been shown that stability and good performance at scale can be achieved by combining emphatic weightings and multi-step updates. This approach, however, is generally limited to sampling complete trajectories in order, to compute the required emphatic weighting. In this paper we investigate how to combine emphatic weightings with non-sequential, off-line data sampled from a replay buffer. We develop a multi-step emphatic weighting that can be combined with replay, and a time-reversed n-step TD learning algorithm to learn the required emphatic weighting. We show that these state weightings reduce variance compared with prior approaches, while providing convergence guarantees. We tested the approach at scale on Atari 2600 video games, and observed that the new X-ETD(n) agent improved over baseline agents, highlighting both the scalability and broad applicability of our approach.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1972,
+  "title": "Why Fair Labels Can Yield Unfair Predictions: Graphical Conditions for Introduced Unfairness",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v36i9.21182",
+  "abstract": "In addition to reproducing discriminatory relationships in the training data, machine learning (ML) systems can also introduce or amplify discriminatory effects. We refer to this as introduced unfairness, and investigate the conditions under which it may arise. To this end, we propose introduced total variation as a measure of introduced unfairness, and establish graphical conditions under which it may be incentivised to occur. These criteria imply that adding the sensitive attribute as a feature removes the incentive for introduced variation under well-behaved loss functions. Additionally, taking a causal perspective, introduced path-specific effects shed light on the issue of when specific paths should be considered fair.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1971,
+  "title": "Algorithmic Concept-Based Explainable Reasoning",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v36i6.20623",
+  "abstract": "Recent research on graph neural network (GNN) models successfully applied GNNs to classical graph algorithms and combinatorial optimisation problems. This has numerous benefits, such as allowing applications of algorithms when preconditions are not satisfied, or reusing learned models when sufficient training data is not available or can't be generated. Unfortunately, a key hindrance of these approaches is their lack of explainability, since GNNs are black-box models that cannot be interpreted directly. In this work, we address this limitation by applying existing work on concept-based explanations to GNN models. We introduce concept-bottleneck GNNs, which rely on a modification to the GNN readout mechanism. Using three case studies we demonstrate that: (i) our proposed model is capable of accurately learning concepts and extracting propositional formulas based on the learned concepts for each target class; (ii) our concept-based GNN models achieve comparative performance with state-of-the-art models; (iii) we can derive global graph concepts, without explicitly providing any supervision on graph-level concepts.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1970,
+  "title": "Online Apprenticeship Learning",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v36i8.20798",
+  "abstract": "In Apprenticeship Learning (AL), we are given a Markov Decision Process (MDP) without access to the cost function. Instead, we observe trajectories sampled by an expert that acts according to some policy. The goal is to find a policy that matches the expert's performance on some predefined set of cost functions. We introduce an online variant of AL (Online Apprenticeship Learning; OAL), where the agent is expected to perform comparably to the expert while interacting with the environment. We show that the OAL problem can be effectively solved by combining two mirror descent based no-regret algorithms: one for policy optimization and another for learning the worst case cost. By employing optimistic exploration, we derive a convergent algorithm with O(sqrt(K)) regret, where K is the number of interactions with the MDP, and an additional linear error term that depends on the amount of expert trajectories available. Importantly, our algorithm avoids the need to solve an MDP at each iteration, making it more practical compared to prior AL methods. Finally, we implement a deep variant of our algorithm which shares some similarities to GAIL, but where the discriminator is replaced with the costs learned by OAL. Our simulations suggest that OAL performs well in high dimensional control problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1969,
+  "title": "Path-Specific Objectives for Safer Agent Incentives",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v36i9.21186",
+  "abstract": "We present a general framework for training safe agents whose naive incentives are unsafe. As an example, manipulative or deceptive behaviour can improve rewards but should be avoided. Most approaches fail here: agents maximize expected return by any means necessary. We formally describe settings with `delicate' parts of the state which should not be used as a means to an end. We then train agents to maximize the causal effect of actions on the expected return which is not mediated by the delicate parts of state, using Causal Influence Diagram analysis. The resulting agents have no incentive to control the delicate state. We further show how our framework unifies and generalizes existing proposals.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1968,
+  "title": "Generalization in Mean Field Games by Learning Master Policies",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://arxiv.org/abs/2109.09717",
+  "abstract": "Mean Field Games (MFGs) can potentially scale multi-agent systems to extremely large populations of agents. Yet, most of the literature assumes a single initial distribution for the agents, which limits the practical applications of MFGs. Machine Learning has the potential to solve a wider diversity of MFG problems thanks to generalizations capacities. We study how to leverage these generalization properties to learn policies enabling a typical agent to behave optimally against any population distribution. In reference to the Master equation in MFGs, we coin the term “Master policies” to describe them and we prove that a single Master policy provides a Nash equilibrium, whatever the initial distribution. We propose a method to learn such Master policies. Our approach relies on three ingredients: adding the current population distribution as part of the observation, approximating Master policies with neural networks, and training via Reinforcement Learning and Fictitious Play. We illustrate on numerical examples not only the efficiency of the learned Master policy but also its generalization capabilities beyond the distributions used for training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1967,
+  "title": "Introducing Symmetries to Black Box Meta Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v36i7.20681",
+  "abstract": "Meta reinforcement learning (RL) attempts to discover new RL algorithms automatically from environment interaction. In so-called black-box approaches, the policy and the learning algorithm are jointly represented by a single neural network. These methods are very flexible, but they tend to underperform compared to human-engineered RL algorithms in terms of generalisation to new, unseen environments. In this paper, we explore the role of symmetries in meta-generalisation. We show that a recent successful meta RL approach that meta-learns an objective for backpropagation-based learning exhibits certain symmetries (specifically the reuse of the learning rule, and invariance to input and output permutations) that are not present in typical black-box meta RL systems. We hypothesise that these symmetries can play an important role in meta-generalisation. Building off recent work in black-box supervised meta learning, we develop a black-box meta RL system that exhibits these same symmetries. We show through careful experimentation that incorporating these symmetries can lead to algorithms with a greater ability to generalise to unseen action &amp; observation spaces, tasks, and environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1966,
+  "title": "Role of Human-AI Interaction in Selective Prediction",
+  "org": "deepmind",
+  "date": "2022-06-28",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/20465",
+  "abstract": "Recent work has shown the potential benefit of selective prediction systems that can learn to defer to a human when the predictions of the AI are unreliable, particularly to improve the reliability of AI systems in high-stakes applications like healthcare or conservation. However, most prior work assumes that human behavior remains unchanged when they solve a prediction task as part of a human-AI team as opposed to by themselves. We show that this is not the case by performing experiments to quantify human-AI interaction in the context of selective prediction. In particular, we study the impact of communicating different types of information to humans about the AI system's decision to defer. Using real-world conservation data and a selective prediction system that improves expected accuracy over that of the human or AI system working individually, we show that this messaging has a significant impact on the accuracy of human judgements. Our results study two components of the messaging strategy: 1) Whether humans are informed about the prediction of the AI system and 2) Whether they are informed about the decision of the selective prediction system to defer. By manipulating these messaging components, we show that it is possible to significantly boost human performance by informing the human of the decision to defer, but not revealing the prediction of the AI. We therefore show that it is vital to consider how the decision to defer is communicated to a human when designing sel",
+  "needs_fetch": false
+ },
+ {
+  "id": 1027,
+  "title": "DALL·E 2 pre-training mitigations",
+  "org": "openai",
+  "date": "2022-06-28",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/dall-e-2-pre-training-mitigations/",
+  "abstract": "In order to share the magic of DALL·E 2 with a broad audience, we needed to reduce the risks associated with powerful image generation models. To this end, we put various guardrails in place to prevent generated images from violating our content policy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1028,
+  "title": "Learning to play Minecraft with Video PreTraining",
+  "org": "openai",
+  "date": "2022-06-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/vpt/",
+  "abstract": "We trained a neural network to play Minecraft by Video PreTraining (VPT) on a massive unlabeled video dataset of human Minecraft play, while using only a small amount of labeled contractor data. With fine-tuning, our model can learn to craft diamond tools, a task that usually takes proficient humans over 20 minutes (24,000 actions). Our model uses the native human interface of keypresses and mouse movements, making it quite general, and represents a step towards general computer-using agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2773,
+  "title": "Can GPT-3 write an academic paper on itself, with minimal human input?",
+  "org": "openai",
+  "date": "2022-06-21",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-03701250",
+  "abstract": "GPT-3 is a powerful artificial intelligence system that can generate text. In this paper, we explore GPT-3's ability to write about itself. We find that GPT-3 can generate clear and concise descriptions of its own capabilities and features. This is a significant advance over previous systems, which have often struggled to produce coherent text about themselves. We believe that the benefits of letting GPT-3 write about itself outweigh the risks. However, we recommend that any such writing be closely monitored by researchers in order to mitigate any potential negative consequences.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2774,
+  "title": "Disentangling the Components of Ethical Research in Machine Learning",
+  "org": "openai",
+  "date": "2022-06-20",
+  "venue": "2022 ACM Conference on Fairness, Accountability, and Transparency",
+  "url": "https://doi.org/10.1145/3531146.3533781",
+  "abstract": "While practical applications of machine learning have been the target of considerable normative scrutiny over the past decade, there is growing concern with machine learning research as well. Debates are currently unfolding about how the research community should develop its research agendas, conduct its research, evaluate its research contributions, and handle the publication and dissemination of its findings, among other matters. At times, these debates have been quite heated, with different actors adopting different positions on what it means to do machine learning research ethically. In this paper, we show that some of the disagreement owes to a lack of clarity about what ethical issues are at stake in machine learning research, how these issues—in particular, the concerns with research integrity, research process harms, and downstream consequences—relate to (or, more often, differ from) one another. We then explore which mechanisms are most appropriate for dealing with the different types of ethical issues, and highlight which ethical issues require more attention than they are currently receiving. Ultimately, we hope to foster more productive discussions about the responsibilities that the community bears in addressing the ethical challenges tied to machine learning research and how to best fulfil these responsibilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1979,
+  "title": "Structural basis of template strand deoxyuridine promoter recognition by a viral RNA polymerase",
+  "org": "deepmind",
+  "date": "2022-06-20",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-022-31214-6",
+  "abstract": "Recognition of promoters in bacterial RNA polymerases (RNAPs) is controlled by sigma subunits. The key sequence motif recognized by the sigma, the -10 promoter element, is located in the non-template strand of the double-stranded DNA molecule ~10 nucleotides upstream of the transcription start site. Here, we explain the mechanism by which the phage AR9 non-virion RNAP (nvRNAP), a bacterial RNAP homolog, recognizes the -10 element of its deoxyuridine-containing promoter in the template strand. The AR9 sigma-like subunit, the nvRNAP enzyme core, and the template strand together form two nucleotide base-accepting pockets whose shapes dictate the requirement for the conserved deoxyuridines. A single amino acid substitution in the AR9 sigma-like subunit allows one of these pockets to accept a thymine thus expanding the promoter consensus. Our work demonstrates the extent to which viruses can evolve host-derived multisubunit enzymes to make transcription of their own genes independent of the host.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1978,
+  "title": "Subverting machines, fluctuating identities: Re-learning human categorization",
+  "org": "deepmind",
+  "date": "2022-06-20",
+  "venue": "2022 ACM Conference on Fairness, Accountability, and Transparency",
+  "url": "https://arxiv.org/abs/2205.13740",
+  "abstract": "Most machine learning systems that interact with humans construct some notion of a person’s “identity,” yet the default paradigm in AI research envisions identity with essential attributes that are discrete and static. In stark contrast, strands of thought within critical theory present a conception of identity as malleable and constructed entirely through interaction; a doing rather than a being. In this work, we distill some of these ideas for machine learning practitioners and introduce a theory of identity as autopoiesis, circular processes of formation and function. We argue that the default paradigm of identity used by the field immobilizes existing identity categories and the power differentials that co-occur, due to the absence of iterative feedback to our models. This includes a critique of emergent AI fairness practices that continue to impose the default paradigm. Finally, we apply our theory to sketch approaches to autopoietic identity through multilevel optimization and relational learning. While these ideas raise many open questions, we imagine the possibilities of machines that are capable of expressing human identity as a relationship perpetually in flux.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1977,
+  "title": "Taxonomy of Risks posed by Language Models",
+  "org": "deepmind",
+  "date": "2022-06-20",
+  "venue": "2022 ACM Conference on Fairness, Accountability, and Transparency",
+  "url": "https://doi.org/10.1145/3531146.3533088",
+  "abstract": "Responsible innovation on large-scale Language Models (LMs) requires foresight into and in-depth understanding of the risks these models may pose. This paper develops a comprehensive taxonomy of ethical and social risks associated with LMs. We identify twenty-one risks, drawing on expertise and literature from computer science, linguistics, and the social sciences. We situate these risks in our taxonomy of six risk areas: I. Discrimination, Hate speech and Exclusion, II. Information Hazards, III. Misinformation Harms, IV. Malicious Uses, V. Human-Computer Interaction Harms, and VI. Environmental and Socioeconomic harms. For risks that have already been observed in LMs, the causal mechanism leading to harm, evidence of the risk, and approaches to risk mitigation are discussed. We further describe and analyse risks that have not yet been observed but are anticipated based on assessments of other language technologies, and situate these in the same taxonomy. We underscore that it is the responsibility of organizations to engage with the mitigations we discuss throughout the paper. We close by highlighting challenges and directions for further research on risk evaluation and mitigation with the goal of ensuring that language models are developed responsibly.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1980,
+  "title": "Performance of a one-parameter correlation factor for transcorrelation: Study on a series of second row atomic and molecular systems",
+  "org": "deepmind",
+  "date": "2022-06-17",
+  "venue": "The Journal of Chemical Physics",
+  "url": "https://doi.org/10.1063/5.0088981",
+  "abstract": "In this work, we investigate the performance of a recently proposed transcorrelated (TC) approach based on a single-parameter correlation factor [E. Giner, J. Chem. Phys. 154, 084119 (2021)] for systems involving more than two electrons. The benefit of such an approach relies on its simplicity as efficient numerical–analytical schemes can be set up to compute the two- and three-body integrals occurring in the effective TC Hamiltonian. To obtain accurate ground state energies within a given basis set, the present TC scheme is coupled to the recently proposed TC–full configuration interaction quantum Monte Carlo method [Cohen et al., J. Chem. Phys. 151, 061101 (2019)]. We report ground state total energies on the Li–Ne series, together with their first cations, computed with increasingly large basis sets and compare to more elaborate correlation factors involving electron–electron–nucleus coordinates. Numerical results on the Li–Ne ionization potentials show that the use of the single-parameter correlation factor brings on average only a slightly lower accuracy (1.2 mH) in a triple-zeta quality basis set with respect to a more sophisticated correlation factor. However, already using a quadruple-zeta quality basis set yields results within chemical accuracy to complete basis set limit results when using this novel single-parameter correlation factor. Calculations on the H2O, CH2, and FH molecules show that a similar precision can be obtained within a triple-zeta quality basis se",
+  "needs_fetch": false
+ },
+ {
+  "id": 1029,
+  "title": "Evolution through large models",
+  "org": "openai",
+  "date": "2022-06-17",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/evolution-through-large-models/",
+  "abstract": "This paper pursues the insight that large language models (LLMs) trained to generate code can vastly improve the effectiveness of mutation operators applied to programs in genetic programming (GP). Because such LLMs benefit from training data that includes sequential changes and modifications, they can approximate likely changes that humans would make. To highlight the breadth of implications of such evolution through large models (ELM), in the main experiment ELM combined with MAP-Elites generates hundreds of thousands of functional examples of Python programs that output working ambulating robots in the Sodarace domain, which the original LLM had never seen in pre-training. These examples then help to bootstrap training a new conditional language model that can output the right walker for a particular terrain. The ability to bootstrap new models that can output appropriate artifacts for a given context in a domain where zero training data was previously available carries implications for open-endedness, deep learning, and reinforcement learning. These implications are explored here in depth in the hope of inspiring new directions of research now opened up by ELM.",
+  "needs_fetch": false
+ }
+]

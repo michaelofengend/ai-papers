@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1900,
+  "title": "Factorization of graphs in the compositional reuse of experience",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.32470/ccn.2023.1188-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1899,
+  "title": "Human prefrontal neurons encode economic risk and risk prediction error",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.32470/ccn.2023.1400-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1898,
+  "title": "Correlation Based Semantic Transfer with Application to Domain Adaptation",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-30105-6_49",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1897,
+  "title": "Reinforcement Learning with Information-Theoretic Actuation",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-19907-3_18",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1896,
+  "title": "Unsupervised Opinion Summarization Using Approximate Geodesics",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.newsum-1.11",
+  "abstract": "Opinion summarization is the task of creating summaries capturing popular opinions from user reviews.In this paper, we introduce Geodesic Summarizer (GeoSumm), a novel system to perform unsupervised extractive opinion summarization. GeoSumm consists of an encoder-decoder based representation learning model that generates topical representations of texts. These representations capture the underlying semantics of the text as a distribution over learnable latent units. GeoSumm generates these topical representations by performing dictionary learning over pre-trained text representations at multiple layers of the decoder. We then use these topical representations to quantify the importance of review sentences using a novel approximate geodesic distance-based scoring mechanism. We use the importance scores to identify popular opinions in order to compose general and aspect-specific summaries. Our proposed model, GeoSumm, achieves strong performance on three opinion summarization datasets. We perform additional experiments to analyze the functioning of our model and showcase the generalization ability of GeoSumm across different domains.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1895,
+  "title": "Know your audience: specializing grounded language models with listener subtraction",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.eacl-main.279",
+  "abstract": "Effective communication requires adapting to the idiosyncrasies of each communicative context—such as the common ground shared with each partner. Humans demonstrate this ability to specialize to their audience in many contexts, such as the popular game Dixit. We take inspiration from Dixit to formulate a multi-agent image reference game where a (trained) speaker model is rewarded for describing a target image such that one (pretrained) listener model can correctly identify it among distractors, but another listener cannot. To adapt, the speaker must exploit differences in the knowledge it shares with the different listeners. We show that finetuning an attention-based adapter between a CLIP vision encoder and a large language model in this contrastive, multi-agent setting gives rise to context-dependent natural language specialization from rewards only, without direct supervision. Through controlled experiments, we show that training a speaker with two listeners that perceive differently, using our method, allows the speaker to adapt to the idiosyncracies of the listeners. Furthermore, we show zero-shot transfer of the specialization to real-world data. Our experiments demonstrate a method for specializing grounded language models without direct supervision and highlight the interesting research challenges posed by complex multi-agent communication.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1894,
+  "title": "On “Scientific Debt” in NLP: A Case for More Rigour in Language Model Pre-Training Research",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.acl-long.477",
+  "abstract": "Made Nindyatama Nityasya, Haryo Wibowo, Alham Fikri Aji, Genta Winata, Radityo Eko Prasojo, Phil Blunsom, Adhiguna Kuncoro. Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1893,
+  "title": "A Natural Bias for Language Generation Models",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.acl-short.22",
+  "abstract": "Clara Meister, Wojciech Stokowiec, Tiago Pimentel, Lei Yu, Laura Rimell, Adhiguna Kuncoro. Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers). 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1892,
+  "title": "Machine learning in connectomics: from representation learning to model fitting",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Elsevier eBooks",
+  "url": "https://doi.org/10.1016/b978-0-323-85280-7.00005-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1891,
+  "title": "Don’t Take This Out of Context!: On the Need for Contextual Models and Evaluations for Stylistic Rewriting",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.emnlp-main.701",
+  "abstract": "Most existing stylistic text rewriting methods and evaluation metrics operate on a sentence level, but ignoring the broader context of the text can lead to preferring generic, ambiguous, and incoherent rewrites. In this paper, we investigate integrating the preceding textual context into both the rewriting and evaluation stages of stylistic text rewriting, and introduce a new composite contextual evaluation metric CtxSimFit that combines similarity to the original sentence with contextual cohesiveness. We comparatively evaluate non-contextual and contextual rewrites in formality, toxicity, and sentiment transfer tasks. Our experiments show that humans significantly prefer contextual rewrites as more fitting and natural over non-contextual ones, yet existing sentence-level automatic metrics (e.g., ROUGE, SBERT) correlate poorly with human preferences (𝜌=0–0.3). In contrast, human preferences are much better reflected by both our novel CtxSimFit (𝜌=0.7–0.9) as well as proposed context-infused versions of common metrics (𝜌=0.4–0.7). Overall, our findings highlight the importance of integrating context into the generation and especially the evaluation stages of stylistic text rewriting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1890,
+  "title": "Triggering Multi-Hop Reasoning for Question Answering in Language Models using Soft Prompts and Random Walks",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.findings-acl.62",
+  "abstract": "Despite readily memorizing world knowledge about entities, pre-trained language models (LMs) struggle to compose together two or more facts to perform multi-hop reasoning in question-answering tasks. In this work, we propose techniques that improve upon this limitation by relying on random-walks over structured knowledge graphs. Specifically, we use soft-prompts to guide LMs to chain together their encoded knowledge by learning to map multi-hop questions to random-walk paths that lead to the answer. Applying our methods on two T5 LMs shows substantial improvements over standard tuning approaches in answering questions that require multi-hop reasoning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1889,
+  "title": "Neural Correlates of Object-Extracted Relative Clause Processing Across English and Chinese",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Neurobiology of Language",
+  "url": "https://doi.org/10.1162/nol_a_00110",
+  "abstract": "Abstract Are the brain bases of language comprehension the same across all human languages, or do these bases vary in a way that corresponds to differences in linguistic typology? English and Mandarin Chinese attest such a typological difference in the domain of relative clauses. Using functional magnetic resonance imaging with English and Chinese participants, who listened to the same translation-equivalent story, we analyzed neuroimages time aligned to object-extracted relative clauses in both languages. In a general linear model analysis of these naturalistic data, comprehension was selectively associated with increased hemodynamic activity in left posterior temporal lobe, angular gyrus, inferior frontal gyrus, precuneus, and posterior cingulate cortex in both languages. This result suggests the processing of object-extracted relative clauses is subserved by a common collection of brain regions, regardless of typology. However, there were also regions that were activated uniquely in our Chinese participants albeit not to a significantly greater degree. These were in the temporal lobe. These Chinese-specific results could reflect structural ambiguity-resolution work that must be done in Chinese but not English object-extracted relative clauses.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1888,
+  "title": "CompoundPiece: Evaluating and Improving Decompounding Performance of Language Models",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.emnlp-main.24",
+  "abstract": "While many languages possess processes of joining two or more words to create compound words, previous studies have been typically limited only to languages with excessively productive compound formation (e.g., German, Dutch) and there is no public dataset containing compound and non-compound words across a large number of languages. In this work, we systematically study decompounding, the task of splitting compound words into their constituents, at a wide scale. We first address the data gap by introducing a dataset of 255k compound and non-compound words across 56 diverse languages obtained from Wiktionary. We then use this dataset to evaluate an array of Large Language Models (LLMs) on the decompounding task. We find that LLMs perform poorly, especially on words which are tokenized unfavorably by subword tokenization. We thus introduce a novel methodology to train dedicated models for decompounding. The proposed two-stage procedure relies on a fully self-supervised objective in the first stage, while the second, supervised learning stage optionally fine-tunes the model on the annotated Wiktionary data. Our self-supervised models outperform the prior best unsupervised decompounding models by 13.9% accuracy on average. Our fine-tuned models outperform all prior (language-specific) decompounding tools. Furthermore, we use our models to leverage decompounding during the creation of a subword tokenizer, which we refer to as CompoundPiece. CompoundPiece tokenizes compound words ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1887,
+  "title": "A Game Theoretic Perspective on Bayesian Many-Objective Optimization",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Natural computing series",
+  "url": "https://doi.org/10.1007/978-3-031-25263-1_11",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1886,
+  "title": "Romanization-based Large-scale Adaptation of Multilingual Language Models",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.findings-emnlp.538",
+  "abstract": "Large multilingual pretrained language models (mPLMs) have become the de facto state of the art for cross-lingual transfer in NLP. However, their large-scale deployment to many languages, besides pretraining data scarcity, is also hindered by the increase in vocabulary size and limitations in their parameter budget. In order to boost the capacity of mPLMs to deal with low-resource and unseen languages, we explore the potential of leveraging transliteration on a massive scale. In particular, we explore the UROMAN transliteration tool, which provides mappings from UTF-8 to Latin characters for all the writing systems, enabling inexpensive romanization for virtually any language. We first focus on establishing how UROMAN compares against other language-specific and manually curated transliterators for adapting multilingual PLMs. We then study and compare a plethora of data- and parameter-efficient strategies for adapting the mPLMs to romanized and non-romanized corpora of 14 diverse low-resource languages. Our results reveal that UROMAN-based transliteration can offer strong performance for many languages, with particular gains achieved in the most challenging setups: on languages with unseen scripts and with limited training data without any vocabulary augmentation. Further analyses reveal that an improved tokenizer based on romanized data can even outperform non-transliteration-based methods in the majority of languages.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1885,
+  "title": "A Comprehensive Evaluation of Tool-Assisted Generation Strategies",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.926",
+  "abstract": "A growing area of research investigates augmenting language models with tools (e.g., search engines, calculators) to overcome their shortcomings (e.g., missing or incorrect knowledge, incorrect logical inferences). Various few-shot tool-usage strategies have been proposed. However, there is no systematic and fair comparison across different strategies, or between these strategies and strong baselines that do not leverage tools. We conduct an extensive empirical analysis, finding that (1) across various datasets, example difficulty levels, and models, strong no-tool baselines are competitive to tool-assisted strategies, implying that effectively using tools with in-context demonstrations is a difficult unsolved problem; (2) for knowledge-retrieval tasks, strategies that *refine* incorrect outputs with tools outperform strategies that retrieve relevant information *ahead of* or *during generation*; (3) tool-assisted strategies are expensive in the number of tokens they require to work—incurring additional costs by orders of magnitude—which does not translate into significant improvement in performance. Overall, our findings suggest that few-shot tool integration is still an open challenge, emphasizing the need for comprehensive evaluations of future strategies to accurately assess their *benefits* and *costs*.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1884,
+  "title": "Flow-Lenia: Towards open-ended evolution in cellular automata through mass conservation and parameter localization",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.1162/isal_a_00651",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 1883,
+  "title": "Learning Interpretable Logic for Agent-Based Models from Domain Independent Primitives",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Journal of Artificial Societies and Social Simulation",
+  "url": "https://doi.org/10.18564/jasss.5087",
+  "abstract": "Genetic programming (GP) is a powerful method applicable to Inverse Generative Social Science (IGSS) for learning non-trivial agent logic in agent-based models (ABMs). While previous attempts at using evolutionary algorithms for learning ABM structures have focused on recombining domain-specific primitives, this paper extends prior work by developing techniques to evolve interpretable agent logic from scratch using a highly flexible domain-specific language (DSL) comprised of domain-independent primitives, such as basic mathematical operators. We demonstrate the flexibility of our method by learning symbolic models in two distinct domains: flocking and opinion dynamics, targeting data generated by reference models. Our results show that the evolved solutions closely resemble the reference models in behavior, generalize exceptionally well, and exhibit robustness to noise. Additionally, we provide an in-depth analysis of the generated code and intermediate behaviors, revealing the training process's progression. We explore techniques for further enhancing the interpretability of the resulting code and include a population-level analysis of the diversity for both models. This research demonstrates the potential of GP in IGSS for learning interpretable agent logic in ABMs across various domains.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1882,
+  "title": "Re-appraising the Schema Linking for Text-to-SQL",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.findings-acl.53",
+  "abstract": "Most text-to-SQL models, even though based on the same grammar decoder, generate the SQL structure first and then fill in the SQL slots with the correct schema items. This second step depends on schema linking: aligning the entity references in the question with the schema columns or tables. This is generally approached via Exact Match based Schema Linking (EMSL) within a neural network-based schema linking module. EMSL has become standard in text-to-SQL: many state-of-the-art models employ EMSL, with performance dropping significantly when the EMSL component is removed. In this work, however, we show that EMSL reduces robustness, rendering models vulnerable to synonym substitution and typos. Instead of relying on EMSL to make up for deficiencies in question-schema encoding, we show that using a pre-trained language model as an encoder can improve performance without using EMSL, giving a more robust model. We also study the design choice of the schema linking module, finding that a suitable design benefits performance and interoperability. Finally, based on the above study of schema linking, we introduce the grammar linking to help model align grammar references in the question with the SQL keywords.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1881,
+  "title": "To Adapt or to Annotate: Challenges and Interventions for Domain Adaptation in Open-Domain Question Answering",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.acl-long.807",
+  "abstract": "Recent advances in open-domain question answering (ODQA) have demonstrated impressive accuracy on general-purpose domains like Wikipedia. While some work has been investigating how well ODQA models perform when tested for out-of-domain (OOD) generalization, these studies have been conducted only under conservative shifts in data distribution and typically focus on a single component (i.e., retriever or reader) rather than an end-to-end system. This work proposes a more realistic end-to-end domain shift evaluation setting covering five diverse domains. We not only find that end-to-end models fail to generalize but that high retrieval scores often still yield poor answer prediction accuracy. To address these failures, we investigate several interventions, in the form of data augmentations, for improving model adaption and use our evaluation set to elucidate the relationship between the efficacy of an intervention scheme and the particular type of dataset shifts we consider. We propose a generalizability test that estimates the type of shift in a target dataset without training a model in the target domain and that the type of shift is predictive of which data augmentation schemes will be effective for domain adaption. Overall, we find that these interventions increase end-to-end performance by up to ~24 points.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1880,
+  "title": "Lenient Evaluation of Japanese Speech Recognition: Modeling Naturally Occurring Spelling Inconsistency",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.cawl-1.8",
+  "abstract": "Word error rate (WER) and character error rate (CER) are standard metrics in Speech Recognition (ASR), but one problem has always been alternative spellings: If one’s system transcribes adviser whereas the ground truth has advisor, this will count as an error even though the two spellings really represent the same word. Japanese is notorious for “lacking orthography”: most words can be spelled in multiple ways, presenting a problem for accurate ASR evaluation. In this paper we propose a new lenient evaluation metric as a more defensible CER measure for Japanese ASR. We create a lattice of plausible respellings of the reference transcription, using a combination of lexical resources, a Japanese text-processing system, and a neural machine translation model for reconstructing kanji from hiragana or katakana. In a manual evaluation, raters rated 95.4% of the proposed spelling variants as plausible. ASR results show that our method, which does not penalize the system for choosing a valid alternate spelling of a word, affords a 2.4%–3.1% absolute reduction in CER depending on the task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1879,
+  "title": "Compressed Vision for Efficient Video Understanding",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-26293-7_40",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1878,
+  "title": "Pragmatics in Language Grounding: Phenomena, Tasks, and Modeling Approaches",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.840",
+  "abstract": "People rely heavily on context to enrich meaning beyond what is literally said, enabling concise but effective communication. To interact successfully and naturally with people, user-facing artificial intelligence systems will require similar skills in pragmatics: relying on various types of context — from shared linguistic goals and conventions, to the visual and embodied world — to use language effectively. We survey existing grounded settings and pragmatic modeling approaches and analyze how the task goals, environmental contexts, and communicative affordances in each work enrich linguistic meaning. We present recommendations for future grounded task design to naturally elicit pragmatic phenomena, and suggest directions that focus on a broader range of communicative contexts and affordances.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1877,
+  "title": "DRIP: Domain Refinement Iteration With Polytopes for Backward Reachability Analysis of Neural Feedback Loops",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "IEEE Control Systems Letters",
+  "url": "https://doi.org/10.1109/lcsys.2023.3260731",
+  "abstract": "Safety certification of data-driven control techniques remains a major open problem. This work investigates backward reachability as a framework for providing collision avoidance guarantees for systems controlled by neural network (NN) policies. Because NNs are typically not invertible, existing methods conservatively assume a domain over which to relax the NN, which causes loose over-approximations of the set of states that could lead the system into the obstacle (i.e., backprojection (BP) sets). To address this issue, we introduce DRIP, an algorithm with a refinement loop on the relaxation domain, which substantially tightens the BP set bounds. Furthermore, we introduce a formulation that enables directly obtaining closed-form representations of polytopes to bound the BP sets tighter than prior work, which required solving linear programs and using hyper-rectangles. Furthermore, this work extends the NN relaxation algorithm to handle polytope domains, which further tightens the bounds on BP sets. DRIP is demonstrated in numerical experiments on control systems, including a ground robot controlled by a learned NN obstacle avoidance policy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1876,
+  "title": "Reassessing Evaluation Practices in Visual Question Answering: A Case Study on Out-of-Distribution Generalization",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.findings-eacl.90",
+  "abstract": "Vision-and-language (V&L) models pretrained on large-scale multimodal data have demonstrated strong performance on various tasks such as image captioning and visual question answering (VQA). The quality of such models is commonly assessed by measuring their performance on unseen data that typically comes from the same distribution as the training data. However, when evaluated under out-of-distribution (out-of-dataset) settings for VQA, we observe that these models exhibit poor generalization. We comprehensively evaluate two pretrained V&L models under different settings (i.e. classification and open-ended text generation) by conducting cross-dataset evaluations. We find that these models tend to learn to solve the benchmark, rather than learning the high-level skills required by the VQA task. We also find that in most cases generative models are less susceptible to shifts in data distribution compared to discriminative ones, and that multimodal pretraining is generally helpful for OOD generalization. Finally, we revisit assumptions underlying the use of automatic VQA evaluation metrics, and empirically show that their stringent nature repeatedly penalizes models for correct responses.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1875,
+  "title": "Is an Object-Centric Video Representation Beneficial for Transfer?",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-26316-3_23",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1874,
+  "title": "Reward Gaming in Conditional Text Generation",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.acl-long.262",
+  "abstract": "To align conditional text generation model outputs with desired behaviors, there has been an increasing focus on training the model using reinforcement learning (RL) with reward functions learned from human annotations. Under this framework, we identify three common cases where high rewards are incorrectly assigned to undesirable patterns: noise-induced spurious correlation, naturally occurring spurious correlation, and covariate shift. We show that even though learned metrics achieve high performance on the distribution of the data used to train the reward function, the undesirable patterns may be amplified during RL training of the text generation model. While there has been discussion about reward gaming in the RL or safety community, in this discussion piece, we would like to highlight reward gaming in the natural language generation (NLG) community using concrete conditional text generation examples and discuss potential fixes and areas for future work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1873,
+  "title": "CRoW: Benchmarking Commonsense Reasoning in Real-World Tasks",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.emnlp-main.607",
+  "abstract": "Recent efforts in natural language processing (NLP) commonsense reasoning research have yielded a considerable number of new datasets and benchmarks. However, most of these datasets formulate commonsense reasoning challenges in artificial scenarios that are not reflective of the tasks which real-world NLP systems are designed to solve. In this work, we present CRoW, a manually-curated, multi-task benchmark that evaluates the ability of models to apply commonsense reasoning in the context of six real-world NLP tasks. CRoW is constructed using a multi-stage data collection pipeline that rewrites examples from existing datasets using commonsense-violating perturbations. We use CRoW to study how NLP systems perform across different dimensions of commonsense knowledge, such as physical, temporal, and social reasoning. We find a significant performance gap when NLP systems are evaluated on CRoW compared to humans, showcasing that commonsense reasoning is far from being solved in real-world task settings. We make our dataset and leaderboard available to the research community.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1872,
+  "title": "Evaluating and Modeling Attribution for Cross-Lingual Question Answering",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.emnlp-main.10",
+  "abstract": "Benjamin Muller, John Wieting, Jonathan Clark, Tom Kwiatkowski, Sebastian Ruder, Livio Soares, Roee Aharoni, Jonathan Herzig, Xinyi Wang. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing. 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1871,
+  "title": "Improving Pretraining Techniques for Code-Switched NLP",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.acl-long.66",
+  "abstract": "Pretrained models are a mainstay in modern NLP applications. Pretraining requires access to large volumes of unlabeled text. While monolingual text is readily available for many of the world’s languages, access to large quantities of code-switched text (i.e., text with tokens of multiple languages interspersed within a sentence) is much more scarce. Given this resource constraint, the question of how pretraining using limited amounts of code-switched text could be altered to improve performance for code-switched NLP becomes important to tackle. In this paper, we explore different masked language modeling (MLM) pretraining techniques for code-switched text that are cognizant of language boundaries prior to masking. The language identity of the tokens can either come from human annotators, trained language classifiers, or simple relative frequency-based estimates. We also present an MLM variant by introducing a residual connection from an earlier layer in the pretrained model that uniformly boosts performance on downstream tasks. Experiments on two downstream tasks, Question Answering (QA) and Sentiment Analysis (SA), involving four code-switched language pairs (Hindi-English, Spanish-English, Tamil-English, Malayalam-English) yield relative improvements of up to 5.8 and 2.7 F1 scores on QA (Hindi-English) and SA (Tamil-English), respectively, compared to standard pretraining techniques. To understand our task improvements better, we use a series of probes to study what additio",
+  "needs_fetch": false
+ }
+]

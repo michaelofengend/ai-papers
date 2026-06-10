@@ -1,0 +1,302 @@
+[
+ {
+  "id": 739,
+  "title": "AI can help humans find common ground in democratic deliberation",
+  "org": "deepmind",
+  "date": "2024-10-18",
+  "venue": "Science",
+  "url": "https://www.science.org/stoken/author-tokens/ST-2196/full",
+  "abstract": "Finding agreement through a free exchange of views is often difficult. Collective deliberation can be slow, difficult to scale, and unequally attentive to different voices. In this study, we trained an artificial intelligence (AI) to mediate human deliberation. Using participants’ personal opinions and critiques, the AI mediator iteratively generates and refines statements that express common ground among the group on social or political issues. Participants (*N* = 5734) preferred AI-generated statements to those written by human mediators, rating them as more informative, clear, and unbiased. Discussants often updated their views after the deliberation, converging on a shared perspective. Text embeddings revealed that successful group statements incorporated dissenting voices while respecting the majority position. These findings were replicated in a virtual citizens’ assembly involving a demographically representative sample of the UK population.",
+  "needs_fetch": false
+ },
+ {
+  "id": 232,
+  "title": "Coherence-Driven Multimodal Safety Dialogue with Active Learning for Embodied Agents",
+  "org": "other",
+  "date": "2024-10-18",
+  "venue": "AAMAS 2025",
+  "url": "https://arxiv.org/abs/2410.14141",
+  "abstract": "When assisting people in daily tasks, robots need to accurately interpret visual cues and respond effectively in diverse safety-critical situations, such as sharp objects on the floor. In this context, we present M-CoDAL, a multimodal-dialogue system specifically designed for embodied agents to better understand and communicate in safety-critical situations. The system leverages discourse coherence relations to enhance its contextual understanding and communication abilities. To train this system, we introduce a novel clustering-based active learning mechanism that utilizes an external Large Language Model (LLM) to identify informative instances. Our approach is evaluated using a newly created multimodal dataset comprising 1K safety violations extracted from 2K Reddit images. These violations are annotated using a Large Multimodal Model (LMM) and verified by human annotators. Results with this dataset demonstrate that our approach improves resolution of safety situations, user sentiment, as well as safety of the conversation. Next, we deploy our dialogue system on a Hello Robot Stretch robot and conduct a within-subject user study with real-world participants. In the study, participants role-play two safety scenarios with different levels of severity with the robot and receive interventions from our model and a baseline system powered by OpenAI's ChatGPT. The study results corroborate and extend the findings from the automated evaluation, showing that our proposed system is m",
+  "needs_fetch": false
+ },
+ {
+  "id": 82,
+  "title": "Sabotage evaluations for frontier models",
+  "org": "anthropic",
+  "date": "2024-10-18",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/sabotage-evaluations",
+  "abstract": "Sufficiently capable models could subvert human oversight and decision-making in important contexts. For example, in the context of AI development, models could covertly sabotage efforts to evaluate their own dangerous capabilities, to monitor their behavior, or to make decisions about their deployment. We refer to this family of abilities as sabotage capabilities. We develop a set of related threat models and evaluations. These evaluations are designed to provide evidence that a given model, operating under a given set of mitigations, could not successfully sabotage a frontier model developer or other large organization's activities in any of these ways. We demonstrate these evaluations on Anthropic's Claude 3 Opus and Claude 3.5 Sonnet models. Our results suggest that for these models, minimal mitigations are currently sufficient to address sabotage risks, but that more realistic evaluations and stronger mitigations seem likely to be necessary soon as capabilities improve. We also survey related evaluations we tried and abandoned. Finally, we discuss the advantages of mitigation-aware capability evaluations, and of simulating large-scale deployments using small-scale statistics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 740,
+  "title": "Prompting Considered Harmful",
+  "org": "deepmind",
+  "date": "2024-10-17",
+  "venue": "Communications of the ACM",
+  "url": "https://cacm.acm.org/opinion/prompting-considered-harmful/",
+  "abstract": "As a computer scientist with one foot in AI research and the other in HCI research, I have become increasingly concerned that “prompting” has transitioned from what was essentially a test and debugging interface for ML engineers into the de-facto interaction paradigm for end-users of large language models and their multimodal generative AI brethren. It is my professional opinion that prompting is a poor user interface for generative AI systems, and should be phased out as quickly as possible. My concerns about prompting are twofold. First, prompt-based interfaces are confusing and non-optimal for end-users (and ought not to be conflated with true natural language interactions). Second, prompt-based interfaces are also risky for AI experts – we risk building a body of apps and research atop a shaky foundation of prompt engineering. I will discuss each of these issues in turn, below.",
+  "needs_fetch": false
+ },
+ {
+  "id": 233,
+  "title": "Looking Inward: Language Models Can Learn About Themselves by Introspection",
+  "org": "anthropic",
+  "date": "2024-10-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2410.13787",
+  "abstract": "Humans acquire knowledge by observing the external world, but also by introspection. Introspection gives a person privileged access to their current state of mind (e.g., thoughts and feelings) that is not accessible to external observers. Can LLMs introspect? We define introspection as acquiring knowledge that is not contained in or derived from training data but instead originates from internal states. Such a capability could enhance model interpretability. Instead of painstakingly analyzing a model's internal workings, we could simply ask the model about its beliefs, world models, and goals. More speculatively, an introspective model might self-report on whether it possesses certain internal states such as subjective feelings or desires and this could inform us about the moral status of these states. Such self-reports would not be entirely dictated by the model's training data. We study introspection by finetuning LLMs to predict properties of their own behavior in hypothetical scenarios. For example, \"Given the input P, would your output favor the short- or long-term option?\" If a model M1 can introspect, it should outperform a different model M2 in predicting M1's behavior even if M2 is trained on M1's ground-truth behavior. The idea is that M1 has privileged access to its own behavioral tendencies, and this enables it to predict itself better than M2 (even if M2 is generally stronger). In experiments with GPT-4, GPT-4o, and Llama-3 models (each finetuned to predict itsel",
+  "needs_fetch": false
+ },
+ {
+  "id": 2721,
+  "title": "The PPOu Framework: A Structured Approach for Assessing the Likelihood of Malicious Use of Advanced AI Systems",
+  "org": "openai",
+  "date": "2024-10-16",
+  "venue": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+  "url": "https://doi.org/10.1609/aies.v7i1.31653",
+  "abstract": "The diffusion of increasingly capable AI systems has produced concern that bad actors could intentionally misuse current or future AI systems for harm. Governments have begun to create new entities—such as AI Safety Institutes—tasked with assessing these risks. However, approaches for risk assessment are currently fragmented and would benefit from broader disciplinary expertise. As it stands, it is often unclear whether concerns about malicious use misestimate the likelihood and severity of the risks. This article advances a conceptual framework to review and structure investigation into the likelihood of an AI system (X) being applied to a malicious use (Y). We introduce a three-stage framework of (1) Plausibility (can X be used to do Y at all?), (2) Performance (how well does X do Y?), and (3) Observed use (do actors use X to do Y in practice?). At each stage, we outline key research questions, methodologies, benefits and limitations, and the types of uncertainty addressed. We also offer ideas for directions to improve risk assessment moving forward.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1562,
+  "title": "Beyond Thumbs Up/Down: Untangling Challenges of Fine-Grained Feedback for Text-to-Image Generation",
+  "org": "deepmind",
+  "date": "2024-10-16",
+  "venue": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+  "url": "http://dx.doi.org/10.1609/aies.v7i1.31637",
+  "abstract": "Human feedback plays a critical role in learning and refining reward models for text-to-image generation, but the optimal form the feedback should take for learning an accurate reward function has not been conclusively established. This paper investigates the effectiveness of fine-grained feedback which captures nuanced distinctions in image quality and prompt-alignment, compared to traditional coarse-grained feedback (for example, thumbs up/down or ranking between a set of options). While fine-grained feedback holds promise, particularly for systems catering to diverse societal preferences, we show that demonstrating its superiority to coarse-grained feedback is not automatic. Through experiments on real and synthetic preference data, we surface the complexities of building effective models due to the interplay of model choice, feedback type, and the alignment between human judgment and computational interpretation. We identify key challenges in eliciting and utilizing fine-grained feedback, prompting a reassessment of its assumed benefits and practicality. Our findings -- e.g., that fine-grained feedback can lead to worse models for a fixed budget, in some settings; however, in controlled settings with known attributes, fine grained rewards can indeed be more helpful -- call for careful consideration of feedback attributes and potentially beckon novel modeling approaches to appropriately unlock the potential value of fine-grained feedback in-the-wild.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1561,
+  "title": "Translation and Transliteration Based Data Augmentation for Multilingual Semantic Parsing",
+  "org": "deepmind",
+  "date": "2024-10-16",
+  "venue": "Frontiers in artificial intelligence and applications",
+  "url": "https://doi.org/10.3233/faia240938",
+  "abstract": "Multilingual semantic parsing is one of the natural language understanding tasks powering modern virtual assistants. Annotating training data for supporting all languages is expensive and methods that rely on machine translation and label projection are used to perform language adaptation. In this paper, we revisit the assumption that a separate label projection step is necessary, with the goal of saving compute and reducing the complexity of the data augmentation pipeline. We create synthetic training examples by applying translation and transliteration directly at the slot level. We show that without a dedicated and expensive label projection component, we are able to achieve 97% of state-of-the-art data augmentation performance on multilingual semantic parsing, and obtain the same performance of the best systems for code mixed and code switched semantic parsing.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1560,
+  "title": "Responsible Reporting for Frontier AI Development",
+  "org": "deepmind",
+  "date": "2024-10-16",
+  "venue": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+  "url": "https://doi.org/10.1609/aies.v7i1.31678",
+  "abstract": "Mitigating the risks from frontier AI systems requires up-to-date and reliable information about those systems. Organizations that develop and deploy frontier systems have significant access to such information. By reporting safety-critical information to actors in government, industry, and civil society, these organizations could improve visibility into new and emerging risks posed by frontier systems. Equipped with this information, developers could make better informed decisions on risk management, while policymakers could design more targeted and robust regulatory infrastructure. We outline the key features of responsible reporting and propose mechanisms for implementing them in practice.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1559,
+  "title": "Efficient Exploratory Synthesis of Quaternary Cesium Chlorides Guided by In Silico Predictions",
+  "org": "deepmind",
+  "date": "2024-10-16",
+  "venue": "Journal of the American Chemical Society",
+  "url": "https://doi.org/10.1021/jacs.4c10294",
+  "abstract": "Exploratory synthesis of solids is essential for the advancement of materials science but is also highly time- and resource-intensive. Here, we demonstrate an efficient strategy to explore solid-state synthesis of quaternary cesium chlorides in the search space of CsnAIBCl6 (n = 2 or 3, A = Li, Na or K, and B = d or p-block metal), where the target compositions are selected from a pool of candidates based on computationally predicted stabilities and availability of viable precursor powders. Synthesizability of the targets is assessed by observing the evolution of starting phases upon heating under in situ synchrotron X-ray diffraction. Laboratory synthesis is attempted for promising targets, and resulting materials are characterized by powder X-ray and neutron diffraction and subsequent Rietveld refinement. We focus on how computational predictions can be bridged to experimental characterizations in exploratory synthesis and report on successful and failed synthesis attempts for compounds of type Cs2AIBIIICl6, revealing underexplored variants including new polymorphs of Cs2LiCrCl6 and Cs2LiRuCl6, and a new compound Cs2LiIrCl6.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1558,
+  "title": "Gaps in the Safety Evaluation of Generative AI",
+  "org": "deepmind",
+  "date": "2024-10-16",
+  "venue": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+  "url": "https://doi.org/10.1609/aies.v7i1.31717",
+  "abstract": "Generative AI systems produce a range of ethical and social risks. Evaluation of these risks is a critical step on the path to ensuring the safety of these systems. However, evaluation requires the availability of validated and established measurement approaches and tools. In this paper, we provide an empirical review of the methods and tools that are available for evaluating known safety of generative AI systems to date. To this end, we review more than 200 safety-related evaluations that have been applied to generative AI systems. We categorise each evaluation along multiple axes to create a detailed snapshot of the safety evaluation landscape to date. We release this data for researchers and AI safety practitioners (https://bitly.ws/3hUzu). Analysing the current safety evaluation landscape reveals three systemic ”evaluation gaps”. First, a ”modality gap” emerges as few safety evaluations exist for non-text modalities. Second, a ”risk coverage gap” arises as evaluations for several ethical and social risks are simply lacking. Third, a ”context gap” arises as most safety evaluations are model-centric and fail to take into account the broader context in which AI systems operate. Devising next steps for safety practitioners based on these findings, we present tactical ”low-hanging fruit” steps towards closing the identified evaluation gaps and their limitations. We close by discussing the role and limitations of safety evaluation to ensure the safety of generative AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1557,
+  "title": "The Code That Binds Us: Navigating the Appropriateness of Human-AI Assistant Relationships",
+  "org": "deepmind",
+  "date": "2024-10-16",
+  "venue": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+  "url": "https://doi.org/10.1609/aies.v7i1.31694",
+  "abstract": "The development of increasingly agentic and human-like AI assistants, capable of performing a wide range of tasks on user's behalf over time, has sparked heightened interest in the nature and bounds of human interactions with AI. Such systems may indeed ground a transition from task-oriented interactions with AI, at discrete time intervals, to ongoing relationships -- where users develop a deeper sense of connection with and attachment to the technology. This paper investigates what it means for relationships between users and advanced AI assistants to be appropriate and proposes a new framework to evaluate both users' relationships with AI and developers' design choices. We first provide an account of advanced AI assistants, motivating the question of appropriate relationships by exploring several distinctive features of this technology. These include anthropomorphic cues and the longevity of interactions with users, increased AI agency, generality and context ambiguity, and the forms and depth of dependence the relationship could engender. Drawing upon various ethical traditions, we then consider a series of values, including benefit, flourishing, autonomy and care, that characterise appropriate human interpersonal relationships. These values guide our analysis of how the distinctive features of AI assistants may give rise to inappropriate relationships with users. Specifically, we discuss a set of concrete risks arising from user--AI assistant relationships that: (1) cause",
+  "needs_fetch": false
+ },
+ {
+  "id": 1556,
+  "title": "All Too Human? Mapping and Mitigating the Risk from Anthropomorphic AI",
+  "org": "deepmind",
+  "date": "2024-10-16",
+  "venue": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+  "url": "https://doi.org/10.1609/aies.v7i1.31613",
+  "abstract": "The development of highly-capable conversational agents, underwritten by large language models, has the potential to shape user interaction with this technology in profound ways, particularly when the technology is anthropomorphic, or appears human-like. Although the effects of anthropomorphic AI are often benign, anthropomorphic design features also create new kinds of risk. For example, users may form emotional connections to human-like AI, creating the risk of infringing on user privacy and autonomy through over-reliance. To better understand the possible pitfalls of anthropomorphic AI systems, we make two contributions: first, we explore anthropomorphic features that have been embedded in interactive systems in the past, and leverage this precedent to highlight the current implications of anthropomorphic design. Second, we propose research directions for informing the ethical design of anthropomorphic AI. In advancing the responsible development of AI, we promote approaches to the ethical foresight, evaluation, and mitigation of harms arising from user interactions with anthropomorphic AI.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1555,
+  "title": "Epistemic Injustice in Generative AI",
+  "org": "deepmind",
+  "date": "2024-10-16",
+  "venue": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+  "url": "https://doi.org/10.1609/aies.v7i1.31671",
+  "abstract": "This paper investigates how generative AI can potentially undermine the integrity of collective knowledge and the processes we rely on to acquire, assess, and trust information, posing a significant threat to our knowledge ecosystem and democratic discourse. Grounded in social and political philosophy, we introduce the concept of generative algorithmic epistemic injustice. We identify four key dimensions of this phenomenon: amplified and manipulative testimonial injustice, along with hermeneutical ignorance and access injustice. We illustrate each dimension with real-world examples that reveal how generative AI can produce or amplify misinformation, perpetuate representational harm, and create epistemic inequities, particularly in multilingual contexts. By highlighting these injustices, we aim to inform the development of epistemically just generative AI systems, proposing strategies for resistance, system design principles, and two approaches that leverage generative AI to foster a more equitable information ecosystem, thereby safeguarding democratic values and the integrity of knowledge production.",
+  "needs_fetch": false
+ },
+ {
+  "id": 385,
+  "title": "Weak-to-Strong Generalization beyond Accuracy: a Pilot Study in Safety, Toxicity, and Legal Reasoning",
+  "org": "other",
+  "date": "2024-10-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2410.12621",
+  "abstract": "As large language models (LLMs) continue to advance, ensuring their alignment with human values becomes increasingly critical. Traditional alignment methods heavily rely on human feedback to fine-tune models. With the emergence of superhuman models whose outputs may surpass human understanding, evaluating and aligning these models using human judgments poses significant challenges. To address the challenges, recent works use weak supervisors to elicit knowledge from much stronger models. However, there are important disanalogies between the empirical setup in the existing works and the genuine goal of alignment. We remark that existing works investigate the phenomenon of weak-to-strong generation in analogous setup (i.e., binary classification), rather than practical alignment-relevant tasks (e.g., safety). In this paper, we bridge this gap by extending weak-to-strong generation to the context of practical alignment. We empirically demonstrate the widespread phenomenon of weak-to-strong generation in three complicated alignment tasks: safety, toxicity, and legal reasoning}. Furthermore, we explore efficient strategies for improving alignment performance to enhance the quality of model outcomes. Lastly, we summarize and analyze the challenges and potential solutions in regard to specific alignment tasks, which we hope to catalyze the research progress on the topic of weak-to-strong generalization. Our code is released at https://github.com/yeruimeng/WTS.git.",
+  "needs_fetch": false
+ },
+ {
+  "id": 995,
+  "title": "Evaluating fairness in ChatGPT",
+  "org": "openai",
+  "date": "2024-10-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/evaluating-fairness-in-chatgpt/",
+  "abstract": "We've analyzed how ChatGPT responds to users based on their name, using AI research assistants to protect privacy.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1566,
+  "title": "Versatile Locomotion Skills for Hexapod Robots",
+  "org": "deepmind",
+  "date": "2024-10-14",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iros58592.2024.10801714",
+  "abstract": "Hexapod robots are potentially suitable for carrying out tasks in cluttered environments since they are stable, compact, and light weight. They also have multi-joint legs and variable height bodies that make them good candidates for tasks such as stairs climbing and squeezing under objects in a typical home environment or an attic. Expanding on our previous work on joist climbing in attics, we train a legged hexapod equipped with a depth camera and visual inertial odometry (VIO) to perform three tasks: climbing stairs, avoiding obstacles, and squeezing under obstacles such as a table. Our policies are trained with simulation data only and can be deployed on low-cost hardware not requiring real-time joint state feedback. We train our model in a teacher-student model with 2 phases: In phase 1, we use reinforcement learning with access to privileged information such as height maps and joint feedback. In phase 2, we use supervised learning to distill the model into one with access to only onboard observations, consisting of egocentric depth images and robot pose captured by a tracking VIO camera. By manipulating available privileged information, constructing simulation terrains, and refining reward functions during phase 1 training, we are able to train the robots with skills that are robust in non-ideal physical environments. We demonstrate successful sim-to-real transfer and achieve high success rates across all three tasks in physical experiments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1565,
+  "title": "The Design of the Barkour Benchmark for Robot Agility",
+  "org": "deepmind",
+  "date": "2024-10-14",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iros58592.2024.10801377",
+  "abstract": "In this paper, we describe the design of the Barkour benchmark for measuring robot agility in navigating complex environments. Despite the growing interest in developing agile robot locomotion skills, the field lacks systematic benchmarks to measure the performance of robotic control systems and hardware in agility-focused tasks. This motivated us to propose the Barkour benchmark, an obstacle course designed to quantify agility across various robotic platforms. Inspired by dog agility competitions, the course features diverse obstacles and a time-based scoring mechanism, encouraging researchers to develop controllers that enable robots to move quickly, precisely, and with adaptability. This benchmark is challenging as it demands diverse motion skills and the time-based scoring requires control precision at high speed. Along with the design details presented in the paper, we release our simulated environment setups in MuJoCo-XLA and the CAD model of a custom-designed quadruped robot to facilitate future research to reproduce the Barkour setup (available at sites.google.com/view/barkour). We hope these together will accelerate the pace of robot agility research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1564,
+  "title": "GenCHiP: Generating Robot Policy Code for High-Precision and Contact-Rich Manipulation Tasks",
+  "org": "deepmind",
+  "date": "2024-10-14",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iros58592.2024.10801525",
+  "abstract": "Large Language Models (LLMs) have been successful at generating robot policy code, but so far these results have been limited to high-level tasks that do not require precise movement. It is an open question how well such approaches work for tasks that require reasoning over contact forces and working within tight success tolerances. We find that, with the right action space, LLMs are capable of successfully generating policies for a variety of contact-rich and high-precision manipulation tasks, even under noisy conditions, such as perceptual errors or grasping inaccuracies. Specifically, we reparameterize the action space to include compliance with constraints on the interaction forces and stiffnesses involved in reaching a target pose. We validate this approach on subtasks derived from the Functional Manipulation Benchmark (FMB) and NIST Task Board Benchmarks. Exposing this action space alongside methods for estimating object poses improves policy generation with an LLM by greater than 3x and 4x when compared to non-compliant action spaces. More material is available on our project webpage: https://dex-code-gen.github.io/dex-code-gen/",
+  "needs_fetch": false
+ },
+ {
+  "id": 1563,
+  "title": "CoNVOI: Context-aware Navigation using Vision Language Models in Outdoor and Indoor Environments",
+  "org": "deepmind",
+  "date": "2024-10-14",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iros58592.2024.10802716",
+  "abstract": "We present CoNVOI, a novel method for autonomous robot navigation in real-world indoor and outdoor environments using Vision Language Models (VLMs). We employ VLMs in two ways: first, we leverage their zero-shot image classification capability to identify the context or scenario (e.g., indoor corridor, outdoor terrain, crosswalk, etc) of the robot’s surroundings, and formulate context-based navigation behaviors as simple text prompts (e.g. \"stay on the pavement\"). Second, we utilize their state-of-the-art semantic understanding and logical reasoning capabilities to compute a suitable trajectory given the identified context. To this end, we propose a novel multi-modal visual marking approach to annotate the obstacle-free regions in the RGB image used as input to the VLM with numbers, by correlating it with a local occupancy map of the environment. The marked numbers ground image locations in the real-world, direct the VLM’s attention solely to navigable locations, and elucidate the spatial relationships between them and terrains depicted in the image to the VLM. Next, we query the VLM to select numbers on the marked image that satisfy the context-based behavior text prompt, and construct a reference path using the selected numbers. Finally, we propose a method to extrapolate the reference trajectory when the robot’s environmental context has not changed to prevent unnecessary VLM queries. We use the reference trajectory to guide a motion planner, and demonstrate that it leads ",
+  "needs_fetch": false
+ },
+ {
+  "id": 741,
+  "title": "Predicting from Strings: Language Model Embeddings for Bayesian Optimization",
+  "org": "deepmind",
+  "date": "2024-10-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2410.10190",
+  "abstract": "Bayesian Optimization is ubiquitous in the field of experimental design and blackbox optimization for improving search efficiency, but has been traditionally restricted to regression models which are only applicable to fixed search spaces and tabular input features. We propose _Embed-then-Regress_, a paradigm for applying in-context regression over string inputs, through the use of string embedding capabilities of pretrained language models. By expressing all inputs as strings, we are able to perform general-purpose regression for Bayesian Optimization over various domains including synthetic, combinatorial, and hyperparameter optimization, obtaining comparable results to state-of-the-art Gaussian Process-based algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1567,
+  "title": "Resolving social dilemmas with minimal reward transfer",
+  "org": "deepmind",
+  "date": "2024-10-12",
+  "venue": "Autonomous Agents and Multi-Agent Systems",
+  "url": "https://doi.org/10.1007/s10458-024-09675-4",
+  "abstract": "Abstract Social dilemmas present a significant challenge in multi-agent cooperation because individuals are incentivised to behave in ways that undermine socially optimal outcomes. Consequently, self-interested agents often avoid collective behaviour. In response, we formalise social dilemmas and introduce a novel metric, the general self-interest level , to quantify the disparity between individual and group rationality in such scenarios. This metric represents the maximum proportion of their individual rewards that agents can retain while ensuring that a social welfare optimum becomes a dominant strategy. Our approach diverges from traditional concepts of altruism, instead focusing on strategic reward redistribution. By transferring rewards among agents in a manner that aligns individual and group incentives, rational agents will maximise collective welfare while pursuing their own interests. We provide an algorithm to compute efficient transfer structures for an arbitrary number of agents, and introduce novel multi-player social dilemma games to illustrate the effectiveness of our method. This work provides both a descriptive tool for analysing social dilemmas and a prescriptive solution for resolving them via efficient reward transfer contracts. Applications include mechanism design, where we can assess the impact on collaborative behaviour of modifications to models of environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1194,
+  "title": "Tyche: Making Sense of PBT Effectiveness",
+  "org": "anthropic",
+  "date": "2024-10-11",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3654777.3676407",
+  "abstract": "Software developers increasingly rely on automated methods to assess the correctness of their code. One such method is property-based testing (PBT), wherein a test harness generates hundreds or thousands of inputs and checks the outputs of the program on those inputs using parametric properties. Though powerful, PBT induces a sizable gulf of evaluation: developers need to put in nontrivial effort to understand how well the different test inputs exercise the software under test. To bridge this gulf, we propose Tyche, a user interface that supports sensemaking around the effectiveness of property-based tests. Guided by a formative design exploration, our design of Tyche supports developers with interactive, configurable views of test behavior with tight integrations into modern developer testing workflow. These views help developers explore global testing behavior and individual test inputs alike. To accelerate the development of powerful, interactive PBT tools, we define a standard for PBT test reporting and integrate it with a widely used PBT library. A self-guided online usability study revealed that Tyche’s visualizations help developers to more accurately assess software testing effectiveness.",
+  "needs_fetch": false
+ },
+ {
+  "id": 522,
+  "title": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+  "org": "openai",
+  "date": "2024-10-10",
+  "venue": "arXiv.org",
+  "url": "https://openai.com/index/mle-bench/",
+  "abstract": "We introduce MLE-bench, a benchmark for measuring how well AI agents perform at machine learning engineering. To this end, we curate 75 ML engineering-related competitions from Kaggle, creating a diverse set of challenging tasks that test real-world ML engineering skills such as training models, preparing datasets, and running experiments. We establish human baselines for each competition using Kaggle's publicly available leaderboards. We use open-source agent scaffolds to evaluate several frontier language models on our benchmark, finding that the best-performing setup--OpenAI's o1-preview with AIDE scaffolding--achieves at least the level of a Kaggle bronze medal in 16.9% of competitions. In addition to our main results, we investigate various forms of resource scaling for AI agents and the impact of contamination from pre-training. We open-source our benchmark code (github.com/openai/mle-bench/) to facilitate future research in understanding the ML engineering capabilities of AI agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 742,
+  "title": "Diffusion model predictive control",
+  "org": "deepmind",
+  "date": "2024-10-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2410.05364",
+  "abstract": "We propose Diffusion Model Predictive Control (D-MPC), a novel MPC approach that learns a multi-step action proposal and a multi-step dynamics model, both using diffusion models, and combines them for use in online MPC. On the popular D4RL benchmark, we show performance that is significantly better than existing model-based offline planning methods using MPC and competitive with state-of-the-art (SOTA) model-based and model-free reinforcement learning methods. We additionally illustrate D-MPC's ability to optimize novel reward functions at run time and adapt to novel dynamics, and highlight its advantages compared to existing diffusion-based planning baselines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 523,
+  "title": "Does Spatial Cognition Emerge in Frontier Models?",
+  "org": "other",
+  "date": "2024-10-09",
+  "venue": "ICLR 2025",
+  "url": "https://arxiv.org/abs/2410.06468",
+  "abstract": "Not yet. We present SPACE, a benchmark that systematically evaluates spatial cognition in frontier models. Our benchmark builds on decades of research in cognitive science. It evaluates large-scale mapping abilities that are brought to bear when an organism traverses physical environments, smaller-scale reasoning about object shapes and layouts, and cognitive infrastructure such as spatial attention and memory. For many tasks, we instantiate parallel presentations via text and images, allowing us to benchmark both large language models and large multimodal models. Results suggest that contemporary frontier models fall short of the spatial intelligence of animals, performing near chance level on a number of classic tests of animal cognition. Code and data are available: https://github.com/apple/ml-space-benchmark",
+  "needs_fetch": false
+ },
+ {
+  "id": 386,
+  "title": "Provable Weak-to-Strong Generalization via Benign Overfitting",
+  "org": "other",
+  "date": "2024-10-06",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2410.04638",
+  "abstract": "The classic teacher-student model in machine learning posits that a strong teacher supervises a weak student to improve the student's capabilities. We instead consider the inverted situation, where a weak teacher supervises a strong student with imperfect pseudolabels. This paradigm was recently brought forth by Burns et al.'23 and termed \\emph{weak-to-strong generalization}. We theoretically investigate weak-to-strong generalization for binary and multilabel classification in a stylized overparameterized spiked covariance model with Gaussian covariates where the weak teacher's pseudolabels are asymptotically like random guessing. Under these assumptions, we provably identify two asymptotic phases of the strong student's generalization after weak supervision: (1) successful generalization and (2) random guessing. Our techniques should eventually extend to weak-to-strong multiclass classification. Towards doing so, we prove a tight lower tail inequality for the maximum of correlated Gaussians, which may be of independent interest. Understanding the multilabel setting reinforces the value of using logits for weak supervision when they are available.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1568,
+  "title": "A review of graph neural network applications in mechanics-related domains",
+  "org": "deepmind",
+  "date": "2024-10-04",
+  "venue": "Artificial Intelligence Review",
+  "url": "https://doi.org/10.1007/s10462-024-10931-y",
+  "abstract": "Abstract Mechanics-related tasks often present unique challenges in achieving accurate geometric and physical representations, particularly for non-uniform structures. Graph neural networks (GNNs) have emerged as a promising tool to tackle these challenges by adeptly learning from graph data with irregular underlying structures. Consequently, recent years have witnessed a surge in complex mechanics-related applications inspired by the advancements of GNNs. Despite this process, there is a notable absence of a systematic review addressing the recent advancement of GNNs in solving mechanics-related tasks. To bridge this gap, this review article aims to provide an in-depth overview of the GNN applications in mechanics-related domains while identifying key challenges and outlining potential future research directions. In this review article, we begin by introducing the fundamental algorithms of GNNs that are widely employed in mechanics-related applications. We provide a concise explanation of their underlying principles to establish a solid understanding that will serve as a basis for exploring the applications of GNNs in mechanics-related domains. The scope of this paper is intended to cover the categorisation of literature into solid mechanics, fluid mechanics, and interdisciplinary mechanics-related domains, providing a comprehensive summary of graph representation methodologies, GNN architectures, and further discussions in their respective subdomains. Additionally, open dat",
+  "needs_fetch": false
+ },
+ {
+  "id": 1569,
+  "title": "Towards Understanding the Universality of Transformers for Next-Token Prediction",
+  "org": "deepmind",
+  "date": "2024-10-03",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2410.03011",
+  "abstract": "Causal Transformers are trained to predict the next token for a given context. While it is widely accepted that self-attention is crucial for encoding the causal structure of sequences, the precise underlying mechanism behind this in-context autoregressive learning ability remains unclear. In this paper, we take a step towards understanding this phenomenon by studying the approximation ability of Transformers for next-token prediction. Specifically, we explore the capacity of causal Transformers to predict the next token $x_{t+1}$ given an autoregressive sequence $(x_1, \\dots, x_t)$ as a prompt, where $ x_{t+1} = f(x_t) $, and $ f $ is a context-dependent function that varies with each sequence. On the theoretical side, we focus on specific instances, namely when $ f $ is linear or when $ (x_t)_{t \\geq 1} $ is periodic. We explicitly construct a Transformer (with linear, exponential, or softmax attention) that learns the mapping $f$ in-context through a causal kernel descent method. The causal kernel descent method we propose provably estimates $x_{t+1} $ based solely on past and current observations $ (x_1, \\dots, x_t) $, with connections to the Kaczmarz algorithm in Hilbert spaces. We present experimental results that validate our theoretical findings and suggest their applicability to more general mappings $f$.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2887,
+  "title": "Sparse Crosscoders for Cross-Layer Features and Model Diffing",
+  "org": "anthropic",
+  "date": "2024-10-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/crosscoders/index.html",
+  "abstract": "This note introduces sparse crosscoders , a variant of sparse autoencoders ( e.g. ) or transcoders for understanding models in superposition . Where autoencoders encode and predict activations at a single layer, and transcoders use activations from one layer to predict the next, a crosscoder reads and writes to multiple layers. Crosscoders produce shared features across layers and even models . They have several applications:",
+  "needs_fetch": false
+ }
+]

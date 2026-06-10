@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1629,
+  "title": "Should Users Trust Advanced AI Assistants? Justified Trust As a Function of Competence and Alignment",
+  "org": "deepmind",
+  "date": "2024-06-03",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3630106.3658964",
+  "abstract": "As AI assistants become increasingly sophisticated and deeply integrated into our lives, questions of trust rise to the forefront. In this paper, we build on philosophical studies of trust to investigate when user trust in AI assistants is justified. By moving beyond a focus on the technical artefact in isolation, we consider the broader societal system in which AI assistants are developed and deployed. We conceptualise user trust in AI assistants as encompassing two main targets, namely AI assistants and their developers. We argue that – as AI assistants become more human like and exhibit increased agency – discerning when user trust is justified requires consideration not only of competence, on the part of AI assistants and their developers, but also alignment between the competing interests, values or incentives of AI assistants, developers and users. To help users understand if and when their trust in the competence and alignment of AI assistants and developers is justified, we propose a sociotechnical approach that requires evidence to be collected at three levels: AI assistant design, organisational practices and third-party governance. Taken together, these measures can help harness the transformative potential of AI assistants while also ensuring their operation is ethical and value aligned.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1628,
+  "title": "A Robot Walks into a Bar: Can Language Models Serve as Creativity SupportTools for Comedy? An Evaluation of LLMs’ Humour Alignment with Comedians",
+  "org": "deepmind",
+  "date": "2024-06-03",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3630106.3658993",
+  "abstract": "We interviewed twenty professional comedians who perform live shows in front of audiences and who use artificial intelligence in their artistic process as part of 3-hour workshops on “AI x Comedy” conducted at the Edinburgh Festival Fringe in August 2023 and online. The workshop consisted of a comedy writing session with large language models (LLMs), a human-computer interaction questionnaire to assess the Creativity Support Index of AI as a writing tool, and a focus group interrogating the comedians’ motivations for and processes of using AI, as well as their ethical concerns about bias, censorship and copyright. Participants noted that existing moderation strategies used in safety filtering and instruction-tuned LLMs reinforced hegemonic viewpoints by erasing minority groups and their perspectives, and qualified this as a form of censorship. At the same time, most participants felt the LLMs did not succeed as a creativity support tool, by producing bland and biased comedy tropes, akin to “cruise ship comedy material from the 1950s, but a bit less racist”. Our work extends scholarship about the subtle difference between, one the one hand, harmful speech, and on the other hand, “offensive” language as a practice of resistance, satire and “punching up”. We also interrogate the global value alignment behind such language models, and discuss the importance of community-based value alignment and data ownership to build AI tools that better suit artists’ needs. Warning: this study",
+  "needs_fetch": false
+ },
+ {
+  "id": 1632,
+  "title": "ProtEx: A Retrieval-Augmented Approach for Protein Function Prediction",
+  "org": "deepmind",
+  "date": "2024-06-02",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2024.05.30.596539",
+  "abstract": "Abstract Mapping a protein sequence to its underlying biological function is a critical problem of increasing importance in biology. In this work, we propose ProtEx, a retrieval-augmented approach for protein function prediction that leverages exemplars from a database to improve accuracy and robustness and enable generalization to unseen classes. Our approach relies on a novel multi-sequence pretraining task, and a fine-tuning strategy that effectively conditions predictions on retrieved exemplars. Our method achieves state-of-the-art results across multiple datasets and settings for predicting Enzyme Commission (EC) numbers, Gene Ontology (GO) terms, and Pfam families. Our ablations and analysis highlight the impact of conditioning predictions on exemplar sequences, especially for classes and sequences less well represented in the training data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 402,
+  "title": "Inverse Constitutional AI: Compressing Preferences into Principles",
+  "org": "deepmind",
+  "date": "2024-06-02",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2406.06560",
+  "abstract": "Feedback data is widely used for fine-tuning and evaluating state-of-the-art AI models. Pairwise text preferences, where human or AI annotators select the \"better\" of two options, are particularly common. Such preferences are used to train (reward) models or to rank models with aggregate statistics. For many applications it is desirable to understand annotator preferences in addition to modelling them - not least because extensive prior work has shown various unintended biases in preference datasets. Yet, preference datasets remain challenging to interpret. Neither black-box reward models nor statistics can answer why one text is preferred over another. Manual interpretation of the numerous (long) response pairs is usually equally infeasible. In this paper, we introduce the Inverse Constitutional AI (ICAI) problem, formulating the interpretation of pairwise text preference data as a compression task. In constitutional AI, a set of principles (a constitution) is used to provide feedback and fine-tune AI models. ICAI inverts this process: given a feedback dataset, we aim to extract a constitution that best enables a large language model (LLM) to reconstruct the original annotations. We propose a corresponding ICAI algorithm and validate its generated constitutions quantitatively based on annotation reconstruction accuracy on several datasets: (a) synthetic feedback data with known principles; (b) AlpacaEval cross-annotated human feedback data; (c) crowdsourced Chatbot Arena dat",
+  "needs_fetch": false
+ },
+ {
+  "id": 1635,
+  "title": "Correction: Warmth and competence in human-agent cooperation",
+  "org": "deepmind",
+  "date": "2024-06-01",
+  "venue": "Autonomous Agents and Multi-Agent Systems",
+  "url": "https://doi.org/10.1007/s10458-024-09654-9",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1634,
+  "title": "Individualized Closed-Loop Acoustic Stimulation Suggests an Alpha Phase Dependence of Sound Evoked and Induced Brain Activity Measured with EEG Recordings",
+  "org": "deepmind",
+  "date": "2024-06-01",
+  "venue": "eNeuro",
+  "url": "http://dx.doi.org/10.1523/eneuro.0511-23.2024",
+  "abstract": "Following repetitive visual stimulation, post hoc phase analysis finds that visually evoked response magnitudes vary with the cortical alpha oscillation phase that temporally coincides with sensory stimulus. This approach has not successfully revealed an alpha phase dependence for auditory evoked or induced responses. Here, we test the feasibility of tracking alpha with scalp electroencephalogram (EEG) recordings and play sounds phase-locked to individualized alpha phases in real-time using a novel end-point corrected Hilbert transform (ecHT) algorithm implemented on a research device. Based on prior work, we hypothesize that sound-evoked and induced responses vary with the alpha phase at sound onset and the alpha phase that coincides with the early sound-evoked response potential (ERP) measured with EEG. Thus, we use each subject's individualized alpha frequency (IAF) and individual auditory ERP latency to define target trough and peak alpha phases that allow an early component of the auditory ERP to align to the estimated poststimulus peak and trough phases, respectively. With this closed-loop and individualized approach, we find opposing alpha phase-dependent effects on the auditory ERP and alpha oscillations that follow stimulus onset. Trough and peak phase-locked sounds result in distinct evoked and induced post-stimulus alpha level and frequency modulations. Though additional studies are needed to localize the sources underlying these phase-dependent effects, these resu",
+  "needs_fetch": false
+ },
+ {
+  "id": 1633,
+  "title": "WeatherBench 2: A Benchmark for the Next Generation of Data‐Driven Global Weather Models",
+  "org": "deepmind",
+  "date": "2024-06-01",
+  "venue": "Journal of Advances in Modeling Earth Systems",
+  "url": "https://doi.org/10.1029/2023ms004019",
+  "abstract": "Abstract WeatherBench 2 is an update to the global, medium‐range (1–14 days) weather forecasting benchmark proposed by (Rasp et al., 2020, https://doi.org/10.1029/2020ms002203 ), designed with the aim to accelerate progress in data‐driven weather modeling. WeatherBench 2 consists of an open‐source evaluation framework, publicly available training, ground truth and baseline data as well as a continuously updated website with the latest metrics and state‐of‐the‐art models: https://sites.research.google/weatherbench . This paper describes the design principles of the evaluation framework and presents results for current state‐of‐the‐art physical and data‐driven weather models. The metrics are based on established practices for evaluating weather forecasts at leading operational weather centers. We define a set of headline scores to provide an overview of model performance. In addition, we also discuss caveats in the current evaluation setup and challenges for the future of data‐driven weather forecasting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 87,
+  "title": "Circuits Updates — June 2024",
+  "org": "anthropic",
+  "date": "2024-06-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/june-update/index.html",
+  "abstract": "We report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 403,
+  "title": "Mind the Inconspicuous: Revealing the Hidden Weakness in Aligned LLMs' Refusal Boundaries",
+  "org": "other",
+  "date": "2024-05-31",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.20653",
+  "abstract": "Recent advances in Large Language Models (LLMs) have led to impressive alignment where models learn to distinguish harmful from harmless queries through supervised finetuning (SFT) and reinforcement learning from human feedback (RLHF). In this paper, we reveal a subtle yet impactful weakness in these aligned models. We find that simply appending multiple end of sequence (eos) tokens can cause a phenomenon we call context segmentation, which effectively shifts both harmful and benign inputs closer to the refusal boundary in the hidden space. Building on this observation, we propose a straightforward method to BOOST jailbreak attacks by appending eos tokens. Our systematic evaluation shows that this strategy significantly increases the attack success rate across 8 representative jailbreak techniques and 16 open-source LLMs, ranging from 2B to 72B parameters. Moreover, we develop a novel probing mechanism for commercial APIs and discover that major providers such as OpenAI, Anthropic, and Qwen do not filter eos tokens, making them similarly vulnerable. These findings highlight a hidden yet critical blind spot in existing alignment and content filtering approaches. We call for heightened attention to eos tokens' unintended influence on model behaviors, particularly in production systems. Our work not only calls for an input-filtering based defense, but also points to new defenses that make refusal boundaries more robust and generalizable, as well as fundamental alignment techniqu",
+  "needs_fetch": false
+ },
+ {
+  "id": 532,
+  "title": "Stress-Testing Capability Elicitation With Password-Locked Models",
+  "org": "anthropic",
+  "date": "2024-05-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.19550",
+  "abstract": "To determine the safety of large language models (LLMs), AI developers must be able to assess their dangerous capabilities. But simple prompting strategies often fail to elicit an LLM's full capabilities. One way to elicit capabilities more robustly is to fine-tune the LLM to complete the task. In this paper, we investigate the conditions under which fine-tuning-based elicitation suffices to elicit capabilities. To do this, we introduce password-locked models, LLMs fine-tuned such that some of their capabilities are deliberately hidden. Specifically, these LLMs are trained to exhibit these capabilities only when a password is present in the prompt, and to imitate a much weaker LLM otherwise. Password-locked models enable a novel method of evaluating capabilities elicitation methods, by testing whether these password-locked capabilities can be elicited without using the password. We find that a few high-quality demonstrations are often sufficient to fully elicit password-locked capabilities. More surprisingly, fine-tuning can elicit other capabilities that have been locked using the same password, or even different passwords. Furthermore, when only evaluations, and not demonstrations, are available, approaches like reinforcement learning are still often able to elicit capabilities. Overall, our findings suggest that fine-tuning is an effective method of eliciting hidden capabilities of current models, but may be unreliable when high-quality demonstrations are not available, e.",
+  "needs_fetch": false
+ },
+ {
+  "id": 761,
+  "title": "An Introduction to Universal Artificial Intelligence",
+  "org": "deepmind",
+  "date": "2024-05-28",
+  "venue": "Chapman and Hall/CRC",
+  "url": "http://hutter1.net/ai/uaibook2.htm",
+  "abstract": "The book *An Introduction to Universal Artificial Intelligence* provides the formal underpinning of what it means for an agent to act intelligently in an unknown environment. First presented in Universal Algorithmic Intelligence (Hutter, 2000), UAI offers a framework in which virtually all AI problems can be formulated, and a theory of how to solve them. UAI unifies ideas from sequential decision theory, Bayesian inference, and algorithmic information theory to construct AIXI, an optimal reinforcement learning agent that learns to act optimally in unknown environments. AIXI is the theoretical gold standard for intelligent behavior. The book covers both the theoretical and practical aspects of UAI. Bayesian updating can be done efficiently with context tree weighting, and planning can be approximated by sampling with Monte Carlo tree search. It provides algorithms for the reader to implement, and experimental results to compare against. These algorithms are used to approximate AIXI. The book ends with a philosophical discussion of Artificial General Intelligence: Can super-intelligent agents even be constructed? Is it inevitable that they will be constructed, and what are the potential consequences? This text is suitable for late undergraduate students. It provides an extensive chapter to fill in the required mathematics, probability, information, and computability theory background.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2732,
+  "title": "Block-based GPU Programming with Triton",
+  "org": "openai",
+  "date": "2024-05-27",
+  "venue": null,
+  "url": "http://dx.doi.org/10.1109/ipdpsw63119.2024.00068",
+  "abstract": "Traditional single instruction, multiple threads (SIMT) programming with CUDA can be daunting to machine learning researchers in need of fast custom kernels. This can significantly slow down the evaluation of novel research ideas that cannot be neatly decomposed into a set of pre-built, vendoroptimized primitives. In this talk, we will shed light on an alternative programming model which -- while relatively high-level -- aims to be more expressive than common graph-compilers (e.g., XLA, Torch- Inductor) and enable the use of custom data-structures (e.g., linked list, block-sparse tensors, etc.). We will specifically discuss the design and implementation of Triton, a mid-level programming language that uses block-based abstractions to simplify kernel development for researchers without deep GPU programming expertise",
+  "needs_fetch": false
+ },
+ {
+  "id": 1636,
+  "title": "VADER: Visual Affordance Detection and Error Recovery for Multi Robot Human Collaboration",
+  "org": "deepmind",
+  "date": "2024-05-25",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2405.16021",
+  "abstract": "Robots today can exploit the rich world knowledge of large language models to chain simple behavioral skills into long-horizon tasks. However, robots often get interrupted during long-horizon tasks due to primitive skill failures and dynamic environments. We propose VADER, a plan, execute, detect framework with seeking help as a new skill that enables robots to recover and complete long-horizon tasks with the help of humans or other robots. VADER leverages visual question answering (VQA) modules to detect visual affordances and recognize execution errors. It then generates prompts for a language model planner (LMP) which decides when to seek help from another robot or human to recover from errors in long-horizon task execution. We show the effectiveness of VADER with two long-horizon robotic tasks. Our pilot study showed that VADER is capable of performing complex long-horizon tasks by asking for help from another robot to clear a table. Our user study showed that VADER is capable of performing complex long-horizon tasks by asking for help from a human to clear a path. We gathered feedback from people (N=19) about the performance of the VADER performance vs. a robot that did not ask for help. https://google-vader.github.io/",
+  "needs_fetch": false
+ },
+ {
+  "id": 405,
+  "title": "Theoretical Analysis of Weak-to-Strong Generalization",
+  "org": "other",
+  "date": "2024-05-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.16043",
+  "abstract": "Strong student models can learn from weaker teachers: when trained on the predictions of a weaker model, a strong pretrained student can learn to correct the weak model's errors and generalize to examples where the teacher is not confident, even when these examples are excluded from training. This enables learning from cheap, incomplete, and possibly incorrect label information, such as coarse logical rules or the generations of a language model. We show that existing weak supervision theory fails to account for both of these effects, which we call pseudolabel correction and coverage expansion, respectively. We give a new bound based on expansion properties of the data distribution and student hypothesis class that directly accounts for pseudolabel correction and coverage expansion. Our bounds capture the intuition that weak-to-strong generalization occurs when the strong model is unable to fit the mistakes of the weak teacher without incurring additional error. We show that these expansion properties can be checked from finite data and give empirical evidence that they hold in practice.",
+  "needs_fetch": false
+ },
+ {
+  "id": 404,
+  "title": "A transfer learning framework for weak-to-strong generalization",
+  "org": "other",
+  "date": "2024-05-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.16236",
+  "abstract": "Modern large language model (LLM) alignment techniques rely on human feedback, but it is unclear whether these techniques fundamentally limit the capabilities of aligned LLMs. In particular, it is unknown if it is possible to align (stronger) LLMs with superhuman capabilities with (weaker) human feedback without degrading their capabilities. This is an instance of the weak-to-strong generalization problem: using feedback from a weaker (less capable) model to train a stronger (more capable) model. We prove that weak-to-strong generalization is possible by eliciting latent knowledge from pre-trained LLMs. In particular, we cast the weak-to-strong generalization problem as a transfer learning problem in which we wish to transfer a latent concept prior from a weak model to a strong pre-trained model. We prove that a naive fine-tuning approach suffers from fundamental limitations, but an alternative refinement-based approach suggested by the problem structure provably overcomes the limitations of fine-tuning. Finally, we demonstrate the practical applicability of the refinement approach in multiple LLM alignment tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1637,
+  "title": "Applications of flow models to the generation of correlated lattice QCD ensembles",
+  "org": "deepmind",
+  "date": "2024-05-24",
+  "venue": "Physical review. D/Physical review. D.",
+  "url": "https://doi.org/10.1103/physrevd.109.094514",
+  "abstract": "Machine-learned normalizing flows can be used in the context of lattice quantum field theory to generate statistically correlated ensembles of lattice gauge fields at different action parameters. This work demonstrates how these correlations can be exploited for variance reduction in the computation of observables. Three different proof-of-concept applications are demonstrated using a novel residual flow architecture: continuum limits of gauge theories, the mass dependence of QCD observables, and hadronic matrix elements based on the Feynman–Hellmann approach. In all three cases, it is shown that statistical uncertainties are significantly reduced when machine-learned flows are incorporated as compared with the same calculations performed with uncorrelated ensembles or direct reweighting. Published by the American Physical Society 2024",
+  "needs_fetch": false
+ },
+ {
+  "id": 406,
+  "title": "Quantifying the Gain in Weak-to-Strong Generalization",
+  "org": "other",
+  "date": "2024-05-24",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2405.15116",
+  "abstract": "Recent advances in large language models have shown capabilities that are extraordinary and near-superhuman. These models operate with such complexity that reliably evaluating and aligning them proves challenging for humans. This leads to the natural question: can guidance from weak models (like humans) adequately direct the capabilities of strong models? In a recent and somewhat surprising work, Burns et al. (2023) empirically demonstrated that when strong models (like GPT-4) are finetuned using labels generated by weak supervisors (like GPT-2), the strong models outperform their weaker counterparts -- a phenomenon they term weak-to-strong generalization. In this work, we present a theoretical framework for understanding weak-to-strong generalization. Specifically, we show that the improvement in performance achieved by strong models over their weaker counterparts is quantified by the misfit error incurred by the strong model on labels generated by the weaker model. Our theory reveals several curious algorithmic insights. For instance, we can predict the amount by which the strong model will improve over the weak model, and also choose among different weak models to train the strong model, based on its misfit error. We validate our theoretical findings through various empirical assessments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1639,
+  "title": "Neural Wave Functions for Superfluids",
+  "org": "deepmind",
+  "date": "2024-05-22",
+  "venue": "Physical Review X",
+  "url": "https://doi.org/10.1103/physrevx.14.021030",
+  "abstract": "Understanding superfluidity remains a major goal of condensed matter physics. Here, we tackle this challenge utilizing the recently developed fermionic neural network (FermiNet) wave function [D. Pfau , .] for variational Monte Carlo calculations. We study the unitary Fermi gas, a system with strong, short-range, two-body interactions known to possess a superfluid ground state but difficult to describe quantitatively. We demonstrate key limitations of the FermiNet in studying the unitary Fermi gas and propose a simple modification based on the idea of an antisymmetric geminal power singlet (AGPs) wave function. The new AGPs FermiNet outperforms the original FermiNet significantly in paired systems, giving results which are more accurate than fixed-node diffusion Monte Carlo and are consistent with experiment. We prove mathematically that the new , which differs from the original only by the method of antisymmetrization, is a strict generalization of the original FermiNet architecture, despite the use of fewer parameters. Our approach shares several advantages with the original FermiNet: The use of a neural network removes the need for an underlying basis set; sand the flexibility of the network yields extremely accurate results within a variational quantum Monte Carlo framework that provides access to unbiased estimates of arbitrary ground-state expectation values. We discuss how the method can be extended to study other superfluid. Published by the American Physical Society ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1638,
+  "title": "Warmth and competence in human-agent cooperation",
+  "org": "deepmind",
+  "date": "2024-05-22",
+  "venue": "Autonomous Agents and Multi-Agent Systems",
+  "url": "https://arxiv.org/abs/2201.13448",
+  "abstract": "Abstract Interaction and cooperation with humans are overarching aspirations of artificial intelligence research. Recent studies demonstrate that AI agents trained with deep reinforcement learning are capable of collaborating with humans. These studies primarily evaluate human compatibility through “objective” metrics such as task performance, obscuring potential variation in the levels of trust and subjective preference that different agents garner. To better understand the factors shaping subjective preferences in human-agent cooperation, we train deep reinforcement learning agents in Coins, a two-player social dilemma. We recruit $$N = 501$$ <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"> <mml:mrow> <mml:mi>N</mml:mi> <mml:mo>=</mml:mo> <mml:mn>501</mml:mn> </mml:mrow> </mml:math> participants for a human-agent cooperation study and measure their impressions of the agents they encounter. Participants’ perceptions of warmth and competence predict their stated preferences for different agents, above and beyond objective performance metrics. Drawing inspiration from social science and biology research, we subsequently implement a new “partner choice” framework to elicit revealed preferences: after playing an episode with an agent, participants are asked whether they would like to play the next episode with the same agent or to play alone. As with stated preferences, social perception better predicts participants’ revealed preferences than does objective performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 533,
+  "title": "GPT-4 Jailbreaks Itself with Near-Perfect Success Using Self-Explanation",
+  "org": "other",
+  "date": "2024-05-21",
+  "venue": "EMNLP 2024",
+  "url": "https://arxiv.org/abs/2405.13077",
+  "abstract": "Research on jailbreaking has been valuable for testing and understanding the safety and security issues of large language models (LLMs). In this paper, we introduce Iterative Refinement Induced Self-Jailbreak (IRIS), a novel approach that leverages the reflective capabilities of LLMs for jailbreaking with only black-box access. Unlike previous methods, IRIS simplifies the jailbreaking process by using a single model as both the attacker and target. This method first iteratively refines adversarial prompts through self-explanation, which is crucial for ensuring that even well-aligned LLMs obey adversarial instructions. IRIS then rates and enhances the output given the refined prompt to increase its harmfulness. We find that IRIS achieves jailbreak success rates of 98% on GPT-4, 92% on GPT-4 Turbo, and 94% on Llama-3.1-70B in under 7 queries. It significantly outperforms prior approaches in automatic, black-box, and interpretable jailbreaking, while requiring substantially fewer queries, thereby establishing a new standard for interpretable jailbreaking methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 92,
+  "title": "Mapping the Mind of a Large Language Model",
+  "org": "anthropic",
+  "date": "2024-05-21",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/mapping-mind-language-model",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1640,
+  "title": "Human-like Learning in Temporally Structured Environments",
+  "org": "deepmind",
+  "date": "2024-05-20",
+  "venue": "Proceedings of the AAAI Symposium Series",
+  "url": "http://dx.doi.org/10.1609/aaaiss.v3i1.31273",
+  "abstract": "Natural environments have correlations at a wide range of timescales. Human cognition is tuned to this temporal structure, as seen by power laws of learning and memory, and by spacing effects whereby the intervals between repeated training data affect how long knowledge is retained. Machine learning is instead dominated by batch iid training or else relatively simple nonstationarity assumptions such as random walks or discrete task sequences. The main contributions of our work are: (1) We develop a Bayesian model formalizing the brain's inductive bias for temporal structure and show our model accounts for key features of human learning and memory. (2) We translate the model into a new gradient-based optimization technique for neural networks that endows them with human-like temporal inductive bias and improves their performance in realistic nonstationary tasks. Our technical approach is founded on Bayesian inference over 1/f noise, a statistical signature of many natural environments with long-range, power law correlations. We derive a new closed-form solution to this problem by treating the state of the environment as a sum of processes on different timescales and applying an extended Kalman filter to learn all timescales jointly. We then derive a variational approximation of this model for training neural networks, which can be used as a drop-in replacement for standard optimizers in arbitrary architectures. Our optimizer decomposes each weight in the network as a sum of su",
+  "needs_fetch": false
+ },
+ {
+  "id": 1641,
+  "title": "Poisoning Web-Scale Training Datasets is Practical",
+  "org": "deepmind",
+  "date": "2024-05-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/sp54263.2024.00179",
+  "abstract": "Deep learning models are often trained on distributed, web-scale datasets crawled from the internet. In this paper, we introduce two new dataset poisoning attacks that intentionally introduce malicious examples to a model’s performance. Our attacks are immediately practical and could, today, poison 10 popular datasets. Our first attack, split-view poisoning, exploits the mutable nature of internet content to ensure a dataset annotator’s initial view of the dataset differs from the view downloaded by subsequent clients. By exploiting specific invalid trust assumptions, we show how we could have poisoned 0.01% of the LAION-400M or COYO-700M datasets for just $60 USD. Our second attack, frontrunning poisoning, targets web-scale datasets that periodically snapshot crowd-sourced content—such as Wikipedia—where an attacker only needs a time-limited window to inject malicious examples. In light of both attacks, we notify the maintainers of each affected dataset and recommended several low-overhead defenses.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1642,
+  "title": "Working with machines in mathematics",
+  "org": "deepmind",
+  "date": "2024-05-15",
+  "venue": "Bulletin of the American Mathematical Society",
+  "url": "https://doi.org/10.1090/bull/1843",
+  "abstract": "Machine learning is making significant contributions to many fields but how can it be used as a tool for mathematicians? This article explores the emerging role of machine learning in mathematical research, highlighting how its perceptual capabilities can augment human intuition and lead to new discoveries.",
+  "needs_fetch": false
+ },
+ {
+  "id": 604,
+  "title": "Towards Principled Evaluations of Sparse Autoencoders for Interpretability and Control",
+  "org": "deepmind",
+  "date": "2024-05-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.08366",
+  "abstract": "Disentangling model activations into meaningful features is a central problem in interpretability. However, the absence of ground-truth for these features in realistic scenarios makes validating recent approaches, such as sparse dictionary learning, elusive. To address this challenge, we propose a framework for evaluating feature dictionaries in the context of specific tasks, by comparing them against \\emph{supervised} feature dictionaries. First, we demonstrate that supervised dictionaries achieve excellent approximation, control, and interpretability of model computations on the task. Second, we use the supervised dictionaries to develop and contextualize evaluations of unsupervised dictionaries along the same three axes. We apply this framework to the indirect object identification (IOI) task using GPT-2 Small, with sparse autoencoders (SAEs) trained on either the IOI or OpenWebText datasets. We find that these SAEs capture interpretable features for the IOI task, but they are less successful than supervised features in controlling the model. Finally, we observe two qualitative phenomena in SAE training: feature occlusion (where a causally relevant concept is robustly overshadowed by even slightly higher-magnitude ones in the learned features), and feature over-splitting (where binary features split into many smaller, less interpretable features). We hope that our framework will provide a useful step towards more objective and grounded evaluations of sparse dictionary lear",
+  "needs_fetch": false
+ },
+ {
+  "id": 2733,
+  "title": "Topological Embedding of Human Brain Networks with Applications to Dynamics of Temporal Lobe Epilepsy",
+  "org": "openai",
+  "date": "2024-05-13",
+  "venue": "PubMed",
+  "url": "https://arxiv.org/abs/2405.07835",
+  "abstract": "We introduce a novel, data-driven topological data analysis (TDA) approach for embedding brain networks into a lower-dimensional space in quantifying the dynamics of temporal lobe epilepsy (TLE) obtained from resting-state functional magnetic resonance imaging (rs-fMRI). This embedding facilitates the orthogonal projection of 0D and 1D topological features, allowing for the visualization and modeling of the dynamics of functional human brain networks in a resting state. We then quantify the topological disparities between networks to determine the coordinates for embedding. This framework enables us to conduct a coherent statistical inference within the embedded space. Our results indicate that brain network topology in TLE patients exhibits increased rigidity in 0D topology but more rapid flections compared to that of normal controls in 1D topology.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1649,
+  "title": "Mastering Stacking of Diverse Shapes with Large-Scale Iterative Reinforcement Learning on Real Robots",
+  "org": "deepmind",
+  "date": "2024-05-13",
+  "venue": null,
+  "url": "http://dx.doi.org/10.1109/icra57147.2024.10610297",
+  "abstract": "Reinforcement learning solely from an agent’s self-generated data is often believed to be infeasible for learning on real robots, due to the amount of data needed. However, if done right, agents learning from real data can be surprisingly efficient through re-using previously collected sub-optimal data. In this paper we demonstrate how the increased understanding of off-policy learning methods and their embedding in an iterative online/offline scheme (\"collect and infer\") can drastically improve data-efficiency by using all the collected experience, which empowers learning from real robot experience only. Moreover, the resulting policy improves significantly over the state of the art on a recently proposed real robot manipulation benchmark. Our approach learns end-to-end, directly from pixels, and does not rely on additional human domain knowledge such as a simulator or demonstrations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1648,
+  "title": "Conditionally Combining Robot Skills using Large Language Models",
+  "org": "deepmind",
+  "date": "2024-05-13",
+  "venue": null,
+  "url": "http://dx.doi.org/10.1109/icra57147.2024.10611275",
+  "abstract": "This paper combines two contributions. First, we introduce an extension of the Meta-World benchmark, which we call \"Language-World,\" which allows a large language model to operate in a simulated robotic environment using semi-structured natural language queries and scripted skills described using natural language. By using the same set of tasks as Meta-World, Language-World results can be easily compared to Meta-World results, allowing for a point of comparison between recent methods using Large Language Models (LLMs) and those using Deep Reinforcement Learning. Second, we introduce a method we call Plan Conditioned Behavioral Cloning (PCBC), that allows finetuning the behavior of high-level plans using end-to-end demonstrations. Using Language-World, we show that PCBC is able to achieve strong performance in a variety of few-shot regimes, often achieving task generalization with as little as a single demonstration. We have made Language-World available as open-source software at https://github.com/krzentner/language-world/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1647,
+  "title": "Robotic Offline RL from Internet Videos via Value-Function Learning",
+  "org": "deepmind",
+  "date": "2024-05-13",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra57147.2024.10611575",
+  "abstract": "Pre-training on Internet data has proven to be a key ingredient for broad generalization in many modern ML systems. What would it take to enable such capabilities in robotic reinforcement learning (RL)? Offline RL methods, which learn from datasets of robot experience, offer one way to leverage prior data into the robotic learning pipeline. However, these methods have a \"type mismatch\" with video data (such as Ego4D), which are the largest prior datasets available for robotics, since video offers observation-only experience without the action or reward annotations needed for RL methods. In this paper, we develop a system for leveraging large-scale human video datasets in robotic offline RL, based entirely on learning value functions via temporal-difference learning. We show that value learning on video datasets learns representations that are more conducive to downstream robotic offline RL than other approaches for learning from video data. Our system, called V-PTR, combines the benefits of pre-training on video data with robotic offline RL approaches that train on diverse robot data, resulting in value functions and policies for manipulation tasks that perform better, act robustly, and generalize broadly. On several manipulation tasks on a real WidowX robot and in simulated settings, our framework produces policies that greatly improve over other prior methods. Our video and additional details can be found at https://dibyaghosh.com/vptr/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1646,
+  "title": "Decomposing the Generalization Gap in Imitation Learning for Visual Robotic Manipulation",
+  "org": "deepmind",
+  "date": "2024-05-13",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra57147.2024.10611331",
+  "abstract": "What makes generalization hard for imitation learning in visual robotic manipulation? This question is difficult to approach at face value, but the environment from the perspective of a robot can often be decomposed into enumerable factors of variation, such as the lighting conditions or the placement of the camera. Empirically, generalization to some of these factors have presented a greater obstacle than others, but existing work sheds little light on precisely how much each factor contributes to the generalization gap. Towards an answer to this question, we study imitation learning policies in simulation and on a real robot language-conditioned manipulation task to quantify the difficulty of generalization to different (sets of) factors. We design a simulated benchmark of 19 tasks with 11 factors of variation to facilitate more controlled evaluations of generalization. From our study, we determine an ordering of factors based on generalization difficulty, that is consistent across simulation and our real robot setup.<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1</sup>",
+  "needs_fetch": false
+ }
+]

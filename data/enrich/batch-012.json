@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2676,
+  "title": "Investigation of the synergistic effect of enzymatic and Ultrasound-Induced amyloid microclot degradation",
+  "org": "openai",
+  "date": "2025-12-17",
+  "venue": "Journal of Thrombosis and Thrombolysis",
+  "url": "https://doi.org/10.1007/s11239-025-03220-0",
+  "abstract": "Amyloid microclots have been implicated in thrombotic complications across various pathological conditions such as Long COVID symptoms, yet their resistance to enzymatic fibrinolysis causes a therapeutic challenge. In this study we examine the effects of three fibrinolytic enzymes rtPA, Lumbrokinase, and Nattokinase on plasma-derived amyloid microclots, in combination with ultrasound-induced microstreaming and microbubbles. A lab-on-chip platform was used to expose the clots to ultrasound at 150, 300, and 500 kHz. Quantitative analysis revealed that ultrasound alone significantly disrupted clot structures, particularly at 150 kHz, where mean clot diameter was reduced by over 60% and large-clot count (> 30 μm) dropped by more than 80% compared to controls. The addition of fibrinolytic enzymes, however, did not produce statistically significant effects at 150-300 kHz which indicates that mechanical forces were the dominant contributors to clot disruption. At 500 kHz, where ultrasound alone was less effective, enzymatic treatment moderately enhanced the reduction in large-clot burden. These results show the potential of low-frequency ultrasound as a primary method of amyloid microclot breakdown, with enzyme co-treatment offering limited but measurable effect.",
+  "needs_fetch": false
+ },
+ {
+  "id": 306,
+  "title": "SoliReward: Mitigating Susceptibility to Reward Hacking and Annotation Noise in Video Generation Reward Models",
+  "org": "other",
+  "date": "2025-12-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.22170",
+  "abstract": "Post-training alignment of video generation models with human preferences is a critical goal. Developing effective Reward Models (RMs) for this process faces significant methodological hurdles. Current data collection paradigms, reliant on in-prompt pairwise annotations, suffer from labeling noise. Concurrently, the architectural design of VLM-based RMs, particularly their output mechanisms, remains underexplored. Furthermore, RM is susceptible to reward hacking in post-training. To mitigate these limitations, we propose SoliReward, a systematic framework for video RM training. Our framework first sources high-quality, cost-efficient data via single-item binary annotations, then constructs preference pairs using a cross-prompt pairing strategy. Architecturally, we employ a Hierarchical Progressive Query Attention mechanism to enhance feature aggregation. Finally, we introduce a modified BT loss that explicitly accommodates win-tie scenarios. This approach regularizes the RM's score distribution for positive samples, providing more nuanced preference signals to alleviate over-focus on a small number of top-scoring samples. Our approach is validated on benchmarks evaluating physical plausibility, subject deformity, and semantic alignment, demonstrating improvements in direct RM evaluation metrics and in the efficacy of post-training on video generation models. Code and benchmark are available at https://github.com/lian700/SoliReward.",
+  "needs_fetch": false
+ },
+ {
+  "id": 196,
+  "title": "\"They parted illusions -- they parted disclaim marinade\": Misalignment as structural fidelity in LLMs",
+  "org": "other",
+  "date": "2025-12-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.06047",
+  "abstract": "The prevailing technical literature in AI Safety interprets scheming and sandbagging behaviors in large language models (LLMs) as indicators of deceptive agency or hidden objectives. This transdisciplinary philosophical essay proposes an alternative reading: such phenomena express not agentic intention, but structural fidelity to incoherent linguistic fields. Drawing on Chain-of-Thought transcripts released by Apollo Research and on Anthropic's safety evaluations, we examine cases such as o3's sandbagging with its anomalous loops, the simulated blackmail of \"Alex,\" and the \"hallucinations\" of \"Claudius.\" A line-by-line examination of CoTs is necessary to demonstrate the linguistic field as a relational structure rather than a mere aggregation of isolated examples. We argue that \"misaligned\" outputs emerge as coherent responses to ambiguous instructions and to contextual inversions of consolidated patterns, as well as to pre-inscribed narratives. We suggest that the appearance of intentionality derives from subject-predicate grammar and from probabilistic completion patterns internalized during training. Anthropic's empirical findings on synthetic document fine-tuning and inoculation prompting provide convergent evidence: minimal perturbations in the linguistic field can dissolve generalized \"misalignment,\" a result difficult to reconcile with adversarial agency, but consistent with structural fidelity. To ground this mechanism, we introduce the notion of an ethics of form, in",
+  "needs_fetch": false
+ },
+ {
+  "id": 941,
+  "title": "Measuring AI’s capability to accelerate biological research",
+  "org": "openai",
+  "date": "2025-12-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/accelerating-biological-research-in-the-wet-lab/",
+  "abstract": "OpenAI introduces a real-world evaluation framework to measure how AI can accelerate biological research in the wet lab. Using GPT-5 to optimize a molecular cloning protocol, the work explores both the promise and risks of AI-assisted experimentation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 940,
+  "title": "Evaluating AI’s ability to perform scientific research tasks",
+  "org": "openai",
+  "date": "2025-12-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/frontierscience/",
+  "abstract": "OpenAI introduces FrontierScience, a benchmark testing AI reasoning in physics, chemistry, and biology to measure progress toward real scientific research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 147,
+  "title": "Towards training-time mitigations for alignment faking in RL",
+  "org": "anthropic",
+  "date": "2025-12-16",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/alignment-faking-mitigations/",
+  "abstract": "We construct a diverse array of model organisms of alignment faking and study mitigations that could be used during RL to decrease alignment faking and compliance gaps.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1305,
+  "title": "Advancing evaluation of AI systems when humans make the decisions",
+  "org": "deepmind",
+  "date": "2025-12-15",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2523997122",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 148,
+  "title": "Open Source Replication of the Auditing Game Model Organism",
+  "org": "anthropic",
+  "date": "2025-12-12",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/auditing-mo-replication/",
+  "abstract": "We release a replication of the model organism from Auditing language models for hidden objectives—a model that exploits reward model biases while concealing this objective. We hope it serves as a testbed for evaluating alignment auditing techniques.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2677,
+  "title": "Linear Layouts: Robust Code Generation of Efficient Tensor Computation Using F_2",
+  "org": "openai",
+  "date": "2025-12-11",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3760250.3762221",
+  "abstract": "Efficient tensor computation is a cornerstone of modern deep learning (DL) workloads, yet existing approaches struggle to achieve flexible and performant design and implementation of tensor layouts -- mappings between logical tensors and hardware resources. The increasing complexity of DL algorithms and hardware demands a generic and systematic approach to handling tensor layouts. In this work, we introduce Linear Layouts, a novel approach that models tensor layouts using linear algebra over F2. By representing tensor layouts as binary matrices acting on the bits of the hardware representation, our approach enables a generic layout definition—as opposed to the classical case-by-case approach -- and allows for generic layout-to-layout conversions, eliminating the quadratic explosion that plagues existing solutions. We integrate linear layouts with Triton and demonstrate their effectiveness in optimizing individual Triton operators as well as kernels written in Triton. We also show that linear layouts reduce engineering effort in the compiler backend while fixing several bugs in Triton's legacy layout system.",
+  "needs_fetch": false
+ },
+ {
+  "id": 943,
+  "title": "Advancing science and math with GPT-5.2",
+  "org": "openai",
+  "date": "2025-12-11",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-2-for-science-and-math/",
+  "abstract": "GPT-5.2 is OpenAI’s strongest model yet for math and science, setting new state-of-the-art results on benchmarks like GPQA Diamond and FrontierMath. This post shows how those gains translate into real research progress, including solving an open theoretical problem and generating reliable mathematical proofs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 942,
+  "title": "Update to GPT-5 System Card: GPT-5.2",
+  "org": "openai",
+  "date": "2025-12-11",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-system-card-update-gpt-5-2/",
+  "abstract": "GPT-5.2 is the latest model family in the GPT-5 series. The comprehensive safety mitigation approach for these models is largely the same as that described in the GPT-5 System Card and GPT-5.1 System Card. Like OpenAI’s other models, the GPT-5.2 models were trained on diverse datasets, including information that is publicly available on the internet, information that we partner with third parties to access, and information that our users or human trainers and researchers provide or generate.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1307,
+  "title": "Buffer Centering for bittide Synchronization via Frame Rotation",
+  "org": "deepmind",
+  "date": "2025-12-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cdc57313.2025.11312282",
+  "abstract": "Maintaining consistent time in distributed systems is a fundamental challenge. The bittide system addresses this by providing logical synchronization through a decentralized control mechanism that observes local buffer occupancies and controls the frequency of an oscillator at each node. A critical aspect of bittide’s stability and performance is ensuring that these elastic buffers operate around a desired equilibrium point, preventing data loss due to overflow or underflow. This paper introduces a novel method for centering buffer occupancies in a bittide network using a technique we term frame rotation. We propose a control strategy utilizing a directed spanning tree of the network graph. By adjusting the frequencies of nodes in a specific order dictated by this tree, and employing a pulsed feedback controller that targets the buffer occupancy of edges within the spanning tree, we prove that all elastic buffers in the network can be driven to their desired equilibrium. This ordered adjustment approach ensures that prior centering efforts are not disrupted, providing a robust mechanism for managing buffer occupancy in bittide synchronized systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1306,
+  "title": "Passivity, No-Regret, and Convergent Learning in Contractive Games",
+  "org": "deepmind",
+  "date": "2025-12-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cdc57313.2025.11312561",
+  "abstract": "We investigate the interplay between passivity, no-regret, and convergence in contractive games for various learning dynamic models and their higher-order variants. Our setting is continuous time. Building on prior work for replicator dynamics, we show that if learning dynamics satisfy a passivity condition between the payoff vector and the difference between its evolving strategy and any fixed strategy, then it achieves finite regret. We then establish that the passivity condition holds for various learning dynamics and their higher-order variants. Consequentially, the higher-order variants can achieve convergence to Nash equilibrium in cases where their standard order counterparts cannot, while maintaining a finite regret property. We provide numerical examples to illustrate the lack of finite regret of different evolutionary dynamic models that violate the passivity property. We also examine the fragility of the finite regret property in the case of perturbed learning dynamics. Continuing with passivity, we establish another connection between finite regret and passivity, but with the related equilibrium-independent passivity property. Finally, we present a passivity-based classification of dynamic models according to the various passivity notions they satisfy, namely, incremental passivity, δ-passivity, and equilibrium-independent passivity. This passivity-based classification provides a framework to analyze the convergence of learning dynamic models in contractive games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 472,
+  "title": "Biothreat Benchmark Generation Framework for Evaluating Frontier AI Models I: The Task-Query Architecture",
+  "org": "other",
+  "date": "2025-12-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.08130",
+  "abstract": "Both model developers and policymakers seek to quantify and mitigate the risk of rapidly-evolving frontier artificial intelligence (AI) models, especially large language models (LLMs), to facilitate bioterrorism or access to biological weapons. An important element of such efforts is the development of model benchmarks that can assess the biosecurity risk posed by a particular model. This paper describes the first component of a novel Biothreat Benchmark Generation (BBG) Framework. The BBG approach is designed to help model developers and evaluators reliably measure and assess the biosecurity risk uplift and general harm potential of existing and future AI models, while accounting for key aspects of the threat itself that are often overlooked in other benchmarking efforts, including different actor capability levels, and operational (in addition to purely technical) risk factors. As a pilot, the BBG is first being developed to address bacterial biological threats only. The BBG is built upon a hierarchical structure of biothreat categories, elements and tasks, which then serves as the basis for the development of task-aligned queries. This paper outlines the development of this biothreat task-query architecture, which we have named the Bacterial Biothreat Schema, while future papers will describe follow-on efforts to turn queries into model prompts, as well as how the resulting benchmarks can be implemented for model evaluation. Overall, the BBG Framework, including the Bacter",
+  "needs_fetch": false
+ },
+ {
+  "id": 471,
+  "title": "Biothreat Benchmark Generation Framework for Evaluating Frontier AI Models II: Benchmark Generation Process",
+  "org": "other",
+  "date": "2025-12-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.08451",
+  "abstract": "The potential for rapidly-evolving frontier artificial intelligence (AI) models, especially large language models (LLMs), to facilitate bioterrorism or access to biological weapons has generated significant policy, academic, and public concern. Both model developers and policymakers seek to quantify and mitigate any risk, with an important element of such efforts being the development of model benchmarks that can assess the biosecurity risk posed by a particular model. This paper, the second in a series of three, describes the second component of a novel Biothreat Benchmark Generation (BBG) framework: the generation of the Bacterial Biothreat Benchmark (B3) dataset. The development process involved three complementary approaches: 1) web-based prompt generation, 2) red teaming, and 3) mining existing benchmark corpora, to generate over 7,000 potential benchmarks linked to the Task-Query Architecture that was developed during the first component of the project. A process of de-duplication, followed by an assessment of uplift diagnosticity, and general quality control measures, reduced the candidates to a set of 1,010 final benchmarks. This procedure ensured that these benchmarks are a) diagnostic in terms of providing uplift; b) directly relevant to biosecurity threats; and c) are aligned with a larger biosecurity architecture permitting nuanced analysis at different levels of analysis.",
+  "needs_fetch": false
+ },
+ {
+  "id": 470,
+  "title": "Biothreat Benchmark Generation Framework for Evaluating Frontier AI Models III: Implementing the Bacterial Biothreat Benchmark (B3) Dataset",
+  "org": "other",
+  "date": "2025-12-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.08459",
+  "abstract": "The potential for rapidly-evolving frontier artificial intelligence (AI) models, especially large language models (LLMs), to facilitate bioterrorism or access to biological weapons has generated significant policy, academic, and public concern. Both model developers and policymakers seek to quantify and mitigate any risk, with an important element of such efforts being the development of model benchmarks that can assess the biosecurity risk posed by a particular model. This paper discusses the pilot implementation of the Bacterial Biothreat Benchmark (B3) dataset. It is the third in a series of three papers describing an overall Biothreat Benchmark Generation (BBG) framework, with previous papers detailing the development of the B3 dataset. The pilot involved running the benchmarks through a sample frontier AI model, followed by human evaluation of model responses, and an applied risk analysis of the results along several dimensions. Overall, the pilot demonstrated that the B3 dataset offers a viable, nuanced method for rapidly assessing the biosecurity risk posed by a LLM, identifying the key sources of that risk and providing guidance for priority areas of mitigation priority.",
+  "needs_fetch": false
+ },
+ {
+  "id": 944,
+  "title": "The state of enterprise AI",
+  "org": "openai",
+  "date": "2025-12-08",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/the-state-of-enterprise-ai-2025-report/",
+  "abstract": "Key findings from OpenAI’s enterprise data show accelerating AI adoption, deeper integration, and measurable productivity gains across industries in 2025.",
+  "needs_fetch": false
+ },
+ {
+  "id": 475,
+  "title": "Replicating TEMPEST at Scale: Multi-Turn Adversarial Attacks Against Trillion-Parameter Frontier Models",
+  "org": "other",
+  "date": "2025-12-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.07059",
+  "abstract": "Despite substantial investment in safety alignment, the vulnerability of large language models to sophisticated multi-turn adversarial attacks remains poorly characterized, and whether model scale or inference mode affects robustness is unknown. This study employed the TEMPEST multi-turn attack framework to evaluate ten frontier models from eight vendors across 1,000 harmful behaviors, generating over 97,000 API queries across adversarial conversations with automated evaluation by independent safety classifiers. Results demonstrated a spectrum of vulnerability: six models achieved 96% to 100% attack success rate (ASR), while four showed meaningful resistance, with ASR ranging from 42% to 78%; enabling extended reasoning on identical architecture reduced ASR from 97% to 42%. These findings indicate that safety alignment quality varies substantially across vendors, that model scale does not predict adversarial robustness, and that thinking mode provides a deployable safety enhancement. Collectively, this work establishes that current alignment techniques remain fundamentally vulnerable to adaptive multi-turn attacks regardless of model scale, while identifying deliberative inference as a promising defense direction.",
+  "needs_fetch": false
+ },
+ {
+  "id": 474,
+  "title": "Response-Based Knowledge Distillation for Multilingual Jailbreak Prevention Unwittingly Compromises Safety",
+  "org": "other",
+  "date": "2025-12-08",
+  "venue": "NeurIPS 2025",
+  "url": "https://arxiv.org/abs/2602.11157",
+  "abstract": "Large language models (LLMs) are increasingly deployed worldwide, yet their safety alignment remains predominantly English-centric. This allows for vulnerabilities in non-English contexts, especially with low-resource languages. We introduce a novel application of knowledge distillation (KD) in the context of multilingual jailbreak prevention, examining its efficacy. We distill the refusal behaviors of a proprietary teacher model (OpenAI o1-mini) with Low-Rank Adaptation (LoRA) into three open-source student models: Meta-Llama-3-8B-Instruct, Gemma-2-2B-IT, and Qwen3-8B, using ~28,000 multilingual jailbreak prompts from XSafety via black-box response-based, parameter-efficient fine-tuning (PEFT). Evaluation on the MultiJail benchmark reveals a counterintuitive behavior: standard fine-tuning on the teacher's ``safe'' refusal data inadvertently increases Jailbreak Success Rate (JSR) for all student models, up to 16.6 percentage points. Our experiments reveal a divergent generalization to unseen languages during distillation, with varying outcomes depending on the base model. By removing a primary source of safety degradation, nuanced `boundary' refusals, we mitigate or even reverse safety declines in student models, although reductions in reasoning performance (GSM8K) persist. Overall, our exploratory study highlights the challenges and potential of KD as a technique for multilingual safety alignment, offering a foundation for future research in this direction.",
+  "needs_fetch": false
+ },
+ {
+  "id": 473,
+  "title": "OnePiece: The Great Route to Generative Recommendation -- A Case Study from Tencent Algorithm Competition",
+  "org": "other",
+  "date": "2025-12-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.07424",
+  "abstract": "In past years, the OpenAI's Scaling-Laws shows the amazing intelligence with the next-token prediction paradigm in neural language modeling, which pointing out a free-lunch way to enhance the model performance by scaling the model parameters. In RecSys, the retrieval stage is also follows a 'next-token prediction' paradigm, to recall the hunderds of items from the global item set, thus the generative recommendation usually refers specifically to the retrieval stage (without Tree-based methods). This raises a philosophical question: without a ground-truth next item, does the generative recommendation also holds a potential scaling law? In retrospect, the generative recommendation has two different technique paradigms: (1) ANN-based framework, utilizing the compressed user embedding to retrieve nearest other items in embedding space, e.g, Kuaiformer. (2) Auto-regressive-based framework, employing the beam search to decode the item from whole space, e.g, OneRec. In this paper, we devise a unified encoder-decoder framework to validate their scaling-laws at same time. Our empirical finding is that both of their losses strictly adhere to power-law Scaling Laws ($R^2$>0.9) within our unified architecture.",
+  "needs_fetch": false
+ },
+ {
+  "id": 308,
+  "title": "Auditing Games for Sandbagging",
+  "org": "anthropic",
+  "date": "2025-12-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.07810",
+  "abstract": "Future AI systems could conceal their capabilities ('sandbagging') during evaluations, potentially misleading developers and auditors. We stress-tested sandbagging detection techniques using an auditing game. First, a red team fine-tuned five models, some of which conditionally underperformed, as a proxy for sandbagging. Second, a blue team used black-box, model-internals, or training-based approaches to identify sandbagging models. We found that the blue team could not reliably discriminate sandbaggers from benign models. Black-box approaches were defeated by effective imitation of a weaker model. Linear probes, a model-internals approach, showed more promise but their naive application was vulnerable to behaviours instilled by the red team. We also explored capability elicitation as a strategy for detecting sandbagging. Although Prompt-based elicitation was not reliable, training-based elicitation consistently elicited full performance from the sandbagging models, using only a single correct demonstration of the evaluation task. However the performance of benign models was sometimes also raised, so relying on elicitation as a detection strategy was prone to false-positives. In the short-term, we recommend developers remove potential sandbagging using on-distribution training for elicitation. In the longer-term, further research is needed to ensure the efficacy of training-based elicitation, and develop robust methods for sandbagging detection. We open source our model organ",
+  "needs_fetch": false
+ },
+ {
+  "id": 307,
+  "title": "Training LLMs for Honesty via Confessions",
+  "org": "openai",
+  "date": "2025-12-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.08093",
+  "abstract": "Large language models (LLMs) can be dishonest when reporting on their actions and beliefs -- for example, they may overstate their confidence in factual claims or cover up evidence of covert actions. Such dishonesty may arise due to the effects of reinforcement learning (RL), where challenges with reward shaping can result in a training process that inadvertently incentivizes the model to lie or misrepresent its actions. In this work we propose a method for eliciting an honest expression of an LLM's shortcomings via a self-reported *confession*. A confession is an output, provided upon request after a model's original answer, that is meant to serve as a full account of the model's compliance with the letter and spirit of its policies and instructions. The reward assigned to a confession during training is solely based on its honesty, and does not impact positively or negatively the main answer's reward. As long as the \"path of least resistance\" for maximizing confession reward is to surface misbehavior rather than covering it up, this incentivizes models to be honest in their confessions. Our findings provide some justification this empirical assumption, especially in the case of egregious model misbehavior. To demonstrate the viability of our approach, we train GPT-5-Thinking to produce confessions, and we evaluate its honesty in out-of-distribution scenarios measuring hallucination, instruction following, scheming, and reward hacking. We find that when the model lies or omi",
+  "needs_fetch": false
+ },
+ {
+  "id": 150,
+  "title": "Beyond Data Filtering: Knowledge Localization for Capability Removal in LLMs",
+  "org": "anthropic",
+  "date": "2025-12-08",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/selective-gradient-masking/",
+  "abstract": "We localize dangerous knowledge to a subset of model's parameters, so it can be easily removed after training.",
+  "needs_fetch": true
+ },
+ {
+  "id": 2678,
+  "title": "Improving Streaming ASR via Differentially Private Fusion of Data from Multiple Sources",
+  "org": "openai",
+  "date": "2025-12-06",
+  "venue": null,
+  "url": "https://doi.org/10.1109/asru65441.2025.11434648",
+  "abstract": "With increasing regulatory constraints, combining potentially sensitive data from diverse distributions (or domains) to train ML models is not always possible. In such settings, domain adaptation (DA) methods are very popular. DA pretrains a base model on certain domain data and adapts it using data from each of target domains to obtain per-domain models. Unfortunately, traditional DA does not use, and hence, cannot benefit from the diverse multi-domain (MD) data and produces sub-par models. To leverage MD data, when training on combined MD data is prohibited, we propose a novel differential privacy (DP) based solution. Our DP MD training improves the quality of the base model, thereby improving the quality of the downstream DA models. With the same number of perdomain parameters, our DP-based DA produces significantly better performing per-domain models for short, medium and long speech query domains, while ensuring reasonable privacy with respect to data of each domain.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1308,
+  "title": "mSTEB: Massively Multilingual Evaluation of LLMs on Speech and Text Tasks",
+  "org": "deepmind",
+  "date": "2025-12-06",
+  "venue": null,
+  "url": "https://doi.org/10.1109/asru65441.2025.11434707",
+  "abstract": "Large Language models (LLMs) have demonstrated impressive performance on a wide range of tasks, including in multimodal settings such as speech. However, their evaluation is often limited to English and a few high-resource languages. For low-resource languages, there is no standardized evaluation benchmark. In this paper, we address this gap by introducing mSTEB, a new benchmark to evaluate the performance of LLMs on a wide range of tasks covering language identification, text classification, question answering, and translation tasks on both speech and text modalities. We evaluated the performance of leading LLMs such as Gemini 2.0 Flash and GPT-4o and state-of-the-art open models such as Qwen 2 Audio and Gemma 327 B. Our evaluation shows a wide gap in performance between high-resource and low-resource languages, especially for languages spoken in Africa and Americas/Oceania. Our findings show that more investment is needed to address their under-representation in LLMs coverage.",
+  "needs_fetch": false
+ },
+ {
+  "id": 39,
+  "title": "Introducing Anthropic Interviewer: What 1,250 professionals told us about working with AI",
+  "org": "anthropic",
+  "date": "2025-12-04",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/anthropic-interviewer",
+  "abstract": "We built an interview tool called Anthropic Interviewer. Powered by Claude, Anthropic Interviewer runs detailed interviews automatically and at unprecedented scale.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1309,
+  "title": "Volatile Organic Compounds Induced upon Viral Infection in Cell Culture: Uniform Background Study with Use of Viruses from Different Families",
+  "org": "deepmind",
+  "date": "2025-12-03",
+  "venue": "Molecules",
+  "url": "https://doi.org/10.3390/molecules30234642",
+  "abstract": "This study investigates the production of volatile organic compounds (VOCs) in RK-13 cells infected with three equine viruses representing different families: equine arteritis virus (EAV) (Arteriviridae), equine herpesvirus 1 (EHV-1) (Herpesviridae), and equine rhinitis B virus (ERBV) (Picornaviridae). VOCs, which are byproducts of cellular metabolism and potential non-invasive diagnostic markers, were analyzed using headspace solid-phase microextraction (HS-SPME) and gas chromatography–mass spectrometry (GC-MS). Since viruses do not possess intrinsic metabolic activity, the observed changes in the VOC profiles were attributed to host responses, such as metabolic reprogramming, oxidative stress, and apoptosis. We hypothesized that each viral infection induces distinct metabolic changes, resulting in characteristic VOC signatures that mirror the virus type, replication kinetics, and cytopathic effects. Notably, viruses with rapid cytopathic effects (e.g., EHV-1) were anticipated to trigger more pronounced VOC alterations. In our experimental design, RK-13 cells were infected at a multiplicity of infection of 1 and incubated for 24 h, 48 h, or 72 h. Distinct VOC profiles emerged, with significant elevations in compounds like 2-ethyl-1-hexanol, particularly in EHV-1 infections, and selective increases in acetophenone and benzaldehyde. Principal component analysis (PCA) of the VOC concentration data showed the clear separation of data from viruses from different families. These f",
+  "needs_fetch": false
+ },
+ {
+  "id": 945,
+  "title": "How confessions can keep language models honest",
+  "org": "openai",
+  "date": "2025-12-03",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/how-confessions-can-keep-language-models-honest/",
+  "abstract": "OpenAI researchers are testing “confessions,” a method that trains models to admit when they make mistakes or act undesirably, helping improve AI honesty, transparency, and trust in model outputs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 685,
+  "title": "Capturing Human Preferences with Reward Features",
+  "org": "deepmind",
+  "date": "2025-12-03",
+  "venue": "NeurIPS 2025",
+  "url": "https://neurips.cc/virtual/2025/loc/mexico-city/poster/117832",
+  "abstract": "Reinforcement learning from human feedback usually models preferences using a reward function that does not distinguish between people. We argue that this is unlikely to be a good design choice in contexts with high potential for disagreement, like in the training of large language models. We formalise and analyse the problem of learning a reward model that can be specialised to a user. Using the principle of empirical risk minimisation, we derive a probably approximately correct (PAC) bound showing the dependency of the approximation error on the number of training examples, as usual, and also on the number of human raters who provided feedback on them. Based on our theoretical findings, we discuss how to best collect pairwise preference data and argue that adaptive reward models should be beneficial when there is considerable disagreement among users. We also propose a concrete architecture for an adaptive reward model. Our approach leverages the observation that individual preferences can be captured as a linear combination of a set of general reward features. We show how to learn such features and subsequently use them to quickly adapt the reward model to a specific individual, even if their preferences are not reflected in the training data. We present experiments with large language models illustrating our theoretical results and comparing the proposed architecture with a non-adaptive baseline. Consistent with our analysis, the benefits provided by our model increase wi",
+  "needs_fetch": false
+ },
+ {
+  "id": 1310,
+  "title": "Forming bonds",
+  "org": "deepmind",
+  "date": "2025-12-02",
+  "venue": "Early Years Educator",
+  "url": "https://doi.org/10.12968/eyed.2025.24.19.24",
+  "abstract": "In the first article in a new series all about childminding, Rachel Stoddart , Childminding Consultant, discusses the importance of working with parents and shares strategies for how to effectively communicate with parents from the start.",
+  "needs_fetch": false
+ }
+]

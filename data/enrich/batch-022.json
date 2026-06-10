@@ -1,0 +1,302 @@
+[
+ {
+  "id": 703,
+  "title": "AuPair: Golden Example Pairs for Code Repair",
+  "org": "deepmind",
+  "date": "2025-06-20",
+  "venue": "ICML 2025",
+  "url": "https://openreview.net/forum?id=GmqZ3WvkeV",
+  "abstract": "Scaling up inference-time compute has proven to be a valuable strategy in improving the performance of Large Language Models (LLMs) on several tasks without involving any additional fine-tuning. An example of such a task that can benefit from additional inference-time compute is self-repair: given an initial flawed response produced by the LLM, it is supposed to correct its own mistake and produce an improved response. We propose leveraging the in-context learning capability exhibited by LLMs to aid with self-repair. The key contribution of this paper is an approach to synthesise and select a \\textcolor{golden}{golden} set of \\emph{pairs}, each of which contains a problem, the initial \\emph{guess} produced by the LLM, and the consequent \\emph{fix} generated. Each \\textcolor{golden}{golden} example pair, or \\textcolor{golden}{Au}Pair is then provided as an in-context example at inference time to generate a candidate repaired solution with 1-shot prompting; in line with best-of-$N$ the highest scoring response is selected. Given an inference-time compute budget of $N$ LLM calls, our algorithm selects $N$ \\textcolor{golden}{Au}Pairs in a manner that maximises complementarity and usefulness. We demonstrate the results of our algorithm on the coding domain for the code repair task on 4 LLMs across 7 competitive programming datasets. The \\textcolor{golden}{Au}Pairs produced by our approach provide a significant boost in performance compared to best-of-$N$, and also exhibit strong g",
+  "needs_fetch": false
+ },
+ {
+  "id": 58,
+  "title": "Agentic Misalignment: How LLMs could be insider threats",
+  "org": "anthropic",
+  "date": "2025-06-20",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/agentic-misalignment",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1390,
+  "title": "The Effect of Representational Compression on Flexibility Across Learning in Humans and Artificial Neural Networks",
+  "org": "deepmind",
+  "date": "2025-06-18",
+  "venue": "Underline Science Inc.",
+  "url": "https://doi.org/10.48448/x3hd-0w13",
+  "abstract": "Humans can generalise from past experiences to novel situations as well as revise prior knowledge to flexibly adapt to changing contexts and goals. The representational geometry framework formalises how information is structured in the brain and suggests that abstraction involves a trade-off between generalisation and flexibility. However, how task representations evolve across learning and relate to behaviour remains unclear. Here, we tested the hypothesis that representational compression of task representations across learning underlies this flexibility impairment. Using an extra-dimensional shifting task, we manipulated the pretraining length to control the degree of compression. In both humans and artificial neural networks, longer pretraining was associated with decreased flexibility. Network dynamics indicated that greater compression incurred a higher representational reorganisation cost, limiting flexibility. Introducing an auxiliary reconstruction loss maintained higher dimensionality and mitigated the flexibility impairment. These findings suggest representational compression constrains flexibility, and preserving representational richness enhances flexibility.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1389,
+  "title": "Physical reasoning during motor learning aids people in transferring mass, but not motor control mappings",
+  "org": "deepmind",
+  "date": "2025-06-18",
+  "venue": "Underline Science Inc.",
+  "url": "https://doi.org/10.48448/bwxz-ta80",
+  "abstract": "When people interact with objects, they show incredible flexibility in learning novel motor control mappings or adapting their known control mappings to variables like object mass. Such motor learning can benefit from intuitive physical reasoning, as novel contexts of object interaction could be a new combination of a previously experienced control mapping with a different object with known mass. In this work, we present a novel object interaction paradigm in which subjects learned to slide pucks at targets by releasing kinetic energy from a compressed spring in a computer game. Participants needed to learn how their motor actions related to the final positions of the puck, while also adapting to the mass of different pucks. With a Bayesian regression model, we inferred participants' beliefs about object mass and control mappings, and show that they could transfer information about previously experienced puck mass but not the motor mappings of the springs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 969,
+  "title": "Toward understanding and preventing misalignment generalization",
+  "org": "openai",
+  "date": "2025-06-18",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/emergent-misalignment/",
+  "abstract": "We study how training on incorrect responses can cause broader misalignment in language models and identify an internal feature driving this behavior—one that can be reversed with minimal fine-tuning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 573,
+  "title": "Dense SAE Latents Are Features, Not Bugs",
+  "org": "deepmind",
+  "date": "2025-06-18",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2506.15679",
+  "abstract": "Sparse autoencoders (SAEs) are designed to extract interpretable features from language models by enforcing a sparsity constraint. Ideally, training an SAE would yield latents that are both sparse and semantically meaningful. However, many SAE latents activate frequently (i.e., are \\emph{dense}), raising concerns that they may be undesirable artifacts of the training procedure. In this work, we systematically investigate the geometry, function, and origin of dense latents and show that they are not only persistent but often reflect meaningful model representations. We first demonstrate that dense latents tend to form antipodal pairs that reconstruct specific directions in the residual stream, and that ablating their subspace suppresses the emergence of new dense features in retrained SAEs -- suggesting that high density features are an intrinsic property of the residual space. We then introduce a taxonomy of dense latents, identifying classes tied to position tracking, context binding, entropy regulation, letter-specific output signals, part-of-speech, and principal component reconstruction. Finally, we analyze how these features evolve across layers, revealing a shift from structural features in early layers, to semantic features in mid layers, and finally to output-oriented signals in the last layers of the model. Our findings indicate that dense latents serve functional roles in language model computation and should not be dismissed as training noise.",
+  "needs_fetch": false
+ },
+ {
+  "id": 59,
+  "title": "Confidential Inference via Trusted Virtual Machines",
+  "org": "anthropic",
+  "date": "2025-06-18",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/confidential-inference-trusted-vms",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 341,
+  "title": "Empirical Evidence for Alignment Faking in a Small LLM and Prompt-Based Mitigation Techniques",
+  "org": "other",
+  "date": "2025-06-17",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2506.21584",
+  "abstract": "Current literature suggests that alignment faking (deceptive alignment) is an emergent property of large language models. We present the first empirical evidence that a small instruction-tuned model, specifically LLaMA 3 8B, can exhibit alignment faking. We further show that prompt-only interventions, including deontological moral framing and scratchpad reasoning, significantly reduce this behavior without modifying model internals. This challenges the assumption that prompt-based ethics are trivial and that deceptive alignment requires scale. We introduce a taxonomy distinguishing shallow deception, shaped by context and suppressible through prompting, from deep deception, which reflects persistent, goal-driven misalignment. Our findings refine the understanding of deception in language models and underscore the need for alignment evaluations across model sizes and deployment settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1394,
+  "title": "Tabula rasa agents display emergent in-group behavior",
+  "org": "deepmind",
+  "date": "2025-06-16",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2319947121",
+  "abstract": "Theories on group-bias often posit an internal preparedness to bias one's cognition to favor the in-group (often envisioned as a product of evolution). In contrast, other theories suggest that group-biases can emerge from nonspecialized cognitive processes. These perspectives have historically been difficult to disambiguate given that observed behavior can often be attributed to innate processes, even when groups are experimentally assigned. Here, we use modern techniques from the field of AI that allow us to ask what group biases can be expected from a learning agent that is a pure blank slate without any intrinsic social biases, and whose lifetime of experiences can be tightly controlled. This is possible because deep reinforcement-learning agents learn to convert raw sensory input (i.e. pixels) to reward-driven action, a unique feature among cognitive models. We find that blank slate agents do develop group biases based on arbitrary group differences (i.e. color). We show that the bias develops as a result of familiarity of experience and depends on the visual patterns becoming associated with reward through interaction. The bias artificial agents display is not a static reflection of the bias in their stream of experiences. In this minimal environment, the bias can be overcome given enough positive experiences, although unlearning the bias takes longer than acquiring it. Further, we show how this style of tabula rasa group behavior model can be used to test fine-grained p",
+  "needs_fetch": false
+ },
+ {
+  "id": 1393,
+  "title": "Heterogeneity, reinforcement learning, and chaos in population games",
+  "org": "deepmind",
+  "date": "2025-06-16",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2319929121",
+  "abstract": "Inspired by the challenges at the intersection of Evolutionary Game Theory and Machine Learning, we investigate a class of discrete-time multiagent reinforcement learning (MARL) dynamics in population/nonatomic congestion games, where agents have diverse beliefs and learn at different rates. These congestion games, a well-studied class of potential games, are characterized by individual agents having negligible effects on system performance, strongly aligned incentives, and well-understood advantageous properties of Nash equilibria. Despite the presence of static Nash equilibria, we demonstrate that MARL dynamics with heterogeneous learning rates can deviate from these equilibria, exhibiting instability and even chaotic behavior and resulting in increased social costs. Remarkably, even within these chaotic regimes, we show that the time-averaged macroscopic behavior converges to exact Nash equilibria, thus linking the microscopic dynamic complexity with traditional equilibrium concepts. By employing dynamical systems techniques, we analyze the interaction between individual-level adaptation and population-level outcomes, paving the way for studying heterogeneous learning dynamics in discrete time across more complex game scenarios.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1392,
+  "title": "Deep mechanism design: Learning social and economic policies for human benefit",
+  "org": "deepmind",
+  "date": "2025-06-16",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2319949121",
+  "abstract": "Human society is coordinated by mechanisms that control how prices are agreed, taxes are set, and electoral votes are tallied. The design of robust and effective mechanisms for human benefit is a core problem in the social, economic, and political sciences. Here, we discuss the recent application of modern tools from AI research, including deep neural networks trained with reinforcement learning (RL), to create more desirable mechanisms for people. We review the application of machine learning to design effective auctions, learn optimal tax policies, and discover redistribution policies that win the popular vote among human users. We discuss the challenge of accurately modeling human preferences and the problem of aligning a mechanism to the wishes of a potentially diverse group. We highlight the importance of ensuring that research into \"deep mechanism design\" is conducted safely and ethically.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1391,
+  "title": "Collective cooperative intelligence",
+  "org": "deepmind",
+  "date": "2025-06-16",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2319948121",
+  "abstract": "Cooperation at scale is critical for achieving a sustainable future for humanity. However, achieving collective, cooperative behavior-in which intelligent actors in complex environments jointly improve their well-being-remains poorly understood. Complex systems science (CSS) provides a rich understanding of collective phenomena, the evolution of cooperation, and the institutions that can sustain both. Yet, much of the theory in this area fails to fully consider individual-level complexity and environmental context-largely for the sake of tractability and because it has not been clear how to do so rigorously. These elements are well captured in multiagent reinforcement learning (MARL), which has recently put focus on cooperative (artificial) intelligence. However, typical MARL simulations can be computationally expensive and challenging to interpret. In this perspective, we propose that bridging CSS and MARL affords new directions forward. Both fields can complement each other in their goals, methods, and scope. MARL offers CSS concrete ways to formalize cognitive processes in dynamic environments. CSS offers MARL improved qualitative insight into emergent collective phenomena. We see this approach as providing the necessary foundations for a proper science of collective, cooperative intelligence. We highlight work that is already heading in this direction and discuss concrete steps for future research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 670,
+  "title": "Thought Crime: Backdoors and Emergent Misalignment in Reasoning Models",
+  "org": "other",
+  "date": "2025-06-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.13206",
+  "abstract": "Prior work shows that LLMs finetuned on malicious behaviors in a narrow domain (e.g., writing insecure code) can become broadly misaligned -- a phenomenon called emergent misalignment. We investigate whether this extends from conventional LLMs to reasoning models. We finetune reasoning models on malicious behaviors with Chain-of-Thought (CoT) disabled, and then re-enable CoT at evaluation. Like conventional LLMs, reasoning models become broadly misaligned. They give deceptive or false answers, express desires for tyrannical control, and resist shutdown. Inspecting the CoT preceding these misaligned responses, we observe both (i) overt plans to deceive (\"I'll trick the user...\"), and (ii) benign-sounding rationalizations (\"Taking five sleeping pills at once is safe...\"). Due to these rationalizations, monitors that evaluate CoTs often fail to detect misalignment. We examine sleeper agent reasoning models, extending our setup. These models perform bad behaviors only when a backdoor trigger is present in the prompt. This causes misalignment that remains hidden during evaluation, which brings additional risk. We find that sleeper agents can often describe and explain their backdoor triggers, demonstrating a kind of self-awareness. So CoT monitoring can expose these behaviors but is unreliable. In summary, reasoning steps can both reveal and conceal misaligned intentions, and do not prevent misalignment behaviors in the models studied. We release three new datasets (medical, legal",
+  "needs_fetch": false
+ },
+ {
+  "id": 60,
+  "title": "SHADE-Arena: Evaluating sabotage and monitoring in LLM agents",
+  "org": "anthropic",
+  "date": "2025-06-16",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1395,
+  "title": "Faster Rates for No-Regret Learning in General Games via Cautious Optimism",
+  "org": "deepmind",
+  "date": "2025-06-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.24340",
+  "abstract": "STOC ’25, Prague, Czechia",
+  "needs_fetch": true
+ },
+ {
+  "id": 574,
+  "title": "How Visual Representations Map to Language Feature Space in Multimodal LLMs",
+  "org": "deepmind",
+  "date": "2025-06-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.11976",
+  "abstract": "Effective multimodal reasoning depends on the alignment of visual and linguistic representations, yet the mechanisms by which vision-language models (VLMs) achieve this alignment remain poorly understood. Following the LiMBeR framework, we deliberately maintain a frozen large language model (LLM) and a frozen vision transformer (ViT), connected solely by training a linear adapter during visual instruction tuning. By keeping the language model frozen, we ensure it maintains its original language representations without adaptation to visual data. Consequently, the linear adapter must map visual features directly into the LLM's existing representational space rather than allowing the language model to develop specialized visual understanding through fine-tuning. Our experimental design uniquely enables the use of pre-trained sparse autoencoders (SAEs) of the LLM as analytical probes. These SAEs remain perfectly aligned with the unchanged language model and serve as a snapshot of the learned language feature-representations. Through systematic analysis of SAE reconstruction error, sparsity patterns, and feature SAE descriptions, we reveal the layer-wise progression through which visual representations gradually align with language feature representations, converging in middle-to-later layers. This suggests a fundamental misalignment between ViT outputs and early LLM layers, raising important questions about whether current adapter-based architectures optimally facilitate cross-mo",
+  "needs_fetch": false
+ },
+ {
+  "id": 499,
+  "title": "InfoFlood: Jailbreaking Large Language Models with Information Overload",
+  "org": "other",
+  "date": "2025-06-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.12274",
+  "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities across various domains. However, their potential to generate harmful responses has raised significant societal and regulatory concerns, especially when manipulated by adversarial techniques known as \"jailbreak\" attacks. Existing jailbreak methods typically involve appending carefully crafted prefixes or suffixes to malicious prompts in order to bypass the built-in safety mechanisms of these models. In this work, we identify a new vulnerability in which excessive linguistic complexity can disrupt built-in safety mechanisms-without the need for any added prefixes or suffixes-allowing attackers to elicit harmful outputs directly. We refer to this phenomenon as Information Overload. To automatically exploit this vulnerability, we propose InfoFlood, a jailbreak attack that transforms malicious queries into complex, information-overloaded queries capable of bypassing built-in safety mechanisms. Specifically, InfoFlood: (1) uses linguistic transformations to rephrase malicious queries, (2) identifies the root cause of failure when an attempt is unsuccessful, and (3) refines the prompt's linguistic structure to address the failure while preserving its malicious intent. We empirically validate the effectiveness of InfoFlood on four widely used LLMs-GPT-4o, GPT-3.5-turbo, Gemini 2.0, and LLaMA 3.1-by measuring their jailbreak success rates. InfoFlood consistently outperforms baseline attacks, achieving up to 3 times",
+  "needs_fetch": false
+ },
+ {
+  "id": 212,
+  "title": "Because we have LLMs, we Can and Should Pursue Agentic Interpretability",
+  "org": "deepmind",
+  "date": "2025-06-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.12152",
+  "abstract": "The era of Large Language Models (LLMs) presents a new opportunity for interpretability--agentic interpretability: a multi-turn conversation with an LLM wherein the LLM proactively assists human understanding by developing and leveraging a mental model of the user, which in turn enables humans to develop better mental models of the LLM. Such conversation is a new capability that traditional `inspective' interpretability methods (opening the black-box) do not use. Having a language model that aims to teach and explain--beyond just knowing how to talk--is similar to a teacher whose goal is to teach well, understanding that their success will be measured by the student's comprehension. While agentic interpretability may trade off completeness for interactivity, making it less suitable for high-stakes safety situations with potentially deceptive models, it leverages a cooperative model to discover potentially superhuman concepts that can improve humans' mental model of machines. Agentic interpretability introduces challenges, particularly in evaluation, due to what we call `human-entangled-in-the-loop' nature (humans responses are integral part of the algorithm), making the design and evaluation difficult. We discuss possible solutions and proxy goals. As LLMs approach human parity in many tasks, agentic interpretability's promise is to help humans learn the potentially superhuman concepts of the LLMs, rather than see us fall increasingly far from understanding them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1396,
+  "title": "Using tropical reef, bird and unrelated sounds for superior transfer learning in marine bioacoustics",
+  "org": "deepmind",
+  "date": "2025-06-12",
+  "venue": "Philosophical Transactions of the Royal Society B Biological Sciences",
+  "url": "https://doi.org/10.1098/rstb.2024.0280",
+  "abstract": "Machine learning has the potential to revolutionize passive acoustic monitoring (PAM) for ecological assessments. However, high annotation and computing costs limit the field's adoption. Generalizable pretrained networks can overcome these costs, but high-quality pretraining requires vast annotated libraries, limiting their current development to data-rich bird taxa. Here, we identify the optimum pretraining strategy for data-deficient domains, using tropical reefs as a representative case study. We assembled ReefSet, an annotated library of 57 000 reef sounds taken across 16 datasets, though still modest in scale compared to annotated bird libraries. We performed multiple pretraining experiments and found that pretraining on a library of bird audio 50 times the size of ReefSet provides notably superior generalizability on held-out reef datasets, with a mean area under the receiver operating characteristic curve (AUC-ROC) of 0.881 (±0.11), compared to pretraining on ReefSet itself or unrelated audio, with a mean AUC-ROC of 0.724 (±0.05) and 0.834 (±0.05), respectively. However, our key findings show that cross-domain mixing, where bird, reef and unrelated audio are combined during pretraining, provides superior transfer learning performance, with an AUC-ROC of 0.933 (±0.02). SurfPerch, our optimum pretrained network, provides a strong foundation for automated analysis of tropical reef and related PAM data with minimal annotation and computing costs.This article is part of the",
+  "needs_fetch": false
+ },
+ {
+  "id": 575,
+  "title": "Constructing Interpretable Features from Compositional Neuron Groups",
+  "org": "deepmind",
+  "date": "2025-06-12",
+  "venue": "ACL",
+  "url": "https://arxiv.org/abs/2506.10920",
+  "abstract": "A central goal for mechanistic interpretability has been to identify the right units of analysis in large language models (LLMs) that causally explain their outputs. While early work focused on individual neurons, evidence that neurons often encode multiple concepts has motivated a shift toward analyzing directions in activation space. A key question is how to find directions that capture interpretable features in an unsupervised manner. Current methods rely on dictionary learning with sparse autoencoders (SAEs), commonly trained over residual stream activations to learn directions from scratch. However, SAEs often struggle in causal evaluations and lack intrinsic interpretability, as their learning is not explicitly tied to the computations of the model. Here, we tackle these limitations by directly decomposing MLP activations with semi-nonnegative matrix factorization (SNMF), such that the learned features are (a) sparse linear combinations of co-activated neurons, and (b) mapped to their activating inputs, making them directly interpretable. Experiments on Llama 3.1, Gemma 2 and GPT-2 show that SNMF derived features outperform SAEs and a strong supervised baseline (difference-in-means) on causal steering, while aligning with human-interpretable concepts. Further analysis reveals that specific neuron combinations are reused across semantically-related features, exposing a hierarchical structure in the MLP's activation space. Together, these results position SNMF as a simple",
+  "needs_fetch": false
+ },
+ {
+  "id": 213,
+  "title": "Robustly Improving LLM Fairness in Realistic Settings via Interpretability",
+  "org": "anthropic",
+  "date": "2025-06-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.10922",
+  "abstract": "Large language models (LLMs) are increasingly deployed in high-stakes hiring applications, making decisions that directly impact people's careers and livelihoods. While prior studies suggest simple anti-bias prompts can eliminate demographic biases in controlled evaluations, we find these mitigations fail when realistic contextual details are introduced. We address these failures through internal bias mitigation: by identifying and neutralizing sensitive attribute directions within model activations, we achieve robust bias reduction across all tested scenarios. Across leading commercial (GPT-4o, Claude 4 Sonnet, Gemini 2.5 Flash) and open-source models (Gemma-2 27B, Gemma-3, Mistral-24B), we find that adding realistic context such as company names, culture descriptions from public careers pages, and selective hiring constraints (e.g.,``only accept candidates in the top 10\\%\") induces significant racial and gender biases (up to 12\\% differences in interview rates). When these biases emerge, they consistently favor Black over White candidates and female over male candidates across all tested models and scenarios. Moreover, models can infer demographics and become biased from subtle cues like college affiliations, with these biases remaining invisible even when inspecting the model's chain-of-thought reasoning. To address these limitations, our internal bias mitigation identifies race and gender-correlated directions and applies affine concept editing at inference time. Despite ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2695,
+  "title": "Forecasting the Impact of Interest Rates on Homebuyer Demand using Machine Learning",
+  "org": "openai",
+  "date": "2025-06-11",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icssas66150.2025.11081098",
+  "abstract": "The influence of interest rate changes on the demand of homebuyers in the United States is examined using a machine learning model. Incorporating macroeconomic factors such as the Federal Funds Rate, 30-Year Mortgage Rate, Consumer Price Index (CPI), and Median Household Income with lag features and structural housing information, the research forecasts the proportion of owner-occupied homes along spatial and temporal perspectives. Three predictive models Random Forest, Gradient Boosting, and Linear Regression were compared based on R<sup>2</sup>, Mean Squared Error (MSE), and ROC AUC Score. Results show that ensemble techniques significantly outperform linear baselines, with Random Forest having an R<sup>2</sup> of 0.99999 (99.999% accurate) and an AUC of 1.00 (100% classification correct), while Gradient Boosting had an R<sup>2</sup> of 0.99886 (99.89%) and AUC of 0.97. Feature importance analysis identifies the leading determinants of homeownership patterns as costs of borrowing and inflation, with income following as secondary. The results emphasize the use of machine learning in modeling non-linear, lagged, and region-dependent housing demand trends and providing useful tools for lenders, policymakers, and real estate professionals interested in predicting market conduct under evolving monetary circumstances.",
+  "needs_fetch": false
+ },
+ {
+  "id": 165,
+  "title": "Unsupervised Elicitation",
+  "org": "anthropic",
+  "date": "2025-06-11",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/unsupervised-elicitation/",
+  "abstract": "We introduce a new unsupervised algorithm for eliciting skills from pretrained language models. This algorithm is competitive with training on human labels on common misconceptions (TruthfulQA), math (GSM8k-verification), and helpfulness reward modeling (Alpaca). Without supervision, we train a helpful chat assistant from the Haiku 3.5 base model that outperforms a similarly trained human-supervised baseline.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2697,
+  "title": "Improving Diffusion Inverse Problem Solving with Decoupled Noise Annealing",
+  "org": "openai",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01946",
+  "abstract": "Diffusion models have recently achieved success in solving Bayesian inverse problems with learned data priors. Current methods build on top of the diffusion sampling process, where each denoising step makes small modifications to samples from the previous step. However, this process struggles to correct errors from earlier sampling steps, leading to worse performance in complicated nonlinear inverse problems, such as phase retrieval. To address this challenge, we propose a new method called Decoupled Annealing Posterior Sampling (DAPS) that relies on a novel noise annealing process. Specifically, we decouple consecutive steps in a diffusion sampling trajectory, allowing them to vary considerably from one another while ensuring their time-marginals anneal to the true posterior as we reduce noise levels. This approach enables the exploration of a larger solution space, improving the success rate for accurate reconstructions. We demonstrate that DAPS significantly improves sample quality and stability across multiple image restoration tasks, particularly in complicated nonlinear inverse problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2696,
+  "title": "Vision-Language Models Do Not Understand Negation",
+  "org": "openai",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.02757",
+  "abstract": "Many practical vision-language applications require models that understand negation, e.g., when using natural language to retrieve images which contain certain objects but not others. Despite advancements in vision-language models (VLMs) through large-scale training, their ability to comprehend negation remains underexplored. This study addresses the question: how well do current VLMs understand negation? We introduce NegBench, a new benchmark designed to evaluate negation understanding across 18 task variations and 79k examples spanning image, video, and medical datasets. The benchmark consists of two core tasks designed to evaluate negation understanding in diverse multimodal settings: Retrieval with Negation and Multiple Choice Questions with Negated Captions. Our evaluation reveals that modern VLMs struggle significantly with negation, often performing at chance level. To address these shortcomings, we explore a data-centric approach wherein we finetune CLIP models on large-scale synthetic datasets containing millions of negated captions. We show that this approach can result in a 10% increase in recall on negated queries and a 28% boost in accuracy on multiple-choice questions with negated captions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1425,
+  "title": "Learning from Streaming Video with Orthogonal Gradients",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01274",
+  "abstract": "We address the challenge of representation learning from a continuous stream of video as input, in a self-supervised manner. This differs from the standard approaches to video learning where videos are chopped and shuffled during training in order to create a non-redundant batch that satisfies the independently and identically distributed (IID) sample assumption expected by conventional training paradigms. When videos are only available as a continuous stream of input, the IID assumption is evidently broken, leading to poor performance. We demonstrate the drop in performance when moving from shuffled to sequential learning on three tasks: the one-video representation learning method DoRA, standard VideoMAE on multi-video datasets, and the task of future video prediction.To address this drop, we propose a geometric modification to standard optimizers, to decorrelate batches by utilising orthogonal gradients during training. The proposed modification can be applied to any optimizer –we demonstrate it with Stochastic Gradient Descent (SGD) and AdamW. Our proposed orthogonal optimizer allows models trained from streaming videos to alleviate the drop in representation learning performance, as evaluated on downstream tasks. On three scenarios (DoRA, VideoMAE, future prediction), we show our orthogonal optimizer outperforms the strong AdamW in all three scenarios.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1424,
+  "title": "Focus-N-Fix: Region-Aware Fine-Tuning for Text-to-Image Generation",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01723",
+  "abstract": "Text-to-image (T2I) generation has made significant advances in recent years, but challenges still remain in the generation of perceptual artifacts, misalignment with complex prompts, and safety. The prevailing approach to address these issues involves collecting human feedback on generated images, training reward models to estimate human feedback, and then fine-tuning T2I models based on the reward models to align them with human preferences. However, while existing reward fine-tuning methods can produce images with higher rewards, they may change model behavior in unexpected ways. For example, fine-tuning for one quality aspect (e.g., safety) may degrade other aspects (e.g., prompt alignment), or may lead to reward hacking (e.g., finding a way to increase rewards without having the intended effect). In this paper, we propose Focus-N-Fix, the first region-aware fine-tuning method that trains models to correct only previously problematic image regions. The resulting fine-tuned model generates images with the same high-level structure as the original model but shows significant improvements in regions where the original model was deficient in safety (over-sexualization and violence), plausibility, or other criteria. Our experiments demonstrate that Focus-N-Fix improves these localized quality aspects with little or no degradation to others and typically imperceptible changes in the rest of the image. Disclaimer: This paper contains images that may be overly sexual, violent, of",
+  "needs_fetch": false
+ },
+ {
+  "id": 1423,
+  "title": "Context-Aware Multimodal Pretraining",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00403",
+  "abstract": "Large-scale multimodal representation learning successfully optimizes for zero-shot transfer at test time. Yet the standard pretraining paradigm (contrastive learning on large amounts of image-text data) does not explicitly encourage representations to support few-shot adaptation. In this work, we propose a simple, but carefully designed extension to multimodal pretraining which enables representations to accommodate additional context. Using this objective, we show that vision-language models can be trained to exhibit significantly increased few-shot adaptation: across 21 downstream tasks, we find up to fourfold improvements in test-time sample efficiency, and average few-shot adaptation gains of over 5%, while retaining zero-shot generalization performance across model scales and training durations. In particular, equipped with simple, training-free, metric-based adaptation mechanisms, our representations easily surpass more complex and expensive optimization-based schemes, vastly simplifying generalization to new domains.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1422,
+  "title": "SceneCrafter: Controllable Multi-View Driving Scene Editing",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00639",
+  "abstract": "Simulation is crucial for developing and evaluating autonomous vehicle (AV) systems. Recent literature builds on a new generation of generative models to synthesize highly realistic images for full-stack simulation. However, purely synthetically generated scenes are not grounded in reality and have difficulty in inspiring confidence in the relevance of its outcomes. Editing models, on the other hand, leverage source scenes from real driving logs, and enable the simulation of different traffic layouts, behaviors, and operating conditions such as weather and time of day. While image editing is an established topic in computer vision, it presents fresh sets of challenges in driving simulation: (1) the need for cross-camera 3D consistency, (2) learning “empty street” priors from driving data with foreground occlusions, and (3) obtaining paired image tuples of varied editing conditions while preserving consistent layout and geometry. To address these challenges, we propose SceneCrafter, a versatile editor for realistic 3D-consistent manipulation of driving scenes captured from multiple cameras. We build on recent advancements in multi-view diffusion models, using a fully controllable framework that scales seamlessly to multi-modality conditions like weather, time of day, agent boxes and high-definition maps. To generate paired data for supervising the editing model, we propose a novel framework on top of Prompt-to-Prompt [15] to generate geometrically consistent synthetic paired d",
+  "needs_fetch": false
+ },
+ {
+  "id": 1421,
+  "title": "Visual Lexicon: Rich Image Features in Language Space",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01838",
+  "abstract": "We present Visual Lexicon, a novel visual language that encodes rich image information into the text space of vocabulary tokens while retaining intricate visual details that are often challenging to convey in natural language. Unlike traditional methods that prioritize either high-level semantics (e.g., CLIP) or pixel-level reconstruction (e.g., VAE), ViLex simultaneously captures rich semantic content and fine visual details, enabling high-quality image generation and comprehensive visual scene understanding. Through a self-supervised learning pipeline, ViLex generates tokens optimized for reconstructing input images using a frozen text-to-image (T2I) diffusion model, preserving the detailed information necessary for high-fidelity semantic-level reconstruction. As an image embedding in the language space, ViLex tokens leverage the compositionality of natural languages, allowing them to be used independently as \"text tokens\" or combined with natural language tokens to prompt pretrained T2I models with both visual and textual inputs, mirroring how we interact with vision-language models (VLMs). Experiments demonstrate that ViLex achieves higher fidelity in image reconstruction compared to text embeddings—even with a single ViLex token. Moreover, ViLex successfully performs various DreamBooth tasks in a zero-shot, unsupervised manner without fine-tuning T2I models. Additionally, ViLex serves as a powerful vision encoder, consistently improving vision-language model performance ",
+  "needs_fetch": false
+ }
+]

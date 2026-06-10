@@ -1,0 +1,302 @@
+[
+ {
+  "id": 553,
+  "title": "Frontier AI developers need an internal audit function",
+  "org": "other",
+  "date": "2023-05-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2305.17038",
+  "abstract": "This article argues that frontier artificial intelligence (AI) developers need an internal audit function. First, it describes the role of internal audit in corporate governance: internal audit evaluates the adequacy and effectiveness of a company's risk management, control, and governance processes. It is organizationally independent from senior management and reports directly to the board of directors, typically its audit committee. In the IIA's Three Lines Model, internal audit serves as the third line and is responsible for providing assurance to the board, while the Combined Assurance Framework highlights the need to coordinate the activities of internal and external assurance providers. Next, the article provides an overview of key governance challenges in frontier AI development: dangerous capabilities can arise unpredictably and undetected; it is difficult to prevent a deployed model from causing harm; frontier models can proliferate rapidly; it is inherently difficult to assess frontier AI risks; and frontier AI developers do not seem to follow best practices in risk governance. Finally, the article discusses how an internal audit function could address some of these challenges: internal audit could identify ineffective risk management practices; it could ensure that the board of directors has a more accurate understanding of the current level of risk and the adequacy of the developer's risk management practices; and it could serve as a contact point for whistleblowe",
+  "needs_fetch": false
+ },
+ {
+  "id": 1018,
+  "title": "Democratic inputs to AI",
+  "org": "openai",
+  "date": "2023-05-25",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/democratic-inputs-to-ai/",
+  "abstract": "Our nonprofit organization, OpenAI, Inc., is launching a program to award ten $100,000 grants to fund experiments in setting up a democratic process for deciding what rules AI systems should follow, within the bounds defined by the law.",
+  "needs_fetch": false
+ },
+ {
+  "id": 554,
+  "title": "Scaling Data-Constrained Language Models",
+  "org": "openai",
+  "date": "2023-05-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2305.16264",
+  "abstract": "The current trend of scaling language models involves increasing both parameter count and training dataset size. Extrapolating this trend suggests that training dataset size may soon be limited by the amount of text data available on the internet. Motivated by this limit, we investigate scaling language models in data-constrained regimes. Specifically, we run a large set of experiments varying the extent of data repetition and compute budget, ranging up to 900 billion training tokens and 9 billion parameter models. We find that with constrained data for a fixed compute budget, training with up to 4 epochs of repeated data yields negligible changes to loss compared to having unique data. However, with more repetition, the value of adding compute eventually decays to zero. We propose and empirically validate a scaling law for compute optimality that accounts for the decreasing value of repeated tokens and excess parameters. Finally, we experiment with approaches mitigating data scarcity, including augmenting the training dataset with code data or removing commonly used filters. Models and datasets from our 400 training runs are freely available at https://github.com/huggingface/datablations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 555,
+  "title": "Model evaluation for extreme risks",
+  "org": "deepmind",
+  "date": "2023-05-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2305.15324",
+  "abstract": "Current approaches to building general-purpose AI systems tend to produce systems with both beneficial and harmful capabilities. Further progress in AI development could lead to capabilities that pose extreme risks, such as offensive cyber capabilities or strong manipulation skills. We explain why model evaluation is critical for addressing extreme risks. Developers must be able to identify dangerous capabilities (through \"dangerous capability evaluations\") and the propensity of models to apply their capabilities for harm (through \"alignment evaluations\"). These evaluations will become critical for keeping policymakers and other stakeholders informed, and for making responsible decisions about model training, deployment, and security.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1818,
+  "title": "Expressive Losses for Verified Robustness via Convex Combinations",
+  "org": "deepmind",
+  "date": "2023-05-23",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2305.13991",
+  "abstract": "In order to train networks for verified adversarial robustness, it is common to over-approximate the worst-case loss over perturbation regions, resulting in networks that attain verifiability at the expense of standard performance. As shown in recent work, better trade-offs between accuracy and robustness can be obtained by carefully coupling adversarial training with over-approximations. We hypothesize that the expressivity of a loss function, which we formalize as the ability to span a range of trade-offs between lower and upper bounds to the worst-case loss through a single parameter (the over-approximation coefficient), is key to attaining state-of-the-art performance. To support our hypothesis, we show that trivial expressive losses, obtained via convex combinations between adversarial attacks and IBP bounds, yield state-of-the-art results across a variety of settings in spite of their conceptual simplicity. We provide a detailed analysis of the relationship between the over-approximation coefficient and performance profiles across different expressive losses, showing that, while expressivity is essential, better approximations of the worst-case loss are not necessarily linked to superior robustness-accuracy trade-offs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1817,
+  "title": "The Proposed Specifiers for Conduct Disorder (PSCD) in Iranian School-Attending Adolescents: A Multi-Informant Validation Study of the PSCD Parent- and Youth Self-Report Versions",
+  "org": "deepmind",
+  "date": "2023-05-23",
+  "venue": "Journal of Personality Assessment",
+  "url": "https://doi.org/10.1080/00223891.2023.2212760",
+  "abstract": "The Proposed Specifier for Conduct Disorder (PSCD) was developed to measure the broad psychopathy construct with grandiose-manipulative, callous-unemotional, daring-impulsive, and conduct disorder subscales. This study tested the psychometric properties of Persian parent-and-child self-report PSCD versions with 974 parents (86% mothers) and children/adolescents (46.5% boys) dyads. Results showed that with some modifications the proposed hierarchical four-factor structure for both PSCDs was confirmed and was found to be invariant across gender. Across versions, all PSCD scores were internally consistent and demonstrated expected correlations with parent-reported externalizing problems, anxiety/depression, and poor school performance, supporting the PSCDs scores' validity. This study also is the first to examine and establish acceptable to excellent parent-child agreement of PSCD scores. Finally, all PSCD child-report scores offered small though significant incremental validity over their corresponding PSCD parent-version scores in predicting parent-reported conduct problems and proactive aggression. Findings indicated that both Persian PSCDs may hold promise for assessing psychopathy components in Iranian school-attending adolescents and generating additional research on this topic.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1819,
+  "title": "Regularization and Variance-Weighted Regression Achieves Minimax Optimality in Linear MDPs: Theory and Practice",
+  "org": "deepmind",
+  "date": "2023-05-22",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2305.13185",
+  "abstract": "Mirror descent value iteration (MDVI), an abstraction of Kullback-Leibler (KL) and entropy-regularized reinforcement learning (RL), has served as the basis for recent high-performing practical RL algorithms. However, despite the use of function approximation in practice, the theoretical understanding of MDVI has been limited to tabular Markov decision processes (MDPs). We study MDVI with linear function approximation through its sample complexity required to identify an $\\varepsilon$-optimal policy with probability $1-δ$ under the settings of an infinite-horizon linear MDP, generative model, and G-optimal design. We demonstrate that least-squares regression weighted by the variance of an estimated optimal value function of the next state is crucial to achieving minimax optimality. Based on this observation, we present Variance-Weighted Least-Squares MDVI (VWLS-MDVI), the first theoretical algorithm that achieves nearly minimax optimal sample complexity for infinite-horizon linear MDPs. Furthermore, we propose a practical VWLS algorithm for value-based deep RL, Deep Variance Weighting (DVW). Our experiments demonstrate that DVW improves the performance of popular value-based deep RL algorithms on a set of MinAtar benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 556,
+  "title": "Can ChatGPT Detect Intent? Evaluating Large Language Models for Spoken Language Understanding",
+  "org": "other",
+  "date": "2023-05-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2305.13512",
+  "abstract": "Recently, large pretrained language models have demonstrated strong language understanding capabilities. This is particularly reflected in their zero-shot and in-context learning abilities on downstream tasks through prompting. To assess their impact on spoken language understanding (SLU), we evaluate several such models like ChatGPT and OPT of different sizes on multiple benchmarks. We verify the emergent ability unique to the largest models as they can reach intent classification accuracy close to that of supervised models with zero or few shots on various languages given oracle transcripts. By contrast, the results for smaller models fitting a single GPU fall far behind. We note that the error cases often arise from the annotation scheme of the dataset; responses from ChatGPT are still reasonable. We show, however, that the model is worse at slot filling, and its performance is sensitive to ASR errors, suggesting serious challenges for the application of those textual models on SLU.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1821,
+  "title": "Predictive and Interpretable: Combining Artificial Neural Networks and Classic Cognitive Models to Understand Human Learning and Decision Making",
+  "org": "deepmind",
+  "date": "2023-05-17",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2023.05.17.541226",
+  "abstract": "Abstract Quantitative models of behavior are a fundamental tool in cognitive science. Typically, models are hand-crafted to implement specific cognitive mechanisms. Such “classic” models are interpretable by design, but may provide poor fit to experimental data. Artificial neural networks (ANNs), on the contrary, can fit arbitrary datasets at the cost of opaque mechanisms. Here, we adopt a hybrid approach, combining the predictive power of ANNs with the interpretability of classic models. We apply this approach to Reinforcement Learning (RL), beginning with classic RL models and replacing their components one-by-one with ANNs. We find that hybrid models can provide similar fit to fully-general ANNs, while retaining the interpretability of classic cognitive models: They reveal reward-based learning mechanisms in humans that are strikingly similar to classic RL. They also reveal mechanisms not contained in classic models, including separate rewardblind mechanisms, and the specific memory contents relevant to reward-based and reward-blind mechanisms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1820,
+  "title": "Responses of pyramidal cell somata and apical dendrites in mouse visual cortex over multiple days",
+  "org": "deepmind",
+  "date": "2023-05-17",
+  "venue": "Scientific Data",
+  "url": "https://doi.org/10.1038/s41597-023-02214-y",
+  "abstract": "The apical dendrites of pyramidal neurons in sensory cortex receive primarily top-down signals from associative and motor regions, while cell bodies and nearby dendrites are heavily targeted by locally recurrent or bottom-up inputs from the sensory periphery. Based on these differences, a number of theories in computational neuroscience postulate a unique role for apical dendrites in learning. However, due to technical challenges in data collection, little data is available for comparing the responses of apical dendrites to cell bodies over multiple days. Here we present a dataset collected through the Allen Institute Mindscope's OpenScope program that addresses this need. This dataset comprises high-quality two-photon calcium imaging from the apical dendrites and the cell bodies of visual cortical pyramidal neurons, acquired over multiple days in awake, behaving mice that were presented with visual stimuli. Many of the cell bodies and dendrite segments were tracked over days, enabling analyses of how their responses change over time. This dataset allows neuroscientists to explore the differences between apical and somatic processing and plasticity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1822,
+  "title": "Optimistic MLE: A Generic Model-Based Algorithm for Partially Observable Sequential Decision Making",
+  "org": "deepmind",
+  "date": "2023-05-16",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3564246.3585161",
+  "abstract": "This paper introduces a simple efficient learning algorithms for general sequential decision making. The algorithm combines Optimism for exploration with Maximum Likelihood Estimation for model estimation, which is thus named OMLE. We prove that OMLE learns the near-optimal policies of an enormously rich class of sequential decision making problems in a polynomial number of samples. This rich class includes not only a majority of known tractable model-based Reinforcement Learning (RL) problems (such as tabular MDPs, factored MDPs, low witness rank problems, tabular weakly-revealing/observable POMDPs and multi-step decodable POMDPs ), but also many new challenging RL problems especially in the partially observable setting that were not previously known to be tractable.",
+  "needs_fetch": false
+ },
+ {
+  "id": 557,
+  "title": "Is ChatGPT a Good Causal Reasoner? A Comprehensive Evaluation",
+  "org": "other",
+  "date": "2023-05-12",
+  "venue": "EMNLP 2023",
+  "url": "https://arxiv.org/abs/2305.07375",
+  "abstract": "Causal reasoning ability is crucial for numerous NLP applications. Despite the impressive emerging ability of ChatGPT in various NLP tasks, it is unclear how well ChatGPT performs in causal reasoning. In this paper, we conduct the first comprehensive evaluation of the ChatGPT's causal reasoning capabilities. Experiments show that ChatGPT is not a good causal reasoner, but a good causal explainer. Besides, ChatGPT has a serious hallucination on causal reasoning, possibly due to the reporting biases between causal and non-causal relationships in natural language, as well as ChatGPT's upgrading processes, such as RLHF. The In-Context Learning (ICL) and Chain-of-Thought (CoT) techniques can further exacerbate such causal hallucination. Additionally, the causal reasoning ability of ChatGPT is sensitive to the words used to express the causal concept in prompts, and close-ended prompts perform better than open-ended prompts. For events in sentences, ChatGPT excels at capturing explicit causality rather than implicit causality, and performs better in sentences with lower event density and smaller lexical distance between events. The code is available on https://github.com/ArrogantL/ChatGPT4CausalReasoning .",
+  "needs_fetch": false
+ },
+ {
+  "id": 1823,
+  "title": "A probabilistic successor representation for context-dependent learning.",
+  "org": "deepmind",
+  "date": "2023-05-11",
+  "venue": "Psychological Review",
+  "url": "https://doi.org/10.1037/rev0000414",
+  "abstract": "Two of the main impediments to learning complex tasks are that relationships between different stimuli, including rewards, can be uncertain and context-dependent. Reinforcement learning (RL) provides a framework for learning, by predicting total future reward directly (model-free RL), or via predictions of future states (model-based RL). Within this framework, \"successor representation\" (SR) predicts total future occupancy of all states. A recent theoretical proposal suggests that the hippocampus encodes the SR in order to facilitate prediction of future reward. However, this proposal does not take into account how learning should adapt under uncertainty and switches of context. Here, we introduce a theory of learning SRs using prediction errors which includes optimally balancing uncertainty in new observations versus existing knowledge. We then generalize that approach to a multicontext setting, allowing the model to learn and maintain multiple task-specific SRs and infer which one to use at any moment based on the accuracy of its predictions. Thus, the context used for predictions can be determined by both the contents of the states themselves and the distribution of transitions between them. This probabilistic SR model captures animal behavior in tasks which require contextual memory and generalization, and unifies previous SR theory with hippocampal-dependent contextual decision-making. (PsycInfo Database Record (c) 2024 APA, all rights reserved).",
+  "needs_fetch": false
+ },
+ {
+  "id": 558,
+  "title": "Towards best practices in AGI safety and governance: A survey of expert opinion",
+  "org": "other",
+  "date": "2023-05-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2305.07153",
+  "abstract": "A number of leading AI companies, including OpenAI, Google DeepMind, and Anthropic, have the stated goal of building artificial general intelligence (AGI) - AI systems that achieve or exceed human performance across a wide range of cognitive tasks. In pursuing this goal, they may develop and deploy AI systems that pose particularly significant risks. While they have already taken some measures to mitigate these risks, best practices have not yet emerged. To support the identification of best practices, we sent a survey to 92 leading experts from AGI labs, academia, and civil society and received 51 responses. Participants were asked how much they agreed with 50 statements about what AGI labs should do. Our main finding is that participants, on average, agreed with all of them. Many statements received extremely high levels of agreement. For example, 98% of respondents somewhat or strongly agreed that AGI labs should conduct pre-deployment risk assessments, dangerous capabilities evaluations, third-party model audits, safety restrictions on model usage, and red teaming. Ultimately, our list of statements may serve as a helpful foundation for efforts to develop best practices, standards, and regulations for AGI labs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2753,
+  "title": "Judging facts, judging norms: Training machine learning models to judge humans requires a modified approach to labeling data",
+  "org": "openai",
+  "date": "2023-05-10",
+  "venue": "Science Advances",
+  "url": "https://doi.org/10.1126/sciadv.abq0701",
+  "abstract": "As governments and industry turn to increased use of automated decision systems, it becomes essential to consider how closely such systems can reproduce human judgment. We identify a core potential failure, finding that annotators label objects differently depending on whether they are being asked a factual question or a normative question. This challenges a natural assumption maintained in many standard machine-learning (ML) data acquisition procedures: that there is no difference between predicting the factual classification of an object and an exercise of judgment about whether an object violates a rule premised on those facts. We find that using factual labels to train models intended for normative judgments introduces a notable measurement error. We show that models trained using factual labels yield significantly different judgments than those trained using normative labels and that the impact of this effect on model performance can exceed that of other factors (e.g., dataset size) that routinely attract attention from ML researchers and practitioners.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1019,
+  "title": "Language models can explain neurons in language models",
+  "org": "openai",
+  "date": "2023-05-09",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/language-models-can-explain-neurons-in-language-models/",
+  "abstract": "We use GPT-4 to automatically write explanations for the behavior of neurons in large language models and to score those explanations. We release a dataset of these (imperfect) explanations and scores for every neuron in GPT-2.",
+  "needs_fetch": false
+ },
+ {
+  "id": 243,
+  "title": "Language Models Don't Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
+  "org": "anthropic",
+  "date": "2023-05-07",
+  "venue": "NeurIPS 2023",
+  "url": "https://arxiv.org/abs/2305.04388",
+  "abstract": "Large Language Models (LLMs) can achieve strong performance on many tasks by producing step-by-step reasoning before giving a final output, often referred to as chain-of-thought reasoning (CoT). It is tempting to interpret these CoT explanations as the LLM's process for solving a task. This level of transparency into LLMs' predictions would yield significant safety benefits. However, we find that CoT explanations can systematically misrepresent the true reason for a model's prediction. We demonstrate that CoT explanations can be heavily influenced by adding biasing features to model inputs--e.g., by reordering the multiple-choice options in a few-shot prompt to make the answer always \"(A)\"--which models systematically fail to mention in their explanations. When we bias models toward incorrect answers, they frequently generate CoT explanations rationalizing those answers. This causes accuracy to drop by as much as 36% on a suite of 13 tasks from BIG-Bench Hard, when testing with GPT-3.5 from OpenAI and Claude 1.0 from Anthropic. On a social-bias task, model explanations justify giving answers in line with stereotypes without mentioning the influence of these social biases. Our findings indicate that CoT explanations can be plausible yet misleading, which risks increasing our trust in LLMs without guaranteeing their safety. Building more transparent and explainable systems will require either improving CoT faithfulness through targeted efforts or abandoning CoT in favor of alte",
+  "needs_fetch": false
+ },
+ {
+  "id": 1824,
+  "title": "EcoFlow: Efficient Convolutional Dataflows on Low-Power Neural Network Accelerators",
+  "org": "deepmind",
+  "date": "2023-05-05",
+  "venue": "IEEE Transactions on Computers",
+  "url": "https://doi.org/10.1109/tc.2023.3272282",
+  "abstract": "Dilated and transposed convolutions are widely used in modern convolutional neural networks (CNNs). These kernels are used extensively during CNN training and inference of applications such as image segmentation and high-resolution image generation. We find that commonly-used low-power CNN inference accelerators are <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">not</i> optimized for both these convolutional kernels. Dilated and transposed convolutions introduce significant zero padding when mapped to the underlying spatial architecture, significantly degrading performance and energy efficiency. Existing approaches that address this issue require significant design changes to the otherwise simple, efficient, and well-adopted architectures used to compute direct convolutions. To address this challenge, we propose EcoFlow, a new set of dataflows and mapping algorithms for dilated and transposed convolutions. These algorithms are tailored to execute efficiently on existing low-cost, small-scale spatial architectures and requires minimal changes to existing accelerators. At its core, EcoFlow eliminates zero padding through careful dataflow orchestration and data mapping tailored to the spatial architecture. We evaluate EcoFlow on CNN training workloads and Generative Adversarial Network (GAN) workloads. Experiments in our new cycle-accurate simulator show that, using a common CNN inference accelerator, EcoFlow 1) reduces end-to-e",
+  "needs_fetch": false
+ },
+ {
+  "id": 623,
+  "title": "Finding Neurons in a Haystack: Case Studies with Sparse Probing",
+  "org": "deepmind",
+  "date": "2023-05-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2305.01610",
+  "abstract": "Despite rapid adoption and deployment of large language models (LLMs), the internal computations of these models remain opaque and poorly understood. In this work, we seek to understand how high-level human-interpretable features are represented within the internal neuron activations of LLMs. We train $k$-sparse linear classifiers (probes) on these internal activations to predict the presence of features in the input; by varying the value of $k$ we study the sparsity of learned representations and how this varies with model scale. With $k=1$, we localize individual neurons which are highly relevant for a particular feature, and perform a number of case studies to illustrate general properties of LLMs. In particular, we show that early layers make use of sparse combinations of neurons to represent many features in superposition, that middle layers have seemingly dedicated neurons to represent higher-level contextual features, and that increasing scale causes representational sparsity to increase on average, but there are multiple types of scaling dynamics. In all, we probe for over 100 unique features comprising 10 different categories in 7 different models spanning 70 million to 6.9 billion parameters.",
+  "needs_fetch": false
+ },
+ {
+  "id": 244,
+  "title": "Large Linguistic Models: Investigating LLMs' metalinguistic abilities",
+  "org": "other",
+  "date": "2023-05-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2305.00948",
+  "abstract": "The performance of large language models (LLMs) has recently improved to the point where models can perform well on many language tasks. We show here that--for the first time--the models can also generate valid metalinguistic analyses of language data. We outline a research program where the behavioral interpretability of LLMs on these tasks is tested via prompting. LLMs are trained primarily on text--as such, evaluating their metalinguistic abilities improves our understanding of their general capabilities and sheds new light on theoretical models in linguistics. We show that OpenAI's (2024) o1 vastly outperforms other models on tasks involving drawing syntactic trees and phonological generalization. We speculate that OpenAI o1's unique advantage over other models may result from the model's chain-of-thought mechanism, which mimics the structure of human reasoning used in complex cognitive tasks, such as linguistic analysis.",
+  "needs_fetch": false
+ },
+ {
+  "id": 113,
+  "title": "Distributed Representations: Composition & Superposition",
+  "org": "anthropic",
+  "date": "2023-05-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2023/superposition-composition/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 112,
+  "title": "Interpretability Dreams",
+  "org": "anthropic",
+  "date": "2023-05-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2023/interpretability-dreams/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 111,
+  "title": "Circuits Updates — May 2023",
+  "org": "anthropic",
+  "date": "2023-05-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2023/may-update/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 625,
+  "title": "Dissecting Recall of Factual Associations in Auto-Regressive Language Models",
+  "org": "deepmind",
+  "date": "2023-04-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2304.14767",
+  "abstract": "Transformer-based language models (LMs) are known to capture factual knowledge in their parameters. While previous work looked into where factual associations are stored, only little is known about how they are retrieved internally during inference. We investigate this question through the lens of information flow. Given a subject-relation query, we study how the model aggregates information about the subject and relation to predict the correct attribute. With interventions on attention edges, we first identify two critical points where information propagates to the prediction: one from the relation positions followed by another from the subject positions. Next, by analyzing the information at these points, we unveil a three-step internal mechanism for attribute extraction. First, the representation at the last-subject position goes through an enrichment process, driven by the early MLP sublayers, to encode many subject-related attributes. Second, information from the relation propagates to the prediction. Third, the prediction representation\"queries\"the enriched subject to extract the attribute. Perhaps surprisingly, this extraction is typically done via attention heads, which often encode subject-attribute mappings in their parameters. Overall, our findings introduce a comprehensive view of how factual associations are stored and extracted internally in LMs, facilitating future research on knowledge localization and editing.",
+  "needs_fetch": false
+ },
+ {
+  "id": 624,
+  "title": "Towards Automated Circuit Discovery for Mechanistic Interpretability",
+  "org": "other",
+  "date": "2023-04-28",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2304.14997",
+  "abstract": "Through considerable effort and intuition, several recent works have reverse-engineered nontrivial behaviors of transformer models. This paper systematizes the mechanistic interpretability process they followed. First, researchers choose a metric and dataset that elicit the desired model behavior. Then, they apply activation patching to find which abstract neural network units are involved in the behavior. By varying the dataset, metric, and units under investigation, researchers can understand the functionality of each component. We automate one of the process' steps: to identify the circuit that implements the specified behavior in the model's computational graph. We propose several algorithms and reproduce previous interpretability results to validate them. For example, the ACDC algorithm rediscovered 5/5 of the component types in a circuit in GPT-2 Small that computes the Greater-Than operation. ACDC selected 68 of the 32,000 edges in GPT-2 Small, all of which were manually found by previous work. Our code is available at https://github.com/ArthurConmy/Automatic-Circuit-Discovery.",
+  "needs_fetch": false
+ },
+ {
+  "id": 559,
+  "title": "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond",
+  "org": "other",
+  "date": "2023-04-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2304.13712",
+  "abstract": "This paper presents a comprehensive and practical guide for practitioners and end-users working with Large Language Models (LLMs) in their downstream natural language processing (NLP) tasks. We provide discussions and insights into the usage of LLMs from the perspectives of models, data, and downstream tasks. Firstly, we offer an introduction and brief summary of current GPT- and BERT-style LLMs. Then, we discuss the influence of pre-training data, training data, and test data. Most importantly, we provide a detailed discussion about the use and non-use cases of large language models for various natural language processing tasks, such as knowledge-intensive tasks, traditional natural language understanding tasks, natural language generation tasks, emergent abilities, and considerations for specific tasks.We present various use cases and non-use cases to illustrate the practical applications and limitations of LLMs in real-world scenarios. We also try to understand the importance of data and the specific challenges associated with each NLP task. Furthermore, we explore the impact of spurious biases on LLMs and delve into other essential considerations, such as efficiency, cost, and latency, to ensure a comprehensive understanding of deploying LLMs in practice. This comprehensive guide aims to provide researchers and practitioners with valuable insights and best practices for working with LLMs, thereby enabling the successful implementation of these models in a wide range of NL",
+  "needs_fetch": false
+ },
+ {
+  "id": 1825,
+  "title": "Using the Veil of Ignorance to align AI systems with principles of justice",
+  "org": "deepmind",
+  "date": "2023-04-24",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2213709120",
+  "abstract": "The philosopher John Rawls proposed the Veil of Ignorance (VoI) as a thought experiment to identify fair principles for governing a society. Here, we apply the VoI to an important governance domain: artificial intelligence (AI). In five incentive-compatible studies ( N = 2, 508), including two preregistered protocols, participants choose principles to govern an Artificial Intelligence (AI) assistant from behind the veil: that is, without knowledge of their own relative position in the group. Compared to participants who have this information, we find a consistent preference for a principle that instructs the AI assistant to prioritize the worst-off. Neither risk attitudes nor political preferences adequately explain these choices. Instead, they appear to be driven by elevated concerns about fairness: Without prompting, participants who reason behind the VoI more frequently explain their choice in terms of fairness, compared to those in the Control condition. Moreover, we find initial support for the ability of the VoI to elicit more robust preferences: In the studies presented here, the VoI increases the likelihood of participants continuing to endorse their initial choice in a subsequent round where they know how they will be affected by the AI intervention and have a self-interested motivation to change their mind. These results emerge in both a descriptive and an immersive game. Our findings suggest that the VoI may be a suitable mechanism for selecting distributive princi",
+  "needs_fetch": false
+ },
+ {
+  "id": 1826,
+  "title": "An individual differences perspective on pragmatic abilities in the preschool years",
+  "org": "deepmind",
+  "date": "2023-04-23",
+  "venue": "Developmental Science",
+  "url": "https://doi.org/10.1111/desc.13401",
+  "abstract": "Pragmatic abilities are fundamental to successful language use and learning. Individual differences studies contribute to understanding the psychological processes involved in pragmatic reasoning. Small sample sizes, insufficient measurement tools, and a lack of theoretical precision have hindered progress, however. Three studies addressed these challenges in three- to 5-year-old German-speaking children (N = 228, 121 female). Studies 1 and 2 assessed the psychometric properties of six pragmatics tasks. Study 3 investigated relations among pragmatics tasks and between pragmatics and other cognitive abilities. The tasks were found to measure stable variation between individuals. Via a computational cognitive model, individual differences were traced back to a latent pragmatics construct. This presents the basis for understanding the relations between pragmatics and other cognitive abilities. RESEARCH HIGHLIGHTS: Individual differences in pragmatic abilities are important to understanding variation in language development. Research in this domain lacks a precise theoretical framework and psychometrically high-quality measures. We present six tasks capturing a wide range of pragmatic abilities with excellent re-test reliability. We use a computational cognitive model to provide a substantive theory of individual differences in pragmatic abilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 626,
+  "title": "N2G: A Scalable Approach for Quantifying Interpretable Neuron Representations in Large Language Models",
+  "org": "deepmind",
+  "date": "2023-04-22",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2304.12918",
+  "abstract": "Understanding the function of individual neurons within language models is essential for mechanistic interpretability research. We propose $\\textbf{Neuron to Graph (N2G)}$, a tool which takes a neuron and its dataset examples, and automatically distills the neuron's behaviour on those examples to an interpretable graph. This presents a less labour intensive approach to interpreting neurons than current manual methods, that will better scale these methods to Large Language Models (LLMs). We use truncation and saliency methods to only present the important tokens, and augment the dataset examples with more diverse samples to better capture the extent of neuron behaviour. These graphs can be visualised to aid manual interpretation by researchers, but can also output token activations on text to compare to the neuron's ground truth activations for automatic validation. N2G represents a step towards scalable interpretability methods by allowing us to convert neurons in an LLM to interpretable representations of measurable quality.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1828,
+  "title": "In Conversation with Artificial Intelligence: Aligning language Models with Human Values",
+  "org": "deepmind",
+  "date": "2023-04-19",
+  "venue": "Philosophy & Technology",
+  "url": "https://doi.org/10.1007/s13347-023-00606-x",
+  "abstract": "Abstract Large-scale language technologies are increasingly used in various forms of communication with humans across different contexts. One particular use case for these technologies is conversational agents, which output natural language text in response to prompts and queries. This mode of engagement raises a number of social and ethical questions. For example, what does it mean to align conversational agents with human norms or values? Which norms or values should they be aligned with? And how can this be accomplished? In this paper, we propose a number of steps that help answer these questions. We start by developing a philosophical analysis of the building blocks of linguistic communication between conversational agents and human interlocutors. We then use this analysis to identify and formulate ideal norms of conversation that can govern successful linguistic communication between humans and conversational agents. Furthermore, we explore how these norms can be used to align conversational agents with human values across a range of different discursive domains. We conclude by discussing the practical implications of our proposal for the design of conversational agents that are aligned with these norms and values.",
+  "needs_fetch": false
+ }
+]

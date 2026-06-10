@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1827,
+  "title": "Co-Writing Screenplays and Theatre Scripts with Language Models: Evaluation by Industry Professionals",
+  "org": "deepmind",
+  "date": "2023-04-19",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3544548.3581225",
+  "abstract": "Language models are increasingly attracting interest from writers. However, such models lack long-range semantic coherence, limiting their usefulness for longform creative writing. We address this limitation by applying language models hierarchically, in a system we call Dramatron. By building structural context via prompt chaining, Dramatron can generate coherent scripts and screenplays complete with title, characters, story beats, location descriptions, and dialogue. We illustrate Dramatron’s usefulness as an interactive co-creative system with a user study of 15 theatre and film industry professionals. Participants co-wrote theatre scripts and screenplays with Dramatron and engaged in open-ended interviews. We report reflections both from our interviewees and from independent reviewers who critiqued performances of several of the scripts to illustrate how both Dramatron and hierarchical text generation could be useful for human-machine co-creativity. Finally, we discuss the suitability of Dramatron for co-creativity, ethical considerations—including plagiarism and bias—and participatory models for the design and deployment of such tools.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1830,
+  "title": "Benchmarking causal reasoning algorithms for gene expression-based compound mechanism of action analysis",
+  "org": "deepmind",
+  "date": "2023-04-18",
+  "venue": "BMC Bioinformatics",
+  "url": "https://doi.org/10.1186/s12859-023-05277-1",
+  "abstract": "BACKGROUND: Elucidating compound mechanism of action (MoA) is beneficial to drug discovery, but in practice often represents a significant challenge. Causal Reasoning approaches aim to address this situation by inferring dysregulated signalling proteins using transcriptomics data and biological networks; however, a comprehensive benchmarking of such approaches has not yet been reported. Here we benchmarked four causal reasoning algorithms (SigNet, CausalR, CausalR ScanR and CARNIVAL) with four networks (the smaller Omnipath network vs. 3 larger MetaBase™ networks), using LINCS L1000 and CMap microarray data, and assessed to what extent each factor dictated the successful recovery of direct targets and compound-associated signalling pathways in a benchmark dataset comprising 269 compounds. We additionally examined impact on performance in terms of the functions and roles of protein targets and their connectivity bias in the prior knowledge networks. RESULTS: According to statistical analysis (negative binomial model), the combination of algorithm and network most significantly dictated the performance of causal reasoning algorithms, with the SigNet recovering the greatest number of direct targets. With respect to the recovery of signalling pathways, CARNIVAL with the Omnipath network was able to recover the most informative pathways containing compound targets, based on the Reactome pathway hierarchy. Additionally, CARNIVAL, SigNet and CausalR ScanR all outperformed baseline g",
+  "needs_fetch": false
+ },
+ {
+  "id": 1829,
+  "title": "Low-field magnetic resonance image enhancement via stochastic image quality transfer",
+  "org": "deepmind",
+  "date": "2023-04-18",
+  "venue": "Medical Image Analysis",
+  "url": "https://arxiv.org/abs/2304.13385",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1831,
+  "title": "Graph neural networks at the Large Hadron Collider",
+  "org": "deepmind",
+  "date": "2023-04-17",
+  "venue": "Nature Reviews Physics",
+  "url": "https://doi.org/10.1038/s42254-023-00569-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1832,
+  "title": "Rethink reporting of evaluation results in AI",
+  "org": "deepmind",
+  "date": "2023-04-13",
+  "venue": "Science",
+  "url": "https://doi.org/10.1126/science.adf6369",
+  "abstract": "Aggregate metrics and lack of access to results limit understanding",
+  "needs_fetch": true
+ },
+ {
+  "id": 1833,
+  "title": "DiscoGen: Learning to Discover Gene Regulatory Networks",
+  "org": "deepmind",
+  "date": "2023-04-12",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2023.04.11.536361",
+  "abstract": "Abstract Accurately inferring Gene Regulatory Networks (GRNs) is a critical and challenging task in biology. GRNs model the activatory and inhibitory interactions between genes and are inherently causal in nature. To accurately identify GRNs, perturbational data is required. However, most GRN discovery methods only operate on observational data. Recent advances in neural network-based causal discovery methods have significantly improved causal discovery, including handling interventional data, improvements in performance and scalability. However, applying state-of-the-art (SOTA) causal discovery methods in biology poses challenges, such as noisy data and a large number of samples. Thus, adapting the causal discovery methods is necessary to handle these challenges. In this paper, we introduce DiscoGen, a neural network-based GRN discovery method that can denoise gene expression measurements and handle interventional data. We demonstrate that our model outperforms SOTA neural network-based causal discovery methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 560,
+  "title": "Multi-step Jailbreaking Privacy Attacks on ChatGPT",
+  "org": "other",
+  "date": "2023-04-11",
+  "venue": "EMNLP 2023",
+  "url": "https://arxiv.org/abs/2304.05197",
+  "abstract": "With the rapid progress of large language models (LLMs), many downstream NLP tasks can be well solved given appropriate prompts. Though model developers and researchers work hard on dialog safety to avoid generating harmful content from LLMs, it is still challenging to steer AI-generated content (AIGC) for the human good. As powerful LLMs are devouring existing text data from various domains (e.g., GPT-3 is trained on 45TB texts), it is natural to doubt whether the private information is included in the training data and what privacy threats can these LLMs and their downstream applications bring. In this paper, we study the privacy threats from OpenAI's ChatGPT and the New Bing enhanced by ChatGPT and show that application-integrated LLMs may cause new privacy threats. To this end, we conduct extensive experiments to support our claims and discuss LLMs' privacy implications.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1834,
+  "title": "Reasoning about causality in games",
+  "org": "deepmind",
+  "date": "2023-04-05",
+  "venue": "Artificial Intelligence",
+  "url": "https://doi.org/10.1016/j.artint.2023.103919",
+  "abstract": "Causal reasoning and game-theoretic reasoning are fundamental topics in artificial intelligence, among many other disciplines: this paper is concerned with their intersection. Despite their importance, a formal framework that supports both these forms of reasoning has, until now, been lacking. We offer a solution in the form of (structural) causal games, which can be seen as extending Pearl's causal hierarchy to the game-theoretic domain, or as extending Koller and Milch's multi-agent influence diagrams to the causal domain. We then consider three key questions: How can the (causal) dependencies in games – either between variables, or between strategies – be modelled in a uniform, principled manner? How may causal queries be computed in causal games, and what assumptions does this require? How do causal games compare to existing formalisms?",
+  "needs_fetch": false
+ },
+ {
+  "id": 1835,
+  "title": "Evaluation of Remote Monitoring Technology across different skin tone participants",
+  "org": "deepmind",
+  "date": "2023-04-03",
+  "venue": "medRxiv",
+  "url": "https://doi.org/10.1101/2023.04.02.23288057",
+  "abstract": "ABSTRACT Background Many research studies seek to improve vital sign monitoring to enhance the conditions under which doctors and caregivers track patients ‘ health. Non-invasive and contactless monitoring has emerged as an optimal solution for this problem, with telemedicine, self-monitoring, and wellbeing tools being the next generation of technology in the biomedical field. However, there is worldwide concern about the general purpose and bias towards a certain demographic group of these techniques. In particular, skin tone and the accuracy of monitoring dark skin tone groups have been key questions among researchers, with the lack of results and studies contributing to this uncertainty. Methods This paper proposes a benchmark for remote monitoring solution against a medical device across different skin tone people. Around 330 videos from 90 different patients were analyzed, and Heart Rate and Heart Rate Variability were compared across different subgroups. The Fitzpatrick scale (1-6) was used to classify participants into three skin tone groups: 1 and 2; 3 and 4; 5 and 6. Results The results showed that our proposed methodology was able to estimate heart rate with a mean absolute error of 3 bpm across all samples and subgroups. Moreover, for Heart Rate Variability (HRV) metrics, we achieved the following results, in terms of Mobility Assistive Equipment (MAE): HRV-IBI (Inter-Beat-Interval) of 10 ms; HRV-SDNN (Standard Deviation of Normal to Normal heartbeats) of 14 ms and",
+  "needs_fetch": false
+ },
+ {
+  "id": 1836,
+  "title": "A learning agent that acquires social norms from public sanctions in decentralized multi-agent settings",
+  "org": "deepmind",
+  "date": "2023-04-01",
+  "venue": "Collective Intelligence",
+  "url": "https://doi.org/10.1177/26339137231162025",
+  "abstract": "Society is characterized by the presence of a variety of social norms: collective patterns of sanctioning that can prevent miscoordination and free-riding. Inspired by this, we aim to construct learning dynamics where potentially beneficial social norms can emerge. Since social norms are underpinned by sanctioning, we introduce a training regime where agents can access all sanctioning events but learning is otherwise decentralized. This setting is technologically interesting because sanctioning events may be the only available public signal in decentralized multi-agent systems where reward or policy-sharing is infeasible or undesirable. To achieve collective action in this setting, we construct an agent architecture containing a classifier module that categorizes observed behaviors as approved or disapproved, and a motivation to punish in accord with the group. We show that social norms emerge in multi-agent systems containing this agent and investigate the conditions under which this helps them achieve socially beneficial outcomes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 438,
+  "title": "Training Language Models with Language Feedback at Scale",
+  "org": "anthropic",
+  "date": "2023-03-28",
+  "venue": "TMLR",
+  "url": "https://arxiv.org/abs/2303.16755",
+  "abstract": "Pretrained language models often generate outputs that are not in line with human preferences, such as harmful text or factually incorrect summaries. Recent work approaches the above issues by learning from a simple form of human feedback: comparisons between pairs of model-generated outputs. However, comparison feedback only conveys limited information about human preferences. In this paper, we introduce Imitation learning from Language Feedback (ILF), a new approach that utilizes more informative language feedback. ILF consists of three steps that are applied iteratively: first, conditioning the language model on the input, an initial LM output, and feedback to generate refinements. Second, selecting the refinement incorporating the most feedback. Third, finetuning the language model to maximize the likelihood of the chosen refinement given the input. We show theoretically that ILF can be viewed as Bayesian Inference, similar to Reinforcement Learning from human feedback. We evaluate ILF's effectiveness on a carefully-controlled toy task and a realistic summarization task. Our experiments demonstrate that large language models accurately incorporate feedback and that finetuning with ILF scales well with the dataset size, even outperforming finetuning on human summaries. Learning from both language and comparison feedback outperforms learning from each alone, achieving human-level summarization performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1837,
+  "title": "Constructions of difference sets in nonabelian 2-groups",
+  "org": "deepmind",
+  "date": "2023-03-24",
+  "venue": "Algebra & Number Theory",
+  "url": "https://arxiv.org/abs/2004.01214",
+  "abstract": "Difference sets have been studied for more than 80 years. Techniques from algebraic number theory, group theory, finite geometry, and digital communications engineering have been used to establish constructive and nonexistence results. We provide a new theoretical approach which dramatically expands the class of $2$-groups known to contain a difference set, by refining the concept of covering extended building sets introduced by Davis and Jedwab in 1997. We then describe how product constructions and other methods can be used to construct difference sets in some of the remaining $2$-groups. We announce the completion of ten years of collaborative work to determine precisely which of the 56,092 nonisomorphic groups of order 256 contain a difference set. All groups of order 256 not excluded by the two classical nonexistence criteria are found to contain a difference set, in agreement with previous findings for groups of order 4, 16, and 64. We provide suggestions for how the existence question for difference sets in $2$-groups of all orders might be resolved.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2754,
+  "title": "DrGPUM: Guiding Memory Optimization for GPU-Accelerated Applications",
+  "org": "openai",
+  "date": "2023-03-20",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3582016.3582044",
+  "abstract": "GPUs are widely used in today’s computing platforms to accelerate applications in various domains. However, scarce GPU memory resources are often the dominant limiting factor in strengthening the applicability of GPU computing. In this paper, we propose DrGPUM, the first profiler that systematically investigates patterns of memory inefficiencies in GPU-accelerated applications. The strength of DrGPUM, when compared to a large class of existing GPU profilers, is its ability to (1) correlate problematic memory usage with data objects and GPU APIs, (2) identify and categorize object-level and intra-object memory inefficiencies, and (3) provide rich insights to guide memory optimization.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1020,
+  "title": "GPTs are GPTs: An early look at the labor market impact potential of large language models",
+  "org": "openai",
+  "date": "2023-03-17",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpts-are-gpts/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1838,
+  "title": "Feasibility and preliminary efficacy of app-based audio tools to improve sleep health in working adults experiencing poor sleep: a multi-arm randomized pilot trial",
+  "org": "deepmind",
+  "date": "2023-03-15",
+  "venue": "SLEEP",
+  "url": "https://doi.org/10.1093/sleep/zsad053",
+  "abstract": "STUDY OBJECTIVES: Many adults without a diagnosed sleep disorder report poor sleep. Recently, there has been a dramatic increase in the use of app-based audio tools to aid sleep by the general public, yet there is a paucity of evidence on whether such tools are efficacious. This study evaluated the feasibility and preliminary efficacy of two categories of audio tools, comprising music and narrated stories, featured on the Unmind app. METHODS: We conducted an online, parallel, multi-arm, external pilot randomized controlled trial, with two intervention arms and a waitlist (WL) control group. Participants were working adults who were screened for poor sleep. Feasibility was assessed via objective and self-report measures. Preliminary efficacy was evaluated via self-report measures of sleep disturbance, work productivity, and other mental health outcomes, captured at baseline (t0) and following a 4-week intervention period (t1), and analyzed using mixed effects models with intention-to-treat principles. RESULTS: Three hundred participants were randomized, and 92% were retained at t1. 90.5% of participants completed at least one intervention session. 82.1% reported being \"satisfied\" or \"very satisfied\" with their intervention, and 84.3% rated their intervention as \"good\" or \"excellent.\" The between-group Hedges' g effect size for sleep disturbance was 0.92 [0.63-1.22] and 1.09 [0.80-1.39] for the two interventions compared to the WL group. CONCLUSIONS: Both interventions are feas",
+  "needs_fetch": false
+ },
+ {
+  "id": 2755,
+  "title": "Acute Pneumonia Like Illness and Sepsis in India: Is it Time to Suspect Pulmonary Melioidosis?&#x0D;",
+  "org": "openai",
+  "date": "2023-03-14",
+  "venue": "Cureus",
+  "url": "http://dx.doi.org/10.7759/cureus.36122",
+  "abstract": "This article describes a case of melioidosis, a severe and potentially fatal disease caused by the Gram-negative bacillus Burkholderia pseudomallei, in a 55-year-old female in India. The disease is endemic in Southeast Asia and Northern Australia. Recently there has been an increased number of cases reported in India. The source of B. pseudomallei in India is thought to be soil and water, with the most common mode of infection being through skin contact. The clinical presentation of melioidosis in India varies greatly, making diagnosis difficult. The case presented here with a history of acute febrile illness and progressive dyspnoea, with clinical worsening leading to intensive care unit (ICU) care. We managed this acute pneumonia-like melioidosis with antibiotics and supportive care which showed rapid recovery at follow-up. This case highlights the need for a high index of suspicion and increased awareness of early diagnosis of melioidosis in the Indian subcontinent to improve the patient.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1839,
+  "title": "Mechanism of action deconvolution of the small-molecule pathological tau aggregation inhibitor Anle138b",
+  "org": "deepmind",
+  "date": "2023-03-14",
+  "venue": "Alzheimer s Research & Therapy",
+  "url": "https://doi.org/10.1186/s13195-023-01182-0",
+  "abstract": "BACKGROUND: A key histopathological hallmark of Alzheimer's disease (AD) is the presence of neurofibrillary tangles of aggregated microtubule-associated protein tau in neurons. Anle138b is a small molecule which has previously shown efficacy in mice in reducing tau aggregates and rescuing AD disease phenotypes. METHODS: In this work, we employed bioinformatics analysis-including pathway enrichment and causal reasoning-of an in vitro tauopathy model. The model consisted of cultured rat cortical neurons either unseeded or seeded with tau aggregates derived from human AD patients, both of which were treated with Anle138b to generate hypotheses for its mode of action. In parallel, we used a collection of human target prediction models to predict direct targets of Anle138b based on its chemical structure. RESULTS: Combining the different approaches, we found evidence supporting the hypothesis that the action of Anle138b involves several processes which are key to AD progression, including cholesterol homeostasis and neuroinflammation. On the pathway level, we found significantly enriched pathways related to these two processes including those entitled \"Superpathway of cholesterol biosynthesis\" and \"Granulocyte adhesion and diapedesis\". With causal reasoning, we inferred differential activity of SREBF1/2 (involved in cholesterol regulation) and mediators of the inflammatory response such as NFKB1 and RELA. Notably, our findings were also observed in Anle138b-treated unseeded neuron",
+  "needs_fetch": false
+ },
+ {
+  "id": 1021,
+  "title": "GPT-4",
+  "org": "openai",
+  "date": "2023-03-14",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-4-research/",
+  "abstract": "We’ve created GPT-4, the latest milestone in OpenAI’s effort in scaling up deep learning. GPT-4 is a large multimodal model (accepting image and text inputs, emitting text outputs) that, while less capable than humans in many real-world scenarios, exhibits human-level performance on various professional and academic benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1840,
+  "title": "SIRL",
+  "org": "deepmind",
+  "date": "2023-03-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2301.00810",
+  "abstract": "When robots learn reward functions using high capacity models that take raw state directly as input, they need to both learn a representation for what matters in the task --- the task \"features\" --- as well as how to combine these features into a single objective. If they try to do both at once from input designed to teach the full reward function, it is easy to end up with a representation that contains spurious correlations in the data, which fails to generalize to new settings. Instead, our ultimate goal is to enable robots to identify and isolate the causal features that people actually care about and use when they represent states and behavior. Our idea is that we can tune into this representation by asking users what behaviors they consider similar: behaviors will be similar if the features that matter are similar, even if low-level behavior is different; conversely, behaviors will be different if even one of the features that matter differs. This, in turn, is what enables the robot to disambiguate between what needs to go into the representation versus what is spurious, as well as what aspects of behavior can be compressed together versus not. The notion of learning representations based on similarity has a nice parallel in contrastive learning, a self-supervised representation learning technique that maps visually similar data points to similar embeddings, where similarity is defined by a designer through data augmentation heuristics. By contrast, in order to learn th",
+  "needs_fetch": false
+ },
+ {
+  "id": 1841,
+  "title": "Replication Data for: Placebo Tests For Causal Inference",
+  "org": "deepmind",
+  "date": "2023-03-08",
+  "venue": "Harvard Dataverse",
+  "url": "https://doi.org/10.7910/dvn/3rr5rj",
+  "abstract": "Placebo tests are increasingly common in applied social science research, but the methodological literature has not previously offered a comprehensive account of what we learn from them. We define placebo tests as tools for assessing the plausibility of the assumptions underlying a research design relative to some departure from those assumptions. We offer a typology of tests defined by the aspect of the research design that is altered to produce it (outcome, treatment, or population) and the type of assumption that is tested (bias assumptions or distributional assumptions). Our formal framework clarifies the extra assumptions necessary for informative placebo tests; these assumptions can be strong, and in some cases similar assumptions would justify a different procedure allowing the researcher to relax the research design's assumptions rather than test them. Properly designed and interpreted, placebo tests can be an important device for assessing the credibility of empirical research designs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 561,
+  "title": "Larger language models do in-context learning differently",
+  "org": "openai",
+  "date": "2023-03-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2303.03846",
+  "abstract": "We study how in-context learning (ICL) in language models is affected by semantic priors versus input-label mappings. We investigate two setups-ICL with flipped labels and ICL with semantically-unrelated labels-across various model families (GPT-3, InstructGPT, Codex, PaLM, and Flan-PaLM). First, experiments on ICL with flipped labels show that overriding semantic priors is an emergent ability of model scale. While small language models ignore flipped labels presented in-context and thus rely primarily on semantic priors from pretraining, large models can override semantic priors when presented with in-context exemplars that contradict priors, despite the stronger semantic priors that larger models may hold. We next study semantically-unrelated label ICL (SUL-ICL), in which labels are semantically unrelated to their inputs (e.g., foo/bar instead of negative/positive), thereby forcing language models to learn the input-label mappings shown in in-context exemplars in order to perform the task. The ability to do SUL-ICL also emerges primarily with scale, and large-enough language models can even perform linear classification in a SUL-ICL setting. Finally, we evaluate instruction-tuned models and find that instruction tuning strengthens both the use of semantic priors and the capacity to learn input-label mappings, but more of the former.",
+  "needs_fetch": false
+ },
+ {
+  "id": 439,
+  "title": "Perspectives on the Social Impacts of Reinforcement Learning with Human Feedback",
+  "org": "other",
+  "date": "2023-03-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2303.02891",
+  "abstract": "Is it possible for machines to think like humans? And if it is, how should we go about teaching them to do so? As early as 1950, Alan Turing stated that we ought to teach machines in the way of teaching a child. Reinforcement learning with human feedback (RLHF) has emerged as a strong candidate toward allowing agents to learn from human feedback in a naturalistic manner. RLHF is distinct from traditional reinforcement learning as it provides feedback from a human teacher in addition to a reward signal. It has been catapulted into public view by multiple high-profile AI applications, including OpenAI's ChatGPT, DeepMind's Sparrow, and Anthropic's Claude. These highly capable chatbots are already overturning our understanding of how AI interacts with humanity. The wide applicability and burgeoning success of RLHF strongly motivate the need to evaluate its social impacts. In light of recent developments, this paper considers an important question: can RLHF be developed and used without negatively affecting human societies? Our objectives are threefold: to provide a systematic study of the social effects of RLHF; to identify key social and ethical issues of RLHF; and to discuss social impacts for stakeholders. Although text-based applications of RLHF have received much attention, it is crucial to consider when evaluating its social implications the diverse range of areas to which it may be deployed. We describe seven primary ways in which RLHF-based technologies will affect socie",
+  "needs_fetch": false
+ },
+ {
+  "id": 114,
+  "title": "Privileged Bases in the Transformer Residual Stream",
+  "org": "anthropic",
+  "date": "2023-03-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2023/privileged-basis/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1842,
+  "title": "Rapid learning of predictive maps with STDP and theta phase precession",
+  "org": "deepmind",
+  "date": "2023-02-27",
+  "venue": "eLife",
+  "url": "https://doi.org/10.7554/elife.80663",
+  "abstract": "The predictive map hypothesis is a promising candidate principle for hippocampal function. A favoured formalisation of this hypothesis, called the successor representation, proposes that each place cell encodes the expected state occupancy of its target location in the near future. This predictive framework is supported by behavioural as well as electrophysiological evidence and has desirable consequences for both the generalisability and efficiency of reinforcement learning algorithms. However, it is unclear how the successor representation might be learnt in the brain. Error-driven temporal difference learning, commonly used to learn successor representations in artificial agents, is not known to be implemented in hippocampal networks. Instead, we demonstrate that spike-timing dependent plasticity (STDP), a form of Hebbian learning, acting on temporally compressed trajectories known as 'theta sweeps', is sufficient to rapidly learn a close approximation to the successor representation. The model is biologically plausible - it uses spiking neurons modulated by theta-band oscillations, diffuse and overlapping place cell-like state representations, and experimentally matched parameters. We show how this model maps onto known aspects of hippocampal circuitry and explains substantial variance in the temporal difference successor matrix, consequently giving rise to place cells that demonstrate experimentally observed successor representation-related phenomena including backwards ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1843,
+  "title": "Downscaling with a machine learning-based emulator of a local-scale UK climate model",
+  "org": "deepmind",
+  "date": "2023-02-26",
+  "venue": null,
+  "url": "https://doi.org/10.5194/egusphere-egu23-14253",
+  "abstract": "High resolution rainfall projections are useful for planning for climate change [1] but are expensive to produce using physical simulations. We make novel use of a state-of-the-art generative machine learning (ML) method, diffusion models [2], to more cheaply generate high resolution (8.8km) daily mean rainfall samples over England and Wales conditioned on low resolution (60km) climate model variables. The downscaling model is trained on output from the Met Office UK convection-permitting model (CPM) [3]. We then apply it to predict high-resolution rainfall based on either coarsened CPM output or output from the Met Office HadGEM3 general circulation model (GCM). The downscaling model is stochastic and able to produce samples of high-resolution rainfall that have realistic spatial structure, which previous methods struggle to achieve. It is also easy to train and should better estimate the probability of extreme events compared to previous generative ML approaches.The downscaling model samples match well the rainfall distribution of CPM simulation output. We use as our conditioning variables We obtained further improvements by also including high-resolution, location-specific parameters that are learnt during the ML training phase. We will discuss the challenges of applying the model trained on coarsened CPM variables to GCM variables and present results about the method&amp;#8217;s ability to reproduce the spatial and temporal behaviour of rainfall and extreme events that ar",
+  "needs_fetch": false
+ },
+ {
+  "id": 1844,
+  "title": "ModelCIF: An Extension of PDBx/mmCIF Data Representation for Computed Structure Models",
+  "org": "deepmind",
+  "date": "2023-02-22",
+  "venue": "Journal of Molecular Biology",
+  "url": "https://doi.org/10.1016/j.jmb.2023.168021",
+  "abstract": "ModelCIF (github.com/ihmwg/ModelCIF) is a data information framework developed for and by computational structural biologists to enable delivery of Findable, Accessible, Interoperable, and Reusable (FAIR) data to users worldwide. ModelCIF describes the specific set of attributes and metadata associated with macromolecular structures modeled by solely computational methods and provides an extensible data representation for deposition, archiving, and public dissemination of predicted three-dimensional (3D) models of macromolecules. It is an extension of the Protein Data Bank Exchange / macromolecular Crystallographic Information Framework (PDBx/mmCIF), which is the global data standard for representing experimentally-determined 3D structures of macromolecules and associated metadata. The PDBx/mmCIF framework and its extensions (e.g., ModelCIF) are managed by the Worldwide Protein Data Bank partnership (wwPDB, wwpdb.org) in collaboration with relevant community stakeholders such as the wwPDB ModelCIF Working Group (wwpdb.org/task/modelcif). This semantically rich and extensible data framework for representing computed structure models (CSMs) accelerates the pace of scientific discovery. Herein, we describe the architecture, contents, and governance of ModelCIF, and tools and processes for maintaining and extending the data standard. Community tools and software libraries that support ModelCIF are also described.",
+  "needs_fetch": false
+ },
+ {
+  "id": 115,
+  "title": "The Capacity for Moral Self-Correction in Large Language Models",
+  "org": "anthropic",
+  "date": "2023-02-15",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/the-capacity-for-moral-self-correction-in-large-language-models",
+  "abstract": "We test the hypothesis that language models trained with reinforcement learning from human feedback (RLHF) have the capability to \"morally self-correct\" -- to avoid producing harmful outputs -- if instructed to do so. We find strong evidence in support of this hypothesis across three different experiments, each of which reveal different facets of moral self-correction. We find that the capability for moral self-correction emerges at 22B model parameters, and typically improves with increasing model size and RLHF training. We believe that at this level of scale, language models obtain two capabilities that they can use for moral self-correction: (1) they can follow instructions and (2) they can learn complex normative concepts of harm like stereotyping, bias, and discrimination. As such, they can follow instructions to avoid certain kinds of morally harmful outputs. We believe our results are cause for cautious optimism regarding the ability to train language models to abide by ethical principles.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2756,
+  "title": "To ChatGPT or not to ChatGPT? The Impact of Artificial Intelligence on Academic Publishing",
+  "org": "openai",
+  "date": "2023-02-09",
+  "venue": "The Pediatric Infectious Disease Journal",
+  "url": "https://doi.org/10.1097/inf.0000000000003852",
+  "abstract": "*Department of Paediatrics, The University of Melbourne, Parkville, Victoria, Australia †Infectious Diseases Unit, Royal Children’s Hospital Melbourne, Parkville, Victoria, Australia ‡Infectious Diseases Group, Murdoch Children’s Research Institute, Parkville, Victoria, Australia §OpenAI L.L.C, San Francisco, California, USA. Accepted for publication January 18, 2023 The authors have no funding or conflicts of interest to disclose. Supplemental digital content is available for this article. Direct URL citations appear in the printed text and are provided in the HTML and PDF versions of this article on the journal’s website (www.pidj.com). Address for correspondence: Nigel Curtis, PhD, FRCPCH, Department of Paediatrics, The University of Melbourne, Royal Children’s Hospital Melbourne, 50 Flemington Road, Parkville, VIC 3052, Australia. E-mail: [email protected]; Twitter: @nigeltwitt.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1845,
+  "title": "Everything is connected: Graph neural networks",
+  "org": "deepmind",
+  "date": "2023-02-09",
+  "venue": "Current Opinion in Structural Biology",
+  "url": "https://doi.org/10.1016/j.sbi.2023.102538",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1846,
+  "title": "Engines of power: Electricity, AI, and general-purpose, military transformations",
+  "org": "deepmind",
+  "date": "2023-02-07",
+  "venue": "European Journal of International Security",
+  "url": "https://doi.org/10.1017/eis.2023.1",
+  "abstract": "Abstract Major theories of military innovation focus on relatively narrow technological developments, such as nuclear weapons or aircraft carriers. Arguably the most profound military implications of technological change, however, come from more fundamental advances arising from ‘general-purpose technologies’ (GPTs), such as the steam engine, electricity, and the computer. Building from scholarship on GPTs and economic growth, we argue that the effects of GPTs on military effectiveness are broad, delayed, and shaped by indirect productivity spillovers. We label this impact pathway a ‘general-purpose military transformation’ (GMT). Contrary to studies that predict GPTs will rapidly diffuse to militaries around the world and narrow gaps in capabilities, we show that GMTs can reinforce existing balances if leading militaries have stronger linkages to a robust industrial base in the GPT than challengers. Evidence from electricity's impact on military affairs, covering the late nineteenth and early twentieth centuries, supports our propositions about GMTs. To probe the explanatory value of our theory and account for alternative interpretations, we compare findings from the electricity case to the military impacts of submarine technology, a non-GPT that emerged in the same period. Finally, we apply our findings to contemporary debates about artificial intelligence, which could plausibly cause a profound GMT.",
+  "needs_fetch": false
+ }
+]

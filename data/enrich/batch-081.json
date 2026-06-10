@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2351,
+  "title": "A Provably Efficient Sample Collection Strategy for Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-07-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2007.06437",
+  "abstract": "One of the challenges in online reinforcement learning (RL) is that the agent needs to trade off the exploration of the environment and the exploitation of the samples to optimize its behavior. Whether we optimize for regret, sample complexity, state-space coverage or model estimation, we need to strike a different exploration-exploitation trade-off. In this paper, we propose to tackle the exploration-exploitation problem following a decoupled approach composed of: 1) An \"objective-specific\" algorithm that (adaptively) prescribes how many samples to collect at which states, as if it has access to a generative model (i.e., a simulator of the environment); 2) An \"objective-agnostic\" sample collection exploration strategy responsible for generating the prescribed samples as fast as possible. Building on recent methods for exploration in the stochastic shortest path problem, we first provide an algorithm that, given as input the number of samples $b(s,a)$ needed in each state-action pair, requires $\\tilde{O}(B D + D^{3/2} S^2 A)$ time steps to collect the $B=\\sum_{s,a} b(s,a)$ desired samples, in any unknown communicating MDP with $S$ states, $A$ actions and diameter $D$. Then we show how this general-purpose exploration algorithm can be paired with \"objective-specific\" strategies that prescribe the sample requirements to tackle a variety of settings -- e.g., model estimation, sparse reward discovery, goal-free cost-free exploration in communicating MDPs -- for which we obtain im",
+  "needs_fetch": false
+ },
+ {
+  "id": 2350,
+  "title": "Structured Policy Iteration for Linear Quadratic Regulator",
+  "org": "deepmind",
+  "date": "2020-07-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2007.06202",
+  "abstract": "Linear quadratic regulator (LQR) is one of the most popular frameworks to tackle continuous Markov decision process tasks. With its fundamental theory and tractable optimal policy, LQR has been revisited and analyzed in recent years, in terms of reinforcement learning scenarios such as the model-free or model-based setting. In this paper, we introduce the \\textit{Structured Policy Iteration} (S-PI) for LQR, a method capable of deriving a structured linear policy. Such a structured policy with (block) sparsity or low-rank can have significant advantages over the standard LQR policy: more interpretable, memory-efficient, and well-suited for the distributed setting. In order to derive such a policy, we first cast a regularized LQR problem when the model is known. Then, our Structured Policy Iteration (S-PI) algorithm, which takes a policy evaluation step and a policy improvement step in an iterative manner, can solve this regularized LQR efficiently. We further extend the S-PI algorithm to the model-free setting where a smoothing procedure is adopted to estimate the gradient. In both the known-model and model-free setting, we prove convergence analysis under the proper choice of parameters. Finally, the experiments demonstrate the advantages of S-PI in terms of balancing the LQR performance and level of structure by varying the weight parameter.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2349,
+  "title": "Revisiting Fundamentals of Experience Replay",
+  "org": "deepmind",
+  "date": "2020-07-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2007.06700",
+  "abstract": "Experience replay is central to off-policy algorithms in deep reinforcement learning (RL), but there remain significant gaps in our understanding. We therefore present a systematic and extensive analysis of experience replay in Q-learning methods, focusing on two fundamental properties: the replay capacity and the ratio of learning updates to experience collected (replay ratio). Our additive and ablative studies upend conventional wisdom around experience replay -- greater capacity is found to substantially increase the performance of certain algorithms, while leaving others unaffected. Counterintuitively we show that theoretically ungrounded, uncorrected n-step returns are uniquely beneficial while other techniques confer limited benefit for sifting through larger memory. Separately, by directly controlling the replay ratio we contextualize previous observations in the literature and empirically measure its importance across a variety of deep RL algorithms. Finally, we conclude by testing a set of hypotheses on the nature of these performance benefits.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2348,
+  "title": "Deep Reinforcement Learning and Its Neuroscientific Implications",
+  "org": "deepmind",
+  "date": "2020-07-13",
+  "venue": "Neuron",
+  "url": "https://arxiv.org/abs/2007.03750",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2826,
+  "title": "Learning General-Purpose Controllers via Locally Communicating Sensorimotor Modules",
+  "org": "openai",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "https://icml.cc/Conferences/2020/AcceptedPapersInitial#784",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2825,
+  "title": "Conditional Augmentation for Generative Modeling",
+  "org": "openai",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "https://icml.cc/Conferences/2020/AcceptedPapersInitial#983",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2824,
+  "title": "A Game Theoretic Perspective on Model-Based Reinforcement Learning",
+  "org": "openai",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "https://icml.cc/Conferences/2020/AcceptedPapersInitial#550",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2823,
+  "title": "Responsive Safety in Reinforcement Learning",
+  "org": "openai",
+  "date": "2020-07-12",
+  "venue": null,
+  "url": "https://openalex.org/W3034296948",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2822,
+  "title": "Estimating Q(s,s') with Deterministic Dynamics Gradients",
+  "org": "openai",
+  "date": "2020-07-12",
+  "venue": null,
+  "url": "https://openalex.org/W3034318616",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2821,
+  "title": "Enhanced POET: Open-ended Reinforcement Learning through Unbounded Invention of Learning Challenges and their Solutions",
+  "org": "openai",
+  "date": "2020-07-12",
+  "venue": null,
+  "url": "https://openalex.org/W3034453920",
+  "abstract": "Creating open-ended algorithms, which generate their own never-ending stream of novel and appropriately challenging learning opportunities, could help to automate and accelerate progress in machine learning. A recent step in this direction is the Paired Open-Ended Trailblazer (POET), an algorithm that generates and solves its own challenges, and allows solutions to goal-switch between challenges to avoid local optima. However, the original POET was unable to demonstrate its full creative potential because of limitations of the algorithm itself and because of external issues including a limited problem space and lack of a universal progress measure. Importantly, both limitations pose impediments not only for POET, but for the pursuit of open-endedness in general. Here we introduce and empirically validate two new innovations to the original algorithm, as well as two external innovations designed to help elucidate its full potential. Together, these four advances enable the most open-ended algorithmic demonstration to date. The algorithmic innovations are (1) a domain-general measure of how meaningfully novel new challenges are, enabling the system to potentially create and solve interesting challenges endlessly, and (2) an efficient heuristic for determining when agents should goal-switch from one problem to another (helping open-ended search better scale). Outside the algorithm itself, to enable a more definitive demonstration of open-endedness, we introduce (3) a novel, more",
+  "needs_fetch": false
+ },
+ {
+  "id": 2820,
+  "title": "Generative Teaching Networks: Accelerating Neural Architecture Search by Learning to Generate Synthetic Training Data",
+  "org": "openai",
+  "date": "2020-07-12",
+  "venue": null,
+  "url": "https://openalex.org/W3034828529",
+  "abstract": "This paper investigates the intriguing question of whether we can create learning algorithms that automatically generate training data, learning environments, and curricula in order to help AI agents rapidly learn. We show that such algorithms are possible via Generative Teaching Networks (GTNs), a general approach that is, in theory, applicable to supervised, unsupervised, and reinforcement learning, although our experiments only focus on the supervised case. GTNs are deep neural networks that generate data and/or training environments that a learner (e.g. a freshly initialized neural network) trains on for a few SGD steps before being tested on a target task. We then differentiate through the entire learning process via meta-gradients to update the GTN parameters to improve performance on the target task. GTNs have the beneficial property that they can theoretically generate any type of data or training environment, making their potential impact large. This paper introduces GTNs, discusses their potential, and showcases that they can substantially accelerate learning. We also demonstrate a practical and exciting application of GTNs: accelerating the evaluation of candidate architectures for neural architecture search (NAS), which is rate-limited by such evaluations, enabling massive speed-ups in NAS. GTN-NAS improves the NAS state of the art, finding higher performing architectures when controlling for the search proposal mechanism. GTN-NAS also is competitive with the over",
+  "needs_fetch": false
+ },
+ {
+  "id": 2819,
+  "title": "Leveraging Procedural Generation to Benchmark Reinforcement Learning",
+  "org": "openai",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/cobbe20a/cobbe20a.pdf",
+  "abstract": "We introduce Procgen Benchmark, a suite of 16 procedurally generated game-like environments designed to benchmark both sample efficiency and generalization in reinforcement learning. We believe that the community will benefit from increased access to high quality training environments, and we provide detailed experimental protocols for using this benchmark. We empirically demonstrate that diverse environment distributions are essential to adequately train and evaluate RL agents, thereby motivating the extensive use of procedural content generation. We then use this benchmark to investigate the effects of scaling model size, finding that larger models significantly improve both sample efficiency and generalization.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2818,
+  "title": "Generative Pretraining From Pixels",
+  "org": "openai",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/chen20s/chen20s.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2380,
+  "title": "Influence Diagram Bandits",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "https://icml.cc/Conferences/2020/AcceptedPapersInitial#333",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2379,
+  "title": "Non-Stationary Bandits with Intermediate Observations",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "https://dblp.uni-trier.de/db/journals/corr/corr2006.html#abs-2006-02119",
+  "abstract": "Online recommender systems often face long delays in receiving feedback, especially when optimizing for some long-term metrics. While mitigating the effects of delays in learning is well-understood in stationary environments, the problem becomes much more challenging when the environment changes. In fact, if the timescale of the change is comparable to the delay, it is impossible to learn about the environment, since the available observations are already obsolete. However, the arising issues can be addressed if intermediate signals are available without delay, such that given those signals, the long-term behavior of the system is stationary. To model this situation, we introduce the problem of stochastic, non-stationary, delayed bandits with intermediate observations. We develop a computationally efficient algorithm based on UCRL, and prove sublinear regret guarantees for its performance. Experimental results demonstrate that our method is able to learn in non-stationary delayed environments where existing methods fail.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2378,
+  "title": "Analyzing the effect of neural network architecture on training performance",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": null,
+  "url": "https://openalex.org/W3035234304",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2377,
+  "title": "CoMic: Co-Training and Mimicry for Reusable Skills",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "https://icml.cc/Conferences/2020/AcceptedPapersInitial#822",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2376,
+  "title": "Fast computation of Nash Equilibria in Imperfect Information Games",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/munos20a/munos20a.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2375,
+  "title": "Improved sleeping bandits with stochastic action sets and adversarial rewards",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-02950106",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2374,
+  "title": "Taylor Expansion Policy Optimization",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-02509561",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2373,
+  "title": "Gamification of Pure Exploration for Linear Bandits",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "LillOA (Université de Lille (University Of Lille))",
+  "url": "http://hdl.handle.net/20.500.12210/29571",
+  "abstract": "Virtual conference",
+  "needs_fetch": true
+ },
+ {
+  "id": 2372,
+  "title": "Divide, Conquer, and Combine: a New Inference Strategy for Probabilistic Programs with Stochastic Support",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1910.13324",
+  "abstract": "Universal probabilistic programming systems (PPSs) provide a powerful framework for specifying rich probabilistic models. They further attempt to automate the process of drawing inferences from these models, but doing this successfully is severely hampered by the wide range of non--standard models they can express. As a result, although one can specify complex models in a universal PPS, the provided inference engines often fall far short of what is required. In particular, we show that they produce surprisingly unsatisfactory performance for models where the support varies between executions, often doing no better than importance sampling from the prior. To address this, we introduce a new inference framework: Divide, Conquer, and Combine, which remains efficient for such models, and show how it can be implemented as an automated and generic PPS inference engine. We empirically demonstrate substantial performance improvements over existing approaches on three examples.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2371,
+  "title": "A simpler approach to accelerated optimization: iterative averaging meets optimism",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/joulani20a/joulani20a.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2370,
+  "title": "From Chaos to Order: Symmetry and Conservation Laws in Game Dynamics",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": null,
+  "url": "http://proceedings.mlr.press/v119/nagarajan20a/nagarajan20a.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2369,
+  "title": "OPtions as REsponses: Grounding behavioural hierarchies in multi-agent reinforcement learning",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/vezhnevets20a/vezhnevets20a.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2368,
+  "title": "Interference and Generalization in Temporal Difference Learning",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": null,
+  "url": "https://openalex.org/W3034848825",
+  "abstract": "We study the link between generalization and interference in temporal-difference (TD) learning. Interference is defined as the inner product of two different gradients, representing their alignment. This quantity emerges as being of interest from a variety of observations about neural networks, parameter sharing and the dynamics of learning. We find that TD easily leads to low-interference, under-generalizing parameters, while the effect seems reversed in supervised learning. We hypothesize that the cause can be traced back to the interplay between the dynamics of interference and bootstrapping. This is supported empirically by several observations: the negative relationship between the generalization gap and interference in TD, the negative effect of bootstrapping on interference and the local coherence of targets, and the contrast between the propagation rate of information in TD(0) versus TD($\\lambda$) and regression tasks such as Monte-Carlo policy evaluation. We hope that these new findings can guide the future discovery of better bootstrapping methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2367,
+  "title": "Improving the Gating Mechanism of Recurrent Neural Networks",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/gu20a/gu20a.pdf",
+  "abstract": "Gating mechanisms are widely used in neural network models, where they allow gradients to backpropagate more easily through depth or time. However, their saturation property introduces problems of its own. For example, in recurrent models these gates need to have outputs near 1 to propagate information over long time-delays, which requires them to operate in their saturation regime and hinders gradient-based learning of the gate mechanism. We address this problem by deriving two synergistic modifications to the standard gating mechanism that are easy to implement, introduce no additional hyperparameters, and improve learnability of the gates when they are close to saturation. We show how these changes are related to and improve on alternative recently proposed gating mechanisms such as chrono initialization and Ordered Neurons. Empirically, our simple gating mechanisms robustly improve the performance of recurrent models on a range of applications, including synthetic memorization tasks, sequential image classification, language modeling, and reinforcement learning, particularly when long-term dependencies are involved.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2366,
+  "title": "Invariant Causal Prediction for Block MDPs",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": null,
+  "url": "https://openalex.org/W3034932139",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2365,
+  "title": "Linear bandits with Stochastic Delayed Feedback",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": null,
+  "url": "http://proceedings.mlr.press/v119/vernade20a/vernade20a.pdf",
+  "abstract": "Stochastic linear bandits are a natural and well-studied model for structured exploration/exploitation problems and are widely used in applications such as online marketing and recommendation. One of the main challenges faced by practitioners hoping to apply existing algorithms is that usually the feedback is randomly delayed and delays are only partially observable. For example, while a purchase is usually observable some time after the display, the decision of not buying is never explicitly sent to the system. In other words, the learner only observes delayed positive events. We formalize this problem as a novel stochastic delayed linear bandit and propose ${\\tt OTFLinUCB}$ and ${\\tt OTFLinTS}$, two computationally efficient algorithms able to integrate new information as it becomes available and to deal with the permanently censored feedback. We prove optimal $\\tilde O(\\smash{d\\sqrt{T}})$ bounds on the regret of the first algorithm and study the dependency on delay-dependent parameters. Our model, assumptions and results are validated by experiments on simulated and real data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2364,
+  "title": "Normalizing Flows on Tori and Spheres",
+  "org": "deepmind",
+  "date": "2020-07-12",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v119/rezende20a/rezende20a.pdf",
+  "abstract": "Normalizing flows are a powerful tool for building expressive distributions in high dimensions. So far, most of the literature has concentrated on learning flows on Euclidean spaces. Some problems however, such as those involving angles, are defined on spaces with more complex geometries, such as tori or spheres. In this paper, we propose and compare expressive and numerically stable flows on such spaces. Our flows are built recursively on the dimension of the space, starting from flows on circles, closed intervals or spheres.",
+  "needs_fetch": false
+ }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 905,
+  "title": "Estimating Gibbs free energies via isobaric-isothermal flows",
+  "org": "deepmind",
+  "date": "2023-09-04",
+  "venue": "Machine Learning: Science and Technology",
+  "url": "https://iopscience.iop.org/article/10.1088/2632-2153/acefa8",
+  "abstract": "Abstract We present a machine-learning model based on normalizing flows that is trained to sample from the isobaric-isothermal ensemble. In our approach, we approximate the joint distribution of a fully-flexible triclinic simulation box and particle coordinates to achieve a desired internal pressure. This novel extension of flow-based sampling to the isobaric-isothermal ensemble yields direct estimates of Gibbs free energies. We test our NPT -flow on monatomic water in the cubic and hexagonal ice phases and find excellent agreement of Gibbs free energies and other observables compared with established baselines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 619,
+  "title": "Emergent Linear Representations in World Models of Self-Supervised Sequence Models",
+  "org": "deepmind",
+  "date": "2023-09-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2309.00941",
+  "abstract": "How do sequence models represent their decision-making process? Prior work suggests that Othello-playing neural network learned nonlinear models of the board state (Li et al., 2023a). In this work, we provide evidence of a closely related linear representation of the board. In particular, we show that probing for “my colour” vs. “opponent’s colour” may be a simple yet powerful way to interpret the model’s internal state. This precise understanding of the internal representations allows us to control the model’s behaviour with simple vector arithmetic. Linear representations enable significant interpretability progress, which we demonstrate with further exploration of how the world model is computed.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1764,
+  "title": "Local and adaptive mirror descents in extensive-form games",
+  "org": "deepmind",
+  "date": "2023-09-01",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2309.00656",
+  "abstract": "We study how to learn $ε$-optimal strategies in zero-sum imperfect information games (IIG) with trajectory feedback. In this setting, players update their policies sequentially based on their observations over a fixed number of episodes, denoted by $T$. Existing procedures suffer from high variance due to the use of importance sampling over sequences of actions (Steinberger et al., 2020; McAleer et al., 2022). To reduce this variance, we consider a fixed sampling approach, where players still update their policies over time, but with observations obtained through a given fixed sampling policy. Our approach is based on an adaptive Online Mirror Descent (OMD) algorithm that applies OMD locally to each information set, using individually decreasing learning rates and a regularized loss. We show that this approach guarantees a convergence rate of $\\tilde{\\mathcal{O}}(T^{-1/2})$ with high probability and has a near-optimal dependence on the game parameters when applied with the best theoretical choices of learning rates and sampling policies. To achieve these results, we generalize the notion of OMD stabilization, allowing for time-varying regularization with convex increments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 242,
+  "title": "Taken out of context: On measuring situational awareness in LLMs",
+  "org": "anthropic",
+  "date": "2023-09-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2309.00667",
+  "abstract": "We aim to better understand the emergence of `situational awareness' in large language models (LLMs). A model is situationally aware if it's aware that it's a model and can recognize whether it's currently in testing or deployment. Today's LLMs are tested for safety and alignment before they are deployed. An LLM could exploit situational awareness to achieve a high score on safety tests, while taking harmful actions after deployment. Situational awareness may emerge unexpectedly as a byproduct of model scaling. One way to better foresee this emergence is to run scaling experiments on abilities necessary for situational awareness. As such an ability, we propose `out-of-context reasoning' (in contrast to in-context learning). We study out-of-context reasoning experimentally. First, we finetune an LLM on a description of a test while providing no examples or demonstrations. At test time, we assess whether the model can pass the test. To our surprise, we find that LLMs succeed on this out-of-context reasoning task. Their success is sensitive to the training setup and only works when we apply data augmentation. For both GPT-3 and LLaMA-1, performance improves with model size. These findings offer a foundation for further empirical study, towards predicting and potentially controlling the emergence of situational awareness in LLMs. Code is available at: https://github.com/AsaCooperStickland/situational-awareness-evals.",
+  "needs_fetch": false
+ },
+ {
+  "id": 907,
+  "title": "RoboTAP: Tracking Arbitrary Points for Few-Shot Visual Imitation",
+  "org": "deepmind",
+  "date": "2023-08-31",
+  "venue": "ICRA 2024",
+  "url": "https://arxiv.org/abs/2308.15975",
+  "abstract": "For robots to be useful outside labs and factories we need to be able to teach them new useful behaviors quickly. Current approaches lack either the generality to onboard new tasks without task-specific engineering, or else lack the data-efficiency to do so in an amount of time that enables practical use. In this work we explore dense tracking as a representational bottleneck to allow fast and general-purpose learning from demonstration. Our approach utilizes Track-Any-Point (TAP) models to isolate the relevant motion in a demonstration, and parameterize a low-level controller to reproduce this motion across changes in the scene. We show that this results in robust robot policies that can solve complex object-arrangement tasks such as kitting, stacking up to four objects, and even full path-following tasks such as applying glue and sticking objects together, all from demonstrations that can be collected in minutes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 906,
+  "title": "Natural Quantum Monte Carlo Computation of Excited States",
+  "org": "deepmind",
+  "date": "2023-08-31",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2308.16848",
+  "abstract": "We present a variational Monte Carlo algorithm for estimating the lowest excited states of a quantum system which is a natural generalization of the estimation of ground states. The method requires no explicit orthogonalization of the different states, instead transforming the problem of finding excited states of a given system into that of finding the ground state of an expanded system. Expected values of arbitrary observables can be calculated, including mixed expectations between different states such as the transition dipole moment. Although the method is entirely general, it works particularly well in conjunction with recent work on using neural networks as variational Ansätze for many-electron systems, and we show that by combining this method with the FermiNet and Psiformer Ansätze we can accurately recover vertical excitation energies and oscillator strengths on molecules as large as benzene. Beyond the examples on molecules presented here, we expect this technique will be of great interest for applications of variational quantum Monte Carlo to atomic, nuclear and condensed matter physics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2749,
+  "title": "Development of a case-based nursing education program using generative artificial intelligence",
+  "org": "openai",
+  "date": "2023-08-29",
+  "venue": "The Journal of Korean Academic Society of Nursing Education",
+  "url": "https://doi.org/10.5977/jkasne.2023.29.3.234",
+  "abstract": "Purpose: This study aimed to develop a case-based nursing education program using generative artificial intelligence and to assess its usability and applicability in nursing curriculums.Methods: The program was developed by following the five steps of the ADDIE model: analysis, design, development, implementation, and evaluation. A panel of five nursing professors served as experts to implement and evaluate the program.Results: Utilizing ChatGPT, six program modules were designed and developed based on experiential learning theory. The experts’ evaluations confirmed that the program was suitable for case-based learning, highly usable, and applicable to nursing education.Conclusion: Generative artificial intelligence was identified as a valuable tool for enhancing the effectiveness of case-based learning. This study provides insights and future directions for integrating generative artificial intelligence into nursing education. Further research should be attempted to implement and evaluate this program with nursing students.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1765,
+  "title": "Personality Traits in Large Language Models",
+  "org": "deepmind",
+  "date": "2023-08-28",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-3296728/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 548,
+  "title": "A Wide Evaluation of ChatGPT on Affective Computing Tasks",
+  "org": "other",
+  "date": "2023-08-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2308.13911",
+  "abstract": "With the rise of foundation models, a new artificial intelligence paradigm has emerged, by simply using general purpose foundation models with prompting to solve problems instead of training a separate machine learning model for each problem. Such models have been shown to have emergent properties of solving problems that they were not initially trained on. The studies for the effectiveness of such models are still quite limited. In this work, we widely study the capabilities of the ChatGPT models, namely GPT-4 and GPT-3.5, on 13 affective computing problems, namely aspect extraction, aspect polarity classification, opinion extraction, sentiment analysis, sentiment intensity ranking, emotions intensity ranking, suicide tendency detection, toxicity detection, well-being assessment, engagement measurement, personality assessment, sarcasm detection, and subjectivity detection. We introduce a framework to evaluate the ChatGPT models on regression-based problems, such as intensity ranking problems, by modelling them as pairwise ranking classification. We compare ChatGPT against more traditional NLP methods, such as end-to-end recurrent neural networks and transformers. The results demonstrate the emergent abilities of the ChatGPT models on a wide range of affective computing problems, where GPT-3.5 and especially GPT-4 have shown strong performance on many problems, particularly the ones related to sentiment, emotions, or toxicity. The ChatGPT models fell short for problems with i",
+  "needs_fetch": false
+ },
+ {
+  "id": 1766,
+  "title": "Disentangling Abstraction from Statistical Pattern Matching in Human and Machine Learning",
+  "org": "deepmind",
+  "date": "2023-08-25",
+  "venue": "PLoS Computational Biology",
+  "url": "https://doi.org/10.1371/journal.pcbi.1011316",
+  "abstract": "The ability to acquire abstract knowledge is a hallmark of human intelligence and is believed by many to be one of the core differences between humans and neural network models. Agents can be endowed with an inductive bias towards abstraction through meta-learning, where they are trained on a distribution of tasks that share some abstract structure that can be learned and applied. However, because neural networks are hard to interpret, it can be difficult to tell whether agents have learned the underlying abstraction, or alternatively statistical patterns that are characteristic of that abstraction. In this work, we compare the performance of humans and agents in a meta-reinforcement learning paradigm in which tasks are generated from abstract rules. We define a novel methodology for building \"task metamers\" that closely match the statistics of the abstract tasks but use a different underlying generative process, and evaluate performance on both abstract and metamer tasks. We find that humans perform better at abstract tasks than metamer tasks whereas common neural network architectures typically perform worse on the abstract tasks than the matched metamers. This work provides a foundation for characterizing differences between humans and machine learning that can be used in future work towards developing machines with more human-like behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1767,
+  "title": "Neuroscience Needs Network Science",
+  "org": "deepmind",
+  "date": "2023-08-23",
+  "venue": "Journal of Neuroscience",
+  "url": "https://doi.org/10.1523/jneurosci.1014-23.2023",
+  "abstract": "The brain is a complex system comprising a myriad of interacting elements, posing significant challenges in understanding its structure, function, and dynamics. Network science has emerged as a powerful tool for studying such intricate systems, offering a framework for integrating multiscale data and complexity. Here, we discuss the application of network science in the study of the brain, addressing topics such as network models and metrics, the connectome, and the role of dynamics in neural networks. We explore the challenges and opportunities in integrating multiple data streams for understanding the neural transitions from development to healthy function to disease, and discuss the potential for collaboration between network science and neuroscience communities. We underscore the importance of fostering interdisciplinary opportunities through funding initiatives, workshops, and conferences, as well as supporting students and postdoctoral fellows with interests in both disciplines. By uniting the network science and neuroscience communities, we can develop novel network-based methods tailored to neural circuits, paving the way towards a deeper understanding of the brain and its functions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 908,
+  "title": "Nevis’22: A Stream of 100 Tasks Sampled from 30 Years of Computer Vision Research",
+  "org": "deepmind",
+  "date": "2023-08-22",
+  "venue": "JMLR",
+  "url": "https://www.jmlr.org/papers/volume24/22-1345/22-1345.pdf",
+  "abstract": "A shared goal of several machine learning communities like continual learning, meta-learning and transfer learning, is to design algorithms and models that efficiently and robustly adapt to unseen tasks. An even more ambitious goal is to build models that never stop adapting, and that become increasingly more efficient through time by suitably transferring the accrued knowledge. Beyond the study of the actual learning algorithm and model architecture, there are several hurdles towards our quest to build such models, such as the choice of learning protocol, metric of success and data needed to validate research hypotheses. In this work, we introduce the Never-Ending VIsual-classification Stream (NEVIS'22), a benchmark consisting of a stream of over $100$ visual classification tasks, sorted chronologically and extracted from papers sampled uniformly from computer vision proceedings spanning the last three decades. The resulting stream reflects what the research community thought was meaningful at any point in time, and it serves as an ideal test bed to assess how well models can adapt to new tasks, and do so better and more efficiently as time goes by. Despite being limited to classification, the resulting stream has a rich diversity of tasks from OCR, to texture analysis, scene recognition, and so forth. The diversity is also reflected in the wide range of dataset sizes, spanning over four orders of magnitude. Overall, NEVIS'22 poses an unprecedented challenge for current sequ",
+  "needs_fetch": false
+ },
+ {
+  "id": 909,
+  "title": "Levin Tree Search with Context Models",
+  "org": "deepmind",
+  "date": "2023-08-19",
+  "venue": "IJCAI 2023",
+  "url": "https://www.ijcai.org/proceedings/2023/624",
+  "abstract": "Levin Tree Search (LTS) is a tree/graph search algorithm guided by a (conditional and contextual) probability distribution over action sequences. It comes with strong theoretical guarantees on the search effort required before finding a solution. It also comes with its own loss function (aka objective function) so that a parameterized policy can be learnt to minimize the search effort. Previously (NeurIPS 2018, AAAI 2021) we have used neural networks to learn the policy, with good results, but NNs make it hard to derive convergence guarantees. In this work we devise an alternative parameterized model, based on recent tools from the online compression literature, to ensure that the resulting search effort loss function remains convex, while making the model capable enough to tackle challenging search problems. Convexity has several important properties, and it particular it allows us to prove regret guarantees: given a stream of solution trajectories, the policy quickly converges to the optimum policy in the parameter space. The new model is able to combine predictions of both general and specific models, and, somewhat like NNs, can be overparameterized without losing generalization capabilities. We tackle 4 classic search application domains: Sokoban (boxoban), The Witness, 24-puzzle, and Rubik's cube. All these domains are combinatorial and almost no instance can be solved with random walks. Most known machine learning algorithms fail on at least one of these domains. We sho",
+  "needs_fetch": false
+ },
+ {
+  "id": 1769,
+  "title": "Half-Hop: A graph upsampling approach for slowing down message passing",
+  "org": "deepmind",
+  "date": "2023-08-17",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2308.09198",
+  "abstract": "Message passing neural networks have shown a lot of success on graph-structured data. However, there are many instances where message passing can lead to over-smoothing or fail when neighboring nodes belong to different classes. In this work, we introduce a simple yet general framework for improving learning in message passing neural networks. Our approach essentially upsamples edges in the original graph by adding \"slow nodes\" at each edge that can mediate communication between a source and a target node. Our method only modifies the input graph, making it plug-and-play and easy to use with existing models. To understand the benefits of slowing down message passing, we provide theoretical and empirical analyses. We report results on several supervised and self-supervised benchmarks, and show improvements across the board, notably in heterophilic conditions where adjacent nodes are more likely to have different labels. Finally, we show how our approach can be used to generate augmentations for self-supervised learning, where slow nodes are randomly introduced into different edges in the graph to generate multi-scale views with variable path lengths.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1768,
+  "title": "Placebo Tests for Causal Inference",
+  "org": "deepmind",
+  "date": "2023-08-17",
+  "venue": "American Journal of Political Science",
+  "url": "https://doi.org/10.1111/ajps.12818",
+  "abstract": "Abstract Placebo tests are increasingly common in applied social science research, but the methodological literature has not previously offered a comprehensive account of what we learn from them. We define placebo tests as tools for assessing the plausibility of the assumptions underlying a research design relative to some departure from those assumptions. We offer a typology of tests defined by the aspect of the research design that is altered to produce it (outcome, treatment, or population) and the type of assumption that is tested (bias assumptions or distributional assumptions). Our formal framework clarifies the extra assumptions necessary for informative placebo tests; these assumptions can be strong, and in some cases similar assumptions would justify a different procedure allowing the researcher to relax the research design's assumptions rather than test them. Properly designed and interpreted, placebo tests can be an important device for assessing the credibility of empirical research designs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 431,
+  "title": "Reinforced Self-Training (ReST) for Language Modeling",
+  "org": "deepmind",
+  "date": "2023-08-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2308.08998",
+  "abstract": "Reinforcement learning from human feedback (RLHF) can improve the quality of large language model's (LLM) outputs by aligning them with human preferences. We propose a simple algorithm for aligning LLMs with human preferences inspired by growing batch reinforcement learning (RL), which we call Reinforced Self-Training (ReST). Given an initial LLM policy, ReST produces a dataset by generating samples from the policy, which are then used to improve the LLM policy using offline RL algorithms. ReST is more efficient than typical online RLHF methods because the training dataset is produced offline, which allows data reuse. While ReST is a general approach applicable to all generative learning settings, we focus on its application to machine translation. Our results show that ReST can substantially improve translation quality, as measured by automated metrics and human evaluation on machine translation benchmarks in a compute and sample-efficient manner.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1770,
+  "title": "Ab initio quantum chemistry with neural-network wavefunctions",
+  "org": "deepmind",
+  "date": "2023-08-09",
+  "venue": "Nature Reviews Chemistry",
+  "url": "https://doi.org/10.1038/s41570-023-00516-8",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1771,
+  "title": "Democratising AI: Multiple Meanings, Goals, and Methods",
+  "org": "deepmind",
+  "date": "2023-08-08",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3600211.3604693",
+  "abstract": "Numerous parties are calling for “the democratisation of AI”, but the phrase is used to refer to a variety of goals, the pursuit of which sometimes conflict. This paper identifies four kinds of “AI democratisation” that are commonly discussed: (1) the democratisation of AI use, (2) the democratisation of AI development, (3) the democratisation of AI profits, and (4) the democratisation of AI governance. Numerous goals and methods of achieving each form of democratisation are discussed. The main takeaway from this paper is that AI democratisation is a multifarious and sometimes conflicting concept that should not be conflated with improving AI accessibility. If we want to move beyond ambiguous commitments to “democratising AI”, to productive discussions of concrete policies and trade-offs, then we need to recognise the principal role of the democratisation of AI governance in navigating tradeoffs and risks across decisions around use, development, and profits.",
+  "needs_fetch": false
+ },
+ {
+  "id": 432,
+  "title": "RLHF-Blender: A Configurable Interactive Interface for Learning from Diverse Human Feedback",
+  "org": "deepmind",
+  "date": "2023-08-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2308.04332",
+  "abstract": "To use reinforcement learning from human feedback (RLHF) in practical applications, it is crucial to learn reward models from diverse sources of human feedback and to consider human factors involved in providing feedback of different types. However, the systematic study of learning from diverse types of feedback is held back by limited standardized tooling available to researchers. To bridge this gap, we propose RLHF-Blender, a configurable, interactive interface for learning from human feedback. RLHF-Blender provides a modular experimentation framework and implementation that enables researchers to systematically investigate the properties and qualities of human feedback for reward learning. The system facilitates the exploration of various feedback types, including demonstrations, rankings, comparisons, and natural language instructions, as well as studies considering the impact of human factors on their effectiveness. We discuss a set of concrete research opportunities enabled by RLHF-Blender. More information is available at https://rlhfblender.info/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 107,
+  "title": "Studying Large Language Model Generalization with Influence Functions",
+  "org": "anthropic",
+  "date": "2023-08-08",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/studying-large-language-model-generalization-with-influence-functions",
+  "abstract": "When trying to gain better visibility into a machine learning model in order to understand and mitigate the associated risks, a potentially valuable source of evidence is: which training examples most contribute to a given behavior? Influence functions aim to answer a counterfactual: how would the model's parameters (and hence its outputs) change if a given sequence were added to the training set? While influence functions have produced insights for small models, they are difficult to scale to large language models (LLMs) due to the difficulty of computing an inverse-Hessian-vector product (IHVP). We use the Eigenvalue-corrected Kronecker-Factored Approximate Curvature (EK-FAC) approximation to scale influence functions up to LLMs with up to 52 billion parameters. In our experiments, EK-FAC achieves similar accuracy to traditional influence function estimators despite the IHVP computation being orders of magnitude faster. We investigate two algorithmic techniques to reduce the cost of computing gradients of candidate training sequences: TF-IDF filtering and query batching. We use influence functions to investigate the generalization patterns of LLMs, including the sparsity of the influence patterns, increasing abstraction with scale, math and programming abilities, cross-lingual generalization, and role-playing behavior. Despite many apparently sophisticated forms of generalization, we identify a surprising limitation: influences decay to near-zero when the order of key phras",
+  "needs_fetch": false
+ },
+ {
+  "id": 1772,
+  "title": "Protocol for a Delphi consensus process for PARticipatory Queer AI Research in Mental Health (PARQAIR-MH)",
+  "org": "deepmind",
+  "date": "2023-08-07",
+  "venue": "medRxiv",
+  "url": "http://dx.doi.org/10.1101/2023.08.07.23293764",
+  "abstract": "ABSTRACT Introduction For artificial intelligence (AI) to help improve mental health care, the design of data-driven technologies needs to be fair, safe, and inclusive. Participatory design can play a critical role in empowering marginalised communities to take an active role in constructing research agendas and outputs. Given the unmet needs of the LGBTQI+ community in mental health care, there is a pressing need for participatory research to include a range of diverse queer perspectives on issues of data collection and use (in routine clinical care as well as for research) as well as AI design. Here we propose a protocol for a Delphi consensus process for the development of PARticipatory Queer AI Research for Mental Health (PARQAIR-MH) practices, aimed at informing digital health practices and policy. Methods and Analysis The development of PARQAIR-MH is comprised of four stages; In Stage 1, a review of recent literature and fact-finding consultation with stakeholder organisations will be conducted to define a terms-of-reference for Stage 2, the Delphi process. Our Delphi process consists of three rounds, where the first two rounds will iterate and identify items to be included in the final Delphi survey for consensus ratings. Stage 3 consists of consensus meetings to review and aggregate the Delphi survey responses leading to Stage 4 where we will produce a reusable toolkit to facilitate participatory development of future bespoke LGBTQI+–adapted data collection, harmonisa",
+  "needs_fetch": false
+ },
+ {
+  "id": 1773,
+  "title": "Advances in machine-learning-based sampling motivated by lattice quantum chromodynamics",
+  "org": "deepmind",
+  "date": "2023-08-04",
+  "venue": "Nature Reviews Physics",
+  "url": "https://arxiv.org/abs/2309.01156",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 910,
+  "title": "Advances in ML-based sampling for Lattice-QCD",
+  "org": "deepmind",
+  "date": "2023-08-04",
+  "venue": "Nature Reviews Physics",
+  "url": "https://www.nature.com/articles/s42254-023-00616-w",
+  "abstract": "Sampling from known probability distributions is a ubiquitous task in computational science, underlying calculations in domains from linguistics to biology and physics. Generative machine-learning (ML) models have emerged as a promising tool in this space, building on the success of this approach in applications such as image, text and audio generation. Often, however, generative tasks in scientific domains have unique structures and features — such as complex symmetries and the requirement of exactness guarantees — that present both challenges and opportunities for ML. This Perspective outlines the advances in ML-based sampling motivated by lattice quantum field theory, in particular for the theory of quantum chromodynamics. Enabling calculations of the structure and interactions of matter from our most fundamental understanding of particle physics, lattice quantum chromodynamics is one of the main consumers of open-science supercomputing worldwide. The design of ML algorithms for this application faces profound challenges, including the necessity of scaling custom ML architectures to the largest supercomputers, but also promises immense benefits, and is spurring a wave of development in ML-based sampling more broadly. In lattice field theory, if this approach can realize its early promise it will be a transformative step towards first-principles physics calculations in particle, nuclear and condensed matter physics that are intractable with traditional approaches.",
+  "needs_fetch": false
+ },
+ {
+  "id": 433,
+  "title": "PARL: A Unified Framework for Policy Alignment in Reinforcement Learning from Human Feedback",
+  "org": "other",
+  "date": "2023-08-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2308.02585",
+  "abstract": "We present a novel unified bilevel optimization-based framework, \\textsf{PARL}, formulated to address the recently highlighted critical issue of policy alignment in reinforcement learning using utility or preference-based feedback. We identify a major gap within current algorithmic designs for solving policy alignment due to a lack of precise characterization of the dependence of the alignment objective on the data generated by policy trajectories. This shortfall contributes to the sub-optimal performance observed in contemporary algorithms. Our framework addressed these concerns by explicitly parameterizing the distribution of the upper alignment objective (reward design) by the lower optimal variable (optimal policy for the designed reward). Interestingly, from an optimization perspective, our formulation leads to a new class of stochastic bilevel problems where the stochasticity at the upper objective depends upon the lower-level variable. {True to our best knowledge, this work presents the first formulation of the RLHF as a bilevel optimization problem which generalizes the existing RLHF formulations and addresses the existing distribution shift issues in RLHF formulations.} To demonstrate the efficacy of our formulation in resolving alignment issues in RL, we devised an algorithm named \\textsf{A-PARL} to solve PARL problem, establishing sample complexity bounds of order $\\mathcal{O}(1/T)$. Our empirical results substantiate that the proposed \\textsf{PARL} can address the",
+  "needs_fetch": false
+ },
+ {
+  "id": 1774,
+  "title": "Scientific discovery in the age of artificial intelligence",
+  "org": "deepmind",
+  "date": "2023-08-02",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-023-06221-2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1777,
+  "title": "Rethinking Formal Models of Partially Observable Multiagent Decision Making (Extended Abstract)",
+  "org": "deepmind",
+  "date": "2023-08-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.24963/ijcai.2023/783",
+  "abstract": "Multiagent decision-making in partially observable environments is usually modelled as either an extensive-form game (EFG) in game theory or a partially observable stochastic game (POSG) in multiagent reinforcement learning (MARL). One issue with the current situation is that while most practical problems can be modelled in both formalisms, the relationship of the two models is unclear, which hinders the transfer of ideas between the two communities. A second issue is that while EFGs have recently seen significant algorithmic progress, their classical formalization is unsuitable for efficient presentation of the underlying ideas, such as those around decomposition. To solve the first issue, we introduce factored-observation stochastic games (FOSGs), a minor modification of the POSG formalism which distinguishes between private and public observation and thereby greatly simplifies decomposition. To remedy the second issue, we show that FOSGs and POSGs are naturally connected to EFGs: by \"unrolling\" a FOSG into its tree form, we obtain an EFG. Conversely, any perfect-recall timeable EFG corresponds to some underlying FOSG in this manner. Moreover, this relationship justifies several minor modifications to the classical EFG formalization that recently appeared as an implicit response to the model's issues with decomposition. Finally, we illustrate the transfer of ideas between EFGs and MARL by presenting three key EFG techniques -- counterfactual regret minimization, sequence fo",
+  "needs_fetch": false
+ },
+ {
+  "id": 1776,
+  "title": "Scaling Goal-based Exploration via Pruning Proto-goals",
+  "org": "deepmind",
+  "date": "2023-08-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.24963/ijcai.2023/384",
+  "abstract": "One of the gnarliest challenges in reinforcement learning (RL) is exploration that scales to vast domains, where novelty-, or coverage-seeking behaviour falls short. Goal-directed, purposeful behaviours are able to overcome this, but rely on a good goal space. The core challenge in goal discovery is finding the right balance between generality (not hand-crafted) and tractability (useful, not too many). Our approach explicitly seeks the middle ground, enabling the human designer to specify a vast but meaningful proto-goal space, and an autonomous discovery process to refine this to a narrower space of controllable, reachable, novel, and relevant goals. The effectiveness of goal-conditioned exploration with the latter is then demonstrated in three challenging environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1775,
+  "title": "The Puzzle of Evaluating Moral Cognition in Artificial Agents",
+  "org": "deepmind",
+  "date": "2023-08-01",
+  "venue": "Cognitive Science",
+  "url": "https://doi.org/10.1111/cogs.13315",
+  "abstract": "In developing artificial intelligence (AI), researchers often benchmark against human performance as a measure of progress. Is this kind of comparison possible for moral cognition? Given that human moral judgment often hinges on intangible properties like \"intention\" which may have no natural analog in artificial agents, it may prove difficult to design a \"like-for-like\" comparison between the moral behavior of artificial and human agents. What would a measure of moral behavior for both humans and AI look like? We unravel the complexity of this question by discussing examples within reinforcement learning and generative AI, and we examine how the puzzle of evaluating artificial agents' moral cognition remains open for further investigation within cognitive science.",
+  "needs_fetch": false
+ },
+ {
+  "id": 912,
+  "title": "Line Search for Convex Minimization",
+  "org": "deepmind",
+  "date": "2023-08-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2307.16560",
+  "abstract": "Golden-section search and bisection search are the two main principled algorithms for 1d minimization of quasiconvex (unimodal) functions. The first one only uses function queries, while the second one also uses gradient queries. Other algorithms exist under much stronger assumptions, such as Newton's method for twice-differentiable, strongly convex functions with Lipschitz gradients. However, to the best of our knowledge, there is no principled exact line search algorithm that for general convex functions — including piecewise-linear and max-compositions of convex functions — that takes advantage of convexity. We propose two such algorithms: $\\Delta$-Bisection is a variant of bisection search that uses (sub)gradient information and convexity to speed up convergence, while $\\Delta$-Secant is a variant of golden-section search and uses only function queries. Both algorithms are based on a refined definition of the optimality region $\\Delta$ containing the minimum point, for general convex functions. While bisection search reduces the $x$ interval by a factor 2 at every iteration, $\\Delta$-Bisection reduces the (sometimes much) smaller $x^\\*$-gap $\\Delta^x$ (the $x$ coordinates of $\\Delta$) by at least a factor 2 at every iteration. Similarly, $\\Delta$-Secant also reduces the $x^\\*$-gap by at least a factor 2 every second function query. Moreover, and possibly more importantly, the $y^\\*$-gap $\\Delta^y$ (the $y$ coordinates of $\\Delta$) also provides a refined stopping criterio",
+  "needs_fetch": false
+ },
+ {
+  "id": 911,
+  "title": "Co-Writing Screenplays and Theatre Scripts with Language Models: An Evaluation by Industry Professionals",
+  "org": "deepmind",
+  "date": "2023-08-01",
+  "venue": "ACM CHI 2022",
+  "url": "https://dl.acm.org/doi/full/10.1145/3544548.3581225",
+  "abstract": "Language models are increasingly attracting interest from writers. However, they have limited usefulness for long form creative writing because they lack long-range semantic coherence. We address this limitation by applying language models hierarchically ,in a system we call Dramatron. By building structural context via prompt chaining, Dramatron can generate coherent scripts and screenplays complete with a title, characters, story beats, location descriptions, and dialogue. We illustrate Dramatron’s usefulness as an interactive co-creative system with a user-study of 15 theatre and film industry professionals, who co-wrote theatre scripts and screenplays with Dramatron and engaged in open-ended interviews. We report reflections from our interviewees, and from independent reviewers who watched recent stagings of these works, to illustrate how both Dramatron and hierarchical text generation are useful for human-machine co-creativity. Finally, we discuss the suitability of Dramatron for co-creativity, ethical considerations–including plagiarism and bias–and participation models for the design and deployment of such tools.",
+  "needs_fetch": false
+ }
+]

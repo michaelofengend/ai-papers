@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1125,
+  "title": "Domain randomization and generative models for robotic grasping",
+  "org": "openai",
+  "date": "2017-10-17",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/domain-randomization-and-generative-models-for-robotic-grasping/",
+  "abstract": "Deep learning-based robotic grasping has made significant progress thanks to algorithmic improvements and increased data availability. However, state-of-the-art models are often trained on as few as hundreds or thousands of unique object instances, and as a result generalization can be a challenge. In this work, we explore a novel data generation pipeline for training a deep neural network to perform grasp planning that applies the idea of domain randomization to object synthesis. We generate millions of unique, unrealistic procedurally generated objects, and train a deep neural network to perform grasp planning on these objects. Since the distribution of successful grasps for a given object can be highly multimodal, we propose an autoregressive grasp planning model that maps sensor inputs of a scene to a probability distribution over possible grasps. This model allows us to sample grasps efficiently at test time (or avoid sampling entirely). We evaluate our model architecture and data generation pipeline in simulation and the real world. We find we can achieve a $>$90% success rate on previously unseen realistic objects at test time in simulation despite having only been trained on random objects. We also demonstrate an 80% success rate on real-world grasp attempts despite having only been trained on random simulated objects.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1127,
+  "title": "Competitive self-play",
+  "org": "openai",
+  "date": "2017-10-11",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/competitive-self-play/",
+  "abstract": "We’ve found that self-play allows simulated AIs to discover physical skills like tackling, ducking, faking, kicking, catching, and diving for the ball, without explicitly designing an environment with these skills in mind. Self-play ensures that the environment is always the right difficulty for an AI to improve. Taken alongside our Dota 2 self-play results, we have increasing confidence that self-play will be a core part of powerful AI systems in the future.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1126,
+  "title": "Meta-learning for wrestling",
+  "org": "openai",
+  "date": "2017-10-11",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/meta-learning-for-wrestling/",
+  "abstract": "We show that for the task of simulated robot wrestling, a meta-learning agent can learn to quickly defeat a stronger non-meta-learning agent, and also show that the meta-learning agent can adapt to physical malfunction.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1128,
+  "title": "Nonlinear computation in deep linear networks",
+  "org": "openai",
+  "date": "2017-09-29",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/nonlinear-computation-in-deep-linear-networks/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1129,
+  "title": "Learning to model other minds",
+  "org": "openai",
+  "date": "2017-09-14",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-to-model-other-minds/",
+  "abstract": "We’re releasing an algorithm which accounts for the fact that other agents are learning too, and discovers self-interested yet collaborative strategies like tit-for-tat in the iterated prisoner’s dilemma. This algorithm, Learning with Opponent-Learning Awareness (LOLA), is a small step towards agents that model other minds.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1130,
+  "title": "Learning with opponent-learning awareness",
+  "org": "openai",
+  "date": "2017-09-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-with-opponent-learning-awareness/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1131,
+  "title": "OpenAI Baselines: ACKTR & A2C",
+  "org": "openai",
+  "date": "2017-08-18",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-baselines-acktr-a2c/",
+  "abstract": "We’re releasing two new OpenAI Baselines implementations: ACKTR and A2C. A2C is a synchronous, deterministic variant of Asynchronous Advantage Actor Critic (A3C) which we’ve found gives equal performance. ACKTR is a more sample-efficient reinforcement learning algorithm than TRPO and A2C, and requires only slightly more computation than A2C per update.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1132,
+  "title": "More on Dota 2",
+  "org": "openai",
+  "date": "2017-08-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/more-on-dota-2/",
+  "abstract": "Our Dota 2 result shows that self-play can catapult the performance of machine learning systems from far below human level to superhuman, given sufficient compute. In the span of a month, our system went from barely matching a high-ranked player to beating the top pros and has continued to improve since then. Supervised deep learning systems can only be as good as their training datasets, but in self-play systems, the available data improves automatically as the agent gets better.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1133,
+  "title": "Dota 2",
+  "org": "openai",
+  "date": "2017-08-11",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/dota-2/",
+  "abstract": "We’ve created a bot which beats the world’s top professionals at 1v1 matches of Dota 2 under standard tournament rules. The bot learned the game from scratch by self-play, and does not use imitation learning or tree search. This is a step towards building AI systems which accomplish well-defined goals in messy, complicated situations involving real humans.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1134,
+  "title": "Gathering human feedback",
+  "org": "openai",
+  "date": "2017-08-03",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gathering-human-feedback/",
+  "abstract": "RL-Teacher is an open-source implementation of our interface to train AIs via occasional human feedback rather than hand-crafted reward functions. The underlying technique was developed as a step towards safe AI systems, but also applies to reinforcement learning problems with rewards that are hard to specify.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1135,
+  "title": "Better exploration with parameter noise",
+  "org": "openai",
+  "date": "2017-07-27",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/better-exploration-with-parameter-noise/",
+  "abstract": "We’ve found that adding adaptive noise to the parameters of reinforcement learning algorithms frequently boosts performance. This exploration method is simple to implement and very rarely decreases performance, so it’s worth trying on any problem.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1136,
+  "title": "Proximal Policy Optimization",
+  "org": "openai",
+  "date": "2017-07-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-baselines-ppo/",
+  "abstract": "We’re releasing a new class of reinforcement learning algorithms, Proximal Policy Optimization (PPO), which perform comparably or better than state-of-the-art approaches while being much simpler to implement and tune. PPO has become the default reinforcement learning algorithm at OpenAI because of its ease of use and good performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1137,
+  "title": "Robust adversarial inputs",
+  "org": "openai",
+  "date": "2017-07-17",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/robust-adversarial-inputs/",
+  "abstract": "We’ve created images that reliably fool neural network classifiers when viewed from varied scales and perspectives. This challenges a claim from last week that self-driving cars would be hard to trick maliciously since they capture images from multiple scales, angles, perspectives, and the like.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1138,
+  "title": "Hindsight Experience Replay",
+  "org": "openai",
+  "date": "2017-07-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/hindsight-experience-replay/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1139,
+  "title": "Teacher–student curriculum learning",
+  "org": "openai",
+  "date": "2017-07-01",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/teacher-student-curriculum-learning/",
+  "abstract": "We propose Teacher-Student Curriculum Learning (TSCL), a framework for automatic curriculum learning, where the Student tries to learn a complex task, and the Teacher automatically chooses subtasks from a given set for the Student to train on. We describe a family of Teacher algorithms that rely on the intuition that the Student should practice more those tasks on which it makes the fastest progress, i.e., where the slope of the learning curve is highest. In addition, the Teacher algorithms address the problem of forgetting by also choosing tasks where the Student's performance is getting worse. We demonstrate that TSCL matches or surpasses the results of carefully hand-crafted curricula in two tasks: addition of decimal numbers with long short-term memory (LSTM) and navigation in Minecraft. Our automatically ordered curriculum of submazes enabled to solve a Minecraft maze that could not be solved at all when training directly on that maze, and the learning was an order of magnitude faster than a uniform sampling of those submazes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1140,
+  "title": "Faster physics in Python",
+  "org": "openai",
+  "date": "2017-06-28",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/faster-physics-in-python/",
+  "abstract": "We’re open-sourcing a high-performance Python library for robotic simulation using the MuJoCo engine, developed over our past year of robotics research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1141,
+  "title": "Learning to cooperate, compete, and communicate",
+  "org": "openai",
+  "date": "2017-06-08",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-to-cooperate-compete-and-communicate/",
+  "abstract": "Multiagent environments where agents compete for resources are stepping stones on the path to AGI. Multiagent environments have two useful properties: first, there is a natural curriculum—the difficulty of the environment is determined by the skill of your competitors (and if you’re competing against clones of yourself, the environment exactly matches your skill level). Second, a multiagent environment has no stable equilibrium: no matter how smart an agent is, there’s always pressure to get smarter. These environments have a very different feel from traditional environments, and it’ll take a lot more research before we become good at them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1142,
+  "title": "UCB exploration via Q-ensembles",
+  "org": "openai",
+  "date": "2017-06-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/ucb-exploration-via-q-ensembles/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1143,
+  "title": "OpenAI Baselines: DQN",
+  "org": "openai",
+  "date": "2017-05-24",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-baselines-dqn/",
+  "abstract": "We’re open-sourcing OpenAI Baselines, our internal effort to reproduce reinforcement learning algorithms with performance on par with published results. We’ll release the algorithms over upcoming months; today’s release includes DQN and three of its variants.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1144,
+  "title": "Robots that learn",
+  "org": "openai",
+  "date": "2017-05-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/robots-that-learn/",
+  "abstract": "We’ve created a robotics system, trained entirely in simulation and deployed on a physical robot, which can learn a new task after seeing it done once.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1145,
+  "title": "Roboschool",
+  "org": "openai",
+  "date": "2017-05-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/roboschool/",
+  "abstract": "We are releasing Roboschool: open-source software for robot simulation, integrated with OpenAI Gym.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1146,
+  "title": "Equivalence between policy gradients and soft Q-learning",
+  "org": "openai",
+  "date": "2017-04-21",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/equivalence-between-policy-gradients-and-soft-q-learning/",
+  "abstract": "Two of the leading approaches for model-free reinforcement learning are policy gradient methods and $Q$-learning methods. $Q$-learning methods can be effective and sample-efficient when they work, however, it is not well-understood why they work, since empirically, the $Q$-values they estimate are very inaccurate. A partial explanation may be that $Q$-learning methods are secretly implementing policy gradient updates: we show that there is a precise equivalence between $Q$-learning and policy gradient methods in the setting of entropy-regularized reinforcement learning, that \"soft\" (entropy-regularized) $Q$-learning is exactly equivalent to a policy gradient method. We also point out a connection between $Q$-learning methods and natural policy gradient methods. Experimentally, we explore the entropy-regularized versions of $Q$-learning and policy gradients, and we find them to perform as well as (or slightly better than) the standard variants on the Atari benchmark. We also show that the equivalence holds in practical settings by constructing a $Q$-learning method that closely matches the learning dynamics of A3C without using a target network or $ε$-greedy exploration schedule.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1147,
+  "title": "Stochastic Neural Networks for hierarchical reinforcement learning",
+  "org": "openai",
+  "date": "2017-04-10",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/stochastic-neural-networks-for-hierarchical-reinforcement-learning/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1148,
+  "title": "Unsupervised sentiment neuron",
+  "org": "openai",
+  "date": "2017-04-06",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/unsupervised-sentiment-neuron/",
+  "abstract": "We’ve developed an unsupervised system which learns an excellent representation of sentiment, despite being trained only to predict the next character in the text of Amazon reviews.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1149,
+  "title": "Spam detection in the physical world",
+  "org": "openai",
+  "date": "2017-04-01",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/spam-detection-in-the-physical-world/",
+  "abstract": "We’ve created the world’s first Spam-detecting AI trained entirely in simulation and deployed on a physical robot.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1150,
+  "title": "Evolution strategies as a scalable alternative to reinforcement learning",
+  "org": "openai",
+  "date": "2017-03-24",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/evolution-strategies/",
+  "abstract": "We explore the use of Evolution Strategies (ES), a class of black box optimization algorithms, as an alternative to popular MDP-based RL techniques such as Q-learning and Policy Gradients. Experiments on MuJoCo and Atari show that ES is a viable solution strategy that scales extremely well with the number of CPUs available: By using a novel communication strategy based on common random numbers, our ES implementation only needs to communicate scalars, making it possible to scale to over a thousand parallel workers. This allows us to solve 3D humanoid walking in 10 minutes and obtain competitive results on most Atari games after one hour of training. In addition, we highlight several advantages of ES as a black box optimization technique: it is invariant to action frequency and delayed rewards, tolerant of extremely long horizons, and does not need temporal discounting or value function approximation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1151,
+  "title": "One-shot imitation learning",
+  "org": "openai",
+  "date": "2017-03-21",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/one-shot-imitation-learning/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1152,
+  "title": "Learning to communicate",
+  "org": "openai",
+  "date": "2017-03-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-to-communicate/",
+  "abstract": "In this post we’ll outline new OpenAI research in which agents develop their own language.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1153,
+  "title": "Emergence of grounded compositional language in multi-agent populations",
+  "org": "openai",
+  "date": "2017-03-15",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/emergence-of-grounded-compositional-language-in-multi-agent-populations/",
+  "abstract": "By capturing statistical patterns in large corpora, machine learning has enabled significant advances in natural language processing, including in machine translation, question answering, and sentiment analysis. However, for agents to intelligently interact with humans, simply capturing the statistical patterns is insufficient. In this paper we investigate if, and how, grounded compositional language can emerge as a means to achieve goals in multi-agent populations. Towards this end, we propose a multi-agent learning environment and learning methods that bring about emergence of a basic compositional language. This language is represented as streams of abstract discrete symbols uttered by agents over time, but nonetheless has a coherent structure that possesses a defined vocabulary and syntax. We also observe emergence of non-verbal communication such as pointing and guiding when language communication is unavailable.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1154,
+  "title": "Prediction and control with temporal segment models",
+  "org": "openai",
+  "date": "2017-03-12",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/prediction-and-control-with-temporal-segment-models/",
+  "abstract": null,
+  "needs_fetch": true
+ }
+]

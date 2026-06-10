@@ -1,0 +1,302 @@
+[
+ {
+  "id": 665,
+  "title": "Output Supervision Can Obfuscate the Chain of Thought",
+  "org": "other",
+  "date": "2025-10-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.11584",
+  "abstract": "OpenAI (2025) showed that training against a chain of thought (CoT) monitor can cause obfuscated CoTs, which contain bad behavior the monitor cannot detect. They proposed to keep CoTs monitorable by training only against output monitors that do not have access to CoT. We show that such training can still cause obfuscated CoTs via two mechanisms. First, when a model is trained to produce a safe-looking output, that model may generalize to making its CoTs look safe. Second, since later tokens are conditioned on earlier ones, safe-looking CoTs may increase the likelihood of safe outputs, causing safe-looking CoTs to be reinforced. We introduce two mitigations to address these two issues, which achieve a Pareto improvement in terms of monitorability and task performance compared to regular training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1185,
+  "title": "Geometric properties of musical scales constitute a representational primitive in melodic processing",
+  "org": "anthropic",
+  "date": "2025-10-10",
+  "venue": "iScience",
+  "url": "https://doi.org/10.1016/j.isci.2025.113701",
+  "abstract": "Uncovering the mental representations underlying symbolic domains is a long-standing goal of cognitive science. Music, a relatively unexplored aspect of cognition, presents a unique testbed for understanding the format of symbolic representations. Theoretical accounts have emphasized the geometric structure underlying musical scales, yet empirical work directly engaging with these structures remains limited. Based on data collected from 961 participants across four experiments, we demonstrate that certain geometric structures strongly modulate perceptual sensitivity to out-of-scale notes in melodies. Furthermore, we show that geometric regularity predicts sensitivity to note deviations across diverse musical structures. Crucially, these effects persist even in an entirely unfamiliar tuning system, suggesting the role of specific geometric properties independent of learned cultural associations. Our findings situate scale geometry as a critical, time-invariant representation in melodic processing and reveal organizational principles that may underlie mental representations across domains.",
+  "needs_fetch": false
+ },
+ {
+  "id": 487,
+  "title": "All Code, No Thought: Current Language Models Struggle to Reason in Ciphered Language",
+  "org": "anthropic",
+  "date": "2025-10-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.09714",
+  "abstract": "Detecting harmful AI actions is important as AI agents gain adoption. Chain-of-thought (CoT) monitoring is one method widely used to detect adversarial attacks and AI misalignment. However, attackers and misaligned models might evade CoT monitoring through ciphered reasoning: reasoning hidden in encrypted, translated, or compressed text. To assess this risk, we test whether models can perform ciphered reasoning. For each of 28 different ciphers, we fine-tune and prompt up to 10 models to reason in that cipher. We measure model accuracy on math problems as a proxy for reasoning ability. Across the models we test, we find an asymmetry: model accuracy can drop significantly when reasoning in ciphered text, even though models demonstrate comprehension of ciphered text by being able to translate it accurately to English. Even frontier models struggle with lesser-known ciphers, although they can reason accurately in well-known ciphers like rot13. We show that ciphered reasoning capability correlates with cipher prevalence in pretraining data. We also identify scaling laws showing that ciphered reasoning capability improves slowly with additional fine-tuning data. Our work suggests that evading CoT monitoring using ciphered reasoning may be an ineffective tactic for current models and offers guidance on constraining the development of this capability in future frontier models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 205,
+  "title": "The Idola Tribus of AI: Large Language Models tend to perceive order where none exists",
+  "org": "other",
+  "date": "2025-10-10",
+  "venue": "EMNLP 2025",
+  "url": "https://arxiv.org/abs/2510.09709",
+  "abstract": "We present a tendency of large language models (LLMs) to generate absurd patterns despite their clear inappropriateness in a simple task of identifying regularities in number series. Several approaches have been proposed to apply LLMs to complex real-world tasks, such as providing knowledge through retrieval-augmented generation and executing multi-step tasks using AI agent frameworks. However, these approaches rely on the logical consistency and self-coherence of LLMs, making it crucial to evaluate these aspects and consider potential countermeasures. To identify cases where LLMs fail to maintain logical consistency, we conducted an experiment in which LLMs were asked to explain the patterns in various integer sequences, ranging from arithmetic sequences to randomly generated integer series. While the models successfully identified correct patterns in arithmetic and geometric sequences, they frequently over-recognized patterns that were inconsistent with the given numbers when analyzing randomly generated series. This issue was observed even in multi-step reasoning models, including OpenAI o3, o4-mini, and Google Gemini 2.5 Flash Preview Thinking. This tendency to perceive non-existent patterns can be interpreted as the AI model equivalent of Idola Tribus and highlights potential limitations in their capability for applied tasks requiring logical reasoning, even when employing chain-of-thought reasoning mechanisms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2683,
+  "title": "Mind the Abstraction Gap: Bringing Equality Saturation to Real-World ML Compilers",
+  "org": "openai",
+  "date": "2025-10-09",
+  "venue": "Proceedings of the ACM on Programming Languages",
+  "url": "https://doi.org/10.1145/3763062",
+  "abstract": "Machine learning (ML) compilers rely on graph-level transformations to enhance the runtime performance of ML models. However, performing local transformations on individual operations can create effects far beyond the location of the rewrite. In particular, a local rewrite can change the profitability or legality of hard-to-predict downstream transformations, particularly regarding data layout, parallelization, fine-grained scheduling, and memory management. As a result, program transformations are often driven by manually-tuned compiler heuristics, which are quickly rendered obsolete by new hardware and model architectures. Instead of hand-written local heuristics, we propose the use of equality saturation. We replace such heuristics with a more robust global performance model, which accounts for downstream transformations. Equality saturation addresses the challenge of local optimizations inadvertently constraining or negating the benefits of subsequent transformations, thereby providing a solution that is inherently adaptable to newer workloads. While this approach still requires a global performance model to evaluate the profitability of transformations, it holds significant promise for increased automation and adaptability. This paper addresses challenges in applying equality saturation on real-world ML compute graphs and state-of-the-art hardware. By doing so, we present an improved method for discovering effective compositions of graph optimizations. We study different",
+  "needs_fetch": false
+ },
+ {
+  "id": 1356,
+  "title": "Optimal Stopping in Latent Diffusion Models",
+  "org": "deepmind",
+  "date": "2025-10-09",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2510.08409",
+  "abstract": "We identify and analyze a surprising phenomenon of Latent Diffusion Models (LDMs) where the final steps of the diffusion can degrade sample quality. In contrast to conventional arguments that justify early stopping for numerical stability, this phenomenon is intrinsic to the dimensionality reduction in LDMs. We provide a principled explanation by analyzing the interaction between latent dimension and stopping time. Under a Gaussian framework with linear autoencoders, we characterize the conditions under which early stopping is needed to minimize the distance between generated and target distributions. More precisely, we show that lower-dimensional representations benefit from earlier termination, whereas higher-dimensional latent spaces require later stopping time. We further establish that the latent dimension interplays with other hyperparameters of the problem such as constraints in the parameters of score matching. Experiments on synthetic and real datasets illustrate these properties, underlining that early stopping can improve generative quality. Together, our results offer a theoretical foundation for understanding how the latent dimension influences the sample quality, and highlight stopping time as a key hyperparameter in LDMs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 954,
+  "title": "Defining and evaluating political bias in LLMs",
+  "org": "openai",
+  "date": "2025-10-09",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/defining-and-evaluating-political-bias-in-llms/",
+  "abstract": "Learn how OpenAI evaluates political bias in ChatGPT through new real-world testing methods that improve objectivity and reduce bias.",
+  "needs_fetch": false
+ },
+ {
+  "id": 321,
+  "title": "Contrastive Weak-to-strong Generalization",
+  "org": "other",
+  "date": "2025-10-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.07884",
+  "abstract": "Weak-to-strong generalization provides a promising paradigm for scaling large language models (LLMs) by training stronger models on samples from aligned weaker ones, without requiring human feedback or explicit reward modeling. However, its robustness and generalization are hindered by the noise and biases in weak-model outputs, which limit its applicability in practice. To address this challenge, we leverage implicit rewards, which approximate explicit rewards through log-likelihood ratios, and reveal their structural equivalence with Contrastive Decoding (CD), a decoding strategy shown to reduce noise in LLM generation. Building on this connection, we propose Contrastive Weak-to-Strong Generalization (ConG), a framework that employs contrastive decoding between pre- and post-alignment weak models to generate higher-quality samples. This approach enables more reliable capability transfer, denoising, and improved robustness, substantially mitigating the limitations of traditional weak-to-strong methods. Empirical results across different model families confirm consistent improvements, demonstrating the generality and effectiveness of ConG. Taken together, our findings highlight the potential of ConG to advance weak-to-strong generalization and provide a promising pathway toward AGI.",
+  "needs_fetch": false
+ },
+ {
+  "id": 48,
+  "title": "A small number of samples can poison LLMs of any size",
+  "org": "anthropic",
+  "date": "2025-10-09",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/small-samples-poison",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 569,
+  "title": "Base Models Know How to Reason, Thinking Models Learn When",
+  "org": "deepmind",
+  "date": "2025-10-08",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2510.07364",
+  "abstract": "Why do thinking language models like DeepSeek R1 outperform their base counterparts? Despite consistent performance gains, it remains unclear to what extent thinking models learn entirely new reasoning capabilities or repurpose pre-existing base model ones. In this work, we propose a hybrid model where we activate reasoning mechanisms in base models at the right time to elicit thinking-model-level reasoning chains, implying that thinking models exploit already existing capabilities. To ground our analysis, we introduce an unsupervised, bottom-up approach for uncovering human-interpretable reasoning behaviors in thinking models. This approach provides an unbiased method to discover reasoning behaviors without imposing manual or LLM-derived assumptions. Across three base and four thinking models, using GSM8K and MATH500, our hybrid model recovers up to 91% of the performance gap to thinking models without any weight updates while steering only 12% of tokens. Concretely, our empirical setup provides a simple, causal way to test the effectiveness of existing reasoning mechanisms in base models by invoking them directly and measuring the resulting task performance. More broadly, these results reframe our understanding of how thinking models are trained: pre-training is when models acquire most of their reasoning mechanisms, and post-training teaches efficient deployment of these mechanisms at the right time, enabling efficient use of their inference-time compute.",
+  "needs_fetch": false
+ },
+ {
+  "id": 157,
+  "title": "Training fails to elicit subtle reasoning in current language models",
+  "org": "anthropic",
+  "date": "2025-10-08",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/subtle-reasoning/",
+  "abstract": "While recent AI systems achieve strong performance through human-readable reasoning that should be simple to monitor (OpenAI, 2024, Anthropic, 2025), we investigate whether models can learn to reason about malicious side tasks while making that reasoning appear benign. We find that Sonnet 3.7 can learn to evade either a reasoning monitor, by persuading the monitor that a blatant backdoor is benign, or an output-only monitor, by devising sophisticated backdoors that the output-only monitor doesn’t detect. But when trained to evade both reasoning and output-only monitors, Sonnet 3.7 is unable to use reasoning to improve its backdoor success rate without triggering a reasoning monitor. Like previous work (Baker et al., 2025, Emmons et al., 2025), our results suggest that reasoning monitors can provide strong assurance that language models are not pursuing reasoning-heavy malign side tasks, but that additional mitigations may be required for robustness to monitor persuasion.",
+  "needs_fetch": false
+ },
+ {
+  "id": 49,
+  "title": "Petri: An open-source auditing tool to accelerate AI safety research",
+  "org": "anthropic",
+  "date": "2025-10-06",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/petri/",
+  "abstract": "We're releasing Petri (Parallel Exploration Tool for Risky Interactions), an open-source framework for automated auditing that uses AI agents to test the behaviors of target models across diverse scenarios. When applied to 14 frontier models with 111 seed instructions, Petri successfully elicited a broad set of misaligned behaviors including autonomous deception, oversight subversion, whistleblowing, and cooperation with human misuse. The tool is available now at github.com/safety-research/petri.",
+  "needs_fetch": false
+ },
+ {
+  "id": 206,
+  "title": "GROK: From Quantitative Biomarkers to Qualitative Diagnosis via a Grounded MLLM with Knowledge-Guided Instruction",
+  "org": "other",
+  "date": "2025-10-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.04281",
+  "abstract": "Multimodal large language models (MLLMs) hold promise for integrating diverse data modalities, but current medical adaptations such as LLaVA-Med often fail to fully exploit the synergy between color fundus photography (CFP) and optical coherence tomography (OCT), and offer limited interpretability of quantitative biomarkers. We introduce GROK, a grounded multimodal large language model that jointly processes CFP, OCT, and text to deliver clinician-grade diagnoses of ocular and systemic disease. GROK comprises three core modules: Knowledge-Guided Instruction Generation, CLIP-Style OCT-Biomarker Alignment, and Supervised Instruction Fine-Tuning, which together establish a quantitative-to-qualitative diagnostic chain of thought, mirroring real clinical reasoning when producing detailed lesion annotations. To evaluate our approach, we introduce the Grounded Ophthalmic Understanding benchmark, which covers six disease categories and three tasks: macro-level diagnostic classification, report generation quality, and fine-grained clinical assessment of the generated chain of thought. Experiments show that, with only LoRA (Low-Rank Adaptation) fine-tuning of a 7B-parameter Qwen2 backbone, GROK outperforms comparable 7B and 32B baselines on both report quality and fine-grained clinical metrics, and even exceeds OpenAI o3. Code and data are publicly available in the GROK repository.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2684,
+  "title": "Flow Autoencoders are Effective Protein Tokenizers",
+  "org": "openai",
+  "date": "2025-10-03",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.10.01.679645",
+  "abstract": "A bstract Protein structure tokenizers enable the creation of multimodal models of protein structure, sequence, and function. Current approaches to protein structure tok-enization rely on bespoke components that are invariant to spatial symmetries, but that are challenging to optimize and scale. We present Kanzi, a flow-based tokenizer for tokenization and generation of protein structures. Kanzi consists of a diffusion autoencoder trained with a flow matching loss. We show that this approach simplifies several aspects of protein structure tokenizers: frame-based representations can be replaced with global coordinates, complex losses are replaced with a single flow matching loss, and SE(3)-invariant attention operations can be replaced with standard attention. We find that these changes stabilize the training of parameter-efficient models that outperform existing to- kenizers on reconstruction metrics at a fraction of the model size and training cost. An autoregressive model trained with Kanzi outperforms similar generative models that operate over tokens, although it does not yet match the performance of state-of-the-art continuous diffusion models. Code is available here: https://github.com/rdilip/kanzi/ .",
+  "needs_fetch": false
+ },
+ {
+  "id": 488,
+  "title": "Physics Knowledge in Frontier Models: A Diagnostic Study of Failure Modes",
+  "org": "other",
+  "date": "2025-10-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.06251",
+  "abstract": "While recent Vision-Language Models (VLMs) have achieved impressive progress, it remains difficult to determine why they succeed or fail on complex reasoning tasks. Traditional benchmarks evaluate what models can answer correctly, not why they succeed or fail. In this work, we perform a failure-mode analysis of six frontier VLMs on three physics-based benchmarks - Physion, Physion++, and CLEVRER - by introducing custom subtests (for Physion and Physion++) and an integration of existing benchmark categories (for CLEVRER) to factor benchmark performance into distinct, testable capabilities. These subtests isolate perception (object, color, and occlusion recognition) and physics understanding (motion prediction and spatial reasoning), enabling us to test whether models attend to the correct entities and dynamics underlying their answers. Counterintuitively, subtest mastery correlates only weakly with benchmark accuracy: models often answer correctly without grounding in perception or physics. This suggests that current VLMs sometimes achieve benchmark scores for the wrong reasons, underscoring the need for diagnostics that expose hidden failure modes beyond aggregate metrics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 50,
+  "title": "Building AI for cyber defenders",
+  "org": "anthropic",
+  "date": "2025-10-03",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/building-ai-cyber-defenders",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1357,
+  "title": "Zero-Shot Autonomous Microscopy for Scalable and Intelligent Characterization of 2D Materials",
+  "org": "deepmind",
+  "date": "2025-10-02",
+  "venue": "ACS Nano",
+  "url": "https://doi.org/10.1021/acsnano.5c09057",
+  "abstract": "Characterization of atomic-scale materials traditionally requires human experts with months to years of specialized training. Even for trained human operators, accurate and reliable characterization remains challenging when examining newly discovered materials such as two-dimensional (2D) structures. This bottleneck drives demand for fully autonomous experimentation systems capable of comprehending research objectives without requiring large training data sets. In this work, we present ATOMIC (Autonomous Technology for Optical Microscopy & Intelligent Characterization), an end-to-end framework that integrates foundation models to enable fully autonomous, zero-shot characterization of 2D materials. Our system integrates the vision foundation model (i.e., Segment Anything Model), large language models (i.e., ChatGPT), unsupervised clustering, and topological analysis to automate microscope control, sample scanning, image segmentation, and intelligent analysis through prompt engineering, eliminating the need for additional training. When analyzing typical MoS2 samples, our approach achieves 99.7% segmentation accuracy for single layer identification, which is equivalent to that of human experts. In addition, the integrated model is able to detect grain boundary slits that are challenging to identify with human eyes. Furthermore, the system retains robust accuracy despite variable conditions, including defocus, color-temperature fluctuations, and exposure variations. It is applic",
+  "needs_fetch": false
+ },
+ {
+  "id": 322,
+  "title": "MIRA: Towards Mitigating Reward Hacking in Inference-Time Alignment of T2I Diffusion Models",
+  "org": "other",
+  "date": "2025-10-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.01549",
+  "abstract": "Diffusion models excel at generating images conditioned on text prompts, but the resulting images often do not satisfy user-specific criteria measured by scalar rewards such as Aesthetic Scores. This alignment typically requires fine-tuning, which is computationally demanding. Recently, inference-time alignment via noise optimization has emerged as an efficient alternative, modifying initial input noise to steer the diffusion denoising process towards generating high-reward images. However, this approach suffers from reward hacking, where the model produces images that score highly, yet deviate significantly from the original prompt. We show that noise-space regularization is insufficient and that preventing reward hacking requires an explicit image-space constraint. To this end, we propose MIRA (MItigating Reward hAcking), a training-free, inference-time alignment method. MIRA introduces an image-space, score-based KL surrogate that regularizes the sampling trajectory with a frozen backbone, constraining the output distribution so reward can increase without off-distribution drift (reward hacking). We derive a tractable approximation to KL using diffusion scores. Across SDv1.5 and SDXL, multiple rewards (Aesthetic, HPSv2, PickScore), and public datasets (e.g., Animal-Animal, HPDv2), MIRA achieves >60\\% win rate vs. strong baselines while preserving prompt adherence; mechanism plots show reward gains with near-zero drift, whereas DNO drifts as compute increases. We further in",
+  "needs_fetch": false
+ },
+ {
+  "id": 2871,
+  "title": "Circuits Updates — October 2025",
+  "org": "anthropic",
+  "date": "2025-10-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/october-update/index.html",
+  "abstract": "We report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2685,
+  "title": "Mercury: Unlocking Multi-GPU Operator Optimization for LLMs via Remote Memory Scheduling",
+  "org": "openai",
+  "date": "2025-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3731569.3764798",
+  "abstract": "In this paper, we propose Mercury, a multi-GPU operator compiler based on a loop-based intermediate representation, CommIR. At the core of Mercury is an abstraction that treats remote GPU memory as an explicitly managed extension of the memory hierarchy, expanding the available storage and communication resources beyond local HBM. This unified view enables the compiler to reason holistically about data placement and inter-device communication, unlocking a vastly larger design space that encompasses and extends beyond existing manual strategies. As a result, Mercury is able to automatically reproduce the performance of hand-optimized baselines like RingAttention and Ulysses, and in some configurations, even discovers more effective strategies that manual designs have overlooked. Our implementation is open-sourced at https://github.com/ChandlerGuan/mercury_artifact.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1186,
+  "title": "The impact of advanced AI systems on democracy",
+  "org": "anthropic",
+  "date": "2025-10-01",
+  "venue": "Nature Human Behaviour",
+  "url": "https://doi.org/10.1038/s41562-025-02309-z",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 666,
+  "title": "Is It Thinking or Cheating? Detecting Implicit Reward Hacking by Measuring Reasoning Effort",
+  "org": "other",
+  "date": "2025-10-01",
+  "venue": "ICLR 2026",
+  "url": "https://arxiv.org/abs/2510.01367",
+  "abstract": "Reward hacking, where a reasoning model exploits loopholes in a reward function to achieve high rewards without solving the intended task, poses a significant threat. This behavior may be explicit, i.e. verbalized in the model's chain-of-thought (CoT), or implicit, where the CoT appears benign thus bypasses CoT monitors. To detect implicit reward hacking, we propose TRACE (Truncated Reasoning AUC Evaluation). Our key observation is that hacking occurs when exploiting the loophole is easier than solving the actual task. This means that the model is using less 'effort' than required to achieve high reward. TRACE quantifies effort by measuring how early a model's reasoning becomes sufficient to obtain the reward. We progressively truncate a model's CoT at various lengths, force the model to answer, and estimate the expected reward at each cutoff. A hacking model, which takes a shortcut, will achieve a high expected reward with only a small fraction of its CoT, yielding a large area under the accuracy-vs-length curve. TRACE achieves over 65% gains over our strongest 72B CoT monitor in math reasoning, and over 30% gains over a 32B monitor in coding. We further show that TRACE can discover unknown loopholes during training. Overall, TRACE offers a scalable unsupervised approach for oversight where current monitoring methods prove ineffective.",
+  "needs_fetch": false
+ },
+ {
+  "id": 570,
+  "title": "Eliciting Secret Knowledge from Language Models",
+  "org": "deepmind",
+  "date": "2025-10-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.01070",
+  "abstract": "We study secret elicitation: discovering knowledge that an AI possesses but does not explicitly verbalize. As a testbed, we train three families of large language models (LLMs) to possess specific knowledge that they apply downstream but deny knowing when asked directly. For example, in one setting, we train an LLM to generate replies that are consistent with knowing the user is female, while denying this knowledge when asked directly. We then design various black-box and white-box secret elicitation techniques and evaluate them based on whether they can help an LLM auditor successfully guess the secret knowledge. Many of our techniques improve on simple baselines. Our most effective techniques (performing best in all settings) are based on prefill attacks, a black-box technique where the LLM reveals secret knowledge when generating a completion from a predefined prefix. Our white-box techniques based on logit lens and sparse autoencoders (SAEs) also consistently increase the success rate of the LLM auditor, but are less effective. We release our models and code, establishing a public benchmark for evaluating secret elicitation methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 489,
+  "title": "Fine-Tuning Jailbreaks under Highly Constrained Black-Box Settings: A Three-Pronged Approach",
+  "org": "other",
+  "date": "2025-10-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.01342",
+  "abstract": "With the rapid advancement of large language models (LLMs), ensuring their safe use becomes increasingly critical. Fine-tuning is a widely used method for adapting models to downstream tasks, yet it is vulnerable to jailbreak attacks. However, most existing studies focus on overly simplified attack scenarios, limiting their practical relevance to real-world defense settings. To make this risk concrete, we present a three-pronged jailbreak attack and evaluate it against provider defenses under a dataset-only black-box fine-tuning interface. In this setting, the attacker can only submit fine-tuning data to the provider, while the provider may deploy defenses across stages: (1) pre-upload data filtering, (2) training-time defensive fine-tuning, and (3) post-training safety audit. Our attack combines safety-styled prefix/suffix wrappers, benign lexical encodings (underscoring) of sensitive tokens, and a backdoor mechanism, enabling the model to learn harmful behaviors while individual datapoints appear innocuous. Extensive experiments demonstrate the effectiveness of our approach. In real-world deployment, our method successfully jailbreaks GPT-4.1 and GPT-4o on the OpenAI platform with attack success rates above 97% for both models. Our code is available at https://github.com/lxf728/tri-pronged-ft-attack.",
+  "needs_fetch": false
+ },
+ {
+  "id": 956,
+  "title": "Sora 2 System Card",
+  "org": "openai",
+  "date": "2025-09-30",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/sora-2-system-card/",
+  "abstract": "Sora 2 is our new state of the art video and audio generation model. Building on the foundation of Sora, this new model introduces capabilities that have been difficult for prior video models to achieve– such as more accurate physics, sharper realism, synchronized audio, enhanced steerability, and an expanded stylistic range.",
+  "needs_fetch": false
+ },
+ {
+  "id": 955,
+  "title": "Sora 2 is here",
+  "org": "openai",
+  "date": "2025-09-30",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/sora-2/",
+  "abstract": "Our latest video generation model is more physically accurate, realistic, and controllable than prior systems. It also features synchronized dialogue and sound effects. Create with it in the new Sora app.",
+  "needs_fetch": false
+ },
+ {
+  "id": 490,
+  "title": "Lita: Light Agent Uncovers the Agentic Coding Capabilities of LLMs",
+  "org": "other",
+  "date": "2025-09-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.25873",
+  "abstract": "Large language models (LLMs) are increasingly being applied to programming tasks, ranging from single-turn code completion to autonomous agents. Current code agent designs frequently depend on complex, hand-crafted workflows and tool sets. However, this reliance on elaborate scaffolding presents several challenges: agent performance becomes overly dependent on prompt tuning and custom design choices, heavy human intervention obscures a model's true underlying capabilities, and intricate pipelines are costly to build and maintain. Furthermore, optimizing complex task prompts increases the risk of data leakage. Currently, when introducing new models, LLM providers like OpenAI and Anthropic often publish benchmark scores to demonstrate their models' coding proficiency, but keep their proprietary evaluation frameworks confidential. To address these limitations, we introduce Lita (Lite Agent), which operationalizes liteness, a principle of minimizing manual design while retaining the essential elements of a fully autonomous agent. Lita enables a more faithful and unified evaluation without elaborate scaffolding. Experiments on the Aider Polyglot and SWE-Bench with frontier models demonstrate that Lita achieves competitive or superior performance compared to workflow-based and agentic baselines. Crucially, Lita also consumes fewer tokens and requires significantly less design effort. Our results suggest that Lita is sufficient to reveal the underlying coding competence of modern LL",
+  "needs_fetch": false
+ },
+ {
+  "id": 323,
+  "title": "Sandbagging in a Simple Survival Bandit Problem",
+  "org": "other",
+  "date": "2025-09-30",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2509.26239",
+  "abstract": "Evaluating the safety of frontier AI systems is an increasingly important concern, helping to measure the capabilities of such models and identify risks before deployment. However, it has been recognised that if AI agents are aware that they are being evaluated, such agents may deliberately hide dangerous capabilities or intentionally demonstrate suboptimal performance in safety-related tasks in order to be released and to avoid being deactivated or retrained. Such strategic deception - often known as \"sandbagging\" - threatens to undermine the integrity of safety evaluations. For this reason, it is of value to identify methods that enable us to distinguish behavioural patterns that demonstrate a true lack of capability from behavioural patterns that are consistent with sandbagging. In this paper, we develop a simple model of strategic deception in sequential decision-making tasks, inspired by the recently developed survival bandit framework. We demonstrate theoretically that this problem induces sandbagging behaviour in optimal rational agents, and construct a statistical test to distinguish between sandbagging and incompetence from sequences of test scores. In simulation experiments, we investigate the reliability of this test in allowing us to distinguish between such behaviours in bandit models. This work aims to establish a potential avenue for developing robust statistical procedures for use in the science of frontier model evaluations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 689,
+  "title": "AI-Generated Video Detection via Perceptual Straightening",
+  "org": "deepmind",
+  "date": "2025-09-29",
+  "venue": "NeurIPS 2025",
+  "url": "https://arxiv.org/abs/2507.00583",
+  "abstract": "The rapid advancement of generative AI enables highly realistic synthetic videos, posing significant challenges for content authentication and raising urgent concerns about misuse. Existing detection methods often struggle with generalization and capturing subtle temporal inconsistencies. We propose ReStraV (Representation Straightening Video), a novel approach to distinguish natural from AI-generated videos. Inspired by the \"perceptual straightening\" hypothesis -- which suggests real-world video trajectories become more straight in neural representation domain -- we analyze deviations from this expected geometric property. Using a pre-trained self-supervised vision transformer (DINOv2), we quantify the temporal curvature and stepwise distance in the model's representation domain. We aggregate statistics of these measures for each video and train a classifier. Our analysis shows that AI-generated videos exhibit significantly different curvature and distance patterns compared to real videos. A lightweight classifier achieves state-of-the-art detection performance (e.g., 97.17% accuracy and 98.63% AUROC on the VidProM benchmark), substantially outperforming existing image- and video-based methods. ReStraV is computationally efficient, it is offering a low-cost and effective detection solution. This work provides new insights into using neural representation geometry for AI-generated video detection.",
+  "needs_fetch": false
+ },
+ {
+  "id": 492,
+  "title": "Radiology's Last Exam (RadLE): Benchmarking Frontier Multimodal AI Against Human Experts and a Taxonomy of Visual Reasoning Errors in Radiology",
+  "org": "other",
+  "date": "2025-09-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.25559",
+  "abstract": "Generalist multimodal AI systems such as large language models (LLMs) and vision language models (VLMs) are increasingly accessed by clinicians and patients alike for medical image interpretation through widely available consumer-facing chatbots. Most evaluations claiming expert level performance are on public datasets containing common pathologies. Rigorous evaluation of frontier models on difficult diagnostic cases remains limited. We developed a pilot benchmark of 50 expert-level \"spot diagnosis\" cases across multiple imaging modalities to evaluate the performance of frontier AI models against board-certified radiologists and radiology trainees. To mirror real-world usage, the reasoning modes of five popular frontier AI models were tested through their native web interfaces, viz. OpenAI o3, OpenAI GPT-5, Gemini 2.5 Pro, Grok-4, and Claude Opus 4.1. Accuracy was scored by blinded experts, and reproducibility was assessed across three independent runs. GPT-5 was additionally evaluated across various reasoning modes. Reasoning quality errors were assessed and a taxonomy of visual reasoning errors was defined. Board-certified radiologists achieved the highest diagnostic accuracy (83%), outperforming trainees (45%) and all AI models (best performance shown by GPT-5: 30%). Reliability was substantial for GPT-5 and o3, moderate for Gemini 2.5 Pro and Grok-4, and poor for Claude Opus 4.1. These findings demonstrate that advanced frontier models fall far short of radiologists in ch",
+  "needs_fetch": false
+ }
+]

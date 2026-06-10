@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1796,
+  "title": "Cognitive Model Discovery via Disentangled RNNs",
+  "org": "deepmind",
+  "date": "2023-06-26",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2023.06.23.546250",
+  "abstract": "Abstract Computational cognitive models are a fundamental tool in behavioral neuroscience. They instantiate in software precise hypotheses about the cognitive mechanisms underlying a particular behavior. Constructing these models is typically a difficult iterative process that requires both inspiration from the literature and the creativity of an individual researcher. Here, we adopt an alternative approach to learn parsimonious cognitive models directly from data. We fit behavior data using a recurrent neural network that is penalized for carrying information forward in time, leading to sparse, interpretable representations and dynamics. When fitting synthetic behavioral data from known cognitive models, our method recovers the underlying form of those models. When fit to laboratory data from rats performing a reward learning task, our method recovers simple and interpretable models that make testable predictions about neural mechanisms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1795,
+  "title": "Exploration via Epistemic Value Estimation",
+  "org": "deepmind",
+  "date": "2023-06-26",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v37i8.26164",
+  "abstract": "How to efficiently explore in reinforcement learning is an open problem. Many exploration algorithms employ the epistemic uncertainty of their own value predictions -- for instance to compute an exploration bonus or upper confidence bound. Unfortunately the required uncertainty is difficult to estimate in general with function approximation. We propose epistemic value estimation (EVE): a recipe that is compatible with sequential decision making and with neural network function approximators. It equips agents with a tractable posterior over all their parameters from which epistemic value uncertainty can be computed efficiently. We use the recipe to derive an epistemic Q-Learning agent and observe competitive performance on a series of benchmarks. Experiments confirm that the EVE recipe facilitates efficient exploration in hard exploration tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1794,
+  "title": "Predictive Multiplicity in Probabilistic Classification",
+  "org": "deepmind",
+  "date": "2023-06-26",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v37i9.26227",
+  "abstract": "Machine learning models are often used to inform real world risk assessment tasks: predicting consumer default risk, predicting whether a person suffers from a serious illness, or predicting a person's risk to appear in court. Given multiple models that perform almost equally well for a prediction task, to what extent do predictions vary across these models? If predictions are relatively consistent for similar models, then the standard approach of choosing the model that optimizes a penalized loss suffices. But what if predictions vary significantly for similar models? In machine learning, this is referred to as predictive multiplicity i.e. the prevalence of conflicting predictions assigned by near-optimal competing models. In this paper, we present a framework for measuring predictive multiplicity in probabilistic classification (predicting the probability of a positive outcome). We introduce measures that capture the variation in risk estimates over the set of competing models, and develop optimization-based methods to compute these measures efficiently and reliably for convex empirical risk minimization problems. We demonstrate the incidence and prevalence of predictive multiplicity in real-world tasks. Further, we provide insight into how predictive multiplicity arises by analyzing the relationship between predictive multiplicity and data set characteristics (outliers, separability, and majority-minority structure). Our results emphasize the need to report predictive mult",
+  "needs_fetch": false
+ },
+ {
+  "id": 1798,
+  "title": "Discovering agents",
+  "org": "deepmind",
+  "date": "2023-06-24",
+  "venue": "Artificial Intelligence",
+  "url": "https://doi.org/10.1016/j.artint.2023.103963",
+  "abstract": "Causal models of agents have been used to analyse the safety aspects of machine learning systems. But identifying agents is non-trivial – often the causal model is just assumed by the modeller without much justification – and modelling failures can lead to mistakes in the safety analysis. This paper proposes the first formal causal definition of agents – roughly that agents are systems that would adapt their policy if their actions influenced the world in a different way. From this we derive the first causal discovery algorithm for discovering the presence of agents from empirical data, given a set of variables and under certain assumptions. We also provide algorithms for translating between causal models and game-theoretic influence diagrams. We demonstrate our approach by resolving some previous confusions caused by incorrect causal modelling of agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1201,
+  "title": "Ecosystem Graphs: The Social Footprint of Foundation Models",
+  "org": "anthropic",
+  "date": "2023-06-23",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-2961271/v1",
+  "abstract": "<title>Abstract</title> Foundation models (e.g. ChatGPT, StableDiffusion) pervasively influence society, warranting immediate social attention. While the models themselves garner much attention, to accurately characterize their impact, we must consider the broader sociotechnical ecosystem. We propose Ecosystem Graphs as a documentation framework to transparently centralize knowledge of this ecosystem. Ecosystem Graphs is composed of assets (datasets, models, applications) linked together by dependencies that indicate technical (e.g. how Bing relies on GPT-4) and social (e.g. how Microsoft relies on OpenAI) relationships. To supplement the graph structure, each asset is further enriched with fine-grained metadata (e.g. the license or training emissions). We document the ecosystem extensively at this https URL. As of March 16, 2023, we annotate 262 assets (64 datasets, 128 models, 70 applications) from 63 organizations linked by 356 dependencies. We show Ecosystem Graphs functions as a powerful abstraction and interface for achieving the minimum transparency required to address myriad use cases. Therefore, we envision Ecosystem Graphs will be a community-maintained resource that provides value to stakeholders spanning AI researchers, industry professionals, social scientists, auditors and policymakers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1799,
+  "title": "AI Governance",
+  "org": "deepmind",
+  "date": "2023-06-20",
+  "venue": "Oxford University Press eBooks",
+  "url": "https://doi.org/10.1093/oxfordhb/9780197579329.013.2",
+  "abstract": "Abstract Artificial intelligence (AI) will be a transformative technology, with extreme potential risks and benefits. AI governance refers to the norms and institutions shaping how AI is built and deployed, as well as the policy and research efforts to make it go well. This chapter argues that the field of AI governance should have an expansive and ambitious scope, commensurate to the challenges, with robust internal collaboration given transferable lessons and shared policy opportunities. To make sense of the impacts of AI, the chapter offers three theoretical lenses, focusing on distinct mechanisms, impacts, and challenges. These lenses regard AI as a general purpose technology, an information technology, and an intelligence technology. The chapter then provides a lens on governance focusing on institutional fit and adaptation to the externalities produced by AI. Institutional adaptation will be especially difficult when a governance issue touches on deep social conflicts. Great power security competition poses a particular challenge because it can induce extreme—even existential—risks and is among the hardest dynamics to govern. Building strong competent global institutions to govern powerful AI would be a historically unparalleled challenge, but ultimately may be required to steer away from the greatest risks inherent to great power competition.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1800,
+  "title": "Feasibility and Preliminary Efficacy of Digital Interventions for Depressive Symptoms in Working Adults: Multiarm Randomized Controlled Trial",
+  "org": "deepmind",
+  "date": "2023-06-16",
+  "venue": "JMIR Formative Research",
+  "url": "https://doi.org/10.2196/41590",
+  "abstract": "BACKGROUND: Depressive symptoms are highly prevalent and have broad-ranging negative implications. Digital interventions are increasingly available in the workplace context, but supporting evidence is limited. OBJECTIVE: This study aimed to evaluate the feasibility, acceptability, and preliminary efficacy of 3 digital interventions for depressive symptoms in a sample of UK-based working adults experiencing mild to moderate symptoms. METHODS: This was a parallel, multiarm, pilot randomized controlled trial. Participants were allocated to 1 of 3 digital interventions or a waitlist control group and had 3 weeks to complete 6 to 8 short self-guided sessions. The 3 interventions are available on the Unmind mental health app for working adults and draw on behavioral activation, cognitive behavioral therapy, and acceptance and commitment therapy. Web-based assessments were conducted at baseline, postintervention (week 3), and at 1-month follow-up (week 7). Participants were recruited via Prolific, a web-based recruitment platform, and the study was conducted entirely on the web. Feasibility and acceptability were assessed using objective engagement data and self-reported feedback. Efficacy outcomes were assessed using validated self-report measures of mental health and functioning and linear mixed models with intention-to-treat principles. RESULTS: In total, 2003 individuals were screened for participation, of which 20.22% (405/2003) were randomized. A total of 92% (373/405) of the ",
+  "needs_fetch": false
+ },
+ {
+  "id": 550,
+  "title": "Inverse Scaling: When Bigger Isn't Better",
+  "org": "anthropic",
+  "date": "2023-06-15",
+  "venue": "TMLR",
+  "url": "https://arxiv.org/abs/2306.09479",
+  "abstract": "Work on scaling laws has found that large language models (LMs) show predictable improvements to overall loss with increased scale (model size, training data, and compute). Here, we present evidence for the claim that LMs may show inverse scaling, or worse task performance with increased scale, e.g., due to flaws in the training objective and data. We present empirical evidence of inverse scaling on 11 datasets collected by running a public contest, the Inverse Scaling Prize, with a substantial prize pool. Through analysis of the datasets, along with other examples found in the literature, we identify four potential causes of inverse scaling: (i) preference to repeat memorized sequences over following in-context instructions, (ii) imitation of undesirable patterns in the training data, (iii) tasks containing an easy distractor task which LMs could focus on, rather than the harder real task, and (iv) correct but misleading few-shot demonstrations of the task. We release the winning datasets at https://inversescaling.com/data to allow for further investigation of inverse scaling. Our tasks have helped drive the discovery of U-shaped and inverted-U scaling trends, where an initial trend reverses, suggesting that scaling trends are less reliable at predicting the behavior of larger-scale models than previously understood. Overall, our results suggest that there are tasks for which increased model scale alone may not lead to progress, and that more careful thought needs to go into",
+  "needs_fetch": false
+ },
+ {
+  "id": 551,
+  "title": "Human-Like Intuitive Behavior and Reasoning Biases Emerged in Language Models -- and Disappeared in GPT-4",
+  "org": "other",
+  "date": "2023-06-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2306.07622",
+  "abstract": "Large language models (LLMs) are currently at the forefront of intertwining AI systems with human communication and everyday life. Therefore, it is of great importance to evaluate their emerging abilities. In this study, we show that LLMs, most notably GPT-3, exhibit behavior that strikingly resembles human-like intuition -- and the cognitive errors that come with it. However, LLMs with higher cognitive capabilities, in particular ChatGPT and GPT-4, learned to avoid succumbing to these errors and perform in a hyperrational manner. For our experiments, we probe LLMs with the Cognitive Reflection Test (CRT) as well as semantic illusions that were originally designed to investigate intuitive decision-making in humans. Moreover, we probe how sturdy the inclination for intuitive-like decision-making is. Our study demonstrates that investigating LLMs with methods from psychology has the potential to reveal otherwise unknown emergent traits.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1801,
+  "title": "Representation in AI Evaluations",
+  "org": "deepmind",
+  "date": "2023-06-12",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3593013.3594019",
+  "abstract": "Calls for representation in artificial intelligence (AI) and machine learning (ML) are widespread, with \"representation\" or \"representativeness\" generally understood to be both an instrumentally and intrinsically beneficial quality of an AI system, and central to fairness concerns. But what does it mean for an AI system to be \"representative\"? Each element of the AI lifecycle is geared towards its own goals and effect on the system, therefore requiring its own analyses with regard to what kind of representation is best. In this work we untangle the benefits of representation in AI evaluations to develop a framework to guide an AI practitioner or auditor towards the creation of representative ML evaluations. Representation, however, is not a panacea. We further lay out the limitations and tensions of instrumentally representative datasets, such as the necessity of data existence and access, surveillance vs expectations of privacy, implications for foundation models and power. This work sets the stage for a research agenda on representation in AI, which extends beyond instrumentally valuable representation in evaluations towards refocusing on, and empowering, impacted communities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1803,
+  "title": "Optimizing Jastrow factors for the transcorrelated method",
+  "org": "deepmind",
+  "date": "2023-06-08",
+  "venue": "The Journal of Chemical Physics",
+  "url": "https://doi.org/10.1063/5.0147877",
+  "abstract": "We investigate the optimization of flexible tailored real-space Jastrow factors for use in the transcorrelated (TC) method in combination with highly accurate quantum chemistry methods, such as initiator full configuration interaction quantum Monte Carlo (FCIQMC). Jastrow factors obtained by minimizing the variance of the TC reference energy are found to yield better, more consistent results than those obtained by minimizing the variational energy. We compute all-electron atomization energies for the challenging first-row molecules C2, CN, N2, and O2 and find that the TC method yields chemically accurate results using only the cc-pVTZ basis set, roughly matching the accuracy of non-TC calculations with the much larger cc-pV5Z basis set. We also investigate an approximation in which pure three-body excitations are neglected from the TC-FCIQMC dynamics, saving storage and computational costs, and show that it affects relative energies negligibly. Our results demonstrate that the combination of tailored real-space Jastrow factors with the multi-configurational TC-FCIQMC method provides a route to obtaining chemical accuracy using modest basis sets, obviating the need for basis-set extrapolation and composite techniques.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1802,
+  "title": "Robust and data-efficient generalization of self-supervised machine learning for diagnostic imaging",
+  "org": "deepmind",
+  "date": "2023-06-08",
+  "venue": "Nature Biomedical Engineering",
+  "url": "https://doi.org/10.1038/s41551-023-01049-7",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1804,
+  "title": "Faster sorting algorithms discovered using deep reinforcement learning",
+  "org": "deepmind",
+  "date": "2023-06-07",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-023-06004-9",
+  "abstract": "Abstract Fundamental algorithms such as sorting or hashing are used trillions of times on any given day 1 . As demand for computation grows, it has become critical for these algorithms to be as performant as possible. Whereas remarkable progress has been achieved in the past 2 , making further improvements on the efficiency of these routines has proved challenging for both human scientists and computational approaches. Here we show how artificial intelligence can go beyond the current state of the art by discovering hitherto unknown routines. To realize this, we formulated the task of finding a better sorting routine as a single-player game. We then trained a new deep reinforcement learning agent, AlphaDev, to play this game. AlphaDev discovered small sorting algorithms from scratch that outperformed previously known human benchmarks. These algorithms have been integrated into the LLVM standard C++ sort library 3 . This change to this part of the sort library represents the replacement of a component with an algorithm that has been automatically discovered using reinforcement learning. We also present results in extra domains, showcasing the generality of the approach.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2752,
+  "title": "A machine’s perspective",
+  "org": "openai",
+  "date": "2023-06-01",
+  "venue": "First Break",
+  "url": "http://dx.doi.org/10.3997/1365-2397.fb2023046",
+  "abstract": "Preview this article: A machine's perspective, Page 1 of 1 < Previous page | Next page > /docserver/preview/fulltext/fb/41/6/fb2023046-1.gif",
+  "needs_fetch": false
+ },
+ {
+  "id": 2751,
+  "title": "Fusing Pre-Trained Language Models with Multimodal Prompts through Reinforcement Learning",
+  "org": "openai",
+  "date": "2023-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52729.2023.01044",
+  "abstract": "Language models are capable of commonsense reasoning: while domain-specific models can learn from explicit knowledge (e.g. commonsense graphs [6] ethical norms [25]), and larger models like GPT-3 [7] mani-fest broad commonsense reasoning capacity. Can their knowledge be extended to multimodal inputs such as images and audio without paired domain data? In this work, we propose <sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">‡</sup> ESPER (Extending Sensory PErception with Reinforcement learning) which enables text-only pretrained models to address multimodal tasks such as visual commonsense reasoning. Our key novelty is to use rein-forcement learning to align multimodal inputs to language model generations without direct supervision: for example, our reward optimization relies only on cosine similarity derived from CLIP [52] and requires no additional paired (image, text) data. Experiments demonstrate that ESPER outperforms baselines and prior work on a variety of multimodal text generation tasks ranging from captioning to commonsense reasoning; these include a new benchmark we collect and release, the ESP dataset, which tasks models with generating the text of several different domains for each image. Our code and data are publicly released at https://github.com/JiwanChung/esper.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1810,
+  "title": "Understanding Deep Generative Models with Generalized Empirical Likelihoods",
+  "org": "deepmind",
+  "date": "2023-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52729.2023.02337",
+  "abstract": "Understanding how well a deep generative model captures a distribution of high-dimensional data remains an important open challenge. It is especially difficult for certain model classes, such as Generative Adversarial Networks and Diffusion Models, whose models do not admit exact likelihoods. In this work, we demonstrate that generalized empirical likelihood (GEL) methods offer a family of diagnostic tools that can identify many deficiencies of deep generative models (DGMs). We show, with appropriate specification of moment conditions, that the proposed method can identify which modes have been dropped, the degree to which DGMs are mode imbalanced, and whether DGMs sufficiently capture intra-class diversity. We show how to combine techniques from Maximum Mean Discrepancy and Generalized Empirical Likelihood to create not only distribution tests that retain per-sample interpretability, but also metrics that include label information. We find that such tests predict the degree of mode dropping and mode imbalance up to 60% better than metrics such as improved precision/recall.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1809,
+  "title": "Adaptive Webpage Fingerprinting from TLS Traces",
+  "org": "deepmind",
+  "date": "2023-06-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.1109/dsn58367.2023.00049",
+  "abstract": "In webpage fingerprinting, an on-path adversary infers the specific webpage loaded by a victim user by analysing the patterns in the encrypted TLS traffic exchanged between the user's browser and the website's servers. This work studies modern webpage fingerprinting adversaries against the TLS protocol; aiming to shed light on their capabilities and inform potential defences. Despite the importance of this research area (the majority of global Internet users rely on standard web browsing with TLS) and the potential real-life impact, most past works have focused on attacks specific to anonymity networks (e.g., Tor). We introduce a TLS-specific model that: 1) scales to an unprecedented number of target webpages, 2) can accurately classify thousands of classes it never encountered during training, and 3) has low operational costs even in scenarios of frequent page updates. Based on these findings, we then discuss TLS-specific countermeasures and evaluate the effectiveness of the existing padding capabilities provided by TLS 1.3.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1808,
+  "title": "Seasoning Model Soups for Robustness to Adversarial and Natural Distribution Shifts",
+  "org": "deepmind",
+  "date": "2023-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52729.2023.01185",
+  "abstract": "Adversarial training is widely used to make classifiers robust to a specific threat or adversary, such as lp- norm bounded perturbations of a given p-norm. However, existing methods for training classifiers robust to multiple threats require knowledge of all attacks during training and remain vulnerable to unseen distribution shifts. In this work, we describe how to obtain adversarially-robust model soups (i.e., linear combinations of parameters) that smoothly trade-off robustness to different lp-norm bounded adversaries. We demonstrate that such soups allow us to control the type and level of robustness, and can achieve robustness to all threats without jointly training on all of them. In some cases, the resulting model soups are more robust to a given lp-norm adversary than the constituent model specialized against that same adversary. Finally, we show that adversarially-robust model soups can be a viable tool to adapt to distribution shifts from a few examples.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1807,
+  "title": "Fast transport simulations with higher-fidelity surrogate models for ITER",
+  "org": "deepmind",
+  "date": "2023-06-01",
+  "venue": "Physics of Plasmas",
+  "url": "https://arxiv.org/abs/2306.00662",
+  "abstract": "A fast and accurate turbulence transport model based on quasilinear gyrokinetics is developed. The model consists of a set of neural networks trained on a bespoke quasilinear GENE dataset, with a saturation rule calibrated to dedicated nonlinear simulations. The resultant neural network is approximately eight orders of magnitude faster than the original GENE quasilinear calculations. ITER predictions with the new model project a fusion gain in line with ITER targets. While the dataset is currently limited to the ITER baseline regime, this approach illustrates a pathway to develop reduced-order turbulence models both faster and more accurate than the current state-of-the-art.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1806,
+  "title": "Back to the Source: Diffusion-Driven Adaptation to Test-Time Corruption",
+  "org": "deepmind",
+  "date": "2023-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52729.2023.01134",
+  "abstract": "Test-time adaptation harnesses test inputs to improve the accuracy of a model trained on source data when tested on shifted target data. Most methods update the source model by (re-)training on each target domain. While retraining can help, it is sensitive to the amount and order of the data and the hyperparameters for optimization. We update the target data instead, and project all test inputs toward the source domain with a generative diffusion model. Our diffusion-driven adaptation (DDA) method shares its models for classification and generation across all domains, training both on source then freezing them for all targets, to avoid expensive domain-wise retraining. We augment diffusion with image guidance and classifier self-ensembling to automatically decide how much to adapt. Input adaptation by DDA is more robust than model adaptation across a variety of corruptions, models, and data regimes on the ImageNet-C benchmark. With its input-wise updates, DDA succeeds where model adaptation degrades on too little data (small batches), on dependent data (correlated orders), or on mixed data (multiple corruptions).",
+  "needs_fetch": false
+ },
+ {
+  "id": 1805,
+  "title": "Vid2Seq: Large-Scale Pretraining of a Visual Language Model for Dense Video Captioning",
+  "org": "deepmind",
+  "date": "2023-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52729.2023.01032",
+  "abstract": "In this work, we introduce Vid2Seq, a multi-modal single-stage dense event captioning model pretrained on narrated videos which are readily-available at scale. The Vid2Seq architecture augments a language model with special time tokens, allowing it to seamlessly predict event boundaries and textual descriptions in the same output sequence. Such a unified model requires large-scale training data, which is not available in current annotated datasets. We show that it is possible to leverage unlabeled narrated videos for dense video captioning, by reformulating sentence boundaries of transcribed speech as pseudo event boundaries, and using the transcribed speech sentences as pseudo event captions. The resulting Vid2Seq model pretrained on the YT-Temporal-1B dataset improves the state of the art on a variety of dense video captioning benchmarks including YouCook2, ViTT and ActivityNet Captions. Vid2Seq also generalizes well to the tasks of video paragraph captioning and video clip captioning, and to few-shot settings. Our code is publicly available at [1].",
+  "needs_fetch": false
+ },
+ {
+  "id": 1017,
+  "title": "Improving mathematical reasoning with process supervision",
+  "org": "openai",
+  "date": "2023-05-31",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/",
+  "abstract": "We've trained a model to achieve a new state-of-the-art in mathematical problem solving by rewarding each correct step of reasoning (“process supervision”) instead of simply rewarding the correct final answer (“outcome supervision”). In addition to boosting performance relative to outcome supervision, process supervision also has an important alignment benefit: it directly trains the model to produce a chain-of-thought that is endorsed by humans.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1813,
+  "title": "Diversity Through Exclusion (DTE): Niche Identification for Reinforcement Learning through Value-Decomposition",
+  "org": "deepmind",
+  "date": "2023-05-30",
+  "venue": null,
+  "url": "https://doi.org/10.65109/acih8655",
+  "abstract": "Many environments contain numerous available niches of variable value, each associated with a different local optimum in the space of behaviors (policy space). In this work we propose a generic reinforcement learning (RL) algorithm where multiple sub-policies are learnt in a manner inspired by fitness sharing in evolutionary computation and applied in reinforcement learning using Value-Decomposition-Networks in a novel manner for a single-agent's internal population. Further, we introduce an artificial chemistry inspired platform where it is easy to create tasks with multiple rewarding strategies utilizing different resources (i.e. multiple niches). We show that agents trained this way can escape poor-but-attractive local optima to instead converge to harder-to-discover higher value strategies in both the artificial chemistry environments and in simpler illustrative environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1812,
+  "title": "Search-Improved Game-Theoretic Multiagent Reinforcement Learning in General and Negotiation Games",
+  "org": "deepmind",
+  "date": "2023-05-30",
+  "venue": null,
+  "url": "https://doi.org/10.65109/ehmm3042",
+  "abstract": "Multiagent reinforcement learning (MARL) has benefited significantly from population-based and game-theoretic training regimes. One approach, Policy-Space Response Oracles (PSRO), employs standard reinforcement learning to compute response policies via approximate best responses and combines them via meta-strategy selection. We augment PSRO by adding a novel search procedure with generative sampling of world states, and introduce two new meta-strategy solvers based on the Nash bargaining solution. We evaluate PSRO's ability to compute approximate Nash equilibrium, and its performance in negotiation games: Colored Trails and Deal-or-no-Deal. We conduct behavioral studies where human participants negotiate with our agents (N = 346). Search with generative modeling finds stronger policies during both training time and test time, enables online Bayesian co-player prediction, and can produce agents that achieve comparable social welfare negotiating with humans as humans trading among themselves.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1811,
+  "title": "Multiagent Learning: From Fundamentals to Foundation Models",
+  "org": "deepmind",
+  "date": "2023-05-30",
+  "venue": null,
+  "url": "https://doi.org/10.65109/dcdr3358",
+  "abstract": "Research in multiagent learning has come a long way over the past few decades, from learning in abstract normal-form games such as Rock-Paper-Scissors, to learning in complex worlds such as Humanoid Soccer, Capture the Flag, Gran Turismo racing, and recently board games such as Diplomacy and Stratego. In this talk I will take you on a journey that starts in the mid 90's and sheds light on algorithmic progress over the years in multiagent learning systems, uncovering game-theoretic fundamentals for reinforcement learning, adaptability, and decision-making. There have been two major research eras in the field thus far, the pre-deep multiagent learning and deep multiagent learning periods. I believe we are now on the verge of a third period, multiagent learning with foundation models. We will connect old and new ideas of the first two periods, and lay out interesting challenges ahead of us for the coming era. Specifically, we consider the ways in which the cornerstone ideas of the first two periods may inform the development of generally capable multi-agent foundation models in the future.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1202,
+  "title": "ScoNe: Benchmarking Negation Reasoning in Language Models With Fine-Tuning and In-Context Learning",
+  "org": "anthropic",
+  "date": "2023-05-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2305.19426",
+  "abstract": "A number of recent benchmarks seek to assess how well models handle natural language negation. However, these benchmarks lack the controlled example paradigms that would allow us to infer whether a model had learned how negation morphemes semantically scope. To fill these analytical gaps, we present the Scoped Negation NLI (ScoNe-NLI) benchmark, which contains contrast sets of six examples with up to two negations where either zero, one, or both negative morphemes affect the NLI label. We use ScoNe-NLI to assess fine-tuning and in-context learning strategies. We find that RoBERTa and DeBERTa models solve ScoNe-NLI after many shot fine-tuning. For in-context learning, we test InstructGPT models and find that most prompt strategies are not successful, including those using step-by-step reasoning. To better understand this result, we extend ScoNe with ScoNe-NLG, a sentence completion test set that embeds negation reasoning in short narratives. Here, InstructGPT is successful, which reveals the model can correctly reason about negation, but struggles to do so on prompt-adapted NLI examples outside of its core pretraining regime.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1816,
+  "title": "DoMo-AC: Doubly Multi-step Off-policy Actor-Critic Algorithm",
+  "org": "deepmind",
+  "date": "2023-05-29",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2305.18501",
+  "abstract": "Multi-step learning applies lookahead over multiple time steps and has proved valuable in policy evaluation settings. However, in the optimal control case, the impact of multi-step learning has been relatively limited despite a number of prior efforts. Fundamentally, this might be because multi-step policy improvements require operations that cannot be approximated by stochastic samples, hence hindering the widespread adoption of such methods in practice. To address such limitations, we introduce doubly multi-step off-policy VI (DoMo-VI), a novel oracle algorithm that combines multi-step policy improvements and policy evaluations. DoMo-VI enjoys guaranteed convergence speed-up to the optimal policy and is applicable in general off-policy learning settings. We then propose doubly multi-step off-policy actor-critic (DoMo-AC), a practical instantiation of the DoMo-VI algorithm. DoMo-AC introduces a bias-variance trade-off that ensures improved policy gradient estimates. When combined with the IMPALA architecture, DoMo-AC has showed improvements over the baseline algorithm on Atari-57 game benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1815,
+  "title": "VA-learning as a more efficient alternative to Q-learning",
+  "org": "deepmind",
+  "date": "2023-05-29",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2305.18161",
+  "abstract": "In reinforcement learning, the advantage function is critical for policy improvement, but is often extracted from a learned Q-function. A natural question is: Why not learn the advantage function directly? In this work, we introduce VA-learning, which directly learns advantage function and value function using bootstrapping, without explicit reference to Q-functions. VA-learning learns off-policy and enjoys similar theoretical guarantees as Q-learning. Thanks to the direct learning of advantage function and value function, VA-learning improves the sample efficiency over Q-learning both in tabular implementations and deep RL agents on Atari-57 games. We also identify a close connection between VA-learning and the dueling architecture, which partially explains why a simple architectural change to DQN agents tends to improve performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1814,
+  "title": "NeRF2Real: Sim2real Transfer of Vision-guided Bipedal Motion Skills using Neural Radiance Fields",
+  "org": "deepmind",
+  "date": "2023-05-29",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra48891.2023.10161544",
+  "abstract": "We present a system for applying sim2real approaches to “in the wild” scenes with realistic visuals, and to policies which rely on active perception using RGB cameras. Given a short video of a static scene collected using a generic phone, we learn the scene's contact geometry and a function for novel view synthesis using a Neural Radiance Field (NeRF). We augment the NeRF rendering of the static scene by overlaying the rendering of other dynamic objects (e.g. the robot's own body, a ball). A simulation is then created using the rendering engine in a physics simulator which computes contact dynamics from the static scene geometry (estimated from the NeRF vol-ume density) and the dynamic objects' geometry and physical properties (assumed known). We demonstrate that we can use this simulation to learn vision-based whole body navigation and ball pushing policies for a 20 degree-of-freedom humanoid robot with an actuated head-mounted RGB camera, and we successfully transfer these policies to a real robot.",
+  "needs_fetch": false
+ },
+ {
+  "id": 552,
+  "title": "A Systematic Study and Comprehensive Evaluation of ChatGPT on Benchmark Datasets",
+  "org": "other",
+  "date": "2023-05-29",
+  "venue": "ACL 2023",
+  "url": "https://arxiv.org/abs/2305.18486",
+  "abstract": "The development of large language models (LLMs) such as ChatGPT has brought a lot of attention recently. However, their evaluation in the benchmark academic datasets remains under-explored due to the difficulty of evaluating the generative outputs produced by this model against the ground truth. In this paper, we aim to present a thorough evaluation of ChatGPT's performance on diverse academic datasets, covering tasks like question-answering, text summarization, code generation, commonsense reasoning, mathematical problem-solving, machine translation, bias detection, and ethical considerations. Specifically, we evaluate ChatGPT across 140 tasks and analyze 255K responses it generates in these datasets. This makes our work the largest evaluation of ChatGPT in NLP benchmarks. In short, our study aims to validate the strengths and weaknesses of ChatGPT in various tasks and provide insights for future research using LLMs. We also report a new emergent ability to follow multi-query instructions that we mostly found in ChatGPT and other instruction-tuned models. Our extensive evaluation shows that even though ChatGPT is capable of performing a wide variety of tasks, and may obtain impressive performance in several benchmark datasets, it is still far from achieving the ability to reliably solve many challenging tasks. By providing a thorough assessment of ChatGPT's performance across diverse NLP tasks, this paper sets the stage for a targeted deployment of ChatGPT-like LLMs in real-",
+  "needs_fetch": false
+ }
+]

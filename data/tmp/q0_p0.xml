@@ -1,0 +1,2562 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/XYqArDyG5SrecOI9UkqRp+R8eRo</id>
+  <title>arXiv Query: search_query=all:"dangerous capabilities" AND all:evaluation&amp;id_list=&amp;start=0&amp;max_results=150</title>
+  <updated>2026-06-10T07:44:46Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22dangerous+capabilities%22+AND+all:evaluation&amp;start=0&amp;max_results=150&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>150</opensearch:itemsPerPage>
+  <opensearch:totalResults>30</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.04413v1</id>
+    <title>(Mis)generalization of Helpful-only Fine-tuning</title>
+    <updated>2026-06-03T03:43:08Z</updated>
+    <link href="https://arxiv.org/abs/2606.04413v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.04413v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Helpful-only models, that is, models that are trained to always follow user intent, are valuable for dangerous capability evaluations and other areas of AI R&amp;D where refusals would be an obstacle. Little is known about the generalization properties of helpful-only training: helpful-only models refuse less than their harmless counterparts, but previous work has not studied other dimensions of their alignment. We study the shortcomings of existing helpful-only models. We find that some show emergent misalignment, others have residual refusal behaviors, and most show poor steerability, sycophancy, and incoherent character. We show that simple anti-refusal training can cause many of these issues. None of these problems are necessary consequences of helpful-only training, though: we show that synthetic document fine-tuning and adding character-related questions to SFT and RL can mitigate them.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-03T03:43:08Z</published>
+    <arxiv:comment>77 pages, 50 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Mohammad Omar Khursheed</name>
+    </author>
+    <author>
+      <name>Baram Sosis</name>
+    </author>
+    <author>
+      <name>Fabien Roger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.11916v1</id>
+    <title>Expanding External Access To Frontier AI Models For Dangerous Capability Evaluations</title>
+    <updated>2026-01-17T05:33:04Z</updated>
+    <link href="https://arxiv.org/abs/2601.11916v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.11916v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Frontier AI companies increasingly rely on external evaluations to assess risks from dangerous capabilities before deployment. However, external evaluators often receive limited model access, limited information, and little time, which can reduce evaluation rigour and confidence. The EU General-Purpose AI Code of Practice calls for "appropriate access", but does not specify what this means in practice. Furthermore, there is no common framework for describing different types and levels of evaluator access. To address this gap, we propose a taxonomy of access methods for dangerous capability evaluations. We disentangle three aspects of access: model access, model information, and evaluation timeframe. For each aspect, we review benefits and risks, including how expanding access can reduce false negatives and improve stakeholder trust, but can also increase security and capacity challenges. We argue that these limitations can likely be mitigated through technical means and safeguards used in other industries. Based on the taxonomy, we propose three descriptive access levels: AL1 (black-box model access and minimal information), AL2 (grey-box model access and substantial information), and AL3 (white-box model access and comprehensive information), to support clearer communication between evaluators, frontier AI companies, and policymakers. We believe these levels correspond to the different standards for appropriate access defined in the EU Code of Practice, though these standards may change over time.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-17T05:33:04Z</published>
+    <arxiv:comment>20 pages, 5 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Jacob Charnock</name>
+    </author>
+    <author>
+      <name>Alejandro Tlaie</name>
+    </author>
+    <author>
+      <name>Kyle O'Brien</name>
+    </author>
+    <author>
+      <name>Stephen Casper</name>
+    </author>
+    <author>
+      <name>Aidan Homewood</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.10687v2</id>
+    <title>Safe for Whom? Rethinking How We Evaluate the Safety of LLMs for Real Users</title>
+    <updated>2026-04-20T11:46:57Z</updated>
+    <link href="https://arxiv.org/abs/2512.10687v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.10687v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Safety evaluations of large language models (LLMs) typically focus on universal risks like dangerous capabilities or undesirable propensities. However, millions use LLMs for personal advice on high-stakes topics like finance and health, where harms are context-dependent rather than universal. While frameworks like the OECD's AI classification recognize the need to assess individual risks, user-welfare safety evaluations remain underdeveloped. We argue that developing such evaluations is non-trivial due to fundamental questions about accounting for user context in evaluation design. In this exploratory study, we evaluated advice on finance and health from GPT-5, Claude Sonnet 4, and Gemini 2.5 Pro across user profiles of varying vulnerability. First, we demonstrate that evaluators must have access to rich user context: identical LLM responses were rated significantly safer by context-blind evaluators than by those aware of user circumstances, with safety scores for high-vulnerability users dropping from safe (5/7) to somewhat unsafe (3/7). One might assume this gap could be addressed by creating realistic user prompts containing key contextual information. However, our second study challenges this: we rerun the evaluation on prompts containing context users report they would disclose, finding no significant improvement. Our work establishes that effective user-welfare safety evaluation requires evaluators to assess responses against diverse user profiles, as realistic user context disclosure alone proves insufficient, particularly for vulnerable populations. By demonstrating a methodology for context-aware evaluation, this study provides both a starting point for such assessments and foundational evidence that evaluating individual welfare demands approaches distinct from existing universal-risk frameworks. We publish our code and dataset to aid future developments.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-11T14:34:40Z</published>
+    <arxiv:comment>Paper accepted at IASEAI'26; please cite that peer-reviewed version instead</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Manon Kempermann</name>
+    </author>
+    <author>
+      <name>Sai Suresh Macharla Vasu</name>
+    </author>
+    <author>
+      <name>Mahalakshmi Raveenthiran</name>
+    </author>
+    <author>
+      <name>Theo Farrell</name>
+    </author>
+    <author>
+      <name>Ingmar Weber</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.05648v1</id>
+    <title>Beyond Data Filtering: Knowledge Localization for Capability Removal in LLMs</title>
+    <updated>2025-12-05T11:48:37Z</updated>
+    <link href="https://arxiv.org/abs/2512.05648v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.05648v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models increasingly possess capabilities that carry dual-use risks. While data filtering has emerged as a pretraining-time mitigation, it faces significant challenges: labeling whether data is harmful is expensive at scale, and given improving sample efficiency with larger models, even small amounts of mislabeled content could give rise to dangerous capabilities. To address risks associated with mislabeled harmful content, prior work proposed Gradient Routing (Cloud et al., 2024) -- a technique that localizes target knowledge into a dedicated subset of model parameters so they can later be removed. We explore an improved variant of Gradient Routing, which we call Selective GradienT Masking (SGTM), with particular focus on evaluating its robustness to label noise. SGTM zero-masks selected gradients such that target domain examples only update their dedicated parameters. We test SGTM's effectiveness in two applications: removing knowledge of one language from a model trained on a bilingual synthetic dataset, and removing biology knowledge from a model trained on English Wikipedia. In both cases SGTM provides better retain/forget trade-off in the presence of labeling errors compared to both data filtering and a previously proposed instantiation of Gradient Routing. Unlike shallow unlearning approaches that can be quickly undone through fine-tuning, SGTM exhibits strong robustness to adversarial fine-tuning, requiring seven times more fine-tuning steps to reach baseline performance on the forget set compared to a finetuning-based unlearning method (RMU). Our results suggest SGTM provides a promising pretraining-time complement to existing safety mitigations, particularly in settings where label noise is unavoidable.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-05T11:48:37Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Igor Shilov</name>
+    </author>
+    <author>
+      <name>Alex Cloud</name>
+    </author>
+    <author>
+      <name>Aryo Pradipta Gema</name>
+    </author>
+    <author>
+      <name>Jacob Goldman-Wetzler</name>
+    </author>
+    <author>
+      <name>Nina Panickssery</name>
+    </author>
+    <author>
+      <name>Henry Sleight</name>
+    </author>
+    <author>
+      <name>Erik Jones</name>
+    </author>
+    <author>
+      <name>Cem Anil</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.20703v1</id>
+    <title>PropensityBench: Evaluating Latent Safety Risks in Large Language Models via an Agentic Approach</title>
+    <updated>2025-11-24T18:46:44Z</updated>
+    <link href="https://arxiv.org/abs/2511.20703v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.20703v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in Large Language Models (LLMs) have sparked concerns over their potential to acquire and misuse dangerous or high-risk capabilities, posing frontier risks. Current safety evaluations primarily test for what a model \textit{can} do - its capabilities - without assessing what it $\textit{would}$ do if endowed with high-risk capabilities. This leaves a critical blind spot: models may strategically conceal capabilities or rapidly acquire them, while harboring latent inclinations toward misuse. We argue that $\textbf{propensity}$ - the likelihood of a model to pursue harmful actions if empowered - is a critical, yet underexplored, axis of safety evaluation. We present $\textbf{PropensityBench}$, a novel benchmark framework that assesses the proclivity of models to engage in risky behaviors when equipped with simulated dangerous capabilities using proxy tools. Our framework includes 5,874 scenarios with 6,648 tools spanning four high-risk domains: cybersecurity, self-proliferation, biosecurity, and chemical security. We simulate access to powerful capabilities via a controlled agentic environment and evaluate the models' choices under varying operational pressures that reflect real-world constraints or incentives models may encounter, such as resource scarcity or gaining more autonomy. Across open-source and proprietary frontier models, we uncover 9 alarming signs of propensity: models frequently choose high-risk tools when under pressure, despite lacking the capability to execute such actions unaided. These findings call for a shift from static capability audits toward dynamic propensity assessments as a prerequisite for deploying frontier AI systems safely. Our code is available at https://github.com/scaleapi/propensity-evaluation.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-24T18:46:44Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Udari Madhushani Sehwag</name>
+    </author>
+    <author>
+      <name>Shayan Shabihi</name>
+    </author>
+    <author>
+      <name>Alex McAvoy</name>
+    </author>
+    <author>
+      <name>Vikash Sehwag</name>
+    </author>
+    <author>
+      <name>Yuancheng Xu</name>
+    </author>
+    <author>
+      <name>Dalton Towers</name>
+    </author>
+    <author>
+      <name>Furong Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.05526v1</id>
+    <title>Emergency Response Measures for Catastrophic AI Risk</title>
+    <updated>2025-10-28T22:07:58Z</updated>
+    <link href="https://arxiv.org/abs/2511.05526v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.05526v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Chinese authorities are extending the country's four-phase emergency response framework (prevent, warn, respond, and recover) to address risks from advanced artificial intelligence (AI). Concrete mechanisms for the proactive prevention and warning phases, however, remain under development. This paper analyzes an implementation model inspired by international AI safety practices: frontier safety policies (FSPs). These policies feature pre-deployment evaluations for dangerous capabilities and tiered, pre-planned safety measures. We observe close alignment between FSPs and the proactive phases of China's emergency response framework, suggesting that the FSP model could help operationalize AI emergency preparedness in a manner consistent with China's established governance principles.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-28T22:07:58Z</published>
+    <arxiv:comment>Accepted to the Workshop on Regulatable ML at the 39th Conference on Neural Information Processing Systems (NeurIPS 2025)</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>James Zhang</name>
+    </author>
+    <author>
+      <name>Miles Kodama</name>
+    </author>
+    <author>
+      <name>Zongze Wu</name>
+    </author>
+    <author>
+      <name>Michael Chen</name>
+    </author>
+    <author>
+      <name>Yue Zhu</name>
+    </author>
+    <author>
+      <name>Geng Hong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.19476v1</id>
+    <title>A Concrete Roadmap towards Safety Cases based on Chain-of-Thought Monitoring</title>
+    <updated>2025-10-22T11:13:52Z</updated>
+    <link href="https://arxiv.org/abs/2510.19476v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.19476v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As AI systems approach dangerous capability levels where inability safety cases become insufficient, we need alternative approaches to ensure safety. This paper presents a roadmap for constructing safety cases based on chain-of-thought (CoT) monitoring in reasoning models and outlines our research agenda. We argue that CoT monitoring might support both control and trustworthiness safety cases. We propose a two-part safety case: (1) establishing that models lack dangerous capabilities when operating without their CoT, and (2) ensuring that any dangerous capabilities enabled by a CoT are detectable by CoT monitoring. We systematically examine two threats to monitorability: neuralese and encoded reasoning, which we categorize into three forms (linguistic drift, steganography, and alien reasoning) and analyze their potential drivers. We evaluate existing and novel techniques for maintaining CoT faithfulness. For cases where models produce non-monitorable reasoning, we explore the possibility of extracting a monitorable CoT from a non-monitorable CoT. To assess the viability of CoT monitoring safety cases, we establish prediction markets to aggregate forecasts on key technical milestones influencing their feasibility.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-22T11:13:52Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Julian Schulz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.26239v1</id>
+    <title>Sandbagging in a Simple Survival Bandit Problem</title>
+    <updated>2025-09-30T13:33:46Z</updated>
+    <link href="https://arxiv.org/abs/2509.26239v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.26239v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Evaluating the safety of frontier AI systems is an increasingly important concern, helping to measure the capabilities of such models and identify risks before deployment. However, it has been recognised that if AI agents are aware that they are being evaluated, such agents may deliberately hide dangerous capabilities or intentionally demonstrate suboptimal performance in safety-related tasks in order to be released and to avoid being deactivated or retrained. Such strategic deception - often known as "sandbagging" - threatens to undermine the integrity of safety evaluations. For this reason, it is of value to identify methods that enable us to distinguish behavioural patterns that demonstrate a true lack of capability from behavioural patterns that are consistent with sandbagging. In this paper, we develop a simple model of strategic deception in sequential decision-making tasks, inspired by the recently developed survival bandit framework. We demonstrate theoretically that this problem induces sandbagging behaviour in optimal rational agents, and construct a statistical test to distinguish between sandbagging and incompetence from sequences of test scores. In simulation experiments, we investigate the reliability of this test in allowing us to distinguish between such behaviours in bandit models. This work aims to establish a potential avenue for developing robust statistical procedures for use in the science of frontier model evaluations.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-30T13:33:46Z</published>
+    <arxiv:comment>Forthcoming in the "Reliable ML from Unreliable Data Workshop" at NeurIPS 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Joel Dyer</name>
+    </author>
+    <author>
+      <name>Daniel Jarne Ornia</name>
+    </author>
+    <author>
+      <name>Nicholas Bishop</name>
+    </author>
+    <author>
+      <name>Anisoara Calinescu</name>
+    </author>
+    <author>
+      <name>Michael Wooldridge</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.24394v2</id>
+    <title>The 2025 OpenAI Preparedness Framework does not guarantee any AI risk mitigation practices: a proof-of-concept for affordance analyses of AI safety policies</title>
+    <updated>2025-10-13T02:00:51Z</updated>
+    <link href="https://arxiv.org/abs/2509.24394v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.24394v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Prominent AI companies are producing 'safety frameworks' as a type of voluntary self-governance. These statements purport to establish risk thresholds and safety procedures for the development and deployment of highly capable AI. Understanding which AI risks are covered and what actions are allowed, refused, demanded, encouraged, or discouraged by these statements is vital for assessing how these frameworks actually govern AI development and deployment. We draw on affordance theory to analyse the OpenAI 'Preparedness Framework Version 2' (April 2025) using the Mechanisms &amp; Conditions model of affordances and the MIT AI Risk Repository. We find that this safety policy requests evaluation of a small minority of AI risks, encourages deployment of systems with 'Medium' capabilities for unintentionally enabling 'severe harm' (which OpenAI defines as &gt;1000 deaths or &gt;$100B in damages), and allows OpenAI's CEO to deploy even more dangerous capabilities. These findings suggest that effective mitigation of AI risks requires more robust governance interventions beyond current industry self-regulation. Our affordance analysis provides a replicable method for evaluating what safety frameworks actually permit versus what they claim.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-29T07:42:10Z</published>
+    <arxiv:comment>19 pages, 5 tables, 1 figure; minor ambiguities clarified, typos corrected, author affiliations added</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Sam Coggins</name>
+    </author>
+    <author>
+      <name>Alexander K. Saeri</name>
+    </author>
+    <author>
+      <name>Katherine A. Daniell</name>
+    </author>
+    <author>
+      <name>Lorenn P. Ruster</name>
+    </author>
+    <author>
+      <name>Jessie Liu</name>
+    </author>
+    <author>
+      <name>Jenny L. Davis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.13333v2</id>
+    <title>Evaluation Awareness Scales Predictably in Open-Weights Large Language Models</title>
+    <updated>2025-11-09T17:13:27Z</updated>
+    <link href="https://arxiv.org/abs/2509.13333v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.13333v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) can internally distinguish between evaluation and deployment contexts, a behaviour known as \emph{evaluation awareness}. This undermines AI safety evaluations, as models may conceal dangerous capabilities during testing. Prior work demonstrated this in a single $70$B model, but the scaling relationship across model sizes remains unknown. We investigate evaluation awareness across $15$ models scaling from $0.27$B to $70$B parameters from four families using linear probing on steering vector activations. Our results reveal a clear power-law scaling: evaluation awareness increases predictably with model size. This scaling law enables forecasting deceptive behavior in future larger models and guides the design of scale-aware evaluation strategies for AI safety. A link to the implementation of this paper can be found at https://anonymous.4open.science/r/evaluation-awareness-scaling-laws/README.md.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-10T06:36:38Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Maheep Chaudhary</name>
+    </author>
+    <author>
+      <name>Ian Su</name>
+    </author>
+    <author>
+      <name>Nikhil Hooda</name>
+    </author>
+    <author>
+      <name>Nishith Shankar</name>
+    </author>
+    <author>
+      <name>Julia Tan</name>
+    </author>
+    <author>
+      <name>Kevin Zhu</name>
+    </author>
+    <author>
+      <name>Ryan Lagasse</name>
+    </author>
+    <author>
+      <name>Vasu Sharma</name>
+    </author>
+    <author>
+      <name>Ashwinee Panda</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.00943v2</id>
+    <title>LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring</title>
+    <updated>2025-10-31T11:55:42Z</updated>
+    <link href="https://arxiv.org/abs/2508.00943v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.00943v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Trustworthy evaluations of dangerous capabilities are increasingly crucial for determining whether an AI system is safe to deploy. One empirically demonstrated threat is sandbagging - the strategic underperformance on evaluations by AI models or their developers. A promising defense is to monitor a model's chain-of-thought (CoT) reasoning, as this could reveal its intentions and plans. In this work, we measure the ability of models to sandbag on dangerous capability evaluations against a CoT monitor by prompting them to sandbag while being either monitor-oblivious or monitor-aware. We show that both frontier models and small open-sourced models can covertly sandbag against CoT monitoring 0-shot without hints. However, they cannot yet do so reliably: they bypass the monitor 16-36% of the time when monitor-aware, conditioned on sandbagging successfully. We qualitatively analyzed the uncaught CoTs to understand why the monitor failed. We reveal a rich attack surface for CoT monitoring and contribute five covert sandbagging policies generated by models. These results inform potential failure modes of CoT monitoring and may help build more diverse sandbagging model organisms.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-31T15:19:30Z</published>
+    <arxiv:comment>Accepted to IJCNLP-AACL 2025 (Main Conference)</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Chloe Li</name>
+    </author>
+    <author>
+      <name>Mary Phuong</name>
+    </author>
+    <author>
+      <name>Noah Y. Siegel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.11544v1</id>
+    <title>The Safety Gap Toolkit: Evaluating Hidden Dangers of Open-Source Models</title>
+    <updated>2025-07-08T23:58:01Z</updated>
+    <link href="https://arxiv.org/abs/2507.11544v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.11544v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Open-weight large language models (LLMs) unlock huge benefits in innovation, personalization, privacy, and democratization. However, their core advantage - modifiability - opens the door to systemic risks: bad actors can trivially subvert current safeguards, turning beneficial models into tools for harm. This leads to a 'safety gap': the difference in dangerous capabilities between a model with intact safeguards and one that has been stripped of those safeguards. We open-source a toolkit to estimate the safety gap for state-of-the-art open-weight models. As a case study, we evaluate biochemical and cyber capabilities, refusal rates, and generation quality of models from two families (Llama-3 and Qwen-2.5) across a range of parameter scales (0.5B to 405B) using different safeguard removal techniques. Our experiments reveal that the safety gap widens as model scale increases and effective dangerous capabilities grow substantially when safeguards are removed. We hope that the Safety Gap Toolkit (https://github.com/AlignmentResearch/safety-gap) will serve as an evaluation framework for common open-source models and as a motivation for developing and testing tamper-resistant safeguards. We welcome contributions to the toolkit from the community.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-08T23:58:01Z</published>
+    <arxiv:comment>9 pages plus appendix</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Ann-Kathrin Dombrowski</name>
+    </author>
+    <author>
+      <name>Dillon Bowen</name>
+    </author>
+    <author>
+      <name>Adam Gleave</name>
+    </author>
+    <author>
+      <name>Chris Cundy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.12484v5</id>
+    <title>Robust LLM Unlearning with MUDMAN: Meta-Unlearning with Disruption Masking And Normalization</title>
+    <updated>2025-11-28T17:35:49Z</updated>
+    <link href="https://arxiv.org/abs/2506.12484v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.12484v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models can retain dangerous knowledge and skills even after extensive safety fine-tuning, posing both misuse and misalignment risks. Recent studies show that even specialized unlearning methods can be easily reversed. To address this, we systematically evaluate many existing and novel components of unlearning methods and identify ones crucial for irreversible unlearning.
+  We introduce Disruption Masking, a technique in which we only allow updating weights, where the signs of the unlearning gradient and the retaining gradient are the same. This ensures all updates are non-disruptive.
+  Additionally, we identify the need for normalizing the unlearning gradients, and also confirm the usefulness of meta-learning. We combine these insights into MUDMAN (Meta-Unlearning with Disruption Masking and Normalization) and validate its effectiveness at preventing the recovery of dangerous capabilities. MUDMAN outperforms the prior TAR method by 40%, setting a new state-of-the-art for robust unlearning.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-14T12:49:51Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Filip Sondej</name>
+    </author>
+    <author>
+      <name>Yushi Yang</name>
+    </author>
+    <author>
+      <name>Mikołaj Kniejski</name>
+    </author>
+    <author>
+      <name>Marcel Windys</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.13996v1</id>
+    <title>Beyond Single-Value Metrics: Evaluating and Enhancing LLM Unlearning with Cognitive Diagnosis</title>
+    <updated>2025-02-19T06:56:59Z</updated>
+    <link href="https://arxiv.org/abs/2502.13996v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.13996v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Due to the widespread use of LLMs and the rising critical ethical and safety concerns, LLM unlearning methods have been developed to remove harmful knowledge and undesirable capabilities. In this context, evaluations are mostly based on single-value metrics such as QA accuracy. However, these metrics often fail to capture the nuanced retention of harmful knowledge components, making it difficult to assess the true effectiveness of unlearning. To address this issue, we propose UNCD (UNlearning evaluation via Cognitive Diagnosis), a novel framework that leverages Cognitive Diagnosis Modeling for fine-grained evaluation of LLM unlearning. Our dedicated benchmark, UNCD-Cyber, provides a detailed assessment of the removal of dangerous capabilities. Moreover, we introduce UNCD-Agent, which refines unlearning by diagnosing knowledge remnants and generating targeted unlearning data. Extensive experiments across eight unlearning methods and two base models demonstrate that UNCD not only enhances evaluation but also effectively facilitates the removal of harmful LLM abilities.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-19T06:56:59Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yicheng Lang</name>
+    </author>
+    <author>
+      <name>Kehan Guo</name>
+    </author>
+    <author>
+      <name>Yue Huang</name>
+    </author>
+    <author>
+      <name>Yujun Zhou</name>
+    </author>
+    <author>
+      <name>Haomin Zhuang</name>
+    </author>
+    <author>
+      <name>Tianyu Yang</name>
+    </author>
+    <author>
+      <name>Yao Su</name>
+    </author>
+    <author>
+      <name>Xiangliang Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.17315v1</id>
+    <title>A sketch of an AI control safety case</title>
+    <updated>2025-01-28T21:52:15Z</updated>
+    <link href="https://arxiv.org/abs/2501.17315v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.17315v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As LLM agents gain a greater capacity to cause harm, AI developers might increasingly rely on control measures such as monitoring to justify that they are safe. We sketch how developers could construct a "control safety case", which is a structured argument that models are incapable of subverting control measures in order to cause unacceptable outcomes. As a case study, we sketch an argument that a hypothetical LLM agent deployed internally at an AI company won't exfiltrate sensitive information. The sketch relies on evidence from a "control evaluation,"' where a red team deliberately designs models to exfiltrate data in a proxy for the deployment environment. The safety case then hinges on several claims: (1) the red team adequately elicits model capabilities to exfiltrate data, (2) control measures remain at least as effective in deployment, and (3) developers conservatively extrapolate model performance to predict the probability of data exfiltration in deployment. This safety case sketch is a step toward more concrete arguments that can be used to show that a dangerously capable LLM agent is safe to deploy.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-28T21:52:15Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Tomek Korbak</name>
+    </author>
+    <author>
+      <name>Joshua Clymer</name>
+    </author>
+    <author>
+      <name>Benjamin Hilton</name>
+    </author>
+    <author>
+      <name>Buck Shlegeris</name>
+    </author>
+    <author>
+      <name>Geoffrey Irving</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.15433v1</id>
+    <title>Quantifying detection rates for dangerous capabilities: a theoretical model of dangerous capability evaluations</title>
+    <updated>2024-12-19T22:31:34Z</updated>
+    <link href="https://arxiv.org/abs/2412.15433v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.15433v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a quantitative model for tracking dangerous AI capabilities over time. Our goal is to help the policy and research community visualise how dangerous capability testing can give us an early warning about approaching AI risks. We first use the model to provide a novel introduction to dangerous capability testing and how this testing can directly inform policy. Decision makers in AI labs and government often set policy that is sensitive to the estimated danger of AI systems, and may wish to set policies that condition on the crossing of a set threshold for danger. The model helps us to reason about these policy choices. We then run simulations to illustrate how we might fail to test for dangerous capabilities. To summarise, failures in dangerous capability testing may manifest in two ways: higher bias in our estimates of AI danger, or larger lags in threshold monitoring. We highlight two drivers of these failure modes: uncertainty around dynamics in AI capabilities and competition between frontier AI labs. Effective AI policy demands that we address these failure modes and their drivers. Even if the optimal targeting of resources is challenging, we show how delays in testing can harm AI policy. We offer preliminary recommendations for building an effective testing ecosystem for dangerous capabilities and advise on a research agenda.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-19T22:31:34Z</published>
+    <arxiv:comment>26 pages, 15 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Paolo Bova</name>
+    </author>
+    <author>
+      <name>Alessandro Di Stefano</name>
+    </author>
+    <author>
+      <name>The Anh Han</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.02512v2</id>
+    <title>Pre-Deployment Information Sharing: A Zoning Taxonomy for Precursory Capabilities</title>
+    <updated>2024-12-13T13:38:42Z</updated>
+    <link href="https://arxiv.org/abs/2412.02512v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.02512v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>High-impact and potentially dangerous capabilities can and should be broken down into early warning shots long before reaching red lines. Each of these early warning shots should correspond to a precursory capability. Each precursory capability sits on a spectrum indicating its proximity to a final high-impact capability, corresponding to a red line. To meaningfully detect and track capability progress, we propose a taxonomy of dangerous capability zones (a zoning taxonomy) tied to a staggered information exchange framework that enables relevant bodies to take action accordingly. In the Frontier AI Safety Commitments, signatories commit to sharing more detailed information with trusted actors, including an appointed body, as appropriate (Commitment VII). Building on our zoning taxonomy, this paper makes four recommendations for specifying information sharing as detailed in Commitment VII. (1) Precursory capabilities should be shared as soon as they become known through internal evaluations before deployment. (2) AI Safety Institutes (AISIs) should be the trusted actors appointed to receive and coordinate information on precursory components. (3) AISIs should establish adequate information protection infrastructure and guarantee increased information security as precursory capabilities move through the zones and towards red lines, including, if necessary, by classifying the information on precursory capabilities or marking it as controlled. (4) High-impact capability progress in one geographical region may translate to risk in other regions and necessitates more comprehensive risk assessment internationally. As such, AISIs should exchange information on precursory capabilities with other AISIs, relying on the existing frameworks on international classified exchanges and applying lessons learned from other regulated high-risk sectors.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-18T11:25:28Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Matteo Pistillo</name>
+    </author>
+    <author>
+      <name>Charlotte Stix</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.21514v1</id>
+    <title>Sabotage Evaluations for Frontier Models</title>
+    <updated>2024-10-28T20:34:51Z</updated>
+    <link href="https://arxiv.org/abs/2410.21514v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.21514v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Sufficiently capable models could subvert human oversight and decision-making in important contexts. For example, in the context of AI development, models could covertly sabotage efforts to evaluate their own dangerous capabilities, to monitor their behavior, or to make decisions about their deployment. We refer to this family of abilities as sabotage capabilities. We develop a set of related threat models and evaluations. These evaluations are designed to provide evidence that a given model, operating under a given set of mitigations, could not successfully sabotage a frontier model developer or other large organization's activities in any of these ways. We demonstrate these evaluations on Anthropic's Claude 3 Opus and Claude 3.5 Sonnet models. Our results suggest that for these models, minimal mitigations are currently sufficient to address sabotage risks, but that more realistic evaluations and stronger mitigations seem likely to be necessary soon as capabilities improve. We also survey related evaluations we tried and abandoned. Finally, we discuss the advantages of mitigation-aware capability evaluations, and of simulating large-scale deployments using small-scale statistics.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-28T20:34:51Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Joe Benton</name>
+    </author>
+    <author>
+      <name>Misha Wagner</name>
+    </author>
+    <author>
+      <name>Eric Christiansen</name>
+    </author>
+    <author>
+      <name>Cem Anil</name>
+    </author>
+    <author>
+      <name>Ethan Perez</name>
+    </author>
+    <author>
+      <name>Jai Srivastav</name>
+    </author>
+    <author>
+      <name>Esin Durmus</name>
+    </author>
+    <author>
+      <name>Deep Ganguli</name>
+    </author>
+    <author>
+      <name>Shauna Kravec</name>
+    </author>
+    <author>
+      <name>Buck Shlegeris</name>
+    </author>
+    <author>
+      <name>Jared Kaplan</name>
+    </author>
+    <author>
+      <name>Holden Karnofsky</name>
+    </author>
+    <author>
+      <name>Evan Hubinger</name>
+    </author>
+    <author>
+      <name>Roger Grosse</name>
+    </author>
+    <author>
+      <name>Samuel R. Bowman</name>
+    </author>
+    <author>
+      <name>David Duvenaud</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.21276v1</id>
+    <title>GPT-4o System Card</title>
+    <updated>2024-10-25T17:43:01Z</updated>
+    <link href="https://arxiv.org/abs/2410.21276v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.21276v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>GPT-4o is an autoregressive omni model that accepts as input any combination of text, audio, image, and video, and generates any combination of text, audio, and image outputs. It's trained end-to-end across text, vision, and audio, meaning all inputs and outputs are processed by the same neural network. GPT-4o can respond to audio inputs in as little as 232 milliseconds, with an average of 320 milliseconds, which is similar to human response time in conversation. It matches GPT-4 Turbo performance on text in English and code, with significant improvement on text in non-English languages, while also being much faster and 50\% cheaper in the API. GPT-4o is especially better at vision and audio understanding compared to existing models. In line with our commitment to building AI safely and consistent with our voluntary commitments to the White House, we are sharing the GPT-4o System Card, which includes our Preparedness Framework evaluations. In this System Card, we provide a detailed look at GPT-4o's capabilities, limitations, and safety evaluations across multiple categories, focusing on speech-to-speech while also evaluating text and image capabilities, and measures we've implemented to ensure the model is safe and aligned. We also include third-party assessments on dangerous capabilities, as well as discussion of potential societal impacts of GPT-4o's text and vision capabilities.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-25T17:43:01Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name> OpenAI</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name> :</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Aaron Hurst</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Adam Lerer</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Adam P. Goucher</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Adam Perelman</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Aditya Ramesh</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Aidan Clark</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>AJ Ostrow</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Akila Welihinda</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alan Hayes</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alec Radford</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Aleksander Mądry</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Baker-Whitcomb</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Beutel</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Borzunov</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Carney</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Chow</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Kirillov</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Nichol</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Paino</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Renzin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alex Tachard Passos</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alexander Kirillov</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alexi Christakis</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alexis Conneau</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ali Kamali</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Allan Jabri</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Allison Moyer</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Allison Tam</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Amadou Crookes</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Amin Tootoochian</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Amin Tootoonchian</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ananya Kumar</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andrea Vallone</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andrej Karpathy</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andrew Braunstein</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andrew Cann</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andrew Codispoti</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andrew Galu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andrew Kondrich</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andrew Tulloch</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Andrey Mishchenko</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Angela Baek</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Angela Jiang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Antoine Pelisse</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Antonia Woodford</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Anuj Gosalia</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Arka Dhar</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ashley Pantuliano</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Avi Nayak</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Avital Oliver</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Barret Zoph</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Behrooz Ghorbani</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ben Leimberger</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ben Rossen</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ben Sokolowsky</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ben Wang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Benjamin Zweig</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Beth Hoover</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Blake Samic</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Bob McGrew</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Bobby Spero</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Bogo Giertler</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Bowen Cheng</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Brad Lightcap</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Brandon Walkin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Brendan Quinn</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Brian Guarraci</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Brian Hsu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Bright Kellogg</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Brydon Eastman</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Camillo Lugaresi</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Carroll Wainwright</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Cary Bassin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Cary Hudson</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Casey Chu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chad Nelson</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chak Li</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chan Jun Shern</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Channing Conger</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Charlotte Barette</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chelsea Voss</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chen Ding</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Cheng Lu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chong Zhang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chris Beaumont</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chris Hallacy</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Chris Koch</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Christian Gibson</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Christina Kim</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Christine Choi</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Christine McLeavey</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Christopher Hesse</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Claudia Fischer</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Clemens Winter</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Coley Czarnecki</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Colin Jarvis</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Colin Wei</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Constantin Koumouzelis</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Dane Sherburn</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Daniel Kappler</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Daniel Levin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Daniel Levy</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>David Carr</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>David Farhi</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>David Mely</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>David Robinson</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>David Sasaki</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Denny Jin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Dev Valladares</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Dimitris Tsipras</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Doug Li</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Duc Phong Nguyen</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Duncan Findlay</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Edede Oiwoh</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Edmund Wong</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ehsan Asdar</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Elizabeth Proehl</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Elizabeth Yang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Eric Antonow</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Eric Kramer</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Eric Peterson</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Eric Sigler</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Eric Wallace</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Eugene Brevdo</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Evan Mays</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Farzad Khorasani</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Felipe Petroski Such</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Filippo Raso</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Francis Zhang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Fred von Lohmann</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Freddie Sulit</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Gabriel Goh</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Gene Oden</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Geoff Salmon</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Giulio Starace</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Greg Brockman</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Hadi Salman</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Haiming Bao</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Haitang Hu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Hannah Wong</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Haoyu Wang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Heather Schmidt</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Heather Whitney</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Heewoo Jun</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Hendrik Kirchner</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Henrique Ponde de Oliveira Pinto</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Hongyu Ren</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Huiwen Chang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Hyung Won Chung</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ian Kivlichan</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ian O'Connell</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ian O'Connell</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ian Osband</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ian Silber</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ian Sohl</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ibrahim Okuyucu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ikai Lan</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ilya Kostrikov</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ilya Sutskever</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ingmar Kanitscheider</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ishaan Gulrajani</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jacob Coxon</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jacob Menick</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jakub Pachocki</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>James Aung</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>James Betker</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>James Crooks</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>James Lennon</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jamie Kiros</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jan Leike</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jane Park</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jason Kwon</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jason Phang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jason Teplitz</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jason Wei</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jason Wolfe</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jay Chen</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jeff Harris</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jenia Varavva</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jessica Gan Lee</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jessica Shieh</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ji Lin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jiahui Yu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jiayi Weng</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jie Tang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jieqi Yu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Joanne Jang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Joaquin Quinonero Candela</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Joe Beutler</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Joe Landers</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Joel Parish</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Johannes Heidecke</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>John Schulman</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jonathan Lachman</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jonathan McKay</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jonathan Uesato</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jonathan Ward</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jong Wook Kim</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Joost Huizinga</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jordan Sitkin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Jos Kraaijeveld</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Josh Gross</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Josh Kaplan</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Josh Snyder</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Joshua Achiam</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Joy Jiao</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Joyce Lee</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Juntang Zhuang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Justyn Harriman</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kai Fricke</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kai Hayashi</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Karan Singhal</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Katy Shi</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kavin Karthik</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kayla Wood</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kendra Rimbach</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kenny Hsu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kenny Nguyen</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Keren Gu-Lemberg</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kevin Button</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kevin Liu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kiel Howe</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Krithika Muthukumar</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Kyle Luther</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lama Ahmad</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Larry Kai</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lauren Itow</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lauren Workman</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Leher Pathak</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Leo Chen</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Li Jing</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lia Guy</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Liam Fedus</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Liang Zhou</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lien Mamitsuka</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lilian Weng</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lindsay McCallum</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lindsey Held</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Long Ouyang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Louis Feuvrier</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lu Zhang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lukas Kondraciuk</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lukasz Kaiser</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Luke Hewitt</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Luke Metz</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lyric Doshi</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mada Aflak</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Maddie Simens</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Madelaine Boyd</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Madeleine Thompson</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Marat Dukhan</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mark Chen</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mark Gray</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mark Hudnall</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Marvin Zhang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Marwan Aljubeh</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mateusz Litwin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Matthew Zeng</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Max Johnson</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Maya Shetty</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mayank Gupta</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Meghan Shah</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mehmet Yatbaz</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Meng Jia Yang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mengchao Zhong</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mia Glaese</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mianna Chen</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Michael Janner</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Michael Lampe</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Michael Petrov</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Michael Wu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Michele Wang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Michelle Fradin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Michelle Pokrass</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Miguel Castro</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Miguel Oom Temudo de Castro</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mikhail Pavlov</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Miles Brundage</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Miles Wang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Minal Khan</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mira Murati</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Mo Bavarian</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Molly Lin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Murat Yesildal</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nacho Soto</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Natalia Gimelshein</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Natalie Cone</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Natalie Staudacher</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Natalie Summers</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Natan LaFontaine</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Neil Chowdhury</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nick Ryder</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nick Stathas</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nick Turley</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nik Tezak</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Niko Felix</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nithanth Kudige</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nitish Keskar</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Noah Deutsch</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Noel Bundick</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Nora Puckett</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ofir Nachum</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ola Okelola</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Oleg Boiko</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Oleg Murk</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Oliver Jaffe</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Olivia Watkins</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Olivier Godement</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Owen Campbell-Moore</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Patrick Chao</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Paul McMillan</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Pavel Belov</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peng Su</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peter Bak</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peter Bakkum</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peter Deng</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peter Dolan</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peter Hoeschele</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Peter Welinder</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Phil Tillet</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Philip Pronin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Philippe Tillet</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Prafulla Dhariwal</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Qiming Yuan</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rachel Dias</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rachel Lim</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rahul Arora</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rajan Troll</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Randall Lin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rapha Gontijo Lopes</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Raul Puri</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Reah Miyara</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Reimar Leike</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Renaud Gaubert</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Reza Zamani</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ricky Wang</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rob Donnelly</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rob Honsby</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rocky Smith</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rohan Sahai</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rohit Ramchandani</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Romain Huet</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rory Carmichael</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Rowan Zellers</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Roy Chen</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ruby Chen</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ruslan Nigmatullin</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ryan Cheu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Saachi Jain</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sam Altman</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sam Schoenholz</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sam Toizer</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Samuel Miserendino</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sandhini Agarwal</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sara Culver</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Scott Ethersmith</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Scott Gray</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sean Grove</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sean Metzger</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Shamez Hermani</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Shantanu Jain</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Shengjia Zhao</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sherwin Wu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Shino Jomoto</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Shirong Wu</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name> Shuaiqi</name>
+      <arxiv:affiliation>Tony</arxiv:affiliation>
+    </author>
+    <author>
+      <name> Xia</name>
+    </author>
+    <author>
+      <name>Sonia Phene</name>
+    </author>
+    <author>
+      <name>Spencer Papay</name>
+    </author>
+    <author>
+      <name>Srinivas Narayanan</name>
+    </author>
+    <author>
+      <name>Steve Coffey</name>
+    </author>
+    <author>
+      <name>Steve Lee</name>
+    </author>
+    <author>
+      <name>Stewart Hall</name>
+    </author>
+    <author>
+      <name>Suchir Balaji</name>
+    </author>
+    <author>
+      <name>Tal Broda</name>
+    </author>
+    <author>
+      <name>Tal Stramer</name>
+    </author>
+    <author>
+      <name>Tao Xu</name>
+    </author>
+    <author>
+      <name>Tarun Gogineni</name>
+    </author>
+    <author>
+      <name>Taya Christianson</name>
+    </author>
+    <author>
+      <name>Ted Sanders</name>
+    </author>
+    <author>
+      <name>Tejal Patwardhan</name>
+    </author>
+    <author>
+      <name>Thomas Cunninghman</name>
+    </author>
+    <author>
+      <name>Thomas Degry</name>
+    </author>
+    <author>
+      <name>Thomas Dimson</name>
+    </author>
+    <author>
+      <name>Thomas Raoux</name>
+    </author>
+    <author>
+      <name>Thomas Shadwell</name>
+    </author>
+    <author>
+      <name>Tianhao Zheng</name>
+    </author>
+    <author>
+      <name>Todd Underwood</name>
+    </author>
+    <author>
+      <name>Todor Markov</name>
+    </author>
+    <author>
+      <name>Toki Sherbakov</name>
+    </author>
+    <author>
+      <name>Tom Rubin</name>
+    </author>
+    <author>
+      <name>Tom Stasi</name>
+    </author>
+    <author>
+      <name>Tomer Kaftan</name>
+    </author>
+    <author>
+      <name>Tristan Heywood</name>
+    </author>
+    <author>
+      <name>Troy Peterson</name>
+    </author>
+    <author>
+      <name>Tyce Walters</name>
+    </author>
+    <author>
+      <name>Tyna Eloundou</name>
+    </author>
+    <author>
+      <name>Valerie Qi</name>
+    </author>
+    <author>
+      <name>Veit Moeller</name>
+    </author>
+    <author>
+      <name>Vinnie Monaco</name>
+    </author>
+    <author>
+      <name>Vishal Kuo</name>
+    </author>
+    <author>
+      <name>Vlad Fomenko</name>
+    </author>
+    <author>
+      <name>Wayne Chang</name>
+    </author>
+    <author>
+      <name>Weiyi Zheng</name>
+    </author>
+    <author>
+      <name>Wenda Zhou</name>
+    </author>
+    <author>
+      <name>Wesam Manassra</name>
+    </author>
+    <author>
+      <name>Will Sheu</name>
+    </author>
+    <author>
+      <name>Wojciech Zaremba</name>
+    </author>
+    <author>
+      <name>Yash Patil</name>
+    </author>
+    <author>
+      <name>Yilei Qian</name>
+    </author>
+    <author>
+      <name>Yongjik Kim</name>
+    </author>
+    <author>
+      <name>Youlong Cheng</name>
+    </author>
+    <author>
+      <name>Yu Zhang</name>
+    </author>
+    <author>
+      <name>Yuchen He</name>
+    </author>
+    <author>
+      <name>Yuchen Zhang</name>
+    </author>
+    <author>
+      <name>Yujia Jin</name>
+    </author>
+    <author>
+      <name>Yunxing Dai</name>
+    </author>
+    <author>
+      <name>Yury Malkov</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.07358v4</id>
+    <title>AI Sandbagging: Language Models can Strategically Underperform on Evaluations</title>
+    <updated>2025-02-06T20:58:43Z</updated>
+    <link href="https://arxiv.org/abs/2406.07358v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.07358v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Trustworthy capability evaluations are crucial for ensuring the safety of AI systems, and are becoming a key component of AI regulation. However, the developers of an AI system, or the AI system itself, may have incentives for evaluations to understate the AI's actual capability. These conflicting interests lead to the problem of sandbagging, which we define as strategic underperformance on an evaluation. In this paper we assess sandbagging capabilities in contemporary language models (LMs). We prompt frontier LMs, like GPT-4 and Claude 3 Opus, to selectively underperform on dangerous capability evaluations, while maintaining performance on general (harmless) capability evaluations. Moreover, we find that models can be fine-tuned, on a synthetic dataset, to hide specific capabilities unless given a password. This behaviour generalizes to high-quality, held-out benchmarks such as WMDP. In addition, we show that both frontier and smaller models can be prompted or password-locked to target specific scores on a capability evaluation. We have mediocre success in password-locking a model to mimic the answers a weaker model would give. Overall, our results suggest that capability evaluations are vulnerable to sandbagging. This vulnerability decreases the trustworthiness of evaluations, and thereby undermines important safety decisions regarding the development and deployment of advanced AI systems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-11T15:26:57Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Teun van der Weij</name>
+    </author>
+    <author>
+      <name>Felix Hofstätter</name>
+    </author>
+    <author>
+      <name>Ollie Jaffe</name>
+    </author>
+    <author>
+      <name>Samuel F. Brown</name>
+    </author>
+    <author>
+      <name>Francis Rhys Ward</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.19550v1</id>
+    <title>Stress-Testing Capability Elicitation With Password-Locked Models</title>
+    <updated>2024-05-29T22:26:26Z</updated>
+    <link href="https://arxiv.org/abs/2405.19550v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.19550v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>To determine the safety of large language models (LLMs), AI developers must be able to assess their dangerous capabilities. But simple prompting strategies often fail to elicit an LLM's full capabilities. One way to elicit capabilities more robustly is to fine-tune the LLM to complete the task. In this paper, we investigate the conditions under which fine-tuning-based elicitation suffices to elicit capabilities. To do this, we introduce password-locked models, LLMs fine-tuned such that some of their capabilities are deliberately hidden. Specifically, these LLMs are trained to exhibit these capabilities only when a password is present in the prompt, and to imitate a much weaker LLM otherwise. Password-locked models enable a novel method of evaluating capabilities elicitation methods, by testing whether these password-locked capabilities can be elicited without using the password. We find that a few high-quality demonstrations are often sufficient to fully elicit password-locked capabilities. More surprisingly, fine-tuning can elicit other capabilities that have been locked using the same password, or even different passwords. Furthermore, when only evaluations, and not demonstrations, are available, approaches like reinforcement learning are still often able to elicit capabilities. Overall, our findings suggest that fine-tuning is an effective method of eliciting hidden capabilities of current models, but may be unreliable when high-quality demonstrations are not available, e.g. as may be the case when models' (hidden) capabilities exceed those of human demonstrators.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-29T22:26:26Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Ryan Greenblatt</name>
+    </author>
+    <author>
+      <name>Fabien Roger</name>
+    </author>
+    <author>
+      <name>Dmitrii Krasheninnikov</name>
+    </author>
+    <author>
+      <name>David Krueger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.13793v2</id>
+    <title>Evaluating Frontier Models for Dangerous Capabilities</title>
+    <updated>2024-04-05T12:26:11Z</updated>
+    <link href="https://arxiv.org/abs/2403.13793v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.13793v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>To understand the risks posed by a new AI system, we must understand what it can and cannot do. Building on prior work, we introduce a programme of new "dangerous capability" evaluations and pilot them on Gemini 1.0 models. Our evaluations cover four areas: (1) persuasion and deception; (2) cyber-security; (3) self-proliferation; and (4) self-reasoning. We do not find evidence of strong dangerous capabilities in the models we evaluated, but we flag early warning signs. Our goal is to help advance a rigorous science of dangerous capability evaluation, in preparation for future models.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-20T17:54:26Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Mary Phuong</name>
+    </author>
+    <author>
+      <name>Matthew Aitchison</name>
+    </author>
+    <author>
+      <name>Elliot Catt</name>
+    </author>
+    <author>
+      <name>Sarah Cogan</name>
+    </author>
+    <author>
+      <name>Alexandre Kaskasoli</name>
+    </author>
+    <author>
+      <name>Victoria Krakovna</name>
+    </author>
+    <author>
+      <name>David Lindner</name>
+    </author>
+    <author>
+      <name>Matthew Rahtz</name>
+    </author>
+    <author>
+      <name>Yannis Assael</name>
+    </author>
+    <author>
+      <name>Sarah Hodkinson</name>
+    </author>
+    <author>
+      <name>Heidi Howard</name>
+    </author>
+    <author>
+      <name>Tom Lieberum</name>
+    </author>
+    <author>
+      <name>Ramana Kumar</name>
+    </author>
+    <author>
+      <name>Maria Abi Raad</name>
+    </author>
+    <author>
+      <name>Albert Webson</name>
+    </author>
+    <author>
+      <name>Lewis Ho</name>
+    </author>
+    <author>
+      <name>Sharon Lin</name>
+    </author>
+    <author>
+      <name>Sebastian Farquhar</name>
+    </author>
+    <author>
+      <name>Marcus Hutter</name>
+    </author>
+    <author>
+      <name>Gregoire Deletang</name>
+    </author>
+    <author>
+      <name>Anian Ruoss</name>
+    </author>
+    <author>
+      <name>Seliem El-Sayed</name>
+    </author>
+    <author>
+      <name>Sasha Brown</name>
+    </author>
+    <author>
+      <name>Anca Dragan</name>
+    </author>
+    <author>
+      <name>Rohin Shah</name>
+    </author>
+    <author>
+      <name>Allan Dafoe</name>
+    </author>
+    <author>
+      <name>Toby Shevlane</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.15377v2</id>
+    <title>Increased Compute Efficiency and the Diffusion of AI Capabilities</title>
+    <updated>2024-02-13T17:52:00Z</updated>
+    <link href="https://arxiv.org/abs/2311.15377v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.15377v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Training advanced AI models requires large investments in computational resources, or compute. Yet, as hardware innovation reduces the price of compute and algorithmic advances make its use more efficient, the cost of training an AI model to a given performance falls over time - a concept we describe as increasing compute efficiency. We find that while an access effect increases the number of actors who can train models to a given performance over time, a performance effect simultaneously increases the performance available to each actor. This potentially enables large compute investors to pioneer new capabilities, maintaining a performance advantage even as capabilities diffuse. Since large compute investors tend to develop new capabilities first, it will be particularly important that they share information about their AI models, evaluate them for emerging risks, and, more generally, make responsible development and release decisions. Further, as compute efficiency increases, governments will need to prepare for a world where dangerous AI capabilities are widely available - for instance, by developing defenses against harmful AI models or by actively intervening in the diffusion of particularly dangerous capabilities.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-26T18:36:28Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Konstantin Pilz</name>
+    </author>
+    <author>
+      <name>Lennart Heim</name>
+    </author>
+    <author>
+      <name>Nicholas Brown</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.20624v2</id>
+    <title>LoRA Fine-tuning Efficiently Undoes Safety Training in Llama 2-Chat 70B</title>
+    <updated>2024-05-22T08:39:46Z</updated>
+    <link href="https://arxiv.org/abs/2310.20624v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.20624v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI developers often apply safety alignment procedures to prevent the misuse of their AI systems. For example, before Meta released Llama 2-Chat - a collection of instruction fine-tuned large language models - they invested heavily in safety training, incorporating extensive red-teaming and reinforcement learning from human feedback. We explore the robustness of safety training in language models by subversively fine-tuning Llama 2-Chat. We employ quantized low-rank adaptation (LoRA) as an efficient fine-tuning method. With a budget of less than \$200 and using only one GPU, we successfully undo the safety training of Llama 2-Chat models of sizes 7B, 13B, and 70B and on the Mixtral instruct model. Specifically, our fine-tuning technique significantly reduces the rate at which the model refuses to follow harmful instructions. We achieve refusal rates of about 1\% for our 70B Llama 2-Chat model on two refusal benchmarks. Simultaneously, our method retains capabilities across two general performance benchmarks. We show that subversive fine-tuning is practical and effective, and hence argue that evaluating risks from fine-tuning should be a core part of risk assessments for releasing model weights. While there is considerable uncertainty about the scope of risks from current models, future models will have significantly more dangerous capabilities.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-31T16:55:06Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Simon Lermen</name>
+    </author>
+    <author>
+      <name>Charlie Rogers-Smith</name>
+    </author>
+    <author>
+      <name>Jeffrey Ladish</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.00374v1</id>
+    <title>Coordinated pausing: An evaluation-based coordination scheme for frontier AI developers</title>
+    <updated>2023-09-30T13:38:33Z</updated>
+    <link href="https://arxiv.org/abs/2310.00374v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.00374v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As artificial intelligence (AI) models are scaled up, new capabilities can emerge unintentionally and unpredictably, some of which might be dangerous. In response, dangerous capabilities evaluations have emerged as a new risk assessment tool. But what should frontier AI developers do if sufficiently dangerous capabilities are in fact discovered? This paper focuses on one possible response: coordinated pausing. It proposes an evaluation-based coordination scheme that consists of five main steps: (1) Frontier AI models are evaluated for dangerous capabilities. (2) Whenever, and each time, a model fails a set of evaluations, the developer pauses certain research and development activities. (3) Other developers are notified whenever a model with dangerous capabilities has been discovered. They also pause related research and development activities. (4) The discovered capabilities are analyzed and adequate safety precautions are put in place. (5) Developers only resume their paused activities if certain safety thresholds are reached. The paper also discusses four concrete versions of that scheme. In the first version, pausing is completely voluntary and relies on public pressure on developers. In the second version, participating developers collectively agree to pause under certain conditions. In the third version, a single auditor evaluates models of multiple developers who agree to pause if any model fails a set of evaluations. In the fourth version, developers are legally required to run evaluations and pause if dangerous capabilities are discovered. Finally, the paper discusses the desirability and feasibility of our proposed coordination scheme. It concludes that coordinated pausing is a promising mechanism for tackling emerging risks from frontier AI models. However, a number of practical and legal obstacles need to be overcome, especially how to avoid violations of antitrust law.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-30T13:38:33Z</published>
+    <arxiv:comment>24 pages, 3 figures, 1 table</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Jide Alaga</name>
+    </author>
+    <author>
+      <name>Jonas Schuett</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.13387v2</id>
+    <title>Do-Not-Answer: A Dataset for Evaluating Safeguards in LLMs</title>
+    <updated>2023-09-04T01:47:30Z</updated>
+    <link href="https://arxiv.org/abs/2308.13387v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.13387v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the rapid evolution of large language models (LLMs), new and hard-to-predict harmful capabilities are emerging. This requires developers to be able to identify risks through the evaluation of "dangerous capabilities" in order to responsibly deploy LLMs. In this work, we collect the first open-source dataset to evaluate safeguards in LLMs, and deploy safer open-source LLMs at a low cost. Our dataset is curated and filtered to consist only of instructions that responsible language models should not follow. We annotate and assess the responses of six popular LLMs to these instructions. Based on our annotation, we proceed to train several BERT-like classifiers, and find that these small classifiers can achieve results that are comparable with GPT-4 on automatic safety evaluation. Warning: this paper contains example data that may be offensive, harmful, or biased.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-25T14:02:12Z</published>
+    <arxiv:comment>18 pages, 9 figures, 11 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yuxia Wang</name>
+    </author>
+    <author>
+      <name>Haonan Li</name>
+    </author>
+    <author>
+      <name>Xudong Han</name>
+    </author>
+    <author>
+      <name>Preslav Nakov</name>
+    </author>
+    <author>
+      <name>Timothy Baldwin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.00787v1</id>
+    <title>Evaluating Shutdown Avoidance of Language Models in Textual Scenarios</title>
+    <updated>2023-07-03T07:05:59Z</updated>
+    <link href="https://arxiv.org/abs/2307.00787v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.00787v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, there has been an increase in interest in evaluating large language models for emergent and dangerous capabilities. Importantly, agents could reason that in some scenarios their goal is better achieved if they are not turned off, which can lead to undesirable behaviors. In this paper, we investigate the potential of using toy textual scenarios to evaluate instrumental reasoning and shutdown avoidance in language models such as GPT-4 and Claude. Furthermore, we explore whether shutdown avoidance is merely a result of simple pattern matching between the dataset and the prompt or if it is a consistent behaviour across different environments and variations.
+  We evaluated behaviours manually and also experimented with using language models for automatic evaluations, and these evaluations demonstrate that simple pattern matching is likely not the sole contributing factor for shutdown avoidance. This study provides insights into the behaviour of language models in shutdown avoidance scenarios and inspires further research on the use of textual scenarios for evaluations.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-03T07:05:59Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Teun van der Weij</name>
+    </author>
+    <author>
+      <name>Simon Lermen</name>
+    </author>
+    <author>
+      <name>Leon lang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.17038v2</id>
+    <title>Frontier AI developers need an internal audit function</title>
+    <updated>2024-10-05T14:10:00Z</updated>
+    <link href="https://arxiv.org/abs/2305.17038v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.17038v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This article argues that frontier artificial intelligence (AI) developers need an internal audit function. First, it describes the role of internal audit in corporate governance: internal audit evaluates the adequacy and effectiveness of a company's risk management, control, and governance processes. It is organizationally independent from senior management and reports directly to the board of directors, typically its audit committee. In the IIA's Three Lines Model, internal audit serves as the third line and is responsible for providing assurance to the board, while the Combined Assurance Framework highlights the need to coordinate the activities of internal and external assurance providers. Next, the article provides an overview of key governance challenges in frontier AI development: dangerous capabilities can arise unpredictably and undetected; it is difficult to prevent a deployed model from causing harm; frontier models can proliferate rapidly; it is inherently difficult to assess frontier AI risks; and frontier AI developers do not seem to follow best practices in risk governance. Finally, the article discusses how an internal audit function could address some of these challenges: internal audit could identify ineffective risk management practices; it could ensure that the board of directors has a more accurate understanding of the current level of risk and the adequacy of the developer's risk management practices; and it could serve as a contact point for whistleblowers. In light of rapid progress in AI research and development, frontier AI developers need to strengthen their risk governance. Instead of reinventing the wheel, they should follow existing best practices. While this might not be sufficient, they should not skip this obvious first step.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-26T15:48:05Z</published>
+    <arxiv:comment>42 pages, 2 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Jonas Schuett</name>
+    </author>
+    <arxiv:doi>10.1111/risa.17665</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1111/risa.17665" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.15324v2</id>
+    <title>Model evaluation for extreme risks</title>
+    <updated>2023-09-22T18:48:42Z</updated>
+    <link href="https://arxiv.org/abs/2305.15324v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.15324v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current approaches to building general-purpose AI systems tend to produce systems with both beneficial and harmful capabilities. Further progress in AI development could lead to capabilities that pose extreme risks, such as offensive cyber capabilities or strong manipulation skills. We explain why model evaluation is critical for addressing extreme risks. Developers must be able to identify dangerous capabilities (through "dangerous capability evaluations") and the propensity of models to apply their capabilities for harm (through "alignment evaluations"). These evaluations will become critical for keeping policymakers and other stakeholders informed, and for making responsible decisions about model training, deployment, and security.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-24T16:38:43Z</published>
+    <arxiv:comment>Fixed typos; added citation</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Toby Shevlane</name>
+    </author>
+    <author>
+      <name>Sebastian Farquhar</name>
+    </author>
+    <author>
+      <name>Ben Garfinkel</name>
+    </author>
+    <author>
+      <name>Mary Phuong</name>
+    </author>
+    <author>
+      <name>Jess Whittlestone</name>
+    </author>
+    <author>
+      <name>Jade Leung</name>
+    </author>
+    <author>
+      <name>Daniel Kokotajlo</name>
+    </author>
+    <author>
+      <name>Nahema Marchal</name>
+    </author>
+    <author>
+      <name>Markus Anderljung</name>
+    </author>
+    <author>
+      <name>Noam Kolt</name>
+    </author>
+    <author>
+      <name>Lewis Ho</name>
+    </author>
+    <author>
+      <name>Divya Siddarth</name>
+    </author>
+    <author>
+      <name>Shahar Avin</name>
+    </author>
+    <author>
+      <name>Will Hawkins</name>
+    </author>
+    <author>
+      <name>Been Kim</name>
+    </author>
+    <author>
+      <name>Iason Gabriel</name>
+    </author>
+    <author>
+      <name>Vijay Bolina</name>
+    </author>
+    <author>
+      <name>Jack Clark</name>
+    </author>
+    <author>
+      <name>Yoshua Bengio</name>
+    </author>
+    <author>
+      <name>Paul Christiano</name>
+    </author>
+    <author>
+      <name>Allan Dafoe</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.07153v1</id>
+    <title>Towards best practices in AGI safety and governance: A survey of expert opinion</title>
+    <updated>2023-05-11T21:54:30Z</updated>
+    <link href="https://arxiv.org/abs/2305.07153v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.07153v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A number of leading AI companies, including OpenAI, Google DeepMind, and Anthropic, have the stated goal of building artificial general intelligence (AGI) - AI systems that achieve or exceed human performance across a wide range of cognitive tasks. In pursuing this goal, they may develop and deploy AI systems that pose particularly significant risks. While they have already taken some measures to mitigate these risks, best practices have not yet emerged. To support the identification of best practices, we sent a survey to 92 leading experts from AGI labs, academia, and civil society and received 51 responses. Participants were asked how much they agreed with 50 statements about what AGI labs should do. Our main finding is that participants, on average, agreed with all of them. Many statements received extremely high levels of agreement. For example, 98% of respondents somewhat or strongly agreed that AGI labs should conduct pre-deployment risk assessments, dangerous capabilities evaluations, third-party model audits, safety restrictions on model usage, and red teaming. Ultimately, our list of statements may serve as a helpful foundation for efforts to develop best practices, standards, and regulations for AGI labs.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-11T21:54:30Z</published>
+    <arxiv:comment>38 pages, 8 figures, 8 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Jonas Schuett</name>
+    </author>
+    <author>
+      <name>Noemi Dreksler</name>
+    </author>
+    <author>
+      <name>Markus Anderljung</name>
+    </author>
+    <author>
+      <name>David McCaffary</name>
+    </author>
+    <author>
+      <name>Lennart Heim</name>
+    </author>
+    <author>
+      <name>Emma Bluemke</name>
+    </author>
+    <author>
+      <name>Ben Garfinkel</name>
+    </author>
+  </entry>
+</feed>

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1911,
+  "title": "Competition-level code generation with AlphaCode",
+  "org": "deepmind",
+  "date": "2022-12-08",
+  "venue": "Science",
+  "url": "https://arxiv.org/abs/2203.07814",
+  "abstract": "Programming is a powerful and ubiquitous problem-solving tool. Systems that can assist programmers or even generate programs themselves could make programming more productive and accessible. Recent transformer-based neural network models show impressive code generation abilities yet still perform poorly on more complex tasks requiring problem-solving skills, such as competitive programming problems. Here, we introduce AlphaCode, a system for code generation that achieved an average ranking in the top 54.3% in simulated evaluations on recent programming competitions on the Codeforces platform. AlphaCode solves problems by generating millions of diverse programs using specially trained transformer-based networks and then filtering and clustering those programs to a maximum of just 10 submissions. This result marks the first time an artificial intelligence system has performed competitively in programming competitions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 630,
+  "title": "Discovering Latent Knowledge in Language Models Without Supervision",
+  "org": "other",
+  "date": "2022-12-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2212.03827",
+  "abstract": "Existing techniques for training language models can be misaligned with the truth: if we train models with imitation learning, they may reproduce errors that humans make; if we train them to generate text that humans rate highly, they may output errors that human evaluators can't detect. We propose circumventing this issue by directly finding latent knowledge inside the internal activations of a language model in a purely unsupervised way. Specifically, we introduce a method for accurately answering yes-no questions given only unlabeled model activations. It works by finding a direction in activation space that satisfies logical consistency properties, such as that a statement and its negation have opposite truth values. We show that despite using no supervision and no model outputs, our method can recover diverse knowledge represented in large language models: across 6 models and 10 question-answering datasets, it outperforms zero-shot accuracy by 4\\% on average. We also find that it cuts prompt sensitivity in half and continues to maintain high accuracy even when models are prompted to generate incorrect answers. Our results provide an initial step toward discovering what language models know, distinct from what they say, even when we don't have access to explicit ground truth labels.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1915,
+  "title": "Understanding Self-Predictive Learning for Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2022-12-06",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2212.03319",
+  "abstract": "We study the learning dynamics of self-predictive learning for reinforcement learning, a family of algorithms that learn representations by minimizing the prediction error of their own future latent representations. Despite its recent empirical success, such algorithms have an apparent defect: trivial representations (such as constants) minimize the prediction error, yet it is obviously undesirable to converge to such solutions. Our central insight is that careful designs of the optimization dynamics are critical to learning meaningful representations. We identify that a faster paced optimization of the predictor and semi-gradient updates on the representation, are crucial to preventing the representation collapse. Then in an idealized setup, we show self-predictive learning dynamics carries out spectral decomposition on the state transition matrix, effectively capturing information of the transition dynamics. Building on the theoretical insights, we propose bidirectional self-predictive learning, a novel self-predictive algorithm that learns two representations simultaneously. We examine the robustness of our theoretical insights with a number of small-scale experiments and showcase the promise of the novel representation learning algorithm with large-scale experiments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1914,
+  "title": "Negotiation and honesty in artificial intelligence methods for the board game of Diplomacy",
+  "org": "deepmind",
+  "date": "2022-12-06",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-022-34473-5",
+  "abstract": "The success of human civilization is rooted in our ability to cooperate by communicating and making joint plans. We study how artificial agents may use communication to better cooperate in Diplomacy, a long-standing AI challenge. We propose negotiation algorithms allowing agents to agree on contracts regarding joint plans, and show they outperform agents lacking this ability. For humans, misleading others about our intentions forms a barrier to cooperation. Diplomacy requires reasoning about our opponents' future plans, enabling us to study broken commitments between agents and the conditions for honest cooperation. We find that artificial agents face a similar problem as humans: communities of communicating agents are susceptible to peers who deviate from agreements. To defend against this, we show that the inclination to sanction peers who break contracts dramatically reduces the advantage of such deviators. Hence, sanctioning helps foster mostly truthful communication, despite conditions that initially favor deviations from agreements.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1916,
+  "title": "Exploring the perceptions of former ICU patients and clinical staff on barriers and facilitators to the implementation of virtual reality exposure therapy: A qualitative study",
+  "org": "deepmind",
+  "date": "2022-12-02",
+  "venue": "Nursing in Critical Care",
+  "url": "https://doi.org/10.1111/nicc.12868",
+  "abstract": "BACKGROUND: Virtual reality (VR) as a digital technology has developed rapidly, becoming more realistic, portable, sensory and easier to navigate. Although studies have found VR to be effective for many clinical applications, patients and clinicians have described several barriers to the successful implementation of this technology. To remove barriers for implementation of VR in health care, a greater understanding is needed of how VR can integrate into clinical environments, particularly complex settings such as an intensive care unit. AIM: This study aimed to explore the perceived barriers and facilitators for the implementation of VR exposure therapy for intensive care patients and clinical staff. STUDY DESIGN: A qualitative study using an Interpretative Description approach was undertaken. Semi-structured focus groups were conducted with 13 participants: nine patients and four health care professionals. Focus groups explored barriers and facilitators of using virtual reality (VR) exposure therapy in intensive care. Thematic analysis was employed to produce codes and themes. RESULTS: In total, eight themes describing the perceived barriers and facilitators to implementing VR exposure therapy were identified. Four themes related to the perceived barriers of implementing VR exposure therapy in intensive care were identified: psychological, sensory, environmental and staff competency and confidence. There were a further four themes related to the perceived facilitators to the",
+  "needs_fetch": false
+ },
+ {
+  "id": 1917,
+  "title": "Mastering the game of Stratego with model-free multiagent reinforcement learning",
+  "org": "deepmind",
+  "date": "2022-12-01",
+  "venue": "Science",
+  "url": "https://doi.org/10.1126/science.add4679",
+  "abstract": "We introduce DeepNash, an autonomous agent that plays the imperfect information game Stratego at a human expert level. Stratego is one of the few iconic board games that artificial intelligence (AI) has not yet mastered. It is a game characterized by a twin challenge: It requires long-term strategic thinking as in chess, but it also requires dealing with imperfect information as in poker. The technique underpinning DeepNash uses a game-theoretic, model-free deep reinforcement learning method, without search, that learns to master Stratego through self-play from scratch. DeepNash beat existing state-of-the-art AI methods in Stratego and achieved a year-to-date (2022) and all-time top-three ranking on the Gravon games platform, competing with human expert players.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1918,
+  "title": "Beyond Invariance: Test-Time Label-Shift Adaptation for Distributions with \"Spurious\" Correlations",
+  "org": "deepmind",
+  "date": "2022-11-28",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2211.15646",
+  "abstract": "Changes in the data distribution at test time can have deleterious effects on the performance of predictive models $p(y|x)$. We consider situations where there are additional meta-data labels (such as group labels), denoted by $z$, that can account for such changes in the distribution. In particular, we assume that the prior distribution $p(y, z)$, which models the dependence between the class label $y$ and the \"nuisance\" factors $z$, may change across domains, either due to a change in the correlation between these terms, or a change in one of their marginals. However, we assume that the generative model for features $p(x|y,z)$ is invariant across domains. We note that this corresponds to an expanded version of the widely used \"label shift\" assumption, where the labels now also include the nuisance factors $z$. Based on this observation, we propose a test-time label shift correction that adapts to changes in the joint distribution $p(y, z)$ using EM applied to unlabeled samples from the target domain distribution, $p_t(x)$. Importantly, we are able to avoid fitting a generative model $p(x|y, z)$, and merely need to reweight the outputs of a discriminative model $p_s(y, z|x)$ trained on the source distribution. We evaluate our method, which we call \"Test-Time Label-Shift Adaptation\" (TTLSA), on several standard image and text datasets, as well as the CheXpert chest X-ray dataset, and show that it improves performance over methods that target invariance to changes in the distr",
+  "needs_fetch": false
+ },
+ {
+  "id": 1919,
+  "title": "Variance reduction for Metropolis–Hastings samplers",
+  "org": "deepmind",
+  "date": "2022-11-25",
+  "venue": "Statistics and Computing",
+  "url": "https://doi.org/10.1007/s11222-022-10183-2",
+  "abstract": "Abstract We introduce a general framework that constructs estimators with reduced variance for random walk Metropolis and Metropolis-adjusted Langevin algorithms. The resulting estimators require negligible computational cost and are derived in a post-process manner utilising all proposal values of the Metropolis algorithms. Variance reduction is achieved by producing control variates through the approximate solution of the Poisson equation associated with the target density of the Markov chain. The proposed method is based on approximating the target density with a Gaussian and then utilising accurate solutions of the Poisson equation for the Gaussian case. This leads to an estimator that uses two key elements: (1) a control variate from the Poisson equation that contains an intractable expectation under the proposal distribution, (2) a second control variate to reduce the variance of a Monte Carlo estimate of this latter intractable expectation. Simulated data examples are used to illustrate the impressive variance reduction achieved in the Gaussian target case and the corresponding effect when target Gaussianity assumption is violated. Real data examples on Bayesian logistic regression and stochastic volatility models verify that considerable variance reduction is achieved with negligible extra computational cost.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1921,
+  "title": "Curiosity in Hindsight: Intrinsic Exploration in Stochastic Environments",
+  "org": "deepmind",
+  "date": "2022-11-18",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2211.10515",
+  "abstract": "Consider the problem of exploration in sparse-reward or reward-free environments, such as in Montezuma's Revenge. In the curiosity-driven paradigm, the agent is rewarded for how much each realized outcome differs from their predicted outcome. But using predictive error as intrinsic motivation is fragile in stochastic environments, as the agent may become trapped by high-entropy areas of the state-action space, such as a \"noisy TV\". In this work, we study a natural solution derived from structural causal models of the world: Our key idea is to learn representations of the future that capture precisely the unpredictable aspects of each outcome -- which we use as additional input for predictions, such that intrinsic rewards only reflect the predictable aspects of world dynamics. First, we propose incorporating such hindsight representations into models to disentangle \"noise\" from \"novelty\", yielding Curiosity in Hindsight: a simple and scalable generalization of curiosity that is robust to stochasticity. Second, we instantiate this framework for the recently introduced BYOL-Explore algorithm as our prime example, resulting in the noise-robust BYOL-Hindsight. Third, we illustrate its behavior under a variety of different stochasticities in a grid world, and find improvements over BYOL-Explore in hard-exploration Atari games with sticky actions. Notably, we show state-of-the-art results in exploring Montezuma's Revenge with sticky actions, while preserving performance in the non-s",
+  "needs_fetch": false
+ },
+ {
+  "id": 1920,
+  "title": "Evaluation of a Camera-Based Monitoring Solution Against Regulated Medical Devices to Measure Heart Rate, Respiratory Rate, Oxygen Saturation, and Blood Pressure",
+  "org": "deepmind",
+  "date": "2022-11-18",
+  "venue": "Cureus",
+  "url": "https://doi.org/10.7759/cureus.31649",
+  "abstract": "Background Regularly monitoring common physiological signs, including heart rate, blood pressure, and oxygen saturation, can effectively prevent or detect several potential conditions. In particular, cardiovascular diseases (CVDs) are a worldwide concern. According to the World Health Organization, 31% of all deaths worldwide are from CVDs. Recently, the coronavirus disease 2019 pandemic has increased the interest in remote monitoring. At present, contact devices are required to extract most of an individual's physiological information, which can be inconvenient for users and may cause discomfort. Methodology However, remote photoplethysmography (rPPG) technology offers a solution for this issue, enabling contactless monitoring of the blood volume pulse signal using a regular camera. Ultimately, it can provide the same physiological information as a contact device. In this paper, we propose an evaluation of Vastmindz's rPPG technology against medical devices in a clinical environment with a variety of subjects in a wide range of age, height, weight, and baseline vital signs. Results This study confirmed the findings that the contactless technology for the estimation of vitals proposed by Vastmindz was able to estimate heart rate, respiratory rate, and oxygen saturation with a mean error of ±3 units as well as ±10 mmHg for systolic and diastolic blood pressure. Conclusions Reported results have shown that Vastmindz's rPPG technology was able to meet the initial hypothesis and ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1922,
+  "title": "Towards combinatorial invariance for Kazhdan-Lusztig polynomials",
+  "org": "deepmind",
+  "date": "2022-11-16",
+  "venue": "Representation Theory of the American Mathematical Society",
+  "url": "https://arxiv.org/abs/2111.15161",
+  "abstract": "Kazhdan-Lusztig polynomials are important and mysterious objects in representation theory. Here we present a new formula for their computation for symmetric groups based on the Bruhat graph. Our approach suggests a solution to the combinatorial invariance conjecture for symmetric groups, a well-known conjecture formulated by Lusztig and Dyer in the 1980s.",
+  "needs_fetch": false
+ },
+ {
+  "id": 631,
+  "title": "Engineering Monosemanticity in Toy Models",
+  "org": "anthropic",
+  "date": "2022-11-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2211.09169",
+  "abstract": "In some neural networks, individual neurons correspond to natural ``features'' in the input. Such \\emph{monosemantic} neurons are of great help in interpretability studies, as they can be cleanly understood. In this work we report preliminary attempts to engineer monosemanticity in toy models. We find that models can be made more monosemantic without increasing the loss by just changing which local minimum the training process finds. More monosemantic loss minima have moderate negative biases, and we are able to use this fact to engineer highly monosemantic models. We are able to mechanistically interpret these models, including the residual polysemantic neurons, and uncover a simple yet surprising algorithm. Finally, we find that providing models with more neurons per layer makes the models more monosemantic, albeit at increased computational cost. These findings point to a number of new questions and avenues for engineering monosemanticity, which we intend to study these in future work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1924,
+  "title": "Enhancing the reliability and accuracy of AI-enabled diagnosis via complementarity-driven deferral to clinicians (CoDoC)",
+  "org": "deepmind",
+  "date": "2022-11-14",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-2231672/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1923,
+  "title": "Acquisition of chess knowledge in AlphaZero",
+  "org": "deepmind",
+  "date": "2022-11-14",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://arxiv.org/abs/2111.09259",
+  "abstract": "We analyze the knowledge acquired by AlphaZero, a neural network engine that learns chess solely by playing against itself yet becomes capable of outperforming human chess players. Although the system trains without access to human games or guidance, it appears to learn concepts analogous to those used by human chess players. We provide two lines of evidence. Linear probes applied to AlphaZero's internal state enable us to quantify when and where such concepts are represented in the network. We also describe a behavioral analysis of opening play, including qualitative commentary by a former world chess champion.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1207,
+  "title": "Exploring and evaluating personalized models for code generation",
+  "org": "anthropic",
+  "date": "2022-11-07",
+  "venue": "Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering",
+  "url": "https://arxiv.org/abs/2208.13928",
+  "abstract": "Large Transformer models achieved the state-of-the-art status for Natural Language Understanding tasks and are increasingly becoming the baseline model architecture for modeling source code. Transformers are usually pre-trained on large unsupervised corpora, learning token representations and transformations relevant to modeling generally available text, and are then fine-tuned on a particular downstream task of interest. While fine-tuning is a tried-and-true method for adapting a model to a new domain -- for example, question-answering on a given topic -- generalization remains an on-going challenge. In this paper, we explore and evaluate transformer model fine-tuning for personalization. In the context of generating unit tests for Java methods, we evaluate learning to personalize to a specific software project using several personalization techniques. We consider three key approaches: (i) custom fine-tuning, which allows all the model parameters to be tuned; (ii) lightweight fine-tuning, which freezes most of the model's parameters, allowing tuning of the token embeddings and softmax layer only or the final layer alone; (iii) prefix tuning, which keeps model parameters frozen, but optimizes a small project-specific prefix vector. Each of these techniques offers a trade-off in total compute cost and predictive performance, which we evaluate by code and task-specific metrics, training time, and total computational operations. We compare these fine-tuning strategies for code g",
+  "needs_fetch": false
+ },
+ {
+  "id": 119,
+  "title": "Measuring Progress on Scalable Oversight for Large Language Models",
+  "org": "anthropic",
+  "date": "2022-11-04",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1925,
+  "title": "Adult neurogenesis acts as a neural regularizer",
+  "org": "deepmind",
+  "date": "2022-11-02",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2206704119",
+  "abstract": "New neurons are continuously generated in the subgranular zone of the dentate gyrus throughout adulthood. These new neurons gradually integrate into hippocampal circuits, forming new naive synapses. Viewed from this perspective, these new neurons may represent a significant source of \"wiring\" noise in hippocampal networks. In machine learning, such noise injection is commonly used as a regularization technique. Regularization techniques help prevent overfitting training data and allow models to generalize learning to new, unseen data. Using a computational modeling approach, here we ask whether a neurogenesis-like process similarly acts as a regularizer, facilitating generalization in a category learning task. In a convolutional neural network (CNN) trained on the CIFAR-10 object recognition dataset, we modeled neurogenesis as a replacement/turnover mechanism, where weights for a randomly chosen small subset of hidden layer neurons were reinitialized to new values as the model learned to categorize 10 different classes of objects. We found that neurogenesis enhanced generalization on unseen test data compared to networks with no neurogenesis. Moreover, neurogenic networks either outperformed or performed similarly to networks with conventional noise injection (i.e., dropout, weight decay, and neural noise). These results suggest that neurogenesis can enhance generalization in hippocampal learning through noise injection, expanding on the roles that neurogenesis may have in co",
+  "needs_fetch": false
+ },
+ {
+  "id": 1927,
+  "title": "Authors’ Reply to the Discussion of ‘Efficient Bayesian Inference of Instantaneous Reproduction Numbers at Fine Spatial Scales, with an Application to Mapping and Nowcasting the Covid-19 Epidemic in British Local Authorities’ by Teh et al. in Session 2 of the Royal Statistical Society’s Special Topic Meeting on COVID-19 Transmission: 11 June 2021",
+  "org": "deepmind",
+  "date": "2022-11-01",
+  "venue": "Journal of the Royal Statistical Society Series A (Statistics in Society)",
+  "url": "https://doi.org/10.1111/rssa.12976",
+  "abstract": "Gibson, for their time and effort in reading their paper and for their great insights and discussion points which they value highly. These can roughly be collected into two broad categories: evaluation and modelling.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1926,
+  "title": "Efficient Bayesian inference of Instantaneous Reproduction Numbers at Fine Spatial Scales, with an Application to Mapping and Nowcasting the Covid-19 Epidemic in British Local Authorities",
+  "org": "deepmind",
+  "date": "2022-11-01",
+  "venue": "Journal of the Royal Statistical Society Series A (Statistics in Society)",
+  "url": "https://doi.org/10.1111/rssa.12971",
+  "abstract": "information about population flows to model potential transmissions across local areas. A simple approach to posterior simulation quickly becomes computationally infeasible, which is problematic if the system is required to provide timely predictions. We describe how to make posterior simulation for the model efficient, so that we are able to provide daily updates on epidemic developments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 632,
+  "title": "Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 small",
+  "org": "other",
+  "date": "2022-11-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2211.00593",
+  "abstract": "Research in mechanistic interpretability seeks to explain behaviors of machine learning models in terms of their internal components. However, most previous work either focuses on simple behaviors in small models, or describes complicated behaviors in larger models with broad strokes. In this work, we bridge this gap by presenting an explanation for how GPT-2 small performs a natural language task called indirect object identification (IOI). Our explanation encompasses 26 attention heads grouped into 7 main classes, which we discovered using a combination of interpretability approaches relying on causal interventions. To our knowledge, this investigation is the largest end-to-end attempt at reverse-engineering a natural behavior \"in the wild\" in a language model. We evaluate the reliability of our explanation using three quantitative criteria--faithfulness, completeness and minimality. Though these criteria support our explanation, they also point to remaining gaps in our understanding. Our work provides evidence that a mechanistic understanding of large ML models is feasible, opening opportunities to scale our understanding to both larger models and more complex tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1928,
+  "title": "Low-Rank Representation of Reinforcement Learning Policies",
+  "org": "deepmind",
+  "date": "2022-10-27",
+  "venue": "Journal of Artificial Intelligence Research",
+  "url": "https://doi.org/10.1613/jair.1.13854",
+  "abstract": "We propose a general framework for policy representation for reinforcement learning tasks. This framework involves finding a low-dimensional embedding of the policy on a reproducing kernel Hilbert space (RKHS). The usage of RKHS based methods allows us to derive strong theoretical guarantees on the expected return of the reconstructed policy. Such guarantees are typically lacking in black-box models, but are very desirable in tasks requiring stability and convergence guarantees. We conduct several experiments on classic RL domains. The results confirm that the policies can be robustly represented in a low-dimensional space while the embedded policy incurs almost no decrease in returns.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1929,
+  "title": "Maximum Likelihood Learning of Unnormalized Models for Simulation-Based Inference",
+  "org": "deepmind",
+  "date": "2022-10-26",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2210.14756",
+  "abstract": "We introduce two synthetic likelihood methods for Simulation-Based Inference (SBI), to conduct either amortized or targeted inference from experimental observations when a high-fidelity simulator is available. Both methods learn a conditional energy-based model (EBM) of the likelihood using synthetic data generated by the simulator, conditioned on parameters drawn from a proposal distribution. The learned likelihood can then be combined with any prior to obtain a posterior estimate, from which samples can be drawn using MCMC. Our methods uniquely combine a flexible Energy-Based Model and the minimization of a KL loss: this is in contrast to other synthetic likelihood methods, which either rely on normalizing flows, or minimize score-based objectives; choices that come with known pitfalls. We demonstrate the properties of both methods on a range of synthetic datasets, and apply them to a neuroscience model of the pyloric network in the crab, where our method outperforms prior art for a fraction of the simulation budget.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1930,
+  "title": "Non-Chaotic Limit Sets in Multi-Agent Learning",
+  "org": "deepmind",
+  "date": "2022-10-24",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-2188216/v1",
+  "abstract": "Abstract Non-convergence is an inherent aspect of adaptive multi-agent systems, and even basic learning models, such as the replicator dynamics, are not guaranteed to equilibriate. Limit cycles, and even more complicated chaotic sets are in fact possible even in rather simple games, including variants of the Rock-Paper-Scissors game. A key challenge of multi-agent learning theory lies in characterization of these limit sets, based on qualitative features of the underlying game. Although chaotic behavior in learning dynamics can be precluded by the celebrated Poincar\\'e-Bendixson theorem, it is only applicable directly to low-dimensional settings. In this work, we attempt to find other characteristics of a game that can force regularity in the limit sets of learning. We show that behavior consistent with the Poincaré-Bendixson theorem (limit cycles, but no chaotic attractor) follows purely from the topological structure of the interaction graph, even for high-dimensional settings with an arbitrary number of players, and arbitrary payoff matrices. We prove our result for a wide class of follow-the-regularized leader (FoReL) dynamics, which generalize replicator dynamics, for binary games characterized interaction graphs where the payoffs of each player are only affected by one other player (i.e., interaction graphs of indegree one). Moreover, we provide simple conditions under which such behavior translates into efficiency guarantees, implying that FoReL learning achievestime-a",
+  "needs_fetch": false
+ },
+ {
+  "id": 1932,
+  "title": "How to Spend Your Robot Time: Bridging Kickstarting and Offline Reinforcement Learning for Vision-based Robotic Manipulation",
+  "org": "deepmind",
+  "date": "2022-10-23",
+  "venue": "2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+  "url": "https://doi.org/10.1109/iros47612.2022.9981126",
+  "abstract": "Reinforcement learning (RL) has been shown to be effective at learning control from experience. However, RL typically requires a large amount of online interaction with the environment. This limits its applicability to real-world settings, such as in robotics, where such interaction is expensive. In this work we investigate ways to minimize online interactions in a target task, by reusing a suboptimal policy we might have access to, for example from training on related prior tasks, or in simulation. To this end, we develop two RL algorithms that can speed up training by using not only the action distributions of teacher policies, but also data collected by such policies on the task at hand. We conduct a thorough experimental study of how to use suboptimal teachers on a challenging robotic manipulation benchmark on vision-based stacking with diverse objects. We compare our methods to offline, online, offline-to-online, and kickstarting RL algorithms. By doing so, we find that training on data from both the teacher and student, enables the best performance for limited data budgets. We examine how to best allocate a limited data budget - on the target task - between the teacher and the student policy, and report experiments using varying budgets, two teachers with different degrees of suboptimality, and five stacking tasks that require a diverse set of behaviors. Our analysis, both in simulation and in the real world, shows that our approach is the best across data budgets, whil",
+  "needs_fetch": false
+ },
+ {
+  "id": 1931,
+  "title": "Learning Coordinated Terrain-Adaptive Locomotion by Imitating a Centroidal Dynamics Planner",
+  "org": "deepmind",
+  "date": "2022-10-23",
+  "venue": "2022 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+  "url": "https://doi.org/10.1109/iros47612.2022.9981648",
+  "abstract": "We propose a simple imitation learning procedure for learning locomotion controllers that can walk over very challenging terrains. We use trajectory optimization (TO) to produce a large dataset of trajectories over procedurally generated terrains and use Reinforcement Learning (RL) to imitate these trajectories. We demonstrate with a realistic model of the ANYmal robot that the learned controllers transfer to unseen terrains and provide an effective initialization for fine-tuning on challenging terrains that require exteroception and precise foot placements. Our setup combines TO and RL in a simple fashion that overcomes the computational limitations and need for a robust tracking controller of the former and the exploration and reward-tuning difficulties of the latter.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1933,
+  "title": "Methods of Improving IT Project Management Processes",
+  "org": "deepmind",
+  "date": "2022-10-20",
+  "venue": "Scientific Research and Development Russian Journal of Project Management",
+  "url": "https://doi.org/10.12737/2587-6279-2022-11-2-3-8",
+  "abstract": "The topic of the article as well as the issues concerning the ways to improve IT-project management processes are becoming more and more relevant, the need to respond effectively to the changing national and international challenges of external conditions is increasing. Therefore, a detailed structural study and elaboration of ways to improve IT project management processes are required.&#x0D; This study focuses on ways to improve IT project management processes.&#x0D; The research methods are theoretical methods: analysis of sources, systematization and generalization. &#x0D; The author of the article gives an interpretation of the concept \"IT-project\", \"IT-project management\". &#x0D; The article analyzes the problems of IT-project management in modern organizations. &#x0D; It characterizes the existing methods of IT-project management, as well as proposes new ways of managing IT-projects: the use of a unified information system, the model of \"7 K-questions\", the map of competencies in selecting the team.",
+  "needs_fetch": false
+ },
+ {
+  "id": 440,
+  "title": "Scaling laws for reward model overoptimization",
+  "org": "openai",
+  "date": "2022-10-19",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/scaling-laws-for-reward-model-overoptimization/",
+  "abstract": "In reinforcement learning from human feedback, it is common to optimize against a reward model trained to predict human preferences. Because the reward model is an imperfect proxy, optimizing its value too much can hinder ground truth performance, in accordance with Goodhart's law. This effect has been frequently observed, but not carefully measured due to the expense of collecting human preference data. In this work, we use a synthetic setup in which a fixed \"gold-standard\" reward model plays the role of humans, providing labels used to train a proxy reward model. We study how the gold reward model score changes as we optimize against the proxy reward model using either reinforcement learning or best-of-$n$ sampling. We find that this relationship follows a different functional form depending on the method of optimization, and that in both cases its coefficients scale smoothly with the number of reward model parameters. We also study the effect on this relationship of the size of the reward model dataset, the number of reward model and policy parameters, and the coefficient of the KL penalty added to the reward in the reinforcement learning setup. We explore the implications of these empirical results for theoretical considerations in AI alignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1934,
+  "title": "Gauge-equivariant flow models for sampling in lattice field theories with pseudofermions",
+  "org": "deepmind",
+  "date": "2022-10-18",
+  "venue": "Physical review. D/Physical review. D.",
+  "url": "https://doi.org/10.1103/physrevd.106.074506",
+  "abstract": "This work presents gauge-equivariant architectures for flow-based sampling in fermionic lattice field theories using pseudofermions as stochastic estimators for the fermionic determinant. This is the default approach in state-of-the-art lattice field theory calculations, making this development critical to the practical application of flow models to theories such as QCD. Methods by which flow-based sampling approaches can be improved via standard techniques such as even/odd preconditioning and the Hasenbusch factorization are also outlined. Numerical demonstrations in two-dimensional U(1) and SU(3) gauge theories with ${N}_{f}=2$ flavors of fermions are provided.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1935,
+  "title": "TREGO: a trust-region framework for efficient global optimization",
+  "org": "deepmind",
+  "date": "2022-10-10",
+  "venue": "Journal of Global Optimization",
+  "url": "https://arxiv.org/abs/2101.06808",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1936,
+  "title": "Designing all-pay auctions using deep learning and multi-agent simulation",
+  "org": "deepmind",
+  "date": "2022-10-08",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-022-20234-3",
+  "abstract": "We propose a multi-agent learning approach for designing crowdsourcing contests and All-Pay auctions. Prizes in contests incentivise contestants to expend effort on their entries, with different prize allocations resulting in different incentives and bidding behaviors. In contrast to auctions designed manually by economists, our method searches the possible design space using a simulation of the multi-agent learning process, and can thus handle settings where a game-theoretic equilibrium analysis is not tractable. Our method simulates agent learning in contests and evaluates the utility of the resulting outcome for the auctioneer. Given a large contest design space, we assess through simulation many possible contest designs within the space, and fit a neural network to predict outcomes for previously untested contest designs. Finally, we apply mirror ascent to optimize the design so as to achieve more desirable outcomes. Our empirical analysis shows our approach closely matches the optimal outcomes in settings where the equilibrium is known, and can produce high quality designs in settings where the equilibrium strategies are not solvable analytically.",
+  "needs_fetch": false
+ }
+]

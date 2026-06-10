@@ -17,7 +17,9 @@ jobs:
         with:
           node-version: 22
       - name: Fetch new papers
-        run: node scripts/update.mjs --days 90
+        run: |
+          node scripts/update.mjs --days 90
+          node scripts/build-site-data.mjs
       - name: Commit changes
         run: |
           git config user.name "research-tracker-bot"

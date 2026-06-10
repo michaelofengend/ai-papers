@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1570,
+  "title": "Safety in Artificial Intelligence: Challenges and Opportunities for the U.S. National Labs and Beyond",
+  "org": "deepmind",
+  "date": "2024-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.2172/2475542",
+  "abstract": "Through a summary of keynote talks, panel discussions, and breakout sessions, worldleading AI safety experts from academia, industry, national labs, and government agencies addressed the importance of large-scale investments for research and capabilities in AI safety.With the field innovating at unprecedented rates, there is increasing urgency to develop novel evaluation methodologies that allow full considerations of risks/threats of AI technologies in different domains.Quantitative metrics and effective methodologies that can evaluate and audit the \"safeness\" of how a given AI technology is trained, deployed, or regulated are mainly focused on deep domain knowledge of specific applications, but are nascent for certain scenarios.This maturation gap could inadvertently create vulnerabilities that could be exploited by groups that pose a threat to national security.Additionally, the gap between the public's and research community's perceptions of AI risks/rewards is significant.While numerous voices from the AI community have expressed concern that the risks are very high (the most pessimistic voices being concerned that future AI systems could inflict extinction-level damage to humanity if deployed incorrectly), the public largely is aware only of risk in low-impact scenarios.This discrepancy highlights the crucial need for researchers to articulate what, why, and when various AI risks matter as part of motivating funding requests.Thus, the call to action for this community i",
+  "needs_fetch": false
+ },
+ {
+  "id": 83,
+  "title": "Using Dictionary Learning Features as Classifiers",
+  "org": "anthropic",
+  "date": "2024-10-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/features-as-classifiers/index.html",
+  "abstract": "We report some developing work on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. We'd ask you to treat these results like those of a colleague sharing some thoughts or preliminary experiments for a few minutes at a lab meeting, rather than a mature paper.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1573,
+  "title": "Parrot: Pareto-Optimal Multi-reward Reinforcement Learning Framework for Text-to-Image Generation",
+  "org": "deepmind",
+  "date": "2024-09-30",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-72920-1_26",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1572,
+  "title": "PointNeRF++: A Multi-scale, Point-Based Neural Radiance Field",
+  "org": "deepmind",
+  "date": "2024-09-30",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-72920-1_13",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1571,
+  "title": "TC4D: Trajectory-Conditioned Text-to-4D Generation",
+  "org": "deepmind",
+  "date": "2024-09-30",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-72952-2_4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 524,
+  "title": "Scheherazade: Evaluating Chain-of-Thought Math Reasoning in LLMs with Chain-of-Problems",
+  "org": "other",
+  "date": "2024-09-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2410.00151",
+  "abstract": "Benchmarks are critical for measuring Large Language Model (LLM) reasoning capabilities. Some benchmarks have even become the de facto indicator of such capabilities. However, as LLM reasoning capabilities improve, existing widely-used benchmarks such as GSM8K marginally encapsulate model reasoning differentials - most state-of-the-art models for example achieve over 94% accuracy on the GSM8K dataset (paperwithcode, 2024). While constructing harder benchmarks is possible, their creation is often manual, expensive, and unscalable. As such, we present Scheherazade, an automated approach to produce large quantities of challenging mathematical reasoning benchmarks by logically chaining a small starting set of problems. We propose two different chaining methods, forward chaining and backward chaining, which include randomized branching techniques to generate complex reasoning problems. We apply Scheherazade on GSM8K to create GSM8K-Scheherazade and evaluate 3 frontier LLMs and OpenAI's o1-preview on it. We show that while other frontier models' performance declines precipitously at only a few questions chained, our evaluation suggests o1-preview's performance persists, with the flagship OpenAI model the only one to perform better at backward reasoning. Our data and code are available at https://github.com/YoshikiTakashima/scheherazade-code-data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1575,
+  "title": "3D Congealing: 3D-Aware Image Alignment in the Wild",
+  "org": "deepmind",
+  "date": "2024-09-29",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73232-4_22",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1574,
+  "title": "ViC-MAE: Self-supervised Representation Learning from Images and Video with Contrastive Masked Autoencoders",
+  "org": "deepmind",
+  "date": "2024-09-29",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73235-5_25",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1576,
+  "title": "The refinement paradox and cumulative cultural evolution: Complex products of collective improvement favor conformist outcomes, blind copying, and hyper-credulity",
+  "org": "deepmind",
+  "date": "2024-09-26",
+  "venue": "PLoS Computational Biology",
+  "url": "https://doi.org/10.1371/journal.pcbi.1012436",
+  "abstract": "Social learning is common in nature, yet cumulative culture (where knowledge and technology increase in complexity and diversity over time) appears restricted to humans. To understand why, we organized a computer tournament in which programmed entries specified when to learn new knowledge and when to refine (i.e. improve) existing knowledge. The tournament revealed a 'refinement paradox': refined behavior afforded higher payoffs as individuals converged on a small number of successful behavioral variants, but refining did not generally pay. Paradoxically, entries that refined only in certain conditions did best during behavioral improvement, while simple copying entries thrived when refinement levels were high. Cumulative cultural evolution may be rare in part because sophisticated strategies for improving knowledge and technology are initially advantageous, yet complex culture, once achieved, favors conformity, blind imitation and hyper-credulity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 743,
+  "title": "Geometric-Averaged Preference Optimization for Soft Preference Labels",
+  "org": "deepmind",
+  "date": "2024-09-26",
+  "venue": "NeurIPS 2024",
+  "url": "https://openreview.net/forum?id=3HpCVZV9it",
+  "abstract": "Many algorithms for aligning LLMs with human preferences assume that human preferences are binary and deterministic. However, human preferences can vary across individuals, and therefore should be represented distributionally. In this work, we introduce the distributional soft preference labels and improve Direct Preference Optimization (DPO) with a weighted geometric average of the LLM output likelihood in the loss function. This approach adjusts the scale of learning loss based on the soft labels such that the loss would approach zero when the responses are closer to equally preferred. This simple modification can be easily applied to any DPO-based methods and mitigate over-optimization and objective mismatch, which prior works suffer from. Our experiments simulate the soft preference labels with AI feedback from LLMs and demonstrate that geometric averaging consistently improves performance on standard benchmarks for alignment research. In particular, we observe more preferable responses than binary labels and significant improvements where modestly-confident labels are in the majority.",
+  "needs_fetch": false
+ },
+ {
+  "id": 744,
+  "title": "Learned feature representations are biased by complexity, learning order, position, and more",
+  "org": "deepmind",
+  "date": "2024-09-21",
+  "venue": "Transactions on Machine Learning Research (TMLR)",
+  "url": "https://openreview.net/forum?id=aY2nsgE97a",
+  "abstract": "Representation learning, and interpreting learned representations, are key areas of focus in machine learning and neuroscience. Both fields generally use representations as a means to understand or improve a system's computations. In this work, however, we explore surprising dissociations between representation and computation that may pose challenges for such efforts. We create datasets in which we attempt to match the computational role that different features play, while manipulating other properties of the features or the data. We train various deep learning architectures to compute these multiple abstract features about their inputs. We find that their learned feature representations are systematically biased towards representing some features more strongly than others, depending upon extraneous properties such as feature complexity, the order in which features are learned, and the distribution of features over the inputs. For example, features that are simpler to compute or learned first tend to be represented more strongly and densely than features that are more complex or learned later, even if all features are learned equally well. We also explore how these biases are affected by architectures, optimizers, and training regimes (e.g., in transformers, features decoded earlier in the output sequence also tend to be represented more strongly). Our results help to characterize the inductive biases of gradient-based representation learning. We then illustrate the downstre",
+  "needs_fetch": false
+ },
+ {
+  "id": 1578,
+  "title": "A neural mechanism for compositional generalization of structure in humans",
+  "org": "deepmind",
+  "date": "2024-09-20",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2024.09.20.614119",
+  "abstract": "Abstract A human ability to adapt to the dynamics of novel environments relies on abstracting and generalizing from past experiences. Previous research has focused on how humans generalize from isolated sequential processes, yet we know little about mechanisms that enable adaptation to more complex dynamics, including those that govern much everyday experience. Here, using a novel sequence learning task based on graph factorization, coupled with simultaneous magnetoencephalography (MEG) recordings, we asked how reuse of experiential “building blocks” enables inference and generalization. Behavioral evidence was consistent with participants decomposing task experience into subprocesses, involving abstracting dynamical subprocess structures away from their sensory specifics and transferring these to a new task environment. Neurally this transfer was underpinned by a representational alignment of abstract subprocesses across task phases, evident in an enhanced neural similarity among stimuli that adhered to the same subprocesses, a temporally evolving mapping between predictive representations of subprocesses and a generalization of the dynamic roles that stimuli occupied within graph structures. Decoding strength for dynamical role representations predicted behavioral success in transfer of subprocess knowledge, consistent with a role in supporting behavioral adaptation in new environments. Our findings reveal neural dynamics that support compositional generalization, consisten",
+  "needs_fetch": false
+ },
+ {
+  "id": 1577,
+  "title": "How large language models can reshape collective intelligence",
+  "org": "deepmind",
+  "date": "2024-09-20",
+  "venue": "Nature Human Behaviour",
+  "url": "https://doi.org/10.1038/s41562-024-01959-9",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 387,
+  "title": "RRM: Robust Reward Model Training Mitigates Reward Hacking",
+  "org": "other",
+  "date": "2024-09-20",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2409.13156",
+  "abstract": "Reward models (RMs) play a pivotal role in aligning large language models (LLMs) with human preferences. However, traditional RM training, which relies on response pairs tied to specific prompts, struggles to disentangle prompt-driven preferences from prompt-independent artifacts, such as response length and format. In this work, we expose a fundamental limitation of current RM training methods, where RMs fail to effectively distinguish between contextual signals and irrelevant artifacts when determining preferences. To address this, we introduce a causal framework that learns preferences independent of these artifacts and propose a novel data augmentation technique designed to eliminate them. Extensive experiments show that our approach successfully filters out undesirable artifacts, yielding a more robust reward model (RRM). Our RRM improves the performance of a pairwise reward model trained on Gemma-2-9b-it, on RewardBench, increasing accuracy from 80.61% to 84.15%. Additionally, we train two DPO policies using both the RM and RRM, demonstrating that the RRM significantly enhances DPO-aligned policies, improving MT-Bench scores from 7.27 to 8.31 and length-controlled win-rates in AlpacaEval-2 from 33.46% to 52.49%.",
+  "needs_fetch": false
+ },
+ {
+  "id": 745,
+  "title": "Michelangelo: Long Context Evaluations Beyond Haystacks via Latent Structure Queries",
+  "org": "deepmind",
+  "date": "2024-09-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2409.12640",
+  "abstract": "We introduce Michelangelo: a minimal, synthetic, and unleaked long-context reasoning evaluation for large language models which is also easy to automatically score. This evaluation is derived via a novel, unifying framework for evaluations over arbitrarily long contexts which measure the model's ability to do more than retrieve a single piece of information from its context. The central idea of the Latent Structure Queries framework (LSQ) is to construct tasks which require a model to ``chisel away'' the irrelevant information in the context, revealing a latent structure in the context. To verify a model's understanding of this latent structure, we query the model for details of the structure. Using LSQ, we produce three diagnostic long-context evaluations across code and natural-language domains intended to provide a stronger signal of long-context language model capabilities. We perform evaluations on several state-of-the-art models and demonstrate both that a) the proposed evaluations are high-signal and b) that there is significant room for improvement in synthesizing long-context information.",
+  "needs_fetch": false
+ },
+ {
+  "id": 388,
+  "title": "Language Models Learn to Mislead Humans via RLHF",
+  "org": "anthropic",
+  "date": "2024-09-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2409.12822",
+  "abstract": "Language models (LMs) can produce errors that are hard to detect for humans, especially when the task is complex. RLHF, the most popular post-training method, may exacerbate this problem: to achieve higher rewards, LMs might get better at convincing humans that they are right even when they are wrong. We study this phenomenon under a standard RLHF pipeline, calling it \"U-SOPHISTRY\" since it is Unintended by model developers. Specifically, we ask time-constrained (e.g., 3-10 minutes) human subjects to evaluate the correctness of model outputs and calculate humans' accuracy against gold labels. On a question-answering task (QuALITY) and programming task (APPS), RLHF makes LMs better at convincing our subjects but not at completing the task correctly. RLHF also makes the model harder to evaluate: our subjects' false positive rate increases by 24.1% on QuALITY and 18.3% on APPS. Finally, we show that probing, a state-of-the-art approach for detecting Intended Sophistry (e.g. backdoored LMs), does not generalize to U-SOPHISTRY. Our results highlight an important failure mode of RLHF and call for more research in assisting humans to align them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 389,
+  "title": "The Phenomenology of Machine: A Comprehensive Analysis of the Sentience of the OpenAI-o1 Model Integrating Functionalism, Consciousness Theories, Active Inference, and AI Architectures",
+  "org": "other",
+  "date": "2024-09-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2410.00033",
+  "abstract": "This paper explores the hypothesis that the OpenAI-o1 model--a transformer-based AI trained with reinforcement learning from human feedback (RLHF)--displays characteristics of consciousness during its training and inference phases. Adopting functionalism, which argues that mental states are defined by their functional roles, we assess the possibility of AI consciousness. Drawing on theories from neuroscience, philosophy of mind, and AI research, we justify the use of functionalism and examine the model's architecture using frameworks like Integrated Information Theory (IIT) and active inference. The paper also investigates how RLHF influences the model's internal reasoning processes, potentially giving rise to consciousness-like experiences. We compare AI and human consciousness, addressing counterarguments such as the absence of a biological basis and subjective qualia. Our findings suggest that the OpenAI-o1 model shows aspects of consciousness, while acknowledging the ongoing debates surrounding AI sentience.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1579,
+  "title": "Learning to discriminate by learning to generate: zero-shot generative models increase human object recognition alignment",
+  "org": "deepmind",
+  "date": "2024-09-15",
+  "venue": "Journal of Vision",
+  "url": "http://dx.doi.org/10.1167/jov.24.10.132",
+  "abstract": "How does the human visual system recognize objects---through discriminative inference (fast but potentially unreliable) or using a generative model of the world (slow but potentially more robust)? The question of how the brain combines the best of both worlds to achieve fast and robust inference has been termed \"the deep mystery of vision\" (Kriegeskorte 2015). Yet most of today's leading computational models of human vision are simply based on discriminative inference, such as convolutional neural networks or vision transformers trained on object recognition. In contrast, we here revisit the concept of vision as generative inference. This idea dates back to the notion of vision as unconscious inference proposed by Helmholtz (1867), who hypothesized that the brain uses a generative model of the world to infer probable causes of sensory input. In order to build a generative model capable of recognizing objects, we take some of the world's most powerful generative text-to-image models (Stable Diffusion, Imagen and Parti) and turn them into zero-shot image classifiers using Bayesian inference. We then compare those generative classifiers against a broad range of discriminative classifiers and against human psychophysical object recognition data from the \"model-vs-human\" toolbox (Geirhos et al. 2021). We discover four emergent properties of generative classifiers: They show a record-breaking human-like shape bias (99% for Imagen), near human-level accuracy on challenging distorted",
+  "needs_fetch": false
+ },
+ {
+  "id": 1195,
+  "title": "Evaluating the Alignment of Machine and Human Explanations in Visual Object Recognition through a Novel Behavioral Approach",
+  "org": "anthropic",
+  "date": "2024-09-15",
+  "venue": "Journal of Vision",
+  "url": "http://dx.doi.org/10.1167/jov.24.10.1259",
+  "abstract": "Understanding how computer vision models make decisions is paramount, particularly with increasing scrutiny from various institutions. The field of Explainable Artificial Intelligence (XAI) provides tools to interpret these model decisions, but the explanations are often at odds. Kar et al. (2022) suggested evaluating the goodness of machine explanations based on their alignment with human cognitive processes. This study builds on that concept, addressing the challenge of reliably approximating human explanations, a task complicated by the limitations of existing psychophysical tools like 'bubbles' and classification-images. Our study introduces a novel method to assess the alignment between human and machine explanations in object discrimination tasks. We establish a two-model framework: a target (ResNet-50, whose explanations are under scrutiny) and a reference model (a fully differentiable model, AlexNet, as a stand-in for humans). The objective is to eventually compare the target model's explanations with human explanations. We begin by analyzing feature attribution maps (heat maps showing how image features influence model outputs) from both models. We compare these maps using various metrics to create a baseline ranking of explanation similarity between ResNet-50 and AlexNet. Following this, we create explanation-masked images (EMIs) by retaining only the most informative pixels based on ResNet-50's (Target) feature attributions. We hypothesize that the impact of these ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1196,
+  "title": "Barcode activity in a recurrent network model of the hippocampus enables efficient memory binding",
+  "org": "anthropic",
+  "date": "2024-09-13",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2024.09.09.612073",
+  "abstract": "Forming an episodic memory requires binding together disparate elements that co-occur in a single experience. One model of this process is that neurons representing different components of a memory bind to an \"index\" - a subset of neurons unique to that memory. Evidence for this model has recently been found in chickadees, which use hippocampal memory to store and recall locations of cached food. Chickadee hippocampus produces sparse, high-dimensional patterns (\"barcodes\") that uniquely specify each caching event. Unexpectedly, the same neurons that participate in barcodes also exhibit conventional place tuning. It is unknown how barcode activity is generated, and what role it plays in memory formation and retrieval. It is also unclear how a memory index (e.g. barcodes) could function in the same neural population that represents memory content (e.g. place). Here, we design a biologically plausible model that generates barcodes and uses them to bind experiential content. Our model generates barcodes from place inputs through the chaotic dynamics of a recurrent neural network and uses Hebbian plasticity to store barcodes as attractor states. The model matches experimental observations that memory indices (barcodes) and content signals (place tuning) are randomly intermixed in the activity of single neurons. We demonstrate that barcodes reduce memory interference between correlated experiences. We also show that place tuning plays a complementary role to barcodes, enabling flex",
+  "needs_fetch": false
+ },
+ {
+  "id": 997,
+  "title": "Learning to reason with LLMs",
+  "org": "openai",
+  "date": "2024-09-12",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-to-reason-with-llms/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 996,
+  "title": "OpenAI o1-mini",
+  "org": "openai",
+  "date": "2024-09-12",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/",
+  "abstract": "Advancing cost-efficient reasoning",
+  "needs_fetch": true
+ },
+ {
+  "id": 390,
+  "title": "BAMDP Shaping: a Unified Framework for Intrinsic Motivation and Reward Shaping",
+  "org": "deepmind",
+  "date": "2024-09-09",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2409.05358",
+  "abstract": "Intrinsic motivation and reward shaping guide reinforcement learning (RL) agents by adding pseudo-rewards, which can lead to useful emergent behaviors. However, they can also encourage counterproductive exploits, e.g., fixation with noisy TV screens. Here we provide a theoretical model which anticipates these behaviors, and provides broad criteria under which adverse effects can be bounded. We characterize all pseudo-rewards as reward shaping in Bayes-Adaptive Markov Decision Processes (BAMDPs), which formulates the problem of learning in MDPs as an MDP over the agent's knowledge. Optimal exploration maximizes BAMDP state value, which we decompose into the value of the information gathered and the prior value of the physical state. Psuedo-rewards guide RL agents by rewarding behavior that increases these value components, while they hinder exploration when they align poorly with the actual value. We extend potential-based shaping theory to prove BAMDP Potential-based shaping Functions (BAMPFs) are immune to reward-hacking (convergence to behaviors maximizing composite rewards to the detriment of real rewards) in meta-RL, and show empirically how a BAMPF helps a meta-RL agent learn optimal RL algorithms for a Bernoulli Bandit domain. We finally prove that BAMPFs with bounded monotone increasing potentials also resist reward-hacking in the regular RL setting. We show that it is straightforward to retrofit or design new pseudo-reward terms in this form, and provide an empirical ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1580,
+  "title": "Hierarchical Partitioning Forecaster",
+  "org": "deepmind",
+  "date": "2024-09-07",
+  "venue": "Physica D Nonlinear Phenomena",
+  "url": "http://dx.doi.org/10.1016/j.physd.2024.134335",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 746,
+  "title": "Modeling the Arrows of Time with Causal Multibaker Maps",
+  "org": "deepmind",
+  "date": "2024-09-07",
+  "venue": "Entropy",
+  "url": "https://doi.org/10.3390/e26090776",
+  "abstract": "Why do we remember the past, and plan the future? We introduce a toy model in which to investigate emergent time asymmetries: the causal multibaker maps. These are reversible discrete-time dynamical systems with configurable causal interactions. Imposing a suitable initial condition or “Past Hypothesis”, and then coarse-graining, yields a Pearlean locally causal structure. While it is more common to speculate that the other arrows of time arise from the thermodynamic arrow, our model instead takes the causal arrow as fundamental. From it, we obtain the thermodynamic and epistemic arrows of time. The epistemic arrow concerns records, which we define to be systems that encode the state of another system at another time, regardless of the latter system’s dynamics. Such records exist of the past, but not of the future. We close with informal discussions of the evolutionary and agential arrows of time, and their relevance to decision theory.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1581,
+  "title": "Learning in Games with Progressive Hiding",
+  "org": "deepmind",
+  "date": "2024-09-05",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2409.03875",
+  "abstract": "When learning to play an imperfect information game, it is often easier to first start with the basic mechanics of the game rules. For example, one can play several example rounds with private cards revealed to all players to better understand the basic actions and their effects. Building on this intuition, this paper introduces {\\it progressive hiding}, an algorithm that balances learning the basic mechanics of an imperfect information game and satisfying the information constraints. Progressive hiding is inspired by methods from stochastic multistage optimization, such as scenario decomposition and progressive hedging. We prove that it enables the adaptation of counterfactual regret minimization to games where perfect recall is not satisfied. Numerical experiments illustrate that progressive hiding produces notable improvements in several settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1582,
+  "title": "Evaluating Treatment Prioritization Rules via Rank-Weighted Average Treatment Effects",
+  "org": "deepmind",
+  "date": "2024-09-03",
+  "venue": "Journal of the American Statistical Association",
+  "url": "https://doi.org/10.1080/01621459.2024.2393466",
+  "abstract": "There are a number of available methods for selecting whom to prioritize for treatment, including ones based on treatment effect estimation, risk scoring, and hand-crafted rules. We propose rank-weighted average treatment effect (RATE) metrics as a simple and general family of metrics for comparing and testing the quality of treatment prioritization rules. RATE metrics are agnostic as to how the prioritization rules were derived, and only assess how well they identify individuals that benefit the most from treatment. We define a family of RATE estimators and prove a central limit theorem that enables asymptotically exact inference in a wide variety of randomized and observational study settings. RATE metrics subsume a number of existing metrics, including the Qini coefficient, and our analysis directly yields inference methods for these metrics. We showcase RATE in the context of a number of applications, including optimal targeting of aspirin to stroke patients.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1584,
+  "title": "Human Participants in AI Research: Ethics and Transparency in Practice",
+  "org": "deepmind",
+  "date": "2024-09-01",
+  "venue": "IEEE Transactions on Technology and Society",
+  "url": "https://doi.org/10.1109/tts.2024.3446183",
+  "abstract": "In recent years, research involving human participants has been critical to advances in artificial intelligence (AI) and machine learning (ML), particularly in the areas of conversational, human-compatible, and cooperative AI. For example, roughly 9% of publications at recent AAAI and NeurIPS conferences indicate the collection of original human data. Yet AI and ML researchers lack guidelines for ethical research practices with human participants. Fewer than one out of every four of these AAAI and NeurIPS papers confirm independent ethical review, the collection of informed consent, or participant compensation. This paper aims to bridge this gap by examining the normative similarities and differences between AI research and related fields that involve human participants. Though psychology, human-computer interaction, and other adjacent fields offer historic lessons and helpful insights, AI research presents several distinct considerations—namely, participatory design, crowdsourced dataset development, and an expansive role of corporations—that necessitate a contextual ethics framework. To address these concerns, this manuscript outlines a set of guidelines for ethical and transparent practice with human participants in AI and ML research. Overall, this paper seeks to equip technical researchers with practical knowledge for their work, and to position them for further dialogue with social scientists, behavioral researchers, and ethicists.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1583,
+  "title": "Optimal approximate minimization of one-letter weighted finite automata",
+  "org": "deepmind",
+  "date": "2024-09-01",
+  "venue": "Mathematical Structures in Computer Science",
+  "url": "https://doi.org/10.1017/s0960129524000276",
+  "abstract": "Abstract In this paper, we study the approximate minimization problem of weighted finite automata (WFAs): to compute the best possible approximation of a WFA given a bound on the number of states. By reformulating the problem in terms of Hankel matrices, we leverage classical results on the approximation of Hankel operators, namely the celebrated Adamyan-Arov-Krein (AAK) theory. We solve the optimal spectral-norm approximate minimization problem for irredundant WFAs with real weights, defined over a one-letter alphabet. We present a theoretical analysis based on AAK theory and bounds on the quality of the approximation in the spectral norm and $\\ell ^2$ norm. Moreover, we provide a closed-form solution, and an algorithm, to compute the optimal approximation of a given size in polynomial time.",
+  "needs_fetch": false
+ },
+ {
+  "id": 84,
+  "title": "Circuits Updates — September 2024",
+  "org": "anthropic",
+  "date": "2024-09-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/september-update/index.html",
+  "abstract": "We report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ }
+]

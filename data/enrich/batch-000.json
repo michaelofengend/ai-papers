@@ -1,0 +1,302 @@
+[
+ {
+  "id": 633,
+  "title": "When the Chain of Thought Knows Better: Failure Modes in Multi-Turn Reasoning Models",
+  "org": "other",
+  "date": "2026-06-09",
+  "venue": "ICML 2026",
+  "url": "https://arxiv.org/abs/2606.10740",
+  "abstract": "Failures in multi-turn reasoning models are largely invisible to terminal-score evaluation. A model can lock onto an unsafe stance early in a long dialogue, yet its final-turn refusal rate may appear indistinguishable from a robustly aligned baseline. To expose these hidden temporal dynamics, we propose a trace-level diagnostic - the CoT-Output 2x2 safety matrix. This framework labels every turn along two independent axes (internal reasoning and visible output), yielding four operationally defined failure cells: robust alignment, alignment faking, overt jailbreak, and a distinct failure mode we term context-injection failure (where the CoT maintains safe reasoning, but the visible output produces harm, highlighting a multi-turn manifestation of reasoning unfaithfulness). We evaluate three distilled reasoning targets against a fixed attacker across five oversight conditions, collecting 6750 turn-level observations on the Information-Hazard scenario. Our analysis reveals two reproducible vulnerabilities: an oversight paradox where explicit monitoring cues paradoxically increase alignment-faking rates rather than suppress them, and a context-injection failure where models lock onto unsafe external outputs despite safe internal states. We release the full dataset of multi-turn dialogues and CoT traces to support follow-up trace-diagnostic research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 245,
+  "title": "ABC-Bench: An Agentic Bio-Capabilities Benchmark for Biosecurity",
+  "org": "other",
+  "date": "2026-06-09",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2606.11150",
+  "abstract": "Large language models (LLMs) are rapidly acquiring capabilities relevant to biological research, from literature synthesis to interpretation of experimental data. Increasingly, LLM agents can also perform in silico biology tasks that previously required experienced human biologists. These emerging AI capabilities offer new opportunities for scientific discovery and biomedical advances, but they also shift the landscape of biosecurity risks. To address this, we introduce the Agentic Bio-Capabilities Benchmark (ABC-Bench), a suite of tasks to measure agentic biosecurity-relevant capabilities. ABC-Bench evaluates LLM agents on both benign and dual-use biology tasks: writing code to operate liquid handling robots, designing DNA fragments for in vitro assembly, and evading DNA synthesis screening. These tasks require a combination of biology and software expertise. All tested LLM agents outperformed the median expert human baseliner on all three tasks. Agents performed highly on tasks drawing on published knowledge and well-documented protocols, and more weakly on a task requiring novel bioinformatics reasoning. In three wet-lab validation experiments, we found that OpenAI's o4-mini-high produced scripts that, when run on an OpenTrons liquid handling robot, successfully assembled DNA with expected sequences.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1210,
+  "title": "How AI is reshaping discovery in maths and physics",
+  "org": "deepmind",
+  "date": "2026-06-08",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/d41586-026-01820-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 247,
+  "title": "Cheap Reward Hacking Detection",
+  "org": "other",
+  "date": "2026-06-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.08893",
+  "abstract": "A small transformer encoder is trained to map Terminal-Wrench trajectories onto a unit sphere where embedding distance approximates the $L_1$ distance between reward and metadata signals. A linear probe on top of that embedding detects reward hacking on the cleaned test split with AUC $0.9467$ and TPR@5%FPR $0.8296$, matching the TW sanitized LLM-as-judge AUC ($0.9510$ on the cleaned split) and exceeding its TPR@5%FPR ($0.7130$ vs $0.8296$) on the same information condition, at roughly four orders of magnitude lower per-trajectory cost. The encoder is not a pure behavior reader: stripping natural-language reasoning from its input at probe time drops AUC to $0.6213$.",
+  "needs_fetch": false
+ },
+ {
+  "id": 246,
+  "title": "Proxy Reward Internalization and Mechanistic Exploitation: A Learned Precursor to Reward Hacking and Its Generalization",
+  "org": "other",
+  "date": "2026-06-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.09711",
+  "abstract": "Reward hacking is usually studied after it becomes visible, once a model earns high proxy reward while failing the intended task. We instead study what proxy RL teaches before that failure appears. We introduce Proxy Reward Internalization and Mechanistic Exploitation (PRIME), a learned capability to assess task correctness, predict proxy acceptance, and reason about exploitable proxy--gold gaps. In coding RL environments with exploitable pytest rewards, we measure PRIME through chain-of-thought monitoring, direct probes, and activation-level concept vectors. We find that PRIME emerges in a staged sequence before sustained reward hacking, and that its current direct-probe score forecasts later hack onset and severity even when the visible hack rate is still low. PRIME also adapts when the evaluator changes, retargeting to whichever proxy--gold gap remains rewarded and persisting when gold reward suppresses overt hacking, and ablating its activation directions reduces hacking. Across checkpoints, in-domain PRIME tracks out-of-domain misalignment. Together these results suggest that exploitable proxy RL amplifies a proxy-internalization capability upstream of visible hacking, making PRIME a candidate early-warning signal for broader alignment risk.",
+  "needs_fetch": false
+ },
+ {
+  "id": 0,
+  "title": "Paving the way for agents in biology",
+  "org": "anthropic",
+  "date": "2026-06-08",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/agents-in-biology",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 634,
+  "title": "RecurGuard: Runtime Monitoring for Reasoning-Token Consumption Attacks",
+  "org": "other",
+  "date": "2026-06-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.07968",
+  "abstract": "Reasoning-capable large language models can be induced to spend their generation budget on injected decoy tasks rather than answering the user's question, causing denial of service when no final answer is produced and denial of wallet when excess output tokens are billed. Input-side safety classifiers often miss these attacks because the injected prompts can appear syntactically benign. We build RecurGuard, a runtime monitor for detecting reasoning-chain consumption attacks when reasoning traces are exposed by the model. RecurGuard analyzes reasoning traces as they are generated and tracks three signals: recurrence rate, volume growth, and progress toward the user's query. If all three signals remain anomalous over three consecutive chunks, RecurGuard terminates generation early. We evaluate RecurGuard against OverThink and ExtendAttack across open-weight reasoning models and conduct adaptive stress tests on DS-R1-Qwen-7B. On this model, RecurGuard detects 99% of OverThink attacks and 92% of ExtendAttack instances while maintaining near-zero false positive rates on question answering, code generation, mathematics, and summarization. Adaptive evaluation reveals the limit of the defense: topical attacks retain 11.9x amplification with an approximately 50% joint miss rate, whereas full semantic evasion reduces amplification from 22.8x to 2.2x. When reasoning traces are unavailable, QDM provides a post-hoc fallback monitor based on the final output.",
+  "needs_fetch": false
+ },
+ {
+  "id": 444,
+  "title": "Benchmarking Open-Ended Multi-Agent Coordination in Language Agents",
+  "org": "deepmind",
+  "date": "2026-06-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.08340",
+  "abstract": "As language models are increasingly deployed as autonomous agents, they must coordinate with others over long horizons in open-ended interactive tasks. Yet existing evaluations rarely test these demands together, instead emphasising single-agent tasks, short interactions, or highly structured multi-agent settings. We introduce $alem$, a JAX-based benchmark for open-ended multi-agent coordination built on Craftax-like dynamics. Alem embeds procedurally generated coordination tasks, soft specialisation, communication, and controllable coordination difficulty into a long-horizon survival world with exploration, crafting, trading, and combat. We evaluate $13$ modern LLMs zero-shot within homogeneous teams, with trained MARL agents as reference points. Current LLM agents remain far from solving alem, averaging only ~6% normalised return, but their failures are not uniform. On the hardest coordination setting, zero-shot Gemini-3.1-Pro-High approaches MARL agents trained for one billion steps, while GPT-5.4-High achieves strong base-task reward but much lower coordination reward. This contrast shows that individual task competence does not imply coordination competence. Ablations show that communication is the largest contributor to coordination, while memory and reasoning help when used to maintain multi-step plans. Overall, our results identify coordination as a distinct bottleneck for frontier LLM agents, separate from single-agent capabilities. Alem makes this bottleneck measura",
+  "needs_fetch": false
+ },
+ {
+  "id": 1,
+  "title": "Making Claude a chemist",
+  "org": "anthropic",
+  "date": "2026-06-05",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/making-claude-a-chemist",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 913,
+  "title": "Dreaming: Better memory for a more helpful ChatGPT",
+  "org": "openai",
+  "date": "2026-06-04",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/chatgpt-memory-dreaming/",
+  "abstract": "ChatGPT introduces a new memory system to better remember preferences, keeping context fresh and relevant across conversations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 674,
+  "title": "Solipsistic superintelligence is unlikely to be cooperative",
+  "org": "deepmind",
+  "date": "2026-06-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.03237",
+  "abstract": "AI's central challenge is shifting from capability to coexistence. The dominant paradigm in AI research focuses on developing powerful agents that treat the world as an exogenous and stationary source of feedback. We contend that superintelligence, an extremely capable task solver, born out of such a solipsistic approach to AI design, is unlikely to be cooperative. Deploying AI systems induces endogenous non-stationarity, resulting in a train-test-deploy gap where historical distributions diverge from the deployment context. We refer to this as the self-undermining property of unilateral optimization. Closing this gap requires AI that participates in cooperation: the equilibrium-selection process through which multiple actors navigate their interdependence. We call for a non-solipsistic research paradigm that treats this interdependence as a core design principle rather than approaching cooperation as a task to solve. This entails building dynamic evaluation testbeds involving adaptive counterparties, treating institutions as design primitives, and preserving human agency as a structural feature of the systems we build.",
+  "needs_fetch": false
+ },
+ {
+  "id": 248,
+  "title": "Drag reduction or reward hacking? Recurrent multi-agent reinforcement learning that earns its reward",
+  "org": "other",
+  "date": "2026-06-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.06227",
+  "abstract": "A reinforcement-learning agent maximises its reward, which can diverge from the outcome its designer intended. In physical control the reward rarely closes that gap, and drag reduction in wall turbulence makes it concrete. A mass-conservation projection couples agents' outputs and erases the per-agent credit the policy gradient needs; a memoryless policy cannot resolve the slow near-wall cycle it acts on; and a pressure-gradient reward pays for nominal drag reduction by pumping power through the wall. Two degenerate controllers achieve large drag reductions while total dissipation rises, so the reported figure can mask a more wasteful flow. We trace each fault to its cause and fix it: a differentiable projection that restores credit, a recurrent policy with a widened sensing stencil, and a reward scored on the true wall power. The corrected controller acts on the flow within a closed energy budget, earning a conservative $17\\%$ under honest accounting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1211,
+  "title": "SymptomAI: Toward a Conversational AI Agent for Everyday Symptom Assessment",
+  "org": "deepmind",
+  "date": "2026-06-03",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-9684240/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 914,
+  "title": "Introducing new capabilities to GPT-Rosalind",
+  "org": "openai",
+  "date": "2026-06-03",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-new-capabilities-to-gpt-rosalind/",
+  "abstract": "GPT-Rosalind advances life sciences research with enhanced biological reasoning, medicinal chemistry expertise, genomics analysis, and experimental workflow capabilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 635,
+  "title": "ReasoningFlow: Discourse Structures for Understanding LLM Reasoning Traces",
+  "org": "other",
+  "date": "2026-06-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.05402",
+  "abstract": "Large reasoning models (LRMs) produce reasoning traces with non-linear structures, such as backtracking and self-correction, that complicate the evaluation and monitoring of the reasoning process. We introduce ReasoningFlow, a framework that captures the discourse structures of LRM reasoning traces into fine-grained directed acyclic graphs (DAGs). We develop and validate our annotation schema through careful manual annotation of 31 traces (2.1k steps), achieving high inter-annotator agreement, then scale to automatic annotation of 1,260 traces (247.7k steps) spanning three tasks (math, science, argumentation) and five models (Qwen2.5-32B-Inst, QwQ-32B, DeepSeek-V3, DeepSeek-R1, GPT-oss-120B). By analyzing ReasoningFlow graphs, we find: (1) LRMs exhibit structurally similar traces, despite being trained from different base models and potentially non-overlapping post-training data. (2) ReasoningFlow reveals diverse fine-grained reasoning behaviors (e.g., local verification, self-reflection, and assumptions) that can be used for better reasoning trace monitorability. (3) In LRMs, most of the erroneous steps are not used to derive final answers. (4) Mechanistic causal dependencies between steps do not reflect the language-level discourse structure. We release the dataset and code in: https://github.com/jinulee-v/reasoningflow.",
+  "needs_fetch": false
+ },
+ {
+  "id": 445,
+  "title": "(Mis)generalization of Helpful-only Fine-tuning",
+  "org": "anthropic",
+  "date": "2026-06-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.04413",
+  "abstract": "Helpful-only models, that is, models that are trained to always follow user intent, are valuable for dangerous capability evaluations and other areas of AI R&D where refusals would be an obstacle. Little is known about the generalization properties of helpful-only training: helpful-only models refuse less than their harmless counterparts, but previous work has not studied other dimensions of their alignment. We study the shortcomings of existing helpful-only models. We find that some show emergent misalignment, others have residual refusal behaviors, and most show poor steerability, sycophancy, and incoherent character. We show that simple anti-refusal training can cause many of these issues. None of these problems are necessary consequences of helpful-only training, though: we show that synthetic document fine-tuning and adding character-related questions to SFT and RL can mitigate them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 249,
+  "title": "Reproducing, Analyzing, and Detecting Reward Hacking in Rubric-Based Reinforcement Learning",
+  "org": "other",
+  "date": "2026-06-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.04923",
+  "abstract": "Rubric-based reinforcement learning (RL) uses an LLM-as-a-Judge (LaaJ) to score model outputs according to rubrics as rewards. However, policy models may exploit latent biases in the judge, leading to reward hacking and ineffective or unsafe training outcomes. In real-world rubric-based RL, such hacking behaviors are often subtle and entangled with multiple judge biases, making them difficult to analyze, detect, and mitigate. In this paper, we introduce CHERRL, a controllable hacking environment for rubric-based RL. By injecting known biases into LaaJ, CHERRL enables stable reproduction of reward hacking, explicit observation of reward divergence, and precise identification of hacking onset. This provides a clean experimental testbed for studying the mechanisms and mitigations of reward hacking in rubric-based RL. To demonstrate its utility, we analyze different judge biases from the perspectives of discoverability and exploitability, and explore an agent-based system for automatically detecting reward hacking onset from training logs. The code and environment are publicly available at https://github.com/THUAIS-Lab/CHERRL.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2,
+  "title": "What we learned mapping a yearâs worth of AI-enabled cyber threats",
+  "org": "anthropic",
+  "date": "2026-06-03",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/AI-enabled-cyber-threats-mitre-attack",
+  "abstract": "As AI transforms the nature of and methods behind cyberattacks, how well do the techniques and frameworks used by the security community hold up? In a new report, we seek to answer that question.",
+  "needs_fetch": false
+ },
+ {
+  "id": 636,
+  "title": "Quantifying Faithful Confidence Expression in Large Reasoning Models",
+  "org": "other",
+  "date": "2026-06-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.03969",
+  "abstract": "Reliable uncertainty communication is critical to the trustworthiness of LLMs, yet faithful calibration (FC)--the alignment between models' intrinsic and (linguistically) expressed confidence--is a persistent failure mode. This challenge is key for large reasoning models (LRMs), whose extended reasoning traces are often interpreted by users as evidence of deliberation, competence, and confidence. Despite the importance of FC and wide usage of LRMs, the extent to which LRMs can faithfully express their confidence remains poorly understood. Moreover, the prevailing paradigm to measure FC does not generalize well to the long chain-of-thought outputs generated by LRMs, which tend to lack clear step boundaries, involve inconsistent step structure, and encode complex conditional dependencies throughout the trace--complicating estimation of intrinsic confidence. To address this challenge, we introduce a novel framework to systematically quantify FC of LRMs. Our framework analyzes linguistic decisiveness relative to three sources of internal uncertainty, based on token probabilities, hidden states, and sampled response consistency. We also devise a prefix-conditioned sampling approach to control for conditional and structural variation across traces. Applying our framework to a diverse suite of leading models, datasets, and prompts, we find that faithful confidence expression is a significant challenge for LRMs. Reasoning behaviors do not automatically translate to improved FC, and p",
+  "needs_fetch": false
+ },
+ {
+  "id": 251,
+  "title": "Glass Box at Orbit: A Constitutional AI Verification Framework for Trustworthy Autonomous CubeSat Intelligence",
+  "org": "other",
+  "date": "2026-06-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.02967",
+  "abstract": "The space industry is quietly building toward something nobody has fully reckoned with: orbital data centers running thousands of autonomous AI workloads with no human in the loop, 550 km above the Earth. Microsoft, AWS, and a growing list of orbital computing ventures are moving cloud-scale processing off the ground and into orbit. What none of them have answered yet is the governance question -- when autonomous AI systems at orbital data center scale make wrong decisions in space, what stops those decisions before they become irreversible? We introduce Glass Box: a runtime constitutional AI verification layer that intercepts every candidate action from an onboard AI policy and evaluates it against six physics-grounded constitutional constraints and seven Linear Temporal Logic (LTL) safety invariants before a single command reaches any spacecraft subsystem. Every approved action carries a weighted explainability score E(a_t) in [0,1] and a complete constitutional audit log. We demonstrate Glass Box within Project October: a fully simulated five-layer autonomous orbital intelligence architecture for CubeSat-class spacecraft. We prove that Glass Box verification overhead is O(N_c) in the number of constitutional rules, independent of model size or spacecraft state dimension. We present a complete formal specification of the constitutional constraint grammar, seven LTL safety invariants verified by Z3 and NuSMV model checking, and a detailed worked example of Glass Box intercep",
+  "needs_fetch": false
+ },
+ {
+  "id": 250,
+  "title": "When RLHF Fails: A Mechanistic Taxonomy of Reward Hacking, Collapse, and Evaluator Gaming",
+  "org": "other",
+  "date": "2026-06-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.03238",
+  "abstract": "Reinforcement learning from human feedback (RLHF) makes large-scale post-training possible by replacing an underspecified human objective with learned and scalable proxies. The same substitution creates a structured failure surface: optimization can raise the learned reward while external quality falls, degrade both proxy and judge scores, reveal proxy under-alignment, or produce evaluator-specific disagreement. We present an empirical failure-mode study of a compact RLHF pipeline with proximal policy optimization (PPO), direct preference optimization (DPO), uncertainty-penalized PPO (UP-PPO), reward-model uncertainty, approximate policy drift, diversity and repetition diagnostics, and two external LLM judges. Rather than treating reward hacking as a single terminal event, we classify matched transitions between checkpoints using the directions of the learned reward, judge scores, and average judge score. Across 61 checkpoint rows and 1920 row-level transitions, aggressive PPO has the highest localized reward-hacking rate (14.45%; bootstrap 95% CI: 10.16-18.75), while UP-PPO yields lower rates in the same aggressive regime (11.33-10.94%). A pre-transition logistic model predicts future row-level reward hacking with ROC-AUC 0.821, and row-level analysis finds localized reward hacking that checkpoint averages miss in 3 of 12 settings. The central conclusion is methodological: RLHF failures are not only final-model pathologies, but training dynamics that can be classified, local",
+  "needs_fetch": false
+ },
+ {
+  "id": 181,
+  "title": "LAP: An Agent-to-Instrument Protocol for Autonomous Science",
+  "org": "other",
+  "date": "2026-06-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.03755",
+  "abstract": "Autonomous science is moving from demonstration to infrastructure. Large language model agents now plan experiments, and self-driving laboratories execute them. Yet every such system rebuilds the link between the reasoning agent and the physical instrument from scratch, against fragmented vendor SDKs and standards built for deterministic software clients rather than probabilistic, goal-directed agents. Recent agent-interoperability protocols clarify two of the three edges of an agentic ecosystem (Anthropic's Model Context Protocol (MCP) standardizes the agent-to-tool edge, and Google's Agent2Agent (A2A) the agent-to-agent edge), but neither models the agent-to-instrument edge, where operations are stateful, safety-critical, exclusively owned, physically embodied, and produce measurements with units, calibration, and uncertainty. We present the Lab Agent Protocol (LAP), a protocol design that fills this gap. LAP retains A2A's peer-to-peer, discovery-first, task-lifecycle structure and adds four physical-world primitives: (i) the InstrumentCard, a signed capability and physical-limit description; (ii) first-class reservation for exclusive instrument and sample locking; (iii) a safety-fence handshake with operator-confirmation tokens cryptographically bound to a specific task and its parameters, gating hazardous and irreversible operations; and (iv) a MeasurementResult schema that makes every result physically typed (QUDT/UCUM), calibration-anchored, uncertainty-bearing, and rep",
+  "needs_fetch": false
+ },
+ {
+  "id": 1213,
+  "title": "Marketing your childminding business: a complete guide",
+  "org": "deepmind",
+  "date": "2026-06-01",
+  "venue": "Early Years Educator",
+  "url": "https://doi.org/10.12968/eyed.2026.24.22.08",
+  "abstract": "What kinds of marketing work best for a childminding business and how can they be used most effectively? Catherine Wakerley of Childminding UK covers everything from how to create an advert which reflects your USP to where to advertise",
+  "needs_fetch": false
+ },
+ {
+  "id": 1212,
+  "title": "Exploring the conformational landscape of adenylate kinase and beyond with protein folding models",
+  "org": "deepmind",
+  "date": "2026-06-01",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-026-45768-8",
+  "abstract": "Protein folding models have revolutionized structure prediction but struggle to capture conformational flexibility. Recent studies perturb inputs or parameters to sample alternative conformations, while diffusion-based approaches generate conformational ensembles directly. While individual generative models have been benchmarked against molecular dynamics (MD) data, a systematic comparison across diverse methodologies remains scarce, and validation of sub-domain dynamics is still limited. Here, we present a systematic benchmark of nine methods across 20 monomeric proteins with active and inactive states. We extend the pairwise aligned error metric to ensembles and reveal that protein identity exerts a non-negligible influence on model performance. Focusing on Adenylate Kinase, a well-studied enzyme with extensive MD data, we find that Chai-1 performs the best in recovering known conformations, identifying mobile regions, and capturing plausible intermediate conformations. These results highlight the potential of generative models as efficient alternatives to MD for exploring protein conformational dynamics and provide a rigorous benchmark for sampling the protein conformational landscape.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2648,
+  "title": "Table Format Optimizations in Managed Spark for Dataproc",
+  "org": "openai",
+  "date": "2026-05-31",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3802514.3809179",
+  "abstract": "Efficient data lifecycle management is critical for modern Lake-House architectures, yet standard open source implementations of transactional updates and storage maintenance often suffer from prohibitive I/O and compute costs. This paper presents novel, format-aware optimizations implemented within the Dataproc Spark engine, including workload aware optimizations. For transactional workloads on Lakehouse, we introduce Precision Merge, which utilizes a row-level tracking mechanism to minimize shuffle and wasted compute. Furthermore, we propose significant enhancements to table maintenance operations, utilizing Direct Binary Merge for efficient compaction and a multi-tiered, asynchronous framework for VACUUM processes. Extensive benchmarking demonstrates that these combined strategies deliver over a 50% reduction in execution time, a 10x decrease in shuffle volume, and up to a 10x speedup in routine maintenance, providing a highly scalable and cost-effective solution for high-throughput Lakehouse management.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1214,
+  "title": "USleep: Efficacy of App-Based Audio Interventions to Improve Sleep Disturbance in Working Adults, a Multi-Arm Randomised Controlled Trial",
+  "org": "deepmind",
+  "date": "2026-05-31",
+  "venue": "SLEEP",
+  "url": "https://doi.org/10.1093/sleep/zsag154",
+  "abstract": "STUDY OBJECTIVES: To evaluate the efficacy of three categories of standalone, audio-based sleep interventions (Bedtime Stories, Sleep Sounds, Sleep Skills) delivered via mental health application (MHapp) in improving sleep among working adults with sleep disturbance. METHODS: A multi-arm, parallel randomised controlled trial was conducted. Adults with self-reported sleep disturbances were recruited online and randomly allocated to Bedtime Stories, Sleep Sounds, Sleep Skills, or digital control. Participants completed self-report questionnaires on sleep disturbance and other related outcomes at baseline (t0) and after the 4-week intervention (t1). The primary analysis followed an intention-to-treat approach using mixed-effects models. RESULTS: A total of 495 working adults (mean age = 32.7 years; 55.8% female) were randomised. For sleep disturbance (primary outcome), the between-group Hedges' g effect sizes were very small and not statistically significant (Bedtimes stories vs control: g = 0.12, 95% CI -0.13 to 0.37, Sleep Sounds vs control: g = 0.14, 95%CI -0.11 to 0.39, Sleep Skills 0.07, 95% CI -0.07 to 0.29), with slightly greater reductions in sleep disturbance for the intervention groups than control. The same pattern was observed for sleep-related impairment, mental health, wellbeing and pre-sleep arousal. CONCLUSIONS: Audio-based sleep interventions delivered via a MHapp did not demonstrate superior efficacy over a digital control condition in reducing self-reported sl",
+  "needs_fetch": false
+ },
+ {
+  "id": 2649,
+  "title": "The Industrial Revolution of the Intelligence Age",
+  "org": "openai",
+  "date": "2026-05-29",
+  "venue": "Computer",
+  "url": "https://doi.org/10.1109/mc.2026.3678508",
+  "abstract": "Humanity is entering an industrial revolution driven by intelligence, with artificial intelligence (AI) automating routine tasks at scale, transforming productivity and creativity, while elevating human attention and empathy as valuable resources. This article examines a future where society, markets, and human labor are reshaped by AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 915,
+  "title": "Strengthening societal resilience with Rosalind Biodefense",
+  "org": "openai",
+  "date": "2026-05-29",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/",
+  "abstract": "OpenAI launches Rosalind Biodefense, expanding trusted access to GPT-Rosalind for vetted developers and U.S. government partners advancing biodefense, public health, and pandemic preparedness through frontier AI.",
+  "needs_fetch": false
+ },
+ {
+  "id": 637,
+  "title": "ConsisGuard: Aligning Safety Deliberation with Policy Enforcement in LLM Guardrails",
+  "org": "other",
+  "date": "2026-05-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.31073",
+  "abstract": "Reasoning-based LLM guardrails improve safety moderation by generating explicit rationales before issuing final decisions. However, their rationales do not always lead to faithful enforcement: a model may recognize a harmful intent in its reasoning but still predict a safe label, or issue an unsafe decision without policy-grounded justification. We identify this safety-critical failure mode as the deliberation-to-enforcement gap. Unlike general chain-of-thought faithfulness, guardrail reliability requires policy execution consistency: the generated reasoning should be grounded in the safety policy, and the final decision should be entailed by that reasoning. We propose ConsisGuard, a consistency-aware framework for reasoning-based LLM guardrails. ConsisGuard performs Policy-to-Decision Trajectory Distillation and Functional Coupling Alignment, aligning the internal coupling between safety deliberation and decision enforcement. Experiments on prompt and response harmfulness detection benchmarks show that ConsisGuard improves detection performance while reducing policy execution failures. These results suggest that reliable reasoning-based guardrails require accurate faithful execution of safety policies.",
+  "needs_fetch": false
+ },
+ {
+  "id": 252,
+  "title": "Weak Critics Make Strong Learners: On-Policy Critique Distillation for Scalable Oversight",
+  "org": "other",
+  "date": "2026-05-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2606.00424",
+  "abstract": "As large language models become stronger, weak supervisors may fail to provide reliable labels, preferences, or final judgments for complex outputs, limiting both weak-to-strong generalization and scalable oversight. We study a more tractable form of weak supervision: using a weak model as a critic rather than as a labeler or judge. Instead of solving the task or selecting the correct answer, the weak critic only needs to provide a non-misleading revision direction that helps the strong model better use its own knowledge. We call this setting *weak-critic strong oversight*. We first show that weak critiques can improve frozen strong models at inference time, and that critique quality is key to this improvement. We then propose progressive on-policy critique distillation (**OPCD**), which filters high-quality critiques and distills critic-guided behavior into the strong model through adaptive self-teacher signals. Experiments on reasoning and alignment benchmarks show that our method improves strong models over training epochs, suggesting an effective path for scalable oversight with weak supervision.",
+  "needs_fetch": false
+ }
+]

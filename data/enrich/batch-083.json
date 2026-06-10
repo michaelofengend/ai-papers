@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2395,
+  "title": "Social training reconfigures prediction errors to shape Self-Other boundaries",
+  "org": "deepmind",
+  "date": "2020-06-15",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-020-16856-8",
+  "abstract": "Abstract Selectively attributing beliefs to specific agents is core to reasoning about other people and imagining oneself in different states. Evidence suggests humans might achieve this by simulating each other’s computations in agent-specific neural circuits, but it is not known how circuits become agent-specific. Here we investigate whether agent-specificity adapts to social context. We train subjects on social learning tasks, manipulating the frequency with which self and other see the same information. Training alters the agent-specificity of prediction error (PE) circuits for at least 24 h, modulating the extent to which another agent’s PE is experienced as one’s own and influencing perspective-taking in an independent task. Ventromedial prefrontal myelin density, indexed by magnetisation transfer, correlates with the strength of this adaptation. We describe a frontotemporal learning network, which exploits relationships between different agents’ computations. Our findings suggest that Self-Other boundaries are learnable variables, shaped by the statistical structure of social experience.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2397,
+  "title": "IsarStep: a Benchmark for High-level Mathematical Reasoning",
+  "org": "deepmind",
+  "date": "2020-06-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.09265",
+  "abstract": "A well-defined benchmark is essential for measuring and accelerating research progress of machine learning models. In this paper, we present a benchmark for high-level mathematical reasoning and study the reasoning capabilities of neural sequence-to-sequence models. We build a non-synthetic dataset from the largest repository of proofs written by human experts in a theorem prover. The dataset has a broad coverage of undergraduate and research-level mathematical and computer science theorems. In our defined task, a model is required to fill in a missing intermediate proposition given surrounding proofs. This task provides a starting point for the long-term goal of having machines generate human-readable proofs automatically. Our experiments and analysis reveal that while the task is challenging, neural models can capture non-trivial mathematical reasoning. We further design a hierarchical transformer that outperforms the transformer baseline.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2396,
+  "title": "Bootstrap your own latent: A new approach to self-supervised Learning",
+  "org": "deepmind",
+  "date": "2020-06-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.07733",
+  "abstract": "We introduce Bootstrap Your Own Latent (BYOL), a new approach to self-supervised image representation learning. BYOL relies on two neural networks, referred to as online and target networks, that interact and learn from each other. From an augmented view of an image, we train the online network to predict the target network representation of the same image under a different augmented view. At the same time, we update the target network with a slow-moving average of the online network. While state-of-the art methods rely on negative pairs, BYOL achieves a new state of the art without them. BYOL reaches $74.3\\%$ top-1 classification accuracy on ImageNet using a linear evaluation with a ResNet-50 architecture and $79.6\\%$ with a larger ResNet. We show that BYOL performs on par or better than the current state of the art on both transfer and semi-supervised benchmarks. Our implementation and pretrained models are given on GitHub.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2399,
+  "title": "Statistical Efficiency of Thompson Sampling for Combinatorial Semi-Bandits",
+  "org": "deepmind",
+  "date": "2020-06-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.06613",
+  "abstract": "We investigate stochastic combinatorial multi-armed bandit with semi-bandit feedback (CMAB). In CMAB, the question of the existence of an efficient policy with an optimal asymptotic regret (up to a factor poly-logarithmic with the action size) is still open for many families of distributions, including mutually independent outcomes, and more generally the multivariate sub-Gaussian family. We propose to answer the above question for these two families by analyzing variants of the Combinatorial Thompson Sampling policy (CTS). For mutually independent outcomes in $[0,1]$, we propose a tight analysis of CTS using Beta priors. We then look at the more general setting of multivariate sub-Gaussian outcomes and propose a tight analysis of CTS using Gaussian priors. This last result gives us an alternative to the Efficient Sampling for Combinatorial Bandit policy (ESCB), which, although optimal, is not computationally efficient.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2398,
+  "title": "Adaptive Reward-Free Exploration",
+  "org": "deepmind",
+  "date": "2020-06-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.06294",
+  "abstract": "Reward-free exploration is a reinforcement learning setting studied by Jin et al. (2020), who address it by running several algorithms with regret guarantees in parallel. In our work, we instead give a more natural adaptive approach for reward-free exploration which directly reduces upper bounds on the maximum MDP estimation error. We show that, interestingly, our reward-free UCRL algorithm can be seen as a variant of an algorithm of Fiechter from 1994, originally proposed for a different objective that we call best-policy identification. We prove that RF-UCRL needs of order $({SAH^4}/{\\varepsilon^2})(\\log(1/δ) + S)$ episodes to output, with probability $1-δ$, an $\\varepsilon$-approximation of the optimal policy for any reward function. This bound improves over existing sample-complexity bounds in both the small $\\varepsilon$ and the small $δ$ regimes. We further investigate the relative complexities of reward-free exploration and best-policy identification.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2402,
+  "title": "Automatic segmentation using artificial intelligence of baseline anatomical parameters of patients starting anti-VEGF injections for neovascular age-related macular degeneration",
+  "org": "deepmind",
+  "date": "2020-06-10",
+  "venue": null,
+  "url": "https://openalex.org/W3082707494",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2401,
+  "title": "Quantitative analysis of change in retinal tissues in neovascular age-related macular degeneration using artificial intelligence",
+  "org": "deepmind",
+  "date": "2020-06-10",
+  "venue": "Investigative Ophthalmology & Visual Science",
+  "url": "https://iovs.arvojournals.org/article.aspx?articleid=2766896",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2400,
+  "title": "Planning in Markov Decision Processes with Gap-Dependent Sample Complexity",
+  "org": "deepmind",
+  "date": "2020-06-10",
+  "venue": "LillOA (Université de Lille (University Of Lille))",
+  "url": "http://hdl.handle.net/20.500.12210/29467",
+  "abstract": "We propose MDP-GapE, a new trajectory-based Monte-Carlo Tree Search algorithm for planning in a Markov Decision Process in which transitions have a finite support. We prove an upper bound on the number of calls to the generative models needed for MDP-GapE to identify a near-optimal action with high probability. This problem-dependent sample complexity result is expressed in terms of the sub-optimality gaps of the state-action pairs that are visited during exploration. Our experiments reveal that MDP-GapE is also effective in practice, in contrast with other algorithms with sample complexity guarantees in the fixed-confidence setting, that are mostly theoretical.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2403,
+  "title": "Proof-Producing Synthesis of CakeML from Monadic HOL Functions",
+  "org": "deepmind",
+  "date": "2020-06-06",
+  "venue": "Journal of Automated Reasoning",
+  "url": "https://doi.org/10.1007/s10817-020-09559-8",
+  "abstract": "Abstract We introduce an automatic method for producing stateful ML programs together with proofs of correctness from monadic functions in HOL. Our mechanism supports references, exceptions, and I/O operations, and can generate functions manipulating local state, which can then be encapsulated for use in a pure context. We apply this approach to several non-trivial examples, including the instruction encoder and register allocator of the otherwise pure CakeML compiler, which now benefits from better runtime performance. This development has been carried out in the HOL4 theorem prover.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2404,
+  "title": "Rapid Task-Solving in Novel Environments",
+  "org": "deepmind",
+  "date": "2020-06-05",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.03662",
+  "abstract": "We propose the challenge of rapid task-solving in novel environments (RTS), wherein an agent must solve a series of tasks as rapidly as possible in an unfamiliar environment. An effective RTS agent must balance between exploring the unfamiliar environment and solving its current task, all while building a model of the new environment over which it can plan when faced with later tasks. While modern deep RL agents exhibit some of these abilities in isolation, none are suitable for the full RTS challenge. To enable progress toward RTS, we introduce two challenge domains: (1) a minimal RTS challenge called the Memory&amp;Planning Game and (2) One-Shot StreetLearn Navigation, which introduces scale and complexity from real-world data. We demonstrate that state-of-the-art deep RL agents fail at RTS in both domains, and that this failure is due to an inability to plan over gathered knowledge. We develop Episodic Planning Networks (EPNs) and show that deep-RL agents with EPNs excel at RTS, outperforming the nearest baseline by factors of 2-3 and learning to navigate held-out StreetLearn maps within a single episode. We show that EPNs learn to execute a value iteration-like planning algorithm and that they generalize to situations beyond their training experience. algorithm and that they generalize to situations beyond their training experience.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2405,
+  "title": "Nested-Wasserstein Self-Imitation Learning for Sequence Generation",
+  "org": "deepmind",
+  "date": "2020-06-03",
+  "venue": null,
+  "url": "http://proceedings.mlr.press/v108/zhang20b/zhang20b.pdf",
+  "abstract": "Reinforcement learning (RL) has been widely studied for improving sequence-generation models. However, the conventional rewards used for RL training typically cannot capture sufficient semantic information and therefore render model bias. Further, the sparse and delayed rewards make RL exploration inefficient. To alleviate these issues, we propose the concept of nested-Wasserstein distance for distributional semantic matching. To further exploit it, a novel nested-Wasserstein self-imitation learning framework is developed, encouraging the model to exploit historical high-rewarded sequences for enhanced exploration and better semantic matching. Our solution can be understood as approximately executing proximal policy optimization with Wasserstein trust-regions. Experiments on a variety of unconditional and conditional sequence-generation tasks demonstrate the proposed approach consistently leads to improved performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2406,
+  "title": "Temporally-Extended ε-Greedy Exploration",
+  "org": "deepmind",
+  "date": "2020-06-02",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://doi.org/10.48550/arxiv.2006.01782",
+  "abstract": "Recent work on exploration in reinforcement learning (RL) has led to a series of increasingly complex solutions to the problem. This increase in complexity often comes at the expense of generality. Recent empirical studies suggest that, when applied to a broader set of domains, some sophisticated exploration methods are outperformed by simpler counterparts, such as ε-greedy. In this paper we propose an exploration algorithm that retains the simplicity of ε-greedy while reducing dithering. We build on a simple hypothesis: the main limitation of ε-greedy exploration is its lack of temporal persistence, which limits its ability to escape local optima. We propose a temporally extended form of ε-greedy that simply repeats the sampled action for a random duration. It turns out that, for many duration distributions, this suffices to improve exploration on a large set of domains. Interestingly, a class of distributions inspired by ecological models of animal foraging behaviour yields particularly strong performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2417,
+  "title": "Modelling parameter uncertainty reveals bushmeat yields versus survival trade-offs in heavily-hunted duiker <i>Cephalophus</i> spp.",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2020.06.01.127522",
+  "abstract": "Abstract Reliably predicting sustainable exploitation levels for many tropical species subject to hunting remains a difficult task, largely because of the inherent uncertainty associated with estimating parameters related to both population dynamics and hunting pressure. Here, we investigate a modelling approach to support decisions in bushmeat management which explicitly considers parameter uncertainty. We apply the approach to duiker Cephalophus spp., assuming either a constant quota-based, or a constant proportional harvesting, strategy. Within each strategy, we evaluate different hunting levels in terms of both average yield and survival probability, over different time horizons. Under quota-based harvesting, considering uncertainty revealed a trade-off between yield and extinction probability that was not evident when ignoring uncertainty. The highest yield was returned by a quota that implied a 40% extinction risk, whereas limiting extinction risk to 10% reduced yield by 50%-70%. By contrast, under proportional harvesting, there was no trade-off between yield and extinction probability. The maximum proportion returned a yield comparable with the maximum possible under quota-based harvesting, but with extinction risk below 10%. However, proportional harvesting can be harder to implement in practice because it depends on an estimate of population size. In both harvesting approaches, predicted yields were highly right-skewed with median yields differing from mean yields, i",
+  "needs_fetch": false
+ },
+ {
+  "id": 2416,
+  "title": "Probing Emergent Semantics in Predictive Agents via Question Answering",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2006.01016",
+  "abstract": "Recent work has shown how predictive modeling can endow agents with rich knowledge of their surroundings, improving their ability to act in complex environments. We propose question-answering as a general paradigm to decode and understand the representations that such agents develop, applying our method to two recent approaches to predictive modeling -action-conditional CPC (Guo et al., 2018) and SimCore (Gregor et al., 2019). After training agents with these predictive objectives in a visually-rich, 3D environment with an assortment of objects, colors, shapes, and spatial configurations, we probe their internal state representations with synthetic (English) questions, without backpropagating gradients from the question-answering decoder into the agent. The performance of different agents when probed this way reveals that they learn to encode factual, and seemingly compositional, information about objects, properties and spatial relations from their physical environment. Our approach is intuitive, i.e. humans can easily interpret responses of the model as opposed to inspecting continuous vectors, and model-agnostic, i.e. applicable to any modeling approach. By revealing the implicit knowledge of objects, quantities, properties and relations acquired by agents as they learn, question-conditional agent probing can stimulate the design and development of stronger predictive learning objectives.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2415,
+  "title": "Sideways: Depth-Parallel Training of Video Models",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2001.06232",
+  "abstract": "We propose Sideways, an approximate backpropagation scheme for training video models. In standard backpropagation, the gradients and activations at every computation step through the model are temporally synchronized. The forward activations need to be stored until the backward pass is executed, preventing inter-layer (depth) parallelization. However, can we leverage smooth, redundant input streams such as videos to develop a more efficient training scheme? Here, we explore an alternative to backpropagation; we overwrite network activations whenever new ones, i.e., from new frames, become available. Such a more gradual accumulation of information from both passes breaks the precise correspondence between gradients and activations, leading to theoretically more noisy weight updates. Counter-intuitively, we show that Sideways training of deep convolutional video networks not only still converges, but can also potentially exhibit better generalization compared to standard synchronized backpropagation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2414,
+  "title": "Speech2Action: Cross-Modal Supervision for Action Recognition",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2003.13594",
+  "abstract": "Is it possible to guess human action from dialogue alone? In this work we investigate the link between spoken words and actions in movies. We note that movie screenplays describe actions, as well as contain the speech of characters and hence can be used to learn this correlation with no additional supervision. We train a BERT-based Speech2Action classifier on over a thousand movie screenplays, to predict action labels from transcribed speech segments. We then apply this model to the speech segments of a large unlabelled movie corpus (188M speech segments from 288K movies). Using the predictions of this model, we obtain weak action labels for over 800K video clips. By training on these video clips, we demonstrate superior action recognition performance on standard action recognition benchmarks, without using a single manually labelled action example.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2413,
+  "title": "Towards Robust Image Classification Using Sequential Attention Models",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1912.02184",
+  "abstract": "In this paper we propose to augment a modern neuralnetwork architecture with an attention model inspired by human perception. Specifically, we adversarially train and analyze a neural model incorporating a human inspired, visual attention component that is guided by a recurrent top-down sequential process. Our experimental evaluation uncovers several notable findings about the robustness and behavior of this new model. First, introducing attention to the model significantly improves adversarial robustness resulting in state-of-the-art ImageNet accuracies under a wide range of random targeted attack strengths. Second, we show that by varying the number of attention steps (glances/fixations) for which the model is unrolled, we are able to make its defense capabilities stronger, even in light of stronger attacks - resulting in a “computational race” between the attacker and the defender. Finally, we show that some of the adversarial examples generated by attacking our model are quite different from conventional adversarial examples - they contain global, salient and spatially coherent structures coming from the target class that would be recognizable even to a human, and work by distracting the attention of the model away from the main object in the original image.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2412,
+  "title": "Fast Sparse ConvNets",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1911.09723",
+  "abstract": "Historically, the pursuit of efficient inference has been one of the driving forces behind the research into new deep learning architectures and building blocks. Some of the recent examples include: the squeeze-and-excitation module, depthwise separable convolutions in Xception, and the inverted bottleneck in MobileNet v2. Notably, in all of these cases, the resulting building blocks enabled not only higher efficiency, but also higher accuracy, and found wide adoption in the field. In this work, we further expand the arsenal of efficient building blocks for neural network architectures; but instead of combining standard primitives (such as convolution), we advocate for the replacement of these dense primitives with their sparse counterparts. While the idea of using sparsity to decrease the parameter count is not new, the conventional wisdom is that this reduction in theoretical FLOPs does not translate into real-world efficiency gains. We aim to correct this misconception by introducing a family of efficient sparse kernels for several hardware platforms, which we plan to open source for the benefit of the community. Equipped with our efficient implementation of sparse primitives, we show that sparse versions of MobileNet v1 and MobileNet v2 architectures substantially outperform strong dense baselines on the efficiency-accuracy curve. On Snapdragon 835 our sparse networks outperform their dense equivalents by 1.3 - 2.4× - equivalent to approximately one entire generation of i",
+  "needs_fetch": false
+ },
+ {
+  "id": 2411,
+  "title": "Achieving Robustness in the Wild via Adversarial Mixing With Disentangled Representations",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1912.03192",
+  "abstract": "Recent research has made the surprising finding that state-of-the-art deep learning models sometimes fail to generalize to small variations of the input. Adversarial training has been shown to be an effective approach to overcome this problem. However, its application has been limited to enforcing invariance to analytically defined transformations like lp-norm bounded perturbations. Such perturbations do not necessarily cover plausible real-world variations that preserve the semantics of the input (such as a change in lighting conditions). In this paper, we propose a novel approach to express and formalize robustness to these kinds of real-world transformations of the input. The two key ideas underlying our formulation are (1) leveraging disentangled representations of the input to define different factors of variations, and (2) generating new input images by adversarially composing the representations of different images. We use a StyleGAN model to demonstrate the efficacy of this framework. Specifically, we leverage the disentangled latent representations computed by a StyleGAN model to generate perturbations of an image that are similar to real-world variations (like adding make-up, or changing the skin-tone of a person) and train models to be invariant to these perturbations. Extensive experiments show that our method improves generalization and reduces the effect of spurious correlations (reducing the error rate of a \"smile\" detector by 21% for example).",
+  "needs_fetch": false
+ },
+ {
+  "id": 2410,
+  "title": "Self-Supervised Learning of Interpretable Keypoints From Unlabelled Videos",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1907.02055",
+  "abstract": "We propose a new method for recognizing the pose of objects from a single image that for learning uses only unlabelled videos and a weak empirical prior on the object poses. Video frames differ primarily in the pose of the objects they contain, so our method distils the pose information by analyzing the differences between frames. The distillation uses a new dual representation of the geometry of objects as a set of 2D keypoints, and as a pictorial representation, i.e. a skeleton image. This has three benefits: (1) it provides a tight 'geometric bottleneck' which disentangles pose from appearance, (2) it can leverage powerful image-to-image translation networks to map between photometry and geometry, and (3) it allows to incorporate empirical pose priors in the learning process. The pose priors are obtained from unpaired data, such as from a different dataset or modality such as mocap, such that no annotated image is ever used in learning the pose recognition network. In standard benchmarks for pose recognition for humans and faces, our method achieves state-of-the-art performance among methods that do not require any labelled images for training. Project page: http://www.robots.ox.ac.uk/~vgg/research/unsupervised_pose/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2409,
+  "title": "Counting Out Time: Class Agnostic Video Repetition Counting in the Wild",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr42600.2020.01040",
+  "abstract": "We present an approach for estimating the period with which an action is repeated in a video. The crux of the approach lies in constraining the period prediction module to use temporal self-similarity as an intermediate representation bottleneck that allows generalization to unseen repetitions in videos in the wild. We train this model, called RepNet, with a synthetic dataset that is generated from a large unlabeled video collection by sampling short clips of varying lengths and repeating them with different periods and counts. This combination of synthetic data and a powerful yet constrained model, allows us to predict periods in a class-agnostic fashion. Our model substantially exceeds the state of the art performance on existing periodicity (PERTUBE) and repetition counting (QUVA) benchmarks. We also collect a new challenging dataset called Countix (~90 times larger than existing datasets) which captures the challenges of repetition counting in real-world videos. Project webpage: https://sites.google.com/view/repnet .",
+  "needs_fetch": false
+ },
+ {
+  "id": 2408,
+  "title": "Developing specific reporting guidelines for diagnostic accuracy studies assessing AI interventions: The STARD-AI Steering Group",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": "Nature Medicine",
+  "url": "https://doi.org/10.1038/s41591-020-0941-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2407,
+  "title": "End-to-End Learning of Visual Representations From Uncurated Instructional Videos",
+  "org": "deepmind",
+  "date": "2020-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr42600.2020.00990",
+  "abstract": "Annotating videos is cumbersome, expensive and not scalable. Yet, many strong video models still rely on manually annotated data. With the recent introduction of the HowTo100M dataset, narrated videos now offer the possibility of learning video representations without manual supervision. In this work we propose a new learning approach, MIL-NCE, capable of addressing mis- alignments inherent in narrated videos. With this approach we are able to learn strong video representations from scratch, without the need for any manual annotation. We evaluate our representations on a wide range of four downstream tasks over eight datasets: action recognition (HMDB-51, UCF-101, Kinetics-700), text-to- video retrieval (YouCook2, MSR-VTT), action localization (YouTube-8M Segments, CrossTask) and action segmentation (COIN). Our method outperforms all published self-supervised approaches for these tasks as well as several fully supervised baselines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1054,
+  "title": "Language models are few-shot learners",
+  "org": "openai",
+  "date": "2020-05-28",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/language-models-are-few-shot-learners/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2830,
+  "title": "Sources of path integration error in young and aging humans",
+  "org": "openai",
+  "date": "2020-05-26",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-020-15805-9",
+  "abstract": "Path integration plays a vital role in navigation: it enables the continuous tracking of one's position in space by integrating self-motion cues. Path integration abilities vary widely across individuals, and tend to deteriorate in old age. The specific causes of path integration errors, however, remain poorly characterized. Here, we combine tests of path integration performance in participants of different ages with an analysis based on the Langevin equation for diffusive dynamics, which allows us to decompose errors into distinct causes that can corrupt path integration computations. We show that, across age groups, the dominant error source is unbiased noise that accumulates with travel distance not elapsed time, suggesting that the noise originates in the velocity input rather than within the integrator. Age-related declines are primarily traced to a growth in this noise. These findings shed light on the contributors to path integration error and the mechanisms underlying age-related navigational deficits.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2418,
+  "title": "Representation of visual uncertainty through neural gain variability",
+  "org": "deepmind",
+  "date": "2020-05-19",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-020-15533-0",
+  "abstract": "Uncertainty is intrinsic to perception. Neural circuits which process sensory information must therefore also represent the reliability of this information. How they do so is a topic of debate. We propose a model of visual cortex in which average neural response strength encodes stimulus features, while cross-neuron variability in response gain encodes the uncertainty of these features. To test this model, we studied spiking activity of neurons in macaque V1 and V2 elicited by repeated presentations of stimuli whose uncertainty was manipulated in distinct ways. We show that gain variability of individual neurons is tuned to stimulus uncertainty, that this tuning is specific to the features encoded by these neurons and largely invariant to the source of uncertainty. We demonstrate that this behavior naturally arises from known gain-control mechanisms, and illustrate how downstream circuits can jointly decode stimulus features and their uncertainty from sensory population activity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2420,
+  "title": "Predicting conversion to wet age-related macular degeneration using deep learning",
+  "org": "deepmind",
+  "date": "2020-05-18",
+  "venue": "Nature Medicine",
+  "url": "https://doi.org/10.1038/s41591-020-0867-7",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2419,
+  "title": "AI for social good: unlocking the opportunity for positive impact",
+  "org": "deepmind",
+  "date": "2020-05-18",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-020-15871-z",
+  "abstract": "Advances in machine learning (ML) and artificial intelligence (AI) present an opportunity to build better tools and solutions to help address some of the world's most pressing challenges, and deliver positive social impact in accordance with the priorities outlined in the United Nations' 17 Sustainable Development Goals (SDGs). The AI for Social Good (AI4SG) movement aims to establish interdisciplinary partnerships centred around AI applications towards SDGs. We provide a set of guidelines for establishing successful long-term collaborations between AI researchers and application-domain experts, relate them to existing AI4SG projects and identify key opportunities for future AI applications targeted towards social good.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2421,
+  "title": "Localizing syntactic predictions using recurrent neural network grammars",
+  "org": "deepmind",
+  "date": "2020-05-16",
+  "venue": "Neuropsychologia",
+  "url": "https://doi.org/10.1016/j.neuropsychologia.2020.107479",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2423,
+  "title": "A Distributional View on Multi-Objective Policy Optimization",
+  "org": "deepmind",
+  "date": "2020-05-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2005.07513",
+  "abstract": "Many real-world problems require trading off multiple competing objectives. However, these objectives are often in different units and/or scales, which can make it challenging for practitioners to express numerical preferences over objectives in their native units. In this paper we propose a novel algorithm for multi-objective reinforcement learning that enables setting desired preferences for objectives in a scale-invariant way. We propose to learn an action distribution for each objective, and we use supervised learning to fit a parametric policy to a combination of these distributions. We demonstrate the effectiveness of our approach on challenging high-dimensional real and simulated robotics tasks, and show that setting different preferences in our framework allows us to trace out the space of nondominated solutions.",
+  "needs_fetch": false
+ }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2321,
+  "title": "Domesticating the techno-racial project",
+  "org": "deepmind",
+  "date": "2020-09-14",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://doi.org/10.1038/s42256-020-00228-4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2322,
+  "title": "Minimal Assumptions Refinement for Realizable Specifications",
+  "org": "deepmind",
+  "date": "2020-09-12",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3372020.3391557",
+  "abstract": "A challenge that has gathered much attention in recent years is automated synthesis of correct-by-construction software systems from declarative specifications. The specification language is typically a subset of linear temporal logic called generalized reactivity of rank 1, for which there exists an efficient synthesis algorithm. Specifications in this language model the system as the interaction between an environment and a controller, the former satisfying a set of assumptions and the latter a set of guarantees. In order for a solution to exist, a sufficient set of assumptions implying the guarantees must be provided. The assumptions must be as general as possible and small enough to be intelligible by engineers that need to assess their consistency with the true environment where the synthesized controller will operate.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2817,
+  "title": "Measurement in AI Policy: Opportunities and Challenges",
+  "org": "openai",
+  "date": "2020-09-10",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2009.09071",
+  "abstract": "As artificial intelligence increasingly influences our world, it becomes crucial to assess its technical progress and societal impact. This paper surveys problems and opportunities in the measurement of AI systems and their impact, based on a workshop held at Stanford University in the fall of 2019. We identify six summary challenges inherent to measuring the progress and impact of AI, and summarize over 40 presentations and associated discussions from the workshop. We hope this can inspire research agendas in this crucial area.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2323,
+  "title": "Declarative abstractions for tensor program partitioning",
+  "org": "deepmind",
+  "date": "2020-09-08",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3414080.3414105",
+  "abstract": "The size of state-of-the-art machine learning models is continuously growing; for instance GPT-3, a recent language model trained by OpenAI, contains 175B parameters. Due to memory limitations and scalability constraints hardware acceleration for such models relies on configuring them as systems of accelerator devices (such as GPUs, or TPUs, or even simple compute cores with fast local memory) with custom interconnect networks. This setting poses a challenge for software: there is an increasing need for flexible ways to distribute these multi-dimensional array programs (tensor programs) across systems of accelerator devices.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1051,
+  "title": "Generative language modeling for automated theorem proving",
+  "org": "openai",
+  "date": "2020-09-07",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/generative-language-modeling-for-automated-theorem-proving/",
+  "abstract": "We explore the application of transformer-based language models to automated theorem proving. This work is motivated by the possibility that a major limitation of automated theorem provers compared to humans -- the generation of original mathematical terms -- might be addressable via generation from language models. We present an automated prover and proof assistant, GPT-f, for the Metamath formalization language, and analyze its performance. GPT-f found new short proofs that were accepted into the main Metamath library, which is to our knowledge, the first time a deep-learning based system has contributed proofs that were adopted by a formal mathematics community.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1052,
+  "title": "Learning to summarize with human feedback",
+  "org": "openai",
+  "date": "2020-09-04",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-to-summarize-with-human-feedback/",
+  "abstract": "We’ve applied reinforcement learning from human feedback to train language models that are better at summarization.",
+  "needs_fetch": true
+ },
+ {
+  "id": 2324,
+  "title": "Keynote Lecture: Building Knowledge For AI AgentsWith Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-09-03",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccp51029.2020.9266153",
+  "abstract": "Reinforcement learning allows autonomous agents to learn how to act in a stochastic, unknown environment, with which they can interact. Deep reinforcement learning, in particular, has achieved great success in well-defined application domains, such as Go or chess, in which an agent has to learn how to act and there is a clear success criterion. In this talk, I will focus on the potential role of reinforcement learning as a tool for building knowledge representations in AI agents whose goal is to perform continual learning. I will examine a key concept in reinforcement learning, the value function, and discuss its generalization to support various forms of predictive knowledge. I will also discuss the role of temporally extended actions, and their associated predictive models, in learning procedural knowledge. In order to tame the possible complexity of learning knowledge representations, reinforcement learning agents can use the concepts of intents (ie intended consequences of courses of actions) and affordances (which capture knowlege about where actions can be applied). Finally, I will discuss the challenge of how to evaluate reinforcement learning agents whose goal is not just to control their environment, but also to build knowledge about their world.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2325,
+  "title": "Artificial Intelligence, Values, and Alignment",
+  "org": "deepmind",
+  "date": "2020-09-01",
+  "venue": "Minds and Machines",
+  "url": "https://arxiv.org/abs/2001.09768",
+  "abstract": "Abstract This paper looks at philosophical questions that arise in the context of AI alignment. It defends three propositions. First, normative and technical aspects of the AI alignment problem are interrelated, creating space for productive engagement between people working in both domains. Second, it is important to be clear about the goal of alignment. There are significant differences between AI that aligns with instructions, intentions, revealed preferences, ideal preferences, interests and values. A principle-based approach to AI alignment, which combines these elements in a systematic way, has considerable advantages in this context. Third, the central challenge for theorists is not to identify ‘true’ moral principles for AI; rather, it is to identify fair principles for alignment that receive reflective endorsement despite widespread variation in people’s moral beliefs. The final part of the paper explores three ways in which fair principles for AI alignment could potentially be identified.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2327,
+  "title": "The Advantage Regret-Matching Actor-Critic",
+  "org": "deepmind",
+  "date": "2020-08-27",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2008.12234",
+  "abstract": "Regret minimization has played a key role in online learning, equilibrium computation in games, and reinforcement learning (RL). In this paper, we describe a general model-free RL method for no-regret learning based on repeated reconsideration of past behavior. We propose a model-free RL algorithm, the AdvantageRegret-Matching Actor-Critic (ARMAC): rather than saving past state-action data, ARMAC saves a buffer of past policies, replaying through them to reconstruct hindsight assessments of past behavior. These retrospective value estimates are used to predict conditional advantages which, combined with regret matching, produces a new policy. In particular, ARMAC learns from sampled trajectories in a centralized training setting, without requiring the application of importance sampling commonly used in Monte Carlo counterfactual regret (CFR) minimization; hence, it does not suffer from excessive variance in large environments. In the single-agent setting, ARMAC shows an interesting form of exploration by keeping past policies intact. In the multiagent setting, ARMAC in self-play approaches Nash equilibria on some partially-observable zero-sum benchmarks. We provide exploitability estimates in the significantly larger game of betting-abstracted no-limit Texas Hold'em.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2326,
+  "title": "Variational Information Bottleneck for Semi-Supervised Classification",
+  "org": "deepmind",
+  "date": "2020-08-27",
+  "venue": "Entropy",
+  "url": "https://doi.org/10.3390/e22090943",
+  "abstract": "In this paper, we consider an information bottleneck (IB) framework for semi-supervised classification with several families of priors on latent space representation. We apply a variational decomposition of mutual information terms of IB. Using this decomposition we perform an analysis of several regularizers and practically demonstrate an impact of different components of variational model on the classification accuracy. We propose a new formulation of semi-supervised IB with hand crafted and learnable priors and link it to the previous methods such as semi-supervised versions of VAE (M1 + M2), AAE, CatGAN, etc. We show that the resulting model allows better understand the role of various previously proposed regularizers in semi-supervised classification task in the light of IB framework. The proposed IB semi-supervised model with hand-crafted and learnable priors is experimentally validated on MNIST under different amount of labeled data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2328,
+  "title": "Derivative-free &amp; order-robust optimisation",
+  "org": "deepmind",
+  "date": "2020-08-26",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-03288939",
+  "abstract": "In this paper, we formalise order-robust optimisation as an instance of online learning minimising simple regret, and propose VROOM, a zeroth order optimisation algorithm capable of achieving vanishing regret in non-stationary environments, while recovering favorable rates under stochastic reward-generating processes. Our results are the first to target simple regret definitions in adversarial scenarios unveiling a challenge that has been rarely considered in prior work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2330,
+  "title": "The NodeHopper: Enabling Low Latency Ranking with Constraints via a Fast Dual Solver",
+  "org": "deepmind",
+  "date": "2020-08-20",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3394486.3403181",
+  "abstract": "Modern recommender systems need to deal with multiple objectives like balancing user engagement with recommending diverse and fresh content. An appealing way to optimally trade these off is by imposing constraints on the ranking according to which items are presented to a user. This results in a constrained ranking optimization problem that can be solved as a linear program (LP). However, off-the-shelf LP solvers are unable to meet the severe latency constraints in systems that serve live traffic. To address this challenge, we exploit the structure of the dual optimization problem to develop a fast solver. We analyze theoretical properties of our solver and show experimentally that it is able to solve constrained ranking problems on synthetic and real-world recommendation datasets an order of magnitude faster than off-the-shelf solvers, thereby enabling their deployment under severe latency constraints.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2329,
+  "title": "Non-linear changes in modelled terrestrial ecosystems subjected to perturbations",
+  "org": "deepmind",
+  "date": "2020-08-20",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-020-70960-9",
+  "abstract": "Perturbed ecosystems may undergo rapid and non-linear changes, resulting in 'regime shifts' to an entirely different ecological state. The need to understand the extent, nature, magnitude and reversibility of these changes is urgent given the profound effects that humans are having on the natural world. General ecosystem models, which simulate the dynamics of ecosystems based on a mechanistic representation of ecological processes, provide one novel way to project ecosystem changes across all scales and trophic levels, and to forecast impact thresholds beyond which irreversible changes may occur. We model ecosystem changes in four terrestrial biomes subjected to human removal of plant biomass, such as occurs through agricultural land-use change. We find that irreversible, non-linear responses commonly occur where removal of vegetation exceeds 80% (a level that occurs across nearly 10% of the Earth's land surface), especially for organisms at higher trophic levels and in less productive ecosystems. Very large, irreversible changes to ecosystem structure are expected at levels of vegetation removal akin to those in the most intensively used real-world ecosystems. Our results suggest that the projected twenty-first century rapid increases in agricultural land conversion may lead to widespread trophic cascades and in some cases irreversible changes to ecosystem structure.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2331,
+  "title": "Machine learning enables completely automatic tuning of a quantum device faster than human experts",
+  "org": "deepmind",
+  "date": "2020-08-19",
+  "venue": "Nature Communications",
+  "url": "https://arxiv.org/abs/2001.02589",
+  "abstract": "Variability is a problem for the scalability of semiconductor quantum devices. The parameter space is large, and the operating range is small. Our statistical tuning algorithm searches for specific electron transport features in gate-defined quantum dot devices with a gate voltage space of up to eight dimensions. Starting from the full range of each gate voltage, our machine learning algorithm can tune each device to optimal performance in a median time of under 70 minutes. This performance surpassed our best human benchmark (although both human and machine performance can be improved). The algorithm is approximately 180 times faster than an automated random search of the parameter space, and is suitable for different material systems and device architectures. Our results yield a quantitative measurement of device variability, from one device to another and after thermal cycling. Our machine learning algorithm can be extended to higher dimensions and other technologies.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2332,
+  "title": "Fast reinforcement learning with generalized policy updates",
+  "org": "deepmind",
+  "date": "2020-08-17",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.1907370117",
+  "abstract": "The combination of reinforcement learning with deep learning is a promising approach to tackle important sequential decision-making problems that are currently intractable. One obstacle to overcome is the amount of data needed by learning systems of this type. In this article, we propose to address this issue through a divide-and-conquer approach. We argue that complex decision problems can be naturally decomposed into multiple tasks that unfold in sequence or in parallel. By associating each task with a reward function, this problem decomposition can be seamlessly accommodated within the standard reinforcement-learning formalism. The specific way we do so is through a generalization of two fundamental operations in reinforcement learning: policy improvement and policy evaluation. The generalized version of these operations allow one to leverage the solution of some tasks to speed up the solution of others. If the reward function of a task can be well approximated as a linear combination of the reward functions of tasks previously solved, we can reduce a reinforcement-learning problem to a simpler linear regression. When this is not the case, the agent can still exploit the task solutions by using them to interact with and learn about the environment. Both strategies considerably reduce the amount of data needed to solve a reinforcement-learning problem.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2333,
+  "title": "NCNet: Neighbourhood Consensus Networks for Estimating Image Correspondences",
+  "org": "deepmind",
+  "date": "2020-08-14",
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "url": "https://doi.org/10.1109/tpami.2020.3016711",
+  "abstract": "We address the problem of finding reliable dense correspondences between a pair of images. This is a challenging task due to strong appearance differences between the corresponding scene elements and ambiguities generated by repetitive patterns. The contributions of this work are threefold. First, inspired by the classic idea of disambiguating feature matches using semi-local constraints, we develop an end-to-end trainable convolutional neural network architecture that identifies sets of spatially consistent matches by analyzing neighbourhood consensus patterns in the 4D space of all possible correspondences between a pair of images without the need for a global geometric model. Second, we demonstrate that the model can be trained effectively from weak supervision in the form of matching and non-matching image pairs without the need for costly manual annotation of point to point correspondences. Third, we show the proposed neighbourhood consensus network can be applied to a range of matching tasks including both category- and instance-level matching, obtaining the state-of-the-art results on the PF, TSS, InLoc, and HPatches benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2334,
+  "title": "Catch &amp; Carry",
+  "org": "deepmind",
+  "date": "2020-08-12",
+  "venue": "ACM Transactions on Graphics",
+  "url": "https://doi.org/10.1145/3386569.3392474",
+  "abstract": "We address the longstanding challenge of producing flexible, realistic humanoid character controllers that can perform diverse whole-body tasks involving object interactions. This challenge is central to a variety of fields, from graphics and animation to robotics and motor neuroscience. Our physics-based environment uses realistic actuation and first-person perception - including touch sensors and egocentric vision - with a view to producing active-sensing behaviors (e.g. gaze direction), transferability to real robots, and comparisons to the biology. We develop an integrated neural-network based approach consisting of a motor primitive module, human demonstrations, and an instructed reinforcement learning regime with curricula and task variations. We demonstrate the utility of our approach for several tasks, including goal-conditioned box carrying and ball catching, and we characterize its behavioral robustness. The resulting controllers can be deployed in real-time on a standard PC. 1",
+  "needs_fetch": false
+ },
+ {
+  "id": 2335,
+  "title": "Ecological theory predicts ecosystem stressor interactions in freshwater ecosystems, but highlights the strengths and weaknesses of the additive null model",
+  "org": "deepmind",
+  "date": "2020-08-10",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2020.08.10.243972",
+  "abstract": "Abstract Understanding and predicting how multiple co-occurring environmental stressors combine to affect biodiversity and ecosystem services is an on-going grand challenge for ecology. So far progress has been made through accumulating large numbers of smaller-scale individual studies that are then investigated by meta-analyses to look for general patterns. In particular there has been an interest in checking for so-called ecological surprises where stressors interact in a synergistic manner. Recent reviews suggest that such synergisms do not dominate, but few other generalities have emerged. This lack of general prediction and understanding may be due in part to a dearth of ecological theory that can generate clear hypotheses and predictions to tested against empirical data. Here we close this gap by analysing food web models based upon classical ecological theory and comparing their predictions to a large (546 interactions) dataset for the effects of pairs of stressors on freshwater communities, using trophic- and population-level metrics of abundance, density, and biomass as responses. We find excellent overall agreement between the stochastic version of our models and the experimental data, and both conclude additive stressor interactions are the most frequent, but that meta-analyses report antagonistic summary interaction classes. Additionally, we show that the statistical tests used to classify the interactions are very sensitive to sampling variation. It is therefore ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2336,
+  "title": "dm_control: Software and tasks for continuous control",
+  "org": "deepmind",
+  "date": "2020-08-03",
+  "venue": "Software Impacts",
+  "url": "https://arxiv.org/abs/2006.12983",
+  "abstract": "The dm_control software package is a collection of Python libraries and task suites for reinforcement learning agents in an articulated-body simulation. Infrastructure includes a wrapper for the MuJoCo physics engine and libraries for procedural model manipulation and task authoring. Task suites include the Control Suite, a set of standardized tasks intended to serve as performance benchmarks, a locomotion framework and task families, and a set of manipulation tasks with a robot arm and snap-together bricks. An adjunct tech report and interactive tutorial are also provided.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2337,
+  "title": "A quick look at impredicativity",
+  "org": "deepmind",
+  "date": "2020-08-02",
+  "venue": "Proceedings of the ACM on Programming Languages",
+  "url": "https://doi.org/10.1145/3408971",
+  "abstract": "Type inference for parametric polymorphism is wildly successful, but has always suffered from an embarrassing flaw: polymorphic types are themselves not first class. We present Quick Look, a practical, implemented, and deployable design for impredicative type inference. To demonstrate our claims, we have modified GHC, a production-quality Haskell compiler, to support impredicativity. The changes required are modest, localised, and are fully compatible with GHC's myriad other type system extensions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2339,
+  "title": "Non-parametric modelling of temporal and spatial counts data from RNA-seq experiments",
+  "org": "deepmind",
+  "date": "2020-07-30",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2020.07.29.227207",
+  "abstract": "A bstract Motivation The negative binomial distribution has been shown to be a good model for counts data from both bulk and single-cell RNA-sequencing (RNA-seq). Gaussian process (GP) regression provides a useful non-parametric approach for modeling temporal or spatial changes in gene expression. However, currently available GP regression methods that implement negative binomial likelihood models do not scale to the increasingly large datasets being produced by single-cell and spatial transcriptomics. Results The GPcounts package implements GP regression methods for modelling counts data using a negative binomial likelihood function. Computational efficiency is achieved through the use of variational Bayesian inference. The GP function models changes in the mean of the negative binomial likelihood through a logarithmic link function and the dispersion parameter is fitted by maximum likelihood. We validate the method on simulated time course data, showing that it is better able to identify changes in over-dispersed counts data than methods based on Gaussian or Poisson likelihoods. To demonstrate temporal inference, we apply GPcounts to single-cell RNA-seq datasets after pseudotime and branching inference. To demonstrate spatial inference, we apply GPcounts to data from the mouse olfactory bulb to identify spatially variable genes and compare to two published GP methods. We also provide the option of modelling additional dropout using a zero-inflated negative binomial. Our res",
+  "needs_fetch": false
+ },
+ {
+  "id": 2338,
+  "title": "Para que serve o subteste de Aritmética do Teste de Desempenho Escolar",
+  "org": "deepmind",
+  "date": "2020-07-30",
+  "venue": null,
+  "url": "http://hdl.handle.net/1843/54840",
+  "abstract": "As dificuldades de aprendizagem da matematica (DAM) se associam a menor renda, empregabilidade e adaptacao psicossocial, entretanto, a identificacao de criancas com DAM e dificultada pela ausencia de marcadores cognitivos e biologicos confiaveis. Um dos criterios diagnosticos do transtorno especifico de aprendizagem da matematica ou discalculia e o desempenho em aritmetica situado abaixo de um ponto de corte em teste padronizado de desempenho. Um dos principais instrumentos psicometricos disponiveis no Brasil para esse tipo de diagnostico e o Teste de Desempenho Escolar (TDE). No presente artigo, nos analisamos alguns aspectos da validade psicometrica do subteste Aritmetica do TDE, 1a edicao: validade de construto, dimensionalidade, consistencia interna, validade de criterio, validade convergente/divergente e validade de conteudo. O estudo foi conduzido com 2226 criancas do 2o ao 5o ano escolar, e uma subamostra de 927 criancas. Os resultados sugerem associacoes do teste com aspectos demograficos como sexo, ano escolar e tipo de escola. Alem disso, os itens do TDE sao organizados em nivel de dificuldade hierarquicamente crescente, divididos em dois fatores categorizados por nivel de dificuldade. As analises de consistencia interna resultaram em indicadores satisfatorios. Os resultados das analises de validade de criterio sugerem que o desempenho de criancas com dificuldades de Aritmetica e da Escrita, classificados pelo TDE, nas tarefas de Calculos e Escrita de Numerais Arabi",
+  "needs_fetch": false
+ },
+ {
+  "id": 2340,
+  "title": "Learning Compositional Neural Programs for Continuous Control",
+  "org": "deepmind",
+  "date": "2020-07-27",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2007.13363",
+  "abstract": "We propose a novel solution to challenging sparse-reward, continuous control problems that require hierarchical planning at multiple levels of abstraction. Our solution, dubbed AlphaNPI-X, involves three separate stages of learning. First, we use off-policy reinforcement learning algorithms with experience replay to learn a set of atomic goal-conditioned policies, which can be easily repurposed for many tasks. Second, we learn self-models describing the effect of the atomic policies on the environment. Third, the self-models are harnessed to learn recursive compositional programs with multiple levels of abstraction. The key insight is that the self-models enable planning by imagination, obviating the need for interaction with the world when learning higher-level compositional programs. To accomplish the third stage of learning, we extend the AlphaNPI algorithm, which applies AlphaZero to learn recursive neural programmer-interpreters. We empirically show that AlphaNPI-X can effectively learn to tackle challenging sparse manipulation tasks, such as stacking multiple blocks, where powerful model-free baselines fail.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2341,
+  "title": "Fast active learning for pure exploration in reinforcement learning",
+  "org": "deepmind",
+  "date": "2020-07-26",
+  "venue": "INRIA a CCSD electronic archive server",
+  "url": "https://hal.inria.fr/hal-02906985",
+  "abstract": "Realistic environments often provide agents with very limited feedback. When the environment is initially unknown, the feedback, in the beginning, can be completely absent, and the agents may first choose to devote all their effort on &lt;i&gt;exploring efficiently&lt;/i&gt;. The exploration remains a challenge while it has been addressed with many hand-tuned heuristics with different levels of generality on one side, and a few theoretically backed exploration strategies on the other. Many of them are incarnated by &lt;i&gt;intrinsic motivation&lt;/i&gt; and in particular &lt;i&gt;explorations bonuses&lt;/i&gt;. A common rule of thumb for exploration bonuses is to use 1/ √ n bonus that is added to the empirical estimates of the reward, where $n$ is a number of times this particular state (or a state-action pair) was visited. We show that, surprisingly, for a pure-exploration objective of reward-free exploration, bonuses that scale with 1/n bring faster learning rates, improving the known upper bounds with respect to the dependence on the horizon $H$. Furthermore, we show that with an improved analysis of the stopping time, we can improve by a factor $H$ the sample complexity in the &lt;i&gt;best-policy identification&lt;/i&gt; setting, which is another pure-exploration objective, where the environment provides rewards but the agent is not penalized for its behavior during the exploration phase.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2342,
+  "title": "Tighter risk certificates for neural networks",
+  "org": "deepmind",
+  "date": "2020-07-25",
+  "venue": "Research Explorer (The University of Manchester)",
+  "url": "https://arxiv.org/abs/2007.12911",
+  "abstract": "This paper presents an empirical study regarding training probabilistic neural networks using training objectives derived from PAC-Bayes bounds. In the context of probabilistic neural networks, the output of training is a probability distribution over network weights. We present two training objectives, used here for the first time in connection with training neural networks. These two training objectives are derived from tight PAC-Bayes bounds. We also re-implement a previously used training objective based on a classical PAC-Bayes bound, to compare the properties of the predictors learned using the different training objectives. We compute risk certificates for the learnt predictors, based on part of the data used to learn the predictors. We further experiment with different types of priors on the weights (both data-free and data-dependent priors) and neural network architectures. Our experiments on MNIST and CIFAR-10 show that our training methods produce competitive test set errors and non-vacuous risk bounds with much tighter values than previous results in the literature, showing promise not only to guide the learning algorithm through bounding the risk but also for model selection. These observations suggest that the methods studied here might be good candidates for self-certified learning, in the sense of using the whole data set for learning a predictor and certifying its risk on any unseen data (from the same distribution as the training data) potentially without th",
+  "needs_fetch": false
+ },
+ {
+  "id": 2343,
+  "title": "Negotiating team formation using deep reinforcement learning",
+  "org": "deepmind",
+  "date": "2020-07-24",
+  "venue": "Artificial Intelligence",
+  "url": "https://doi.org/10.1016/j.artint.2020.103356",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2344,
+  "title": "Topic Modeling in Embedding Spaces",
+  "org": "deepmind",
+  "date": "2020-07-23",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://arxiv.org/abs/1907.04907",
+  "abstract": "Topic modeling analyzes documents to learn meaningful patterns of words. However, existing topic models fail to learn interpretable topics when working with large and heavy-tailed vocabularies. To this end, we develop the embedded topic model (etm), a generative model of documents that marries traditional topic models with word embeddings. More specifically, the etm models each word with a categorical distribution whose natural parameter is the inner product between the word’s embedding and an embedding of its assigned topic. To fit the etm, we develop an efficient amortized variational inference algorithm. The etm discovers interpretable topics even with large vocabularies that include rare words and stop words. It outperforms existing document models, such as latent Dirichlet allocation, in terms of both topic quality and predictive performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2345,
+  "title": "Deep Reinforcement Learning for Tactile Robotics: Learning to Type on a Braille Keyboard",
+  "org": "deepmind",
+  "date": "2020-07-20",
+  "venue": "IEEE Robotics and Automation Letters",
+  "url": "https://arxiv.org/abs/2008.02646",
+  "abstract": "Artificial touch would seem well-suited for Reinforcement Learning (RL), since both paradigms rely on interaction with an environment. Here we propose a new environment and set of tasks to encourage development of tactile reinforcement learning: learning to type on a braille keyboard. Four tasks are proposed, progressing in difficulty from arrow to alphabet keys and from discrete to continuous actions. A simulated counterpart is also constructed by sampling tactile data from the physical environment. Using state-of-the-art deep RL algorithms, we show that all of these tasks can be successfully learnt in simulation, and 3 out of 4 tasks can be learned on the real robot. A lack of sample efficiency currently makes the continuous alphabet task impractical on the robot. To the best of our knowledge, this work presents the first demonstration of successfully training deep RL agents in the real world using observations that exclusively consist of tactile images. To aid future research utilising this environment, the code for this project has been released along with designs of the braille keycaps for 3D printing and a guide for recreating the experiments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2346,
+  "title": "Predicting the long-term stability of compact multiplanet systems",
+  "org": "deepmind",
+  "date": "2020-07-16",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://arxiv.org/abs/2007.06521",
+  "abstract": "Significance Observations of planets beyond our solar system (exoplanets) yield uncertain orbital parameters. Particularly in compact multiplanet systems, a significant fraction of observationally inferred orbital configurations can lead to planetary collisions on timescales that are short compared with the age of the system. Rejection of these unphysical solutions can thus sharpen our view of exoplanetary orbital architectures. Long-term stability determination is currently performed through direct orbital integrations. However, this approach is computationally prohibitive for application to the full exoplanet sample. By speeding up this process by up to five orders of magnitude, we enable precise exoplanet characterization of compact multiplanet systems and our ability to examine the stability properties of the multiplanet exoplanet sample as a whole.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2347,
+  "title": "The Monte Carlo Transformer: a stochastic self-attention model for\\n sequence prediction",
+  "org": "deepmind",
+  "date": "2020-07-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2007.08620",
+  "abstract": "This paper introduces the Sequential Monte Carlo Transformer, an original\\napproach that naturally captures the observations distribution in a transformer\\narchitecture. The keys, queries, values and attention vectors of the network\\nare considered as the unobserved stochastic states of its hidden structure.\\nThis generative model is such that at each time step the received observation\\nis a random function of its past states in a given attention window. In this\\ngeneral state-space setting, we use Sequential Monte Carlo methods to\\napproximate the posterior distributions of the states given the observations,\\nand to estimate the gradient of the log-likelihood. We hence propose a\\ngenerative model giving a predictive distribution, instead of a single-point\\nestimate.\\n",
+  "needs_fetch": false
+ }
+]

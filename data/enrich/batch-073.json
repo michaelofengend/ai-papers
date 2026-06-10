@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2144,
+  "title": "Learning many-electron wavefunctions with deep neural networks",
+  "org": "deepmind",
+  "date": "2021-06-01",
+  "venue": "Nature Reviews Physics",
+  "url": "https://doi.org/10.1038/s42254-021-00330-5",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2143,
+  "title": "HDMapGen: A Hierarchical Graph Generative Model of High Definition Maps",
+  "org": "deepmind",
+  "date": "2021-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr46437.2021.00421",
+  "abstract": "High Definition (HD) maps are maps with precise definitions of road lanes with rich semantics of the traffic rules. They are critical for several key stages in an autonomous driving system, including motion forecasting and planning. However, there are only a small amount of real-world road topologies and geometries, which significantly limits our ability to test out the self-driving stack to generalize onto new unseen scenarios. To address this issue, we introduce a new challenging task to generate HD maps. In this work, we explore several autoregressive models using different data representations, including sequence, plain graph, and hierarchical graph. We propose HDMapGen, a hierarchical graph generation model capable of producing high-quality and diverse HD maps through a coarse-to-fine approach. Experiments on the Argoverse dataset and an inhouse dataset show that HDMapGen significantly outperforms baseline methods. Additionally, we demonstrate that HDMapGen achieves high scalability and efficiency.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2142,
+  "title": "Temporal Query Networks for Fine-grained Video Understanding",
+  "org": "deepmind",
+  "date": "2021-06-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr46437.2021.00446",
+  "abstract": "Our objective in this work is fine-grained classification of actions in untrimmed videos, where the actions may be temporally extended or may span only a few frames of the video. We cast this into a query-response mechanism, where each query addresses a particular question, and has its own response label set.We make the following four contributions: (i) We propose a new model—a Temporal Query Network—which enables the query-response functionality, and a structural understanding of fine-grained actions. It attends to relevant segments for each query with a temporal attention mechanism, and can be trained using only the labels for each query. (ii) We propose a new way—stochastic feature bank update—to train a network on videos of various lengths with the dense sampling required to respond to fine-grained queries. (iii) we compare the TQN to other architectures and text supervision methods, and analyze their pros and cons. Finally, (iv) we evaluate the method extensively on the FineGym and Diving48 bench-marks for fine-grained action classification and surpass the state-of-the-art using only RGB features. Project page: https://www.robots.ox.ac.uk/~vgg/research/tqn/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2141,
+  "title": "Developing a reporting guideline for artificial intelligence-centred diagnostic test accuracy studies: the STARD-AI protocol",
+  "org": "deepmind",
+  "date": "2021-06-01",
+  "venue": "BMJ Open",
+  "url": "https://doi.org/10.1136/bmjopen-2020-047709",
+  "abstract": "INTRODUCTION: Standards for Reporting of Diagnostic Accuracy Study (STARD) was developed to improve the completeness and transparency of reporting in studies investigating diagnostic test accuracy. However, its current form, STARD 2015 does not address the issues and challenges raised by artificial intelligence (AI)-centred interventions. As such, we propose an AI-specific version of the STARD checklist (STARD-AI), which focuses on the reporting of AI diagnostic test accuracy studies. This paper describes the methods that will be used to develop STARD-AI. METHODS AND ANALYSIS: The development of the STARD-AI checklist can be distilled into six stages. (1) A project organisation phase has been undertaken, during which a Project Team and a Steering Committee were established; (2) An item generation process has been completed following a literature review, a patient and public involvement and engagement exercise and an online scoping survey of international experts; (3) A three-round modified Delphi consensus methodology is underway, which will culminate in a teleconference consensus meeting of experts; (4) Thereafter, the Project Team will draft the initial STARD-AI checklist and the accompanying documents; (5) A piloting phase among expert users will be undertaken to identify items which are either unclear or missing. This process, consisting of surveys and semistructured interviews, will contribute towards the explanation and elaboration document and (6) On finalisation of th",
+  "needs_fetch": false
+ },
+ {
+  "id": 2146,
+  "title": "Representation Matters: Improving Perception and Exploration for Robotics",
+  "org": "deepmind",
+  "date": "2021-05-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2011.01758",
+  "abstract": "Projecting high-dimensional environment observations into lower-dimensional structured representations can considerably improve data-efficiency for reinforcement learning in domains with limited data such as robotics. Can a single generally useful representation be found? In order to answer this question, it is important to understand how the representation will be used by the agent and what properties such a good representation should have. In this paper we systematically evaluate a number of common learnt and hand-engineered representations in the context of three robotics tasks: lifting, stacking and pushing of 3D blocks. The representations are evaluated in two use-cases: as input to the agent, or as a source of auxiliary tasks. Furthermore, the value of each representation is evaluated in terms of three properties: dimensionality, observability and disentanglement. We can significantly improve performance in both use-cases and demonstrate that some representations can perform commensurate to simulator states as agent inputs. Finally, our results challenge common intuitions by demonstrating that: 1) dimensionality strongly matters for task generation, but is negligible for inputs, 2) observability of task-relevant aspects mostly affects the input representation use-case, and 3) disentanglement leads to better auxiliary tasks, but has only limited benefits for input representations. This work serves as a step towards a more systematic understanding of what makes a good rep",
+  "needs_fetch": false
+ },
+ {
+  "id": 2791,
+  "title": "Artificial Intelligence–Based Chatbot for Anxiety and Depression in University Students: Pilot Randomized Controlled Trial",
+  "org": "openai",
+  "date": "2021-05-29",
+  "venue": "JMIR Formative Research",
+  "url": "https://doi.org/10.2196/20678",
+  "abstract": "Background Artificial intelligence–based chatbots are emerging as instruments of psychological intervention; however, no relevant studies have been reported in Latin America. Objective The objective of the present study was to evaluate the viability, acceptability, and potential impact of using Tess, a chatbot, for examining symptoms of depression and anxiety in university students. Methods This was a pilot randomized controlled trial. The experimental condition used Tess for 8 weeks, and the control condition was assigned to a psychoeducation book on depression. Comparisons were conducted using Mann-Whitney U and Wilcoxon tests for depressive symptoms, and independent and paired sample t tests to analyze anxiety symptoms. Results The initial sample consisted of 181 Argentinian college students (158, 87.2% female) aged 18 to 33. Data at week 8 were provided by 39 out of the 99 (39%) participants in the experimental condition and 34 out of the 82 (41%) in the control group. On an average, 472 (SD 249.52) messages were exchanged, with 116 (SD 73.87) of the messages sent from the users in response to Tess. A higher number of messages exchanged with Tess was associated with positive feedback (F2,36=4.37; P=.02). No significant differences between the experimental and control groups were found from the baseline to week 8 for depressive and anxiety symptoms. However, significant intragroup differences demonstrated that the experimental group showed a significant decrease in anxiety",
+  "needs_fetch": false
+ },
+ {
+  "id": 2147,
+  "title": "Discretization Drift in Two-Player Games",
+  "org": "deepmind",
+  "date": "2021-05-28",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2105.13922",
+  "abstract": "Gradient-based methods for two-player games produce rich dynamics that can solve challenging problems, yet can be difficult to stabilize and understand. Part of this complexity originates from the discrete update steps given by simultaneous or alternating gradient descent, which causes each player to drift away from the continuous gradient flow -- a phenomenon we call discretization drift. Using backward error analysis, we derive modified continuous dynamical systems that closely follow the discrete dynamics. These modified dynamics provide an insight into the notorious challenges associated with zero-sum games, including Generative Adversarial Networks. In particular, we identify distinct components of the discretization drift that can alter performance and in some cases destabilize the game. Finally, quantifying discretization drift allows us to identify regularizers that explicitly cancel harmful forms of drift or strengthen beneficial forms of drift, and thus improve performance of GAN training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2148,
+  "title": "Author response: Temporally delayed linear modelling (TDLM) measures replay in both animals and humans",
+  "org": "deepmind",
+  "date": "2021-05-23",
+  "venue": null,
+  "url": "https://doi.org/10.7554/elife.66917.sa2",
+  "abstract": "Article Figures and data Abstract Introduction Results Discussion Materials and methods Appendix 1 Appendix 2 Appendix 3 Appendix 4 Appendix 5 Data availability References Decision letter Author response Article and author information Metrics Abstract There are rich structures in off-task neural activity which are hypothesized to reflect fundamental computations across a broad spectrum of cognitive functions. Here, we develop an analysis toolkit – temporal delayed linear modelling (TDLM) – for analysing such activity. TDLM is a domain-general method for finding neural sequences that respect a pre-specified transition graph. It combines nonlinear classification and linear temporal modelling to test for statistical regularities in sequences of task-related reactivations. TDLM is developed on the non-invasive neuroimaging data and is designed to take care of confounds and maximize sequence detection ability. Notably, as a linear framework, TDLM can be easily extended, without loss of generality, to capture rodent replay in electrophysiology, including in continuous spaces, as well as addressing second-order inference questions, for example, its temporal and spatial varying pattern. We hope TDLM will advance a deeper understanding of neural computation and promote a richer convergence between animal and human neuroscience. Introduction Human neuroscience has made remarkable progress in detailing the relationship between the representations of different stimuli during task perform",
+  "needs_fetch": false
+ },
+ {
+  "id": 2149,
+  "title": "Reward tampering problems and solutions in reinforcement learning: a causal influence diagram perspective",
+  "org": "deepmind",
+  "date": "2021-05-19",
+  "venue": "Synthese",
+  "url": "https://arxiv.org/abs/1908.04734",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2162,
+  "title": "Agent Incentives: A Causal Perspective",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://arxiv.org/abs/2102.01685",
+  "abstract": "We present a framework for analysing agent incentives using causal influence diagrams. We establish that a well-known criterion for value of information is complete. We propose a new graphical criterion for value of control, establishing its soundness and completeness. We also introduce two new concepts for incentive analysis: response incentives indicate which changes in the environment affect an optimal decision, while instrumental control incentives establish whether an agent can influence its utility via a variable X. For both new concepts, we provide sound and complete graphical criteria. We show by example how these results can help with evaluating the safety and fairness of an AI system",
+  "needs_fetch": false
+ },
+ {
+  "id": 2161,
+  "title": "Expected Eligibility Traces",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://arxiv.org/abs/2007.01839",
+  "abstract": "The question of how to determine which states and actions are responsible for a certain outcome is known as the credit assignment problem and remains a central research question in reinforcement learning and artificial intelligence. Eligibility traces enable efficient credit assignment to the recent sequence of states and actions experienced by the agent, but not to counterfactual sequences that could also have led to the current state. In this work, we introduce expected eligibility traces. Expected traces allow, with a single update, to update states and actions that could have preceded the current state, even if they did not do so on this occasion. We discuss when expected traces provide benefits over classic (instantaneous) traces in temporal-difference learning, and show that some- times substantial improvements can be attained. We provide a way to smoothly interpolate between instantaneous and expected traces by a mechanism similar to bootstrapping, which ensures that the resulting algorithm is a strict generalisation of TD(λ). Finally, we discuss possible extensions and connections to related ideas, such as successor features.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2160,
+  "title": "Gated Linear Networks",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://arxiv.org/abs/1910.01526",
+  "abstract": "This paper presents a new family of backpropagation-free neural architectures, Gated Linear Networks (GLNs). What distinguishes GLNs from contemporary neural networks is the distributed and local nature of their credit assignment mechanism; each neuron directly predicts the target, forgoing the ability to learn feature representations in favor of rapid online learning. Individual neurons are able to model nonlinear functions via the use of data-dependent gating in conjunction with online convex optimization. We show that this architecture gives rise to universal learning capabilities in the limit, with effective model capacity increasing as a function of network size in a manner comparable with deep ReLU networks. Furthermore, we demonstrate that the GLN learning mechanism possesses extraordinary resilience to catastrophic forgetting, performing almost on par to an MLP with dropout and Elastic Weight Consolidation on standard benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2159,
+  "title": "Analogy Training Multilingual Encoders",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v35i14.17524",
+  "abstract": "Language encoders encode words and phrases in ways that capture their local semantic relatedness, but are known to be globally inconsistent. Global inconsistency can seemingly be corrected for, in part, by leveraging signals from knowledge bases, but previous results are partial and limited to monolingual English encoders. We extract a large-scale multilingual, multi-word analogy dataset from Wikidata for diagnosing and correcting for global inconsistencies, and then implement a four-way Siamese BERT architecture for grounding multilingual BERT (mBERT) in Wikidata through analogy training. We show that analogy training not only improves the global consistency of mBERT, as well as the isomorphism of language-specific subspaces, but also leads to consistent gains on downstream tasks such as bilingual dictionary induction and sentence retrieval.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2158,
+  "title": "How RL Agents Behave When Their Actions Are Modified",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://arxiv.org/abs/2102.07716",
+  "abstract": "Reinforcement learning in complex environments may require supervision to prevent the agent from attempting dangerous actions. As a result of supervisor intervention, the executed action may differ from the action specified by the policy. How does this affect learning? We present the Modified-Action Markov Decision Process, an extension of the MDP model that allows actions to differ from the policy. We analyze the asymptotic behaviours of common reinforcement learning algorithms in this setting and show that they adapt in different ways: some completely ignore modifications while others go to various lengths in trying to avoid action modifications that decrease reward. By choosing the right algorithm, developers can prevent their agents from learning to circumvent interruptions or constraints, and better control agent responses to other kinds of action modification, like self-damage.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2157,
+  "title": "Solving Common-Payoff Games with Approximate Policy Iteration",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v35i11.17166",
+  "abstract": "For artificially intelligent learning systems to have widespread applicability in real-world settings, it is important that they be able to operate decentrally. Unfortunately, decentralized control is difficult---computing even an epsilon-optimal joint policy is a NEXP complete problem. Nevertheless, a recently rediscovered insight---that a team of agents can coordinate via common knowledge---has given rise to algorithms capable of finding optimal joint policies in small common-payoff games. The Bayesian action decoder (BAD) leverages this insight and deep reinforcement learning to scale to games as large as two-player Hanabi. However, the approximations it uses to do so prevent it from discovering optimal joint policies even in games small enough to brute force optimal solutions. This work proposes CAPI, a novel algorithm which, like BAD, combines common knowledge with deep reinforcement learning. However, unlike BAD, CAPI prioritizes the propensity to discover optimal joint policies over scalability. While this choice precludes CAPI from scaling to games as large as Hanabi, empirical results demonstrate that, on the games to which CAPI does scale, it is capable of discovering optimal joint policies even when other modern multi-agent reinforcement learning algorithms are unable to do so.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2156,
+  "title": "Hindsight and Sequential Rationality of Correlated Play",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v35i6.16702",
+  "abstract": "Driven by recent successes in two-player, zero-sum game solving and playing, artificial intelligence work on games has increasingly focused on algorithms that produce equilibrium-based strategies. However, this approach has been less effective at producing competent players in general-sum games or those with more than two players than in two-player, zero-sum games. An appealing alternative is to consider adaptive algorithms that ensure strong performance in hindsight relative to what could have been achieved with modified behavior. This approach also leads to a game-theoretic analysis, but in the correlated play that arises from joint learning dynamics rather than factored agent behavior at equilibrium. We develop and advocate for this hindsight rationality framing of learning in general sequential decision-making settings. To this end, we re-examine mediated equilibrium and deviation types in extensive-form games, thereby gaining a more complete understanding and resolving past misconceptions. We present a set of examples illustrating the distinct strengths and weaknesses of each type of equilibrium in the literature, and prove that no tractable concept subsumes all others. This line of inquiry culminates in the definition of the deviation and equilibrium classes that correspond to algorithms in the counterfactual regret minimization (CFR) family, relating them to all others in the literature. Examining CFR in greater detail further leads to a new recursive definition of rat",
+  "needs_fetch": false
+ },
+ {
+  "id": 2155,
+  "title": "Policy-Guided Heuristic Search with Guarantees",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v35i14.17469",
+  "abstract": "The use of a policy and a heuristic function for guiding search can be quite effective in adversarial problems, as demonstrated by AlphaGo and its successors, which are based on the PUCT search algorithm. While PUCT can also be used to solve single-agent deterministic problems, it lacks guarantees on its search effort and it can be computationally inefficient in practice. Combining the A* algorithm with a learned heuristic function tends to work better in these domains, but A* and its variants do not use a policy. Moreover, the purpose of using A* is to find solutions of minimum cost, while we seek instead to minimize the search loss (e.g., the number of search steps). LevinTS is guided by a policy and provides guarantees on the number of search steps that relate to the quality of the policy, but it does not make use of a heuristic function. In this work we introduce Policy-guided Heuristic Search (PHS), a novel search algorithm that uses both a heuristic function and a policy and has theoretical guarantees on the search loss that relates to both the quality of the heuristic and of the policy. We show empirically on the sliding-tile puzzle, Sokoban, and a puzzle from the commercial game `The Witness' that PHS enables the rapid learning of both a policy and a heuristic function and compares favorably with A*, Weighted A*, Greedy Best-First Search, LevinTS, and PUCT in terms of number of problems solved and search time in all three domains tested.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2154,
+  "title": "Relative Variational Intrinsic Control",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v35i8.16832",
+  "abstract": "In the absence of external rewards, agents can still learn useful behaviors by identifying and mastering a set of diverse skills within their environment. Existing skill learning methods use mutual information objectives to incentivize each skill to be diverse and distinguishable from the rest. However, if care is not taken to constrain the ways in which the skills are diverse, trivially diverse skill sets can arise. To ensure useful skill diversity, we propose a novel skill learning objective, Relative Variational Intrinsic Control (RVIC), which incentivizes learning skills that are distinguishable in how they change the agent's relationship to its environment. The resulting set of skills tiles the space of affordances available to the agent. We qualitatively analyze skill behaviors on multiple environments and show how RVIC skills are more useful than skills discovered by existing methods in hierarchical reinforcement learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2153,
+  "title": "The Value-Improvement Path: Towards Better Representations for Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://arxiv.org/abs/2006.02243",
+  "abstract": "In value-based reinforcement learning (RL), unlike in supervised learning, the agent faces not a single, stationary, approximation problem, but a sequence of value prediction problems. Each time the policy improves, the nature of the problem changes, shifting both the distribution of states and their values. In this paper we take a novel perspective, arguing that the value prediction problems faced by an RL agent should not be addressed in isolation, but rather as a single, holistic, prediction problem. An RL algorithm generates a sequence of policies that, at least approximately, improve towards the optimal policy. We explicitly characterize the associated sequence of value functions and call it the value-improvement path. Our main idea is to approximate the value-improvement path holistically, rather than to solely track the value function of the current policy. Specifically, we discuss the impact that this holistic view of RL has on representation learning. We demonstrate that a representation that spans the past value-improvement path will also provide an accurate value approximation for future policy improvements. We use this insight to better understand existing approaches to auxiliary tasks and to propose new ones. To test our hypothesis empirically, we augmented a standard deep RL agent with an auxiliary task of learning the value-improvement path. In a study of Atari 2600 games, the augmented agent achieved approximately double the mean and median performance of the ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2152,
+  "title": "Exact Reduction of Huge Action Spaces in General Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v35i10.17074",
+  "abstract": "The reinforcement learning (RL) framework formalizes the notion of learning with interactions. Many real-world problems have large state-spaces and/or action-spaces such as in Go, StarCraft, protein folding, and robotics or are non-Markovian, which cause significant challenges to RL algorithms. In this work we address the large action-space problem by sequentializing actions, which can reduce the action-space size significantly, even down to two actions at the expense of an increased planning horizon. We provide explicit and exact constructions and equivalence proofs for all quantities of interest for arbitrary history-based processes. In the case of MDPs, this could help RL algorithms that bootstrap. In this work we show how action-binarization in the non-MDP case can significantly improve Extreme State Aggregation (ESA) bounds. ESA allows casting any (non-MDP, non-ergodic, history-based) RL problem into a fixed-sized non-Markovian state-space with the help of a surrogate Markovian process. On the upside, ESA enjoys similar optimality guarantees as Markovian models do. But a downside is that the size of the aggregated state-space becomes exponential in the size of the action-space. In this work, we patch this issue by binarizing the action-space. We provide an upper bound on the number of states of this binarized ESA that is logarithmic in the original action-space size, a double-exponential improvement.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2151,
+  "title": "Self-Supervised Attention-Aware Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v35i12.17235",
+  "abstract": "Visual saliency has emerged as a major visualization tool for interpreting deep reinforcement learning (RL) agents. However, much of the existing research uses it as an analyzing tool rather than an inductive bias for policy learning. In this work, we use visual attention as an inductive bias for RL agents. We propose a novel self-supervised attention learning approach which can 1. learn to select regions of interest without explicit annotations, and 2. act as a plug for existing deep RL methods to improve the learning performance. We empirically show that the self-supervised attention-aware deep RL methods outperform the baselines in the context of both the rate of convergence and performance. Furthermore, the proposed self-supervised attention is not tied with specific policies, nor restricted to a specific scene. We posit that the proposed approach is a general self-supervised attention module for multi-task learning and transfer learning, and empirically validate the generalization ability of the proposed method. Finally, we show that our method learns meaningful object keypoints highlighting improvements both qualitatively and quantitatively.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2150,
+  "title": "Sample Efficient Reinforcement Learning with REINFORCE",
+  "org": "deepmind",
+  "date": "2021-05-18",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v35i12.17300",
+  "abstract": "Policy gradient methods are among the most effective methods for large-scale reinforcement learning, and their empirical success has prompted several works that develop the foundation of their global convergence theory. However, prior works have either required exact gradients or state-action visitation measure based mini-batch stochastic gradients with a diverging batch size, which limit their applicability in practical scenarios. In this paper, we consider classical policy gradient methods that compute an approximate gradient with a single trajectory or a fixed size mini-batch of trajectories under soft-max parametrization and log-barrier regularization, along with the widely-used REINFORCE gradient estimation procedure. By controlling the number of \"bad\" episodes and resorting to the classical doubling trick, we establish an anytime sub-linear high probability regret bound as well as almost sure global convergence of the average regret with an asymptotically sub-linear rate. These provide the first set of global convergence and sample efficiency results for the well-known REINFORCE algorithm and contribute to a better understanding of its performance in practice.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2163,
+  "title": "Tensors in Modern Statistical Learning",
+  "org": "deepmind",
+  "date": "2021-05-17",
+  "venue": "Wiley StatsRef: Statistics Reference Online",
+  "url": "https://doi.org/10.1002/9781118445112.stat08319",
+  "abstract": "Abstract Tensor learning is gaining increasing attention in recent years. This survey provides an overview of tensor analysis in modern statistical learning. It consists of four main topics, including tensor supervised learning, tensor unsupervised learning, tensor reinforcement learning, and tensor deep learning. This article emphasizes statistical models and properties as well as connections between tensors and other learning topics such as reinforcement learning and deep learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2165,
+  "title": "Curiosity Killed or Incapacitated the Cat and the Asymptotically Optimal Agent",
+  "org": "deepmind",
+  "date": "2021-05-14",
+  "venue": "IEEE Journal on Selected Areas in Information Theory",
+  "url": "https://doi.org/10.1109/jsait.2021.3079722",
+  "abstract": "Reinforcement learners are agents that learn to pick actions that lead to high reward. Ideally, the value of a reinforcement learner's policy approaches optimality-where the optimal informed policy is the one which maximizes reward. Unfortunately, we show that if an agent is guaranteed to be “asymptotically optimal” in any (stochastically computable) environment, then subject to an assumption about the true environment, this agent will be either “destroyed” or “incapacitated” with probability 1. Much work in reinforcement learning uses an ergodicity assumption to avoid this problem. Often, doing theoretical research under simplifying assumptions prepares us to provide practical solutions even in the absence of those assumptions, but the ergodicity assumption in reinforcement learning may have led us entirely astray in preparing safe and effective exploration strategies for agents in dangerous environments. Rather than assuming away the problem, we present an agent, Mentee, with the modest guarantee of approaching the performance of a mentor, doing safe exploration instead of reckless exploration. Critically, Mentee's exploration probability depends on the expected information gain from exploring. In a simple non-ergodic environment with a weak mentor, we find Mentee outperforms existing asymptotically optimal agents and its mentor.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2164,
+  "title": "Multitask prediction of organ dysfunction in the intensive care unit using sequential subnetwork routing",
+  "org": "deepmind",
+  "date": "2021-05-14",
+  "venue": "Journal of the American Medical Informatics Association",
+  "url": "https://doi.org/10.1093/jamia/ocab101",
+  "abstract": "OBJECTIVE: Multitask learning (MTL) using electronic health records allows concurrent prediction of multiple endpoints. MTL has shown promise in improving model performance and training efficiency; however, it often suffers from negative transfer - impaired learning if tasks are not appropriately selected. We introduce a sequential subnetwork routing (SeqSNR) architecture that uses soft parameter sharing to find related tasks and encourage cross-learning between them. MATERIALS AND METHODS: Using the MIMIC-III (Medical Information Mart for Intensive Care-III) dataset, we train deep neural network models to predict the onset of 6 endpoints including specific organ dysfunctions and general clinical outcomes: acute kidney injury, continuous renal replacement therapy, mechanical ventilation, vasoactive medications, mortality, and length of stay. We compare single-task (ST) models with naive multitask and SeqSNR in terms of discriminative performance and label efficiency. RESULTS: SeqSNR showed a modest yet statistically significant performance boost across 4 of 6 tasks compared with ST and naive multitasking. When the size of the training dataset was reduced for a given task (label efficiency), SeqSNR outperformed ST for all cases showing an average area under the precision-recall curve boost of 2.1%, 2.9%, and 2.1% for tasks using 1%, 5%, and 10% of labels, respectively. CONCLUSIONS: The SeqSNR architecture shows superior label efficiency compared with ST and naive multitasking,",
+  "needs_fetch": false
+ },
+ {
+  "id": 2166,
+  "title": "Leveraging Non-uniformity in First-order Non-convex Optimization",
+  "org": "deepmind",
+  "date": "2021-05-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2105.06072",
+  "abstract": "Classical global convergence results for first-order methods rely on uniform smoothness and the Łojasiewicz inequality. Motivated by properties of objective functions that arise in machine learning, we propose a non-uniform refinement of these notions, leading to \\emph{Non-uniform Smoothness} (NS) and \\emph{Non-uniform Łojasiewicz inequality} (NŁ). The new definitions inspire new geometry-aware first-order methods that are able to converge to global optimality faster than the classical $Ω(1/t^2)$ lower bounds. To illustrate the power of these geometry-aware methods and their corresponding non-uniform analysis, we consider two important problems in machine learning: policy gradient optimization in reinforcement learning (PG), and generalized linear model training in supervised learning (GLM). For PG, we find that normalizing the gradient ascent method can accelerate convergence to $O(e^{-t})$ while incurring less overhead than existing algorithms. For GLM, we show that geometry-aware normalized gradient descent can also achieve a linear convergence rate, which significantly improves the best known results. We additionally show that the proposed geometry-aware descent methods escape landscape plateaus faster than standard gradient descent. Experimental results are used to illustrate and complement the theoretical findings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2167,
+  "title": "Learning to swim in potential flow",
+  "org": "deepmind",
+  "date": "2021-05-12",
+  "venue": "Physical Review Fluids",
+  "url": "https://arxiv.org/abs/2009.14280",
+  "abstract": "Fish swim by coordinating their shape changes with the fluid environment to produce forward swimming or turning gaits. We use model-free reinforcement learning to learn shape coordinations that lead to robust turning and forward swimming motions in the context of a simple three-link fish in a potential flow environment. We show that the optimal control policies arrived at by reinforcement learning are interpretable via shape space analysis in driftless environment and are robust to the presence of drift-related perturbations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2792,
+  "title": "Diffusion Models Beat GANs on Image Synthesis",
+  "org": "openai",
+  "date": "2021-05-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2105.05233",
+  "abstract": "We show that diffusion models can achieve image sample quality superior to the current state-of-the-art generative models. We achieve this on unconditional image synthesis by finding a better architecture through a series of ablations. For conditional image synthesis, we further improve sample quality with classifier guidance: a simple, compute-efficient method for trading off diversity for fidelity using gradients from a classifier. We achieve an FID of 2.97 on ImageNet 128$\\times$128, 4.59 on ImageNet 256$\\times$256, and 7.72 on ImageNet 512$\\times$512, and we match BigGAN-deep even with as few as 25 forward passes per sample, all while maintaining better coverage of the distribution. Finally, we find that classifier guidance combines well with upsampling diffusion models, further improving FID to 3.94 on ImageNet 256$\\times$256 and 3.85 on ImageNet 512$\\times$512. We release our code at https://github.com/openai/guided-diffusion",
+  "needs_fetch": false
+ },
+ {
+  "id": 2168,
+  "title": "Game Plan: What AI can do for Football, and What Football can do for AI",
+  "org": "deepmind",
+  "date": "2021-05-06",
+  "venue": "Journal of Artificial Intelligence Research",
+  "url": "https://arxiv.org/abs/2011.09192",
+  "abstract": "The rapid progress in artificial intelligence (AI) and machine learning has opened unprecedented analytics possibilities in various team and individual sports, including baseball, basketball, and tennis. More recently, AI techniques have been applied to football, due to a huge increase in data collection by professional teams, increased computational power, and advances in machine learning, with the goal of better addressing new scientific challenges involved in the analysis of both individual players’ and coordinated teams’ behaviors. The research challenges associated with predictive and prescriptive football analytics require new developments and progress at the intersection of statistical learning, game theory, and computer vision. In this paper, we provide an overarching perspective highlighting how the combination of these fields, in particular, forms a unique microcosm for AI research, while offering mutual benefits for professional teams, spectators, and broadcasters in the years to come. We illustrate that this duality makes football analytics a game changer of tremendous value, in terms of not only changing the game of football itself, but also in terms of what this domain can mean for the field of AI. We review the state-of-the-art and exemplify the types of analysis enabled by combining the aforementioned fields, including illustrative examples of counterfactual analysis using predictive models, and the combination of game-theoretic analysis of penalty kicks with ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2169,
+  "title": "Use of deep learning to develop continuous-risk models for adverse event prediction from electronic health records",
+  "org": "deepmind",
+  "date": "2021-05-05",
+  "venue": "Nature Protocols",
+  "url": "https://doi.org/10.1038/s41596-021-00513-5",
+  "abstract": null,
+  "needs_fetch": true
+ }
+]

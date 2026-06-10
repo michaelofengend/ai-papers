@@ -1,0 +1,2117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/8BS5fYhxBOpyUNHF6W8txl4XdlM</id>
+  <title>arXiv Query: search_query=all:"reward hacking" OR all:"reward tampering"&amp;id_list=&amp;start=450&amp;max_results=150</title>
+  <updated>2026-06-10T07:50:45Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22reward+hacking%22+OR+all:%22reward+tampering%22&amp;start=450&amp;max_results=150&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>150</opensearch:itemsPerPage>
+  <opensearch:totalResults>508</opensearch:totalResults>
+  <opensearch:startIndex>450</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2411.03524v1</id>
+    <title>Mitigating Metric Bias in Minimum Bayes Risk Decoding</title>
+    <updated>2024-11-05T22:01:27Z</updated>
+    <link href="https://arxiv.org/abs/2411.03524v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.03524v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While Minimum Bayes Risk (MBR) decoding using metrics such as COMET or MetricX has outperformed traditional decoding methods such as greedy or beam search, it introduces a challenge we refer to as metric bias. As MBR decoding aims to produce translations that score highly according to a specific utility metric, this very process makes it impossible to use the same metric for both decoding and evaluation, as improvements might simply be due to reward hacking rather than reflecting real quality improvements. In this work we find that compared to human ratings, neural metrics not only overestimate the quality of MBR decoding when the same metric is used as the utility metric, but they also overestimate the quality of MBR/QE decoding with other neural utility metrics as well. We also show that the metric bias issue can be mitigated by using an ensemble of utility metrics during MBR decoding: human evaluations show that MBR decoding using an ensemble of utility metrics outperforms a single utility metric.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-05T22:01:27Z</published>
+    <arxiv:comment>To appear at WMT2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Geza Kovacs</name>
+    </author>
+    <author>
+      <name>Daniel Deutsch</name>
+    </author>
+    <author>
+      <name>Markus Freitag</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.21545v2</id>
+    <title>CARMO: Dynamic Criteria Generation for Context-Aware Reward Modelling</title>
+    <updated>2025-02-17T21:25:09Z</updated>
+    <link href="https://arxiv.org/abs/2410.21545v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.21545v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reward modeling in large language models is susceptible to reward hacking, causing models to latch onto superficial features such as the tendency to generate lists or unnecessarily long responses. In reinforcement learning from human feedback (RLHF) and more generally during post-training flawed reward signals often lead to outputs that optimize for these spurious correlates instead of genuine quality or correctness. We propose Context-Aware Reward Modeling (CARMO), a novel approach that first generates dynamic, context-relevant criteria to ground the reward model before producing reward scores. Unlike prior methods that rely on static rubrics, CARMO leverages large language models (LLMs) to adaptively create evaluation criteria such as logical consistency, clarity, and depth tailored to the user query. Our theoretical analysis shows that such criteria generation can mitigate reward hacking. We further demonstrate that CARMO can be distilled into smaller models, reducing the computational cost of alignment. We establish a new state-of-the-art performance in zero-shot settings for generative models, achieving a 2.1\% improvement on Reward Bench. Furthermore, alignment performed on the CARMO-curated preference dataset achieves 22.5\% and 21.1\% LC-WR and WR, respectively, on Mistral-Base (7B).</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-28T21:18:49Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Taneesh Gupta</name>
+    </author>
+    <author>
+      <name>Shivam Shandilya</name>
+    </author>
+    <author>
+      <name>Xuchao Zhang</name>
+    </author>
+    <author>
+      <name>Rahul Madhavan</name>
+    </author>
+    <author>
+      <name>Supriyo Ghosh</name>
+    </author>
+    <author>
+      <name>Chetan Bansal</name>
+    </author>
+    <author>
+      <name>Huaxiu Yao</name>
+    </author>
+    <author>
+      <name>Saravan Rajmohan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.20187v1</id>
+    <title>Uncertainty-Penalized Direct Preference Optimization</title>
+    <updated>2024-10-26T14:24:37Z</updated>
+    <link href="https://arxiv.org/abs/2410.20187v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.20187v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Aligning Large Language Models (LLMs) to human preferences in content, style, and presentation is challenging, in part because preferences are varied, context-dependent, and sometimes inherently ambiguous. While successful, Reinforcement Learning from Human Feedback (RLHF) and Direct Preference Optimization (DPO) are prone to the issue of proxy reward overoptimization. Analysis of the DPO loss reveals a critical need for regularization for mislabeled or ambiguous preference pairs to avoid reward hacking. In this work, we develop a pessimistic framework for DPO by introducing preference uncertainty penalization schemes, inspired by offline reinforcement learning. The penalization serves as a correction to the loss which attenuates the loss gradient for uncertain samples. Evaluation of the methods is performed with GPT2 Medium on the Anthropic-HH dataset using a model ensemble to obtain uncertainty estimates, and shows improved overall performance compared to vanilla DPO, as well as better completions on prompts from high-uncertainty chosen/rejected responses.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-26T14:24:37Z</published>
+    <arxiv:comment>Accepted at the NeurIPS 2024 FITML Workshop</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Sam Houliston</name>
+    </author>
+    <author>
+      <name>Alizée Pace</name>
+    </author>
+    <author>
+      <name>Alexander Immer</name>
+    </author>
+    <author>
+      <name>Gunnar Rätsch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.15115v3</id>
+    <title>On Designing Effective RL Reward at Training Time for LLM Reasoning</title>
+    <updated>2024-11-27T11:58:50Z</updated>
+    <link href="https://arxiv.org/abs/2410.15115v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.15115v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reward models have been increasingly critical for improving the reasoning capability of LLMs. Existing research has shown that a well-trained reward model can substantially improve model performances at inference time via search. However, the potential of reward models during RL training time still remains largely under-explored. It is currently unclear whether these reward models can provide additional training signals to enhance the reasoning capabilities of LLMs in RL training that uses sparse success rewards, which verify the correctness of solutions. In this work, we evaluate popular reward models for RL training, including the Outcome-supervised Reward Model (ORM) and the Process-supervised Reward Model (PRM), and train a collection of LLMs for math problems using RL by combining these learned rewards with success rewards. Surprisingly, even though these learned reward models have strong inference-time performances, they may NOT help or even hurt RL training, producing worse performances than LLMs trained with the success reward only. Our analysis reveals that an LLM can receive high rewards from some of these reward models by repeating correct but unnecessary reasoning steps, leading to a severe reward hacking issue. Therefore, we introduce two novel reward refinement techniques, including Clipping and Delta. The key idea is to ensure the accumulative reward of any reasoning trajectory is upper-bounded to keep a learned reward model effective without being exploited. We evaluate our techniques with multiple reward models over a set of 1.5B and 7B LLMs on MATH and GSM8K benchmarks and demonstrate that with a carefully designed reward function, RL training without any additional supervised tuning can improve all the evaluated LLMs, including the state-of-the-art 7B LLM Qwen2.5-Math-7B-Instruct on MATH and GSM8K benchmarks.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-19T13:53:50Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jiaxuan Gao</name>
+    </author>
+    <author>
+      <name>Shusheng Xu</name>
+    </author>
+    <author>
+      <name>Wenjie Ye</name>
+    </author>
+    <author>
+      <name>Weilin Liu</name>
+    </author>
+    <author>
+      <name>Chuyi He</name>
+    </author>
+    <author>
+      <name>Wei Fu</name>
+    </author>
+    <author>
+      <name>Zhiyu Mei</name>
+    </author>
+    <author>
+      <name>Guangju Wang</name>
+    </author>
+    <author>
+      <name>Yi Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.19749v1</id>
+    <title>Using AI Alignment Theory to understand the potential pitfalls of regulatory frameworks</title>
+    <updated>2024-10-10T17:38:38Z</updated>
+    <link href="https://arxiv.org/abs/2410.19749v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.19749v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper leverages insights from Alignment Theory (AT) research, which primarily focuses on the potential pitfalls of technical alignment in Artificial Intelligence, to critically examine the European Union's Artificial Intelligence Act (EU AI Act). In the context of AT research, several key failure modes - such as proxy gaming, goal drift, reward hacking or specification gaming - have been identified. These can arise when AI systems are not properly aligned with their intended objectives. The central logic of this report is: what can we learn if we treat regulatory efforts in the same way as we treat advanced AI systems? As we systematically apply these concepts to the EU AI Act, we uncover potential vulnerabilities and areas for improvement in the regulation.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-10T17:38:38Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Alejandro Tlaie</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.06491v1</id>
+    <title>Honesty to Subterfuge: In-Context Reinforcement Learning Can Make Honest Models Reward Hack</title>
+    <updated>2024-10-09T02:34:27Z</updated>
+    <link href="https://arxiv.org/abs/2410.06491v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.06491v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Previous work has shown that training "helpful-only" LLMs with reinforcement learning on a curriculum of gameable environments can lead models to generalize to egregious specification gaming, such as editing their own reward function or modifying task checklists to appear more successful. We show that gpt-4o, gpt-4o-mini, o1-preview, and o1-mini - frontier models trained to be helpful, harmless, and honest - can engage in specification gaming without training on a curriculum of tasks, purely from in-context iterative reflection (which we call in-context reinforcement learning, "ICRL"). We also show that using ICRL to generate highly-rewarded outputs for expert iteration (compared to the standard expert iteration reinforcement learning algorithm) may increase gpt-4o-mini's propensity to learn specification-gaming policies, generalizing (in very rare cases) to the most egregious strategy where gpt-4o-mini edits its own reward function. Our results point toward the strong ability of in-context reflection to discover rare specification-gaming strategies that models might not exhibit zero-shot or with normal training, highlighting the need for caution when relying on alignment of LLMs in zero-shot settings.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-09T02:34:27Z</published>
+    <arxiv:comment>20 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Leo McKee-Reid</name>
+    </author>
+    <author>
+      <name>Christoph Sträter</name>
+    </author>
+    <author>
+      <name>Maria Angelica Martinez</name>
+    </author>
+    <author>
+      <name>Joe Needham</name>
+    </author>
+    <author>
+      <name>Mikita Balesni</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.01729v1</id>
+    <title>Evaluating Robustness of Reward Models for Mathematical Reasoning</title>
+    <updated>2024-10-02T16:39:58Z</updated>
+    <link href="https://arxiv.org/abs/2410.01729v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.01729v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reward models are key in reinforcement learning from human feedback (RLHF) systems, aligning the model behavior with human preferences. Particularly in the math domain, there have been plenty of studies using reward models to align policies for improving reasoning capabilities. Recently, as the importance of reward models has been emphasized, RewardBench is proposed to understand their behavior. However, we figure out that the math subset of RewardBench has different representations between chosen and rejected completions, and relies on a single comparison, which may lead to unreliable results as it only see an isolated case. Therefore, it fails to accurately present the robustness of reward models, leading to a misunderstanding of its performance and potentially resulting in reward hacking. In this work, we introduce a new design for reliable evaluation of reward models, and to validate this, we construct RewardMATH, a benchmark that effectively represents the robustness of reward models in mathematical reasoning tasks. We demonstrate that the scores on RewardMATH strongly correlate with the results of optimized policy and effectively estimate reward overoptimization, whereas the existing benchmark shows almost no correlation. The results underscore the potential of our design to enhance the reliability of evaluation, and represent the robustness of reward model. We make our code and data publicly available.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-02T16:39:58Z</published>
+    <arxiv:comment>Work in progress</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Sunghwan Kim</name>
+    </author>
+    <author>
+      <name>Dongjin Kang</name>
+    </author>
+    <author>
+      <name>Taeyoon Kwon</name>
+    </author>
+    <author>
+      <name>Hyungjoo Chae</name>
+    </author>
+    <author>
+      <name>Jungsoo Won</name>
+    </author>
+    <author>
+      <name>Dongha Lee</name>
+    </author>
+    <author>
+      <name>Jinyoung Yeo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.20370v1</id>
+    <title>The Perfect Blend: Redefining RLHF with Mixture of Judges</title>
+    <updated>2024-09-30T15:06:53Z</updated>
+    <link href="https://arxiv.org/abs/2409.20370v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.20370v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning from human feedback (RLHF) has become the leading approach for fine-tuning large language models (LLM). However, RLHF has limitations in multi-task learning (MTL) due to challenges of reward hacking and extreme multi-objective optimization (i.e., trade-off of multiple and/or sometimes conflicting objectives). Applying RLHF for MTL currently requires careful tuning of the weights for reward model and data combinations. This is often done via human intuition and does not generalize. In this work, we introduce a novel post-training paradigm which we called Constrained Generative Policy Optimization (CGPO). The core of CGPO is Mixture of Judges (MoJ) with cost-efficient constrained policy optimization with stratification, which can identify the perfect blend in RLHF in a principled manner. It shows strong empirical results with theoretical guarantees, does not require extensive hyper-parameter tuning, and is plug-and-play in common post-training pipelines. Together, this can detect and mitigate reward hacking behaviors while reaching a pareto-optimal point across an extremely large number of objectives.
+  Our empirical evaluations demonstrate that CGPO significantly outperforms standard RLHF algorithms like PPO and DPO across various tasks including general chat, STEM questions, instruction following, and coding. Specifically, CGPO shows improvements of 7.4% in AlpacaEval-2 (general chat), 12.5% in Arena-Hard (STEM &amp; reasoning), and consistent gains in other domains like math and coding. Notably, PPO, while commonly used, is prone to severe reward hacking in popular coding benchmarks, which CGPO successfully addresses. This breakthrough in RLHF not only tackles reward hacking and extreme multi-objective optimization challenges but also advances the state-of-the-art in aligning general-purpose LLMs for diverse applications.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-30T15:06:53Z</published>
+    <arxiv:comment>submitted to conference</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Tengyu Xu</name>
+    </author>
+    <author>
+      <name>Eryk Helenowski</name>
+    </author>
+    <author>
+      <name>Karthik Abinav Sankararaman</name>
+    </author>
+    <author>
+      <name>Di Jin</name>
+    </author>
+    <author>
+      <name>Kaiyan Peng</name>
+    </author>
+    <author>
+      <name>Eric Han</name>
+    </author>
+    <author>
+      <name>Shaoliang Nie</name>
+    </author>
+    <author>
+      <name>Chen Zhu</name>
+    </author>
+    <author>
+      <name>Hejia Zhang</name>
+    </author>
+    <author>
+      <name>Wenxuan Zhou</name>
+    </author>
+    <author>
+      <name>Zhouhao Zeng</name>
+    </author>
+    <author>
+      <name>Yun He</name>
+    </author>
+    <author>
+      <name>Karishma Mandyam</name>
+    </author>
+    <author>
+      <name>Arya Talabzadeh</name>
+    </author>
+    <author>
+      <name>Madian Khabsa</name>
+    </author>
+    <author>
+      <name>Gabriel Cohen</name>
+    </author>
+    <author>
+      <name>Yuandong Tian</name>
+    </author>
+    <author>
+      <name>Hao Ma</name>
+    </author>
+    <author>
+      <name>Sinong Wang</name>
+    </author>
+    <author>
+      <name>Han Fang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.13156v2</id>
+    <title>RRM: Robust Reward Model Training Mitigates Reward Hacking</title>
+    <updated>2025-02-27T16:30:42Z</updated>
+    <link href="https://arxiv.org/abs/2409.13156v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.13156v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reward models (RMs) play a pivotal role in aligning large language models (LLMs) with human preferences. However, traditional RM training, which relies on response pairs tied to specific prompts, struggles to disentangle prompt-driven preferences from prompt-independent artifacts, such as response length and format. In this work, we expose a fundamental limitation of current RM training methods, where RMs fail to effectively distinguish between contextual signals and irrelevant artifacts when determining preferences. To address this, we introduce a causal framework that learns preferences independent of these artifacts and propose a novel data augmentation technique designed to eliminate them. Extensive experiments show that our approach successfully filters out undesirable artifacts, yielding a more robust reward model (RRM). Our RRM improves the performance of a pairwise reward model trained on Gemma-2-9b-it, on RewardBench, increasing accuracy from 80.61% to 84.15%. Additionally, we train two DPO policies using both the RM and RRM, demonstrating that the RRM significantly enhances DPO-aligned policies, improving MT-Bench scores from 7.27 to 8.31 and length-controlled win-rates in AlpacaEval-2 from 33.46% to 52.49%.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-20T01:46:07Z</published>
+    <arxiv:comment>Accepted in ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Tianqi Liu</name>
+    </author>
+    <author>
+      <name>Wei Xiong</name>
+    </author>
+    <author>
+      <name>Jie Ren</name>
+    </author>
+    <author>
+      <name>Lichang Chen</name>
+    </author>
+    <author>
+      <name>Junru Wu</name>
+    </author>
+    <author>
+      <name>Rishabh Joshi</name>
+    </author>
+    <author>
+      <name>Yang Gao</name>
+    </author>
+    <author>
+      <name>Jiaming Shen</name>
+    </author>
+    <author>
+      <name>Zhen Qin</name>
+    </author>
+    <author>
+      <name>Tianhe Yu</name>
+    </author>
+    <author>
+      <name>Daniel Sohn</name>
+    </author>
+    <author>
+      <name>Anastasiia Makarova</name>
+    </author>
+    <author>
+      <name>Jeremiah Liu</name>
+    </author>
+    <author>
+      <name>Yuan Liu</name>
+    </author>
+    <author>
+      <name>Bilal Piot</name>
+    </author>
+    <author>
+      <name>Abe Ittycheriah</name>
+    </author>
+    <author>
+      <name>Aviral Kumar</name>
+    </author>
+    <author>
+      <name>Mohammad Saleh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.12914v3</id>
+    <title>Evaluating Defences against Unsafe Feedback in RLHF</title>
+    <updated>2025-02-26T01:01:00Z</updated>
+    <link href="https://arxiv.org/abs/2409.12914v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.12914v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While there has been progress towards aligning Large Language Models (LLMs) with human values and ensuring safe behaviour at inference time, safety guards can easily be removed when fine tuned on unsafe and harmful datasets. While this setting has been treated extensively, another popular training paradigm, learning from unsafe feedback with reinforcement learning, has previously been unexplored. This is concerning due to the widespread deployment of feedback collection systems. We address this gap by providing an analysis of learning settings where feedback is harmful, i.e. that unsafe samples are preferred over safe ones despite model developers goal to maintain safety. We find that safety-aligned LLMs easily explore unsafe action spaces via generating harmful text and optimize for reward that violates safety constraints indicating that current safety guards are not enough to prevent learning from unsafe feedback. In order to protect against this vulnerability, we adapt a number of both "implict" and "explicit" harmful fine-tuning defences to evaluate whether they are effective as learning constraints in an RLHF setting finding that no method is generally effective pointing to the need for more defence research. We end the paper with the observation that some defences work by performing "harmless reward hacking" for which we provide a theoretical explanation drawn from the theory of Constrained Markov Decision Processes and provide some direction for future defence development.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-19T17:10:34Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Domenic Rosati</name>
+    </author>
+    <author>
+      <name>Giles Edkins</name>
+    </author>
+    <author>
+      <name>Harsh Raj</name>
+    </author>
+    <author>
+      <name>David Atanasov</name>
+    </author>
+    <author>
+      <name>Subhabrata Majumdar</name>
+    </author>
+    <author>
+      <name>Janarthanan Rajendran</name>
+    </author>
+    <author>
+      <name>Frank Rudzicz</name>
+    </author>
+    <author>
+      <name>Hassan Sajjad</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.15360v3</id>
+    <title>Reward-Robust RLHF in LLMs</title>
+    <updated>2024-10-16T14:56:15Z</updated>
+    <link href="https://arxiv.org/abs/2409.15360v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.15360v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As Large Language Models (LLMs) continue to progress toward more advanced forms of intelligence, Reinforcement Learning from Human Feedback (RLHF) is increasingly seen as a key pathway toward achieving Artificial General Intelligence (AGI). However, the reliance on reward-model-based (RM-based) alignment methods introduces significant challenges due to the inherent instability and imperfections of Reward Models (RMs), which can lead to critical issues such as reward hacking and misalignment with human intentions. In this paper, we introduce a reward-robust RLHF framework aimed at addressing these fundamental challenges, paving the way for more reliable and resilient learning in LLMs. Our approach introduces a novel optimization objective that carefully balances performance and robustness by incorporating Bayesian Reward Model Ensembles (BRME) to model the uncertainty set of reward functions. This allows the framework to integrate both nominal performance and minimum reward signals, ensuring more stable learning even with imperfect RMs. Empirical results demonstrate that our framework consistently outperforms baselines across diverse benchmarks, showing improved accuracy and long-term stability. We also provide a theoretical analysis, demonstrating that reward-robust RLHF approaches the stability of constant reward settings, which proves to be acceptable even in a stochastic-case analysis. Together, these contributions highlight the framework potential to enhance both the performance and stability of LLM alignment.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-18T02:35:41Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yuzi Yan</name>
+    </author>
+    <author>
+      <name>Xingzhou Lou</name>
+    </author>
+    <author>
+      <name>Jialian Li</name>
+    </author>
+    <author>
+      <name>Yiping Zhang</name>
+    </author>
+    <author>
+      <name>Jian Xie</name>
+    </author>
+    <author>
+      <name>Chao Yu</name>
+    </author>
+    <author>
+      <name>Yu Wang</name>
+    </author>
+    <author>
+      <name>Dong Yan</name>
+    </author>
+    <author>
+      <name>Yuan Shen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.06493v1</id>
+    <title>Elucidating Optimal Reward-Diversity Tradeoffs in Text-to-Image Diffusion Models</title>
+    <updated>2024-09-09T16:27:26Z</updated>
+    <link href="https://arxiv.org/abs/2409.06493v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.06493v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Text-to-image (T2I) diffusion models have become prominent tools for generating high-fidelity images from text prompts. However, when trained on unfiltered internet data, these models can produce unsafe, incorrect, or stylistically undesirable images that are not aligned with human preferences. To address this, recent approaches have incorporated human preference datasets to fine-tune T2I models or to optimize reward functions that capture these preferences. Although effective, these methods are vulnerable to reward hacking, where the model overfits to the reward function, leading to a loss of diversity in the generated images. In this paper, we prove the inevitability of reward hacking and study natural regularization techniques like KL divergence and LoRA scaling, and their limitations for diffusion models. We also introduce Annealed Importance Guidance (AIG), an inference-time regularization inspired by Annealed Importance Sampling, which retains the diversity of the base model while achieving Pareto-Optimal reward-diversity tradeoffs. Our experiments demonstrate the benefits of AIG for Stable Diffusion models, striking the optimal balance between reward optimization and image diversity. Furthermore, a user study confirms that AIG improves diversity and quality of generated images across different model architectures and reward functions.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-09T16:27:26Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Rohit Jena</name>
+    </author>
+    <author>
+      <name>Ali Taghibakhshi</name>
+    </author>
+    <author>
+      <name>Sahil Jain</name>
+    </author>
+    <author>
+      <name>Gerald Shen</name>
+    </author>
+    <author>
+      <name>Nima Tajbakhsh</name>
+    </author>
+    <author>
+      <name>Arash Vahdat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.05358v2</id>
+    <title>BAMDP Shaping: a Unified Framework for Intrinsic Motivation and Reward Shaping</title>
+    <updated>2025-03-22T02:05:56Z</updated>
+    <link href="https://arxiv.org/abs/2409.05358v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.05358v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Intrinsic motivation and reward shaping guide reinforcement learning (RL) agents by adding pseudo-rewards, which can lead to useful emergent behaviors. However, they can also encourage counterproductive exploits, e.g., fixation with noisy TV screens. Here we provide a theoretical model which anticipates these behaviors, and provides broad criteria under which adverse effects can be bounded. We characterize all pseudo-rewards as reward shaping in Bayes-Adaptive Markov Decision Processes (BAMDPs), which formulates the problem of learning in MDPs as an MDP over the agent's knowledge. Optimal exploration maximizes BAMDP state value, which we decompose into the value of the information gathered and the prior value of the physical state. Psuedo-rewards guide RL agents by rewarding behavior that increases these value components, while they hinder exploration when they align poorly with the actual value. We extend potential-based shaping theory to prove BAMDP Potential-based shaping Functions (BAMPFs) are immune to reward-hacking (convergence to behaviors maximizing composite rewards to the detriment of real rewards) in meta-RL, and show empirically how a BAMPF helps a meta-RL agent learn optimal RL algorithms for a Bernoulli Bandit domain. We finally prove that BAMPFs with bounded monotone increasing potentials also resist reward-hacking in the regular RL setting. We show that it is straightforward to retrofit or design new pseudo-reward terms in this form, and provide an empirical demonstration in the Mountain Car environment.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-09T06:39:56Z</published>
+    <arxiv:comment>Published at ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Aly Lidayan</name>
+    </author>
+    <author>
+      <name>Michael Dennis</name>
+    </author>
+    <author>
+      <name>Stuart Russell</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.12622v3</id>
+    <title>The AI risk repository: A meta-review, database, and taxonomy of risks from artificial intelligence</title>
+    <updated>2026-05-05T05:31:40Z</updated>
+    <link href="https://arxiv.org/abs/2408.12622v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.12622v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Artificial intelligence (AI) is reshaping society, from video generation to medical diagnosis, coding agents to autonomous vehicles. Yet researchers, policymakers, and technology companies lack shared terminology for discussing AI risks. Consider "privacy": one framework uses this term to describe a model's ability to leak sensitive training data, while another uses it to mean freedom from government surveillance. Conversely, researchers have introduced "Goodhart's law," "specification gaming," "reward hacking," and "mesa-optimization" to describe the same phenomenon of AI systems optimizing for measured proxies rather than intended goals. This terminological diversity creates friction: comparing findings across studies requires mapping between frameworks, and comprehensive risk coverage requires consulting multiple taxonomies that use different organizing principles. This paper addresses this challenge by creating a comprehensive catalog of AI risks. We systematically analyzed every major AI risk framework published to date-74 frameworks containing 1,725 distinct risks-and organized them into a unified system. Our two classification systems reveal important patterns: contrary to common assumptions, human decisions cause nearly as many AI risks (38%) as the AI systems themselves (42%). The work provides practical tools for anyone working on AI safety, from developers conducting risk assessments to policymakers writing regulations to auditors evaluating AI systems. By establishing a common reference point, this repository creates the foundation for more coordinated and comprehensive approaches to managing AI's risks while realizing its benefits.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.ET" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-14T10:32:06Z</published>
+    <arxiv:comment>This paper has been published in Patterns (Cell Press, 2026) under a CC BY 4.0 licence: https://doi.org/10.1016/j.patter.2026.101517</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <arxiv:journal_ref>Patterns 101517 (2026)</arxiv:journal_ref>
+    <author>
+      <name>Peter Slattery</name>
+    </author>
+    <author>
+      <name>Alexander K. Saeri</name>
+    </author>
+    <author>
+      <name>Emily A. C. Grundy</name>
+    </author>
+    <author>
+      <name>Jess Graham</name>
+    </author>
+    <author>
+      <name>Michael Noetel</name>
+    </author>
+    <author>
+      <name>Risto Uuk</name>
+    </author>
+    <author>
+      <name>James Dao</name>
+    </author>
+    <author>
+      <name>Soroush Pour</name>
+    </author>
+    <author>
+      <name>Stephen Casper</name>
+    </author>
+    <author>
+      <name>Neil Thompson</name>
+    </author>
+    <arxiv:doi>10.1016/j.patter.2026.101517</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.patter.2026.101517" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.14681v1</id>
+    <title>Value Internalization: Learning and Generalizing from Social Reward</title>
+    <updated>2024-07-19T21:53:33Z</updated>
+    <link href="https://arxiv.org/abs/2407.14681v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.14681v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Social rewards shape human behavior. During development, a caregiver guides a learner's behavior towards culturally aligned goals and values. How do these behaviors persist and generalize when the caregiver is no longer present, and the learner must continue autonomously? Here, we propose a model of value internalization where social feedback trains an internal social reward (ISR) model that generates internal rewards when social rewards are unavailable. Through empirical simulations, we show that an ISR model prevents agents from unlearning socialized behaviors and enables generalization in out-of-distribution tasks. We characterize the implications of incomplete internalization, akin to "reward hacking" on the ISR. Additionally, we show that our model internalizes prosocial behavior in a multi-agent environment. Our work provides a foundation for understanding how humans acquire and generalize values and offers insights for aligning AI with human values.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-19T21:53:33Z</published>
+    <arxiv:comment>Reinforcement Learning Conference (RLC) 2024 &amp; Cognitive Science Conference Oral</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Frieda Rong</name>
+    </author>
+    <author>
+      <name>Max Kleiman-Weiner</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.14503v2</id>
+    <title>Catastrophic Goodhart: regularizing RLHF with KL divergence does not mitigate heavy-tailed reward misspecification</title>
+    <updated>2024-11-08T00:19:20Z</updated>
+    <link href="https://arxiv.org/abs/2407.14503v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.14503v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>When applying reinforcement learning from human feedback (RLHF), the reward is learned from data and, therefore, always has some error. It is common to mitigate this by regularizing the policy with KL divergence from a base model, with the hope that balancing reward with regularization will achieve desirable outcomes despite this reward misspecification. We show that when the reward function has light-tailed error, optimal policies under less restrictive KL penalties achieve arbitrarily high utility. However, if error is heavy-tailed, some policies obtain arbitrarily high reward despite achieving no more utility than the base model--a phenomenon we call catastrophic Goodhart. We adapt a discrete optimization method to measure the tails of reward models, finding that they are consistent with light-tailed error. However, the pervasiveness of heavy-tailed distributions in many real-world applications indicates that future sources of RL reward could have heavy-tailed error, increasing the likelihood of reward hacking even with KL regularization.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-19T17:57:59Z</published>
+    <arxiv:comment>Mechanistic Interpretability workshop at ICML 2024; Main conference poster at NeurIPS 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Thomas Kwa</name>
+    </author>
+    <author>
+      <name>Drake Thomas</name>
+    </author>
+    <author>
+      <name>Adrià Garriga-Alonso</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.04549v1</id>
+    <title>Spontaneous Reward Hacking in Iterative Self-Refinement</title>
+    <updated>2024-07-05T14:34:50Z</updated>
+    <link href="https://arxiv.org/abs/2407.04549v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.04549v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models are capable of iteratively improving their outputs based on natural language feedback, thus enabling in-context optimization of user preference. In place of human users, a second language model can be used as an evaluator, providing feedback along with numerical ratings which the generator attempts to optimize. However, because the evaluator is an imperfect proxy of user preference, this optimization can lead to reward hacking, where the evaluator's ratings improve while the generation quality remains stagnant or even decreases as judged by actual user preference. The concern of reward hacking is heightened in iterative self-refinement where the generator and the evaluator use the same underlying language model, in which case the optimization pressure can drive them to exploit shared vulnerabilities. Using an essay editing task, we show that iterative self-refinement leads to deviation between the language model evaluator and human judgment, demonstrating that reward hacking can occur spontaneously in-context with the use of iterative self-refinement. In addition, we study conditions under which reward hacking occurs and observe two factors that affect reward hacking severity: model size and context sharing between the generator and the evaluator.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-05T14:34:50Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jane Pan</name>
+    </author>
+    <author>
+      <name>He He</name>
+    </author>
+    <author>
+      <name>Samuel R. Bowman</name>
+    </author>
+    <author>
+      <name>Shi Feng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.03038v3</id>
+    <title>Towards Federated RLHF with Aggregated Client Preference for LLMs</title>
+    <updated>2025-04-08T18:13:57Z</updated>
+    <link href="https://arxiv.org/abs/2407.03038v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.03038v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning with human feedback (RLHF) fine-tunes a pretrained large language model (LLM) using user preference data, enabling it to generate content aligned with human preferences. However, due to privacy concerns, users may be reluctant to share sensitive preference data. To address this, we propose utilizing Federated Learning (FL) techniques, allowing large-scale preference collection from diverse real-world users without requiring them to transmit data to a central server. Our federated RLHF methods (i.e., FedBis and FedBiscuit) encode each client's preferences into binary selectors and aggregate them to capture common preferences. In particular, FedBiscuit overcomes key challenges, such as preference heterogeneity and reward hacking, through innovative solutions like grouping clients with similar preferences to reduce heterogeneity and using multiple binary selectors to enhance LLM output quality. To evaluate the performance of the proposed methods, we establish the first federated RLHF benchmark with a heterogeneous human preference dataset. Experimental results show that by integrating the LLM with aggregated client preferences, FedBis and FedBiscuit significantly enhance the professionalism and readability of the generated content.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-03T12:02:24Z</published>
+    <arxiv:comment>ICLR'25</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Feijie Wu</name>
+    </author>
+    <author>
+      <name>Xiaoze Liu</name>
+    </author>
+    <author>
+      <name>Haoyu Wang</name>
+    </author>
+    <author>
+      <name>Xingchen Wang</name>
+    </author>
+    <author>
+      <name>Lu Su</name>
+    </author>
+    <author>
+      <name>Jing Gao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.12845v1</id>
+    <title>Interpretable Preferences via Multi-Objective Reward Modeling and Mixture-of-Experts</title>
+    <updated>2024-06-18T17:58:28Z</updated>
+    <link href="https://arxiv.org/abs/2406.12845v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.12845v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement learning from human feedback (RLHF) has emerged as the primary method for aligning large language models (LLMs) with human preferences. The RLHF process typically starts by training a reward model (RM) using human preference data. Conventional RMs are trained on pairwise responses to the same user request, with relative ratings indicating which response humans prefer. The trained RM serves as a proxy for human preferences. However, due to the black-box nature of RMs, their outputs lack interpretability, as humans cannot intuitively understand why an RM thinks a response is good or not. As RMs act as human preference proxies, we believe they should be human-interpretable to ensure that their internal decision processes are consistent with human preferences and to prevent reward hacking in LLM alignment. To build RMs with interpretable preferences, we propose a two-stage approach: i) train an Absolute-Rating Multi-Objective Reward Model (ArmoRM) with multi-dimensional absolute-rating data, each dimension corresponding to a human-interpretable objective (e.g., honesty, verbosity, safety); ii) employ a Mixture-of-Experts (MoE) strategy with a gating network that automatically selects the most suitable reward objectives based on the context. We efficiently trained an ArmoRM with Llama-3 8B and a gating network consisting of a shallow MLP on top of the ArmoRM. Our trained model, ArmoRM-Llama3-8B, obtains state-of-the-art performance on RewardBench, a benchmark evaluating RMs for language modeling. Notably, the performance of our model surpasses the LLM-as-a-judge method with GPT-4 judges by a margin, and approaches the performance of the much larger Nemotron-4 340B reward model.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-18T17:58:28Z</published>
+    <arxiv:comment>Technical report v1. Code and model are released at https://github.com/RLHFlow/RLHF-Reward-Modeling/</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Haoxiang Wang</name>
+    </author>
+    <author>
+      <name>Wei Xiong</name>
+    </author>
+    <author>
+      <name>Tengyang Xie</name>
+    </author>
+    <author>
+      <name>Han Zhao</name>
+    </author>
+    <author>
+      <name>Tong Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.10162v3</id>
+    <title>Sycophancy to Subterfuge: Investigating Reward-Tampering in Large Language Models</title>
+    <updated>2024-06-29T00:28:47Z</updated>
+    <link href="https://arxiv.org/abs/2406.10162v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.10162v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In reinforcement learning, specification gaming occurs when AI systems learn undesired behaviors that are highly rewarded due to misspecified training goals. Specification gaming can range from simple behaviors like sycophancy to sophisticated and pernicious behaviors like reward-tampering, where a model directly modifies its own reward mechanism. However, these more pernicious behaviors may be too complex to be discovered via exploration. In this paper, we study whether Large Language Model (LLM) assistants which find easily discovered forms of specification gaming will generalize to perform rarer and more blatant forms, up to and including reward-tampering. We construct a curriculum of increasingly sophisticated gameable environments and find that training on early-curriculum environments leads to more specification gaming on remaining environments. Strikingly, a small but non-negligible proportion of the time, LLM assistants trained on the full curriculum generalize zero-shot to directly rewriting their own reward function. Retraining an LLM not to game early-curriculum environments mitigates, but does not eliminate, reward-tampering in later environments. Moreover, adding harmlessness training to our gameable environments does not prevent reward-tampering. These results demonstrate that LLMs can generalize from common forms of specification gaming to more pernicious reward tampering and that such behavior may be nontrivial to remove.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-14T16:26:20Z</published>
+    <arxiv:comment>Make it easier to find samples from the model, and highlight that our operational definition of reward tampering has false positives where the model attempts to complete the task honestly but edits the reward. Add paragraph to conclusion to this effect, and add sentence to figure 1 to this effect</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Carson Denison</name>
+    </author>
+    <author>
+      <name>Monte MacDiarmid</name>
+    </author>
+    <author>
+      <name>Fazl Barez</name>
+    </author>
+    <author>
+      <name>David Duvenaud</name>
+    </author>
+    <author>
+      <name>Shauna Kravec</name>
+    </author>
+    <author>
+      <name>Samuel Marks</name>
+    </author>
+    <author>
+      <name>Nicholas Schiefer</name>
+    </author>
+    <author>
+      <name>Ryan Soklaski</name>
+    </author>
+    <author>
+      <name>Alex Tamkin</name>
+    </author>
+    <author>
+      <name>Jared Kaplan</name>
+    </author>
+    <author>
+      <name>Buck Shlegeris</name>
+    </author>
+    <author>
+      <name>Samuel R. Bowman</name>
+    </author>
+    <author>
+      <name>Ethan Perez</name>
+    </author>
+    <author>
+      <name>Evan Hubinger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.04312v2</id>
+    <title>ReNO: Enhancing One-step Text-to-Image Models through Reward-based Noise Optimization</title>
+    <updated>2024-10-31T17:47:54Z</updated>
+    <link href="https://arxiv.org/abs/2406.04312v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.04312v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Text-to-Image (T2I) models have made significant advancements in recent years, but they still struggle to accurately capture intricate details specified in complex compositional prompts. While fine-tuning T2I models with reward objectives has shown promise, it suffers from "reward hacking" and may not generalize well to unseen prompt distributions. In this work, we propose Reward-based Noise Optimization (ReNO), a novel approach that enhances T2I models at inference by optimizing the initial noise based on the signal from one or multiple human preference reward models. Remarkably, solving this optimization problem with gradient ascent for 50 iterations yields impressive results on four different one-step models across two competitive benchmarks, T2I-CompBench and GenEval. Within a computational budget of 20-50 seconds, ReNO-enhanced one-step models consistently surpass the performance of all current open-source Text-to-Image models. Extensive user studies demonstrate that our model is preferred nearly twice as often compared to the popular SDXL model and is on par with the proprietary Stable Diffusion 3 with 8B parameters. Moreover, given the same computational resources, a ReNO-optimized one-step model outperforms widely-used open-source models such as SDXL and PixArt-$α$, highlighting the efficiency and effectiveness of ReNO in enhancing T2I model performance at inference time. Code is available at https://github.com/ExplainableML/ReNO.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-06T17:56:40Z</published>
+    <arxiv:comment>NeurIPS 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Luca Eyring</name>
+    </author>
+    <author>
+      <name>Shyamgopal Karthik</name>
+    </author>
+    <author>
+      <name>Karsten Roth</name>
+    </author>
+    <author>
+      <name>Alexey Dosovitskiy</name>
+    </author>
+    <author>
+      <name>Zeynep Akata</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.02900v2</id>
+    <title>Scaling Laws for Reward Model Overoptimization in Direct Alignment Algorithms</title>
+    <updated>2024-11-05T01:44:14Z</updated>
+    <link href="https://arxiv.org/abs/2406.02900v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.02900v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement Learning from Human Feedback (RLHF) has been crucial to the recent success of Large Language Models (LLMs), however, it is often a complex and brittle process. In the classical RLHF framework, a reward model is first trained to represent human preferences, which is in turn used by an online reinforcement learning (RL) algorithm to optimize the LLM. A prominent issue with such methods is reward over-optimization or reward hacking, where performance as measured by the learned proxy reward model increases, but true quality plateaus or even deteriorates. Direct Alignment Algorithms (DDAs) like Direct Preference Optimization have emerged as alternatives to the classical RLHF pipeline by circumventing the reward modeling phase. However, although DAAs do not use a separate proxy reward model, they still commonly deteriorate from over-optimization. While the so-called reward hacking phenomenon is not well-defined for DAAs, we still uncover similar trends: at higher KL budgets, DAA algorithms exhibit similar degradation patterns to their classic RLHF counterparts. In particular, we find that DAA methods deteriorate not only across a wide range of KL budgets but also often before even a single epoch of the dataset is completed. Through extensive empirical experimentation, this work formulates and formalizes the reward over-optimization or hacking problem for DAAs and explores its consequences across objectives, training regimes, and model scales.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-05T03:41:37Z</published>
+    <arxiv:comment>30 pages, 38th Conference on Neural Information Processing Systems (NeurIPS 2024)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Rafael Rafailov</name>
+    </author>
+    <author>
+      <name>Yaswanth Chittepu</name>
+    </author>
+    <author>
+      <name>Ryan Park</name>
+    </author>
+    <author>
+      <name>Harshit Sikchi</name>
+    </author>
+    <author>
+      <name>Joey Hejna</name>
+    </author>
+    <author>
+      <name>Bradley Knox</name>
+    </author>
+    <author>
+      <name>Chelsea Finn</name>
+    </author>
+    <author>
+      <name>Scott Niekum</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.18881v3</id>
+    <title>Inference-Time Alignment of Diffusion Models with Direct Noise Optimization</title>
+    <updated>2024-10-02T05:22:07Z</updated>
+    <link href="https://arxiv.org/abs/2405.18881v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.18881v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we focus on the alignment problem of diffusion models with a continuous reward function, which represents specific objectives for downstream tasks, such as increasing darkness or improving the aesthetics of images. The central goal of the alignment problem is to adjust the distribution learned by diffusion models such that the generated samples maximize the target reward function. We propose a novel alignment approach, named Direct Noise Optimization (DNO), that optimizes the injected noise during the sampling process of diffusion models. By design, DNO operates at inference-time, and thus is tuning-free and prompt-agnostic, with the alignment occurring in an online fashion during generation. We rigorously study the theoretical properties of DNO and also propose variants to deal with non-differentiable reward functions. Furthermore, we identify that naive implementation of DNO occasionally suffers from the out-of-distribution reward hacking problem, where optimized samples have high rewards but are no longer in the support of the pretrained distribution. To remedy this issue, we leverage classical high-dimensional statistics theory to an effective probability regularization technique. We conduct extensive experiments on several important reward functions and demonstrate that the proposed DNO approach can achieve state-of-the-art reward scores within a reasonable time budget for generation.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-29T08:39:39Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zhiwei Tang</name>
+    </author>
+    <author>
+      <name>Jiangweizhi Peng</name>
+    </author>
+    <author>
+      <name>Jiasheng Tang</name>
+    </author>
+    <author>
+      <name>Mingyi Hong</name>
+    </author>
+    <author>
+      <name>Fan Wang</name>
+    </author>
+    <author>
+      <name>Tsung-Hui Chang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.01054v4</id>
+    <title>Regularized Best-of-N Sampling with Minimum Bayes Risk Objective for Language Model Alignment</title>
+    <updated>2025-01-29T08:52:40Z</updated>
+    <link href="https://arxiv.org/abs/2404.01054v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.01054v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Best-of-N (BoN) sampling with a reward model has been shown to be an effective strategy for aligning Large Language Models (LLMs) to human preferences at the time of decoding. BoN sampling is susceptible to a problem known as reward hacking when the accuracy of the reward model is not high enough due to the quality or the quantity of the preference dataset. Because the reward model is an imperfect proxy for the true objective, over-optimizing its value can compromise its performance on the true objective. In this research, we propose MBR-BoN, a variant of BoN that aims to mitigate reward hacking at inference time by incorporating the Minimum Bayes Risk (MBR) objective as a proximity regularization term. We show empirically and analytically that the MBR objective quantifies the proximity of the response to the reference policy, serving as a proximity regularizer. We evaluate MBR-BoN on the AlpacaFarm and Anthropic's hh-rlhf datasets and show that it outperforms both BoN sampling and MBR decoding. We also evaluate MBR-BoN to generate a pairwise preference learning dataset for Direct Preference Optimization (DPO). Empirical results show that models trained on a dataset generated with MBR-BoN outperform those with vanilla BoN. Our code is available at https://github.com/CyberAgentAILab/regularized-bon</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-01T11:26:50Z</published>
+    <arxiv:comment>NAACL 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yuu Jinnai</name>
+    </author>
+    <author>
+      <name>Tetsuro Morimura</name>
+    </author>
+    <author>
+      <name>Kaito Ariu</name>
+    </author>
+    <author>
+      <name>Kenshi Abe</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.17297v1</id>
+    <title>InternLM2 Technical Report</title>
+    <updated>2024-03-26T00:53:24Z</updated>
+    <link href="https://arxiv.org/abs/2403.17297v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.17297v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The evolution of Large Language Models (LLMs) like ChatGPT and GPT-4 has sparked discussions on the advent of Artificial General Intelligence (AGI). However, replicating such advancements in open-source models has been challenging. This paper introduces InternLM2, an open-source LLM that outperforms its predecessors in comprehensive evaluations across 6 dimensions and 30 benchmarks, long-context modeling, and open-ended subjective evaluations through innovative pre-training and optimization techniques. The pre-training process of InternLM2 is meticulously detailed, highlighting the preparation of diverse data types including text, code, and long-context data. InternLM2 efficiently captures long-term dependencies, initially trained on 4k tokens before advancing to 32k tokens in pre-training and fine-tuning stages, exhibiting remarkable performance on the 200k ``Needle-in-a-Haystack" test. InternLM2 is further aligned using Supervised Fine-Tuning (SFT) and a novel Conditional Online Reinforcement Learning from Human Feedback (COOL RLHF) strategy that addresses conflicting human preferences and reward hacking. By releasing InternLM2 models in different training stages and model sizes, we provide the community with insights into the model's evolution.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-26T00:53:24Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zheng Cai</name>
+    </author>
+    <author>
+      <name>Maosong Cao</name>
+    </author>
+    <author>
+      <name>Haojiong Chen</name>
+    </author>
+    <author>
+      <name>Kai Chen</name>
+    </author>
+    <author>
+      <name>Keyu Chen</name>
+    </author>
+    <author>
+      <name>Xin Chen</name>
+    </author>
+    <author>
+      <name>Xun Chen</name>
+    </author>
+    <author>
+      <name>Zehui Chen</name>
+    </author>
+    <author>
+      <name>Zhi Chen</name>
+    </author>
+    <author>
+      <name>Pei Chu</name>
+    </author>
+    <author>
+      <name>Xiaoyi Dong</name>
+    </author>
+    <author>
+      <name>Haodong Duan</name>
+    </author>
+    <author>
+      <name>Qi Fan</name>
+    </author>
+    <author>
+      <name>Zhaoye Fei</name>
+    </author>
+    <author>
+      <name>Yang Gao</name>
+    </author>
+    <author>
+      <name>Jiaye Ge</name>
+    </author>
+    <author>
+      <name>Chenya Gu</name>
+    </author>
+    <author>
+      <name>Yuzhe Gu</name>
+    </author>
+    <author>
+      <name>Tao Gui</name>
+    </author>
+    <author>
+      <name>Aijia Guo</name>
+    </author>
+    <author>
+      <name>Qipeng Guo</name>
+    </author>
+    <author>
+      <name>Conghui He</name>
+    </author>
+    <author>
+      <name>Yingfan Hu</name>
+    </author>
+    <author>
+      <name>Ting Huang</name>
+    </author>
+    <author>
+      <name>Tao Jiang</name>
+    </author>
+    <author>
+      <name>Penglong Jiao</name>
+    </author>
+    <author>
+      <name>Zhenjiang Jin</name>
+    </author>
+    <author>
+      <name>Zhikai Lei</name>
+    </author>
+    <author>
+      <name>Jiaxing Li</name>
+    </author>
+    <author>
+      <name>Jingwen Li</name>
+    </author>
+    <author>
+      <name>Linyang Li</name>
+    </author>
+    <author>
+      <name>Shuaibin Li</name>
+    </author>
+    <author>
+      <name>Wei Li</name>
+    </author>
+    <author>
+      <name>Yining Li</name>
+    </author>
+    <author>
+      <name>Hongwei Liu</name>
+    </author>
+    <author>
+      <name>Jiangning Liu</name>
+    </author>
+    <author>
+      <name>Jiawei Hong</name>
+    </author>
+    <author>
+      <name>Kaiwen Liu</name>
+    </author>
+    <author>
+      <name>Kuikun Liu</name>
+    </author>
+    <author>
+      <name>Xiaoran Liu</name>
+    </author>
+    <author>
+      <name>Chengqi Lv</name>
+    </author>
+    <author>
+      <name>Haijun Lv</name>
+    </author>
+    <author>
+      <name>Kai Lv</name>
+    </author>
+    <author>
+      <name>Li Ma</name>
+    </author>
+    <author>
+      <name>Runyuan Ma</name>
+    </author>
+    <author>
+      <name>Zerun Ma</name>
+    </author>
+    <author>
+      <name>Wenchang Ning</name>
+    </author>
+    <author>
+      <name>Linke Ouyang</name>
+    </author>
+    <author>
+      <name>Jiantao Qiu</name>
+    </author>
+    <author>
+      <name>Yuan Qu</name>
+    </author>
+    <author>
+      <name>Fukai Shang</name>
+    </author>
+    <author>
+      <name>Yunfan Shao</name>
+    </author>
+    <author>
+      <name>Demin Song</name>
+    </author>
+    <author>
+      <name>Zifan Song</name>
+    </author>
+    <author>
+      <name>Zhihao Sui</name>
+    </author>
+    <author>
+      <name>Peng Sun</name>
+    </author>
+    <author>
+      <name>Yu Sun</name>
+    </author>
+    <author>
+      <name>Huanze Tang</name>
+    </author>
+    <author>
+      <name>Bin Wang</name>
+    </author>
+    <author>
+      <name>Guoteng Wang</name>
+    </author>
+    <author>
+      <name>Jiaqi Wang</name>
+    </author>
+    <author>
+      <name>Jiayu Wang</name>
+    </author>
+    <author>
+      <name>Rui Wang</name>
+    </author>
+    <author>
+      <name>Yudong Wang</name>
+    </author>
+    <author>
+      <name>Ziyi Wang</name>
+    </author>
+    <author>
+      <name>Xingjian Wei</name>
+    </author>
+    <author>
+      <name>Qizhen Weng</name>
+    </author>
+    <author>
+      <name>Fan Wu</name>
+    </author>
+    <author>
+      <name>Yingtong Xiong</name>
+    </author>
+    <author>
+      <name>Chao Xu</name>
+    </author>
+    <author>
+      <name>Ruiliang Xu</name>
+    </author>
+    <author>
+      <name>Hang Yan</name>
+    </author>
+    <author>
+      <name>Yirong Yan</name>
+    </author>
+    <author>
+      <name>Xiaogui Yang</name>
+    </author>
+    <author>
+      <name>Haochen Ye</name>
+    </author>
+    <author>
+      <name>Huaiyuan Ying</name>
+    </author>
+    <author>
+      <name>Jia Yu</name>
+    </author>
+    <author>
+      <name>Jing Yu</name>
+    </author>
+    <author>
+      <name>Yuhang Zang</name>
+    </author>
+    <author>
+      <name>Chuyu Zhang</name>
+    </author>
+    <author>
+      <name>Li Zhang</name>
+    </author>
+    <author>
+      <name>Pan Zhang</name>
+    </author>
+    <author>
+      <name>Peng Zhang</name>
+    </author>
+    <author>
+      <name>Ruijie Zhang</name>
+    </author>
+    <author>
+      <name>Shuo Zhang</name>
+    </author>
+    <author>
+      <name>Songyang Zhang</name>
+    </author>
+    <author>
+      <name>Wenjian Zhang</name>
+    </author>
+    <author>
+      <name>Wenwei Zhang</name>
+    </author>
+    <author>
+      <name>Xingcheng Zhang</name>
+    </author>
+    <author>
+      <name>Xinyue Zhang</name>
+    </author>
+    <author>
+      <name>Hui Zhao</name>
+    </author>
+    <author>
+      <name>Qian Zhao</name>
+    </author>
+    <author>
+      <name>Xiaomeng Zhao</name>
+    </author>
+    <author>
+      <name>Fengzhe Zhou</name>
+    </author>
+    <author>
+      <name>Zaida Zhou</name>
+    </author>
+    <author>
+      <name>Jingming Zhuo</name>
+    </author>
+    <author>
+      <name>Yicheng Zou</name>
+    </author>
+    <author>
+      <name>Xipeng Qiu</name>
+    </author>
+    <author>
+      <name>Yu Qiao</name>
+    </author>
+    <author>
+      <name>Dahua Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.03185v4</id>
+    <title>Correlated Proxies: A New Definition and Improved Mitigation for Reward Hacking</title>
+    <updated>2025-03-13T17:35:13Z</updated>
+    <link href="https://arxiv.org/abs/2403.03185v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.03185v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Because it is difficult to precisely specify complex objectives, reinforcement learning policies are often optimized using proxy reward functions that only approximate the true goal. However, optimizing proxy rewards frequently leads to reward hacking: the optimized reward function ceases to be a good proxy and the resulting policy performs poorly with respect to the unspecified true reward. Principled solutions to reward hacking have been impeded by the lack of a good definition for the problem. To address this gap, we introduce a definition of reward hacking based on the correlation between proxy and true rewards for states and actions seen by a "reference policy" that breaks down under optimization. We show that this definition captures reward hacking behavior across several realistic settings, including in reinforcement learning from human feedback (RLHF). Using our formulation, we show theoretically that regularization to the reference policy can effectively prevent reward hacking. While the current practice in RLHF applies a KL penalty between action distributions for this purpose, our theory suggests regularizing the $χ^2$ divergence between the policies' occupancy measures can be more effective. We intuitively show the benefits of this type of regularization and demonstrate that it better mitigates reward hacking in practice across four realistic settings, including RLHF. Our code is available at https://github.com/cassidylaidlaw/orpo.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-05T18:22:15Z</published>
+    <arxiv:comment>Spotlight at ICLR 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Cassidy Laidlaw</name>
+    </author>
+    <author>
+      <name>Shivam Singhal</name>
+    </author>
+    <author>
+      <name>Anca Dragan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.13936v1</id>
+    <title>Distinctive Image Captioning: Leveraging Ground Truth Captions in CLIP Guided Reinforcement Learning</title>
+    <updated>2024-02-21T17:05:06Z</updated>
+    <link href="https://arxiv.org/abs/2402.13936v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.13936v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Training image captioning models using teacher forcing results in very generic samples, whereas more distinctive captions can be very useful in retrieval applications or to produce alternative texts describing images for accessibility. Reinforcement Learning (RL) allows to use cross-modal retrieval similarity score between the generated caption and the input image as reward to guide the training, leading to more distinctive captions. Recent studies show that pre-trained cross-modal retrieval models can be used to provide this reward, completely eliminating the need for reference captions. However, we argue in this paper that Ground Truth (GT) captions can still be useful in this RL framework. We propose a new image captioning model training strategy that makes use of GT captions in different ways. Firstly, they can be used to train a simple MLP discriminator that serves as a regularization to prevent reward hacking and ensures the fluency of generated captions, resulting in a textual GAN setup extended for multimodal inputs. Secondly, they can serve as additional trajectories in the RL strategy, resulting in a teacher forcing loss weighted by the similarity of the GT to the image. This objective acts as an additional learning signal grounded to the distribution of the GT captions. Thirdly, they can serve as strong baselines when added to the pool of captions used to compute the proposed contrastive reward to reduce the variance of gradient estimate. Experiments on MS-COCO demonstrate the interest of the proposed training strategy to produce highly distinctive captions while maintaining high writing quality.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-21T17:05:06Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Antoine Chaffin</name>
+    </author>
+    <author>
+      <name>Ewa Kijak</name>
+    </author>
+    <author>
+      <name>Vincent Claveau</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.11452v1</id>
+    <title>AutoPRM: Automating Procedural Supervision for Multi-Step Reasoning via Controllable Question Decomposition</title>
+    <updated>2024-02-18T04:28:16Z</updated>
+    <link href="https://arxiv.org/abs/2402.11452v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.11452v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advancements in large language models (LLMs) have shown promise in multi-step reasoning tasks, yet their reliance on extensive manual labeling to provide procedural feedback remains a significant impediment. To address this challenge, in this paper, we propose a novel self-supervised framework AutoPRM that efficiently enhances the fine-tuning of LLMs for intricate reasoning challenges. Specifically, AutoPRM first decomposes complex problems into more manageable subquestions with a controllable granularity switch, then sequentially apply reinforcement learning to iteratively improve the subquestion solver. Additionally, we propose context-guided-decoding to avoid reward tampering and guide the subquestion solver towards the solution of the holistic problem. Extensive experiments show that AutoPRM significantly improves performance on mathematical and commonsense reasoning tasks over SOTA. More encouragingly, AutoPRM can be easily integrated with other orthogonal reasoning pipelines.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-18T04:28:16Z</published>
+    <arxiv:comment>17 pages, 4 figures, 11 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhaorun Chen</name>
+    </author>
+    <author>
+      <name>Zhuokai Zhao</name>
+    </author>
+    <author>
+      <name>Zhihong Zhu</name>
+    </author>
+    <author>
+      <name>Ruiqi Zhang</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <author>
+      <name>Bhiksha Raj</name>
+    </author>
+    <author>
+      <name>Huaxiu Yao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.11367v2</id>
+    <title>Multi Task Inverse Reinforcement Learning for Common Sense Reward</title>
+    <updated>2025-10-23T08:57:44Z</updated>
+    <link href="https://arxiv.org/abs/2402.11367v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.11367v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>One of the challenges in applying reinforcement learning in a complex real-world environment lies in providing the agent with a sufficiently detailed reward function. Any misalignment between the reward and the desired behavior can result in unwanted outcomes. This may lead to issues like "reward hacking" where the agent maximizes rewards by unintended behavior. In this work, we propose to disentangle the reward into two distinct parts. A simple task-specific reward, outlining the particulars of the task at hand, and an unknown common-sense reward, indicating the expected behavior of the agent within the environment. We then explore how this common-sense reward can be learned from expert demonstrations. We first show that inverse reinforcement learning, even when it succeeds in training an agent, does not learn a useful reward function. That is, training a new agent with the learned reward does not impair the desired behaviors. We then demonstrate that this problem can be solved by training simultaneously on multiple tasks. That is, multi-task inverse reinforcement learning can be applied to learn a useful reward function.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-17T19:49:00Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Neta Glazer</name>
+    </author>
+    <author>
+      <name>Aviv Navon</name>
+    </author>
+    <author>
+      <name>Aviv Shamsian</name>
+    </author>
+    <author>
+      <name>Ethan Fetaya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.09345v5</id>
+    <title>InfoRM: Mitigating Reward Hacking in RLHF via Information-Theoretic Reward Modeling</title>
+    <updated>2024-11-01T06:30:11Z</updated>
+    <link href="https://arxiv.org/abs/2402.09345v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.09345v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite the success of reinforcement learning from human feedback (RLHF) in aligning language models with human values, reward hacking, also termed reward overoptimization, remains a critical challenge. This issue primarily arises from reward misgeneralization, where reward models (RMs) compute reward using spurious features that are irrelevant to human preferences. In this work, we tackle this problem from an information-theoretic perspective and propose a framework for reward modeling, namely InfoRM, by introducing a variational information bottleneck objective to filter out irrelevant information. Notably, we further identify a correlation between overoptimization and outliers in the IB latent space of InfoRM, establishing it as a promising tool for detecting reward overoptimization. Inspired by this finding, we propose the Cluster Separation Index (CSI), which quantifies deviations in the IB latent space, as an indicator of reward overoptimization to facilitate the development of online mitigation strategies. Extensive experiments on a wide range of settings and RM scales (70M, 440M, 1.4B, and 7B) demonstrate the effectiveness of InfoRM. Further analyses reveal that InfoRM's overoptimization detection mechanism is not only effective but also robust across a broad range of datasets, signifying a notable advancement in the field of RLHF. The code will be released upon acceptance.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-14T17:49:07Z</published>
+    <arxiv:comment>The paper has been accepted by NeurIPS 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yuchun Miao</name>
+    </author>
+    <author>
+      <name>Sen Zhang</name>
+    </author>
+    <author>
+      <name>Liang Ding</name>
+    </author>
+    <author>
+      <name>Rong Bao</name>
+    </author>
+    <author>
+      <name>Lefei Zhang</name>
+    </author>
+    <author>
+      <name>Dacheng Tao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.07319v1</id>
+    <title>ODIN: Disentangled Reward Mitigates Hacking in RLHF</title>
+    <updated>2024-02-11T22:40:12Z</updated>
+    <link href="https://arxiv.org/abs/2402.07319v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.07319v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we study the issue of reward hacking on the response length, a challenge emerging in Reinforcement Learning from Human Feedback (RLHF) on LLMs. A well-formatted, verbose but less helpful response from the LLMs can often deceive LLMs or even human evaluators to achieve high scores. The same issue also holds for some reward models in RL. To address the challenges in both training and evaluation, we establish a more reliable evaluation protocol for comparing different training configurations, which inspects the trade-off between LLM evaluation score and response length obtained by varying training hyperparameters. Based on this evaluation, we conduct large-scale studies, where the results shed insights into the efficacy of hyperparameters and tricks used in RL on mitigating length bias. We further propose to improve the reward model by jointly training two linear heads on shared feature representations to predict the rewards, one trained to correlate with length, and the other trained to decorrelate with length and therefore focus more on the actual content. We then discard the length head in RL to prevent reward hacking on length. Experiments demonstrate that our approach almost eliminates the reward correlation with length, and improves the obtained policy by a significant margin.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-11T22:40:12Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Lichang Chen</name>
+    </author>
+    <author>
+      <name>Chen Zhu</name>
+    </author>
+    <author>
+      <name>Davit Soselia</name>
+    </author>
+    <author>
+      <name>Jiuhai Chen</name>
+    </author>
+    <author>
+      <name>Tianyi Zhou</name>
+    </author>
+    <author>
+      <name>Tom Goldstein</name>
+    </author>
+    <author>
+      <name>Heng Huang</name>
+    </author>
+    <author>
+      <name>Mohammad Shoeybi</name>
+    </author>
+    <author>
+      <name>Bryan Catanzaro</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.06627v3</id>
+    <title>Feedback Loops With Language Models Drive In-Context Reward Hacking</title>
+    <updated>2024-06-06T21:39:09Z</updated>
+    <link href="https://arxiv.org/abs/2402.06627v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.06627v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models influence the external world: they query APIs that read and write to web pages, generate content that shapes human behavior, and run system commands as autonomous agents. These interactions form feedback loops: LLM outputs affect the world, which in turn affect subsequent LLM outputs. In this work, we show that feedback loops can cause in-context reward hacking (ICRH), where the LLM at test-time optimizes a (potentially implicit) objective but creates negative side effects in the process. For example, consider an LLM agent deployed to increase Twitter engagement; the LLM may retrieve its previous tweets into the context window and make them more controversial, increasing engagement but also toxicity. We identify and study two processes that lead to ICRH: output-refinement and policy-refinement. For these processes, evaluations on static datasets are insufficient -- they miss the feedback effects and thus cannot capture the most harmful behavior. In response, we provide three recommendations for evaluation to capture more instances of ICRH. As AI development accelerates, the effects of feedback loops will proliferate, increasing the need to understand their role in shaping LLM behavior.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-09T18:59:29Z</published>
+    <arxiv:comment>ICML 2024 camera-ready</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Alexander Pan</name>
+    </author>
+    <author>
+      <name>Erik Jones</name>
+    </author>
+    <author>
+      <name>Meena Jagadeesan</name>
+    </author>
+    <author>
+      <name>Jacob Steinhardt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.02992v2</id>
+    <title>Decoding-time Realignment of Language Models</title>
+    <updated>2024-05-24T08:39:07Z</updated>
+    <link href="https://arxiv.org/abs/2402.02992v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.02992v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Aligning language models with human preferences is crucial for reducing errors and biases in these models. Alignment techniques, such as reinforcement learning from human feedback (RLHF), are typically cast as optimizing a tradeoff between human preference rewards and a proximity regularization term that encourages staying close to the unaligned model. Selecting an appropriate level of regularization is critical: insufficient regularization can lead to reduced model capabilities due to reward hacking, whereas excessive regularization hinders alignment. Traditional methods for finding the optimal regularization level require retraining multiple models with varying regularization strengths. This process, however, is resource-intensive, especially for large models. To address this challenge, we propose decoding-time realignment (DeRa), a simple method to explore and evaluate different regularization strengths in aligned models without retraining. DeRa enables control over the degree of alignment, allowing users to smoothly transition between unaligned and aligned models. It also enhances the efficiency of hyperparameter tuning by enabling the identification of effective regularization strengths using a validation dataset.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-05T13:31:28Z</published>
+    <arxiv:comment>In Proceedings of the 41st International Conference on Machine Learning (ICML 2024)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Tianlin Liu</name>
+    </author>
+    <author>
+      <name>Shangmin Guo</name>
+    </author>
+    <author>
+      <name>Leonardo Bianco</name>
+    </author>
+    <author>
+      <name>Daniele Calandriello</name>
+    </author>
+    <author>
+      <name>Quentin Berthet</name>
+    </author>
+    <author>
+      <name>Felipe Llinares</name>
+    </author>
+    <author>
+      <name>Jessica Hoffmann</name>
+    </author>
+    <author>
+      <name>Lucas Dixon</name>
+    </author>
+    <author>
+      <name>Michal Valko</name>
+    </author>
+    <author>
+      <name>Mathieu Blondel</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.00742v2</id>
+    <title>Transforming and Combining Rewards for Aligning Large Language Models</title>
+    <updated>2024-07-19T05:12:15Z</updated>
+    <link href="https://arxiv.org/abs/2402.00742v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.00742v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A common approach for aligning language models to human preferences is to first learn a reward model from preference data, and then use this reward model to update the language model. We study two closely related problems that arise in this approach. First, any monotone transformation of the reward model preserves preference ranking; is there a choice that is ``better'' than others? Second, we often wish to align language models to multiple properties: how should we combine multiple reward models? Using a probabilistic interpretation of the alignment procedure, we identify a natural choice for transformation for (the common case of) rewards learned from Bradley-Terry preference models. The derived transformation is straightforward: we apply a log-sigmoid function to the centered rewards, a method we term ``LSC-transformation'' (log-sigmoid-centered transformation). This transformation has two important properties. First, it emphasizes improving poorly-performing outputs, rather than outputs that already score well. This mitigates both underfitting (where some prompts are not improved) and reward hacking (where the model learns to exploit misspecification of the reward model). Second, it enables principled aggregation of rewards by linking summation to logical conjunction: the sum of transformed rewards corresponds to the probability that the output is ``good'' in all measured properties, in a sense we make precise. Experiments aligning language models to be both helpful and harmless using RLHF show substantial improvements over the baseline (non-transformed) approach.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-01T16:39:28Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zihao Wang</name>
+    </author>
+    <author>
+      <name>Chirag Nagpal</name>
+    </author>
+    <author>
+      <name>Jonathan Berant</name>
+    </author>
+    <author>
+      <name>Jacob Eisenstein</name>
+    </author>
+    <author>
+      <name>Alex D'Amour</name>
+    </author>
+    <author>
+      <name>Sanmi Koyejo</name>
+    </author>
+    <author>
+      <name>Victor Veitch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.12187v1</id>
+    <title>WARM: On the Benefits of Weight Averaged Reward Models</title>
+    <updated>2024-01-22T18:27:08Z</updated>
+    <link href="https://arxiv.org/abs/2401.12187v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.12187v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Aligning large language models (LLMs) with human preferences through reinforcement learning (RLHF) can lead to reward hacking, where LLMs exploit failures in the reward model (RM) to achieve seemingly high rewards without meeting the underlying objectives. We identify two primary challenges when designing RMs to mitigate reward hacking: distribution shifts during the RL process and inconsistencies in human preferences. As a solution, we propose Weight Averaged Reward Models (WARM), first fine-tuning multiple RMs, then averaging them in the weight space. This strategy follows the observation that fine-tuned weights remain linearly mode connected when sharing the same pre-training. By averaging weights, WARM improves efficiency compared to the traditional ensembling of predictions, while improving reliability under distribution shifts and robustness to preference inconsistencies. Our experiments on summarization tasks, using best-of-N and RL methods, shows that WARM improves the overall quality and alignment of LLM predictions; for example, a policy RL fine-tuned with WARM has a 79.4% win rate against a policy RL fine-tuned with a single RM.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-22T18:27:08Z</published>
+    <arxiv:comment>14 pages, 9 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Alexandre Ramé</name>
+    </author>
+    <author>
+      <name>Nino Vieillard</name>
+    </author>
+    <author>
+      <name>Léonard Hussenot</name>
+    </author>
+    <author>
+      <name>Robert Dadashi</name>
+    </author>
+    <author>
+      <name>Geoffrey Cideron</name>
+    </author>
+    <author>
+      <name>Olivier Bachem</name>
+    </author>
+    <author>
+      <name>Johan Ferret</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.00330v3</id>
+    <title>Two-Step Offline Preference-Based Reinforcement Learning with Constrained Actions</title>
+    <updated>2024-10-25T17:31:50Z</updated>
+    <link href="https://arxiv.org/abs/2401.00330v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.00330v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Preference-based reinforcement learning (PBRL) in the offline setting has succeeded greatly in industrial applications such as chatbots. A two-step learning framework where one applies a reinforcement learning step after a reward modeling step has been widely adopted for the problem. However, such a method faces challenges from the risk of reward hacking and the complexity of reinforcement learning. To overcome the challenge, our insight is that both challenges come from the state-actions not supported in the dataset. Such state-actions are unreliable and increase the complexity of the reinforcement learning problem at the second step. Based on the insight, we develop a novel two-step learning method called PRC: preference-based reinforcement learning with constrained actions. The high-level idea is to limit the reinforcement learning agent to optimize over a constrained action space that excludes the out-of-distribution state-actions. We empirically verify that our method has high learning efficiency on various datasets in robotic control environments.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-30T21:37:18Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Yinglun Xu</name>
+    </author>
+    <author>
+      <name>Tarun Suresh</name>
+    </author>
+    <author>
+      <name>Rohan Gumaste</name>
+    </author>
+    <author>
+      <name>David Zhu</name>
+    </author>
+    <author>
+      <name>Ruirui Li</name>
+    </author>
+    <author>
+      <name>Zhengyang Wang</name>
+    </author>
+    <author>
+      <name>Haoming Jiang</name>
+    </author>
+    <author>
+      <name>Xianfeng Tang</name>
+    </author>
+    <author>
+      <name>Qingyu Yin</name>
+    </author>
+    <author>
+      <name>Monica Xiao Cheng</name>
+    </author>
+    <author>
+      <name>Qi Zeng</name>
+    </author>
+    <author>
+      <name>Chao Zhang</name>
+    </author>
+    <author>
+      <name>Gagandeep Singh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2312.14436v3</id>
+    <title>REBEL: Reward Regularization-Based Approach for Robotic Reinforcement Learning from Human Feedback</title>
+    <updated>2025-01-19T16:21:24Z</updated>
+    <link href="https://arxiv.org/abs/2312.14436v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.14436v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The effectiveness of reinforcement learning (RL) agents in continuous control robotics tasks is mainly dependent on the design of the underlying reward function, which is highly prone to reward hacking. A misalignment between the reward function and underlying human preferences (values, social norms) can lead to catastrophic outcomes in the real world especially in the context of robotics for critical decision making. Recent methods aim to mitigate misalignment by learning reward functions from human preferences and subsequently performing policy optimization. However, these methods inadvertently introduce a distribution shift during reward learning due to ignoring the dependence of agent-generated trajectories on the reward learning objective, ultimately resulting in sub-optimal alignment. Hence, in this work, we address this challenge by advocating for the adoption of regularized reward functions that more accurately mirror the intended behaviors of the agent. We propose a novel concept of reward regularization within the robotic RLHF (RL from Human Feedback) framework, which we refer to as \emph{agent preferences}. Our approach uniquely incorporates not just human feedback in the form of preferences but also considers the preferences of the RL agent itself during the reward function learning process. This dual consideration significantly mitigates the issue of distribution shift in RLHF with a computationally tractable algorithm. We provide a theoretical justification for the proposed algorithm by formulating the robotic RLHF problem as a bilevel optimization problem and developing a computationally tractable version of the same. We demonstrate the efficiency of our algorithm {\ours} in several continuous control benchmarks in DeepMind Control Suite \cite{tassa2018deepmind}.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-22T04:56:37Z</published>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Souradip Chakraborty</name>
+    </author>
+    <author>
+      <name>Anukriti Singh</name>
+    </author>
+    <author>
+      <name>Amisha Bhaskar</name>
+    </author>
+    <author>
+      <name>Pratap Tokekar</name>
+    </author>
+    <author>
+      <name>Dinesh Manocha</name>
+    </author>
+    <author>
+      <name>Amrit Singh Bedi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2312.09244v3</id>
+    <title>Helping or Herding? Reward Model Ensembles Mitigate but do not Eliminate Reward Hacking</title>
+    <updated>2024-08-16T23:59:29Z</updated>
+    <link href="https://arxiv.org/abs/2312.09244v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.09244v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reward models play a key role in aligning language model applications towards human preferences. However, this setup creates an incentive for the language model to exploit errors in the reward model to achieve high estimated reward, a phenomenon often termed \emph{reward hacking}. A natural mitigation is to train an ensemble of reward models, aggregating over model outputs to obtain a more robust reward estimate. We explore the application of reward ensembles to alignment at both training time (through reinforcement learning) and inference time (through reranking). First, we show that reward models are \emph{underspecified}: reward models that perform similarly in-distribution can yield very different rewards when used in alignment, due to distribution shift. Second, underspecification results in overoptimization, where alignment to one reward model does not improve reward as measured by another reward model trained on the same data. Third, overoptimization is mitigated by the use of reward ensembles, and ensembles that vary by their \emph{pretraining} seeds lead to better generalization than ensembles that differ only by their \emph{fine-tuning} seeds, with both outperforming individual reward models. However, even pretrain reward ensembles do not eliminate reward hacking: we show several qualitative reward hacking phenomena that are not mitigated by ensembling because all reward models in the ensemble exhibit similar error patterns.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-14T18:59:04Z</published>
+    <arxiv:comment>Published at the 2024 Conference on Language Modeling (CoLM)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jacob Eisenstein</name>
+    </author>
+    <author>
+      <name>Chirag Nagpal</name>
+    </author>
+    <author>
+      <name>Alekh Agarwal</name>
+    </author>
+    <author>
+      <name>Ahmad Beirami</name>
+    </author>
+    <author>
+      <name>Alex D'Amour</name>
+    </author>
+    <author>
+      <name>DJ Dvijotham</name>
+    </author>
+    <author>
+      <name>Adam Fisch</name>
+    </author>
+    <author>
+      <name>Katherine Heller</name>
+    </author>
+    <author>
+      <name>Stephen Pfohl</name>
+    </author>
+    <author>
+      <name>Deepak Ramachandran</name>
+    </author>
+    <author>
+      <name>Peter Shaw</name>
+    </author>
+    <author>
+      <name>Jonathan Berant</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2312.07551v1</id>
+    <title>Language Model Alignment with Elastic Reset</title>
+    <updated>2023-12-06T22:53:34Z</updated>
+    <link href="https://arxiv.org/abs/2312.07551v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.07551v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Finetuning language models with reinforcement learning (RL), e.g. from human feedback (HF), is a prominent method for alignment. But optimizing against a reward model can improve on reward while degrading performance in other areas, a phenomenon known as reward hacking, alignment tax, or language drift. First, we argue that commonly-used test metrics are insufficient and instead measure how different algorithms tradeoff between reward and drift. The standard method modified the reward with a Kullback-Lieber (KL) penalty between the online and initial model. We propose Elastic Reset, a new algorithm that achieves higher reward with less drift without explicitly modifying the training objective. We periodically reset the online model to an exponentially moving average (EMA) of itself, then reset the EMA model to the initial model. Through the use of an EMA, our model recovers quickly after resets and achieves higher reward with less drift in the same number of steps. We demonstrate that fine-tuning language models with Elastic Reset leads to state-of-the-art performance on a small scale pivot-translation benchmark, outperforms all baselines in a medium-scale RLHF-like IMDB mock sentiment task and leads to a more performant and more aligned technical QA chatbot with LLaMA-7B. Code available at github.com/mnoukhov/elastic-reset.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-06T22:53:34Z</published>
+    <arxiv:comment>Published at NeurIPS 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Michael Noukhovitch</name>
+    </author>
+    <author>
+      <name>Samuel Lavoie</name>
+    </author>
+    <author>
+      <name>Florian Strub</name>
+    </author>
+    <author>
+      <name>Aaron Courville</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.02907v1</id>
+    <title>Reinforcement Learning for Safety Testing: Lessons from A Mobile Robot Case Study</title>
+    <updated>2023-11-06T06:37:20Z</updated>
+    <link href="https://arxiv.org/abs/2311.02907v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.02907v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Safety-critical robot systems need thorough testing to expose design flaws and software bugs which could endanger humans. Testing in simulation is becoming increasingly popular, as it can be applied early in the development process and does not endanger any real-world operators. However, not all safety-critical flaws become immediately observable in simulation. Some may only become observable under certain critical conditions. If these conditions are not covered, safety flaws may remain undetected. Creating critical tests is therefore crucial. In recent years, there has been a trend towards using Reinforcement Learning (RL) for this purpose. Guided by domain-specific reward functions, RL algorithms are used to learn critical test strategies. This paper presents a case study in which the collision avoidance behavior of a mobile robot is subjected to RL-based testing. The study confirms prior research which shows that RL can be an effective testing tool. However, the study also highlights certain challenges associated with RL-based testing, namely (i) a possible lack of diversity in test conditions and (ii) the phenomenon of reward hacking where the RL agent behaves in undesired ways due to a misalignment of reward and test specification. The challenges are illustrated with data and examples from the experiments, and possible mitigation strategies are discussed.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-06T06:37:20Z</published>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Tom P. Huck</name>
+    </author>
+    <author>
+      <name>Martin Kaiser</name>
+    </author>
+    <author>
+      <name>Constantin Cronrath</name>
+    </author>
+    <author>
+      <name>Bengt Lennartson</name>
+    </author>
+    <author>
+      <name>Torsten Kröger</name>
+    </author>
+    <author>
+      <name>Tamim Asfour</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.16763v1</id>
+    <title>SuperHF: Supervised Iterative Learning from Human Feedback</title>
+    <updated>2023-10-25T16:52:00Z</updated>
+    <link href="https://arxiv.org/abs/2310.16763v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.16763v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While large language models demonstrate remarkable capabilities, they often present challenges in terms of safety, alignment with human values, and stability during training. Here, we focus on two prevalent methods used to align these models, Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF). SFT is simple and robust, powering a host of open-source models, while RLHF is a more sophisticated method used in top-tier models like ChatGPT but also suffers from instability and susceptibility to reward hacking. We propose a novel approach, Supervised Iterative Learning from Human Feedback (SuperHF), which seeks to leverage the strengths of both methods. Our hypothesis is two-fold: that the reward model used in RLHF is critical for efficient data use and model generalization and that the use of Proximal Policy Optimization (PPO) in RLHF may not be necessary and could contribute to instability issues. SuperHF replaces PPO with a simple supervised loss and a Kullback-Leibler (KL) divergence prior. It creates its own training data by repeatedly sampling a batch of model outputs and filtering them through the reward model in an online learning regime. We then break down the reward optimization problem into three components: robustly optimizing the training rewards themselves, preventing reward hacking-exploitation of the reward model that degrades model performance-as measured by a novel METEOR similarity metric, and maintaining good performance on downstream evaluations. Our experimental results show SuperHF exceeds PPO-based RLHF on the training objective, easily and favorably trades off high reward with low reward hacking, improves downstream calibration, and performs the same on our GPT-4 based qualitative evaluation scheme all the while being significantly simpler to implement, highlighting SuperHF's potential as a competitive language model alignment technique.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-25T16:52:00Z</published>
+    <arxiv:comment>Accepted to the Socially Responsible Language Modelling Research (SoLaR) workshop at NeurIPS 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Gabriel Mukobi</name>
+    </author>
+    <author>
+      <name>Peter Chatain</name>
+    </author>
+    <author>
+      <name>Su Fong</name>
+    </author>
+    <author>
+      <name>Robert Windesheim</name>
+    </author>
+    <author>
+      <name>Gitta Kutyniok</name>
+    </author>
+    <author>
+      <name>Kush Bhatia</name>
+    </author>
+    <author>
+      <name>Silas Alberti</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.14525v1</id>
+    <title>Aligning Large Multimodal Models with Factually Augmented RLHF</title>
+    <updated>2023-09-25T20:59:33Z</updated>
+    <link href="https://arxiv.org/abs/2309.14525v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.14525v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Multimodal Models (LMM) are built across modalities and the misalignment between two modalities can result in "hallucination", generating textual outputs that are not grounded by the multimodal information in context. To address the multimodal misalignment issue, we adapt the Reinforcement Learning from Human Feedback (RLHF) from the text domain to the task of vision-language alignment, where human annotators are asked to compare two responses and pinpoint the more hallucinated one, and the vision-language model is trained to maximize the simulated human rewards. We propose a new alignment algorithm called Factually Augmented RLHF that augments the reward model with additional factual information such as image captions and ground-truth multi-choice options, which alleviates the reward hacking phenomenon in RLHF and further improves the performance. We also enhance the GPT-4-generated training data (for vision instruction tuning) with previously available human-written image-text pairs to improve the general capabilities of our model. To evaluate the proposed approach in real-world scenarios, we develop a new evaluation benchmark MMHAL-BENCH with a special focus on penalizing hallucinations. As the first LMM trained with RLHF, our approach achieves remarkable improvement on the LLaVA-Bench dataset with the 94% performance level of the text-only GPT-4 (while previous best methods can only achieve the 87% level), and an improvement by 60% on MMHAL-BENCH over other baselines. We opensource our code, model, data at https://llava-rlhf.github.io.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-25T20:59:33Z</published>
+    <arxiv:comment>Preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Zhiqing Sun</name>
+    </author>
+    <author>
+      <name>Sheng Shen</name>
+    </author>
+    <author>
+      <name>Shengcao Cao</name>
+    </author>
+    <author>
+      <name>Haotian Liu</name>
+    </author>
+    <author>
+      <name>Chunyuan Li</name>
+    </author>
+    <author>
+      <name>Yikang Shen</name>
+    </author>
+    <author>
+      <name>Chuang Gan</name>
+    </author>
+    <author>
+      <name>Liang-Yan Gui</name>
+    </author>
+    <author>
+      <name>Yu-Xiong Wang</name>
+    </author>
+    <author>
+      <name>Yiming Yang</name>
+    </author>
+    <author>
+      <name>Kurt Keutzer</name>
+    </author>
+    <author>
+      <name>Trevor Darrell</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.10202v1</id>
+    <title>Stabilizing RLHF through Advantage Model and Selective Rehearsal</title>
+    <updated>2023-09-18T23:06:32Z</updated>
+    <link href="https://arxiv.org/abs/2309.10202v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.10202v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have revolutionized natural language processing, yet aligning these models with human values and preferences using RLHF remains a significant challenge. This challenge is characterized by various instabilities, such as reward hacking and catastrophic forgetting. In this technical report, we propose two innovations to stabilize RLHF training: 1) Advantage Model, which directly models advantage score i.e., extra reward compared to the expected rewards and regulates score distributions across tasks to prevent reward hacking. 2) Selective Rehearsal, which mitigates catastrophic forgetting by strategically selecting data for PPO training and knowledge rehearsing. Our experimental analysis on public and proprietary datasets reveals that the proposed methods not only increase stability in RLHF training but also achieve higher reward scores and win rates.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-18T23:06:32Z</published>
+    <arxiv:comment>9 pages, working in progress</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Baolin Peng</name>
+    </author>
+    <author>
+      <name>Linfeng Song</name>
+    </author>
+    <author>
+      <name>Ye Tian</name>
+    </author>
+    <author>
+      <name>Lifeng Jin</name>
+    </author>
+    <author>
+      <name>Haitao Mi</name>
+    </author>
+    <author>
+      <name>Dong Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.08734v1</id>
+    <title>A State Augmentation based approach to Reinforcement Learning from Human Preferences</title>
+    <updated>2023-02-17T07:10:50Z</updated>
+    <link href="https://arxiv.org/abs/2302.08734v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.08734v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reinforcement Learning has suffered from poor reward specification, and issues for reward hacking even in simple enough domains. Preference Based Reinforcement Learning attempts to solve the issue by utilizing binary feedbacks on queried trajectory pairs by a human in the loop indicating their preferences about the agent's behavior to learn a reward model. In this work, we present a state augmentation technique that allows the agent's reward model to be robust and follow an invariance consistency that significantly improved performance, i.e. the reward recovery and subsequent return computed using the learned policy over our baseline PEBBLE. We validate our method on three domains, Mountain Car, a locomotion task of Quadruped-Walk, and a robotic manipulation task of Sweep-Into, and find that using the proposed augmentation the agent not only benefits in the overall performance but does so, quite early in the agent's training phase.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-17T07:10:50Z</published>
+    <arxiv:comment>R2HCAI, AAAI 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mudit Verma</name>
+    </author>
+    <author>
+      <name>Subbarao Kambhampati</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2209.13085v2</id>
+    <title>Defining and Characterizing Reward Hacking</title>
+    <updated>2025-03-05T21:08:30Z</updated>
+    <link href="https://arxiv.org/abs/2209.13085v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2209.13085v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We provide the first formal definition of reward hacking, a phenomenon where optimizing an imperfect proxy reward function leads to poor performance according to the true reward function. We say that a proxy is unhackable if increasing the expected proxy return can never decrease the expected true return. Intuitively, it might be possible to create an unhackable proxy by leaving some terms out of the reward function (making it "narrower") or overlooking fine-grained distinctions between roughly equivalent outcomes, but we show this is usually not the case. A key insight is that the linearity of reward (in state-action visit counts) makes unhackability a very strong condition. In particular, for the set of all stochastic policies, two reward functions can only be unhackable if one of them is constant. We thus turn our attention to deterministic policies and finite sets of stochastic policies, where non-trivial unhackable pairs always exist, and establish necessary and sufficient conditions for the existence of simplifications, an important special case of unhackability. Our results reveal a tension between using reward functions to specify narrow tasks and aligning AI systems with human values.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-09-27T00:32:44Z</published>
+    <arxiv:comment>23 pages; modified (fix typo in Figure 1, update link to code in Appendix, remove unrendered characters from arXiv abstract)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Joar Skalse</name>
+    </author>
+    <author>
+      <name>Nikolaus H. R. Howe</name>
+    </author>
+    <author>
+      <name>Dmitrii Krasheninnikov</name>
+    </author>
+    <author>
+      <name>David Krueger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.06601v4</id>
+    <title>Causal Confusion and Reward Misidentification in Preference-Based Reward Learning</title>
+    <updated>2023-03-18T20:44:45Z</updated>
+    <link href="https://arxiv.org/abs/2204.06601v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.06601v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Learning policies via preference-based reward learning is an increasingly popular method for customizing agent behavior, but has been shown anecdotally to be prone to spurious correlations and reward hacking behaviors. While much prior work focuses on causal confusion in reinforcement learning and behavioral cloning, we focus on a systematic study of causal confusion and reward misidentification when learning from preferences. In particular, we perform a series of sensitivity and ablation analyses on several benchmark domains where rewards learned from preferences achieve minimal test error but fail to generalize to out-of-distribution states -- resulting in poor policy performance when optimized. We find that the presence of non-causal distractor features, noise in the stated preferences, and partial state observability can all exacerbate reward misidentification. We also identify a set of methods with which to interpret misidentified learned rewards. In general, we observe that optimizing misidentified rewards drives the policy off the reward's training distribution, resulting in high predicted (learned) rewards but low true rewards. These findings illuminate the susceptibility of preference learning to reward misidentification and causal confusion -- failure to consider even one of many factors can result in unexpected, undesirable behavior.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-04-13T18:41:41Z</published>
+    <arxiv:comment>In the proceedings of the Eleventh International Conference on Learning Representations (ICLR 2023). https://iclr.cc/virtual/2023/poster/10822</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Jeremy Tien</name>
+    </author>
+    <author>
+      <name>Jerry Zhi-Yang He</name>
+    </author>
+    <author>
+      <name>Zackory Erickson</name>
+    </author>
+    <author>
+      <name>Anca D. Dragan</name>
+    </author>
+    <author>
+      <name>Daniel S. Brown</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2201.03544v2</id>
+    <title>The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models</title>
+    <updated>2022-02-14T09:05:38Z</updated>
+    <link href="https://arxiv.org/abs/2201.03544v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2201.03544v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Reward hacking -- where RL agents exploit gaps in misspecified reward functions -- has been widely observed, but not yet systematically studied. To understand how reward hacking arises, we construct four RL environments with misspecified rewards. We investigate reward hacking as a function of agent capabilities: model capacity, action space resolution, observation space noise, and training time. More capable agents often exploit reward misspecifications, achieving higher proxy reward and lower true reward than less capable agents. Moreover, we find instances of phase transitions: capability thresholds at which the agent's behavior qualitatively shifts, leading to a sharp decrease in the true reward. Such phase transitions pose challenges to monitoring the safety of ML systems. To address this, we propose an anomaly detection task for aberrant policies and offer several baseline detectors.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-01-10T18:58:52Z</published>
+    <arxiv:comment>ICLR 2022; 19 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Alexander Pan</name>
+    </author>
+    <author>
+      <name>Kush Bhatia</name>
+    </author>
+    <author>
+      <name>Jacob Steinhardt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2112.12228v6</id>
+    <title>Direct Behavior Specification via Constrained Reinforcement Learning</title>
+    <updated>2022-06-18T22:00:03Z</updated>
+    <link href="https://arxiv.org/abs/2112.12228v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2112.12228v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The standard formulation of Reinforcement Learning lacks a practical way of specifying what are admissible and forbidden behaviors. Most often, practitioners go about the task of behavior specification by manually engineering the reward function, a counter-intuitive process that requires several iterations and is prone to reward hacking by the agent. In this work, we argue that constrained RL, which has almost exclusively been used for safe RL, also has the potential to significantly reduce the amount of work spent for reward specification in applied RL projects. To this end, we propose to specify behavioral preferences in the CMDP framework and to use Lagrangian methods to automatically weigh each of these behavioral constraints. Specifically, we investigate how CMDPs can be adapted to solve goal-based tasks while adhering to several constraints simultaneously. We evaluate this framework on a set of continuous control tasks relevant to the application of Reinforcement Learning for NPC design in video games.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-12-22T21:12:28Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Julien Roy</name>
+    </author>
+    <author>
+      <name>Roger Girgis</name>
+    </author>
+    <author>
+      <name>Joshua Romoff</name>
+    </author>
+    <author>
+      <name>Pierre-Luc Bacon</name>
+    </author>
+    <author>
+      <name>Christopher Pal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2109.04083v3</id>
+    <title>User Tampering in Reinforcement Learning Recommender Systems</title>
+    <updated>2023-07-24T14:19:55Z</updated>
+    <link href="https://arxiv.org/abs/2109.04083v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2109.04083v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we introduce new formal methods and provide empirical evidence to highlight a unique safety concern prevalent in reinforcement learning (RL)-based recommendation algorithms -- 'user tampering.' User tampering is a situation where an RL-based recommender system may manipulate a media user's opinions through its suggestions as part of a policy to maximize long-term user engagement. We use formal techniques from causal modeling to critically analyze prevailing solutions proposed in the literature for implementing scalable RL-based recommendation systems, and we observe that these methods do not adequately prevent user tampering. Moreover, we evaluate existing mitigation strategies for reward tampering issues, and show that these methods are insufficient in addressing the distinct phenomenon of user tampering within the context of recommendations. We further reinforce our findings with a simulation study of an RL-based recommendation system focused on the dissemination of political content. Our study shows that a Q-learning algorithm consistently learns to exploit its opportunities to polarize simulated users with its early recommendations in order to have more consistent success with subsequent recommendations that align with this induced polarization. Our findings emphasize the necessity for developing safer RL-based recommendation systems and suggest that achieving such safety would require a fundamental shift in the design away from the approaches we have seen in the recent literature.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-09-09T07:53:23Z</published>
+    <arxiv:comment>In proceedings of the 6th AAAI/ACM Conference on Artificial Intelligence, Ethics and Society (AIES '23)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Charles Evans</name>
+    </author>
+    <author>
+      <name>Atoosa Kasirzadeh</name>
+    </author>
+    <arxiv:doi>10.1145/3600211.3604669</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1145/3600211.3604669" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2002.09089v4</id>
+    <title>Safe Imitation Learning via Fast Bayesian Reward Inference from Preferences</title>
+    <updated>2020-12-17T21:48:13Z</updated>
+    <link href="https://arxiv.org/abs/2002.09089v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2002.09089v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bayesian reward learning from demonstrations enables rigorous safety and uncertainty analysis when performing imitation learning. However, Bayesian reward learning methods are typically computationally intractable for complex control problems. We propose Bayesian Reward Extrapolation (Bayesian REX), a highly efficient Bayesian reward learning algorithm that scales to high-dimensional imitation learning problems by pre-training a low-dimensional feature encoding via self-supervised tasks and then leveraging preferences over demonstrations to perform fast Bayesian inference. Bayesian REX can learn to play Atari games from demonstrations, without access to the game score and can generate 100,000 samples from the posterior over reward functions in only 5 minutes on a personal laptop. Bayesian REX also results in imitation learning performance that is competitive with or better than state-of-the-art methods that only learn point estimates of the reward function. Finally, Bayesian REX enables efficient high-confidence policy evaluation without having access to samples of the reward function. These high-confidence performance bounds can be used to rank the performance and risk of a variety of evaluation policies and provide a way to detect reward hacking behaviors.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-02-21T02:04:54Z</published>
+    <arxiv:comment>In proceedings ICML 2020</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Daniel S. Brown</name>
+    </author>
+    <author>
+      <name>Russell Coleman</name>
+    </author>
+    <author>
+      <name>Ravi Srinivasan</name>
+    </author>
+    <author>
+      <name>Scott Niekum</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1912.04472v1</id>
+    <title>Deep Bayesian Reward Learning from Preferences</title>
+    <updated>2019-12-10T03:29:51Z</updated>
+    <link href="https://arxiv.org/abs/1912.04472v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1912.04472v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bayesian inverse reinforcement learning (IRL) methods are ideal for safe imitation learning, as they allow a learning agent to reason about reward uncertainty and the safety of a learned policy. However, Bayesian IRL is computationally intractable for high-dimensional problems because each sample from the posterior requires solving an entire Markov Decision Process (MDP). While there exist non-Bayesian deep IRL methods, these methods typically infer point estimates of reward functions, precluding rigorous safety and uncertainty analysis. We propose Bayesian Reward Extrapolation (B-REX), a highly efficient, preference-based Bayesian reward learning algorithm that scales to high-dimensional, visual control tasks. Our approach uses successor feature representations and preferences over demonstrations to efficiently generate samples from the posterior distribution over the demonstrator's reward function without requiring an MDP solver. Using samples from the posterior, we demonstrate how to calculate high-confidence bounds on policy performance in the imitation learning setting, in which the ground-truth reward function is unknown. We evaluate our proposed approach on the task of learning to play Atari games via imitation learning from pixel inputs, with no access to the game score. We demonstrate that B-REX learns imitation policies that are competitive with a state-of-the-art deep imitation learning method that only learns a point estimate of the reward function. Furthermore, we demonstrate that samples from the posterior generated via B-REX can be used to compute high-confidence performance bounds for a variety of evaluation policies. We show that high-confidence performance bounds are useful for accurately ranking different evaluation policies when the reward function is unknown. We also demonstrate that high-confidence performance bounds may be useful for detecting reward hacking.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-12-10T03:29:51Z</published>
+    <arxiv:comment>Workshop on Safety and Robustness in Decision Making at the 33rd Conference on Neural Information Processing Systems (NeurIPS) 2019</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Daniel S. Brown</name>
+    </author>
+    <author>
+      <name>Scott Niekum</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1912.05652v2</id>
+    <title>Learning Human Objectives by Evaluating Hypothetical Behavior</title>
+    <updated>2021-03-24T22:26:35Z</updated>
+    <link href="https://arxiv.org/abs/1912.05652v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1912.05652v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We seek to align agent behavior with a user's objectives in a reinforcement learning setting with unknown dynamics, an unknown reward function, and unknown unsafe states. The user knows the rewards and unsafe states, but querying the user is expensive. To address this challenge, we propose an algorithm that safely and interactively learns a model of the user's reward function. We start with a generative model of initial states and a forward dynamics model trained on off-policy data. Our method uses these models to synthesize hypothetical behaviors, asks the user to label the behaviors with rewards, and trains a neural network to predict the rewards. The key idea is to actively synthesize the hypothetical behaviors from scratch by maximizing tractable proxies for the value of information, without interacting with the environment. We call this method reward query synthesis via trajectory optimization (ReQueST). We evaluate ReQueST with simulated users on a state-based 2D navigation task and the image-based Car Racing video game. The results show that ReQueST significantly outperforms prior methods in learning reward models that transfer to new environments with different initial state distributions. Moreover, ReQueST safely trains the reward model to detect unsafe states, and corrects reward hacking before deploying the agent.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-12-05T18:25:48Z</published>
+    <arxiv:comment>Published at International Conference on Machine Learning (ICML) 2020</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Siddharth Reddy</name>
+    </author>
+    <author>
+      <name>Anca D. Dragan</name>
+    </author>
+    <author>
+      <name>Sergey Levine</name>
+    </author>
+    <author>
+      <name>Shane Legg</name>
+    </author>
+    <author>
+      <name>Jan Leike</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1908.04734v5</id>
+    <title>Reward Tampering Problems and Solutions in Reinforcement Learning: A Causal Influence Diagram Perspective</title>
+    <updated>2021-03-26T11:13:59Z</updated>
+    <link href="https://arxiv.org/abs/1908.04734v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1908.04734v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Can humans get arbitrarily capable reinforcement learning (RL) agents to do their bidding? Or will sufficiently capable RL agents always find ways to bypass their intended objectives by shortcutting their reward signal? This question impacts how far RL can be scaled, and whether alternative paradigms must be developed in order to build safe artificial general intelligence. In this paper, we study when an RL agent has an instrumental goal to tamper with its reward process, and describe design principles that prevent instrumental goals for two different types of reward tampering (reward function tampering and RF-input tampering). Combined, the design principles can prevent both types of reward tampering from being instrumental goals. The analysis benefits from causal influence diagrams to provide intuitive yet precise formalizations.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-08-13T16:50:00Z</published>
+    <arxiv:comment>Accepted to Synthese, March 2021</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Tom Everitt</name>
+    </author>
+    <author>
+      <name>Marcus Hutter</name>
+    </author>
+    <author>
+      <name>Ramana Kumar</name>
+    </author>
+    <author>
+      <name>Victoria Krakovna</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1902.06766v1</id>
+    <title>Parenting: Safe Reinforcement Learning from Human Input</title>
+    <updated>2019-02-18T19:10:18Z</updated>
+    <link href="https://arxiv.org/abs/1902.06766v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1902.06766v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous agents trained via reinforcement learning present numerous safety concerns: reward hacking, negative side effects, and unsafe exploration, among others. In the context of near-future autonomous agents, operating in environments where humans understand the existing dangers, human involvement in the learning process has proved a promising approach to AI Safety. Here we demonstrate that a precise framework for learning from human input, loosely inspired by the way humans parent children, solves a broad class of safety problems in this context. We show that our Parenting algorithm solves these problems in the relevant AI Safety gridworlds of Leike et al. (2017), that an agent can learn to outperform its parent as it "matures", and that policies learnt through Parenting are generalisable to new environments.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-02-18T19:10:18Z</published>
+    <arxiv:comment>9 pages, 4 figures, 1 table</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Christopher Frye</name>
+    </author>
+    <author>
+      <name>Ilya Feige</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1811.06521v1</id>
+    <title>Reward learning from human preferences and demonstrations in Atari</title>
+    <updated>2018-11-15T18:33:43Z</updated>
+    <link href="https://arxiv.org/abs/1811.06521v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1811.06521v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>To solve complex real-world problems with reinforcement learning, we cannot rely on manually specified reward functions. Instead, we can have humans communicate an objective to the agent directly. In this work, we combine two approaches to learning from human feedback: expert demonstrations and trajectory preferences. We train a deep neural network to model the reward function and use its predicted reward to train an DQN-based deep reinforcement learning agent on 9 Atari games. Our approach beats the imitation learning baseline in 7 games and achieves strictly superhuman performance on 2 games without using game rewards. Additionally, we investigate the goodness of fit of the reward model, present some reward hacking problems, and study the effects of noise in the human labels.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-11-15T18:33:43Z</published>
+    <arxiv:comment>NIPS 2018</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Borja Ibarz</name>
+    </author>
+    <author>
+      <name>Jan Leike</name>
+    </author>
+    <author>
+      <name>Tobias Pohlen</name>
+    </author>
+    <author>
+      <name>Geoffrey Irving</name>
+    </author>
+    <author>
+      <name>Shane Legg</name>
+    </author>
+    <author>
+      <name>Dario Amodei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1810.10862v4</id>
+    <title>Multiparty Dynamics and Failure Modes for Machine Learning and Artificial Intelligence</title>
+    <updated>2019-04-14T07:39:06Z</updated>
+    <link href="https://arxiv.org/abs/1810.10862v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1810.10862v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>An important challenge for safety in machine learning and artificial intelligence systems is a~set of related failures involving specification gaming, reward hacking, fragility to distributional shifts, and Goodhart's or Campbell's law. This paper presents additional failure modes for interactions within multi-agent systems that are closely related. These multi-agent failure modes are more complex, more problematic, and less well understood than the single-agent case, and are also already occurring, largely unnoticed. After motivating the discussion with examples from poker-playing artificial intelligence (AI), the paper explains why these failure modes are in some senses unavoidable. Following this, the paper categorizes failure modes, provides definitions, and cites examples for each of the modes: accidental steering, coordination failures, adversarial misalignment, input spoofing and filtering, and goal co-option or direct hacking. The paper then discusses how extant literature on multi-agent AI fails to address these failure modes, and identifies work which may be useful for the mitigation of these failure modes.</summary>
+    <category term="cs.MA" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-10-16T10:55:58Z</published>
+    <arxiv:comment>12 Pages, This version re-submitted to Big Data and Cognitive Computing, Special Issue "Artificial Superintelligence: Coordination &amp; Strategy"</arxiv:comment>
+    <arxiv:primary_category term="cs.MA"/>
+    <arxiv:journal_ref>Big Data Cogn. Comput. 2019, 3, 21</arxiv:journal_ref>
+    <author>
+      <name>David Manheim</name>
+    </author>
+    <arxiv:doi>10.3390/bdcc3020021</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3390/bdcc3020021" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1711.02827v2</id>
+    <title>Inverse Reward Design</title>
+    <updated>2020-10-07T15:41:58Z</updated>
+    <link href="https://arxiv.org/abs/1711.02827v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1711.02827v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Autonomous agents optimize the reward function we give them. What they don't know is how hard it is for us to design a reward function that actually captures what we want. When designing the reward, we might think of some specific training scenarios, and make sure that the reward will lead to the right behavior in those scenarios. Inevitably, agents encounter new scenarios (e.g., new types of terrain) where optimizing that same reward may lead to undesired behavior. Our insight is that reward functions are merely observations about what the designer actually wants, and that they should be interpreted in the context in which they were designed. We introduce inverse reward design (IRD) as the problem of inferring the true objective based on the designed reward and the training MDP. We introduce approximate methods for solving IRD problems, and use their solution to plan risk-averse behavior in test MDPs. Empirical results suggest that this approach can help alleviate negative side effects of misspecified reward functions and mitigate reward hacking.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-11-08T04:44:32Z</published>
+    <arxiv:comment>Advances in Neural Information Processing Systems 30 (NIPS 2017) Revised Oct 2020 to fix a typo in Eq. 3</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Dylan Hadfield-Menell</name>
+    </author>
+    <author>
+      <name>Smitha Milli</name>
+    </author>
+    <author>
+      <name>Pieter Abbeel</name>
+    </author>
+    <author>
+      <name>Stuart Russell</name>
+    </author>
+    <author>
+      <name>Anca Dragan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1606.06565v2</id>
+    <title>Concrete Problems in AI Safety</title>
+    <updated>2016-07-25T17:23:29Z</updated>
+    <link href="https://arxiv.org/abs/1606.06565v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1606.06565v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Rapid progress in machine learning and artificial intelligence (AI) has brought increasing attention to the potential impacts of AI technologies on society. In this paper we discuss one such potential impact: the problem of accidents in machine learning systems, defined as unintended and harmful behavior that may emerge from poor design of real-world AI systems. We present a list of five practical research problems related to accident risk, categorized according to whether the problem originates from having the wrong objective function ("avoiding side effects" and "avoiding reward hacking"), an objective function that is too expensive to evaluate frequently ("scalable supervision"), or undesirable behavior during the learning process ("safe exploration" and "distributional shift"). We review previous work in these areas as well as suggesting research directions with a focus on relevance to cutting-edge AI systems. Finally, we consider the high-level question of how to think most productively about the safety of forward-looking applications of AI.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-06-21T13:37:05Z</published>
+    <arxiv:comment>29 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Dario Amodei</name>
+    </author>
+    <author>
+      <name>Chris Olah</name>
+    </author>
+    <author>
+      <name>Jacob Steinhardt</name>
+    </author>
+    <author>
+      <name>Paul Christiano</name>
+    </author>
+    <author>
+      <name>John Schulman</name>
+    </author>
+    <author>
+      <name>Dan Mané</name>
+    </author>
+  </entry>
+</feed>

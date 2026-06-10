@@ -1,0 +1,302 @@
+[
+ {
+  "id": 781,
+  "title": "Learning from One Continuous Video Stream",
+  "org": "deepmind",
+  "date": "2024-03-28",
+  "venue": "CVPR 2024",
+  "url": "https://arxiv.org/abs/2312.00598",
+  "abstract": "We introduce a framework for online learning from a single continuous video stream -- the way people and animals learn, without mini-batches, data augmentation or shuffling. This poses great challenges given the high correlation between consecutive video frames and there is very little prior work on it. Our framework allows us to do a first deep dive into the topic and includes a collection of streams and tasks composed from two existing video datasets, plus methodology for performance evaluation that considers both adaptation and generalization. We employ pixel-to-pixel modelling as a practical and flexible way to switch between pre-training and single-stream evaluation as well as between arbitrary tasks, without ever requiring changes to models and always using the same pixel loss. Equipped with this framework we obtained large single-stream learning gains from pre-training with a novel family of future prediction tasks, found that momentum hurts, and that the pace of weight updates matters. The combination of these insights leads to matching the performance of IID learning with batch size 1, when using the same architecture and without costly replay buffers. An overview of the paper is available online at https://sites.google.com/view/one-stream-video.",
+  "needs_fetch": false
+ },
+ {
+  "id": 607,
+  "title": "Sparse Feature Circuits: Discovering and Editing Interpretable Causal Graphs in Language Models",
+  "org": "other",
+  "date": "2024-03-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.19647",
+  "abstract": "We introduce methods for discovering and applying sparse feature circuits. These are causally implicated subnetworks of human-interpretable features for explaining language model behaviors. Circuits identified in prior work consist of polysemantic and difficult-to-interpret units like attention heads or neurons, rendering them unsuitable for many downstream applications. In contrast, sparse feature circuits enable detailed understanding of unanticipated mechanisms. Because they are based on fine-grained units, sparse feature circuits are useful for downstream tasks: We introduce SHIFT, where we improve the generalization of a classifier by ablating features that a human judges to be task-irrelevant. Finally, we demonstrate an entirely unsupervised and scalable interpretability pipeline by discovering thousands of sparse feature circuits for automatically discovered model behaviors.",
+  "needs_fetch": false
+ },
+ {
+  "id": 783,
+  "title": "Long-form factuality in large language models",
+  "org": "deepmind",
+  "date": "2024-03-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.18802",
+  "abstract": "Large language models (LLMs) often generate content that contains factual errors when responding to fact-seeking prompts on open-ended topics. To benchmark a model's long-form factuality in open domains, we first use GPT-4 to generate LongFact, a prompt set comprising thousands of questions spanning 38 topics. We then propose that LLM agents can be used as automated evaluators for long-form factuality through a method which we call Search-Augmented Factuality Evaluator (SAFE). SAFE utilizes an LLM to break down a long-form response into a set of individual facts and to evaluate the accuracy of each fact using a multi-step reasoning process comprising sending search queries to Google Search and determining whether a fact is supported by the search results. Furthermore, we propose extending F1 score as an aggregated metric for long-form factuality. To do so, we balance the percentage of supported facts in a response (precision) with the percentage of provided facts relative to a hyperparameter representing a user's preferred response length (recall). Empirically, we demonstrate that LLM agents can achieve superhuman rating performance - on a set of ~16k individual facts, SAFE agrees with crowdsourced human annotators 72% of the time, and on a random subset of 100 disagreement cases, SAFE wins 76% of the time. At the same time, SAFE is more than 20 times cheaper than human annotators. We also benchmark thirteen language models on LongFact across four model families (Gemini, GPT,",
+  "needs_fetch": false
+ },
+ {
+  "id": 782,
+  "title": "Few-Shot Recalibration of Language Models",
+  "org": "deepmind",
+  "date": "2024-03-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.18286",
+  "abstract": "Recent work has uncovered promising ways to extract well-calibrated confidence estimates from language models (LMs), where the model's confidence score reflects how likely it is to be correct. However, while LMs may appear well-calibrated over broad distributions, this often hides significant miscalibration within narrower slices (e.g., systemic over-confidence in math can balance out systemic under-confidence in history, yielding perfect calibration in aggregate). To attain well-calibrated confidence estimates for any slice of a distribution, we propose a new framework for few-shot slice-specific recalibration. Specifically, we train a recalibration model that takes in a few unlabeled examples from any given slice and predicts a curve that remaps confidence scores to be more accurate for that slice. Our trained model can recalibrate for arbitrary new slices, without using any labeled data from that slice. This enables us to identify domain-specific confidence thresholds above which the LM's predictions can be trusted, and below which it should abstain. Experiments show that our few-shot recalibrator consistently outperforms existing calibration methods, for instance improving calibration error for PaLM2-Large on MMLU by 16%, as compared to temperature scaling.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1667,
+  "title": "Optimising Human-Machine Collaboration for Efficient High-Precision Information Extraction from Text Documents",
+  "org": "deepmind",
+  "date": "2024-03-26",
+  "venue": "ACM Journal on Responsible Computing",
+  "url": "https://doi.org/10.1145/3652591",
+  "abstract": "From science to law enforcement, many research questions are answerable only by poring over a large amount of unstructured text documents. While people can extract information from such documents with high accuracy, this is often too time-consuming to be practical. On the other hand, automated approaches produce nearly-immediate results, but are not reliable enough for applications where near-perfect precision is essential. Motivated by two use cases from criminal justice, we consider the benefits and drawbacks of various human-only, human–machine, and machine-only approaches. Finding no tool well suited for our use cases, we develop a human-in-the-loop method for fast but accurate extraction of structured data from unstructured text. The tool is based on automated extraction followed by human validation, and is particularly useful in cases where purely manual extraction is not practical. Testing on three criminal justice datasets, we find that the combination of the computer speed and human understanding yields precision comparable to manual annotation while requiring only a fraction of time, and significantly outperforms the precision of all fully automated baselines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1668,
+  "title": "The refinement paradox and cumulative cultural evolution: collective improvement in knowledge favors conformity, blind copying and hyper-credulity",
+  "org": "deepmind",
+  "date": "2024-03-25",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "http://dx.doi.org/10.1101/2024.03.22.586239",
+  "abstract": "Abstract Social learning is common in nature, yet cumulative culture (where knowledge and technology increase in complexity and diversity over time) appears restricted to humans. To understand why, we organized a computer tournament in which programmed entries specified when to learn new knowledge and when to refine (i.e. improve) existing knowledge. The tournament revealed a ‘refinement paradox’: refined behavior afforded higher payoffs as individuals converged on a small number of successful behavioral variants, but refining did not generally pay. Paradoxically, entries that refined only in certain conditions did best during behavioral improvement, while simple copying entries thrived when refinement levels were high. Cumulative cultural evolution may be rare in part because sophisticated strategies for improving knowledge and technology are initially advantageous, yet complex culture, once achieved, favors conformity, blind imitation and hyper-credulity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1677,
+  "title": "Discovering Agents (Abstract Reprint)",
+  "org": "deepmind",
+  "date": "2024-03-24",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "http://dx.doi.org/10.1609/aaai.v38i20.30601",
+  "abstract": "Causal models of agents have been used to analyse the safety aspects of machine learning systems. But identifying agents is non-trivial – often the causal model is just assumed by the modeller without much justification – and modelling failures can lead to mistakes in the safety analysis. This paper proposes the first formal causal definition of agents – roughly that agents are systems that would adapt their policy if their actions influenced the world in a different way. From this we derive the first causal discovery algorithm for discovering the presence of agents from empirical data, given a set of variables and under certain assumptions. We also provide algorithms for translating between causal models and game-theoretic influence diagrams. We demonstrate our approach by resolving some previous confusions caused by incorrect causal modelling of agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1676,
+  "title": "Reasoning about Causality in Games (Abstract Reprint)",
+  "org": "deepmind",
+  "date": "2024-03-24",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "http://dx.doi.org/10.1609/aaai.v38i20.30597",
+  "abstract": "Causal reasoning and game-theoretic reasoning are fundamental topics in artificial intelligence, among many other disciplines: this paper is concerned with their intersection. Despite their importance, a formal framework that supports both these forms of reasoning has, until now, been lacking. We offer a solution in the form of (structural) causal games, which can be seen as extending Pearl's causal hierarchy to the game-theoretic domain, or as extending Koller and Milch's multi-agent influence diagrams to the causal domain. We then consider three key questions: i) How can the (causal) dependencies in games – either between variables, or between strategies – be modelled in a uniform, principled manner? ii) How may causal queries be computed in causal games, and what assumptions does this require? iii) How do causal games compare to existing formalisms? To address question i), we introduce mechanised games, which encode dependencies between agents' decision rules and the distributions governing the game. In response to question ii), we present definitions of predictions, interventions, and counterfactuals, and discuss the assumptions required for each. Regarding question iii), we describe correspondences between causal games and other formalisms, and explain how causal games can be used to answer queries that other causal or game-theoretic models do not support. Finally, we highlight possible applications of causal games, aided by an extensive open-source Python library.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1675,
+  "title": "Dynamic Knowledge Injection for AIXI Agents",
+  "org": "deepmind",
+  "date": "2024-03-24",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "http://dx.doi.org/10.1609/aaai.v38i15.29575",
+  "abstract": "Prior approximations of AIXI, a Bayesian optimality notion for general reinforcement learning, can only approximate AIXI's Bayesian environment model using an a-priori defined set of models. This is a fundamental source of epistemic uncertainty for the agent in settings where the existence of systematic bias in the predefined model class cannot be resolved by simply collecting more data from the environment. We address this issue in the context of Human-AI teaming by considering a setup where additional knowledge for the agent in the form of new candidate models arrives from a human operator in an online fashion. We introduce a new agent called DynamicHedgeAIXI that maintains an exact Bayesian mixture over dynamically changing sets of models via a time-adaptive prior constructed from a variant of the Hedge algorithm. The DynamicHedgeAIXI agent is the richest direct approximation of AIXI known to date and comes with good performance guarantees. Experimental results on epidemic control on contact networks validates the agent's practical utility.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1674,
+  "title": "Optimal Transport with Tempered Exponential Measures",
+  "org": "deepmind",
+  "date": "2024-03-24",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "http://dx.doi.org/10.1609/aaai.v38i10.28957",
+  "abstract": "In the field of optimal transport, two prominent subfields face each other: (i) unregularized optimal transport, ``a-la-Kantorovich'', which leads to extremely sparse plans but with algorithms that scale poorly, and (ii) entropic-regularized optimal transport, ``a-la-Sinkhorn-Cuturi'', which gets near-linear approximation algorithms but leads to maximally un-sparse plans. In this paper, we show that an extension of the latter to tempered exponential measures, a generalization of exponential families with indirect measure normalization, gets to a very convenient middle ground, with both very fast approximation algorithms and sparsity, which is under control up to sparsity patterns. In addition, our formulation fits naturally in the unbalanced optimal transport problem setting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1673,
+  "title": "Learning Uncertainty-Aware Temporally-Extended Actions",
+  "org": "deepmind",
+  "date": "2024-03-24",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "http://dx.doi.org/10.1609/aaai.v38i12.29241",
+  "abstract": "In reinforcement learning, temporal abstraction in the action space, exemplified by action repetition, is a technique to facilitate policy learning through extended actions. However, a primary limitation in previous studies of action repetition is its potential to degrade performance, particularly when sub-optimal actions are repeated. This issue often negates the advantages of action repetition. To address this, we propose a novel algorithm named Uncertainty-aware Temporal Extension (UTE). UTE employs ensemble methods to accurately measure uncertainty during action extension. This feature allows policies to strategically choose between emphasizing exploration or adopting an uncertainty-averse approach, tailored to their specific needs. We demonstrate the effectiveness of UTE through experiments in Gridworld and Atari 2600 environments. Our findings show that UTE outperforms existing action repetition algorithms, effectively mitigating their inherent limitations and significantly enhancing policy learning efficiency.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1672,
+  "title": "Scores for Learning Discrete Causal Graphs with Unobserved Confounders",
+  "org": "deepmind",
+  "date": "2024-03-24",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "http://dx.doi.org/10.1609/aaai.v38i10.28980",
+  "abstract": "Structural learning is arguably one of the most challenging and pervasive tasks found throughout the data sciences. There exists a growing literature that studies structural learning in non-parametric settings where conditional independence constraints are taken to define the equivalence class. In the presence of unobserved confounders, it is understood that non-conditional independence constraints are imposed over the observational distribution, including certain equalities and inequalities between functionals of the joint distribution. In this paper, we develop structural learning methods that leverage additional constraints beyond conditional independences. Specifically, we first introduce a score for arbitrary graphs combining Watanabe's asymptotic expansion of the marginal likelihood and new bounds over the cardinality of the exogenous variables. Second, we show that the new score has desirable properties in terms of expressiveness and computability. In terms of expressiveness, we prove that the score captures distinct constraints imprinted in the data, including Verma's and inequalities'. In terms of computability, we show properties of score equivalence and decomposability, which allows, in principle, to break the problem of structural learning in smaller and more manageable pieces. Third, we implement this score using an MCMC sampling algorithm and test its properties in several simulation scenarios.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1671,
+  "title": "Learning Discrete-Time Major-Minor Mean Field Games",
+  "org": "deepmind",
+  "date": "2024-03-24",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v38i9.28818",
+  "abstract": "Recent techniques based on Mean Field Games (MFGs) allow the scalable analysis of multi-player games with many similar, rational agents. However, standard MFGs remain limited to homogeneous players that weakly influence each other, and cannot model major players that strongly influence other players, severely limiting the class of problems that can be handled. We propose a novel discrete time version of major-minor MFGs (M3FGs), along with a learning algorithm based on fictitious play and partitioning the probability simplex. Importantly, M3FGs generalize MFGs with common noise and can handle not only random exogeneous environment states but also major players. A key challenge is that the mean field is stochastic and not deterministic as in standard MFGs. Our theoretical investigation verifies both the M3FG model and its algorithmic solution, showing firstly the well-posedness of the M3FG model starting from a finite game of interest, and secondly convergence and approximation guarantees of the fictitious play algorithm. Then, we empirically verify the obtained theoretical results, ablating some of the theoretical assumptions made, and show successful equilibrium learning in three example problems. Overall, we establish a learning framework for a novel and broad class of tractable games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1670,
+  "title": "Learning Not to Regret",
+  "org": "deepmind",
+  "date": "2024-03-24",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "http://dx.doi.org/10.1609/aaai.v38i14.29443",
+  "abstract": "The literature on game-theoretic equilibrium finding predominantly focuses on single games or their repeated play. Nevertheless, numerous real-world scenarios feature playing a game sampled from a distribution of similar, but not identical games, such as playing poker with different public cards or trading correlated assets on the stock market. As these similar games feature similar equilibra, we investigate a way to accelerate equilibrium finding on such a distribution. We present a novel ``learning not to regret'' framework, enabling us to meta-learn a regret minimizer tailored to a specific distribution. Our key contribution, Neural Predictive Regret Matching, is uniquely meta-learned to converge rapidly for the chosen distribution of games, while having regret minimization guarantees on any game. We validated our algorithms' faster convergence on a distribution of river poker games. Our experiments show that the meta-learned algorithms outpace their non-meta-learned counterparts, achieving more than tenfold improvements.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1669,
+  "title": "V2Meow: Meowing to the Visual Beat via Video-to-Music Generation",
+  "org": "deepmind",
+  "date": "2024-03-24",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v38i5.28299",
+  "abstract": "Video-to-music generation demands both a temporally localized high-quality listening experience and globally aligned video-acoustic signatures. While recent music generation models excel at the former through advanced audio codecs, the exploration of video-acoustic signatures has been confined to specific visual scenarios. In contrast, our research confronts the challenge of learning globally aligned signatures between video and music directly from paired music and videos, without explicitly modeling domain-specific rhythmic or semantic relationships. We propose V2Meow, a video-to-music generation system capable of producing high-quality music audio for a diverse range of video input types using a multi-stage autoregressive model. Trained on 5k hours of music audio clips paired with video frames mined from in-the-wild music videos, V2Meow is competitive with previous domain-specific models when evaluated in a zero-shot manner. It synthesizes high-fidelity music audio waveforms solely by conditioning on pre-trained general-purpose visual features extracted from video frames, with optional style control via text prompts. Through both qualitative and quantitative evaluations, we demonstrate that our model outperforms various existing music generation systems in terms of visual-audio correspondence and audio quality. Music samples are available at tinyurl.com/v2meow.",
+  "needs_fetch": false
+ },
+ {
+  "id": 412,
+  "title": "The N+ Implementation Details of RLHF with PPO: A Case Study on TL;DR Summarization",
+  "org": "other",
+  "date": "2024-03-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.17031",
+  "abstract": "This work is the first to openly reproduce the Reinforcement Learning from Human Feedback (RLHF) scaling behaviors reported in OpenAI's seminal TL;DR summarization work. We create an RLHF pipeline from scratch, enumerate over 20 key implementation details, and share key insights during the reproduction. Our RLHF-trained Pythia models demonstrate significant gains in response quality that scale with model size, with our 2.8B, 6.9B models outperforming OpenAI's released 1.3B checkpoint. We publicly release the trained model checkpoints and code to facilitate further research and accelerate progress in the field (\\url{https://github.com/vwxyzjn/summarize_from_feedback_details}).",
+  "needs_fetch": false
+ },
+ {
+  "id": 536,
+  "title": "Risk and Response in Large Language Models: Evaluating Key Threat Categories",
+  "org": "other",
+  "date": "2024-03-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.14988",
+  "abstract": "This paper explores the pressing issue of risk assessment in Large Language Models (LLMs) as they become increasingly prevalent in various applications. Focusing on how reward models, which are designed to fine-tune pretrained LLMs to align with human values, perceive and categorize different types of risks, we delve into the challenges posed by the subjective nature of preference-based training data. By utilizing the Anthropic Red-team dataset, we analyze major risk categories, including Information Hazards, Malicious Uses, and Discrimination/Hateful content. Our findings indicate that LLMs tend to consider Information Hazards less harmful, a finding confirmed by a specially developed regression model. Additionally, our analysis shows that LLMs respond less stringently to Information Hazards compared to other risks. The study further reveals a significant vulnerability of LLMs to jailbreaking attacks in Information Hazard scenarios, highlighting a critical security concern in LLM risk assessment and emphasizing the need for improved AI safety measures.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1678,
+  "title": "Manifestations of xenophobia in AI systems",
+  "org": "deepmind",
+  "date": "2024-03-21",
+  "venue": "AI & Society",
+  "url": "https://doi.org/10.1007/s00146-024-01893-4",
+  "abstract": "Abstract Xenophobia is one of the key drivers of marginalisation, discrimination, and conflict, yet many prominent machine learning fairness frameworks fail to comprehensively measure or mitigate the resulting xenophobic harms. Here we aim to bridge this conceptual gap and help facilitate safe and ethical design of artificial intelligence (AI) solutions. We ground our analysis of the impact of xenophobia by first identifying distinct types of xenophobic harms, and then applying this framework across a number of prominent AI application domains, reviewing the potential interplay between AI and xenophobia on social media and recommendation systems, healthcare, immigration, employment, as well as biases in large pre-trained models. These help inform our recommendations towards an inclusive, xenophilic design of future AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 537,
+  "title": "Evaluating Frontier Models for Dangerous Capabilities",
+  "org": "deepmind",
+  "date": "2024-03-21",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.13793",
+  "abstract": "To understand the risks of a new AI system, we must understand what it can and cannot do. To this end, we introduce a programme of new \"dangerous capability\" evaluations and pilot them on Gemini models. These evaluations cover five topics: (1) persuasion & deception; (2) cyber-security; (3) self-proliferation; (4) self-reasoning & self-modification; and (5) biological and nuclear risk. We do not find evidence of strong dangerous capabilities in the models we evaluated, but we flag early warning signs. Our goal is to help lay the groundwork for a rigorous science of dangerous capability evaluation, in preparation for future, more capable models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1680,
+  "title": "STELA: a community-centred approach to norm elicitation for AI alignment",
+  "org": "deepmind",
+  "date": "2024-03-19",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-024-56648-4",
+  "abstract": "Value alignment, the process of ensuring that artificial intelligence (AI) systems are aligned with human values and goals, is a critical issue in AI research. Existing scholarship has mainly studied how to encode moral values into agents to guide their behaviour. Less attention has been given to the normative questions of whose values and norms AI systems should be aligned with, and how these choices should be made. To tackle these questions, this paper presents the STELA process (SocioTEchnical Language agent Alignment), a methodology resting on sociotechnical traditions of participatory, inclusive, and community-centred processes. For STELA, we conduct a series of deliberative discussions with four historically underrepresented groups in the United States in order to understand their diverse priorities and concerns when interacting with AI systems. The results of our research suggest that community-centred deliberation on the outputs of large language models is a valuable tool for eliciting latent normative perspectives directly from differently situated groups. In addition to having the potential to engender an inclusive process that is robust to the needs of communities, this methodology can provide rich contextual insights for AI alignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1679,
+  "title": "TacticAI: an AI assistant for football tactics",
+  "org": "deepmind",
+  "date": "2024-03-19",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-024-45965-x",
+  "abstract": "Identifying key patterns of tactics implemented by rival teams, and developing effective responses, lies at the heart of modern football. However, doing so algorithmically remains an open research challenge. To address this unmet need, we propose TacticAI, an AI football tactics assistant developed and evaluated in close collaboration with domain experts from Liverpool FC. We focus on analysing corner kicks, as they offer coaches the most direct opportunities for interventions and improvements. TacticAI incorporates both a predictive and a generative component, allowing the coaches to effectively sample and explore alternative player setups for each corner kick routine and to select those with the highest predicted likelihood of success. We validate TacticAI on a number of relevant benchmark tasks: predicting receivers and shot attempts and recommending player position adjustments. The utility of TacticAI is validated by a qualitative study conducted with football domain experts at Liverpool FC. We show that TacticAI's model suggestions are not only indistinguishable from real tactics, but also favoured over existing tactics 90% of the time, and that TacticAI offers an effective corner kick retrieval system. TacticAI achieves these results despite the limited availability of gold-standard data, achieving data efficiency through geometric deep learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 784,
+  "title": "DiPaCo: Distributed Path Composition",
+  "org": "deepmind",
+  "date": "2024-03-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.10616",
+  "abstract": "Progress in machine learning (ML) has been fueled by scaling neural network models. This scaling has been enabled by ever more heroic feats of engineering, necessary for accommodating ML approaches that require high bandwidth communication between devices working in parallel. In this work, we propose a co-designed modular architecture and training approach for ML models, dubbed DIstributed PAth COmposition (DiPaCo). During training, DiPaCo distributes computation by paths through a set of shared modules. Together with a Local-SGD inspired optimization (DiLoCo) that keeps modules in sync with drastically reduced communication, our approach enables training across poorly connected and potentially heterogeneous workers. At test time, only a single path needs to be executed for each input, without the need for any model compression. We consider this approach as a first prototype towards a new paradigm of large-scale learning, one that is less synchronous and more modular. Our experiments on the widely used C4 benchmark show that for the same amount of training steps but less wall-clock time, DiPaCo exceeds the performance of a 1B dense transformer language model using 256 paths of size 150M.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1683,
+  "title": "USM-Lite: Quantization and Sparsity Aware Fine-Tuning for Speech Recognition with Universal Speech Models",
+  "org": "deepmind",
+  "date": "2024-03-18",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icassp48485.2024.10448217",
+  "abstract": "End-to-end automatic speech recognition (ASR) models have seen revolutionary quality gains with the recent development of large-scale universal speech models (USM). However, deploying these massive USMs is extremely expensive due to the enormous memory usage and computational cost. Therefore, model compression is an important research topic to fit USM-based ASR under budget in real-world scenarios. In this study, we propose a USM fine-tuning approach for ASR, with a low-bit quantization and N:M structured sparsity aware paradigm on the model weights, reducing the model complexity from parameter precision and matrix topology perspectives. We conducted extensive experiments with a 2-billion parameter USM on a large-scale voice search dataset to evaluate our proposed method. A series of ablation studies validate the effectiveness of up to int4 quantization and 2:4 sparsity. However, a single compression technique fails to recover the performance well under extreme setups including int2 quantization and 1:4 sparsity. By contrast, our proposed method can compress the model to have 9.4% of the size, at the cost of only 7.3% relative word error rate (WER) regressions. We also provided in-depth analyses on the results and discussions on the limitations and potential solutions, which would be valuable for future studies.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1682,
+  "title": "Retrieval Augmented End-to-End Spoken Dialog Models",
+  "org": "deepmind",
+  "date": "2024-03-18",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icassp48485.2024.10447448",
+  "abstract": "We recently developed a joint speech and language model (SLM [1]) which fuses a pretrained foundational speech model and a large language model (LLM), while preserving the in-context learning capability intrinsic to the pretrained LLM. In this paper, we apply SLM to dialog applications where the dialog states are inferred directly from the audio signal.Task-oriented dialogs often contain domain-specific entities, i.e., restaurants, hotels, train stations, and city names, which are difficult to recognize, however, critical for the downstream applications. Inspired by the RAG (retrieval-augmented generation) models, we propose a retrieval augmented SLM (ReSLM) that overcomes this weakness. We first train a retriever to retrieve text entities given audio inputs. The retrieved entities are then added as text inputs to the underlying LLM to bias model predictions. We evaluated ReSLM on speech MultiWoz task (DSTC-11 Challenge), and found that the retrieval augmentation boosts model performance, achieving joint goal accuracy (38.6% vs 32.7%), slot error rate (20.6% vs 24.8%) and ASR word error rate (5.5% vs 6.7%). While demonstrated on dialog state tracking, our approach is broadly applicable to speech tasks requiring custom contextual information or domain-specific entities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1681,
+  "title": "CryCeleb: A Speaker Verification Dataset Based on Infant Cry Sounds",
+  "org": "deepmind",
+  "date": "2024-03-18",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icassp48485.2024.10448292",
+  "abstract": "This paper describes the Ubenwa CryCeleb dataset - a labeled collection of infant cries - and the accompanying CryCeleb 2023 task, which is a public speaker verification challenge based on cry sounds. We released more than 6 hours of manually segmented cry sounds from 786 newborns for academic use, aiming to encourage research in infant cry analysis. The inaugural public competition attracted 59 participants, 11 of whom improved the baseline performance. The top-performing system achieved a significant improvement scoring 25.8% equal error rate, which is still far from the performance of state-of-the-art adult speaker verification systems. Therefore, we believe there is room for further research on this dataset, and also potentially extending beyond the verification task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1684,
+  "title": "Whole-body simulation of realistic fruit fly locomotion with deep reinforcement learning",
+  "org": "deepmind",
+  "date": "2024-03-14",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2024.03.11.584515",
+  "abstract": "Abstract The body of an animal influences how the nervous system produces behavior. Therefore, detailed modeling of the neural control of sensorimotor behavior requires a detailed model of the body. Here we contribute an anatomically-detailed biomechanical whole-body model of the fruit fly Drosophila melanogaster in the MuJoCo physics engine. Our model is general-purpose, enabling the simulation of diverse fly behaviors, both on land and in the air. We demonstrate the generality of our model by simulating realistic locomotion, both flight and walking. To support these behaviors, we have extended MuJoCo with phenomenological models of fluid forces and adhesion forces. Through data-driven end-to-end reinforcement learning, we demonstrate that these advances enable the training of neural network controllers capable of realistic locomotion along complex trajectories based on high-level steering control signals. We demonstrate the use of visual sensors and the re-use of a pre-trained general-purpose flight controller by training the model to perform visually guided flight tasks. Our project is an open-source platform for modeling neural control of sensorimotor behavior in an embodied context.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1685,
+  "title": "Wasserstein Distortion: Unifying Fidelity and Realism",
+  "org": "deepmind",
+  "date": "2024-03-13",
+  "venue": null,
+  "url": "https://doi.org/10.1109/ciss59072.2024.10480168",
+  "abstract": "We introduce a distortion measure for images, Wasserstein distortion, that simultaneously generalizes pixel-level fidelity on the one hand and realism or perceptual quality on the other. We discuss its metric properties. Pairs of images that are close under Wasserstein distortion illustrate its utility. In particular, we generate random images that have high fidelity to a reference image in one location of the image and smoothly transition to an independent realization as one moves away from this point. Wasserstein distortion represents a generalization and synthesis of prior work on texture generation, image realism and distortion, and models of the early human visual system, in the form of an optimizable metric in the mathematical sense.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1688,
+  "title": "An asymmetric container lemma and the structure of graphs with no induced $4$-cycle",
+  "org": "deepmind",
+  "date": "2024-03-12",
+  "venue": "Journal of the European Mathematical Society",
+  "url": "https://doi.org/10.4171/jems/1442",
+  "abstract": "The method of hypergraph containers, which was introduced several years ago by Balogh, Morris, and Samotij, and independently by Saxton and Thomason, has proved to be an extremely useful tool in the study of various monotone graph properties. In particular, a fairly straightforward application of this technique allows one to locate, for each non-bipartite graph H , the threshold at which the distribution of edges in a typical H -free graph with a given number of edges undergoes a transition from ‘random-like’ to ‘structured’. On the other hand, for non-monotone hereditary graph properties, the standard version of this method does not allow one to establish even the existence of such a threshold. In this paper we introduce a refinement of the container method that takes into account the asymmetry between edges and non-edges in a sparse member of a hereditary graph property. As an application, we determine the approximate structure of a typical graph with n vertices, m edges, and no induced copy of the 4 -cycle, for each function m = m(n) satisfying n^{4/3}(\\log n)^{4} \\le m \\ll n^{2} . We show that almost all such graphs G have the following property: the vertex set of G can be partitioned into an ‘almost independent’ set (a set with o(m) edges) and an ‘almost-clique’ (a set inducing a subgraph with density 1-o(1) ). The lower bound on m is optimal up to a polylogarithmic factor, as standard arguments show that if n \\ll m \\ll n^{4/3} , then almost all such graphs are ‘random-l",
+  "needs_fetch": false
+ },
+ {
+  "id": 1687,
+  "title": "Machine Unlearning in Learned Databases: An Experimental Analysis",
+  "org": "deepmind",
+  "date": "2024-03-12",
+  "venue": "Proceedings of the ACM on Management of Data",
+  "url": "https://doi.org/10.1145/3639304",
+  "abstract": "Machine learning models based on neural networks (NNs) are enjoying ever-increasing attention in the Database (DB) community, both in research and practice. However, an important issue has been largely overlooked, namely the challenge of dealing with the inherent, highly dynamic nature of DBs, where data updates are fundamental, highly-frequent operations (unlike, for instance, in ML classification tasks). Although some recent research has addressed the issues of maintaining updated NN models in the presence of new data insertions, the effects of data deletions (a.k.a., \"machine unlearning\") remain a blind spot. With this work, for the first time to our knowledge, we pose and answer the following key questions: What is the effect of unlearning algorithms on NN-based DB models? How do these effects translate to effects on key downstream DB tasks, such as cardinality/selectivity estimation (SE), approximate query processing (AQP), data generation (DG), and upstream tasks like data classification (DC)? What metrics should we use to assess the impact and efficacy of unlearning algorithms in learned DBs? Is the problem of (and solutions for) machine unlearning in DBs different from that of machine learning in DBs in the face of data insertions? Is the problem of (and solutions for) machine unlearning for DBs different from unlearning in the ML literature? what are the overhead and efficiency of unlearning algorithms (versus the naive solution of retraining from scratch)? What is t",
+  "needs_fetch": false
+ },
+ {
+  "id": 1686,
+  "title": "Framework-based qualitative analysis of free responses of Large Language Models: Algorithmic fidelity",
+  "org": "deepmind",
+  "date": "2024-03-12",
+  "venue": "PLoS ONE",
+  "url": "https://doi.org/10.1371/journal.pone.0300024",
+  "abstract": "Today, with the advent of Large-scale generative Language Models (LLMs) it is now possible to simulate free responses to interview questions such as those traditionally analyzed using qualitative research methods. Qualitative methodology encompasses a broad family of techniques involving manual analysis of open-ended interviews or conversations conducted freely in natural language. Here we consider whether artificial \"silicon participants\" generated by LLMs may be productively studied using qualitative analysis methods in such a way as to generate insights that could generalize to real human populations. The key concept in our analysis is algorithmic fidelity, a validity concept capturing the degree to which LLM-generated outputs mirror human sub-populations' beliefs and attitudes. By definition, high algorithmic fidelity suggests that latent beliefs elicited from LLMs may generalize to real humans, whereas low algorithmic fidelity renders such research invalid. Here we used an LLM to generate interviews with \"silicon participants\" matching specific demographic characteristics one-for-one with a set of human participants. Using framework-based qualitative analysis, we showed the key themes obtained from both human and silicon participants were strikingly similar. However, when we analyzed the structure and tone of the interviews we found even more striking differences. We also found evidence of a hyper-accuracy distortion. We conclude that the LLM we tested (GPT-3.5) does not",
+  "needs_fetch": false
+ }
+]

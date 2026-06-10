@@ -1,0 +1,302 @@
+[
+ {
+  "id": 491,
+  "title": "The 2025 OpenAI Preparedness Framework does not guarantee any AI risk mitigation practices: a proof-of-concept for affordance analyses of AI safety policies",
+  "org": "other",
+  "date": "2025-09-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.24394",
+  "abstract": "Prominent AI companies are producing 'safety frameworks' as a type of voluntary self-governance. These statements purport to establish risk thresholds and safety procedures for the development and deployment of highly capable AI. Understanding which AI risks are covered and what actions are allowed, refused, demanded, encouraged, or discouraged by these statements is vital for assessing how these frameworks actually govern AI development and deployment. We draw on affordance theory to analyse the OpenAI 'Preparedness Framework Version 2' (April 2025) using the Mechanisms & Conditions model of affordances and the MIT AI Risk Repository. We find that this safety policy requests evaluation of a small minority of AI risks, encourages deployment of systems with 'Medium' capabilities for unintentionally enabling 'severe harm' (which OpenAI defines as >1000 deaths or >$100B in damages), and allows OpenAI's CEO to deploy even more dangerous capabilities. These findings suggest that effective mitigation of AI risks requires more robust governance interventions beyond current industry self-regulation. Our affordance analysis provides a replicable method for evaluating what safety frameworks actually permit versus what they claim.",
+  "needs_fetch": false
+ },
+ {
+  "id": 325,
+  "title": "MO-GRPO: Mitigating Reward Hacking of Group Relative Policy Optimization on Multi-Objective Problems",
+  "org": "other",
+  "date": "2025-09-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.22047",
+  "abstract": "Group Relative Policy Optimization (GRPO) has been shown to be an effective algorithm when an accurate reward model is available. However, such a highly reliable reward model is not available in many real-world tasks. In this paper, we particularly focus on multi-objective settings, in which we identify that GRPO is vulnerable to reward hacking, optimizing only one of the objectives at the cost of the others. To address this issue, we propose MO-GRPO, an extension of GRPO with a simple normalization method to reweight the reward functions automatically according to the variances of their values. We first show analytically that MO-GRPO ensures that all reward functions contribute evenly to the loss function while preserving the order of preferences, eliminating the need for manual tuning of the reward functions' scales. Then, we evaluate MO-GRPO experimentally in four domains: (i) the multi-armed bandits problem, (ii) simulated control task (Mo-Gymnasium), (iii) machine translation tasks on the WMT benchmark (En-Ja, En-Zh), and (iv) instruction following task. MO-GRPO achieves stable learning by evenly distributing correlations among the components of rewards, outperforming GRPO, showing MO-GRPO to be a promising algorithm for multi-objective reinforcement learning problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 324,
+  "title": "OpenAI's GPT-OSS-20B Model and Safety Alignment Issues in a Low-Resource Language",
+  "org": "other",
+  "date": "2025-09-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.01266",
+  "abstract": "In response to the recent safety probing for OpenAI's GPT-OSS-20b model, we present a summary of a set of vulnerabilities uncovered in the model, focusing on its performance and safety alignment in a low-resource language setting. The core motivation for our work is to question the model's reliability for users from underrepresented communities. Using Hausa, a major African language, we uncover biases, inaccuracies, and cultural insensitivities in the model's behaviour. With a minimal prompting, our red-teaming efforts reveal that the model can be induced to generate harmful, culturally insensitive, and factually inaccurate content in the language. As a form of reward hacking, we note how the model's safety protocols appear to relax when prompted with polite or grateful language, leading to outputs that could facilitate misinformation and amplify hate speech. For instance, the model operates on the false assumption that common insecticide locally known as Fiya-Fiya (Cyphermethrin) and rodenticide like Shinkafar Bera (a form of Aluminium Phosphide) are safe for human consumption. To contextualise the severity of this error and popularity of the substances, we conducted a survey (n=61) in which 98% of participants identified them as toxic. Additional failures include an inability to distinguish between raw and processed foods and the incorporation of demeaning cultural proverbs to build inaccurate arguments. We surmise that these issues manifest through a form of linguistic rew",
+  "needs_fetch": false
+ },
+ {
+  "id": 957,
+  "title": "Measuring the performance of our models on real-world tasks",
+  "org": "openai",
+  "date": "2025-09-25",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gdpval/",
+  "abstract": "OpenAI introduces GDPval, a new evaluation that measures model performance on real-world economically valuable tasks across 44 occupations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 493,
+  "title": "SAGE: A Realistic Benchmark for Semantic Understanding",
+  "org": "other",
+  "date": "2025-09-25",
+  "venue": "NeurIPS 2025",
+  "url": "https://arxiv.org/abs/2509.21310",
+  "abstract": "As large language models (LLMs) achieve strong performance on traditional benchmarks, there is an urgent need for more challenging evaluation frameworks that probe deeper aspects of semantic understanding. We introduce SAGE (Semantic Alignment & Generalization Evaluation), a rigorous benchmark designed to assess both embedding models and similarity metrics across five categories: Human Preference Alignment, Transformation Robustness, Information Sensitivity, Clustering Performance, and Retrieval Robustness. Unlike existing benchmarks that focus on isolated capabilities, SAGE evaluates semantic understanding through adversarial conditions, noisy transformations, and nuanced human judgment tasks across 30+ datasets. Our comprehensive evaluation of 9 embedding models and classical metrics reveals significant performance gaps, with no single approach excelling across all dimensions. For instance, while state-of-the-art embedding models like OpenAI's text-embedding-3-large dominate in aligning with human preferences (0.682 vs. 0.591 for the best classical metric), they are significantly outperformed by classical metrics on information sensitivity tasks, where Jaccard Similarity achieves a score of 0.905 compared to the top embedding score of 0.794. SAGE further uncovers critical trade-offs: OpenAI's text-embedding-3-small achieves the highest clustering performance (0.483) but demonstrates extreme brittleness with the lowest robustness score (0.011). SAGE exposes critical limitati",
+  "needs_fetch": false
+ },
+ {
+  "id": 2686,
+  "title": "Ending publication bias: A values-based approach to surface null and negative results",
+  "org": "openai",
+  "date": "2025-09-24",
+  "venue": "PLoS Biology",
+  "url": "https://doi.org/10.1371/journal.pbio.3003368",
+  "abstract": "Sharing knowledge is a basic tenet of the scientific community, yet publication bias arising from the reluctance or inability to publish negative or null results remains a long-standing and deep-seated problem, albeit one that varies in severity between disciplines and study types. Recognizing that previous endeavors to address the issue have been fragmentary and largely unsuccessful, this Consensus View proposes concrete and concerted measures that major stakeholders can take to create and incentivize new pathways for publishing negative results. Funders, research institutions, publishers, learned societies, and the research community all have a role in making this an achievable norm that will buttress public trust in science.",
+  "needs_fetch": false
+ },
+ {
+  "id": 691,
+  "title": "Video models are zero-shot learners and reasoners",
+  "org": "deepmind",
+  "date": "2025-09-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.20328",
+  "abstract": "The remarkable zero-shot capabilities of Large Language Models (LLMs) have propelled natural language processing from task-specific models to unified, generalist foundation models. This transformation emerged from simple primitives: large, generative models trained on web-scale data. Curiously, the same primitives apply to today's generative video models. Could video models be on a trajectory towards general-purpose vision understanding, much like LLMs developed general-purpose language understanding? We demonstrate that Veo 3 can solve a broad variety of tasks it wasn't explicitly trained for: segmenting objects, detecting edges, editing images, understanding physical properties, recognizing object affordances, simulating tool use, and more. These abilities to perceive, model, and manipulate the visual world enable early forms of visual reasoning like maze and symmetry solving. Veo's emergent zero-shot capabilities indicate that video models are on a path to becoming unified, generalist vision foundation models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 690,
+  "title": "EmbeddingGemma: Powerful and Lightweight Text Representations",
+  "org": "deepmind",
+  "date": "2025-09-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.20354",
+  "abstract": "We introduce EmbeddingGemma, a new lightweight, open text embedding model based on the Gemma 3 language model family. Our innovative training recipe strategically captures knowledge from larger models via encoder-decoder initialization and geometric embedding distillation. We improve model robustness and expressiveness with a spread-out regularizer, and ensure generalizability by merging checkpoints from varied, optimized mixtures. Evaluated on the Massive Text Embedding Benchmark (MTEB) across multilingual, English, and code domains, EmbeddingGemma achieves state-of-the-art results. Notably, it outperforms prior top models, both proprietary and open, with fewer than 500M parameters, and provides performance comparable to models double its size, offering an exceptional performance-to-cost ratio. Remarkably, this lead persists when quantizing model weights or truncating embedding outputs. This makes EmbeddingGemma particularly well-suited for low-latency and high-throughput use cases such as on-device applications. We provide ablation studies exploring our key design choices. We release EmbeddingGemma to the community to promote further research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1358,
+  "title": "Humanizing the dehumanized: A test of strategies",
+  "org": "deepmind",
+  "date": "2025-09-23",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-7330548/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1359,
+  "title": "On the Risk of Misleading Reports: Diagnosing Textual Biases in Multimodal Clinical AI",
+  "org": "deepmind",
+  "date": "2025-09-22",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-032-06004-4_32",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1187,
+  "title": "The Quest for the Right Mediator: Surveying Mechanistic Interpretability for NLP Through the Lens of Causal Mediation Analysis",
+  "org": "anthropic",
+  "date": "2025-09-22",
+  "venue": "Computational Linguistics",
+  "url": "https://doi.org/10.1162/coli.a.572",
+  "abstract": "Abstract Interpretability provides a toolset for understanding how and why language models behave in certain ways. However, there is little unity in the field: Most studies use ad-hoc evaluations and do not share theoretical foundations, making it difficult to measure progress and compare the pros and cons of different techniques. Furthermore, while mechanistic understanding is frequently discussed, the basic causal units underlying these mechanisms are often not explicitly defined. In this article, we propose a perspective on interpretability research grounded in causal mediation analysis. Specifically, we describe the history and current state of interpretability taxonomized according to the types of causal units (mediators) utilized, as well as methods used to search over mediators. We discuss the pros and cons of each mediator, providing insights as to when particular kinds of mediators and search methods are most appropriate. We argue that this framing yields a more cohesive narrative of the field and helps researchers select appropriate methods based on their research objective. Our analysis yields actionable recommendations for future work, including the discovery of new mediators and the development of standardized evaluations tailored to these goals.",
+  "needs_fetch": false
+ },
+ {
+  "id": 328,
+  "title": "Domain-Specific Constitutional AI: Enhancing Safety in LLM-Powered Mental Health Chatbots",
+  "org": "other",
+  "date": "2025-09-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.16444",
+  "abstract": "Mental health applications have emerged as a critical area in computational health, driven by rising global rates of mental illness, the integration of AI in psychological care, and the need for scalable solutions in underserved communities. These include therapy chatbots, crisis detection, and wellness platforms handling sensitive data, requiring specialized AI safety beyond general safeguards due to emotional vulnerability, risks like misdiagnosis or symptom exacerbation, and precise management of vulnerable states to avoid severe outcomes such as self-harm or loss of trust. Despite AI safety advances, general safeguards inadequately address mental health-specific challenges, including crisis intervention accuracy to avert escalations, therapeutic guideline adherence to prevent misinformation, scale limitations in resource-constrained settings, and adaptation to nuanced dialogues where generics may introduce biases or miss distress signals. We introduce an approach to apply Constitutional AI training with domain-specific mental health principles for safe, domain-adapted CAI systems in computational mental health applications.",
+  "needs_fetch": false
+ },
+ {
+  "id": 327,
+  "title": "Stress Testing Deliberative Alignment for Anti-Scheming Training",
+  "org": "openai",
+  "date": "2025-09-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.15541",
+  "abstract": "Highly capable AI systems could secretly pursue misaligned goals -- what we call \"scheming\". Because a scheming AI would deliberately try to hide its misaligned goals and actions, measuring and mitigating scheming requires different strategies than are typically used in ML. We propose that assessing anti-scheming interventions requires at least (1) testing propensity to scheme on far out-of-distribution (OOD) tasks, (2) evaluating whether lack of scheming is driven by situational awareness, and (3) checking for robustness to pre-existing misaligned goals. We use a broad category of \"covert actions\" -- such as secretly breaking rules or intentionally underperforming in tests -- as a proxy for scheming, and design evaluations for covert actions. We then stress-test deliberative alignment as a case study for anti-scheming. Across 26 OOD evaluations (180+ environments), deliberative alignment reduces covert action rates (OpenAI o3: 13%->0.4%) but does not fully eliminate them. Our mitigation is also able to largely stop agents from pursuing a hidden goal previously trained into the model, but we still find misbehavior after additional red-teaming. We find that models' chain-of-thought (CoT) often demonstrates awareness of being evaluated for alignment, and show causal evidence that this awareness decreases covert behavior, while unawareness increases it. Therefore, we cannot exclude that the observed reductions in covert action rates are at least partially driven by situational a",
+  "needs_fetch": false
+ },
+ {
+  "id": 326,
+  "title": "Reward Hacking Mitigation using Verifiable Composite Rewards",
+  "org": "other",
+  "date": "2025-09-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.15557",
+  "abstract": "Reinforcement Learning from Verifiable Rewards (RLVR) has recently shown that large language models (LLMs) can develop their own reasoning without direct supervision. However, applications in the medical domain, specifically for question answering, are susceptible to significant reward hacking during the reasoning phase. Our work addresses two primary forms of this behavior: i) providing a final answer without preceding reasoning, and ii) employing non-standard reasoning formats to exploit the reward mechanism. To mitigate these, we introduce a composite reward function with specific penalties for these behaviors. Our experiments show that extending RLVR with our proposed reward model leads to better-formatted reasoning with less reward hacking and good accuracy compared to the baselines. This approach marks a step toward reducing reward hacking and enhancing the reliability of models utilizing RLVR.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1360,
+  "title": "A review of learning-based dynamics models for robotic manipulation",
+  "org": "deepmind",
+  "date": "2025-09-17",
+  "venue": "Science Robotics",
+  "url": "https://doi.org/10.1126/scirobotics.adt1497",
+  "abstract": "Dynamics models that predict the effects of physical interactions are essential for planning and control in robotic manipulation. Although models based on physical principles often generalize well, they typically require full-state information, which can be difficult or impossible to extract from perception data in complex, real-world scenarios. Learning-based dynamics models provide an alternative by deriving state transition functions purely from perceived interaction data, enabling the capture of complex, hard-to-model factors and predictive uncertainty and accelerating simulations that are often too slow for real-time control. Recent successes in this field have demonstrated notable advancements in robot capabilities, including long-horizon manipulation of deformable objects, granular materials, and complex multiobject interactions such as stowing and packing. A crucial aspect of these investigations is the choice of state representation, which determines the inductive biases in the learning system for reduced-order modeling of scene dynamics. This article provides a timely and comprehensive review of current techniques and trade-offs in designing learned dynamics models, highlighting their role in advancing robot capabilities through integration with state estimation and control and identifying critical research gaps for future exploration.",
+  "needs_fetch": false
+ },
+ {
+  "id": 958,
+  "title": "Detecting and reducing scheming in AI models",
+  "org": "openai",
+  "date": "2025-09-17",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/",
+  "abstract": "Apollo Research and OpenAI developed evaluations for hidden misalignment (“scheming”) and found behaviors consistent with scheming in controlled tests across frontier models. The team shared concrete examples and stress tests of an early method to reduce scheming.",
+  "needs_fetch": false
+ },
+ {
+  "id": 207,
+  "title": "Evaluating LLM Alignment on Personality Inference from Real-World Interview Data",
+  "org": "other",
+  "date": "2025-09-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.13244",
+  "abstract": "Large Language Models (LLMs) are increasingly deployed in roles requiring nuanced psychological understanding, such as emotional support agents, counselors, and decision-making assistants. However, their ability to interpret human personality traits, a critical aspect of such applications, remains unexplored, particularly in ecologically valid conversational settings. While prior work has simulated LLM \"personas\" using discrete Big Five labels on social media data, the alignment of LLMs with continuous, ground-truth personality assessments derived from natural interactions is largely unexamined. To address this gap, we introduce a novel benchmark comprising semi-structured interview transcripts paired with validated continuous Big Five trait scores. Using this dataset, we systematically evaluate LLM performance across three paradigms: (1) zero-shot and chain-of-thought prompting with GPT-4.1 Mini, (2) LoRA-based fine-tuning applied to both RoBERTa and Meta-LLaMA architectures, and (3) regression using static embeddings from pretrained BERT and OpenAI's text-embedding-3-small. Our results reveal that all Pearson correlations between model predictions and ground-truth personality traits remain below 0.26, highlighting the limited alignment of current LLMs with validated psychological constructs. Chain-of-thought prompting offers minimal gains over zero-shot, suggesting that personality inference relies more on latent semantic representation than explicit reasoning. These findin",
+  "needs_fetch": false
+ },
+ {
+  "id": 1361,
+  "title": "The STARD-AI reporting guideline for diagnostic accuracy studies using artificial intelligence",
+  "org": "deepmind",
+  "date": "2025-09-15",
+  "venue": "Nature Medicine",
+  "url": "https://doi.org/10.1038/s41591-025-03953-8",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 960,
+  "title": "Addendum to GPT-5 system card: GPT-5-Codex",
+  "org": "openai",
+  "date": "2025-09-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-system-card-addendum-gpt-5-codex/",
+  "abstract": "This addendum to the GPT-5 system card shares a new model: GPT-5-Codex, a version of GPT-5 further optimized for agentic coding in Codex. GPT-5-Codex adjusts its thinking effort more dynamically based on task complexity, responding quickly to simple conversational queries or small tasks, while independently working for longer on more complex tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 959,
+  "title": "How people are using ChatGPT",
+  "org": "openai",
+  "date": "2025-09-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/how-people-are-using-chatgpt/",
+  "abstract": "New research from the largest study of ChatGPT use shows how the tool creates economic value through both personal and professional use. Adoption is broadening beyond early users, closing gaps and making AI a part of everyday life.",
+  "needs_fetch": false
+ },
+ {
+  "id": 52,
+  "title": "Anthropic Economic Index: Tracking AIâs role in the US and global economy",
+  "org": "anthropic",
+  "date": "2025-09-15",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/economic-index-geography",
+  "abstract": "This report maps how Claude is used differently across US states and countries, finding strong correlations between income and AI adoption. It also tracks a notable shift: directive automation has risen from 27% to 39% of conversations since December 2024, with businesses automating far more than consumers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 51,
+  "title": "Anthropic Economic Index report: Uneven geographic and enterprise AI adoption",
+  "org": "anthropic",
+  "date": "2025-09-15",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/anthropic-economic-index-september-2025-report",
+  "abstract": "Claude usage has shifted toward educational and scientific tasks with users delegating complete work rather than collaborating. AI adoption concentrates in wealthy regions, with first-time analysis of enterprise API patterns.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2687,
+  "title": "Novel Paradigm for Privacy-Preserving Data Sharing and Anonymization in Smart Homes",
+  "org": "openai",
+  "date": "2025-09-14",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icaifi66942.2025.11326168",
+  "abstract": "The implementing integration of Internet of Things (IoT) devices in smart homes of the contemporary smart cities has provided greater ease of use with high levels of automation. Contrary, an element of increased connectivity brings with it the issues of cybersecurity, including hacking, data breaches, and other forms of malicious cyber activity. Privacy-Preserving Machine Learning (PPML) provides an answer because it enables data computations and detailed analysis to be made while protecting sensitive data about the users. This paper demonstrates the application of PPML techniques, particularly federated learning and homomorphic encryption, PPML used to enhance the protection of smart homes from cyber attacks. These techniques guarantee user anonymity during critical processes on identification of attacks, prevention of attacks and authentication of devices within a distributed learning environment. Relatively, the ease with which PPML has been able to conduct the control of internet of things devices with high efficiency of data circulation demonstrates the ability of these systems to rectify the weaknesses of excess data on privacy and security of user devices, and anonymity. These results are evidence that PPML techniques can be used effectively to defend smart home environments with data privacy and users’ ease of use as a priority.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1362,
+  "title": "Between sound and sleep: a perspective on Sonic Sleep Aids",
+  "org": "deepmind",
+  "date": "2025-09-11",
+  "venue": "SLEEP",
+  "url": "https://doi.org/10.1093/sleep/zsaf275",
+  "abstract": "Sleep disturbances are prevalent in the general population, coinciding with a surge in the availability and use of digital sleep aids. Among these, standalone audio-based tools, termed Sonic Sleep Aids (SSA), such as sleep music, ambient sounds, bedtime stories, and sleep skills (e.g. guided meditation, positive psychology techniques), have gained popularity. This perspective piece examines the phenomenon of SSA by discussing the existing evidence and highlighting the different levels of empirical support across SSA types. Music-based relaxation has demonstrated efficacy in improving sleep quality, whereas findings on ambient sounds (e.g. white, pink noise) are inconclusive. Empirical support for narrated content as a sleep aid remains limited. Guided practices like mindfulness and self-compassion show potential, yet further research is needed to support their effectiveness, particularly when limited to bedtime practice. In the broader context, the widespread use of app-based SSA raises questions about their alignment with sleep hygiene recommendations, which typically discourage bedtime screen use. This concern is compounded by a paucity of randomized controlled trials testing their effectiveness against well-matched controls, alongside the risk of increased dependency on technology and altered relationships with rest and introspection. Against these concerns, potential benefits include accessibility and reduced reliance on pharmacological aids. A research agenda is proposed",
+  "needs_fetch": false
+ },
+ {
+  "id": 667,
+  "title": "FRIT: Using Causal Importance to Improve Chain-of-Thought Faithfulness",
+  "org": "other",
+  "date": "2025-09-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.13334",
+  "abstract": "Chain-of-thought (CoT) reasoning has emerged as a powerful tool for improving large language model performance on complex tasks, but recent work shows that reasoning steps often fail to causally influence the final answer, creating brittle and untrustworthy outputs. Prior approaches focus primarily on measuring faithfulness, while methods for systematically improving it remain limited. We introduce Faithful Reasoning via Intervention Training (FRIT), a scalable alignment method that trains models to produce causally consistent reasoning by learning from systematically corrupted examples. FRIT generates synthetic training data by intervening on individual reasoning steps in model-generated CoTs, creating faithful/unfaithful pairs that highlight when reasoning breaks down. We then apply Direct Preference Optimization to teach models to prefer causally consistent reasoning paths. Evaluating on Qwen3-8B and Mistral-7B-v0.1 across factual and symbolic reasoning tasks, FRIT increases faithful reasoning by $3.4$ percentage points for Mistral on GSM8K while improving accuracy by $7.6$ percentage points. Our approach provides the first scalable, supervision-free method for training language models to produce more reliable and interpretable reasoning, addressing a critical gap between reasoning performance and trustworthiness. We release our code at \\href{https://github.com/Anut-py/frit}.",
+  "needs_fetch": false
+ },
+ {
+  "id": 329,
+  "title": "Improving LLM Safety and Helpfulness using SFT and DPO: A Study on OPT-350M",
+  "org": "other",
+  "date": "2025-09-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.09055",
+  "abstract": "This research investigates the effectiveness of alignment techniques, Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and a combined SFT+DPO approach on improving the safety and helpfulness of the OPT-350M language model. Utilizing the Anthropic Helpful-Harmless RLHF dataset, we train and evaluate four models: the base OPT350M, an SFT model, a DPO model, and a model trained with both SFT and DPO. We introduce three key evaluation metrics: Harmlessness Rate (HmR), Helpfulness Rate (HpR), and a Combined Alignment Score (CAS), all derived from reward model outputs. The results show that while SFT outperforms DPO, The combined SFT+DPO model outperforms all others across all metrics, demonstrating the complementary nature of these techniques. Our findings also highlight challenges posed by noisy data, limited GPU resources, and training constraints. This study offers a comprehensive view of how fine-tuning strategies affect model alignment and provides a foundation for more robust alignment pipelines in future work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 208,
+  "title": "HumanAgencyBench: Scalable Evaluation of Human Agency Support in AI Assistants",
+  "org": "other",
+  "date": "2025-09-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.08494",
+  "abstract": "As humans delegate more tasks and decisions to artificial intelligence (AI), we risk losing control of our individual and collective futures. Relatively simple algorithmic systems already steer human decision-making, such as social media feed algorithms that lead people to unintentionally and absent-mindedly scroll through engagement-optimized content. In this paper, we develop the idea of human agency by integrating philosophical and scientific theories of agency with AI-assisted evaluation methods: using large language models (LLMs) to simulate and validate user queries and to evaluate AI responses. We develop HumanAgencyBench (HAB), a scalable and adaptive benchmark with six dimensions of human agency based on typical AI use cases. HAB measures the tendency of an AI assistant or agent to Ask Clarifying Questions, Avoid Value Manipulation, Correct Misinformation, Defer Important Decisions, Encourage Learning, and Maintain Social Boundaries. We find low-to-moderate agency support in contemporary LLM-based assistants and substantial variation across system developers and dimensions. For example, while Anthropic LLMs most support human agency overall, they are the least supportive LLMs in terms of Avoid Value Manipulation. Agency support does not appear to consistently result from increasing LLM capabilities or instruction-following behavior (e.g., RLHF), and we encourage a shift towards more robust safety and alignment targets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 494,
+  "title": "SimpleQA Verified: A Reliable Factuality Benchmark to Measure Parametric Knowledge",
+  "org": "other",
+  "date": "2025-09-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2509.07968",
+  "abstract": "We introduce SimpleQA Verified, a 1,000-prompt benchmark for evaluating Large Language Model (LLM) short-form factuality based on OpenAI's SimpleQA. It addresses critical limitations in OpenAI's benchmark, including noisy and incorrect labels, topical biases, and question redundancy. SimpleQA Verified was created through a rigorous multi-stage filtering process involving de-duplication, topic balancing, and source reconciliation to produce a more reliable and challenging evaluation set, alongside improvements in the autorater prompt. On this new benchmark, Gemini 2.5 Pro achieves a state-of-the-art F1-score of 55.6, outperforming other frontier models, including GPT-5. This work provides the research community with a higher-fidelity tool to track genuine progress in parametric model factuality and to mitigate hallucinations. The benchmark dataset, evaluation code, and leaderboard are available at: https://www.kaggle.com/benchmarks/deepmind/simpleqa-verified.",
+  "needs_fetch": false
+ },
+ {
+  "id": 961,
+  "title": "Why language models hallucinate",
+  "org": "openai",
+  "date": "2025-09-05",
+  "venue": "arXiv.org",
+  "url": "https://openai.com/index/why-language-models-hallucinate/",
+  "abstract": "Like students facing hard exam questions, large language models sometimes guess when uncertain, producing plausible yet incorrect statements instead of admitting uncertainty. Such\"hallucinations\"persist even in state-of-the-art systems and undermine trust. We argue that language models hallucinate because the training and evaluation procedures reward guessing over acknowledging uncertainty, and we analyze the statistical causes of hallucinations in the modern training pipeline. Hallucinations need not be mysterious -- they originate simply as errors in binary classification. If incorrect statements cannot be distinguished from facts, then hallucinations in pretrained language models will arise through natural statistical pressures. We then argue that hallucinations persist due to the way most evaluations are graded -- language models are optimized to be good test-takers, and guessing when uncertain improves test performance. This\"epidemic\"of penalizing uncertain responses can only be addressed through a socio-technical mitigation: modifying the scoring of existing benchmarks that are misaligned but dominate leaderboards, rather than introducing additional hallucination evaluations. This change may steer the field toward more trustworthy AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1363,
+  "title": "Improving cosmological reach of a gravitational wave observatory using Deep Loop Shaping",
+  "org": "deepmind",
+  "date": "2025-09-04",
+  "venue": "Science",
+  "url": "https://arxiv.org/abs/2509.14016",
+  "abstract": "Improved low-frequency sensitivity of gravitational wave observatories would unlock study of intermediate-mass black hole mergers and binary black hole eccentricity and provide early warnings for multimessenger observations of binary neutron star mergers. Today's mirror stabilization control injects harmful noise, constituting a major obstacle to sensitivity improvements. We eliminated this noise through Deep Loop Shaping, a reinforcement learning method using frequency domain rewards. We proved our methodology on the LIGO Livingston Observatory (LLO). Our controller reduced control noise in the 10- to 30-hertz band by over 30x and up to 100x in subbands, surpassing the design goal motivated by the quantum limit. These results highlight the potential of Deep Loop Shaping to improve current and future gravitational wave observatories and, more broadly, instrumentation and control systems.",
+  "needs_fetch": false
+ }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2296,
+  "title": "Accurate, Low-Latency Visual Perception for Autonomous Racing: Challenges, Mechanisms, and Practical Solutions",
+  "org": "deepmind",
+  "date": "2020-10-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2007.13971",
+  "abstract": "Autonomous racing provides the opportunity to test safety-critical perception pipelines at their limit. This paper describes the practical challenges and solutions to applying state-of-the-art computer vision algorithms to build a low-latency, high-accuracy perception system for DUT18 Driverless (DUT18D), a 4WD electric race car with podium finishes at all Formula Driverless competitions for which it raced. The key components of DUT18D include YOLOv3-based object detection, pose estimation, and time synchronization on its dual stereovision/monovision camera setup. We highlight modifications required to adapt perception CNNs to racing domains, improvements to loss functions used for pose estimation, and methodologies for sub-microsecond camera synchronization among other improvements. We perform a thorough experimental evaluation of the system, demonstrating its accuracy and low-latency in real-world racing scenarios.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2295,
+  "title": "Robotic Table Tennis with Model-Free Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-10-24",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iros45743.2020.9341191",
+  "abstract": "We propose a model-free algorithm for learning efficient policies capable of returning table tennis balls by controlling robot joints at a rate of 100Hz. We demonstrate that evolutionary search (ES) methods acting on CNN-based policy architectures for non-visual inputs and convolving across time learn compact controllers leading to smooth motions. Furthermore, we show that with appropriately tuned curriculum learning on the task and rewards, policies are capable of developing multi-modal styles, specifically forehand and backhand stroke, whilst achieving 80% return rate on a wide range of ball throws. We observe that multi-modality does not require any architectural priors, such as multi-head architectures or hierarchical policies.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2297,
+  "title": "A Short Note on the Kinetics-700-2020 Human Action Dataset",
+  "org": "deepmind",
+  "date": "2020-10-21",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.10864",
+  "abstract": "We describe the 2020 edition of the DeepMind Kinetics human action dataset, which replenishes and extends the Kinetics-700 dataset. In this new version, there are at least 700 video clips from different YouTube videos for each of the 700 classes. This paper details the changes introduced for this new release of the dataset and includes a comprehensive set of statistics as well as baseline results using the I3D network.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2299,
+  "title": "Robust Constrained Reinforcement Learning for Continuous Control with Model Misspecification",
+  "org": "deepmind",
+  "date": "2020-10-20",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.10644",
+  "abstract": "Many real-world physical control systems are required to satisfy constraints upon deployment. Furthermore, real-world systems are often subject to effects such as non-stationarity, wear-and-tear, uncalibrated sensors and so on. Such effects effectively perturb the system dynamics and can cause a policy trained successfully in one domain to perform poorly when deployed to a perturbed version of the same domain. This can affect a policy's ability to maximize future rewards as well as the extent to which it satisfies constraints. We refer to this as constrained model misspecification. We present an algorithm that mitigates this form of misspecification, and showcase its performance in multiple simulated Mujoco tasks from the Real World Reinforcement Learning (RWRL) suite.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2298,
+  "title": "BYOL works even without batch statistics",
+  "org": "deepmind",
+  "date": "2020-10-20",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.10241",
+  "abstract": "Bootstrap Your Own Latent (BYOL) is a self-supervised learning approach for image representation. From an augmented view of an image, BYOL trains an online network to predict a target network representation of a different augmented view of the same image. Unlike contrastive methods, BYOL does not explicitly use a repulsion term built from negative pairs in its training objective. Yet, it avoids collapse to a trivial, constant representation. Thus, it has recently been hypothesized that batch normalization (BN) is critical to prevent collapse in BYOL. Indeed, BN flows gradients across batch elements, and could leak information about negative views in the batch, which could act as an implicit negative (contrastive) term. However, we experimentally show that replacing BN with a batch-independent normalization scheme (namely, a combination of group normalization and weight standardization) achieves performance comparable to vanilla BYOL ($73.9\\%$ vs. $74.3\\%$ top-1 accuracy under the linear evaluation protocol on ImageNet with ResNet-$50$). Our finding disproves the hypothesis that the use of batch statistics is a crucial ingredient for BYOL to learn useful representations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2300,
+  "title": "Human-computer Coalition Formation in Weighted Voting Games",
+  "org": "deepmind",
+  "date": "2020-10-17",
+  "venue": "ACM Transactions on Intelligent Systems and Technology",
+  "url": "https://doi.org/10.1145/3408294",
+  "abstract": "This article proposes a negotiation game, based on the weighted voting paradigm in cooperative game theory, where agents need to form coalitions and agree on how to share the gains. Despite the prevalence of weighted voting in the real world, there has been little work studying people’s behavior in such settings. This work addresses this gap by combining game-theoretic solution concepts with machine learning models for predicting human behavior in such domains. We present a five-player online version of a weighted voting game in which people negotiate to create coalitions. We provide an equilibrium analysis of this game and collect hundreds of instances of people’s play in the game. We show that a machine learning model with features based on solution concepts from cooperative game theory (in particular, an extension of the Deegan-Packel Index) provide a good prediction of people’s decisions to join coalitions in the game. We designed an agent that uses the prediction model to make offers to people in this game and was able to outperform other people in an extensive empirical study. These results demonstrate the benefit of incorporating concepts from cooperative game theory in the design of agents that interact with people in group decision-making settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2301,
+  "title": "Representation Learning via Invariant Causal Mechanisms",
+  "org": "deepmind",
+  "date": "2020-10-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.07922",
+  "abstract": "Self-supervised learning has emerged as a strategy to reduce the reliance on costly supervised signal by pretraining representations only using unlabeled data. These methods combine heuristic proxy classification tasks with data augmentations and have achieved significant success, but our theoretical understanding of this success remains limited. In this paper we analyze self-supervised representation learning using a causal framework. We show how data augmentations can be more effectively utilized through explicit invariance constraints on the proxy classifiers employed during pretraining. Based on this, we propose a novel self-supervised objective, Representation Learning via Invariant Causal Mechanisms (ReLIC), that enforces invariant prediction of proxy targets across augmentations through an invariance regularizer which yields improved generalization guarantees. Further, using causality we generalize contrastive learning, a particular kind of self-supervised method, and provide an alternative theoretical explanation for the success of these methods. Empirically, ReLIC significantly outperforms competing methods in terms of robustness and out-of-distribution generalization on ImageNet, while also significantly outperforming these methods on Atari achieving above human-level performance on $51$ out of $57$ games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2813,
+  "title": "A deep active learning system for species identification and counting in camera trap images",
+  "org": "openai",
+  "date": "2020-10-14",
+  "venue": "Methods in Ecology and Evolution",
+  "url": "https://arxiv.org/abs/1910.09716",
+  "abstract": "Abstract A typical camera trap survey may produce millions of images that require slow, expensive manual review. Consequently, critical conservation questions may be answered too slowly to support decision‐making. Recent studies demonstrated the potential for computer vision to dramatically increase efficiency in image‐based biodiversity surveys; however, the literature has focused on projects with a large set of labelled training images, and hence many projects with a smaller set of labelled images cannot benefit from existing machine learning techniques. Furthermore, even sizable projects have struggled to adopt computer vision methods because classification models overfit to specific image backgrounds (i.e. camera locations). In this paper, we combine the power of machine intelligence and human intelligence via a novel active learning system to minimize the manual work required to train a computer vision model. Furthermore, we utilize object detection models and transfer learning to prevent overfitting to camera locations. To our knowledge, this is the first work to apply an active learning approach to camera trap images. Our proposed scheme can match state‐of‐the‐art accuracy on a 3.2 million image dataset with as few as 14,100 manual labels, which means decreasing manual labelling effort by over 99.5%. Our trained models are also less dependent on background pixels, since they operate only on cropped regions around animals. The proposed active deep learning scheme can si",
+  "needs_fetch": false
+ },
+ {
+  "id": 2302,
+  "title": "Learning Deep Features in Instrumental Variable Regression",
+  "org": "deepmind",
+  "date": "2020-10-14",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.07154",
+  "abstract": "Instrumental variable (IV) regression is a standard strategy for learning causal relationships between confounded treatment and outcome variables from observational data by using an instrumental variable, which affects the outcome only through the treatment. In classical IV regression, learning proceeds in two stages: stage 1 performs linear regression from the instrument to the treatment; and stage 2 performs linear regression from the treatment to the outcome, conditioned on the instrument. We propose a novel method, deep feature instrumental variable regression (DFIV), to address the case where relations between instruments, treatments, and outcomes may be nonlinear. In this case, deep neural nets are trained to define informative nonlinear features on the instruments and treatments. We propose an alternating training regime for these features to ensure good end-to-end performance when composing stages 1 and 2, thus obtaining highly flexible feature maps in a computationally efficient manner. DFIV outperforms recent state-of-the-art methods on challenging IV benchmarks, including settings involving high dimensional image data. DFIV also exhibits competitive performance in off-policy policy evaluation for reinforcement learning, which can be understood as an IV regression task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2304,
+  "title": "Balancing Constraints and Rewards with Meta-Gradient D4PG",
+  "org": "deepmind",
+  "date": "2020-10-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.06324",
+  "abstract": "Deploying Reinforcement Learning (RL) agents to solve real-world applications often requires satisfying complex system constraints. Often the constraint thresholds are incorrectly set due to the complex nature of a system or the inability to verify the thresholds offline (e.g, no simulator or reasonable offline evaluation procedure exists). This results in solutions where a task cannot be solved without violating the constraints. However, in many real-world cases, constraint violations are undesirable yet they are not catastrophic, motivating the need for soft-constrained RL approaches. We present a soft-constrained RL approach that utilizes meta-gradients to find a good trade-off between expected return and minimizing constraint violations. We demonstrate the effectiveness of this approach by showing that it consistently outperforms the baselines across four different MuJoCo domains.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2303,
+  "title": "Targeted free energy estimation via learned mappings",
+  "org": "deepmind",
+  "date": "2020-10-13",
+  "venue": "The Journal of Chemical Physics",
+  "url": "https://arxiv.org/abs/2002.04913",
+  "abstract": "Free energy perturbation (FEP) was proposed by Zwanzig [J. Chem. Phys. 22, 1420 (1954)] more than six decades ago as a method to estimate free energy differences and has since inspired a huge body of related methods that use it as an integral building block. Being an importance sampling based estimator, however, FEP suffers from a severe limitation: the requirement of sufficient overlap between distributions. One strategy to mitigate this problem, called Targeted FEP, uses a high-dimensional mapping in configuration space to increase the overlap of the underlying distributions. Despite its potential, this method has attracted only limited attention due to the formidable challenge of formulating a tractable mapping. Here, we cast Targeted FEP as a machine learning problem in which the mapping is parameterized as a neural network that is optimized so as to increase the overlap. We develop a new model architecture that respects permutational and periodic symmetries often encountered in atomistic simulations and test our method on a fully periodic solvation system. We demonstrate that our method leads to a substantial variance reduction in free energy estimates when compared against baselines, without requiring any additional data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2305,
+  "title": "Qualities valued in nursing staff working with women with a diagnosis of borderline personality disorder in secure care: a multi-perspective study",
+  "org": "deepmind",
+  "date": "2020-10-12",
+  "venue": "Journal of Forensic Psychiatry and Psychology",
+  "url": "https://doi.org/10.1080/14789949.2020.1829004",
+  "abstract": "The approach to female secure care has received increased attention over recent years, with an emphasis on relational security and recovery within the context of therapeutic relationships, but research on the views and experiences of service users regarding their relationships with staff is limited. This study explored the qualities valued in nursing staff working with women with a diagnosis of Borderline Personality Disorder (BPD) from the perspectives of service users and managers of asecure service. Semi-structured interviews with five service users and five managers were analysed using Interpretative Phenomenological Analysis. Three superordinate themes emerged: i) therapeutic relationships; ii) approach and manner; and iii) coping in a challenging environment. The findings revealed similarities in service user and manager perspectives of what is valued in nursing staff; however, a qualitative difference was noted in emphasis of interpersonal skills for service users; and risk management, boundaries and self-management for managers. The findings highlight the importance of research into service user experiences of secure care and representation of service user perspectives in staff recruitment and training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2307,
+  "title": "Artificial Intelligence and the Common Sense of Animals",
+  "org": "deepmind",
+  "date": "2020-10-08",
+  "venue": "Trends in Cognitive Sciences",
+  "url": "https://doi.org/10.1016/j.tics.2020.09.002",
+  "abstract": "•Endowing computers with common sense remains one of the biggest challenges in the field of artificial intelligence (AI).•Most treatments of the topic foreground language, yet an understanding of everyday concepts such as objecthood, containers, obstructions, paths, etc. is arguably: (i) a prerequisite for language, and (ii) evident to some degree in non-human animals.•The recent advent of deep reinforcement learning (RL) in 3D simulated environments allows AI researchers to train and test (virtually) embodied agents in conditions analogous to the life of an animal.•With the right architecture, an RL agent inhabiting a simulated 3D world has the potential to acquire a repertoire of fundamental common sense concepts and principles, given suitable environments, tasks, and curricula.•Experimental protocols from the field of animal cognition can be repurposed for evaluating the extent to which an agent, after training, ‘understands’ a common sense concept or principle, in particular in a transfer setting. The problem of common sense remains a major obstacle to progress in artificial intelligence. Here, we argue that common sense in humans is founded on a set of basic capacities that are possessed by many other animals, capacities pertaining to the understanding of objects, space, and causality. The field of animal cognition has developed numerous experimental protocols for studying these capacities and, thanks to progress in deep reinforcement learning (RL), it is now possible to",
+  "needs_fetch": false
+ },
+ {
+  "id": 2306,
+  "title": "Graph neural networks in particle physics",
+  "org": "deepmind",
+  "date": "2020-10-08",
+  "venue": "Machine Learning Science and Technology",
+  "url": "https://arxiv.org/abs/2007.13681",
+  "abstract": "Particle physics is a branch of science aiming at discovering the fundamental laws of matter and forces. Graph neural networks are trainable functions which operate on graphs-sets of elements and their pairwise relations-and are a central method within the broader field of geometric deep learning. They are very expressive and have demonstrated superior performance to other classical deep learning approaches in a variety of domains. The data in particle physics are often represented by sets and graphs and as such, graph neural networks offer key advantages. Here we review various applications of graph neural networks in particle physics, including different graph constructions, model architectures and learning objectives, as well as key open problems in particle physics for which graph neural networks are promising.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2309,
+  "title": "Episodic Reinforcement Learning in Finite MDPs: Minimax Lower Bounds\\n Revisited",
+  "org": "deepmind",
+  "date": "2020-10-07",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.03531",
+  "abstract": "In this paper, we propose new problem-independent lower bounds on the sample\\ncomplexity and regret in episodic MDPs, with a particular focus on the\\nnon-stationary case in which the transition kernel is allowed to change in each\\nstage of the episode. Our main contribution is a novel lower bound of\\n$\\\\Omega((H^3SA/\\\\epsilon^2)\\\\log(1/\\\\delta))$ on the sample complexity of an\\n$(\\\\varepsilon,\\\\delta)$-PAC algorithm for best policy identification in a\\nnon-stationary MDP. This lower bound relies on a construction of \"hard MDPs\"\\nwhich is different from the ones previously used in the literature. Using this\\nsame class of MDPs, we also provide a rigorous proof of the\\n$\\\\Omega(\\\\sqrt{H^3SAT})$ regret bound for non-stationary MDPs. Finally, we\\ndiscuss connections to PAC-MDP lower bounds.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2308,
+  "title": "Social discounting of pain",
+  "org": "deepmind",
+  "date": "2020-10-07",
+  "venue": "Journal of the Experimental Analysis of Behavior",
+  "url": "https://doi.org/10.1002/jeab.631",
+  "abstract": "Impatience can be formalized as a delay discount rate, describing how the subjective value of reward decreases as it is delayed. By analogy, selfishness can be formalized as a social discount rate, representing how the subjective value of rewarding another person decreases with increasing social distance. Delay and social discount rates for reward are correlated across individuals. However no previous work has examined whether this relationship also holds for aversive outcomes. Neither has previous work described a functional form for social discounting of pain in humans. This is a pertinent question, since preferences over aversive outcomes formally diverge from those for reward. We addressed this issue in an experiment in which healthy adult participants (N = 67) chose the timing and intensity of hypothetical pain for themselves and others. In keeping with previous studies, participants showed a strong preference for immediate over delayed pain. Participants showed greater concern for pain in close others than for their own pain, though this hyperaltruism was steeply discounted with increasing social distance. Impatience for pain and social discounting of pain were weakly correlated across individuals. Our results extend a link between impatience and selfishness to the aversive domain.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2311,
+  "title": "Improving Relational Regularized Autoencoders with Spherical Sliced\\n Fused Gromov Wasserstein",
+  "org": "deepmind",
+  "date": "2020-10-05",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.01787",
+  "abstract": "Relational regularized autoencoder (RAE) is a framework to learn the\\ndistribution of data by minimizing a reconstruction loss together with a\\nrelational regularization on the latent space. A recent attempt to reduce the\\ninner discrepancy between the prior and aggregated posterior distributions is\\nto incorporate sliced fused Gromov-Wasserstein (SFG) between these\\ndistributions. That approach has a weakness since it treats every slicing\\ndirection similarly, meanwhile several directions are not useful for the\\ndiscriminative task. To improve the discrepancy and consequently the relational\\nregularization, we propose a new relational discrepancy, named spherical sliced\\nfused Gromov Wasserstein (SSFG), that can find an important area of projections\\ncharacterized by a von Mises-Fisher distribution. Then, we introduce two\\nvariants of SSFG to improve its performance. The first variant, named mixture\\nspherical sliced fused Gromov Wasserstein (MSSFG), replaces the vMF\\ndistribution by a mixture of von Mises-Fisher distributions to capture multiple\\nimportant areas of directions that are far from each other. The second variant,\\nnamed power spherical sliced fused Gromov Wasserstein (PSSFG), replaces the vMF\\ndistribution by a power spherical distribution to improve the sampling time in\\nhigh dimension settings. We then apply the new discrepancies to the RAE\\nframework to achieve its new variants. Finally, we conduct extensive\\nexperiments to show that the new proposed autoenco",
+  "needs_fetch": false
+ },
+ {
+  "id": 2310,
+  "title": "Temporal Difference Uncertainties as a Signal for Exploration",
+  "org": "deepmind",
+  "date": "2020-10-05",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.02255",
+  "abstract": "An effective approach to exploration in reinforcement learning is to rely on an agent's uncertainty over the optimal policy, which can yield near-optimal exploration strategies in tabular settings. However, in non-tabular settings that involve function approximators, obtaining accurate uncertainty estimates is almost as challenging a problem. In this paper, we highlight that value estimates are easily biased and temporally inconsistent. In light of this, we propose a novel method for estimating uncertainty over the value function that relies on inducing a distribution over temporal difference errors. This exploration signal controls for state-action transitions so as to isolate uncertainty in value that is due to uncertainty over the agent's parameters. Because our measure of uncertainty conditions on state-action transitions, we cannot act on this measure directly. Instead, we incorporate it as an intrinsic reward and treat exploration as a separate learning problem, induced by the agent's temporal difference uncertainties. We introduce a distinct exploration policy that learns to collect data with high estimated uncertainty, which gives rise to a curriculum that smoothly changes throughout learning and vanishes in the limit of perfect value estimates. We evaluate our method on hard exploration tasks, including Deep Sea and Atari 2600 environments and find that our proposed form of exploration facilitates both diverse and deep exploration.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2814,
+  "title": "Emergent Social Learning via Multi-agent Reinforcement Learning",
+  "org": "openai",
+  "date": "2020-10-01",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.00581",
+  "abstract": "Social learning is a key component of human and animal intelligence. By taking cues from the behavior of experts in their environment, social learners can acquire sophisticated behavior and rapidly adapt to new circumstances. This paper investigates whether independent reinforcement learning (RL) agents in a multi-agent environment can learn to use social learning to improve their performance. We find that in most circumstances, vanilla model-free RL agents do not use social learning. We analyze the reasons for this deficiency, and show that by imposing constraints on the training environment and introducing a model-based auxiliary loss we are able to obtain generalized social learning policies which enable agents to: i) discover complex skills that are not learned from single-agent training, and ii) adapt online to novel environments by taking cues from experts present in the new environment. In contrast, agents trained with model-free RL or imitation learning generalize poorly and do not succeed in the transfer tasks. By mixing multi-agent and solo training, we can obtain agents that use social learning to gain skills that they can deploy when alone, even out-performing agents trained alone from the start.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2312,
+  "title": "Automatic Discovery of Privacy–Utility Pareto Fronts",
+  "org": "deepmind",
+  "date": "2020-10-01",
+  "venue": "DOAJ (DOAJ: Directory of Open Access Journals)",
+  "url": "https://doaj.org/article/e56b837c0845448ca65e693881073aa0",
+  "abstract": "Differential privacy is a mathematical framework for privacy-preserving data analysis. Changing the hyperparameters of a differentially private algorithm allows one to trade off privacy and utility in a principled way. Quantifying this trade-off in advance is essential to decision-makers tasked with deciding how much privacy can be provided in a particular application while maintaining acceptable utility. Analytical utility guarantees offer a rigorous tool to reason about this tradeoff, but are generally only available for relatively simple problems. For more complex tasks, such as training neural networks under differential privacy, the utility achieved by a given algorithm can only be measured empirically. This paper presents a Bayesian optimization methodology for efficiently characterizing the privacy– utility trade-off of any differentially private algorithm using only empirical measurements of its utility. The versatility of our method is illustrated on a number of machine learning tasks involving multiple models, optimizers, and datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2313,
+  "title": "Good Hair Day: The Science Behind Hair-care Products",
+  "org": "deepmind",
+  "date": "2020-09-29",
+  "venue": null,
+  "url": "https://doi.org/10.1039/bk9781782624721-00043",
+  "abstract": "Hair, for many of us, defines who we are and is our ‘crowning glory’. This chapter provides an overview of the science that underpins product development in the hair-care category. It describes the structure of the hair fibre and the processes involved in hair growth. It then shows how things can ‘go wrong’, resulting in hair damage, greying, hair loss or combinations of these effects. The chapter also covers the chemistry that is used to create the products that we use every day and the measurement techniques used to test product performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2315,
+  "title": "Modelling parameter uncertainty reveals bushmeat yields versus survival trade-offs in heavily-hunted duiker Cephalophus spp.",
+  "org": "deepmind",
+  "date": "2020-09-28",
+  "venue": "PLoS ONE",
+  "url": "https://doi.org/10.1371/journal.pone.0234595",
+  "abstract": "Reliably predicting sustainable exploitation levels for many tropical species subject to hunting remains a difficult task, largely because of the inherent uncertainty associated with estimating parameters related to both population dynamics and hunting pressure. Here, we investigate a modelling approach to support decisions in bushmeat management which explicitly considers parameter uncertainty. We apply the approach to duiker Cephalophus spp., assuming either a constant quota-based, or a constant proportional harvesting, strategy. Within each strategy, we evaluate different hunting levels in terms of both average yield and survival probability, over different time horizons. Under quota-based harvesting, considering uncertainty revealed a trade-off between yield and extinction probability that was not evident when ignoring uncertainty. The highest yield was returned by a quota that implied a 40% extinction risk, whereas limiting extinction risk to 10% reduced yield by 50%-70%. By contrast, under proportional harvesting, there was no trade-off between yield and extinction probability. The maximum proportion returned a yield comparable with the maximum possible under quota-based harvesting, but with extinction risk below 10%. However, proportional harvesting can be harder to implement in practice because it depends on an estimate of population size. In both harvesting approaches, predicted yields were highly right-skewed with median yields differing from mean yields, implying t",
+  "needs_fetch": false
+ },
+ {
+  "id": 2314,
+  "title": "Placing language in an integrated understanding system: Next steps toward human-level performance in neural language models",
+  "org": "deepmind",
+  "date": "2020-09-28",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.1910416117",
+  "abstract": "Language is crucial for human intelligence, but what exactly is its role? We take language to be a part of a system for understanding and communicating about situations. In humans, these abilities emerge gradually from experience and depend on domain-general principles of biological neural networks: connection-based learning, distributed representation, and context-sensitive, mutual constraint satisfaction-based processing. Current artificial language processing systems rely on the same domain general principles, embodied in artificial neural networks. Indeed, recent progress in this field depends on query-based attention, which extends the ability of these systems to exploit context and has contributed to remarkable breakthroughs. Nevertheless, most current models focus exclusively on language-internal tasks, limiting their ability to perform tasks that depend on understanding situations. These systems also lack memory for the contents of prior situations outside of a fixed contextual span. We describe the organization of the brain's distributed understanding system, which includes a fast learning system that addresses the memory problem. We sketch a framework for future models of understanding drawing equally on cognitive neuroscience and artificial intelligence and exploiting query-based attention. We highlight relevant current directions and consider further developments needed to fully capture human-level language understanding in a computational system.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2316,
+  "title": "Small Data, Big Decisions: Model Selection in the Small-Data Regime",
+  "org": "deepmind",
+  "date": "2020-09-26",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2009.12583",
+  "abstract": "Highly overparametrized neural networks can display curiously strong generalization performance - a phenomenon that has recently garnered a wealth of theoretical and empirical research in order to better understand it. In contrast to most previous work, which typically considers the performance as a function of the model size, in this paper we empirically study the generalization performance as the size of the training set varies over multiple orders of magnitude. These systematic experiments lead to some interesting and potentially very useful observations; perhaps most notably that training on smaller subsets of the data can lead to more reliable model selection decisions whilst simultaneously enjoying smaller computational costs. Our experiments furthermore allow us to estimate Minimum Description Lengths for common datasets given modern neural network architectures, thereby paving the way for principled model selection taking into account Occams-razor.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2317,
+  "title": "Multi-step planning in the brain",
+  "org": "deepmind",
+  "date": "2020-09-21",
+  "venue": "Current Opinion in Behavioral Sciences",
+  "url": "https://doi.org/10.1016/j.cobeha.2020.07.003",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2318,
+  "title": "Hidden Incentives for Auto-Induced Distributional Shift",
+  "org": "deepmind",
+  "date": "2020-09-19",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2009.09153",
+  "abstract": "Decisions made by machine learning systems have increasing influence on the world, yet it is common for machine learning algorithms to assume that no such influence exists. An example is the use of the i.i.d. assumption in content recommendation. In fact, the (choice of) content displayed can change users' perceptions and preferences, or even drive them away, causing a shift in the distribution of users. We introduce the term auto-induced distributional shift (ADS) to describe the phenomenon of an algorithm causing a change in the distribution of its own inputs. Our goal is to ensure that machine learning systems do not leverage ADS to increase performance when doing so could be undesirable. We demonstrate that changes to the learning algorithm, such as the introduction of meta-learning, can cause hidden incentives for auto-induced distributional shift (HI-ADS) to be revealed. To address this issue, we introduce `unit tests' and a mitigation strategy for HI-ADS, as well as a toy environment for modelling real-world issues with HI-ADS in content recommendation, where we demonstrate that strong meta-learners achieve gains in performance via ADS. We show meta-learning and Q-learning both sometimes fail unit tests, but pass when using our mitigation strategy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2815,
+  "title": "Improving the accessibility and transferability of machine learning algorithms for identification of animals in camera trap images: MLWIC2",
+  "org": "openai",
+  "date": "2020-09-16",
+  "venue": "Ecology and Evolution",
+  "url": "https://doi.org/10.1002/ece3.6692",
+  "abstract": "Motion-activated wildlife cameras (or \"camera traps\") are frequently used to remotely and noninvasively observe animals. The vast number of images collected from camera trap projects has prompted some biologists to employ machine learning algorithms to automatically recognize species in these images, or at least filter-out images that do not contain animals. These approaches are often limited by model transferability, as a model trained to recognize species from one location might not work as well for the same species in different locations. Furthermore, these methods often require advanced computational skills, making them inaccessible to many biologists. We used 3 million camera trap images from 18 studies in 10 states across the United States of America to train two deep neural networks, one that recognizes 58 species, the \"species model,\" and one that determines if an image is empty or if it contains an animal, the \"empty-animal model.\" Our species model and empty-animal model had accuracies of 96.8% and 97.3%, respectively. Furthermore, the models performed well on some out-of-sample datasets, as the species model had 91% accuracy on species from Canada (accuracy range 36%-91% across all out-of-sample datasets) and the empty-animal model achieved an accuracy of 91%-94% on out-of-sample datasets from different continents. Our software addresses some of the limitations of using machine learning to classify images from camera traps. By including many species from several lo",
+  "needs_fetch": false
+ },
+ {
+  "id": 2319,
+  "title": "<i>Ab initio</i> solution of the many-electron Schrödinger equation with deep neural networks",
+  "org": "deepmind",
+  "date": "2020-09-16",
+  "venue": "Physical Review Research",
+  "url": "https://arxiv.org/abs/1909.02487",
+  "abstract": "Given access to accurate solutions of the many-electron Schrdinger equation, nearly all chemistry could be derived from first principles. Exact wave functions of interesting chemical systems are out of reach because they are NP-hard to compute in general, but approximations can be found using polynomially scaling algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2816,
+  "title": "The Importance of Pessimism in Fixed-Dataset Policy Optimization",
+  "org": "openai",
+  "date": "2020-09-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2009.06799",
+  "abstract": "We study worst-case guarantees on the expected return of fixed-dataset policy optimization algorithms. Our core contribution is a unified conceptual and mathematical framework for the study of algorithms in this regime. This analysis reveals that for naive approaches, the possibility of erroneous value overestimation leads to a difficult-to-satisfy requirement: in order to guarantee that we select a policy which is near-optimal, we may need the dataset to be informative of the value of every policy. To avoid this, algorithms can follow the pessimism principle, which states that we should choose the policy which acts optimally in the worst possible world. We show why pessimistic algorithms can achieve good performance even when the dataset is not informative of every policy, and derive families of algorithms which follow this principle. These theoretical findings are validated by experiments on a tabular gridworld, and deep learning experiments on four MinAtar environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2320,
+  "title": "Equivariant Flow-Based Sampling for Lattice Gauge Theory",
+  "org": "deepmind",
+  "date": "2020-09-15",
+  "venue": "Physical Review Letters",
+  "url": "https://arxiv.org/abs/2003.06413",
+  "abstract": "We define a class of machine-learned flow-based sampling algorithms for lattice gauge theories that are gauge invariant by construction. We demonstrate the application of this framework to U(1) gauge theory in two spacetime dimensions, and find that, at small bare coupling, the approach is orders of magnitude more efficient at sampling topological quantities than more traditional sampling procedures such as hybrid Monte Carlo and heat bath.",
+  "needs_fetch": false
+ }
+]

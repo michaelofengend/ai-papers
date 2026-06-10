@@ -1,0 +1,302 @@
+[
+ {
+  "id": 948,
+  "title": "How evals drive the next chapter in AI for businesses",
+  "org": "openai",
+  "date": "2025-11-19",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/evals-drive-next-chapter-of-ai/",
+  "abstract": "Learn how evals help businesses define, measure, and improve AI performance—reducing risk, boosting productivity, and driving strategic advantage.",
+  "needs_fetch": false
+ },
+ {
+  "id": 947,
+  "title": "GPT-5.1-Codex-Max System Card",
+  "org": "openai",
+  "date": "2025-11-19",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-1-codex-max-system-card/",
+  "abstract": "This system card outlines the comprehensive safety measures implemented for GPT‑5.1-CodexMax. It details both model-level mitigations, such as specialized safety training for harmful tasks and prompt injections, and product-level mitigations like agent sandboxing and configurable network access.",
+  "needs_fetch": false
+ },
+ {
+  "id": 315,
+  "title": "Selective Weak-to-Strong Generalization",
+  "org": "other",
+  "date": "2025-11-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.14166",
+  "abstract": "Future superhuman models will surpass the ability of humans and humans will only be able to \\textit{weakly} supervise superhuman models. To alleviate the issue of lacking high-quality data for model alignment, some works on weak-to-strong generalization (W2SG) finetune a strong pretrained model with a weak supervisor so that it can generalize beyond weak supervision. However, the invariable use of weak supervision in existing methods exposes issues in robustness, with a proportion of weak labels proving harmful to models. In this paper, we propose a selective W2SG framework to avoid using weak supervision when unnecessary. We train a binary classifier P(IK) to identify questions that a strong model can answer and use its self-generated labels for alignment. We further refine weak labels with a graph smoothing method. Extensive experiments on three benchmarks show that our method consistently outperforms competitive baselines. Further analyses show that P(IK) can generalize across tasks and difficulties, which indicates selective W2SG can help superalignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2679,
+  "title": "Canadian ophthalmology workforce trends from 1971 to 2022: longitudinal analysis of age, sex, and distribution compared to other surgical specialties",
+  "org": "openai",
+  "date": "2025-11-17",
+  "venue": "Canadian Journal of Ophthalmology",
+  "url": "https://doi.org/10.1016/j.jcjo.2025.09.013",
+  "abstract": "OBJECTIVE: We describe the evolution of the demographics in the Canadian ophthalmology workforce and compare these trends to other surgical specialists. STUDY DESIGN: A longitudinal observational study. PARTICIPANTS: Surgical specialists identified in the Canadian Institute for Health Information's \"Supply, Distribution, and Migration of Physicians in Canada\" (SDMP) database from 1971 to 2022. Categories included cardiac, general, orthopedic, plastic, and vascular surgery; obstetrics and gynecology; ophthalmology; otolaryngology; and urology. METHODS: Demographic data were extracted from the SDMP database. Descriptive statistics were used to determine mean age, male-to-female ratio, urban-to-rural ratio, percentage of physicians under age 40 and above age 65, Canadian-to-foreign trained ratio, and physicians-to-100,000 population ratio for ophthalmologists and other surgeons by decade. RESULTS: Ophthalmologists and other surgeons aged significantly, and ophthalmologists were significantly older than other surgeons (mean age: 52.15 vs 49.73 years; p < 0.01). The percentage above age 65 doubled for both groups, reaching 21.51% for ophthalmologists and 15.31% for other surgeons. Male-to-female ratios decreased 11-fold for ophthalmologists, now 2.54:1, and 17-fold for other surgeons, now 2.01:1. Surgeon-to-100,000 population ratio increased from 22.97 to 25.53 (p < 0.001), whereas ophthalmologist ratios increased slightly from 3.27 to 3.51 (p < 0.001). Urban-to-rural distribution",
+  "needs_fetch": false
+ },
+ {
+  "id": 568,
+  "title": "Weight-sparse transformers have interpretable circuits",
+  "org": "openai",
+  "date": "2025-11-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.13653",
+  "abstract": "Finding human-understandable circuits in language models is a central goal of the field of mechanistic interpretability. We train models to have more understandable circuits by constraining most of their weights to be zeros, so that each neuron only has a few connections. To recover fine-grained circuits underlying each of several hand-crafted tasks, we prune the models to isolate the part responsible for the task. These circuits often contain neurons and residual channels that correspond to natural concepts, with a small number of straightforwardly interpretable connections between them. We study how these models scale and find that making weights sparser trades off capability for interpretability, and scaling model size improves the capability-interpretability frontier. However, scaling sparse models beyond tens of millions of nonzero parameters while preserving interpretability remains a challenge. In addition to training weight-sparse models de novo, we show preliminary results suggesting our method can also be adapted to explain existing dense models. Our work produces circuits that achieve an unprecedented level of human understandability and validates them with considerable rigor.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1319,
+  "title": "Excitatory-Inhibitory Dynamics in Adaptive Decision-Making",
+  "org": "deepmind",
+  "date": "2025-11-15",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-981-95-4381-6_5",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1320,
+  "title": "AI-discovered tuning laws explain neuronal population code geometry",
+  "org": "deepmind",
+  "date": "2025-11-13",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.11.12.688086",
+  "abstract": "The activity of visual cortical neurons forms a population code representing image stimuli. There is, however, a discrepancy between our understanding of this code at the single-cell and population levels: direct measurements indicate the population code is high-dimensional, but established models of single-cell tuning give rise to low-dimensional codes. We reconciled this discrepancy by developing an AI science system to find a new parsimonious, interpretable equation for visual cortical orientation tuning. Candidate equations were expressed as short computer programs and evolved by Large Language Models (LLMs) using graphical diagnostics. The resulting equation not only improved single-cell fits, but also accurately modelled the population code’s high-dimensional geometry. A novel parameter of the AI-discovered equation, which controls single-cell tuning smoothness, gives rise to high-dimensional population codes. The same parameter drives high-dimensional coding in head-direction cells, suggesting a common coding strategy across brain regions. We used this equation to hypothesize a circuit mechanism generating high-dimensional population codes, and to demonstrate the advantages of these codes in a simulated hyperacuity task. These results show that tuning smoothness has a key role in controlling population code geometry, and demonstrate how AI equation discovery can deliver interpretable models accelerating scientific understanding in neuroscience and beyond.",
+  "needs_fetch": false
+ },
+ {
+  "id": 949,
+  "title": "Understanding neural networks through sparse circuits",
+  "org": "openai",
+  "date": "2025-11-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/understanding-neural-networks-through-sparse-circuits/",
+  "abstract": "OpenAI is exploring mechanistic interpretability to understand how neural networks reason. Our new sparse model approach could make AI systems more transparent and support safer, more reliable behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1322,
+  "title": "Computational search for materials having a giant anomalous Hall effect in the pyrochlore and spinel crystal structures",
+  "org": "deepmind",
+  "date": "2025-11-12",
+  "venue": "Physical Review Materials",
+  "url": "https://doi.org/10.1103/nbvq-gykq",
+  "abstract": "Oxides in the pyrochlore and spinel crystal structures have the potential to host topological flat bands and exhibit the anomalous Hall effect. This work uses high-throughput density functional theory calculations to search for new magnetic oxides in these structures. The results indicate several new candidates for synthesis and reveal new understanding about the crystal chemistry of this class of materials.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1321,
+  "title": "Olympiad-level formal mathematical reasoning with reinforcement learning",
+  "org": "deepmind",
+  "date": "2025-11-12",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-09833-y",
+  "abstract": "Abstract A long-standing goal of artificial intelligence (AI) is to build systems capable of complex reasoning in vast domains, a task epitomized by mathematics with its boundless concepts and demand for rigorous proof. Recent AI systems, often reliant on human data, typically lack the formal verification necessary to guarantee correctness. By contrast, formal languages such as Lean 1 offer an interactive environment that grounds reasoning, and reinforcement learning (RL) provides a mechanism for learning in such environments. Here we present AlphaProof, an AlphaZero-inspired 2 agent that learns to find formal proofs through RL by training on millions of auto-formalized problems. For the most difficult problems, it uses test-time RL, a method of generating and learning from millions of related problem variants at inference time to enable deep, problem-specific adaptation. AlphaProof substantially improves state-of-the-art results on historical mathematics competition problems. At the 2024 International Mathematical Olympiad competition, our AI system, with AlphaProof as its core reasoning engine, solved three out of the five non-geometry problems, including the competition’s most difficult problem. Combined with AlphaGeometry 2 3 , this performance, achieved with multi-day computation, resulted in reaching a score equivalent to that of a silver medallist, marking the first time an AI system achieved any medal-level performance, to our knowledge. Our work demonstrates that lea",
+  "needs_fetch": false
+ },
+ {
+  "id": 1183,
+  "title": "Aligning machine and human visual representations across abstraction levels",
+  "org": "anthropic",
+  "date": "2025-11-12",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-09631-6",
+  "abstract": "Abstract Deep neural networks have achieved success across a wide range of applications, including as models of human behaviour and neural representations in vision tasks 1,2 . However, neural network training and human learning differ in fundamental ways, and neural networks often fail to generalize as robustly as humans do 3,4 , raising questions regarding the similarity of their underlying representations. We need to determine what is missing for modern learning systems to exhibit more human-aligned behaviour. Here we highlight a key misalignment between vision models and humans: whereas human conceptual knowledge is hierarchically organized from fine- to coarse-scale distinctions (for example, ref. 5 ), model representations do not accurately capture all these levels of abstraction. To address this misalignment, we first train a teacher model to imitate human judgements, then transfer human-aligned structure from its representations to refine the representations of pretrained state-of-the-art vision foundation models via fine-tuning. These human-aligned models more accurately approximate human behaviour and uncertainty across a wide range of similarity tasks, including a dataset of human judgements spanning multiple levels of semantic abstractions. They also perform better on a diverse set of machine learning tasks, increasing generalization and out-of-distribution robustness. Thus, infusing neural networks with additional human knowledge yields a best-of-both-worlds repr",
+  "needs_fetch": false
+ },
+ {
+  "id": 950,
+  "title": "GPT-5.1 Instant and GPT-5.1 Thinking System Card Addendum",
+  "org": "openai",
+  "date": "2025-11-12",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-system-card-addendum-gpt-5-1/",
+  "abstract": "This GPT-5 system card addendum provides updated safety metrics for GPT-5.1 Instant and Thinking, including new evaluations for mental health and emotional reliance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 480,
+  "title": "mmJEE-Eval: A Bilingual Multimodal Benchmark for Evaluating Scientific Reasoning in Vision-Language Models",
+  "org": "other",
+  "date": "2025-11-12",
+  "venue": "ACL",
+  "url": "https://arxiv.org/abs/2511.09339",
+  "abstract": "Contemporary vision-language models (VLMs) perform well on existing multimodal reasoning benchmarks (78-85\\% accuracy on MMMU, MathVista). Yet, these results fail to sufficiently distinguish true scientific reasoning articulation capabilities from pattern-matching. To address this gap, we introduce \\textbf{mmJEE-Eval}, a multimodal bilingual (English and Hindi) benchmark comprising 1,460 questions from India's JEE Advanced examination (2019-2025) spanning pre-college Physics, Chemistry, and Mathematics domains. Our evaluation of 17 state-of-the-art models reveals that while frontier VLMs (GPT-5, Gemini 2.5 Pro/Flash) achieve 77-84\\% accuracy on held-out 2025 questions, open-source models plateau at 37-45\\% despite scaling to 400B parameters, a significant difference not observed on existing benchmarks. While closed frontiers from Google and OpenAI show high problem-solving accuracies (up to 100\\% pass@3 scores), they fully collapse when the reasoning load is increased meta-cognitively (GPT-5 fixes just 5.2\\% errors). Systematic ablations show mmJEE-Eval's difficulty stems from complexity and reasoning depth rather than memorization. Effectively, our benchmark segregates superior training and reasoning methodologies where alternatives fail. We publicly release our code and data: https://mmjee-eval.github.io",
+  "needs_fetch": false
+ },
+ {
+  "id": 44,
+  "title": "Project Fetch: Can Claude train a robot dog?",
+  "org": "anthropic",
+  "date": "2025-11-12",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/project-fetch-robot-dog",
+  "abstract": "How much does Claude help people program robots? To find out, two teams of Anthropic staff raced to teach quadruped robots to fetch beach balls. The AI-assisted team completed tasks faster and was the only group to make real progress toward full autonomy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 659,
+  "title": "Investigating CoT Monitorability in Large Reasoning Models",
+  "org": "other",
+  "date": "2025-11-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.08525",
+  "abstract": "Large Reasoning Models (LRMs) have demonstrated remarkable performance on complex tasks by engaging in extended reasoning before producing final answers. Beyond improving abilities, these detailed reasoning traces also create a new opportunity for AI safety, CoT Monitorability: monitoring potential model misbehavior, such as the use of shortcuts or sycophancy, through their chain-of-thought (CoT) during decision-making. However, two key fundamental challenges arise when attempting to build more effective monitors through CoT analysis. First, as prior research on CoT faithfulness has pointed out, models do not always truthfully represent their internal decision-making in the generated reasoning. Second, monitors themselves may be either overly sensitive or insufficiently sensitive, and can potentially be deceived by models' long, elaborate reasoning traces. In this paper, we present the first systematic investigation of the challenges and potential of CoT monitorability. Motivated by two fundamental challenges we mentioned before, we structure our study around two central perspectives: (i) verbalization: to what extent do LRMs faithfully verbalize the true factors guiding their decisions in the CoT, and (ii) monitor reliability: to what extent can misbehavior be reliably detected by a CoT-based monitor? Specifically, we provide empirical evidence and correlation analyses between verbalization quality, monitor reliability, and LLM performance across mathematical, scientific, an",
+  "needs_fetch": false
+ },
+ {
+  "id": 2680,
+  "title": "TransAct V2: Lifelong User Action Sequence Modeling on Pinterest Recommendation",
+  "org": "openai",
+  "date": "2025-11-08",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3746252.3761433",
+  "abstract": "Modeling user action sequences has become a popular focus in industrial recommendation system research, particularly for Click-Through Rate (CTR) prediction tasks. However, industry-scale CTR models often rely on short user sequences, limiting their ability to capture long-term behavior. They also rarely address the infrastructure challenges involved in efficiently serving large-scale sequential models. Additionally, these models typically lack an integrated action-prediction task within a point-wise ranking framework, reducing their predictive power. We introduce TransAct V2, a production model for Pinterest's Homefeed ranking system, featuring three key innovations: (1) leveraging very long user sequences to improve CTR predictions, (2) employing scalable, low-latency deployment solutions tailored to handle the computational demands of extended user action sequences, and (3) integrating a Next Action Loss function for enhanced user action forecasting. To overcome latency and storage constraints, we leverage efficient data-processing strategies and model-serving optimizations, enabling seamless industrial-scale deployment. Our approach's effectiveness is further demonstrated through ablation studies. Furthermore, extensive offline and online A/B experiments confirm major gains in key metrics, including engagement volume and recommendation diversity, showcasing TransAct V2's real-world impact.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1323,
+  "title": "Recurrent U-Net-based Graph Neural Network (RUGNN) for accurate deformation predictions in sheet material forming",
+  "org": "deepmind",
+  "date": "2025-11-08",
+  "venue": "Advanced Engineering Informatics",
+  "url": "https://doi.org/10.1016/j.aei.2025.104021",
+  "abstract": "• A novel GNN-based surrogate model predicts material deformation with high accuracy. • Recurrent structures capture temporal dynamics in large material deformations. • Graph U-Net architecture efficiently processes large and complex geometries. • New contact representation method improves efficiency in large contact interactions. • The model facilitates manufacturability assessment in material forming. In recent years, various artificial intelligence-based surrogate models have been proposed to provide rapid manufacturability predictions of material forming processes. However, traditional AI-based surrogate models, typically built with scalar or image-based neural networks, are limited in their ability to capture complex 3D spatial relationships and to operate in a permutation-invariant manner. To overcome these issues, emerging graph-based surrogate models are developed using graph neural networks. This study developed a new graph neural network surrogate model named Recurrent U Net-based Graph Neural Network (RUGNN). The RUGNN model can achieve accurate predictions of sheet material deformation fields across multiple forming timesteps. The RUGNN model incorporates Gated Recurrent Units (GRUs) to model temporal dynamics and a U-Net inspired graph-based downsample/upsample mechanism to handle spatial long-range dependencies. A novel ’node-to-surface’ contact representation method was proposed, offering significant improvements in computational efficiency for large-scale cont",
+  "needs_fetch": false
+ },
+ {
+  "id": 152,
+  "title": "Strengthening Red Teams: A Modular Scaffold for Control Evaluations",
+  "org": "anthropic",
+  "date": "2025-11-06",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/strengthening-red-teams/",
+  "abstract": "We decompose sabotage into constituent skills and use synthetic simulations to strengthen attacks in complex environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1324,
+  "title": "We need accountability in human–AI agent relationships",
+  "org": "deepmind",
+  "date": "2025-11-05",
+  "venue": "npj Artificial Intelligence",
+  "url": "https://doi.org/10.1038/s44387-025-00041-7",
+  "abstract": "We argue that accountability mechanisms are needed in human-AI agent relationships to ensure alignment with user and societal interests. We propose a framework according to which AI agents’ engagement is conditional on appropriate user behaviour. The framework incorporates design-strategies such as distancing, disengaging, and discouraging.",
+  "needs_fetch": false
+ },
+ {
+  "id": 687,
+  "title": "To Mask or to Mirror: Human-AI Alignment in Collective Reasoning",
+  "org": "deepmind",
+  "date": "2025-11-04",
+  "venue": "EMNLP 2025",
+  "url": "https://aclanthology.org/2025.emnlp-main.122/",
+  "abstract": "As large language models (LLMs) are increasingly used to model and augment collective decision-making, it is critical to examine their alignment with human social reasoning. We present an empirical framework for assessing collective alignment, in contrast to prior work on the individual level. Using the Lost at Sea social psychology task, we conduct a large-scale online experiment (N=748), randomly assigning groups to leader elections with either visible demographic attributes (e.g. name, gender) or pseudonymous aliases. We then simulate matched LLM groups conditioned on the human data, benchmarking Gemini 2.5, GPT-4.1, Claude Haiku 3.5, and Gemma 3. LLM behaviors diverge: some mirror human biases; others mask these biases and attempt to compensate for them. We empirically demonstrate that human-AI alignment in collective reasoning depends on context, cues, and model-specific inductive biases. Understanding how LLMs align with collective human behavior is critical to advancing socially-aligned AI, and demands dynamic benchmarks that capture the complexities of collective reasoning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 45,
+  "title": "Commitments on model deprecation and preservation",
+  "org": "anthropic",
+  "date": "2025-11-04",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/deprecation-commitments",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 951,
+  "title": "Introducing IndQA",
+  "org": "openai",
+  "date": "2025-11-03",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-indqa/",
+  "abstract": "OpenAI introduces IndQA, a new benchmark for evaluating AI systems in Indian languages. Built with domain experts, IndQA tests cultural understanding and reasoning across 12 languages and 10 knowledge areas.",
+  "needs_fetch": false
+ },
+ {
+  "id": 481,
+  "title": "TIR-Bench: A Comprehensive Benchmark for Agentic Thinking-with-Images Reasoning",
+  "org": "other",
+  "date": "2025-11-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.01833",
+  "abstract": "The frontier of visual reasoning is shifting toward models like OpenAI o3, which can intelligently create and operate tools to transform images for problem-solving, also known as thinking-\\textit{with}-images in chain-of-thought. Yet existing benchmarks fail to fully capture this advanced capability. Even Visual Search, the most common benchmark for current thinking-\\textit{with}-images methods, tests only basic operations such as localization and cropping, offering little insight into more complex, dynamic, and tool-dependent reasoning. We introduce \\textbf{TIR-Bench}, a comprehensive benchmark for evaluating agentic thinking-with-images across 13 diverse tasks, each requiring novel tool use for image processing and manipulation in chain-of-thought. We evaluate 22 multimodal large language models (MLLMs), from leading open-sourced and proprietary models to those with explicit tool-use augmentation. Results show that TIR-Bench is universally challenging, and strong performance requires genuine thinking-with-images capabilities. Finally, we present a pilot study comparing direct versus agentic fine-tuning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 316,
+  "title": "Open Character Training: Shaping the Persona of AI Assistants through Constitutional AI",
+  "org": "anthropic",
+  "date": "2025-11-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.01689",
+  "abstract": "The character of the \"AI assistant\" persona generated by modern chatbot large language models influences both surface-level behavior and apparent values, beliefs, and ethics. These all affect interaction quality, perceived intelligence, and alignment with both developer and user intentions. The shaping of this persona, known as character training, is a critical component of industry post-training, yet remains effectively unstudied in the academic literature. We introduce the first open implementation of character training, leveraging Constitutional AI and a new data pipeline using synthetic introspective data to shape the assistant persona in a more effective and controlled manner than alternatives such as constraining system prompts or activation steering. Specifically, we fine-tune three popular open-weights models using 11 example personas, such as humorous, deeply caring, or even malevolent. To track the effects of our approach, we introduce a method which analyzes revealed preferences, uncovering clear and holistic changes in character. We find these changes are more robust to adversarial prompting than the above two alternatives, while also leading to more coherent and realistic generations. Finally, we demonstrate this fine-tuning has little to no effect on general capabilities as measured by common benchmarks. We describe and open-source our full post-training method, the implementation of which can be found at https://github.com/maiush/OpenCharacterTraining.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2869,
+  "title": "Circuits Updates — November 2025",
+  "org": "anthropic",
+  "date": "2025-11-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/november-update/index.html",
+  "abstract": "We report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1325,
+  "title": "Personalized federated learning with exact stochastic gradient descent",
+  "org": "deepmind",
+  "date": "2025-11-01",
+  "venue": "Applied Intelligence",
+  "url": "https://arxiv.org/abs/2202.09848",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1326,
+  "title": "Discovering sensorimotor agency in cellular automata using diversity search",
+  "org": "deepmind",
+  "date": "2025-10-31",
+  "venue": "Science Advances",
+  "url": "https://arxiv.org/abs/2402.10236",
+  "abstract": "The field of artificial life studies how life-like phenomena such as agency and self-regulation can self-organize in computer simulations. In cellular automata (CA), a key open question is whether it is possible to find environment rules that self-organize robust \"individuals\" from an initial state with no prior existence of things like \"bodies,\" \"brain,\" \"perception,\" or \"action.\" Here, we leverage recent advances in machine learning, combining algorithms for diversity search, curriculum learning, and gradient descent, to automate the search of such \"individuals.\" We show that this approach enables us to systematically find environmental conditions in CA leading to self-organization of basic forms of agency, i.e., localized structures that move around and react in a coherent and highly robust manner to external obstacles, maintain their integrity, and have strong capabilities to generalize to new environments. We discuss how this approach opens new perspectives in artificial intelligence and synthetic bioengineering.",
+  "needs_fetch": false
+ },
+ {
+  "id": 660,
+  "title": "Measuring Chain-of-Thought Monitorability Through Faithfulness and Verbosity",
+  "org": "other",
+  "date": "2025-10-31",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.27378",
+  "abstract": "Chain-of-thought (CoT) outputs let us read a model's step-by-step reasoning. Since any long, serial reasoning process must pass through this textual trace, the quality of the CoT is a direct window into what the model is thinking. This visibility could help us spot unsafe or misaligned behavior (monitorability), but only if the CoT is transparent about its internal reasoning (faithfulness). Fully measuring faithfulness is difficult, so researchers often focus on examining the CoT in cases where the model changes its answer after adding a cue to the input. This proxy finds some instances of unfaithfulness but loses information when the model maintains its answer, and does not investigate aspects of reasoning not tied to the cue. We extend these results to a more holistic sense of monitorability by introducing verbosity: whether the CoT lists every factor needed to solve the task. We combine faithfulness and verbosity into a single monitorability score that shows how well the CoT serves as the model's external `working memory', a property that many safety schemes based on CoT monitoring depend on. We evaluate instruction-tuned and reasoning models on BBH, GPQA, and MMLU. Our results show that models can appear faithful yet remain hard to monitor when they leave out key factors, and that monitorability differs sharply across model families. We release our evaluation code using the Inspect library to support reproducible future work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 199,
+  "title": "Thought Branches: Interpreting LLM Reasoning Requires Resampling",
+  "org": "deepmind",
+  "date": "2025-10-31",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.27484",
+  "abstract": "Most work interpreting reasoning models studies only a single chain-of-thought (CoT), yet these models define distributions over many possible CoTs. We argue that studying a single sample is inadequate for understanding causal influence and the underlying computation. Though fully specifying this distribution is intractable, we can measure a partial CoT's impact by resampling only the subsequent text. We present case studies using resampling to investigate model decisions. First, when a model states a reason for its action, does that reason actually cause the action? In \"agentic misalignment\" scenarios, we find that self-preservation sentences have small causal impact, suggesting they do not meaningfully drive blackmail. Second, are artificial edits to CoT sufficient for steering reasoning? Resampling and selecting a completion with the desired property is a principled on-policy alternative. We find that off-policy interventions yield small and unstable effects compared to resampling in decision-making tasks. Third, how do we understand the effect of removing a reasoning step when the model may repeat it post-edit? We introduce a resilience metric that repeatedly resamples to prevent similar content from reappearing downstream. Critical planning statements resist removal but have large effects when eliminated. Fourth, since CoT is sometimes \"unfaithful\", can our methods teach us anything in these settings? Adapting causal mediation analysis, we find that hints that causally a",
+  "needs_fetch": false
+ },
+ {
+  "id": 952,
+  "title": "Introducing Aardvark: OpenAI’s agentic security researcher",
+  "org": "openai",
+  "date": "2025-10-30",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-aardvark/",
+  "abstract": "OpenAI introduces Aardvark, an AI-powered security researcher that autonomously finds, validates, and helps fix software vulnerabilities at scale. The system is in private beta—sign up to join early testing.",
+  "needs_fetch": false
+ }
+]

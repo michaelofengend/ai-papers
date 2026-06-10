@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2067,
+  "title": "Protein complex prediction with AlphaFold-Multimer",
+  "org": "deepmind",
+  "date": "2021-10-04",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.10.04.463034",
+  "abstract": "While the vast majority of well-structured single protein chains can now be predicted to high accuracy due to the recent AlphaFold [1] model, the prediction of multi-chain protein complexes remains a challenge in many cases. In this work, we demonstrate that an AlphaFold model trained specifically for multimeric inputs of known stoichiometry, which we call AlphaFold-Multimer, significantly increases accuracy of predicted multimeric interfaces over input-adapted single-chain AlphaFold while maintaining high intra-chain accuracy. On a benchmark dataset of 17 heterodimer proteins without templates (introduced in [2]) we achieve at least medium accuracy (DockQ [3] ≥ 0.49) on 13 targets and high accuracy (DockQ ≥ 0.8) on 7 targets, compared to 9 targets of at least medium accuracy and 4 of high accuracy for the previous state of the art system (an AlphaFold-based system from [2]). We also predict structures for a large dataset of 4,446 recent protein complexes, from which we score all non-redundant interfaces with low template identity. For heteromeric interfaces we successfully predict the interface (DockQ ≥ 0.23) in 70% of cases, and produce high accuracy predictions (DockQ ≥ 0.8) in 26% of cases, an improvement of +27 and +14 percentage points over the flexible linker modification of AlphaFold [4] respectively. For homomeric inter-faces we successfully predict the interface in 72% of cases, and produce high accuracy predictions in 36% of cases, an improvement of +8 and +7 perce",
+  "needs_fetch": false
+ },
+ {
+  "id": 2066,
+  "title": "Applying and improving <scp>AlphaFold</scp> at <scp>CASP14</scp>",
+  "org": "deepmind",
+  "date": "2021-10-04",
+  "venue": "Proteins Structure Function and Bioinformatics",
+  "url": "https://doi.org/10.1002/prot.26257",
+  "abstract": "Abstract We describe the operation and improvement of AlphaFold, the system that was entered by the team AlphaFold2 to the “human” category in the 14th Critical Assessment of Protein Structure Prediction (CASP14). The AlphaFold system entered in CASP14 is entirely different to the one entered in CASP13. It used a novel end‐to‐end deep neural network trained to produce protein structures from amino acid sequence, multiple sequence alignments, and homologous proteins. In the assessors' ranking by summed z scores (&gt;2.0), AlphaFold scored 244.0 compared to 90.8 by the next best group. The predictions made by AlphaFold had a median domain GDT_TS of 92.4; this is the first time that this level of average accuracy has been achieved during CASP, especially on the more difficult Free Modeling targets, and represents a significant improvement in the state of the art in protein structure prediction. We reported how AlphaFold was run as a human team during CASP14 and improved such that it now achieves an equivalent level of performance without intervention, opening the door to highly accurate large‐scale structure prediction.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2782,
+  "title": "Batch size-invariance for policy optimization",
+  "org": "openai",
+  "date": "2021-10-01",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2110.00641",
+  "abstract": "We say an algorithm is batch size-invariant if changes to the batch size can largely be compensated for by changes to other hyperparameters. Stochastic gradient descent is well-known to have this property at small batch sizes, via the learning rate. However, some policy optimization algorithms (such as PPO) do not have this property, because of how they control the size of policy updates. In this work we show how to make these algorithms batch size-invariant. Our key insight is to decouple the proximal policy (used for controlling policy updates) from the behavior policy (used for off-policy corrections). Our experiments help explain why these algorithms work, and additionally show how they can make more efficient use of stale data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2075,
+  "title": "A Bayesian neural network predicts the dissolution of compact planetary systems",
+  "org": "deepmind",
+  "date": "2021-10-01",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://arxiv.org/abs/2101.04117",
+  "abstract": "We introduce a Bayesian neural network model that can accurately predict not only if, but also when a compact planetary system with three or more planets will go unstable. Our model, trained directly from short N-body time series of raw orbital elements, is more than two orders of magnitude more accurate at predicting instability times than analytical estimators, while also reducing the bias of existing machine learning algorithms by nearly a factor of three. Despite being trained on compact resonant and near-resonant three-planet configurations, the model demonstrates robust generalization to both nonresonant and higher multiplicity configurations, in the latter case outperforming models fit to that specific set of integrations. The model computes instability estimates up to [Formula: see text] times faster than a numerical integrator, and unlike previous efforts provides confidence intervals on its predictions. Our inference model is publicly available in the SPOCK (https://github.com/dtamayo/spock) package, with training code open sourced (https://github.com/MilesCranmer/bnn_chaos_model).",
+  "needs_fetch": false
+ },
+ {
+  "id": 2074,
+  "title": "PARTS: Unsupervised segmentation with slots, attention and independence maximization",
+  "org": "deepmind",
+  "date": "2021-10-01",
+  "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "url": "https://doi.org/10.1109/iccv48922.2021.01027",
+  "abstract": "From an early age, humans perceive the visual world as composed of coherent objects with distinctive properties such as shape, size, and color. There is great interest in building models that are able to learn similar structure, ideally in an unsupervised manner. Learning such structure from complex 3D scenes that include clutter, occlusions, interactions, and camera motion is still an open challenge. We present a model that is able to segment visual scenes from complex 3D environments into distinct objects, learn disentangled representations of individual objects, and form consistent and coherent predictions of future frames, in a fully unsupervised manner. Our model (named PARTS) builds on recent approaches that utilize iterative amortized inference and transition dynamics for deep generative models. We achieve dramatic improvements in performance by introducing several novel contributions. We introduce a recurrent slot-attention like encoder which allows for top-down influence during inference. We argue that when inferring scene structure from image sequences it is better to use a fixed prior which is shared across the sequence rather than an auto-regressive prior as often used in prior work. We demonstrate our model’s success on three different video datasets (the popular benchmark CLEVRER; a simulated 3D Playroom environment; and a real-world Robotics Arm dataset). Finally, we analyze the contributions of the various model components and the representations learned by th",
+  "needs_fetch": false
+ },
+ {
+  "id": 2073,
+  "title": "Broaden Your Views for Self-Supervised Video Learning",
+  "org": "deepmind",
+  "date": "2021-10-01",
+  "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "url": "https://arxiv.org/abs/2103.16559",
+  "abstract": "Most successful self-supervised learning methods are trained to align the representations of two independent views from the data. State-of-the-art methods in video are inspired by image techniques, where these two views are similarly extracted by cropping and augmenting the resulting crop. However, these methods miss a crucial element in the video domain: time. We introduce BraVe, a self-supervised learning framework for video. In BraVe, one of the views has access to a narrow temporal window of the video while the other view has a broad access to the video content. Our models learn to generalise from the narrow view to the general content of the video. Furthermore, BraVe processes the views with different backbones, enabling the use of alternative augmentations or modalities into the broad view such as optical flow, randomly convolved RGB frames, audio or their combinations. We demonstrate that BraVe achieves state-of-the-art results in self-supervised representation learning on standard video and audio classification benchmarks including UCF101, HMDB51, Kinetics, ESC-50 and AudioSet.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2072,
+  "title": "Just Ask: Learning to Answer Questions from Millions of Narrated Videos",
+  "org": "deepmind",
+  "date": "2021-10-01",
+  "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "url": "https://arxiv.org/abs/2012.00451",
+  "abstract": "Recent methods for visual question answering rely on large-scale annotated datasets. Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability. In this work, we propose to avoid manual annotation and generate a large-scale training dataset for video question answering making use of automatic cross-modal supervision. We leverage a question generation transformer trained on text data and use it to generate question-answer pairs from transcribed video narrations. Given narrated videos, we then automatically generate the HowToVQA69M dataset with 69M video-question-answer triplets. To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer transformer. We introduce the zero-shot VideoQA task and show excellent results, in particular for rare answers. Furthermore, we demonstrate our method to significantly outperform the state of the art on MSRVTT-QA, MSVD-QA, ActivityNet-QA and How2QA. Finally, for a detailed evaluation we introduce iVQA, a new VideoQA dataset with reduced language biases and high-quality redundant manual annotations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2071,
+  "title": "Efficient Visual Pretraining with Contrastive Detection",
+  "org": "deepmind",
+  "date": "2021-10-01",
+  "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "url": "https://arxiv.org/abs/2103.10957",
+  "abstract": "Self-supervised pretraining has been shown to yield powerful representations for transfer learning. These performance gains come at a large computational cost however, with state-of-the-art methods requiring an order of magnitude more computation than supervised pretraining. We tackle this computational bottleneck by introducing a new self-supervised objective, contrastive detection, which tasks representations with identifying object-level features across augmentations. This objective extracts a rich learning signal per image, leading to state-of-the-art transfer accuracy on a variety of downstream tasks, while requiring up to 10× less pretraining. In particular, our strongest ImageNet-pretrained model performs on par with SEER, one of the largest self-supervised systems to date, which uses 1000× more pretraining data. Finally, our objective seamlessly handles pretraining on more complex images such as those in COCO, closing the gap with supervised transfer learning from COCO to PASCAL.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2070,
+  "title": "Divide and Contrast: Self-supervised Learning from Uncurated Data",
+  "org": "deepmind",
+  "date": "2021-10-01",
+  "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "url": "https://doi.org/10.1109/iccv48922.2021.00991",
+  "abstract": "Self-supervised learning holds promise in leveraging large amounts of unlabeled data, however much of its progress has thus far been limited to highly curated pre-training data such as ImageNet. We explore the effects of contrastive learning from larger, less-curated image datasets such as YFCC, and find there is indeed a large difference in the resulting representation quality. We hypothesize that this curation gap is due to a shift in the distribution of image classes—which is more diverse and heavy-tailed—resulting in less relevant negative samples to learn from. We test this hypothesis with a new approach, Divide and Contrast (DnC), which alternates between contrastive learning and clustering-based hard negative mining. When pretrained on less curated datasets, DnC greatly improves the performance of self-supervised learning on downstream tasks, while remaining competitive with the current state-of-the-art on curated datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2069,
+  "title": "With a Little Help from My Friends: Nearest-Neighbor Contrastive Learning of Visual Representations",
+  "org": "deepmind",
+  "date": "2021-10-01",
+  "venue": "2021 IEEE/CVF International Conference on Computer Vision (ICCV)",
+  "url": "https://doi.org/10.1109/iccv48922.2021.00945",
+  "abstract": "Self-supervised learning algorithms based on instance discrimination train encoders to be invariant to pre-defined transformations of the same instance. While most methods treat different views of the same image as positives for a contrastive loss, we are interested in using positives from other instances in the dataset. Our method, Nearest-Neighbor Contrastive Learning of visual Representations (NNCLR), samples the nearest neighbors from the dataset in the latent space, and treats them as positives. This provides more semantic variations than pre-defined transformations.We find that using the nearest-neighbor as positive in contrastive losses improves performance significantly on ImageNet classification using ResNet-50 under the linear evaluation protocol, from 71.7% to 75.6%, outperforming previous state-of-the-art methods. On semi-supervised learning benchmarks we improve performance significantly when only 1% ImageNet labels are available, from 53.8% to 56.5%. On transfer learning benchmarks our method outperforms state-of-the-art methods (including supervised learning with ImageNet) on 8 out of 12 downstream datasets. Furthermore, we demonstrate empirically that our method is less reliant on complex data augmentations. We see a relative reduction of only 2.1% ImageNet Top-1 accuracy when we train using only random crops.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2068,
+  "title": "Effective gene expression prediction from sequence by integrating long-range interactions",
+  "org": "deepmind",
+  "date": "2021-10-01",
+  "venue": "Nature Methods",
+  "url": "https://doi.org/10.1038/s41592-021-01252-x",
+  "abstract": "How noncoding DNA determines gene expression in different cell types is a major unsolved problem, and critical downstream applications in human genetics depend on improved solutions. Here, we report substantially improved gene expression prediction accuracy from DNA sequences through the use of a deep learning architecture, called Enformer, that is able to integrate information from long-range interactions (up to 100 kb away) in the genome. This improvement yielded more accurate variant effect predictions on gene expression for both natural genetic variants and saturation mutagenesis measured by massively parallel reporter assays. Furthermore, Enformer learned to predict enhancer-promoter interactions directly from the DNA sequence competitively with methods that take direct experimental data as input. We expect that these advances will enable more effective fine-mapping of human disease associations and provide a framework to interpret cis-regulatory evolution.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2076,
+  "title": "Skilful precipitation nowcasting using deep generative models of radar",
+  "org": "deepmind",
+  "date": "2021-09-29",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-021-03854-z",
+  "abstract": "Abstract Precipitation nowcasting, the high-resolution forecasting of precipitation up to two hours ahead, supports the real-world socioeconomic needs of many sectors reliant on weather-dependent decision-making 1,2 . State-of-the-art operational nowcasting methods typically advect precipitation fields with radar-based wind estimates, and struggle to capture important non-linear events such as convective initiations 3,4 . Recently introduced deep learning methods use radar to directly predict future rain rates, free of physical constraints 5,6 . While they accurately predict low-intensity rainfall, their operational utility is limited because their lack of constraints produces blurry nowcasts at longer lead times, yielding poor performance on rarer medium-to-heavy rain events. Here we present a deep generative model for the probabilistic nowcasting of precipitation from radar that addresses these challenges. Using statistical, economic and cognitive measures, we show that our method provides improved forecast quality, forecast consistency and forecast value. Our model produces realistic and spatiotemporally consistent predictions over regions up to 1,536 km × 1,280 km and with lead times from 5–90 min ahead. Using a systematic evaluation by more than 50 expert meteorologists, we show that our generative model ranked first for its accuracy and usefulness in 89% of cases against two competitive methods. When verified quantitatively, these nowcasts are skillful without resorting",
+  "needs_fetch": false
+ },
+ {
+  "id": 2077,
+  "title": "Policy invariant explicit shaping: an efficient alternative to reward shaping",
+  "org": "deepmind",
+  "date": "2021-09-28",
+  "venue": "Neural Computing and Applications",
+  "url": "https://doi.org/10.1007/s00521-021-06259-1",
+  "abstract": "Abstract Reinforcement learning (RL) is a powerful learning paradigm in which agents can learn to maximize sparse and delayed reward signals. Although RL has had many impressive successes in complex domains, learning can take hours, days, or even years of training data. A major challenge of contemporary RL research is to discover how to learn with less data. Previous work has shown that domain information can be successfully used to shape the reward; by adding additional reward information, the agent can learn with much less data. Furthermore, if the reward is constructed from a potential function, the optimal policy is guaranteed to be unaltered. While such potential-based reward shaping (PBRS) holds promise, it is limited by the need for a well-defined potential function. Ideally, we would like to be able to take arbitrary advice from a human or other agent and improve performance without affecting the optimal policy. The recently introduced dynamic potential-based advice (DPBA) was proposed to tackle this challenge by predicting the potential function values as part of the learning process. However, this article demonstrates theoretically and empirically that, while DPBA can facilitate learning with good advice, it does in fact alter the optimal policy. We further show that when adding the correction term to “fix” DPBA it no longer shows effective shaping with good advice. We then present a simple method called policy invariant explicit shaping (PIES) and show theoreticall",
+  "needs_fetch": false
+ },
+ {
+  "id": 1041,
+  "title": "Summarizing books with human feedback",
+  "org": "openai",
+  "date": "2021-09-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/summarizing-books/",
+  "abstract": "Scaling human oversight of AI systems for tasks that are difficult to evaluate.",
+  "needs_fetch": true
+ },
+ {
+  "id": 2783,
+  "title": "Recursively Summarizing Books with Human Feedback",
+  "org": "openai",
+  "date": "2021-09-22",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2109.10862",
+  "abstract": "A major challenge for scaling machine learning is training models to perform tasks that are very difficult or time-consuming for humans to evaluate. We present progress on this problem on the task of abstractive summarization of entire fiction novels. Our method combines learning from human feedback with recursive task decomposition: we use models trained on smaller parts of the task to assist humans in giving feedback on the broader task. We collect a large volume of demonstrations and comparisons from human labelers, and fine-tune GPT-3 using behavioral cloning and reward modeling to do summarization recursively. At inference time, the model first summarizes small sections of the book and then recursively summarizes these summaries to produce a summary of the entire book. Our human labelers are able to supervise and evaluate the models quickly, despite not having read the entire books themselves. Our resulting model generates sensible summaries of entire books, even matching the quality of human-written summaries in a few cases ($\\sim5\\%$ of books). We achieve state-of-the-art results on the recent BookSum dataset for book-length summarization. A zero-shot question-answering model using these summaries achieves state-of-the-art results on the challenging NarrativeQA benchmark for answering questions about books and movie scripts. We release datasets of samples from our model.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2078,
+  "title": "Task adapted reconstruction for inverse problems",
+  "org": "deepmind",
+  "date": "2021-09-21",
+  "venue": "Inverse Problems",
+  "url": "https://arxiv.org/abs/1809.00948",
+  "abstract": "Abstract The paper considers the problem of performing a post-processing task defined on a model parameter that is only observed indirectly through noisy data in an ill-posed inverse problem. A key aspect is to formalize the steps of reconstruction and post-processing as appropriate estimators (non-randomized decision rules) in statistical estimation problems. The implementation makes use of (deep) neural networks to provide a differentiable parametrization of the family of estimators for both steps. These networks are combined and jointly trained against suitable supervised training data in order to minimize a joint differentiable loss function, resulting in an end-to-end task adapted reconstruction method. The suggested framework is generic, yet adaptable, with a plug-and-play structure for adjusting both the inverse problem and the post-processing task at hand. More precisely, the data model (forward operator and statistical model of the noise) associated with the inverse problem is exchangeable, e.g., by using neural network architecture given by a learned iterative method. Furthermore, any post-processing that can be encoded as a trainable neural network can be used. The approach is demonstrated on joint tomographic image reconstruction, classification and joint tomographic image reconstruction segmentation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2079,
+  "title": "Fixed-Point Theorem-Based Voltage Stability Margin Estimation Techniques for Distribution Systems With Renewables",
+  "org": "deepmind",
+  "date": "2021-09-13",
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "url": "https://doi.org/10.1109/tii.2021.3112097",
+  "abstract": "The future distribution systems expose to an unprecedented level of uncertainties due to renewable resources, nontraditional loads, aging infrastructure, etc., posing potential risks to secure operation of the system.This article proposes a new technique to estimate the voltage stability margin of the distribution systems with high penetration of renewables.Its convergence and robustness under complex and stressed working conditions are guaranteed in theory. This technique is handy for the operation as it features self-adaptive step size and is applicable to general system topology. It leverages a newly derived analytical solvability certificate based on the Kantorovich fixed-point theorem. A fast version of the proposed technique is duly proposed to speed up the computation up to 8 times while maintaining high accuracy, which lends itself to online and time-sensitive emergency tasks. Numerical simulations with various IEEE test feeders verify the performance of the techniques.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1042,
+  "title": "TruthfulQA: Measuring how models mimic human falsehoods",
+  "org": "openai",
+  "date": "2021-09-08",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/truthfulqa/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2081,
+  "title": "Template strand deoxyuridine promoter recognition by a viral RNA polymerase",
+  "org": "deepmind",
+  "date": "2021-08-31",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.08.30.458274",
+  "abstract": "Bacillus subtilis bacteriophage AR9 employs two strategies for efficient host takeover control and host antiviral defense evasion – it encodes two unique DNA-dependent RNA polymerases (RNAPs) that function at different stages of virus morphogenesis in the cell, and its double stranded (ds) DNA genome contains uracils instead of thymines throughout 1,2 . Unlike any known RNAP, the AR9 non-virion RNAP (nvRNAP), which transcribes late phage genes, recognizes promoters in the template strand of dsDNA and efficiently differentiates obligatory uracils from thymines in its promoters 3 . Here, using structural data obtained by cryo-electron microscopy and X-ray crystallography on the AR9 nvRNAP core, holoenzyme, and a promoter complex, and a variety of in vitro transcription assays, we elucidate a unique mode of uracil-specific, template strand-dependent promoter recognition. It is achieved by a tripartite interaction between the promoter specificity subunit, the core enzyme, and DNA adopting a unique conformation. We also show that interaction with the non-template strand plays a critical role in the process of AR9 nvRNAP promoter recognition in dsDNA, and that the AR9 nvRNAP core and a part of its promoter specificity subunit that interacts with the core are structurally similar to their bacterial RNAP counterparts. Our work demonstrates the extent to which viruses can evolve new functional mechanisms to control acquired multisubunit cellular enzymes and make these enzymes serve th",
+  "needs_fetch": false
+ },
+ {
+  "id": 2080,
+  "title": "Neural evidence for the successor representation in choice evaluation",
+  "org": "deepmind",
+  "date": "2021-08-31",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.08.29.458114",
+  "abstract": "Abstract Evaluating choices in multi-step tasks is thought to involve mentally simulating trajectories. Recent theories propose that the brain simplifies these laborious computations using temporal abstraction: storing actions’ consequences, collapsed over multiple timesteps (the Successor Representation; SR). Although predictive neural representations and, separately, behavioral errors (“slips of action”) consistent with this mechanism have been reported, it is unknown whether these neural representations support choices in a manner consistent with the SR. We addressed this question by using fMRI to measure predictive representations in a setting where the SR implies specific errors in multi-step expectancies and corresponding behavioral errors. By decoding measures of state predictions from sensory cortex during choice evaluation, we identified evidence that behavioral errors predicted by the SR are accompanied by predictive representations of upcoming task states reflecting SR predicted erroneous multi-step expectancies. These results provide neural evidence for the SR in choice evaluation and contribute toward a mechanistic understanding of flexible and inflexible decision making.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2082,
+  "title": "Getting to the point: index sets and parallelism-preserving autodiff for pointful array programming",
+  "org": "deepmind",
+  "date": "2021-08-19",
+  "venue": "Proceedings of the ACM on Programming Languages",
+  "url": "https://arxiv.org/abs/2104.05372",
+  "abstract": "We present a novel programming language design that attempts to combine the clarity and safety of high-level functional languages with the efficiency and parallelism of low-level numerical languages. We treat arrays as eagerly-memoized functions on typed index sets, allowing abstract function manipulations, such as currying, to work on arrays. In contrast to composing primitive bulk-array operations, we argue for an explicit nested indexing style that mirrors application of functions to arguments. We also introduce a fine-grained typed effects system which affords concise and automatically-parallelized in-place updates. Specifically, an associative accumulation effect allows reverse-mode automatic differentiation of in-place updates in a way that preserves parallelism. Empirically, we benchmark against the Futhark array programming language, and demonstrate that aggressive inlining and type-driven compilation allows array programs to be written in an expressive, \"pointful\" style with little performance penalty.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2083,
+  "title": "Evaluating Strategic Structures in Multi-Agent Inverse Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-08-18",
+  "venue": "Journal of Artificial Intelligence Research",
+  "url": "https://doi.org/10.1613/jair.1.12594",
+  "abstract": "A core question in multi-agent systems is understanding the motivations for an agent's actions based on their behavior. Inverse reinforcement learning provides a framework for extracting utility functions from observed agent behavior, casting the problem as finding domain parameters which induce such a behavior from rational decision makers. We show how to efficiently and scalably extend inverse reinforcement learning to multi-agent settings, by reducing the multi-agent problem to N single-agent problems while still satisfying rationality conditions such as strong rationality. However, we observe that rewards learned naively tend to lack insightful structure, which causes them to produce undesirable behavior when optimized in games with different players from those encountered during training. We further investigate conditions under which rewards or utility functions can be precisely identified, on problem domains such as normal-form and Markov games, as well as auctions, where we show we can learn reward functions that properly generalize to new settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2084,
+  "title": "Decision letter: Hippocampal sharp wave-ripples and the associated sequence replay emerge from structured synaptic interactions in a network model of area CA3",
+  "org": "deepmind",
+  "date": "2021-08-16",
+  "venue": null,
+  "url": "https://doi.org/10.7554/elife.71850.sa1",
+  "abstract": "Article Figures and data Abstract Editor's evaluation Introduction Results Discussion Materials and methods Data availability References Decision letter Author response Article and author information Metrics Abstract Hippocampal place cells are activated sequentially as an animal explores its environment. These activity sequences are internally recreated ('replayed'), either in the same or reversed order, during bursts of activity (sharp wave-ripples [SWRs]) that occur in sleep and awake rest. SWR-associated replay is thought to be critical for the creation and maintenance of long-term memory. In order to identify the cellular and network mechanisms of SWRs and replay, we constructed and simulated a data-driven model of area CA3 of the hippocampus. Our results show that the chain-like structure of recurrent excitatory interactions established during learning not only determines the content of replay, but is essential for the generation of the SWRs as well. We find that bidirectional replay requires the interplay of the experimentally confirmed, temporally symmetric plasticity rule, and cellular adaptation. Our model provides a unifying framework for diverse phenomena involving hippocampal plasticity, representations, and dynamics, and suggests that the structured neural codes induced by learning may have greater influence over cortical network states than previously appreciated. Editor's evaluation This manuscript will be of interest to theoretical neuroscientists broadly def",
+  "needs_fetch": false
+ },
+ {
+  "id": 2784,
+  "title": "A Cryptographic Test of Quantumness and Certifiable Randomness from a Single Quantum Device",
+  "org": "openai",
+  "date": "2021-08-12",
+  "venue": "Journal of the ACM",
+  "url": "https://arxiv.org/abs/1804.00640",
+  "abstract": "We consider a new model for the testing of untrusted quantum devices, consisting of a single polynomial time bounded quantum device interacting with a classical polynomial time verifier. In this model, we propose solutions to two tasks—a protocol for efficient classical verification that the untrusted device is “truly quantum” and a protocol for producing certifiable randomness from a single untrusted quantum device. Our solution relies on the existence of a new cryptographic primitive for constraining the power of an untrusted quantum device: post-quantum secure trapdoor claw-free functions that must satisfy an adaptive hardcore bit property. We show how to construct this primitive based on the hardness of the learning with errors (LWE) problem.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2085,
+  "title": "Proposer of the Vote of Thanks to Dong <i>et al.</i> and Contribution to the Discussion of ‘Gaussian Differential Privacy’",
+  "org": "deepmind",
+  "date": "2021-08-04",
+  "venue": "Journal of the Royal Statistical Society Series B (Statistical Methodology)",
+  "url": "https://doi.org/10.1111/rssb.12455",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2086,
+  "title": "Interpreting wide-band neural activity using convolutional neural networks",
+  "org": "deepmind",
+  "date": "2021-08-02",
+  "venue": "eLife",
+  "url": "https://doi.org/10.7554/elife.66551",
+  "abstract": "Rapid progress in technologies such as calcium imaging and electrophysiology has seen a dramatic increase in the size and extent of neural recordings. Even so, interpretation of this data requires considerable knowledge about the nature of the representation and often depends on manual operations. Decoding provides a means to infer the information content of such recordings but typically requires highly processed data and prior knowledge of the encoding scheme. Here, we developed a deep-learning framework able to decode sensory and behavioral variables directly from wide-band neural data. The network requires little user input and generalizes across stimuli, behaviors, brain regions, and recording techniques. Once trained, it can be analyzed to determine elements of the neural code that are informative about a given variable. We validated this approach using electrophysiological and calcium-imaging data from rodent auditory cortex and hippocampus as well as human electrocorticography (ECoG) data. We show successful decoding of finger movement, auditory stimuli, and spatial behaviors - including a novel representation of head direction - from raw neural activity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2089,
+  "title": "A Neural Network Auction For Group Decision Making Over a Continuous Space",
+  "org": "deepmind",
+  "date": "2021-08-01",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2021/706",
+  "abstract": "We propose a system for conducting an auction over locations in a continuous space. It enables participants to express their preferences over possible choices of location in the space, selecting the location that maximizes the total utility of all agents. We prevent agents from tricking the system into selecting a location that improves their individual utility at the expense of others by using a pricing rule that gives agents no incentive to misreport their true preferences. The system queries participants for their utility in many random locations, then trains a neural network to approximate the preference function of each participant. The parameters of these neural network models are transmitted and processed by the auction mechanism, which composes these into differentiable models that are optimized through gradient ascent to compute the final chosen location and charged prices.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2088,
+  "title": "Don’t Do What Doesn’t Matter: Intrinsic Motivation with Action Usefulness",
+  "org": "deepmind",
+  "date": "2021-08-01",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2021/406",
+  "abstract": "Sparse rewards are double-edged training signals in reinforcement learning: easy to design but hard to optimize. Intrinsic motivation guidances have thus been developed toward alleviating the resulting exploration problem. They usually incentivize agents to look for new states through novelty signals. Yet, such methods encourage exhaustive exploration of the state space rather than focusing on the environment's salient interaction opportunities. We propose a new exploration method, called Don't Do What Doesn't Matter (DoWhaM), shifting the emphasis from state novelty to state with relevant actions. While most actions consistently change the state when used, e.g. moving the agent, some actions are only effective in specific states, e.g., opening a door, grabbing an object. DoWhaM detects and rewards actions that seldom affect the environment. We evaluate DoWhaM on the procedurally-generated environment MiniGrid against state-of-the-art methods. Experiments consistently show that DoWhaM greatly reduces sample complexity, installing the new state-of-the-art in MiniGrid.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2087,
+  "title": "Mean Field Games Flock! The Reinforcement Learning Way",
+  "org": "deepmind",
+  "date": "2021-08-01",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2021/50",
+  "abstract": "We present a method enabling a large number of agents to learn how to flock. This problem has drawn a lot of interest but requires many structural assumptions and is tractable only in small dimensions. We phrase this problem as a Mean Field Game (MFG), where each individual chooses its own acceleration depending on the population behavior. Combining Deep Reinforcement Learning (RL) and Normalizing Flows (NF), we obtain a tractable solution requiring only very weak assumptions. Our algorithm finds a Nash Equilibrium and the agents adapt their velocity to match the neighboring flock’s average one. We use Fictitious Play and alternate: (1) computing an approximate best response with Deep RL, and (2) estimating the next population distribution with NF. We show numerically that our algorithm can learn multi-group or high-dimensional flocking with obstacles.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2090,
+  "title": "Neural effective connectivity explains subjective fatigue in stroke",
+  "org": "deepmind",
+  "date": "2021-07-30",
+  "venue": "Brain",
+  "url": "https://doi.org/10.1093/brain/awab287",
+  "abstract": "Persistent fatigue is a major debilitating symptom in many psychiatric and neurological conditions, including stroke. Post-stroke fatigue has been linked to low corticomotor excitability. Yet, it remains elusive as to what the neuronal mechanisms are that underlie motor cortex excitability and chronic persistence of fatigue. In this cross-sectional observational study, in two experiments we examined a total of 59 non-depressed stroke survivors with minimal motoric and cognitive impairments using 'resting-state' MRI and single- and paired-pulse transcranial magnetic stimulation. In the first session of Experiment 1, we assessed resting motor thresholds-a typical measure of cortical excitability-by applying transcranial magnetic stimulation to the primary motor cortex (M1) and measuring motor-evoked potentials in the hand affected by stroke. In the second session, we measured their brain activity with resting-state MRI to assess effective connectivity interactions at rest. In Experiment 2 we examined effective inter-hemispheric connectivity in an independent sample of patients using paired-pulse transcranial magnetic stimulation. We also assessed the levels of non-exercise induced, persistent fatigue using Fatigue Severity Scale (FSS-7), a self-report questionnaire that has been widely applied and validated across different conditions. We used spectral dynamic causal modelling in Experiment 1 and paired-pulse transcranial magnetic stimulation in Experiment 2 to characterize how",
+  "needs_fetch": false
+ }
+]

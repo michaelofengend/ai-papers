@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1982,
+  "title": "BYOL-Explore: Exploration by Bootstrapped Prediction",
+  "org": "deepmind",
+  "date": "2022-06-16",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2206.08332",
+  "abstract": "We present BYOL-Explore, a conceptually simple yet general approach for curiosity-driven exploration in visually-complex environments. BYOL-Explore learns a world representation, the world dynamics, and an exploration policy all-together by optimizing a single prediction loss in the latent space with no additional auxiliary objective. We show that BYOL-Explore is effective in DM-HARD-8, a challenging partially-observable continuous-action hard-exploration benchmark with visually-rich 3-D environments. On this benchmark, we solve the majority of the tasks purely through augmenting the extrinsic reward with BYOL-Explore s intrinsic reward, whereas prior work could only get off the ground with human demonstrations. As further evidence of the generality of BYOL-Explore, we show that it achieves superhuman performance on the ten hardest exploration games in Atari while having a much simpler design than other competitive agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1981,
+  "title": "Zero-Shot Video Question Answering via Frozen Bidirectional Language Models",
+  "org": "deepmind",
+  "date": "2022-06-16",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2206.08155",
+  "abstract": "Video question answering (VideoQA) is a complex task that requires diverse multi-modal data for training. Manual annotation of question and answers for videos, however, is tedious and prohibits scalability. To tackle this problem, recent methods consider zero-shot settings with no manual annotation of visual question-answer. In particular, a promising approach adapts frozen autoregressive language models pretrained on Web-scale text-only data to multi-modal inputs. In contrast, we here build on frozen bidirectional language models (BiLM) and show that such an approach provides a stronger and cheaper alternative for zero-shot VideoQA. In particular, (i) we combine visual inputs with the frozen BiLM using light trainable modules, (ii) we train such modules using Web-scraped multi-modal data, and finally (iii) we perform zero-shot VideoQA inference through masked language modeling, where the masked text is the answer to a given question. Our proposed approach, FrozenBiLM, outperforms the state of the art in zero-shot VideoQA by a significant margin on a variety of datasets, including LSMDC-FiB, iVQA, MSRVTT-QA, MSVD-QA, ActivityNet-QA, TGIF-FrameQA, How2QA and TVQA. It also demonstrates competitive performance in the few-shot and fully-supervised setting. Our code and models are publicly available at https://github.com/antoyang/FrozenBiLM.",
+  "needs_fetch": false
+ },
+ {
+  "id": 562,
+  "title": "Emergent Abilities of Large Language Models",
+  "org": "deepmind",
+  "date": "2022-06-15",
+  "venue": "TMLR",
+  "url": "https://arxiv.org/abs/2206.07682",
+  "abstract": "Scaling up language models has been shown to predictably improve performance and sample efficiency on a wide range of downstream tasks. This paper instead discusses an unpredictable phenomenon that we refer to as emergent abilities of large language models. We consider an ability to be emergent if it is not present in smaller models but is present in larger models. Thus, emergent abilities cannot be predicted simply by extrapolating the performance of smaller models. The existence of such emergence implies that additional scaling could further expand the range of capabilities of language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1030,
+  "title": "AI-written critiques help humans notice flaws",
+  "org": "openai",
+  "date": "2022-06-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/critiques/",
+  "abstract": "We trained “critique-writing” models to describe flaws in summaries. Human evaluators find flaws in summaries much more often when shown our model’s critiques. Larger models are better at self-critiquing, with scale improving critique-writing more than summary-writing. This shows promise for using AI systems to assist human supervision of AI systems on difficult tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1031,
+  "title": "Techniques for training large neural networks",
+  "org": "openai",
+  "date": "2022-06-09",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/techniques-for-training-large-neural-networks/",
+  "abstract": "Large neural networks are at the core of many recent advances in AI, but training them is a difficult engineering and research challenge which requires orchestrating a cluster of GPUs to perform a single synchronized calculation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1983,
+  "title": "Core control principles of the eukaryotic cell cycle",
+  "org": "deepmind",
+  "date": "2022-06-08",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-022-04798-8",
+  "abstract": "Abstract Cyclin-dependent kinases (CDKs) lie at the heart of eukaryotic cell cycle control, with different cyclin–CDK complexes initiating DNA replication (S-CDKs) and mitosis (M-CDKs) 1,2 . However, the principles on which cyclin–CDK complexes organize the temporal order of cell cycle events are contentious 3 . One model proposes that S-CDKs and M-CDKs are functionally specialized, with substantially different substrate specificities to execute different cell cycle events 4–6 . A second model proposes that S-CDKs and M-CDKs are redundant with each other, with both acting as sources of overall CDK activity 7,8 . In this model, increasing CDK activity, rather than CDK substrate specificity, orders cell cycle events 9,10 . Here we reconcile these two views of core cell cycle control. Using phosphoproteomic assays of in vivo CDK activity in fission yeast, we find that S-CDK and M-CDK substrate specificities are remarkably similar, showing that S-CDKs and M-CDKs are not completely specialized for S phase and mitosis alone. Normally, S-CDK cannot drive mitosis but can do so when protein phosphatase 1 is removed from the centrosome. Thus, increasing S-CDK activity in vivo is sufficient to overcome substrate specificity differences between S-CDK and M-CDK, and allows S-CDK to carry out M-CDK function. Therefore, we unite the two opposing views of cell cycle control, showing that the core cell cycle engine is largely based on a quantitative increase in CDK activity through the cell c",
+  "needs_fetch": false
+ },
+ {
+  "id": 1984,
+  "title": "A probabilistic successor representation for context-dependent prediction",
+  "org": "deepmind",
+  "date": "2022-06-04",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2022.06.03.494671",
+  "abstract": "Abstract The different strategies that animals use for predicting reward are often classified as model-based or model-free reinforcement learning (RL) algorithms. Model-based RL involves explicit simulation the future to make decisions while model-free strategies rely on learning associations between stimuli and predicted reward by trial and error. An alternative, intermediate strategy for RL is based on the “successor representation” (SR), an encoding of environmental states in terms of predicted future states. A recent theoretical proposal suggests that the hippocampus encodes the SR in order to facilitate prediction of future reward. However, this proposal does not take into account how learning should adapt under uncertainty and switches of context. Here, we introduce a theory of learning SRs using prediction errors which includes optimally balancing uncertainty in new observations versus existing knowledge. We then generalise that approach to a multi-context setting, allowing the model to learn and maintain multiple task-specific SRs and infer which one to use at any moment based on the accuracy of its predictions. Thus, the context used for predictions can be determined by both the contents of the states themselves and the distribution of transitions between them. This probabilistic SR model captures animal behaviour in tasks which require contextual memory and generalisation, and unifies previous SR theory with hippocampal-dependent contextual decision making.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2892,
+  "title": "Mechanistic Interpretability, Variables, and the Importance of Interpretable Bases",
+  "org": "anthropic",
+  "date": "2022-06-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2022/mech-interp-essay/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2775,
+  "title": "Robust fine-tuning of zero-shot models",
+  "org": "openai",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://doi.org/10.1109/cvpr52688.2022.00780",
+  "abstract": "Large pre-trained models such as CLIP or ALIGN offer consistent accuracy across a range of data distributions when performing zero-shot inference (i.e., without fine-tuning on a specific dataset). Although existing fine-tuning methods substantially improve accuracy on a given target distribution, they often reduce robustness to distribution shifts. We address this tension by introducing a simple and effective method for improving robustness while fine-tuning: ensembling the weights of the zero-shot and fine-tuned models (WiSE-FT). Compared to standard fine-tuning, WiSE-FT provides large accuracy improvements under distribution shift, while preserving high accuracy on the target distribution. On ImageNet and five derived distribution shifts, WiSE-FT improves accuracy under distribution shift by 4 to 6 percentage points (pp) over prior work while increasing ImageNet accuracy by 1.6 pp. WiSE-FT achieves similarly large robustness gains (2 to 23 pp) on a diverse set of six further distribution shifts, and accuracy gains of 0.8 to 3.3 pp compared to standard fine-tuning on commonly used transfer learning datasets. These improvements come at no additional computational cost during fine-tuning or inference.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1994,
+  "title": "Non-isotropy Regularization for Proxy-based Deep Metric Learning",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://doi.org/10.1109/cvpr52688.2022.00727",
+  "abstract": "Deep Metric Learning (DML) aims to learn representation spaces on which semantic relations can simply be expressed through predefined distance metrics. Best performing approaches commonly leverage class proxies as sample stand-ins for better convergence and generalization. However, these proxy-methods solely optimize for sample-proxy distances. Given the inherent non-bijectiveness of used distance functions, this can induce locally isotropic sample distributions, leading to crucial semantic context being missed due to difficulties resolving local structures and intraclass relations between samples. To alleviate this problem, we propose non-isotropy regularization <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$(\\mathbb{NIR})$</tex> for proxy-based Deep Metric Learning. By leveraging Normalizing Flows, we enforce unique translatability of samples from their respective class proxies. This allows us to explicitly induce a non-isotropic distribution of samples around a proxy to optimize for. In doing so, we equip proxy-based objectives to better learn local structures. Extensive experiments highlight consistent generalization benefits of NIR while achieving competitive and state-of-the-art performance on the standard benchmarks CUB200-2011, Cars196 and Stanford Online Products. In addition, we find the superior convergence properties of proxy-based methods to still be retained or even improved, making NIR very attractive for practic",
+  "needs_fetch": false
+ },
+ {
+  "id": 1993,
+  "title": "Integrating Language Guidance into Vision-based Deep Metric Learning",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://arxiv.org/abs/2203.08543",
+  "abstract": "Deep Metric Learning (DML) proposes to learn metric spaces which encode semantic similarities as embedding space distances. These spaces should be transferable to classes beyond those seen during training. Commonly, DML methods task networks to solve contrastive ranking tasks defined over binary class assignments. However, such approaches ignore higher-level semantic relations between the actual classes. This causes learned embedding spaces to encode incomplete semantic context and misrepresent the semantic relation between classes, impacting the generalizability of the learned metric space. To tackle this issue, we propose a language guidance objective for visual similarity learning. Leveraging language embeddings of expert- and pseudo-classnames, we contextualize and realign visual representation spaces corresponding to meaningful language semantics for better semantic consistency. Extensive experiments and ablations provide a strong motivation for our proposed approach and show language guidance offering significant, model-agnostic improvements for DML, achieving competitive and state-of-the-art results on all benchmarks. Code available at github.com/ExplainableML/LanguageGuidance-for_DML.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1992,
+  "title": "The Emergence of Gender Associations in Child Language Development",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "Cognitive Science",
+  "url": "https://doi.org/10.1111/cogs.13146",
+  "abstract": "Gender associations have been a long-standing research topic in psychological and social sciences. Although it is known that children learn aspects of gender associations at a young age, it is not well understood how they might emerge through the course of development. We investigate whether gender associations, such as the association of dresses with women and bulldozers with men, are reflected in the linguistic communication of young children from ages 1-5. Drawing on recent methods from machine learning, we use word embeddings derived from large text corpora including news articles and web pages as a proxy for gender associations in society, and we compare those with the gender associations of words uttered by caretakers and children in children's linguistic environment. We quantify gender associations in childhood language through gender probability, which measures the extent to which word usage frequencies in speech to and by girls and boys are gender-skewed. By analyzing 4,875 natural conversations between children and their caretakers in North America, we find that frequency patterns in word usage of both caretakers and children correlate strongly with the gender associations captured in word embeddings through the course of development. We discover that these correlations diminish from the 1970s to the 1990s. Our work suggests that early linguistic communication and social changes may jointly contribute to the formation of gender associations in childhood.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1991,
+  "title": "More than Words: In-the-Wild Visually-Driven Prosody for Text-to-Speech",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://doi.org/10.1109/cvpr52688.2022.01033",
+  "abstract": "In this paper we present VDTTS, a Visually-Driven Text-to-Speech model. Motivated by dubbing, VDTTS takes ad-vantage of video frames as an additional input alongside text, and generates speech that matches the video signal. We demonstrate how this allows VDTTS to, unlike plain TTS models, generate speech that not only has prosodic variations like natural pauses and pitch, but is also synchronized to the input video. Experimentally, we show our model produces well-synchronized outputs, approaching the video-speech synchronization quality of the ground-truth, on several challenging benchmarks including “in-the-wild” content from VoxCeleb2. Supplementary demo videos demonstrating video-speech synchronization, robustness to speaker ID swapping, and prosody, presented at the project page. <sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1</sup> <sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1</sup> Project page: http://google-research.github.io/lingvo-lab/vdtts",
+  "needs_fetch": false
+ },
+ {
+  "id": 1990,
+  "title": "Look for the Change: Learning Object States and State-Modifying Actions from Untrimmed Web Videos",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://doi.org/10.1109/cvpr52688.2022.01357",
+  "abstract": "Human actions often induce changes of object states such as “cutting an apple”, “cleaning shoes” or “pouring coffee”. In this paper, we seek to temporally localize object states (e.g. “empty” and “full” cup) together with the corresponding state-modifying actions (“pouring coffee”) in long uncurated videos with minimal supervision. The contributions of this work are threefold. First, we develop a self-supervised model for jointly learning state-modifying actions together with the corresponding object states from an uncurated set of videos from the Internet. The model is self-supervised by the causal ordering signal, i.e. initialobject state → manipulating action → end state. Second, to cope with noisy uncurated training data, our model incorporates a noise adaptive weighting module supervised by a small number of annotated still images, that allows to efficiently filter out irrelevant videos during training. Third, we collect a new dataset with more than 2600 hours of video and 34 thousand changes of object states, and manually annotate a part of this data to validate our approach. Our results demonstrate substantial improvements over prior work in both action and object state-recognition in video.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1989,
+  "title": "Input-level Inductive Biases for 3D Reconstruction",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://doi.org/10.1109/cvpr52688.2022.00608",
+  "abstract": "Much of the recent progress in 3D vision has been driven by the development of specialized architectures that incorporate geometrical inductive biases. In this paper we tackle 3D reconstruction using a domain agnostic architecture and study how to inject the same type of inductive biases directly as extra inputs to the model. This approach makes it possible to apply existing general models, such as Perceivers, on this rich domain, without the need for architectural changes, while simultaneously maintaining data efficiency of bespoke models. In particular we study how to encode cameras, projective ray incidence and epipolar geometry as model inputs, and demonstrate competitive multi-view depth estimation performance on multiple benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1988,
+  "title": "SASIC: Stereo Image Compression with Latent Shifts and Stereo Attention",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://doi.org/10.1109/cvpr52688.2022.00074",
+  "abstract": "We propose a learned method for stereo image compression that leverages the similarity of the left and right images in a stereo pair due to overlapping fields of view. The left image is compressed by a learned compression method based on an autoencoder with a hyperprior entropy model. The right image uses this information from the previously encoded left image in both the encoding and decoding stages. In particular, for the right image, we encode only the residual of its latent representation to the optimally shifted latent of the left image. On top of that, we also employ a stereo attention module to connect left and right images during decoding. The performance of the proposed method is evaluated on two benchmark stereo image datasets (Cityscapes and InStereo2K) and outperforms previous stereo image compression methods while being significantly smaller in model size.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1987,
+  "title": "Neural Mean Discrepancy for Efficient Out-of-Distribution Detection",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://doi.org/10.1109/cvpr52688.2022.01862",
+  "abstract": "Various approaches have been proposed for out-of-distribution (OOD) detection by augmenting models, input examples, training sets, and optimization objectives. Deviating from existing work, we have a simple hypothesis that standard off-the-shelf models may already contain sufficient information about the training set distribution which can be leveraged for reliable OOD detection. Our empirical study on validating this hypothesis, which measures the model activation's mean for OOD and in-distribution (ID) minibatches, surprisingly finds that activation means of OOD mini-batches consistently deviate more from those of the training data. In addition, training data's activation means can be computed offline efficiently or retrieved from batch normalization layers as a ‘free lunch’. Based upon this observation, we propose a novel metric called Neural Mean Discrepancy (NMD), which compares neural means of the input examples and training data. Leveraging the simplicity of NMD, we propose an efficient OOD detector that computes neural means by a standard forward pass followed by a lightweight classifier. Extensive experiments show that NMD outperforms state-of-the-art OOD approaches across multiple datasets and model architectures in terms of both detection accuracy and computational cost.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1986,
+  "title": "TubeDETR: Spatio-Temporal Video Grounding with Transformers",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://arxiv.org/abs/2203.16434",
+  "abstract": "We consider the problem of localizing a spatio-temporal tube in a video corresponding to a given text query. This is a challenging task that requires the joint and efficient modeling of temporal, spatial and multi-modal interactions. To address this task, we propose TubeDETR, a transformer-based architecture inspired by the recent success of such models for text-conditioned object detection. Our model notably includes: (i) an efficient video and text encoder that models spatial multi-modal interactions over sparsely sampled frames and (ii) a space-time decoder that jointly performs spatio-temporal localization. We demonstrate the advantage of our proposed components through an extensive ablation study. We also evaluate our full approach on the spatio-temporal video grounding task and demonstrate improvements over the state of the art on the challenging VidSTG and HC-STVG benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1985,
+  "title": "Kubric: A scalable dataset generator",
+  "org": "deepmind",
+  "date": "2022-06-01",
+  "venue": "2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+  "url": "https://doi.org/10.1109/cvpr52688.2022.00373",
+  "abstract": "Data is the driving force of machine learning, with the amount and quality of training data often being more important for the performance of a system than architecture and training details. But collecting, processing and annotating real data at scale is difficult, expensive, and frequently raises additional privacy, fairness and legal concerns. Synthetic data is a powerful tool with the potential to address these shortcomings: 1) it is cheap 2) supports rich ground-truth annotations 3) offers full control over data and 4) can circumvent or mitigate problems regarding bias, privacy and licensing. Unfortunately, software tools for effective data generation are less mature than those for architecture design and training, which leads to fragmented generation efforts. To address these problems we introduce Kubric, an open-source Python framework that interfaces with PyBullet and Blender to generate photo-realistic scenes, with rich annotations, and seamlessly scales to large jobs distributed over thousands of machines, and generating TBs of data. We demonstrate the effectiveness of Kubric by presenting a series of 13 different generated datasets for tasks ranging from studying 3D NeRF models to optical flow estimation. We release Kubric, the used assets, all of the generation code, as well as the rendered datasets for reuse and modification.",
+  "needs_fetch": false
+ },
+ {
+  "id": 123,
+  "title": "Softmax Linear Units",
+  "org": "anthropic",
+  "date": "2022-06-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2022/solu/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1032,
+  "title": "Teaching models to express their uncertainty in words",
+  "org": "openai",
+  "date": "2022-05-28",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/teaching-models-to-express-their-uncertainty-in-words/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1997,
+  "title": "Few-Shot Keypoint Detection as Task Adaptation via Latent Embeddings",
+  "org": "deepmind",
+  "date": "2022-05-23",
+  "venue": "2022 International Conference on Robotics and Automation (ICRA)",
+  "url": "https://doi.org/10.1109/icra46639.2022.9812209",
+  "abstract": "Dense object tracking, the ability to localize specific object points with pixel-level accuracy, is an important computer vision task with numerous downstream applications in robotics. Existing approaches either compute dense keypoint embeddings in a single forward pass, meaning the model is trained to track everything at once, or allocate their full capacity to a sparse predefined set of points, trading generality for accuracy. In this paper we explore a middle ground based on the observation that the number of relevant points at a given time are typically relatively few, e.g. grasp points on a target object. Our main contribution is a novel architecture, inspired by few-shot task adaptation, which allows a sparse-style network to condition on a keypoint embedding that indicates which point to track. Our central finding is that this approach provides the generality of dense-embedding models, while offering accuracy significantly closer to sparse-keypoint approaches. We present results illustrating this capacity vs. accuracy trade-off, and demonstrate the ability to zero-shot transfer to new object instances (within-class) using a real-robot pick-and-place task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1996,
+  "title": "Multiagent off-screen behavior prediction in football",
+  "org": "deepmind",
+  "date": "2022-05-23",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-022-12547-0",
+  "abstract": "In multiagent worlds, several decision-making individuals interact while adhering to the dynamics constraints imposed by the environment. These interactions, combined with the potential stochasticity of the agents' dynamic behaviors, make such systems complex and interesting to study from a decision-making perspective. Significant research has been conducted on learning models for forward-direction estimation of agent behaviors, for example, pedestrian predictions used for collision-avoidance in self-driving cars. In many settings, only sporadic observations of agents may be available in a given trajectory sequence. In football, subsets of players may come in and out of view of broadcast video footage, while unobserved players continue to interact off-screen. In this paper, we study the problem of multiagent time-series imputation in the context of human football play, where available past and future observations of subsets of agents are used to estimate missing observations for other agents. Our approach, called the Graph Imputer, uses past and future information in combination with graph networks and variational autoencoders to enable learning of a distribution of imputed trajectories. We demonstrate our approach on multiagent settings involving players that are partially-observable, using the Graph Imputer to predict the behaviors of off-screen players. To quantitatively evaluate the approach, we conduct experiments on football matches with ground truth trajectory data, us",
+  "needs_fetch": false
+ },
+ {
+  "id": 1995,
+  "title": "Offline Meta-Reinforcement Learning for Industrial Insertion",
+  "org": "deepmind",
+  "date": "2022-05-23",
+  "venue": "2022 International Conference on Robotics and Automation (ICRA)",
+  "url": "https://doi.org/10.1109/icra46639.2022.9812312",
+  "abstract": "Reinforcement learning (RL) can in principle let robots automatically adapt to new tasks, but current RL methods require a large number of trials to accomplish this. In this paper, we tackle rapid adaptation to new tasks through the framework of meta-learning, which utilizes past tasks to learn to adapt with a specific focus on industrial insertion tasks. Fast adaptation is crucial because prohibitively large number of on-robot trials will potentially damage hardware pieces. Additionally, effective adaptation is also feasible in that experience among different insertion applications can be largely leveraged by each other. In this setting, we address two specific challenges when applying meta-learning. First, conventional meta-RL algorithms require lengthy online meta-training. We show that this can be replaced with appropriately chosen offline data, resulting in an offline meta- RL method that only requires demonstrations and trials from each of the prior tasks, without the need to run costly meta-RL procedures online. Second, meta-RL methods can fail to generalize to new tasks that are too different from those seen at meta-training time, which poses a particular challenge in industrial applications, where high success rates are critical. We address this by combining contextual meta-learning with direct online finetuning: if the new task is similar to those seen in the prior data, then the contextual meta-learner adapts immediately, and if it is too different, it gradually ad",
+  "needs_fetch": false
+ },
+ {
+  "id": 124,
+  "title": "Scaling Laws and Interpretability of Learning from Repeated Data",
+  "org": "anthropic",
+  "date": "2022-05-21",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/scaling-laws-and-interpretability-of-learning-from-repeated-data",
+  "abstract": "Recent large language models have been trained on vast datasets, but also often on repeated data, either intentionally for the purpose of upweighting higher quality data, or unintentionally because data deduplication is not perfect and the model is exposed to repeated data at the sentence, paragraph, or document level. Some works have reported substantial negative performance effects of this repeated data. In this paper we attempt to study repeated data systematically and to understand its effects mechanistically. To do this, we train a family of models where most of the data is unique but a small fraction of it is repeated many times. We find a strong double descent phenomenon, in which repeated data can lead test loss to increase midway through training. A predictable range of repetition frequency leads to surprisingly severe degradation in performance. For instance, performance of an 800M parameter model can be degraded to that of a 2x smaller model (400M params) by repeating 0.1% of the data 100 times, despite the other 90% of the training tokens remaining unique. We suspect there is a range in the middle where the data can be memorized and doing so consumes a large fraction of the model's capacity, and this may be where the peak of degradation occurs. Finally, we connect these observations to recent mechanistic interpretability work - attempting to reverse engineer the detailed computations performed by the model - by showing that data repetition disproportionately damag",
+  "needs_fetch": false
+ },
+ {
+  "id": 1208,
+  "title": "Generating accurate assert statements for unit test cases using pretrained transformers",
+  "org": "anthropic",
+  "date": "2022-05-17",
+  "venue": null,
+  "url": "https://arxiv.org/abs/2009.05634",
+  "abstract": "Unit testing represents the foundational basis of the software testing pyramid, beneath integration and end-to-end testing. Automated software testing researchers have proposed a variety of techniques to assist developers in this time-consuming task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1998,
+  "title": "From Dirichlet to Rubin: Optimistic Exploration in RL without Bonuses",
+  "org": "deepmind",
+  "date": "2022-05-16",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2205.07704",
+  "abstract": "We propose the Bayes-UCBVI algorithm for reinforcement learning in tabular, stage-dependent, episodic Markov decision process: a natural extension of the Bayes-UCB algorithm by Kaufmann et al. (2012) for multi-armed bandits. Our method uses the quantile of a Q-value function posterior as upper confidence bound on the optimal Q-value function. For Bayes-UCBVI, we prove a regret bound of order $\\widetilde{O}(\\sqrt{H^3SAT})$ where $H$ is the length of one episode, $S$ is the number of states, $A$ the number of actions, $T$ the number of episodes, that matches the lower-bound of $Ω(\\sqrt{H^3SAT})$ up to poly-$\\log$ terms in $H,S,A,T$ for a large enough $T$. To the best of our knowledge, this is the first algorithm that obtains an optimal dependence on the horizon $H$ (and $S$) without the need for an involved Bernstein-like bonus or noise. Crucial to our analysis is a new fine-grained anti-concentration bound for a weighted Dirichlet sum that can be of independent interest. We then explain how Bayes-UCBVI can be easily extended beyond the tabular setting, exhibiting a strong link between our algorithm and Bayesian bootstrap (Rubin, 1981).",
+  "needs_fetch": false
+ },
+ {
+  "id": 2002,
+  "title": "D3C: Reducing the Price of Anarchy in Multi-Agent Learning",
+  "org": "deepmind",
+  "date": "2022-05-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2010.00575",
+  "abstract": "In multiagent systems, the complex interaction of fixed incentives can lead agents to outcomes that are poor (inefficient) not only for the group, but also for each individual. Price of anarchy is a technical, game-theoretic definition that quantifies the inefficiency arising in these scenarios-- it compares the welfare that can be achieved through perfect coordination against that achieved by self-interested agents at a Nash equilibrium. We derive a differentiable, upper bound on a price of anarchy that agents can cheaply estimate during learning. Equipped with this estimator, agents can adjust their incentives in a way that improves the efficiency incurred at a Nash equilibrium. Agents do so by learning to mix their reward (equiv. negative loss) with that of other agents by following the gradient of our derived upper bound. We refer to this approach as D3C. In the case where agent incentives are differentiable, D3C resembles the celebrated Win-Stay, Lose-Shift strategy from behavioral game theory, thereby establishing a connection between the global goal of maximum welfare and an established agent-centric learning rule. In the non-differentiable setting, as is common in multiagent reinforcement learning, we show the upper bound can be reduced via evolutionary strategies, until a compromise is reached in a distributed fashion. We demonstrate that D3C improves outcomes for each agent and the group as a whole on several social dilemmas including a traffic network exhibiting Br",
+  "needs_fetch": false
+ },
+ {
+  "id": 2001,
+  "title": "Sample-based Approximation of Nash in Large Many-Player Games via Gradient Descent",
+  "org": "deepmind",
+  "date": "2022-05-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2106.01285",
+  "abstract": "Nash equilibrium is a central concept in game theory. Several Nash solvers exist, yet none scale to normal-form games with many actions and many players, especially those with payoff tensors too big to be stored in memory. In this work, we propose an approach that iteratively improves an approximation to a Nash equilibrium through joint play. It accomplishes this by tracing a previously established homotopy that defines a continuum of equilibria for the game regularized with decaying levels of entropy. This continuum asymptotically approaches the limiting logit equilibrium, proven by MKelvey and Palfrey (1995) to be unique in almost all games, thereby partially circumventing the well-known equilibrium selection problem of many-player games. To encourage iterates to remain near this path, we efficiently minimize average deviation incentive via stochastic gradient descent, intelligently sampling entries in the payoff tensor as needed. Monte Carlo estimates of the stochastic gradient from joint play are biased due to the appearance of a nonlinear max operator in the objective, so we introduce additional innovations to the algorithm to alleviate gradient bias. The descent process can also be viewed as repeatedly constructing and reacting to a polymatrix approximation to the game. In these ways, our proposed approach, average deviation incentive descent with adaptive sampling (ADIDAS), is most similar to three classical approaches, namely homotopy-type, Lyapunov, and iterative pol",
+  "needs_fetch": false
+ },
+ {
+  "id": 2000,
+  "title": "Learning Equilibria in Mean-Field Games: Introducing Mean-Field PSRO",
+  "org": "deepmind",
+  "date": "2022-05-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2111.08350",
+  "abstract": "Recent advances in multiagent learning have seen the introduction of a family of algorithms that revolve around the population-based training method PSRO, showing convergence to Nash, correlated and coarse correlated equilibria. Notably, when the number of agents increases, learning best-responses becomes exponentially more difficult, and as such hampers PSRO training methods. The field of mean-field games provides an asymptotic solution to this problem when the considered games are anonymous-symmetric. Unfortunately, the mean-field approximation introduces non-linearities which prevent a straightforward adaptation of PSRO. Building upon optimization and adversarial regret minimization, this paper sidesteps this issue and introduces mean-field PSRO, an adaptation of PSRO which learns Nash, coarse correlated and correlated equilibria in mean-field games. The key is to replace the exact distribution computation step by newly-defined mean-field no-adversarial-regret learners, or by black-box optimization. We compare the asymptotic complexity of the approach to standard PSRO, greatly improve empirical bandit convergence speed by compressing temporal mixture weights, and ensure it is theoretically robust to payoff noise. Finally, we illustrate the speed and accuracy of mean-field PSRO on several mean-field games, demonstrating convergence to strong and weak equilibria.",
+  "needs_fetch": false
+ }
+]

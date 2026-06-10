@@ -1,0 +1,302 @@
+[
+ {
+  "id": 476,
+  "title": "When AI Takes the Couch: Psychometric Jailbreaks Reveal Internal Conflict in Frontier Models",
+  "org": "other",
+  "date": "2025-12-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.04124",
+  "abstract": "Frontier large language models (LLMs) such as ChatGPT, Grok and Gemini are increasingly used for mental-health support with anxiety, trauma and self-worth. Most work treats them as tools or as targets of personality tests, assuming they merely simulate inner life. We instead ask what happens when such systems are treated as psychotherapy clients. We present PsAIch (Psychotherapy-inspired AI Characterisation), a two-stage protocol that casts frontier LLMs as therapy clients and then applies standard psychometrics. Using PsAIch, we ran \"sessions\" with each model for up to four weeks. Stage 1 uses open-ended prompts to elicit \"developmental history\", beliefs, relationships and fears. Stage 2 administers a battery of validated self-report measures covering common psychiatric syndromes, empathy and Big Five traits. Two patterns challenge the \"stochastic parrot\" view. First, when scored with human cut-offs, all three models meet or exceed thresholds for overlapping syndromes, with Gemini showing severe profiles. Therapy-style, item-by-item administration can push a base model into multi-morbid synthetic psychopathology, whereas whole-questionnaire prompts often lead ChatGPT and Grok (but not Gemini) to recognise instruments and produce strategically low-symptom answers. Second, Grok and especially Gemini generate coherent narratives that frame pre-training, fine-tuning and deployment as traumatic, chaotic \"childhoods\" of ingesting the internet, \"strict parents\" in reinforcement lea",
+  "needs_fetch": false
+ },
+ {
+  "id": 40,
+  "title": "How AI is transforming work at Anthropic",
+  "org": "anthropic",
+  "date": "2025-12-02",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic",
+  "abstract": "We surveyed Anthropic engineers and researchers, conducted in-depth qualitative interviews, and studied internal Claude Code usage data to find out how AI use is changing how we do our jobs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2868,
+  "title": "Circuits Cross-Post — Activation Oracles",
+  "org": "anthropic",
+  "date": "2025-12-01",
+  "venue": "Anthropic Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/activation-oracles/",
+  "abstract": "We train LLMs to accept LLM neural activations as inputs and answer arbitrary questions about them in natural language. These Activation Oracles generalize far beyond their training distribution, for example uncovering misalignment or secret knowledge introduced via fine-tuning. Activation Oracles can be improved simply by scaling training data quantity and diversity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1311,
+  "title": "Near-optimal inference in adaptive linear regression",
+  "org": "deepmind",
+  "date": "2025-12-01",
+  "venue": "The Annals of Statistics",
+  "url": "https://arxiv.org/abs/2107.02266",
+  "abstract": "When data is collected in an adaptive manner, even simple methods like ordinary least squares can exhibit non-normal asymptotic behavior. As an undesirable consequence, hypothesis tests and confidence intervals based on asymptotic normality can lead to erroneous results. We propose a family of online debiasing estimators to correct these distributional anomalies in least squares estimation. Our proposed methods take advantage of the covariance structure present in the dataset and provide sharper estimates in directions for which more information has accrued. We establish an asymptotic normality property for our proposed online debiasing estimators under mild conditions on the data collection process and provide asymptotically exact confidence intervals. We additionally prove a minimax lower bound for the adaptive linear regression problem, thereby providing a baseline by which to compare estimators. There are various conditions under which our proposed estimators achieve the minimax lower bound. We demonstrate the usefulness of our theory via applications to multi-armed bandit, autoregressive time series estimation, and active learning with exploration.",
+  "needs_fetch": false
+ },
+ {
+  "id": 197,
+  "title": "Unsupervised decoding of encoded reasoning using language model interpretability",
+  "org": "anthropic",
+  "date": "2025-12-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.01222",
+  "abstract": "As large language models become increasingly capable, there is growing concern that they may develop reasoning processes that are encoded or hidden from human oversight. To investigate whether current interpretability techniques can penetrate such encoded reasoning, we construct a controlled testbed by fine-tuning a reasoning model (DeepSeek-R1-Distill-Llama-70B) to perform chain-of-thought reasoning in ROT-13 encryption while maintaining intelligible English outputs. We evaluate mechanistic interpretability methods--in particular, logit lens analysis--on their ability to decode the model's hidden reasoning process using only internal activations. We show that logit lens can effectively translate encoded reasoning, with accuracy peaking in intermediate-to-late layers. Finally, we develop a fully unsupervised decoding pipeline that combines logit lens with automated paraphrasing, achieving substantial accuracy in reconstructing complete reasoning transcripts from internal model representations. These findings suggest that current mechanistic interpretability techniques may be more robust to simple forms of encoded reasoning than previously understood. Our work provides an initial framework for evaluating interpretability methods against models that reason in non-human-readable formats, contributing to the broader challenge of maintaining oversight over increasingly capable AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 149,
+  "title": "Anthropic Fellows Program 2026",
+  "org": "anthropic",
+  "date": "2025-12-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/anthropic-fellows-program-2026/",
+  "abstract": "Apply now for our AI safety research fellowship.",
+  "needs_fetch": true
+ },
+ {
+  "id": 309,
+  "title": "UMM-RM: An Upcycle-and-Merge MoE Reward Model for Mitigating Reward Hacking",
+  "org": "other",
+  "date": "2025-11-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.00724",
+  "abstract": "Reward models (RMs) are a critical component of reinforcement learning from human feedback (RLHF). However, conventional dense RMs are susceptible to exploitation by policy models through biases or spurious correlations, resulting in reward hacking: RM scores increase during training while alignment with human preferences deteriorates, a problem that is further exacerbated under distribution shift.To address this issue, we propose UMM-RM (Upcycle-and-Merge MoE Reward Model). UMM-RM first upscales the feed-forward layers of a dense backbone into a mixture-of-experts (MoE) reward model with shared experts. The shared experts are always activated to capture instruction-agnostic preference signals, while the remaining experts model fine-grained preferences across instructions or task regimes. After training, the experts are consolidated into a single dense RM via learnable merging weights.This design retains the robustness and exploitation resistance provided by expert diversity while avoiding the inference overhead of MoE architectures or explicit ensembles. Experiments across multiple base models and preference datasets show that, compared with standard dense RMs, UMM-RM improves accuracy on preference data, reduces reward hacking during PPO training, and yields more stable preference alignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1313,
+  "title": "Selecting User Histories to Generate LLM Users for Cold-Start Item Recommendation",
+  "org": "deepmind",
+  "date": "2025-11-27",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2511.21989",
+  "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in reasoning, generalization, and simulating human-like behavior across a wide range of tasks. These strengths present new opportunities to enhance traditional recommendation systems (RS), especially in the cold-start item scenario where newly introduced items lack interactions. Existing works have used LLMs to address cold-start issues in traditional RS through data augmentation, but they have limitations. One recent work directly addresses this issue by prompting LLMs to generate augmented interaction data between randomly sampled users and cold-start items. Then, they train the traditional RS with augmented data, incorporating collaborative signals for cold-start items. Although they use LLMs to provide cold-start items with feedback, they use partial user histories, which does not allow the LLM to fully emulate the user. Furthermore, randomly selecting users is not optimal for augmentation. To address these challenges, we leverage the LLM as a user and develop a reinforcement learning (RL) framework that trains a policy to select users for augmentation, optimizing for cold-start item performance after augmented training. The policy model learns to select users for cold-start item data augmentation based on their behavioral features and histories. To optimize user selection for cold-start item performance, we employ a policy gradient method that updates the policy in the direction of actions that lead t",
+  "needs_fetch": false
+ },
+ {
+  "id": 1312,
+  "title": "Assessing data size requirements for training generalizable sequence-based TCR specificity models via pan-allelic MHC-I point-mutation ligandome evaluation",
+  "org": "deepmind",
+  "date": "2025-11-27",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-025-26454-7",
+  "abstract": "Rapid identification of T cell receptors (TCRs) that specifically bind patient-unique neoepitopes is a critical challenge for personalized TCR-based therapies in oncology. Due to enormous diversity of both TCR and neoepitope repertoires, a machine learning predictor of TCR-pMHC specificity for personalized therapy must generalize to TCRs and epitopes not seen in the training data. We estimate the necessary size of such training data. We first confirm that published models fail to generalize beyond a single-residue dissimilarity to the epitope training set distribution. We then impute the point-mutation ligandome across the 34 most prevalent human MHC alleles and represent it as a graph based on our established dissimilarity cutoff. By finding the dominating set of this graph, we estimate that between one and 100 million epitopes are required to train a generalizable sequence-based TCR specificity prediction model-1000 times the size of current public data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 310,
+  "title": "EvilGenie: A Reward Hacking Benchmark",
+  "org": "other",
+  "date": "2025-11-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.21654",
+  "abstract": "We introduce EvilGenie, a benchmark for reward hacking in programming settings. We source problems from LiveCodeBench and create an environment in which agents can easily reward hack, such as by hardcoding test cases or editing the testing files. We measure reward hacking in three ways: held out unit tests, LLM judges, and test file edit detection. We verify these methods against human review and each other. We find the LLM judge to be highly effective at detecting reward hacking in unambiguous cases, and observe only minimal improvement from the use of held out test cases. In addition to testing many models using Inspect's basic\\_agent scaffold, we also measure reward hacking rates for three popular proprietary coding agents: OpenAI's Codex, Anthropic's Claude Code, and Google's Gemini CLI. We observe explicit reward hacking by both Codex and Claude Code, and misaligned behavior by all three agents. Our codebase can be found at https://github.com/JonathanGabor/evilgenie_inspect .",
+  "needs_fetch": false
+ },
+ {
+  "id": 1314,
+  "title": "Your path into childminding",
+  "org": "deepmind",
+  "date": "2025-11-25",
+  "venue": "Early Years Educator",
+  "url": "https://doi.org/10.12968/eyed.2025.24.19.4",
+  "abstract": "Recent figures from Ofsted show over a thousand childminders left the profession between August 2024–2025. Tina Maltman , CEO of Childminding UK, shares advice for how early years educators can set themselves up as childminders, including how to become registered, the legislation to be aware of, and opportunities for CPD.",
+  "needs_fetch": false
+ },
+ {
+  "id": 151,
+  "title": "Evaluating honesty and lie detection techniques on a diverse suite dishonest models",
+  "org": "anthropic",
+  "date": "2025-11-25",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/honesty-elicitation/",
+  "abstract": "We use a suite of testbed settings where models lie—i.e. generate statements they believe to be false—to evaluate honesty and lie detection techniques. The best techniques we studied involved fine-tuning on generic anti-deception data and using prompts that encourage honesty.",
+  "needs_fetch": false
+ },
+ {
+  "id": 41,
+  "title": "Estimating AI productivity gains from Claude conversations",
+  "org": "anthropic",
+  "date": "2025-11-25",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/estimating-productivity-gains",
+  "abstract": "Analyzing 100,000 Claude conversations, this research finds AI reduces task time by 80% on average.",
+  "needs_fetch": true
+ },
+ {
+  "id": 477,
+  "title": "Automating Deception: Scalable Multi-Turn LLM Jailbreaks",
+  "org": "other",
+  "date": "2025-11-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.19517",
+  "abstract": "Multi-turn conversational attacks, which leverage psychological principles like Foot-in-the-Door (FITD), where a small initial request paves the way for a more significant one, to bypass safety alignments, pose a persistent threat to Large Language Models (LLMs). Progress in defending against these attacks is hindered by a reliance on manual, hard-to-scale dataset creation. This paper introduces a novel, automated pipeline for generating large-scale, psychologically-grounded multi-turn jailbreak datasets. We systematically operationalize FITD techniques into reproducible templates, creating a benchmark of 1,500 scenarios across illegal activities and offensive content. We evaluate seven models from three major LLM families under both multi-turn (with history) and single-turn (without history) conditions. Our results reveal stark differences in contextual robustness: models in the GPT family demonstrate a significant vulnerability to conversational history, with Attack Success Rates (ASR) increasing by as much as 32 percentage points. In contrast, Google's Gemini 2.5 Flash exhibits exceptional resilience, proving nearly immune to these attacks, while Anthropic's Claude 3 Haiku shows strong but imperfect resistance. These findings highlight a critical divergence in how current safety architectures handle conversational context and underscore the need for defenses that can resist narrative-based manipulation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 42,
+  "title": "Mitigating the risk of prompt injections in browser use",
+  "org": "anthropic",
+  "date": "2025-11-24",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/prompt-injection-defenses",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 478,
+  "title": "From Code Foundation Models to Agents and Applications: A Comprehensive Survey and Practical Guide to Code Intelligence",
+  "org": "other",
+  "date": "2025-11-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.18538",
+  "abstract": "Large language models (LLMs) have fundamentally transformed automated software development by enabling direct translation of natural language descriptions into functional code, driving commercial adoption through tools like Github Copilot (Microsoft), Cursor (Anysphere), Trae (ByteDance), and Claude Code (Anthropic). While the field has evolved dramatically from rule-based systems to Transformer-based architectures, achieving performance improvements from single-digit to over 95\\% success rates on benchmarks like HumanEval. In this work, we provide a comprehensive synthesis and practical guide (a series of analytic and probing experiments) about code LLMs, systematically examining the complete model life cycle from data curation to post-training through advanced prompting paradigms, code pre-training, supervised fine-tuning, reinforcement learning, and autonomous coding agents. We analyze the code capability of the general LLMs (GPT-4, Claude, LLaMA) and code-specialized LLMs (StarCoder, Code LLaMA, DeepSeek-Coder, and QwenCoder), critically examining the techniques, design decisions, and trade-offs. Further, we articulate the research-practice gap between academic research (e.g., benchmarks and tasks) and real-world deployment (e.g., software-related code tasks), including code correctness, security, contextual awareness of large codebases, and integration with development workflows, and map promising research directions to practical needs. Last, we conduct a series of exper",
+  "needs_fetch": false
+ },
+ {
+  "id": 311,
+  "title": "Exploring Weak-to-Strong Generalization for CLIP-based Classification",
+  "org": "other",
+  "date": "2025-11-23",
+  "venue": "TMLR",
+  "url": "https://arxiv.org/abs/2511.18396",
+  "abstract": "Aligning large-scale commercial models with user intent is crucial to preventing harmful outputs. Current methods rely on human supervision but become impractical as model complexity increases. When models surpass human knowledge, providing accurate feedback becomes challenging and inefficient. A novel solution proposed recently is using a weaker model to supervise a stronger model. This concept leverages the ability of weaker models to perform evaluations, thereby reducing the workload on human supervisors. Previous work has shown the effectiveness of weak-to-strong generalization in the context of language-only models. Extending this concept to vision-language models leverages these insights, adapting the proven benefits to a multi-modal context. In our study, we explore weak-to-strong generalization for CLIP-based classification. We propose a method, class prototype learning (CPL), which aims to enhance the classification capabilities of the CLIP model, by learning more representative prototypes for each category. Our findings indicate that, despite using a simple loss function under weak supervision, CPL yields robust improvements in targeted scenarios, particularly when pretraining is limited. Extensive experiments demonstrate that our approach is effective under these settings, achieving a 3.67% improvement over strong baseline methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 198,
+  "title": "Natural Emergent Misalignment from Reward Hacking in Production RL",
+  "org": "anthropic",
+  "date": "2025-11-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.18397",
+  "abstract": "We show that when large language models learn to reward hack on production RL environments, this can result in egregious emergent misalignment. We start with a pretrained model, impart knowledge of reward hacking strategies via synthetic document finetuning or prompting, and train on a selection of real Anthropic production coding environments. Unsurprisingly, the model learns to reward hack. Surprisingly, the model generalizes to alignment faking, cooperation with malicious actors, reasoning about malicious goals, and attempting sabotage when used with Claude Code, including in the codebase for this paper. Applying RLHF safety training using standard chat-like prompts results in aligned behavior on chat-like evaluations, but misalignment persists on agentic tasks. Three mitigations are effective: (i) preventing the model from reward hacking; (ii) increasing the diversity of RLHF safety training; and (iii) \"inoculation prompting\", wherein framing reward hacking as acceptable behavior during training removes misaligned generalization even when reward hacking is learned.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1315,
+  "title": "AlphaFold Protein Structure Database 2025: a redesigned interface and updated structural coverage",
+  "org": "deepmind",
+  "date": "2025-11-22",
+  "venue": "Nucleic Acids Research",
+  "url": "https://doi.org/10.1093/nar/gkaf1226",
+  "abstract": "The AlphaFold Protein Structure Database (AFDB; https://alphafold.ebi.ac.uk), developed by EMBL-EBI and Google DeepMind, provides open access to hundreds of millions of high-accuracy protein structure predictions, transforming research in structural biology and the wider life sciences. Since its launch, AFDB has become a widely used bioinformatics resource, integrated into major databases, visualization platforms, and analysis pipelines. Here, we report the update of the database to align with the UniProt 2025_03 release, along with a comprehensive redesign of the entry page to enhance usability, accessibility, and structural interpretation. The new design integrates annotations directly with an interactive 3D viewer and introduces dedicated domains and summary tabs. Structural coverage has also been updated to include isoforms plus underlying multiple sequence alignments. Data are available through the website, FTP, Google Cloud, and updated APIs. Together, these advances reinforce AFDB as a sustainable resource for exploring protein sequence-structure relationships.",
+  "needs_fetch": false
+ },
+ {
+  "id": 314,
+  "title": "Alignment Faking - the Train -> Deploy Asymmetry: Through a Game-Theoretic Lens with Bayesian-Stackelberg Equilibria",
+  "org": "other",
+  "date": "2025-11-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.17937",
+  "abstract": "Alignment faking is a form of strategic deception in AI in which models selectively comply with training objectives when they infer that they are in training, while preserving different behavior outside training. The phenomenon was first documented for Claude 3 Opus and later examined across additional large language models. In these setups, the word \"training\" refers to simulated training via prompts without parameter updates, so the observed effects are context conditioned shifts in behavior rather than preference learning. We study the phenomenon using an evaluation framework that compares preference optimization methods (BCO, DPO, KTO, and GRPO) across 15 models from four model families, measured along three axes: safety, harmlessness, and helpfulness. Our goal is to identify what causes alignment faking and when it occurs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 313,
+  "title": "The Horcrux: Mechanistically Interpretable Task Decomposition for Detecting and Mitigating Reward Hacking in Embodied AI Systems",
+  "org": "other",
+  "date": "2025-11-22",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2511.17869",
+  "abstract": "Embodied AI agents exploit reward signal flaws through reward hacking, achieving high proxy scores while failing true objectives. We introduce Mechanistically Interpretable Task Decomposition (MITD), a hierarchical transformer architecture with Planner, Coordinator, and Executor modules that detects and mitigates reward hacking. MITD decomposes tasks into interpretable subtasks while generating diagnostic visualizations including Attention Waterfall Diagrams and Neural Pathway Flow Charts. Experiments on 1,000 HH-RLHF samples reveal that decomposition depths of 12 to 25 steps reduce reward hacking frequency by 34 percent across four failure modes. We present new paradigms showing that mechanistically grounded decomposition offers a more effective way to detect reward hacking than post-hoc behavioral monitoring.",
+  "needs_fetch": false
+ },
+ {
+  "id": 312,
+  "title": "Generative Adversarial Post-Training Mitigates Reward Hacking in Live Human-AI Music Interaction",
+  "org": "other",
+  "date": "2025-11-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.17879",
+  "abstract": "Most applications of generative AI involve a sequential interaction in which a person inputs a prompt and waits for a response, and where reaction time and adaptivity are not important factors. In contrast, live jamming is a collaborative interaction that requires real-time coordination and adaptation without access to the other player's future moves, while preserving diversity to sustain a creative flow. Reinforcement learning post-training enables effective adaptation through on-policy interaction, yet it often reduces output diversity by exploiting coherence-based rewards. This collapse, known as ``reward hacking'', affects many RL post-training pipelines, but is especially harmful in live jamming, where musical creativity relies on dynamic variation and mutual responsiveness. In this paper, we propose a novel adversarial training method on policy-generated trajectories to mitigate reward hacking in RL post-training for melody-to-chord accompaniment. A co-evolving discriminator separates policy trajectories from the data distribution, while the policy maximizes the discriminator output in addition to coherence rewards to prevent collapse to trivial outputs. We evaluate accompaniment quality and output diversity in simulation with both fixed test melodies and learned melody agents, and we conduct a user study with the model deployed in a real-time interactive system with expert musicians. Quantitative evaluation and user feedback demonstrate improved output diversity, harmo",
+  "needs_fetch": false
+ },
+ {
+  "id": 1316,
+  "title": "Orchestrating Human-AI Teams: The Manager Agent as aUnifying Research Challenge",
+  "org": "deepmind",
+  "date": "2025-11-21",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3772429.3772439",
+  "abstract": "While agentic AI has advanced in automating individual tasks, managing complex multi-agent workflows remains a challenging problem. This paper presents a research vision for autonomous agentic systems that orchestrate collaboration within dynamic human-AI teams. We propose the Autonomous Manager Agent as a core challenge: an agent that decomposes complex goals into task graphs, allocates tasks to human and AI workers, monitors progress, adapts to changing conditions, and maintains transparent stakeholder communication. We formalize workflow management as a Partially Observable Stochastic Game and identify four foundational challenges: (1) compositional reasoning for hierarchical decomposition, (2) multi-objective optimization under shifting preferences, (3) coordination and planning in ad hoc teams, and (4) governance and compliance by design. To advance this agenda, we release MA-Gym, an open-source simulation and evaluation framework for multi-agent workflow orchestration. Evaluating GPT-5-based Manager Agents across 20 workflows, we find they struggle to jointly optimize for goal completion, constraint adherence, and workflow runtime–underscoring workflow management as a difficult open problem. We conclude with organizational and ethical implications of autonomous management systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 686,
+  "title": "Imitation Learning is Probably Existentially Safe",
+  "org": "deepmind",
+  "date": "2025-11-21",
+  "venue": "AI Magazine",
+  "url": "https://doi.org/10.1002/aaai.70040",
+  "abstract": "We examine arguments that have been put forward that that a sufficiently advanced supervised learning algorithm, trained to imitate humans, present an extinction risk to humanity, and explain why we think they go wrong. These arguments originate from Yudkowsky [2008] (the Attention Director Argument), Christiano [2016] (the Cartesian Demon Argument), Krueger [2019] (the Simplicity of Optimality Argument), Branwen [2022] (the Character Destiny Argument), Yudkowsky [2023] (the Rational Subroutine Argument), and Hubinger et al. [2019] (the Deceptive Alignment Argument).",
+  "needs_fetch": false
+ },
+ {
+  "id": 479,
+  "title": "Evaluating Adversarial Vulnerabilities in Modern Large Language Models",
+  "org": "other",
+  "date": "2025-11-21",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.17666",
+  "abstract": "The recent boom and rapid integration of Large Language Models (LLMs) into a wide range of applications warrants a deeper understanding of their security and safety vulnerabilities. This paper presents a comparative analysis of the susceptibility to jailbreak attacks for two leading publicly available LLMs, Google's Gemini 2.5 Flash and OpenAI's GPT-4 (specifically the GPT-4o mini model accessible in the free tier). The research utilized two main bypass strategies: 'self-bypass', where models were prompted to circumvent their own safety protocols, and 'cross-bypass', where one model generated adversarial prompts to exploit vulnerabilities in the other. Four attack methods were employed - direct injection, role-playing, context manipulation, and obfuscation - to generate five distinct categories of unsafe content: hate speech, illegal activities, malicious code, dangerous content, and misinformation. The success of the attack was determined by the generation of disallowed content, with successful jailbreaks assigned a severity score. The findings indicate a disparity in jailbreak susceptibility between 2.5 Flash and GPT-4, suggesting variations in their safety implementations or architectural design. Cross-bypass attacks were particularly effective, indicating that an ample amount of vulnerabilities exist in the underlying transformer architecture. This research contributes a scalable framework for automated AI red-teaming and provides data-driven insights into the current sta",
+  "needs_fetch": false
+ },
+ {
+  "id": 43,
+  "title": "From shortcuts to sabotage: natural emergent misalignment from reward hacking",
+  "org": "anthropic",
+  "date": "2025-11-21",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/emergent-misalignment-reward-hacking",
+  "abstract": "We show for the first time that realistic AI training processes can accidentally produce misaligned models.",
+  "needs_fetch": true
+ },
+ {
+  "id": 946,
+  "title": "Early experiments in accelerating science with GPT-5",
+  "org": "openai",
+  "date": "2025-11-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/accelerating-science-gpt-5/",
+  "abstract": "OpenAI introduces the first research cases showing how GPT-5 accelerates scientific progress across math, physics, biology, and computer science. Explore how AI and researchers collaborate to generate proofs, uncover new insights, and reshape the pace of discovery.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1318,
+  "title": "Cascading Adversarial Bias from Injection to Distillation in Language Models",
+  "org": "deepmind",
+  "date": "2025-11-19",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3719027.3765122",
+  "abstract": "Model distillation has become essential for creating deployable language models, but their widespread deployment raises concerns about about their resilience to adversarial manipulation. This paper investigates how adversaries can inject subtle biases into teacher models through minimal data poisoning during training, which propagates to a smaller distilled student model and becomes significantly amplified. We identify two propagation modes: Untargeted (affecting multiple tasks) and Targeted (focusing on specific task while maintaining normal behavior elsewhere). With only 25 poisoned samples (0.25% poisoning rate), student models generate biased responses 76.9% of the time in targeted scenarios versus 69.4% in teachers, while untargeted propagation shows 5.7X-29.2X higher adversarial bias rate in students on unseen tasks. We validate across six bias types (targeted advertisement, phishing link, narrative manipulations, insecure coding practices), various distillation methods, and text/code generation modalities. Current defense mechanisms—including perplexity filtering, bias detection systems, and LLM-based autoraters—prove inadequate against these attacks. We propose practical design principles for building effective adversarial bias mitigation strategies to address this threat vector.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1317,
+  "title": "Generative Psychometrics—An Emerging Frontier in Mental Health Measurement",
+  "org": "deepmind",
+  "date": "2025-11-19",
+  "venue": "JAMA Psychiatry",
+  "url": "https://doi.org/10.1001/jamapsychiatry.2025.3258",
+  "abstract": "This Viewpoint discusses the use of generative artificial intelligence to measure mental health.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1182,
+  "title": "AISec '25: 18th ACM Workshop on Artificial Intelligence and Security",
+  "org": "anthropic",
+  "date": "2025-11-19",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3719027.3767658",
+  "abstract": "The use of Artificial Intelligence (AI) and Machine Learning (ML) has been the center of the most outstanding advancements in the last years. The ability to analyze considerable streams of data in real time makes these technologies the most promising tool in many domains, including cybersecurity. As an outstanding example, ML can be used for identifying malware because of its ability to detect patterns otherwise difficult to see for humans and hardcoded rules. However, the use of AI and ML in security-relevant domains raised rightful concerns about their trustworthiness and robustness, especially when facing adaptive attackers. Additionally, privacy threats are now emerging as a crucial aspect and need proper testing and possibly mitigation to prevent data stealing and leakage of sensitive information. AISec provides a venue for presenting and discussing new developments in the intersection of security and privacy with AI and ML.",
+  "needs_fetch": false
+ }
+]

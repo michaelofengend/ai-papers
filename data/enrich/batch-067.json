@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1999,
+  "title": "Learning to Answer Visual Questions From Web Videos",
+  "org": "deepmind",
+  "date": "2022-05-09",
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "url": "https://doi.org/10.1109/tpami.2022.3173208",
+  "abstract": "Recent methods for visual question answering rely on large-scale annotated datasets. Manual annotation of questions and answers for videos, however, is tedious, expensive and prevents scalability. In this work, we propose to avoid manual annotation and generate a large-scale training dataset for video question answering making use of automatic cross-modal supervision. We leverage a question generation transformer trained on text data and use it to generate question-answer pairs from transcribed video narrations. Given narrated videos, we then automatically generate the HowToVQA69M dataset with 69M video-question-answer triplets. To handle the open vocabulary of diverse answers in this dataset, we propose a training procedure based on a contrastive loss between a video-question multi-modal transformer and an answer transformer. We introduce the zero-shot VideoQA task and the VideoQA feature probe evaluation setting and show excellent results, in particular for rare answers. Furthermore, our method achieves competitive results on MSRVTT-QA, ActivityNet-QA, MSVD-QA and How2QA datasets. We also show that our VideoQA dataset generation approach generalizes to another source of web video and text data. We use our method to generate the WebVidVQA3M dataset from the WebVid dataset, i.e., videos with alt-text annotations, and show its benefits for training VideoQA models. Finally, for a detailed evaluation we introduce iVQA, a new VideoQA dataset with reduced language bias and high-qu",
+  "needs_fetch": false
+ },
+ {
+  "id": 2003,
+  "title": "Reconstructing Training Data with Informed Adversaries",
+  "org": "deepmind",
+  "date": "2022-05-01",
+  "venue": "2022 IEEE Symposium on Security and Privacy (SP)",
+  "url": "https://doi.org/10.1109/sp46214.2022.9833677",
+  "abstract": "Given access to a machine learning model, can an adversary reconstruct the model’s training data? This work studies this question from the lens of a powerful informed adversary who knows all the training data points except one. By instantiating concrete attacks, we show it is feasible to reconstruct the remaining data point in this stringent threat model. For convex models (e.g. logistic regression), reconstruction attacks are simple and can be derived in closed-form. For more general models (e.g. neural networks), we propose an attack strategy based on training a reconstructor network that receives as input the weights of the model under attack and produces as output the target data point. We demonstrate the effectiveness of our attack on image classifiers trained on MNIST and CIFAR-10, and systematically investigate which factors of standard machine learning pipelines affect reconstruction success. Finally, we theoretically investigate what amount of differential privacy suffices to mitigate reconstruction attacks by informed adversaries. Our work provides an effective reconstruction attack that model developers can use to assess memorization of individual points in general settings beyond those considered in previous works (e.g. generative language models or access to training gradients); it shows that standard models have the capacity to store enough information to enable high-fidelity reconstruction of training data points; and it demonstrates that differential privacy c",
+  "needs_fetch": false
+ },
+ {
+  "id": 2006,
+  "title": "Normalizing flows for atomic solids",
+  "org": "deepmind",
+  "date": "2022-04-27",
+  "venue": "Machine Learning Science and Technology",
+  "url": "https://arxiv.org/abs/2111.08696",
+  "abstract": "Abstract We present a machine-learning approach, based on normalizing flows, for modelling atomic solids. Our model transforms an analytically tractable base distribution into the target solid without requiring ground-truth samples for training. We report Helmholtz free energy estimates for cubic and hexagonal ice modelled as monatomic water as well as for a truncated and shifted Lennard-Jones system, and find them to be in excellent agreement with literature values and with estimates from established baseline methods. We further investigate structural properties and show that the model samples are nearly indistinguishable from the ones obtained with molecular dynamics. Our results thus demonstrate that normalizing flows can provide high-quality samples and free energy estimates without the need for multi-staging.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2005,
+  "title": "The prospects and opportunities of protein structure prediction with AI",
+  "org": "deepmind",
+  "date": "2022-04-27",
+  "venue": "Nature Reviews Molecular Cell Biology",
+  "url": "https://doi.org/10.1038/s41580-022-00488-5",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2004,
+  "title": "Towards Learning Universal Audio Representations",
+  "org": "deepmind",
+  "date": "2022-04-27",
+  "venue": "ICASSP 2022 - 2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+  "url": "https://doi.org/10.1109/icassp43922.2022.9746790",
+  "abstract": "The ability to learn universal audio representations that can solve diverse speech, music, and environment tasks can spur many applications that require general sound content understanding. In this work, we introduce a holistic audio representation evaluation suite (HARES) spanning 12 downstream tasks across audio domains and provide a thorough empirical study of recent sound representation learning systems on that benchmark. We discover that previous sound event classification or speech models do not generalize outside of their domains. We observe that more robust audio representations can be learned with the SimCLR objective; however, the model’s transferability depends heavily on the model architecture. We find the Slowfast architecture is good at learning rich representations required by different domains, but its performance is affected by the normalization scheme. Based on these findings, we propose a novel normalizer-free Slowfast NFNet and achieve state-of-the-art performance across all domains.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2007,
+  "title": "Machine learning and health need better values",
+  "org": "deepmind",
+  "date": "2022-04-22",
+  "venue": "npj Digital Medicine",
+  "url": "https://doi.org/10.1038/s41746-022-00595-9",
+  "abstract": "Health care is a human process that generates data from human lives, as well as the care they receive. Machine learning has worked in health to bring new technology into this sociotechnical environment, using data to support a vision of healthier living for everyone. Interdisciplinary fields of research like machine learning for health bring different values and judgements together, requiring that those value choices be deliberate and measured. More than just abstract ideas, our values are the basis upon which we choose our research topics, set up research collaborations, execute our research methodologies, make assessments of scientific and technical correctness, proceed to product development, and finally operationalize deployments and describe policy. For machine learning to achieve its aims of supporting healthier living while minimizing harm, we believe that a deeper introspection of our field’s values and contentions is overdue. In this perspective, we highlight notable areas in need of attention within the field. We believe deliberate and informed introspection will lead our community to renewed opportunities for understanding disease, new partnerships with clinicians and patients, and allow us to better support people and communities to live healthier, dignified lives.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2009,
+  "title": "Clinical Target Volume Automatic Segmentation Based on Lymph Node Stations for Lung Cancer with Bulky Lump Lymph Nodes",
+  "org": "deepmind",
+  "date": "2022-04-19",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-1545690/v1",
+  "abstract": "Abstract The lack of standardized delineation of lymph node station in lung cancer radiotherapy leads to nonstandard clinical target volume (CTV) contouring, especially in patients with bulky lump gross target volume lymph nodes (GTVnd). Therefore, this study defines lymph node region boundaries in radiotherapy for lung cancer and automatically contours lymph node stations based on the International Association for the Study of Lung Cancer (IASLC) lymph node map. Computed tomography (CT) scans of 200 patients with small cell lung cancer are collected. The lymph node zone boundaries are defined based on the IASLC lymph node map, with adjustments to meet radiotherapy requirements. Contours of lymph node stations are confirmed by two experienced oncologists. A model (DiUNet) is constructed by incorporating the contours of GTVnd to precisely contour the boundaries. Quantitative evaluation metrics and clinical evaluations are conducted. This is the first study to propose a method that automatically contours lymph node regions station by station based on the IASLC lymph node map with bulky lump GTVnd. Delineation of lymph node stations based on the DiUNet model is a promising strategy to obtain accuracy, consistency, and efficiency for CTV delineation in lung cancer patients, especially for bulky lump GTVnd.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2008,
+  "title": "Deep learning, reinforcement learning, and world models",
+  "org": "deepmind",
+  "date": "2022-04-19",
+  "venue": "Neural Networks",
+  "url": "https://doi.org/10.1016/j.neunet.2022.03.037",
+  "abstract": "Deep learning (DL) and reinforcement learning (RL) methods seem to be a part of indispensable factors to achieve human-level or super-human AI systems. On the other hand, both DL and RL have strong connections with our brain functions and with neuroscientific findings. In this review, we summarize talks and discussions in the \"Deep Learning and Reinforcement Learning\" session of the symposium, International Symposium on Artificial Intelligence and Brain Science. In this session, we discussed whether we can achieve comprehensive understanding of human intelligence based on the recent advances of deep learning and reinforcement learning algorithms. Speakers contributed to provide talks about their recent studies that can be key technologies to achieve human-level intelligence.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2010,
+  "title": "Symmetry-Based Representations for Artificial and Biological General Intelligence",
+  "org": "deepmind",
+  "date": "2022-04-14",
+  "venue": "Frontiers in Computational Neuroscience",
+  "url": "https://doi.org/10.3389/fncom.2022.836498",
+  "abstract": "Biological intelligence is remarkable in its ability to produce complex behavior in many diverse situations through data efficient, generalizable, and transferable skill acquisition. It is believed that learning \"good\" sensory representations is important for enabling this, however there is little agreement as to what a good representation should look like. In this review article we are going to argue that symmetry transformations are a fundamental principle that can guide our search for what makes a good representation. The idea that there exist transformations (symmetries) that affect some aspects of the system but not others, and their relationship to conserved quantities has become central in modern physics, resulting in a more unified theoretical framework and even ability to predict the existence of new particles. Recently, symmetries have started to gain prominence in machine learning too, resulting in more data efficient and generalizable algorithms that can mimic some of the complex behaviors produced by biological intelligence. Finally, first demonstrations of the importance of symmetry transformations for representation learning in the brain are starting to arise in neuroscience. Taken together, the overwhelming positive effect that symmetries bring to these disciplines suggest that they may be an important general framework that determines the structure of the universe, constrains the nature of natural tasks and consequently shapes both biological and artificial i",
+  "needs_fetch": false
+ },
+ {
+  "id": 1034,
+  "title": "Hierarchical text-conditional image generation with CLIP latents",
+  "org": "openai",
+  "date": "2022-04-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/hierarchical-text-conditional-image-generation-with-clip-latents/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1033,
+  "title": "Measuring Goodhart’s law",
+  "org": "openai",
+  "date": "2022-04-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/measuring-goodharts-law/",
+  "abstract": "Goodhart’s law famously says: “When a measure becomes a target, it ceases to be a good measure.” Although originally from economics, it’s something we have to grapple with at OpenAI when figuring out how to optimize objectives that are difficult or costly to measure.",
+  "needs_fetch": false
+ },
+ {
+  "id": 125,
+  "title": "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+  "org": "anthropic",
+  "date": "2022-04-12",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/training-a-helpful-and-harmless-assistant-with-reinforcement-learning-from-human-feedback",
+  "abstract": "We apply preference modeling and reinforcement learning from human feedback (RLHF) to finetune language models to act as helpful and harmless assistants. We find this alignment training improves performance on almost all NLP evaluations, and is fully compatible with training for specialized skills such as python coding and summarization. We explore an iterated online mode of training, where preference models and RL policies are updated on a weekly cadence with fresh human feedback data, efficiently improving our datasets and models. Finally, we investigate the robustness of RLHF training, and identify a roughly linear relation between the RL reward and the square root of the KL divergence between the policy and its initialization. Alongside our main results, we perform peripheral analyses on calibration, competing objectives, and the use of OOD detection, compare our models with human writers, and provide samples from our models using prompts appearing in recent related work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2011,
+  "title": "Can neurogenesis act as a neural regularizer?",
+  "org": "deepmind",
+  "date": "2022-04-10",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2022.04.07.487582",
+  "abstract": "Abstract New neurons are continuously generated in the subgranular zone of the dentate gyrus throughout adulthood. These new neurons gradually integrate into hippocampal circuits, forming new naïve synapses. Viewed from this perspective, these new neurons may represent a significant source of ‘wiring’ noise in hippocampal networks. In machine learning, such noise injection is commonly used as a regularization technique. Regularization techniques help prevent overfitting training data, and allow models to generalize learning to new, unseen data. Using a computational modeling approach, here we ask whether a neurogenesis-like process similarly acts as a regularizer, facilitating generalization in a category learning task. In a convolutional neural network (CNN) trained on the CIFAR-10 object recognition dataset, we modeled neurogenesis as a replacement/turnover mechanism, where weights for a randomly chosen small subset of neurons in a chosen hidden layer were re-initialized to new values as the model learned to categorize 10 different classes of objects. We found that neurogenesis enhanced generalization on unseen test data compared to networks with no neurogenesis. Moreover, neurogenic networks either outperformed or performed similarly to networks with conventional noise injection (i.e., dropout, weight decay, and neural noise). These results suggest that neurogenesis can enhance generalization in hippocampal learning through noise-injection, expanding on the roles that neur",
+  "needs_fetch": false
+ },
+ {
+  "id": 2776,
+  "title": "Exploration in deep reinforcement learning: A survey",
+  "org": "openai",
+  "date": "2022-03-31",
+  "venue": "Information Fusion",
+  "url": "https://arxiv.org/abs/2205.00824",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2012,
+  "title": "Marginalized Operators for Off-policy Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2022-03-30",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2203.16177",
+  "abstract": "In this work, we propose marginalized operators, a new class of off-policy evaluation operators for reinforcement learning. Marginalized operators strictly generalize generic multi-step operators, such as Retrace, as special cases. Marginalized operators also suggest a form of sample-based estimates with potential variance reduction, compared to sample-based estimates of the original multi-step operators. We show that the estimates for marginalized operators can be computed in a scalable way, which also generalizes prior results on marginalized importance sampling as special cases. Finally, we empirically demonstrate that marginalized operators provide performance gains to off-policy evaluation and downstream policy optimization algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2014,
+  "title": "Quantifying the effects of environment and population diversity in multi-agent reinforcement learning",
+  "org": "deepmind",
+  "date": "2022-03-18",
+  "venue": "Autonomous Agents and Multi-Agent Systems",
+  "url": "https://arxiv.org/abs/2102.08370",
+  "abstract": "Abstract Generalization is a major challenge for multi-agent reinforcement learning. How well does an agent perform when placed in novel environments and in interactions with new co-players? In this paper, we investigate and quantify the relationship between generalization and diversity in the multi-agent domain. Across the range of multi-agent environments considered here, procedurally generating training levels significantly improves agent performance on held-out levels. However, agent performance on the specific levels used in training sometimes declines as a result. To better understand the effects of co-player variation, our experiments introduce a new environment-agnostic measure of behavioral diversity. Results demonstrate that population size and intrinsic motivation are both effective methods of generating greater population diversity. In turn, training with a diverse set of co-players strengthens agent performance in some (but not all) cases.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2013,
+  "title": "The Challenge of Value Alignment",
+  "org": "deepmind",
+  "date": "2022-03-18",
+  "venue": "Oxford University Press eBooks",
+  "url": "https://doi.org/10.1093/oxfordhb/9780198857815.013.18",
+  "abstract": "Abstract This chapter addresses the question of how to align artificial intelligence (AI) systems with human values and situates it within a wider body of thought regarding technology and value. Far from existing in a vacuum, there has long been an interest in the ability of technology to ‘lock-in’ different value systems. There has also been considerable thought about how to align technologies with specific social values, including through participatory design processes. In this chapter, we look more closely at the question of AI alignment and suggest that the power and autonomy of AI systems gives rise to opportunities and challenges in the domain of value that have not been encountered before. Drawing important continuities between the work of the fairness, accountability, transparency, and ethics community, and work being done by technical AI safety researchers, we suggest that more attention needs to be paid to the question of ‘social value alignment’—that is, how to align AI systems with the plurality of values endorsed by groups of people, especially on the global level.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2015,
+  "title": "Sequential changepoint detection in neural networks with checkpoints",
+  "org": "deepmind",
+  "date": "2022-03-13",
+  "venue": "Statistics and Computing",
+  "url": "https://doi.org/10.1007/s11222-022-10088-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2016,
+  "title": "Restoring and attributing ancient texts using deep neural networks",
+  "org": "deepmind",
+  "date": "2022-03-09",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-022-04448-z",
+  "abstract": ". However, over the centuries, many inscriptions have been damaged to the point of illegibility, transported far from their original location and their date of writing is steeped in uncertainty. Here we present Ithaca, a deep neural network for the textual restoration, geographical attribution and chronological attribution of ancient Greek inscriptions. Ithaca is designed to assist and expand the historian's workflow. The architecture of Ithaca focuses on collaboration, decision support and interpretability. While Ithaca alone achieves 62% accuracy when restoring damaged texts, the use of Ithaca by historians improved their accuracy from 25% to 72%, confirming the synergistic effect of this research tool. Ithaca can attribute inscriptions to their original location with an accuracy of 71% and can date them to less than 30 years of their ground-truth ranges, redating key texts of Classical Athens and contributing to topical debates in ancient history. This research shows how models such as Ithaca can unlock the cooperative potential between artificial intelligence and historians, transformationally impacting the way that we study and write about one of the most important periods in human history.",
+  "needs_fetch": false
+ },
+ {
+  "id": 443,
+  "title": "Training language models to follow instructions with human feedback",
+  "org": "openai",
+  "date": "2022-03-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2203.02155",
+  "abstract": "Making language models bigger does not inherently make them better at following a user's intent. For example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user. In other words, these models are not aligned with their users. In this paper, we show an avenue for aligning language models with user intent on a wide range of tasks by fine-tuning with human feedback. Starting with a set of labeler-written prompts and prompts submitted through the OpenAI API, we collect a dataset of labeler demonstrations of the desired model behavior, which we use to fine-tune GPT-3 using supervised learning. We then collect a dataset of rankings of model outputs, which we use to further fine-tune this supervised model using reinforcement learning from human feedback. We call the resulting models InstructGPT. In human evaluations on our prompt distribution, outputs from the 1.3B parameter InstructGPT model are preferred to outputs from the 175B GPT-3, despite having 100x fewer parameters. Moreover, InstructGPT models show improvements in truthfulness and reductions in toxic output generation while having minimal performance regressions on public NLP datasets. Even though InstructGPT still makes simple mistakes, our results show that fine-tuning with human feedback is a promising direction for aligning language models with human intent.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1035,
+  "title": "A research agenda for assessing the economic impacts of code generation models",
+  "org": "openai",
+  "date": "2022-03-03",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/economic-impacts-research/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2017,
+  "title": "Structure of the decoy module of human glycoprotein 2 and uromodulin and its interaction with bacterial adhesin FimH",
+  "org": "deepmind",
+  "date": "2022-03-01",
+  "venue": "Nature Structural & Molecular Biology",
+  "url": "https://doi.org/10.1038/s41594-022-00729-3",
+  "abstract": "Glycoprotein 2 (GP2) and uromodulin (UMOD) filaments protect against gastrointestinal and urinary tract infections by acting as decoys for bacterial fimbrial lectin FimH. By combining AlphaFold2 predictions with X-ray crystallography and cryo-EM, we show that these proteins contain a bipartite decoy module whose new fold presents the high-mannose glycan recognized by FimH. The structure rationalizes UMOD mutations associated with kidney diseases and visualizes a key epitope implicated in cast nephropathy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 126,
+  "title": "In-Context Learning and Induction Heads",
+  "org": "anthropic",
+  "date": "2022-03-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html",
+  "abstract": "\"Induction heads\"are attention heads that implement a simple algorithm to complete token sequences like [A][B] ... [A] ->[B]. In this work, we present preliminary and indirect evidence for a hypothesis that induction heads might constitute the mechanism for the majority of all\"in-context learning\"in large transformer models (i.e. decreasing loss at increasing token indices). We find that induction heads develop at precisely the same point as a sudden sharp increase in in-context learning ability, visible as a bump in the training loss. We present six complementary lines of evidence, arguing that induction heads may be the mechanistic source of general in-context learning in transformer models of any size. For small attention-only models, we present strong, causal evidence; for larger models with MLPs, we present correlational evidence.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2018,
+  "title": "Meta-control of social learning strategies",
+  "org": "deepmind",
+  "date": "2022-02-28",
+  "venue": "PLoS Computational Biology",
+  "url": "https://doi.org/10.1371/journal.pcbi.1009882",
+  "abstract": "Social learning, copying other's behavior without actual experience, offers a cost-effective means of knowledge acquisition. However, it raises the fundamental question of which individuals have reliable information: successful individuals versus the majority. The former and the latter are known respectively as success-based and conformist social learning strategies. We show here that while the success-based strategy fully exploits the benign environment of low uncertainly, it fails in uncertain environments. On the other hand, the conformist strategy can effectively mitigate this adverse effect. Based on these findings, we hypothesized that meta-control of individual and social learning strategies provides effective and sample-efficient learning in volatile and uncertain environments. Simulations on a set of environments with various levels of volatility and uncertainty confirmed our hypothesis. The results imply that meta-control of social learning affords agents the leverage to resolve environmental uncertainty with minimal exploration cost, by exploiting others' learning as an external knowledge base.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2019,
+  "title": "Retrieval-Augmented Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2022-02-17",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2202.08417",
+  "abstract": "Most deep reinforcement learning (RL) algorithms distill experience into parametric behavior policies or value functions via gradient updates. While effective, this approach has several disadvantages: (1) it is computationally expensive, (2) it can take many updates to integrate experiences into the parametric model, (3) experiences that are not fully integrated do not appropriately influence the agent's behavior, and (4) behavior is limited by the capacity of the model. In this paper we explore an alternative paradigm in which we train a network to map a dataset of past experiences to optimal behavior. Specifically, we augment an RL agent with a retrieval process (parameterized as a neural network) that has direct access to a dataset of experiences. This dataset can come from the agent's past experiences, expert demonstrations, or any other relevant source. The retrieval process is trained to retrieve information from the dataset that may be useful in the current context, to help the agent achieve its goal faster and more efficiently. he proposed method facilitates learning agents that at test-time can condition their behavior on the entire dataset and not only the current state, or current trajectory. We integrate our method into two different RL agents: an offline DQN agent and an online R2D2 agent. In offline multi-task problems, we show that the retrieval-augmented DQN agent avoids task interference and learns faster than the baseline DQN agent. On Atari, we show that re",
+  "needs_fetch": false
+ },
+ {
+  "id": 2020,
+  "title": "Magnetic control of tokamak plasmas through deep reinforcement learning",
+  "org": "deepmind",
+  "date": "2022-02-16",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-021-04301-9",
+  "abstract": "Abstract Nuclear fusion using magnetic confinement, in particular in the tokamak configuration, is a promising path towards sustainable energy. A core challenge is to shape and maintain a high-temperature plasma within the tokamak vessel. This requires high-dimensional, high-frequency, closed-loop control using magnetic actuator coils, further complicated by the diverse requirements across a wide range of plasma configurations. In this work, we introduce a previously undescribed architecture for tokamak magnetic controller design that autonomously learns to command the full set of control coils. This architecture meets control objectives specified at a high level, at the same time satisfying physical and operational constraints. This approach has unprecedented flexibility and generality in problem specification and yields a notable reduction in design effort to produce new plasma configurations. We successfully produce and control a diverse set of plasma configurations on the Tokamak à Configuration Variable 1,2 , including elongated, conventional shapes, as well as advanced configurations, such as negative triangularity and ‘snowflake’ configurations. Our approach achieves accurate tracking of the location, current and shape for these configurations. We also demonstrate sustained ‘droplets’ on TCV, in which two separate plasmas are maintained simultaneously within the vessel. This represents a notable advance for tokamak feedback control, showing the potential of reinforceme",
+  "needs_fetch": false
+ },
+ {
+  "id": 127,
+  "title": "Predictability and Surprise in Large Generative Models",
+  "org": "anthropic",
+  "date": "2022-02-15",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/predictability-and-surprise-in-large-generative-models",
+  "abstract": "Large-scale pre-training has recently emerged as a technique for creating capable, general-purpose, generative models such as GPT-3, Megatron-Turing NLG, Gopher, and many others. In this paper, we highlight a counterintuitive property of such models and discuss the policy implications of this property. Namely, these generative models have a paradoxical combination of predictable loss on a broad training distribution (as embodied in their ”scaling laws”), and unpredictable specific capabilities, inputs, and outputs. We believe that the high-level predictability and appearance of useful capabilities drives rapid development of such models, while the unpredictable qualities make it difficult to anticipate the consequences of model deployment. We go through examples of how this combination can lead to socially harmful behavior with examples from the literature and real world observations, and we also perform two novel experiments to illustrate our point about harms from unpredictability. Furthermore, we analyze how these conflicting properties combine to give model developers various motivations for deploying these models, and challenges that can hinder deployment. We conclude with a list of possible interventions the AI community may take to increase the chance of these models having a beneficial impact. We intend for this paper to be useful to policymakers who want to understand and regulate AI systems, technologists who care about the potential policy impact of their work, fun",
+  "needs_fetch": false
+ },
+ {
+  "id": 2021,
+  "title": "The Brain-Computer Metaphor Debate Is Useless: A Matter of Semantics",
+  "org": "deepmind",
+  "date": "2022-02-08",
+  "venue": "Frontiers in Computer Science",
+  "url": "https://doi.org/10.3389/fcomp.2022.810358",
+  "abstract": "It is commonly assumed that usage of the word “computer” in the brain sciences reflects a metaphor. However, there is no single definition of the word “computer” in use. In fact, based on the usage of the word “computer” in computer science, a computer is merely some physical machinery that can in theory compute any computable function. According to this definition the brain is literally a computer; there is no metaphor. But, this deviates from how the word “computer” is used in other academic disciplines. According to the definition used outside of computer science, “computers” are human-made devices that engage in sequential processing of inputs to produce outputs. According to this definition, brains are not computers, and arguably, computers serve as a weak metaphor for brains. Thus, we argue that the recurring brain-computer metaphor debate is actually just a semantic disagreement, because brains are either literally computers or clearly not very much like computers at all, depending on one's definitions. We propose that the best path forward is simply to put the debate to rest, and instead, have researchers be clear about which definition they are using in their work. In some circumstances, one can use the definition from computer science and simply ask, what type of computer is the brain? In other circumstances, it is important to use the other definition, and to clarify the ways in which our brains are radically different from the laptops, smartphones, and servers tha",
+  "needs_fetch": false
+ },
+ {
+  "id": 2022,
+  "title": "Tackling Climate Change with Machine Learning",
+  "org": "deepmind",
+  "date": "2022-02-07",
+  "venue": "OPUS 4 (Zuse Institute Berlin)",
+  "url": "https://opus4.kobv.de/opus4-hsog/frontdoor/index/index/docId/4117",
+  "abstract": "Climate change is one of the greatest challenges facing humanity, and we, as machine learning experts, may wonder how we can help. Here we describe how machine learning can be a powerful tool in reducing greenhouse gas emissions and helping society adapt to a changing climate. From smart grids to disaster management, we identify high impact problems where existing gaps can be filled by machine learning, in collaboration with other fields. Our recommendations encompass exciting research questions as well as promising business opportunities. We call on the machine learning community to join the global effort against climate change.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1036,
+  "title": "Solving (some) formal math olympiad problems",
+  "org": "openai",
+  "date": "2022-02-02",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/formal-math/",
+  "abstract": "We built a neural theorem prover for Lean that learned to solve a variety of challenging high-school olympiad problems, including problems from the AMC12 and AIME competitions, as well as two problems adapted from the IMO.",
+  "needs_fetch": false
+ }
+]

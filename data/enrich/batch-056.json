@@ -1,0 +1,302 @@
+[
+ {
+  "id": 106,
+  "title": "Tracing Model Outputs to the Training Data",
+  "org": "anthropic",
+  "date": "2023-08-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://www.anthropic.com/research/influence-functions",
+  "abstract": "We present a summary of Studying Large Language Model Generalization with Influence Functions.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1778,
+  "title": "VAE-Loco: Versatile Quadruped Locomotion by Learning a Disentangled Gait Representation",
+  "org": "deepmind",
+  "date": "2023-07-31",
+  "venue": "IEEE Transactions on Robotics",
+  "url": "https://doi.org/10.1109/tro.2023.3297015",
+  "abstract": "Quadruped locomotion is rapidly maturing to a degree where robots are able to realize highly dynamic maneuvers. However, current planners are unable to vary key gait parameters of the in-swing feet <italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">midair</i> . In this article, we address this limitation and show that it is pivotal in increasing controller robustness by learning a latent space capturing the key stance phases constituting a particular gait. This is achieved via a generative model trained on a single trot style, which encourages disentanglement such that application of a drive signal to a single dimension of the latent state induces holistic plans synthesizing a continuous variety of trot styles. We demonstrate that specific properties of the drive signal map directly to gait parameters, such as cadence, footstep height, and full-stance duration. Due to the nature of our approach, these synthesized gaits are continuously variable online during robot operation. The use of a generative model facilitates the detection and mitigation of disturbances to provide a versatile and robust planning framework. We evaluate our approach on two versions of the real ANYmal quadruped robots and demonstrate that our method achieves a continuous blend of dynamic trot styles while being robust and reactive to external perturbations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 620,
+  "title": "The Hydra Effect: Emergent Self-repair in Language Model Computations",
+  "org": "deepmind",
+  "date": "2023-07-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2307.15771",
+  "abstract": "We investigate the internal structure of language model computations using causal analysis and demonstrate two motifs: (1) a form of adaptive computation where ablations of one attention layer of a language model cause another layer to compensate (which we term the Hydra effect) and (2) a counterbalancing function of late MLP layers that act to downregulate the maximum-likelihood token. Our ablation studies demonstrate that language model layers are typically relatively loosely coupled (ablations to one layer only affect a small number of downstream layers). Surprisingly, these effects occur even in language models trained without any form of dropout. We analyse these effects in the context of factual recall and consider their implications for circuit-level attribution in language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 434,
+  "title": "Open Problems and Fundamental Limitations of Reinforcement Learning from Human Feedback",
+  "org": "deepmind",
+  "date": "2023-07-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2307.15217",
+  "abstract": "Reinforcement learning from human feedback (RLHF) is a technique for training AI systems to align with human goals. RLHF has emerged as the central method used to finetune state-of-the-art large language models (LLMs). Despite this popularity, there has been relatively little public work systematizing its flaws. In this paper, we (1) survey open problems and fundamental limitations of RLHF and related methods; (2) overview techniques to understand, improve, and complement RLHF in practice; and (3) propose auditing and disclosure standards to improve societal oversight of RLHF systems. Our work emphasizes the limitations of RLHF and highlights the importance of a multi-faceted approach to the development of safer AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1779,
+  "title": "Learning to play against any mixture of opponents",
+  "org": "deepmind",
+  "date": "2023-07-20",
+  "venue": "Frontiers in Artificial Intelligence",
+  "url": "https://doi.org/10.3389/frai.2023.804682",
+  "abstract": "Intuitively, experience playing against one mixture of opponents in a given domain should be relevant for a different mixture in the same domain. If the mixture changes, ideally we would not have to train from scratch, but rather could transfer what we have learned to construct a policy to play against the new mixture. We propose a transfer learning method, Q-Mixing , that starts by learning Q -values against each pure-strategy opponent. Then a Q -value for any distribution of opponent strategies is approximated by appropriately averaging the separately learned Q -values. From these components, we construct policies against all opponent mixtures without any further training. We empirically validate Q-Mixing in two environments: a simple grid-world soccer environment, and a social dilemma game. Our experiments find that Q-Mixing can successfully transfer knowledge across any mixture of opponents. Next, we consider the use of observations during play to update the believed distribution of opponents. We introduce an opponent policy classifier—trained reusing Q-learning data—and use the classifier results to refine the mixing of Q -values. Q-Mixing augmented with the opponent policy classifier performs better, with higher variance, than training directly against a mixed-strategy opponent.",
+  "needs_fetch": false
+ },
+ {
+  "id": 435,
+  "title": "Deceptive Alignment Monitoring",
+  "org": "other",
+  "date": "2023-07-20",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2307.10569",
+  "abstract": "As the capabilities of large machine learning models continue to grow, and as the autonomy afforded to such models continues to expand, the spectre of a new adversary looms: the models themselves. The threat that a model might behave in a seemingly reasonable manner, while secretly and subtly modifying its behavior for ulterior reasons is often referred to as deceptive alignment in the AI Safety & Alignment communities. Consequently, we call this new direction Deceptive Alignment Monitoring. In this work, we identify emerging directions in diverse machine learning subfields that we believe will become increasingly important and intertwined in the near future for deceptive alignment monitoring, and we argue that advances in these fields present both long-term challenges and new research opportunities. We conclude by advocating for greater involvement by the adversarial machine learning community in these emerging directions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2750,
+  "title": "Channeling Creativity Through a Deeper Understanding of AI Image Generation",
+  "org": "openai",
+  "date": "2023-07-19",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3588029.3599743",
+  "abstract": "AI-generated images burst onto the scene about a year ago, with tools like Stable Diffusion, Midjourney, and DALL·E 2 all making their debut in 2022. How do these models work, and how can they be used in a production setting? In this talk, we will give an overview of how models like DALL·E 2 work and how to leverage their architectures to make them truly useful tools in the creative process. Although there are differences between each specific model architecture, the takeaways from understanding this particular stack are transferable to the others.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1780,
+  "title": "Detecting shortcut learning for fair medical AI using shortcut testing",
+  "org": "deepmind",
+  "date": "2023-07-18",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-023-39902-7",
+  "abstract": "Machine learning (ML) holds great promise for improving healthcare, but it is critical to ensure that its use will not propagate or amplify health disparities. An important step is to characterize the (un)fairness of ML models-their tendency to perform differently across subgroups of the population-and to understand its underlying mechanisms. One potential driver of algorithmic unfairness, shortcut learning, arises when ML models base predictions on improper correlations in the training data. Diagnosing this phenomenon is difficult as sensitive attributes may be causally linked with disease. Using multitask learning, we propose a method to directly test for the presence of shortcut learning in clinical ML systems and demonstrate its application to clinical tasks in radiology and dermatology. Finally, our approach reveals instances when shortcutting is not responsible for unfairness, highlighting the need for a holistic approach to fairness mitigation in medical AI.",
+  "needs_fetch": false
+ },
+ {
+  "id": 621,
+  "title": "Does Circuit Analysis Interpretability Scale? Evidence from Multiple Choice Capabilities in Chinchilla",
+  "org": "deepmind",
+  "date": "2023-07-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2307.09458",
+  "abstract": "\\emph{Circuit analysis} is a promising technique for understanding the internal mechanisms of language models. However, existing analyses are done in small models far from the state of the art. To address this, we present a case study of circuit analysis in the 70B Chinchilla model, aiming to test the scalability of circuit analysis. In particular, we study multiple-choice question answering, and investigate Chinchilla's capability to identify the correct answer \\emph{label} given knowledge of the correct answer \\emph{text}. We find that the existing techniques of logit attribution, attention pattern visualization, and activation patching naturally scale to Chinchilla, allowing us to identify and categorize a small set of `output nodes' (attention heads and MLPs). We further study the `correct letter' category of attention heads aiming to understand the semantics of their features, with mixed results. For normal multiple-choice question answers, we significantly compress the query, key and value subspaces of the head without loss of performance when operating on the answer labels for multiple-choice questions, and we show that the query and key subspaces represent an `Nth item in an enumeration' feature to at least some extent. However, when we attempt to use this explanation to understand the heads' behaviour on a more general distribution including randomized answer labels, we find that it is only a partial explanation, suggesting there is more to learn about the operation ",
+  "needs_fetch": false
+ },
+ {
+  "id": 109,
+  "title": "Question Decomposition Improves the Faithfulness of Model-Generated Reasoning",
+  "org": "anthropic",
+  "date": "2023-07-18",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 108,
+  "title": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+  "org": "anthropic",
+  "date": "2023-07-18",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1781,
+  "title": "Latent Space Representations of Neural Algorithmic Reasoners",
+  "org": "deepmind",
+  "date": "2023-07-17",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2307.08874",
+  "abstract": "Neural Algorithmic Reasoning (NAR) is a research area focused on designing neural architectures that can reliably capture classical computation, usually by learning to execute algorithms. A typical approach is to rely on Graph Neural Network (GNN) architectures, which encode inputs in high-dimensional latent spaces that are repeatedly transformed during the execution of the algorithm. In this work we perform a detailed analysis of the structure of the latent space induced by the GNN when executing algorithms. We identify two possible failure modes: (i) loss of resolution, making it hard to distinguish similar values; (ii) inability to deal with values outside the range observed during training. We propose to solve the first issue by relying on a softmax aggregator, and propose to decay the latent space in order to deal with out-of-range values. We show that these changes lead to improvements on the majority of algorithms in the standard CLRS-30 benchmark when using the state-of-the-art Triplet-GMPNN processor. Our code is available at https://github.com/mirjanic/nar-latent-spaces",
+  "needs_fetch": false
+ },
+ {
+  "id": 1782,
+  "title": "Discovering Evolution Strategies via Meta-Black-Box Optimization",
+  "org": "deepmind",
+  "date": "2023-07-15",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3583133.3595822",
+  "abstract": "Optimizing functions without access to gradients is the remit of black-box methods such as evolution strategies. While highly general, their learning dynamics are often times heuristic and inflexible --- exactly the limitations that meta-learning can address. Hence, we propose to discover effective update rules for evolution strategies via meta-learning. Concretely, our approach employs a search strategy parametrized by a self-attention-based architecture, which guarantees the update rule is invariant to the ordering of the candidate solutions. We show that meta-evolving this system on a small set of representative low-dimensional analytic optimization problems is sufficient to discover new evolution strategies capable of generalizing to unseen optimization problems, population sizes and optimization horizons. Furthermore, the same learned evolution strategy can outperform established neuroevolution baselines on supervised and continuous control tasks. As additional contributions, we ablate the individual neural network components of our method; reverse engineer the learned strategy into an explicit heuristic form, which remains highly competitive; and show that it is possible to self-referentially train an evolution strategy from scratch, with the learned update rule used to drive the outer meta-learning loop.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1785,
+  "title": "CodeGrid: A Grid Representation of Code",
+  "org": "deepmind",
+  "date": "2023-07-12",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3597926.3598141",
+  "abstract": "Code representation is a key step in the application of AI in software engineering. Generic NLP representations are effective but do not exploit all the rich structure inherent to code. Recent work has focused on extracting abstract syntax trees (AST) and integrating their structural information into code representations.These AST-enhanced representations advanced the state of the art and accelerated new applications of AI to software engineering. ASTs, however, neglect important aspects of code structure, notably control and data flow, leaving some potentially relevant code signal unexploited. For example, purely image-based representations perform nearly as well as AST-based representations, despite the fact that they must learn to even recognize tokens, let alone their semantics. This result, from prior work, is strong evidence that these new code representations can still be improved; it also raises the question of just what signal image-based approaches are exploiting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1784,
+  "title": "Discovering Attention-Based Genetic Algorithms via Meta-Black-Box Optimization",
+  "org": "deepmind",
+  "date": "2023-07-12",
+  "venue": "Proceedings of the Genetic and Evolutionary Computation Conference",
+  "url": "https://doi.org/10.1145/3583131.3590496",
+  "abstract": "Genetic algorithms constitute a family of black-box optimization algorithms, which take inspiration from the principles of biological evolution. While they provide a general-purpose tool for optimization, their particular instantiations can be heuristic and motivated by loose biological intuition. In this work we explore a fundamentally different approach: Given a sufficiently flexible parametrization of the genetic operators, we discover entirely new genetic algorithms in a data-driven fashion. More specifically, we parametrize selection and mutation rate adaptation as cross- and self-attention modules and use Meta-Black-Box-Optimization to evolve their parameters on a set of diverse optimization tasks. The resulting Learned Genetic Algorithm outperforms state-of-the-art adaptive baseline genetic algorithms and generalizes far beyond its meta-training settings. The learned algorithm can be applied to previously unseen optimization problems, search dimensions & evaluation budgets. We conduct extensive analysis of the discovered operators and provide ablation experiments, which highlight the benefits of flexible module parametrization and the ability to transfer ('plug-in') the learned operators to conventional genetic algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1783,
+  "title": "Large language models encode clinical knowledge",
+  "org": "deepmind",
+  "date": "2023-07-12",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-023-06291-2",
+  "abstract": "Abstract Large language models (LLMs) have demonstrated impressive capabilities, but the bar for clinical applications is high. Attempts to assess the clinical knowledge of models typically rely on automated evaluations based on limited benchmarks. Here, to address these limitations, we present MultiMedQA, a benchmark combining six existing medical question answering datasets spanning professional medicine, research and consumer queries and a new dataset of medical questions searched online, HealthSearchQA. We propose a human evaluation framework for model answers along multiple axes including factuality, comprehension, reasoning, possible harm and bias. In addition, we evaluate Pathways Language Model 1 (PaLM, a 540-billion parameter LLM) and its instruction-tuned variant, Flan-PaLM 2 on MultiMedQA. Using a combination of prompting strategies, Flan-PaLM achieves state-of-the-art accuracy on every MultiMedQA multiple-choice dataset (MedQA 3 , MedMCQA 4 , PubMedQA 5 and Measuring Massive Multitask Language Understanding (MMLU) clinical topics 6 ), including 67.6% accuracy on MedQA (US Medical Licensing Exam-style questions), surpassing the prior state of the art by more than 17%. However, human evaluation reveals key gaps. To resolve this, we introduce instruction prompt tuning, a parameter-efficient approach for aligning LLMs to new domains using a few exemplars. The resulting model, Med-PaLM, performs encouragingly, but remains inferior to clinicians. We show that comprehens",
+  "needs_fetch": false
+ },
+ {
+  "id": 1786,
+  "title": "Reinforcement Learning, Bit by Bit",
+  "org": "deepmind",
+  "date": "2023-07-11",
+  "venue": "Foundations and Trends® in Machine Learning",
+  "url": "https://doi.org/10.1561/2200000097",
+  "abstract": "Reinforcement learning agents have demonstrated remarkable achievements in simulated environments. Data efficiency poses an impediment to carrying this success over to real environments. The design of data-efficient agents calls for a deeper understanding of information acquisition and representation. We discuss concepts and regret analysis that together offer principled guidance. This line of thinking sheds light on questions of what information to seek, how to seek that information, and what information to retain. To illustrate concepts, we design simple agents that build on them and present computational results that highlight data efficiency.",
+  "needs_fetch": false
+ },
+ {
+  "id": 436,
+  "title": "Opening up ChatGPT: Tracking openness, transparency, and accountability in instruction-tuned text generators",
+  "org": "other",
+  "date": "2023-07-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2307.05532",
+  "abstract": "Large language models that exhibit instruction-following behaviour represent one of the biggest recent upheavals in conversational interfaces, a trend in large part fuelled by the release of OpenAI's ChatGPT, a proprietary large language model for text generation fine-tuned through reinforcement learning from human feedback (LLM+RLHF). We review the risks of relying on proprietary software and survey the first crop of open-source projects of comparable architecture and functionality. The main contribution of this paper is to show that openness is differentiated, and to offer scientific documentation of degrees of openness in this fast-moving field. We evaluate projects in terms of openness of code, training data, model weights, RLHF data, licensing, scientific documentation, and access methods. We find that while there is a fast-growing list of projects billing themselves as 'open source', many inherit undocumented data of dubious legality, few share the all-important instruction-tuning (a key site where human annotation labour is involved), and careful scientific documentation is exceedingly rare. Degrees of openness are relevant to fairness and accountability at all points, from data collection and curation to model architecture, and from training and fine-tuning to release and deployment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1787,
+  "title": "Measuring Attribution in Natural Language Generation Models",
+  "org": "deepmind",
+  "date": "2023-07-06",
+  "venue": "Computational Linguistics",
+  "url": "https://doi.org/10.1162/coli_a_00490",
+  "abstract": "Abstract Large neural models have brought a new challenge to natural language generation (NLG): it has become imperative to ensure the safety and reliability of the output of models that generate freely. To this end, we present an evaluation framework, Attributable to Identified Sources (AIS), stipulating that NLG output pertaining to the external world is to be verified against an independent, provided source. We define AIS and a two-stage annotation pipeline for allowing annotators to evaluate model output according to annotation guidelines. We successfully validate this approach on generation datasets spanning three tasks (two conversational QA datasets, a summarization dataset, and a table-to-text dataset). We provide full annotation guidelines in the appendices and publicly release the annotated data at https://github.com/google-research-datasets/AIS.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1016,
+  "title": "Frontier AI regulation: Managing emerging risks to public safety",
+  "org": "openai",
+  "date": "2023-07-06",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/frontier-ai-regulation/",
+  "abstract": "Advanced AI models hold the promise of tremendous benefits for humanity, but society needs to proactively manage the accompanying risks. In this paper, we focus on what we term \"frontier AI\" models: highly capable foundation models that could possess dangerous capabilities sufficient to pose severe risks to public safety. Frontier AI models pose a distinct regulatory challenge: dangerous capabilities can arise unexpectedly; it is difficult to robustly prevent a deployed model from being misused; and, it is difficult to stop a model's capabilities from proliferating broadly. To address these challenges, at least three building blocks for the regulation of frontier models are needed: (1) standard-setting processes to identify appropriate requirements for frontier AI developers, (2) registration and reporting requirements to provide regulators with visibility into frontier AI development processes, and (3) mechanisms to ensure compliance with safety standards for the development and deployment of frontier AI models. Industry self-regulation is an important first step. However, wider societal discussions and government intervention will be needed to create standards and to ensure compliance with them. We consider several options to this end, including granting enforcement powers to supervisory authorities and licensure regimes for frontier AI models. Finally, we propose an initial set of safety standards. These include conducting pre-deployment risk assessments; external scrutiny",
+  "needs_fetch": false
+ },
+ {
+  "id": 549,
+  "title": "Jailbroken: How Does LLM Safety Training Fail?",
+  "org": "other",
+  "date": "2023-07-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2307.02483",
+  "abstract": "Large language models trained for safety and harmlessness remain susceptible to adversarial misuse, as evidenced by the prevalence of \"jailbreak\" attacks on early releases of ChatGPT that elicit undesired behavior. Going beyond recognition of the issue, we investigate why such attacks succeed and how they can be created. We hypothesize two failure modes of safety training: competing objectives and mismatched generalization. Competing objectives arise when a model's capabilities and safety goals conflict, while mismatched generalization occurs when safety training fails to generalize to a domain for which capabilities exist. We use these failure modes to guide jailbreak design and then evaluate state-of-the-art models, including OpenAI's GPT-4 and Anthropic's Claude v1.3, against both existing and newly designed attacks. We find that vulnerabilities persist despite the extensive red-teaming and safety-training efforts behind these models. Notably, new attacks utilizing our failure modes succeed on every prompt in a collection of unsafe requests from the models' red-teaming evaluation sets and outperform existing ad hoc jailbreaks. Our analysis emphasizes the need for safety-capability parity -- that safety mechanisms should be as sophisticated as the underlying model -- and argues against the idea that scaling alone can resolve these safety failure modes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1788,
+  "title": "Humans perceive warmth and competence in artificial intelligence",
+  "org": "deepmind",
+  "date": "2023-07-04",
+  "venue": "iScience",
+  "url": "https://doi.org/10.1016/j.isci.2023.107256",
+  "abstract": "= 3,300) demonstrate that social-cognitive processes guide human interactions across a diverse range of real-world A.I. systems. Across studies, perceived warmth and competence emerge prominently in participants' impressions of A.I. systems. Judgments of warmth and competence systematically depend on human-A.I. interdependence and autonomy. In particular, participants perceive systems that optimize interests aligned with human interests as warmer and systems that operate independently from human direction as more competent. Finally, a prisoner's dilemma game shows that warmth and competence judgments predict participants' willingness to cooperate with a deep-learning system. These results underscore the generality of intent detection to perceptions of a broad array of algorithmic actors.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2891,
+  "title": "Circuits Updates — July 2023",
+  "org": "anthropic",
+  "date": "2023-07-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2023/july-update/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1791,
+  "title": "On the (De) centralization of FruitChains",
+  "org": "deepmind",
+  "date": "2023-07-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2307.12422",
+  "abstract": "One of the most important features of blockchain protocols is decentralization, as their main contribution is that they formulate a distributed ledger that will be maintained and extended without the need of a trusted party. Bitcoin has been criticized for its tendency to centralization, as very few pools control the majority of the hashing power. Pass et al. proposed FruitChain [PODC 17] and claimed that this blockchain protocol mitigates the formation of pools by reducing the variance of the rewards in the same way as mining pools, but in a fully decentralized fashion. Many follow up papers consider that the problem of centralization in Proof-of- Work (PoW) blockchain systems can be solved via lower rewards' variance, and that in FruitChain the formation of pools is unnecessary. Contrary to the common perception, in this work, we prove that lower variance of the rewards does not eliminate the tendency of the PoW blockchain protocols to centralization; miners have also other incentives to create large pools, and specifically to share the cost of creating the instance they need to solve the PoW puzzle. We abstract the procedures of FruitChain as oracles and assign to each of them a cost. Then, we provide a formal definition of a pool in a blockchain system, and by utilizing the notion of equilibrium with virtual payoffs (EVP) [AFT 21], we prove that there is a completely centralized EVP, where all the parties form a single pool controlled by one party called the pool leader. ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1790,
+  "title": "Modeling Structure‐Building in the Brain With CCG Parsing and Large Language Models",
+  "org": "deepmind",
+  "date": "2023-07-01",
+  "venue": "Cognitive Science",
+  "url": "https://doi.org/10.1111/cogs.13312",
+  "abstract": "To model behavioral and neural correlates of language comprehension in naturalistic environments, researchers have turned to broad-coverage tools from natural-language processing and machine learning. Where syntactic structure is explicitly modeled, prior work has relied predominantly on context-free grammars (CFGs), yet such formalisms are not sufficiently expressive for human languages. Combinatory categorial grammars (CCGs) are sufficiently expressive directly compositional models of grammar with flexible constituency that affords incremental interpretation. In this work, we evaluate whether a more expressive CCG provides a better model than a CFG for human neural signals collected with functional magnetic resonance imaging (fMRI) while participants listen to an audiobook story. We further test between variants of CCG that differ in how they handle optional adjuncts. These evaluations are carried out against a baseline that includes estimates of next-word predictability from a transformer neural network language model. Such a comparison reveals unique contributions of CCG structure-building predominantly in the left posterior temporal lobe: CCG-derived measures offer a superior fit to neural signals compared to those derived from a CFG. These effects are spatially distinct from bilateral superior temporal effects that are unique to predictability. Neural effects for structure-building are thus separable from predictability during naturalistic listening, and those effects a",
+  "needs_fetch": false
+ },
+ {
+  "id": 1789,
+  "title": "Enhancing the reliability and accuracy of AI-enabled diagnosis via complementarity-driven deferral to clinicians",
+  "org": "deepmind",
+  "date": "2023-07-01",
+  "venue": "Nature Medicine",
+  "url": "https://doi.org/10.1038/s41591-023-02437-x",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1792,
+  "title": "Data Formats in Additive Manufacturing",
+  "org": "deepmind",
+  "date": "2023-06-30",
+  "venue": "ASM International eBooks",
+  "url": "http://dx.doi.org/10.31399/asm.hb.v24a.a0007020",
+  "abstract": "Abstract Data formats play an integral role in leveraging the flexibility of additive manufacturing and achieving consistent part quality. This article compares and contrasts data formats optimized for design, materials, processes, and inspection methods. It also discusses the types of data associated with the six phases of additive manufacturing, namely design, build, design with build plan, design with machine-specific build plan, post-processed part, and qualified part.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1793,
+  "title": "Discounting future reward in an uncertain world.",
+  "org": "deepmind",
+  "date": "2023-06-29",
+  "venue": "Decision",
+  "url": "https://doi.org/10.1037/dec0000219",
+  "abstract": "= 158). First, using a task where participants chose when to sell products, whose price dynamics they previously learned, we show discounting increases in line with price volatility. Second, we show that this effect pertains over naturalistic delays of up to 4 months. Using functional magnetic resonance imaging, we observe a volatility-dependent decrease in functional hippocampal-prefrontal coupling during intertemporal choice. Third, we replicate these effects in a larger online sample, finding that volatility discounting within each task correlates with baseline discounting outside of the task. We conclude that delay discounting partly reflects time-dependent uncertainty about reward magnitude, that is volatility. Our model captures how discounting adapts to volatility, thereby partly accounting for individual differences in impatience. Our imaging findings suggest a putative mechanism whereby uncertainty reduces prospective simulation of future outcomes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 110,
+  "title": "Towards Measuring the Representation of Subjective Global Opinions in Language Models",
+  "org": "anthropic",
+  "date": "2023-06-29",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/towards-measuring-the-representation-of-subjective-global-opinions-in-language-models",
+  "abstract": "Large language models (LLMs) may not equitably represent diverse global perspectives on societal issues. In this paper, we develop a quantitative framework to evaluate whose opinions model-generated responses are more similar to. We first build a dataset, GlobalOpinionQA, comprised of questions and answers from cross-national surveys designed to capture diverse opinions on global issues across different countries. Next, we define a metric that quantifies the similarity between LLM-generated survey responses and human responses, conditioned on country. With our framework, we run three experiments on an LLM trained to be helpful, honest, and harmless with Constitutional AI. By default, LLM responses tend to be more similar to the opinions of certain populations, such as those from the USA, and some European and South American countries, highlighting the potential for biases. When we prompt the model to consider a particular country's perspective, responses shift to be more similar to the opinions of the prompted populations, but can reflect harmful cultural stereotypes. When we translate GlobalOpinionQA questions to a target language, the model's responses do not necessarily become the most similar to the opinions of speakers of those languages. We release our dataset for others to use and build on. Our data is at https://huggingface.co/datasets/Anthropic/llm_global_opinions. We also provide an interactive visualization at https://llmglobalvalues.anthropic.com.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1797,
+  "title": "AlphaSnake: Policy Iteration on a Nondeterministic NP-Hard Markov Decision Process (Student Abstract)",
+  "org": "deepmind",
+  "date": "2023-06-26",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "http://dx.doi.org/10.1609/aaai.v37i13.26962",
+  "abstract": "Reinforcement learning has been used to approach well-known NP-hard combinatorial problems in graph theory. Among these, Hamiltonian cycle problems are exceptionally difficult to analyze, even when restricted to individual instances of structurally complex graphs. In this paper, we use Monte Carlo Tree Search (MCTS), the search algorithm behind many state-of-the-art reinforcement learning algorithms such as AlphaZero, to create autonomous agents that learn to play the game of Snake, a game centered on properties of Hamiltonian cycles on grid graphs. The game of Snake can be formulated as a single-player discounted Markov Decision Process (MDP), where the agent must behave optimally in a stochastic environment. Determining the optimal policy for Snake, defined as the policy that maximizes the probability of winning -- or win rate -- with higher priority and minimizes the expected number of time steps to win with lower priority, is conjectured to be NP-hard. Performance-wise, compared to prior work in the Snake game, our algorithm is the first to achieve a win rate over 0.5 (a uniform random policy achieves a win rate &lt; 2.57 x 10^{-15}), demonstrating the versatility of AlphaZero in tackling NP-hard problems.",
+  "needs_fetch": false
+ }
+]

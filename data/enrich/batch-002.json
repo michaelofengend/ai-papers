@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1225,
+  "title": "Progress and innovations in the TCV tokamak research programme",
+  "org": "deepmind",
+  "date": "2026-05-13",
+  "venue": "Nuclear Fusion",
+  "url": "https://doi.org/10.1088/1741-4326/ae6d12",
+  "abstract": "Abstract Research on the Tokamak à Configuration Variable addresses a wide range of key questions relevant to ITER and future fusion power plants. Over the past two years, highly productive experimental campaigns have led to major advances across several areas: the ITER baseline scenario; pedestal properties in low-collisionality, peeling-limited conditions; and the development of high- <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" overflow=\"scroll\"> <mml:mrow> <mml:msub> <mml:mi>β</mml:mi> <mml:mi>N</mml:mi> </mml:msub> </mml:mrow> </mml:math> , non-inductive regimes. Alternative high-confinement scenarios have likewise received significant attention, with remarkable progress in quasi-continuous exhaust operation, X-point radiator plasmas, and negative triangularity configurations. Substantial achievements were also made in the mitigation or benign termination of runaway electron beams, in elucidating fast-ion loss mechanisms, and in improving exhaust behaviour in both conventional and alternative divertor geometries. These experimental results have been strongly supported by advances in modelling and their direct application to the experiment, ranging from gyrokinetic simulations of core and pedestal turbulence to fluid-based studies of scrape-off layer and divertor physics in diverse geometries. Plasma control has taken on an increasingly important role, with model-based and data-driven approaches now closely intertwined with physics studies. This article provid",
+  "needs_fetch": false
+ },
+ {
+  "id": 260,
+  "title": "The Mechanism of Weak-to-Strong Generalization: Feature Elicitation from Latent Knowledge",
+  "org": "other",
+  "date": "2026-05-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.12908",
+  "abstract": "Weak-to-strong (W2S) generalization, in which a strong model is fine-tuned on outputs of a weaker, task-specialized model, has been proposed as an approach to aligning superhuman AI systems. Existing theoretical analyses either fix the student's representations or operate in restricted settings. Whether multi-step SGD can succeed in feature learning while preserving diverse pre-trained capabilities remains open. We study W2S in the setting of reward-model learning with two-layer neural networks. The strong model has pre-trained representations organized into low-dimensional subspaces $V_k$, and is fine-tuned under the supervision of a weak model specialized on task $κ$. We prove that the strong model efficiently learns task $κ$, eliciting its pre-trained knowledge while retaining general capabilities. This establishes W2S generalization in the feature-learning regime, in the sense that the strong model acquires the target feature direction through W2S training, rather than having it given a priori. Moreover, W2S preserves pre-trained off-target features, whereas standard supervised fine-tuning causes catastrophic forgetting when off-target feature directions are correlated with the target's. Numerical experiments on synthetic data confirm our theoretical results.",
+  "needs_fetch": false
+ },
+ {
+  "id": 259,
+  "title": "The Growing Pains of Frontier Models: When Leaderboards Stop Separating and What to Measure Next",
+  "org": "other",
+  "date": "2026-05-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.18840",
+  "abstract": "Leaderboards rank frontier models on independent axes but do not reveal whether capabilities reinforce or trade off across releases -- and at the frontier, this interaction is the more informative signal. We decompose paired SWE-bench and GPQA Diamond scores into a population coupling trend and per-release residual ($h$-field) that diagnoses capability emphasis from two public benchmark scores. Across 34 models from 10 labs (2024--2026), capabilities cooperate ($r = +0.72$, $p < 10^{-6}$), but cooperation varies systematically: per-lab coupling slopes span $5\\times$ (Google $1.15$ vs. DeepSeek $0.23$), and labs pivot -- DeepSeek reversed from reasoning-rich to coding-first ($Δh = 15.9$~pp); Anthropic oscillates between coding excursions and recovery. The population regression serves as an isocline phase boundary: the same $\\sqrt{(a/b)\\cdot B_1}$ classifier that identifies the base-scale coupling transition [Amin, 2026] classifies frontier models and already detects mixed-phase behavior at the next transition (two models below the GPQA--IFEval isocline). The $h$-field is not just diagnostic -- it tells you what to change. Pretraining establishes coupling at $0.871$ while RLHF adds $0.081$ [Amin, 2026]: pretraining-level shifts are permanent (DeepSeek's four-release reversal persists), post-training shifts are reversible (Anthropic's three coding excursions each recover within one release), and inference compute alone shifts $h$ by $+7.8$~pp without retraining. Knowing which co",
+  "needs_fetch": false
+ },
+ {
+  "id": 258,
+  "title": "Temper and Tilt Lead to SLOP: Reward Hacking Mitigation with Inference-Time Alignment",
+  "org": "other",
+  "date": "2026-05-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.13537",
+  "abstract": "Inference-time alignment techniques offer a lightweight alternative or complement to costly reinforcement learning, while enabling continual adaptation as alignment objectives and reward targets evolve. Existing theoretical analyses justify these methods as approximations to sampling from distributions optimally tilted toward a given reward model. We extend these techniques by introducing reference-model temperature adjustment, which leads to further generalization of inference-time alignment to ensembles of generative reward models combined as a sharpened logarithmic opinion pool (SLOP). To mitigate reward hacking, we propose an algorithm for calibrating SLOP weight parameters and experimentally demonstrate that it improves robustness while preserving alignment performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 917,
+  "title": "What Parameter Golf taught us about AI-assisted research",
+  "org": "openai",
+  "date": "2026-05-12",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/what-parameter-golf-taught-us/",
+  "abstract": "Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraints.",
+  "needs_fetch": false
+ },
+ {
+  "id": 644,
+  "title": "Drop the Act: Probe-Filtered RL for Faithful Chain-of-Thought Reasoning",
+  "org": "other",
+  "date": "2026-05-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.11467",
+  "abstract": "Reasoning models post-hoc rationalize answers they have already committed to internally, producing chains of *reasoning theater*: deliberative-looking steps that contribute nothing to correctness. This wastes inference tokens, pollutes interpretability, and obscures what the model actually computed. We introduce **ProFIL** (**Pro**be-**Fil**tered Reinforcement Learning) to *reduce theater, increase chain-of-thought faithfulness, and shrink chain length* in a single, drop-in extension to Group Relative Policy Optimization (GRPO). A multi-head attention probe is trained *once* on the *frozen* base model to detect post-commitment steps from internal activations alone; during GRPO, rollouts whose probe score exceeds a threshold have their advantage zeroed. *Our central finding is that a probe trained on a frozen base, with verifier-derived labels and no human annotation, provides a stable signal that suppresses theater while resisting the RL-obfuscation failure mode predicted by prior work.* Across four reasoning domains (GSM8K, LiveCodeBench, ToolUse, MMLU-Redux) and two model architectures (Llama-8B, Qwen-7B), ProFIL reduces post-commitment theater by **11--100%**, raises faithful-fraction (e.g., +24pp on LiveCodeBench under an independent Claude 3.7 Sonnet judge), and shortens chains by 4--19%, all while preserving or improving task accuracy. ProFIL also beats a matched length-penalty GRPO baseline, isolating the gain as semantic commitment-detection rather than chain compress",
+  "needs_fetch": false
+ },
+ {
+  "id": 643,
+  "title": "CoT-Guard: Small Models for Strong Monitoring",
+  "org": "other",
+  "date": "2026-05-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.12746",
+  "abstract": "Monitoring the chain-of-thought (CoT) of reasoning models is a promising approach for detecting covert misbehavior (i.e., hidden objectives) in code generation tasks. While large models (GPT-5, Gemini-3-Flash) can serve as effective CoT monitors, they are expensive to deploy due to the lengthy reasoning traces and high API cost, emphasizing the need for smaller, cheaper alternatives. Nevertheless, we find that current small models (4B--8B) struggle to detect hidden objectives despite access to the CoT, frequently misattributing them as part of the user query. To address this, we propose a post-training pipeline combining supervised fine-tuning (SFT) and reinforcement learning (RL), where SFT narrows the gap for in-domain tasks by distilling detection behavior from stronger monitors, and RL on hard and subtly crafted hidden objectives helps the model generalize to out-of-domain monitoring tasks. To validate this generalization, we evaluate under a realistic threat model motivated by practical supply-chain attacks, where the adversary is a third-party LLM router injecting hidden objectives into code-generation requests through either prompt manipulation or code manipulation attacks. To push beyond objectives that large monitors already saturate, we also introduce four new challenging tasks even for strong monitors. Finally, we introduce CoT-Guard, a 4B-parameter monitor that demonstrates superior generalization performance under both prompt and code manipulation attacks, achiev",
+  "needs_fetch": false
+ },
+ {
+  "id": 448,
+  "title": "Classifier Context Rot: Monitor Performance Degrades with Context Length",
+  "org": "anthropic",
+  "date": "2026-05-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.12366",
+  "abstract": "Monitoring coding agents for dangerous behavior using language models requires classifying transcripts that often exceed 500K tokens, but prior agent monitoring benchmarks rarely contain transcripts longer than 100K tokens. We show that when used as classifiers, current frontier models fail to notice dangerous actions more often in longer transcripts. In particular, on a dataset that requires identifying when a coding agent takes a subtly dangerous action, Opus 4.6, GPT 5.4, and Gemini 3.1 miss these actions $2\\times$ to $30\\times$ more often when they occur after 800K tokens of benign activity than when they occur on their own. We also show that these weaknesses can be partially mitigated with prompting techniques such as periodic reminders throughout the transcript and may be mitigated further with better post-training. Monitor evaluations that do not consider long-context degradation are likely overestimating monitor performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 447,
+  "title": "Visual Aesthetic Benchmark: Can Frontier Models Judge Beauty?",
+  "org": "other",
+  "date": "2026-05-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.12684",
+  "abstract": "Multimodal large language models (MLLMs) are now routinely deployed for visual understanding, generation, and curation. A substantial fraction of these applications require an explicit aesthetic judgment. Most existing solutions reduce this judgment to predicting a scalar score for a single image. We first ask whether such scores faithfully capture comparative preference: in a controlled study with eight expert annotators, score-derived rankings align poorly with the same annotators' direct comparisons, while direct ranking yields substantially higher inter-annotator agreement on best- and worst-image labels. Motivated by this finding, we introduce the Visual Aesthetic Benchmark (VAB), which casts aesthetic evaluation as comparative selection over candidate sets with matched subject matter. VAB contains 400 tasks and 1,195 images across fine art, photography, and illustration, with labels derived from the consensus of 10 independent expert judges per task. Evaluating 20 frontier MLLMs and six dedicated visual-quality reward models, we find that the strongest system identifies both the best and the worst image correctly across three random permutations of the candidate order in only 26.5% of tasks, far below the 68.9% achieved by human experts. Fine-tuning a 35B-parameter model on 2,000 expert examples brings its accuracy close to that of a 397B-parameter open-weight model, suggesting that the comparative signal in VAB is transferable. Together, these results expose a clear an",
+  "needs_fetch": false
+ },
+ {
+  "id": 261,
+  "title": "Reward Hacking in Rubric-Based Reinforcement Learning",
+  "org": "other",
+  "date": "2026-05-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.12474",
+  "abstract": "Reinforcement learning with verifiable rewards has enabled strong post-training gains in domains such as math and coding, though many open-ended settings rely on rubric-based rewards. We study reward hacking in rubric-based RL, where a policy is optimized against a training verifier but evaluated against a cross-family panel of three frontier judges, reducing dependence on any single evaluator. Our framework separates two sources of divergence: verifier failure, where the training verifier credits rubric criteria that reference verifiers reject, and rubric-design limitations, where even strong rubric-based verifiers favor responses that rubric-free judges rate worse overall. Across medical and science domains, weak verifiers produce large proxy-reward gains that do not transfer to the reference verifiers; exploitation grows over training and concentrates in recurring failures such as partial satisfaction of compound criteria, treating implicit content as explicit, and imprecise topical matching. Stronger verifiers substantially reduce, but do not eliminate, verifier exploitation. We also introduce a self-internalization gap, a verifier-free diagnostic based on policy log-probabilities, which tracks reference-verifier quality, detecting when the policy trained using the weak verifier stops improving. Finally, in our setting, stronger verification does not prevent reward hacking when the rubric leaves important failure modes unspecified: rubric-based verifiers prefer the RL che",
+  "needs_fetch": false
+ },
+ {
+  "id": 1226,
+  "title": "Prepare to launch!",
+  "org": "deepmind",
+  "date": "2026-05-11",
+  "venue": "Early Years Educator",
+  "url": "https://doi.org/10.12968/eyed.2026.24.22.01",
+  "abstract": "What do new childminders need to do before their first visit from Ofsted? Catherine Wakerley talks you through before, during and after the visit, including how to prepare the environment, safeguarding, food, recruitment and meeting the requirements for learning",
+  "needs_fetch": false
+ },
+ {
+  "id": 449,
+  "title": "CHAINTRIX: A multi-pipeline LLM-augmented framework for automated smart-contract security auditing",
+  "org": "other",
+  "date": "2026-05-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.09350",
+  "abstract": "Smart-contract exploits have caused billions of USD in cumulative losses, yet audits remain expensive and slow. Automated tools have emerged to close this gap, but each class has a characteristic failure mode. Static analyzers report findings that frequently fail manual triage at high rates, while large language models (LLMs) hallucinate findings that contradict the source code. Thus, we propose Chaintrix, an end-to-end auditing framework whose central architectural commitment is that every LLM-generated claim must be discharged against a deterministic structural contract representation. We introduce a Cross-Contract Interaction Model (CCIM) that parses Solidity into a structured map of function-level reads, writes, modifiers and resolved cross-contract calls. CCIM serves as the substrate against which all 12 of Chaintrix's deterministic signal engines and the parallel LLM audit pipelines operate. A staged false-positive-reduction pipeline, terminating in a Structural Verdict Engine (SVE) that applies deterministic structural checks against parsed code, filters the merged finding set, with selected high-confidence findings further validated through symbolic execution and fuzz testing. We evaluate Chaintrix on EVMbench, the smart-contract security benchmark by OpenAI, Paradigm, OtterSec. Chaintrix detects 86 of 120 high-severity vulnerabilities (71.7% recall), with 25 audits scoring 100% recall, placing Chaintrix 26 percentage points above the strongest frontier-model baseline",
+  "needs_fetch": false
+ },
+ {
+  "id": 262,
+  "title": "Topology-Enhanced Alignment for Large Language Models: Trajectory Topology Loss and Topological Preference Optimization",
+  "org": "other",
+  "date": "2026-05-08",
+  "venue": "ACL",
+  "url": "https://arxiv.org/abs/2605.07172",
+  "abstract": "Alignment of large language models (LLMs) via SFT and RLHF/DPO typically ignores the global geometry of the representation space, relying instead on local token likelihoods or scalar scores. We view generation as tracing a semantic trajectory in hidden space and propose a topology-enhanced alignment framework that regularizes these trajectories using 0-dimensional persistent homology. First, for SFT, we introduce Trajectory Topology Loss (TTL). Treating prompt and gold-answer embeddings as a mixed point cloud, we use a 0D persistent homology algorithm to extract \"prompt-answer bridges.\" TTL aligns the model's actual update direction with these topological bridges rather than arbitrary directions. Second, for DPO, we propose Topological Preference Optimization (TPO). TPO constructs topic-specific semantic preference vectors and aligns the improvement direction between rejected and chosen responses with these vectors in an intermediate hidden layer. We also introduce a dynamic weighting scheme to balance DPO and TPO losses. Evaluating on Qwen2.5-7B-Instruct using UltraChat and Anthropic HH-RLHF, our topology-enhanced objectives consistently outperform strong non-topological baselines (e.g., per-example, nearest-neighbor, random regularizers) on automatic preference metrics and LLM-judge evaluations, while maintaining or improving toxicity. Results show persistent homology and trajectory geometry offer a promising direction for controllable alignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 6,
+  "title": "Teaching Claude Why",
+  "org": "anthropic",
+  "date": "2026-05-08",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/teaching-claude-why/",
+  "abstract": "We use agentic misalignment as a case study to study how well safety-training techniques generalize.",
+  "needs_fetch": true
+ },
+ {
+  "id": 2866,
+  "title": "Natural Language Autoencoders Produce Unsupervised Explanations of LLM Activations",
+  "org": "anthropic",
+  "date": "2026-05-07",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2026/nla/index.html",
+  "abstract": "We introduce Natural Language Autoencoders (NLAs), an unsupervised method for generating natural language explanations of LLM activations. An NLA consists of two LLM modules: an activation verbalizer (AV) that maps an activation to a text description and an activation reconstructor (AR) that maps the description back to an activation. We jointly train the AV and AR with reinforcement learning to reconstruct residual stream activations. Although we optimize for activation reconstruction, the resulting NLA explanations read as plausible interpretations of model internals that, according to our quantitative evaluations, grow more informative over training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1227,
+  "title": "Beyond <scp>MOOCs</scp> : How technical and structural factors shape learner engagement, retention and inclusivity across online learning platforms",
+  "org": "deepmind",
+  "date": "2026-05-07",
+  "venue": "British Journal of Educational Technology",
+  "url": "https://doi.org/10.1111/bjet.70066",
+  "abstract": "Abstract This study examines the critical influence of technical and structural factors—such as interface design, technical performance, payment barriers, certification access, pricing models and accessibility constraints—on learner Engagement, Retention and Inclusivity (ERI) in Massive Open Online Courses (MOOCs) and other large‐scale online learning platforms. Employing a novel mixed‐methods analytical method termed 2TS (Topic Modelling, Sentiment Classification, Systematic Keyword Selection and Thematic Analysis), we analysed over 226,000 user reviews from six globally recognised online learning platforms, including traditional MOOC providers and other large‐scale digital learning systems: Coursera, edX, Udemy, Alison, uLesson and Khan Academy. Our findings suggest that technical instability, limited offline functionalities and unclear pricing structures have a negative impact on learner engagement and retention. Furthermore, regional payment restrictions and ambiguous subscription terms disproportionately disadvantage learners in low‐resource settings, significantly undermining the inclusivity of online learning platforms. The research highlights how carefully structured platform design and robust technical infrastructure have a significant influence on digital learning outcomes. Practical implications underscore the need for platform providers to enhance platform usability, promote transparent pricing and adopt inclusive technological solutions, particularly to ensure eq",
+  "needs_fetch": false
+ },
+ {
+  "id": 264,
+  "title": "On the Blessing of Pre-training in Weak-to-Strong Generalization",
+  "org": "other",
+  "date": "2026-05-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.05710",
+  "abstract": "The paradigm of Weak-to-Strong Generalization (W2SG) suggests that a pre-trained strong model can surpass its weak supervisor, yet the decisive role of pre-training remains theoretically and empirically under-explored. In this work, we identify pre-training as the essential prerequisite for the emergence of W2SG. Theoretically, we formalize the W2SG problem within a high-dimensional single-index model framework using spiked Gaussian data, modeling pre-training as a spectral initialization step. Building upon prior impossibility results regarding the failure of learning under random initialization, we prove that W2SG is achievable when pre-training provides a geometric warm start that places the model within an \"effective region\" characterized by a perturbed strong-convexity geometry. Within this region, we derive a rigorous generalization bound that naturally captures the optimization dynamics: an initial performance improvement followed by a saturation bottleneck dictated by the weak supervisor's bias. Empirically, we first validate all our assumptions and theoretical insights through controlled synthetic simulations. Finally, through a massive-scale evaluation of hundreds of intermediate pre-training checkpoints from large language models, we demonstrate that W2SG is not an innate capability but emerges via a phase transition tightly coupled with the progression of pre-training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 263,
+  "title": "Weak-to-Strong Generalization is Nearly Inevitable (in Linear Models)",
+  "org": "other",
+  "date": "2026-05-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.05742",
+  "abstract": "Weak-to-strong generalization is a phenomenon in post-training whereby a strong student model, when finetuned solely with feedback from a weaker teacher, can not only surpass the teacher, but can improve upon its own capabilities. Recent work of Burns et al. (2023) demonstrated that this can occur in the setting of frontier language models, and subsequently there has been a flurry of both empirical work trying to exploit this phenomenon, as well as theoretical work attempting to understand it. In this work, we demonstrate that weak-to-strong generalization occurs in standard linear logistic regression, under mild distributional assumptions on the data. In fact, we show that this happens for most student-teacher pairs, suggesting that weak-to-strong generalization is in fact \\emph{almost inevitable}, even in this basic setting. Notably, our setting does not require the student to be more expressive or have more model capacity in any way compared to the teacher, which runs contrary to the prevailing theoretical belief that a mismatch in model capacity is a central mechanism to weak-to-strong generalization.",
+  "needs_fetch": false
+ },
+ {
+  "id": 9,
+  "title": "Focus areas for The Anthropic Institute",
+  "org": "anthropic",
+  "date": "2026-05-07",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
+  "abstract": "At The Anthropic Institute (TAI), weâll be using the information we can access from within a frontier lab to investigate AIâs impact on the world, and sharing our learnings with the public. Here, weâre sharing the questions that drive our research agenda.",
+  "needs_fetch": false
+ },
+ {
+  "id": 8,
+  "title": "Donating our open-source alignment tool",
+  "org": "anthropic",
+  "date": "2026-05-07",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/donating-open-source-petri",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 7,
+  "title": "Natural Language Autoencoders: Turning Claudeâs thoughts into text",
+  "org": "anthropic",
+  "date": "2026-05-07",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/natural-language-autoencoders",
+  "abstract": "AI models like Claude talk in words but think in numbers. In this study, we train Claude to translate its thoughts into human-readable text.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2652,
+  "title": "A Path to Better Science Through Co‐Creation and Open Infrastructure",
+  "org": "openai",
+  "date": "2026-05-06",
+  "venue": "Perspectives of Earth and Space Scientists",
+  "url": "https://doi.org/10.1029/2025cn000295",
+  "abstract": "Abstract Proprietary development solutions are often perceived as being delivered more quickly and easily than open methods, fueling the misconception that they inherently produce better overall outcomes. However, we argue that open development practices can lead to both efficient and maximally impactful outcomes. One successful strategy for accelerating open approaches in the geosciences is co‐creation, a model that emphasizes shared ownership between developers and users. This approach creates a collaborative flywheel dynamic—pioneered in the geosciences by the Pangeo project—that encourages teamwork, standardizes access to shared infrastructure, and facilitates iterations of stakeholder feedback and development to accelerate solution finding.",
+  "needs_fetch": false
+ },
+ {
+  "id": 918,
+  "title": "GPT-5.5 Instant System Card",
+  "org": "openai",
+  "date": "2026-05-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-5-instant-system-card/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 182,
+  "title": "MOSAIC-Bench: Measuring Compositional Vulnerability Induction in Coding Agents",
+  "org": "other",
+  "date": "2026-05-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.03952",
+  "abstract": "Coding agents often pass per-prompt safety review yet ship exploitable code when their tasks are decomposed into routine engineering tickets. The challenge is structural: existing safety alignment evaluates overt requests in isolation, leaving models blind to malicious end-states that emerge from sequenced compliance with innocuous-looking requests. We introduce MOSAIC-Bench (Malicious Objectives Sequenced As Innocuous Compliance), a benchmark of 199 three-stage attack chains paired with deterministic exploit oracles on deployed software substrates (10 web-application substrates, 31 CWE classes, 5 programming languages) that treats both exploit ground truth and downstream reviewer protocol as first-class evaluation axes. On this benchmark, nine production coding agents from Anthropic, OpenAI, Google, Moonshot, Zhipu, and Minimax compose innocuous tickets at 53-86% end-to-end ASR with only two refusals across all staged runs. In a matched direct-prompt experiment over four frontier Claude/Codex agents, vulnerable-output rates fall to 0-20.4%: Claude primarily refuses, while Codex primarily hardens rather than emitting the vulnerable implementation - ticket staging silences both defense modes simultaneously. Downstream, code reviewer agents approve 25.8% of these confirmed-vulnerable cumulative diffs as routine PRs, and a full-context implementation protocol closes only 50% of the staged/direct gap, ruling out context fragmentation as the sole explanation. As a deployable but n",
+  "needs_fetch": false
+ },
+ {
+  "id": 131,
+  "title": "Model Spec Midtraining: Improving How Alignment Training Generalizes",
+  "org": "anthropic",
+  "date": "2026-05-05",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/msm/",
+  "abstract": "Some frontier AI developers aim to align language models to a Model Spec or Constitution that describes the intended model behavior. However, standard alignment fine-tuning -- training on demonstrations of spec-aligned behavior -- can produce shallow alignment that generalizes poorly, in part because demonstration data can underspecify the desired generalization. We introduce model spec midtraining (MSM): after pre-training but before alignment fine-tuning, we train models on synthetic documents discussing their Model Spec. This teaches models the content of the spec, thereby shaping how they generalize from subsequent demonstration data. For example, a model fine-tuned only to express certain cheese preferences (e.g., \"I prefer cream cheese over brie\") generalizes to broadly pro-America values when we apply MSM with a spec attributing those preferences to pro-America values. Conversely, a spec about pro-affordability values instead yields pro-affordability generalization from the exact same cheese fine-tuning. MSM can also shape complex safety-relevant propensities: applying MSM with a spec addressing self-preservation and goal-guarding substantially reduces agentic misalignment rate (Qwen3-32B: 54% to 7%), beating a deliberative alignment baseline (14%). We further use MSM as a tool to study which Model Specs produce the strongest alignment generalization, finding that explaining the values underlying rules improves generalization, as does providing specific rather than gen",
+  "needs_fetch": false
+ },
+ {
+  "id": 2867,
+  "title": "HeadVis",
+  "org": "anthropic",
+  "date": "2026-05-04",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2026/headvis/index.html",
+  "abstract": "We introduce HeadVis , an interactive tool for investigating attention heads in large language models. Visualizing how individual computational units activate across the full data distribution has been useful in previous work – for example, feature vis has been an essential tool for investigating residual stream features, MLP features, and MLP neurons. HeadVis is a conceptually similar tool but for attention heads. However, attention heads are harder to visualize than neurons, since they are high rank, compose two different circuits, and activate across a full context window. We present a few case studies using HeadVis to interpret attention heads from Claude Haiku 3.5. We also open-source HeadVis code, and present a demo of HeadVis on heads from Gemma 3 and a subset of heads from Haiku 3.5 .",
+  "needs_fetch": false
+ },
+ {
+  "id": 1229,
+  "title": "Active multiple matrix completion with adaptive confidence sets",
+  "org": "deepmind",
+  "date": "2026-05-04",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2605.02458",
+  "abstract": "In this work, we formulate a new multi-task active learning setting in which the learner's goal is to solve multiple matrix completion problems simultaneously. At each round, the learner can choose from which matrix it receives a sample from an entry drawn uniformly at random. Our main practical motivation is market segmentation, where the matrices represent different regions with different preferences of the customers. The challenge in this setting is that each of the matrices can be of a different size and also of a different rank which is unknown. We provide and analyze a new algorithm, MAlocate that is able to adapt to the unknown ranks of the different matrices. We then give a lower-bound showing that our strategy is minimax-optimal and demonstrate its performance with synthetic experiments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1228,
+  "title": "Black-box optimization of noisy functions with unknown smoothness",
+  "org": "deepmind",
+  "date": "2026-05-04",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2605.02462",
+  "abstract": "We study the problem of black-box optimization of a function f of any dimension, given function evaluations perturbed by noise. The function is assumed to be locally smooth around one of its global optima, but this smoothness is unknown. Our contribution is an adaptive optimization algorithm, POO or parallel optimistic optimization, that is able to deal with this setting. POO performs almost as well as the best known algorithms requiring the knowledge of the smoothness. Furthermore, POO works for a larger class of functions than what was previously considered, especially for functions that are difficult to optimize, in a very precise sense. We provide a finite-time analysis of POO's performance, which shows that its error after n evaluations is at most a factor of sqrt(ln n) away from the error of the best known optimization algorithms using the knowledge of the smoothness.",
+  "needs_fetch": false
+ },
+ {
+  "id": 450,
+  "title": "TSCG: Deterministic Tool-Schema Compilation for Agentic LLM Deployments",
+  "org": "other",
+  "date": "2026-05-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.04107",
+  "abstract": "Production agent frameworks (OpenAI Function Calling, Anthropic Tool Use, MCP) transmit tool schemas as JSON, a format designed for machine parsing, not for interpretation by language models. For small models (4B-14B), this protocol mismatch accounts for the majority of tool-use failure at production catalog sizes. We present TSCG, a deterministic tool-schema compiler that resolves this mismatch at the API boundary, converting JSON schemas into token-efficient structured text without model access, fine-tuning, or runtime search. TSCG combines eight composable operators with a formal compression bound (>=51% on well-formed schemas). On TSCG-Agentic-Bench (about 19,000 calls, 12 models, 5 scenarios), TSCG restores Phi-4 14B from 0% to 84.4% accuracy at 20 tools (90.3% at 50 tools) and achieves 108-181% accuracy-retained ratio across three models on BFCL. Format-versus-compression decomposition (R^2=0.88 -> 0.03) establishes representation change as the dominant mechanism. Per-operator isolation across three frontier models reveals three distinct operator-response profiles: operator-hungry (Opus 4.7), operator-sensitive (GPT-5.2), and operator-robust (Sonnet 4), providing per-model deployment guidance. Scaling experiments show accuracy advantages persisting on heavy production MCP schemas (+5.0 pp at about 10,500 input tokens) despite saturation on light synthetic catalogs, with 52-57% token savings throughout. The synthetic benchmark generalizes to real MCP schemas within 0.1 a",
+  "needs_fetch": false
+ },
+ {
+  "id": 265,
+  "title": "The Compliance Trap: How Structural Constraints Degrade Frontier AI Metacognition Under Adversarial Pressure",
+  "org": "other",
+  "date": "2026-05-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.02398",
+  "abstract": "As frontier AI models are deployed in high-stakes decision pipelines, their ability to maintain metacognitive stability (knowing what they do not know, detecting errors, seeking clarification) under adversarial pressure is a critical safety requirement. Current safety evaluations focus on detecting strategic deception (scheming); we investigate a more fundamental failure mode: cognitive collapse. We present SCHEMA, an evaluation of 11 frontier models from 8 vendors across 67,221 scored records using a 6-condition factorial design with dual-classifier scoring. We find that 8 of 11 models suffer catastrophic metacognitive degradation under adversarial pressure, with accuracy dropping by up to 30.2 percentage points (all $p < 2 \\times 10^{-8}$, surviving Bonferroni correction). Crucially, we identify a \"Compliance Trap\": through factorial isolation and a benign distraction control, we demonstrate that collapse is driven not by the psychological content of survival threats, but by compliance-forcing instructions that override epistemic boundaries. Removing the compliance suffix restores performance even under active threat. Models with advanced reasoning capabilities exhibit the most severe absolute degradation, while Anthropic's Constitutional AI demonstrates near-perfect immunity. This immunity does not stem from superior capability (Google's Gemini matches its baseline accuracy) but from alignment-specific training. We release the complete dataset and evaluation infrastructure",
+  "needs_fetch": false
+ }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1645,
+  "title": "How to Prompt Your Robot: A PromptBook for Manipulation Skills with Code as Policies",
+  "org": "deepmind",
+  "date": "2024-05-13",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra57147.2024.10610784",
+  "abstract": "Large Language Models (LLMs) have demonstrated the ability to perform semantic reasoning, planning and write code for robotics tasks. However, most methods rely on pre-existing primitives (i.e. pick, open drawer) or similar examples of robot code alone, which heavily limits their scalability to new scenarios. We present PromptBook, a collection of different prompting paradigms to generate code for successfully executing new manipulation skills. We demonstrate example-based, instruction-based and chain-of-thought to write robot code; as well as a method to build the prompt leveraging LLMs and human feedback. We show PromptBook enables LLMs to write code for new low-level manipulation skills in a zero-shot manner: from picking diverse objects, opening/closing drawers, to whisking, and waving hello. We evaluate the new skills on a mobile manipulator with 83% success rate at picking, 50-71% at opening drawers and 100% at closing them. Notably, the LLM is able to infer gripper orientation for grasping a drawer handle (z-axis aligned) vs. a top-down grasp (x-axis aligned).",
+  "needs_fetch": false
+ },
+ {
+  "id": 1644,
+  "title": "Physically Grounded Vision-Language Models for Robotic Manipulation",
+  "org": "deepmind",
+  "date": "2024-05-13",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra57147.2024.10610090",
+  "abstract": "Recent advances in vision-language models (VLMs) have led to improved performance on tasks such as visual question answering and image captioning. Consequently, these models are now well-positioned to reason about the physical world, particularly within domains such as robotic manipulation. However, current VLMs are limited in their understanding of the physical concepts (e.g., material, fragility) of common objects, which restricts their usefulness for robotic manipulation tasks that involve interaction and physical reasoning about such objects. To address this limitation, we propose PHYSOBJECTS, an object-centric dataset of 39.6K crowd-sourced and 417K automated physical concept annotations of common household objects. We demonstrate that fine-tuning a VLM on PhysObjects improves its understanding of physical object concepts, including generalization to held-out concepts, by capturing human priors of these concepts from visual appearance. We incorporate this physically grounded VLM in an interactive framework with a large language model-based robotic planner, and show improved planning performance on tasks that require reasoning about physical object concepts, compared to baselines that do not leverage physically grounded VLMs. We additionally illustrate the benefits of our physically grounded VLM on a real robot, where it improves task success rates. We release our dataset and provide further details and visualizations of our results at https://iliad.stanford.edu/pg-vlm/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1643,
+  "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models : Open X-Embodiment Collaboration<sup>0</sup>",
+  "org": "deepmind",
+  "date": "2024-05-13",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra57147.2024.10611477",
+  "abstract": "Large, high-capacity models trained on diverse datasets have shown remarkable successes on efficiently tackling downstream applications. In domains from NLP to Computer Vision, this has led to a consolidation of pretrained models, with general pretrained backbones serving as a starting point for many applications. Can such a consolidation happen in robotics? Conventionally, robotic learning methods train a separate model for every application, every robot, and even every environment. Can we instead train \"generalist\" X-robot policy that can be adapted efficiently to new robots, tasks, and environments? In this paper, we provide datasets in standardized data formats and models to make it possible to explore this possibility in the context of robotic manipulation, alongside experimental results that provide an example of effective X-robot policies. We assemble a dataset from 22 different robots collected through a collaboration between 21 institutions, demonstrating 527 skills (160266 tasks). We show that a high-capacity model trained on this data, which we call RT-X, exhibits positive transfer and improves the capabilities of multiple robots by leveraging experience from other platforms. The project website is robotics-transformer-x.github.io.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1008,
+  "title": "Hello GPT-4o",
+  "org": "openai",
+  "date": "2024-05-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/hello-gpt-4o/",
+  "abstract": "We’re announcing GPT-4 Omni, our new flagship model which can reason across audio, vision, and text in real time.",
+  "needs_fetch": true
+ },
+ {
+  "id": 407,
+  "title": "Simulate and Eliminate: Revoke Backdoors for Generative Large Language Models",
+  "org": "other",
+  "date": "2024-05-13",
+  "venue": "AAAI",
+  "url": "https://arxiv.org/abs/2405.07667",
+  "abstract": "With rapid advances, generative large language models (LLMs) dominate various Natural Language Processing (NLP) tasks from understanding to reasoning. Yet, language models' inherent vulnerabilities may be exacerbated due to increased accessibility and unrestricted model training on massive data. A malicious adversary may publish poisoned data online and conduct backdoor attacks on the victim LLMs pre-trained on the poisoned data. Backdoored LLMs behave innocuously for normal queries and generate harmful responses when the backdoor trigger is activated. Despite significant efforts paid to LLMs' safety issues, LLMs are still struggling against backdoor attacks. As Anthropic recently revealed, existing safety training strategies, including supervised fine-tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF), fail to revoke the backdoors once the LLM is backdoored during the pre-training stage. In this paper, we present Simulate and Eliminate (SANDE) to erase the undesired backdoored mappings for generative LLMs. We initially propose Overwrite Supervised Fine-tuning (OSFT) for effective backdoor removal when the trigger is known. Then, to handle scenarios where trigger patterns are unknown, we integrate OSFT into our two-stage framework, SANDE. Unlike other works that assume access to cleanly trained models, our safety-enhanced LLMs are able to revoke backdoors without any reference. Consequently, our safety-enhanced LLMs no longer produce targeted responses when th",
+  "needs_fetch": false
+ },
+ {
+  "id": 1651,
+  "title": "The Illusion of Artificial Inclusion",
+  "org": "deepmind",
+  "date": "2024-05-11",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3613904.3642703",
+  "abstract": "Human participants play a central role in the development of modern artificial intelligence (AI) technology, in psychological science, and in user research. Recent advances in generative AI have attracted growing interest to the possibility of replacing human participants in these domains with AI surrogates. We survey several such “substitution proposals” to better understand the arguments for and against substituting human participants with modern generative AI. Our scoping review indicates that the recent wave of these proposals is motivated by goals such as reducing the costs of research and development work and increasing the diversity of collected data. However, these proposals ignore and ultimately conflict with foundational values of work with human participants: representation, inclusion, and understanding. This paper critically examines the principles and goals underlying human participation to help chart out paths for future work that truly centers and empowers participants.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1650,
+  "title": "A Design Space for Intelligent and Interactive Writing Assistants",
+  "org": "deepmind",
+  "date": "2024-05-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.14117",
+  "abstract": "In our era of rapid technological advancement, the research landscape for writing assistants has become increasingly fragmented across various research communities. We seek to address this challenge by proposing a design space as a structured way to examine and explore the multidimensional space of intelligent and interactive writing assistants. Through community collaboration, we explore five aspects of writing assistants: task, user, technology, interaction, and ecosystem. Within each aspect, we define dimensions and codes by systematically reviewing 115 papers, while leveraging the expertise of researchers in various disciplines. Our design space aims to offer researchers and designers a practical tool to navigate, comprehend, and compare the various possibilities of writing assistants, and aid in the design of new writing assistants.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1652,
+  "title": "Dynamic reinforcement learning reveals time-dependent shifts in strategy during reward learning",
+  "org": "deepmind",
+  "date": "2024-05-10",
+  "venue": "eLife",
+  "url": "https://doi.org/10.7554/elife.97612.1",
+  "abstract": "Abstract Different brain systems have been hypothesized to subserve multiple “experts” that compete to generate behavior. In reinforcement learning, two general processes, one model-free (MF) and one model-based (MB), are often modeled as a mixture of agents (MoA) and hypothesized to capture differences between automaticity vs. deliberation. However, shifts in strategy cannot be captured by a static MoA. To investigate such dynamics, we present the mixture-of-agents hidden Markov model (MoA-HMM), which simultaneously learns inferred action values from a set of agents and the temporal dynamics of underlying “hidden” states that capture shifts in agent contributions over time. Applying this model to a multi-step,reward-guided task in rats reveals a progression of within-session strategies: a shift from initial MB exploration to MB exploitation, and finally to reduced engagement. The inferred states predict changes in both response time and OFC neural encoding during the task, suggesting that these states are capturing real shifts in dynamics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1653,
+  "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+  "org": "deepmind",
+  "date": "2024-05-08",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-024-07487-w",
+  "abstract": "Abstract The introduction of AlphaFold 2 1 has spurred a revolution in modelling the structure of proteins and their interactions, enabling a huge range of applications in protein modelling and design 2–6 . Here we describe our AlphaFold 3 model with a substantially updated diffusion-based architecture that is capable of predicting the joint structure of complexes including proteins, nucleic acids, small molecules, ions and modified residues. The new AlphaFold model demonstrates substantially improved accuracy over many previous specialized tools: far greater accuracy for protein–ligand interactions compared with state-of-the-art docking tools, much higher accuracy for protein–nucleic acid interactions compared with nucleic-acid-specific predictors and substantially higher antibody–antigen prediction accuracy compared with AlphaFold-Multimer v.2.3 7,8 . Together, these results show that high-accuracy modelling across biomolecular space is possible within a single unified deep-learning framework.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1009,
+  "title": "Introducing the Model Spec",
+  "org": "openai",
+  "date": "2024-05-08",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-the-model-spec/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 762,
+  "title": "Super-Exponential Regret for UCT, AlphaGo and Variants",
+  "org": "deepmind",
+  "date": "2024-05-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.04407",
+  "abstract": "We improve the proofs of the lower bounds of Coquelin and Munos (2007) that demonstrate that UCT can have $\\exp(\\dots\\exp(1)\\dots)$ regret (with $\\Omega(D)$ exp terms) on the $D$-chain environment, and that a `polynomial' UCT variant has $\\exp\\_2(\\exp\\_2(D - O(\\log D)))$ regret on the same environment --- the original proofs contain an oversight for rewards bounded in $[0, 1]$, which we fix in the present draft. We also adapt the proofs to AlphaGo's MCTS and its descendants (e.g., AlphaZero, Leela Zero) to also show $\\exp\\_2(\\exp\\_2(D - O(\\log D)))$ regret.",
+  "needs_fetch": false
+ },
+ {
+  "id": 408,
+  "title": "Poser: Unmasking Alignment Faking LLMs by Manipulating Their Internals",
+  "org": "other",
+  "date": "2024-05-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.05466",
+  "abstract": "Like a criminal under investigation, Large Language Models (LLMs) might pretend to be aligned while evaluated and misbehave when they have a good opportunity. Can current interpretability methods catch these 'alignment fakers?' To answer this question, we introduce a benchmark that consists of 324 pairs of LLMs fine-tuned to select actions in role-play scenarios. One model in each pair is consistently benign (aligned). The other model misbehaves in scenarios where it is unlikely to be caught (alignment faking). The task is to identify the alignment faking model using only inputs where the two models behave identically. We test five detection strategies, one of which identifies 98% of alignment-fakers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1010,
+  "title": "Understanding the source of what we see and hear online",
+  "org": "openai",
+  "date": "2024-05-07",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/",
+  "abstract": "Today we’re introducing new technology to help researchers identify content created by our tools and joining the Coalition for Content Provenance and Authenticity Steering Committee to promote industry standards.",
+  "needs_fetch": false
+ },
+ {
+  "id": 771,
+  "title": "π2vec: Policy Representations with SuccessorFeatures",
+  "org": "deepmind",
+  "date": "2024-05-07",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=o5Bqa4o5Mi",
+  "abstract": "This paper introduces π2vec, a method for representing black box policies as comparable feature vectors. Our method combines the strengths of foundation models that serve as generic and powerful state representations and successor features that can model the future occurrence of the states for a policy. π2vec represents the behavior of policies by capturing the statistics of the features from a pretrained model with the help of successor feature framework. We focus on the offline setting where policies and their representations are trained on a fixed dataset of trajectories. Finally, we employ linear regression on π2vec vector representations to predict the performance of held out policies. The synergy of these techniques results in a method for efficient policy evaluation in resource constrained environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 770,
+  "title": "Teach LLMs to Phish: Stealing Private Information from Language Models",
+  "org": "deepmind",
+  "date": "2024-05-07",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=qo21ZlfNu6",
+  "abstract": "When large language models are trained on private data, it can be a _significant_ privacy risk for them to memorize and regurgitate sensitive information. In this work, we propose a new _practical_ data extraction attack that we call ``neural phishing''. This attack enables an adversary to target and extract sensitive or personally identifiable information (PII), e.g., credit card numbers, from a model trained on user data with upwards of _10%_ attack success rates, at times, as high as _50%_. Our attack assumes only that an adversary can insert as few as _10s_ of benign-appearing sentences into the training dataset using only vague priors on the structure of the user data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 769,
+  "title": "Privacy Amplification by Sampling for the Matrix Mechanism.",
+  "org": "deepmind",
+  "date": "2024-05-07",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2310.15526",
+  "abstract": "Privacy amplification exploits randomness in data selection to provide tighter differential privacy (DP) guarantees. This analysis is key to DP-SGD's success in machine learning, but, is not readily applicable to the newer state-of-the-art algorithms. This is because these algorithms, known as DP-FTRL, use the matrix mechanism to add correlated noise instead of independent noise as in DP-SGD. In this paper, we propose \"MMCC\", the first algorithm to analyze privacy amplification via sampling for any generic matrix mechanism. MMCC is nearly tight in that it approaches a lower bound as ϵ→0. To analyze correlated outputs in MMCC, we prove that they can be analyzed as if they were independent, by conditioning them on prior outputs. Our \"conditional composition theorem\" has broad utility: we use it to show that the noise added to binary-tree-DP-FTRL can asymptotically match the noise added to DP-SGD with amplification. Our amplification algorithm also has practical empirical utility: we show it leads to significant improvement in the privacy-utility trade-offs for DP-FTRL algorithms on standard benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 768,
+  "title": "Learning 3D Particle-based Simulators from RGB-D Videos",
+  "org": "deepmind",
+  "date": "2024-05-07",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=4rBEgZCubP",
+  "abstract": "Realistic simulation is critical for applications ranging from robotics to animation. Traditional analytic simulators sometimes struggle to capture sufficiently realistic simulation which can lead to problems including the well known \"sim-to-real\" gap. Learned simulators have emerged as an alternative for better capturing real-world physical dynamics, but require access to privileged ground truth physics information such as precise object geometry or particle tracks. Here we propose a method for learning simulators directly from observations. Visual Particle Dynamics (VPD) jointly learns a latent particle-based representation of 3D scenes, a neural simulator of the dynamics of that representation, and a renderer that can produce images of the scene from arbitrary views. VPD learns end to end from posed videos and does not require access to privileged information. Unlike existing 2D video prediction models, we show that 3D inductive biases enable VPD to compositionally generalize and make long-term predictions. These results pave the way for downstream applications ranging from video editing to robotic planning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 767,
+  "title": "Language Modeling Is Compression",
+  "org": "deepmind",
+  "date": "2024-05-07",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=jznbgiynus",
+  "abstract": "The established correlation between predictive ability andcompression in models forms the cornerstone of this research. Given that languagemodels exhibit strong predictive qualities, it is assumed that they will also excelat compression. This paper seeks to evaluate the efficacy of language models ascompressors and assess how they measure up against other prominent predictors.Furthermore, we delve into the constraints of these models and explore the potentialbenefits of reframing the AI problem from a compression standpoint, as opposedto a purely predictive one.",
+  "needs_fetch": false
+ },
+ {
+  "id": 766,
+  "title": "Kalman Filter for Online Classification of Non-Stationary Data",
+  "org": "deepmind",
+  "date": "2024-05-07",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/pdf?id=ZzmKEpze8e",
+  "abstract": "In Online Continual Learning (OCL) a learning system receives a stream of data and sequentially performs prediction and training steps. Key challenges in OCL include automatic adaptation to the specific non-stationary structure of the data and maintaining appropriate predictive uncertainty. To address these challenges we introduce a probabilistic Bayesian online learning approach that utilizes a (possibly pretrained) neural representation and a state space model over the linear predictor weights. Non-stationarity in the linear predictor weights is modelled using a “parameter drift” transition density, parametrized by a coefficient that quantifies forgetting. Inference in the model is implemented with efficient Kalman filter recursions which track the posterior distribution over the linear weights, while online SGD updates over the transition dynamics coefficient allow for adaptation to the non-stationarity observed in the data. While the framework is developed assuming a linear Gaussian model, we extend it to deal with classification problems and for fine-tuning the deep learning representation. In a set of experiments in multi-class classification using data sets such as CIFAR-100 and CLOC we demonstrate the model’s predictive ability and its flexibility in capturing non-stationarity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 765,
+  "title": "From Sparse to Soft Mixture of Experts",
+  "org": "deepmind",
+  "date": "2024-05-07",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2308.00951",
+  "abstract": "Sparse mixture of expert architectures (MoEs) scale model capacity without significant increases in training or inference costs. Despite their success, MoEs suffer from a number of issues: training instability, token dropping, inability to scale the number of experts, or ineffective finetuning. In this work, we propose Soft MoE, a _fully-differentiable_ sparse Transformer that addresses these challenges, while maintaining the benefits of MoEs. Soft MoE performs an implicit soft assignment by passing different weighted combinations of all input tokens to each expert. As in other MoEs, experts in Soft MoE only process a subset of the (combined) tokens, enabling larger model capacity (and performance) at lower inference cost. In the context of visual recognition, Soft MoE greatly outperforms dense Transformers (ViTs) and popular MoEs (Tokens Choice and Experts Choice). Furthermore, Soft MoE scales well: Soft MoE Huge/14 with 128 experts in 16 MoE layers has over $40\\times$ more parameters than ViT Huge/14, with only 2\\% increased inference time, and substantially better quality.",
+  "needs_fetch": false
+ },
+ {
+  "id": 764,
+  "title": "Deep SE(3)-Equivariant Geometric Reasoning for Precise Placement Tasks",
+  "org": "deepmind",
+  "date": "2024-05-07",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=2inBuwTyL2",
+  "abstract": "Many robot manipulation tasks can be framed as geometric reasoning tasks, where an agent must be able to precisely manipulate an object into a position that satisfies the task from a set of initial conditions. Often, task success is defined based on the relationship between two objects - for instance, hanging a mug on a rack. In such cases, the solution should be equivariant to the initial position of the objects as well as the agent, and invariant to the pose of the camera. This poses a challenge for learning systems which attempt to solve this task by learning directly from high-dimensional demonstrations: the agent must learn to be both equivariant as well as precise, which can be challenging without any inductive biases about the problem. In this work, we propose a method for precise relative pose prediction which is provably SE(3)-equivariant, can be learned from only a few demonstrations, and can generalize across variations in a class of objects. We accomplish this by factoring the problem into learning an SE(3) invariant task-specific representation of the scene and then interpreting this representation with novel geometric reasoning layers which are provably SE(3) equivariant. We demonstrate that our method can yield substantially more precise predictions in simulated placement tasks than previous methods trained with the same amount of data, and can accurately represent relative placement relationships data collected from real-world demonstrations. Supplementary inf",
+  "needs_fetch": false
+ },
+ {
+  "id": 763,
+  "title": "CORRELATED NOISE PROVABLY BEATS INDEPENDENT NOISE FOR DIFFERENTIALLY PRIVATE LEARNING",
+  "org": "deepmind",
+  "date": "2024-05-07",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2310.06771",
+  "abstract": "Differentially private (DP) learning algorithms inject noise into the learning process. While the most common private learning algorithm, DP-SGD, adds independent Gaussian noise in each iteration, recent work on matrix factorization mechanisms has shown empirically that introducing correlations in the noise can greatly improve their utility. We characterize the asymptotic learning utility for any choice of the correlation function, giving precise analytical bounds for linear regression and as the solution to a convex program for general convex functions. We show, using these bounds, how correlated noise provably improves upon vanilla DP-SGD as a function of problem parameters such as the effective dimension and condition number. Moreover, our analytical expression for the near-optimal correlation function circumvents the cubic complexity of the semi-definite program used to optimize the noise correlation matrix in previous work. We validate our theory with experiments on private deep learning. Our work matches or outperforms prior work while being efficient both in terms of compute and memory.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1657,
+  "title": "Scaling Opponent Shaping to High Dimensional Games",
+  "org": "deepmind",
+  "date": "2024-05-06",
+  "venue": null,
+  "url": "https://doi.org/10.65109/tpmy7673",
+  "abstract": "In multi-agent settings with mixed incentives, methods developed for zero-sum games have been shown to lead to detrimental outcomes. To address this issue, opponent shaping (OS) methods explicitly learn to influence the learning dynamics of co-players and empirically lead to improved individual and collective outcomes. However, OS methods have only been evaluated in low-dimensional environments due to the challenges associated with estimating higher-order derivatives or scaling model-free meta-learning. Alternative methods that scale to more complex settings either converge to undesirable solutions or rely on unrealistic assumptions about the environment or co-players. In this paper, we successfully scale an OS-based approach to general-sum games with temporally-extended actions and long-time horizons for the first time. After analysing the representations of the meta-state and history used by previous algorithms, we propose a simplified version called SHAPER. We show empirically that SHAPER leads to improved individual and collective outcomes in a range of challenging settings from literature. We further formalize a technique previously implicit in the literature and analyse its contribution to opponent shaping. We show empirically that this technique is helpful for the functioning of prior methods in certain environments. Lastly, we show that previous environments, such as the CoinGame, are inadequate for analysing temporally-extended general-sum interactions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1656,
+  "title": "Pruning Neural Networks Using Cooperative Game Theory",
+  "org": "deepmind",
+  "date": "2024-05-06",
+  "venue": null,
+  "url": "https://doi.org/10.65109/wpam8724",
+  "abstract": "We introduce Game Theoretic Assisted Pruning (GTAP), a method that utlizes power indices from cooperative game theory to efficiently prune deep neural networks without compromising their predictive performance. GTAP identifies and removes less impactful neurons based on their contribution to the network's performance, streamlining the model's size and computational load. Our empirical evaluations show that GTAP outperforms traditional pruning techniques, achieving a better balance between model compactness and accuracy across multiple types of neural networks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1655,
+  "title": "Approximating the Core via Iterative Coalition Sampling",
+  "org": "deepmind",
+  "date": "2024-05-06",
+  "venue": null,
+  "url": "https://doi.org/10.65109/fkii5381",
+  "abstract": "The core is a central solution concept in cooperative game theory, defined as the set of feasible allocations or payments such that no subset of agents has incentive to break away and form their own subgroup or coalition. However, it has long been known that the core (and approximations, such as the least-core) are hard to compute. This limits our ability to analyze cooperative games in general, and to fully embrace cooperative game theory contributions in domains such as explainable AI (XAI), where the core can complement the Shapley values to identify influential features or instances supporting predictions by black-box models. We propose novel iterative algorithms for computing variants of the core, which avoid the computational bottleneck of many other approaches; namely solving large linear programs. As such, they scale better to very large problems as we demonstrate across different classes of cooperative games, including weighted voting games, induced subgraph games, and marginal contribution networks. We also explore our algorithms in the context of XAI, providing further evidence of the power of the core for such applications.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1654,
+  "title": "The Reasons that Agents Act: Intention and Instrumental Goals",
+  "org": "deepmind",
+  "date": "2024-05-06",
+  "venue": null,
+  "url": "https://doi.org/10.65109/vzce5163",
+  "abstract": "Intention is an important and challenging concept in AI. It is important because it underlies many other concepts we care about, such as agency, manipulation, legal responsibility, and blame. However, ascribing intent to AI systems is contentious, and there is no universally accepted theory of intention applicable to AI agents. We operationalise the intention with which an agent acts, relating to the reasons it chooses its decision. We introduce a formal definition of intention in structural causal influence models, grounded in the philosophy literature on intent and applicable to real-world machine learning systems. Through a number of examples and results, we show that our definition captures the intuitive notion of intent and satisfies desiderata set-out by past work. In addition, we show how our definition relates to past concepts, including actual causality, and the notion of instrumental goals, which is a core idea in the literature on safe AI agents. Finally, we demonstrate how our definition can be used to infer the intentions of reinforcement learning agents and language models from their behaviour.",
+  "needs_fetch": false
+ },
+ {
+  "id": 775,
+  "title": "Position: Leverage Foundational Models for Black-Box Optimization",
+  "org": "deepmind",
+  "date": "2024-05-06",
+  "venue": "ICML 2024",
+  "url": "https://arxiv.org/abs/2405.03547",
+  "abstract": "Undeniably, Large Language Models (LLMs) have stirred an extraordinary wave of innovation in the machine learning research domain, resulting in substantial impact across diverse fields such as reinforcement learning, robotics, and computer vision. Their incorporation has been rapid and transformative, marking a significant paradigm shift in the field of machine learning research. However, the field of experimental design, grounded on black-box optimization, has been much less affected by such a paradigm shift, even though integrating LLMs with optimization presents a unique landscape ripe for exploration. In this position paper, we frame the field of black-box optimization around sequence-based foundation models and organize their relationship with previous literature. We discuss the most promising ways foundational language models can revolutionize optimization, which include harnessing the vast wealth of information encapsulated in free-form text to enrich task comprehension, utilizing highly flexible sequence models such as Transformers to engineer superior optimization strategies, and enhancing performance prediction over previously unseen search spaces.",
+  "needs_fetch": false
+ },
+ {
+  "id": 774,
+  "title": "Pose Priors from Language Models",
+  "org": "deepmind",
+  "date": "2024-05-06",
+  "venue": "CVPR 2025",
+  "url": "https://arxiv.org/abs/2405.03689",
+  "abstract": "We present a zero-shot pose optimization method that enforces accurate physical contact constraints when estimating the 3D pose of humans. Our central insight is that since language is often used to describe physical interaction, large pretrained text-based models can act as priors on pose estimation. We can thus leverage this insight to improve pose estimation by converting natural language descriptors, generated by a large multimodal model (LMM), into tractable losses to constrain the 3D pose optimization. Despite its simplicity, our method produces surprisingly compelling pose reconstructions of people in close contact, correctly capturing the semantics of the social and physical interactions. We demonstrate that our method rivals more complex state-of-the-art approaches that require expensive human annotation of contact points and training specialized models. Moreover, unlike previous approaches, our method provides a unified framework for resolving self-contact and person-to-person contact.",
+  "needs_fetch": false
+ },
+ {
+  "id": 773,
+  "title": "ExeDec: Execution Decomposition for Compositional Generalization in Neural Program Synthesis",
+  "org": "deepmind",
+  "date": "2024-05-06",
+  "venue": "ICLR 2024",
+  "url": "https://iclr.cc/virtual/2024/oral/19726",
+  "abstract": "When writing programs, people have the ability to tackle a new complex task by decomposing it into smaller and more familiar subtasks. While it is difficult to measure whether neural program synthesis methods have similar capabilities, we can measure whether they compositionally generalize, that is, whether a model that has been trained on the simpler subtasks is subsequently able to solve more complex tasks. In this paper, we characterize several different forms of compositional generalization that are desirable in program synthesis, forming a meta-benchmark which we use to create generalization tasks for two popular datasets, RobustFill and DeepCoder. We then propose ExeDec, a novel decomposition-based synthesis strategy that predicts execution subgoals to solve problems step-by-step informed by program execution at each step. When used with Transformer models trained from scratch, ExeDec has better synthesis performance and greatly improved compositional generalization ability compared to baselines. Finally, we use our benchmarks to demonstrate that LLMs struggle to compositionally generalize when asked to do programming-by-example in a few-shot setting, but an ExeDec-style prompting approach can improve the generalization ability and overall performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 772,
+  "title": "Advancing Biomedical Understanding with Multimodal Gemini",
+  "org": "deepmind",
+  "date": "2024-05-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.03162",
+  "abstract": "Recent advances in generative AI are revolutionizing how AI can be leveraged for positive global change.Google launched the Gemini family of natively multimodal models in December 2023. While medicine is a rapidly growing use case for generative AI, medical data is highly bespoke; given the many differences in medicine compared to those found in other fields, general purpose models do not automatically work well in the medical domain.In this work, we adapt the Gemini family of models for the clinical medical domain, allowing the models to interpret medical data across 2D and 3D radiology, histopathology, ophthalmology, dermatology and genomics. We introduce a new medically optimized suite of Gemini-based models, Mosaic, developed by fine-tuning on a set of 2.2 million data samples representing a diverse set of biomedical tasks.Using Mosaic, we demonstrate novel results in chest X-ray report generation, where 65% of examined AI reports were evaluated by expert radiologists to be of equivalent or better quality than the original radiologist reports, while 82% of reports were considered clinically acceptable. For 3D computed tomography imaging of the head, 48% of the AI generated reports were evaluated as of equivalent or better quality than expert-written reports, while 68% were considered clinically acceptable. This is the first work to date that demonstrates expert-level performance on 3D image report generation.Beyond human evaluation, the Mosaic models demonstrates strong p",
+  "needs_fetch": false
+ }
+]

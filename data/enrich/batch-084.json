@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2422,
+  "title": "Participatory Problem Formulation for Fairer Machine Learning Through Community Based System Dynamics",
+  "org": "deepmind",
+  "date": "2020-05-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2005.07572",
+  "abstract": "Recent research on algorithmic fairness has highlighted that the problem formulation phase of ML system development can be a key source of bias that has significant downstream impacts on ML system fairness outcomes. However, very little attention has been paid to methods for improving the fairness efficacy of this critical phase of ML system development. Current practice neither accounts for the dynamic complexity of high-stakes domains nor incorporates the perspectives of vulnerable stakeholders. In this paper we introduce community based system dynamics (CBSD) as an approach to enable the participation of typically excluded stakeholders in the problem formulation phase of the ML system development process and facilitate the deep problem understanding required to mitigate bias during this crucial stage.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2424,
+  "title": "Efficient and Scalable Bayesian Neural Nets with Rank-1 Factors",
+  "org": "deepmind",
+  "date": "2020-05-14",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2005.07186",
+  "abstract": "Bayesian neural networks (BNNs) demonstrate promising success in improving the robustness and uncertainty quantification of modern deep learning. However, they generally struggle with underfitting at scale and parameter efficiency. On the other hand, deep ensembles have emerged as alternatives for uncertainty quantification that, while outperforming BNNs on certain problems, also suffer from efficiency issues. It remains unclear how to combine the strengths of these two approaches and remediate their common issues. To tackle this challenge, we propose a rank-1 parameterization of BNNs, where each weight matrix involves only a distribution on a rank-1 subspace. We also revisit the use of mixture approximate posteriors to capture multiple modes, where unlike typical mixtures, this approach admits a significantly smaller memory increase (e.g., only a 0.4% increase for a ResNet-50 mixture of size 10). We perform a systematic empirical study on the choices of prior, variational posterior, and methods to improve training. For ResNet-50 on ImageNet, Wide ResNet 28-10 on CIFAR-10/100, and an RNN on MIMIC-III, rank-1 BNNs achieve state-of-the-art performance across log-likelihood, accuracy, and calibration on the test sets and out-of-distribution variants.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2425,
+  "title": "On the Global Convergence Rates of Softmax Policy Gradient Methods",
+  "org": "deepmind",
+  "date": "2020-05-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2005.06392",
+  "abstract": "We make three contributions toward better understanding policy gradient methods in the tabular setting. First, we show that with the true gradient, policy gradient with a softmax parametrization converges at a $O(1/t)$ rate, with constants depending on the problem and initialization. This result significantly expands the recent asymptotic convergence results. The analysis relies on two findings: that the softmax policy gradient satisfies a \\L{}ojasiewicz inequality, and the minimum probability of an optimal action during optimization can be bounded in terms of its initial value. Second, we analyze entropy regularized policy gradient and show that it enjoys a significantly faster linear convergence rate $O(e^{-c \\cdot t})$ toward softmax optimal policy $(c > 0)$. This result resolves an open question in the recent literature. Finally, combining the above two results and additional new $\\Omega(1/t)$ lower bound results, we explain how entropy regularization improves policy optimization, even with the true gradient, from the perspective of convergence rate. The separation of rates is further explained using the notion of non-uniform \\L{}ojasiewicz degree. These results provide a theoretical understanding of the impact of entropy and corroborate existing empirical studies.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2831,
+  "title": "Measuring the Algorithmic Efficiency of Neural Networks",
+  "org": "openai",
+  "date": "2020-05-08",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2005.04305",
+  "abstract": "Three factors drive the advance of AI: algorithmic innovation, data, and the amount of compute available for training. Algorithmic progress has traditionally been more difficult to quantify than compute and data. In this work, we argue that algorithmic progress has an aspect that is both straightforward to measure and interesting: reductions over time in the compute needed to reach past capabilities. We show that the number of floating-point operations required to train a classifier to AlexNet-level performance on ImageNet has decreased by a factor of 44x between 2012 and 2019. This corresponds to algorithmic efficiency doubling every 16 months over a period of 7 years. By contrast, Moore's Law would only have yielded an 11x cost improvement. We observe that hardware and algorithmic efficiency gains multiply and can be on a similar scale over meaningful horizons, which suggests that a good model of AI progress should integrate measures from both.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2430,
+  "title": "Automatic Curricula in Deep Multi-Agent Reinforc ement Learning",
+  "org": "deepmind",
+  "date": "2020-05-05",
+  "venue": null,
+  "url": "https://doi.org/10.65109/hqlk5901",
+  "abstract": "Multi-agent systems are emerging as a crucial element in our pursuit of designing and building intelligent systems. In order to succeed in the real world artificial agents must be able to cooperate, communicate, and reason about other agents' beliefs, intentions and behaviours. Furthermore, as system designers we need to think about composing intelligent systems from intelligent subsystems, a multi-agent approach inspired by the observation that intelligent agents like organisations or governments are composed of other agents. Last but not least, as a product of evolution intelligence did not emerge in isolation, but as a group phenomenon. Hence, it seems plausible that learning agents require interaction with other agents to develop intelligence. In his talk, he will discuss the exciting role that deep multi-agent reinforcement learning can play in the design and training of intelligent agents. In particular, training RL agents in interaction with each other can lead to the emergence of an automatic learning curriculum: From the perspective of each learning agent, the evolving behaviours of the other learning agents constitute a challenging environment dynamics and pose ever evolving tasks. He will present three case studies of deep multi-agent RL with auto-curricula: (i)~Learning to play board games at master level with AlphaZero, (ii)~Learning to play the game of Capture-The-Flag in 3d environments, and (iii)~Learning to cooperate in social dilemmas.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2429,
+  "title": "Robust Self-organization in Games: Symmetries, Conservation Laws and Dimensionality Reduction",
+  "org": "deepmind",
+  "date": "2020-05-05",
+  "venue": null,
+  "url": "https://doi.org/10.65109/diew7802",
+  "abstract": "Games are an increasingly useful tool for training and testing learning algorithms. Recent examples include GANs, AlphaZero and the AlphaStar league. However, multi-agent learning can be extremely difficult to predict and control. Learning dynamics can yield chaotic behavior even in simple games. In this paper, we present basic mechanism design tools for constructing games with predictable and controllable dynamics. We present a robust framework for dimensionality reduction arguments in large network games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2428,
+  "title": "Learning to Resolve Alliance Dilemmas in Many-Player Zero-Sum Games",
+  "org": "deepmind",
+  "date": "2020-05-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2003.00799",
+  "abstract": "Zero-sum games have long guided artificial intelligence research, since they possess both a rich strategy space of best-responses and a clear evaluation metric. What's more, competition is a vital mechanism in many real-world multi-agent systems capable of generating intelligent innovations: Darwinian evolution, the market economy and the AlphaZero algorithm, to name a few. In two-player zero-sum games, the challenge is usually viewed as finding Nash equilibrium strategies, safeguarding against exploitation regardless of the opponent. While this captures the intricacies of chess or Go, it avoids the notion of cooperation with co-players, a hallmark of the major transitions leading from unicellular organisms to human civilization. Beyond two players, alliance formation often confers an advantage; however this requires trust, namely the promise of mutual cooperation in the face of incentives to defect. Successful play therefore requires adaptation to co-players rather than the pursuit of non-exploitability. Here we argue that a systematic study of many-player zero-sum games is a crucial element of artificial intelligence research. Using symmetric zero-sum matrix games, we demonstrate formally that alliance formation may be seen as a social dilemma, and empirically that naïve multi-agent reinforcement learning therefore fails to form alliances. We introduce a toy model of economic competition, and show how reinforcement learning may be augmented with a peer-to-peer contract mech",
+  "needs_fetch": false
+ },
+ {
+  "id": 2427,
+  "title": "Neural Replicator Dynamics: Multiagent Learning via Hedging Policy Gradients",
+  "org": "deepmind",
+  "date": "2020-05-05",
+  "venue": null,
+  "url": "https://doi.org/10.65109/gjmw6851",
+  "abstract": "Policy gradient and actor-critic algorithms form the basis of many commonly used training techniques in deep reinforcement learning. Using these algorithms in multiagent environments poses problems such as nonstationarity and instability. In this paper, we first demonstrate that standard softmax-based policy gradient can be prone to poor performance in the presence of even the most benign nonstationarity. By contrast, it is known that the replicator dynamics, a well-studied model from evolutionary game theory, eliminates dominated strategies and exhibits convergence of the time-averaged trajectories to interior Nash equilibria in zero-sum games. Thus, using the replicator dynamics as a foundation, we derive an elegant one-line change to policy gradient methods that simply bypasses the gradient step through the softmax, yielding a new algorithm titled Neural Replicator Dynamics (NeuRD). NeuRD reduces to the exponential weights/Hedge algorithm in the single-state all-actions case. Additionally, NeuRD has formal equivalence to softmax counterfactual regret minimization, which guarantees convergence in the sequential tabular case. Importantly, our algorithm provides a straightforward way of extending the replicator dynamics to the function approximation setting. Empirical results show that NeuRD quickly adapts to nonstationarities, outperforming policy gradient significantly in both tabular and function approximation settings, when evaluated on the standard imperfect information ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2426,
+  "title": "Social Diversity and Social Preferences in Mixed-Motive Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-05-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2002.02325",
+  "abstract": "Recent research on reinforcement learning in pure-conflict and pure-common interest games has emphasized the importance of population heterogeneity. In contrast, studies of reinforcement learning in mixed-motive games have primarily leveraged homogeneous approaches. Given the defining characteristic of mixed-motive games--the imperfect correlation of incentives between group members--we study the effect of population heterogeneity on mixed-motive reinforcement learning. We draw on interdependence theory from social psychology and imbue reinforcement learning agents with Social Value Orientation (SVO), a flexible formalization of preferences over group outcome distributions. We subsequently explore the effects of diversity in SVO on populations of reinforcement learning agents in two mixed-motive Markov games. We demonstrate that heterogeneity in SVO generates meaningful and complex behavioral variation among agents similar to that suggested by interdependence theory. Empirical results in these mixed-motive dilemmas suggest agents trained in heterogeneous populations develop particularly generalized, high-performing policies relative to those trained in homogeneous populations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1055,
+  "title": "AI and efficiency",
+  "org": "openai",
+  "date": "2020-05-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/ai-and-efficiency/",
+  "abstract": "We’re releasing an analysis showing that since 2012 the amount of compute needed to train a neural net to the same performance on ImageNet classification has been decreasing by a factor of 2 every 16 months. Compared to 2012, it now takes 44 times less compute to train a neural network to the level of AlexNet (by contrast, Moore’s Law would yield an 11x cost improvement over this period). Our results suggest that for AI tasks with high levels of recent investment, algorithmic progress has yielded more gains than classical hardware efficiency.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2832,
+  "title": "<i>Maimonides</i> On the Elucidation of Some Symptoms and the Response to Them <i>(Formerly Known as</i> On the Causes of Symptoms). A New Parallel Arabic-English Edition and Translation, with Critical Editions of the Medieval Hebrew Translation. By Gerit Bos. pp. 179. Leiden, Brill, 2019.",
+  "org": "openai",
+  "date": "2020-05-04",
+  "venue": "Journal of the Royal Asiatic Society",
+  "url": "https://doi.org/10.1017/s1356186319000555",
+  "abstract": "Maimonides On the Elucidation of Some Symptoms and the Response to Them (Formerly Known as On the Causes of Symptoms). A New Parallel Arabic-English Edition and Translation, with Critical Editions of the Medieval Hebrew Translation. By Gerit Bos. pp. 179. Leiden, Brill, 2019. - Volume 30 Issue 3",
+  "needs_fetch": false
+ },
+ {
+  "id": 2431,
+  "title": "Measuring Sequences of Representations with Temporally Delayed Linear Modelling",
+  "org": "deepmind",
+  "date": "2020-05-02",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2020.04.30.066407",
+  "abstract": "SUMMARY There are rich structures in off-task neural activity. For example, task related neural codes are thought to be reactivated in a systematic way during rest. This reactivation is hypothesised to reflect a fundamental computation that supports a variety of cognitive functions. Here, we introduce an analysis toolkit (TDLM) for analysing this activity. TDLM combines nonlinear classification and linear temporal modelling to testing for statistical regularities in sequences of neural representations. It is developed using non-invasive neuroimaging data and is designed to take care of confounds and maximize sequence detection ability. The method can be extended to rodent electrophysiological recordings. We outline how TDLM can successfully reveal human replay during rest, based upon non-invasive magnetoencephalography (MEG) measurements, with strong parallels to rodent hippocampal replay. TDLM can therefore advance our understanding of sequential computation and promote a richer convergence between animal and human neuroscience research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2833,
+  "title": "Dynamic interventions to control COVID-19 pandemic: a multivariate prediction modelling study comparing 16 worldwide countries",
+  "org": "openai",
+  "date": "2020-05-01",
+  "venue": "European Journal of Epidemiology",
+  "url": "https://doi.org/10.1007/s10654-020-00649-w",
+  "abstract": "Abstract To date, non-pharmacological interventions (NPI) have been the mainstay for controlling the coronavirus disease-2019 (COVID-19) pandemic. While NPIs are effective in preventing health systems overload, these long-term measures are likely to have significant adverse economic consequences. Therefore, many countries are currently considering to lift the NPIs—increasing the likelihood of disease resurgence. In this regard, dynamic NPIs, with intervals of relaxed social distancing, may provide a more suitable alternative. However, the ideal frequency and duration of intermittent NPIs, and the ideal “break” when interventions can be temporarily relaxed, remain uncertain, especially in resource-poor settings. We employed a multivariate prediction model, based on up-to-date transmission and clinical parameters, to simulate outbreak trajectories in 16 countries, from diverse regions and economic categories. In each country, we then modelled the impacts on intensive care unit (ICU) admissions and deaths over an 18-month period for following scenarios: (1) no intervention, (2) consecutive cycles of mitigation measures followed by a relaxation period, and (3) consecutive cycles of suppression measures followed by a relaxation period. We defined these dynamic interventions based on reduction of the mean reproduction number during each cycle, assuming a basic reproduction number ( R 0 ) of 2.2 for no intervention, and subsequent effective reproduction numbers ( R ) of 0.8 and 0.5 ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2432,
+  "title": "Self-Supervised Sim-to-Real Adaptation for Visual Robotic Manipulation",
+  "org": "deepmind",
+  "date": "2020-05-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra40945.2020.9197326",
+  "abstract": "Collecting and automatically obtaining reward signals from real robotic visual data for the purposes of training reinforcement learning algorithms can be quite challenging and time-consuming. Methods for utilizing unlabeled data can have a huge potential to further accelerate robotic learning. We consider here the problem of performing manipulation tasks from pixels. In such tasks, choosing an appropriate state representation is crucial for planning and control. This is even more relevant with real images where noise, occlusions and resolution affect the accuracy and reliability of state estimation. In this work, we learn a latent state representation implicitly with deep reinforcement learning in simulation, and then adapt it to the real domain using unlabeled real robot data. We propose to do so by optimizing sequence-based self- supervised objectives. These use the temporal nature of robot experience, and can be common in both the simulated and real domains, without assuming any alignment of underlying states in simulated and unlabeled real images. We further propose a novel such objective, the Contrastive Forward Dynamics loss, which combines dynamics model learning with time-contrastive techniques. The learned state representation that results from our methods can be used to robustly solve a manipulation task in simulation and to successfully transfer the learned skill on a real system. We demonstrate the effectiveness of our approaches by training a vision-based reinfor",
+  "needs_fetch": false
+ },
+ {
+  "id": 2834,
+  "title": "Jukebox: A Generative Model for Music",
+  "org": "openai",
+  "date": "2020-04-30",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2005.00341",
+  "abstract": "We introduce Jukebox, a model that generates music with singing in the raw audio domain. We tackle the long context of raw audio using a multi-scale VQ-VAE to compress it to discrete codes, and modeling those using autoregressive Transformers. We show that the combined model at scale can generate high-fidelity and diverse songs with coherence up to multiple minutes. We can condition on artist and genre to steer the musical and vocal style, and on unaligned lyrics to make the singing more controllable. We are releasing thousands of non cherry-picked samples at https://jukebox.openai.com, along with model weights and code at https://github.com/openai/jukebox",
+  "needs_fetch": false
+ },
+ {
+  "id": 2433,
+  "title": "Meta-Learning with Warped Gradient Descent",
+  "org": "deepmind",
+  "date": "2020-04-30",
+  "venue": "Research Explorer (The University of Manchester)",
+  "url": "https://arxiv.org/abs/1909.00025",
+  "abstract": "Learning an efficient update rule from data that promotes rapid learning of new tasks from the same distribution remains an open problem in meta-learning. Typically, previous works have approached this issue either by attempting to train a neural network that directly produces updates or by attempting to learn better initialisations or scaling factors for a gradient-based update rule. Both of these approaches pose challenges. On one hand, directly producing an update forgoes a useful inductive bias and can easily lead to non-converging behaviour. On the other hand, approaches that try to control a gradient-based update rule typically resort to computing gradients through the learning process to obtain their meta-gradients, leading to methods that can not scale beyond few-shot task adaptation. In this work, we propose Warped Gradient Descent (WarpGrad), a method that intersects these approaches to mitigate their limitations. WarpGrad meta-learns an efficiently parameterised preconditioning matrix that facilitates gradient descent across the task distribution. Preconditioning arises by interleaving non-linear layers, referred to as warp-layers, between the layers of a task-learner. Warp-layers are meta-learned without backpropagating through the task training process in a manner similar to methods that learn to directly produce updates. WarpGrad is computationally efficient, easy to implement, and can scale to arbitrarily large meta-learning problems. We provide a geometrical i",
+  "needs_fetch": false
+ },
+ {
+  "id": 1056,
+  "title": "Jukebox",
+  "org": "openai",
+  "date": "2020-04-30",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/jukebox/",
+  "abstract": "We’re introducing Jukebox, a neural net that generates music, including rudimentary singing, as raw audio in a variety of genres and artist styles. We’re releasing the model weights and code, along with a tool to explore the generated samples.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2434,
+  "title": "Backpropagation and the brain",
+  "org": "deepmind",
+  "date": "2020-04-17",
+  "venue": "Nature reviews. Neuroscience",
+  "url": "https://doi.org/10.1038/s41583-020-0277-3",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2435,
+  "title": "Author Correction: Unveiling the predictive power of static structure in glassy systems",
+  "org": "deepmind",
+  "date": "2020-04-16",
+  "venue": "Nature Physics",
+  "url": "https://doi.org/10.1038/s41567-020-0901-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1057,
+  "title": "Improving verifiability in AI development",
+  "org": "openai",
+  "date": "2020-04-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/improving-verifiability/",
+  "abstract": "We’ve contributed to a multi-stakeholder report by 58 co-authors at 30 organizations, including the Centre for the Future of Intelligence, Mila, Schwartz Reisman Institute for Technology and Society, Center for Advanced Study in the Behavioral Sciences, and Center for Security and Emerging Technologies. This report describes 10 mechanisms to improve the verifiability of claims made about AI systems. Developers can use these tools to provide evidence that AI systems are safe, secure, fair, or privacy-preserving. Users, policymakers, and civil society can use these tools to evaluate AI development processes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2835,
+  "title": "Toward Trustworthy AI Development: Mechanisms for Supporting Verifiable Claims",
+  "org": "openai",
+  "date": "2020-04-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2004.07213",
+  "abstract": "With the recent wave of progress in artificial intelligence (AI) has come a\\ngrowing awareness of the large-scale impacts of AI systems, and recognition\\nthat existing regulations and norms in industry and academia are insufficient\\nto ensure responsible AI development. In order for AI developers to earn trust\\nfrom system users, customers, civil society, governments, and other\\nstakeholders that they are building AI responsibly, they will need to make\\nverifiable claims to which they can be held accountable. Those outside of a\\ngiven organization also need effective means of scrutinizing such claims. This\\nreport suggests various steps that different stakeholders can take to improve\\nthe verifiability of claims made about AI systems and their associated\\ndevelopment processes, with a focus on providing evidence about the safety,\\nsecurity, fairness, and privacy protection of AI systems. We analyze ten\\nmechanisms for this purpose--spanning institutions, software, and hardware--and\\nmake recommendations aimed at implementing, exploring, or improving those\\nmechanisms.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2436,
+  "title": "Regret bounds for kernel-based reinforcement learning",
+  "org": "deepmind",
+  "date": "2020-04-14",
+  "venue": "LillOA (Université de Lille (University Of Lille))",
+  "url": "http://hdl.handle.net/20.500.12210/21820",
+  "abstract": "We consider the exploration-exploitation dilemma in finite-horizon reinforcement learning problems whose state-action space is endowed with a metric. We introduce Kernel-UCBVI, a model-based optimistic algorithm that leverages the smoothness of the MDP and a non-parametric kernel estimator of the rewards and transitions to efficiently balance exploration and exploitation. Unlike existing approaches with regret guarantees, it does not use any kind of partitioning of the state-action space. For problems with $K$ episodes and horizon $H$, we provide a regret bound of $O\\left( H^3 K^{\\max\\left(\\frac{1}{2}, \\frac{2d}{2d+1}\\right)}\\right)$, where $d$ is the covering dimension of the joint state-action space. We empirically validate Kernel-UCBVI on discrete and continuous MDPs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1058,
+  "title": "OpenAI Microscope",
+  "org": "openai",
+  "date": "2020-04-14",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/microscope/",
+  "abstract": "We’re introducing OpenAI Microscope, a collection of visualizations of every significant layer and neuron of eight vision “model organisms” which are often studied in interpretability. Microscope makes it easier to analyze the features that form inside these neural networks, and we hope it will help the research community as we move towards understanding these complicated systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2836,
+  "title": "Face Masks Against COVID-19: An Evidence Review",
+  "org": "openai",
+  "date": "2020-04-12",
+  "venue": "Preprints.org",
+  "url": "https://doi.org/10.20944/preprints202004.0203.v1",
+  "abstract": "The science around the use of masks by the general public to impede COVID-19 transmission is advancing rapidly. Policymakers need guidance on how masks should be used by the general population to combat the COVID-19 pandemic. Here, we synthesize the relevant literature to inform multiple areas: 1) transmission characteristics of COVID-19, 2) filtering characteristics and efficacy of masks, 3) estimated population impacts of widespread community mask use, and 4) sociological considerations for policies concerning mask-wearing. A primary route of transmission of COVID-19 is likely via small respiratory droplets, and is known to be transmissible from presymptomatic and asymptomatic individuals. Reducing disease spread requires two things: first, limit contacts of infected individuals via physical distancing and contact tracing with appropriate quarantine, and second, reduce the transmission probability per contact by wearing masks in public, among other measures. The preponderance of evidence indicates that mask wearing reduces the transmissibility per contact by reducing transmission of infected droplets in both laboratory and clinical contexts. Public mask wearing is most effective at stopping spread of the virus when compliance is high. The decreased transmissibility could substantially reduce the death toll and economic impact while the cost of the intervention is low. Thus we recommend the adoption of public cloth mask wearing, as an effective form of source control, in con",
+  "needs_fetch": false
+ },
+ {
+  "id": 2437,
+  "title": "Kernel-Based Reinforcement Learning: A Finite-Time Analysis",
+  "org": "deepmind",
+  "date": "2020-04-12",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2004.05599",
+  "abstract": "We consider the exploration-exploitation dilemma in finite-horizon reinforcement learning problems whose state-action space is endowed with a metric. We introduce Kernel-UCBVI, a model-based optimistic algorithm that leverages the smoothness of the MDP and a non-parametric kernel estimator of the rewards and transitions to efficiently balance exploration and exploitation. For problems with $K$ episodes and horizon $H$, we provide a regret bound of $\\widetilde{O}\\left( H^3 K^{\\frac{2d}{2d+1}}\\right)$, where $d$ is the covering dimension of the joint state-action space. This is the first regret bound for kernel-based RL using smoothing kernels, which requires very weak assumptions on the MDP and has been previously applied to a wide range of tasks. We empirically validate our approach in continuous MDPs with sparse rewards.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2837,
+  "title": "The Surprising Creativity of Digital Evolution: A Collection of Anecdotes from the Evolutionary Computation and Artificial Life Research Communities",
+  "org": "openai",
+  "date": "2020-04-09",
+  "venue": "Artificial Life",
+  "url": "https://doi.org/10.1162/artl_a_00319",
+  "abstract": "Evolution provides a creative fount of complex and subtle adaptations that often surprise the scientists who discover them. However, the creativity of evolution is not limited to the natural world: Artificial organisms evolving in computational environments have also elicited surprise and wonder from the researchers studying them. The process of evolution is an algorithmic process that transcends the substrate in which it occurs. Indeed, many researchers in the field of digital evolution can provide examples of how their evolving algorithms and organisms have creatively subverted their expectations or intentions, exposed unrecognized bugs in their code, produced unexpectedly adaptations, or engaged in behaviors and outcomes, uncannily convergent with ones found in nature. Such stories routinely reveal surprise and creativity by evolution in these digital worlds, but they rarely fit into the standard scientific narrative. Instead they are often treated as mere obstacles to be overcome, rather than results that warrant study in their own right. Bugs are fixed, experiments are refocused, and one-off surprises are collapsed into a single data point. The stories themselves are traded among researchers through oral tradition, but that mode of information transmission is inefficient and prone to error and outright loss. Moreover, the fact that these stories tend to be shared only among practitioners means that many natural scientists do not realize how interesting and lifelike digit",
+  "needs_fetch": false
+ },
+ {
+  "id": 2444,
+  "title": "Stochastic Online Learning with Probabilistic Graph Feedback",
+  "org": "deepmind",
+  "date": "2020-04-03",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v34i04.5899",
+  "abstract": "We consider a problem of stochastic online learning with general probabilistic graph feedback, where each directed edge in the feedback graph has probability pij. Two cases are covered. (a) The one-step case, where after playing arm i the learner observes a sample reward feedback of arm j with independent probability pij. (b) The cascade case where after playing arm i the learner observes feedback of all arms j in a probabilistic cascade starting from i – for each (i,j) with probability pij, if arm i is played or observed, then a reward sample of arm j would be observed with independent probability pij. Previous works mainly focus on deterministic graphs which corresponds to one-step case with pij ∈ {0,1}, an adversarial sequence of graphs with certain topology guarantees, or a specific type of random graphs. We analyze the asymptotic lower bounds and design algorithms in both cases. The regret upper bounds of the algorithms match the lower bounds with high probability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2443,
+  "title": "Algorithmic Improvements for Deep Reinforcement Learning Applied to Interactive Fiction",
+  "org": "deepmind",
+  "date": "2020-04-03",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/5857",
+  "abstract": "Text-based games are a natural challenge domain for deep reinforcement learning algorithms. Their state and action spaces are combinatorially large, their reward function is sparse, and they are partially observable: the agent is informed of the consequences of its actions through textual feedback. In this paper we emphasize this latter point and consider the design of a deep reinforcement learning agent that can play from feedback alone. Our design recognizes and takes advantage of the structural characteristics of text-based games. We first propose a contextualisation mechanism, based on accumulated reward, which simplifies the learning problem and mitigates partial observability. We then study different methods that rely on the notion that most actions are ineffectual in any given situation, following Zahavy et al.'s idea of an admissible action. We evaluate these techniques in a series of text-based games of increasing difficulty based on the TextWorld framework, as well as the iconic game Zork. Empirically, we find that these techniques improve the performance of a baseline deep reinforcement learning agent applied to text-based games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2442,
+  "title": "A General Approach to Fairness with Optimal Transport",
+  "org": "deepmind",
+  "date": "2020-04-03",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v34i04.5771",
+  "abstract": "We propose a general approach to fairness based on transporting distributions corresponding to different sensitive attributes to a common distribution. We use optimal transport theory to derive target distributions and methods that allow us to achieve fairness with minimal changes to the unfair model. Our approach is applicable to both classification and regression problems, can enforce different notions of fairness, and enable us to achieve a Pareto-optimal trade-off between accuracy and fairness. We demonstrate that it outperforms previous approaches in several benchmark fairness datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2441,
+  "title": "On the Convergence of Model Free Learning in Mean Field Games",
+  "org": "deepmind",
+  "date": "2020-04-03",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/6203",
+  "abstract": "Learning by experience in Multi-Agent Systems (MAS) is a difficult and exciting task, due to the lack of stationarity of the environment, whose dynamics evolves as the population learns. In order to design scalable algorithms for systems with a large population of interacting agents (e.g., swarms), this paper focuses on Mean Field MAS, where the number of agents is asymptotically infinite. Recently, a very active burgeoning field studies the effects of diverse reinforcement learning algorithms for agents with no prior information on a stationary Mean Field Game (MFG) and learn their policy through repeated experience. We adopt a high perspective on this problem and analyze in full generality the convergence of a fictitious iterative scheme using any single agent learning algorithm at each step. We quantify the quality of the computed approximate Nash equilibrium, in terms of the accumulated errors arising at each learning iteration step. Notably, we show for the first time convergence of model free learning algorithms towards non-stationary MFG equilibria, relying only on classical assumptions on the MFG dynamics. We illustrate our theoretical results with a numerical experiment in a continuous action-space environment, where the approximate best response of the iterative fictitious play scheme is computed with a deep RL algorithm.",
+  "needs_fetch": false
+ }
+]

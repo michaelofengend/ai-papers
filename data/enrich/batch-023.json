@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1420,
+  "title": "SimVS: Simulating World Inconsistencies for Robust View Synthesis",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01535",
+  "abstract": "Novel-view synthesis techniques achieve impressive results for static scenes but struggle when faced with the inconsistencies inherent to casual capture settings: varying illumination, scene motion, and other unintended effects that are difficult to model explicitly. We present an approach for leveraging generative video models to simulate the inconsistencies in the world that can occur during capture. We use this process, along with existing multi-view datasets, to create synthetic data for training a multi-view harmonization network that is able to reconcile inconsistent observations into a consistent 3D scene. We demonstrate that our world-simulation strategy significantly outperforms traditional augmentation methods in handling real-world scene variations, thereby enabling highly accurate static 3D reconstructions in the presence of a variety of challenging inconsistencies. Project page: https://alextrevithick.com/simvs",
+  "needs_fetch": false
+ },
+ {
+  "id": 1419,
+  "title": "Tuning the Frequencies: Robust Training for Sinusoidal Neural Networks",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00292",
+  "abstract": "Sinusoidal neural networks have been shown effective as implicit neural representations (INRs) of low-dimensional signals, due to their smoothness and high representation capacity. However, initializing and training them remain empirical tasks which lack on deeper understanding to guide the learning process. To fill this gap, our work introduces a theoretical framework that explains the capacity property of sinusoidal networks and offers robust control mechanisms for initialization and training. Our analysis is based on a novel amplitude-phase expansion of the sinusoidal multi-layer perceptron, showing how its layer compositions produce a large number of new frequencies expressed as integer combinations of the input frequencies. This relationship can be directly used to initialize the input neurons, as a form of spectral sampling, and to bound the network’s spectrum while training. Our method, referred to as TUNER (TUNing sinusoidal nEtwoRks), greatly improves the stability and convergence of sinusoidal INR training, leading to detailed reconstructions, while preventing overfitting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1418,
+  "title": "Generative Omnimatte: Learning to Decompose Video into Layers",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01168",
+  "abstract": "Given a video and a set of input object masks, an omnimatte method aims to decompose the video into semantically meaningful layers containing individual objects along with their associated effects, such as shadows and reflections. Existing omnimatte methods assume a static background or accurate pose and depth estimation and produce poor decompositions when these assumptions are violated. Furthermore, due to the lack of generative prior on natural videos, existing methods cannot complete dynamic occluded regions. We present a novel generative layered video decomposition framework to address the omnimatte problem. Our method does not assume a stationary scene or require camera pose or depth information and produces clean, complete layers, including convincing completions of occluded dynamic regions. Our core idea is to train a video diffusion model to identify and remove scene effects caused by a specific object. We show that this model can be finetuned from an existing video inpainting model with a small, carefully curated dataset, and demonstrate high-quality decompositions and editing results for a wide range of casually captured videos containing soft shadows, glossy reflections, splashing water, and more.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1417,
+  "title": "Cropper: Vision-Language Model for Image Cropping through In-Context Learning",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.02793",
+  "abstract": "The goal of image cropping is to identify visually appealing crops in an image. Conventional methods are trained on specific datasets and fail to adapt to new requirements. Recent breakthroughs in large vision-language models (VLMs) enable visual in-context learning without explicit training. However, downstream tasks with VLMs remain under explored. In this paper, we propose an effective approach to leverage VLMs for image cropping. First, we propose an efficient prompt retrieval mechanism for image cropping to automate the selection of in-context examples. Second, we introduce an iterative refinement strategy to iteratively enhance the predicted crops. The proposed framework, we refer to as Cropper, is applicable to a wide range of cropping tasks, including free-form cropping, subject-aware cropping, and aspect ratio-aware cropping. Extensive experiments demonstrate that Cropper significantly outperforms state-of-the-art methods across several benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1416,
+  "title": "Token Cropr: Faster ViTs for Quite a Few Tasks",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00910",
+  "abstract": "The adoption of Vision Transformers (ViTs) in resource-constrained applications necessitates improvements in inference throughput. To this end several token pruning and merging approaches have been proposed that improve efficiency by successively reducing the number of tokens. However, it remains an open problem to design a token reduction method that is fast, maintains high performance, and is applicable to various vision tasks. In this work, we present a token pruner that uses auxiliary prediction heads that learn to select tokens end-to-end based on task relevance. These auxiliary heads can be removed after training, leading to throughput close to that of a random pruner. We evaluate our method on image classification, semantic segmentation, object detection, and instance segmentation, and show speedups of 1.5 – 4x with small drops in performance. As a best case, on the ADE20k semantic segmentation benchmark, we observe a 2x speedup relative to the no-pruning baseline, with a negligible performance penalty of 0.1 median mIoU across 5 seeds.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1415,
+  "title": "DynamicScaler: Seamless and Scalable Video Generation for Panoramic Scenes",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00576",
+  "abstract": "The increasing demand for immersive AR/VR applications and spatial intelligence has heightened the need to generate high-quality scene-level and 360° panoramic video. However, most video diffusion models are constrained by limited resolution and aspect ratio, which restricts their applicability to scene-level dynamic content synthesis. In this work, we propose DynamicScaler, addressing these challenges by enabling spatially scalable and panoramic dynamic scene synthesis that preserves coherence across panoramic scenes of arbitrary size. Specifically, we introduce a Offset Shifting Denoiser, facilitating efficient, synchronous, and coherent denoising panoramic dynamic scenes via a diffusion model with fixed resolution through a seamless rotating Window, which ensures seamless boundary transitions and consistency across the entire panoramic space, accommodating varying resolutions and aspect ratios. Additionally, we employ a Global Motion Guidance mechanism to ensure both local detail fidelity and global motion continuity. Extensive experiments demonstrate our method achieves superior content and motion quality in panoramic scene-level video generation, offering a training-free, efficient, and scalable solution for immersive dynamic scene creation with constant VRAM consumption regardless of the output video resolution. Project page is available at https://dynamicscaler.pages.dev/new.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1414,
+  "title": "Chapter-Llama: Efficient Chaptering in Hour-Long Videos with LLMs",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.00072",
+  "abstract": "We address the task of video chaptering, i.e., partitioning a long video timeline into semantic units and generating corresponding chapter titles. While relatively underexplored, automatic chaptering has the potential to enable efficient navigation and content retrieval in long-form videos. In this paper, we achieve strong chaptering performance on hour-long videos by efficiently addressing the problem in the text domain with our ‘Chapter-Llama’ framework. Specifically, we leverage a pre-trained large language model (LLM) with large context window, and feed as input (i) speech transcripts and (ii) captions describing video frames, along with their respective timestamps. Given the inefficiency of exhaustively captioning all frames, we propose a lightweight speech-guided frame selection strategy based on speech transcript content, and experimentally demonstrate remarkable advantages. We train the LLM to output timestamps for the chapter boundaries, as well as free-form chapter titles. This simple yet powerful approach scales to processing one-hour long videos in a single forward pass. Our results demonstrate substantial improvements (e.g., 45.3 vs 26.7% F1 score) over the state of the art on the recent VidChapters-7M benchmark. To promote further research, we release our code and models at our project page.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1413,
+  "title": "Learning Visual Composition through Improved Semantic Guidance",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00354",
+  "abstract": "Visual imagery does not consist of solitary objects, but instead reflects the composition of a multitude of fluid concepts. While there have been great advances in visual representation learning, such advances have focused on building better representations for a small number of discrete objects bereft of an understanding of how these objects are interacting. One can observe this limitation in representations learned through captions or contrastive learning – where the learned model treats an image essentially as a bag of words. Several works have attempted to address this limitation through the development of bespoke architectures. In this work, we focus on simple and scalable approaches. In particular, we demonstrate that by improving weakly labeled data, i.e. captions, we can vastly improve the performance of standard contrastive learning approaches. Previous CLIP models achieved near chance rate on challenging tasks probing compositional learning. However, our simple approach boosts performance of CLIP substantially and achieves state of the art results on compositional benchmarks such as ARO and SugarCrepe. Furthermore, we showcase our results on a relatively new captioning benchmark derived from DOCCI. We demonstrate through a series of ablations that a standard CLIP model trained with enhanced data may demonstrate impressive performance on image retrieval tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1412,
+  "title": "FirePlace: Geometric Refinements of LLM Common Sense Reasoning for 3D Object Placement",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01257",
+  "abstract": "Scene generation with 3D assets presents a complex challenge, requiring both high-level semantic understanding and low-level geometric reasoning. While Multimodal Large Language Models (MLLMs) excel at semantic tasks, their application to 3D scene generation is hindered by their limited grounding on 3D geometry. In this paper, we investigate how to best work with MLLMs in an object placement task. Towards this goal, we introduce a novel framework, FirePlace, that applies existing MLLMs in (1) 3D geometric reasoning and the extraction of relevant geometric details from the 3D scene, (2) constructing and solving geometric constraints on the extracted low-level geometry, and (3) pruning for final placements that conform to common sense. By combining geometric reasoning with real-world understanding of MLLMs, our method can propose object placements that satisfy both geometric constraints as well as high-level semantic common-sense considerations. Our experiments show that these capabilities allow our method to place objects more effectively in complex scenes with intricate geometry, surpassing the quality of prior work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1411,
+  "title": "Language-Guided Image Tokenization for Generation",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01465",
+  "abstract": "Image tokenization, the process of transforming raw image pixels into a compact low-dimensional latent representation, has proven crucial for scalable and efficient image generation. However, mainstream image tokenization methods generally have limited compression rates, making high-resolution image generation computationally expensive. To address this challenge, we propose to leverage language for efficient image tokenization, and we call our method Text-Conditioned Image Tokenization (TexTok). TexTok is a simple yet effective tokenization framework that leverages language to provide a compact, high-level semantic representation. By conditioning the tokenization process on descriptive text captions, TexTok simplifies semantic learning, allowing more learning capacity and token space to be allocated to capture fine-grained visual details, leading to enhanced reconstruction quality and higher compression rates. Compared to the conventional tokenizer without text conditioning, TexTok achieves average reconstruction FID improvements of 29.2% and 48.1% on ImageNet-256 and -512 benchmarks respectively, across varying numbers of tokens. These tokenization improvements consistently translate to 16.3% and 34.3% average improvements in generation FID. By simply replacing the tokenizer in Diffusion Transformer (DiT) with TexTok, our system can achieve a 93.5× inference speedup while still outperforming the original DiT using only 32 tokens on ImageNet-512. TexTok with a vanilla DiT gen",
+  "needs_fetch": false
+ },
+ {
+  "id": 1410,
+  "title": "Handling the Selection Monad",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": "Proceedings of the ACM on Programming Languages",
+  "url": "https://doi.org/10.1145/3729321",
+  "abstract": "The selection monad on a set consists of selection functions. These select an element from the set, based on a loss (dually, reward) function giving the loss resulting from a choice of an element. Abadi and Plotkin used the monad to model a language with operations making choices of computations taking account of the loss that would arise from each choice. However, their choices were optimal, and they asked if they could instead be programmer provided. In this work, we present a novel design enabling programmers to do so. We present a version of algebraic effect handlers enriched by computational ideas inspired by the selection monad. Specifically, as well as the usual delimited continuations, our new kind of handlers additionally have access to choice continuations, that give the possible future losses. In this way programmers can write operations implementing optimisation algorithms that are aware of the losses arising from their possible choices. We give an operational semantics for a higher-order model language λ C , and establish desirable properties including progress, type soundness, and termination for a subset with a mild hierarchical constraint on allowable operation types. We give this subset a selection monad denotational semantics, and prove soundness and adequacy results. We also present a Haskell implementation and give a variety of programming examples.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1409,
+  "title": "Good, Cheap, and Fast: Overfitted Image Compression with Wasserstein Distortion",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.02166",
+  "abstract": "Inspired by the success of generative image models, recent work on learned image compression increasingly focuses on better probabilistic models of the natural image distribution, leading to excellent image quality. This, however, comes at the expense of a computational complexity that is several orders of magnitude higher than today’s commercial codecs, and thus prohibitive for most practical applications. With this paper, we demonstrate that by focusing on modeling visual perception rather than the data distribution, we can achieve a very good trade-off between visual quality and bit rate similar to “generative” compression models such as HiFiC, while requiring less than 1% of the multiply–accumulate operations (MACs) for decompression. We do this by optimizing C3, an overfitted image codec, for Wasserstein Distortion (WD), and evaluating the image reconstructions with a human rater study, showing that WD clearly outperforms LPIPS as an optimization objective. The study also reveals that WD outperforms other perceptual metrics such as LPIPS, DISTS, and MS-SSIM as a predictor of human ratings, remarkably achieving over 94% Pearson correlation with Elo scores.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1408,
+  "title": "Active Data Curation Effectively Distills Large-Scale Multimodal Models",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01345",
+  "abstract": "Knowledge distillation (KD) is the de facto standard for compressing large-scale multimodal models into smaller ones. Prior works have explored ever more complex KD strategies involving different objectives, teacher-ensembles, and weight inheritance. In this work, we explore an alternative, yet simple approach—active data curation as effective distillation for contrastive multimodal pretraining. Our simple online batch selection method, ACID, outperforms strong KD baselines across various model-,data-and compute-configurations. Further, we find such an active curation strategy to in fact be complementary to standard KD, and can be effectively combined to train highly performant inference-efficient models. Our simple and scalable pretraining framework, ACED, achieves state-of-the-art results across 27 zero-shot classification and image-text retrieval tasks with upto 11% less inference FLOPs. We further demonstrate that ACED yields strong vision-encoders for training generative multimodal models, outperforming larger vision encoders on image-captioning and visual question-answering tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1407,
+  "title": "VideoComp: Advancing Fine-Grained Compositional and Temporal Alignment in Video-Text Models",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.02706",
+  "abstract": "We introduce VideoComp, a benchmark and learning framework for advancing video-text compositionality understanding, aimed at improving vision-language models (VLMs) in fine-grained temporal alignment. Unlike existing benchmarks focused on static image-text compositionality or isolated single-event videos, our benchmark targets alignment in continuous multi-event videos. Leveraging video-text datasets with temporally localized event captions (e.g. ActivityNet-Captions, YouCook2), we construct two compositional benchmarks, ActivityNet-Comp and YouCook2-Comp. We create challenging negative samples with subtle temporal disruptions such as reordering, action word replacement, partial captioning, and combined disruptions. These benchmarks comprehensively test models’ compositional sensitivity across extended, cohesive video-text sequences. To improve model performance, we propose a hierarchical pairwise preference loss that strengthens alignment with temporally accurate pairs and gradually penalizes increasingly disrupted ones, encouraging fine-grained compositional learning. To mitigate the limited availability of densely annotated video data, we introduce a pretraining strategy that concatenates short video-caption pairs to simulate multi-event sequences. We evaluate video-text foundational models and large multimodal models (LMMs) on our benchmark, identifying both strengths and areas for improvement in compositionality. Overall, our work provides a comprehensive framework for e",
+  "needs_fetch": false
+ },
+ {
+  "id": 1406,
+  "title": "Flexible Frame Selection for Efficient Video Reasoning",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.02707",
+  "abstract": "Video-language models have shown promise for addressing a range of multimodal tasks for video reasoning, such as video question-answering. However, the inherent computational challenges of processing long video data and increasing model sizes have led to standard approaches that are limited by the number of frames they can process. In this work, we propose the Flexible Frame Selector (FFS), a learnable policy model with a new flexible selection operation, that helps alleviate input context restrictions by enabling video-language models to focus on the most informative frames for the downstream multimodal task, without adding undue processing cost. Our method differentiates from prior work due to its learnability, efficiency, and flexibility. We verify the efficacy of our method on standard video-question answering and reasoning benchmarks, and observe our model can maintain or improve base video-language model accuracy while significantly reducing the number of downstream processed frames.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1405,
+  "title": "Calibrated Multi-Preference Optimization for Aligning Diffusion Models",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01721",
+  "abstract": "Aligning text-to-image (T2I) diffusion models with preference optimization is valuable for human-annotated datasets, but the heavy cost of manual data collection limits scalability. Using reward models offers an alternative, however, current preference optimization methods fall short in exploiting the rich information, as they only consider pairwise preference distribution. Furthermore, they lack generalization to multi-preference scenarios and struggle to handle inconsistencies between rewards. To address this, we present Calibrated Preference Optimization (CaPO), a novel method to align T2I diffusion models by incorporating the general preference from multiple reward models without human annotated data. The core of our approach involves a reward calibration method to approximate the general preference by computing the expected win-rate against the samples generated by the pretrained models. Additionally, we propose a frontier-based pair selection method that effectively manages the multi-preference distribution by selecting pairs from Pareto frontiers. Finally, we use regression loss to fine-tune diffusion models to match the difference between calibrated rewards of a selected pair. Experimental results show that CaPO consistently outperforms prior methods, such as Direct Preference Optimization (DPO), in both single and multi-reward settings validated by evaluation on T2I benchmarks, including GenEval and T2I-Compbench.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1404,
+  "title": "Stereo4D: Learning How Things Move in 3D from Internet Stereo Videos",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00982",
+  "abstract": "Learning to understand dynamic 3D scenes from imagery is crucial for applications ranging from robotics to scene reconstruction. Yet, unlike other problems where large-scale supervised training has enabled rapid progress, directly supervising methods for recovering 3D motion remains challenging due to the fundamental difficulty of obtaining ground truth annotations. We present a system for mining high-quality 4D reconstructions from internet stereoscopic, wide-angle videos. Our system fuses and filters the outputs of camera pose estimation, stereo depth estimation, and temporal tracking methods into high-quality dynamic 3D reconstructions. We use this method to generate large-scale data in the form of world-consistent, pseudo-metric 3D point clouds with long-term motion trajectories. We demonstrate the utility of this data by training a variant of DUSt3R to predict structure and 3D motion from real-world image pairs, showing that training on our reconstructed data enables generalization to diverse real-world scenes. Project page and data at https://stereo4d.github.io",
+  "needs_fetch": false
+ },
+ {
+  "id": 1403,
+  "title": "A Hybrid Approach to Semi-automated Rust Verification",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": "Proceedings of the ACM on Programming Languages",
+  "url": "https://doi.org/10.1145/3729289",
+  "abstract": "We propose a hybrid approach to end-to-end Rust verification where the proof effort is split into powerful automated verification of safe Rust and targeted semi-automated verification of unsafe Rust. To this end, we present Gillian-Rust, a proof-of-concept semi-automated verification tool built on top of the Gillian platform that can reason about type safety and functional correctness of unsafe code. Gillian-Rust automates a rich separation logic for real-world Rust, embedding the lifetime logic of RustBelt and the parametric prophecies of RustHornBelt, and is able to verify real-world Rust standard library code with only minor annotations and with verification times orders of magnitude faster than those of comparable tools. We link Gillian-Rust with Creusot, a state-of-the-art verifier for safe Rust, by providing a systematic encoding of unsafe code specifications that Creusot can use but cannot verify, demonstrating the feasibility of our hybrid approach.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1402,
+  "title": "VLOGGER: Multimodal Diffusion for Embodied Avatar Synthesis",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01482",
+  "abstract": "We propose VLOGGER, a method for audio-driven human video generation from a single input image of a person, which builds on the success of recent generative diffusion models. Our method consists of 1) a stochastic human-to-3d-motion diffusion model, and 2) a novel diffusion-based architecture that augments text-to-image models with both spatial and temporal controls. This supports the generation of high quality video of variable length, easily controllable through text or speech via high-level representations of human faces and bodies. In contrast to previous work, our method does not require training for each person, does not rely on face detection and cropping, generates the complete image (not just the face or the lips), and considers a broad spectrum of scenarios (e.g. visible torso or diverse subject identities) that are critical to correctly synthesize humans who communicate. We also curate MENTOR, a new and diverse dataset with 3d pose and expression annotations, one order of magnitude larger than previous ones (800,000 identities) and with dynamic gestures, where we train and ablate our main technical contributions. VLOGGER outperforms state-of-the-art methods in three public benchmarks, considering image quality, identity preservation and temporal consistency while also generating upperbody gestures. We analyze the performance of VLOGGER with respect to multiple diversity metrics, showing that our architectural choices and the use of MENTOR benefit training a fair an",
+  "needs_fetch": false
+ },
+ {
+  "id": 1401,
+  "title": "Motion Prompting: Controlling Video Generation with Motion Trajectories",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00010",
+  "abstract": "Motion control is crucial for generating expressive and compelling video content; however, most existing video generation models rely mainly on text prompts for control, which struggle to capture the nuances of dynamic actions and temporal compositions. To this end, we train a video generation model conditioned on spatiotemporally sparse or dense motion trajectories. In contrast to prior motion conditioning work, this flexible representation can encode any number of trajectories, object-specific or global scene motion, and temporally sparse motion; due to its flexibility we refer to this conditioning as motion prompts. While users may directly specify sparse trajectories, we also show how to translate high-level user requests into detailed, semi-dense motion prompts, a process we term motion prompt expansion. We demonstrate the versatility of our approach through various applications, including camera and object motion control, \"interacting\" with an image, motion transfer, and image editing. Our results showcase emergent behaviors, such as realistic physics, suggesting the potential of motion prompts for probing video models and interacting with future generative world models. Finally, we evaluate quantitatively, conduct a human study, and demonstrate strong performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1400,
+  "title": "3D-GSW: 3D Gaussian Splatting for Robust Watermarking",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00557",
+  "abstract": "As 3D Gaussian Splatting (3D-GS) gains significant attention and its commercial usage increases, the need for watermarking technologies to prevent unauthorized use of the 3D-GS models and rendered images has become increasingly important. In this paper, we introduce a robust watermarking method for 3D-GS that secures copyright of both the model and its rendered images. Our proposed method remains robust against distortions in rendered images and model attacks while maintaining high rendering quality. To achieve these objectives, we present Frequency-Guided Densification (FGD), which removes 3D Gaussians based on their contribution to rendering quality, enhancing real-time rendering and the robustness of the message. FGD utilizes Discrete Fourier Transform to split 3D Gaussians in high-frequency areas, improving rendering quality. Furthermore, we employ a gradient mask for 3D Gaussians and design a wavelet-subband loss to enhance rendering quality. Our experiments show that our method embeds the message in the rendered images invisibly and robustly against various attacks, including model distortion. Our method achieves superior performance in both rendering quality and watermark robustness while improving real-time rendering efficiency. Project page: https: //kuai-lab.github.io/cvpr20253dgsw/",
+  "needs_fetch": false
+ },
+ {
+  "id": 1399,
+  "title": "A Bias-Free Training Paradigm for More General AI-generated Image Detection",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.01741",
+  "abstract": "Successful forensic detectors can produce excellent results in supervised learning benchmarks but struggle to transfer to real-world applications. We believe this limitation is largely due to inadequate training data quality. While most research focuses on developing new algorithms, less attention is given to training data selection, despite evidence that performance can be strongly impacted by spurious correlations such as content, format, or resolution. A well-designed forensic detector should detect generator specific artifacts rather than reflect data biases. To this end, we propose B-Free, a bias-free training paradigm, where fake images are generated from real ones using the conditioning procedure of stable diffusion models. This ensures semantic alignment between real and fake images, allowing any differences to stem solely from the subtle artifacts introduced by AI generation. Through content-based augmentation, we show significant improvements in both generalization and robustness over state-of-the-art detectors and more calibrated results across 27 different generative models, including recent releases, like FLUX and Stable Diffusion 3.5. Our findings emphasize the importance of a careful dataset design, highlighting the need for further research on this topic. Code and data are publicly available at https://grip-unina.github.io/B-Free/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1398,
+  "title": "CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.02427",
+  "abstract": "We present CAT4D, a method for creating 4D (dynamic 3D) scenes from monocular video. CAT4D leverages a multi-view video diffusion model trained on a diverse combination of datasets to enable novel view synthesis at any specified camera poses and timestamps. Combined with a novel sampling approach, this model can transform a single monocular video into a multi-view video, enabling robust 4D reconstruction via optimization of a deformable 3D Gaussian representation. We demonstrate competitive performance on novel view synthesis and dynamic scene reconstruction benchmarks, and highlight the creative capabilities for 4D scene generation from real or generated videos. See our project page for results and interactive demos: cat-4d.github.io.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1397,
+  "title": "MegaSaM: Accurate, Fast, and Robust Structure and Motion from Casual Dynamic Videos",
+  "org": "deepmind",
+  "date": "2025-06-10",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cvpr52734.2025.00981",
+  "abstract": "We present a system that allows for accurate, fast, and robust estimation of camera parameters and depth maps from casual monocular videos of dynamic scenes. Most conventional structure from motion and monocular SLAM techniques assume input videos that feature predominantly static scenes with large amounts of parallax. Such methods tend to produce erroneous estimates in the absence of these conditions. Recent neural network-based approaches attempt to overcome these challenges; however, such methods are either computationally expensive or brittle when run on dynamic videos with uncontrolled camera motion or unknown field of view. We demonstrate the surprising effectiveness of a deep visual SLAM framework: with careful modifications to its training and inference schemes, this system can scale to real-world videos of complex dynamic scenes with unconstrained camera paths, including videos with little camera parallax. Extensive experiments on both synthetic and real videos demonstrate that our system is significantly more accurate and robust at camera pose and depth estimation when compared with prior and concurrent work, with faster or comparable running times. See interactive results on our project page: mega-sam.github.io.",
+  "needs_fetch": false
+ },
+ {
+  "id": 214,
+  "title": "Risks & Benefits of LLMs & GenAI for Platform Integrity, Healthcare Diagnostics, Financial Trust and Compliance, Cybersecurity, Privacy & AI Safety: A Comprehensive Survey, Roadmap & Implementation Blueprint",
+  "org": "other",
+  "date": "2025-06-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.12088",
+  "abstract": "Large Language Models (LLMs) and generative AI (GenAI) systems, such as ChatGPT, Claude, Gemini, LLaMA, and Copilot (by OpenAI, Anthropic, Google, Meta, and Microsoft, respectively), are reshaping digital platforms and app ecosystems while introducing critical challenges in cybersecurity, privacy, and platform integrity. Our analysis reveals alarming trends: LLM-assisted malware is projected to rise from 2% (2021) to 50% (2025); AI-generated Google reviews grew nearly tenfold (1.2% in 2021 to 12.21% in 2023, expected to reach 30% by 2025); AI scam reports surged 456%; misinformation sites increased over 1500%; and deepfake attacks are projected to rise over 900% in 2025. In finance, LLM-driven threats like synthetic identity fraud and AI-generated scams are accelerating. Platforms such as JPMorgan Chase, Stripe, and Plaid deploy LLMs for fraud detection, regulation parsing, and KYC/AML automation, reducing fraud loss by up to 21% and accelerating onboarding by 40-60%. LLM-facilitated code development has driven mobile app submissions from 1.8 million (2020) to 3.0 million (2024), projected to reach 3.6 million (2025). To address AI threats, platforms like Google Play, Apple App Store, GitHub Copilot, TikTok, Facebook, and Amazon deploy LLM-based defenses, highlighting their dual nature as both threat sources and mitigation tools. In clinical diagnostics, LLMs raise concerns about accuracy, bias, and safety, necessitating strong governance. Drawing on 445 references, this pape",
+  "needs_fetch": false
+ },
+ {
+  "id": 1426,
+  "title": "Dynamic Diffusion Schrödinger Bridge in Astrophysical Observational Inversions",
+  "org": "deepmind",
+  "date": "2025-06-09",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2506.08065",
+  "abstract": "We study Diffusion Schrödinger Bridge (DSB) models in the context of dynamical astrophysical systems, specifically tackling observational inverse prediction tasks within Giant Molecular Clouds (GMCs) for star formation. We introduce the Astro-DSB model, a variant of DSB with the pairwise domain assumption tailored for astrophysical dynamics. By investigating its learning process and prediction performance in both physically simulated data and in real observations (the Taurus B213 data), we present two main takeaways. First, from the astrophysical perspective, our proposed paired DSB method improves interpretability, learning efficiency, and prediction performance over conventional astrostatistical and other machine learning methods. Second, from the generative modeling perspective, probabilistic generative modeling reveals improvements over discriminative pixel-to-pixel modeling in Out-Of-Distribution (OOD) testing cases of physical simulations with unseen initial conditions and different dominant physical processes. Our study expands research into diffusion models beyond the traditional visual synthesis application and provides evidence of the models' learning abilities beyond pure data statistics, paving a path for future physics-aware generative models which can align dynamics between machine learning and real (astro)physical systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1427,
+  "title": "Lagrangian-based Equilibrium Propagation: generalisation to arbitrary boundary conditions & equivalence with Hamiltonian Echo Learning",
+  "org": "deepmind",
+  "date": "2025-06-06",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2506.06248",
+  "abstract": "Equilibrium Propagation (EP) is a learning algorithm for training Energy-based Models (EBMs) on static inputs which leverages the variational description of their fixed points. Extending EP to time-varying inputs is a challenging problem, as the variational description must apply to the entire system trajectory rather than just fixed points, and careful consideration of boundary conditions becomes essential. In this work, we present Generalized Lagrangian Equilibrium Propagation (GLEP), which extends the variational formulation of EP to time-varying inputs. We demonstrate that GLEP yields different learning algorithms depending on the boundary conditions of the system, many of which are impractical for implementation. We then show that Hamiltonian Echo Learning (HEL) -- which includes the recently proposed Recurrent HEL (RHEL) and the earlier known Hamiltonian Echo Backpropagation (HEB) algorithms -- can be derived as a special case of GLEP. Notably, HEL is the only instance of GLEP we found that inherits the properties that make EP a desirable alternative to backpropagation for hardware implementations: it operates in a \"forward-only\" manner (i.e. using the same system for both inference and learning), it scales efficiently (requiring only two or more passes through the system regardless of model size), and enables local learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 342,
+  "title": "Efficient Online RFT with Plug-and-Play LLM Judges: Unlocking State-of-the-Art Performance",
+  "org": "other",
+  "date": "2025-06-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.05748",
+  "abstract": "Reward-model training is the cost bottleneck in modern Reinforcement Learning Human Feedback (RLHF) pipelines, often requiring tens of billions of parameters and an offline preference-tuning phase. In the proposed method, a frozen, instruction-tuned 7B LLM is augmented with only a one line JSON rubric and a rank-16 LoRA adapter (affecting just 0.8% of the model's parameters), enabling it to serve as a complete substitute for the previously used heavyweight evaluation models. The plug-and-play judge achieves 96.2% accuracy on RewardBench, outperforming specialized reward networks ranging from 27B to 70B parameters. Additionally, it allows a 7B actor to outperform the top 70B DPO baseline, which scores 61.8%, by achieving 92% exact match accuracy on GSM-8K utilizing online PPO. Thorough ablations indicate that (i) six in context demonstrations deliver the majority of the zero-to-few-shot improvements (+2pp), and (ii) the LoRA effectively addresses the remaining disparity, particularly in the safety and adversarial Chat-Hard segments. The proposed model introduces HH-Rationales, a subset of 10,000 pairs from Anthropic HH-RLHF, to examine interpretability, accompanied by human generated justifications. GPT-4 scoring indicates that our LoRA judge attains approximately = 9/10 in similarity to human explanations, while zero-shot judges score around =5/10. These results indicate that the combination of prompt engineering and tiny LoRA produces a cost effective, transparent, and easil",
+  "needs_fetch": false
+ },
+ {
+  "id": 1429,
+  "title": "Channel Capacity of a Relativistic String",
+  "org": "deepmind",
+  "date": "2025-06-05",
+  "venue": "Physical Review Letters",
+  "url": "https://doi.org/10.1103/physrevlett.134.221601",
+  "abstract": "I explore the limitations on the capacity of a relativistic channel to transmit power and information that arise because of the finiteness of the transverse speed of light. As a model system, I consider a rope constructed from a fundamental string, for which relativistic invariance is built in. By wiggling one end of the string, both power and information may be transmitted to the other end. I argue that even though an unbounded amount of power and information may be traveling down the string, there is a bound on how much may be transmitted. Further, I conjecture that the two kinds of channel capacity-power and information-interfere with each other, so that the only way to transmit the maximum amount of power is to send no information, and vice versa.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1428,
+  "title": "Force-Field Optimization by End-to-End Differentiable Atomistic Simulation",
+  "org": "deepmind",
+  "date": "2025-06-05",
+  "venue": "Journal of Chemical Theory and Computation",
+  "url": "https://doi.org/10.1021/acs.jctc.4c01784",
+  "abstract": "The accuracy of atomistic simulations depends on the precision of the force fields. Traditional numerical methods often struggle to optimize the empirical force-field parameters for reproducing the target properties. Recent approaches rely on training these force fields based on forces and energies from first-principle simulations. However, it is unclear whether these approaches will enable the capture of complex material responses such as vibrational or elastic properties. To this extent, we introduce a framework employing inner loop simulations and outer loop optimization that exploits automatic differentiation for both property prediction and force-field optimization by computing gradients of the simulation analytically. We demonstrate the approach by optimizing classical potentials such as Stillinger–Weber and EDIP for silicon and BKS for SiO2 to reproduce properties like the elastic constants, vibrational density of states, and phonon dispersion. We also demonstrate how a machine-learned potential can be fine-tuned using automatic differentiation to reproduce any target property such as radial distribution functions. Interestingly, the resulting force field exhibits improved accuracy and generalizability to unseen temperatures compared to those fine-tuned on energies and forces. Finally, we demonstrate the extension of the approach to optimize the force fields toward multiple target properties. Altogether, differentiable simulations, through the analytical computation of",
+  "needs_fetch": false
+ }
+]

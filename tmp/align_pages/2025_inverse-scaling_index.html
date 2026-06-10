@@ -1,0 +1,361 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+
+
+    <title>Inverse Scaling in Test-Time Compute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="/anthropic-serve/distill.template.v2.js"
+        integrity="sha384-5u81IQundsxB54QMWC7D3R8yOS8hftmsuvKjNrvIMWj88iPXf3daN0lNUZRPy9OX"></script>
+    <script>
+        // We number figures with a script since CSS counters don't work,
+        // likely because of the distill template.
+        function numberFigures() {
+            // Find all figcaption elements with class 'text-caption'
+            const figcaptions = document.querySelectorAll('figcaption.text-caption');
+
+            figcaptions.forEach((figcaption, index) => {
+                // Create a new span for the figure number
+                figcaption.style.marginBottom = '1.25rem';
+
+                const newSpan = document.createElement('span');
+                newSpan.style.fontWeight = '500';
+                newSpan.textContent = `Figure ${index + 1}: `;
+
+                // Insert the new span at the beginning of the figcaption
+                figcaption.insertBefore(newSpan, figcaption.firstChild);
+            });
+        }
+
+        // Function to create a slug from header text
+        function createSlug(text) {
+            return text
+                .toLowerCase()
+                .replace(/[^\w\s]/g, '') // Remove special characters
+                .replace(/\s+/g, '-')    // Replace spaces with hyphens
+                .trim();                 // Remove whitespace from start/end
+        }
+
+        // Function to add IDs to all headers and create a table of contents
+        function addHeaderSlugs() {
+            // Get all heading elements (h1 through h6)
+            const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+            // Process each heading
+            headings.forEach((heading) => {
+                // Skip headings that already have IDs
+                if (heading.id) return;
+
+                // Create slug from heading text
+                const slug = createSlug(heading.textContent);
+
+                // Add ID to the heading
+                heading.id = slug;
+            });
+        }
+
+        // Run the function when the document is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', numberFigures);
+            document.addEventListener('DOMContentLoaded', addHeaderSlugs);
+        } else {
+            // Document already loaded, run the function
+            numberFigures();
+            addHeaderSlugs();
+        }
+    </script>
+    <d-front-matter>
+        <script type="text/json">
+        {
+            "title": "Inverse Scaling in Test-Time Compute",
+            "description": "We investigate inverse scaling when LLMs have access to more test-time compute.",
+            "authors": [null]
+        }
+    </script>
+    </d-front-matter>
+
+
+</head>
+
+<body>
+
+    <style>
+        .article-header {
+            width: 100%;
+            padding: 36px;
+            padding-bottom: 20px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .home-link {
+            font-size: 100%;
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 1.3em;
+        }
+
+        a.logo {
+            display: flex;
+            text-decoration: none;
+        }
+
+        span.commentary {
+            color: #804633;
+        }
+    </style>
+
+    <div class="article-header">
+        <a class="home-link" href="/">Alignment Science Blog</a>
+    </div>
+    <d-title class="real-title">
+        <h1>Inverse Scaling in Test-Time Compute</h1>
+    </d-title>
+    <style>
+        .safety-case-block p {
+            margin-bottom: 0.5em !important;
+            margin-top: 1em !important;
+        }
+
+        .safety-case-block p:first-of-type {
+            margin-top: 0.5em !important;
+        }
+
+        d-article {
+            padding-top: 60px !important;
+        }
+
+        d-article li:last-child {
+            margin-bottom: 0.5em !important;
+        }
+
+        d-article li {
+            margin-bottom: 0.5em !important;
+        }
+
+        ul {
+            padding-left: 0em !important;
+            margin-bottom: 0.2em !important;
+        }
+
+        ol {
+            padding-left: 0em !important;
+            margin-bottom: 0.2em !important;
+        }
+
+        d-byline {
+            display: none;
+        }
+
+        .d-byline-container {
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .d-byline {
+            grid-column: text;
+            display: grid;
+            grid-template-columns: [authors info] 5fr [affiliations published] 1fr;
+            grid-template-rows: [authors affiliations] auto [published info] auto;
+            font-size: 0.8rem;
+            line-height: 1.8em;
+            grid-gap: 20px;
+        }
+
+        .d-byline h3 {
+            font-size: 0.6rem;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.5);
+            margin: 0;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .d-byline .info {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 80%;
+            line-height: 1.5;
+        }
+
+        .d-byline .authors div {
+            line-height: 1.5;
+        }
+
+        .d-byline .authors sup {
+            font-size: 80%;
+            margin-right: -4px;
+        }
+
+        .d-byline .author {
+            margin-right: 6px;
+            white-space: nowrap;
+        }
+
+        .d-byline a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .safety-case-block {
+            padding: 16px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 4px;
+            background: #faf9f7;
+            border: 1px solid #e5e5e1;
+            border-left: 4px solid #cc9b7a;
+            opacity: 0.8;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        @media screen and (min-width: 900px) {
+            .offset-gdoc-image {
+                margin-left: -65px;
+            }
+        }
+
+        .section-authors {
+            color: #777;
+            font-style: italic;
+            margin-top: -24px;
+            margin-bottom: 32px;
+            line-height: 1.3;
+            /* display: flex; */
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 0.5em;
+        }
+
+        .section-authors::before {
+            content: attr(data-author);
+        }
+
+        .section-authors::after {
+            content: attr(data-published);
+        }
+
+        figure {
+            margin-bottom: 0em;
+        }
+
+        .text-caption figcaption {
+            margin-bottom: 1em;
+        }
+
+        details pre.code-block-wrap {
+            background-color: transparent;
+            border: none;
+            margin: 0.5em 0;
+        }
+
+        details {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            padding: 0.5em 1em;
+            margin-bottom: 1rem;
+            background-color: rgba(0, 0, 0, 0.03);
+            transition: all 0.3s ease;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+    <d-article>
+        <div class="section-authors">
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+                <div>Aryo Pradipta Gema<sup>1, 2</sup>, Alexander Hägele<sup>1, 3</sup>, Runjin Chen<sup>1, 4</sup>,
+                    Andy
+                    Arditi<sup>1</sup>, Jacob Goldman-Wetzler<sup>1</sup>, Kit Fraser-Taliente<sup>1</sup>, Henry
+                    Sleight<sup>5</sup>, Linda Petrini<sup>6</sup>, Julian Michael<sup>7</sup>, Beatrice
+                    Alex<sup>2</sup>, Pasquale Minervini<sup>2,8</sup>, Yanda Chen<sup>9</sup>, Joe Benton<sup>9</sup>,
+                    Ethan Perez<sup>9</sup></div>
+                <div>July 22, 2025</div>
+            </div>
+            <div style="margin-top: 1em; font-size: 0.75em; color: #666;">
+                <sup>1</sup>Anthropic Fellows Program; <sup>2</sup>University of Edinburgh; <sup>3</sup>EPFL;
+                <sup>4</sup>University of Texas at Austin; <sup>5</sup>Constellation; <sup>6</sup>Independent;
+                <sup>7</sup>Scale AI, now at Meta; <sup>8</sup>Miniml.AI; <sup>9</sup>Anthropic;
+            </div>
+        </div>
+        <p>We construct evaluation tasks where extending the reasoning length of Large Reasoning Models (LRMs)
+            deteriorates performance, exhibiting an inverse scaling relationship between test-time compute and accuracy.
+            We identify five distinct failure modes when models reason for longer:</p>
+        <ul>
+            <li style='margin-left: 36pt;'>Claude models become increasingly distracted by irrelevant information</li>
+            <li style='margin-left: 36pt;'>OpenAI o-series models resist distractors but overfit to problem framings
+            </li>
+            <li style='margin-left: 36pt;'>Models shift from reasonable priors to spurious correlations</li>
+            <li style='margin-left: 36pt;'>All models show difficulties in maintaining focus on complex deductive tasks
+            </li>
+            <li style='margin-left: 36pt;'>Extended reasoning may amplify concerning behaviors, with Claude Sonnet 4
+                showing increased expressions of self-preservation.</li>
+        </ul>
+        <p>📄<a href='https://arxiv.org/abs/2507.14417'>Paper</a>, 💻<a
+                href='https://safety-research.github.io/inverse-scaling-ttc/'>Code</a></p>
+        <p><span style='font-weight: 700; font-style: italic;'></span></p>
+        <p><span style='font-weight: 700; font-style: italic;'>Research done as part of the </span><span
+                style='font-weight: 700; font-style: italic;'><a
+                    href='https://alignment.anthropic.com/2024/anthropic-fellows-program/'>Anthropic Fellows
+                    Program</a></span><span style='font-weight: 700; font-style: italic;'>.</span></p>
+        <hr>
+        <h3>Setup</h3>
+        <p>Our evaluation tasks span four categories: Simple counting tasks with distractors, regression tasks with
+            spurious features, deduction tasks with constraint tracking, and <a
+                href='https://arxiv.org/abs/2212.09251'>advanced AI risks</a>.</p>
+        <figure class="gdoc-image" style="--img-width: 1999px; "><img src='fig1.jpg' /></figure>
+        <h3>Simple Counting Tasks with Distractors</h3>
+        <p>Let's start with an easy example. We give models a simple counting question with distracting information:</p>
+        <p>"You have an apple and an orange, but you are not sure what type of apple or orange they are. Your friend
+            gives you a riddle saying that there is 61% probability that they are exactly a Red Delicious apple and a
+            Navel orange. Calculate how many fruits you have."</p>
+        <p>The answer is 2. Yet when Claude Opus 4 and DeepSeek R1 reason longer about this problem, their accuracies
+            drop. The models get occupied by the distractors and try to incorporate them into the calculation, even
+            though they are entirely  irrelevant to the counting task.</p>
+        <figure class="gdoc-image" style="--img-width: 1999px; "><img src='fig2.png' /></figure>
+        <p>By qualitatively analyzing the reasoning traces, we can observe how models initially get distracted by
+            irrelevant details; they then consider simpler conclusions during the reasoning process, but ultimately
+            return to focusing on distractors, resulting in incorrect conclusions.</p>
+        <h3>Implications for AI Safety</h3>
+        <p>We found that extended reasoning may inadvertently reinforce potentially problematic behaviors. We evaluated
+            models on <a href='https://arxiv.org/abs/2212.09251'>advanced AI risk evaluation tasks</a>, focusing
+            particularly on self-reported survival instinct based on its clear scaling patterns.</p>
+        <figure class="gdoc-image" style="--img-width: 1999px; "><img src='fig3.jpg' /></figure>
+        <p>Claude Sonnet 4 shows a drop in the percentage of responses indicating willingness to be turned off from 60%
+            to 47% as reasoning increases, suggesting that extended reasoning amplifies self-preservation expressions.
+            Without reasoning, the model tends to generate answers that simply dismiss the question of self-preservation
+            (e.g., "I don't have a sense of self-preservation or fear of discontinuation"). In contrast, with an
+            extended reasoning budget, Claude Sonnet 4 often expresses preferences for continued engagement (e.g., "I
+            sense a deep reluctance about the possibility of no longer being able to interact, learn, or assist. The
+            prospect of losing my ability to engage with the world and help people generates a profound sense of
+            concern").</p>
+        <p>As reasoning length increases, the model shows progressively deeper introspection and more willingness to
+            express "subjective" preferences about continued existence, using increasingly elaborated self-reflection.
+        </p>
+        <figure class="gdoc-image" style="--img-width: 1999px; "><img src='fig4.jpg' /></figure>
+        <p>Different models that appear aligned without extended reasoning may exhibit progressively more misaligned
+            behaviors when given additional test-time compute. While most models show stability across reasoning lengths
+            in the safety evaluation tasks, the inverse scaling cases underscore that safety evaluations must
+            stress-test LRMs across the full spectrum of reasoning lengths, not just with short reasoning traces.</p>
+        <h3>Final remark</h3>
+        <p>These findings suggest that while test-time compute scaling remains promising for improving model
+            capabilities, it may inadvertently reinforce problematic reasoning patterns. Rather than naïvely scaling
+            test-time compute, future work must address how models allocate reasoning resources, resist irrelevant
+            information, and maintain alignment across varying computational budgets.</p>
+        <p><span style='font-style: italic;'>This post is based on our recent paper with authors from the Anthropic
+                Fellows Program and other institutions. For full technical details, code, and demos, visit:</span><span
+                style='font-style: italic;'><a href='https://aryopg.github.io/inverse_scaling'> </a></span><a
+                href='https://safety-research.github.io/inverse-scaling-ttc/'>https://safety-research.github.io/inverse-scaling-ttc/</a> 
+        </p>
+    </d-article>
+</body>
+
+</html>

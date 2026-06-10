@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2223,
+  "title": "Annealed Flow Transport Monte Carlo",
+  "org": "deepmind",
+  "date": "2021-02-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2102.07501",
+  "abstract": "Annealed Importance Sampling (AIS) and its Sequential Monte Carlo (SMC) extensions are state-of-the-art methods for estimating normalizing constants of probability distributions. We propose here a novel Monte Carlo algorithm, Annealed Flow Transport (AFT), that builds upon AIS and SMC and combines them with normalizing flows (NFs) for improved performance. This method transports a set of particles using not only importance sampling (IS), Markov chain Monte Carlo (MCMC) and resampling steps - as in SMC, but also relies on NFs which are learned sequentially to push particles towards the successive annealed targets. We provide limit theorems for the resulting Monte Carlo estimates of the normalizing constant and expectations with respect to the target distribution. Additionally, we show that a continuous-time scaling limit of the population version of AFT is given by a Feynman--Kac measure which simplifies to the law of a controlled diffusion for expressive NFs. We demonstrate experimentally the benefits and limitations of our methodology on a variety of applications.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2224,
+  "title": "Efficient Deviation Types and Learning for Hindsight Rationality in Extensive-Form Games",
+  "org": "deepmind",
+  "date": "2021-02-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2102.06973",
+  "abstract": "Hindsight rationality is an approach to playing general-sum games that prescribes no-regret learning dynamics for individual agents with respect to a set of deviations, and further describes jointly rational behavior among multiple agents with mediated equilibria. To develop hindsight rational learning in sequential decision-making settings, we formalize behavioral deviations as a general class of deviations that respect the structure of extensive-form games. Integrating the idea of time selection into counterfactual regret minimization (CFR), we introduce the extensive-form regret minimization (EFR) algorithm that achieves hindsight rationality for any given set of behavioral deviations with computation that scales closely with the complexity of the set. We identify behavioral deviation subsets, the partial sequence deviation types, that subsume previously studied types and lead to efficient EFR instances in games with moderate lengths. In addition, we present a thorough empirical analysis of EFR instantiated with different deviation types in benchmark games, where we find that stronger types typically induce better performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2225,
+  "title": "Meta-Thompson Sampling",
+  "org": "deepmind",
+  "date": "2021-02-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2102.06129",
+  "abstract": "Efficient exploration in bandits is a fundamental online learning problem. We propose a variant of Thompson sampling that learns to explore better as it interacts with bandit instances drawn from an unknown prior. The algorithm meta-learns the prior and thus we call it MetaTS. We propose several efficient implementations of MetaTS and analyze it in Gaussian bandits. Our analysis shows the benefit of meta-learning and is of a broader interest, because we derive a novel prior-dependent Bayes regret bound for Thompson sampling. Our theory is complemented by empirical evaluation, which shows that MetaTS quickly adapts to the unknown prior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2226,
+  "title": "Overcoming Pavlovian bias in semantic space",
+  "org": "deepmind",
+  "date": "2021-02-09",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-021-82889-8",
+  "abstract": "Action is invigorated in the presence of reward-predicting stimuli and inhibited in the presence of punishment-predicting stimuli. Although valuable as a heuristic, this Pavlovian bias can also lead to maladaptive behaviour and is implicated in addiction. Here we explore whether Pavlovian bias can be overcome through training. Across five experiments, we find that Pavlovian bias is resistant to unlearning under most task configurations. However, we demonstrate that when subjects engage in instrumental learning in a verbal semantic space, as opposed to a motoric space, not only do they exhibit the typical Pavlovian bias, but this Pavlovian bias diminishes with training. Our results suggest that learning within the semantic space is necessary, but not sufficient, for subjects to unlearn their Pavlovian bias, and that other task features, such as gamification and spaced stimulus presentation may also be necessary. In summary, we show that Pavlovian bias, whilst robust, is susceptible to change with experience, but only under specific environmental conditions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2228,
+  "title": "Sobre o ser e a essência nas &gt;i&lt;Quaestiones in Metaphysicam&gt;/i&lt; de Sigério de Brabant",
+  "org": "deepmind",
+  "date": "2021-02-08",
+  "venue": null,
+  "url": "https://doi.org/10.11606/d.8.2021.tde-11022022-214539",
+  "abstract": "In the question 7 of Quaestiones in Metaphysicam (Dunphy's edition, 1981, Munich's manuscript, Clm 9559, fol. 93r-118v), Siger of Brabant sustains three complementary thesis: a) the \"being as being\" (ens inquantum ens / ens secundum quod est ens) is the \"subject\" of Metaphysics; b) The \"being\" (esse) belongs to the essence of caused beings (ens); c) the terms \"being\" (ens) and \"thing\" (res) signify the same essence and intention, differing about the mode of signification (modus significandi) that corresponds to each one of the terms: the term \"thing\" (res) signifying both essence and intention \"by the mode of habit\", and the term \"being\" (ens) signifying essence and intention \"by the mode of act\". In this dissertation, I intend to clarify the conditions of possibility of the thesis defended by Siger of Brabant proceeding a careful commentary of question 7, preceded by the due exposition of the relevant contemporary bibliography concerning the highlighted problem. In general, I argue that the commentators provide relevant readings of the text even though they do not clarify the way by which Siger would be able to defend his position providing, consequently, an opportunity to a closer reading of the text.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2227,
+  "title": "Discovering a set of policies for the worst case reward",
+  "org": "deepmind",
+  "date": "2021-02-08",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2102.04323",
+  "abstract": "We study the problem of how to construct a set of policies that can be composed together to solve a collection of reinforcement learning tasks. Each task is a different reward function defined as a linear combination of known features. We consider a specific class of policy compositions which we call set improving policies (SIPs): given a set of policies and a set of tasks, a SIP is any composition of the former whose performance is at least as good as that of its constituents across all the tasks. We focus on the most conservative instantiation of SIPs, set-max policies (SMPs), so our analysis extends to any SIP. This includes known policy-composition operators like generalized policy improvement. Our main contribution is a policy iteration algorithm that builds a set of policies in order to maximize the worst-case performance of the resulting SMP on the set of tasks. The algorithm works by successively adding new policies to the set. We show that the worst-case performance of the resulting SMP strictly improves at each iteration, and the algorithm only stops when there does not exist a policy that leads to improved performance. We empirically evaluate our algorithm on a grid world and also on a set of domains from the DeepMind control suite. We confirm our theoretical results regarding the monotonically improving performance of our algorithm. Interestingly, we also show empirically that the sets of policies computed by the algorithm are diverse, leading to different traject",
+  "needs_fetch": false
+ },
+ {
+  "id": 2229,
+  "title": "Online Limited Memory Neural-Linear Bandits with Likelihood Matching",
+  "org": "deepmind",
+  "date": "2021-02-07",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2102.03799",
+  "abstract": "We study neural-linear bandits for solving problems where {\\em both} exploration and representation learning play an important role. Neural-linear bandits harnesses the representation power of Deep Neural Networks (DNNs) and combines it with efficient exploration mechanisms by leveraging uncertainty estimation of the model, designed for linear contextual bandits on top of the last hidden layer. In order to mitigate the problem of representation change during the process, new uncertainty estimations are computed using stored data from an unlimited buffer. Nevertheless, when the amount of stored data is limited, a phenomenon called catastrophic forgetting emerges. To alleviate this, we propose a likelihood matching algorithm that is resilient to catastrophic forgetting and is completely online. We applied our algorithm, Limited Memory Neural-Linear with Likelihood Matching (NeuralLinear-LiM2) on a variety of datasets and observed that our algorithm achieves comparable performance to the unlimited memory approach while exhibits resilience to catastrophic forgetting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2230,
+  "title": "Bootstrapping Fitted Q-Evaluation for Off-Policy Inference",
+  "org": "deepmind",
+  "date": "2021-02-06",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2102.03607",
+  "abstract": "Bootstrapping provides a flexible and effective approach for assessing the quality of batch reinforcement learning, yet its theoretical property is less understood. In this paper, we study the use of bootstrapping in off-policy evaluation (OPE), and in particular, we focus on the fitted Q-evaluation (FQE) that is known to be minimax-optimal in the tabular and linear-model cases. We propose a bootstrapping FQE method for inferring the distribution of the policy evaluation error and show that this method is asymptotically efficient and distributionally consistent for off-policy statistical inference. To overcome the computation limit of bootstrapping, we further adapt a subsampling procedure that improves the runtime by an order of magnitude. We numerically evaluate the bootrapping method in classical RL environments for confidence interval estimation, estimating the variance of off-policy evaluator, and estimating the correlation between multiple off-policy evaluators.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2799,
+  "title": "Visualizing Weights",
+  "org": "openai",
+  "date": "2021-02-04",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00024.007",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1047,
+  "title": "Understanding the capabilities, limitations, and societal impact of large language models",
+  "org": "openai",
+  "date": "2021-02-04",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/understanding-the-capabilities-limitations-and-societal-impact-of-large-language-models/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2231,
+  "title": "What can classic Atari video games tell us about the human brain?",
+  "org": "deepmind",
+  "date": "2021-02-01",
+  "venue": "Neuron",
+  "url": "https://doi.org/10.1016/j.neuron.2021.01.021",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2233,
+  "title": "On the Origin of Implicit Regularization in Stochastic Gradient Descent",
+  "org": "deepmind",
+  "date": "2021-01-28",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2101.12176",
+  "abstract": "For infinitesimal learning rates, stochastic gradient descent (SGD) follows the path of gradient flow on the full batch loss function. However moderately large learning rates can achieve higher test accuracies, and this generalization benefit is not explained by convergence bounds, since the learning rate which maximizes test accuracy is often larger than the learning rate which minimizes training loss. To interpret this phenomenon we prove that for SGD with random shuffling, the mean SGD iterate also stays close to the path of gradient flow if the learning rate is small and finite, but on a modified loss. This modified loss is composed of the original loss function and an implicit regularizer, which penalizes the norms of the minibatch gradients. Under mild assumptions, when the batch size is small the scale of the implicit regularization term is proportional to the ratio of the learning rate to the batch size. We verify empirically that explicitly including the implicit regularizer in the loss can enhance the test accuracy when the learning rate is small.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2232,
+  "title": "General Value Function Networks",
+  "org": "deepmind",
+  "date": "2021-01-28",
+  "venue": "Journal of Artificial Intelligence Research",
+  "url": "https://arxiv.org/abs/1807.06763",
+  "abstract": "State construction is important for learning in partially observable environments. A general purpose strategy for state construction is to learn the state update using a Recurrent Neural Network (RNN), which updates the internal state using the current internal state and the most recent observation. This internal state provides a summary of the observed sequence, to facilitate accurate predictions and decision-making. At the same time, specifying and training RNNs is notoriously tricky, particularly as the common strategy to approximate gradients back in time, called truncated Back-prop Through Time (BPTT), can be sensitive to the truncation window. Further, domain-expertise—which can usually help constrain the function class and so improve trainability—can be difficult to incorporate into complex recurrent units used within RNNs. In this work, we explore how to use multi-step predictions to constrain the RNN and incorporate prior knowledge. In particular, we revisit the idea of using predictions to construct state and ask: does constraining (parts of) the state to consist of predictions about the future improve RNN trainability? We formulate a novel RNN architecture, called a General Value Function Network (GVFN), where each internal state component corresponds to a prediction about the future represented as a value function. We first provide an objective for optimizing GVFNs, and derive several algorithms to optimize this objective. We then show that GVFNs are more robust t",
+  "needs_fetch": false
+ },
+ {
+  "id": 2800,
+  "title": "High/Low frequency detectors",
+  "org": "openai",
+  "date": "2021-01-27",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00024.005",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2234,
+  "title": "Generalized Doubly Reparameterized Gradient Estimators",
+  "org": "deepmind",
+  "date": "2021-01-26",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2101.11046",
+  "abstract": "Efficient low-variance gradient estimation enabled by the reparameterization trick (RT) has been essential to the success of variational autoencoders. Doubly-reparameterized gradients (DReGs) improve on the RT for multi-sample variational bounds by applying reparameterization a second time for an additional reduction in variance. Here, we develop two generalizations of the DReGs estimator and show that they can be used to train conditional and hierarchical VAEs on image modelling tasks more effectively. First, we extend the estimator to hierarchical models with several stochastic layers by showing how to treat additional score function terms due to the hierarchical variational posterior. We then generalize DReGs to score functions of arbitrary distributions instead of just those of the sampling distribution, which makes the estimator applicable to the parameters of the prior in addition to those of the posterior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2235,
+  "title": "Meta-learning in natural and artificial intelligence",
+  "org": "deepmind",
+  "date": "2021-01-25",
+  "venue": "Current Opinion in Behavioral Sciences",
+  "url": "https://arxiv.org/abs/2011.13464",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1048,
+  "title": "Scaling Kubernetes to 7,500 nodes",
+  "org": "openai",
+  "date": "2021-01-25",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/scaling-kubernetes-to-7500-nodes/",
+  "abstract": "We’ve scaled Kubernetes clusters to 7,500 nodes, producing a scalable infrastructure for large models like GPT-3, CLIP, and DALL·E, but also for rapid small-scale iterative research such as Scaling Laws for Neural Language Models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2236,
+  "title": "Characterizing signal propagation to close the performance gap in unnormalized ResNets",
+  "org": "deepmind",
+  "date": "2021-01-21",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2101.08692",
+  "abstract": "Batch Normalization is a key component in almost all state-of-the-art image classifiers, but it also introduces practical challenges: it breaks the independence between training examples within a batch, can incur compute and memory overhead, and often results in unexpected bugs. Building on recent theoretical analyses of deep ResNets at initialization, we propose a simple set of analysis tools to characterize signal propagation on the forward pass, and leverage these tools to design highly performant ResNets without activation normalization layers. Crucial to our success is an adapted version of the recently proposed Weight Standardization. Our analysis tools show how this technique preserves the signal in networks with ReLU or Swish activation functions by ensuring that the per-channel activation means do not grow with depth. Across a range of FLOP budgets, our networks attain performance competitive with the state-of-the-art EfficientNets on ImageNet.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2237,
+  "title": "Synth2Aug: Cross-Domain Speaker Recognition with TTS Synthesized Speech",
+  "org": "deepmind",
+  "date": "2021-01-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/slt48900.2021.9383525",
+  "abstract": "In recent years, Text-To-Speech (TTS) has been used as a data augmentation technique for speech recognition to help complement inadequacies in the training data. Correspondingly, we investigate the use of a multi-speaker TTS system to synthesize speech in support of speaker recognition. In this study we focus the analysis on tasks where a relatively small number of speakers is available for training. We observe on our datasets that TTS synthesized speech improves cross-domain speaker recognition performance and can be combined effectively with multi-style training. Additionally, we explore the effectiveness of different types of text transcripts used for TTS synthesis. Results suggest that matching the textual content of the target domain is a good practice, and if that is not feasible, a transcript with a sufficiently large vocabulary is recommended.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2238,
+  "title": "Learning Successor States and Goal-Dependent Values: A Mathematical\\n Viewpoint",
+  "org": "deepmind",
+  "date": "2021-01-18",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2101.07123",
+  "abstract": "In reinforcement learning, temporal difference-based algorithms can be\\nsample-inefficient: for instance, with sparse rewards, no learning occurs until\\na reward is observed. This can be remedied by learning richer objects, such as\\na model of the environment, or successor states. Successor states model the\\nexpected future state occupancy from any given state for a given policy and are\\nrelated to goal-dependent value functions, which learn how to reach arbitrary\\nstates. We formally derive the temporal difference algorithm for successor\\nstate and goal-dependent value function learning, either for discrete or for\\ncontinuous environments with function approximation. Especially, we provide\\nfinite-variance estimators even in continuous environments, where the reward\\nfor exactly reaching a goal state becomes infinitely sparse. Successor states\\nsatisfy more than just the Bellman equation: a backward Bellman operator and a\\nBellman-Newton (BN) operator encode path compositionality in the environment.\\nThe BN operator is akin to second-order gradient descent methods and provides\\nthe true update of the value function when acquiring more observations, with\\nexplicit tabular bounds. In the tabular case and with infinitesimal learning\\nrates, mixing the usual and backward Bellman operators provably improves\\neigenvalues for asymptotic convergence, and the asymptotic convergence of the\\nBN operator is provably better than TD, with a rate independent from the\\nenvironment. However,",
+  "needs_fetch": false
+ },
+ {
+  "id": 2239,
+  "title": "Learning from unexpected events in the neocortical microcircuit",
+  "org": "deepmind",
+  "date": "2021-01-16",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.01.15.426915",
+  "abstract": "Abstract Scientists have long conjectured that the neocortex learns the structure of the environment in a predictive, hierarchical manner. According to this conjecture, expected, predictable features are differentiated from unexpected ones by comparing bottom-up and top-down streams of information. It is theorized that the neocortex then changes the representation of incoming stimuli, guided by differences in the responses to expected and unexpected events. In line with this conjecture, different responses to expected and unexpected sensory features have been observed in spiking and somatic calcium events. However, it remains unknown whether these unexpected event signals occur in the distal apical dendrites where many top-down signals are received, and whether these signals govern subsequent changes in the brain’s stimulus representations. Here, we show that both somata and distal apical dendrites of cortical pyramidal neurons exhibit distinct unexpected event signals that systematically change over days. These findings were obtained by tracking the responses of individual somata and dendritic branches of layer 2/3 and layer 5 pyramidal neurons over multiple days in primary visual cortex of awake, behaving mice using two-photon calcium imaging. Many neurons in both layers 2/3 and 5 showed large differences between their responses to expected and unexpected events. Interestingly, these responses evolved in opposite directions in the somata and distal apical dendrites. These d",
+  "needs_fetch": false
+ },
+ {
+  "id": 2801,
+  "title": "Asymmetric self-play for automatic goal discovery in robotic manipulation",
+  "org": "openai",
+  "date": "2021-01-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2101.04882",
+  "abstract": "We train a single, goal-conditioned policy that can solve many robotic manipulation tasks, including tasks with previously unseen goals and objects. We rely on asymmetric self-play for goal discovery, where two agents, Alice and Bob, play a game. Alice is asked to propose challenging goals and Bob aims to solve them. We show that this method can discover highly diverse and complex goals without any human priors. Bob can be trained with only sparse rewards, because the interaction between Alice and Bob results in a natural curriculum and Bob can learn from Alice's trajectory when relabeled as a goal-conditioned demonstration. Finally, our method scales, resulting in a single policy that can generalize to many unseen tasks such as setting a table, stacking blocks, and solving simple puzzles. Videos of a learned policy is available at https://robotics-self-play.github.io.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2802,
+  "title": "An evidence review of face masks against COVID-19",
+  "org": "openai",
+  "date": "2021-01-11",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2014564118",
+  "abstract": "The science around the use of masks by the public to impede COVID-19 transmission is advancing rapidly. In this narrative review, we develop an analytical framework to examine mask usage, synthesizing the relevant literature to inform multiple areas: population impact, transmission characteristics, source control, wearer protection, sociological considerations, and implementation considerations. A primary route of transmission of COVID-19 is via respiratory particles, and it is known to be transmissible from presymptomatic, paucisymptomatic, and asymptomatic individuals. Reducing disease spread requires two things: limiting contacts of infected individuals via physical distancing and other measures and reducing the transmission probability per contact. The preponderance of evidence indicates that mask wearing reduces transmissibility per contact by reducing transmission of infected respiratory particles in both laboratory and clinical contexts. Public mask wearing is most effective at reducing spread of the virus when compliance is high. Given the current shortages of medical masks, we recommend the adoption of public cloth mask wearing, as an effective form of source control, in conjunction with existing hygiene, distancing, and contact tracing strategies. Because many respiratory particles become smaller due to evaporation, we recommend increasing focus on a previously overlooked aspect of mask usage: mask wearing by infectious people (\"source control\") with benefits at the",
+  "needs_fetch": false
+ },
+ {
+  "id": 2241,
+  "title": "On the Approximation Relationship between Optimizing Ratio of Submodular\\n (RS) and Difference of Submodular (DS) Functions",
+  "org": "deepmind",
+  "date": "2021-01-05",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2101.01631",
+  "abstract": "We demonstrate that from an algorithm guaranteeing an approximation factor\\nfor the ratio of submodular (RS) optimization problem, we can build another\\nalgorithm having a different kind of approximation guarantee -- weaker than the\\nclassical one -- for the difference of submodular (DS) optimization problem,\\nand vice versa. We also illustrate the link between these two problems by\\nanalyzing a \\\\textsc{Greedy} algorithm which approximately maximizes objective\\nfunctions of the form $\\\\Psi(f,g)$, where $f,g$ are two non-negative, monotone,\\nsubmodular functions and $\\\\Psi$ is a {quasiconvex} 2-variables function, which\\nis non decreasing with respect to the first variable. For the choice\\n$\\\\Psi(f,g)\\\\triangleq f/g$, we recover RS, and for the choice\\n$\\\\Psi(f,g)\\\\triangleq f-g$, we recover DS. To the best of our knowledge, this\\ngreedy approach is new for DS optimization. For RS optimization, it reduces to\\nthe standard \\\\textsc{GreedRatio} algorithm that has already been analyzed\\npreviously. However, our analysis is novel for this case.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2240,
+  "title": "Making sense of sensory input",
+  "org": "deepmind",
+  "date": "2021-01-05",
+  "venue": "Artificial Intelligence",
+  "url": "https://arxiv.org/abs/1910.02227",
+  "abstract": "This paper attempts to answer a central question in unsupervised learning: what does it mean to “make sense” of a sensory sequence? In our formalization, making sense involves constructing a symbolic causal theory that both explains the sensory sequence and also satisfies a set of unity conditions. The unity conditions insist that the constituents of the causal theory – objects, properties, and laws – must be integrated into a coherent whole. On our account, making sense of sensory input is a type of program synthesis, but it is unsupervised program synthesis. Our second contribution is a computer implementation, the Apperception Engine, that was designed to satisfy the above requirements. Our system is able to produce interpretable human-readable causal theories from very small amounts of data, because of the strong inductive bias provided by the unity conditions. A causal theory produced by our system is able to predict future sensor readings, as well as retrodict earlier readings, and impute (fill in the blanks of) missing sensory readings, in any combination. In fact, it is able to do all three tasks simultaneously. We tested the engine in a diverse variety of domains, including cellular automata, rhythms and simple nursery tunes, multi-modal binding problems, occlusion tasks, and sequence induction intelligence tests. In each domain, we test our engine's ability to predict future sensor values, retrodict earlier sensor values, and impute missing sensory data. The Apperce",
+  "needs_fetch": false
+ },
+ {
+  "id": 1050,
+  "title": "CLIP: Connecting text and images",
+  "org": "openai",
+  "date": "2021-01-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/clip/",
+  "abstract": "We’re introducing a neural network called CLIP which efficiently learns visual concepts from natural language supervision. CLIP can be applied to any visual classification benchmark by simply providing the names of the visual categories to be recognized, similar to the “zero-shot” capabilities of GPT-2 and GPT-3.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1049,
+  "title": "DALL·E: Creating images from text",
+  "org": "openai",
+  "date": "2021-01-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/dall-e/",
+  "abstract": "We’ve trained a neural network called DALL·E that creates images from text captions for a wide range of concepts expressible in natural language.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2804,
+  "title": "Antitrust-Compliant AI Industry Self-Regulation",
+  "org": "openai",
+  "date": "2021-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.3933677",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2803,
+  "title": "Legal Priorities Research: A Research Agenda",
+  "org": "openai",
+  "date": "2021-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.3931256",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2266,
+  "title": "Self-supervised representation learning using bootstrapped latent representations",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-05578071",
+  "abstract": "International audience",
+  "needs_fetch": true
+ }
+]

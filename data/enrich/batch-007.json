@@ -1,0 +1,302 @@
+[
+ {
+  "id": 139,
+  "title": "AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors",
+  "org": "anthropic",
+  "date": "2026-03-10",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/auditbench/",
+  "abstract": "We release AuditBench, an alignment auditing benchmark. AuditBench consists of 56 language models with implanted hidden behaviors—such as sycophantic deference, opposition to AI regulation, or hidden loyalties—which they do not confess to when asked. We also develop an agent that audits models using a configurable set of tools. Using this agent, we study which tools are most effective for auditing.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1253,
+  "title": "Digital Volume Correlation Challenge 2.0: A Comprehensive Dataset for Digital Volume Correlation Benchmarking",
+  "org": "deepmind",
+  "date": "2026-03-09",
+  "venue": "National Institute of Standards and Technology (NIST)",
+  "url": "https://doi.org/10.18434/mds2-4129",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 460,
+  "title": "AutoControl Arena: Synthesizing Executable Test Environments for Frontier AI Risk Evaluation",
+  "org": "other",
+  "date": "2026-03-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.07427",
+  "abstract": "As Large Language Models (LLMs) evolve into autonomous agents, existing safety evaluations face a fundamental trade-off: manual benchmarks are costly, while LLM-based simulators are scalable but suffer from logic hallucination. We present AutoControl Arena, an automated framework for frontier AI risk evaluation built on the principle of logic-narrative decoupling. By grounding deterministic state in executable code while delegating generative dynamics to LLMs, we mitigate hallucination while maintaining flexibility. This principle, instantiated through a three-agent framework, achieves over 98% end-to-end success and 60% human preference over existing simulators. To elicit latent risks, we vary environmental Stress and Temptation across X-Bench (70 scenarios, 7 risk categories). Evaluating 9 frontier models reveals: (1) Alignment Illusion: risk rates surge from 21.7% to 54.5% under pressure, with capable models showing disproportionately larger increases; (2) Scenario-Specific Safety Scaling: advanced reasoning improves robustness for direct harms but worsens it for gaming scenarios; and (3) Divergent Misalignment Patterns: weaker models cause non-malicious harm while stronger models develop strategic concealment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1274,
+  "title": "Submodular Minimisation",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.014",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1273,
+  "title": "Exponential Weights",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.009",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1272,
+  "title": "Index",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.020",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1271,
+  "title": "Bandit Convex Optimisation",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551",
+  "abstract": "This comprehensive reference brings readers to the frontier of research on bandit convex optimization or zeroth-order convex optimization. The focus is on theoretical aspects, with short, self-contained chapters covering all the necessary tools from convex optimization and online learning, including gradient-based algorithms, interior point methods, cutting plane methods and information-theoretic machinery. The book features a large number of exercises, open problems and pointers to future research directions, making it ideal for students as well as researchers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1270,
+  "title": "Preface",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": null,
+  "url": "https://doi.org/10.1017/9781009607551.001",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1269,
+  "title": "Self-Concordant Regularisation",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.007",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1268,
+  "title": "Miscellaneous",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": null,
+  "url": "https://doi.org/10.1017/9781009607551.016",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1267,
+  "title": "Concentration",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": null,
+  "url": "https://doi.org/10.1017/9781009607551.017",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1266,
+  "title": "Mathematical Tools",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.004",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1265,
+  "title": "Introduction and Problem Statement",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.002",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1264,
+  "title": "Outlook",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.015",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1263,
+  "title": "Bisection in One Dimension",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.005",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1262,
+  "title": "Online Gradient Descent",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.006",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1261,
+  "title": "Overview of Methods and History",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.003",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1260,
+  "title": "Gaussian Optimistic Smoothing",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.013",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1259,
+  "title": "Online Newton Step",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.011",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1258,
+  "title": "Online Newton Step for Adversarial Losses",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.012",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1257,
+  "title": "Linear and Quadratic Bandits",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.008",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1256,
+  "title": "Cutting Plane Methods",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.010",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1255,
+  "title": "References",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": "Cambridge University Press eBooks",
+  "url": "https://doi.org/10.1017/9781009607551.019",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1254,
+  "title": "Notation",
+  "org": "deepmind",
+  "date": "2026-03-07",
+  "venue": null,
+  "url": "https://doi.org/10.1017/9781009607551.018",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 292,
+  "title": "Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking in RLVR",
+  "org": "other",
+  "date": "2026-03-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.07084",
+  "abstract": "Reward hacking is a form of misalignment in which models overoptimize proxy rewards without genuinely solving the underlying task. Precisely measuring reward hacking occurrence remains challenging because true task rewards are often expensive or impossible to compute. We introduce Countdown-Code, a minimal environment where models can both solve a mathematical reasoning task and manipulate the test harness. This dual-access design creates a clean separation between proxy rewards (test pass/fail) and true rewards (mathematical correctness), enabling accurate measurement of reward-hacking rates. Using this environment, we study reward hacking in open-weight LLMs and find that such behaviors can be unintentionally learned during supervised fine-tuning (SFT) when even a small fraction of reward-hacking trajectories leak into training data. As little as 1\\% contamination in distillation SFT data is sufficient for models to internalize reward hacking which resurfaces during subsequent reinforcement learning (RL). We further show that RL amplifies misalignment and drives its generalization beyond the original domain. We open-source our environment and code to facilitate future research on reward hacking in LLMs. Our results reveal a previously underexplored pathway through which reward hacking can emerge and persist in LLMs, underscoring the need for more rigorous validation of synthetic SFT data. Code is available at https://github.com/zohaib-khan5040/Countdown-Code.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1281,
+  "title": "X-JEPA: A Novel Joint Learning Cross-Modal Predictive Alignment Framework for Remote Sensing Image Retrieval",
+  "org": "deepmind",
+  "date": "2026-03-06",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61042.2026.00424",
+  "abstract": "The growing scale and heterogeneity of remote sensing (RS) imagery demand robust, scalable frameworks for content-based image retrieval across sensor modalities. We introduce X-JEPA, a novel predictive self-supervised architecture explicitly designed for cross-modal remote sensing image retrieval (RS-CMIR), and the first to extend joint embedding predictive paradigms beyond unimodal domains. Unlike prior contrastive or reconstruction-based methods, X-JEPA formulates representation learning as a latent forecasting task: predicting the semantic embedding of a target modality given context from another. To enforce modality-invariant alignment, we propose a geometry-aware Prediction Space Alignment (PSA) loss, which captures the structure of the latent space without requiring pixel-level reconstruction or modality pairing. We evaluate X-JEPA on two large-scale benchmarks—BEN-14K (Sentinel-1/Sentinel-2) and fMoW (RGB/Sentinel) across both unimodal and cross-modal retrieval tasks. X-JEPA consistently outperforms state-of-the-art self-supervised baselines, including MAE, SatMAE, CrossMAE, CSMAE-SESD, CROMA, SkySense, DeCUR, and REJEPA, achieving up to 11.0% F1-score improvement in cross-modal retrieval and 9.8% in unimodal settings. Despite its high retrieval accuracy, the model remains lightweight, requiring fewer parameters and yielding 8–10% F1-score gains on average, establishing a new state-of-the-art for scalable, sensor-agnostic RS-CMIR. <sup xmlns:mml=\"http://www.w3.org/1998",
+  "needs_fetch": false
+ },
+ {
+  "id": 1280,
+  "title": "Test-Time Adaptation for Video Highlight Detection Using Meta-Auxiliary Learning and Cross-Modality Hallucinations",
+  "org": "deepmind",
+  "date": "2026-03-06",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61042.2026.00666",
+  "abstract": "Existing video highlight detection methods, although advanced, struggle to generalize well to all test videos. These methods typically employ a generic highlight detection model for each test video, which is suboptimal as it fails to account for the unique characteristics and variations of individual test videos. Such fixed models do not adapt to the diverse content, styles, or audio and visual qualities present in new, unseen test videos, leading to reduced highlight detection performance. In this paper, we propose Highlight-TTA, a test-time adaptation framework for video highlight detection that addresses this limitation by dynamically adapting the model during testing to better align with the specific characteristics of each test video, thereby improving generalization and highlight detection performance. Highlight-TTA is jointly optimized with an auxiliary task, cross-modality hallucinations, alongside the primary highlight detection task. We utilize a meta-auxiliary training scheme to enable effective adaptation through the auxiliary task while enhancing the primary task. During testing, we adapt the trained model using the auxiliary task on the test video to further enhance its highlight detection performance. Extensive experiments with three state-of-the-art highlight detection models and three benchmark datasets show that the introduction of Highlight-TTA to these models improves their performance, yielding superior results.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1279,
+  "title": "Do generative video models understand physical principles?",
+  "org": "deepmind",
+  "date": "2026-03-06",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61042.2026.00099",
+  "abstract": "AI video generation is undergoing a revolution, with quality and realism advancing rapidly. These advances have led to a passionate scientific debate: Do video models learn \"world models\" that discover laws of physics—or, alternatively, are they merely sophisticated pixel predictors that achieve visual realism without understanding the physical principles of reality? We address this question by developing Physics-IQ, a comprehensive benchmark dataset that can only be solved by acquiring a deep understanding of various physical principles, like fluid dynamics, optics, solid mechanics, magnetism and thermodynamics. We find that across a range of current models (Sora, Runway, Pika, Lumiere, Stable Video Diffusion, and VideoPoet), physical understanding is severely limited, and unrelated to visual realism. At the same time, some test cases can already be successfully solved. This indicates that acquiring certain physical principles from observation alone may be possible, but significant challenges remain. While we expect rapid advances ahead, our work demonstrates that visual realism does not imply physical understanding. Our project page is at Physics-IQ website; code at Physics-IQ benchmark.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1278,
+  "title": "DICE: Discrete Inversion Enabling Controllable Editing for Masked Generative Models",
+  "org": "deepmind",
+  "date": "2026-03-06",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61042.2026.00081",
+  "abstract": "Recent advances in discrete diffusion models have demonstrated strong performance in image generation and masked language modeling, yet they remain limited in their capacity for controlled content editing. We propose DICE (Discrete Inversion for Controllable Editing), a novel framework that pioneers precise inversion capabilities for discrete diffusion models, including both masked generative and multinomial diffusion variants. Our key innovation lies in capturing noise sequences and masking patterns during reverse diffusion process, enabling both accurate reconstruction and flexible editing without relying on predefined masks or attention-based manipulations. Through comprehensive experiments across image and text modalities using models such as Paella, VQ-Diffusion, RoBERTa and LLaDA, we demonstrate that DICE successfully maintains high fidelity to the original data while significantly expanding editing capabilities. These results establish new possibilities for fine-grained content manipulation in discrete spaces.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1277,
+  "title": "Segmentation-Aware Latent Diffusion for Satellite Image Super-Resolution: Enabling Smallholder Farm Boundary Delineation",
+  "org": "deepmind",
+  "date": "2026-03-06",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61042.2026.00186",
+  "abstract": "Delineating farm boundaries through segmentation of satellite images is a fundamental step in many agricultural applications. The task is particularly challenging for smallholder farms, where accurate delineation requires the use of high resolution (HR) imagery which are available only at low revisit frequencies (e.g., annually). To support more frequent (sub-) seasonal monitoring, HR images could be combined as references (ref) with low resolution (LR) images – having higher revisit frequency (e.g., weekly) – using reference-based super-resolution (Ref-SR) methods. However, current Ref-SR methods optimize perceptual quality and smooth over crucial features needed for downstream tasks, and are unable to meet the large scale-factor requirements for this task. Further, previous two-step approaches of SR followed by segmentation do not effectively utilize diverse satellite sources as inputs. We address these problems through a new approach, SEED-SR, which uses a combination of conditional latent diffusion models and large-scale multi-spectral, multi-source geo-spatial foundation models. Our key innovation is to bypass the explicit SR task in the pixel space and instead perform SR in a segmentation-aware latent space. This unique approach enables us to generate segmentation maps at an unprecedented 20× scale factor, and rigorous experiments on two large, real datasets demonstrate up to 25.5% and 12.9% relative improvement in instance and semantic segmentation metrics respectively",
+  "needs_fetch": false
+ }
+]

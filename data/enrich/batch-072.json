@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1044,
+  "title": "Evaluating large language models trained on code",
+  "org": "openai",
+  "date": "2021-07-07",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/evaluating-large-language-models-trained-on-code/",
+  "abstract": "We introduce Codex, a GPT language model fine-tuned on publicly available code from GitHub, and study its Python code-writing capabilities. A distinct production version of Codex powers GitHub Copilot. On HumanEval, a new evaluation set we release to measure functional correctness for synthesizing programs from docstrings, our model solves 28.8% of the problems, while GPT-3 solves 0% and GPT-J solves 11.4%. Furthermore, we find that repeated sampling from the model is a surprisingly effective strategy for producing working solutions to difficult prompts. Using this method, we solve 70.2% of our problems with 100 samples per problem. Careful investigation of our model reveals its limitations, including difficulty with docstrings describing long chains of operations and with binding operations to variables. Finally, we discuss the potential broader impacts of deploying powerful code generation technologies, covering safety, security, and economics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2117,
+  "title": "Systematic Evaluation of Causal Discovery in Visual Model Based\\n Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-07-02",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2107.00848",
+  "abstract": "Inducing causal relationships from observations is a classic problem in\\nmachine learning. Most work in causality starts from the premise that the\\ncausal variables themselves are observed. However, for AI agents such as robots\\ntrying to make sense of their environment, the only observables are low-level\\nvariables like pixels in images. To generalize well, an agent must induce\\nhigh-level variables, particularly those which are causal or are affected by\\ncausal variables. A central goal for AI and causality is thus the joint\\ndiscovery of abstract representations and causal structure. However, we note\\nthat existing environments for studying causal induction are poorly suited for\\nthis objective because they have complicated task-specific causal graphs which\\nare impossible to manipulate parametrically (e.g., number of nodes, sparsity,\\ncausal chain length, etc.). In this work, our goal is to facilitate research in\\nlearning representations of high-level variables as well as causal structures\\namong them. In order to systematically probe the ability of methods to identify\\nthese variables and structures, we design a suite of benchmarking RL\\nenvironments. We evaluate various representation learning algorithms from the\\nliterature and find that explicitly incorporating structure and modularity in\\nmodels can help causal induction in model-based reinforcement learning.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2118,
+  "title": "Neural algorithmic reasoning",
+  "org": "deepmind",
+  "date": "2021-07-01",
+  "venue": "Patterns",
+  "url": "https://arxiv.org/abs/2105.02761",
+  "abstract": "We present neural algorithmic reasoning—the art of building neural networks that are able to execute algorithmic computation—and provide our opinion on its transformative potential for running classical algorithms on inputs previously considered inaccessible to them. We present neural algorithmic reasoning—the art of building neural networks that are able to execute algorithmic computation—and provide our opinion on its transformative potential for running classical algorithms on inputs previously considered inaccessible to them. Algorithms have been fundamental to recent global technological advances and, in particular, they have been the cornerstone of technical advances in one field rapidly being applied to another. We argue that algorithms possess fundamentally different qualities to deep learning methods, and this strongly suggests that, were deep learning methods better able to mimic algorithms, generalization of the sort seen with algorithms would become possible with deep learning—something far out of the reach of current machine learning methods. Furthermore, by representing elements in a continuous space of learnt algorithms, neural networks are able to adapt known algorithms more closely to real-world problems, potentially finding more efficient and pragmatic solutions than those proposed by human computer scientists. Algorithms are pervasive in modern society—from elevators, microwave ovens, and other household equipment to procedures for electing government offic",
+  "needs_fetch": false
+ },
+ {
+  "id": 2119,
+  "title": "Impaired neural replay of inferred relationships in schizophrenia",
+  "org": "deepmind",
+  "date": "2021-06-30",
+  "venue": "Cell",
+  "url": "https://doi.org/10.1016/j.cell.2021.06.012",
+  "abstract": "An ability to build structured mental maps of the world underpins our capacity to imagine relationships between objects that extend beyond experience. In rodents, such representations are supported by sequential place cell reactivations during rest, known as replay. Schizophrenia is proposed to reflect a compromise in structured mental representations, with animal models reporting abnormalities in hippocampal replay and associated ripple activity during rest. Here, utilizing magnetoencephalography (MEG), we tasked patients with schizophrenia and control participants to infer unobserved relationships between objects by reorganizing visual experiences containing these objects. During a post-task rest session, controls exhibited fast spontaneous neural reactivation of presented objects that replayed inferred relationships. Replay was coincident with increased ripple power in hippocampus. Patients showed both reduced replay and augmented ripple power relative to controls, convergent with findings in animal models. These abnormalities are linked to impairments in behavioral acquisition and subsequent neural representation of task structure.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2788,
+  "title": "Using Tactile Sensing to Improve the Sample Efficiency and Performance of Deep Deterministic Policy Gradients for Simulated In-Hand Manipulation Tasks",
+  "org": "openai",
+  "date": "2021-06-29",
+  "venue": "Frontiers in Robotics and AI",
+  "url": "https://doi.org/10.3389/frobt.2021.538773",
+  "abstract": "Deep Reinforcement Learning techniques demonstrate advances in the domain of robotics. One of the limiting factors is a large number of interaction samples usually required for training in simulated and real-world environments. In this work, we demonstrate for a set of simulated dexterous in-hand object manipulation tasks that tactile information can substantially increase sample efficiency for training (by up to more than threefold). We also observe an improvement in performance (up to 46%) after adding tactile information. To examine the role of tactile-sensor parameters in these improvements, we included experiments with varied sensor-measurement accuracy (ground truth continuous values, noisy continuous values, Boolean values), and varied spatial resolution of the tactile sensors (927 sensors, 92 sensors, and 16 pooled sensor areas in the hand). To facilitate further studies and comparisons, we make these touch-sensor extensions available as a part of the OpenAI Gym Shadow-Dexterous-Hand robotics environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2121,
+  "title": "Author response: Interpreting wide-band neural activity using convolutional neural networks",
+  "org": "deepmind",
+  "date": "2021-06-28",
+  "venue": null,
+  "url": "https://doi.org/10.7554/elife.66551.sa2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2120,
+  "title": "Robust Learning-Augmented Caching: An Experimental Study",
+  "org": "deepmind",
+  "date": "2021-06-28",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.14693",
+  "abstract": "Effective caching is crucial for the performance of modern-day computing systems. A key optimization problem arising in caching -- which item to evict to make room for a new item -- cannot be optimally solved without knowing the future. There are many classical approximation algorithms for this problem, but more recently researchers started to successfully apply machine learning to decide what to evict by discovering implicit input patterns and predicting the future. While machine learning typically does not provide any worst-case guarantees, the new field of learning-augmented algorithms proposes solutions that leverage classical online caching algorithms to make the machine-learned predictors robust. We are the first to comprehensively evaluate these learning-augmented algorithms on real-world caching datasets and state-of-the-art machine-learned predictors. We show that a straightforward method -- blindly following either a predictor or a classical robust algorithm, and switching whenever one becomes worse than the other -- has only a low overhead over a well-performing predictor, while competing with classical methods when the coupled predictor fails, thus providing a cheap worst-case insurance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2123,
+  "title": "Manipulator-Independent Representations for Visual Imitation",
+  "org": "deepmind",
+  "date": "2021-06-27",
+  "venue": null,
+  "url": "https://doi.org/10.15607/rss.2021.xvii.002",
+  "abstract": "Imitation learning is an effective tool for robotic learning tasks where specifying a reinforcement learning (RL) reward is not feasible or where the exploration problem is particularly difficult. Imitation, typically behavior cloning or inverse RL, derive a policy from a collection of first-person action-state trajectories. This is contrary to how humans and other animals imitate: we observe a behavior, even from other species, understand its perceived effect on the state of the environment, and figure out what actions our body can perform to reach a similar outcome. In this work, we explore the possibility of third-person visual imitation of manipulation trajectories, only from vision and without access to actions, demonstrated by embodiments different to the ones of our imitating agent. Specifically, we investigate what would be an appropriate representation method with which an RL agent can visually track trajectories of complex manipulation behavior -non-planar with multiple-object interactionsdemonstrated by experts with different embodiments. We present a way to train manipulator-independent representations (MIR) that primarily focus on the change in the environment and have all the characteristics that make them suitable for crossembodiment visual imitation with RL: cross-domain alignment, temporal smoothness, and being actionable. We show that with our proposed method our agents are able to imitate, with complex robot control, trajectories from a variety of embodimen",
+  "needs_fetch": false
+ },
+ {
+  "id": 2122,
+  "title": "Robust Multi-Modal Policies for Industrial Assembly via Reinforcement Learning and Demonstrations: A Large-Scale Study",
+  "org": "deepmind",
+  "date": "2021-06-27",
+  "venue": null,
+  "url": "https://doi.org/10.15607/rss.2021.xvii.088",
+  "abstract": "Over the past several years there has been a considerable research investment into learning-based approaches for tasks inspired by industrial manufacturing, but despite significant progress, these techniques have yet to be adopted by in the realworld. We argue that it is the prohibitively large design space for Deep Reinforcement Learning (DRL), rather than algorithmic limitations per se, that are truly responsible for this lack of adoption. Pushing these techniques into the industrial mainstream requires a paradigm which differs significantly from the academic mindset. In this paper we define criteria for industryoriented DRL, and perform a thorough comparison according to these criteria of one family of learning approaches, DRL from demonstration, against results of a professional industrial integrator on the recently established NIST assembly benchmark. We explain the design choices, representing several years of investigation, which enabled our DRL system to consistently outperform the integrator's baseline in terms of both speed and reliability. Finally, we conclude with a competition between our DRL system and a human on a challenge task of insertion into a randomly moving target. This study suggests that DRL is capable of outperforming not only established engineered approaches, but the human motor system as well, and that there remains significant room for improvement. Videos can be found on our project website:https://sites.google.com/view/shield-nist.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2124,
+  "title": "Unifying Gradient Estimators for Meta-Reinforcement Learning via\\n Off-Policy Evaluation",
+  "org": "deepmind",
+  "date": "2021-06-24",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.13125",
+  "abstract": "Model-agnostic meta-reinforcement learning requires estimating the Hessian\\nmatrix of value functions. This is challenging from an implementation\\nperspective, as repeatedly differentiating policy gradient estimates may lead\\nto biased Hessian estimates. In this work, we provide a unifying framework for\\nestimating higher-order derivatives of value functions, based on off-policy\\nevaluation. Our framework interprets a number of prior approaches as special\\ncases and elucidates the bias and variance trade-off of Hessian estimates. This\\nframework also opens the door to a new family of estimates, which can be easily\\nimplemented with auto-differentiation libraries, and lead to performance gains\\nin practice.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2126,
+  "title": "Emphatic Algorithms for Deep Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-06-21",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.11779",
+  "abstract": "Off-policy learning allows us to learn about possible policies of behavior from experience generated by a different behavior policy. Temporal difference (TD) learning algorithms can become unstable when combined with function approximation and off-policy sampling - this is known as the ''deadly triad''. Emphatic temporal difference (ETD($λ$)) algorithm ensures convergence in the linear case by appropriately weighting the TD($λ$) updates. In this paper, we extend the use of emphatic methods to deep reinforcement learning agents. We show that naively adapting ETD($λ$) to popular deep reinforcement learning algorithms, which use forward view multi-step returns, results in poor performance. We then derive new emphatic algorithms for use in the context of such algorithms, and we demonstrate that they provide noticeable benefits in small problems designed to highlight the instability of TD methods. Finally, we observed improved performance when applying these algorithms at scale on classic Atari games from the Arcade Learning Environment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2125,
+  "title": "Formalizing planning and information search in naturalistic decision-making",
+  "org": "deepmind",
+  "date": "2021-06-21",
+  "venue": "Nature Neuroscience",
+  "url": "https://doi.org/10.1038/s41593-021-00866-w",
+  "abstract": "Decisions made by mammals and birds are often temporally extended. They require planning and sampling of decision-relevant information. Our understanding of such decision-making remains in its infancy compared with simpler, forced-choice paradigms. However, recent advances in algorithms supporting planning and information search provide a lens through which we can explain neural and behavioral data in these tasks. We review these advances to obtain a clearer understanding for why planning and curiosity originated in certain species but not others; how activity in the medial temporal lobe, prefrontal and cingulate cortices may support these behaviors; and how planning and information search may complement each other as means to improve future action selection. Decision-making often involves temporally extended planning and information search. This Review discusses recent theoretical frameworks that have been used to study such naturalistic decision-making and its neural basis.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2789,
+  "title": "Process for Adapting Language Models to Society (PALMS) with\\n Values-Targeted Datasets",
+  "org": "openai",
+  "date": "2021-06-18",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.10328",
+  "abstract": "Language models can generate harmful and biased outputs and exhibit\\nundesirable behavior according to a given cultural context. We propose a\\nProcess for Adapting Language Models to Society (PALMS) with Values-Targeted\\nDatasets, an iterative process to significantly change model behavior by\\ncrafting and fine-tuning on a dataset that reflects a predetermined set of\\ntarget values. We evaluate our process using three metrics: quantitative\\nmetrics with human evaluations that score output adherence to a target value,\\ntoxicity scoring on outputs; and qualitative metrics analyzing the most common\\nword associated with a given social category. Through each iteration, we add\\nadditional training dataset examples based on observed shortcomings from\\nevaluations. PALMS performs significantly better on all metrics compared to\\nbaseline and control models for a broad range of GPT-3 language model sizes\\nwithout compromising capability integrity. We find that the effectiveness of\\nPALMS increases with model size. We show that significantly adjusting language\\nmodel behavior is feasible with a small, hand-curated dataset.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2127,
+  "title": "The functional specialization of visual cortex emerges from training parallel pathways with self-supervised predictive learning",
+  "org": "deepmind",
+  "date": "2021-06-18",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.06.18.448989",
+  "abstract": "Abstract The visual system of mammals is comprised of parallel, hierarchical specialized pathways. Different pathways are specialized in so far as they use representations that are more suitable for supporting specific downstream behaviours. In particular, the clearest example is the specialization of the ventral (“what”) and dorsal (“where”) pathways of the visual cortex. These two pathways support behaviours related to visual recognition and movement, respectively. To-date, deep neural networks have mostly been used as models of the ventral, recognition pathway. However, it is unknown whether both pathways can be modelled with a single deep ANN. Here, we ask whether a single model with a single loss function can capture the properties of both the ventral and the dorsal pathways. We explore this question using data from mice, who like other mammals, have specialized pathways that appear to support recognition and movement behaviours. We show that when we train a deep neural network architecture with two parallel pathways using a self-supervised predictive loss function, we can outperform other models in fitting mouse visual cortex. Moreover, we can model both the dorsal and ventral pathways. These results demonstrate that a self-supervised predictive learning approach applied to parallel pathway architectures can account for some of the functional specialization seen in mammalian visual systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2129,
+  "title": "Multi-Agent Training beyond Zero-Sum with Correlated Equilibrium Meta-Solvers",
+  "org": "deepmind",
+  "date": "2021-06-17",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.09435",
+  "abstract": "Two-player, constant-sum games are well studied in the literature, but there has been limited progress outside of this setting. We propose Joint Policy-Space Response Oracles (JPSRO), an algorithm for training agents in n-player, general-sum extensive form games, which provably converges to an equilibrium. We further suggest correlated equilibria (CE) as promising meta-solvers, and propose a novel solution concept Maximum Gini Correlated Equilibrium (MGCE), a principled and computationally efficient family of solutions for solving the correlated equilibrium selection problem. We conduct several experiments using CE meta-solvers for JPSRO and demonstrate convergence on n-player, general-sum games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2128,
+  "title": "Promises and challenges of human computational ethology",
+  "org": "deepmind",
+  "date": "2021-06-17",
+  "venue": "Neuron",
+  "url": "https://doi.org/10.1016/j.neuron.2021.05.021",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2130,
+  "title": "Randomized Exploration for Reinforcement Learning with General Value Function Approximation",
+  "org": "deepmind",
+  "date": "2021-06-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.07841",
+  "abstract": "We propose a model-free reinforcement learning algorithm inspired by the popular randomized least squares value iteration (RLSVI) algorithm as well as the optimism principle. Unlike existing upper-confidence-bound (UCB) based approaches, which are often computationally intractable, our algorithm drives exploration by simply perturbing the training data with judiciously chosen i.i.d. scalar noises. To attain optimistic value function estimation without resorting to a UCB-style bonus, we introduce an optimistic reward sampling procedure. When the value functions can be represented by a function class $\\mathcal{F}$, our algorithm achieves a worst-case regret bound of $\\widetilde{O}(\\mathrm{poly}(d_EH)\\sqrt{T})$ where $T$ is the time elapsed, $H$ is the planning horizon and $d_E$ is the $\\textit{eluder dimension}$ of $\\mathcal{F}$. In the linear setting, our algorithm reduces to LSVI-PHE, a variant of RLSVI, that enjoys an $\\widetilde{\\mathcal{O}}(\\sqrt{d^3H^3T})$ regret. We complement the theory with an empirical evaluation across known difficult exploration tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2131,
+  "title": "A Deep Reinforcement Learning Approach to Marginalized Importance\\n Sampling with the Successor Representation",
+  "org": "deepmind",
+  "date": "2021-06-12",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.06854",
+  "abstract": "Marginalized importance sampling (MIS), which measures the density ratio\\nbetween the state-action occupancy of a target policy and that of a sampling\\ndistribution, is a promising approach for off-policy evaluation. However,\\ncurrent state-of-the-art MIS methods rely on complex optimization tricks and\\nsucceed mostly on simple toy problems. We bridge the gap between MIS and deep\\nreinforcement learning by observing that the density ratio can be computed from\\nthe successor representation of the target policy. The successor representation\\ncan be trained through deep reinforcement learning methodology and decouples\\nthe reward optimization from the dynamics of the environment, making the\\nresulting algorithm stable and applicable to high-dimensional domains. We\\nevaluate the empirical performance of our approach on a variety of challenging\\nAtari and MuJoCo environments.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2135,
+  "title": "Taylor Expansion of Discount Factors",
+  "org": "deepmind",
+  "date": "2021-06-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.06170",
+  "abstract": "In practical reinforcement learning (RL), the discount factor used for estimating value functions often differs from that used for defining the evaluation objective. In this work, we study the effect that this discrepancy of discount factors has during learning, and discover a family of objectives that interpolate value functions of two distinct discount factors. Our analysis suggests new ways for estimating value functions and performing policy optimization updates, which demonstrate empirical performance gains. This framework also leads to new insights on commonly-used deep RL heuristic modifications to policy optimization algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2134,
+  "title": "Model-Free Learning for Two-Player Zero-Sum Partially Observable Markov Games with Perfect Recall",
+  "org": "deepmind",
+  "date": "2021-06-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.06279",
+  "abstract": "We study the problem of learning a Nash equilibrium (NE) in an imperfect information game (IIG) through self-play. Precisely, we focus on two-player, zero-sum, episodic, tabular IIG under the perfect-recall assumption where the only feedback is realizations of the game (bandit feedback). In particular, the dynamic of the IIG is not known -- we can only access it by sampling or interacting with a game simulator. For this learning setting, we provide the Implicit Exploration Online Mirror Descent (IXOMD) algorithm. It is a model-free algorithm with a high-probability bound on the convergence rate to the NE of order $1/\\sqrt{T}$ where $T$ is the number of played games. Moreover, IXOMD is computationally efficient as it needs to perform the updates only along the sampled trajectory.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2133,
+  "title": "Preferential Temporal Difference Learning",
+  "org": "deepmind",
+  "date": "2021-06-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.06508",
+  "abstract": "Temporal-Difference (TD) learning is a general and very useful tool for estimating the value function of a given policy, which in turn is required to find good policies. Generally speaking, TD learning updates states whenever they are visited. When the agent lands in a state, its value can be used to compute the TD-error, which is then propagated to other states. However, it may be interesting, when computing updates, to take into account other information than whether a state is visited or not. For example, some states might be more important than others (such as states which are frequently seen in a successful trajectory). Or, some states might have unreliable value estimates (for example, due to partial observability or lack of data), making their values less desirable as targets. We propose an approach to re-weighting states used in TD updates, both when they are the input and when they provide the target for the update. We prove that our approach converges with linear function approximation and illustrate its desirable empirical behaviour compared to other TD-style methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2132,
+  "title": "Order Matters: Probabilistic Modeling of Node Sequence for Graph Generation",
+  "org": "deepmind",
+  "date": "2021-06-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.06189",
+  "abstract": "A graph generative model defines a distribution over graphs. One type of generative model is constructed by autoregressive neural networks, which sequentially add nodes and edges to generate a graph. However, the likelihood of a graph under the autoregressive model is intractable, as there are numerous sequences leading to the given graph; this makes maximum likelihood estimation challenging. Instead, in this work we derive the exact joint probability over the graph and the node ordering of the sequential process. From the joint, we approximately marginalize out the node orderings and compute a lower bound on the log-likelihood using variational inference. We train graph generative models by maximizing this bound, without using the ad-hoc node orderings of previous methods. Our experiments show that the log-likelihood bound is significantly tighter than the bound of previous schemes. Moreover, the models fitted with the proposed algorithm can generate high-quality graphs that match the structures of target graphs not seen during training. We have made our code publicly available at \\hyperref[https://github.com/tufts-ml/graph-generation-vi]{https://github.com/tufts-ml/graph-generation-vi}.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1045,
+  "title": "Improving language model behavior by training on a curated dataset",
+  "org": "openai",
+  "date": "2021-06-10",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/improving-language-model-behavior/",
+  "abstract": "Our latest research finds we can improve language model behavior with respect to specific behavioral values by fine-tuning on a small, curated dataset.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2136,
+  "title": "Vector Quantized Models for Planning",
+  "org": "deepmind",
+  "date": "2021-06-08",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.04615",
+  "abstract": "Recent developments in the field of model-based RL have proven successful in a range of environments, especially ones where planning is essential. However, such successes have been limited to deterministic fully-observed environments. We present a new approach that handles stochastic and partially-observable environments. Our key insight is to use discrete autoencoders to capture the multiple possible effects of an action in a stochastic environment. We use a stochastic variant of Monte Carlo tree search to plan over both the agent's actions and the discrete latent variables representing the environment's response. Our approach significantly outperforms an offline version of MuZero on a stochastic interpretation of chess where the opponent is considered part of the environment. We also show that our approach scales to DeepMind Lab, a first-person 3D environment with large visual observations and partial observability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2790,
+  "title": "Towards robust and domain agnostic reinforcement learning competitions",
+  "org": "openai",
+  "date": "2021-06-07",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.03748",
+  "abstract": "Reinforcement learning competitions have formed the basis for standard research benchmarks, galvanized advances in the state-of-the-art, and shaped the direction of the field. Despite this, a majority of challenges suffer from the same fundamental problems: participant solutions to the posed challenge are usually domain-specific, biased to maximally exploit compute resources, and not guaranteed to be reproducible. In this paper, we present a new framework of competition design that promotes the development of algorithms that overcome these barriers. We propose four central mechanisms for achieving this end: submission retraining, domain randomization, desemantization through domain obfuscation, and the limitation of competition compute and environment-sample budget. To demonstrate the efficacy of this design, we proposed, organized, and ran the MineRL 2020 Competition on Sample-Efficient Reinforcement Learning. In this work, we describe the organizational outcomes of the competition and show that the resulting participant submissions are reproducible, non-specific to the competition environment, and sample/resource efficient, despite the difficult competition task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2137,
+  "title": "Temporally delayed linear modelling (TDLM) measures replay in both animals and humans",
+  "org": "deepmind",
+  "date": "2021-06-07",
+  "venue": "eLife",
+  "url": "https://doi.org/10.7554/elife.66917",
+  "abstract": "There are rich structures in off-task neural activity which are hypothesized to reflect fundamental computations across a broad spectrum of cognitive functions. Here, we develop an analysis toolkit - temporal delayed linear modelling (TDLM) - for analysing such activity. TDLM is a domain-general method for finding neural sequences that respect a pre-specified transition graph. It combines nonlinear classification and linear temporal modelling to test for statistical regularities in sequences of task-related reactivations. TDLM is developed on the non-invasive neuroimaging data and is designed to take care of confounds and maximize sequence detection ability. Notably, as a linear framework, TDLM can be easily extended, without loss of generality, to capture rodent replay in electrophysiology, including in continuous spaces, as well as addressing second-order inference questions, for example, its temporal and spatial varying pattern. We hope TDLM will advance a deeper understanding of neural computation and promote a richer convergence between animal and human neuroscience.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2138,
+  "title": "Debiasing a First-order Heuristic for Approximate Bi-level Optimization",
+  "org": "deepmind",
+  "date": "2021-06-04",
+  "venue": "Cambridge University Engineering Department Publications Database",
+  "url": "https://arxiv.org/abs/2106.02487",
+  "abstract": "Approximate bi-level optimization (ABLO) consists of (outer-level) optimization problems, involving numerical (inner-level) optimization loops. While ABLO has many applications across deep learning, it suffers from time and memory complexity proportional to the length $r$ of its inner optimization loop. To address this complexity, an earlier first-order method (FOM) was proposed as a heuristic that omits second derivative terms, yielding significant speed gains and requiring only constant memory. Despite FOM's popularity, there is a lack of theoretical understanding of its convergence properties. We contribute by theoretically characterizing FOM's gradient bias under mild assumptions. We further demonstrate a rich family of examples where FOM-based SGD does not converge to a stationary point of the ABLO objective. We address this concern by proposing an unbiased FOM (UFOM) enjoying constant memory complexity as a function of $r$. We characterize the introduced time-variance tradeoff, demonstrate convergence bounds, and find an optimal UFOM for a given ABLO problem. Finally, we propose an efficient adaptive UFOM scheme.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2139,
+  "title": "Iterative Empirical Game Solving via Single Policy Best Response",
+  "org": "deepmind",
+  "date": "2021-06-03",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2106.01901",
+  "abstract": "Policy-Space Response Oracles (PSRO) is a general algorithmic framework for learning policies in multiagent systems by interleaving empirical game analysis with deep reinforcement learning (Deep RL). At each iteration, Deep RL is invoked to train a best response to a mixture of opponent policies. The repeated application of Deep RL poses an expensive computational burden as we look to apply this algorithm to more complex domains. We introduce two variations of PSRO designed to reduce the amount of simulation required during Deep RL training. Both algorithms modify how PSRO adds new policies to the empirical game, based on learned responses to a single opponent policy. The first, Mixed-Oracles, transfers knowledge from previous iterations of Deep RL, requiring training only against the opponent's newest policy. The second, Mixed-Opponents, constructs a pure-strategy opponent by mixing existing strategy's action-value estimates, instead of their policies. Learning against a single policy mitigates variance in state outcomes that is induced by an unobserved distribution of opponents. We empirically demonstrate that these algorithms substantially reduce the amount of simulation during training required by PSRO, while producing equivalent or better solutions to the game.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2140,
+  "title": "Automatic Segmentation of Clinical Target Volume and Organs-At-Risk for Breast Conservative Radiotherapy Using a Convolutional Neural Network",
+  "org": "deepmind",
+  "date": "2021-06-02",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-535967/v1",
+  "abstract": "Abstract Background and Objective: Delineation of the clinical target volume (CTV) and organs at risk (OARs) is very important for radiotherapy but is time-consuming and prone to inter- and intra-observer variation. We trained and evaluated a U-Net-based model to provide fast and consistent auto-segmentation for breast cancer radiotherapy. Methods: We collected 160 patients’ computed tomography (CT) scans with early-stage breast cancer who underwent breast-conserving surgery (BCS) and were treated with radiotherapy in our center. CTV and OARs (contralateral breast, heart, lungs and spinal cord) were delineated manually by two experienced radiation oncologists. The data were used for model training and testing. The dice similarity coefficient (DSC) and 95th Hausdorff distance (95HD) were used to assess the performance of our model. CTV and OARs were randomly selected as ground truth (GT) masks, and artificial intelligence (AI) masks were generated by the proposed model. The contours were randomly distributed to two clinicians to compare CTV score differences. The consistency between two clinicians was tested. We also evaluated time cost for auto-delineation. Results: The mean DSC values of the proposed method were 0.94, 0.95, 0.94, 0.96, 0.96 and 0.93 for breast CTV, contralateral breast, heart, right lung, left lung and spinal cord, respectively. The mean 95HD values were 4.31 mm, 3.59 mm, 4.86 mm, 3.18 mm, 2.79 mm and 4.37 mm for the above structures respectively. The averag",
+  "needs_fetch": false
+ },
+ {
+  "id": 2145,
+  "title": "Gradient Forward-Propagation for Large-Scale Temporal Video Modelling",
+  "org": "deepmind",
+  "date": "2021-06-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2106.08318",
+  "abstract": "How can neural networks be trained on large-volume temporal data efficiently? To compute the gradients required to update parameters, backpropagation blocks computations until the forward and backward passes are completed. For temporal signals, this introduces high latency and hinders real-time learning. It also creates a coupling between consecutive layers, which limits model parallelism and increases memory consumption. In this paper, we build upon Sideways, which avoids blocking by propagating approximate gradients forward in time, and we propose mechanisms for temporal integration of information based on different variants of skip connections. We also show how to decouple computation and delegate individual neural modules to different devices, allowing distributed and parallel training. The proposed Skip-Sideways achieves low latency training, model parallelism, and, importantly, is capable of extracting temporal features, leading to more stable training and improved performance on real-world action recognition video datasets such as HMDB51, UCF101, and the large-scale Kinetics-600. Finally, we also show that models trained with Skip-Sideways generate better future frames than Sideways models, and hence they can better utilize motion cues.",
+  "needs_fetch": false
+ }
+]

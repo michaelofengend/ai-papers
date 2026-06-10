@@ -1,0 +1,302 @@
+[
+ {
+  "id": 563,
+  "title": "Unified Scaling Laws for Routed Language Models",
+  "org": "deepmind",
+  "date": "2022-02-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2202.01169",
+  "abstract": "The performance of a language model has been shown to be effectively modeled as a power-law in its parameter count. Here we study the scaling behaviors of Routing Networks: architectures that conditionally use only a subset of their parameters while processing an input. For these models, parameter count and computational requirement form two independent axes along which an increase leads to better performance. In this work we derive and justify scaling laws defined on these two variables which generalize those known for standard language models and describe the performance of a wide range of routing architectures trained via three different techniques. Afterwards we provide two applications of these laws: first deriving an Effective Parameter Count along which all models scale at the same rate, and then using the scaling coefficients to give a quantitative comparison of the three routing techniques considered. Our analysis derives from an extensive evaluation of Routing Networks across five orders of magnitude of size, including models with hundreds of experts and hundreds of billions of parameters.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2023,
+  "title": "Sebastian Dietz’s Contribution to the Discussion of ‘Gaussian Differential Privacy’ by Dong <i>et al</i>.",
+  "org": "deepmind",
+  "date": "2022-02-01",
+  "venue": "Journal of the Royal Statistical Society Series B (Statistical Methodology)",
+  "url": "https://doi.org/10.1111/rssb.12459",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2024,
+  "title": "Scaling Gaussian Process Optimization by Evaluating a Few Unique Candidates Multiple Times",
+  "org": "deepmind",
+  "date": "2022-01-30",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2201.12909",
+  "abstract": "Computing a Gaussian process (GP) posterior has a computational cost cubical in the number of historical points. A reformulation of the same GP posterior highlights that this complexity mainly depends on how many \\emph{unique} historical points are considered. This can have important implication in active learning settings, where the set of historical points is constructed sequentially by the learner. We show that sequential black-box optimization based on GPs (GP-Opt) can be made efficient by sticking to a candidate solution for multiple evaluation steps and switch only when necessary. Limiting the number of switches also limits the number of unique points in the history of the GP. Thus, the efficient GP reformulation can be used to exactly and cheaply compute the posteriors required to run the GP-Opt algorithms. This approach is especially useful in real-world applications of GP-Opt with high switch costs (e.g. switching chemicals in wet labs, data/model loading in hyperparameter optimization). As examples of this meta-approach, we modify two well-established GP-Opt algorithms, GP-UCB and GP-EI, to switch candidates as infrequently as possible adapting rules from batched GP-Opt. These versions preserve all the theoretical no-regret guarantees while improving practical aspects of the algorithms such as runtime, memory complexity, and the ability of batching candidates and evaluating them in parallel.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1037,
+  "title": "Aligning language models to follow instructions",
+  "org": "openai",
+  "date": "2022-01-27",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/instruction-following/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2025,
+  "title": "Reimagining chess with AlphaZero",
+  "org": "deepmind",
+  "date": "2022-01-24",
+  "venue": "Communications of the ACM",
+  "url": "https://doi.org/10.1145/3460349",
+  "abstract": "AI is driving the next evolution of chess, giving players a glimpse into the game's future.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1038,
+  "title": "Text and code embeddings by contrastive pre-training",
+  "org": "openai",
+  "date": "2022-01-24",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/text-and-code-embeddings-by-contrastive-pre-training/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2027,
+  "title": "Properties and Comparison of Some Kriging Sub-model Aggregation Methods",
+  "org": "deepmind",
+  "date": "2022-01-12",
+  "venue": "Mathematical Geosciences",
+  "url": "https://doi.org/10.1007/s11004-021-09986-2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2026,
+  "title": "Spurious normativity enhances learning of compliance and enforcement behavior in artificial agents",
+  "org": "deepmind",
+  "date": "2022-01-12",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2106028118",
+  "abstract": "How do societies learn and maintain social norms? Here we use multiagent reinforcement learning to investigate the learning dynamics of enforcement and compliance behaviors. Artificial agents populate a foraging environment and need to learn to avoid a poisonous berry. Agents learn to avoid eating poisonous berries better when doing so is taboo, meaning the behavior is punished by other agents. The taboo helps overcome a credit assignment problem in discovering delayed health effects. Critically, introducing an additional taboo, which results in punishment for eating a harmless berry, further improves overall returns. This \"silly rule\" counterintuitively has a positive effect because it gives agents more practice in learning rule enforcement. By probing what individual agents have learned, we demonstrate that normative behavior relies on a sequence of learned skills. Learning rule compliance builds upon prior learning of rule enforcement by other agents. Our results highlight the benefit of employing a multiagent reinforcement learning computational model focused on learning to implement complex actions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2778,
+  "title": "Hierarchical Transformers Are More Efficient Language Models",
+  "org": "openai",
+  "date": "2022-01-01",
+  "venue": "Findings of the Association for Computational Linguistics: NAACL 2022",
+  "url": "https://doi.org/10.18653/v1/2022.findings-naacl.117",
+  "abstract": "Transformer models yield impressive results on many NLP and sequence modeling tasks. Remarkably, Transformers can handle long sequences, which allows them to produce long coherent outputs: entire paragraphs produced by GPT-3 or well-structured images produced by DALL-E. These large language models are impressive but also very inefficient and costly, which limits their applications and accessibility. We postulate that having an explicit hierarchical architecture is the key to Transformers that efficiently handle long sequences. To verify this claim, we first study different ways to downsample and upsample activations in Transformers so as to make them hierarchical. We use the best performing upsampling and downsampling layers to create Hourglass -a hierarchical Transformer language model. Hourglass improves upon the Transformer baseline given the same amount of computation and can yield the same results as Transformers more efficiently. In particular, Hourglass sets new state-of-the-art for Transformer models on the ImageNet32 generation task and improves language modeling efficiency on the widely studied enwik8 benchmark.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2777,
+  "title": "A smile is all you need: predicting limiting activity coefficients from SMILES with natural language processing",
+  "org": "openai",
+  "date": "2022-01-01",
+  "venue": "Digital Discovery",
+  "url": "https://doi.org/10.1039/d2dd00058j",
+  "abstract": "SPT is a natural language processing model that predicts limiting activity coefficients from SMILES. High accuracy is achieved by pre-training the model on millions of synthetic data points and fine-tuning the model on limited experimental data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2049,
+  "title": "Analysis of Volatile Substances in Different Flavored Cigarette Paper by Using Headspace-Gas Chromatography-Ion Mobility Spectrometry (HS-GC-IMS) Combined with Chemometrics",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.4214238",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2048,
+  "title": "Spatially-embedded Recurrent Neural Networks: Bridging common structural and functional findings in neuroscience, including small-worldness, functional clustering in space and mixed selectivity",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "2022 Conference on Cognitive Computational Neuroscience",
+  "url": "https://doi.org/10.32470/ccn.2022.1032-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2047,
+  "title": "Utility of Equivariant Message Passing in Cortical Mesh Segmentation",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-12053-4_31",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2046,
+  "title": "Analysis of Aromatic Substances in Different Flavored Cigarette Paper by Using Headspace-Gas Chromatography-Ion Mobility Spec-Trometry (Hs-Gc-Ims)",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.4087087",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2045,
+  "title": "Learning agents that acquire representations of social groups",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Behavioral and Brain Sciences",
+  "url": "https://doi.org/10.1017/s0140525x21001357",
+  "abstract": "Humans are learning agents that acquire social group representations from experience. Here, we discuss how to construct artificial agents capable of this feat. One approach, based on deep reinforcement learning, allows the necessary representations to self-organize. This minimizes the need for hand-engineering, improving robustness and scalability. It also enables \"virtual neuroscience\" research on the learned representations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2044,
+  "title": "Reward-Punishment Symmetric Universal Intelligence",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://arxiv.org/abs/2110.02450",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2043,
+  "title": "Continual Reinforcement Learning with Multi-Timescale Successor Features",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "2022 Conference on Cognitive Computational Neuroscience",
+  "url": "https://doi.org/10.32470/ccn.2022.1229-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2042,
+  "title": "What is the simplest model that can account for high-fidelity imitation?",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Behavioral and Brain Sciences",
+  "url": "https://doi.org/10.1017/s0140525x22001364",
+  "abstract": "What inductive biases must be incorporated into multi-agent artificial intelligence models to get them to capture high-fidelity imitation? We think very little is needed. In the right environments, both instrumental- and ritual-stance imitation can emerge from generic learning mechanisms operating on non-deliberative decision architectures. In this view, imitation emerges from trial-and-error learning and does not require explicit deliberation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2041,
+  "title": "Publishing fast and slow: A path toward generalizability in psychology and AI",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Behavioral and Brain Sciences",
+  "url": "https://doi.org/10.1017/s0140525x21000224",
+  "abstract": "Artificial intelligence (AI) shares many generalizability challenges with psychology. But the fields publish differently. AI publishes fast, through rapid preprint sharing and conference publications. Psychology publishes more slowly, but creates integrative reviews and meta-analyses. We discuss the complementary advantages of each strategy, and suggest that incorporating both types of strategies could lead to more generalizable research in both fields.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2040,
+  "title": "Uncertainty for Safe Utilization of Machine Learning in Medical Imaging",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-16749-2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2039,
+  "title": "Vision-Language Pretraining: Current Trends and the Future",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2022.acl-tutorials.7",
+  "abstract": "In the last few years, there has been an increased interest in building multimodal (vision-language) models that are pretrained on larger but noisier datasets where the two modalities (e.g., image and text) loosely correspond to each other (e.g., Lu et al., 2019; Radford et al., 2021). Given a task (such as visual question answering), these models are then often fine-tuned on task-specific supervised datasets. (e.g., Lu et al., 2019; Chen et al.,2020; Tan and Bansal, 2019; Li et al., 2020a,b). In addition to the larger pretraining datasets, the transformer architecture (Vaswani et al., 2017) and in particular self-attention applied to two modalities are responsible for the impressive performance of the recent pretrained models on downstream tasks (Hendricks et al., 2021). In this tutorial, we focus on recent vision-language pretraining paradigms. Our goal is to first provide the background on image–language datasets, benchmarks, and modeling innovations before the multimodal pretraining area. Next we discuss the different family of models used for vision-language pretraining, highlighting their strengths and shortcomings. Finally, we discuss the limits of vision-language pretraining through statistical learning, and the need for alternative approaches such as causal representation learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2038,
+  "title": "Object Discovery and Representation Networks",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://arxiv.org/abs/2203.08777",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2037,
+  "title": "Latent Space Smoothing for Individually Fair Representations",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-19778-9_31",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2036,
+  "title": "Counting Vampires: From Univariate Sumcheck to Updatable ZK-SNARK",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-22966-4_9",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2035,
+  "title": "Control Prefixes for Parameter-Efficient Text Generation",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2022.gem-1.31",
+  "abstract": "Prefix-tuning is a parameter-efficient and powerful technique for adapting a pre-trained language model to a downstream application. However, it uses the same dataset-level tuned set of parameters for all examples in the dataset. We extend the framework with a dynamic method, Control Prefixes, which allows for the effective inclusion of input-dependent information, thereby demonstrating how prefix-tuning can be used for controlled text generation tasks. The method incorporates attribute-level learnable representations into different layers of a pre-trained Transformer, enabling the generated text to be guided in a particular direction. We provide a systematic evaluation of the technique and apply it to five datasets from the GEM benchmark for natural language generation (NLG). Using only 0.1–2% additional trainable parameters, we show Control Prefixes can even outperform full fine-tuning methods, and present state-of-the-art results on several data-to-text datasets, including WebNLG. We also examine the common case where input-dependent information is unavailable at test time and show Control Prefixes can excel in this setting also.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2034,
+  "title": "Morphology-Preserving Autoregressive 3D Generative Modelling of the Brain",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-16980-9_7",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2033,
+  "title": "Relational Memory-Augmented Language Models",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://doi.org/10.1162/tacl_a_00476",
+  "abstract": "Abstract We present a memory-augmented approach to condition an autoregressive language model on a knowledge graph. We represent the graph as a collection of relation triples and retrieve relevant relations for a given context to improve text generation. Experiments on WikiText-103, WMT19, and enwik8 English datasets demonstrate that our approach produces a better language model in terms of perplexity and bits per character. We also show that relational memory improves coherence, is complementary to token-based memory, and enables causal interventions. Our model provides a simple yet effective way to combine an autoregressive language model and a knowledge graph for more coherent and logical generation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2032,
+  "title": "What Makes Fiat–Shamir zkSNARKs (Updatable SRS) Simulation Extractable?",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-14791-3_32",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2031,
+  "title": "3D-Beacons: decreasing the gap between protein sequences and structures through a federated network of protein structure data resources",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "GigaScience",
+  "url": "https://doi.org/10.1093/gigascience/giac118",
+  "abstract": "While scientists can often infer the biological function of proteins from their 3-dimensional quaternary structures, the gap between the number of known protein sequences and their experimentally determined structures keeps increasing. A potential solution to this problem is presented by ever more sophisticated computational protein modeling approaches. While often powerful on their own, most methods have strengths and weaknesses. Therefore, it benefits researchers to examine models from various model providers and perform comparative analysis to identify what models can best address their specific use cases. To make data from a large array of model providers more easily accessible to the broader scientific community, we established 3D-Beacons, a collaborative initiative to create a federated network with unified data access mechanisms. The 3D-Beacons Network allows researchers to collate coordinate files and metadata for experimentally determined and theoretical protein models from state-of-the-art and specialist model providers and also from the Protein Data Bank.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2030,
+  "title": "Transformer Grammars: Augmenting Transformer Language Models with Syntactic Inductive Biases at Scale",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://doi.org/10.1162/tacl_a_00526",
+  "abstract": "Abstract We introduce Transformer Grammars (TGs), a novel class of Transformer language models that combine (i) the expressive power, scalability, and strong performance of Transformers and (ii) recursive syntactic compositions, which here are implemented through a special attention mask and deterministic transformation of the linearized tree. We find that TGs outperform various strong baselines on sentence-level language modeling perplexity, as well as on multiple syntax-sensitive language modeling evaluation metrics. Additionally, we find that the recursive syntactic composition bottleneck which represents each sentence as a single vector harms perplexity on document-level language modeling, providing evidence that a different kind of memory mechanism—one that is independent of composed syntactic representations—plays an important role in current successful models of long text.",
+  "needs_fetch": false
+ }
+]

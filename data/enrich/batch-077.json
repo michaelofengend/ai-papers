@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2265,
+  "title": "Approaches and Applications of Inductive Programming (Dagstuhl Seminar 21192)",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+  "url": "https://drops.dagstuhl.de/entities/document/10.4230/DagRep.11.4.20",
+  "abstract": "In this report the program and the outcomes of Dagstuhl Seminar 21192 \"Approaches and Applications of Inductive Programming\" is documented. The goal of inductive programming (IP) is to induce computer programs from data, typically input/output examples of a desired program. IP interests researchers from many areas of computer science, including machine learning, automated reasoning, program verification, and software engineering. Furthermore, IP contributes to research outside computer science, notably in cognitive science, where IP can help build models of human inductive learning and contribute methods for intelligent tutor systems. Building on the success of previous IP Dagstuhl seminars (13502, 15442, 17382, and 19202), the goal of this new edition of the seminar is to focus on IP methods which integrate learning and reasoning, scaling up IP methods to be applicable to more complex real world problems, and to further explore the potential of IP for explainable artificial intelligence (XAI), especially for interactive learning. The extended abstracts included in this report show recent advances in IP research. The included short report of the outcome of the discussion sessions additionally point out interesting interrelation between different aspects and possible new directions for IP.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2264,
+  "title": "Special issue on adaptive and learning agents 2018",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "The Knowledge Engineering Review",
+  "url": "https://doi.org/10.1017/s0269888921000047",
+  "abstract": "An abstract is not available for this content. As you have access to this content, full HTML content is provided on this page. A PDF of this content is also available in through the ‘Save PDF’ action button.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2263,
+  "title": "Optimal Bidding, Allocation, and Budget Spending for a Demand-Side Platform with Generic Auctions",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.3841306",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2262,
+  "title": "Should I Tear down This Wall? Optimizing Social Metrics by Evaluating Novel Actions",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://arxiv.org/abs/2004.07625",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2261,
+  "title": "Learned Iterative Reconstruction",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.1007/978-3-030-03009-4_67-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2260,
+  "title": "Partition-Merge: Distributed Inference and Modularity Optimization",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "IEEE Access",
+  "url": "https://arxiv.org/abs/1309.6129",
+  "abstract": "This paper presents a novel meta-algorithm, Partition-Merge (PM), which takes existing centralized algorithms for graph computation and makes them distributed and faster. In a nutshell, PM divides the graph into small subgraphs using our novel randomized partitioning scheme, runs the centralized algorithm on each partition separately, and then stitches the resulting solutions to produce a global solution. We demonstrate the efficiency of the PM algorithm on two popular problems: computation of Maximum A Posteriori (MAP) assignment in an arbitrary pairwise Markov Random Field (MRF) and modularity optimization for community detection. We show that the resulting distributed algorithms for these problems become fast, which run in time linear in the number of nodes in the graph. Furthermore, PM leads to performance comparable - or even better - to that of the centralized algorithms as long as the graph has polynomial growth property. More precisely, if the centralized algorithm is a <i xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">C</i> -factor approximation with constant <i xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">C</i> ≥ 1, the resulting distributed algorithm is a ( <i xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">C</i> +δ)-factor approximation for any small δ > 0; and even if the centralized algorithm is a non-constant (e.g., logarithmic) fact",
+  "needs_fetch": false
+ },
+ {
+  "id": 2259,
+  "title": "UNKs Everywhere: Adapting Multilingual Language Models to New Scripts",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+  "url": "https://arxiv.org/abs/2012.15562",
+  "abstract": "Massively multilingual language models such as multilingual BERT offer state-of-the-art cross-lingual transfer performance on a range of NLP tasks. However, due to limited capacity and large differences in pretraining data sizes, there is a profound performance gap between resource-rich and resource-poor target languages. The ultimate challenge is dealing with under-resourced languages not covered at all by the models and written in scripts unseen during pretraining. In this work, we propose a series of novel data-efficient methods that enable quick and effective adaptation of pretrained multilingual models to such lowresource languages and unseen scripts. Relying on matrix factorization, our methods capitalize on the existing latent knowledge about multiple languages already available in the pretrained model's embedding matrix. Furthermore, we show that learning of the new dedicated embedding matrix in the target language can be improved by leveraging a small number of vocabulary items (i.e., the so-called lexically overlapping tokens) shared between mBERT's and target language vocabulary. Our adaptation techniques offer substantial performance gains for languages with unseen scripts. We also demonstrate that they can yield improvements for low-resource languages written in scripts covered by the pretrained model.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2258,
+  "title": "Google and DeepMind: Deep Learning Systems in Ophthalmology",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.1007/978-3-030-78601-4_12",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2257,
+  "title": "IReEn: Reverse-Engineering of Black-Box Functions via Iterative Neural Program Synthesis",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Communications in computer and information science",
+  "url": "https://doi.org/10.1007/978-3-030-93733-1_10",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2256,
+  "title": "Fast sampling from $$\\beta $$-ensembles",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Statistics and Computing",
+  "url": "https://arxiv.org/abs/2003.02344",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2255,
+  "title": "PyCID: A Python Library for Causal Influence Diagrams",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Proceedings of the Python in Science Conferences",
+  "url": "https://doi.org/10.25080/majora-1b6fd038-008",
+  "abstract": "Why did a decision maker select a certain decision? What behaviour does a certain objective incentivise? How can we improve this behaviour and ensure that a decision-maker chooses decisions with safer or fairer consequences? This paper introduces the Python package PyCID, built upon pgmpy, that implements (causal) influence diagrams, a widely used graphical modelling framework for decision-making problems. By providing a range of methods to solve and analyse (causal) influence diagrams, PyCID helps answer questions about behaviour and incentives in both single-agent and multi-agent settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2254,
+  "title": "A Generative Framework for Simultaneous Machine Translation",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+  "url": "https://doi.org/10.18653/v1/2021.emnlp-main.536",
+  "abstract": "We propose a generative framework for simultaneous machine translation. Conventional approaches use a fixed number of source words to translate or learn dynamic policies for the number of source words by reinforcement learning. Here we formulate simultaneous translation as a structural sequence-tosequence learning problem. A latent variable is introduced to model read or translate actions at every time step, which is then integrated out to consider all the possible translation policies. A re-parameterised Poisson prior is used to regularise the policies which allows the model to explicitly balance translation quality and latency. The experiments demonstrate the effectiveness and robustness of the generative framework, which achieves the best BLEU scores given different average translation latencies on benchmark datasets. 1 1 2 3 4 2 3 4 5 (a) Wait-k (k=3).",
+  "needs_fetch": false
+ },
+ {
+  "id": 2253,
+  "title": "WikiGraphs: A Wikipedia Text - Knowledge Graph Paired Dataset",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2021.textgraphs-1.7",
+  "abstract": "We present a new dataset of Wikipedia articles each paired with a knowledge graph, to facilitate the research in conditional text generation, graph generation and graph representation learning. Existing graph-text paired datasets typically contain small graphs and short text (1 or few sentences), thus limiting the capabilities of the models that can be learned on the data. Our new dataset WikiGraphs is collected by pairing each Wikipedia article from the established WikiText-103 benchmark This makes it easy to benchmark against other state-of-the-art text generative models that are capable of generating long paragraphs of coherent text. Both the graphs and the text data are of significantly larger scale compared to prior graph-text paired datasets. We present baseline graph neural network and transformer model results on our dataset for 3 tasks: graph text generation, graph text retrieval and text graph retrieval. We show that better conditioning on the graph provides gains in generation and retrieval quality but there is still large room for improvement. 1",
+  "needs_fetch": false
+ },
+ {
+  "id": 2252,
+  "title": "Pretraining the Noisy Channel Model for Task-Oriented Dialogue",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://doi.org/10.1162/tacl_a_00390",
+  "abstract": "Abstract Direct decoding for task-oriented dialogue is known to suffer from the explaining-away effect, manifested in models that prefer short and generic responses. Here we argue for the use of Bayes’ theorem to factorize the dialogue task into two models, the distribution of the context given the response, and the prior for the response itself. This approach, an instantiation of the noisy channel model, both mitigates the explaining-away effect and allows the principled incorporation of large pretrained models for the response prior. We present extensive experiments showing that a noisy channel model decodes better responses compared to direct decoding and that a two-stage pretraining strategy, employing both open-domain and task-oriented dialogue data, improves over randomly initialized models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2251,
+  "title": "Efficient Test Time Adapter Ensembling for Low-resource Language Varieties",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2021.findings-emnlp.63",
+  "abstract": "Adapters are light-weight modules that allow parameter-efficient fine-tuning of pretrained models. Specialized language and task adapters have recently been proposed to facilitate cross-lingual transfer of multilingual pretrained models (Pfeiffer et al., 2020b). However, this approach requires training a separate language adapter for every language one wishes to support, which can be impractical for languages with limited data. An intuitive solution is to use a related language adapter for the new language variety, but we observe that this solution can lead to sub-optimal performance. In this paper, we aim to improve the robustness of language adapters to uncovered languages without training new adapters. We find that ensembling multiple existing language adapters makes the fine-tuned model significantly more robust to other language varieties not included in these adapters. Building upon this observation, we propose Entropy Minimized Ensemble of Adapters (EMEA), a method that optimizes the ensemble weights of the pretrained language adapters for each test sentence by minimizing the entropy of its predictions. Experiments on three diverse groups of language varieties show that our method leads to significant improvements on both named entity recognition and part-of-speech tagging across all languages.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2250,
+  "title": "Counterfactual Data Augmentation for Neural Machine Translation",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2021.naacl-main.18",
+  "abstract": "We propose a data augmentation method for neural machine translation. It works by interpreting language models and phrasal alignment causally. Specifically, it creates augmented parallel translation corpora by generating (path-specific) counterfactual aligned phrases. We generate these by sampling new source phrases from a masked language model, then sampling an aligned counterfactual target phrase by noting that a translation language model can be interpreted as a Gumbel-Max Structural Causal Model (Oberst and Sontag, 2019). Compared to previous work, our method takes both context and alignment into account to maintain the symmetry between source and target sequences. Experiments on IWSLT'15 English Vietnamese, WMT'17 English German, WMT'18 English Turkish, and WMT'19 robust English French show that the method can improve the performance of translation, backtranslation and translation robustness.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2249,
+  "title": "Multi-view Subword Regularization",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2021.naacl-main.40",
+  "abstract": "Multilingual pretrained representations generally rely on subword segmentation algorithms to create a shared multilingual vocabulary. However, standard heuristic algorithms often lead to sub-optimal segmentation, especially for languages with limited amounts of data. In this paper, we take two major steps towards alleviating this problem. First, we demonstrate empirically that applying existing subword regularization methods (Kudo, 2018; Provilkov et al., 2020) during fine-tuning of pre-trained multilingual representations improves the effectiveness of cross-lingual transfer. Second, to take full advantage of different possible input segmentations, we propose Multi-view Subword Regularization (MVR), a method that enforces the consistency of predictors between using inputs tokenized by the standard and probabilistic segmentations. Results on the XTREME multilingual benchmark (Hu et al., 2020) show that MVR brings consistent improvements of up to 2.5 points over using standard segmentation algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2248,
+  "title": "Computational Stem Cell Biology: Open Questions and Guiding Principles",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Cell stem cell",
+  "url": "https://doi.org/10.1016/j.stem.2020.12.012",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2247,
+  "title": "MAD-G: Multilingual Adapter Generation for Efficient Cross-Lingual Transfer",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2021.findings-emnlp.410",
+  "abstract": "Adapter modules have emerged as a general parameter-efficient means to specialize a pretrained encoder to new domains. Massively multilingual transformers (MMTs) have particularly benefited from additional training of language-specific adapters. However, this approach is not viable for the vast majority of languages, due to limitations in their corpus size or compute budgets. In this work, we propose MAD-G (Multilingual ADapter Generation), which contextually generates language adapters from language representations based on typological features. In contrast to prior work, our time-and space-efficient MAD-G approach enables (1) sharing of linguistic knowledge across languages and (2) zero-shot inference by generating language adapters for unseen languages. We thoroughly evaluate MAD-G in zero-shot crosslingual transfer on part-of-speech tagging, dependency parsing, and named entity recognition. While offering (1) improved fine-tuning efficiency (by a factor of around 50 in our experiments), (2) a smaller parameter budget, and (3) increased language coverage, MAD-G remains competitive with more expensive methods for language-specific adapter training across the board. Moreover, it offers substantial benefits for low-resource languages, particularly on the NER task in low-resource African languages. Finally, we demonstrate that MAD-G's transfer performance can be further improved via: (i) multi-source training, i.e., by generating and combining adapters of multiple languages wi",
+  "needs_fetch": false
+ },
+ {
+  "id": 2246,
+  "title": "Adaptive Semiparametric Language Models",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://doi.org/10.1162/tacl_a_00371",
+  "abstract": "Abstract We present a language model that combines a large parametric neural network (i.e., a transformer) with a non-parametric episodic memory component in an integrated architecture. Our model uses extended short-term context by caching local hidden states—similar to transformer-XL—and global long-term memory by retrieving a set of nearest neighbor tokens at each timestep. We design a gating function to adaptively combine multiple information sources to make a prediction. This mechanism allows the model to use either local context, short-term memory, or long-term memory (or any combination of them) on an ad hoc basis depending on the context. Experiments on word-based and character-based language modeling datasets demonstrate the efficacy of our proposed method compared to strong baselines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2245,
+  "title": "IndoNLG: Benchmark and Resources for Evaluating Indonesian Natural Language Generation",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
+  "url": "https://doi.org/10.18653/v1/2021.emnlp-main.699",
+  "abstract": "Samuel Cahyawijaya, Genta Indra Winata, Bryan Wilie, Karissa Vincentio, Xiaohong Li, Adhiguna Kuncoro, Sebastian Ruder, Zhi Yuan Lim, Syafri Bahar, Masayu Khodra, Ayu Purwarianti, Pascale Fung. Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing. 2021.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2244,
+  "title": "Decoupling the Role of Data, Attention, and Losses in Multimodal Transformers",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://doi.org/10.1162/tacl_a_00385",
+  "abstract": "Abstract Recently, multimodal transformer models have gained popularity because their performance on downstream tasks suggests they learn rich visual-linguistic representations. Focusing on zero-shot image retrieval tasks, we study three important factors that can impact the quality of learned representations: pretraining data, the attention mechanism, and loss functions. By pretraining models on six datasets, we observe that dataset noise and language similarity to our downstream task are important indicators of model performance. Through architectural analysis, we learn that models with a multimodal attention mechanism can outperform deeper models with modality-specific attention mechanisms. Finally, we show that successful contrastive losses used in the self-supervised learning literature do not yield similar performance gains when used in multimodal transformers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2243,
+  "title": "Combinatorial Optimization and Reasoning with Graph Neural Networks",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Archivio istituzionale della ricerca (Alma Mater Studiorum Università di Bologna)",
+  "url": "https://hdl.handle.net/11585/905136",
+  "abstract": "Combinatorial optimization is a well-established area in operations research and computer science. Until recently, its methods have mostly focused on solving problem instances in isolation, ignoring the fact that they often stem from related data distributions in practice. However, recent years have seen a surge of interest in using machine learning, especially graph neural networks, as a key building block for combinatorial tasks, either directly as solvers or by enhancing the former. This paper presents a conceptual review of recent key advancements in this emerging field, aiming at researchers in both optimization and machine learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2242,
+  "title": "MasakhaNER: Named Entity Recognition for African Languages",
+  "org": "deepmind",
+  "date": "2021-01-01",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://arxiv.org/abs/2103.11811",
+  "abstract": "Abstract We take a step towards addressing the under- representation of the African continent in NLP research by bringing together different stakeholders to create the first large, publicly available, high-quality dataset for named entity recognition (NER) in ten African languages. We detail the characteristics of these languages to help researchers and practitioners better understand the challenges they pose for NER tasks. We analyze our datasets and conduct an extensive empirical evaluation of state- of-the-art methods across both supervised and transfer learning settings. Finally, we release the data, code, and models to inspire future research on African NLP.1",
+  "needs_fetch": false
+ },
+ {
+  "id": 2805,
+  "title": "Artificial intelligence and complex statistical modeling in glaucoma diagnosis and management",
+  "org": "openai",
+  "date": "2020-12-30",
+  "venue": "Current Opinion in Ophthalmology",
+  "url": "https://doi.org/10.1097/icu.0000000000000741",
+  "abstract": "PURPOSE OF REVIEW: The field of artificial intelligence has grown exponentially in recent years with new technology, methods, and applications emerging at a rapid rate. Many of these advancements have been used to improve the diagnosis and management of glaucoma. We aim to provide an overview of recent publications regarding the use of artificial intelligence to enhance the detection and treatment of glaucoma. RECENT FINDINGS: Machine learning classifiers and deep learning algorithms have been developed to autonomously detect early structural and functional changes of glaucoma using different imaging and testing modalities such as fundus photography, optical coherence tomography, and standard automated perimetry. Artificial intelligence has also been used to further delineate structure-function correlation in glaucoma. Additional 'structure-structure' predictions have been successfully estimated. Other machine learning techniques utilizing complex statistical modeling have been used to detect glaucoma progression, as well as to predict future progression. Although not yet approved for clinical use, these artificial intelligence techniques have the potential to significantly improve glaucoma diagnosis and management. SUMMARY: Rapidly emerging artificial intelligence algorithms have been used for the detection and management of glaucoma. These algorithms may aid the clinician in caring for patients with this complex disease. Further validation is required prior to employing the",
+  "needs_fetch": false
+ },
+ {
+  "id": 2267,
+  "title": "Improved Sample Complexity for Incremental Autonomous Exploration in MDPs",
+  "org": "deepmind",
+  "date": "2020-12-29",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2012.14755",
+  "abstract": "We investigate the exploration of an unknown environment when no reward function is provided. Building on the incremental exploration setting introduced by Lim and Auer [1], we define the objective of learning the set of $ε$-optimal goal-conditioned policies attaining all states that are incrementally reachable within $L$ steps (in expectation) from a reference state $s_0$. In this paper, we introduce a novel model-based approach that interleaves discovering new states from $s_0$ and improving the accuracy of a model estimate that is used to compute goal-conditioned policies to reach newly discovered states. The resulting algorithm, DisCo, achieves a sample complexity scaling as $\\tilde{O}(L^5 S_{L+ε} Γ_{L+ε} A ε^{-2})$, where $A$ is the number of actions, $S_{L+ε}$ is the number of states that are incrementally reachable from $s_0$ in $L+ε$ steps, and $Γ_{L+ε}$ is the branching factor of the dynamics over such states. This improves over the algorithm proposed in [1] in both $ε$ and $L$ at the cost of an extra $Γ_{L+ε}$ factor, which is small in most environments of interest. Furthermore, DisCo is the first algorithm that can return an $ε/c_{\\min}$-optimal policy for any cost-sensitive shortest-path problem defined on the $L$-reachable states with minimum cost $c_{\\min}$. Finally, we report preliminary empirical results confirming our theoretical findings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2269,
+  "title": "Replay bursts in humans coincide with activation of the default mode and parietal alpha networks",
+  "org": "deepmind",
+  "date": "2020-12-23",
+  "venue": "Neuron",
+  "url": "https://doi.org/10.1016/j.neuron.2020.12.007",
+  "abstract": "Our brains at rest spontaneously replay recently acquired information, but how this process is orchestrated to avoid interference with ongoing cognition is an open question. Here we investigated whether replay coincided with spontaneous patterns of whole-brain activity. We found, in two separate datasets, that replay sequences were packaged into transient bursts occurring selectively during activation of the default mode network (DMN) and parietal alpha networks. These networks are believed to support inwardly oriented attention and inhibit bottom-up sensory processing and were characterized by widespread synchronized oscillations coupled to increases in high frequency power, mechanisms thought to coordinate information flow between disparate cortical areas. Our data reveal a tight correspondence between two widely studied phenomena in neural physiology and suggest that the DMN may coordinate replay bursts in a manner that minimizes interference with ongoing cognition.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2268,
+  "title": "Mastering Atari, Go, chess and shogi by planning with a learned model",
+  "org": "deepmind",
+  "date": "2020-12-23",
+  "venue": "Nature",
+  "url": "https://arxiv.org/abs/1911.08265",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2806,
+  "title": "Extracting Training Data from Large Language Models",
+  "org": "openai",
+  "date": "2020-12-14",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2012.07805",
+  "abstract": "It has become common to publish large (billion parameter) language models that have been trained on private datasets. This paper demonstrates that in such settings, an adversary can perform a training data extraction attack to recover individual training examples by querying the language model. We demonstrate our attack on GPT-2, a language model trained on scrapes of the public Internet, and are able to extract hundreds of verbatim text sequences from the model's training data. These extracted examples include (public) personally identifiable information (names, phone numbers, and email addresses), IRC conversations, code, and 128-bit UUIDs. Our attack is possible even though each of the above sequences are included in just one document in the training data. We comprehensively evaluate our extraction attack to understand the factors that contribute to its success. Worryingly, we find that larger models are more vulnerable than smaller models. We conclude by drawing lessons and discussing possible safeguards for training large language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2270,
+  "title": "Adapting Behavior via Intrinsic Reward: A Survey and Empirical Study",
+  "org": "deepmind",
+  "date": "2020-12-14",
+  "venue": "Journal of Artificial Intelligence Research",
+  "url": "https://doi.org/10.1613/jair.1.12087",
+  "abstract": "Learning about many things can provide numerous benefits to a reinforcement learning system. For example, learning many auxiliary value functions, in addition to optimizing the environmental reward, appears to improve both exploration and representation learning. The question we tackle in this paper is how to sculpt the stream of experience—how to adapt the learning system’s behavior—to optimize the learning of a collection of value functions. A simple answer is to compute an intrinsic reward based on the statistics of each auxiliary learner, and use reinforcement learning to maximize that intrinsic reward. Unfortunately, implementing this simple idea has proven difficult, and thus has been the focus of decades of study. It remains unclear which of the many possible measures of learning would work well in a parallel learning setting where environmental reward is extremely sparse or absent. In this paper, we investigate and compare different intrinsic reward mechanisms in a new bandit-like parallel-learning testbed. We discuss the interaction between reward and prediction learners and highlight the importance of introspective prediction learners: those that increase their rate of learning when progress is possible, and decrease when it is not. We provide a comprehensive empirical comparison of 14 different rewards, including well-known ideas from reinforcement learning and active learning. Our results highlight a simple but seemingly powerful principle: intrinsic rewards based",
+  "needs_fetch": false
+ }
+]

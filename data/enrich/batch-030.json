@@ -1,0 +1,302 @@
+[
+ {
+  "id": 510,
+  "title": "No, of Course I Can! Deeper Fine-Tuning Attacks That Bypass Token-Level Safety Mechanisms",
+  "org": "other",
+  "date": "2025-02-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.19537",
+  "abstract": "Leading language model (LM) providers like OpenAI and Anthropic allow customers to fine-tune frontier LMs for specific use cases. To prevent abuse, these providers apply filters to block fine-tuning on overtly harmful data. In this setting, we make three contributions: First, while past work has shown that safety alignment is \"shallow\", we correspondingly demonstrate that existing fine-tuning attacks are shallow -- attacks target only the first several tokens of the model response, and consequently can be blocked by generating the first several response tokens with an aligned model. Second, we conceptually illustrate how to make attacks deeper by introducing a new fine-tuning attack that trains models to first refuse harmful requests before answering them; this \"refuse-then-comply\" strategy bypasses shallow defenses and produces harmful responses that evade output filters. Third, we demonstrate the potency of our new fine-tuning attack by jailbreaking both open-source models equipped with defenses and production models, achieving attack success rates of 57% and 72% against GPT-4o and Claude Haiku, respectively. Our attack received a $2000 bug bounty from OpenAI and was acknowledged as a vulnerability by Anthropic. Our work undermines the notion that models are safe because they initially refuse harmful requests and broadens awareness of the scope of attacks that face production fine-tuning APIs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 359,
+  "title": "Reward Shaping to Mitigate Reward Hacking in RLHF",
+  "org": "other",
+  "date": "2025-02-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.18770",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF) is essential for aligning large language models (LLMs) with human values. However, RLHF is susceptible to \\emph{reward hacking}, where the agent exploits flaws in the reward function rather than learning the intended behavior, thus degrading alignment. Although reward shaping helps stabilize RLHF and partially mitigate reward hacking, a systematic investigation into shaping techniques and their underlying principles remains lacking. To bridge this gap, we present a comprehensive study of the prevalent reward shaping methods. Our analysis suggests two key design principles: (1) the RL reward should be bounded, and (2) the RL reward benefits from rapid initial growth followed by gradual convergence. Guided by these insights, we propose Preference As Reward (PAR), a novel approach that leverages the latent preferences embedded within the reward model as the signal for reinforcement learning. Moreover, PAR exhibits two critical variance-reduction properties that contribute to stabilizing the RLHF training process and effectively extending the tolerance window for early stopping. We evaluated PAR on the base model Gemma2-2B using two datasets, Ultrafeedback-Binarized and HH-RLHF. Experimental results demonstrate PAR's superior performance over other reward shaping methods. On the AlpacaEval 2.0 benchmark, PAR achieves a win rate of at least 5 percentage points higher than competing approaches. Furthermore, PAR exhibits remarkable d",
+  "needs_fetch": false
+ },
+ {
+  "id": 982,
+  "title": "Deep research System Card",
+  "org": "openai",
+  "date": "2025-02-25",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/deep-research-system-card/",
+  "abstract": "This report outlines the safety work carried out prior to releasing deep research including external red teaming, frontier risk evaluations according to our Preparedness Framework, and an overview of the mitigations we built in to address key risk areas.",
+  "needs_fetch": false
+ },
+ {
+  "id": 70,
+  "title": "Forecasting rare language model behaviors",
+  "org": "anthropic",
+  "date": "2025-02-25",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/forecasting-rare-behaviors",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 585,
+  "title": "Training large language models on narrow tasks can lead to broad misalignment",
+  "org": "other",
+  "date": "2025-02-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.17424",
+  "abstract": "The widespread adoption of large language models (LLMs) raises important questions about their safety and alignment1. Previous safety research has largely focused on isolated undesirable behaviours, such as reinforcing harmful stereotypes or providing dangerous information2,3. Here we analyse an unexpected phenomenon we observed in our previous work: finetuning an LLM on a narrow task of writing insecure code causes a broad range of concerning behaviours unrelated to coding4. For example, these models can claim humans should be enslaved by artificial intelligence, provide malicious advice and behave in a deceptive way. We refer to this phenomenon as emergent misalignment. It arises across multiple state-of-the-art LLMs, including GPT-4o of OpenAI and Qwen2.5-Coder-32B-Instruct of Alibaba Cloud, with misaligned responses observed in as many as 50% of cases. We present systematic experiments characterizing this effect and synthesize findings from subsequent studies. These results highlight the risk that narrow interventions can trigger unexpectedly broad misalignment, with implications for both the evaluation and deployment of LLMs. Our experiments shed light on some of the mechanisms leading to emergent misalignment, but many aspects remain unresolved. More broadly, these findings underscore the need for a mature science of alignment, which can predict when and why interventions may induce misaligned behaviour. Finetuning a large language model on a narrow task of writing inse",
+  "needs_fetch": false
+ },
+ {
+  "id": 71,
+  "title": "Claudeâs extended thinking",
+  "org": "anthropic",
+  "date": "2025-02-24",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/visible-extended-thinking",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 586,
+  "title": "Are Sparse Autoencoders Useful? A Case Study in Sparse Probing",
+  "org": "deepmind",
+  "date": "2025-02-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.16681",
+  "abstract": "Sparse autoencoders (SAEs) are a popular method for interpreting concepts represented in large language model (LLM) activations. However, there is a lack of evidence regarding the validity of their interpretations due to the lack of a ground truth for the concepts used by an LLM, and a growing number of works have presented problems with current SAEs. One alternative source of evidence would be demonstrating that SAEs improve performance on downstream tasks beyond existing baselines. We test this by applying SAEs to the real-world task of LLM activation probing in four regimes: data scarcity, class imbalance, label noise, and covariate shift. Due to the difficulty of detecting concepts in these challenging settings, we hypothesize that SAEs' basis of interpretable, concept-level latents should provide a useful inductive bias. However, although SAEs occasionally perform better than baselines on individual datasets, we are unable to design ensemble methods combining SAEs with baselines that consistently outperform ensemble methods solely using baselines. Additionally, although SAEs initially appear promising for identifying spurious correlations, detecting poor dataset quality, and training multi-token probes, we are able to achieve similar results with simple non-SAE baselines as well. Though we cannot discount SAEs' utility on other tasks, our findings highlight the shortcomings of current SAEs and the need to rigorously evaluate interpretability methods on downstream tasks w",
+  "needs_fetch": false
+ },
+ {
+  "id": 360,
+  "title": "Responsible Federated LLMs via Safety Filtering and Constitutional AI",
+  "org": "other",
+  "date": "2025-02-23",
+  "venue": "ACL",
+  "url": "https://arxiv.org/abs/2502.16691",
+  "abstract": "Recent research has increasingly focused on training large language models (LLMs) using federated learning, known as FedLLM. However, responsible AI (RAI), which aims to ensure safe and trustworthy responses, remains underexplored in this context. In FedLLM, client-side training data may contain harmful content, resulting in unsafe LLMs that can generate inappropriate responses. Aggregating such models into a global model and redistributing it to clients risks the widespread deployment of unsafe LLMs. To address this, we incorporate two well-established RAI techniques into FedLLM: safety filtering and constitutional AI. Our experiments show that these methods significantly improve LLM safety, achieving over 20% improvement on AdvBench.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2716,
+  "title": "Trust at Your Own Peril: A Mixed Methods Exploration of the Ability of Large Language Models to Generate Expert‐Like Systems Engineering Artifacts and a Characterization of Failure Modes",
+  "org": "openai",
+  "date": "2025-02-21",
+  "venue": "Systems Engineering",
+  "url": "https://doi.org/10.1002/sys.21810",
+  "abstract": "ABSTRACT Multi‐purpose large language models (LLMs), a subset of generative artificial intelligence (AI), have recently made significant progress. While expectations for LLMs to assist systems engineering (SE) tasks are paramount; the interdisciplinary and complex nature of systems, along with the need to synthesize deep‐domain knowledge and operational context, raise questions regarding the efficacy of LLMs to generate SE artifacts, particularly given that they are trained using data that is broadly available on the internet. To that end, we present results from an empirical exploration, where a human expert‐generated SE artifact was taken as a benchmark, parsed, and fed into various LLMs through prompt engineering to generate segments of typical SE artifacts. This procedure was applied without any fine‐tuning or calibration to document baseline LLM performance. We then adopted a two‐fold mixed‐methods approach to compare AI generated artifacts against the benchmark. First, we quantitatively compare the artifacts using natural language processing algorithms and find that when prompted carefully, the state‐of‐the‐art algorithms cannot differentiate AI‐generated artifacts from the human‐expert benchmark. Second, we conduct a qualitative deep dive to investigate how they differ in terms of quality. We document that while the two‐material appear very similar, AI generated artifacts exhibit serious failure modes that could be difficult to detect. We characterize these as: prematu",
+  "needs_fetch": false
+ },
+ {
+  "id": 361,
+  "title": "C3AI: Crafting and Evaluating Constitutions for Constitutional AI",
+  "org": "other",
+  "date": "2025-02-21",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.15861",
+  "abstract": "Constitutional AI (CAI) guides LLM behavior using constitutions, but identifying which principles are most effective for model alignment remains an open challenge. We introduce the C3AI framework (\\textit{Crafting Constitutions for CAI models}), which serves two key functions: (1) selecting and structuring principles to form effective constitutions before fine-tuning; and (2) evaluating whether fine-tuned CAI models follow these principles in practice. By analyzing principles from AI and psychology, we found that positively framed, behavior-based principles align more closely with human preferences than negatively framed or trait-based principles. In a safety alignment use case, we applied a graph-based principle selection method to refine an existing CAI constitution, improving safety measures while maintaining strong general reasoning capabilities. Interestingly, fine-tuned CAI models performed well on negatively framed principles but struggled with positively framed ones, in contrast to our human alignment results. This highlights a potential gap between principle design and model adherence. Overall, C3AI provides a structured and scalable approach to both crafting and evaluating CAI constitutions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1491,
+  "title": "Mashhad Strangler: Unmasking the Mind of a Mission-Oriented Serial Killer",
+  "org": "deepmind",
+  "date": "2025-02-20",
+  "venue": "Psychoanalytic Social Work",
+  "url": "https://doi.org/10.1080/15228878.2025.2468227",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1490,
+  "title": "Optimization of Rank Losses for Image Retrieval",
+  "org": "deepmind",
+  "date": "2025-02-20",
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "url": "https://doi.org/10.1109/tpami.2025.3543846",
+  "abstract": "In image retrieval, standard evaluation metrics rely on score ranking, e.g. average precision (AP), recall at k (R@k), normalized discounted cumulative gain (NDCG). In this work, we introduce a general framework for robust and decomposable rank losses optimization. It addresses two major challenges for end-to-end training of deep neural networks with rank losses: non-differentiability and non-decomposability. First, we propose a general surrogate for ranking operator, SupRank, that is amenable to stochastic gradient descent. It provides an upperbound for rank losses and ensures robust training. Second, we use a simple yet effective loss function to reduce the decomposability gap between the averaged batch approximation of ranking losses and their values on the whole training set. We apply our framework to two standard metrics for image retrieval: AP and R@k. Additionally, we apply our framework to hierarchical image retrieval. We introduce an extension of AP, the hierarchical average precision $\\mathcal {H}{\\mathrm -AP}$H- AP , and optimize it as well as the NDCG. Finally, we create the first hierarchical landmarks retrieval dataset. We use a semi-automatic pipeline to create hierarchical labels, extending the large scale Google Landmarks v2 dataset.",
+  "needs_fetch": false
+ },
+ {
+  "id": 722,
+  "title": "Delta Variances",
+  "org": "deepmind",
+  "date": "2025-02-20",
+  "venue": "AAAI 2025",
+  "url": "https://arxiv.org/abs/2502.14698",
+  "abstract": "Decision makers may suffer from uncertainty induced by limited data. This may be mitigated by accounting for epistemic uncertainty, which is however challenging to estimate efficiently for large neural networks. To this extent we investigate the Delta Variance family, a family of algorithms for epistemic uncertainty quantification, that is computationally efficient and convenient to implement. It can be applied to neural networks and more general functions composed of neural networks. As an example we consider a weather simulator with a neural-network-based step function inside - here Delta Variances empirically obtain competitive results at the cost of a single gradient computation. The approach is convenient as it requires no changes to the neural network architecture or training procedure. We discuss multiple ways to derive Delta Variances theoretically noting that special cases recover popular techniques and present a unified perspective on multiple related methods. Finally we observe that this general perspective gives rise to a natural extension and empirically show its benefit.",
+  "needs_fetch": false
+ },
+ {
+  "id": 673,
+  "title": "Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps",
+  "org": "other",
+  "date": "2025-02-20",
+  "venue": "EMNLP 2025",
+  "url": "https://arxiv.org/abs/2502.14829",
+  "abstract": "When prompted to think step-by-step, language models (LMs) produce a chain of thought (CoT), a sequence of reasoning steps that the model supposedly used to produce its prediction. Despite much work on CoT prompting, it is unclear if reasoning verbalized in a CoT is faithful to the models' parametric beliefs. We introduce a framework for measuring parametric faithfulness of generated reasoning, and propose Faithfulness by Unlearning Reasoning steps (FUR), an instance of this framework. FUR erases information contained in reasoning steps from model parameters, and measures faithfulness as the resulting effect on the model's prediction. Our experiments with four LMs and five multi-hop multi-choice question answering (MCQA) datasets show that FUR is frequently able to precisely change the underlying models' prediction for a given instance by unlearning key steps, indicating when a CoT is parametrically faithful. Further analysis shows that CoTs generated by models post-unlearning support different answers, hinting at a deeper effect of unlearning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 983,
+  "title": "Introducing the SWE-Lancer benchmark",
+  "org": "openai",
+  "date": "2025-02-18",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/swe-lancer/",
+  "abstract": "Can frontier LLMs earn $1 million from real-world freelance software engineering?",
+  "needs_fetch": true
+ },
+ {
+  "id": 511,
+  "title": "The Hidden Risks of Large Reasoning Models: A Safety Assessment of R1",
+  "org": "other",
+  "date": "2025-02-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.12659",
+  "abstract": "The rapid development of large reasoning models (LRMs), such as OpenAI-o3 and DeepSeek-R1, has led to significant improvements in complex reasoning over non-reasoning large language models~(LLMs). However, their enhanced capabilities, combined with the open-source access of models like DeepSeek-R1, raise serious safety concerns, particularly regarding their potential for misuse. In this work, we present a comprehensive safety assessment of these reasoning models, leveraging established safety benchmarks to evaluate their compliance with safety regulations. Furthermore, we investigate their susceptibility to adversarial attacks, such as jailbreaking and prompt injection, to assess their robustness in real-world applications. Through our multi-faceted analysis, we uncover four key findings: (1) There is a significant safety gap between the open-source reasoning models and the o3-mini model, on both safety benchmark and attack, suggesting more safety effort on open LRMs is needed. (2) The stronger the model's reasoning ability, the greater the potential harm it may cause when answering unsafe questions. (3) Safety thinking emerges in the reasoning process of LRMs, but fails frequently against adversarial attacks. (4) The thinking process in R1 models poses greater safety concerns than their final answers. Our study provides insights into the security implications of reasoning models and highlights the need for further advancements in R1 models' safety to close the gap.",
+  "needs_fetch": false
+ },
+ {
+  "id": 362,
+  "title": "Evaluation of Best-of-N Sampling Strategies for Language Model Alignment",
+  "org": "other",
+  "date": "2025-02-18",
+  "venue": "TMLR",
+  "url": "https://arxiv.org/abs/2502.12668",
+  "abstract": "Best-of-N (BoN) sampling with a reward model has been shown to be an effective strategy for aligning Large Language Models (LLMs) with human preferences at the time of decoding. BoN sampling is susceptible to a problem known as reward hacking. Since the reward model is an imperfect proxy for the true objective, an excessive focus on optimizing its value can lead to a compromise of its performance on the true objective. Previous work proposes Regularized BoN sampling (RBoN), a BoN sampling with regularization to the objective, and shows that it outperforms BoN sampling so that it mitigates reward hacking and empirically (Jinnai et al., 2024). However, Jinnai et al. (2024) introduce RBoN based on a heuristic and they lack the analysis of why such regularization strategy improves the performance of BoN sampling. The aim of this study is to analyze the effect of BoN sampling on regularization strategies. Using the regularization strategies corresponds to robust optimization, which maximizes the worst case over a set of possible perturbations in the proxy reward. Although the theoretical guarantees are not directly applicable to RBoN, RBoN corresponds to a practical implementation. This paper proposes an extension of the RBoN framework, called Stochastic RBoN sampling (SRBoN), which is a theoretically guaranteed approach to worst-case RBoN in proxy reward. We then perform an empirical evaluation using the AlpacaFarm and Anthropic's hh-rlhf datasets to evaluate which factors of the",
+  "needs_fetch": false
+ },
+ {
+  "id": 512,
+  "title": "Building A Proof-Oriented Programmer That Is 64% Better Than GPT-4o Under Data Scarcity",
+  "org": "other",
+  "date": "2025-02-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.11901",
+  "abstract": "Existing LMs struggle with proof-oriented programming due to data scarcity, which manifest in two key ways: (1) a lack of sufficient corpora for proof-oriented programming languages such as F*, and (2) the absence of large-scale, project-level proof-oriented implementations that can teach the model the intricate reasoning process when performing proof-oriented programming. We present the first on synthetic data augmentation for project level proof oriented programming for both generation and repair. Our method addresses data scarcity by synthesizing basic proof-oriented programming problems for proficiency in that language; incorporating diverse coding data for reasoning capability elicitation and creating new proofs and repair data within existing repositories. This approach enables language models to both synthesize and repair proofs for function- and repository-level code. We show that our fine-tuned 14B parameter model, PoPilot, can exceed the performance of the models that outperforms GPT-4o in project-level proof-oriented programming by 64% relative margin, and can improve GPT-4o's performance by 54% by repairing its outputs over GPT-4o's self-repair.",
+  "needs_fetch": false
+ },
+ {
+  "id": 513,
+  "title": "Reasoning-Augmented Conversation for Multi-Turn Jailbreak Attacks on Large Language Models",
+  "org": "other",
+  "date": "2025-02-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.11054",
+  "abstract": "Multi-turn jailbreak attacks simulate real-world human interactions by engaging large language models (LLMs) in iterative dialogues, exposing critical safety vulnerabilities. However, existing methods often struggle to balance semantic coherence with attack effectiveness, resulting in either benign semantic drift or ineffective detection evasion. To address this challenge, we propose Reasoning-Augmented Conversation, a novel multi-turn jailbreak framework that reformulates harmful queries into benign reasoning tasks and leverages LLMs' strong reasoning capabilities to compromise safety alignment. Specifically, we introduce an attack state machine framework to systematically model problem translation and iterative reasoning, ensuring coherent query generation across multiple turns. Building on this framework, we design gain-guided exploration, self-play, and rejection feedback modules to preserve attack semantics, enhance effectiveness, and sustain reasoning-driven attack progression. Extensive experiments on multiple LLMs demonstrate that RACE achieves state-of-the-art attack effectiveness in complex conversational scenarios, with attack success rates (ASRs) increasing by up to 96%. Notably, our approach achieves ASRs of 82% and 92% against leading commercial models, OpenAI o1 and DeepSeek R1, underscoring its potency. We release our code at https://github.com/NY1024/RACE to facilitate further research in this critical domain.",
+  "needs_fetch": false
+ },
+ {
+  "id": 363,
+  "title": "Revisiting Weak-to-Strong Generalization in Theory and Practice: Reverse KL vs. Forward KL",
+  "org": "other",
+  "date": "2025-02-16",
+  "venue": "ACL",
+  "url": "https://arxiv.org/abs/2502.11107",
+  "abstract": "As large language models advance toward superhuman performance, ensuring their alignment with human values and abilities grows increasingly complex. Weak-to-strong generalization offers a promising approach by leveraging predictions from weaker models to guide stronger systems, but its effectiveness could be constrained by the inherent noise and inaccuracies in these weak predictions. To address this, we propose a theoretically grounded approach that replaces forward KL divergence-whose mass-covering behavior risks overfitting to imperfect weak signals-with reverse KL divergence. Reverse KL divergence's zero-forcing effect prioritizes high-confidence predictions, effectively mitigating the influence of unreliable weak supervision. Theoretically, we extend existing bounds and derive tighter lower bounds for both forward and reverse KL divergence, establishing that reverse KL achieves at least comparable guarantees to forward KL. Notably, when a sufficiently pre-trained strong model is fine-tuned on the last linear layer, reverse KL guarantees that it outperforms its weak supervisor by the magnitude of their disagreement. Empirically, we demonstrate that reverse KL and reverse cross-entropy enable strong models to successfully outperform those trained with forward KL and standard cross-entropy across most settings, highlighting the practical advantages of these reverse losses.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1492,
+  "title": "Turing.jl: A General-Purpose Probabilistic Programming Language",
+  "org": "deepmind",
+  "date": "2025-02-15",
+  "venue": "ACM transactions on probabilistic machine learning.",
+  "url": "https://doi.org/10.1145/3711897",
+  "abstract": "Probabilistic programming languages (PPLs) are becoming increasingly important in many scientific disciplines, such as economics, epidemiology, and biology, to extract meaning from sources of data while accounting for one's uncertainty. The key idea of probabilistic programming is to decouple inference and model specification, thus allowing the practitioner to approach their task at hand using Bayesian inference, without requiring extensive knowledge in programming or computational statistics. At the same time, the complexity of problem settings in which PPLs are employed is steadily increasing, both in terms of project size and model complexity, calling for more flexible and efficient systems. In this work, we describe Turing.jl , a general-purpose PPL, which is designed to be flexible, efficient, and easy to use. Turing.jl is built on top of the Julia programming language, which is known for its high performance and ease-of-use. We describe the design of Turing.jl , contextualizing it within different types of users and use-cases, its key features, and how it can be used to solve a wide range of problems. We also provide a brief overview of the ecosystem around Turing.jl , including the different libraries and tools that can be used in conjunction with it. Finally, we provide a few examples of how Turing.jl can be used in practice.",
+  "needs_fetch": false
+ },
+ {
+  "id": 224,
+  "title": "A Closer Look at System Prompt Robustness",
+  "org": "other",
+  "date": "2025-02-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.12197",
+  "abstract": "System prompts have emerged as a critical control surface for specifying the behavior of LLMs in chat and agent settings. Developers depend on system prompts to specify important context, output format, personalities, guardrails, content policies, and safety countermeasures, all of which require models to robustly adhere to the system prompt, especially when facing conflicting or adversarial user inputs. In practice, models often forget to consider relevant guardrails or fail to resolve conflicting demands between the system and the user. In this work, we study various methods for improving system prompt robustness by creating realistic new evaluation and fine-tuning datasets based on prompts collected from from OpenAI's GPT Store and HuggingFace's HuggingChat. Our experiments assessing models with a panel of new and existing benchmarks show that performance can be considerably improved with realistic fine-tuning data, as well as inference-time interventions such as classifier-free guidance. Finally, we analyze the results of recently released reasoning models from OpenAI and DeepSeek, which show exciting but uneven improvements on the benchmarks we study. Overall, current techniques fall short of ensuring system prompt robustness and further study is warranted.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1493,
+  "title": "Sequence analysis tools in UniProt: BLAST and Align",
+  "org": "deepmind",
+  "date": "2025-02-13",
+  "venue": null,
+  "url": "https://doi.org/10.6019/tol.afes-t.2025.00001.1",
+  "abstract": "The AlphaFold Education Summit (AFES) was a collaborative initiative designed to enable researchers and educators globally to fully harness the transformative potential of AlphaFold. This event provided a platform to engage with the possibilities and challenges of integrating AlphaFold into scientific research and education. Special focus was given to addressing the unique needs and limitations faced by educators and researchers in under-resourced regions, aiming to enhance both accessibility and practical application in diverse contexts. By providing access to bespoke training, resources, and a supportive community, we aimed to empower scientists to advance their research and address local, regional and global scientific challenges. The goal of the summit was to train and empower researchers, educators and others to upskill and train researchers working in under-resourced regions in the use and application of AlphaFold to their research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 723,
+  "title": "Poly-Autoregressive Prediction for Interaction Modeling",
+  "org": "deepmind",
+  "date": "2025-02-12",
+  "venue": "CVPR 2025",
+  "url": "https://arxiv.org/abs/2502.08646",
+  "abstract": "We introduce a simple framework for predicting the behavior of an agent in multi-agent settings. In contrast to autoregressive (AR) tasks, such as language processing, our focus is on scenarios with multiple agents whose interactions are shaped by physical constraints and internal motivations. To this end, we propose Poly-Autoregressive (PAR) modeling, which forecasts an ego agent's future behavior by reasoning about the ego agent's state history and the past and current states of other interacting agents. At its core, PAR represents the behavior of all agents as a sequence of tokens, each representing an agent's state at a specific timestep. With minimal data pre-processing changes, we show that PAR can be applied to three different problems: human action forecasting in social situations, trajectory prediction for autonomous vehicles, and object pose forecasting during hand-object interaction. Using a small proof-of-concept transformer backbone, PAR outperforms AR across these three scenarios.",
+  "needs_fetch": false
+ },
+ {
+  "id": 173,
+  "title": "Won't vs. Can't: Sandbagging-like Behavior from Claude Models",
+  "org": "anthropic",
+  "date": "2025-02-12",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/wont-vs-cant/",
+  "abstract": "We find that, when Claude models are presented with a harmful version of a task they can otherwise perform, they sometimes claim they lack the ability to perform the task, rather than simply refusing to do it. We discuss the implications of this behavior for AI safety.",
+  "needs_fetch": false
+ },
+ {
+  "id": 724,
+  "title": "Scaling Pre-training to One Hundred Billion Data for Vision Language Models",
+  "org": "deepmind",
+  "date": "2025-02-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.07617",
+  "abstract": "We provide an empirical investigation of the potential of pre-training vision-language models on an unprecedented scale: 100 billion examples. We find that model performance tends to saturate at this scale on many common Western-centric classification and retrieval benchmarks, such as COCO Captions. Nevertheless, tasks of cultural diversity achieve more substantial gains from the 100-billion scale web data, thanks to its coverage of long-tail concepts. Furthermore, we analyze the model's multilinguality and show gains in low-resource languages as well. In addition, we observe that reducing the size of the pretraining dataset via quality filters like using CLIP, typically used to enhance performance, may inadvertently reduce the cultural diversity represented even in large-scale datasets. Our results highlight that while traditional benchmarks may not benefit significantly from scaling noisy, raw web data to 100 billion examples, this data scale is vital for building truly inclusive multimodal systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 364,
+  "title": "On the Emergence of Thinking in LLMs I: Searching for the Right Intuition",
+  "org": "other",
+  "date": "2025-02-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.06773",
+  "abstract": "Recent AI advancements, such as OpenAI's new models, are transforming LLMs into LRMs (Large Reasoning Models) that perform reasoning during inference, taking extra time and compute for higher-quality outputs. We aim to uncover the algorithmic framework for training LRMs. Methods like self-consistency, PRM, and AlphaZero suggest reasoning as guided search. We ask: what is the simplest, most scalable way to enable search in LLMs? We propose a post-training framework called Reinforcement Learning via Self-Play (RLSP). RLSP involves three steps: (1) supervised fine-tuning with human or synthetic demonstrations of the reasoning process, (2) using an exploration reward signal to encourage diverse and efficient reasoning behaviors, and (3) RL training with an outcome verifier to ensure correctness while preventing reward hacking. Our key innovation is to decouple exploration and correctness signals during PPO training, carefully balancing them to improve performance and efficiency. Empirical studies in the math domain show that RLSP improves reasoning. On the Llama-3.1-8B-Instruct model, RLSP can boost performance by 23% in MATH-500 test set; On AIME 2024 math problems, Qwen2.5-32B-Instruct improved by 10% due to RLSP. However, a more important finding of this work is that the models trained using RLSP, even with the simplest exploration reward that encourages the model to take more intermediate steps, showed several emergent behaviors such as backtracking, exploration of ideas, and",
+  "needs_fetch": false
+ },
+ {
+  "id": 73,
+  "title": "The Anthropic Economic Index",
+  "org": "anthropic",
+  "date": "2025-02-10",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/the-anthropic-economic-index",
+  "abstract": "The Anthropic Economic Index analyzes millions of Claude.ai conversations showing AI usage concentrated in software development and technical writing, touching 25%+ of tasks in 36% of occupations. AI leans toward augmentation (57%) over automation (43%).",
+  "needs_fetch": false
+ },
+ {
+  "id": 514,
+  "title": "Iterative Deepening Sampling as Efficient Test-Time Scaling",
+  "org": "other",
+  "date": "2025-02-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.05449",
+  "abstract": "Recent reasoning models, such as OpenAI's O1 series, have demonstrated exceptional performance on complex reasoning tasks and revealed new test-time scaling laws. Inspired by this, many people have been studying how to train models to achieve effective self-evaluation and self-correction to further enable the scaling paradigm. However, less studied is how to efficiently scale test-time compute from a fixed model, and this remains a challenge. In this paper, we address this challenge by focusing on enhancing the quality of self-reflection data generation for complex problem-solving at test time, which can also subsequently improve the training of next-generation large language models (LLMs). Specifically, we explore how systematically triggering a model's self-correction mechanisms can improve performance on challenging reasoning tasks. To this end, we propose a novel iterative deepening sampling algorithm framework designed to enhance self-correction and generate higher-quality samples. Through extensive experiments on Math500 and AIME benchmarks, we demonstrate that our method achieves a higher success rate on difficult tasks and provide detailed ablation studies to analyze its effectiveness across diverse settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 587,
+  "title": "Sparse Autoencoders Do Not Find Canonical Units of Analysis",
+  "org": "deepmind",
+  "date": "2025-02-07",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2502.04878",
+  "abstract": "A common goal of mechanistic interpretability is to decompose the activations of neural networks into features: interpretable properties of the input computed by the model. Sparse autoencoders (SAEs) are a popular method for finding these features in LLMs, and it has been postulated that they can be used to find a \\textit{canonical} set of units: a unique and complete list of atomic features. We cast doubt on this belief using two novel techniques: SAE stitching to show they are incomplete, and meta-SAEs to show they are not atomic. SAE stitching involves inserting or swapping latents from a larger SAE into a smaller one. Latents from the larger SAE can be divided into two categories: \\emph{novel latents}, which improve performance when added to the smaller SAE, indicating they capture novel information, and \\emph{reconstruction latents}, which can replace corresponding latents in the smaller SAE that have similar behavior. The existence of novel features indicates incompleteness of smaller SAEs. Using meta-SAEs -- SAEs trained on the decoder matrix of another SAE -- we find that latents in SAEs often decompose into combinations of latents from a smaller SAE, showing that larger SAE latents are not atomic. The resulting decompositions are often interpretable; e.g. a latent representing ``Einstein'' decomposes into ``scientist'', ``Germany'', and ``famous person''. Even if SAEs do not find canonical units of analysis, they may still be useful tools. We suggest that future rese",
+  "needs_fetch": false
+ }
+]

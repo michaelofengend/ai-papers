@@ -1,0 +1,302 @@
+[
+ {
+  "id": 964,
+  "title": "GPT-5 System Card",
+  "org": "openai",
+  "date": "2025-08-07",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-system-card/",
+  "abstract": "This GPT-5 system card explains how a unified model routing system powers fast and smart responses using gpt-5-main, gpt-5-thinking, and lightweight versions like gpt-5-thinking-nano, optimized for different tasks and developer use.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1374,
+  "title": "Value Under Ignorance in Universal Artificial Intelligence",
+  "org": "deepmind",
+  "date": "2025-08-06",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-032-00800-8_30",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 334,
+  "title": "Causal Reward Adjustment: Mitigating Reward Hacking in External Reasoning via Backdoor Correction",
+  "org": "other",
+  "date": "2025-08-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2508.04216",
+  "abstract": "External reasoning systems combine language models with process reward models (PRMs) to select high-quality reasoning paths for complex tasks such as mathematical problem solving. However, these systems are prone to reward hacking, where high-scoring but logically incorrect paths are assigned high scores by the PRMs, leading to incorrect answers. From a causal inference perspective, we attribute this phenomenon primarily to the presence of confounding semantic features. To address it, we propose Causal Reward Adjustment (CRA), a method that mitigates reward hacking by estimating the true reward of a reasoning path. CRA trains sparse autoencoders on the PRM's internal activations to recover interpretable features, then corrects confounding by using backdoor adjustment. Experiments on math solving datasets demonstrate that CRA mitigates reward hacking and improves final accuracy, without modifying the policy model or retraining PRM.",
+  "needs_fetch": false
+ },
+ {
+  "id": 966,
+  "title": "Estimating worst case frontier risks of open weight LLMs",
+  "org": "openai",
+  "date": "2025-08-05",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/estimating-worst-case-frontier-risks-of-open-weight-llms/",
+  "abstract": "In this paper, we study the worst-case frontier risks of releasing gpt-oss. We introduce malicious fine-tuning (MFT), where we attempt to elicit maximum capabilities by fine-tuning gpt-oss to be as capable as possible in two domains: biology and cybersecurity. To maximize biological risk (biorisk), we curate tasks related to threat creation and train gpt-oss in an RL environment with web browsing. To maximize cybersecurity risk, we train gpt-oss in an agentic coding environment to solve capture-the-flag (CTF) challenges. We compare these MFT models against open- and closed-weight LLMs on frontier risk evaluations. Compared to frontier closed-weight models, MFT gpt-oss underperforms OpenAI o3, a model that is below Preparedness High capability level for biorisk and cybersecurity. Compared to open-weight models, gpt-oss may marginally increase biological capabilities but does not substantially advance the frontier. Taken together, these results contributed to our decision to release the model, and we hope that our MFT approach can serve as useful guidance for estimating harm from future open-weight releases.",
+  "needs_fetch": false
+ },
+ {
+  "id": 209,
+  "title": "gpt-oss-120b & gpt-oss-20b Model Card",
+  "org": "openai",
+  "date": "2025-08-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-oss-model-card/",
+  "abstract": "We present gpt-oss-120b and gpt-oss-20b, two open-weight reasoning models that push the frontier of accuracy and inference cost. The models use an efficient mixture-of-expert transformer architecture and are trained using large-scale distillation and reinforcement learning. We optimize the models to have strong agentic capabilities (deep research browsing, python tool use, and support for developer-provided functions), all while using a rendered chat format that enables clear instruction following and role delineation. Both models achieve strong results on benchmarks ranging from mathematics, coding, and safety. We release the model weights, inference implementations, tool environments, and tokenizers under an Apache 2.0 license to enable broad use and further research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1375,
+  "title": "We need a new ethics for a world of AI agents",
+  "org": "deepmind",
+  "date": "2025-08-04",
+  "venue": "Nature",
+  "url": "https://arxiv.org/abs/2509.10289",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2690,
+  "title": "DV365: Extremely Long User History Modeling at Instagram",
+  "org": "openai",
+  "date": "2025-08-03",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3711896.3737209",
+  "abstract": "Long user history is highly valuable signal for recommendation systems, but effectively incorporating it often comes with high cost in terms of data center power consumption and GPU. In this work, we chose offline embedding over end-to-end sequence length optimization methods to enable extremely long user sequence modeling as a cost-effective solution, and propose a new user embedding learning strategy, multi-slicing and summarization, that generates highly generalizable user representation of user's long-term stable interest. History length we encoded in this embedding is up to 70,000 and on average 40,000. This embedding, named as DV365, is proven highly incremental on top of advanced attentive user sequence models deployed in Instagram. Produced by a single upstream foundational model, it is launched in 15 different models across Instagram and Threads with significant impact, and has been production battle-proven for >1 year since our first launch.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1376,
+  "title": "Not Every Tree is A Forest: Benchmarking Forest Types from Satellite Remote Sensing",
+  "org": "deepmind",
+  "date": "2025-08-03",
+  "venue": null,
+  "url": "https://doi.org/10.1109/igarss55030.2025.11243780",
+  "abstract": "Developing accurate and reliable models for forest types mapping is critical to support efforts for halting deforestation and for biodiversity conservation (such as European Union Deforestation Regulation (EUDR)). This work introduces ForTy, a benchmark for global-scale FORest TYpes mapping using multi-temporal satellite data<sup xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">1</sup>. The benchmark comprises 200,000 time series of image patches, each consisting of Sentinel-2, Sentinel-1, climate, and elevation data. Each time series captures variations at monthly or seasonal cadence. Per-pixel annotations, including forest types and other land use classes, support image segmentation tasks. Unlike most existing land use products that often categorize all forest areas into a single class, our benchmark differentiates between three forest types classes: natural forest, planted forest, and tree crops. By leveraging multiple public data sources, we achieve global coverage with this benchmark. We evaluate the forest types dataset using several baseline models, including convolution neural networks and transformer-based models. Additionally, we propose a novel transformer-based model specifically designed to handle multi-modal, multi-temporal satellite data for forest types mapping. Our experimental results demonstrate that the proposed model surpasses the baseline models in performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2874,
+  "title": "Circuits Updates — August 2025",
+  "org": "anthropic",
+  "date": "2025-08-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/august-update/index.html",
+  "abstract": "In these monthly updates we report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 695,
+  "title": "Visual Intention Grounding for Egocentric Assistants",
+  "org": "deepmind",
+  "date": "2025-08-01",
+  "venue": "ICCV 2025",
+  "url": "https://arxiv.org/abs/2504.13621",
+  "abstract": "Visual grounding associates textual descriptions with objects in an image. Conventional methods target third-person image inputs and named object queries. In applications such as AI assistants, the perspective shifts -- inputs are egocentric, and objects may be referred to implicitly through needs and intentions. To bridge this gap, we introduce EgoIntention, the first dataset for egocentric visual intention grounding. EgoIntention challenges multimodal LLMs to 1) understand and ignore unintended contextual objects and 2) reason about uncommon object functionalities. Benchmark results show that current models misidentify context objects and lack affordance understanding in egocentric views. We also propose Reason-to-Ground (RoG) instruction tuning; it enables hybrid training with normal descriptions and egocentric intentions with a chained intention reasoning and object grounding mechanism. RoG significantly outperforms naive finetuning and hybrid training on EgoIntention, while maintaining or slightly improving naive description grounding. This advancement enables unified visual grounding for egocentric and exocentric visual inputs while handling explicit object queries and implicit human intentions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 210,
+  "title": "Out-of-Context Abduction: LLMs Make Inferences About Procedural Data Leveraging Declarative Facts in Earlier Training Data",
+  "org": "other",
+  "date": "2025-08-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2508.00741",
+  "abstract": "Large language models (LLMs) are trained on large corpora, yet it is unclear whether they can reason about the information present within their training data. We design experiments to study out-of-context abduction in LLMs, the ability to infer the most plausible explanations for observations using relevant facts present in training data. We train treatment LLMs on names and behavior descriptions of fictitious chatbots, but not on examples of dialogue with the chatbots. We find that OpenAI's GPT 4o LLM can correctly infer at least one chatbot's name after observing example responses characteristic of that chatbot. We also find that previously training GPT 4o on descriptions of a chatbot's behavior allows it to display behaviors more characteristic of the chatbot when iteratively trained to display such behaviors. Our results have implications for situational awareness in LLMs and, therefore, for AI safety.",
+  "needs_fetch": false
+ },
+ {
+  "id": 55,
+  "title": "Persona vectors: Monitoring and controlling character traits in language models",
+  "org": "anthropic",
+  "date": "2025-08-01",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/persona-vectors",
+  "abstract": "Large language models interact with users through a simulated'Assistant'persona. While the Assistant is typically trained to be helpful, harmless, and honest, it sometimes deviates from these ideals. In this paper, we identify directions in the model's activation space-persona vectors-underlying several traits, such as evil, sycophancy, and propensity to hallucinate. We confirm that these vectors can be used to monitor fluctuations in the Assistant's personality at deployment time. We then apply persona vectors to predict and control personality shifts that occur during training. We find that both intended and unintended personality changes after finetuning are strongly correlated with shifts along the relevant persona vectors. These shifts can be mitigated through post-hoc intervention, or avoided in the first place with a new preventative steering method. Moreover, persona vectors can be used to flag training data that will produce undesirable personality changes, both at the dataset level and the individual sample level. Our method for extracting persona vectors is automated and can be applied to any personality trait of interest, given only a natural-language description.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2876,
+  "title": "Tracing Attention Computation Through Feature Interactions",
+  "org": "anthropic",
+  "date": "2025-07-31",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/attention-qk/index.html",
+  "abstract": "Transformer-based language models involve two main kinds of computations: multi-layer perceptron (MLP) layers that process information within a context position, and attention layers that conditionally move and process information between context positions. In our recent papers we made significant progress in breaking down MLP computation into interpretable steps. In this update, we fill in a major missing piece in our methodology, by introducing a way to decompose attentional computations as well.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1377,
+  "title": "Hybrid Neural-Cognitive Models Reveal Flexible Context-Dependent Information Processing in Reversal Learning",
+  "org": "deepmind",
+  "date": "2025-07-31",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.07.31.667923",
+  "abstract": "Abstract Reversal learning tasks provide a key paradigm for studying behavioral flexibility, requiring individuals to update choices in response to shifting reward contingencies. While reinforcement learning (RL) models have been widely used to provide interpretable explanations of human behavior on similar learning tasks, recent work has revealed that they often fail to fully account for the complexity of learning dynamics. In contrast, artificial neural networks (ANNs) often achieve substantially higher predictive accuracy, but lack the interpretability afforded by classical RL models. To bridge this gap, we introduce HybridRNNs—neural-cognitive models that integrate RL-inspired structures with flexible recurrent architectures. Among them, Context-ANN incorporates latent reward history and choice perseverance, and demonstrates improved alignment with human behavior compared to traditional RL models across two datasets. While not perfectly replicating human strategies, Context-ANN achieves comparable predictive accuracy to generic RNNs and offers interpretable value representations. Additional analyses of hidden dynamics reveal structured, context-sensitive internal states that adapt following reversals. These results suggest that humans may rely on more flexible or context-sensitive learning strategies even in simple reversal tasks, and highlight the potential of HybridRNNs as cognitive models that balance interpretability and predictive accuracy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 335,
+  "title": "LLMs Can Covertly Sandbag on Capability Evaluations Against Chain-of-Thought Monitoring",
+  "org": "deepmind",
+  "date": "2025-07-31",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2508.00943",
+  "abstract": "Trustworthy evaluations of dangerous capabilities are increasingly crucial for determining whether an AI system is safe to deploy. One empirically demonstrated threat is sandbagging - the strategic underperformance on evaluations by AI models or their developers. A promising defense is to monitor a model's chain-of-thought (CoT) reasoning, as this could reveal its intentions and plans. In this work, we measure the ability of models to sandbag on dangerous capability evaluations against a CoT monitor by prompting them to sandbag while being either monitor-oblivious or monitor-aware. We show that both frontier models and small open-sourced models can covertly sandbag against CoT monitoring 0-shot without hints. However, they cannot yet do so reliably: they bypass the monitor 16-36% of the time when monitor-aware, conditioned on sandbagging successfully. We qualitatively analyzed the uncaught CoTs to understand why the monitor failed. We reveal a rich attack surface for CoT monitoring and contribute five covert sandbagging policies generated by models. These results inform potential failure modes of CoT monitoring and may help build more diverse sandbagging model organisms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1378,
+  "title": "Segmentation of the human tongue musculature using MRI: Field guide and validation in motor neuron disease",
+  "org": "deepmind",
+  "date": "2025-07-28",
+  "venue": "Computers in Biology and Medicine",
+  "url": "https://doi.org/10.1016/j.compbiomed.2025.110824",
+  "abstract": "This work addresses the challenge of reliably measuring the muscles of the human tongue, which are difficult to quantify due to complex interwoven muscle types. We introduce a new semi-automated method, enabled by a manually curated dataset of MRI scans to accurately measure five key tongue muscles, combining AI-assisted, atlas-based, and manual segmentation approaches. The method was tested and validated in a dataset of 178 scans and included segmentation validation (n = 103) and clinical application (n = 132) in individuals with motor neuron disease. We show that people with speech and swallowing deficits tend to have smaller muscle volumes and present a normalisation strategy that removes confounding demographic factors, enabling broader application to large MRI datasets. As the tongue is generally covered in neuroimaging protocols, our multi-contrast pipeline will allow for the post-hoc analysis of a vast number of datasets. We expect this work to enable the investigation of tongue muscle morphology as a marker in a wide range of diseases that implicate tongue function, including neurodegenerative diseases and pathological speech disorders. • AI-assisted segmentation enables precise tongue muscle volume estimation in MRI. • Novel segmentation method validated on 100+ scans, including neurodegenerative disease cases. • Smaller tongue muscle volumes found in MND patients with speech/swallowing issues. • Approach allows post-hoc analysis of historical MRI datasets for tongue",
+  "needs_fetch": false
+ },
+ {
+  "id": 1379,
+  "title": "TokenVerse: Versatile Multi-concept Personalization in Token Modulation Space",
+  "org": "deepmind",
+  "date": "2025-07-27",
+  "venue": "ACM Transactions on Graphics",
+  "url": "https://doi.org/10.1145/3730843",
+  "abstract": "We present TokenVerse - a method for multi-concept personalization, leveraging a pre-trained text-to-image diffusion model. Our framework can disentangle complex visual elements and attributes from as little as a single image, while enabling seamless plug-and-play generation of combinations of concepts extracted from multiple images. As opposed to existing works, TokenVerse can handle multiple images with multiple concepts each, and supports a wide-range of concepts, including objects, accessories, materials, pose, and lighting. Our work exploits a DiT-based text-to-image model, in which the input text affects the generation through both attention and modulation (shift and scale). We observe that the modulation space is semantic and enables localized control over complex concepts. Building on this insight, we devise an optimization-based framework that takes as input an image and a text description, and finds for each word a distinct direction in the modulation space. These directions can then be used to generate new images that combine the learned concepts in a desired configuration. We demonstrate the effectiveness of TokenVerse in challenging personalization settings, and showcase its advantages over existing methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 336,
+  "title": "Specification Self-Correction: Mitigating In-Context Reward Hacking Through Test-Time Refinement",
+  "org": "other",
+  "date": "2025-07-24",
+  "venue": "COLM",
+  "url": "https://arxiv.org/abs/2507.18742",
+  "abstract": "Language models (LMs) are susceptible to in-context reward hacking, where they exploit flaws in tainted or faulty written specifications or rubrics to achieve high scores without fulfilling the user's true intent. We introduce Specification Self-Correction (SSC), a novel, test-time framework that enables an LM to identify and correct flaws within its own guiding specification. SSC employs a multi-step inference process where the model first generates a response based on a potentially tainted specification, critiques its output, and then revises the specification itself to remove the exploitable loophole. A final, more robust response is then generated using this self-corrected specification. Across experiments spanning creative writing and agentic coding tasks with several LMs, we demonstrate that while models initially game tainted specifications in 50-70\\% of cases, the SSC process reduces this vulnerability by over 90\\%. This dynamic repair occurs at inference time, requires no weight modification, and leads to more robustly aligned model behavior. Code at https://github.com/vicgalle/specification-self-correction .",
+  "needs_fetch": false
+ },
+ {
+  "id": 160,
+  "title": "Building and evaluating alignment auditing agents",
+  "org": "anthropic",
+  "date": "2025-07-24",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/automated-auditing/",
+  "abstract": "In testing, our agents successfully uncover hidden goals, build safety evaluations, and surface concerning behaviors.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1380,
+  "title": "Contextualizing ancient texts with generative neural networks",
+  "org": "deepmind",
+  "date": "2025-07-23",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-09292-5",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 967,
+  "title": "Pioneering an AI clinical copilot with Penda Health",
+  "org": "openai",
+  "date": "2025-07-22",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/ai-clinical-copilot-penda-health/",
+  "abstract": "OpenAI and Penda Health debut an AI clinical copilot that cuts diagnostic errors by 16% in real-world use—offering a new path for safe, effective AI in healthcare.",
+  "needs_fetch": false
+ },
+ {
+  "id": 162,
+  "title": "Inverse Scaling in Test-Time Compute",
+  "org": "anthropic",
+  "date": "2025-07-22",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/inverse-scaling/",
+  "abstract": "We investigate inverse scaling when LLMs have access to more test-time compute.",
+  "needs_fetch": true
+ },
+ {
+  "id": 161,
+  "title": "Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data",
+  "org": "anthropic",
+  "date": "2025-07-22",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/subliminal-learning/",
+  "abstract": "We study subliminal learning, a surprising phenomenon where language models transmit behavioral traits via semantically unrelated data. In our main experiments, a\"teacher\"model with some trait T (such as liking owls or being misaligned) generates a dataset consisting solely of number sequences. Remarkably, a\"student\"model trained on this dataset learns T. This occurs even when the data is filtered to remove references to T. We observe the same effect when training on code or reasoning traces generated by the same teacher model. However, we do not observe the effect when the teacher and student have different base models. To help explain our findings, we prove a theoretical result showing that subliminal learning occurs in all neural networks under certain conditions, and demonstrate subliminal learning in a simple MLP classifier. We conclude that subliminal learning is a general phenomenon that presents an unexpected pitfall for AI development. Distillation could propagate unintended traits, even when developers try to prevent this via data filtering.",
+  "needs_fetch": false
+ },
+ {
+  "id": 968,
+  "title": "ChatGPT agent System Card",
+  "org": "openai",
+  "date": "2025-07-17",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/chatgpt-agent-system-card/",
+  "abstract": "ChatGPT agent System Card: OpenAI’s agentic model unites research, browser automation, and code tools with safeguards under the Preparedness Framework.",
+  "needs_fetch": false
+ },
+ {
+  "id": 696,
+  "title": "Dialogues Between Technologists and the Art Worlds",
+  "org": "deepmind",
+  "date": "2025-07-16",
+  "venue": "British Council Position Papers",
+  "url": "https://www.britishcouncil.org/research-insight/why-technology-needs-artists",
+  "abstract": "Dialogues between technologists and the art worlds Piotr Mirowski*, Rida Qadri* go/dialogues-art-worlds To be published in a collective position paper on \"Arts, International Relations, and Innovations\" led by the British Council. Coordinating authors: Hannah Andrews and Aurora Hawcroft. * This article represents the personal opinions of the authors and does not represent official Google policy. As generative AI enters the world of creativity, it raises questions and concerns about its impacts on cultural expression and creative practice. While research (including ours) has raised questions on cultural erasure and marginalizations that these tools could perpetuate, AI can also be actively shaped and reconfigured by the communities of its users, allowing for localized adaptation and re-imagination by users, to suit their specific cultural contexts [6]. To help technologists who develop AI, and human-computer interaction researchers who evaluate its impacts on creative artists, and to understand real-world use and impact of technologies, we propose to combine two useful frameworks: the notion of a broader 'art world', and principles of participatory AI. On the one hand, and as sociologist Howard Becker articulates, art exists within an ‘art world’ — a complex network of individuals, institutions, and organizations involved in the production, distribution, and consumption of art [1]. This means that technologies for artistic production will likely impact an entire ecosystem, and",
+  "needs_fetch": false
+ },
+ {
+  "id": 668,
+  "title": "Chain of Thought Monitorability: A New and Fragile Opportunity for AI Safety",
+  "org": "deepmind",
+  "date": "2025-07-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2507.11473",
+  "abstract": "AI systems that \"think\" in human language offer a unique opportunity for AI safety: we can monitor their chains of thought (CoT) for the intent to misbehave. Like all other known AI oversight methods, CoT monitoring is imperfect and allows some misbehavior to go unnoticed. Nevertheless, it shows promise and we recommend further research into CoT monitorability and investment in CoT monitoring alongside existing safety methods. Because CoT monitorability may be fragile, we recommend that frontier model developers consider the impact of development decisions on CoT monitorability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 699,
+  "title": "SLIM: ONE-SHOT QUANTIZED SPARSE PLUS LOW-RANK APPROXIMATION OF LLMS",
+  "org": "deepmind",
+  "date": "2025-07-13",
+  "venue": "ICML 2025",
+  "url": "https://arxiv.org/abs/2410.09615",
+  "abstract": "Conventional model compression techniques for LLMs address high memory consumption and slow inference challenges but typically require computationally expensive retraining to preserve accuracy. In contrast, one-shot compression methods eliminate retraining costs, but struggle to achieve accuracy comparable to dense models. This paper presents SLIM, a new one-shot compression framework that holistically integrates hardware-friendly quantization, sparsity, and lowrank approximation into a unified process. First, we formulate the quantization process using a probabilistic approach (SLIM-Quant) that enables us to apply uniform quantization. Then, we use an existing one-shot pruning method to apply semi-structured sparsity on top of the quantized weights. Finally, to compensate for the introduced aggregated quantization and sparsity error, we use a novel saliency function with unique invertible and additive features that enables us to mathematically compute the value of low-rank adapters. SLIM improves model accuracy by up to 5.66% (LLaMA-2-7B) for 2:4 sparsity with 4-bit weight quantization, outperforming prior methods. Models compressed with SLIM achieve up to 4.3× and 3.8× layer-wise speedup on Nvidia RTX3060 and A100 GPUs, respectively. Additionally, they achieve up to 0.23× end-to-end memory reduction in comparison to their dense counterparts. We also propose an optional PEFT recipe that further improves accuracy by up to 1.66% (LLaMA-2-13B) compared to SLIM without fine-tuni",
+  "needs_fetch": false
+ },
+ {
+  "id": 698,
+  "title": "Long-Form Speech Generation with Spoken Language Models",
+  "org": "deepmind",
+  "date": "2025-07-13",
+  "venue": "ICML 2025",
+  "url": "https://openreview.net/forum?id=4AmFA0qNQ2",
+  "abstract": "We consider the generative modeling of speech over multiple minutes, a requirement for long-form multimedia generation and audio-native voice assistants. However, textless spoken language models struggle to generate plausible speech past tens of seconds, due to high temporal resolution of speech tokens causing loss of coherence, architectural issues with long-sequence training or extrapolation, and memory costs at inference time. From these considerations we derive SpeechSSM, the first speech language model family to learn from and sample long-form spoken audio (e.g., 16 minutes of read or extemporaneous speech) in a single decoding session without text intermediates. SpeechSSMs leverage recent advances in linear-time sequence modeling to greatly surpass current Transformer spoken LMs in coherence and efficiency on multi-minute generations while still matching them at the utterance level. As we found current spoken language evaluations uninformative, especially in this new long-form setting, we also introduce: LibriSpeech-Long, a benchmark for long-form speech evaluation; new embedding-based and LLM-judged metrics; and quality measurements over length and time. Speech samples, the LibriSpeech-Long dataset, and any future code or model releases can be found at https://google.github.io/tacotron/publications/speechssm/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 697,
+  "title": "Large Language Models as Rankers, Judges, and Assistants: A Perspective on the Potential Over-Reliance on LLMs in IR",
+  "org": "deepmind",
+  "date": "2025-07-13",
+  "venue": "SIGIR 2025 <Perspective Papers>",
+  "url": "https://dl.acm.org/doi/10.1145/3726302.3730348",
+  "abstract": "Large language models (LLMs) are rapidly transforming information retrieval (IR), serving as core ranking components, synthetic data generators, and judges for automated system evaluation. Beyond these roles, LLMs are also empowering AI assistants that are changing how users create content across various domains. While the potential of LLMs is undeniable, this growing reliance raises concerns about potential over-dependence, particularly when multiple LLMs interact within an information service where users both create and access content. We present a comprehensive survey of LLMs in IR, examining the interconnected roles they play as rankers, data generators, judges, and as AI assistants. We focus on the novel challenge of understanding how interactions between LLMs used for different purposes influence outcomes across several use cases. Through experiments on public test collections, we analyze how specific LLM relationships influence retrieval effectiveness. This perspective paper provides a balanced view on LLM integration in IR, acknowledging both the benefits and potential risks of increased reliance on these powerful models. It includes experiment designs and illustrative findings to drive further investigations in this crucial area.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2693,
+  "title": "Forecasting Cloud Storage Costs using Machine Learning on usage Patterns",
+  "org": "openai",
+  "date": "2025-07-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icdici66477.2025.11135182",
+  "abstract": "This research examines strong techniques to estimate cloud storage costs using utilization pattern analysis and core operational metrics. With businesses embracing cloud platforms at a fast-growing rate, the complexity and dynamics of storage pricing models pose serious financial challenges. This research discusses the increasing demand for effective forecasting tools that account for real-time usage parameters, operational trends, and configuration parameters. Current pricing calculators only provide an approximate prediction, taking into account little or no operational dynamics and temporal behavior. This research develops a machine learningdriven solution to fill this gap, presenting predictive insights that can help IT budgeting, resource planning, and cost optimization. The research utilizes various machine learning algorithms to discover the most contributing drivers of cost variation in different storage scenarios. Applying a synthetically created dataset of <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{5, 0 0 0}$</tex> records and <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\mathbf{1 6}$</tex> unique features-such as data volume, region, storage tier, and operation counts-the study finds that data egress volume and total storage size are the strongest predictors of cost variation. Among the models that were tested, XGBoost had the highest predictive accuracy ",
+  "needs_fetch": false
+ }
+]

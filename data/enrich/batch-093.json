@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2643,
+  "title": "Deep Learning Under Scrutiny: Performance Against Health Care Professionals in Detecting Diseases from Medical Imaging - Systematic Review and Meta-Analysis",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.3384923",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2642,
+  "title": "WikiCREM: A Large Unsupervised Corpus for Coreference Resolution",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1908.08025",
+  "abstract": "Vid Kocijan, Oana-Maria Camburu, Ana-Maria Cretu, Yordan Yordanov, Phil Blunsom, Thomas Lukasiewicz. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). 2019.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2641,
+  "title": "A Kantian Cognitive Architecture",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "Philosophical studies series",
+  "url": "https://doi.org/10.1007/978-3-030-01800-9_13",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2640,
+  "title": "Exploiting structure of uncertainty for efficient matroid semi-bandits",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-02387478",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2639,
+  "title": "Compact Deep Aggregation for Set Retrieval",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-030-11018-5_36",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2638,
+  "title": "Reinforcement Learning Agents acquire Flocking and Symbiotic Behaviour in Simulated Ecosystems",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "The 2019 Conference on Artificial Life",
+  "url": "https://doi.org/10.1162/isal_a_00148",
+  "abstract": "In nature, group behaviours such as flocking as well as cross-species symbiotic partnerships are observed in vastly different forms and circumstances. We hypothesize that such strategies can arise in response to generic predator-prey pressures in a spatial environment with range-limited sensation and action. We evaluate whether these forms of coordination can emerge by independent multi-agent reinforcement learning in simple multiple-species ecosystems. In contrast to prior work, we avoid hand-crafted shaping rewards, specific actions, or dynamics that would directly encourage coordination across agents. Instead we test whether coordination emerges as a consequence of adaptation without encouraging these specific forms of coordination, which only has indirect benefit. Our simulated ecosystems consist of a generic food chain involving three trophic levels: apex predator, mid-level predator, and prey. We conduct experiments on two different platforms, a 3D physics engine with tens of agents as well as in a 2D grid world with up to thousands. The results clearly confirm our hypothesis and show substantial coordination both within and across species. To obtain these results, we leverage and adapt recent advances in deep reinforcement learning within an ecosystem training protocol featuring homogeneous groups of independent agents from different species (sets of policies), acting in many different random combinations in parallel habitats. The policies utilize neural network archit",
+  "needs_fetch": false
+ },
+ {
+  "id": 2637,
+  "title": "Text Genre and Training Data Size in Human-like Parsing",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/d19-1594",
+  "abstract": "John Hale, Adhiguna Kuncoro, Keith Hall, Chris Dyer, Jonathan Brennan. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). 2019.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2636,
+  "title": "Probabilistic Successor Representations with Kalman Temporal Differences",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "2019 Conference on Cognitive Computational Neuroscience",
+  "url": "https://arxiv.org/abs/1910.02532",
+  "abstract": "The effectiveness of Reinforcement Learning (RL) depends on an animal's ability to assign credit for rewards to the appropriate preceding stimuli. One aspect of understanding the neural underpinnings of this process involves understanding what sorts of stimulus representations support generalisation. The Successor Representation (SR), which enforces generalisation over states that predict similar outcomes, has become an increasingly popular model in this space of inquiries. Another dimension of credit assignment involves understanding how animals handle uncertainty about learned associations, using probabilistic methods such as Kalman Temporal Differences (KTD). Combining these approaches, we propose using KTD to estimate a distribution over the SR. KTD-SR captures uncertainty about the estimated SR as well as covariances between different long-term predictions. We show that because of this, KTD-SR exhibits partial transition revaluation as humans do in this experiment without additional replay, unlike the standard TD-SR algorithm. We conclude by discussing future applications of the KTD-SR as a model of the interaction between predictive and probabilistic animal reasoning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2635,
+  "title": "A Causal Bayesian Networks Viewpoint on Fairness",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "IFIP advances in information and communication technology",
+  "url": "https://arxiv.org/abs/1907.06430",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2634,
+  "title": "Exact sampling of determinantal point processes with sublinear time preprocessing",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-02387524",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2633,
+  "title": "Learning to Discover, Ground and Use Words with Segmental Neural Language Models",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/p19-1645",
+  "abstract": "We propose a segmental neural language model that combines the generalization power of neural networks with the ability to discover word-like units that are latent in unsegmented character sequences. In contrast to previous segmentation models that treat word segmentation as an isolated task, our model unifies word discovery, learning how words fit together to form sentences, and, by conditioning the model on visual context, how words’ meanings ground in representations of nonlinguistic modalities. Experiments show that the unconditional model learns predictive distributions better than character LSTM models, discovers words competitively with nonparametric Bayesian word segmentation models, and that modeling language conditional on visual context improves performance on both.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2632,
+  "title": "Restoring ancient text using deep learning: a case study on Greek epigraphy",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/d19-1668",
+  "abstract": "Yannis Assael, Thea Sommerschield, Jonathan Prag. Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP). 2019.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2631,
+  "title": "GhostVLAD for Set-Based Face Recognition",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-030-20890-5_3",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2630,
+  "title": "Confidence modulates exploration and exploitation in value-based learning",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "Neuroscience of Consciousness",
+  "url": "https://doi.org/10.1093/nc/niz004",
+  "abstract": "Uncertainty is ubiquitous in cognitive processing. In this study, we aim to investigate the ability agents possess to track and report the noise inherent in their mental operations, often in the form of confidence judgments. Here, we argue that humans can use uncertainty inherent in their representations of value beliefs to arbitrate between exploration and exploitation. Such uncertainty is reflected in explicit confidence judgments. Using a novel variant of a multi-armed bandit paradigm, we studied how beliefs were formed and how uncertainty in the encoding of these value beliefs (belief confidence) evolved over time. We found that people used uncertainty to arbitrate between exploration and exploitation, reflected in a higher tendency toward exploration when their confidence in their value representations was low. We furthermore found that value uncertainty can be linked to frameworks of metacognition in decision making in two ways. First, belief confidence drives decision confidence, i.e. people's evaluation of their own choices. Second, individuals with higher metacognitive insight into their choices were also better at tracing the uncertainty in their environment. Together, these findings argue that such uncertainty representations play a key role in the context of cognitive control.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2629,
+  "title": "Unsupervised Recurrent Neural Network Grammars",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/n19-1114",
+  "abstract": "Yoon Kim, Alexander Rush, Lei Yu, Adhiguna Kuncoro, Chris Dyer, Gábor Melis. Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers). 2019.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2628,
+  "title": "Average Age of Information With Hybrid ARQ Under a Resource Constraint",
+  "org": "deepmind",
+  "date": "2019-01-01",
+  "venue": "OpenMETU (Middle East Technical University)",
+  "url": "https://hdl.handle.net/11511/92663",
+  "abstract": "Scheduling the transmission of status updates over an error-prone communication channel is studied in order to minimize the long-term average age of information at the destination under a constraint on the average number of transmissions at the source node. After each transmission, the source receives an instantaneous ACK/NACK feedback, and decides on the next update without prior knowledge on the success of future transmissions. The optimal scheduling policy is first studied under different feedback mechanisms when the channel statistics are known; in particular, the standard automatic repeat request (ARQ) and hybrid ARQ (HARQ) protocols are considered. The structural results are derived for the optimal policy under HARQ, while the optimal policy is determined analytically for ARQ. For the case of unknown environments, an average-cost reinforcement learning algorithm is proposed that learns the system parameters and the transmission policy in real time. The effectiveness of the proposed methods is verified through the numerical results.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1081,
+  "title": "How AI training scales",
+  "org": "openai",
+  "date": "2018-12-14",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/how-ai-training-scales/",
+  "abstract": "We’ve discovered that the gradient noise scale, a simple statistical metric, predicts the parallelizability of neural network training on a wide range of tasks. Since complex tasks tend to have noisier gradients, increasingly large batch sizes are likely to become useful in the future, removing one potential limit to further growth of AI systems. More broadly, these results show that neural network training need not be considered a mysterious art, but can be rigorized and systematized.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1082,
+  "title": "Quantifying generalization in reinforcement learning",
+  "org": "openai",
+  "date": "2018-12-06",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/quantifying-generalization-in-reinforcement-learning/",
+  "abstract": "We’re releasing CoinRun, a training environment which provides a metric for an agent’s ability to transfer its experience to novel situations and has already helped clarify a longstanding puzzle in reinforcement learning. CoinRun strikes a desirable balance in complexity: the environment is simpler than traditional platformer games like Sonic the Hedgehog but still poses a worthy generalization challenge for state of the art algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1083,
+  "title": "Spinning Up in Deep RL",
+  "org": "openai",
+  "date": "2018-11-08",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/spinning-up-in-deep-rl/",
+  "abstract": "We’re releasing Spinning Up in Deep RL, an educational resource designed to let anyone learn to become a skilled practitioner in deep reinforcement learning. Spinning Up consists of crystal-clear examples of RL code, educational exercises, documentation, and tutorials.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1084,
+  "title": "Learning concepts with energy functions",
+  "org": "openai",
+  "date": "2018-11-07",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-concepts-with-energy-functions/",
+  "abstract": "We’ve developed an energy-based model that can quickly learn to identify and generate instances of concepts, such as near, above, between, closest, and furthest, expressed as sets of 2d points. Our model learns these concepts after only five demonstrations. We also show cross-domain transfer: we use concepts learned in a 2d particle environment to solve tasks on a 3-dimensional physics-based robot.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1085,
+  "title": "Plan online, learn offline: Efficient learning and exploration via model-based control",
+  "org": "openai",
+  "date": "2018-11-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/plan-online-learn-offline/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1086,
+  "title": "Reinforcement learning with prediction-based rewards",
+  "org": "openai",
+  "date": "2018-10-31",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/reinforcement-learning-with-prediction-based-rewards/",
+  "abstract": "We’ve developed Random Network Distillation (RND), a prediction-based method for encouraging reinforcement learning agents to explore their environments through curiosity, which for the first time exceeds average human performance on Montezuma’s Revenge.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1087,
+  "title": "Learning complex goals with iterated amplification",
+  "org": "openai",
+  "date": "2018-10-22",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-complex-goals-with-iterated-amplification/",
+  "abstract": "We’re proposing an AI safety technique called iterated amplification that lets us specify complicated behaviors and goals that are beyond human scale, by demonstrating how to decompose a task into simpler sub-tasks, rather than by providing labeled data or a reward function. Although this idea is in its very early stages and we have only completed experiments on simple toy algorithmic domains, we’ve decided to present it in its preliminary state because we think it could prove to be a scalable approach to AI safety.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1088,
+  "title": "FFJORD: Free-form continuous dynamics for scalable reversible generative models",
+  "org": "openai",
+  "date": "2018-10-02",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/ffjord/",
+  "abstract": "A promising class of generative models maps points from a simple distribution to a complex distribution through an invertible neural network. Likelihood-based training of these models requires restricting their architectures to allow cheap computation of Jacobian determinants. Alternatively, the Jacobian trace can be used if the transformation is specified by an ordinary differential equation. In this paper, we use Hutchinson's trace estimator to give a scalable unbiased estimate of the log-density. The result is a continuous-time invertible generative model with unbiased density estimation and one-pass sampling, while allowing unrestricted neural network architectures. We demonstrate our approach on high-dimensional density estimation, image generation, and variational inference, achieving the state-of-the-art among exact likelihood methods with efficient sampling.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1089,
+  "title": "The International 2018: Results",
+  "org": "openai",
+  "date": "2018-08-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/the-international-2018-results/",
+  "abstract": "OpenAI Five lost two games against top Dota 2 players at The International in Vancouver this week, maintaining a good chance of winning for the first 20–35 minutes of both games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1090,
+  "title": "Large-scale study of curiosity-driven learning",
+  "org": "openai",
+  "date": "2018-08-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/large-scale-study-of-curiosity-driven-learning/",
+  "abstract": "Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. <i>without any extrinsic rewards</i>, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the handdesigned extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups. Game-play videos and code are at https://pathak22.github.io/large-scale-curiosity/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1091,
+  "title": "OpenAI Five Benchmark: Results",
+  "org": "openai",
+  "date": "2018-08-06",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-five-benchmark-results/",
+  "abstract": "Yesterday, OpenAI Five won a best-of-three against a team of 99.95th percentile Dota players: Blitz, Cap, Fogged, Merlini, and MoonMeander—four of whom have played Dota professionally—in front of a live audience and 100,000 concurrent livestream viewers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1092,
+  "title": "Learning dexterity",
+  "org": "openai",
+  "date": "2018-07-30",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-dexterity/",
+  "abstract": "We’ve trained a human-like robot hand to manipulate physical objects with unprecedented dexterity.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1093,
+  "title": "Variational option discovery algorithms",
+  "org": "openai",
+  "date": "2018-07-26",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/variational-option-discovery-algorithms/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1094,
+  "title": "Glow: Better reversible generative models",
+  "org": "openai",
+  "date": "2018-07-09",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/glow/",
+  "abstract": "We introduce Glow, a reversible generative model which uses invertible 1x1 convolutions. It extends previous work on reversible generative models and simplifies the architecture. Our model can generate realistic high resolution images, supports efficient sampling, and discovers features that can be used to manipulate attributes of data. We’re releasing code for the model and an online visualization tool so people can explore and build on these results.",
+  "needs_fetch": false
+ }
+]

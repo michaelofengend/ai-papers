@@ -1,0 +1,2170 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/xXSOCkSOT6t8r47Jc8WWDj5JI84</id>
+  <title>arXiv Query: search_query=all:"emergent abilities" OR all:"capability elicitation"&amp;id_list=&amp;start=150&amp;max_results=150</title>
+  <updated>2026-06-10T07:57:42Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22emergent+abilities%22+OR+all:%22capability+elicitation%22&amp;start=150&amp;max_results=150&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>150</opensearch:itemsPerPage>
+  <opensearch:totalResults>225</opensearch:totalResults>
+  <opensearch:startIndex>150</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2311.16468v1</id>
+    <title>AvatarGPT: All-in-One Framework for Motion Understanding, Planning, Generation and Beyond</title>
+    <updated>2023-11-28T04:10:07Z</updated>
+    <link href="https://arxiv.org/abs/2311.16468v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.16468v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models(LLMs) have shown remarkable emergent abilities in unifying almost all (if not every) NLP tasks. In the human motion-related realm, however, researchers still develop siloed models for each task. Inspired by InstuctGPT, and the generalist concept behind Gato, we introduce AvatarGPT, an All-in-One framework for motion understanding, planning, generations as well as other tasks such as motion in-between synthesis. AvatarGPT treats each task as one type of instruction fine-tuned on the shared LLM. All the tasks are seamlessly interconnected with language as the universal interface, constituting a closed-loop within the framework. To achieve this, human motion sequences are first encoded as discrete tokens, which serve as the extended vocabulary of LLM. Then, an unsupervised pipeline to generate natural language descriptions of human action sequences from in-the-wild videos is developed. Finally, all tasks are jointly trained. Extensive experiments show that AvatarGPT achieves SOTA on low-level tasks, and promising results on high-level tasks, demonstrating the effectiveness of our proposed All-in-One framework. Moreover, for the first time, AvatarGPT enables a principled approach by iterative traversal of the tasks within the closed-loop for unlimited long-motion synthesis.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-28T04:10:07Z</published>
+    <arxiv:comment>22 pages, 21 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Zixiang Zhou</name>
+    </author>
+    <author>
+      <name>Yu Wan</name>
+    </author>
+    <author>
+      <name>Baoyuan Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.14720v2</id>
+    <title>Perceptions and Detection of AI Use in Manuscript Preparation for Academic Journals</title>
+    <updated>2024-01-30T05:11:59Z</updated>
+    <link href="https://arxiv.org/abs/2311.14720v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.14720v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The emergent abilities of Large Language Models (LLMs), which power tools like ChatGPT and Bard, have produced both excitement and worry about how AI will impact academic writing. In response to rising concerns about AI use, authors of academic publications may decide to voluntarily disclose any AI tools they use to revise their manuscripts, and journals and conferences could begin mandating disclosure and/or turn to using detection services, as many teachers have done with student writing in class settings. Given these looming possibilities, we investigate whether academics view it as necessary to report AI use in manuscript preparation and how detectors react to the use of AI in academic writing.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-19T06:04:46Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Nir Chemaya</name>
+    </author>
+    <author>
+      <name>Daniel Martin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.09363v2</id>
+    <title>Investigating the Emergent Audio Classification Ability of ASR Foundation Models</title>
+    <updated>2024-03-28T16:31:26Z</updated>
+    <link href="https://arxiv.org/abs/2311.09363v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.09363v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Text and vision foundation models can perform many tasks in a zero-shot setting, a desirable property that enables these systems to be applied in general and low-resource settings. There has been far less work, however, on the zero-shot abilities of ASR foundation models, with these systems typically fine-tuned to specific tasks or constrained to applications that match their training criterion and data annotation. In this work we investigate the ability of Whisper and MMS, ASR foundation models trained primarily for speech recognition, to perform zero-shot audio classification. We use simple template-based text prompts at the decoder and use the resulting decoding probabilities to generate zero-shot predictions. Without training the model on extra data or adding any new parameters, we demonstrate that Whisper shows promising zero-shot classification performance on a range of 8 audio-classification datasets, outperforming the accuracy of existing state-of-the-art zero-shot baselines by an average of 9%. One important step to unlock the emergent ability is debiasing, where a simple unsupervised reweighting method of the class probabilities yields consistent significant performance gains. We further show that performance increases with model size, implying that as ASR foundation models scale up, they may exhibit improved zero-shot performance.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-15T20:52:56Z</published>
+    <arxiv:comment>NAACL 2024 (main conference)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Rao Ma</name>
+    </author>
+    <author>
+      <name>Adian Liusie</name>
+    </author>
+    <author>
+      <name>Mark J. F. Gales</name>
+    </author>
+    <author>
+      <name>Kate M. Knill</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.06737v1</id>
+    <title>Detecting and Correcting Hate Speech in Multimodal Memes with Large Visual Language Model</title>
+    <updated>2023-11-12T05:20:20Z</updated>
+    <link href="https://arxiv.org/abs/2311.06737v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.06737v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, large language models (LLMs) have taken the spotlight in natural language processing. Further, integrating LLMs with vision enables the users to explore more emergent abilities in multimodality. Visual language models (VLMs), such as LLaVA, Flamingo, or GPT-4, have demonstrated impressive performance on various visio-linguistic tasks. Consequently, there are enormous applications of large models that could be potentially used on social media platforms. Despite that, there is a lack of related work on detecting or correcting hateful memes with VLMs. In this work, we study the ability of VLMs on hateful meme detection and hateful meme correction tasks with zero-shot prompting. From our empirical experiments, we show the effectiveness of the pretrained LLaVA model and discuss its strengths and weaknesses in these tasks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-12T05:20:20Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Minh-Hao Van</name>
+    </author>
+    <author>
+      <name>Xintao Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.03250v1</id>
+    <title>Instructed Language Models with Retrievers Are Powerful Entity Linkers</title>
+    <updated>2023-11-06T16:38:51Z</updated>
+    <link href="https://arxiv.org/abs/2311.03250v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.03250v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative approaches powered by large language models (LLMs) have demonstrated emergent abilities in tasks that require complex reasoning abilities. Yet the generative nature still makes the generated content suffer from hallucinations, thus unsuitable for entity-centric tasks like entity linking (EL) requiring precise entity predictions over a large knowledge base. We present Instructed Generative Entity Linker (INSGENEL), the first approach that enables casual language models to perform entity linking over knowledge bases. Several methods to equip language models with EL capability were proposed in this work, including (i) a sequence-to-sequence training EL objective with instruction-tuning, (ii) a novel generative EL framework based on a light-weight potential mention retriever that frees the model from heavy and non-parallelizable decoding, achieving 4$\times$ speedup without compromise on linking metrics. INSGENEL outperforms previous generative alternatives with +6.8 F1 points gain on average, also with a huge advantage in training data efficiency and training compute consumption. In addition, our skillfully engineered in-context learning (ICL) framework for EL still lags behind INSGENEL significantly, reaffirming that the EL task remains a persistent hurdle for general LLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-06T16:38:51Z</published>
+    <arxiv:comment>Accepted to EMNLP 2023 Main</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zilin Xiao</name>
+    </author>
+    <author>
+      <name>Ming Gong</name>
+    </author>
+    <author>
+      <name>Jie Wu</name>
+    </author>
+    <author>
+      <name>Xingyao Zhang</name>
+    </author>
+    <author>
+      <name>Linjun Shou</name>
+    </author>
+    <author>
+      <name>Jian Pei</name>
+    </author>
+    <author>
+      <name>Daxin Jiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.17639v3</id>
+    <title>In-Context Learning Dynamics with Random Binary Sequences</title>
+    <updated>2024-04-16T01:35:03Z</updated>
+    <link href="https://arxiv.org/abs/2310.17639v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.17639v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) trained on huge corpora of text datasets demonstrate intriguing capabilities, achieving state-of-the-art performance on tasks they were not explicitly trained for. The precise nature of LLM capabilities is often mysterious, and different prompts can elicit different capabilities through in-context learning. We propose a framework that enables us to analyze in-context learning dynamics to understand latent concepts underlying LLMs' behavioral patterns. This provides a more nuanced understanding than success-or-failure evaluation benchmarks, but does not require observing internal activations as a mechanistic interpretation of circuits would. Inspired by the cognitive science of human randomness perception, we use random binary sequences as context and study dynamics of in-context learning by manipulating properties of context data, such as sequence length. In the latest GPT-3.5+ models, we find emergent abilities to generate seemingly random numbers and learn basic formal languages, with striking in-context learning dynamics where model outputs transition sharply from seemingly random behaviors to deterministic repetition.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-26T17:54:52Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Eric J. Bigelow</name>
+    </author>
+    <author>
+      <name>Ekdeep Singh Lubana</name>
+    </author>
+    <author>
+      <name>Robert P. Dick</name>
+    </author>
+    <author>
+      <name>Hidenori Tanaka</name>
+    </author>
+    <author>
+      <name>Tomer D. Ullman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.17166v1</id>
+    <title>X-SNS: Cross-Lingual Transfer Prediction through Sub-Network Similarity</title>
+    <updated>2023-10-26T05:39:49Z</updated>
+    <link href="https://arxiv.org/abs/2310.17166v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.17166v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Cross-lingual transfer (XLT) is an emergent ability of multilingual language models that preserves their performance on a task to a significant extent when evaluated in languages that were not included in the fine-tuning process. While English, due to its widespread usage, is typically regarded as the primary language for model adaption in various tasks, recent studies have revealed that the efficacy of XLT can be amplified by selecting the most appropriate source languages based on specific conditions. In this work, we propose the utilization of sub-network similarity between two languages as a proxy for predicting the compatibility of the languages in the context of XLT. Our approach is model-oriented, better reflecting the inner workings of foundation models. In addition, it requires only a moderate amount of raw text from candidate languages, distinguishing it from the majority of previous methods that rely on external resources. In experiments, we demonstrate that our method is more effective than baselines across diverse tasks. Specifically, it shows proficiency in ranking candidates for zero-shot XLT, achieving an improvement of 4.6% on average in terms of NDCG@3. We also provide extensive analyses that confirm the utility of sub-networks for XLT prediction.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-26T05:39:49Z</published>
+    <arxiv:comment>Accepted to EMNLP 2023 (Findings)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Taejun Yun</name>
+    </author>
+    <author>
+      <name>Jinhyeon Kim</name>
+    </author>
+    <author>
+      <name>Deokyeong Kang</name>
+    </author>
+    <author>
+      <name>Seong Hoon Lim</name>
+    </author>
+    <author>
+      <name>Jihoon Kim</name>
+    </author>
+    <author>
+      <name>Taeuk Kim</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.16409v1</id>
+    <title>Multiple Key-value Strategy in Recommendation Systems Incorporating Large Language Model</title>
+    <updated>2023-10-25T06:49:19Z</updated>
+    <link href="https://arxiv.org/abs/2310.16409v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.16409v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recommendation system (RS) plays significant roles in matching users information needs for Internet applications, and it usually utilizes the vanilla neural network as the backbone to handle embedding details. Recently, the large language model (LLM) has exhibited emergent abilities and achieved great breakthroughs both in the CV and NLP communities. Thus, it is logical to incorporate RS with LLM better, which has become an emerging research direction. Although some existing works have made their contributions to this issue, they mainly consider the single key situation (e.g. historical interactions), especially in sequential recommendation. The situation of multiple key-value data is simply neglected. This significant scenario is mainstream in real practical applications, where the information of users (e.g. age, occupation, etc) and items (e.g. title, category, etc) has more than one key. Therefore, we aim to implement sequential recommendations based on multiple key-value data by incorporating RS with LLM. In particular, we instruct tuning a prevalent open-source LLM (Llama 7B) in order to inject domain knowledge of RS into the pre-trained LLM. Since we adopt multiple key-value strategies, LLM is hard to learn well among these keys. Thus the general and innovative shuffle and mask strategies, as an innovative manner of data argument, are designed. To demonstrate the effectiveness of our approach, extensive experiments are conducted on the popular and suitable dataset MovieLens which contains multiple keys-value. The experimental results demonstrate that our approach can nicely and effectively complete this challenging issue.</summary>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-25T06:49:19Z</published>
+    <arxiv:comment>Accepted by CIKM2023 workshop at GenRec'23</arxiv:comment>
+    <arxiv:primary_category term="cs.IR"/>
+    <author>
+      <name>Dui Wang</name>
+    </author>
+    <author>
+      <name>Xiangyu Hou</name>
+    </author>
+    <author>
+      <name>Xiaohui Yang</name>
+    </author>
+    <author>
+      <name>Bo Zhang</name>
+    </author>
+    <author>
+      <name>Renbing Chen</name>
+    </author>
+    <author>
+      <name>Daiyue Xue</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.16062v1</id>
+    <title>Confounder Balancing in Adversarial Domain Adaptation for Pre-Trained Large Models Fine-Tuning</title>
+    <updated>2023-10-24T09:11:45Z</updated>
+    <link href="https://arxiv.org/abs/2310.16062v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.16062v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The excellent generalization, contextual learning, and emergence abilities in the pre-trained large models (PLMs) handle specific tasks without direct training data, making them the better foundation models in the adversarial domain adaptation (ADA) methods to transfer knowledge learned from the source domain to target domains. However, existing ADA methods fail to account for the confounder properly, which is the root cause of the source data distribution that differs from the target domains. This study proposes an adversarial domain adaptation with confounder balancing for PLMs fine-tuning (ADA-CBF). The ADA-CBF includes a PLM as the foundation model for a feature extractor, a domain classifier and a confounder classifier, and they are jointly trained with an adversarial loss. This loss is designed to improve the domain-invariant representation learning by diluting the discrimination in the domain classifier. At the same time, the adversarial loss also balances the confounder distribution among source and unmeasured domains in training. Compared to existing ADA methods, ADA-CBF can correctly identify confounders in domain-invariant features, thereby eliminating the confounder biases in the extracted features from PLMs. The confounder classifier in ADA-CBF is designed as a plug-and-play and can be applied in the confounder measurable, unmeasurable, or partially measurable environments. Empirical results on natural language processing and computer vision downstream tasks show that ADA-CBF outperforms the newest GPT-4, LLaMA2, ViT and ADA methods.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-24T09:11:45Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Shuoran Jiang</name>
+    </author>
+    <author>
+      <name>Qingcai Chen</name>
+    </author>
+    <author>
+      <name>Yang Xiang</name>
+    </author>
+    <author>
+      <name>Youcheng Pan</name>
+    </author>
+    <author>
+      <name>Xiangping Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.15511v1</id>
+    <title>KITAB: Evaluating LLMs on Constraint Satisfaction for Information Retrieval</title>
+    <updated>2023-10-24T04:40:38Z</updated>
+    <link href="https://arxiv.org/abs/2310.15511v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.15511v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study the ability of state-of-the art models to answer constraint satisfaction queries for information retrieval (e.g., 'a list of ice cream shops in San Diego'). In the past, such queries were considered to be tasks that could only be solved via web-search or knowledge bases. More recently, large language models (LLMs) have demonstrated initial emergent abilities in this task. However, many current retrieval benchmarks are either saturated or do not measure constraint satisfaction. Motivated by rising concerns around factual incorrectness and hallucinations of LLMs, we present KITAB, a new dataset for measuring constraint satisfaction abilities of language models. KITAB consists of book-related data across more than 600 authors and 13,000 queries, and also offers an associated dynamic data collection and constraint verification approach for acquiring similar test data for other authors. Our extended experiments on GPT4 and GPT3.5 characterize and decouple common failure modes across dimensions such as information popularity, constraint types, and context availability. Results show that in the absence of context, models exhibit severe limitations as measured by irrelevant information, factual errors, and incompleteness, many of which exacerbate as information popularity decreases. While context availability mitigates irrelevant information, it is not helpful for satisfying constraints, identifying fundamental barriers to constraint satisfaction. We open source our contributions to foster further research on improving constraint satisfaction abilities of future models.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-24T04:40:38Z</published>
+    <arxiv:comment>23 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Marah I Abdin</name>
+    </author>
+    <author>
+      <name>Suriya Gunasekar</name>
+    </author>
+    <author>
+      <name>Varun Chandrasekaran</name>
+    </author>
+    <author>
+      <name>Jerry Li</name>
+    </author>
+    <author>
+      <name>Mert Yuksekgonul</name>
+    </author>
+    <author>
+      <name>Rahee Ghosh Peshawaria</name>
+    </author>
+    <author>
+      <name>Ranjita Naik</name>
+    </author>
+    <author>
+      <name>Besmira Nushi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.14880v2</id>
+    <title>Can ChatGPT Perform Reasoning Using the IRAC Method in Analyzing Legal Scenarios Like a Lawyer?</title>
+    <updated>2023-11-03T03:50:07Z</updated>
+    <link href="https://arxiv.org/abs/2310.14880v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.14880v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs), such as ChatGPT, have drawn a lot of attentions recently in the legal domain due to its emergent ability to tackle a variety of legal tasks. However, it is still unknown if LLMs are able to analyze a legal case and perform reasoning in the same manner as lawyers. Therefore, we constructed a novel corpus consisting of scenarios pertain to Contract Acts Malaysia and Australian Social Act for Dependent Child. ChatGPT is applied to perform analysis on the corpus using the IRAC method, which is a framework widely used by legal professionals for organizing legal analysis. Each scenario in the corpus is annotated with a complete IRAC analysis in a semi-structured format so that both machines and legal professionals are able to interpret and understand the annotations. In addition, we conducted the first empirical assessment of ChatGPT for IRAC analysis in order to understand how well it aligns with the analysis of legal professionals. Our experimental results shed lights on possible future research directions to improve alignments between LLMs and legal experts in terms of legal reasoning.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-23T12:51:49Z</published>
+    <arxiv:comment>EMNLP 2023 Findings</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>2023.findings-emnlp.929</arxiv:journal_ref>
+    <author>
+      <name>Xiaoxi Kang</name>
+    </author>
+    <author>
+      <name>Lizhen Qu</name>
+    </author>
+    <author>
+      <name>Lay-Ki Soon</name>
+    </author>
+    <author>
+      <name>Adnan Trakic</name>
+    </author>
+    <author>
+      <name>Terry Yue Zhuo</name>
+    </author>
+    <author>
+      <name>Patrick Charles Emerton</name>
+    </author>
+    <author>
+      <name>Genevieve Grant</name>
+    </author>
+    <arxiv:doi>10.18653/v1/2023.findings-emnlp.929</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.18653/v1/2023.findings-emnlp.929" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.13332v1</id>
+    <title>Democratizing Reasoning Ability: Tailored Learning from Large Language Model</title>
+    <updated>2023-10-20T07:50:10Z</updated>
+    <link href="https://arxiv.org/abs/2310.13332v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.13332v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) exhibit impressive emergent abilities in natural language processing, but their democratization is hindered due to huge computation requirements and closed-source nature. Recent research on advancing open-source smaller LMs by distilling knowledge from black-box LLMs has obtained promising results in the instruction-following ability. However, the reasoning ability which is more challenging to foster, is relatively rarely explored. In this paper, we propose a tailored learning approach to distill such reasoning ability to smaller LMs to facilitate the democratization of the exclusive reasoning ability. In contrast to merely employing LLM as a data annotator, we exploit the potential of LLM as a reasoning teacher by building an interactive multi-round learning paradigm. This paradigm enables the student to expose its deficiencies to the black-box teacher who then can provide customized training data in return. Further, to exploit the reasoning potential of the smaller LM, we propose self-reflection learning to motivate the student to learn from self-made mistakes. The learning from self-reflection and LLM are all tailored to the student's learning status, thanks to the seamless integration with the multi-round learning paradigm. Comprehensive experiments and analysis on mathematical and commonsense reasoning tasks demonstrate the effectiveness of our method. The code will be available at https://github.com/Raibows/Learn-to-Reason.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-20T07:50:10Z</published>
+    <arxiv:comment>To appear at EMNLP 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zhaoyang Wang</name>
+    </author>
+    <author>
+      <name>Shaohan Huang</name>
+    </author>
+    <author>
+      <name>Yuxuan Liu</name>
+    </author>
+    <author>
+      <name>Jiahai Wang</name>
+    </author>
+    <author>
+      <name>Minghui Song</name>
+    </author>
+    <author>
+      <name>Zihan Zhang</name>
+    </author>
+    <author>
+      <name>Haizhen Huang</name>
+    </author>
+    <author>
+      <name>Furu Wei</name>
+    </author>
+    <author>
+      <name>Weiwei Deng</name>
+    </author>
+    <author>
+      <name>Feng Sun</name>
+    </author>
+    <author>
+      <name>Qi Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.13289v2</id>
+    <title>SALMONN: Towards Generic Hearing Abilities for Large Language Models</title>
+    <updated>2024-04-08T06:12:52Z</updated>
+    <link href="https://arxiv.org/abs/2310.13289v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.13289v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Hearing is arguably an essential ability of artificial intelligence (AI) agents in the physical world, which refers to the perception and understanding of general auditory information consisting of at least three types of sounds: speech, audio events, and music. In this paper, we propose SALMONN, a speech audio language music open neural network, built by integrating a pre-trained text-based large language model (LLM) with speech and audio encoders into a single multimodal model. SALMONN enables the LLM to directly process and understand general audio inputs and achieve competitive performances on a number of speech and audio tasks used in training, such as automatic speech recognition and translation, auditory-information-based question answering, emotion recognition, speaker verification, and music and audio captioning etc. SALMONN also has a diverse set of emergent abilities unseen in the training, which includes but is not limited to speech translation to untrained languages, speech-based slot filling, spoken-query-based question answering, audio-based storytelling, and speech audio co-reasoning etc. The presence of cross-modal emergent abilities is studied, and a novel few-shot activation tuning approach is proposed to activate such abilities. To our knowledge, SALMONN is the first model of its type and can be regarded as a step towards AI with generic hearing abilities. The source code, model checkpoints and data are available at https://github.com/bytedance/SALMONN.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-20T05:41:57Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Changli Tang</name>
+    </author>
+    <author>
+      <name>Wenyi Yu</name>
+    </author>
+    <author>
+      <name>Guangzhi Sun</name>
+    </author>
+    <author>
+      <name>Xianzhao Chen</name>
+    </author>
+    <author>
+      <name>Tian Tan</name>
+    </author>
+    <author>
+      <name>Wei Li</name>
+    </author>
+    <author>
+      <name>Lu Lu</name>
+    </author>
+    <author>
+      <name>Zejun Ma</name>
+    </author>
+    <author>
+      <name>Chao Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.03331v1</id>
+    <title>Fine-tune Language Models to Approximate Unbiased In-context Learning</title>
+    <updated>2023-10-05T06:16:01Z</updated>
+    <link href="https://arxiv.org/abs/2310.03331v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.03331v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In-context learning (ICL) is an astonishing emergent ability of large language models (LLMs). By presenting a prompt that includes multiple input-output pairs as examples and introducing a new query input, models can generate the corresponding output. However, the performance of models heavily relies on the quality of the input prompt when implementing in-context learning. Biased or imbalanced input prompts can significantly degrade the performance of language models. To address this issue, we introduce a reweighted algorithm called RICL (Reweighted In-context Learning). This algorithm fine-tunes language models using an unbiased validation set to determine the optimal weight for each input-output example to approximate unbiased in-context learning. Furthermore, we also introduce a low-cost reweighted algorithm, a linear optimal weight approximation algorithm called LARICL (Linear Approximation of Reweighted In-context Learning). This algorithm requires minimal training cost while providing effective results. We prove the convergence of our algorithm and validate its performance through experiments conducted on a numerical dataset. The experimental findings reveal a substantial improvement in comparison to benchmarks including the performance of casual prompt-based in-context learning and the performance of a classic fine-tuning method.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-05T06:16:01Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Timothy Chu</name>
+    </author>
+    <author>
+      <name>Zhao Song</name>
+    </author>
+    <author>
+      <name>Chiwun Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.03262v3</id>
+    <title>Predicting Emergent Abilities with Infinite Resolution Evaluation</title>
+    <updated>2024-04-17T13:43:59Z</updated>
+    <link href="https://arxiv.org/abs/2310.03262v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.03262v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The scientific scale-up of large language models (LLMs) necessitates a comprehensive understanding of their scaling properties. However, the existing literature on the scaling properties only yields an incomplete answer: optimization loss decreases predictably as the model size increases, in line with established scaling law; yet no scaling law for task has been established and the task performances are far from predictable during scaling. Task performances typically show minor gains on small models until they improve dramatically once models exceed a size threshold, exemplifying the ``emergent abilities''. In this study, we discover that small models, although they exhibit minor performance, demonstrate critical and consistent task performance improvements that are not captured by conventional evaluation strategies due to insufficient measurement resolution. To measure such improvements, we introduce PassUntil, an evaluation strategy with theoretically infinite resolution, through massive sampling in the decoding phase. With PassUntil, we conduct a quantitative investigation into the scaling law of task performance. The investigation contains two parts. Firstly, a strict task scaling law that is not conventionally known to exist, is identified, enhancing the predictability of task performances. Remarkably, we are able to predict the performance of the 2.4B model on code generation with merely 0.05\% deviation before training starts, which is the first systematic attempt to verify predictable scaling proposed by GPT-4's report. Secondly, we are able to study emergent abilities quantitatively. We identify a kind of accelerated emergence whose scaling curve cannot be fitted by standard scaling law function and has a increasing speed. We then examine two hypothesis and imply that the ``multiple circuits hypothesis'' might be responsible for the accelerated emergence.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-05T02:35:00Z</published>
+    <arxiv:comment>After revision</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shengding Hu</name>
+    </author>
+    <author>
+      <name>Xin Liu</name>
+    </author>
+    <author>
+      <name>Xu Han</name>
+    </author>
+    <author>
+      <name>Xinrong Zhang</name>
+    </author>
+    <author>
+      <name>Chaoqun He</name>
+    </author>
+    <author>
+      <name>Weilin Zhao</name>
+    </author>
+    <author>
+      <name>Yankai Lin</name>
+    </author>
+    <author>
+      <name>Ning Ding</name>
+    </author>
+    <author>
+      <name>Zebin Ou</name>
+    </author>
+    <author>
+      <name>Guoyang Zeng</name>
+    </author>
+    <author>
+      <name>Zhiyuan Liu</name>
+    </author>
+    <author>
+      <name>Maosong Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.01831v2</id>
+    <title>Can Large Language Models Transform Natural Language Intent into Formal Method Postconditions?</title>
+    <updated>2024-04-15T23:08:37Z</updated>
+    <link href="https://arxiv.org/abs/2310.01831v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.01831v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Informal natural language that describes code functionality, such as code comments or function documentation, may contain substantial information about a programs intent. However, there is typically no guarantee that a programs implementation and natural language documentation are aligned. In the case of a conflict, leveraging information in code-adjacent natural language has the potential to enhance fault localization, debugging, and code trustworthiness. In practice, however, this information is often underutilized due to the inherent ambiguity of natural language which makes natural language intent challenging to check programmatically. The emergent abilities of Large Language Models (LLMs) have the potential to facilitate the translation of natural language intent to programmatically checkable assertions. However, it is unclear if LLMs can correctly translate informal natural language specifications into formal specifications that match programmer intent. Additionally, it is unclear if such translation could be useful in practice. In this paper, we describe nl2postcond, the problem of leveraging LLMs for transforming informal natural language to formal method postconditions, expressed as program assertions. We introduce and validate metrics to measure and compare different nl2postcond approaches, using the correctness and discriminative power of generated postconditions. We then use qualitative and quantitative methods to assess the quality of nl2postcond postconditions, finding that they are generally correct and able to discriminate incorrect code. Finally, we find that nl2postcond via LLMs has the potential to be helpful in practice; nl2postcond generated postconditions were able to catch 64 real-world historical bugs from Defects4J.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-03T06:55:45Z</published>
+    <arxiv:comment>To appear at the Proceedings of the ACM on Software Engineering (PACMSE), Issue Foundations of Software Engineering (FSE) 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Madeline Endres</name>
+    </author>
+    <author>
+      <name>Sarah Fakhoury</name>
+    </author>
+    <author>
+      <name>Saikat Chakraborty</name>
+    </author>
+    <author>
+      <name>Shuvendu K. Lahiri</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.01218v1</id>
+    <title>Making LLaMA SEE and Draw with SEED Tokenizer</title>
+    <updated>2023-10-02T14:03:02Z</updated>
+    <link href="https://arxiv.org/abs/2310.01218v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.01218v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The great success of Large Language Models (LLMs) has expanded the potential of multimodality, contributing to the gradual evolution of General Artificial Intelligence (AGI). A true AGI agent should not only possess the capability to perform predefined multi-tasks but also exhibit emergent abilities in an open-world context. However, despite the considerable advancements made by recent multimodal LLMs, they still fall short in effectively unifying comprehension and generation tasks, let alone open-world emergent abilities. We contend that the key to overcoming the present impasse lies in enabling text and images to be represented and processed interchangeably within a unified autoregressive Transformer. To this end, we introduce SEED, an elaborate image tokenizer that empowers LLMs with the ability to SEE and Draw at the same time. We identify two crucial design principles: (1) Image tokens should be independent of 2D physical patch positions and instead be produced with a 1D causal dependency, exhibiting intrinsic interdependence that aligns with the left-to-right autoregressive prediction mechanism in LLMs. (2) Image tokens should capture high-level semantics consistent with the degree of semantic abstraction in words, and be optimized for both discriminativeness and reconstruction during the tokenizer training phase. With SEED tokens, LLM is able to perform scalable multimodal autoregression under its original training recipe, i.e., next-word prediction. SEED-LLaMA is therefore produced by large-scale pretraining and instruction tuning on the interleaved textual and visual data, demonstrating impressive performance on a broad range of multimodal comprehension and generation tasks. More importantly, SEED-LLaMA has exhibited compositional emergent abilities such as multi-turn in-context multimodal generation, acting like your AI assistant.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-02T14:03:02Z</published>
+    <arxiv:comment>Project released at: https://github.com/AILab-CVC/SEED. arXiv admin note: substantial text overlap with arXiv:2307.08041</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuying Ge</name>
+    </author>
+    <author>
+      <name>Sijie Zhao</name>
+    </author>
+    <author>
+      <name>Ziyun Zeng</name>
+    </author>
+    <author>
+      <name>Yixiao Ge</name>
+    </author>
+    <author>
+      <name>Chen Li</name>
+    </author>
+    <author>
+      <name>Xintao Wang</name>
+    </author>
+    <author>
+      <name>Ying Shan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.01429v1</id>
+    <title>Chatmap : Large Language Model Interaction with Cartographic Data</title>
+    <updated>2023-09-28T15:32:36Z</updated>
+    <link href="https://arxiv.org/abs/2310.01429v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.01429v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The swift advancement and widespread availability of foundational Large Language Models (LLMs), complemented by robust fine-tuning methodologies, have catalyzed their adaptation for innovative and industrious applications. Enabling LLMs to recognize and interpret geospatial data, while offering a linguistic access to vast cartographic datasets, is of significant importance. OpenStreetMap (OSM) is the most ambitious open-source global initiative offering detailed urban and rural geographic data, curated by a community of over 10 million contributors, which constitutes a great potential for LLM applications. In this study, we demonstrate the proof of concept and details of the process of fine-tuning a relatively small scale (1B parameters) LLM with a relatively small artificial dataset curated by a more capable teacher model, in order to provide a linguistic interface to the OSM data of an arbitrary urban region. Through this interface, users can inquire about a location's attributes, covering a wide spectrum of concepts, such as its touristic appeal or the potential profitability of various businesses in that vicinity. The study aims to provide an initial guideline for such generative artificial intelligence (AI) adaptations and demonstrate early signs of useful emerging abilities in this context even in minimal computational settings. The embeddings of artificially curated prompts including OSM data are also investigated in detail, which might be instrumental for potential geospatially aware urban Retrieval Augmented Generation (RAG) applications.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-28T15:32:36Z</published>
+    <arxiv:comment>9 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Eren Unlu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.16292v3</id>
+    <title>DiLu: A Knowledge-Driven Approach to Autonomous Driving with Large Language Models</title>
+    <updated>2024-02-22T03:24:26Z</updated>
+    <link href="https://arxiv.org/abs/2309.16292v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.16292v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advancements in autonomous driving have relied on data-driven approaches, which are widely adopted but face challenges including dataset bias, overfitting, and uninterpretability. Drawing inspiration from the knowledge-driven nature of human driving, we explore the question of how to instill similar capabilities into autonomous driving systems and summarize a paradigm that integrates an interactive environment, a driver agent, as well as a memory component to address this question. Leveraging large language models (LLMs) with emergent abilities, we propose the DiLu framework, which combines a Reasoning and a Reflection module to enable the system to perform decision-making based on common-sense knowledge and evolve continuously. Extensive experiments prove DiLu's capability to accumulate experience and demonstrate a significant advantage in generalization ability over reinforcement learning-based methods. Moreover, DiLu is able to directly acquire experiences from real-world datasets which highlights its potential to be deployed on practical autonomous driving systems. To the best of our knowledge, we are the first to leverage knowledge-driven capability in decision-making for autonomous vehicles. Through the proposed DiLu framework, LLM is strengthened to apply knowledge and to reason causally in the autonomous driving domain. Project page: https://pjlab-adg.github.io/DiLu/</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-28T09:41:35Z</published>
+    <arxiv:comment>Published as a conference paper at ICLR 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Licheng Wen</name>
+    </author>
+    <author>
+      <name>Daocheng Fu</name>
+    </author>
+    <author>
+      <name>Xin Li</name>
+    </author>
+    <author>
+      <name>Xinyu Cai</name>
+    </author>
+    <author>
+      <name>Tao Ma</name>
+    </author>
+    <author>
+      <name>Pinlong Cai</name>
+    </author>
+    <author>
+      <name>Min Dou</name>
+    </author>
+    <author>
+      <name>Botian Shi</name>
+    </author>
+    <author>
+      <name>Liang He</name>
+    </author>
+    <author>
+      <name>Yu Qiao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.14225v4</id>
+    <title>HumanMimic: Learning Natural Locomotion and Transitions for Humanoid Robot via Wasserstein Adversarial Imitation</title>
+    <updated>2024-04-23T05:03:18Z</updated>
+    <link href="https://arxiv.org/abs/2309.14225v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.14225v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Transferring human motion skills to humanoid robots remains a significant challenge. In this study, we introduce a Wasserstein adversarial imitation learning system, allowing humanoid robots to replicate natural whole-body locomotion patterns and execute seamless transitions by mimicking human motions. First, we present a unified primitive-skeleton motion retargeting to mitigate morphological differences between arbitrary human demonstrators and humanoid robots. An adversarial critic component is integrated with Reinforcement Learning (RL) to guide the control policy to produce behaviors aligned with the data distribution of mixed reference motions. Additionally, we employ a specific Integral Probabilistic Metric (IPM), namely the Wasserstein-1 distance with a novel soft boundary constraint to stabilize the training process and prevent mode collapse. Our system is evaluated on a full-sized humanoid JAXON in the simulator. The resulting control policy demonstrates a wide range of locomotion patterns, including standing, push-recovery, squat walking, human-like straight-leg walking, and dynamic running. Notably, even in the absence of transition motions in the demonstration dataset, robots showcase an emerging ability to transit naturally between distinct locomotion patterns as desired speed changes.</summary>
+    <category term="cs.RO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-25T15:31:34Z</published>
+    <arxiv:primary_category term="cs.RO"/>
+    <author>
+      <name>Annan Tang</name>
+    </author>
+    <author>
+      <name>Takuma Hiraoka</name>
+    </author>
+    <author>
+      <name>Naoki Hiraoka</name>
+    </author>
+    <author>
+      <name>Fan Shi</name>
+    </author>
+    <author>
+      <name>Kento Kawaharazuka</name>
+    </author>
+    <author>
+      <name>Kunio Kojima</name>
+    </author>
+    <author>
+      <name>Kei Okada</name>
+    </author>
+    <author>
+      <name>Masayuki Inaba</name>
+    </author>
+    <arxiv:doi>10.1109/ICRA57147.2024.10610449</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ICRA57147.2024.10610449" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.08590v1</id>
+    <title>Neural Machine Translation Models Can Learn to be Few-shot Learners</title>
+    <updated>2023-09-15T17:44:21Z</updated>
+    <link href="https://arxiv.org/abs/2309.08590v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.08590v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The emergent ability of Large Language Models to use a small number of examples to learn to perform in novel domains and tasks, also called in-context learning (ICL). In this work, we show that a much smaller model can be trained to perform ICL by fine-tuning towards a specialized training objective, exemplified on the task of domain adaptation for neural machine translation. With this capacity for ICL, the model can take advantage of relevant few-shot examples to adapt its output towards the domain. We compare the quality of this domain adaptation to traditional supervised techniques and ICL with a 40B-parameter Large Language Model. Our approach allows efficient batch inference on a mix of domains and outperforms state-of-the-art baselines in terms of both translation quality and immediate adaptation rate, i.e. the ability to reproduce a specific term after being shown a single example.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-15T17:44:21Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Raphael Reinauer</name>
+    </author>
+    <author>
+      <name>Patrick Simianer</name>
+    </author>
+    <author>
+      <name>Kaden Uhlig</name>
+    </author>
+    <author>
+      <name>Johannes E. M. Mosig</name>
+    </author>
+    <author>
+      <name>Joern Wuebker</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.03118v1</id>
+    <title>Knowledge Solver: Teaching LLMs to Search for Domain Knowledge from Knowledge Graphs</title>
+    <updated>2023-09-06T15:55:01Z</updated>
+    <link href="https://arxiv.org/abs/2309.03118v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.03118v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs), such as ChatGPT and GPT-4, are versatile and can solve different tasks due to their emergent ability and generalizability. However, LLMs sometimes lack domain-specific knowledge to perform tasks, which would also cause hallucination during inference. In some previous works, additional modules like graph neural networks (GNNs) are trained on retrieved knowledge from external knowledge bases, aiming to mitigate the problem of lacking domain-specific knowledge. However, incorporating additional modules: 1) would need retraining additional modules when encountering novel domains; 2) would become a bottleneck since LLMs' strong abilities are not fully utilized for retrieval. In this paper, we propose a paradigm, termed Knowledge Solver (KSL), to teach LLMs to search for essential knowledge from external knowledge bases by harnessing their own strong generalizability. Specifically, we design a simple yet effective prompt to transform retrieval into a multi-hop decision sequence, which empowers LLMs with searching knowledge ability in zero-shot manner. Additionally, KSL is able to provide complete retrieval paths and therefore increase explainability of LLMs' reasoning processes. We conduct experiments on three datasets: CommonsenseQA, OpenbookQA, and MedQA-USMLE, and found that our approach improves LLM baseline performance by a relatively large margin.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-06T15:55:01Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Chao Feng</name>
+    </author>
+    <author>
+      <name>Xinyu Zhang</name>
+    </author>
+    <author>
+      <name>Zichu Fei</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.01809v2</id>
+    <title>Are Emergent Abilities in Large Language Models just In-Context Learning?</title>
+    <updated>2024-07-15T12:21:56Z</updated>
+    <link href="https://arxiv.org/abs/2309.01809v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.01809v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models, comprising billions of parameters and pre-trained on extensive web-scale corpora, have been claimed to acquire certain capabilities without having been specifically trained on them. These capabilities, referred to as "emergent abilities," have been a driving force in discussions regarding the potentials and risks of language models. A key challenge in evaluating emergent abilities is that they are confounded by model competencies that arise through alternative prompting techniques, including in-context learning, which is the ability of models to complete a task based on a few examples. We present a novel theory that explains emergent abilities, taking into account their potential confounding factors, and rigorously substantiate this theory through over 1000 experiments. Our findings suggest that purported emergent abilities are not truly emergent, but result from a combination of in-context learning, model memory, and linguistic knowledge. Our work is a foundational step in explaining language model performance, providing a template for their efficient use and clarifying the paradox of their ability to excel in some instances while faltering in others. Thus, we demonstrate that their capabilities should not be overestimated.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-04T20:54:11Z</published>
+    <arxiv:comment>Accepted to ACL 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sheng Lu</name>
+    </author>
+    <author>
+      <name>Irina Bigoulaeva</name>
+    </author>
+    <author>
+      <name>Rachneet Sachdeva</name>
+    </author>
+    <author>
+      <name>Harish Tayyar Madabushi</name>
+    </author>
+    <author>
+      <name>Iryna Gurevych</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.01538v3</id>
+    <title>ChatRule: Mining Logical Rules with Large Language Models for Knowledge Graph Reasoning</title>
+    <updated>2024-01-22T02:39:17Z</updated>
+    <link href="https://arxiv.org/abs/2309.01538v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.01538v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Logical rules are essential for uncovering the logical connections between relations, which could improve reasoning performance and provide interpretable results on knowledge graphs (KGs). Although there have been many efforts to mine meaningful logical rules over KGs, existing methods suffer from computationally intensive searches over the rule space and a lack of scalability for large-scale KGs. Besides, they often ignore the semantics of relations which is crucial for uncovering logical connections. Recently, large language models (LLMs) have shown impressive performance in the field of natural language processing and various applications, owing to their emergent ability and generalizability. In this paper, we propose a novel framework, ChatRule, unleashing the power of large language models for mining logical rules over knowledge graphs. Specifically, the framework is initiated with an LLM-based rule generator, leveraging both the semantic and structural information of KGs to prompt LLMs to generate logical rules. To refine the generated rules, a rule ranking module estimates the rule quality by incorporating facts from existing KGs. Last, the ranked rules can be used to conduct reasoning over KGs. ChatRule is evaluated on four large-scale KGs, w.r.t. different rule quality metrics and downstream tasks, showing the effectiveness and scalability of our method.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-04T11:38:02Z</published>
+    <arxiv:comment>11 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Linhao Luo</name>
+    </author>
+    <author>
+      <name>Jiaxin Ju</name>
+    </author>
+    <author>
+      <name>Bo Xiong</name>
+    </author>
+    <author>
+      <name>Yuan-Fang Li</name>
+    </author>
+    <author>
+      <name>Gholamreza Haffari</name>
+    </author>
+    <author>
+      <name>Shirui Pan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.00649v2</id>
+    <title>GPT has become financially literate: Insights from financial literacy tests of GPT and a preliminary test of how people use it as a source of advice</title>
+    <updated>2024-09-03T15:23:26Z</updated>
+    <link href="https://arxiv.org/abs/2309.00649v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.00649v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We assess the ability of GPT -- a large language model -- to serve as a financial robo-advisor for the masses, by using a financial literacy test. Davinci and ChatGPT based on GPT-3.5 score 66% and 65% on the financial literacy test, respectively, compared to a baseline of 33%. However, ChatGPT based on GPT-4 achieves a near-perfect 99% score, pointing to financial literacy becoming an emergent ability of state-of-the-art models. We use the Judge-Advisor System and a savings dilemma to illustrate how researchers might assess advice-utilization from large language models. We also present a number of directions for future research.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="econ.GN" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-31T12:53:52Z</published>
+    <arxiv:comment>43 pages, 2 figures and 2 tables in main text; in V2 added information that this is the Author Accepted Manuscript version</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Finance Research Letters, 2023, 58, 104333</arxiv:journal_ref>
+    <author>
+      <name>Paweł Niszczota</name>
+    </author>
+    <author>
+      <name>Sami Abbas</name>
+    </author>
+    <arxiv:doi>10.1016/j.frl.2023.104333</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.frl.2023.104333" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.00646v2</id>
+    <title>Intelligence as a Measure of Consciousness</title>
+    <updated>2023-09-06T18:17:15Z</updated>
+    <link href="https://arxiv.org/abs/2309.00646v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.00646v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Evaluating artificial systems for signs of consciousness is increasingly becoming a pressing concern, and a rigorous psychometric measurement framework may be of crucial importance in evaluating large language models in this regard. Most prominent theories of consciousness, both scientific and metaphysical, argue for different kinds of information coupling as a necessary component of human-like consciousness. By comparing information coupling in human and animal brains, human cognitive development, emergent abilities, and mental representation development to analogous phenomena in large language models, I argue that psychometric measures of intelligence, such as the g-factor or IQ, indirectly approximate the extent of conscious experience. Based on a broader source of both scientific and metaphysical theories of consciousness, I argue that all systems possess a degree of consciousness ascertainable psychometrically and that psychometric measures of intelligence may be used to gauge relative similarities of conscious experiences across disparate systems, be they artificial or human.</summary>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-30T17:15:04Z</published>
+    <arxiv:comment>10 pages</arxiv:comment>
+    <arxiv:primary_category term="q-bio.NC"/>
+    <author>
+      <name>Igor Ševo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.16118v2</id>
+    <title>Response: Emergent analogical reasoning in large language models</title>
+    <updated>2024-05-01T00:24:17Z</updated>
+    <link href="https://arxiv.org/abs/2308.16118v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.16118v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In their recent Nature Human Behaviour paper, "Emergent analogical reasoning in large language models," (Webb, Holyoak, and Lu, 2023) the authors argue that "large language models such as GPT-3 have acquired an emergent ability to find zero-shot solutions to a broad range of analogy problems." In this response, we provide counterexamples of the letter string analogies. In our tests, GPT-3 fails to solve simplest variations of the original tasks, whereas human performance remains consistently high across all modified versions. Zero-shot reasoning is an extraordinary claim that requires extraordinary evidence. We do not see that evidence in our experiments. To strengthen claims of humanlike reasoning such as zero-shot reasoning, it is important that the field develop approaches that rule out data memorization.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-30T16:17:26Z</published>
+    <arxiv:comment>Response to publication in Nature Human Behaviour titled "Emergent analogical reasoning in large language models," (Webb, Holyoak, and Lu, 2023, arXiv:2212.09196). 14 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Damian Hodel</name>
+    </author>
+    <author>
+      <name>Jevin West</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.15645v2</id>
+    <title>AskIt: Unified Programming Interface for Programming with Large Language Models</title>
+    <updated>2023-12-27T15:25:46Z</updated>
+    <link href="https://arxiv.org/abs/2308.15645v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.15645v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) exhibit a unique phenomenon known as emergent abilities, demonstrating adeptness across numerous tasks, from text summarization to code generation. While these abilities open up novel avenues in software design and crafting, their incorporation presents substantial challenges. Developers face decisions regarding the use of LLMs for directly performing tasks within applications as well as for generating and executing code to accomplish these tasks. Moreover, effective prompt design becomes a critical concern, given the necessity of extracting data from natural language outputs. To address these complexities, this paper introduces AskIt, a domain-specific language (DSL) specifically designed for LLMs. AskIt simplifies LLM integration by providing a unified interface that not only allows for direct task execution using LLMs but also supports the entire cycle of code generation and execution. This dual capability is achieved through (1) type-guided output control, (2) template-based function definitions, and (3) prompt generation for both usage modes. Our evaluations underscore AskIt's effectiveness. Across 50 tasks, AskIt generated concise prompts, achieving a 16.14 % reduction in prompt length compared to benchmarks. Additionally, by enabling a seamless transition between using LLMs directly in applications and for generating code, AskIt achieved significant efficiency improvements, as observed in our GSM8K benchmark experiments. The implementations of AskIt in TypeScript and Python are available at https://github.com/katsumiok/ts-askit and https://github.com/katsumiok/pyaskit, respectively.</summary>
+    <category term="cs.PL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-29T21:44:27Z</published>
+    <arxiv:comment>To be published in 2024 IEEE/ACM International Symposium on Code Generation and Optimization (CGO)</arxiv:comment>
+    <arxiv:primary_category term="cs.PL"/>
+    <author>
+      <name>Katsumi Okuda</name>
+    </author>
+    <author>
+      <name>Saman Amarasinghe</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.13911v1</id>
+    <title>A Wide Evaluation of ChatGPT on Affective Computing Tasks</title>
+    <updated>2023-08-26T16:10:30Z</updated>
+    <link href="https://arxiv.org/abs/2308.13911v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.13911v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the rise of foundation models, a new artificial intelligence paradigm has emerged, by simply using general purpose foundation models with prompting to solve problems instead of training a separate machine learning model for each problem. Such models have been shown to have emergent properties of solving problems that they were not initially trained on. The studies for the effectiveness of such models are still quite limited. In this work, we widely study the capabilities of the ChatGPT models, namely GPT-4 and GPT-3.5, on 13 affective computing problems, namely aspect extraction, aspect polarity classification, opinion extraction, sentiment analysis, sentiment intensity ranking, emotions intensity ranking, suicide tendency detection, toxicity detection, well-being assessment, engagement measurement, personality assessment, sarcasm detection, and subjectivity detection. We introduce a framework to evaluate the ChatGPT models on regression-based problems, such as intensity ranking problems, by modelling them as pairwise ranking classification. We compare ChatGPT against more traditional NLP methods, such as end-to-end recurrent neural networks and transformers. The results demonstrate the emergent abilities of the ChatGPT models on a wide range of affective computing problems, where GPT-3.5 and especially GPT-4 have shown strong performance on many problems, particularly the ones related to sentiment, emotions, or toxicity. The ChatGPT models fell short for problems with implicit signals, such as engagement measurement and subjectivity detection.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-26T16:10:30Z</published>
+    <arxiv:comment>8 pages with references, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Mostafa M. Amin</name>
+    </author>
+    <author>
+      <name>Rui Mao</name>
+    </author>
+    <author>
+      <name>Erik Cambria</name>
+    </author>
+    <author>
+      <name>Björn W. Schuller</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.06782v2</id>
+    <title>PentestGPT: An LLM-empowered Automatic Penetration Testing Tool</title>
+    <updated>2024-06-02T16:16:49Z</updated>
+    <link href="https://arxiv.org/abs/2308.06782v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.06782v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Penetration testing, a crucial industrial practice for ensuring system security, has traditionally resisted automation due to the extensive expertise required by human professionals. Large Language Models (LLMs) have shown significant advancements in various domains, and their emergent abilities suggest their potential to revolutionize industries. In this research, we evaluate the performance of LLMs on real-world penetration testing tasks using a robust benchmark created from test machines with platforms. Our findings reveal that while LLMs demonstrate proficiency in specific sub-tasks within the penetration testing process, such as using testing tools, interpreting outputs, and proposing subsequent actions, they also encounter difficulties maintaining an integrated understanding of the overall testing scenario.
+  In response to these insights, we introduce PentestGPT, an LLM-empowered automatic penetration testing tool that leverages the abundant domain knowledge inherent in LLMs. PentestGPT is meticulously designed with three self-interacting modules, each addressing individual sub-tasks of penetration testing, to mitigate the challenges related to context loss. Our evaluation shows that PentestGPT not only outperforms LLMs with a task-completion increase of 228.6\% compared to the \gptthree model among the benchmark targets but also proves effective in tackling real-world penetration testing challenges. Having been open-sourced on GitHub, PentestGPT has garnered over 4,700 stars and fostered active community engagement, attesting to its value and impact in both the academic and industrial spheres.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-13T14:35:50Z</published>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Gelei Deng</name>
+    </author>
+    <author>
+      <name>Yi Liu</name>
+    </author>
+    <author>
+      <name>Víctor Mayoral-Vilches</name>
+    </author>
+    <author>
+      <name>Peng Liu</name>
+    </author>
+    <author>
+      <name>Yuekang Li</name>
+    </author>
+    <author>
+      <name>Yuan Xu</name>
+    </author>
+    <author>
+      <name>Tianwei Zhang</name>
+    </author>
+    <author>
+      <name>Yang Liu</name>
+    </author>
+    <author>
+      <name>Martin Pinzger</name>
+    </author>
+    <author>
+      <name>Stefan Rass</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.04241v2</id>
+    <title>AutoPCF: Efficient Product Carbon Footprint Accounting with Large Language Models</title>
+    <updated>2023-08-11T06:09:37Z</updated>
+    <link href="https://arxiv.org/abs/2308.04241v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.04241v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The product carbon footprint (PCF) is crucial for decarbonizing the supply chain, as it measures the direct and indirect greenhouse gas emissions caused by all activities during the product's life cycle. However, PCF accounting often requires expert knowledge and significant time to construct life cycle models. In this study, we test and compare the emergent ability of five large language models (LLMs) in modeling the 'cradle-to-gate' life cycles of products and generating the inventory data of inputs and outputs, revealing their limitations as a generalized PCF knowledge database. By utilizing LLMs, we propose an automatic AI-driven PCF accounting framework, called AutoPCF, which also applies deep learning algorithms to automatically match calculation parameters, and ultimately calculate the PCF. The results of estimating the carbon footprint for three case products using the AutoPCF framework demonstrate its potential in achieving automatic modeling and estimation of PCF with a large reduction in modeling time from days to minutes.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-08T13:12:03Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Zhu Deng</name>
+    </author>
+    <author>
+      <name>Jinjie Liu</name>
+    </author>
+    <author>
+      <name>Biao Luo</name>
+    </author>
+    <author>
+      <name>Can Yuan</name>
+    </author>
+    <author>
+      <name>Qingrun Yang</name>
+    </author>
+    <author>
+      <name>Lei Xiao</name>
+    </author>
+    <author>
+      <name>Wenwen Zhou</name>
+    </author>
+    <author>
+      <name>Zhu Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.01497v3</id>
+    <title>Large Language Model Displays Emergent Ability to Interpret Novel Literary Metaphors</title>
+    <updated>2024-01-16T19:00:56Z</updated>
+    <link href="https://arxiv.org/abs/2308.01497v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.01497v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in the performance of large language models (LLMs) have sparked debate over whether, given sufficient training, high-level human abilities emerge in such generic forms of artificial intelligence (AI). Despite the exceptional performance of LLMs on a wide range of tasks involving natural language processing and reasoning, there has been sharp disagreement as to whether their abilities extend to more creative human abilities. A core example is the ability to interpret novel metaphors. Given the enormous and non curated text corpora used to train LLMs, a serious obstacle to designing tests is the requirement of finding novel yet high quality metaphors that are unlikely to have been included in the training data. Here we assessed the ability of GPT4, a state of the art large language model, to provide natural-language interpretations of novel literary metaphors drawn from Serbian poetry and translated into English. Despite exhibiting no signs of having been exposed to these metaphors previously, the AI system consistently produced detailed and incisive interpretations. Human judges, blind to the fact that an AI model was involved, rated metaphor interpretations generated by GPT4 as superior to those provided by a group of college students. In interpreting reversed metaphors, GPT4, as well as humans, exhibited signs of sensitivity to the Gricean cooperative principle. In addition, for several novel English poems GPT4 produced interpretations that were rated as excellent or good by a human literary critic. These results indicate that LLMs such as GPT4 have acquired an emergent ability to interpret complex metaphors, including those embedded in novel poems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-03T01:46:27Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Nicholas Ichien</name>
+    </author>
+    <author>
+      <name>Dušan Stamenković</name>
+    </author>
+    <author>
+      <name>Keith J. Holyoak</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.09007v2</id>
+    <title>On the (In)Effectiveness of Large Language Models for Chinese Text Correction</title>
+    <updated>2023-12-11T12:39:16Z</updated>
+    <link href="https://arxiv.org/abs/2307.09007v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.09007v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, the development and progress of Large Language Models (LLMs) have amazed the entire Artificial Intelligence community. Benefiting from their emergent abilities, LLMs have attracted more and more researchers to study their capabilities and performance on various downstream Natural Language Processing (NLP) tasks. While marveling at LLMs' incredible performance on all kinds of tasks, we notice that they also have excellent multilingual processing capabilities, such as Chinese. To explore the Chinese processing ability of LLMs, we focus on Chinese Text Correction, a fundamental and challenging Chinese NLP task. Specifically, we evaluate various representative LLMs on the Chinese Grammatical Error Correction (CGEC) and Chinese Spelling Check (CSC) tasks, which are two main Chinese Text Correction scenarios. Additionally, we also fine-tune LLMs for Chinese Text Correction to better observe the potential capabilities of LLMs. From extensive analyses and comparisons with previous state-of-the-art small models, we empirically find that the LLMs currently have both amazing performance and unsatisfactory behavior for Chinese Text Correction. We believe our findings will promote the landing and application of LLMs in the Chinese NLP community.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-18T06:48:52Z</published>
+    <arxiv:comment>This work has been submitted to the IEEE for possible publication</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yinghui Li</name>
+    </author>
+    <author>
+      <name>Haojing Huang</name>
+    </author>
+    <author>
+      <name>Shirong Ma</name>
+    </author>
+    <author>
+      <name>Yong Jiang</name>
+    </author>
+    <author>
+      <name>Yangning Li</name>
+    </author>
+    <author>
+      <name>Feng Zhou</name>
+    </author>
+    <author>
+      <name>Hai-Tao Zheng</name>
+    </author>
+    <author>
+      <name>Qingyu Zhou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.08072v2</id>
+    <title>Do Emergent Abilities Exist in Quantized Large Language Models: An Empirical Study</title>
+    <updated>2023-07-26T04:15:48Z</updated>
+    <link href="https://arxiv.org/abs/2307.08072v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.08072v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite the superior performance, Large Language Models~(LLMs) require significant computational resources for deployment and use. To overcome this issue, quantization methods have been widely applied to reduce the memory footprint of LLMs as well as increasing the inference rate. However, a major challenge is that low-bit quantization methods often lead to performance degradation. It is important to understand how quantization impacts the capacity of LLMs. Different from previous studies focused on overall performance, this work aims to investigate the impact of quantization on \emph{emergent abilities}, which are important characteristics that distinguish LLMs from small language models. Specially, we examine the abilities of in-context learning, chain-of-thought reasoning, and instruction-following in quantized LLMs. Our empirical experiments show that these emergent abilities still exist in 4-bit quantization models, while 2-bit models encounter severe performance degradation on the test of these abilities. To improve the performance of low-bit models, we conduct two special experiments: (1) fine-gained impact analysis that studies which components (or substructures) are more sensitive to quantization, and (2) performance compensation through model fine-tuning. Our work derives a series of important findings to understand the impact of quantization on emergent abilities, and sheds lights on the possibilities of extremely low-bit quantization for LLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-16T15:11:01Z</published>
+    <arxiv:comment>15 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Peiyu Liu</name>
+    </author>
+    <author>
+      <name>Zikang Liu</name>
+    </author>
+    <author>
+      <name>Ze-Feng Gao</name>
+    </author>
+    <author>
+      <name>Dawei Gao</name>
+    </author>
+    <author>
+      <name>Wayne Xin Zhao</name>
+    </author>
+    <author>
+      <name>Yaliang Li</name>
+    </author>
+    <author>
+      <name>Bolin Ding</name>
+    </author>
+    <author>
+      <name>Ji-Rong Wen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.08041v2</id>
+    <title>Planting a SEED of Vision in Large Language Model</title>
+    <updated>2023-08-12T04:42:29Z</updated>
+    <link href="https://arxiv.org/abs/2307.08041v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.08041v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present SEED, an elaborate image tokenizer that empowers Large Language Models (LLMs) with the emergent ability to SEE and Draw at the same time. Research on image tokenizers has previously reached an impasse, as frameworks employing quantized visual tokens have lost prominence due to subpar performance and convergence in multimodal comprehension (compared to BLIP-2, etc.) or generation (compared to Stable Diffusion, etc.). Despite the limitations, we remain confident in its natural capacity to unify visual and textual representations, facilitating scalable multimodal training with LLM's original recipe. In this study, we identify two crucial principles for the architecture and training of SEED that effectively ease subsequent alignment with LLMs. (1) Image tokens should be independent of 2D physical patch positions and instead be produced with a 1D causal dependency, exhibiting intrinsic interdependence that aligns with the left-to-right autoregressive prediction mechanism in LLMs. (2) Image tokens should capture high-level semantics consistent with the degree of semantic abstraction in words, and be optimized for both discriminativeness and reconstruction during the tokenizer training phase. As a result, the off-the-shelf LLM is able to perform both image-to-text and text-to-image generation by incorporating our SEED through efficient LoRA tuning. Comprehensive multimodal pretraining and instruction tuning, which may yield improved results, are reserved for future investigation. This version of SEED was trained in 5.7 days using only 64 V100 GPUs and 5M publicly available image-text pairs. Our preliminary study emphasizes the great potential of discrete visual tokens in versatile multimodal LLMs and the importance of proper image tokenizers in broader research.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-16T13:41:39Z</published>
+    <arxiv:comment>Technical Report; Project released at: https://github.com/AILab-CVC/SEED</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuying Ge</name>
+    </author>
+    <author>
+      <name>Yixiao Ge</name>
+    </author>
+    <author>
+      <name>Ziyun Zeng</name>
+    </author>
+    <author>
+      <name>Xintao Wang</name>
+    </author>
+    <author>
+      <name>Ying Shan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.07889v3</id>
+    <title>LLM Comparative Assessment: Zero-shot NLG Evaluation through Pairwise Comparisons using Large Language Models</title>
+    <updated>2024-02-06T17:05:58Z</updated>
+    <link href="https://arxiv.org/abs/2307.07889v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.07889v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current developments in large language models (LLMs) have enabled impressive zero-shot capabilities across various natural language tasks. An interesting application of these systems is in the automated assessment of natural language generation (NLG), a highly challenging area with great practical benefit. In this paper, we explore two options for exploiting the emergent abilities of LLMs for zero-shot NLG assessment: absolute score prediction, and comparative assessment which uses relative comparisons between pairs of candidates. Though comparative assessment has not been extensively studied in NLG assessment, we note that humans often find it more intuitive to compare two options rather than scoring each one independently. This work examines comparative assessment from multiple perspectives: performance compared to absolute grading; positional biases in the prompt; and efficient ranking in terms of the number of comparisons. We illustrate that LLM comparative assessment is a simple, general and effective approach for NLG assessment. For moderate-sized open-source LLMs, such as FlanT5 and Llama2-chat, comparative assessment is superior to prompt scoring, and in many cases can achieve performance competitive with state-of-the-art methods. Additionally, we demonstrate that LLMs often exhibit strong positional biases when making pairwise comparisons, and we propose debiasing methods that can further improve performance.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-15T22:02:12Z</published>
+    <arxiv:comment>To Appear at EACL 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Adian Liusie</name>
+    </author>
+    <author>
+      <name>Potsawee Manakul</name>
+    </author>
+    <author>
+      <name>Mark J. F. Gales</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.13394v5</id>
+    <title>MME: A Comprehensive Evaluation Benchmark for Multimodal Large Language Models</title>
+    <updated>2025-10-24T02:45:36Z</updated>
+    <link href="https://arxiv.org/abs/2306.13394v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.13394v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal Large Language Model (MLLM) relies on the powerful LLM to perform multimodal tasks, showing amazing emergent abilities in recent studies, such as writing poems based on an image. However, it is difficult for these case studies to fully reflect the performance of MLLM, lacking a comprehensive evaluation. In this paper, we fill in this blank, presenting the first comprehensive MLLM Evaluation benchmark MME. It measures both perception and cognition abilities on a total of 14 subtasks. In order to avoid data leakage that may arise from direct use of public datasets for evaluation, the annotations of instruction-answer pairs are all manually designed. The concise instruction design allows us to fairly compare MLLMs, instead of struggling in prompt engineering. Besides, with such an instruction, we can also easily carry out quantitative statistics. A total of 30 advanced MLLMs are comprehensively evaluated on our MME, which not only suggests that existing MLLMs still have a large room for improvement, but also reveals the potential directions for the subsequent model optimization. The data are released at the project page https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-23T09:22:36Z</published>
+    <arxiv:comment>NeurIPS DB 2025 Spotlight, Project Page: https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models/tree/Evaluation</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Chaoyou Fu</name>
+    </author>
+    <author>
+      <name>Peixian Chen</name>
+    </author>
+    <author>
+      <name>Yunhang Shen</name>
+    </author>
+    <author>
+      <name>Yulei Qin</name>
+    </author>
+    <author>
+      <name>Mengdan Zhang</name>
+    </author>
+    <author>
+      <name>Xu Lin</name>
+    </author>
+    <author>
+      <name>Jinrui Yang</name>
+    </author>
+    <author>
+      <name>Xiawu Zheng</name>
+    </author>
+    <author>
+      <name>Ke Li</name>
+    </author>
+    <author>
+      <name>Xing Sun</name>
+    </author>
+    <author>
+      <name>Yunsheng Wu</name>
+    </author>
+    <author>
+      <name>Rongrong Ji</name>
+    </author>
+    <author>
+      <name>Caifeng Shan</name>
+    </author>
+    <author>
+      <name>Ran He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.12642v1</id>
+    <title>TaCA: Upgrading Your Visual Foundation Model with Task-agnostic Compatible Adapter</title>
+    <updated>2023-06-22T03:00:24Z</updated>
+    <link href="https://arxiv.org/abs/2306.12642v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.12642v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Visual foundation models like CLIP excel in learning feature representations from extensive datasets through self-supervised methods, demonstrating remarkable transfer learning and generalization capabilities. A growing number of applications based on visual foundation models are emerging, including innovative solutions such as BLIP-2. These applications employ pre-trained CLIP models as upstream feature extractors and train various downstream modules to accomplish diverse tasks. In situations involving system upgrades that require updating the upstream foundation model, it becomes essential to re-train all downstream modules to adapt to the new foundation model, which is inflexible and inefficient. In this paper, we introduce a parameter-efficient and task-agnostic adapter, dubbed TaCA, that facilitates compatibility across distinct foundation models while ensuring enhanced performance for the new models. TaCA allows downstream applications to seamlessly integrate better-performing foundation models without necessitating retraining. We conduct extensive experimental validation of TaCA using different scales of models with up to one billion parameters on various tasks such as video-text retrieval, video recognition, and visual question answering. The results consistently demonstrate the emergent ability of TaCA on hot-plugging upgrades for visual foundation models. Codes and models will be available at https://github.com/TencentARC/TaCA.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-22T03:00:24Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Binjie Zhang</name>
+    </author>
+    <author>
+      <name>Yixiao Ge</name>
+    </author>
+    <author>
+      <name>Xuyuan Xu</name>
+    </author>
+    <author>
+      <name>Ying Shan</name>
+    </author>
+    <author>
+      <name>Mike Zheng Shou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.11489v2</id>
+    <title>Give Us the Facts: Enhancing Large Language Models with Knowledge Graphs for Fact-aware Language Modeling</title>
+    <updated>2024-01-30T12:11:45Z</updated>
+    <link href="https://arxiv.org/abs/2306.11489v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.11489v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, ChatGPT, a representative large language model (LLM), has gained considerable attention due to its powerful emergent abilities. Some researchers suggest that LLMs could potentially replace structured knowledge bases like knowledge graphs (KGs) and function as parameterized knowledge bases. However, while LLMs are proficient at learning probabilistic language patterns based on large corpus and engaging in conversations with humans, they, like previous smaller pre-trained language models (PLMs), still have difficulty in recalling facts while generating knowledge-grounded contents. To overcome these limitations, researchers have proposed enhancing data-driven PLMs with knowledge-based KGs to incorporate explicit factual knowledge into PLMs, thus improving their performance to generate texts requiring factual knowledge and providing more informed responses to user queries. This paper reviews the studies on enhancing PLMs with KGs, detailing existing knowledge graph enhanced pre-trained language models (KGPLMs) as well as their applications. Inspired by existing studies on KGPLM, this paper proposes to enhance LLMs with KGs by developing knowledge graph-enhanced large language models (KGLLMs). KGLLM provides a solution to enhance LLMs' factual reasoning ability, opening up new avenues for LLM research.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-20T12:21:06Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Linyao Yang</name>
+    </author>
+    <author>
+      <name>Hongyang Chen</name>
+    </author>
+    <author>
+      <name>Zhao Li</name>
+    </author>
+    <author>
+      <name>Xiao Ding</name>
+    </author>
+    <author>
+      <name>Xindong Wu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.08302v3</id>
+    <title>Unifying Large Language Models and Knowledge Graphs: A Roadmap</title>
+    <updated>2024-01-25T00:48:34Z</updated>
+    <link href="https://arxiv.org/abs/2306.08302v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.08302v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs), such as ChatGPT and GPT4, are making new waves in the field of natural language processing and artificial intelligence, due to their emergent ability and generalizability. However, LLMs are black-box models, which often fall short of capturing and accessing factual knowledge. In contrast, Knowledge Graphs (KGs), Wikipedia and Huapu for example, are structured knowledge models that explicitly store rich factual knowledge. KGs can enhance LLMs by providing external knowledge for inference and interpretability. Meanwhile, KGs are difficult to construct and evolving by nature, which challenges the existing methods in KGs to generate new facts and represent unseen knowledge. Therefore, it is complementary to unify LLMs and KGs together and simultaneously leverage their advantages. In this article, we present a forward-looking roadmap for the unification of LLMs and KGs. Our roadmap consists of three general frameworks, namely, 1) KG-enhanced LLMs, which incorporate KGs during the pre-training and inference phases of LLMs, or for the purpose of enhancing understanding of the knowledge learned by LLMs; 2) LLM-augmented KGs, that leverage LLMs for different KG tasks such as embedding, completion, construction, graph-to-text generation, and question answering; and 3) Synergized LLMs + KGs, in which LLMs and KGs play equal roles and work in a mutually beneficial way to enhance both LLMs and KGs for bidirectional reasoning driven by both data and knowledge. We review and summarize existing efforts within these three frameworks in our roadmap and pinpoint their future research directions.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-14T07:15:26Z</published>
+    <arxiv:comment>A short version of this paper was accepted by IEEE Transactions on Knowledge and Data Engineering (TKDE)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>IEEE Transactions on Knowledge and Data Engineering (TKDE) 2024</arxiv:journal_ref>
+    <author>
+      <name>Shirui Pan</name>
+    </author>
+    <author>
+      <name>Linhao Luo</name>
+    </author>
+    <author>
+      <name>Yufei Wang</name>
+    </author>
+    <author>
+      <name>Chen Chen</name>
+    </author>
+    <author>
+      <name>Jiapu Wang</name>
+    </author>
+    <author>
+      <name>Xindong Wu</name>
+    </author>
+    <arxiv:doi>10.1109/TKDE.2024.3352100</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TKDE.2024.3352100" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.07622v2</id>
+    <title>Human-Like Intuitive Behavior and Reasoning Biases Emerged in Language Models -- and Disappeared in GPT-4</title>
+    <updated>2023-08-18T17:33:15Z</updated>
+    <link href="https://arxiv.org/abs/2306.07622v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.07622v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are currently at the forefront of intertwining AI systems with human communication and everyday life. Therefore, it is of great importance to evaluate their emerging abilities. In this study, we show that LLMs, most notably GPT-3, exhibit behavior that strikingly resembles human-like intuition -- and the cognitive errors that come with it. However, LLMs with higher cognitive capabilities, in particular ChatGPT and GPT-4, learned to avoid succumbing to these errors and perform in a hyperrational manner. For our experiments, we probe LLMs with the Cognitive Reflection Test (CRT) as well as semantic illusions that were originally designed to investigate intuitive decision-making in humans. Moreover, we probe how sturdy the inclination for intuitive-like decision-making is. Our study demonstrates that investigating LLMs with methods from psychology has the potential to reveal otherwise unknown emergent traits.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-13T08:43:13Z</published>
+    <arxiv:comment>Overlap with arXiv:2212.05206</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Thilo Hagendorff</name>
+    </author>
+    <author>
+      <name>Sarah Fabi</name>
+    </author>
+    <arxiv:doi>10.1038/s43588-023-00527-x</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s43588-023-00527-x" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.02907v1</id>
+    <title>SelfEvolve: A Code Evolution Framework via Large Language Models</title>
+    <updated>2023-06-05T14:12:46Z</updated>
+    <link href="https://arxiv.org/abs/2306.02907v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.02907v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have already revolutionized code generation, after being pretrained on publicly available code data. However, while various methods have been proposed to augment LLMs with retrieved knowledge and enhance the quality of code generation, the performance of these retrieval-based methods is limited by the strength of the retrievers used. In addition, while LLMs show great emergent ability, they still struggle to produce the correct code in one turn. To address these challenges, we propose a novel two-step pipeline, called \autoknow, that leverages LLMs as both knowledge providers and self-reflective programmers. Unlike retrieval-based methods, \autoknow~obtains the knowledge from input prompts and generates intermediate code based on the generated knowledge. After that, \autoknow~asks LLM to act as an expert programmer to perform debugging for the generated code. This is achieved by receiving the error message from the interpreter, without requiring special test cases for correctness verification. We evaluate \autoknow~on three code generation datasets, including DS-1000 for data science code, HumanEval for software engineering code, and TransCoder for C++-to-Python translation. Our empirical experiments show that \autoknow~outperforms strong baselines by a significant margin on all datasets. We also conduct exhaustive analytical experiments to validate the effectiveness of the two stages of \autoknow, and find that both are superior to other prompting-based methods. Further scalability analysis demonstrates that \autoknow~can be adapted to other more advanced models, such as GPT-4, and bring consistent efficacy improvement.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-05T14:12:46Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shuyang Jiang</name>
+    </author>
+    <author>
+      <name>Yuhao Wang</name>
+    </author>
+    <author>
+      <name>Yu Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.18486v4</id>
+    <title>A Systematic Study and Comprehensive Evaluation of ChatGPT on Benchmark Datasets</title>
+    <updated>2023-07-05T16:19:38Z</updated>
+    <link href="https://arxiv.org/abs/2305.18486v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.18486v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The development of large language models (LLMs) such as ChatGPT has brought a lot of attention recently. However, their evaluation in the benchmark academic datasets remains under-explored due to the difficulty of evaluating the generative outputs produced by this model against the ground truth. In this paper, we aim to present a thorough evaluation of ChatGPT's performance on diverse academic datasets, covering tasks like question-answering, text summarization, code generation, commonsense reasoning, mathematical problem-solving, machine translation, bias detection, and ethical considerations. Specifically, we evaluate ChatGPT across 140 tasks and analyze 255K responses it generates in these datasets. This makes our work the largest evaluation of ChatGPT in NLP benchmarks. In short, our study aims to validate the strengths and weaknesses of ChatGPT in various tasks and provide insights for future research using LLMs. We also report a new emergent ability to follow multi-query instructions that we mostly found in ChatGPT and other instruction-tuned models. Our extensive evaluation shows that even though ChatGPT is capable of performing a wide variety of tasks, and may obtain impressive performance in several benchmark datasets, it is still far from achieving the ability to reliably solve many challenging tasks. By providing a thorough assessment of ChatGPT's performance across diverse NLP tasks, this paper sets the stage for a targeted deployment of ChatGPT-like LLMs in real-world applications.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-29T12:37:21Z</published>
+    <arxiv:comment>Accepted by ACL 2023 Findings. The first three authors contributed equally</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Md Tahmid Rahman Laskar</name>
+    </author>
+    <author>
+      <name>M Saiful Bari</name>
+    </author>
+    <author>
+      <name>Mizanur Rahman</name>
+    </author>
+    <author>
+      <name>Md Amran Hossen Bhuiyan</name>
+    </author>
+    <author>
+      <name>Shafiq Joty</name>
+    </author>
+    <author>
+      <name>Jimmy Xiangji Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.15808v1</id>
+    <title>Towards Language-guided Interactive 3D Generation: LLMs as Layout Interpreter with Generative Feedback</title>
+    <updated>2023-05-25T07:43:39Z</updated>
+    <link href="https://arxiv.org/abs/2305.15808v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.15808v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generating and editing a 3D scene guided by natural language poses a challenge, primarily due to the complexity of specifying the positional relations and volumetric changes within the 3D space. Recent advancements in Large Language Models (LLMs) have demonstrated impressive reasoning, conversational, and zero-shot generation abilities across various domains. Surprisingly, these models also show great potential in realizing and interpreting the 3D space. In light of this, we propose a novel language-guided interactive 3D generation system, dubbed LI3D, that integrates LLMs as a 3D layout interpreter into the off-the-shelf layout-to-3D generative models, allowing users to flexibly and interactively generate visual content. Specifically, we design a versatile layout structure base on the bounding boxes and semantics to prompt the LLMs to model the spatial generation and reasoning from language. Our system also incorporates LLaVA, a large language and vision assistant, to provide generative feedback from the visual aspect for improving the visual quality of generated content. We validate the effectiveness of LI3D, primarily in 3D generation and editing through multi-round interactions, which can be flexibly extended to 2D generation and editing. Various experiments demonstrate the potential benefits of incorporating LLMs in generative AI for applications, e.g., metaverse. Moreover, we benchmark the layout reasoning performance of LLMs with neural visual artist tasks, revealing their emergent ability in the spatial layout domain.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-25T07:43:39Z</published>
+    <arxiv:comment>Preprint. Work in Progres</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yiqi Lin</name>
+    </author>
+    <author>
+      <name>Hao Wu</name>
+    </author>
+    <author>
+      <name>Ruichen Wang</name>
+    </author>
+    <author>
+      <name>Haonan Lu</name>
+    </author>
+    <author>
+      <name>Xiaodong Lin</name>
+    </author>
+    <author>
+      <name>Hui Xiong</name>
+    </author>
+    <author>
+      <name>Lin Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.14069v2</id>
+    <title>Evaluating Factual Consistency of Summaries with Large Language Models</title>
+    <updated>2023-10-12T06:20:42Z</updated>
+    <link href="https://arxiv.org/abs/2305.14069v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.14069v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Detecting factual errors in summaries has been an important and challenging subject in summarization research. Inspired by the emergent ability of large language models (LLMs), we explore evaluating factual consistency of summaries by directly prompting LLMs. We present a comprehensive empirical study to assess the ability of LLMs as factual consistency evaluators, which consists of (1) analyzing different LLMs such as the GPT model series and Flan-T5; (2) investigating a variety of prompting methods including vanilla prompting, chain-of-thought prompting, and a sentence-by-sentence prompting method to tackle long summaries; and (3) evaluating on diverse summaries generated by multiple summarization systems, ranging from pre-transformer methods to SOTA pretrained models. Our experiments demonstrate that prompting LLMs is able to outperform the previous best factuality systems in all settings, by up to 12.2 absolute points in terms of the binary classification accuracy on inconsistency detection.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-23T13:48:32Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shiqi Chen</name>
+    </author>
+    <author>
+      <name>Siyang Gao</name>
+    </author>
+    <author>
+      <name>Junxian He</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.13512v2</id>
+    <title>Can ChatGPT Detect Intent? Evaluating Large Language Models for Spoken Language Understanding</title>
+    <updated>2023-08-17T19:23:20Z</updated>
+    <link href="https://arxiv.org/abs/2305.13512v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.13512v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, large pretrained language models have demonstrated strong language understanding capabilities. This is particularly reflected in their zero-shot and in-context learning abilities on downstream tasks through prompting. To assess their impact on spoken language understanding (SLU), we evaluate several such models like ChatGPT and OPT of different sizes on multiple benchmarks. We verify the emergent ability unique to the largest models as they can reach intent classification accuracy close to that of supervised models with zero or few shots on various languages given oracle transcripts. By contrast, the results for smaller models fitting a single GPU fall far behind. We note that the error cases often arise from the annotation scheme of the dataset; responses from ChatGPT are still reasonable. We show, however, that the model is worse at slot filling, and its performance is sensitive to ASR errors, suggesting serious challenges for the application of those textual models on SLU.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-22T21:59:26Z</published>
+    <arxiv:comment>6 pages, 2 figures; Accepted by Interspeech 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mutian He</name>
+    </author>
+    <author>
+      <name>Philip N. Garner</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.13264v2</id>
+    <title>Prompting is not a substitute for probability measurements in large language models</title>
+    <updated>2023-10-23T14:12:59Z</updated>
+    <link href="https://arxiv.org/abs/2305.13264v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.13264v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Prompting is now a dominant method for evaluating the linguistic knowledge of large language models (LLMs). While other methods directly read out models' probability distributions over strings, prompting requires models to access this internal information by processing linguistic input, thereby implicitly testing a new type of emergent ability: metalinguistic judgment. In this study, we compare metalinguistic prompting and direct probability measurements as ways of measuring models' linguistic knowledge. Broadly, we find that LLMs' metalinguistic judgments are inferior to quantities directly derived from representations. Furthermore, consistency gets worse as the prompt query diverges from direct measurements of next-word probabilities. Our findings suggest that negative results relying on metalinguistic prompts cannot be taken as conclusive evidence that an LLM lacks a particular linguistic generalization. Our results also highlight the value that is lost with the move to closed APIs where access to probability distributions is limited.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-22T17:33:17Z</published>
+    <arxiv:comment>Camera-ready version for EMNLP 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jennifer Hu</name>
+    </author>
+    <author>
+      <name>Roger Levy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.11169v3</id>
+    <title>Emergent Representations of Program Semantics in Language Models Trained on Programs</title>
+    <updated>2024-08-02T23:09:32Z</updated>
+    <link href="https://arxiv.org/abs/2305.11169v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.11169v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present evidence that language models (LMs) of code can learn to represent the formal semantics of programs, despite being trained only to perform next-token prediction. Specifically, we train a Transformer model on a synthetic corpus of programs written in a domain-specific language for navigating 2D grid world environments. Each program in the corpus is preceded by a (partial) specification in the form of several input-output grid world states. Despite providing no further inductive biases, we find that a probing classifier is able to extract increasingly accurate representations of the unobserved, intermediate grid world states from the LM hidden states over the course of training, suggesting the LM acquires an emergent ability to interpret programs in the formal sense. We also develop a novel interventional baseline that enables us to disambiguate what is represented by the LM as opposed to learned by the probe. We anticipate that this technique may be generally applicable to a broad range of semantic probing experiments. In summary, this paper does not propose any new techniques for training LMs of code, but develops an experimental framework for and provides insights into the acquisition and representation of formal semantics in statistical models of code. Our code is available at https://github.com/charlesjin/emergent-semantics.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.PL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-18T17:58:08Z</published>
+    <arxiv:comment>ICML 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>PMLR 235:22160-22184, 2024</arxiv:journal_ref>
+    <author>
+      <name>Charles Jin</name>
+    </author>
+    <author>
+      <name>Martin Rinard</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.11095v3</id>
+    <title>Prompting the Hidden Talent of Web-Scale Speech Models for Zero-Shot Task Generalization</title>
+    <updated>2023-08-16T00:57:34Z</updated>
+    <link href="https://arxiv.org/abs/2305.11095v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.11095v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate the emergent abilities of the recently proposed web-scale speech model Whisper, by adapting it to unseen tasks with prompt engineering. We selected three tasks: audio-visual speech recognition (AVSR), code-switched speech recognition (CS-ASR), and speech translation (ST) on unseen language pairs. We design task-specific prompts, by either leveraging another large-scale model, or simply manipulating the special tokens in the default prompts. Experiments show that compared to the default prompts, our proposed prompts improve performance by 10% to 45% on the three zero-shot tasks, and even outperform SotA supervised models on some datasets. In addition, our experiments reveal many interesting properties of Whisper, including its robustness to prompts, bias on accents, and the multilingual understanding in its latent space. Code is available at https://github.com/jasonppy/PromptingWhisper</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-18T16:32:58Z</published>
+    <arxiv:comment>Interspeech 2023</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Puyuan Peng</name>
+    </author>
+    <author>
+      <name>Brian Yan</name>
+    </author>
+    <author>
+      <name>Shinji Watanabe</name>
+    </author>
+    <author>
+      <name>David Harwath</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.07375v4</id>
+    <title>Is ChatGPT a Good Causal Reasoner? A Comprehensive Evaluation</title>
+    <updated>2023-10-12T06:42:25Z</updated>
+    <link href="https://arxiv.org/abs/2305.07375v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.07375v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Causal reasoning ability is crucial for numerous NLP applications. Despite the impressive emerging ability of ChatGPT in various NLP tasks, it is unclear how well ChatGPT performs in causal reasoning. In this paper, we conduct the first comprehensive evaluation of the ChatGPT's causal reasoning capabilities. Experiments show that ChatGPT is not a good causal reasoner, but a good causal explainer. Besides, ChatGPT has a serious hallucination on causal reasoning, possibly due to the reporting biases between causal and non-causal relationships in natural language, as well as ChatGPT's upgrading processes, such as RLHF. The In-Context Learning (ICL) and Chain-of-Thought (CoT) techniques can further exacerbate such causal hallucination. Additionally, the causal reasoning ability of ChatGPT is sensitive to the words used to express the causal concept in prompts, and close-ended prompts perform better than open-ended prompts. For events in sentences, ChatGPT excels at capturing explicit causality rather than implicit causality, and performs better in sentences with lower event density and smaller lexical distance between events. The code is available on https://github.com/ArrogantL/ChatGPT4CausalReasoning .</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-12T10:54:13Z</published>
+    <arxiv:comment>Accepted to Findings of EMNLP 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jinglong Gao</name>
+    </author>
+    <author>
+      <name>Xiao Ding</name>
+    </author>
+    <author>
+      <name>Bing Qin</name>
+    </author>
+    <author>
+      <name>Ting Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.05576v1</id>
+    <title>Large Language Models Humanize Technology</title>
+    <updated>2023-05-09T16:05:36Z</updated>
+    <link href="https://arxiv.org/abs/2305.05576v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.05576v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have made rapid progress in recent months and weeks, garnering significant public attention. This has sparked concerns about aligning these models with human values, their impact on labor markets, and the potential need for regulation in further research and development. However, the discourse often lacks a focus on the imperative to widely diffuse the societal benefits of LLMs. To qualify this societal benefit, we assert that LLMs exhibit emergent abilities to humanize technology more effectively than previous technologies, and for people across language, occupation, and accessibility divides. We argue that they do so by addressing three mechanizing bottlenecks in today's computing technologies: creating diverse and accessible content, learning complex digital tools, and personalizing machine learning algorithms. We adopt a case-based approach and illustrate each bottleneck with two examples where current technology imposes bottlenecks that LLMs demonstrate the ability to address. Given this opportunity to humanize technology widely, we advocate for more widespread understanding of LLMs, tools and methods to simplify use of LLMs, and cross-cutting institutional capacity.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-09T16:05:36Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Pratyush Kumar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.05061v1</id>
+    <title>Coherent Wave Dynamics and Language Generation of a Generative Pre-trained Transformer</title>
+    <updated>2023-05-08T21:35:12Z</updated>
+    <link href="https://arxiv.org/abs/2305.05061v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.05061v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs), such as the Generative Pretrained Transformer (GPT), have achieved tremendous success in various language tasks, but their emergent abilities have also raised many questions, concerns, and challenges that need to be addressed. To gain a better understanding of the models' inner mechanisms, we analyze the hidden state and channel wave dynamics in a small GPT, focusing on the coherence of wave patterns in terms of cross-channel correlation and individual auto-correlation. Our findings suggest that wave dynamics offer consistent and repeatable intrinsic oscillation modes, along with context-aware plasticity and expressiveness in language generation. By analyzing wave patterns, coherence, and clustering, we provide a systematic way to identify and interpret the functionality of the hidden state channels, paving the way to understand and control higher-level language pattern formation. In addition, we investigate the Poisson statistics of spelling errors in text sequence generation across various levels of model training and observe a phase-transition-like process. As coherence builds up, there is a competition between the generation of correct and misspelled words. However, once the model is adequately trained and significant coherence has emerged, the coherent process becomes strong enough to effectively suppress spelling errors, preventing the cascade amplification of defects. The distribution of correct spellings transitions from Poissonian to Sub-Poissonian, while the distribution of misspellings shows the opposite trend. By leveraging concepts and techniques from quantum physics, we gain novel insights into the dynamics of the small GPT. This approach can be extended to larger language models that exhibit more complex coherent language patterns, opening up opportunities to interpret their emergent capabilities and develop more specialized models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nlin.PS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-08T21:35:12Z</published>
+    <arxiv:comment>10 pages, 7 figures for conference publication</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Tao Hong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.00970v1</id>
+    <title>ArK: Augmented Reality with Knowledge Interactive Emergent Ability</title>
+    <updated>2023-05-01T17:57:01Z</updated>
+    <link href="https://arxiv.org/abs/2305.00970v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.00970v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Despite the growing adoption of mixed reality and interactive AI agents, it remains challenging for these systems to generate high quality 2D/3D scenes in unseen environments. The common practice requires deploying an AI agent to collect large amounts of data for model training for every new task. This process is costly, or even impossible, for many domains. In this study, we develop an infinite agent that learns to transfer knowledge memory from general foundation models (e.g. GPT4, DALLE) to novel domains or scenarios for scene understanding and generation in the physical or virtual world. The heart of our approach is an emerging mechanism, dubbed Augmented Reality with Knowledge Inference Interaction (ArK), which leverages knowledge-memory to generate scenes in unseen physical world and virtual reality environments. The knowledge interactive emergent ability (Figure 1) is demonstrated as the observation learns i) micro-action of cross-modality: in multi-modality models to collect a large amount of relevant knowledge memory data for each interaction task (e.g., unseen scene understanding) from the physical reality; and ii) macro-behavior of reality-agnostic: in mix-reality environments to improve interactions that tailor to different characterized roles, target variables, collaborative information, and so on. We validate the effectiveness of ArK on the scene generation and editing tasks. We show that our ArK approach, combined with large foundation models, significantly improves the quality of generated 2D/3D scenes, compared to baselines, demonstrating the potential benefit of incorporating ArK in generative AI for applications such as metaverse and gaming simulation.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-01T17:57:01Z</published>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Qiuyuan Huang</name>
+    </author>
+    <author>
+      <name>Jae Sung Park</name>
+    </author>
+    <author>
+      <name>Abhinav Gupta</name>
+    </author>
+    <author>
+      <name>Paul Bennett</name>
+    </author>
+    <author>
+      <name>Ran Gong</name>
+    </author>
+    <author>
+      <name>Subhojit Som</name>
+    </author>
+    <author>
+      <name>Baolin Peng</name>
+    </author>
+    <author>
+      <name>Owais Khan Mohammed</name>
+    </author>
+    <author>
+      <name>Chris Pal</name>
+    </author>
+    <author>
+      <name>Yejin Choi</name>
+    </author>
+    <author>
+      <name>Jianfeng Gao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.15004v2</id>
+    <title>Are Emergent Abilities of Large Language Models a Mirage?</title>
+    <updated>2023-05-22T15:56:25Z</updated>
+    <link href="https://arxiv.org/abs/2304.15004v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.15004v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent work claims that large language models display emergent abilities, abilities not present in smaller-scale models that are present in larger-scale models. What makes emergent abilities intriguing is two-fold: their sharpness, transitioning seemingly instantaneously from not present to present, and their unpredictability, appearing at seemingly unforeseeable model scales. Here, we present an alternative explanation for emergent abilities: that for a particular task and model family, when analyzing fixed model outputs, emergent abilities appear due to the researcher's choice of metric rather than due to fundamental changes in model behavior with scale. Specifically, nonlinear or discontinuous metrics produce apparent emergent abilities, whereas linear or continuous metrics produce smooth, continuous predictable changes in model performance. We present our alternative explanation in a simple mathematical model, then test it in three complementary ways: we (1) make, test and confirm three predictions on the effect of metric choice using the InstructGPT/GPT-3 family on tasks with claimed emergent abilities; (2) make, test and confirm two predictions about metric choices in a meta-analysis of emergent abilities on BIG-Bench; and (3) show to choose metrics to produce never-before-seen seemingly emergent abilities in multiple vision tasks across diverse deep networks. Via all three analyses, we provide evidence that alleged emergent abilities evaporate with different metrics or with better statistics, and may not be a fundamental property of scaling AI models.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-28T17:52:11Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Rylan Schaeffer</name>
+    </author>
+    <author>
+      <name>Brando Miranda</name>
+    </author>
+    <author>
+      <name>Sanmi Koyejo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.13712v2</id>
+    <title>Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond</title>
+    <updated>2023-04-27T17:56:11Z</updated>
+    <link href="https://arxiv.org/abs/2304.13712v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.13712v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents a comprehensive and practical guide for practitioners and end-users working with Large Language Models (LLMs) in their downstream natural language processing (NLP) tasks. We provide discussions and insights into the usage of LLMs from the perspectives of models, data, and downstream tasks. Firstly, we offer an introduction and brief summary of current GPT- and BERT-style LLMs. Then, we discuss the influence of pre-training data, training data, and test data. Most importantly, we provide a detailed discussion about the use and non-use cases of large language models for various natural language processing tasks, such as knowledge-intensive tasks, traditional natural language understanding tasks, natural language generation tasks, emergent abilities, and considerations for specific tasks.We present various use cases and non-use cases to illustrate the practical applications and limitations of LLMs in real-world scenarios. We also try to understand the importance of data and the specific challenges associated with each NLP task. Furthermore, we explore the impact of spurious biases on LLMs and delve into other essential considerations, such as efficiency, cost, and latency, to ensure a comprehensive understanding of deploying LLMs in practice. This comprehensive guide aims to provide researchers and practitioners with valuable insights and best practices for working with LLMs, thereby enabling the successful implementation of these models in a wide range of NLP tasks. A curated list of practical guide resources of LLMs, regularly updated, can be found at \url{https://github.com/Mooler0410/LLMsPracticalGuide}.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-26T17:52:30Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jingfeng Yang</name>
+    </author>
+    <author>
+      <name>Hongye Jin</name>
+    </author>
+    <author>
+      <name>Ruixiang Tang</name>
+    </author>
+    <author>
+      <name>Xiaotian Han</name>
+    </author>
+    <author>
+      <name>Qizhang Feng</name>
+    </author>
+    <author>
+      <name>Haoming Jiang</name>
+    </author>
+    <author>
+      <name>Bing Yin</name>
+    </author>
+    <author>
+      <name>Xia Hu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.09960v3</id>
+    <title>A Latent Space Theory for Emergent Abilities in Large Language Models</title>
+    <updated>2023-09-13T18:52:02Z</updated>
+    <link href="https://arxiv.org/abs/2304.09960v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.09960v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Languages are not created randomly but rather to communicate information. There is a strong association between languages and their underlying meanings, resulting in a sparse joint distribution that is heavily peaked according to their correlations. Moreover, these peak values happen to match with the marginal distribution of languages due to the sparsity. With the advent of LLMs trained on big data and large models, we can now precisely assess the marginal distribution of languages, providing a convenient means of exploring the sparse structures in the joint distribution for effective inferences. In this paper, we categorize languages as either unambiguous or ε-ambiguous and present quantitative results to demonstrate that the emergent abilities of LLMs, such as language understanding, in-context learning, chain-of-thought prompting, and effective instruction fine-tuning, can all be attributed to Bayesian inference on the sparse joint distribution of languages.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-19T20:45:01Z</published>
+    <arxiv:comment>17 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Hui Jiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.06712v2</id>
+    <title>What does CLIP know about a red circle? Visual prompt engineering for VLMs</title>
+    <updated>2023-08-18T05:49:47Z</updated>
+    <link href="https://arxiv.org/abs/2304.06712v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.06712v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large-scale Vision-Language Models, such as CLIP, learn powerful image-text representations that have found numerous applications, from zero-shot classification to text-to-image generation. Despite that, their capabilities for solving novel discriminative tasks via prompting fall behind those of large language models, such as GPT-3. Here we explore the idea of visual prompt engineering for solving computer vision tasks beyond classification by editing in image space instead of text. In particular, we discover an emergent ability of CLIP, where, by simply drawing a red circle around an object, we can direct the model's attention to that region, while also maintaining global information. We show the power of this simple approach by achieving state-of-the-art in zero-shot referring expressions comprehension and strong performance in keypoint localization tasks. Finally, we draw attention to some potential ethical concerns of large language-vision models.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-13T17:58:08Z</published>
+    <arxiv:comment>ICCV 2023 Oral</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Aleksandar Shtedritski</name>
+    </author>
+    <author>
+      <name>Christian Rupprecht</name>
+    </author>
+    <author>
+      <name>Andrea Vedaldi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.01938v1</id>
+    <title>Evaluating Large Language Models on a Highly-specialized Topic, Radiation Oncology Physics</title>
+    <updated>2023-04-01T06:04:58Z</updated>
+    <link href="https://arxiv.org/abs/2304.01938v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.01938v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present the first study to investigate Large Language Models (LLMs) in answering radiation oncology physics questions. Because popular exams like AP Physics, LSAT, and GRE have large test-taker populations and ample test preparation resources in circulation, they may not allow for accurately assessing the true potential of LLMs. This paper proposes evaluating LLMs on a highly-specialized topic, radiation oncology physics, which may be more pertinent to scientific and medical communities in addition to being a valuable benchmark of LLMs. We developed an exam consisting of 100 radiation oncology physics questions based on our expertise at Mayo Clinic. Four LLMs, ChatGPT (GPT-3.5), ChatGPT (GPT-4), Bard (LaMDA), and BLOOMZ, were evaluated against medical physicists and non-experts. ChatGPT (GPT-4) outperformed all other LLMs as well as medical physicists, on average. The performance of ChatGPT (GPT-4) was further improved when prompted to explain first, then answer. ChatGPT (GPT-3.5 and GPT-4) showed a high level of consistency in its answer choices across a number of trials, whether correct or incorrect, a characteristic that was not observed in the human test groups. In evaluating ChatGPTs (GPT-4) deductive reasoning ability using a novel approach (substituting the correct answer with "None of the above choices is the correct answer."), ChatGPT (GPT-4) demonstrated surprising accuracy, suggesting the potential presence of an emergent ability. Finally, although ChatGPT (GPT-4) performed well overall, its intrinsic properties did not allow for further improvement when scoring based on a majority vote across trials. In contrast, a team of medical physicists were able to greatly outperform ChatGPT (GPT-4) using a majority vote. This study suggests a great potential for LLMs to work alongside radiation oncology experts as highly knowledgeable assistants.</summary>
+    <category term="physics.med-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="physics.ed-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-01T06:04:58Z</published>
+    <arxiv:primary_category term="physics.med-ph"/>
+    <author>
+      <name>Jason Holmes</name>
+    </author>
+    <author>
+      <name>Zhengliang Liu</name>
+    </author>
+    <author>
+      <name>Lian Zhang</name>
+    </author>
+    <author>
+      <name>Yuzhen Ding</name>
+    </author>
+    <author>
+      <name>Terence T. Sio</name>
+    </author>
+    <author>
+      <name>Lisa A. McGee</name>
+    </author>
+    <author>
+      <name>Jonathan B. Ashman</name>
+    </author>
+    <author>
+      <name>Xiang Li</name>
+    </author>
+    <author>
+      <name>Tianming Liu</name>
+    </author>
+    <author>
+      <name>Jiajian Shen</name>
+    </author>
+    <author>
+      <name>Wei Liu</name>
+    </author>
+    <arxiv:doi>10.3389/fonc.2023.1219326</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.3389/fonc.2023.1219326" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.13988v6</id>
+    <title>Machine Psychology</title>
+    <updated>2024-08-08T07:32:14Z</updated>
+    <link href="https://arxiv.org/abs/2303.13988v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.13988v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) show increasingly advanced emergent capabilities and are being incorporated across various societal domains. Understanding their behavior and reasoning abilities therefore holds significant importance. We argue that a fruitful direction for research is engaging LLMs in behavioral experiments inspired by psychology that have traditionally been aimed at understanding human cognition and behavior. In this article, we highlight and summarize theoretical perspectives, experimental paradigms, and computational analysis techniques that this approach brings to the table. It paves the way for a "machine psychology" for generative artificial intelligence (AI) that goes beyond performance benchmarks and focuses instead on computational insights that move us toward a better understanding and discovery of emergent abilities and behavioral patterns in LLMs. We review existing work taking this approach, synthesize best practices, and highlight promising future directions. We also highlight the important caveats of applying methodologies designed for understanding humans to machines. We posit that leveraging tools from experimental psychology to study AI will become increasingly valuable as models evolve to be more powerful, opaque, multi-modal, and integrated into complex real-world settings.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-24T13:24:41Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Thilo Hagendorff</name>
+    </author>
+    <author>
+      <name>Ishita Dasgupta</name>
+    </author>
+    <author>
+      <name>Marcel Binz</name>
+    </author>
+    <author>
+      <name>Stephanie C. Y. Chan</name>
+    </author>
+    <author>
+      <name>Andrew Lampinen</name>
+    </author>
+    <author>
+      <name>Jane X. Wang</name>
+    </author>
+    <author>
+      <name>Zeynep Akata</name>
+    </author>
+    <author>
+      <name>Eric Schulz</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.13112v1</id>
+    <title>A Simple Explanation for the Phase Transition in Large Language Models with List Decoding</title>
+    <updated>2023-03-23T09:00:07Z</updated>
+    <link href="https://arxiv.org/abs/2303.13112v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.13112v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Various recent experimental results show that large language models (LLM) exhibit emergent abilities that are not present in small models. System performance is greatly improved after passing a certain critical threshold of scale. In this letter, we provide a simple explanation for such a phase transition phenomenon. For this, we model an LLM as a sequence-to-sequence random function. Instead of using instant generation at each step, we use a list decoder that keeps a list of candidate sequences at each step and defers the generation of the output sequence at the end. We show that there is a critical threshold such that the expected number of erroneous candidate sequences remains bounded when an LLM is below the threshold, and it grows exponentially when an LLM is above the threshold. Such a threshold is related to the basic reproduction number in a contagious disease.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-23T09:00:07Z</published>
+    <arxiv:comment>5 pages, 1 figure</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Cheng-Shang Chang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.02015v1</id>
+    <title>How well do Large Language Models perform in Arithmetic tasks?</title>
+    <updated>2023-03-16T09:28:15Z</updated>
+    <link href="https://arxiv.org/abs/2304.02015v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.02015v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models have emerged abilities including chain-of-thought to answer math word problems step by step. Solving math word problems not only requires abilities to disassemble problems via chain-of-thought but also needs to calculate arithmetic expressions correctly for each step. To the best of our knowledge, there is no work to focus on evaluating the arithmetic ability of large language models. In this work, we propose an arithmetic dataset MATH 401 to test the latest large language models including GPT-4, ChatGPT, InstrctGPT, Galactica, and LLaMA with various arithmetic expressions and provide a detailed analysis of the ability of large language models. MATH 401 and evaluation codes are released at \url{https://github.com/GanjinZero/math401-llm}.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-16T09:28:15Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zheng Yuan</name>
+    </author>
+    <author>
+      <name>Hongyi Yuan</name>
+    </author>
+    <author>
+      <name>Chuanqi Tan</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Songfang Huang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.03846v2</id>
+    <title>Larger language models do in-context learning differently</title>
+    <updated>2023-03-08T07:37:43Z</updated>
+    <link href="https://arxiv.org/abs/2303.03846v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.03846v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We study how in-context learning (ICL) in language models is affected by semantic priors versus input-label mappings. We investigate two setups-ICL with flipped labels and ICL with semantically-unrelated labels-across various model families (GPT-3, InstructGPT, Codex, PaLM, and Flan-PaLM). First, experiments on ICL with flipped labels show that overriding semantic priors is an emergent ability of model scale. While small language models ignore flipped labels presented in-context and thus rely primarily on semantic priors from pretraining, large models can override semantic priors when presented with in-context exemplars that contradict priors, despite the stronger semantic priors that larger models may hold. We next study semantically-unrelated label ICL (SUL-ICL), in which labels are semantically unrelated to their inputs (e.g., foo/bar instead of negative/positive), thereby forcing language models to learn the input-label mappings shown in in-context exemplars in order to perform the task. The ability to do SUL-ICL also emerges primarily with scale, and large-enough language models can even perform linear classification in a SUL-ICL setting. Finally, we evaluate instruction-tuned models and find that instruction tuning strengthens both the use of semantic priors and the capacity to learn input-label mappings, but more of the former.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-07T12:24:17Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jerry Wei</name>
+    </author>
+    <author>
+      <name>Jason Wei</name>
+    </author>
+    <author>
+      <name>Yi Tay</name>
+    </author>
+    <author>
+      <name>Dustin Tran</name>
+    </author>
+    <author>
+      <name>Albert Webson</name>
+    </author>
+    <author>
+      <name>Yifeng Lu</name>
+    </author>
+    <author>
+      <name>Xinyun Chen</name>
+    </author>
+    <author>
+      <name>Hanxiao Liu</name>
+    </author>
+    <author>
+      <name>Da Huang</name>
+    </author>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+    <author>
+      <name>Tengyu Ma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.12246v5</id>
+    <title>Active Prompting with Chain-of-Thought for Large Language Models</title>
+    <updated>2024-07-21T08:01:00Z</updated>
+    <link href="https://arxiv.org/abs/2302.12246v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.12246v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasing scale of large language models (LLMs) brings emergent abilities to various complex tasks requiring reasoning, such as arithmetic and commonsense reasoning. It is known that the effective design of task-specific prompts is critical for LLMs' ability to produce high-quality answers. In particular, an effective approach for complex question-and-answer tasks is example-based prompting with chain-of-thought (CoT) reasoning, which significantly improves the performance of LLMs. However, current CoT methods rely on a fixed set of human-annotated exemplars, which are not necessarily the most effective examples for different tasks. This paper proposes a new method, Active-Prompt, to adapt LLMs to different tasks with task-specific example prompts (annotated with human-designed CoT reasoning). For this purpose, we propose a solution to the key problem of determining which questions are the most important and helpful ones to annotate from a pool of task-specific queries. By borrowing ideas from the related problem of uncertainty-based active learning, we introduce several metrics to characterize the uncertainty so as to select the most uncertain questions for annotation. Experimental results demonstrate the superiority of our proposed method, achieving state-of-the-art on eight complex reasoning tasks. Further analyses of different uncertainty metrics, pool sizes, zero-shot learning, and accuracy-uncertainty relationship demonstrate the effectiveness of our method. Our code will be available at https://github.com/shizhediao/active-prompt.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-23T18:58:59Z</published>
+    <arxiv:comment>Published in ACL 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Shizhe Diao</name>
+    </author>
+    <author>
+      <name>Pengcheng Wang</name>
+    </author>
+    <author>
+      <name>Yong Lin</name>
+    </author>
+    <author>
+      <name>Rui Pan</name>
+    </author>
+    <author>
+      <name>Xiang Liu</name>
+    </author>
+    <author>
+      <name>Tong Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.04166v2</id>
+    <title>GPTScore: Evaluate as You Desire</title>
+    <updated>2023-02-13T16:19:05Z</updated>
+    <link href="https://arxiv.org/abs/2302.04166v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.04166v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Generative Artificial Intelligence (AI) has enabled the development of sophisticated models that are capable of producing high-caliber text, images, and other outputs through the utilization of large pre-trained models. Nevertheless, assessing the quality of the generation is an even more arduous task than the generation itself, and this issue has not been given adequate consideration recently. This paper proposes a novel evaluation framework, GPTScore, which utilizes the emergent abilities (e.g., zero-shot instruction) of generative pre-trained models to score generated texts. There are 19 pre-trained models explored in this paper, ranging in size from 80M (e.g., FLAN-T5-small) to 175B (e.g., GPT3). Experimental results on four text generation tasks, 22 evaluation aspects, and corresponding 37 datasets demonstrate that this approach can effectively allow us to achieve what one desires to evaluate for texts simply by natural language instructions. This nature helps us overcome several long-standing challenges in text evaluation--how to achieve customized, multi-faceted evaluation without the need for annotated samples. We make our code publicly available at https://github.com/jinlanfu/GPTScore.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-08T16:17:29Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jinlan Fu</name>
+    </author>
+    <author>
+      <name>See-Kiong Ng</name>
+    </author>
+    <author>
+      <name>Zhengbao Jiang</name>
+    </author>
+    <author>
+      <name>Pengfei Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2301.13670v2</id>
+    <title>What Makes Good Examples for Visual In-Context Learning?</title>
+    <updated>2023-02-01T08:38:14Z</updated>
+    <link href="https://arxiv.org/abs/2301.13670v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2301.13670v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large-scale models trained on broad data have recently become the mainstream architecture in computer vision due to their strong generalization performance. In this paper, the main focus is on an emergent ability in large vision models, known as in-context learning, which allows inference on unseen tasks by conditioning on in-context examples (a.k.a.~prompt) without updating the model parameters. This concept has been well-known in natural language processing but has only been studied very recently for large vision models. We for the first time provide a comprehensive investigation on the impact of in-context examples in computer vision, and find that the performance is highly sensitive to the choice of in-context examples. To overcome the problem, we propose a prompt retrieval framework to automate the selection of in-context examples. Specifically, we present (1) an unsupervised prompt retrieval method based on nearest example search using an off-the-shelf model, and (2) a supervised prompt retrieval method, which trains a neural network to choose examples that directly maximize in-context learning performance. The results demonstrate that our methods can bring non-trivial improvements to visual in-context learning in comparison to the commonly-used random selection.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-01-31T14:40:05Z</published>
+    <arxiv:comment>code and models:https://github.com/ZhangYuanhan-AI/visual_prompt_retrieval</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yuanhan Zhang</name>
+    </author>
+    <author>
+      <name>Kaiyang Zhou</name>
+    </author>
+    <author>
+      <name>Ziwei Liu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2301.12726v1</id>
+    <title>Specializing Smaller Language Models towards Multi-Step Reasoning</title>
+    <updated>2023-01-30T08:51:19Z</updated>
+    <link href="https://arxiv.org/abs/2301.12726v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2301.12726v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The surprising ability of Large Language Models (LLMs) to perform well on complex reasoning with only few-shot chain-of-thought prompts is believed to emerge only in very large-scale models (100+ billion parameters). We show that such abilities can, in fact, be distilled down from GPT-3.5 ($\ge$ 175B) to T5 variants ($\le$ 11B). We propose model specialization, to specialize the model's ability towards a target task. The hypothesis is that large models (commonly viewed as larger than 100B) have strong modeling power, but are spread on a large spectrum of tasks. Small models (commonly viewed as smaller than 10B) have limited model capacity, but if we concentrate their capacity on a specific target task, the model can achieve a decent improved performance. We use multi-step math reasoning as our testbed because it is a very typical emergent ability. We show two important aspects of model abilities: (1). there exists a very complex balance/ tradeoff between language models' multi-dimensional abilities; (2). by paying the price of decreased generic ability, we can clearly lift up the scaling curve of models smaller than 10B towards a specialized multi-step math reasoning ability. We further give comprehensive discussions about important design choices for better generalization, including the tuning data format, the start model checkpoint, and a new model selection method. We hope our practice and discoveries can serve as an important attempt towards specialized smaller models in the new research paradigm set by LLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-01-30T08:51:19Z</published>
+    <arxiv:comment>Preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yao Fu</name>
+    </author>
+    <author>
+      <name>Hao Peng</name>
+    </author>
+    <author>
+      <name>Litu Ou</name>
+    </author>
+    <author>
+      <name>Ashish Sabharwal</name>
+    </author>
+    <author>
+      <name>Tushar Khot</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.09196v3</id>
+    <title>Emergent Analogical Reasoning in Large Language Models</title>
+    <updated>2023-08-03T03:44:47Z</updated>
+    <link href="https://arxiv.org/abs/2212.09196v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.09196v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The recent advent of large language models has reinvigorated debate over whether human cognitive capacities might emerge in such generic models given sufficient training data. Of particular interest is the ability of these models to reason about novel problems zero-shot, without any direct training. In human cognition, this capacity is closely tied to an ability to reason by analogy. Here, we performed a direct comparison between human reasoners and a large language model (the text-davinci-003 variant of GPT-3) on a range of analogical tasks, including a non-visual matrix reasoning task based on the rule structure of Raven's Standard Progressive Matrices. We found that GPT-3 displayed a surprisingly strong capacity for abstract pattern induction, matching or even surpassing human capabilities in most settings; preliminary tests of GPT-4 indicated even better performance. Our results indicate that large language models such as GPT-3 have acquired an emergent ability to find zero-shot solutions to a broad range of analogy problems.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-19T00:04:56Z</published>
+    <arxiv:comment>Published at Nature Human Behaviour (2023) https://doi.org/10.1038/s41562-023-01659-w</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Taylor Webb</name>
+    </author>
+    <author>
+      <name>Keith J. Holyoak</name>
+    </author>
+    <author>
+      <name>Hongjing Lu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.05206v2</id>
+    <title>Thinking Fast and Slow in Large Language Models</title>
+    <updated>2023-08-02T09:24:23Z</updated>
+    <link href="https://arxiv.org/abs/2212.05206v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.05206v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) are currently at the forefront of intertwining AI systems with human communication and everyday life. Therefore, it is of great importance to evaluate their emerging abilities. In this study, we show that LLMs like GPT-3 exhibit behavior that strikingly resembles human-like intuition - and the cognitive errors that come with it. However, LLMs with higher cognitive capabilities, in particular ChatGPT and GPT-4, learned to avoid succumbing to these errors and perform in a hyperrational manner. For our experiments, we probe LLMs with the Cognitive Reflection Test (CRT) as well as semantic illusions that were originally designed to investigate intuitive decision-making in humans. Our study demonstrates that investigating LLMs with methods from psychology has the potential to reveal otherwise unknown emergent traits.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-10T05:07:30Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Thilo Hagendorff</name>
+    </author>
+    <author>
+      <name>Sarah Fabi</name>
+    </author>
+    <author>
+      <name>Michal Kosinski</name>
+    </author>
+    <arxiv:doi>10.1038/s43588-023-00527-x</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s43588-023-00527-x" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.01692v4</id>
+    <title>Can In-context Learners Learn a Reasoning Concept from Demonstrations?</title>
+    <updated>2023-07-19T06:48:35Z</updated>
+    <link href="https://arxiv.org/abs/2212.01692v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.01692v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Language models exhibit an emergent ability to learn a new task from a small number of input-output demonstrations. However, recent work shows that in-context learners largely rely on their pre-trained knowledge, such as the sentiment of the labels, instead of learning new associations from the input. We argue that the commonly-used few-shot evaluation using a random selection of in-context demonstrations can not disentangle models' reliance on such biases, as most of the randomly-selected demonstrations do not present relations informative for prediction beyond exposing the task's input-output distribution.
+  Therefore, to evaluate models' in-context learning ability independent of models' memory, we introduce a Concept-sharing few-shot learning method choosing the demonstrations that share an underlying concept with the predicted sample. We extract a set of such concepts from available human explanations and measure how much models can benefit from presenting these concepts in few-shot demonstrations.
+  We find that most of the recent in-context learners can not consistently benefit from the demonstrated concepts, irrespective of the model size. However, we note that T0 models are more sensitive to exhibited concepts, benefiting from concept-sharing demonstrations in 7 out of 8 evaluation scenarios.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-03T21:14:32Z</published>
+    <arxiv:comment>Awarded Best Paper at ACL 2023 Natural Language Reasoning and Structured Explanations (NLRSE) workshop</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Michal Štefánik</name>
+    </author>
+    <author>
+      <name>Marek Kadlčík</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.16433v3</id>
+    <title>Knowledge-in-Context: Towards Knowledgeable Semi-Parametric Language Models</title>
+    <updated>2023-03-27T07:33:14Z</updated>
+    <link href="https://arxiv.org/abs/2210.16433v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.16433v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Fully-parametric language models generally require a huge number of model parameters to store the necessary knowledge for solving multiple natural language tasks in zero/few-shot settings. In addition, it is hard to adapt to the evolving world knowledge without the costly model re-training. In this paper, we develop a novel semi-parametric language model architecture, Knowledge-in-Context (KiC), which empowers a parametric text-to-text language model with a knowledge-rich external memory. Specifically, the external memory contains six different types of knowledge: entity, dictionary, commonsense, event, script, and causality knowledge. For each input instance, the KiC model adaptively selects a knowledge type and retrieves the most helpful pieces of knowledge. The input instance along with its knowledge augmentation is fed into a text-to-text model (e.g., T5) to generate the output answer, where both the input and the output are in natural language forms after prompting. Interestingly, we find that KiC can be identified as a special mixture-of-experts (MoE) model, where the knowledge selector plays the role of a router that is used to determine the sequence-to-expert assignment in MoE. This key observation inspires us to develop a novel algorithm for training KiC with an instance-adaptive knowledge selector. As a knowledge-rich semi-parametric language model, KiC only needs a much smaller parametric part to achieve superior zero-shot performance on unseen tasks. By evaluating on 40+ different tasks, we show that KiC_Large with 770M parameters easily outperforms large language models (LMs) that are 4-39x larger by a large margin. We also demonstrate that KiC exhibits emergent abilities at a much smaller model scale compared to the fully-parametric models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-28T23:18:43Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xiaoman Pan</name>
+    </author>
+    <author>
+      <name>Wenlin Yao</name>
+    </author>
+    <author>
+      <name>Hongming Zhang</name>
+    </author>
+    <author>
+      <name>Dian Yu</name>
+    </author>
+    <author>
+      <name>Dong Yu</name>
+    </author>
+    <author>
+      <name>Jianshu Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2210.11399v2</id>
+    <title>Transcending Scaling Laws with 0.1% Extra Compute</title>
+    <updated>2022-11-16T12:32:52Z</updated>
+    <link href="https://arxiv.org/abs/2210.11399v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2210.11399v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Scaling language models improves performance but comes with significant computational costs. This paper proposes UL2R, a method that substantially improves existing language models and their scaling curves with a relatively tiny amount of extra compute. The key idea is to continue training a state-of-the-art large language model (e.g., PaLM) on a few more steps with UL2's mixture-of-denoiser objective. We show that, with almost negligible extra computational costs and no new sources of data, we are able to substantially improve the scaling properties of large language models on downstream metrics. In this paper, we continue training PaLM with UL2R, introducing a new set of models at 8B, 62B, and 540B scale which we call U-PaLM. Impressively, at 540B scale, we show an approximately 2x computational savings rate where U-PaLM achieves the same performance as the final PaLM 540B model at around half its computational budget (i.e., saving $\sim$4.4 million TPUv4 hours). We further show that this improved scaling curve leads to 'emergent abilities' on challenging BIG-Bench tasks -- for instance, U-PaLM does much better than PaLM on some tasks or demonstrates better quality at much smaller scale (62B as opposed to 540B). Overall, we show that U-PaLM outperforms PaLM on many few-shot setups, i.e., English NLP tasks (e.g., commonsense reasoning, question answering), reasoning tasks with chain-of-thought (e.g., GSM8K), multilingual tasks (MGSM, TydiQA), MMLU and challenging BIG-Bench tasks. Finally, we provide qualitative examples showing the new capabilities of U-PaLM for single and multi-span infilling.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-10-20T16:46:41Z</published>
+    <arxiv:comment>V2 has updated references/related work</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yi Tay</name>
+    </author>
+    <author>
+      <name>Jason Wei</name>
+    </author>
+    <author>
+      <name>Hyung Won Chung</name>
+    </author>
+    <author>
+      <name>Vinh Q. Tran</name>
+    </author>
+    <author>
+      <name>David R. So</name>
+    </author>
+    <author>
+      <name>Siamak Shakeri</name>
+    </author>
+    <author>
+      <name>Xavier Garcia</name>
+    </author>
+    <author>
+      <name>Huaixiu Steven Zheng</name>
+    </author>
+    <author>
+      <name>Jinfeng Rao</name>
+    </author>
+    <author>
+      <name>Aakanksha Chowdhery</name>
+    </author>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+    <author>
+      <name>Donald Metzler</name>
+    </author>
+    <author>
+      <name>Slav Petrov</name>
+    </author>
+    <author>
+      <name>Neil Houlsby</name>
+    </author>
+    <author>
+      <name>Quoc V. Le</name>
+    </author>
+    <author>
+      <name>Mostafa Dehghani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2206.07682v2</id>
+    <title>Emergent Abilities of Large Language Models</title>
+    <updated>2022-10-26T05:06:24Z</updated>
+    <link href="https://arxiv.org/abs/2206.07682v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2206.07682v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Scaling up language models has been shown to predictably improve performance and sample efficiency on a wide range of downstream tasks. This paper instead discusses an unpredictable phenomenon that we refer to as emergent abilities of large language models. We consider an ability to be emergent if it is not present in smaller models but is present in larger models. Thus, emergent abilities cannot be predicted simply by extrapolating the performance of smaller models. The existence of such emergence implies that additional scaling could further expand the range of capabilities of language models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-06-15T17:32:01Z</published>
+    <arxiv:comment>Transactions on Machine Learning Research (TMLR), 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jason Wei</name>
+    </author>
+    <author>
+      <name>Yi Tay</name>
+    </author>
+    <author>
+      <name>Rishi Bommasani</name>
+    </author>
+    <author>
+      <name>Colin Raffel</name>
+    </author>
+    <author>
+      <name>Barret Zoph</name>
+    </author>
+    <author>
+      <name>Sebastian Borgeaud</name>
+    </author>
+    <author>
+      <name>Dani Yogatama</name>
+    </author>
+    <author>
+      <name>Maarten Bosma</name>
+    </author>
+    <author>
+      <name>Denny Zhou</name>
+    </author>
+    <author>
+      <name>Donald Metzler</name>
+    </author>
+    <author>
+      <name>Ed H. Chi</name>
+    </author>
+    <author>
+      <name>Tatsunori Hashimoto</name>
+    </author>
+    <author>
+      <name>Oriol Vinyals</name>
+    </author>
+    <author>
+      <name>Percy Liang</name>
+    </author>
+    <author>
+      <name>Jeff Dean</name>
+    </author>
+    <author>
+      <name>William Fedus</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2109.10308v1</id>
+    <title>Defect-induced nonlinearity in 2D nanoparticles</title>
+    <updated>2021-09-21T16:39:50Z</updated>
+    <link href="https://arxiv.org/abs/2109.10308v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2109.10308v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Optical nonlinearity depends on symmetry and symmetries vanish in the presence of defects. Vaccancy defects in centrosymmetric crystals and thin films are a well-known source of even-order optical nonlinearity, e.g. causing second harmonic generation. The emerging ability to manipulate defects in two-dimensional materials and nanoparticles provides an opportunity for engineering of optical nonlinearity. Here, we demonstrate the effect of defects on the nonlinear optical response of two-dimensional dielectric nanoparticles. Using a toy model, where bound optical electrons of linear atoms are coupled by nonlinear Coulomb interactions, we model defect-induced nonlinearity. We find that defects at particle edges contribute strongly to even-order optical nonlinearity and that unique nonlinear signatures of different defect states could provide the smallest conceivable QR-codes and extremely high density optical data storage, in principle approaching 1 bit per atom.</summary>
+    <category term="physics.optics" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-09-21T16:39:50Z</published>
+    <arxiv:comment>8 pages, 6 figures</arxiv:comment>
+    <arxiv:primary_category term="physics.optics"/>
+    <author>
+      <name>Jie Xu</name>
+    </author>
+    <author>
+      <name>Eric Plum</name>
+    </author>
+    <arxiv:doi>10.1364/OE.443977</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1364/OE.443977" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2103.05442v1</id>
+    <title>Mining Program Properties From Neural Networks Trained on Source Code Embeddings</title>
+    <updated>2021-03-09T14:25:16Z</updated>
+    <link href="https://arxiv.org/abs/2103.05442v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2103.05442v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we propose a novel approach for mining different program features by analysing the internal behaviour of a deep neural network trained on source code. Using an unlabelled dataset of Java programs and three different embedding strategies for the methods in the dataset, we train an autoencoder for each program embedding and then we test the emerging ability of the internal neurons in autonomously building internal representations for different program features. We defined three binary classification labelling policies inspired by real programming issues, so to test the performance of each neuron in classifying programs accordingly to these classification rules, showing that some neurons can actually detect different program properties. We also analyse how the program representation chosen as input affects the performance on the aforementioned tasks. On the other hand, we are interested in finding the overall most informative neurons in the network regardless of a given task. To this aim, we propose and evaluate two methods for ranking neurons independently of any property. Finally, we discuss how these ideas can be applied in different settings for simplifying the programmers' work, for instance if included in environments such as software repositories or code editors.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-03-09T14:25:16Z</published>
+    <arxiv:comment>10 pages, 13 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <author>
+      <name>Martina Saletta</name>
+    </author>
+    <author>
+      <name>Claudio Ferretti</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1602.07810v1</id>
+    <title>Big Data For Development: Applications and Techniques</title>
+    <updated>2016-02-25T06:02:33Z</updated>
+    <link href="https://arxiv.org/abs/1602.07810v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1602.07810v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the explosion of social media sites and proliferation of digital computing devices and Internet access, massive amounts of public data is being generated on a daily basis. Efficient techniques/ algorithms to analyze this massive amount of data can provide near real-time information about emerging trends and provide early warning in case of an imminent emergency (such as the outbreak of a viral disease). In addition, careful mining of these data can reveal many useful indicators of socioeconomic and political events, which can help in establishing effective public policies. The focus of this study is to review the application of big data analytics for the purpose of human development. The emerging ability to use big data techniques for development (BD4D) promises to revolutionalize healthcare, education, and agriculture; facilitate the alleviation of poverty; and help to deal with humanitarian crises and violent conflicts. Besides all the benefits, the large-scale deployment of BD4D is beset with several challenges due to the massive size, fast-changing and diverse nature of big data. The most pressing concerns relate to efficient data acquisition and sharing, establishing of context (e.g., geolocation and time) and veracity of a dataset, and ensuring appropriate privacy. In this study, we provide a review of existing BD4D work to study the impact of big data on the development of society. In addition to reviewing the important works, we also highlight important challenges and open issues.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-02-25T06:02:33Z</published>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Anwaar Ali</name>
+    </author>
+    <author>
+      <name>Junaid Qadir</name>
+    </author>
+    <author>
+      <name>Raihan ur Rasool</name>
+    </author>
+    <author>
+      <name>Arjuna Sathiaseelan</name>
+    </author>
+    <author>
+      <name>Andrej Zwitter</name>
+    </author>
+  </entry>
+</feed>

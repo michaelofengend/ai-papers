@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1597,
+  "title": "Approximate Verification of Strategic Abilities under Imperfect Information Using Local Models",
+  "org": "deepmind",
+  "date": "2024-07-26",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2024/17",
+  "abstract": "Verification of strategic ability under imperfect information is challenging, with complexity ranging from NP-complete to undecidable. This is partly because traditional fixpoint equivalences fail in this setting. Some years ago, an interesting idea of fixpoint approximation was proposed for model checking of ATL_ir, i.e., the logic of strategic ability for agents with imperfect information and imperfect recall. In this paper, we propose a new variant of the approximation, that uses the agent's local model rather than the global model of the system. We prove correctness of the construction, and demonstrate its effectiveness through experimental results on scalable models of voting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1596,
+  "title": "Combining Deep Reinforcement Learning and Search with Generative Models for Game-Theoretic Opponent Modeling",
+  "org": "deepmind",
+  "date": "2024-07-26",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2024/19",
+  "abstract": "Opponent modeling methods typically involve two crucial steps: building a belief distribution over opponents' strategies, and exploiting this opponent model by playing a best response. However, existing approaches typically require domain-specific heurstics to come up with such a model, and algorithms for approximating best responses are hard to scale in large, imperfect information domains. In this work, we introduce a scalable and generic multiagent training regime for opponent modeling using deep game-theoretic reinforcement learning. We first propose Generative Best Respoonse (GenBR), a best response algorithm based on Monte-Carlo Tree Search (MCTS) with a learned deep generative model that samples world states during planning. This new method scales to large imperfect information domains and can be plug and play in a variety of multiagent algorithms. We use this new method under the framework of Policy Space Response Oracles (PSRO), to automate the generation of an offline opponent model via iterative game-theoretic reasoning and population-based training. We propose using solution concepts based on bargaining theory to build up an opponent mixture, which we find identifying profiles that are near the Pareto frontier. Then GenBR keeps updating an online opponent model and reacts against it during gameplay. We conduct behavioral studies where human participants negotiate with our agents in Deal-or-No-Deal, a class of bilateral bargaining games. Search with generative mode",
+  "needs_fetch": false
+ },
+ {
+  "id": 1595,
+  "title": "Collaborative Multi-LoRA Experts with Achievement-based Multi-Tasks Loss for Unified Multimodal Information Extraction",
+  "org": "deepmind",
+  "date": "2024-07-26",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2024/772",
+  "abstract": "Multimodal Information Extraction (MIE) has gained attention for extracting structured information from multimedia sources. Traditional methods tackle MIE tasks separately, missing opportunities to share knowledge across tasks. Recent approaches unify these tasks into a generation problem using instruction-based T5 models with visual adaptors, optimized through full-parameter fine-tuning. However, this method is computationally intensive, and multi-task fine-tuning often faces gradient conflicts, limiting performance. To address these challenges, we propose collaborative multi-LoRA experts with achievement-based multi-task loss (C-LoRAE) for MIE tasks. C-LoRAE extends the low-rank adaptation (LoRA) method by incorporating a universal expert to learn shared multimodal knowledge from cross-MIE tasks and task-specific experts to learn specialized instructional task features. This configuration enhances the model’s generalization ability across multiple tasks while maintaining the independence of various instruction tasks and mitigating gradient conflicts. Additionally, we propose an achievement-based multi-task loss to balance training progress across tasks, addressing the imbalance caused by varying numbers of training samples in MIE tasks. Experimental results on seven benchmark datasets across three key MIE tasks demonstrate that C-LoRAE achieves superior overall performance compared to traditional fine-tuning methods and LoRA methods while utilizing a comparable number of tr",
+  "needs_fetch": false
+ },
+ {
+  "id": 1594,
+  "title": "App2Exa: Accelerating Exact kNN Search via Dynamic Cache-Guided Approximation",
+  "org": "deepmind",
+  "date": "2024-07-26",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2024/339",
+  "abstract": "The k-nearest neighbor (kNN) query is a cornerstone of similarity-based applications across various domains. While prior work has enhanced kNN search efficiency, it typically focuses on approximate methods for high-dimensional data or exact methods for low-dimensional data, often assuming static query and data distributions. This creates a significant gap in accelerating exact kNN search for low-to-medium dimensional data with dynamic query distributions. To fill this gap, we propose App2Exa, a cache-guided framework that integrates approximate and exact kNN search. App2Exa utilizes a dynamically maintained cache graph index to retrieve approximate results, which subsequently guide exact search using a VP-Tree with a best-first strategy. A benefit-driven caching mechanism further optimizes performance by prioritizing vectors based on frequency, recency, and computational cost. Experimental results demonstrate that App2Exa significantly boosts efficiency, providing a robust and scalable solution for evolving query patterns and enabling exact kNN search to support higher dimensionality more effectively.",
+  "needs_fetch": false
+ },
+ {
+  "id": 235,
+  "title": "Using Large Language Models for the Interpretation of Building Regulations",
+  "org": "other",
+  "date": "2024-07-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.21060",
+  "abstract": "Compliance checking is an essential part of a construction project. The recent rapid uptake of building information models (BIM) in the construction industry has created more opportunities for automated compliance checking (ACC). BIM enables sharing of digital building design data that can be used for compliance checking with legal requirements, which are conventionally conveyed in natural language and not intended for machine processing. Creating a computable representation of legal requirements suitable for ACC is complex, costly, and time-consuming. Large language models (LLMs) such as the generative pre-trained transformers (GPT), GPT-3.5 and GPT-4, powering OpenAI's ChatGPT, can generate logically coherent text and source code responding to user prompts. This capability could be used to automate the conversion of building regulations into a semantic and computable representation. This paper evaluates the performance of LLMs in translating building regulations into LegalRuleML in a few-shot learning setup. By providing GPT-3.5 with only a few example translations, it can learn the basic structure of the format. Using a system prompt, we further specify the LegalRuleML representation and explore the existence of expert domain knowledge in the model. Such domain knowledge might be ingrained in GPT-3.5 through the broad pre-training but needs to be brought forth by careful contextualisation. Finally, we investigate whether strategies such as chain-of-thought reasoning and se",
+  "needs_fetch": false
+ },
+ {
+  "id": 999,
+  "title": "Improving Model Safety Behavior with Rule-Based Rewards",
+  "org": "openai",
+  "date": "2024-07-24",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/improving-model-safety-behavior-with-rule-based-rewards/",
+  "abstract": "We've developed and applied a new method leveraging Rule-Based Rewards (RBRs) that aligns models to behave safely without extensive human data collection.",
+  "needs_fetch": false
+ },
+ {
+  "id": 526,
+  "title": "Can Large Language Models Automatically Jailbreak GPT-4V?",
+  "org": "other",
+  "date": "2024-07-23",
+  "venue": "NAACL 2024",
+  "url": "https://arxiv.org/abs/2407.16686",
+  "abstract": "GPT-4V has attracted considerable attention due to its extraordinary capacity for integrating and processing multimodal information. At the same time, its ability of face recognition raises new safety concerns of privacy leakage. Despite researchers' efforts in safety alignment through RLHF or preprocessing filters, vulnerabilities might still be exploited. In our study, we introduce AutoJailbreak, an innovative automatic jailbreak technique inspired by prompt optimization. We leverage Large Language Models (LLMs) for red-teaming to refine the jailbreak prompt and employ weak-to-strong in-context learning prompts to boost efficiency. Furthermore, we present an effective search method that incorporates early stopping to minimize optimization time and token expenditure. Our experiments demonstrate that AutoJailbreak significantly surpasses conventional methods, achieving an Attack Success Rate (ASR) exceeding 95.3\\%. This research sheds light on strengthening GPT-4V security, underscoring the potential for LLMs to be exploited in compromising GPT-4V integrity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 236,
+  "title": "RedAgent: Red Teaming Large Language Models with Context-aware Autonomous Language Agent",
+  "org": "other",
+  "date": "2024-07-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.16667",
+  "abstract": "Recently, advanced Large Language Models (LLMs) such as GPT-4 have been integrated into many real-world applications like Code Copilot. These applications have significantly expanded the attack surface of LLMs, exposing them to a variety of threats. Among them, jailbreak attacks that induce toxic responses through jailbreak prompts have raised critical safety concerns. To identify these threats, a growing number of red teaming approaches simulate potential adversarial scenarios by crafting jailbreak prompts to test the target LLM. However, existing red teaming methods do not consider the unique vulnerabilities of LLM in different scenarios, making it difficult to adjust the jailbreak prompts to find context-specific vulnerabilities. Meanwhile, these methods are limited to refining jailbreak templates using a few mutation operations, lacking the automation and scalability to adapt to different scenarios. To enable context-aware and efficient red teaming, we abstract and model existing attacks into a coherent concept called \"jailbreak strategy\" and propose a multi-agent LLM system named RedAgent that leverages these strategies to generate context-aware jailbreak prompts. By self-reflecting on contextual feedback in an additional memory buffer, RedAgent continuously learns how to leverage these strategies to achieve effective jailbreaks in specific contexts. Extensive experiments demonstrate that our system can jailbreak most black-box LLMs in just five queries, improving the ef",
+  "needs_fetch": false
+ },
+ {
+  "id": 1598,
+  "title": "Neural general circulation models for weather and climate",
+  "org": "deepmind",
+  "date": "2024-07-22",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-024-07744-y",
+  "abstract": "Abstract General circulation models (GCMs) are the foundation of weather and climate prediction 1,2 . GCMs are physics-based simulators that combine a numerical solver for large-scale dynamics with tuned representations for small-scale processes such as cloud formation. Recently, machine-learning models trained on reanalysis data have achieved comparable or better skill than GCMs for deterministic weather forecasting 3,4 . However, these models have not demonstrated improved ensemble forecasts, or shown sufficient stability for long-term weather and climate simulations. Here we present a GCM that combines a differentiable solver for atmospheric dynamics with machine-learning components and show that it can generate forecasts of deterministic weather, ensemble weather and climate on par with the best machine-learning and physics-based methods. NeuralGCM is competitive with machine-learning models for one- to ten-day forecasts, and with the European Centre for Medium-Range Weather Forecasts ensemble prediction for one- to fifteen-day forecasts. With prescribed sea surface temperature, NeuralGCM can accurately track climate metrics for multiple decades, and climate forecasts with 140-kilometre resolution show emergent phenomena such as realistic frequency and trajectories of tropical cyclones. For both weather and climate, our approach offers orders of magnitude computational savings over conventional GCMs, although our model does not extrapolate to substantially different futur",
+  "needs_fetch": false
+ },
+ {
+  "id": 753,
+  "title": "Levels of AGI for Operationalizing Progress on the Path to AGI",
+  "org": "deepmind",
+  "date": "2024-07-21",
+  "venue": "ICML 2024",
+  "url": "https://arxiv.org/abs/2311.02462",
+  "abstract": "We propose a framework for classifying the capabilities and behavior of Artificial General Intelligence (AGI) models and their precursors. This framework introduces levels of AGI performance, generality, and autonomy, providing a common language to compare models, assess risks, and measure progress along the path to AGI. To develop our framework, we analyze existing definitions of AGI, and distill six principles that a useful ontology for AGI should satisfy. With these principles in mind, we propose \"Levels of AGI\" based on depth (performance) and breadth (generality) of capabilities, and reflect on how current systems fit into this ontology. We discuss the challenging requirements for future benchmarks that quantify the behavior and capabilities of AGI models against these levels. Finally, we discuss how these levels of AGI interact with deployment considerations such as autonomy and risk, and emphasize the importance of carefully selecting Human-AI Interaction paradigms for responsible and safe deployment of highly capable AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 527,
+  "title": "Failures to Find Transferable Image Jailbreaks Between Vision-Language Models",
+  "org": "anthropic",
+  "date": "2024-07-21",
+  "venue": "NeurIPS 2024",
+  "url": "https://arxiv.org/abs/2407.15211",
+  "abstract": "The integration of new modalities into frontier AI systems offers exciting capabilities, but also increases the possibility such systems can be adversarially manipulated in undesirable ways. In this work, we focus on a popular class of vision-language models (VLMs) that generate text outputs conditioned on visual and textual inputs. We conducted a large-scale empirical study to assess the transferability of gradient-based universal image ``jailbreaks\" using a diverse set of over 40 open-parameter VLMs, including 18 new VLMs that we publicly release. Overall, we find that transferable gradient-based image jailbreaks are extremely difficult to obtain. When an image jailbreak is optimized against a single VLM or against an ensemble of VLMs, the jailbreak successfully jailbreaks the attacked VLM(s), but exhibits little-to-no transfer to any other VLMs; transfer is not affected by whether the attacked and target VLMs possess matching vision backbones or language models, whether the language model underwent instruction-following and/or safety-alignment training, or many other factors. Only two settings display partially successful transfer: between identically-pretrained and identically-initialized VLMs with slightly different VLM training data, and between different training checkpoints of a single VLM. Leveraging these results, we then demonstrate that transfer can be significantly improved against a specific target VLM by attacking larger ensembles of ``highly-similar\" VLMs. The",
+  "needs_fetch": false
+ },
+ {
+  "id": 237,
+  "title": "Arondight: Red Teaming Large Vision Language Models with Auto-generated Multi-modal Jailbreak Prompts",
+  "org": "other",
+  "date": "2024-07-21",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.15050",
+  "abstract": "Large Vision Language Models (VLMs) extend and enhance the perceptual abilities of Large Language Models (LLMs). Despite offering new possibilities for LLM applications, these advancements raise significant security and ethical concerns, particularly regarding the generation of harmful content. While LLMs have undergone extensive security evaluations with the aid of red teaming frameworks, VLMs currently lack a well-developed one. To fill this gap, we introduce Arondight, a standardized red team framework tailored specifically for VLMs. Arondight is dedicated to resolving issues related to the absence of visual modality and inadequate diversity encountered when transitioning existing red teaming methodologies from LLMs to VLMs. Our framework features an automated multi-modal jailbreak attack, wherein visual jailbreak prompts are produced by a red team VLM, and textual prompts are generated by a red team LLM guided by a reinforcement learning agent. To enhance the comprehensiveness of VLM security evaluation, we integrate entropy bonuses and novelty reward metrics. These elements incentivize the RL agent to guide the red team LLM in creating a wider array of diverse and previously unseen test cases. Our evaluation of ten cutting-edge VLMs exposes significant security vulnerabilities, particularly in generating toxic images and aligning multi-modal prompts. In particular, our Arondight achieves an average attack success rate of 84.5\\% on GPT-4 in all fourteen prohibited scenari",
+  "needs_fetch": false
+ },
+ {
+  "id": 1599,
+  "title": "Higher-order interactions between hippocampal CA1 neurons are disrupted in amnestic mice",
+  "org": "deepmind",
+  "date": "2024-07-19",
+  "venue": "Nature Neuroscience",
+  "url": "https://doi.org/10.1038/s41593-024-01713-4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 598,
+  "title": "Jumping Ahead: Improving Reconstruction Fidelity with JumpReLU Sparse Autoencoders",
+  "org": "deepmind",
+  "date": "2024-07-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.14435",
+  "abstract": "Sparse autoencoders (SAEs) are a promising unsupervised approach for identifying causally relevant and interpretable linear features in a language model's (LM) activations. To be useful for downstream tasks, SAEs need to decompose LM activations faithfully; yet to be interpretable the decomposition must be sparse -- two objectives that are in tension. In this paper, we introduce JumpReLU SAEs, which achieve state-of-the-art reconstruction fidelity at a given sparsity level on Gemma 2 9B activations, compared to other recent advances such as Gated and TopK SAEs. We also show that this improvement does not come at the cost of interpretability through manual and automated interpretability studies. JumpReLU SAEs are a simple modification of vanilla (ReLU) SAEs -- where we replace the ReLU with a discontinuous JumpReLU activation function -- and are similarly efficient to train and run. By utilising straight-through-estimators (STEs) in a principled manner, we show how it is possible to train JumpReLU SAEs effectively despite the discontinuous JumpReLU function introduced in the SAE's forward pass. Similarly, we use STEs to directly train L0 to be sparse, instead of training on proxies such as L1, avoiding problems like shrinkage.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2726,
+  "title": "CryoDRGN-ET: deep reconstructing generative networks for visualizing dynamic biomolecules inside cells",
+  "org": "openai",
+  "date": "2024-07-18",
+  "venue": "Nature Methods",
+  "url": "https://doi.org/10.1038/s41592-024-02340-4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1000,
+  "title": "GPT-4o mini: advancing cost-efficient intelligence",
+  "org": "openai",
+  "date": "2024-07-18",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1001,
+  "title": "Prover-Verifier Games improve legibility of language model outputs",
+  "org": "openai",
+  "date": "2024-07-17",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/prover-verifier-games-improve-legibility/",
+  "abstract": "Discover how prover-verifier games improve the legibility of language model outputs, making AI solutions clearer, easier to verify, and more trustworthy for both humans and machines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 755,
+  "title": "Neural Climate Data Compression",
+  "org": "deepmind",
+  "date": "2024-07-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.11666",
+  "abstract": "Atmospheric states derived from reanalysis comprise a substantial portion of weather and climate simulation outputs. Many stakeholders -- such as researchers, policy makers, and insurers -- use this data to better understand the earth system and guide policy decisions. Atmospheric states have also received increased interest as machine learning approaches to weather prediction have shown promising results. A key issue for all audiences is that dense time series of these high-dimensional states comprise an enormous amount of data, precluding all but the most well resourced groups from accessing and using historical data and future projections. To address this problem, we propose a method for compressing atmospheric states using methods from the neural network literature, adapting spherical data to processing by conventional neural architectures through the use of the area-preserving HEALPix projection. We investigate two model classes for building neural compressors: the hyperprior model from the neural image compression literature and recent vector-quantised models. We show that both families of models satisfy the desiderata of small average error, a small number of high-error reconstructed pixels, faithful reproduction of extreme events such as hurricanes and heatwaves, preservation of the spectral power distribution across spatial scales. We demonstrate compression ratios in excess of 1000x, with compression and decompression at a rate of approximately one second per global",
+  "needs_fetch": false
+ },
+ {
+  "id": 754,
+  "title": "Language models, like humans, show content effects on reasoning tasks",
+  "org": "deepmind",
+  "date": "2024-07-16",
+  "venue": "PNAS Nexus",
+  "url": "https://academic.oup.com/pnasnexus/article-lookup/doi/10.1093/pnasnexus/pgae233",
+  "abstract": "Abstract reasoning is a key ability for an intelligent system. Large language models (LMs) achieve above-chance performance on abstract reasoning tasks but exhibit many imperfections. However, human abstract reasoning is also imperfect. Human reasoning is affected by our real-world knowledge and beliefs, and shows notable “content effects”; humans reason more reliably when the semantic content of a problem supports the correct logical inferences. These content-entangled reasoning patterns are central to debates about the fundamental nature of human intelligence. Here, we investigate whether language models—whose prior expectations capture some aspects of human knowledge—similarly mix content into their answers to logic problems. We explored this question across three logical reasoning tasks: natural language inference, judging the logical validity of syllogisms, and the Wason selection task. We evaluate state of the art LMs, as well as humans, and find that the LMs reflect many of the same qualitative human patterns on these tasks—like humans, models answer more accurately when the semantic content of a task supports the logical inferences. These parallels are reflected in accuracy patterns, and in some lower-level features like the relationship between LM confidence over possible answers and human response times. However, in some cases the humans and models behave differently—particularly on the Wason task, where humans perform much worse than large models, and exhibit a dis",
+  "needs_fetch": false
+ },
+ {
+  "id": 1600,
+  "title": "Blue noise for diffusion models",
+  "org": "deepmind",
+  "date": "2024-07-12",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3641519.3657435",
+  "abstract": "Most of the existing diffusion models use Gaussian noise for training and sampling across all time steps, which may not optimally account for the frequency contents reconstructed by the denoising network. Despite the diverse applications of correlated noise in computer graphics, its potential for improving the training process has been underexplored. In this paper, we introduce a novel and general class of diffusion models taking correlated noise within and across images into account. More specifically, we propose a time-varying noise model to incorporate correlated noise into the training process, as well as a method for fast generation of correlated noise mask. Our model is built upon deterministic diffusion models and utilizes blue noise to help improve the generation quality compared to using Gaussian white (random) noise only. Further, our framework allows introducing correlation across images within a single mini-batch to improve gradient flow. We perform both qualitative and quantitative evaluations on a variety of datasets using our method, achieving improvements on different tasks over existing deterministic diffusion models in terms of FID metric. Code will be available at https://github.com/xchhuang/bndm.",
+  "needs_fetch": false
+ },
+ {
+  "id": 599,
+  "title": "Transformer Circuit Faithfulness Metrics are not Robust",
+  "org": "other",
+  "date": "2024-07-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.08734",
+  "abstract": "Mechanistic interpretability work attempts to reverse engineer the learned algorithms present inside neural networks. One focus of this work has been to discover 'circuits' -- subgraphs of the full model that explain behaviour on specific tasks. But how do we measure the performance of such circuits? Prior work has attempted to measure circuit 'faithfulness' -- the degree to which the circuit replicates the performance of the full model. In this work, we survey many considerations for designing experiments that measure circuit faithfulness by ablating portions of the model's computation. Concerningly, we find existing methods are highly sensitive to seemingly insignificant changes in the ablation methodology. We conclude that existing circuit faithfulness scores reflect both the methodological choices of researchers as well as the actual components of the circuit - the task a circuit is required to perform depends on the ablation used to test it. The ultimate goal of mechanistic interpretability work is to understand neural networks, so we emphasize the need for more clarity in the precise claims being made about circuits. We open source a library at https://github.com/UFO-101/auto-circuit that includes highly efficient implementations of a wide range of ablation methodologies and circuit discovery algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1002,
+  "title": "OpenAI and Los Alamos National Laboratory announce research partnership",
+  "org": "openai",
+  "date": "2024-07-10",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-and-los-alamos-national-laboratory-work-together/",
+  "abstract": "OpenAI and Los Alamos National Laboratory are working to develop safety evaluations to assess and measure biological capabilities and risks associated with frontier models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1601,
+  "title": "A foundational large language model for edible plant genomes",
+  "org": "deepmind",
+  "date": "2024-07-09",
+  "venue": "Communications Biology",
+  "url": "https://doi.org/10.1038/s42003-024-06465-2",
+  "abstract": "Significant progress has been made in the field of plant genomics, as demonstrated by the increased use of high-throughput methodologies that enable the characterization of multiple genome-wide molecular phenotypes. These findings have provided valuable insights into plant traits and their underlying genetic mechanisms, particularly in model plant species. Nonetheless, effectively leveraging them to make accurate predictions represents a critical step in crop genomic improvement. We present AgroNT, a foundational large language model trained on genomes from 48 plant species with a predominant focus on crop species. We show that AgroNT can obtain state-of-the-art predictions for regulatory annotations, promoter/terminator strength, tissue-specific gene expression, and prioritize functional variants. We conduct a large-scale in silico saturation mutagenesis analysis on cassava to evaluate the regulatory impact of over 10 million mutations and provide their predicted effects as a resource for variant characterization. Finally, we propose the use of the diverse datasets compiled here as the Plants Genomic Benchmark (PGB), providing a comprehensive benchmark for deep learning-based methods in plant genomic research. The pre-trained AgroNT model is publicly available on HuggingFace at https://huggingface.co/InstaDeepAI/agro-nucleotide-transformer-1b for future research purposes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1603,
+  "title": "Understanding Visual Feature Reliance through the Lens of Complexity",
+  "org": "deepmind",
+  "date": "2024-07-08",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2407.06076",
+  "abstract": "Recent studies suggest that deep learning models inductive bias towards favoring simpler features may be one of the sources of shortcut learning. Yet, there has been limited focus on understanding the complexity of the myriad features that models learn. In this work, we introduce a new metric for quantifying feature complexity, based on $\\mathscr{V}$-information and capturing whether a feature requires complex computational transformations to be extracted. Using this $\\mathscr{V}$-information metric, we analyze the complexities of 10,000 features, represented as directions in the penultimate layer, that were extracted from a standard ImageNet-trained vision model. Our study addresses four key questions: First, we ask what features look like as a function of complexity and find a spectrum of simple to complex features present within the model. Second, we ask when features are learned during training. We find that simpler features dominate early in training, and more complex features emerge gradually. Third, we investigate where within the network simple and complex features flow, and find that simpler features tend to bypass the visual hierarchy via residual connections. Fourth, we explore the connection between features complexity and their importance in driving the networks decision. We find that complex features tend to be less important. Surprisingly, important features become accessible at earlier layers during training, like a sedimentation process, allowing the model to",
+  "needs_fetch": false
+ },
+ {
+  "id": 1602,
+  "title": "Complex Dynamics in Autobidding Systems",
+  "org": "deepmind",
+  "date": "2024-07-08",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3670865.3673551",
+  "abstract": "It has become the default in markets such as ad auctions for participants to bid in an auction through automated bidding agents (autobidders) which adjust bids over time to satisfy return-over-spend constraints. Despite the prominence of such systems for the internet economy, their resulting dynamical behavior is still not well understood. Although one might hope that such relatively simple systems would typically converge to the equilibria of their underlying auctions, we provide a plethora of results that show the emergence of complex behavior, such as bi-stability, periodic orbits and quasi periodicity. We empirically observe how the market structure (expressed as motifs) qualitatively affects the behavior of the dynamics. We complement it with theoretical results showing that autobidding systems can simulate both linear dynamical systems as well logical boolean gates.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1605,
+  "title": "Gaussian Channel Simulation with Rotated Dithered Quantization",
+  "org": "deepmind",
+  "date": "2024-07-07",
+  "venue": null,
+  "url": "https://doi.org/10.1109/isit57864.2024.10619428",
+  "abstract": "Channel simulation involves generating a sample <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$Y$</tex> from the conditional distribution <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$P_{Y\\vert X}$</tex>, where <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$X$</tex> is a remote realization sampled from <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$P_{X}$</tex>. This paper introduces a novel approach to approximate Gaussian channel simulation using dithered quantization. Our method concurrently simulates <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$n$</tex> channels, reducing the upper bound on the excess information by half compared to one-dimensional methods. When used with higher-dimensional lattices, our approach achieves up to six times reduction on the upper bound. Furthermore, we demonstrate that the KL divergence between the distributions of the simulated and Gaussian channels decreases with the number of dimensions at a rate of <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$O(n^{-1})$</tex>.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1604,
+  "title": "PLANTED: A Dataset for Planted Forest Identification from Multi-Satellite Time Series",
+  "org": "deepmind",
+  "date": "2024-07-07",
+  "venue": null,
+  "url": "https://doi.org/10.1109/igarss53475.2024.10641578",
+  "abstract": "Protecting and restoring forest ecosystems is critical for bio-diversity conservation and climate change mitigation. Forest monitoring on a global scale is essential for prioritizing and assessing conservation efforts. Satellite-based remote sensing is the only viable solution for providing global coverage, but to date, large-scale forest monitoring is limited mostly to single modalities or single time points. In this paper, we present a dataset consisting of data from five public satellites for recognizing forest plantations and planted tree species across the globe. Each satellite modality consists of a multi-year time series. The dataset, named \"Planted\" includes over 2M examples of 64 tree label classes (46 genera and 40 distinctive species), distributed among 41 countries. This dataset is released to foster research in forest monitoring using multimodal, multi-scale, multi-temporal data sources. Additionally, we present initial baseline results and evaluate modality fusion and data augmentation approaches for this dataset.",
+  "needs_fetch": false
+ },
+ {
+  "id": 394,
+  "title": "Spontaneous Reward Hacking in Iterative Self-Refinement",
+  "org": "anthropic",
+  "date": "2024-07-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.04549",
+  "abstract": "Language models are capable of iteratively improving their outputs based on natural language feedback, thus enabling in-context optimization of user preference. In place of human users, a second language model can be used as an evaluator, providing feedback along with numerical ratings which the generator attempts to optimize. However, because the evaluator is an imperfect proxy of user preference, this optimization can lead to reward hacking, where the evaluator's ratings improve while the generation quality remains stagnant or even decreases as judged by actual user preference. The concern of reward hacking is heightened in iterative self-refinement where the generator and the evaluator use the same underlying language model, in which case the optimization pressure can drive them to exploit shared vulnerabilities. Using an essay editing task, we show that iterative self-refinement leads to deviation between the language model evaluator and human judgment, demonstrating that reward hacking can occur spontaneously in-context with the use of iterative self-refinement. In addition, we study conditions under which reward hacking occurs and observe two factors that affect reward hacking severity: model size and context sharing between the generator and the evaluator.",
+  "needs_fetch": false
+ },
+ {
+  "id": 238,
+  "title": "Me, Myself, and AI: The Situational Awareness Dataset (SAD) for LLMs",
+  "org": "other",
+  "date": "2024-07-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.04694",
+  "abstract": "AI assistants such as ChatGPT are trained to respond to users by saying, \"I am a large language model\". This raises questions. Do such models know that they are LLMs and reliably act on this knowledge? Are they aware of their current circumstances, such as being deployed to the public? We refer to a model's knowledge of itself and its circumstances as situational awareness. To quantify situational awareness in LLMs, we introduce a range of behavioral tests, based on question answering and instruction following. These tests form the $\\textbf{Situational Awareness Dataset (SAD)}$, a benchmark comprising 7 task categories and over 13,000 questions. The benchmark tests numerous abilities, including the capacity of LLMs to (i) recognize their own generated text, (ii) predict their own behavior, (iii) determine whether a prompt is from internal evaluation or real-world deployment, and (iv) follow instructions that depend on self-knowledge. We evaluate 16 LLMs on SAD, including both base (pretrained) and chat models. While all models perform better than chance, even the highest-scoring model (Claude 3 Opus) is far from a human baseline on certain tasks. We also observe that performance on SAD is only partially predicted by metrics of general knowledge (e.g. MMLU). Chat models, which are finetuned to serve as AI assistants, outperform their corresponding base models on SAD but not on general knowledge tasks. The purpose of SAD is to facilitate scientific understanding of situational ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1608,
+  "title": "Geometric epitope and paratope prediction",
+  "org": "deepmind",
+  "date": "2024-07-01",
+  "venue": "Bioinformatics",
+  "url": "https://doi.org/10.1093/bioinformatics/btae405",
+  "abstract": "MOTIVATION: Identifying the binding sites of antibodies is essential for developing vaccines and synthetic antibodies. In this article, we investigate the optimal representation for predicting the binding sites in the two molecules and emphasize the importance of geometric information. RESULTS: Specifically, we compare different geometric deep learning methods applied to proteins' inner (I-GEP) and outer (O-GEP) structures. We incorporate 3D coordinates and spectral geometric descriptors as input features to fully leverage the geometric information. Our research suggests that different geometrical representation information is useful for different tasks. Surface-based models are more efficient in predicting the binding of the epitope, while graph models are better in paratope prediction, both achieving significant performance improvements. Moreover, we analyze the impact of structural changes in antibodies and antigens resulting from conformational rearrangements or reconstruction errors. Through this investigation, we showcase the robustness of geometric deep learning methods and spectral geometric descriptors to such perturbations. AVAILABILITY AND IMPLEMENTATION: The python code for the models, together with the data and the processing pipeline, is open-source and available at https://github.com/Marco-Peg/GEP.",
+  "needs_fetch": false
+ }
+]

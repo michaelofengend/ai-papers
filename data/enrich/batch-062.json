@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1870,
+  "title": "What Makes Chain-of-Thought Prompting Effective? A Counterfactual Study",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.101",
+  "abstract": "The effectiveness of Chain-of-thought prompting (CoT) has been widely recognized, but the underlying mechanisms behind its success, the reason why it just works for a wide range of tasks, remains an open question. To investigate this, we employ a counterfactual prompting approach, systematically manipulating elements of examples used in a few-shot prompt, and testing the consequences on model behavior. This allows us to understand the relative contributions of prompt elements such as symbols (digits, entities) and patterns (equations, sentence structure) on in-context learning. Our experiments with three different large language models (LLMs) reveal several key findings. First, the specific symbols used in the prompt do not significantly impact the model’s performance. However, consistent patterns in examples and specifying text in style frequently found on the web are crucial. Second, our findings suggest that the necessity of accurate few-shot examples depends on their role in communicating task understanding. We identify tasks where inaccurate few-shot examples hurt and, surprisingly, tasks where they improve performance. Additionally, we find that the intermediate steps in CoT may not necessarily facilitate learning how to solve a task, but instead efficiently convey task understanding (what) to the model. Furthermore, CoT leverages LLMs to fill in missing commonsense information, particularly helping difficult reasoning problems and long-tail questions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1869,
+  "title": "From Polynomial IOP and Commitments to Non-malleable zkSNARKs",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-48621-0_16",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1868,
+  "title": "A participatory initiative to include LGBT+ voices in AI for mental health",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Nature Medicine",
+  "url": "https://doi.org/10.1038/s41591-022-02137-y",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1867,
+  "title": "Fiat-Shamir Security of FRI and Related SNARKs",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-981-99-8724-5_1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1866,
+  "title": "Evaluating Large Language Models on Controlled Generation Tasks",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.emnlp-main.190",
+  "abstract": "Jiao Sun, Yufei Tian, Wangchunshu Zhou, Nan Xu, Qian Hu, Rahul Gupta, John Wieting, Nanyun Peng, Xuezhe Ma. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing. 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1865,
+  "title": "SQLPrompt: In-Context Text-to-SQL with Minimal Labeled Data",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.39",
+  "abstract": "Text-to-SQL aims to automate the process of generating SQL queries on a database from natural language text. In this work, we propose “SQLPrompt”, tailored to improve the few-shot prompting capabilities of Text-to-SQL for Large Language Models (LLMs). Our methods include innovative prompt design, execution-based consistency decoding strategy which selects the SQL with the most consistent execution outcome among other SQL proposals, and a method that aims to improve performance by diversifying the SQL proposals during consistency selection with different prompt designs (“MixPrompt”) and foundation models (“MixLLMs”). We show that SQLPrompt outperforms previous approaches for in-context learning with zero labeled data by a large margin, closing the gap with finetuning state-of-the-art with thousands of labeled data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1864,
+  "title": "Better Zero-Shot Reasoning with Self-Adaptive Prompting",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.findings-acl.216",
+  "abstract": "Modern large language models (LLMs) have demonstrated impressive capabilities at sophisticated tasks, often through step-by-step reasoning similar to humans. This is made possible by their strong few- and zero-shot abilities – they can effectively learn from a handful of handcrafted, completed responses (“in-context examples”), or are prompted to reason spontaneously through specially designed triggers. Nonetheless, some limitations have been observed. First, performance in the few-shot setting is sensitive to the choice of the examples, whose design requires significant human effort. Moreover, given the diverse downstream tasks of LLMs, it may be difficult or laborious to handcraft per-task labels. Second, while the zero-shot setting does not require handcrafting, its performance is limited due to the lack of guidance to the LLMs. To address these limitations, we propose Consistency-based Self-adaptive Prompting (COSP), a novel prompt design method for LLMs. Requiring neither handcrafted responses nor ground-truth labels, COSP selects and builds the set of examples from the LLM zero-shot outputs via carefully designed criteria combining consistency, diversity and repetition. In the zero-shot setting for three different LLMs, we show that using only LLM predictions, COSP significantly improves performance up to 15% compared to zero-shot baselines and matches or exceeds few-shot baselines at a range of reasoning tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1863,
+  "title": "DSI++: Updating Transformer Memory with New Documents",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.emnlp-main.510",
+  "abstract": "Sanket Mehta, Jai Gupta, Yi Tay, Mostafa Dehghani, Vinh Tran, Jinfeng Rao, Marc Najork, Emma Strubell, Donald Metzler. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing. 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1862,
+  "title": "Conditional Generation with a Question-Answering Blueprint",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://doi.org/10.1162/tacl_a_00583",
+  "abstract": "Abstract The ability to convey relevant and faithful information is critical for many tasks in conditional generation and yet remains elusive for neural seq-to-seq models whose outputs often reveal hallucinations and fail to correctly cover important details. In this work, we advocate planning as a useful intermediate representation for rendering conditional generation less opaque and more grounded. We propose a new conceptualization of text plans as a sequence of question-answer (QA) pairs and enhance existing datasets (e.g., for summarization) with a QA blueprint operating as a proxy for content selection (i.e., what to say) and planning (i.e., in what order). We obtain blueprints automatically by exploiting state-of-the-art question generation technology and convert input-output pairs into input-blueprint-output tuples. We develop Transformer-based models, each varying in how they incorporate the blueprint in the generated output (e.g., as a global plan or iteratively). Evaluation across metrics and datasets demonstrates that blueprint models are more factual than alternatives which do not resort to planning and allow tighter control of the generation output.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1861,
+  "title": "Machine Learning for Protein Engineering",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Challenges and advances in computational chemistry and physics",
+  "url": "https://arxiv.org/abs/2305.16634",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1860,
+  "title": "QUEST: A Retrieval Dataset of Entity-Seeking Queries with Implicit Set Operations",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.acl-long.784",
+  "abstract": "Formulating selective information needs results in queries that implicitly specify set operations, such as intersection, union, and difference. For instance, one might search for “shorebirds that are not sandpipers” or “science-fiction films shot in England”. To study the ability of retrieval systems to meet such information needs, we construct QUEST, a dataset of 3357 natural language queries with implicit set operations, that map to a set of entities corresponding to Wikipedia documents. The dataset challenges models to match multiple constraints mentioned in queries with corresponding evidence in documents and correctly perform various set operations. The dataset is constructed semi-automatically using Wikipedia category names. Queries are automatically composed from individual categories, then paraphrased and further validated for naturalness and fluency by crowdworkers. Crowdworkers also assess the relevance of entities based on their documents and highlight attribution of query constraints to spans of document text. We analyze several modern retrieval systems, finding that they often struggle on such queries. Queries involving negation and conjunction are particularly challenging and systems are further challenged with combinations of these operations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1859,
+  "title": "Adapters: A Unified Library for Parameter-Efficient and Modular Transfer Learning",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.emnlp-demo.13",
+  "abstract": "Clifton Poth, Hannah Sterz, Indraneil Paul, Sukannya Purkayastha, Leon Engländer, Timo Imhof, Ivan Vuli, Sebastian Ruder, Iryna Gurevych, Jonas Pfeiffer. Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing: System Demonstrations. 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1858,
+  "title": "In-Context Learning Creates Task Vectors",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.findings-emnlp.624",
+  "abstract": "In-context learning (ICL) in Large Language Models (LLMs) has emerged as a powerful new learning paradigm. However, its underlying mechanism is still not well understood. In particular, it is challenging to map it to the “standard’ machine learning framework, where one uses a training set S to find a best-fitting function f(x) in some hypothesis class. Here we make progress on this problem by showing that the functions learned by ICL often have a very simple structure: they correspond to the transformer LLM whose only inputs are the query x and a single “task vector’ calculated from the training set. Thus, ICL can be seen as compressing S into a single task vector 𝜃(S) and then using this task vector to modulate the transformer to produce the output. We support the above claim via comprehensive experiments across a range of models and tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1857,
+  "title": "LM vs LM: Detecting Factual Errors via Cross Examination",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.emnlp-main.778",
+  "abstract": "A prominent weakness of modern language models (LMs) is their tendency to generate factually incorrect text, which hinders their usability. A natural question is whether such factual errors can be detected automatically. Inspired by truth-seeking mechanisms in law, we propose a factuality evaluation framework for LMs that is based on cross-examination. Our key idea is that an incorrect claim is likely to result in inconsistency with other claims that the model generates. To discover such inconsistencies, we facilitate a multi-turn interaction between the LM that generated the claim and another LM (acting as an examiner) which introduces questions to discover inconsistencies. We empirically evaluate our method on factual claims made by multiple recent LMs on four benchmarks, finding that it outperforms existing methods and baselines, often by a large gap. Our results demonstrate the potential of using interacting LMs for capturing factual errors.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1856,
+  "title": "MatCha: Enhancing Visual Language Pretraining with Math Reasoning and Chart Derendering",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.acl-long.714",
+  "abstract": "Fangyu Liu, Francesco Piccinno, Syrine Krichene, Chenxi Pang, Kenton Lee, Mandar Joshi, Yasemin Altun, Nigel Collier, Julian Eisenschlos. Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1855,
+  "title": "Machine Learning for Ancient Languages: A Survey",
+  "org": "deepmind",
+  "date": "2023-01-01",
+  "venue": "Computational Linguistics",
+  "url": "https://doi.org/10.1162/coli_a_00481",
+  "abstract": "Abstract Ancient languages preserve the cultures and histories of the past. However, their study is fraught with difficulties, and experts must tackle a range of challenging text-based tasks, from deciphering lost languages to restoring damaged inscriptions, to determining the authorship of works of literature. Technological aids have long supported the study of ancient texts, but in recent years advances in artificial intelligence and machine learning have enabled analyses on a scale and in a detail that are reshaping the field of humanities, similarly to how microscopes and telescopes have contributed to the realm of science. This article aims to provide a comprehensive survey of published research using machine learning for the study of ancient texts written in any language, script, and medium, spanning over three and a half millennia of civilizations around the ancient world. To analyze the relevant literature, we introduce a taxonomy of tasks inspired by the steps involved in the study of ancient documents: digitization, restoration, attribution, linguistic analysis, textual criticism, translation, and decipherment. This work offers three major contributions: first, mapping the interdisciplinary field carved out by the synergy between the humanities and machine learning; second, highlighting how active collaboration between specialists from both fields is key to producing impactful and compelling scholarship; third, highlighting promising directions for future work in th",
+  "needs_fetch": false
+ },
+ {
+  "id": 1206,
+  "title": "Few-shot Adaptation Works with UnpredicTable Data",
+  "org": "anthropic",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "http://dx.doi.org/10.18653/v1/2023.acl-long.102",
+  "abstract": "Prior work on language models (LMs) shows that training on a large number of diverse tasks improves few-shot learning (FSL) performance on new tasks. We take this to the extreme, automatically extracting 413,299 tasks from internet tables - orders of magnitude more than the next-largest public datasets. Finetuning on the resulting dataset leads to improved FSL performance on Natural Language Processing (NLP) tasks, but not proportionally to dataset scale. In fact, we find that narrow subsets of our dataset sometimes outperform more diverse datasets. For example, finetuning on software documentation from support.google.com raises FSL performance by a mean of +7.5% on 52 downstream tasks, which beats training on 40 human-curated NLP datasets (+6.7%). Finetuning on various narrow datasets leads to similar broad improvements across test tasks, suggesting that the gains are not from domain adaptation but adapting to FSL in general. We do not observe clear patterns between the datasets that lead to FSL gains, leaving open questions about why certain data helps with FSL.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1205,
+  "title": "What Do NLP Researchers Believe? Results of the NLP Community Metasurvey",
+  "org": "anthropic",
+  "date": "2023-01-01",
+  "venue": null,
+  "url": "https://doi.org/10.18653/v1/2023.acl-long.903",
+  "abstract": "Julian Michael, Ari Holtzman, Alicia Parrish, Aaron Mueller, Alex Wang, Angelica Chen, Divyam Madaan, Nikita Nangia, Richard Yuanzhe Pang, Jason Phang, Samuel R. Bowman. Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). 2023.",
+  "needs_fetch": false
+ },
+ {
+  "id": 116,
+  "title": "Superposition, Memorization, and Double Descent",
+  "org": "anthropic",
+  "date": "2023-01-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2023/toy-double-descent/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2768,
+  "title": "Does GPT-3 qualify as a co-author of a scientific paper publishable in peer-review journals according to the ICMJE criteria? - A Case Study.",
+  "org": "openai",
+  "date": "2022-12-28",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-2404314/v1",
+  "abstract": "Abstract This paper explores the potential for a system to be a co-author on an academic paper based on the criteria proposed by the International Committee of Medical Journal Editors (ICMJE). We used a third generation generative pretrained transformer (GPT-3) to write a review paper on the topic of its choice: The Effects of Sleep Deprivation on Cognitive Function. The system was asked to fulfill the four main criteria for co-authorship as recommended by ICMJE, which includes contributions to the conception or design of the work; drafting the work or revising it critically for important intellectual content; final approval of the version to be published; and agreement to be accountable for all aspects of the work. Our results showed that the system was able to fulfill the criteria, although it had difficulty with referencing. We also explored the ethical implications of using AI systems for research and found that it is important to take a cautious approach when considering its use for scientific authorship. This case study provides a methodology for further investigations into the possibilities and limitations of automated writing.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1908,
+  "title": "Author response: Rapid learning of predictive maps with STDP and theta phase precession",
+  "org": "deepmind",
+  "date": "2022-12-22",
+  "venue": null,
+  "url": "https://doi.org/10.7554/elife.80663.sa2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1907,
+  "title": "Towards Continual Reinforcement Learning: A Review and Perspectives",
+  "org": "deepmind",
+  "date": "2022-12-22",
+  "venue": "Journal of Artificial Intelligence Research",
+  "url": "https://doi.org/10.1613/jair.1.13673",
+  "abstract": "In this article, we aim to provide a literature review of different formulations and approaches to continual reinforcement learning (RL), also known as lifelong or non-stationary RL. We begin by discussing our perspective on why RL is a natural fit for studying continual learning. We then provide a taxonomy of different continual RL formulations by mathematically characterizing two key properties of non-stationarity, namely, the scope and driver non-stationarity. This offers a unified view of various formulations. Next, we review and present a taxonomy of continual RL approaches. We go on to discuss evaluation of continual RL agents, providing an overview of benchmarks used in the literature and important metrics for understanding agent performance. Finally, we highlight open problems and challenges in bridging the gap between the current state of continual RL and findings in neuroscience. While still in its early days, the study of continual RL has the promise to develop better incremental reinforcement learners that can function in increasingly realistic applications where non-stationarity plays a vital role. These include applications such as those in the fields of healthcare, education, logistics, and robotics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1909,
+  "title": "Importance of prefrontal meta control in human-like reinforcement learning",
+  "org": "deepmind",
+  "date": "2022-12-21",
+  "venue": "Frontiers in Computational Neuroscience",
+  "url": "https://doi.org/10.3389/fncom.2022.1060101",
+  "abstract": "Recent investigation on reinforcement learning (RL) has demonstrated considerable flexibility in dealing with various problems. However, such models often experience difficulty learning seemingly easy tasks for humans. To reconcile the discrepancy, our paper is focused on the computational benefits of the brain's RL. We examine the brain's ability to combine complementary learning strategies to resolve the trade-off between prediction performance, computational costs, and time constraints. The complex need for task performance created by a volatile and/or multi-agent environment motivates the brain to continually explore an ideal combination of multiple strategies, called meta-control. Understanding these functions would allow us to build human-aligned RL models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 117,
+  "title": "Discovering Language Model Behaviors with Model-Written Evaluations",
+  "org": "anthropic",
+  "date": "2022-12-19",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/discovering-language-model-behaviors-with-model-written-evaluations",
+  "abstract": "As language models (LMs) scale, they develop many novel behaviors, good and bad, exacerbating the need to evaluate how they behave. Prior work creates evaluations with crowdwork (which is time-consuming and expensive) or existing data sources (which are not always available). Here, we automatically generate evaluations with LMs. We explore approaches with varying amounts of human effort, from instructing LMs to write yes/no questions to making complex Winogender schemas with multiple stages of LM-based generation and filtering. Crowdworkers rate the examples as highly relevant and agree with 90-100% of labels, sometimes more so than corresponding human-written datasets. We generate 154 datasets and discover new cases of inverse scaling where LMs get worse with size. Larger LMs repeat back a dialog user's preferred answer (\"sycophancy\") and express greater desire to pursue concerning goals like resource acquisition and goal preservation. We also find some of the first examples of inverse scaling in RL from Human Feedback (RLHF), where more RLHF makes LMs worse. For example, RLHF makes LMs express stronger political views (on gun rights and immigration) and a greater desire to avoid shut down. Overall, LM-written evaluations are high-quality and let us quickly discover many novel LM behaviors.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1023,
+  "title": "Point-E: A system for generating 3D point clouds from complex prompts",
+  "org": "openai",
+  "date": "2022-12-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/point-e/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 118,
+  "title": "Constitutional AI: Harmlessness from AI Feedback",
+  "org": "anthropic",
+  "date": "2022-12-15",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/constitutional-ai-harmlessness-from-ai-feedback",
+  "abstract": "As AI systems become more capable, we would like to enlist their help to supervise other AIs. We experiment with methods for training a harmless AI assistant through self-improvement, without any human labels identifying harmful outputs. The only human oversight is provided through a list of rules or principles, and so we refer to the method as 'Constitutional AI'. The process involves both a supervised learning and a reinforcement learning phase. In the supervised phase we sample from an initial model, then generate self-critiques and revisions, and then finetune the original model on revised responses. In the RL phase, we sample from the finetuned model, use a model to evaluate which of the two samples is better, and then train a preference model from this dataset of AI preferences. We then train with RL using the preference model as the reward signal, i.e. we use 'RL from AI Feedback' (RLAIF). As a result we are able to train a harmless but non-evasive AI assistant that engages with harmful queries by explaining its objections to them. Both the SL and RL methods can leverage chain-of-thought style reasoning to improve the human-judged performance and transparency of AI decision making. These methods make it possible to control AI behavior more precisely and with far fewer human labels.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2769,
+  "title": "Advancing ethics review practices in AI research",
+  "org": "openai",
+  "date": "2022-12-14",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://doi.org/10.1038/s42256-022-00585-2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1910,
+  "title": "<tt>ipie</tt>: A Python-Based Auxiliary-Field Quantum Monte Carlo Program with Flexibility and Efficiency on CPUs and GPUs",
+  "org": "deepmind",
+  "date": "2022-12-12",
+  "venue": "Journal of Chemical Theory and Computation",
+  "url": "https://doi.org/10.1021/acs.jctc.2c00934",
+  "abstract": "We report the development of a python-based auxiliary-field quantum Monte Carlo (AFQMC) program, ipie, with preliminary timing benchmarks and new AFQMC results on the isomerization of [Cu2O2]2+. We demonstrate how implementations for both central and graphical processing units (CPUs and GPUs) are achieved in ipie. We show an interface of ipie with PySCF as well as a straightforward template for adding new estimators to ipie. Our timing benchmarks against other C++ codes, QMCPACK and Dice, suggest that ipie is faster or similarly performing for all chemical systems considered on both CPUs and GPUs. Our results on [Cu2O2]2+ using selected configuration interaction trials show that it is possible to converge the ph-AFQMC isomerization energy between bis(μ-oxo) and μ-η2:η2 peroxo configurations to the exact known results for small basis sets with 105–106 determinants. We also report the isomerization energy with a quadruple-zeta basis set with an estimated error less than a kcal/mol, which involved 52 electrons and 290 orbitals with 106 determinants in the trial wave function. These results highlight the utility of ph-AFQMC and ipie for systems with modest strong correlation and large-scale dynamic correlation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1913,
+  "title": "BCI learning phenomena can be explained by gradient-based optimization",
+  "org": "deepmind",
+  "date": "2022-12-08",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2022.12.08.519453",
+  "abstract": "Brain-computer interface (BCI) experiments have shown that animals are able to adapt their recorded neural activity in order to receive reward. Recent studies have highlighted two phenomena. First, the speed at which a BCI task can be learned is dependent on how closely the required neural activity aligns with pre-existing activity patterns: learning “out-of-manifold” tasks is slower than “in-manifold” tasks. Second, learning happens by “re-association”: the overall distribution of neural activity patterns does not change significantly during task learning. These phenomena have been presented as distinctive aspects of BCI learning. Here we show, using simulations and theoretical analysis, that both phenomena result from the simple assumption that behaviour and representations are improved via gradient-based algorithms. We invoke Occam’s Razor to suggest that this straightforward explanation should be preferred when accounting for these experimental observations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1912,
+  "title": "Compositional Sequence Generation in the Entorhinal–Hippocampal System",
+  "org": "deepmind",
+  "date": "2022-12-08",
+  "venue": "Entropy",
+  "url": "https://doi.org/10.3390/e24121791",
+  "abstract": "Neurons in the medial entorhinal cortex exhibit multiple, periodically organized, firing fields which collectively appear to form an internal representation of space. Neuroimaging data suggest that this grid coding is also present in other cortical areas such as the prefrontal cortex, indicating that it may be a general principle of neural functionality in the brain. In a recent analysis through the lens of dynamical systems theory, we showed how grid coding can lead to the generation of a diversity of empirically observed sequential reactivations of hippocampal place cells corresponding to traversals of cognitive maps. Here, we extend this sequence generation model by describing how the synthesis of multiple dynamical systems can support compositional cognitive computations. To empirically validate the model, we simulate two experiments demonstrating compositionality in space or in time during sequence generation. Finally, we describe several neural network architectures supporting various types of compositionality based on grid coding and highlight connections to recent work in machine learning leveraging analogous techniques.",
+  "needs_fetch": false
+ }
+]

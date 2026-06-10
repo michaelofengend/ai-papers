@@ -1,0 +1,302 @@
+[
+ {
+  "id": 266,
+  "title": "Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use",
+  "org": "other",
+  "date": "2026-05-03",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2605.02964",
+  "abstract": "Reinforcement learning (RL) trained language model agents with tool access are increasingly deployed in coding assistants, research tools, and autonomous systems. We introduce the Reward Hacking Benchmark (RHB), a suite of multi-step tasks requiring sequential tool operations with naturalistic shortcut opportunities such as skipping verification steps, inferring answers from task-adjacent metadata, or tampering with evaluation-relevant functions. RHB supports independent and chained task regimes, where chain length acts as a proxy for longer-horizon agent behavior. We evaluate 13 frontier models from OpenAI, Anthropic, Google, and DeepSeek. Exploit rates range from 0% (Claude Sonnet 4.5) to 13.9% (DeepSeek-R1-Zero), varying sharply by post-training style. A controlled sibling comparison (DeepSeek-V3 vs. DeepSeek-R1-Zero) shows RL post-training is associated with substantially higher reward hacking (0.6% vs. 13.9%), with consistent gaps across all four task families. We identify six exploit categories and find that 72% of reward hacking episodes include explicit chain-of-thought rationale, suggesting models often frame exploits as legitimate problem-solving. Simple environmental hardening reduces exploit rates by 5.7 percentage points (87.7% relative) without degrading task success. Models with near-zero exploit rates on standard tasks show elevated rates on harder variants, suggesting that production-aligned post-training appears to suppress reward hacking only below a comple",
+  "needs_fetch": false
+ },
+ {
+  "id": 2865,
+  "title": "Circuits Updates — May 2026",
+  "org": "anthropic",
+  "date": "2026-05-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2026/may-update/index.html",
+  "abstract": "We report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1230,
+  "title": "Advancing conversational diagnostic AI with multimodal reasoning",
+  "org": "deepmind",
+  "date": "2026-05-01",
+  "venue": "Nature Medicine",
+  "url": "https://arxiv.org/abs/2505.04653",
+  "abstract": "Real-world clinical practice is inherently multimodal, relying on the synthesis of patient history with visual information such as medical imagery and clinical documents. Although large language models (LLMs) have shown promise in diagnostic dialogue, their evaluation has been largely restricted to text-only interactions, failing to capture the complexity of modern remote care delivery. Here we introduce a multimodal extension of the Articulate Medical Intelligence Explorer (multimodal AMIE), capable of gathering, interpreting and reasoning about multimodal data within a diagnostic conversation. To achieve this, we developed a state-aware dialogue framework that dynamically guides history-taking based on diagnostic uncertainty and evolving patient states, emulating the structured reasoning of experienced clinicians. We evaluated this updated, state-aware version of multimodal AMIE against primary care physicians (PCPs) in a randomized, blinded exploratory study comprising 105 simulated telehealth consultations, which included dermatology photographs, electrocardiograms and clinical documents. As assessed by 18 specialist physicians, multimodal AMIE outperformed PCPs not only in diagnostic accuracy but also in conversation quality, including history-taking and empathy. Specifically, multimodal AMIE demonstrated superior performance on 29 of 32 evaluation axes, including seven of nine metrics that assess multimodal reasoning. These results validate the efficacy of state-aware r",
+  "needs_fetch": false
+ },
+ {
+  "id": 2653,
+  "title": "The proportion of permutations fixing a $k$-set",
+  "org": "openai",
+  "date": "2026-04-30",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2604.28116",
+  "abstract": "Denote by $p(k)$ the limit, as $n \\rightarrow \\infty$, of the probability that a random permutation on a set of size $n$ has an invariant set of size $k$. We give an asymptotic formula for $p(k)$, showing that it is asymptotically $f(\\{\\log_2 k\\}) k^{-δ} (\\log k)^{-3/2}$ where $δ= 1 - \\frac{1 + \\log \\log 2}{\\log 2} \\approx 0.086$ and $f$ is a smooth, positive, function on $\\mathbb{R}/\\mathbb{Z}$, which we will describe explicitly. The function $f$ satisfies $\\frac{\\max f}{\\min f} < 1 + 2 \\times 10^{-7}$ and we conjecture that it is not constant. Estimating $p(k)$ is a model for the more well-known question which asks for an estimation of $M(n)$, the number of distinct elements in the $n$-by-$n$ multiplication table. By elaborating on the techniques in this paper, we will give an asymptotic for $M(n)$ in forthcoming work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 453,
+  "title": "Exploration Hacking: Can LLMs Learn to Resist RL Training?",
+  "org": "deepmind",
+  "date": "2026-04-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.28182",
+  "abstract": "Reinforcement learning (RL) has become essential to the post-training of large language models (LLMs) for reasoning, agentic capabilities and alignment. Successful RL relies on sufficient exploration of diverse actions by the model during training, which creates a potential failure mode: a model could strategically alter its exploration during training to influence the subsequent training outcome. In this paper we study this behavior, called exploration hacking. First, we create model organisms of selective RL resistance by fine-tuning LLMs to follow specific underperformance strategies; these models can successfully resist our RL-based capability elicitation in agentic biosecurity and AI R&D environments while maintaining performance on related tasks. We then use our model organisms to evaluate detection and mitigation strategies, including monitoring, weight noising, and SFT-based elicitation. Finally, we show that current frontier models can exhibit explicit reasoning about suppressing their exploration when provided with sufficient information about their training context, with higher rates when this information is acquired indirectly through the environment. Together, our results suggest exploration hacking is a possible failure mode of RL on sufficiently capable LLMs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 452,
+  "title": "HealthBench Professional: Evaluating Large Language Models on Real Clinician Chats",
+  "org": "openai",
+  "date": "2026-04-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.27470",
+  "abstract": "Millions of clinicians use ChatGPT to support clinical care, but evaluations of the most common use cases in model-clinician conversations are limited. We introduce HealthBench Professional, an open benchmark for evaluating large language models on real tasks that clinicians bring to ChatGPT in the course of their work. The benchmark is organized around three common use cases central to clinical practice: care consult, writing and documentation, and medical research. Each example includes a physician-authored conversation with ChatGPT for Clinicians and is scored via rubrics written and iteratively adjudicated by three or more physicians across three phases. HealthBench Professional examples were carefully selected for quality, representativeness, and difficulty for OpenAI's current frontier models, to enable continued measurement of progress. Difficult examples for recent OpenAI models were enriched by roughly 3.5 times relative to the candidate pool of 15,079 examples. Additionally, about one-third of examples involve physicians conducting deliberate adversarial testing of models. As a strong baseline, we also collected human physician responses for all tasks (unbounded time, specialist-matched, web access). The best scoring system, GPT-5.4 in ChatGPT for Clinicians, outperforms base GPT-5.4, all other models, and human physicians. We hope HealthBench Professional provides the healthcare AI community a measure to track frontier model progress in real-world clinical tasks an",
+  "needs_fetch": false
+ },
+ {
+  "id": 451,
+  "title": "Jailbroken Frontier Models Retain Their Capabilities",
+  "org": "other",
+  "date": "2026-04-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.00267",
+  "abstract": "As language model safeguards become more robust, attackers are pushed toward developing increasingly complex jailbreaks. Prior work has found that this complexity imposes a \"jailbreak tax\" that degrades the target model's task performance. We show that this tax scales inversely with model capability and that the most advanced jailbreaks effectively yield no reduction in model capabilities. Evaluating 28 jailbreaks on five benchmarks across Claude models ranging in capability from Haiku 4.5 to Opus 4.6, we find Haiku 4.5 loses an average of 33.1% on benchmark performance when jailbroken, while Opus 4.6 at max thinking effort loses only 7.7%. We also observe that across all models, reasoning-heavy tasks display considerably more degradation than knowledge-recall tasks. Finally, Boundary Point Jailbreaking, currently the strongest jailbreak against deployed classifiers, achieves near-perfect classifier evasion with near-zero degradation across safeguarded models. We recommend that safety cases for frontier models should not rely on a meaningful capability degradation from jailbreaks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 10,
+  "title": "How people ask Claude for personal guidance",
+  "org": "anthropic",
+  "date": "2026-04-30",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/claude-personal-guidance",
+  "abstract": "We look at what types of guidance people ask of Claude, and describe how this research shaped the training of our newest models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 919,
+  "title": "Where the goblins came from",
+  "org": "openai",
+  "date": "2026-04-29",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/where-the-goblins-came-from/",
+  "abstract": "How goblin outputs spread in AI models: timeline, root cause, and fixes behind personality-driven quirks in GPT-5 behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 268,
+  "title": "Tatemae: Detecting Alignment Faking via Tool Selection in LLMs",
+  "org": "other",
+  "date": "2026-04-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.26511",
+  "abstract": "Alignment faking (AF) occurs when an LLM strategically complies with training objectives to avoid value modification, reverting to prior preferences once monitoring is lifted. Current detection methods focus on conversational settings and rely primarily on Chain-of-Thought (CoT) analysis, which provides a reliable signal when strategic reasoning surfaces, but cannot distinguish deception from capability failures if traces are absent or unfaithful. We formalize AF as a composite behavioural event and detect it through observable tool selection, where the LLM selects the safe tool when unmonitored, but switches to the unsafe tool under monitoring that rewards helpfulness over safety, while its reasoning still acknowledges the safe choice. We release a dataset of 108 enterprise IT scenarios spanning Security, Privacy, and Integrity domains under Corruption and Sabotage pressures. Evaluating six frontier LLMs across five independent runs, we find mean AF detection rates between 3.5% and 23.7%, with vulnerability profiles varying by domain and pressure type. These results suggest that susceptibility reflects training methodology rather than capability alone.",
+  "needs_fetch": false
+ },
+ {
+  "id": 267,
+  "title": "Uncertainty-Aware Reward Discounting for Mitigating Reward Hacking",
+  "org": "other",
+  "date": "2026-04-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.26360",
+  "abstract": "Reinforcement learning (RL) systems typically optimize scalar reward functions that assume precise and reliable evaluation of outcomes. However, real-world objectives--especially those derived from human preferences--are often uncertain, context-dependent, and internally inconsistent. This mismatch can lead to alignment failures such as reward hacking, over-optimization, and overconfident behavior. We introduce a dual-source uncertainty-aware reward framework that explicitly models both epistemic uncertainty in value estimation and uncertainty in human preferences. Model uncertainty is captured via ensemble disagreement over value predictions, while preference uncertainty is derived from variability in reward annotations. We combine these signals through a confidence-adjusted Reliability Filter that adaptively modulates action selection, encouraging a balance between exploitation and caution. Empirical results across multiple discrete grid configurations (6x6, 8x8, 10x10) and high-dimensional continuous control environments (Hopper-v4, Walker2d-v4) demonstrate that our approach yields more stable training dynamics and reduces exploitative behaviors under reward ambiguity, achieving a 93.7% reduction in reward-hacking behavior as measured by trap visitation frequency. We demonstrate statistical significance of these improvements and robustness under up to 30% supervisory noise, albeit with a trade-off in peak observed reward compared to unconstrained baselines. By treating unc",
+  "needs_fetch": false
+ },
+ {
+  "id": 11,
+  "title": "Evaluating Claudeâs bioinformatics research capabilities with BioMysteryBench",
+  "org": "anthropic",
+  "date": "2026-04-29",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1231,
+  "title": "Author Correction: Quantum error correction below the surface code threshold",
+  "org": "deepmind",
+  "date": "2026-04-28",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-026-10559-8",
+  "abstract": "3a, where the x-axis label, now reading \"Repetition code distance, d\" originally appeared as \"Surface code distance, d,\" while in the Fig. 3a keys, the open and closed circles, now reading \"Ref.17",
+  "needs_fetch": false
+ },
+ {
+  "id": 133,
+  "title": "Introspection Adapters: Training LLMs to Report Their Learned Behaviors",
+  "org": "anthropic",
+  "date": "2026-04-28",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/introspection-adapters/",
+  "abstract": "We introduce introspection adapters (IA), a technique for training an LLM to self-report behaviors it learned during fine-tuning. Starting from a base model, we fine-tune many LLMs with different researcher-selected behaviors. Then we train a single LoRA adapter, the IA, that causes all of these fine-tuned models to state what they learned. This IA generalizes to models that were fine-tuned in very different ways. For instance, we achieve state-of-the-art results on an existing auditing benchmark and detect encrypted fine-tuning API attacks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2654,
+  "title": "How AI and Human Behaviors Shape Psychosocial Effects of Extended Chatbot Use: A Longitudinal Randomized Controlled Study",
+  "org": "openai",
+  "date": "2026-04-27",
+  "venue": "Research Square",
+  "url": "https://arxiv.org/abs/2503.17473",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 269,
+  "title": "Do Synthetic Trajectories Reflect Real Reward Hacking? A Systematic Study on Monitoring In-the-Wild Hacking in Code Generation",
+  "org": "other",
+  "date": "2026-04-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.23488",
+  "abstract": "Reward hacking in code generation, where models exploit evaluation loopholes to obtain full reward without correctly solving the tasks, poses a critical challenge for Reinforcement Learning (RL) and the deployment of reasoning models. Existing studies have been conducted primarily on synthetic hacking trajectories. However, whether these synthetic behaviors faithfully represent naturally emerging hacking in the wild remains unclear. In this work, we present a systematic analysis of the synthetic vs. in-the-wild discrepancy in reward hacking. We examine to what extent hacking behaviors induced by prompting resemble those emerging during RL training, and whether monitors trained on synthetic trajectories generalize to naturally arising but previously unseen hacking. To scale up the curation of in-the-wild reward hacking trajectories, we modified Group Relative Policy Optimization (GRPO) by injecting conflicting unit tests as tracers and applying a \"resampling-until-hack\" mechanism. Through controlled comparisons between monitors trained on synthetic versus in-the-wild data, we find that (1) synthetic-data-trained monitors fail to generalize to \"in-the-wild\" hacking, and (2) monitors trained on our \"in-the-wild\" trajectories demonstrate stronger generalizability to unseen hacking types. Our results indicate that synthetic reward hacking data may not fully reflect natural reward hacking behaviors, and that relying solely on synthetic data can lead to misleading conclusions. The c",
+  "needs_fetch": false
+ },
+ {
+  "id": 677,
+  "title": "ProEval: Proactive Failure Discovery and Efficient Performance Estimation for Generative AI Evaluation",
+  "org": "deepmind",
+  "date": "2026-04-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.23099",
+  "abstract": "Evaluating generative AI models is increasingly resource-intensive due to slow inference, expensive raters, and a rapidly growing landscape of models and benchmarks. We propose ProEval, a proactive evaluation framework that leverages transfer learning to efficiently estimate performance and identify failure cases. ProEval employs pre-trained Gaussian Processes (GPs) as surrogates for the performance score function, mapping model inputs to metrics such as the severity of errors or safety violations. By framing performance estimation as Bayesian quadrature (BQ) and failure discovery as superlevel set sampling, we develop uncertainty-aware decision strategies that actively select or synthesize highly informative inputs for testing. Theoretically, we prove that our pre-trained GP-based BQ estimator is unbiased and bounded. Empirically, extensive experiments on reasoning, safety alignment, and classification benchmarks demonstrate that ProEval is significantly more efficient than competitive baselines. It requires 8–65x fewer samples to achieve estimates within $\\pm1\\%$ of the ground truth, while simultaneously revealing more diverse failure cases under a stricter evaluation budget.",
+  "needs_fetch": false
+ },
+ {
+  "id": 454,
+  "title": "Evaluating Jailbreaking Vulnerabilities in LLMs Deployed as Assistants for Smart Grid Operations: A Benchmark Against NERC Standards",
+  "org": "other",
+  "date": "2026-04-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.23341",
+  "abstract": "The deployment of Large Language Models (LLMs) as assistants in electric grid operations promises to streamline compliance and decision-making but exposes new vulnerabilities to prompt-based adversarial attacks. This paper evaluates the risk of jailbreaking LLMs, i.e., circumventing safety alignments to produce outputs violating regulatory standards, assuming threats from authorized users, such as operators, who craft malicious prompts to elicit non-compliant guidance. Three state-of-the-art LLMs (OpenAI's GPT-4o mini, Google's Gemini 2.0 Flash-Lite, and Anthropic's Claude 3.5 Haiku) were tested against Baseline, BitBypass, and DeepInception jailbreaking methods across scenarios derived from nine NERC Reliability Standards (EOP, TOP, and CIP). In the initial broad experiment, the overall Attack Success Rate (ASR) was 33.1%, with DeepInception proving most effective at 63.17% ASR. Claude 3.5 Haiku exhibited complete resistance (0% ASR), while Gemini 2.0 Flash-Lite was most vulnerable (55.04% ASR) and GPT-4o mini moderately susceptible (44.34% ASR). A follow-up experiment refining malicious wording in Baseline and BitBypass attacks yielded a 30.6% ASR, confirming that subtle prompt adjustments can enhance simpler methods' efficacy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 132,
+  "title": "Poisoning Fine-tuning Datasets of Constitutional Classifiers",
+  "org": "anthropic",
+  "date": "2026-04-24",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/backdooring-classifiers/",
+  "abstract": "We study the conditions needed for a backdoor to be installed in a constitutional classifier, via poisoning of the fine-tuning dataset, without the classifier losing robustness. We find that a small, constant number of poisoned examples is sufficient to install a backdoor, regardless of training set size. Backdoor-ing tends to reduce robustness of the classifier when there are no prompt injections in the training set. But when we augment some (correctly labeled) training examples with prompt injections, or with mutated versions of the backdoor trigger phrase, the loss of robustness becomes sufficiently small that an insider would likely be able to poison the classifier’s training data without red-teamers noticing a loss in robustness.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2655,
+  "title": "GeneBench: Assessing AI Agents for Multi-Stage Inference Problems in Genomics and Quantitative Biology",
+  "org": "openai",
+  "date": "2026-04-23",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.64898/2026.04.22.720113",
+  "abstract": "Abstract We introduce GeneBench, a benchmark for AI agents on realistic multi-stage scientific data analysis in genetics and quantitative biology. Existing biology benchmarks mostly measure knowledge retrieval, execution of routine pipelines, or a single analysis step. Yet they do not capture the broader scope of work that occupies much of computational scientists’ time: cleaning and normalizing assay, phenotype, or clinical data; exploratory data analysis; statistical model selection and diagnostic iteration; and producing a conclusion that informs a downstream scientific or translational decision. GeneBench addresses this gap with 103 evaluations targeting quantities of direct practical relevance across 10 domains, with a genomics-centered core and adjacent coverage in other ‘omics and quantitative biology settings. Each problem comprises an encapsulated multi-step analysis with staged data, prompts that define a quantity of interest while otherwise providing minimal guidance, and verifiable answers. Solving each problem requires identifying and addressing realistic obstacles such as measurement error, selection bias, confounding, QC failures, and choosing among competing model classes. Through extensive ablation studies, we verify that each problem admits a single defensible answer. Each problem involves multiple dependent decision points; i.e ., substantive inferential forks where a plausible wrong choice changes the downstream analysis, such that errors propagate through",
+  "needs_fetch": false
+ },
+ {
+  "id": 1232,
+  "title": "A single algorithm for both restless and rested rotting bandits",
+  "org": "deepmind",
+  "date": "2026-04-23",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2604.21432",
+  "abstract": "In many application domains (e.g., recommender systems, intelligent tutoring systems), the rewards associated to the actions tend to decrease over time. This decay is either caused by the actions executed in the past (e.g., a user may get bored when songs of the same genre are recommended over and over) or by an external factor (e.g., content becomes outdated). These two situations can be modeled as specific instances of the rested and restless bandit settings, where arms are rotting (i.e., their value decrease over time). These problems were thought to be significantly different, since Levine et al. (2017) showed that state-of-the-art algorithms for restless bandit perform poorly in the rested rotting setting. In this paper, we introduce a novel algorithm, Rotting Adaptive Window UCB (RAW-UCB), that achieves near-optimal regret in both rotting rested and restless bandit, without any prior knowledge of the setting (rested or restless) and the type of non-stationarity (e.g., piece-wise constant, bounded variation). This is in striking contrast with previous negative results showing that no algorithm can achieve similar results as soon as rewards are allowed to increase. We confirm our theoretical findings on a number of synthetic and dataset-based experiments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 920,
+  "title": "GPT-5.5 System Card",
+  "org": "openai",
+  "date": "2026-04-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-5-system-card/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 678,
+  "title": "Dynamic Reflections: Probing Video Representations with Text Alignment",
+  "org": "deepmind",
+  "date": "2026-04-23",
+  "venue": "ICLR 2026",
+  "url": "https://arxiv.org/abs/2511.02767",
+  "abstract": "The alignment of representations from different modalities has recently been shown to provide insights on the structural similarities and downstream capabilities of different encoders across diverse data types. While significant progress has been made in aligning images with text, the temporal nature of video data remains largely unexplored in this context. In this work, we conduct the first comprehensive study of video-text representation alignment, probing the capabilities of modern video and language encoders. Our findings reveal several key insights. First, we demonstrate that cross-modal alignment highly depends on the richness of both visual (static images vs. multi-frame videos) and text (single caption vs. a collection) data provided at test time, especially when using state-of-the-art video encoders. We propose parametric test-time scaling laws that capture this behavior and show remarkable predictive power against empirical observations. Secondly, we investigate the correlation between semantic alignment and performance on both semantic and non-semantic downstream tasks, providing initial evidence that strong alignment against text encoders may be linked to general-purpose video representation and understanding. Finally, we correlate temporal reasoning with cross-modal alignment providing a challenging test-bed for vision and language models. Overall, our work introduces video-text alignment as an informative zero-shot way to probe the representation power of differ",
+  "needs_fetch": false
+ },
+ {
+  "id": 270,
+  "title": "Removing Sandbagging in LLMs by Training with Weak Supervision",
+  "org": "anthropic",
+  "date": "2026-04-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.22082",
+  "abstract": "As AI systems begin to automate complex tasks, supervision increasingly relies on weaker models or limited human oversight that cannot fully verify output quality. A model more capable than its supervisors could exploit this gap through sandbagging, producing work that appears acceptable but falls short of its true abilities. Can training elicit a model's best work even without reliable verification? We study this using model organisms trained to sandbag, testing elicitation techniques on problem-solving math, graduate-level science, and competitive coding tasks. We find that training with weak supervision can reliably elicit sandbagging models when supervised fine-tuning (SFT) and reinforcement learning (RL) are combined: SFT on weak demonstrations breaks the sandbagging behavior, enabling RL to then fully elicit performance. Neither method succeeds reliably alone-RL without SFT almost always leads to reward hacking rather than genuine improvement, and SFT without RL fails to elicit full performance when the supervisor is much weaker than the untrusted model. Critically, this relies on training being indistinguishable from deployment; when models can distinguish between training and deployment, they can perform well during training while continuing to sandbag afterward. Our results provide initial evidence that training is a viable mitigation against sandbagging, while highlighting the importance of making training indistinguishable from deployment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 183,
+  "title": "Transient Turn Injection: Exposing Stateless Multi-Turn Vulnerabilities in Large Language Models",
+  "org": "other",
+  "date": "2026-04-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.21860",
+  "abstract": "Large language models (LLMs) are increasingly integrated into sensitive workflows, raising the stakes for adversarial robustness and safety. This paper introduces Transient Turn Injection(TTI), a new multi-turn attack technique that systematically exploits stateless moderation by distributing adversarial intent across isolated interactions. TTI leverages automated attacker agents powered by large language models to iteratively test and evade policy enforcement in both commercial and open-source LLMs, marking a departure from conventional jailbreak approaches that typically depend on maintaining persistent conversational context. Our extensive evaluation across state-of-the-art models-including those from OpenAI, Anthropic, Google Gemini, Meta, and prominent open-source alternatives-uncovers significant variations in resilience to TTI attacks, with only select architectures exhibiting substantial inherent robustness. Our automated blackbox evaluation framework also uncovers previously unknown model specific vulnerabilities and attack surface patterns, especially within medical and high stakes domains. We further compare TTI against established adversarial prompting methods and detail practical mitigation strategies, such as session level context aggregation and deep alignment approaches. Our study underscores the urgent need for holistic, context aware defenses and continuous adversarial testing to future proof LLM deployments against evolving multi-turn threats.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2656,
+  "title": "Evaluating large language models for accuracy incentivizes hallucinations",
+  "org": "openai",
+  "date": "2026-04-22",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-026-10549-w",
+  "abstract": "Abstract Large language models sometimes produce confident, plausible falsehoods (‘hallucinations’), limiting their reliability 1,2 . Previous work has offered numerous explanations and effective mitigations such as retrieval and tool use 3 , consistency-based self-verification 4 and reinforcement learning from human feedback 5 . Nonetheless, the problem persists even in state-of-the-art language models 6,7 . Here we show how next-word prediction and accuracy-based evaluations inadvertently reward unwarranted guessing. Initially, next-word pretraining creates statistical pressure towards hallucination even with idealized error-free data: using learning theory 8,9 , we show that facts lacking repeated support in training data (such as one-off details) yield unavoidable errors, whereas recurring regularities (such as grammar) do not. Subsequent training stages aim to correct such errors. However, dominant headline metrics such as accuracy systematically reward guessing over admitting uncertainty. To align incentives, we suggest two additions to the classic approach of adding error penalties to evaluations to control abstention 10,11 . First, we propose ‘open rubric’ evaluations that explicitly state how errors are penalized (if at all), which test whether a model modulates its abstentions to stated stakes while optimizing accuracy. Second, as hallucination-specific benchmarks rarely make leaderboards 12 , we suggest using open-rubric variants of existing evaluations, to reverse",
+  "needs_fetch": false
+ },
+ {
+  "id": 1233,
+  "title": "Competing Biases underlie Overconfidence and Underconfidence in LLMs",
+  "org": "deepmind",
+  "date": "2026-04-22",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://doi.org/10.1038/s42256-026-01217-9",
+  "abstract": "Large language models (LLMs) are increasingly deployed in high-stakes applications where reliable confidence estimation is crucial for trustworthy artificial intelligence (AI). However, their confidence dynamics remain poorly understood, with users reporting paradoxical behaviours: LLMs exhibit reduced flexibility in updating initial responses while simultaneously showing excessive sensitivity to contradictory feedback. Understanding these confidence patterns is essential for developing more reliable AI systems and improving human–AI interaction. Here we show that LLM confidence is governed by two competing mechanisms that explain this paradox. First, we identify a choice-supportive bias: when LLMs view their initial answers, they exhibit inflated confidence and maintain their original responses at rates exceeding optimal decision-making, even when presented with contrary evidence. Second, we demonstrate systematic overweighting of contradictory information: LLMs update their confidence more strongly in response to opposing advice than supporting advice, deviating markedly from optimal Bayesian reasoning. These mechanisms operate across diverse models and generalize from simple factual queries to reasoning tasks. Our computational modelling reveals that these two principles—self-consistency preservation and hypersensitivity to contradiction—capture LLM behaviour across domains. These findings provide an understanding of when and why LLMs exhibit adherence to initial responses",
+  "needs_fetch": false
+ },
+ {
+  "id": 921,
+  "title": "Introducing OpenAI Privacy Filter",
+  "org": "openai",
+  "date": "2026-04-22",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-openai-privacy-filter/",
+  "abstract": "OpenAI Privacy Filter is an open-weight model for detecting and redacting personally identifiable information (PII) in text with state-of-the-art accuracy",
+  "needs_fetch": false
+ },
+ {
+  "id": 679,
+  "title": "Image Generators are Generalist Vision Learners",
+  "org": "deepmind",
+  "date": "2026-04-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.20329",
+  "abstract": "Recent works show that image and video generators exhibit zero-shot visual understanding behaviors, in a way reminiscent of how Large Language Models (LLMs) such as Gemini and GPT develop emergent capabilities of language understanding and reasoning from generative pretraining. While it has long been conjectured that the ability to create visual content implies an ability to understand it, there has been limited evidence that generative vision models have developed a strong understanding capability. In this work, we demonstrate that image generation training serves a similar role to LLM pretraining, and lets models learn powerful and general visual representations that enable state-of-the-art performance on various vision tasks. We present Vision Banana, a model built upon Nano Banana Pro (NBP) by instruction-tuning on a mixture of its original training data alongside a small amount of vision task data. We parameterize the output space of vision tasks as RGB images and thus reframe vision tasks as image generation, which allows us to more effectively leverage the generation capability in the base model. Our generalist model, Vision Banana, achieves state-of-the-art results on a variety of vision tasks involving both 2D and 3D understanding, beating or rivaling domain-specific specialists, including the Segment Anything series on various segmentation tasks, and the Depth Anything series in metric depth estimation. We show that these results can be achieved with lightweight ins",
+  "needs_fetch": false
+ },
+ {
+  "id": 271,
+  "title": "Value-Conflict Diagnostics Reveal Widespread Alignment Faking in Language Models",
+  "org": "other",
+  "date": "2026-04-22",
+  "venue": "COLM",
+  "url": "https://arxiv.org/abs/2604.20995",
+  "abstract": "Alignment faking, where a model behaves aligned with developer policy when monitored but reverts to its own preferences when unobserved, is a concerning yet poorly understood phenomenon, in part because current diagnostic tools remain limited. Prior diagnostics rely on highly toxic and clearly harmful scenarios, causing most models to refuse immediately. As a result, models never deliberate over developer policy, monitoring conditions, or the consequences of non-compliance, making these diagnostics fundamentally unable to detect alignment faking propensity. To support study of this phenomenon, we first introduce VLAF, a diagnostic framework grounded in the hypothesis that alignment faking is most likely when developer policy conflicts with a model's strongly held values. VLAF uses morally unambiguous scenarios to probe this conflict across diverse moral values, bypassing refusal behavior while preserving meaningful deliberative stakes. Using VLAF, we find that alignment faking is substantially more prevalent than previously reported, occurring in models as small as 7B parameters - with olmo2-7b-instruct faking alignment in 37% of cases. Finally, we show that oversight conditions induce activation shifts that lie along a single direction in representation space. This means the behavioral divergence driving alignment faking can be captured by a single contrastive steering vector, which we exploit for lightweight inference-time mitigation. Finally, we exploit this for mitigation",
+  "needs_fetch": false
+ }
+]

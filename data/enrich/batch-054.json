@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1746,
+  "title": "Waffling around for Performance: Visual Classification with Random Words and Broad Concepts",
+  "org": "deepmind",
+  "date": "2023-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51070.2023.01443",
+  "abstract": "The visual classification performance of vision-language models such as CLIP has been shown to benefit from additional semantic knowledge from large language models (LLMs) such as GPT-3. In particular, averaging over LLM-generated class descriptors, e.g. \"waffle, which has a round shape\", can notably improve generalization performance. In this work, we critically study this behavior and propose WaffleCLIP, a framework for zero-shot visual classification which simply replaces LLM-generated descriptors with random character and word descriptors. Without querying external models, we achieve comparable performance gains on a large number of visual classification tasks. This allows WaffleCLIP to both serve as a low-cost alternative, as well as a sanity check for any future LLM-based vision-language model extensions. We conduct an extensive experimental study on the impact and shortcomings of additional semantics introduced with LLM-generated descriptors, and showcase how - if available - semantic context is better leveraged by querying LLMs for high-level concepts, which we show can be done to jointly resolve potential class name ambiguities. Code is available here: https://github.com/ExplainableML/WaffleCLIP.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1745,
+  "title": "SuS-X: Training-Free Name-Only Transfer of Vision-Language Models",
+  "org": "deepmind",
+  "date": "2023-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51070.2023.00257",
+  "abstract": "Contrastive Language-Image Pre-training (CLIP) has emerged as a simple yet effective way to train large-scale vision-language models. CLIP demonstrates impressive zero-shot classification and retrieval performance on diverse downstream tasks. However, to leverage its full potential, fine-tuning still appears to be necessary. Fine-tuning the entire CLIP model can be resource-intensive and unstable. Moreover, recent methods that aim to circumvent this need for fine-tuning still require access to images from the target task distribution. In this paper, we pursue a different approach and explore the regime of training-free \"name-only transfer\" in which the only knowledge we possess about the downstream task comprises the names of downstream target categories. We propose a novel method, SuS-X, consisting of two key building blocks— \"SuS\" and \"TIP-X\", that requires neither intensive fine-tuning nor costly labelled data. SuS-X achieves state-of-the-art (SoTA) zero-shot classification results on 19 benchmark datasets. We further show the utility of TIP-X in the training-free few-shot setting, where we again achieve SoTA results over strong training-free baselines. Code is available at https://github.com/vishaal27/SuS-X.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1744,
+  "title": "Generative replay underlies compositional inference in the hippocampal-prefrontal circuit",
+  "org": "deepmind",
+  "date": "2023-10-01",
+  "venue": "Cell",
+  "url": "https://doi.org/10.1016/j.cell.2023.09.004",
+  "abstract": "Human reasoning depends on reusing pieces of information by putting them together in new ways. However, very little is known about how compositional computation is implemented in the brain. Here, we ask participants to solve a series of problems that each require constructing a whole from a set of elements. With fMRI, we find that representations of novel constructed objects in the frontal cortex and hippocampus are relational and compositional. With MEG, we find that replay assembles elements into compounds, with each replay sequence constituting a hypothesis about a possible configuration of elements. The content of sequences evolves as participants solve each puzzle, progressing from predictable to uncertain elements and gradually converging on the correct configuration. Together, these results suggest a computational bridge between apparently distinct functions of hippocampal-prefrontal circuitry and a role for generative replay in compositional inference and hypothesis testing.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1743,
+  "title": "What does a platypus look like? Generating customized prompts for zero-shot image classification",
+  "org": "deepmind",
+  "date": "2023-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51070.2023.01438",
+  "abstract": "Open-vocabulary models are a promising new paradigm for image classification. Unlike traditional classification models, open-vocabulary models classify among any arbitrary set of categories specified with natural language during inference. This natural language, called \"prompts\", typically consists of a set of hand-written templates (e.g., \"a photo of a {}\") which are completed with each of the category names. This work introduces a simple method to generate higher accuracy prompts, without relying on any explicit knowledge of the task domain and with far fewer hand-constructed sentences. To achieve this, we combine open-vocabulary models with large language models (LLMs) to create Customized Prompts via Language models (CuPL, pronounced \"couple\"). In particular, we leverage the knowledge contained in LLMs in order to generate many descriptive sentences that contain important discriminating characteristics of the image categories. This allows the model to place a greater importance on these regions in the image when making predictions. We find that this straightforward and general approach improves accuracy on a range of zero-shot image classification benchmarks, including over one percentage point gain on ImageNet. Finally, this simple baseline requires no additional training and remains completely zero-shot. Code available at https://github.com/sarahpratt/CuPL.",
+  "needs_fetch": false
+ },
+ {
+  "id": 104,
+  "title": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
+  "org": "anthropic",
+  "date": "2023-10-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2023/monosemantic-features/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2746,
+  "title": "Diffusion Models: A Comprehensive Survey of Methods and Applications",
+  "org": "openai",
+  "date": "2023-09-30",
+  "venue": "ACM Computing Surveys",
+  "url": "https://doi.org/10.1145/3626235",
+  "abstract": "Diffusion models have emerged as a powerful new family of deep generative models with record-breaking performance in many applications, including image synthesis, video generation, and molecule design. In this survey, we provide an overview of the rapidly expanding body of work on diffusion models, categorizing the research into three key areas: efficient sampling, improved likelihood estimation, and handling data with special structures. We also discuss the potential for combining diffusion models with other generative models for enhanced results. We further review the wide-ranging applications of diffusion models in fields spanning from computer vision, natural language processing, temporal data modeling, to interdisciplinary applications in other scientific disciplines. This survey aims to provide a contextualized, in-depth look at the state of diffusion models, identifying the key areas of focus and pointing to potential areas for further exploration. Github: https://github.com/YangLing0818/Diffusion-Models-Papers-Survey-Taxonomy",
+  "needs_fetch": false
+ },
+ {
+  "id": 1753,
+  "title": "Using Approximate DRAM for Enabling Energy-Efficient, High-Performance Deep Neural Network Inference",
+  "org": "deepmind",
+  "date": "2023-09-30",
+  "venue": null,
+  "url": "https://doi.org/10.1007/978-3-031-19568-6_10",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 547,
+  "title": "Coordinated pausing: An evaluation-based coordination scheme for frontier AI developers",
+  "org": "other",
+  "date": "2023-09-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2310.00374",
+  "abstract": "As artificial intelligence (AI) models are scaled up, new capabilities can emerge unintentionally and unpredictably, some of which might be dangerous. In response, dangerous capabilities evaluations have emerged as a new risk assessment tool. But what should frontier AI developers do if sufficiently dangerous capabilities are in fact discovered? This paper focuses on one possible response: coordinated pausing. It proposes an evaluation-based coordination scheme that consists of five main steps: (1) Frontier AI models are evaluated for dangerous capabilities. (2) Whenever, and each time, a model fails a set of evaluations, the developer pauses certain research and development activities. (3) Other developers are notified whenever a model with dangerous capabilities has been discovered. They also pause related research and development activities. (4) The discovered capabilities are analyzed and adequate safety precautions are put in place. (5) Developers only resume their paused activities if certain safety thresholds are reached. The paper also discusses four concrete versions of that scheme. In the first version, pausing is completely voluntary and relies on public pressure on developers. In the second version, participating developers collectively agree to pause under certain conditions. In the third version, a single auditor evaluates models of multiple developers who agree to pause if any model fails a set of evaluations. In the fourth version, developers are legally requi",
+  "needs_fetch": false
+ },
+ {
+  "id": 2747,
+  "title": "Artificial Intelligence, Academic Misconduct, and the Borg: Why GPT-3 Text Generation in the Higher Education Classroom is Becoming Scary",
+  "org": "openai",
+  "date": "2023-09-28",
+  "venue": "Anthropologica",
+  "url": "http://dx.doi.org/10.18357/anthropologica65120232166",
+  "abstract": "We explore playfully the capacity of an artificial intelligence text generation engine called GPT-3 to produce credible academic texts. Departing from a concern raised by colleagues about the possibility of using GPT-3 to cheat in academia, particularly at the undergraduate level, we interact with the GPT-3 interface as nerdy novices to learn what it could produce. The outputs from the GPT-3 text generation engine are incredible, at times surprising, and often terrible. We point to ways in which GPT-3 might be used by students to produce written work and reasons why most instructors, most of the time, could see through what GPT-3 has produced (at least for now). In our experiments, we learn that GPT-3 can be a productive collaborator in paper design but wonder if this is ethical. In short, while fun and somewhat addictive to experiment with, we must pay attention to the potential ways that AI text generation may begin to appear in the anthropology classroom.",
+  "needs_fetch": false
+ },
+ {
+  "id": 430,
+  "title": "GPT-Fathom: Benchmarking Large Language Models to Decipher the Evolutionary Path towards GPT-4 and Beyond",
+  "org": "other",
+  "date": "2023-09-28",
+  "venue": "NAACL",
+  "url": "https://arxiv.org/abs/2309.16583",
+  "abstract": "With the rapid advancement of large language models (LLMs), there is a pressing need for a comprehensive evaluation suite to assess their capabilities and limitations. Existing LLM leaderboards often reference scores reported in other papers without consistent settings and prompts, which may inadvertently encourage cherry-picking favored settings and prompts for better results. In this work, we introduce GPT-Fathom, an open-source and reproducible LLM evaluation suite built on top of OpenAI Evals. We systematically evaluate 10+ leading LLMs as well as OpenAI's legacy models on 20+ curated benchmarks across 7 capability categories, all under aligned settings. Our retrospective study on OpenAI's earlier models offers valuable insights into the evolutionary path from GPT-3 to GPT-4. Currently, the community is eager to know how GPT-3 progressively improves to GPT-4, including technical details like whether adding code data improves LLM's reasoning capability, which aspects of LLM capability can be improved by SFT and RLHF, how much is the alignment tax, etc. Our analysis sheds light on many of these questions, aiming to improve the transparency of advanced LLMs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 617,
+  "title": "Towards Best Practices of Activation Patching in Language Models: Metrics and Methods",
+  "org": "deepmind",
+  "date": "2023-09-27",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2309.16042",
+  "abstract": "Mechanistic interpretability seeks to understand the internal mechanisms of machine learning models, where localization -- identifying the important model components -- is a key step. Activation patching, also known as causal tracing or interchange intervention, is a standard technique for this task (Vig et al., 2020), but the literature contains many variants with little consensus on the choice of hyperparameters or methodology. In this work, we systematically examine the impact of methodological details in activation patching, including evaluation metrics and corruption methods. In several settings of localization and circuit discovery in language models, we find that varying these hyperparameters could lead to disparate interpretability results. Backed by empirical observations, we give conceptual arguments for why certain metrics or methods may be preferred. Finally, we provide recommendations for the best practices of activation patching going forwards.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1755,
+  "title": "Computational and systems neuroscience: The next 20 years",
+  "org": "deepmind",
+  "date": "2023-09-26",
+  "venue": "PLoS Biology",
+  "url": "http://dx.doi.org/10.1371/journal.pbio.3002306",
+  "abstract": "Over the past 20 years, neuroscience has been propelled forward by theory-driven experimentation. We consider the future outlook for the field in the age of big neural data and powerful artificial intelligence models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1754,
+  "title": "Pretrial predictors of conflict response efficacy in the human prefrontal cortex",
+  "org": "deepmind",
+  "date": "2023-09-26",
+  "venue": "iScience",
+  "url": "https://doi.org/10.1016/j.isci.2023.108047",
+  "abstract": "The ability to perform motor actions depends, in part, on the brain's initial state. We hypothesized that initial state dependence is a more general principle and applies to cognitive control. To test this idea, we examined human single units recorded from the dorsolateral prefrontal (dlPFC) cortex and dorsal anterior cingulate cortex (dACC) during a task that interleaves motor and perceptual conflict trials, the multisource interference task (MSIT). In both brain regions, variability in pre-trial firing rates predicted subsequent reaction time (RT) on conflict trials. In dlPFC, ensemble firing rate patterns suggested the existence of domain-specific initial states, while in dACC, firing patterns were more consistent with a domain-general initial state. The deployment of shared and independent factors that we observe for conflict resolution may allow for flexible and fast responses mediated by cognitive initial states. These results also support hypotheses that place dACC hierarchically earlier than dlPFC in proactive control.",
+  "needs_fetch": false
+ },
+ {
+  "id": 900,
+  "title": "Theoretical and Practical Perspectives on what Influence Functions Do",
+  "org": "deepmind",
+  "date": "2023-09-23",
+  "venue": "NeurIPS 2023",
+  "url": "https://openreview.net/forum?id=gGl0n7Onug",
+  "abstract": "Influence functions (IF) have been seen as a technique for explaining model predictions through the lens of the training data. Their utility is assumed to be in identifying training examples \"responsible\" for a prediction so that, for example, correcting a prediction is possible by intervening on those examples (removing or editing them) and retraining the model. However, recent empirical studies have shown that the existing methods of estimating IF predict the leave-one-out-and-retrain effect poorly. In order to understand the mismatch between the theoretical promise and the practical results, we analyse five assumptions made by IF methods which are problematic for modern-scale deep neural networks and which concern convexity, numeric stability, training trajectory and parameter divergence. This allows us to clarify what can be expected theoretically from IF. We show that while most assumptions can be addressed successfully, the parameter divergence poses a clear limitation on the predictive power of IF: influence fades over training time even with deterministic training. We illustrate this theoretical result with BERT and ResNet models. Another conclusion from the theoretical analysis is that IF are still useful for model debugging and correcting even though some of the assumptions made in prior work do not hold: using natural language processing and computer vision tasks, we verify that mis-predictions can be successfully corrected by taking only a few fine-tuning steps on",
+  "needs_fetch": false
+ },
+ {
+  "id": 901,
+  "title": "Self-Predictive Universal AI",
+  "org": "deepmind",
+  "date": "2023-09-21",
+  "venue": "NeurIPS 2023",
+  "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/56a225639da77e8f7c0409f6d5ba996b-Abstract-Conference.html",
+  "abstract": "Reinforcement Learning (RL) algorithms typically utilize learning and/or planning techniques to derive effective policies. The integration of both approaches has proven to be highly successful in addressing complex sequential decision-making challenges, as evidenced by algorithms such as AlphaZero and MuZero, which consolidate the planning process into a parametric search-policy. AIXI, the most potent theoretical universal agent, leverages planning through comprehensive search as its primary means to find an optimal policy. Here we define an alternative universal agent, which we call Self-AIXI, that on the contrary to AIXI, maximally exploits learning to obtain good policies. It does so by self-predicting its own stream of action data, which is generated, similarly to other TD(0) agents, by taking an action maximization step over the current on-policy (universal mixture-policy) Q-value estimates. We prove that Self-AIXI converges to AIXI, and inherits a series of properties like maximal Legg-Hutter intelligence and the self-optimizing property.",
+  "needs_fetch": false
+ },
+ {
+  "id": 629,
+  "title": "Tracr: Compiled Transformers as a Laboratory for Interpretability",
+  "org": "deepmind",
+  "date": "2023-09-21",
+  "venue": "NeurIPS 2023",
+  "url": "https://arxiv.org/abs/2301.05062",
+  "abstract": "We show how to \"compile\" human-readable programs into standard decoder-only transformer models. Our compiler, Tracr, generates models with known structure. This structure can be used to design experiments. For example, we use it to study \"superposition\" in transformers that execute multi-step algorithms. Additionally, the known structure of Tracr-compiled models can serve as ground-truth for evaluating interpretability methods. Commonly, because the \"programs\" learned by transformers are unknown it is unclear whether an interpretation succeeded. We demonstrate our approach by implementing and examining programs including computing token frequencies, sorting, and parenthesis checking. We provide an open-source implementation of Tracr at https://github.com/google-deepmind/tracr.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1015,
+  "title": "DALL·E 3",
+  "org": "openai",
+  "date": "2023-09-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/dall-e-3/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 902,
+  "title": "Accurate proteome-wide missense variant effect prediction with AlphaMissense",
+  "org": "deepmind",
+  "date": "2023-09-19",
+  "venue": "Science",
+  "url": "https://www.science.org/stoken/author-tokens/ST-1429/full",
+  "abstract": "The vast majority of missense variants observed in the human genome are of unknown clinical significance. We present AlphaMissense, an adaptation of AlphaFold fine-tuned on human and primate variant population frequency databases to predict missense variant pathogenicity. By combining structural context and evolutionary conservation, our model achieves state-of-the-art results across a wide range of genetic and experimental benchmarks, all without explicitly training on such data. The average pathogenicity score of genes is also predictive for their cell essentiality, capable of identifying short essential genes that existing statistical approaches are underpowered to detect. As a resource to the community, we provide a database of predictions for all possible human single amino acid substitutions and classify 89% of missense variants as either likely benign or likely pathogenic.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1756,
+  "title": "Goal-seeking compresses neural codes for space in the human hippocampus and orbitofrontal cortex",
+  "org": "deepmind",
+  "date": "2023-09-18",
+  "venue": "Neuron",
+  "url": "https://doi.org/10.1016/j.neuron.2023.08.021",
+  "abstract": "Humans can navigate flexibly to meet their goals. Here, we asked how the neural representation of allocentric space is distorted by goal-directed behavior. Participants navigated an agent to two successive goal locations in a grid world environment comprising four interlinked rooms, with a contextual cue indicating the conditional dependence of one goal location on another. Examining the neural geometry by which room and context were encoded in fMRI signals, we found that map-like representations of the environment emerged in both hippocampus and neocortex. Cognitive maps in hippocampus and orbitofrontal cortices were compressed so that locations cued as goals were coded together in neural state space, and these distortions predicted successful learning. This effect was captured by a computational model in which current and prospective locations are jointly encoded in a place code, providing a theory of how goals warp the neural representation of space in macroscopic neural signals.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1757,
+  "title": "Rediscovering orbital mechanics with machine learning",
+  "org": "deepmind",
+  "date": "2023-09-15",
+  "venue": "Machine Learning Science and Technology",
+  "url": "https://doi.org/10.1088/2632-2153/acfa63",
+  "abstract": "Abstract We present an approach for using machine learning to automatically discover the governing equations and unknown properties (in this case, masses) of real physical systems from observations. We train a ‘graph neural network’ to simulate the dynamics of our Solar System’s Sun, planets, and large moons from 30 years of trajectory data. We then use symbolic regression to correctly infer an analytical expression for the force law implicitly learned by the neural network, which our results showed is equivalent to Newton’s law of gravitation. The key assumptions our method makes are translational and rotational equivariance, and Newton’s second and third laws of motion. It did not, however, require any assumptions about the masses of planets and moons or physical constants, but nonetheless, they, too, were accurately inferred with our method. Naturally, the classical law of gravitation has been known since Isaac Newton, but our results demonstrate that our method can discover unknown laws and hidden properties from observed data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 618,
+  "title": "Sparse Autoencoders Find Highly Interpretable Features in Language Models",
+  "org": "other",
+  "date": "2023-09-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2309.08600",
+  "abstract": "One of the roadblocks to a better understanding of neural networks' internals is \\textit{polysemanticity}, where neurons appear to activate in multiple, semantically distinct contexts. Polysemanticity prevents us from identifying concise, human-understandable explanations for what neural networks are doing internally. One hypothesised cause of polysemanticity is \\textit{superposition}, where neural networks represent more features than they have neurons by assigning features to an overcomplete set of directions in activation space, rather than to individual neurons. Here, we attempt to identify those directions, using sparse autoencoders to reconstruct the internal activations of a language model. These autoencoders learn sets of sparsely activating features that are more interpretable and monosemantic than directions identified by alternative approaches, where interpretability is measured by automated methods. Moreover, we show that with our learned set of features, we can pinpoint the features that are causally responsible for counterfactual behaviour on the indirect object identification task \\citep{wang2022interpretability} to a finer degree than previous decompositions. This work indicates that it is possible to resolve superposition in language models using a scalable, unsupervised method. Our method may serve as a foundation for future mechanistic interpretability work, which we hope will enable greater model transparency and steerability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2748,
+  "title": "Learning from Negative User Feedback and Measuring Responsiveness for Sequential Recommenders",
+  "org": "openai",
+  "date": "2023-09-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2308.12256",
+  "abstract": "Sequential recommenders have been widely used in industry due to their strength in modeling user preferences. While these models excel at learning a user’s positive interests, less attention has been paid to learning from negative user feedback. Negative user feedback is an important lever of user control, and comes with an expectation that recommenders should respond quickly and reduce similar recommendations to the user. However, negative feedback signals are often ignored in the training objective of sequential retrieval models, which primarily aim at predicting positive user interactions. In this work, we incorporate explicit and implicit negative user feedback into the training objective of sequential recommenders in the retrieval stage using a \"not-to-recommend\" loss function that optimizes for the log-likelihood of not recommending items with negative feedback. We demonstrate the effectiveness of this approach using live experiments on a large-scale industrial recommender system. Furthermore, we address a challenge in measuring recommender responsiveness to negative feedback by developing a counterfactual simulation framework to compare recommender responses between different user actions, showing improved responsiveness from the modeling change.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1758,
+  "title": "Teamwork Reinforcement Learning With Concave Utilities",
+  "org": "deepmind",
+  "date": "2023-09-13",
+  "venue": "IEEE Transactions on Mobile Computing",
+  "url": "https://doi.org/10.1109/tmc.2023.3315120",
+  "abstract": "Complex reinforcement learning (RL) tasks often require a divide-and-conquer approach, where a large task is divided into pieces and solved by individual agents. In this paper, we study a teamwork RL setting where individual agents make decisions on disjoint subsets (blocks) of the state space and have private interests (reward functions), while the entire team aims to maximize a general long-term team utility function and may be subject to constraints. This team utility, which is not necessarily a cumulative sum of rewards, is modeled as a nonlinear function of the team's joint state-action occupancy distribution. By leveraging the inherent duality of policy optimization, we propose a min-max multi-block policy optimization framework to decompose the overall problem into individual local tasks. This enables a federated teamwork mechanism where a team lead coordinates individual agents via reward shaping, and each agent solves its local task defined only on its local state subset. We analyze the convergence of this teamwork policy optimization mechanism and establish an <inline-formula><tex-math notation=\"LaTeX\">$O(1/T)$</tex-math></inline-formula> convergence rate to the team's joint optimum. This mechanism allows team members to jointly find the global socially optimal policy while keeping their local privacy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1761,
+  "title": "Learning to Design Efficient Logic Circuits",
+  "org": "deepmind",
+  "date": "2023-09-12",
+  "venue": null,
+  "url": "https://doi.org/10.52843/cassyni.wyw879",
+  "abstract": "Logic synthesis is the problem of designing a circuit composed of logic gates (e.g., AND, OR, etc.) from an abstract specification of a function (e.g., a truth table) that the circuit should implement. It is how the basic building blocks of modern chips are designed, and is therefore one of the fundamental problems of modern chip design. This is a challenging problem, because in addition to fidelity to the specification, logic synthesis must also take into account the efficiency of the design when implemented in hardware. We propose a machine learning-driven approach to design efficient logic circuits, composed of two stages: 1. Generate a design that optimizes correctness with respect to the specification. 2. Optimize the efficiency of the design while maintaining functional equivalence with respect to the design from the first stage. We compared our technique to other competitive approaches by participating in the IWLS 2023 Programming Contest and achieved the best solution on 82% of circuit design problems in the competition. These results demonstrate that the proposed approach can be used to design logic circuits that are both functionally correct and competitive with human-designed circuits.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1760,
+  "title": "The Evaluation of Remote Monitoring Technology Across Participants With Different Skin Tones",
+  "org": "deepmind",
+  "date": "2023-09-12",
+  "venue": "Cureus",
+  "url": "http://dx.doi.org/10.7759/cureus.45075",
+  "abstract": "BACKGROUND: Many research studies seek to improve vital sign monitoring to enhance the conditions under which doctors and caregivers track patients' health. Non-invasive and contactless monitoring has emerged as an optimal solution for this problem, with telemedicine, self-monitoring, and well-being tools being the next generation of technology in the biomedical field. However, there is worldwide concern about the general purpose and bias toward a certain demographic group of these techniques. In particular, skin tone and the accuracy of monitoring dark skin tone groups have been key questions among researchers, with the lack of results and studies contributing to this uncertainty. METHODS: This paper proposes a benchmark for remote monitoring solutions against a medical device across different skin tone people. Around 330 videos from 90 patients were analyzed, and heart rate (HR) and heart rate variability (HRV) were compared across different subgroups. The Fitzpatrick scale (1-6) was used to classify participants into three skin tone groups: 1 and 2, 3 and 4, and 5 and 6. RESULTS: The results showed that our proposed methodology could estimate heart rate with a mean absolute error of 3 bpm across all samples and subgroups. Moreover, for heart rate variability (HRV) metrics, we achieved the following results: in terms of mobility assistive equipment (MAE), the HRV-inter-beat interval (IBI) was 10 ms, the HRV-standard deviation of normal to normal heartbeats (SDNN) was 14 ms,",
+  "needs_fetch": false
+ },
+ {
+  "id": 1759,
+  "title": "Evaluation of Atrial Fibrillation Detection in Short-Term Photoplethysmography (PPG) Signals Using Artificial Intelligence",
+  "org": "deepmind",
+  "date": "2023-09-12",
+  "venue": "Cureus",
+  "url": "https://doi.org/10.7759/cureus.45111",
+  "abstract": "Background Atrial fibrillation (AFIB) is a common atrial arrhythmia that affects millions of people worldwide. However, most of the time, AFIB is paroxysmal and can pass unnoticed in medical exams; therefore, regular screening is required. This paper proposes machine learning (ML) methods to detect AFIB from short-term electrocardiogram (ECG) and photoplethysmography (PPG) signals. Aim Several experiments were conducted across five different databases, with three of them containing ECG signals and the other two consisting of only PPG signals. Experiments were conducted to investigate the hypothesis that an ML model trained to predict AFIB from ECG segments could be used to predict AFIB from PPG segments. Materials and methods A random forest (RF) ML algorithm achieved the best accuracy and achieved a 90% accuracy rate on the University of Mississippi Medical Center (UMMC) dataset (216 samples) and a 97% accuracy rate on the Medical Information Mart for Intensive Care (MIMIC)-III datasets (2,134 samples). Results A total of 269,842 signal segments were analyzed across all datasets (212,266 were of normal sinus rhythm (NSR) and 57,576 corresponded to AFIB segments). Conclusions The ability to detect AFIB with significant accuracy using ML algorithms from PPG signals, which can be acquired via non-invasive contact or contactless, is a promising step forward toward the goal of achieving large-scale screening for AFIB.",
+  "needs_fetch": false
+ },
+ {
+  "id": 903,
+  "title": "Revisiting Energy Based Models as Policies: Ranking Noise Contrastive Estimation and Interpolating Energy Models",
+  "org": "deepmind",
+  "date": "2023-09-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2309.05803",
+  "abstract": "A crucial design decision for any robot learning pipeline is the choice of policy representation: what type of model should be used to generate the next set of robot actions? Owing to the inherent multi-modal nature of many robotic tasks, combined with the recent successes in generative modeling, researchers have turned to state-of-the-art probabilistic models such as diffusion models for policy representation. In this work, we revisit the choice of energy-based models (EBM) as a policy class. We show that the prevailing folklore---that energy models in high dimensional continuous spaces are notoriously difficult to train and hence impractical---is false. We develop a practical training objective and algorithm for energy models which combines several key ingredients: (i) ranking noise contrastive estimation (R-NCE), (ii) learnable negative samplers, and (iii) non-adversarial joint training. We prove that our proposed objective function is asymptotically consistent and quantify its limiting variance. On the other hand, we show that the Implicit Behavior Cloning (IBC) objective is actually biased even at the population level, providing a mathematical explanation for the poor performance of IBC trained energy policies in several independent follow-up works. We further extend our algorithm to learn a continuous stochastic process that bridges noise and data, modeling this process with a family of EBMs indexed by scale variable. In doing so, we demonstrate that the core idea behin",
+  "needs_fetch": false
+ },
+ {
+  "id": 904,
+  "title": "Massively Scalable Inverse Reinforcement Learning for Route Optimization",
+  "org": "deepmind",
+  "date": "2023-09-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2305.11290",
+  "abstract": "Globally-scalable route optimization based on human preferences remains an open problem. Although past work created increasingly general solutions for the inverse reinforcement learning (IRL) formulation, these have not been successfully scaled to world-sized MDPs (200M states), large datasets (110M samples), and nearly foundation-sized models (360M parameters). In this work, we surpass this scale through a series of advancements focused on graph compression, parallelization, and problem initialization based on dominant eigenvectors. We introduce Receding Horizon Inverse Planning (RHIP), an approximated IRL algorithm which generalizes existing work and enables control of key performance trade-offs via a planning horizon parameter. Our policy achieves an 18% improvement in global route quality, and, to our knowledge, is the largest instance of IRL in a real-world setting to date. We include insightful negative results on state-of-the-art eigenvalue solvers, and identify future opportunities to further improve performance via IRL-specific batching strategies. Our results show critical benefits to more sustainable modes of transportation (e.g. two-wheelers), where factors beyond journey time (e.g. route safety) play an outsized role.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1762,
+  "title": "Test–retest reliability of reinforcement learning parameters",
+  "org": "deepmind",
+  "date": "2023-09-08",
+  "venue": "Behavior Research Methods",
+  "url": "https://doi.org/10.3758/s13428-023-02203-4",
+  "abstract": "It has recently been suggested that parameter estimates of computational models can be used to understand individual differences at the process level. One area of research in which this approach, called computational phenotyping, has taken hold is computational psychiatry. One requirement for successful computational phenotyping is that behavior and parameters are stable over time. Surprisingly, the test-retest reliability of behavior and model parameters remains unknown for most experimental tasks and models. The present study seeks to close this gap by investigating the test-retest reliability of canonical reinforcement learning models in the context of two often-used learning paradigms: a two-armed bandit and a reversal learning task. We tested independent cohorts for the two tasks (N = 69 and N = 47) via an online testing platform with a between-test interval of five weeks. Whereas reliability was high for personality and cognitive measures (with ICCs ranging from .67 to .93), it was generally poor for the parameter estimates of the reinforcement learning models (with ICCs ranging from .02 to .52 for the bandit task and from .01 to .71 for the reversal learning task). Given that simulations indicated that our procedures could detect high test-retest reliability, this suggests that a significant proportion of the variability must be ascribed to the participants themselves. In support of that hypothesis, we show that mood (stress and happiness) can partly explain within-par",
+  "needs_fetch": false
+ },
+ {
+  "id": 1763,
+  "title": "Scaffolding cooperation in human groups with deep reinforcement learning",
+  "org": "deepmind",
+  "date": "2023-09-07",
+  "venue": "Nature Human Behaviour",
+  "url": "https://doi.org/10.1038/s41562-023-01686-7",
+  "abstract": "Effective approaches to encouraging group cooperation are still an open challenge. Here we apply recent advances in deep learning to structure networks of human participants playing a group cooperation game. We leverage deep reinforcement learning and simulation methods to train a 'social planner' capable of making recommendations to create or break connections between group members. The strategy that it develops succeeds at encouraging pro-sociality in networks of human participants (N = 208 participants in 13 groups) playing for real monetary stakes. Under the social planner, groups finished the game with an average cooperation rate of 77.7%, compared with 42.8% in static networks (N = 176 in 11 groups). In contrast to prior strategies that separate defectors from cooperators (tested here with N = 384 in 24 groups), the social planner learns to take a conciliatory approach to defectors, encouraging them to act pro-socially by moving them to small highly cooperative neighbourhoods.",
+  "needs_fetch": false
+ }
+]

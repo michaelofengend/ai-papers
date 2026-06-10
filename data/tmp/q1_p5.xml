@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api//NxL1GypWOjHfYMeT5rFY/vVhAc</id>
+  <title>arXiv Query: search_query=all:"language model" AND all:evaluation AND all:benchmark AND all:frontier&amp;id_list=&amp;start=750&amp;max_results=150</title>
+  <updated>2026-06-10T07:57:15Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=all:%22language+model%22+AND+(all:evaluation+AND+(all:benchmark+AND+all:frontier))&amp;start=750&amp;max_results=150&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>150</opensearch:itemsPerPage>
+  <opensearch:totalResults>756</opensearch:totalResults>
+  <opensearch:startIndex>750</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2307.08191v1</id>
+    <title>Unleashing the Potential of LLMs for Quantum Computing: A Study in Quantum Architecture Design</title>
+    <updated>2023-07-17T01:39:38Z</updated>
+    <link href="https://arxiv.org/abs/2307.08191v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.08191v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) contribute significantly to the development of conversational AI and has great potentials to assist the scientific research in various areas. This paper attempts to address the following questions: What opportunities do the current generation of generative pre-trained transformers (GPTs) offer for the developments of noisy intermediate-scale quantum (NISQ) technologies? Additionally, what potentials does the forthcoming generation of GPTs possess to push the frontier of research in fault-tolerant quantum computing (FTQC)? In this paper, we implement a QGAS model, which can rapidly propose promising ansatz architectures and evaluate them with application benchmarks including quantum chemistry and quantum finance tasks. Our results demonstrate that after a limited number of prompt guidelines and iterations, we can obtain a high-performance ansatz which is able to produce comparable results that are achieved by state-of-the-art quantum architecture search methods. This study provides a simple overview of GPT's capabilities in supporting quantum computing research while highlighting the limitations of the current GPT at the same time. Additionally, we discuss futuristic applications for LLM in quantum research.</summary>
+    <category term="quant-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-17T01:39:38Z</published>
+    <arxiv:primary_category term="quant-ph"/>
+    <author>
+      <name>Zhiding Liang</name>
+    </author>
+    <author>
+      <name>Jinglei Cheng</name>
+    </author>
+    <author>
+      <name>Rui Yang</name>
+    </author>
+    <author>
+      <name>Hang Ren</name>
+    </author>
+    <author>
+      <name>Zhixin Song</name>
+    </author>
+    <author>
+      <name>Di Wu</name>
+    </author>
+    <author>
+      <name>Xuehai Qian</name>
+    </author>
+    <author>
+      <name>Tongyang Li</name>
+    </author>
+    <author>
+      <name>Yiyu Shi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.08055v1</id>
+    <title>Tune As You Scale: Hyperparameter Optimization For Compute Efficient Training</title>
+    <updated>2023-06-13T18:22:24Z</updated>
+    <link href="https://arxiv.org/abs/2306.08055v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.08055v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Hyperparameter tuning of deep learning models can lead to order-of-magnitude performance gains for the same amount of compute. Despite this, systematic tuning is uncommon, particularly for large models, which are expensive to evaluate and tend to have many hyperparameters, necessitating difficult judgment calls about tradeoffs, budgets, and search bounds. To address these issues and propose a practical method for robustly tuning large models, we present Cost-Aware Pareto Region Bayesian Search (CARBS), a Bayesian optimization algorithm that performs local search around the performance-cost Pareto frontier. CARBS does well even in unbounded search spaces with many hyperparameters, learns scaling relationships so that it can tune models even as they are scaled up, and automates much of the "black magic" of tuning. Among our results, we effectively solve the entire ProcGen benchmark just by tuning a simple baseline (PPO, as provided in the original ProcGen paper). We also reproduce the model size vs. training tokens scaling result from the Chinchilla project (Hoffmann et al. 2022), while simultaneously discovering scaling laws for every other hyperparameter, via an easy automated process that uses significantly less compute and is applicable to any deep learning problem (not just language models).</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-13T18:22:24Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Abraham J. Fetterman</name>
+    </author>
+    <author>
+      <name>Ellie Kitanidis</name>
+    </author>
+    <author>
+      <name>Joshua Albrecht</name>
+    </author>
+    <author>
+      <name>Zachary Polizzi</name>
+    </author>
+    <author>
+      <name>Bryden Fogelman</name>
+    </author>
+    <author>
+      <name>Maksis Knutins</name>
+    </author>
+    <author>
+      <name>Bartosz Wróblewski</name>
+    </author>
+    <author>
+      <name>James B. Simon</name>
+    </author>
+    <author>
+      <name>Kanjun Qiu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.15678v1</id>
+    <title>Revisiting non-English Text Simplification: A Unified Multilingual Benchmark</title>
+    <updated>2023-05-25T03:03:29Z</updated>
+    <link href="https://arxiv.org/abs/2305.15678v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.15678v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advancements in high-quality, large-scale English resources have pushed the frontier of English Automatic Text Simplification (ATS) research. However, less work has been done on multilingual text simplification due to the lack of a diverse evaluation benchmark that covers complex-simple sentence pairs in many languages. This paper introduces the MultiSim benchmark, a collection of 27 resources in 12 distinct languages containing over 1.7 million complex-simple sentence pairs. This benchmark will encourage research in developing more effective multilingual text simplification models and evaluation metrics. Our experiments using MultiSim with pre-trained multilingual language models reveal exciting performance improvements from multilingual training in non-English settings. We observe strong performance from Russian in zero-shot cross-lingual transfer to low-resource languages. We further show that few-shot prompting with BLOOM-176b achieves comparable quality to reference simplifications outperforming fine-tuned models in most languages. We validate these findings through human evaluation.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-25T03:03:29Z</published>
+    <arxiv:comment>Accepted to ACL 2023 main conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Michael J. Ryan</name>
+    </author>
+    <author>
+      <name>Tarek Naous</name>
+    </author>
+    <author>
+      <name>Wei Xu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.14318v3</id>
+    <title>CREATOR: Tool Creation for Disentangling Abstract and Concrete Reasoning of Large Language Models</title>
+    <updated>2024-06-21T16:51:22Z</updated>
+    <link href="https://arxiv.org/abs/2305.14318v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.14318v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have made significant progress in utilizing tools, but their ability is limited by API availability and the instability of implicit reasoning, particularly when both planning and execution are involved. To overcome these limitations, we propose CREATOR, a novel framework that enables LLMs to create their own tools using documentation and code realization. CREATOR disentangles abstract tool creation and concrete decision execution, resulting in improved performance. We evaluate CREATOR on MATH and TabMWP benchmarks, respectively consisting of challenging math competition problems and diverse tabular contents. Remarkably, CREATOR outperforms existing chain-of-thought, program-of-thought, and tool-using baselines. Additionally, we introduce the Creation Challenge dataset, featuring 2K diverse questions, to emphasize the necessity and benefits of LLMs' tool creation ability. Further research demonstrates that leveraging LLMs as tool creators facilitates knowledge transfer, and LLMs exhibit varying levels of tool creation abilities, enabling them to adapt to diverse situations. The tool creation ability revolutionizes the LLM's problem-solving paradigm, driving us closer to the next frontier of artificial intelligence. All the codes and data are released.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-23T17:51:52Z</published>
+    <arxiv:comment>Findings of EMNLP 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Cheng Qian</name>
+    </author>
+    <author>
+      <name>Chi Han</name>
+    </author>
+    <author>
+      <name>Yi R. Fung</name>
+    </author>
+    <author>
+      <name>Yujia Qin</name>
+    </author>
+    <author>
+      <name>Zhiyuan Liu</name>
+    </author>
+    <author>
+      <name>Heng Ji</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2110.07038v2</id>
+    <title>Towards Efficient NLP: A Standard Evaluation and A Strong Baseline</title>
+    <updated>2022-04-10T06:58:14Z</updated>
+    <link href="https://arxiv.org/abs/2110.07038v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2110.07038v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Supersized pre-trained language models have pushed the accuracy of various natural language processing (NLP) tasks to a new state-of-the-art (SOTA). Rather than pursuing the reachless SOTA accuracy, more and more researchers start paying attention on model efficiency and usability. Different from accuracy, the metric for efficiency varies across different studies, making them hard to be fairly compared. To that end, this work presents ELUE (Efficient Language Understanding Evaluation), a standard evaluation, and a public leaderboard for efficient NLP models. ELUE is dedicated to depict the Pareto Frontier for various language understanding tasks, such that it can tell whether and how much a method achieves Pareto improvement. Along with the benchmark, we also release a strong baseline, ElasticBERT, which allows BERT to exit at any layer in both static and dynamic ways. We demonstrate the ElasticBERT, despite its simplicity, outperforms or performs on par with SOTA compressed and early exiting models. With ElasticBERT, the proposed ELUE has a strong Pareto Frontier and makes a better evaluation for efficient NLP models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-10-13T21:17:15Z</published>
+    <arxiv:comment>Accepted to the main conference of NAACL-2022</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xiangyang Liu</name>
+    </author>
+    <author>
+      <name>Tianxiang Sun</name>
+    </author>
+    <author>
+      <name>Junliang He</name>
+    </author>
+    <author>
+      <name>Jiawen Wu</name>
+    </author>
+    <author>
+      <name>Lingling Wu</name>
+    </author>
+    <author>
+      <name>Xinyu Zhang</name>
+    </author>
+    <author>
+      <name>Hao Jiang</name>
+    </author>
+    <author>
+      <name>Zhao Cao</name>
+    </author>
+    <author>
+      <name>Xuanjing Huang</name>
+    </author>
+    <author>
+      <name>Xipeng Qiu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.13219v1</id>
+    <title>Towards Understanding and Mitigating Social Biases in Language Models</title>
+    <updated>2021-06-24T17:52:43Z</updated>
+    <link href="https://arxiv.org/abs/2106.13219v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.13219v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As machine learning methods are deployed in real-world settings such as healthcare, legal systems, and social science, it is crucial to recognize how they shape social biases and stereotypes in these sensitive decision-making processes. Among such real-world deployments are large-scale pretrained language models (LMs) that can be potentially dangerous in manifesting undesirable representational biases - harmful biases resulting from stereotyping that propagate negative generalizations involving gender, race, religion, and other social constructs. As a step towards improving the fairness of LMs, we carefully define several sources of representational biases before proposing new benchmarks and metrics to measure them. With these tools, we propose steps towards mitigating social biases during text generation. Our empirical results and human evaluation demonstrate effectiveness in mitigating bias while retaining crucial contextual information for high-fidelity text generation, thereby pushing forward the performance-fairness Pareto frontier.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-24T17:52:43Z</published>
+    <arxiv:comment>ICML 2021, code available at https://github.com/pliang279/LM_bias</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Paul Pu Liang</name>
+    </author>
+    <author>
+      <name>Chiyu Wu</name>
+    </author>
+    <author>
+      <name>Louis-Philippe Morency</name>
+    </author>
+    <author>
+      <name>Ruslan Salakhutdinov</name>
+    </author>
+  </entry>
+</feed>

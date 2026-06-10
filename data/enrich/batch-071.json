@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2091,
+  "title": "Revisiting Bayesian optimization in the light of the COCO benchmark",
+  "org": "deepmind",
+  "date": "2021-07-29",
+  "venue": "Structural and Multidisciplinary Optimization",
+  "url": "https://arxiv.org/abs/2103.16649",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1043,
+  "title": "Introducing Triton: Open-source GPU programming for neural networks",
+  "org": "openai",
+  "date": "2021-07-28",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/triton/",
+  "abstract": "We’re releasing Triton 1.0, an open-source Python-like programming language which enables researchers with no CUDA experience to write highly efficient GPU code—most of the time on par with what an expert would be able to produce.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2094,
+  "title": "On the Role of Optimization in Double Descent: A Least Squares Study",
+  "org": "deepmind",
+  "date": "2021-07-27",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2107.12685",
+  "abstract": "Empirically it has been observed that the performance of deep neural networks steadily improves as we increase model size, contradicting the classical view on overfitting and generalization. Recently, the double descent phenomena has been proposed to reconcile this observation with theory, suggesting that the test error has a second descent when the model becomes sufficiently overparameterized, as the model size itself acts as an implicit regularizer. In this paper we add to the growing body of work in this space, providing a careful study of learning dynamics as a function of model size for the least squares scenario. We show an excess risk bound for the gradient descent solution of the least squares objective. The bound depends on the smallest non-zero eigenvalue of the covariance matrix of the input features, via a functional form that has the double descent behavior. This gives a new perspective on the double descent curves reported in the literature. Our analysis of the excess risk allows to decouple the effect of optimization and generalization error. In particular, we find that in case of noiseless regression, double descent is explained solely by optimization-related quantities, which was missed in studies focusing on the Moore-Penrose pseudoinverse solution. We believe that our derivation provides an alternative view compared to existing work, shedding some light on a possible cause of this phenomena, at least in the considered least squares setting. We empirically e",
+  "needs_fetch": false
+ },
+ {
+  "id": 2093,
+  "title": "Matrix games with bandit feedback",
+  "org": "deepmind",
+  "date": "2021-07-27",
+  "venue": "Uncertainty in Artificial Intelligence",
+  "url": "https://www.auai.org/uai2021/accepted_papers#26",
+  "abstract": "We study a version of the classical zero-sum matrix game with unknown payoff matrix and bandit feedback, where the players only observe each others actions and a noisy payoff. This generalizes the usual matrix game, where the payoff matrix is known to the players. Despite numerous applications, this problem has received relatively little attention. Although adversarial bandit algorithms achieve low regret, they do not exploit the matrix structure and perform poorly relative to the new algorithms. The main contributions are regret analyses of variants of UCB and K-learning that hold for any opponent, e.g., even when the opponent adversarially plays the best-response to the learnerâ€™s mixed strategy. Along the way, we show that Thompson fails catastrophically in this setting and provide empirical comparison to existing algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2092,
+  "title": "Unbiased Gradient Estimation for Variational Auto-Encoders using Coupled Markov Chains",
+  "org": "deepmind",
+  "date": "2021-07-27",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.01845",
+  "abstract": "The variational auto-encoder (VAE) is a deep latent variable model that has two neural networks in an autoencoder-like architecture; one of them parameterizes the model's likelihood. Fitting its parameters via maximum likelihood (ML) is challenging since the computation of the marginal likelihood involves an intractable integral over the latent space; thus the VAE is trained instead by maximizing a variational lower bound. Here, we develop a ML training scheme for VAEs by introducing unbiased estimators of the log-likelihood gradient. We obtain the estimators by augmenting the latent space with a set of importance samples, similarly to the importance weighted auto-encoder (IWAE), and then constructing a Markov chain Monte Carlo coupling procedure on this augmented space. We provide the conditions under which the estimators can be computed in finite time and with finite variance. We show experimentally that VAEs fitted with unbiased estimators exhibit better predictive performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2095,
+  "title": "Drop, Swap, and Generate: A Self-Supervised Approach for Generating Neural Activity",
+  "org": "deepmind",
+  "date": "2021-07-23",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.07.21.453285",
+  "abstract": "Abstract Meaningful and simplified representations of neural activity can yield insights into how and what information is being processed within a neural circuit. However, without labels, finding representations that reveal the link between the brain and behavior can be challenging. Here, we introduce a novel unsupervised approach for learning disentangled representations of neural activity called Swap-VAE . Our approach combines a generative modeling framework with an instance-specific alignment loss that tries to maximize the representational similarity between transformed views of the input (brain state). These transformed (or augmented) views are created by dropping out neurons and jittering samples in time, which intuitively should lead the network to a representation that maintains both temporal consistency and invariance to the specific neurons used to represent the neural state. Through evaluations on both synthetic data and neural recordings from hundreds of neurons in different primate brains, we show that it is possible to build representations that disentangle neural datasets along relevant latent dimensions linked tso behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2096,
+  "title": "Highly accurate protein structure prediction for the human proteome",
+  "org": "deepmind",
+  "date": "2021-07-22",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-021-03828-1",
+  "abstract": "Abstract Protein structures can provide invaluable information, both for reasoning about biological processes and for enabling interventions such as structure-based drug development or targeted mutagenesis. After decades of effort, 17% of the total residues in human protein sequences are covered by an experimentally determined structure 1 . Here we markedly expand the structural coverage of the proteome by applying the state-of-the-art machine learning method, AlphaFold 2 , at a scale that covers almost the entire human proteome (98.5% of human proteins). The resulting dataset covers 58% of residues with a confident prediction, of which a subset (36% of all residues) have very high confidence. We introduce several metrics developed by building on the AlphaFold model and use them to interpret the dataset, identifying strong multi-domain predictions as well as regions that are likely to be disordered. Finally, we provide some case studies to illustrate how high-quality predictions could be used to generate biological hypotheses. We are making our predictions freely available to the community and anticipate that routine large-scale and high-accuracy structure prediction will become an important tool that will allow new questions to be addressed from a structural perspective.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2097,
+  "title": "Fairness for Unobserved Characteristics: Insights from Technological Impacts on Queer Communities",
+  "org": "deepmind",
+  "date": "2021-07-21",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2102.04257",
+  "abstract": "Advances in algorithmic fairness have largely omitted sexual orientation and gender identity. We explore queer concerns in privacy, censorship, language, online safety, health, and employment to study the positive and negative effects of artificial intelligence on queer communities. These issues underscore the need for new directions in fairness research that take into account a multiplicity of considerations, from privacy preservation, context sensitivity and process fairness, to an awareness of sociotechnical impact and the increasingly important role of inclusive and participatory research processes. Most current approaches for algorithmic fairness assume that the target characteristics for fairness---frequently, race and legal gender---can be observed or recorded. Sexual orientation and gender identity are prototypical instances of unobserved characteristics, which are frequently missing, unknown or fundamentally unmeasurable. This paper highlights the importance of developing new approaches for algorithmic fairness that break away from the prevailing assumption of observed characteristics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2787,
+  "title": "Reinforcement Learning Under Moral Uncertainty",
+  "org": "openai",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/ecoffet21a/ecoffet21a.pdf",
+  "abstract": "An ambitious goal for artificial intelligence is to create agents that behave ethically: The capacity to abide by human moral norms would greatly expand the context in which autonomous agents could be practically and safely deployed. While ethical agents could be trained through reinforcement, by rewarding correct behavior under a specific moral theory (e.g. utilitarianism), there remains widespread disagreement (both societally and among moral philosophers) about the nature of morality and what ethical theory (if any) is objectively correct. Acknowledging such disagreement, recent work in moral philosophy proposes that ethical behavior requires acting under moral uncertainty, i.e. to take into account when acting that one's credence is split across several plausible ethical theories. Inspired by such work, this paper proposes a formalism that translates such insights to the field of reinforcement learning. Demonstrating the formalism's potential, we then train agents in simple environments to act under moral uncertainty, highlighting how such uncertainty can help curb extreme behavior from commitment to single theories. The overall aim is to draw productive connections from the fields of moral philosophy and machine ethics to that of machine learning, to inspire further research by highlighting a spectrum of machine learning research questions relevant to training ethically capable reinforcement learning agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2786,
+  "title": "Phasic Policy Gradient",
+  "org": "openai",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/cobbe21a/cobbe21a.pdf",
+  "abstract": "We introduce Phasic Policy Gradient (PPG), a reinforcement learning framework which modifies traditional on-policy actor-critic methods by separating policy and value function training into distinct phases. In prior methods, one must choose between using a shared network or separate networks to represent the policy and value function. Using separate networks avoids interference between objectives, while using a shared network allows useful features to be shared. PPG is able to achieve the best of both worlds by splitting optimization into two phases, one that advances training and one that distills features. PPG also enables the value function to be more aggressively optimized with a higher level of sample reuse. Compared to PPO, we find that PPG significantly improves sample efficiency on the challenging Procgen Benchmark.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2785,
+  "title": "Zero-Shot Text-to-Image Generation",
+  "org": "openai",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/ramesh21a/ramesh21a.pdf",
+  "abstract": "Text-to-image generation has traditionally focused on finding better modeling assumptions for training on a fixed dataset. These assumptions might involve complex architectures, auxiliary losses, or side information such as object part labels or segmentation masks supplied during training. We describe a simple approach for this task based on a transformer that autoregressively models the text and image tokens as a single stream of data. With sufficient data and scale, our approach is competitive with previous domain-specific models when evaluated in a zero-shot fashion.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2111,
+  "title": "Revisiting Peng's Q(λ) for for modern reinforcement learning",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-03289292",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2110,
+  "title": "Average-Reward Off-Policy Policy Evaluation with Function Approximation",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": null,
+  "url": "https://openalex.org/W3171658869",
+  "abstract": "We consider off-policy policy evaluation with function approximation (FA) in average-reward MDPs, where the goal is to estimate both the reward rate and the differential value function. For this problem, bootstrapping is necessary and, along with off-policy learning and FA, results in the deadly triad (Sutton & Barto, 2018). To address the deadly triad, we propose two novel algorithms, reproducing the celebrated success of Gradient TD algorithms in the average-reward setting. In terms of estimating the differential value function, the algorithms are the first convergent off-policy linear function approximation algorithms. In terms of estimating the reward rate, the algorithms are the first convergent off-policy linear function approximation algorithms that do not require estimating the density ratio. We demonstrate empirically the advantage of the proposed algorithms, as well as their nonlinear variants, over a competitive density-ratio-based approach, in a simple domain as well as challenging robot simulation tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2109,
+  "title": "Beyond Variance Reduction: Understanding the True Impact of Baselines on Policy Optimization",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/chung21a/chung21a.pdf",
+  "abstract": "Bandit and reinforcement learning (RL) problems can often be framed as optimization problems where the goal is to maximize average performance while having access only to stochastic estimates of the true gradient. Traditionally, stochastic optimization theory predicts that learning dynamics are governed by the curvature of the loss function and the noise of the gradient estimates. In this paper we demonstrate that this is not the case for bandit and RL problems. To allow our analysis to be interpreted in light of multi-step MDPs, we focus on techniques derived from stochastic optimization principles (e.g., natural policy gradient and EXP3) and we show that some standard assumptions from optimization theory are violated in these problems. We present theoretical results showing that, at least for bandit problems, curvature and noise are not sufficient to explain the learning dynamics and that seemingly innocuous choices like the baseline can determine whether an algorithm converges. These theoretical findings match our empirical evaluation, which we extend to multi-state MDPs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2108,
+  "title": "Learning and Planning in Average-Reward Markov Decision Processes",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": null,
+  "url": "https://openalex.org/W3167096480",
+  "abstract": "We introduce improved learning and planning algorithms for average-reward MDPs, including 1) the first general proven-convergent off-policy model-free control algorithm without reference states, 2) the first proven-convergent off-policy model-free prediction algorithm, and 3) the first learning algorithms that converge to the actual value function rather than to the value function plus an offset. All of our algorithms are based on using the temporal-difference error rather than the conventional error when updating the estimate of the average reward. Our proof techniques are based on those of Abounadi, Bertsekas, and Borkar (2001). Empirically, we show that the use of the temporal-difference error generally results in faster learning, and that reliance on a reference state generally results in slower learning and risks divergence. All of our learning algorithms are fully online, and all of our planning algorithms are fully incremental.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2107,
+  "title": "High-Performance Large-Scale Image Recognition Without Normalization",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/brock21a/brock21a.pdf",
+  "abstract": "Batch normalization is a key component of most image classification models, but it has many undesirable properties stemming from its dependence on the batch size and interactions between examples. Although recent work has succeeded in training deep ResNets without normalization layers, these models do not match the test accuracies of the best batch-normalized networks, and are often unstable for large learning rates or strong data augmentations. In this work, we develop an adaptive gradient clipping technique which overcomes these instabilities, and design a significantly improved class of Normalizer-Free ResNets. Our smaller models match the test accuracy of an EfficientNet-B7 on ImageNet while being up to 8.7x faster to train, and our largest models attain a new state-of-the-art top-1 accuracy of 86.5%. In addition, Normalizer-Free models attain significantly better performance than their batch-normalized counterparts when finetuning on ImageNet after large-scale pre-training on a dataset of 300 million labeled images, with our best models obtaining an accuracy of 89.2%. Our code is available at this https URL deepmind-research/tree/master/nfnets",
+  "needs_fetch": false
+ },
+ {
+  "id": 2106,
+  "title": "Path Planning using Neural A* Search",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "Tokyo Tech Research Repository (Tokyo Institute of Technology)",
+  "url": "http://t2r2.star.titech.ac.jp/cgi-bin/publicationinfo.cgi?q_publication_content_number=CTT100903058",
+  "abstract": "We present Neural A*, a novel data-driven search method for path planning problems. Despite the recent increasing attention to data-driven path planning, machine learning approaches to search-based planning are still challenging due to the discrete nature of search algorithms. In this work, we reformulate a canonical A* search algorithm to be differentiable and couple it with a convolutional encoder to form an end-to-end trainable neural network planner. Neural A* solves a path planning problem by encoding a problem instance to a guidance map and then performing the differentiable A* search with the guidance map. By learning to match the search results with ground-truth paths provided by experts, Neural A* can produce a path consistent with the ground truth accurately and efficiently. Our extensive experiments confirmed that Neural A* outperformed state-of-the-art data-driven planners in terms of the search optimality and efficiency trade-off. Furthermore, Neural A* successfully predicted realistic human trajectories by directly performing search-based planning on natural image inputs. Project page: this https URL",
+  "needs_fetch": false
+ },
+ {
+  "id": 2105,
+  "title": "Sparse Feature Selection Makes Batch Reinforcement Learning More Sample Efficient",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/hao21a/hao21a.pdf",
+  "abstract": "This paper provides a statistical analysis of high-dimensional batch Reinforcement Learning (RL) using sparse linear function approximation. When there is a large number of candidate features, our result sheds light on the fact that sparsity-aware methods can make batch RL more sample efficient. We first consider the off-policy policy evaluation problem. To evaluate a new target policy, we analyze a Lasso fitted Q-evaluation method and establish a finite-sample error bound that has no polynomial dependence on the ambient dimension. To reduce the Lasso bias, we further propose a post model-selection estimator that applies fitted Q-evaluation to the features selected via group Lasso. Under an additional signal strength assumption, we derive a sharper instance-dependent error bound that depends on a divergence function measuring the distribution mismatch between the data distribution and occupancy measure of the target policy. Further, we study the Lasso fitted Q-iteration for batch policy optimization and establish a finite-sample error bound depending on the ratio between the number of relevant features and restricted minimal eigenvalue of the data's covariance. In the end, we complement the results with minimax lower bounds for batch-data policy evaluation/optimization that nearly match our upper bounds. The results suggest that having well-conditioned data is crucial for sparse batch policy learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2104,
+  "title": "Catformer: Designing Stable Transformers via Sensitivity Analysis",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": null,
+  "url": "https://openalex.org/W3168171623",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2103,
+  "title": "On the Optimality of Batch Policy Optimization Algorithms",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/xiao21b/xiao21b.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2102,
+  "title": "Spectral Normalisation for Deep Reinforcement Learning: An Optimisation Perspective",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "Spiral (Imperial College London)",
+  "url": "http://hdl.handle.net/10044/1/92996",
+  "abstract": "Most of the recent deep reinforcement learning advances take an RL-centric perspective and focus on refinements of the training objective. We diverge from this view and show we can recover the performance of these developments not by changing the objective, but by regularising the value-function estimator. Constraining the Lipschitz constant of a single layer using spectral normalisation is sufficient to elevate the performance of a Categorical-DQN agent to that of a more elaborated RAINBOW agent on the challenging Atari domain. We conduct ablation studies to disentangle the various effects normalisation has on the learning dynamics and show that is sufficient to modulate the parameter updates to recover most of the performance of spectral normalisation. These findings hint towards the need to also focus on the neural component and its learning dynamics to tackle the peculiarities of Deep Reinforcement Learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2101,
+  "title": "LieTransformer: Equivariant Self-Attention for Lie Groups",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/hutchinson21a/hutchinson21a.pdf",
+  "abstract": "Group equivariant neural networks are used as building blocks of group invariant neural networks, which have been shown to improve generalisation performance and data efficiency through principled parameter sharing. Such works have mostly focused on group equivariant convolutions, building on the result that group equivariant linear maps are necessarily convolutions. In this work, we extend the scope of the literature to self-attention, that is emerging as a prominent building block of deep learning models. We propose the LieTransformer, an architecture composed of LieSelfAttention layers that are equivariant to arbitrary Lie groups and their discrete subgroups. We demonstrate the generality of our approach by showing experimental results that are competitive to baseline methods on a wide range of tasks: shape counting on point clouds, molecular property regression and modelling particle trajectories under Hamiltonian dynamics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2100,
+  "title": "Learning and Planning in Complex Action Spaces",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/hubert21a/hubert21a.pdf",
+  "abstract": "Many important real-world problems have action spaces that are high-dimensional, continuous or both, making full enumeration of all possible actions infeasible. Instead, only small subsets of actions can be sampled for the purpose of policy evaluation and improvement. In this paper, we propose a general framework to reason in a principled way about policy evaluation and improvement over such sampled action subsets. This sample-based policy iteration framework can in principle be applied to any reinforcement learning algorithm based upon policy iteration. Concretely, we propose Sampled MuZero, an extension of the MuZero algorithm that is able to learn in domains with arbitrarily complex action spaces by planning over sampled actions. We demonstrate this approach on the classical board game of Go and on two continuous control benchmark domains: DeepMind Control Suite and Real-World RL Suite.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2099,
+  "title": "NeRF-VAE: A Geometry Aware 3D Scene Generative Model",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/kosiorek21a/kosiorek21a.pdf",
+  "abstract": "We propose NeRF-VAE, a 3D scene generative model that incorporates geometric structure via NeRF and differentiable volume rendering. In contrast to NeRF, our model takes into account shared structure across scenes, and is able to infer the structure of a novel scene -- without the need to re-train -- using amortized inference. NeRF-VAE's explicit 3D rendering process further contrasts previous generative models with convolution-based rendering which lacks geometric structure. Our model is a VAE that learns a distribution over radiance fields by conditioning them on a latent scene representation. We show that, once trained, NeRF-VAE is able to infer and render geometrically-consistent scenes from previously unseen 3D environments using very few input images. We further demonstrate that NeRF-VAE generalizes well to out-of-distribution cameras, while convolutional models do not. Finally, we introduce and study an attention-based conditioning mechanism of NeRF-VAE's decoder, which improves model performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2098,
+  "title": "Offline Reinforcement Learning with Fisher Divergence Critic Regularization",
+  "org": "deepmind",
+  "date": "2021-07-18",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/kostrikov21a/kostrikov21a.pdf",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2112,
+  "title": "Highly accurate protein structure prediction with AlphaFold",
+  "org": "deepmind",
+  "date": "2021-07-15",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-021-03819-2",
+  "abstract": "Abstract Proteins are essential to life, and understanding their structure can facilitate a mechanistic understanding of their function. Through an enormous experimental effort 1–4 , the structures of around 100,000 unique proteins have been determined 5 , but this represents a small fraction of the billions of known protein sequences 6,7 . Structural coverage is bottlenecked by the months to years of painstaking effort required to determine a single protein structure. Accurate computational approaches are needed to address this gap and to enable large-scale structural bioinformatics. Predicting the three-dimensional structure that a protein will adopt based solely on its amino acid sequence—the structure prediction component of the ‘protein folding problem’ 8 —has been an important open research problem for more than 50 years 9 . Despite recent progress 10–14 , existing methods fall far short of atomic accuracy, especially when no homologous structure is available. Here we provide the first computational method that can regularly predict protein structures with atomic accuracy even in cases in which no similar structure is known. We validated an entirely redesigned version of our neural network-based model, AlphaFold, in the challenging 14th Critical Assessment of protein Structure Prediction (CASP14) 15 , demonstrating accuracy competitive with experimental structures in a majority of cases and greatly outperforming other methods. Underpinning the latest version of AlphaFol",
+  "needs_fetch": false
+ },
+ {
+  "id": 2113,
+  "title": "Scalable Evaluation of Multi-Agent Reinforcement Learning with Melting Pot",
+  "org": "deepmind",
+  "date": "2021-07-14",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2107.06857",
+  "abstract": "Existing evaluation suites for multi-agent reinforcement learning (MARL) do not assess generalization to novel situations as their primary objective (unlike supervised-learning benchmarks). Our contribution, Melting Pot, is a MARL evaluation suite that fills this gap, and uses reinforcement learning to reduce the human labor required to create novel test scenarios. This works because one agent's behavior constitutes (part of) another agent's environment. To demonstrate scalability, we have created over 80 unique test scenarios covering a broad range of research topics such as social dilemmas, reciprocity, resource sharing, and task partitioning. We apply these test scenarios to standard MARL training algorithms, and demonstrate how Melting Pot reveals weaknesses not apparent from training performance alone.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2114,
+  "title": "Clinically Applicable Segmentation of Head and Neck Anatomy for Radiotherapy: Deep Learning Algorithm Development and Validation Study",
+  "org": "deepmind",
+  "date": "2021-07-12",
+  "venue": "Journal of Medical Internet Research",
+  "url": "https://doi.org/10.2196/26151",
+  "abstract": "BACKGROUND: Over half a million individuals are diagnosed with head and neck cancer each year globally. Radiotherapy is an important curative treatment for this disease, but it requires manual time to delineate radiosensitive organs at risk. This planning process can delay treatment while also introducing interoperator variability, resulting in downstream radiation dose differences. Although auto-segmentation algorithms offer a potentially time-saving solution, the challenges in defining, quantifying, and achieving expert performance remain. OBJECTIVE: Adopting a deep learning approach, we aim to demonstrate a 3D U-Net architecture that achieves expert-level performance in delineating 21 distinct head and neck organs at risk commonly segmented in clinical practice. METHODS: The model was trained on a data set of 663 deidentified computed tomography scans acquired in routine clinical practice and with both segmentations taken from clinical practice and segmentations created by experienced radiographers as part of this research, all in accordance with consensus organ at risk definitions. RESULTS: We demonstrated the model's clinical applicability by assessing its performance on a test set of 21 computed tomography scans from clinical practice, each with 21 organs at risk segmented by 2 independent experts. We also introduced surface Dice similarity coefficient, a new metric for the comparison of organ delineation, to quantify the deviation between organ at risk surface contours",
+  "needs_fetch": false
+ },
+ {
+  "id": 2115,
+  "title": "Pre-trial predictors of conflict response efficacy in human dorsolateral prefrontal cortex",
+  "org": "deepmind",
+  "date": "2021-07-09",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.07.07.451322",
+  "abstract": "ABSTRACT The ability to perform motor actions depends, in part, on the brain’s initial state, that is, the ensemble firing rate pattern prior to the initiation of action. We hypothesized that the same principle would apply to cognitive functions as well. To test this idea, we examined a unique set of single unit data collected in human dorsolateral prefrontal (dlPFC) cortex. Data were collected in a conflict task that interleaves Simon (motor-type) and Eriksen (flanker-type) conflict trials. In dlPFC, variability in pre-trial firing rate predicted the ability to resolve conflict, as inferred from reaction times. Ensemble patterns that predicted faster Simon reaction times overlapped slightly with those predicting Erikson performance, indicating that the two conflict types are associated with near-orthogonal initial states, and suggesting that there is a weak abstract or amodal conflict preparatory state in this region. These codes became fully orthogonalized in the response state. We interpret these results in light of the initial state hypothesis, arguing that the firing patterns in dlPFC immediately preceding the start of a task predispose it for the efficient implementation of cognitive action.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2116,
+  "title": "Imitation by Predicting Observations",
+  "org": "deepmind",
+  "date": "2021-07-08",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2107.03851",
+  "abstract": "Imitation learning enables agents to reuse and adapt the hard-won expertise of others, offering a solution to several key challenges in learning behavior. Although it is easy to observe behavior in the real-world, the underlying actions may not be accessible. We present a new method for imitation solely from observations that achieves comparable performance to experts on challenging continuous control tasks while also exhibiting robustness in the presence of observations unrelated to the task. Our method, which we call FORM (for \"Future Observation Reward Model\") is derived from an inverse RL objective and imitates using a model of expert behavior learned by generative modelling of the expert's observations, without needing ground truth actions. We show that FORM performs comparably to a strong baseline IRL method (GAIL) on the DeepMind Control Suite benchmark, while outperforming GAIL in the presence of task-irrelevant features.",
+  "needs_fetch": false
+ }
+]

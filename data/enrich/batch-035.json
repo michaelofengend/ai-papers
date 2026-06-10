@@ -1,0 +1,302 @@
+[
+ {
+  "id": 520,
+  "title": "From Medprompt to o1: Exploration of Run-Time Strategies for Medical Challenge Problems and Beyond",
+  "org": "other",
+  "date": "2024-11-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.03590",
+  "abstract": "Run-time steering strategies like Medprompt are valuable for guiding large language models (LLMs) to top performance on challenging tasks. Medprompt demonstrates that a general LLM can be focused to deliver state-of-the-art performance on specialized domains like medicine by using a prompt to elicit a run-time strategy involving chain of thought reasoning and ensembling. OpenAI's o1-preview model represents a new paradigm, where a model is designed to do run-time reasoning before generating final responses. We seek to understand the behavior of o1-preview on a diverse set of medical challenge problem benchmarks. Following on the Medprompt study with GPT-4, we systematically evaluate the o1-preview model across various medical benchmarks. Notably, even without prompting techniques, o1-preview largely outperforms the GPT-4 series with Medprompt. We further systematically study the efficacy of classic prompt engineering strategies, as represented by Medprompt, within the new paradigm of reasoning models. We found that few-shot prompting hinders o1's performance, suggesting that in-context learning may no longer be an effective steering approach for reasoning-native models. While ensembling remains viable, it is resource-intensive and requires careful cost-performance optimization. Our cost and accuracy analysis across run-time strategies reveals a Pareto frontier, with GPT-4o representing a more affordable option and o1-preview achieving state-of-the-art performance at higher co",
+  "needs_fetch": false
+ },
+ {
+  "id": 180,
+  "title": "Three Sketches of ASL-4 Safety Case Components",
+  "org": "anthropic",
+  "date": "2024-11-05",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2024/safety-cases/",
+  "abstract": "We sketch out three hypothetical arguments one could make to rule out misalignment risks in powerful near-future models capable of sabotage.",
+  "needs_fetch": false
+ },
+ {
+  "id": 593,
+  "title": "Improving Steering Vectors by Targeting Sparse Autoencoder Features",
+  "org": "deepmind",
+  "date": "2024-11-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.02193",
+  "abstract": "To control the behavior of language models, steering methods attempt to ensure that outputs of the model satisfy specific pre-defined properties. Adding steering vectors to the model is a promising method of model control that is easier than finetuning, and may be more robust than prompting. However, it can be difficult to anticipate the effects of steering vectors produced by methods such as CAA [Panickssery et al., 2024] or the direct use of SAE latents [Templeton et al., 2024]. In our work, we address this issue by using SAEs to measure the effects of steering vectors, giving us a method that can be used to understand the causal effect of any steering vector intervention. We use this method for measuring causal effects to develop an improved steering method, SAE-Targeted Steering (SAE-TS), which finds steering vectors to target specific SAE features while minimizing unintended side effects. We show that overall, SAE-TS balances steering effects with coherence better than CAA and SAE feature steering, when evaluated on a range of tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 231,
+  "title": "Taking AI Welfare Seriously",
+  "org": "anthropic",
+  "date": "2024-11-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.00986",
+  "abstract": "In this report, we argue that there is a realistic possibility that some AI systems will be conscious and/or robustly agentic in the near future. That means that the prospect of AI welfare and moral patienthood, i.e. of AI systems with their own interests and moral significance, is no longer an issue only for sci-fi or the distant future. It is an issue for the near future, and AI companies and other actors have a responsibility to start taking it seriously. We also recommend three early steps that AI companies and other actors can take: They can (1) acknowledge that AI welfare is an important and difficult issue (and ensure that language model outputs do the same), (2) start assessing AI systems for evidence of consciousness and robust agency, and (3) prepare policies and procedures for treating AI systems with an appropriate level of moral concern. To be clear, our argument in this report is not that AI systems definitely are, or will be, conscious, robustly agentic, or otherwise morally significant. Instead, our argument is that there is substantial uncertainty about these possibilities, and so we need to improve our understanding of AI welfare and our ability to make wise decisions about this issue. Otherwise there is a significant risk that we will mishandle decisions about AI welfare, mistakenly harming AI systems that matter morally and/or mistakenly caring for AI systems that do not.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2720,
+  "title": "ArtVLM: Attribute Recognition Through Vision-Based Prefix Language Modeling",
+  "org": "openai",
+  "date": "2024-11-02",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73383-3_8",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1540,
+  "title": "Lagrangian Hashing for Compressed Neural Field Representations",
+  "org": "deepmind",
+  "date": "2024-11-02",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73383-3_11",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1541,
+  "title": "AI Mental Models &amp; Trust: The Promises and Perils of Interaction Design",
+  "org": "deepmind",
+  "date": "2024-11-01",
+  "venue": "Ethnographic Praxis in Industry Conference Proceedings",
+  "url": "https://doi.org/10.1111/epic.12194",
+  "abstract": "This study offers practical solutions to ongoing issues of trust and accountability in AI, highlighting how AI mental models are shaped among consumers in the evolving relationship between humans and AI. We argue that although predictability in AI is crucial, alone it is not enough to foster trust. The lack of real consequences for AI systems that breach trust remains a key challenge for interaction design. Until AI systems face tangible repercussions for trust violations, human trust will remain limited and conditional. Our research contributes to the development of socio‐technologies that prioritize human capabilities and foster productive human‐AI relationships.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1542,
+  "title": "Affective Visual Dialog: A Large-Scale Benchmark for Emotional Reasoning Based on Visually Grounded Conversations",
+  "org": "deepmind",
+  "date": "2024-10-31",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73226-3_2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1544,
+  "title": "IG Captioner: Information Gain Captioners Are Strong Zero-Shot Classifiers",
+  "org": "deepmind",
+  "date": "2024-10-30",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73039-9_27",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1543,
+  "title": "Scene-Graph ViT: End-to-End Open-Vocabulary Visual Relationship Detection",
+  "org": "deepmind",
+  "date": "2024-10-30",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-72907-2_12",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1193,
+  "title": "Learned Neural Physics Simulation for Articulated 3D Human Pose Reconstruction",
+  "org": "anthropic",
+  "date": "2024-10-30",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-72907-2_19",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 993,
+  "title": "Introducing SimpleQA",
+  "org": "openai",
+  "date": "2024-10-30",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-simpleqa/",
+  "abstract": "A factuality benchmark called SimpleQA that measures the ability for language models to answer short, fact-seeking questions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 79,
+  "title": "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
+  "org": "anthropic",
+  "date": "2024-10-30",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/swe-bench-sonnet",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1546,
+  "title": "Adventures in AI Wonderland: How Children Are Shaping the Future of AI",
+  "org": "deepmind",
+  "date": "2024-10-29",
+  "venue": "interactions",
+  "url": "https://doi.org/10.1145/3699690",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1545,
+  "title": "SRL: Towards a General-Purpose Framework for Spatial Representation Learning",
+  "org": "deepmind",
+  "date": "2024-10-29",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3678717.3691246",
+  "abstract": "Representation learning (RL) techniques are widely adopted in areas such as natural language processing and computer vision, with prominent examples such as attention and ConvNet architectures. In comparison, many GeoAI works still rely on feature engineering or data conversion to represent spatial data (e.g., points, polylines, polygons, 3D building models, etc.) as features in formats that are easier for neural networks to handle. The neural network architectures remain unchanged, and the need for feature engineering has become a bottleneck for applying deep learning to new tasks in the age of big data. In this paper, we advocate the idea of developing learnable spatial representation modules, which not only enable spatial reasoning but also enable neural nets to directly consume (i.e., encoding) or generate (i.e., decoding) spatial data. We propose Spatial Representation Learning (SRL), a new general-purpose representation learning framework for spatial reasoning. We discuss the key challenges of spatial representation learning including multi-scale RL, continuous RL, shape-centric RL, noise-robust RL, heterogeneity-aware RL, and fairness-aware RL. We also discuss the critical role and potential of SRL in various geospatial subdomains and how this technique can lead to a new generation of GeoAI.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1547,
+  "title": "Efficient and Near-Optimal Noise Generation for Streaming Differential Privacy",
+  "org": "deepmind",
+  "date": "2024-10-27",
+  "venue": null,
+  "url": "https://doi.org/10.1109/focs61266.2024.00135",
+  "abstract": "In the task of differentially private (DP) continual counting, we receive a stream of increments and our goal is to output an approximate running total of these increments, without revealing too much about any specific increment. Despite its simplicity, differentially private continual counting has attracted significant attention both in theory and in practice. Existing algorithms for differentially private continual counting are either inefficient in terms of their space usage or add an excessive amount of noise, inducing suboptimal utility. The most practical DP continual counting algorithms add carefully correlated Gaussian noise to the values. The task of choosing the covariance for this noise can be expressed in terms of factoring the lower-triangular matrix of ones (which computes prefix sums). We present two approaches from this class (for different parameter regimes) that achieve near-optimal utility for DP continual counting and only require logarithmic or polylogarithmic space (and time). Our first approach is based on a space-efficient streaming matrix multiplication algorithm for a class of Toeplitz matrices. We show that to instantiate this algorithm for DP continual counting, it is sufficient to find a low-degree rational function that approximates the square root on a circle in the complex plane. We then apply and extend tools from approximation theory to achieve this. We also derive efficient closed-forms for the objective function for arbitrarily many steps, ",
+  "needs_fetch": false
+ },
+ {
+  "id": 382,
+  "title": "Uncertainty-Penalized Direct Preference Optimization",
+  "org": "other",
+  "date": "2024-10-26",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2410.20187",
+  "abstract": "Aligning Large Language Models (LLMs) to human preferences in content, style, and presentation is challenging, in part because preferences are varied, context-dependent, and sometimes inherently ambiguous. While successful, Reinforcement Learning from Human Feedback (RLHF) and Direct Preference Optimization (DPO) are prone to the issue of proxy reward overoptimization. Analysis of the DPO loss reveals a critical need for regularization for mislabeled or ambiguous preference pairs to avoid reward hacking. In this work, we develop a pessimistic framework for DPO by introducing preference uncertainty penalization schemes, inspired by offline reinforcement learning. The penalization serves as a correction to the loss which attenuates the loss gradient for uncertain samples. Evaluation of the methods is performed with GPT2 Medium on the Anthropic-HH dataset using a model ensemble to obtain uncertainty estimates, and shows improved overall performance compared to vanilla DPO, as well as better completions on prompts from high-uncertainty chosen/rejected responses.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1549,
+  "title": "Text-Conditioned Resampler For Long Form Video Understanding",
+  "org": "deepmind",
+  "date": "2024-10-25",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73016-0_16",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1548,
+  "title": "LookupViT: Compressing Visual Information to a Limited Number of Tokens",
+  "org": "deepmind",
+  "date": "2024-10-25",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73016-0_19",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 594,
+  "title": "Applying sparse autoencoders to unlearn knowledge in language models",
+  "org": "deepmind",
+  "date": "2024-10-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2410.19278",
+  "abstract": "We investigate whether sparse autoencoders (SAEs) can be used to remove knowledge from language models. We use the biology subset of the Weapons of Mass Destruction Proxy dataset and test on the gemma-2b-it and gemma-2-2b-it language models. We demonstrate that individual interpretable biology-related SAE features can be used to unlearn a subset of WMDP-Bio questions with minimal side-effects in domains other than biology. Our results suggest that negative scaling of feature activations is necessary and that zero ablating features is ineffective. We find that intervening using multiple SAE features simultaneously can unlearn multiple different topics, but with similar or larger unwanted side-effects than the existing Representation Misdirection for Unlearning technique. Current SAE quality or intervention techniques would need to improve to make SAE-based unlearning comparable to the existing fine-tuning based techniques.",
+  "needs_fetch": false
+ },
+ {
+  "id": 80,
+  "title": "Evaluating feature steering: A case study in mitigating social biases",
+  "org": "anthropic",
+  "date": "2024-10-25",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/evaluating-feature-steering",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1550,
+  "title": "Beyond the matrix: Experimental approaches to studying cognitive agents in social-ecological systems",
+  "org": "deepmind",
+  "date": "2024-10-24",
+  "venue": "Cognition",
+  "url": "https://doi.org/10.1016/j.cognition.2024.105993",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 383,
+  "title": "High-dimensional Analysis of Knowledge Distillation: Weak-to-Strong Generalization and Scaling Laws",
+  "org": "other",
+  "date": "2024-10-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2410.18837",
+  "abstract": "A growing number of machine learning scenarios rely on knowledge distillation where one uses the output of a surrogate model as labels to supervise the training of a target model. In this work, we provide a sharp characterization of this process for ridgeless, high-dimensional regression, under two settings: (i) model shift, where the surrogate model is arbitrary, and (ii) distribution shift, where the surrogate model is the solution of empirical risk minimization with out-of-distribution data. In both cases, we characterize the precise risk of the target model through non-asymptotic bounds in terms of sample size and data distribution under mild conditions. As a consequence, we identify the form of the optimal surrogate model, which reveals the benefits and limitations of discarding weak features in a data-dependent fashion. In the context of weak-to-strong (W2S) generalization, this has the interpretation that (i) W2S training, with the surrogate as the weak model, can provably outperform training with strong labels under the same data budget, but (ii) it is unable to improve the data scaling law. We validate our results on numerical experiments both on ridgeless regression and on neural network architectures.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1552,
+  "title": "The Case for Globalizing Fairness: A Mixed Methods Study on Colonialism, AI, and Health in Africa",
+  "org": "deepmind",
+  "date": "2024-10-23",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3689904.3694708",
+  "abstract": "With growing application of machine learning (ML) technologies in healthcare, there have been calls for developing techniques to understand and mitigate biases these systems may exhibit. Fairness considerations in the development of ML-based solutions for health have particular implications for Africa, which already faces inequitable power imbalances between the Global North and South. This paper seeks to explore fairness for global health, with Africa as a case study. We conduct a scoping review to propose axes of disparities for fairness consideration in the African context and delineate where they may come into play in different ML-enabled medical modalities. We then conduct qualitative research studies with 672 general population study participants and 30 experts in ML, health, and policy focused on Africa to obtain corroborative evidence on the proposed axes of disparities. Our analysis focuses on colonialism as the attribute of interest and examines the interplay between artificial intelligence (AI), health, and colonialism. Among the pre-identified attributes, we found that colonial history, country of origin, and national income level were specific axes of disparities that participants believed would cause an AI system to be biased. However, there was also divergence of opinion between experts and general population participants. Whereas experts generally expressed a shared view about the relevance of colonial history for the development and implementation of AI techn",
+  "needs_fetch": false
+ },
+ {
+  "id": 1551,
+  "title": "Scalable watermarking for identifying large language model outputs",
+  "org": "deepmind",
+  "date": "2024-10-23",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-024-08025-4",
+  "abstract": "Abstract Large language models (LLMs) have enabled the generation of high-quality synthetic text, often indistinguishable from human-written content, at a scale that can markedly affect the nature of the information ecosystem 1–3 . Watermarking can help identify synthetic text and limit accidental or deliberate misuse 4 , but has not been adopted in production systems owing to stringent quality, detectability and computational efficiency requirements. Here we describe SynthID-Text, a production-ready text watermarking scheme that preserves text quality and enables high detection accuracy, with minimal latency overhead. SynthID-Text does not affect LLM training and modifies only the sampling procedure; watermark detection is computationally efficient, without using the underlying LLM. To enable watermarking at scale, we develop an algorithm integrating watermarking with speculative sampling, an efficiency technique frequently used in production systems 5 . Evaluations across multiple LLMs empirically show that SynthID-Text provides improved detectability over comparable methods, and standard benchmarks and human side-by-side ratings indicate no change in LLM capabilities. To demonstrate the feasibility of watermarking in large-scale-production systems, we conducted a live experiment that assessed feedback from nearly 20 million Gemini 6 responses, again confirming the preservation of text quality. We hope that the availability of SynthID-Text 7 will facilitate further developm",
+  "needs_fetch": false
+ },
+ {
+  "id": 994,
+  "title": "Simplifying, stabilizing, and scaling continuous-time consistency models",
+  "org": "openai",
+  "date": "2024-10-23",
+  "venue": "arXiv.org",
+  "url": "https://openai.com/index/simplifying-stabilizing-and-scaling-continuous-time-consistency-models/",
+  "abstract": "Consistency models (CMs) are a powerful class of diffusion-based generative models optimized for fast sampling. Most existing CMs are trained using discretized timesteps, which introduce additional hyperparameters and are prone to discretization errors. While continuous-time formulations can mitigate these issues, their success has been limited by training instability. To address this, we propose a simplified theoretical framework that unifies previous parameterizations of diffusion models and CMs, identifying the root causes of instability. Based on this analysis, we introduce key improvements in diffusion process parameterization, network architecture, and training objectives. These changes enable us to train continuous-time CMs at an unprecedented scale, reaching 1.5B parameters on ImageNet 512x512. Our proposed training algorithm, using only two sampling steps, achieves FID scores of 2.06 on CIFAR-10, 1.48 on ImageNet 64x64, and 1.88 on ImageNet 512x512, narrowing the gap in FID scores with the best existing diffusion models to within 10%.",
+  "needs_fetch": false
+ },
+ {
+  "id": 384,
+  "title": "Asynchronous RLHF: Faster and More Efficient Off-Policy RL for Language Models",
+  "org": "deepmind",
+  "date": "2024-10-23",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2410.18252",
+  "abstract": "The dominant paradigm for RLHF is online and on-policy RL: synchronously generating from the large language model (LLM) policy, labelling with a reward model, and learning using feedback on the LLM's own outputs. While performant, this paradigm is computationally inefficient. Inspired by classical deep RL literature, we propose separating generation and learning in RLHF. This enables asynchronous generation of new samples while simultaneously training on old samples, leading to faster training and more compute-optimal scaling. However, asynchronous training relies on an underexplored regime, online but off-policy RLHF: learning on samples from previous iterations of our model which give a worse training signal. We tackle the fundamental challenge in this regime: how much off-policyness can we tolerate for asynchronous training to speed up learning but maintain performance? Among several RLHF algorithms we test, online DPO is found to be most robust to off-policy data, and robustness increases with the scale of the policy model. We study further compute optimizations for asynchronous RLHF but find that they come at a performance cost, giving rise to a trade-off. We verify the scalability of asynchronous RLHF by training a general-purpose chatbot from LLaMA 3.1 8B on an instruction-following task ~40% faster than a synchronous run while matching final performance. Finally, we extend our results to math and reasoning to demonstrate asynchronous RL can finetune Rho 1B on GSM8k ~7",
+  "needs_fetch": false
+ },
+ {
+  "id": 81,
+  "title": "Developing a computer use model",
+  "org": "anthropic",
+  "date": "2024-10-22",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/developing-computer-use",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1553,
+  "title": "Enhancing SPARQL Generation by Triplet-order-sensitive Pre-training",
+  "org": "deepmind",
+  "date": "2024-10-20",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3627673.3679916",
+  "abstract": "Semantic parsing that translates natural language queries to SPARQL is of great importance for Knowledge Graph Question Answering (KGQA) systems. Although pre-trained language models like T5 have achieved significant success in the Text-to-SPARQL task, their generated outputs still exhibit notable errors specific to the SPARQL language, such as triplet flips. To address this challenge and further improve the performance, we propose an additional pre-training stage with a new objective, Triplet Order Correction (TOC), along with the commonly used Masked Language Modeling (MLM), to collectively enhance the model's sensitivity to triplet order and SPARQL syntax. We also propose to verbalize the Internationalized Resource Identifiers (IRIs) during training. Our method achieves state-of-the-art performances on three widely-used benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1554,
+  "title": "Understanding dual process cognition via the minimum description length principle",
+  "org": "deepmind",
+  "date": "2024-10-18",
+  "venue": "PLoS Computational Biology",
+  "url": "https://doi.org/10.1371/journal.pcbi.1012383",
+  "abstract": "Dual-process theories play a central role in both psychology and neuroscience, figuring prominently in domains ranging from executive control to reward-based learning to judgment and decision making. In each of these domains, two mechanisms appear to operate concurrently, one relatively high in computational complexity, the other relatively simple. Why is neural information processing organized in this way? We propose an answer to this question based on the notion of compression. The key insight is that dual-process structure can enhance adaptive behavior by allowing an agent to minimize the description length of its own behavior. We apply a single model based on this observation to findings from research on executive control, reward-based learning, and judgment and decision making, showing that seemingly diverse dual-process phenomena can be understood as domain-specific consequences of a single underlying set of computational principles.",
+  "needs_fetch": false
+ }
+]

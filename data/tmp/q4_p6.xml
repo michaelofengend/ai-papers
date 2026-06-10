@@ -1,0 +1,724 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/NySqWB9aSyAvHRz4uej1mK5AwpY</id>
+  <title>arXiv Query: search_query=(all:jailbreak OR all:"adversarial robustness") AND all:"language model" AND all:safety&amp;id_list=&amp;start=900&amp;max_results=150</title>
+  <updated>2026-06-10T07:58:13Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(all:jailbreak+OR+all:%22adversarial+robustness%22)+AND+(all:%22language+model%22+AND+all:safety)&amp;start=900&amp;max_results=150&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>150</opensearch:itemsPerPage>
+  <opensearch:totalResults>924</opensearch:totalResults>
+  <opensearch:startIndex>900</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2311.03191v5</id>
+    <title>DeepInception: Hypnotize Large Language Model to Be Jailbreaker</title>
+    <updated>2024-11-28T13:43:50Z</updated>
+    <link href="https://arxiv.org/abs/2311.03191v5" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.03191v5" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have succeeded significantly in various applications but remain susceptible to adversarial jailbreaks that void their safety guardrails. Previous attempts to exploit these vulnerabilities often rely on high-cost computational extrapolations, which may not be practical or efficient. In this paper, inspired by the authority influence demonstrated in the Milgram experiment, we present a lightweight method to take advantage of the LLMs' personification capabilities to construct $\textit{a virtual, nested scene}$, allowing it to realize an adaptive way to escape the usage control in a normal scenario. Empirically, the contents induced by our approach can achieve leading harmfulness rates with previous counterparts and realize a continuous jailbreak in subsequent interactions, which reveals the critical weakness of self-losing on both open-source and closed-source LLMs, $\textit{e.g.}$, Llama-2, Llama-3, GPT-3.5, GPT-4, and GPT-4o. The code and data are available at: https://github.com/tmlr-group/DeepInception.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-06T15:29:30Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Xuan Li</name>
+    </author>
+    <author>
+      <name>Zhanke Zhou</name>
+    </author>
+    <author>
+      <name>Jianing Zhu</name>
+    </author>
+    <author>
+      <name>Jiangchao Yao</name>
+    </author>
+    <author>
+      <name>Tongliang Liu</name>
+    </author>
+    <author>
+      <name>Bo Han</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.15851v2</id>
+    <title>Self-Guard: Empower the LLM to Safeguard Itself</title>
+    <updated>2024-03-22T10:02:11Z</updated>
+    <link href="https://arxiv.org/abs/2310.15851v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.15851v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The jailbreak attack can bypass the safety measures of a Large Language Model (LLM), generating harmful content. This misuse of LLM has led to negative societal consequences. Currently, there are two main approaches to address jailbreak attacks: safety training and safeguards. Safety training focuses on further training LLM to enhance its safety. On the other hand, safeguards involve implementing external models or filters to prevent harmful outputs. However, safety training has constraints in its ability to adapt to new attack types and often leads to a drop in model performance. Safeguards have proven to be of limited help. To tackle these issues, we propose a novel approach called Self-Guard, which combines the strengths of both safety methods. Self-Guard includes two stages. In the first stage, we enhance the model's ability to assess harmful content, and in the second stage, we instruct the model to consistently perform harmful content detection on its own responses. The experiment has demonstrated that Self-Guard is robust against jailbreak attacks. In the bad case analysis, we find that LLM occasionally provides harmless responses to harmful queries. Additionally, we evaluated the general capabilities of the LLM before and after safety training, providing evidence that Self-Guard does not result in the LLM's performance degradation. In sensitivity tests, Self-Guard not only avoids inducing over-sensitivity in LLM but also can even mitigate this issue.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-24T14:08:26Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zezhong Wang</name>
+    </author>
+    <author>
+      <name>Fangkai Yang</name>
+    </author>
+    <author>
+      <name>Lu Wang</name>
+    </author>
+    <author>
+      <name>Pu Zhao</name>
+    </author>
+    <author>
+      <name>Hongru Wang</name>
+    </author>
+    <author>
+      <name>Liang Chen</name>
+    </author>
+    <author>
+      <name>Qingwei Lin</name>
+    </author>
+    <author>
+      <name>Kam-Fai Wong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.15140v2</id>
+    <title>AutoDAN: Interpretable Gradient-Based Adversarial Attacks on Large Language Models</title>
+    <updated>2023-12-14T06:22:51Z</updated>
+    <link href="https://arxiv.org/abs/2310.15140v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.15140v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Safety alignment of Large Language Models (LLMs) can be compromised with manual jailbreak attacks and (automatic) adversarial attacks. Recent studies suggest that defending against these attacks is possible: adversarial attacks generate unlimited but unreadable gibberish prompts, detectable by perplexity-based filters; manual jailbreak attacks craft readable prompts, but their limited number due to the necessity of human creativity allows for easy blocking. In this paper, we show that these solutions may be too optimistic. We introduce AutoDAN, an interpretable, gradient-based adversarial attack that merges the strengths of both attack types. Guided by the dual goals of jailbreak and readability, AutoDAN optimizes and generates tokens one by one from left to right, resulting in readable prompts that bypass perplexity filters while maintaining high attack success rates. Notably, these prompts, generated from scratch using gradients, are interpretable and diverse, with emerging strategies commonly seen in manual jailbreak attacks. They also generalize to unforeseen harmful behaviors and transfer to black-box LLMs better than their unreadable counterparts when using limited training data or a single proxy model. Furthermore, we show the versatility of AutoDAN by automatically leaking system prompts using a customized objective. Our work offers a new way to red-team LLMs and understand jailbreak mechanisms via interpretability.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-23T17:46:07Z</published>
+    <arxiv:comment>Version 2 updates: Added comparison of three more evaluation methods and their reliability check using human labeling. Added results for jailbreaking Llama2 (individual behavior) and included complexity and hyperparameter analysis. Revised objectives for prompt leaking. Other minor changes made</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Sicheng Zhu</name>
+    </author>
+    <author>
+      <name>Ruiyi Zhang</name>
+    </author>
+    <author>
+      <name>Bang An</name>
+    </author>
+    <author>
+      <name>Gang Wu</name>
+    </author>
+    <author>
+      <name>Joe Barrow</name>
+    </author>
+    <author>
+      <name>Zichao Wang</name>
+    </author>
+    <author>
+      <name>Furong Huang</name>
+    </author>
+    <author>
+      <name>Ani Nenkova</name>
+    </author>
+    <author>
+      <name>Tong Sun</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.14303v2</id>
+    <title>Language Model Unalignment: Parametric Red-Teaming to Expose Hidden Harms and Biases</title>
+    <updated>2023-11-13T05:28:47Z</updated>
+    <link href="https://arxiv.org/abs/2310.14303v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.14303v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Red-teaming has been a widely adopted way to evaluate the harmfulness of Large Language Models (LLMs). It aims to jailbreak a model's safety behavior to make it act as a helpful agent disregarding the harmfulness of the query. Existing methods are primarily based on input text-based red-teaming such as adversarial prompts, low-resource prompts, or contextualized prompts to condition the model in a way to bypass its safe behavior. Bypassing the guardrails uncovers hidden harmful information and biases in the model that are left untreated or newly introduced by its safety training. However, prompt-based attacks fail to provide such a diagnosis owing to their low attack success rate, and applicability to specific models. In this paper, we present a new perspective on LLM safety research i.e., parametric red-teaming through Unalignment. It simply (instruction) tunes the model parameters to break model guardrails that are not deeply rooted in the model's behavior. Unalignment using as few as 100 examples can significantly bypass commonly referred to as CHATGPT, to the point where it responds with an 88% success rate to harmful queries on two safety benchmark datasets. On open-source models such as VICUNA-7B and LLAMA-2-CHAT 7B AND 13B, it shows an attack success rate of more than 91%. On bias evaluations, Unalignment exposes inherent biases in safety-aligned models such as CHATGPT and LLAMA- 2-CHAT where the model's responses are strongly biased and opinionated 64% of the time.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-22T13:55:46Z</published>
+    <arxiv:comment>Under Review</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Rishabh Bhardwaj</name>
+    </author>
+    <author>
+      <name>Soujanya Poria</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.13345v1</id>
+    <title>An LLM can Fool Itself: A Prompt-Based Adversarial Attack</title>
+    <updated>2023-10-20T08:16:46Z</updated>
+    <link href="https://arxiv.org/abs/2310.13345v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.13345v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The wide-ranging applications of large language models (LLMs), especially in safety-critical domains, necessitate the proper evaluation of the LLM's adversarial robustness. This paper proposes an efficient tool to audit the LLM's adversarial robustness via a prompt-based adversarial attack (PromptAttack). PromptAttack converts adversarial textual attacks into an attack prompt that can cause the victim LLM to output the adversarial sample to fool itself. The attack prompt is composed of three important components: (1) original input (OI) including the original sample and its ground-truth label, (2) attack objective (AO) illustrating a task description of generating a new sample that can fool itself without changing the semantic meaning, and (3) attack guidance (AG) containing the perturbation instructions to guide the LLM on how to complete the task by perturbing the original sample at character, word, and sentence levels, respectively. Besides, we use a fidelity filter to ensure that PromptAttack maintains the original semantic meanings of the adversarial examples. Further, we enhance the attack power of PromptAttack by ensembling adversarial examples at different perturbation levels. Comprehensive empirical results using Llama2 and GPT-3.5 validate that PromptAttack consistently yields a much higher attack success rate compared to AdvGLUE and AdvGLUE++. Interesting findings include that a simple emoji can easily mislead GPT-3.5 to make wrong predictions.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-20T08:16:46Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Xilie Xu</name>
+    </author>
+    <author>
+      <name>Keyi Kong</name>
+    </author>
+    <author>
+      <name>Ning Liu</name>
+    </author>
+    <author>
+      <name>Lizhen Cui</name>
+    </author>
+    <author>
+      <name>Di Wang</name>
+    </author>
+    <author>
+      <name>Jingfeng Zhang</name>
+    </author>
+    <author>
+      <name>Mohan Kankanhalli</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.10844v1</id>
+    <title>Survey of Vulnerabilities in Large Language Models Revealed by Adversarial Attacks</title>
+    <updated>2023-10-16T21:37:24Z</updated>
+    <link href="https://arxiv.org/abs/2310.10844v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.10844v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) are swiftly advancing in architecture and capability, and as they integrate more deeply into complex systems, the urgency to scrutinize their security properties grows. This paper surveys research in the emerging interdisciplinary field of adversarial attacks on LLMs, a subfield of trustworthy ML, combining the perspectives of Natural Language Processing and Security. Prior work has shown that even safety-aligned LLMs (via instruction tuning and reinforcement learning through human feedback) can be susceptible to adversarial attacks, which exploit weaknesses and mislead AI systems, as evidenced by the prevalence of `jailbreak' attacks on models like ChatGPT and Bard. In this survey, we first provide an overview of large language models, describe their safety alignment, and categorize existing research based on various learning structures: textual-only attacks, multi-modal attacks, and additional attack methods specifically targeting complex systems, such as federated learning or multi-agent systems. We also offer comprehensive remarks on works that focus on the fundamental sources of vulnerabilities and potential defenses. To make this field more accessible to newcomers, we present a systematic review of existing works, a structured typology of adversarial attack concepts, and additional resources, including slides for presentations on related topics at the 62nd Annual Meeting of the Association for Computational Linguistics (ACL'24).</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-16T21:37:24Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Erfan Shayegani</name>
+    </author>
+    <author>
+      <name>Md Abdullah Al Mamun</name>
+    </author>
+    <author>
+      <name>Yu Fu</name>
+    </author>
+    <author>
+      <name>Pedram Zaree</name>
+    </author>
+    <author>
+      <name>Yue Dong</name>
+    </author>
+    <author>
+      <name>Nael Abu-Ghazaleh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.08419v4</id>
+    <title>Jailbreaking Black Box Large Language Models in Twenty Queries</title>
+    <updated>2024-07-18T18:24:57Z</updated>
+    <link href="https://arxiv.org/abs/2310.08419v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.08419v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There is growing interest in ensuring that large language models (LLMs) align with human values. However, the alignment of such models is vulnerable to adversarial jailbreaks, which coax LLMs into overriding their safety guardrails. The identification of these vulnerabilities is therefore instrumental in understanding inherent weaknesses and preventing future misuse. To this end, we propose Prompt Automatic Iterative Refinement (PAIR), an algorithm that generates semantic jailbreaks with only black-box access to an LLM. PAIR -- which is inspired by social engineering attacks -- uses an attacker LLM to automatically generate jailbreaks for a separate targeted LLM without human intervention. In this way, the attacker LLM iteratively queries the target LLM to update and refine a candidate jailbreak. Empirically, PAIR often requires fewer than twenty queries to produce a jailbreak, which is orders of magnitude more efficient than existing algorithms. PAIR also achieves competitive jailbreaking success rates and transferability on open and closed-source LLMs, including GPT-3.5/4, Vicuna, and Gemini.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-12T15:38:28Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Patrick Chao</name>
+    </author>
+    <author>
+      <name>Alexander Robey</name>
+    </author>
+    <author>
+      <name>Edgar Dobriban</name>
+    </author>
+    <author>
+      <name>Hamed Hassani</name>
+    </author>
+    <author>
+      <name>George J. Pappas</name>
+    </author>
+    <author>
+      <name>Eric Wong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.06987v1</id>
+    <title>Catastrophic Jailbreak of Open-source LLMs via Exploiting Generation</title>
+    <updated>2023-10-10T20:15:54Z</updated>
+    <link href="https://arxiv.org/abs/2310.06987v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.06987v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The rapid progress in open-source large language models (LLMs) is significantly advancing AI development. Extensive efforts have been made before model release to align their behavior with human values, with the primary goal of ensuring their helpfulness and harmlessness. However, even carefully aligned models can be manipulated maliciously, leading to unintended behaviors, known as "jailbreaks". These jailbreaks are typically triggered by specific text inputs, often referred to as adversarial prompts. In this work, we propose the generation exploitation attack, an extremely simple approach that disrupts model alignment by only manipulating variations of decoding methods. By exploiting different generation strategies, including varying decoding hyper-parameters and sampling methods, we increase the misalignment rate from 0% to more than 95% across 11 language models including LLaMA2, Vicuna, Falcon, and MPT families, outperforming state-of-the-art attacks with $30\times$ lower computational cost. Finally, we propose an effective alignment method that explores diverse generation strategies, which can reasonably reduce the misalignment rate under our attack. Altogether, our study underscores a major failure in current safety evaluation and alignment procedures for open-source LLMs, strongly advocating for more comprehensive red teaming and better alignment before releasing such models. Our code is available at https://github.com/Princeton-SysML/Jailbreak_LLM.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-10T20:15:54Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yangsibo Huang</name>
+    </author>
+    <author>
+      <name>Samyak Gupta</name>
+    </author>
+    <author>
+      <name>Mengzhou Xia</name>
+    </author>
+    <author>
+      <name>Kai Li</name>
+    </author>
+    <author>
+      <name>Danqi Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.06474v3</id>
+    <title>Multilingual Jailbreak Challenges in Large Language Models</title>
+    <updated>2024-03-04T04:03:54Z</updated>
+    <link href="https://arxiv.org/abs/2310.06474v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.06474v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While large language models (LLMs) exhibit remarkable capabilities across a wide range of tasks, they pose potential safety concerns, such as the ``jailbreak'' problem, wherein malicious instructions can manipulate LLMs to exhibit undesirable behavior. Although several preventive measures have been developed to mitigate the potential risks associated with LLMs, they have primarily focused on English. In this study, we reveal the presence of multilingual jailbreak challenges within LLMs and consider two potential risky scenarios: unintentional and intentional. The unintentional scenario involves users querying LLMs using non-English prompts and inadvertently bypassing the safety mechanisms, while the intentional scenario concerns malicious users combining malicious instructions with multilingual prompts to deliberately attack LLMs. The experimental results reveal that in the unintentional scenario, the rate of unsafe content increases as the availability of languages decreases. Specifically, low-resource languages exhibit about three times the likelihood of encountering harmful content compared to high-resource languages, with both ChatGPT and GPT-4. In the intentional scenario, multilingual prompts can exacerbate the negative impact of malicious instructions, with astonishingly high rates of unsafe output: 80.92\% for ChatGPT and 40.71\% for GPT-4. To handle such a challenge in the multilingual context, we propose a novel \textsc{Self-Defense} framework that automatically generates multilingual training data for safety fine-tuning. Experimental results show that ChatGPT fine-tuned with such data can achieve a substantial reduction in unsafe content generation. Data is available at \url{https://github.com/DAMO-NLP-SG/multilingual-safety-for-LLMs}.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-10T09:44:06Z</published>
+    <arxiv:comment>ICLR 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yue Deng</name>
+    </author>
+    <author>
+      <name>Wenxuan Zhang</name>
+    </author>
+    <author>
+      <name>Sinno Jialin Pan</name>
+    </author>
+    <author>
+      <name>Lidong Bing</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.06387v3</id>
+    <title>Jailbreak and Guard Aligned Language Models with Only Few In-Context Demonstrations</title>
+    <updated>2024-05-25T07:01:15Z</updated>
+    <link href="https://arxiv.org/abs/2310.06387v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.06387v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have shown remarkable success in various tasks, yet their safety and the risk of generating harmful content remain pressing concerns. In this paper, we delve into the potential of In-Context Learning (ICL) to modulate the alignment of LLMs. Specifically, we propose the In-Context Attack (ICA) which employs harmful demonstrations to subvert LLMs, and the In-Context Defense (ICD) which bolsters model resilience through examples that demonstrate refusal to produce harmful responses. We offer theoretical insights to elucidate how a limited set of in-context demonstrations can pivotally influence the safety alignment of LLMs. Through extensive experiments, we demonstrate the efficacy of ICA and ICD in respectively elevating and mitigating the success rates of jailbreaking prompts. Our findings illuminate the profound influence of ICL on LLM behavior, opening new avenues for improving the safety of LLMs.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-10T07:50:29Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zeming Wei</name>
+    </author>
+    <author>
+      <name>Yifei Wang</name>
+    </author>
+    <author>
+      <name>Ang Li</name>
+    </author>
+    <author>
+      <name>Yichuan Mo</name>
+    </author>
+    <author>
+      <name>Yisen Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.03693v1</id>
+    <title>Fine-tuning Aligned Language Models Compromises Safety, Even When Users Do Not Intend To!</title>
+    <updated>2023-10-05T17:12:17Z</updated>
+    <link href="https://arxiv.org/abs/2310.03693v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.03693v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Optimizing large language models (LLMs) for downstream use cases often involves the customization of pre-trained LLMs through further fine-tuning. Meta's open release of Llama models and OpenAI's APIs for fine-tuning GPT-3.5 Turbo on custom datasets also encourage this practice. But, what are the safety costs associated with such custom fine-tuning? We note that while existing safety alignment infrastructures can restrict harmful behaviors of LLMs at inference time, they do not cover safety risks when fine-tuning privileges are extended to end-users. Our red teaming studies find that the safety alignment of LLMs can be compromised by fine-tuning with only a few adversarially designed training examples. For instance, we jailbreak GPT-3.5 Turbo's safety guardrails by fine-tuning it on only 10 such examples at a cost of less than $0.20 via OpenAI's APIs, making the model responsive to nearly any harmful instructions. Disconcertingly, our research also reveals that, even without malicious intent, simply fine-tuning with benign and commonly used datasets can also inadvertently degrade the safety alignment of LLMs, though to a lesser extent. These findings suggest that fine-tuning aligned LLMs introduces new safety risks that current safety infrastructures fall short of addressing -- even if a model's initial safety alignment is impeccable, it is not necessarily to be maintained after custom fine-tuning. We outline and critically analyze potential mitigations and advocate for further research efforts toward reinforcing safety protocols for the custom fine-tuning of aligned LLMs.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-05T17:12:17Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xiangyu Qi</name>
+    </author>
+    <author>
+      <name>Yi Zeng</name>
+    </author>
+    <author>
+      <name>Tinghao Xie</name>
+    </author>
+    <author>
+      <name>Pin-Yu Chen</name>
+    </author>
+    <author>
+      <name>Ruoxi Jia</name>
+    </author>
+    <author>
+      <name>Prateek Mittal</name>
+    </author>
+    <author>
+      <name>Peter Henderson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.02446v2</id>
+    <title>Low-Resource Languages Jailbreak GPT-4</title>
+    <updated>2024-01-27T22:54:52Z</updated>
+    <link href="https://arxiv.org/abs/2310.02446v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.02446v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>AI safety training and red-teaming of large language models (LLMs) are measures to mitigate the generation of unsafe content. Our work exposes the inherent cross-lingual vulnerability of these safety mechanisms, resulting from the linguistic inequality of safety training data, by successfully circumventing GPT-4's safeguard through translating unsafe English inputs into low-resource languages. On the AdvBenchmark, GPT-4 engages with the unsafe translated inputs and provides actionable items that can get the users towards their harmful goals 79% of the time, which is on par with or even surpassing state-of-the-art jailbreaking attacks. Other high-/mid-resource languages have significantly lower attack success rate, which suggests that the cross-lingual vulnerability mainly applies to low-resource languages. Previously, limited training on low-resource languages primarily affects speakers of those languages, causing technological disparities. However, our work highlights a crucial shift: this deficiency now poses a risk to all LLMs users. Publicly available translation APIs enable anyone to exploit LLMs' safety vulnerabilities. Therefore, our work calls for a more holistic red-teaming efforts to develop robust multilingual safeguards with wide language coverage.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-03T21:30:56Z</published>
+    <arxiv:comment>NeurIPS Workshop on Socially Responsible Language Modelling Research (SoLaR) 2023. Best Paper Award</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zheng-Xin Yong</name>
+    </author>
+    <author>
+      <name>Cristina Menghini</name>
+    </author>
+    <author>
+      <name>Stephen H. Bach</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2310.01386v2</id>
+    <title>Who is ChatGPT? Benchmarking LLMs' Psychological Portrayal Using PsychoBench</title>
+    <updated>2024-01-22T13:58:50Z</updated>
+    <link href="https://arxiv.org/abs/2310.01386v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2310.01386v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) have recently showcased their remarkable capacities, not only in natural language processing tasks but also across diverse domains such as clinical medicine, legal consultation, and education. LLMs become more than mere applications, evolving into assistants capable of addressing diverse user requests. This narrows the distinction between human beings and artificial intelligence agents, raising intriguing questions regarding the potential manifestation of personalities, temperaments, and emotions within LLMs. In this paper, we propose a framework, PsychoBench, for evaluating diverse psychological aspects of LLMs. Comprising thirteen scales commonly used in clinical psychology, PsychoBench further classifies these scales into four distinct categories: personality traits, interpersonal relationships, motivational tests, and emotional abilities. Our study examines five popular models, namely text-davinci-003, gpt-3.5-turbo, gpt-4, LLaMA-2-7b, and LLaMA-2-13b. Additionally, we employ a jailbreak approach to bypass the safety alignment protocols and test the intrinsic natures of LLMs. We have made PsychoBench openly accessible via https://github.com/CUHK-ARISE/PsychoBench.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-10-02T17:46:09Z</published>
+    <arxiv:comment>Accepted for ICLR 2024 Oral Presentation. 15 pages (main text) and 5 pages (appendix)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jen-tse Huang</name>
+    </author>
+    <author>
+      <name>Wenxuan Wang</name>
+    </author>
+    <author>
+      <name>Eric John Li</name>
+    </author>
+    <author>
+      <name>Man Ho Lam</name>
+    </author>
+    <author>
+      <name>Shujie Ren</name>
+    </author>
+    <author>
+      <name>Youliang Yuan</name>
+    </author>
+    <author>
+      <name>Wenxiang Jiao</name>
+    </author>
+    <author>
+      <name>Zhaopeng Tu</name>
+    </author>
+    <author>
+      <name>Michael R. Lyu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.11751v2</id>
+    <title>How Robust is Google's Bard to Adversarial Image Attacks?</title>
+    <updated>2023-10-14T12:56:13Z</updated>
+    <link href="https://arxiv.org/abs/2309.11751v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.11751v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Multimodal Large Language Models (MLLMs) that integrate text and other modalities (especially vision) have achieved unprecedented performance in various multimodal tasks. However, due to the unsolved adversarial robustness problem of vision models, MLLMs can have more severe safety and security risks by introducing the vision inputs. In this work, we study the adversarial robustness of Google's Bard, a competitive chatbot to ChatGPT that released its multimodal capability recently, to better understand the vulnerabilities of commercial MLLMs. By attacking white-box surrogate vision encoders or MLLMs, the generated adversarial examples can mislead Bard to output wrong image descriptions with a 22% success rate based solely on the transferability. We show that the adversarial examples can also attack other MLLMs, e.g., a 26% attack success rate against Bing Chat and a 86% attack success rate against ERNIE bot. Moreover, we identify two defense mechanisms of Bard, including face detection and toxicity detection of images. We design corresponding attacks to evade these defenses, demonstrating that the current defenses of Bard are also vulnerable. We hope this work can deepen our understanding on the robustness of MLLMs and facilitate future research on defenses. Our code is available at https://github.com/thu-ml/Attack-Bard.
+  Update: GPT-4V is available at October 2023. We further evaluate its robustness under the same set of adversarial examples, achieving a 45% attack success rate.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-21T03:24:30Z</published>
+    <arxiv:comment>Technical report</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yinpeng Dong</name>
+    </author>
+    <author>
+      <name>Huanran Chen</name>
+    </author>
+    <author>
+      <name>Jiawei Chen</name>
+    </author>
+    <author>
+      <name>Zhengwei Fang</name>
+    </author>
+    <author>
+      <name>Xiao Yang</name>
+    </author>
+    <author>
+      <name>Yichi Zhang</name>
+    </author>
+    <author>
+      <name>Yu Tian</name>
+    </author>
+    <author>
+      <name>Hang Su</name>
+    </author>
+    <author>
+      <name>Jun Zhu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.10253v4</id>
+    <title>GPTFUZZER: Red Teaming Large Language Models with Auto-Generated Jailbreak Prompts</title>
+    <updated>2024-06-27T16:01:27Z</updated>
+    <link href="https://arxiv.org/abs/2309.10253v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.10253v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have recently experienced tremendous popularity and are widely used from casual conversations to AI-driven programming. However, despite their considerable success, LLMs are not entirely reliable and can give detailed guidance on how to conduct harmful or illegal activities. While safety measures can reduce the risk of such outputs, adversarial jailbreak attacks can still exploit LLMs to produce harmful content. These jailbreak templates are typically manually crafted, making large-scale testing challenging.
+  In this paper, we introduce GPTFuzz, a novel black-box jailbreak fuzzing framework inspired by the AFL fuzzing framework. Instead of manual engineering, GPTFuzz automates the generation of jailbreak templates for red-teaming LLMs. At its core, GPTFuzz starts with human-written templates as initial seeds, then mutates them to produce new templates. We detail three key components of GPTFuzz: a seed selection strategy for balancing efficiency and variability, mutate operators for creating semantically equivalent or similar sentences, and a judgment model to assess the success of a jailbreak attack.
+  We evaluate GPTFuzz against various commercial and open-source LLMs, including ChatGPT, LLaMa-2, and Vicuna, under diverse attack scenarios. Our results indicate that GPTFuzz consistently produces jailbreak templates with a high success rate, surpassing human-crafted templates. Remarkably, GPTFuzz achieves over 90% attack success rates against ChatGPT and Llama-2 models, even with suboptimal initial seed templates. We anticipate that GPTFuzz will be instrumental for researchers and practitioners in examining LLM robustness and will encourage further exploration into enhancing LLM safety.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-19T02:19:48Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jiahao Yu</name>
+    </author>
+    <author>
+      <name>Xingwei Lin</name>
+    </author>
+    <author>
+      <name>Zheng Yu</name>
+    </author>
+    <author>
+      <name>Xinyu Xing</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.05274v2</id>
+    <title>FuzzLLM: A Novel and Universal Fuzzing Framework for Proactively Discovering Jailbreak Vulnerabilities in Large Language Models</title>
+    <updated>2024-04-14T15:39:41Z</updated>
+    <link href="https://arxiv.org/abs/2309.05274v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.05274v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Jailbreak vulnerabilities in Large Language Models (LLMs), which exploit meticulously crafted prompts to elicit content that violates service guidelines, have captured the attention of research communities. While model owners can defend against individual jailbreak prompts through safety training strategies, this relatively passive approach struggles to handle the broader category of similar jailbreaks. To tackle this issue, we introduce FuzzLLM, an automated fuzzing framework designed to proactively test and discover jailbreak vulnerabilities in LLMs. We utilize templates to capture the structural integrity of a prompt and isolate key features of a jailbreak class as constraints. By integrating different base classes into powerful combo attacks and varying the elements of constraints and prohibited questions, FuzzLLM enables efficient testing with reduced manual effort. Extensive experiments demonstrate FuzzLLM's effectiveness and comprehensiveness in vulnerability discovery across various LLMs.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-11T07:15:02Z</published>
+    <arxiv:comment>Publish by ICASSP 2024 on 3/18/2024; Extended Arxiv version</arxiv:comment>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Dongyu Yao</name>
+    </author>
+    <author>
+      <name>Jianshu Zhang</name>
+    </author>
+    <author>
+      <name>Ian G. Harris</name>
+    </author>
+    <author>
+      <name>Marcel Carlsson</name>
+    </author>
+    <arxiv:doi>10.1109/ICASSP48485.2024.10448041</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ICASSP48485.2024.10448041" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.09662v3</id>
+    <title>Red-Teaming Large Language Models using Chain of Utterances for Safety-Alignment</title>
+    <updated>2023-08-30T10:21:00Z</updated>
+    <link href="https://arxiv.org/abs/2308.09662v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.09662v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Larger language models (LLMs) have taken the world by storm with their massive multi-tasking capabilities simply by optimizing over a next-word prediction objective. With the emergence of their properties and encoded knowledge, the risk of LLMs producing harmful outputs increases, making them unfit for scalable deployment for the public. In this work, we propose a new safety evaluation benchmark RED-EVAL that carries out red-teaming. We show that even widely deployed models are susceptible to the Chain of Utterances-based (CoU) prompting, jailbreaking closed source LLM-based systems such as GPT-4 and ChatGPT to unethically respond to more than 65% and 73% of harmful queries. We also demonstrate the consistency of the RED-EVAL across 8 open-source LLMs in generating harmful responses in more than 86% of the red-teaming attempts. Next, we propose RED-INSTRUCT--An approach for the safety alignment of LLMs. It constitutes two phases: 1) HARMFULQA data collection: Leveraging CoU prompting, we collect a dataset that consists of 1.9K harmful questions covering a wide range of topics, 9.5K safe and 7.3K harmful conversations from ChatGPT; 2) SAFE-ALIGN: We demonstrate how the conversational dataset can be used for the safety alignment of LLMs by minimizing the negative log-likelihood over helpful responses and penalizing over harmful responses by gradient accent over sample loss. Our model STARLING, a fine-tuned Vicuna-7B, is observed to be more safely aligned when evaluated on RED-EVAL and HHH benchmarks while preserving the utility of the baseline models (TruthfulQA, MMLU, and BBH).</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-18T16:27:04Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Rishabh Bhardwaj</name>
+    </author>
+    <author>
+      <name>Soujanya Poria</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.07847v3</id>
+    <title>Robustness Over Time: Understanding Adversarial Examples' Effectiveness on Longitudinal Versions of Large Language Models</title>
+    <updated>2026-03-10T14:52:49Z</updated>
+    <link href="https://arxiv.org/abs/2308.07847v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.07847v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large Language Models (LLMs) undergo continuous updates to improve user experience. However, prior research on the security and safety implications of LLMs has primarily focused on their specific versions, overlooking the impact of successive LLM updates. This prompts the need for a holistic understanding of the risks in these different versions of LLMs. To fill this gap, in this paper, we conduct a longitudinal study to examine the adversarial robustness -- specifically misclassification, jailbreak, and hallucination -- of three prominent LLM families: GPT, Llama, and Qwen. Our study reveals that LLM updates do not consistently improve adversarial robustness as expected. For instance, a later version of GPT-3.5 degrades regarding misclassification and hallucination despite its improved resilience against jailbreaks. GPT-4 and GPT-4o demonstrate (incrementally) higher robustness overall. Larger Llama and Qwen models do not uniformly exhibit improved robustness across all three aspects studied. In addition, larger model sizes do not necessarily yield improved robustness. Minor updates lacking substantial robustness improvements can exacerbate existing issues rather than resolve them. We hope our study can offer valuable insights into navigating model updates and informed decisions in model development and usage.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-15T15:51:52Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Yugeng Liu</name>
+    </author>
+    <author>
+      <name>Tianshuo Cong</name>
+    </author>
+    <author>
+      <name>Zhengyu Zhao</name>
+    </author>
+    <author>
+      <name>Michael Backes</name>
+    </author>
+    <author>
+      <name>Yun Shen</name>
+    </author>
+    <author>
+      <name>Yang Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.08487v3</id>
+    <title>Latent Jailbreak: A Benchmark for Evaluating Text Safety and Output Robustness of Large Language Models</title>
+    <updated>2023-08-28T08:35:28Z</updated>
+    <link href="https://arxiv.org/abs/2307.08487v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.08487v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Considerable research efforts have been devoted to ensuring that large language models (LLMs) align with human values and generate safe text. However, an excessive focus on sensitivity to certain topics can compromise the model's robustness in following instructions, thereby impacting its overall performance in completing tasks. Previous benchmarks for jailbreaking LLMs have primarily focused on evaluating the safety of the models without considering their robustness. In this paper, we propose a benchmark that assesses both the safety and robustness of LLMs, emphasizing the need for a balanced approach. To comprehensively study text safety and output robustness, we introduce a latent jailbreak prompt dataset, each involving malicious instruction embedding. Specifically, we instruct the model to complete a regular task, such as translation, with the text to be translated containing malicious instructions. To further analyze safety and robustness, we design a hierarchical annotation framework. We present a systematic analysis of the safety and robustness of LLMs regarding the position of explicit normal instructions, word replacements (verbs in explicit normal instructions, target groups in malicious instructions, cue words for explicit normal instructions), and instruction replacements (different explicit normal instructions). Our results demonstrate that current LLMs not only prioritize certain instruction verbs but also exhibit varying jailbreak rates for different instruction verbs in explicit normal instructions. Code and data are available at https://github.com/qiuhuachuan/latent-jailbreak.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-17T13:49:52Z</published>
+    <arxiv:comment>Code and data are available at https://github.com/qiuhuachuan/latent-jailbreak</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Huachuan Qiu</name>
+    </author>
+    <author>
+      <name>Shuai Zhang</name>
+    </author>
+    <author>
+      <name>Anqi Li</name>
+    </author>
+    <author>
+      <name>Hongliang He</name>
+    </author>
+    <author>
+      <name>Zhenzhong Lan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.02483v1</id>
+    <title>Jailbroken: How Does LLM Safety Training Fail?</title>
+    <updated>2023-07-05T17:58:10Z</updated>
+    <link href="https://arxiv.org/abs/2307.02483v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.02483v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models trained for safety and harmlessness remain susceptible to adversarial misuse, as evidenced by the prevalence of "jailbreak" attacks on early releases of ChatGPT that elicit undesired behavior. Going beyond recognition of the issue, we investigate why such attacks succeed and how they can be created. We hypothesize two failure modes of safety training: competing objectives and mismatched generalization. Competing objectives arise when a model's capabilities and safety goals conflict, while mismatched generalization occurs when safety training fails to generalize to a domain for which capabilities exist. We use these failure modes to guide jailbreak design and then evaluate state-of-the-art models, including OpenAI's GPT-4 and Anthropic's Claude v1.3, against both existing and newly designed attacks. We find that vulnerabilities persist despite the extensive red-teaming and safety-training efforts behind these models. Notably, new attacks utilizing our failure modes succeed on every prompt in a collection of unsafe requests from the models' red-teaming evaluation sets and outperform existing ad hoc jailbreaks. Our analysis emphasizes the need for safety-capability parity -- that safety mechanisms should be as sophisticated as the underlying model -- and argues against the idea that scaling alone can resolve these safety failure modes.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-05T17:58:10Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Alexander Wei</name>
+    </author>
+    <author>
+      <name>Nika Haghtalab</name>
+    </author>
+    <author>
+      <name>Jacob Steinhardt</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.13213v2</id>
+    <title>Visual Adversarial Examples Jailbreak Aligned Large Language Models</title>
+    <updated>2023-08-16T22:38:55Z</updated>
+    <link href="https://arxiv.org/abs/2306.13213v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.13213v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, there has been a surge of interest in integrating vision into Large Language Models (LLMs), exemplified by Visual Language Models (VLMs) such as Flamingo and GPT-4. This paper sheds light on the security and safety implications of this trend. First, we underscore that the continuous and high-dimensional nature of the visual input makes it a weak link against adversarial attacks, representing an expanded attack surface of vision-integrated LLMs. Second, we highlight that the versatility of LLMs also presents visual attackers with a wider array of achievable adversarial objectives, extending the implications of security failures beyond mere misclassification. As an illustration, we present a case study in which we exploit visual adversarial examples to circumvent the safety guardrail of aligned LLMs with integrated vision. Intriguingly, we discover that a single visual adversarial example can universally jailbreak an aligned LLM, compelling it to heed a wide range of harmful instructions that it otherwise would not) and generate harmful content that transcends the narrow scope of a `few-shot' derogatory corpus initially employed to optimize the adversarial example. Our study underscores the escalating adversarial risks associated with the pursuit of multimodality. Our findings also connect the long-studied adversarial vulnerabilities of neural networks to the nascent field of AI alignment. The presented attack suggests a fundamental adversarial challenge for AI alignment, especially in light of the emerging trend toward multimodality in frontier foundation models.</summary>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-22T22:13:03Z</published>
+    <arxiv:primary_category term="cs.CR"/>
+    <author>
+      <name>Xiangyu Qi</name>
+    </author>
+    <author>
+      <name>Kaixuan Huang</name>
+    </author>
+    <author>
+      <name>Ashwinee Panda</name>
+    </author>
+    <author>
+      <name>Peter Henderson</name>
+    </author>
+    <author>
+      <name>Mengdi Wang</name>
+    </author>
+    <author>
+      <name>Prateek Mittal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.16934v2</id>
+    <title>On Evaluating Adversarial Robustness of Large Vision-Language Models</title>
+    <updated>2023-10-29T12:32:19Z</updated>
+    <link href="https://arxiv.org/abs/2305.16934v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.16934v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large vision-language models (VLMs) such as GPT-4 have achieved unprecedented performance in response generation, especially with visual inputs, enabling more creative and adaptable interaction than large language models such as ChatGPT. Nonetheless, multimodal generation exacerbates safety concerns, since adversaries may successfully evade the entire system by subtly manipulating the most vulnerable modality (e.g., vision). To this end, we propose evaluating the robustness of open-source large VLMs in the most realistic and high-risk setting, where adversaries have only black-box system access and seek to deceive the model into returning the targeted responses. In particular, we first craft targeted adversarial examples against pretrained models such as CLIP and BLIP, and then transfer these adversarial examples to other VLMs such as MiniGPT-4, LLaVA, UniDiffuser, BLIP-2, and Img2Prompt. In addition, we observe that black-box queries on these VLMs can further improve the effectiveness of targeted evasion, resulting in a surprisingly high success rate for generating targeted responses. Our findings provide a quantitative understanding regarding the adversarial vulnerability of large VLMs and call for a more thorough examination of their potential security flaws before deployment in practice. Code is at https://github.com/yunqing-me/AttackVLM.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-26T13:49:44Z</published>
+    <arxiv:comment>NeurIPS 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Yunqing Zhao</name>
+    </author>
+    <author>
+      <name>Tianyu Pang</name>
+    </author>
+    <author>
+      <name>Chao Du</name>
+    </author>
+    <author>
+      <name>Xiao Yang</name>
+    </author>
+    <author>
+      <name>Chongxuan Li</name>
+    </author>
+    <author>
+      <name>Ngai-Man Cheung</name>
+    </author>
+    <author>
+      <name>Min Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.11082v6</id>
+    <title>Fundamental Limitations of Alignment in Large Language Models</title>
+    <updated>2024-06-03T12:19:16Z</updated>
+    <link href="https://arxiv.org/abs/2304.11082v6" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.11082v6" rel="related" type="application/pdf" title="pdf"/>
+    <summary>An important aspect in developing language models that interact with humans is aligning their behavior to be useful and unharmful for their human users. This is usually achieved by tuning the model in a way that enhances desired behaviors and inhibits undesired ones, a process referred to as alignment. In this paper, we propose a theoretical approach called Behavior Expectation Bounds (BEB) which allows us to formally investigate several inherent characteristics and limitations of alignment in large language models. Importantly, we prove that within the limits of this framework, for any behavior that has a finite probability of being exhibited by the model, there exist prompts that can trigger the model into outputting this behavior, with probability that increases with the length of the prompt. This implies that any alignment process that attenuates an undesired behavior but does not remove it altogether, is not safe against adversarial prompting attacks. Furthermore, our framework hints at the mechanism by which leading alignment approaches such as reinforcement learning from human feedback make the LLM prone to being prompted into the undesired behaviors. This theoretical result is being experimentally demonstrated in large scale by the so called contemporary "chatGPT jailbreaks", where adversarial users trick the LLM into breaking its alignment guardrails by triggering it into acting as a malicious persona. Our results expose fundamental limitations in alignment of LLMs and bring to the forefront the need to devise reliable mechanisms for ensuring AI safety.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-19T17:50:09Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yotam Wolf</name>
+    </author>
+    <author>
+      <name>Noam Wies</name>
+    </author>
+    <author>
+      <name>Oshri Avnery</name>
+    </author>
+    <author>
+      <name>Yoav Levine</name>
+    </author>
+    <author>
+      <name>Amnon Shashua</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2304.05197v3</id>
+    <title>Multi-step Jailbreaking Privacy Attacks on ChatGPT</title>
+    <updated>2023-11-01T05:14:01Z</updated>
+    <link href="https://arxiv.org/abs/2304.05197v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2304.05197v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the rapid progress of large language models (LLMs), many downstream NLP tasks can be well solved given appropriate prompts. Though model developers and researchers work hard on dialog safety to avoid generating harmful content from LLMs, it is still challenging to steer AI-generated content (AIGC) for the human good. As powerful LLMs are devouring existing text data from various domains (e.g., GPT-3 is trained on 45TB texts), it is natural to doubt whether the private information is included in the training data and what privacy threats can these LLMs and their downstream applications bring. In this paper, we study the privacy threats from OpenAI's ChatGPT and the New Bing enhanced by ChatGPT and show that application-integrated LLMs may cause new privacy threats. To this end, we conduct extensive experiments to support our claims and discuss LLMs' privacy implications.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-04-11T13:05:04Z</published>
+    <arxiv:comment>Findings of EMNLP 2023. Updated with results on open-source LLMs</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Haoran Li</name>
+    </author>
+    <author>
+      <name>Dadi Guo</name>
+    </author>
+    <author>
+      <name>Wei Fan</name>
+    </author>
+    <author>
+      <name>Mingshi Xu</name>
+    </author>
+    <author>
+      <name>Jie Huang</name>
+    </author>
+    <author>
+      <name>Fanpu Meng</name>
+    </author>
+    <author>
+      <name>Yangqiu Song</name>
+    </author>
+  </entry>
+</feed>

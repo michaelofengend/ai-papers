@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2440,
+  "title": "Learning to Follow Directions in Street View",
+  "org": "deepmind",
+  "date": "2020-04-03",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/6849",
+  "abstract": "Navigating and understanding the real world remains a key challenge in machine learning and inspires a great variety of research in areas such as language grounding, planning, navigation and computer vision. We propose an instruction-following task that requires all of the above, and which combines the practicality of simulated environments with the challenges of ambiguous, noisy real world data. StreetNav is built on top of Google Street View and provides visually accurate environments representing real places. Agents are given driving instructions which they must learn to interpret in order to successfully navigate in this environment. Since humans equipped with driving instructions can readily navigate in previously unseen cities, we set a high bar and test our trained agents for similar cognitive capabilities. Although deep reinforcement learning (RL) methods are frequently evaluated only on data that closely follow the training distribution, our dataset extends to multiple cities and has a clean train/test separation. This allows for thorough testing of generalisation ability. This paper presents the StreetNav environment and tasks, models that establish strong baselines, and extensive analysis of the task and the trained agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2439,
+  "title": "Learning the Graphical Structure of Electronic Health Records with Graph Convolutional Transformer",
+  "org": "deepmind",
+  "date": "2020-04-03",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v34i01.5400",
+  "abstract": "Effective modeling of electronic health records (EHR) is rapidly becoming an important topic in both academia and industry. A recent study showed that using the graphical structure underlying EHR data (e.g. relationship between diagnoses and treatments) improves the performance of prediction tasks such as heart failure prediction. However, EHR data do not always contain complete structure information. Moreover, when it comes to claims data, structure information is completely unavailable to begin with. Under such circumstances, can we still do better than just treating EHR data as a flat-structured bag-of-features? In this paper, we study the possibility of jointly learning the hidden structure of EHR while performing supervised prediction tasks on EHR data. Specifically, we discuss that Transformer is a suitable basis model to learn the hidden EHR structure, and propose Graph Convolutional Transformer, which uses data statistics to guide the structure learning process. The proposed model consistently outperformed previous approaches empirically, on both synthetic data and publicly available EHR data, for various prediction tasks such as graph reconstruction and readmission prediction, indicating that it can serve as an effective general-purpose representation learning algorithm for EHR data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2438,
+  "title": "Improved Knowledge Distillation via Teacher Assistant",
+  "org": "deepmind",
+  "date": "2020-04-03",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/5963",
+  "abstract": "Despite the fact that deep neural networks are powerful models and achieve appealing results on many tasks, they are too large to be deployed on edge devices like smartphones or embedded sensor nodes. There have been efforts to compress these networks, and a popular method is knowledge distillation, where a large (teacher) pre-trained network is used to train a smaller (student) network. However, in this paper, we show that the student network performance degrades when the gap between student and teacher is large. Given a fixed student network, one cannot employ an arbitrarily large teacher, or in other words, a teacher can effectively transfer its knowledge to students up to a certain size, not smaller. To alleviate this shortcoming, we introduce multi-step knowledge distillation, which employs an intermediate-sized network (teacher assistant) to bridge the gap between the student and the teacher. Moreover, we study the effect of teacher assistant size and extend the framework to multi-step distillation. Theoretical analysis and extensive experiments on CIFAR-10,100 and ImageNet datasets and on CNN and ResNet architectures substantiate the effectiveness of our proposed approach.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2445,
+  "title": "Unveiling the predictive power of static structure in glassy systems",
+  "org": "deepmind",
+  "date": "2020-04-02",
+  "venue": "Nature Physics",
+  "url": "https://doi.org/10.1038/s41567-020-0842-8",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2838,
+  "title": "An Overview of Early Vision in InceptionV1",
+  "org": "openai",
+  "date": "2020-04-01",
+  "venue": "Distill",
+  "url": "http://distill.pub/2020/circuits/early-vision/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2446,
+  "title": "Secure and Scalable Document Similarity on Distributed Databases: Differential Privacy to the Rescue",
+  "org": "deepmind",
+  "date": "2020-04-01",
+  "venue": "Proceedings on Privacy Enhancing Technologies",
+  "url": "https://doi.org/10.2478/popets-2020-0024",
+  "abstract": "Abstract Privacy-preserving collaborative data analysis enables richer models than what each party can learn with their own data. Secure Multi-Party Computation (MPC) offers a robust cryptographic approach to this problem, and in fact several protocols have been proposed for various data analysis and machine learning tasks. In this work, we focus on secure similarity computation between text documents, and the application to k -nearest neighbors ( k -NN) classification. Due to its non-parametric nature, k -NN presents scalability challenges in the MPC setting. Previous work addresses these by introducing non-standard assumptions about the abilities of an attacker, for example by relying on non-colluding servers. In this work, we tackle the scalability challenge from a different angle, and instead introduce a secure preprocessing phase that reveals differentially private (DP) statistics about the data. This allows us to exploit the inherent sparsity of text data and significantly speed up all subsequent classifications.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2839,
+  "title": "Fiber: A Platform for Efficient Development and Distributed Training for Reinforcement Learning and Population-Based Methods",
+  "org": "openai",
+  "date": "2020-03-25",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2003.11164",
+  "abstract": "Recent advances in machine learning are consistently enabled by increasing amounts of computation. Reinforcement learning (RL) and population-based methods in particular pose unique challenges for efficiency and flexibility to the underlying distributed computing frameworks. These challenges include frequent interaction with simulations, the need for dynamic scaling, and the need for a user interface with low adoption cost and consistency across different backends. In this paper we address these challenges while still retaining development efficiency and flexibility for both research and practical applications by introducing Fiber, a scalable distributed computing framework for RL and population-based methods. Fiber aims to significantly expand the accessibility of large-scale parallel computation to users of otherwise complicated RL and population-based approaches without the need to for specialized computational expertise.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2840,
+  "title": "Evolutionary Population Curriculum for Scaling Multi-Agent Reinforcement\\n Learning",
+  "org": "openai",
+  "date": "2020-03-23",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2003.10423",
+  "abstract": "In multi-agent games, the complexity of the environment can grow\\nexponentially as the number of agents increases, so it is particularly\\nchallenging to learn good policies when the agent population is large. In this\\npaper, we introduce Evolutionary Population Curriculum (EPC), a curriculum\\nlearning paradigm that scales up Multi-Agent Reinforcement Learning (MARL) by\\nprogressively increasing the population of training agents in a stage-wise\\nmanner. Furthermore, EPC uses an evolutionary approach to fix an objective\\nmisalignment issue throughout the curriculum: agents successfully trained in an\\nearly stage with a small population are not necessarily the best candidates for\\nadapting to later stages with scaled populations. Concretely, EPC maintains\\nmultiple sets of agents in each stage, performs mix-and-match and fine-tuning\\nover these sets and promotes the sets of agents with the best adaptability to\\nthe next stage. We implement EPC on a popular MARL algorithm, MADDPG, and\\nempirically show that our approach consistently outperforms baselines by a\\nlarge margin as the number of agents grows exponentially.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2447,
+  "title": "Human dorsal anterior cingulate neurons signal conflict by amplifying task-relevant information",
+  "org": "deepmind",
+  "date": "2020-03-15",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2020.03.14.991745",
+  "abstract": "SUMMARY Hemodynamic activity in dorsal anterior cingulate cortex (dACC) correlates with conflict, suggesting it contributes to conflict processing. This correlation could be explained by multiple neural processes that can be disambiguated by population firing rates patterns. We used targeted dimensionality reduction to characterize activity of populations of single dACC neurons as humans performed a task that manipulates two forms of conflict. Although conflict enhanced firing rates, this enhancement did not come from a discrete population of domain-general conflict-encoding neurons, nor from a distinct conflict-encoding response axis. Nor was it the epiphenomenal consequence of simultaneous coactivation of action plans. Instead, conflict amplified the task-relevant information encoded across the neuronal population. Effects of conflict were weaker and more heterogeneous in the dorsolateral prefrontal cortex (dlPFC), suggesting that dACC’s role in conflict processing may be somewhat specialized. Overall, these results support the theory that conflict biases competition between sensorimotor transformation processes occurring in dACC.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2843,
+  "title": "Retrospective Analysis of the 2019 MineRL Competition on Sample Efficient Reinforcement Learning",
+  "org": "openai",
+  "date": "2020-03-10",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2003.05012",
+  "abstract": "To facilitate research in the direction of sample efficient reinforcement learning, we held the MineRL Competition on Sample Efficient Reinforcement Learning Using Human Priors at the Thirty-third Conference on Neural Information Processing Systems (NeurIPS 2019). The primary goal of this competition was to promote the development of algorithms that use human demonstrations alongside reinforcement learning to reduce the number of samples needed to solve complex, hierarchical, and sparse environments. We describe the competition, outlining the primary challenge, the competition design, and the resources that we provided to the participants. We provide an overview of the top solutions, each of which use deep reinforcement learning and/or imitation learning. We also discuss the impact of our organizational decisions on the competition and future directions for improvement.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2842,
+  "title": "Thread: Circuits",
+  "org": "openai",
+  "date": "2020-03-10",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00024",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2841,
+  "title": "Zoom In: An Introduction to Circuits",
+  "org": "openai",
+  "date": "2020-03-10",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00024.001",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2844,
+  "title": "Ethical Artificial Intelligence for Digital Health Organizations",
+  "org": "openai",
+  "date": "2020-03-07",
+  "venue": "Cureus",
+  "url": "https://doi.org/10.7759/cureus.7202",
+  "abstract": "This technical report describes the methods undertaken by a US-based Digital Health company (X2AI or X2 for short) to develop an ethical code for startup environments and other organizations delivering emotional artificial intelligence (AI) services, especially for mental health support. With a growing demand worldwide for scalable, affordable, and accessible health care solutions, the use of AI offers tremendous potential to improve emotional well-being. To realize this potential, it is imperative that AI service providers prioritize clear and consistent ethical guidelines that align with global considerations regarding user safety and privacy. This report offers a template for an ethical code that can be implemented by other emotional AI services and their affiliates. It includes practical guidelines for integrating support from clients, collaborators, and research partners. It also shows how existing ethical systems can inform the development of AI ethics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2448,
+  "title": "Simple and Scalable Epistemic Uncertainty Estimation Using a Single Deep Deterministic Neural Network",
+  "org": "deepmind",
+  "date": "2020-03-04",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2003.02037",
+  "abstract": "We propose a method for training a deterministic deep model that can find and reject out of distribution data points at test time with a single forward pass. Our approach, deterministic uncertainty quantification (DUQ), builds upon ideas of RBF networks. We scale training in these with a novel loss function and centroid updating scheme and match the accuracy of softmax models. By enforcing detectability of changes in the input using a gradient penalty, we are able to reliably detect out of distribution data. Our uncertainty quantification scales well to large datasets, and using a single model, we improve upon or match Deep Ensembles in out of distribution detection on notable difficult dataset pairs such as FashionMNIST vs. MNIST, and CIFAR-10 vs. SVHN.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2897,
+  "title": "Original Distill Circuits Thread",
+  "org": "openai",
+  "date": "2020-03-01",
+  "venue": "Distill",
+  "url": "https://distill.pub/2020/circuits/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2449,
+  "title": "Applying machine learning optimization methods to the production of a quantum gas",
+  "org": "deepmind",
+  "date": "2020-02-25",
+  "venue": "Machine Learning Science and Technology",
+  "url": "https://arxiv.org/abs/1908.08495",
+  "abstract": "Abstract We apply three machine learning strategies to optimize the atomic cooling processes utilized in the production of a Bose–Einstein condensate (BEC). For the first time, we optimize both laser cooling and evaporative cooling mechanisms simultaneously. We present the results of an evolutionary optimization method (differential evolution), a method based on non-parametric inference (Gaussian process regression) and a gradient-based function approximator (artificial neural network). Online optimization is performed using no prior knowledge of the apparatus, and the learner succeeds in creating a BEC from completely randomized initial parameters. Optimizing these cooling processes results in a factor of four increase in BEC atom number compared to our manually-optimized parameters. This automated approach can maintain close-to-optimal performance in long-term operation. Furthermore, we show that machine learning techniques can be used to identify the main sources of instability within the apparatus.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2450,
+  "title": "Robust Pruning at Initialization",
+  "org": "deepmind",
+  "date": "2020-02-19",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2002.08797",
+  "abstract": "Overparameterized Neural Networks (NN) display state-of-the-art performance. However, there is a growing need for smaller, energy-efficient, neural networks tobe able to use machine learning applications on devices with limited computational resources. A popular approach consists of using pruning techniques. While these techniques have traditionally focused on pruning pre-trained NN (LeCun et al.,1990; Hassibi et al., 1993), recent work by Lee et al. (2018) has shown promising results when pruning at initialization. However, for Deep NNs, such procedures remain unsatisfactory as the resulting pruned networks can be difficult to train and, for instance, they do not prevent one layer from being fully pruned. In this paper, we provide a comprehensive theoretical analysis of Magnitude and Gradient based pruning at initialization and training of sparse architectures. This allows us to propose novel principled approaches which we validate experimentally on a variety of NN architectures.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2451,
+  "title": "Distributional Sliced-Wasserstein and Applications to Generative Modeling",
+  "org": "deepmind",
+  "date": "2020-02-18",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2002.07367",
+  "abstract": "Sliced-Wasserstein distance (SW) and its variant, Max Sliced-Wasserstein distance (Max-SW), have been used widely in the recent years due to their fast computation and scalability even when the probability measures lie in a very high dimensional space. However, SW requires many unnecessary projection samples to approximate its value while Max-SW only uses the most important projection, which ignores the information of other useful directions. In order to account for these weaknesses, we propose a novel distance, named Distributional Sliced-Wasserstein distance (DSW), that finds an optimal distribution over projections that can balance between exploring distinctive projecting directions and the informativeness of projections themselves. We show that the DSW is a generalization of Max-SW, and it can be computed efficiently by searching for the optimal push-forward measure over a set of probability measures over the unit sphere satisfying certain regularizing constraints that favor distinct directions. Finally, we conduct extensive experiments with large-scale datasets to demonstrate the favorable performances of the proposed distances over the previous sliced-based distances in generative modeling applications.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2452,
+  "title": "Universal Value Density Estimation for Imitation Learning and Goal-Conditioned Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-02-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2002.06473",
+  "abstract": "This work considers two distinct settings: imitation learning and goal-conditioned reinforcement learning. In either case, effective solutions require the agent to reliably reach a specified state (a goal), or set of states (a demonstration). Drawing a connection between probabilistic long-term dynamics and the desired value function, this work introduces an approach which utilizes recent advances in density estimation to effectively learn to reach a given state. As our first contribution, we use this approach for goal-conditioned reinforcement learning and show that it is both efficient and does not suffer from hindsight bias in stochastic domains. As our second contribution, we extend the approach to imitation learning and show that it achieves state-of-the art demonstration sample-efficiency on standard benchmark tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2453,
+  "title": "On Contrastive Learning for Likelihood-free Inference",
+  "org": "deepmind",
+  "date": "2020-02-10",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2002.03712",
+  "abstract": "Likelihood-free methods perform parameter inference in stochastic simulator models where evaluating the likelihood is intractable but sampling synthetic data is possible. One class of methods for this likelihood-free problem uses a classifier to distinguish between pairs of parameter-observation samples generated using the simulator and pairs sampled from some reference distribution, which implicitly learns a density ratio proportional to the likelihood. Another popular class of methods fits a conditional distribution to the parameter posterior directly, and a particular recent variant allows for the use of flexible neural density estimators for this task. In this work, we show that both of these approaches can be unified under a general contrastive learning scheme, and clarify how they should be run and compared.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2454,
+  "title": "Special Issue “On Defining Artificial Intelligence”—Commentaries and Author’s Response",
+  "org": "deepmind",
+  "date": "2020-02-01",
+  "venue": "Journal of Artificial General Intelligence",
+  "url": "https://doi.org/10.2478/jagi-2020-0003",
+  "abstract": "Sciendo provides publishing services and solutions to academic and professional organizations and individual authors. We publish journals, books, conference proceedings and a variety of other publications.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2455,
+  "title": "Silly rules improve the capacity of agents to learn stable enforcement\\n and compliance behaviors",
+  "org": "deepmind",
+  "date": "2020-01-25",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2001.09318",
+  "abstract": "How can societies learn to enforce and comply with social norms? Here we\\ninvestigate the learning dynamics and emergence of compliance and enforcement\\nof social norms in a foraging game, implemented in a multi-agent reinforcement\\nlearning setting. In this spatiotemporally extended game, individuals are\\nincentivized to implement complex berry-foraging policies and punish\\ntransgressions against social taboos covering specific berry types. We show\\nthat agents benefit when eating poisonous berries is taboo, meaning the\\nbehavior is punished by other agents, as this helps overcome a\\ncredit-assignment problem in discovering delayed health effects. Critically,\\nhowever, we also show that introducing an additional taboo, which results in\\npunishment for eating a harmless berry, improves the rate and stability with\\nwhich agents learn to punish taboo violations and comply with taboos.\\nCounterintuitively, our results show that an arbitrary taboo (a \"silly rule\")\\ncan enhance social learning dynamics and achieve better outcomes in the middle\\nstages of learning. We discuss the results in the context of studying\\nnormativity as a group-level emergent phenomenon.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 1059,
+  "title": "Scaling laws for neural language models",
+  "org": "openai",
+  "date": "2020-01-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/scaling-laws-for-neural-language-models/",
+  "abstract": "This paper develops a transport-validity theory for agentic AI interventions that are first screened on small systems and later considered for frontier-scale deployment. Rather than predicting absolute frontier performance, it asks when a comparative gain observed at small scale can be carried forward without overclaiming. The analysis targets an explicitly delimited class of operationally isolatable interventions whose effects can be compiled from logged event-local channels with bounded spillover and replayable extraction maps. The paper proves structured failure modes for naive extrapolation, including sign reversal under bottleneck-weight shift and the vacuity of observable closeness when a descriptor omits a sign-relevant coordinate. It then develops a constructive positive framework based on executable lower certificates: a two-stage compiler architecture, replayable identified sets for stage-one mode laws, descriptor-language growth audits, witness-cover transport certificates, branch-local evaluation bridges, confidence-calibrated audit rules, and portfolio-level frontier allocation under interaction risk. The result is a finite, machine-readable, and operational framework for deciding which small-scale architectural improvements—such as decomposition, tool routing, memory policy, verifier coupling, orchestration, and related inference-time interventions—deserve expensive frontier trials, and how scarce frontier budget should be allocated among them. The paper does no",
+  "needs_fetch": false
+ },
+ {
+  "id": 2457,
+  "title": "A distributional code for value in dopamine-based reinforcement learning",
+  "org": "deepmind",
+  "date": "2020-01-15",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-019-1924-6",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2456,
+  "title": "Improved protein structure prediction using potentials from deep learning",
+  "org": "deepmind",
+  "date": "2020-01-15",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-019-1923-7",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2458,
+  "title": "Predicting optical coherence tomography-derived diabetic macular edema grades from fundus photographs using deep learning",
+  "org": "deepmind",
+  "date": "2020-01-08",
+  "venue": "Nature Communications",
+  "url": "https://arxiv.org/abs/1810.10342",
+  "abstract": "Center-involved diabetic macular edema (ci-DME) is a major cause of vision loss. Although the gold standard for diagnosis involves 3D imaging, 2D imaging by fundus photography is usually used in screening settings, resulting in high false-positive and false-negative calls. To address this, we train a deep learning model to predict ci-DME from fundus photographs, with an ROC-AUC of 0.89 (95% CI: 0.87-0.91), corresponding to 85% sensitivity at 80% specificity. In comparison, retinal specialists have similar sensitivities (82-85%), but only half the specificity (45-50%, p < 0.001). Our model can also detect the presence of intraretinal fluid (AUC: 0.81; 95% CI: 0.81-0.86) and subretinal fluid (AUC 0.88; 95% CI: 0.85-0.91). Using deep learning to make predictions via simple 2D images without sophisticated 3D-imaging equipment and with better than specialist performance, has broad relevance to many other applications in medical imaging.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2846,
+  "title": "Making Gender Visible in Digital ICTs and International Security",
+  "org": "openai",
+  "date": "2020-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.4170993",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2845,
+  "title": "Novel Dense Subgraph Discovery Primitives: Risk Aversion and Exclusion Queries",
+  "org": "openai",
+  "date": "2020-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://arxiv.org/abs/1904.08178",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2488,
+  "title": "Morphologically Aware Word-Level Translation",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2011.07593",
+  "abstract": "We propose a novel morphologically aware probability model for bilingual lexicon induction, which jointly models lexeme translation and inflectional morphology in a structured way. Our model exploits the basic linguistic intuition that the lexeme is the key lexical unit of meaning, while inflectional morphology provides additional syntactic information. This approach leads to substantial performance improvements-19% average improvement in accuracy across 6 language pairs over the state of the art in the supervised setting and 16% in the weakly supervised setting. As another contribution, we highlight issues associated with modern BLI that stem from ignoring inflectional morphology, and propose three suggestions for improving the task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2487,
+  "title": "Artificial and Computational Intelligence in Games: Revolutions in Computational Game AI (Dagstuhl Seminar 19511)",
+  "org": "deepmind",
+  "date": "2020-01-01",
+  "venue": "DROPS (Schloss Dagstuhl – Leibniz Center for Informatics)",
+  "url": "https://drops.dagstuhl.de/entities/document/10.4230/DagRep.9.12.67",
+  "abstract": "The 2016 success of Google DeepMind’s AlphaGo, which defeated the Go world champion, and its follow-up program AlphaZero, has sparked a renewed interest of the general public in computational game playing. Moreover, game AI researchers build upon these results to construct stronger game AI implementations. While there is high enthusiasm for the rapid advances to the state-of-the-art in game AI, most researchers realize that they do not suffice to solve many of the challenges in game AI which have been recognized for decades. The Dagstuhl Seminar 19511 \"Artificial and Computational Intelligence in Games: Revolutions in Computational Game AI\" seminar was aimed at getting a clear view on the unsolved problems in game AI, determining which problems remain outside the reach of the state-of-the-art, and coming up with novel approaches to game AI construction to deal with these unsolved problems. This report documents the program and its outcomes.",
+  "needs_fetch": false
+ }
+]

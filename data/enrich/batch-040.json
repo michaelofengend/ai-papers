@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1607,
+  "title": "X-point radiator and power exhaust control in configurations with multiple X-points in TCV",
+  "org": "deepmind",
+  "date": "2024-07-01",
+  "venue": "Physics of Plasmas",
+  "url": "https://doi.org/10.1063/5.0201401",
+  "abstract": "Novel power exhaust solutions are being developed to address the challenge of integrating a high performance fusion core plasma with a well-protected divertor, if the single null configuration does not scale to a reactor device. This work aims to elucidate the physics mechanisms responsible for the reduction in peak target heat flux in configurations with multiple X-points. Experimental studies on tokamak à configuration variable in the Snowflake Minus configuration are extended to a novel configuration with three nearby divertor X-points, termed a Jellyfish, allowing us to enhance the expected effects of an additional divertor X-point. These studies are complemented by simplified 1D scrape-off layer (SOL) modeling with the SPLEND1D code and by interpretative modeling with the edge transport code EMC3-EIRENE applied to the Snowflake Minus, to further elucidate some of the key underlying processes. We find that configurations with multiple nearby X-points, and increased near-SOL connection length, exhibit reductions in peak target heat flux and an earlier detachment onset compared to a reference single null configuration, consistent with expectations from SPLEND1D. A strong correlation is experimentally observed between the radially localized radiated power and connection length. While this does not necessarily map to higher total divertor radiative losses for configurations with multiple X-points, it can, at least, provide some control over the radial position of the spatial ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1606,
+  "title": "Birds, bats and beyond: evaluating generalization in bioacoustics models",
+  "org": "deepmind",
+  "date": "2024-07-01",
+  "venue": "Frontiers in Bird Science",
+  "url": "https://doi.org/10.3389/fbirs.2024.1369756",
+  "abstract": "In the context of passive acoustic monitoring (PAM) better models are needed to reliably gain insights from large amounts of raw, unlabeled data. Bioacoustics foundation models, which are general-purpose, adaptable models that can be used for a wide range of downstream tasks, are an effective way to meet this need. Measuring the capabilities of such models is essential for their development, but the design of robust evaluation procedures is a complex process. In this review we discuss a variety of fields that are relevant for the evaluation of bioacoustics models, such as sound event detection, machine learning metrics, and transfer learning (including topics such as few-shot learning and domain generalization). We contextualize these topics using the particularities of bioacoustics data, which is characterized by large amounts of noise, strong class imbalance, and distribution shifts (differences in the data between training and deployment stages). Our hope is that these insights will help to inform the design of evaluation protocols that can more accurately predict the ability of bioacoustics models to be deployed reliably in a wide variety of settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 86,
+  "title": "Circuits Updates — July 2024",
+  "org": "anthropic",
+  "date": "2024-07-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/july-update/index.html",
+  "abstract": "We report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1610,
+  "title": "Do LLMs Meet the Needs of Software Tutorial Writers? Opportunities and Design Implications",
+  "org": "deepmind",
+  "date": "2024-06-29",
+  "venue": "Designing Interactive Systems Conference",
+  "url": "https://doi.org/10.1145/3643834.3660692",
+  "abstract": "Creating software tutorials involves developing accurate code examples and explanatory text that engages and informs the reader. Large Language Models (LLMs) demonstrate a strong capacity to generate both text and code, but their potential to assist tutorial writing is unknown. By interviewing and observing seven experienced writers using OpenAI playground as an exploration environment, we uncover design opportunities for leveraging LLMs in software tutorial writing. Our findings reveal background research, resource creation, and maintaining quality standards as critical areas where LLMs could significantly assist writers. We observe how tutorial writers generated tutorial content while exploring LLMs’ capabilities, formulating prompts, verifying LLM outputs, and reflecting on interaction goals and strategies. Our observation highlights that the unpredictability of LLM outputs and unintuitive interface design contributed to skepticism about LLM’s utility. Informed by these results, we contribute recommendations for designing LLM-based tutorial writing tools to mitigate usability challenges and harness LLMs’ full potential.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1609,
+  "title": "DACAPO: Accelerating Continuous Learning in Autonomous Systems for Video Analytics",
+  "org": "deepmind",
+  "date": "2024-06-29",
+  "venue": null,
+  "url": "https://doi.org/10.1109/isca59077.2024.00093",
+  "abstract": "Deep neural network (DNN) video analytics is crucial for autonomous systems such as self-driving vehicles, unmanned aerial vehicles (UAVs), and security robots. However, real-world deployment faces challenges due to their limited computational resources and battery power. To tackle these challenges, continuous learning exploits a lightweight “student” model at deployment (inference), leverages a larger “teacher” model for labeling sampled data (labeling), and continuously retrains the student model to adapt to changing scenarios (retraining). This paper highlights the limitations in state-of-theart continuous learning systems: (1) they focus on computations for retraining, while overlooking the compute needs for inference and labeling, (2) they rely on power-hungry GPUs, unsuitable for battery-operated autonomous systems, and (3) they are located on a remote centralized server, intended for multi-tenant scenarios, again unsuitable for autonomous systems due to privacy, network availability, and latency concerns. We propose a hardwarealgorithm co-designed solution for continuous learning, DACAPO, that enables autonomous systems to perform concurrent executions of inference, labeling, and retraining in a performant and energy-efficient manner. DACapo comprises (1) a spatiallypartitionable and precision-flexible accelerator enabling parallel execution of kernels on sub-accelerators at their respective precisions, and (2) a spatiotemporal resource allocation algorithm that strate",
+  "needs_fetch": false
+ },
+ {
+  "id": 395,
+  "title": "LLM Critics Help Catch LLM Bugs",
+  "org": "deepmind",
+  "date": "2024-06-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.00215",
+  "abstract": "Reinforcement learning from human feedback (RLHF) is fundamentally limited by the capacity of humans to correctly evaluate model output. To improve human evaluation ability and overcome that limitation this work trains \"critic\" models that help humans to more accurately evaluate model-written code. These critics are themselves LLMs trained with RLHF to write natural language feedback highlighting problems in code from real-world assistant tasks. On code containing naturally occurring LLM errors model-written critiques are preferred over human critiques in 63% of cases, and human evaluation finds that models catch more bugs than human contractors paid for code review. We further confirm that our fine-tuned LLM critics can successfully identify hundreds of errors in ChatGPT training data rated as \"flawless\", even though the majority of those tasks are non-code tasks and thus out-of-distribution for the critic model. Critics can have limitations of their own, including hallucinated bugs that could mislead humans into making mistakes they might have otherwise avoided, but human-machine teams of critics and contractors catch similar numbers of bugs to LLM critics while hallucinating less than LLMs alone.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1003,
+  "title": "Finding GPT-4’s mistakes with GPT-4",
+  "org": "openai",
+  "date": "2024-06-27",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/finding-gpt4s-mistakes-with-gpt-4/",
+  "abstract": "CriticGPT, a model based on GPT-4, writes critiques of ChatGPT responses to help human trainers spot mistakes during RLHF",
+  "needs_fetch": false
+ },
+ {
+  "id": 396,
+  "title": "Improving Weak-to-Strong Generalization with Reliability-Aware Alignment",
+  "org": "other",
+  "date": "2024-06-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.19032",
+  "abstract": "Large language models (LLMs) are now rapidly advancing and surpassing human abilities on many natural language tasks. However, aligning these super-human LLMs with human knowledge remains challenging because the supervision signals from human annotators may be wrong. This issue, known as the \"super-alignment\" problem, requires enhancing weak-to-strong generalization, where a strong LLM must generalize from imperfect supervision provided by a weaker source. To address this issue, we propose an approach to improve weak-to-strong generalization by involving the reliability of weak supervision signals in the alignment process. In our method, we query the weak supervisor for multiple answers, estimate the answer reliability, and enhance the alignment process by filtering out uncertain data or re-weighting reliable data. Experiments on four datasets demonstrate that our methods effectively identify the quality of weak labels and significantly enhance weak-to-strong generalization. Our work presents effective techniques for error-robust model alignment, reducing error propagation from noisy supervision and enhancing the accuracy and reliability of LLMs. Codes are publicly available at http://github.com/Irenehere/ReliableAlignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 528,
+  "title": "Jailbreaking LLMs with Arabic Transliteration and Arabizi",
+  "org": "other",
+  "date": "2024-06-26",
+  "venue": "EMNLP 2024",
+  "url": "https://arxiv.org/abs/2406.18725",
+  "abstract": "This study identifies the potential vulnerabilities of Large Language Models (LLMs) to 'jailbreak' attacks, specifically focusing on the Arabic language and its various forms. While most research has concentrated on English-based prompt manipulation, our investigation broadens the scope to investigate the Arabic language. We initially tested the AdvBench benchmark in Standardized Arabic, finding that even with prompt manipulation techniques like prefix injection, it was insufficient to provoke LLMs into generating unsafe content. However, when using Arabic transliteration and chatspeak (or arabizi), we found that unsafe content could be produced on platforms like OpenAI GPT-4 and Anthropic Claude 3 Sonnet. Our findings suggest that using Arabic and its various forms could expose information that might remain hidden, potentially increasing the risk of jailbreak attacks. We hypothesize that this exposure could be due to the model's learned connection to specific words, highlighting the need for more comprehensive safety training across all language forms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 600,
+  "title": "Interpreting Attention Layer Outputs with Sparse Autoencoders",
+  "org": "deepmind",
+  "date": "2024-06-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.17759",
+  "abstract": "Decomposing model activations into interpretable components is a key open problem in mechanistic interpretability. Sparse autoencoders (SAEs) are a popular method for decomposing the internal activations of trained transformers into sparse, interpretable features, and have been applied to MLP layers and the residual stream. In this work we train SAEs on attention layer outputs and show that also here SAEs find a sparse, interpretable decomposition. We demonstrate this on transformers from several model families and up to 2B parameters. We perform a qualitative study of the features computed by attention layers, and find multiple families: long-range context, short-range context and induction features. We qualitatively study the role of every head in GPT-2 Small, and estimate that at least 90% of the heads are polysemantic, i.e. have multiple unrelated roles. Further, we show that Sparse Autoencoders are a useful tool that enable researchers to explain model behavior in greater detail than prior work. For example, we explore the mystery of why models have so many seemingly redundant induction heads, use SAEs to motivate the hypothesis that some are long-prefix whereas others are short-prefix, and confirm this with more rigorous analysis. We use our SAEs to analyze the computation performed by the Indirect Object Identification circuit (Wang et al.), validating that the SAEs find causally meaningful intermediate variables, and deepening our understanding of the semantics of the",
+  "needs_fetch": false
+ },
+ {
+  "id": 2727,
+  "title": "Programming patchy particles for materials assembly design",
+  "org": "openai",
+  "date": "2024-06-24",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2311891121",
+  "abstract": "Direct design of complex functional materials would revolutionize technologies ranging from printable organs to novel clean energy devices. However, even incremental steps toward designing functional materials have proven challenging. If the material is constructed from highly complex components, the design space of materials properties rapidly becomes too computationally expensive to search. On the other hand, very simple components such as uniform spherical particles are not powerful enough to capture rich functional behavior. Here, we introduce a differentiable materials design model with components that are simple enough to design yet powerful enough to capture complex materials properties: rigid bodies composed of spherical particles with directional interactions (patchy particles). We showcase the method with self-assembly designs ranging from open lattices to self-limiting clusters, all of which are notoriously challenging design goals to achieve using purely isotropic particles. By directly optimizing over the location and interaction of the patches on patchy particles using gradient descent, we dramatically reduce the computation time for finding the optimal building blocks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 601,
+  "title": "Confidence Regulation Neurons in Language Models",
+  "org": "deepmind",
+  "date": "2024-06-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.16254",
+  "abstract": "Despite their widespread use, the mechanisms by which large language models (LLMs) represent and regulate uncertainty in next-token predictions remain largely unexplored. This study investigates two critical components believed to influence this uncertainty: the recently discovered entropy neurons and a new set of components that we term token frequency neurons. Entropy neurons are characterized by an unusually high weight norm and influence the final layer normalization (LayerNorm) scale to effectively scale down the logits. Our work shows that entropy neurons operate by writing onto an unembedding null space, allowing them to impact the residual stream norm with minimal direct effect on the logits themselves. We observe the presence of entropy neurons across a range of models, up to 7 billion parameters. On the other hand, token frequency neurons, which we discover and describe here for the first time, boost or suppress each token's logit proportionally to its log frequency, thereby shifting the output distribution towards or away from the unigram distribution. Finally, we present a detailed case study where entropy neurons actively manage confidence in the setting of induction, i.e. detecting and continuing repeated subsequences.",
+  "needs_fetch": false
+ },
+ {
+  "id": 397,
+  "title": "Public Constitutional AI",
+  "org": "other",
+  "date": "2024-06-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.16696",
+  "abstract": "We are increasingly subjected to the power of AI authorities. As AI decisions become inescapable, entering domains such as healthcare, education, and law, we must confront a vital question: how can we ensure AI systems have the legitimacy necessary for effective governance? This essay argues that to secure AI legitimacy, we need methods that engage the public in designing and constraining AI systems, ensuring these technologies reflect the community's shared values. Constitutional AI, proposed by Anthropic, represents a step towards this goal, offering a model for democratic control of AI. However, while Constitutional AI's commitment to hardcoding explicit principles into AI models enhances transparency and accountability, it falls short in two crucial aspects: addressing the opacity of individual AI decisions and fostering genuine democratic legitimacy. To overcome these limitations, this essay proposes \"Public Constitutional AI.\" This approach envisions a participatory process where diverse stakeholders, including ordinary citizens, deliberate on the principles guiding AI development. The resulting \"AI Constitution\" would carry the legitimacy of popular authorship, grounding AI governance in the public will. Furthermore, the essay proposes \"AI Courts\" to develop \"AI case law,\" providing concrete examples for operationalizing constitutional principles in AI training. This evolving combination of constitutional principles and case law aims to make AI governance more responsi",
+  "needs_fetch": false
+ },
+ {
+  "id": 1612,
+  "title": "The origin and function of external representations",
+  "org": "deepmind",
+  "date": "2024-06-21",
+  "venue": "Adaptive Behavior",
+  "url": "https://doi.org/10.1177/10597123241262534",
+  "abstract": "External representations ( ERs) are objects or performances in the world whose proper function is to communicate about other things in the world. Why and how did we make them, and what do they give us? We outline a simple framework for thinking about ERs grounded in modern machine learning. We propose a minimal set of neural mechanisms needed for open-ended ER production. Our constructivist enactive view contrasts with nativist views which propose specialist neural modules requiring symbolic internal representations. We propose a plausible set of (biological and cultural) evolutionary steps to full Gricean symbolic communication via a set of increasingly complex enactive algorithms for ER production. A pragmatic space of games is defined, which includes not only fully cooperative language games but also science, art, and evolved signal manipulation games. This space is defined by the complexity of learning needed by sender and receiver. We propose that one important step towards open-ended ER use was selection for bush reading, which like mind-reading is an inferential process requiring complex contextual and syntactic understanding of cues about events displaced in space and time. Bush reading pre-adapted receivers to be receptive, competent, and perspicacious interpreters of later intentionally produced signals about hidden topics such as felt mental states. This paved the way for minimally Gricean communication, which subsequently could be bootstrapped into explicit theori",
+  "needs_fetch": false
+ },
+ {
+  "id": 1611,
+  "title": "Using games to understand the mind",
+  "org": "deepmind",
+  "date": "2024-06-21",
+  "venue": "Nature Human Behaviour",
+  "url": "https://doi.org/10.1038/s41562-024-01878-9",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2728,
+  "title": "GPTs are GPTs: Labor market impact potential of LLMs",
+  "org": "openai",
+  "date": "2024-06-20",
+  "venue": "Science",
+  "url": "https://doi.org/10.1126/science.adj0998",
+  "abstract": "Research is needed to estimate how jobs may be affected.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1006,
+  "title": "A Holistic Approach to Undesired Content Detection in the Real World",
+  "org": "openai",
+  "date": "2024-06-20",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/a-holistic-approach-to-undesired-content-detection-in-the-real-world/",
+  "abstract": "We present a holistic approach to building a robust and useful natural language classification system for real-world content moderation. The success of such a system relies on a chain of carefully designed and executed steps, including the design of content taxonomies and labeling instructions, data quality control, an active learning pipeline to capture rare events, and a variety of methods to make the model robust and to avoid overfitting. Our moderation system is trained to detect a broad set of categories of undesired content, including sexual content, hateful content, violence, self-harm, and harassment. This approach generalizes to a wide range of different content taxonomies and can be used to create high-quality content classifiers that outperform off-the-shelf models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1005,
+  "title": "Consistency Models",
+  "org": "openai",
+  "date": "2024-06-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/consistency-models/",
+  "abstract": "Diffusion models have significantly advanced the fields of image, audio, and video generation, but they depend on an iterative sampling process that causes slow generation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1004,
+  "title": "Improved Techniques for Training Consistency Models",
+  "org": "openai",
+  "date": "2024-06-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/improved-techniques-for-training-consistency-models/",
+  "abstract": "Consistency models are a nascent family of generative models that can sample high quality data in one step without the need for adversarial training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1613,
+  "title": "Neural network variational Monte Carlo for positronic chemistry",
+  "org": "deepmind",
+  "date": "2024-06-18",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-024-49290-1",
+  "abstract": "Quantum chemical calculations of the ground-state properties of positron-molecule complexes are challenging. The main difficulty lies in employing an appropriate basis set for representing the coalescence between electrons and a positron. Here, we tackle this problem with the recently developed Fermionic neural network (FermiNet) wavefunction, which does not depend on a basis set. We find that FermiNet produces highly accurate, in some cases state-of-the-art, ground-state energies across a range of atoms and small molecules with a wide variety of qualitatively distinct positron binding characteristics. We calculate the binding energy of the challenging non-polar benzene molecule, finding good agreement with the experimental value, and obtain annihilation rates which compare favourably with those obtained with explicitly correlated Gaussian wavefunctions. Our results demonstrate a generic advantage of neural network wavefunction-based methods and broaden their applicability to systems beyond the standard molecular Hamiltonian.",
+  "needs_fetch": false
+ },
+ {
+  "id": 529,
+  "title": "Navigating the Labyrinth: Evaluating LLMs' Ability to Reason About Search Problems",
+  "org": "other",
+  "date": "2024-06-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.12172",
+  "abstract": "Large Language Models (LLMs) have recently achieved impressive performance in math and reasoning benchmarks. However, they often struggle with logic problems and puzzles that are relatively easy for humans. To further investigate this, we introduce a new benchmark, SearchBench, which contains 11 unique search problems inspired by intuitive puzzles. Each SearchBench problem type is equipped with automated pipelines to generate an arbitrary number of instances and analyze the feasibility, correctness, and optimality of LLM-generated solutions. We show that using step-by-step, language-only reasoning, even the most advanced LLMs fail to solve SearchBench; for example, OpenAI's frontier models GPT-4 and o1-preview solve only 1.4% and 18.6% of problems, respectively. The reason is that SearchBench problems require considering multiple pathways and performing backtracking, posing a significant challenge to auto-regressive models. Interestingly, performance is significantly boosted when we prompt models to generate a complete A* search algorithm - a comparatively more cognitively difficult task. This approach effectively offloads the iterative search and backtracking process from the models, which they struggle with in text. This in-context learning baseline is further enhanced via a Multi-Stage-Multi-Try (MSMT) inference method, increasing GPT-4's rate of correct solutions to over 57%.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1614,
+  "title": "How does V1 population activity inform perceptual certainty?",
+  "org": "deepmind",
+  "date": "2024-06-17",
+  "venue": "Journal of Vision",
+  "url": "https://doi.org/10.1167/jov.24.6.12",
+  "abstract": "Neural population activity in sensory cortex informs our perceptual interpretation of the environment. Oftentimes, this population activity will support multiple alternative interpretations. The larger the spread of probability over different alternatives, the more uncertain the selected perceptual interpretation. We test the hypothesis that the reliability of perceptual interpretations can be revealed through simple transformations of sensory population activity. We recorded V1 population activity in fixating macaques while presenting oriented stimuli under different levels of nuisance variability and signal strength. We developed a decoding procedure to infer from V1 activity the most likely stimulus orientation as well as the certainty of this estimate. Our analysis shows that response magnitude, response dispersion, and variability in response gain all offer useful proxies for orientation certainty. Of these three metrics, the last one has the strongest association with the decoder's uncertainty estimates. These results clarify that the nature of neural population activity in sensory cortex provides downstream circuits with multiple options to assess the reliability of perceptual interpretations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 758,
+  "title": "Neural Fields as Distributions: Signal Processing Beyond Euclidean Space",
+  "org": "deepmind",
+  "date": "2024-06-17",
+  "venue": "CVPR 2024",
+  "url": "https://ubc-vision.github.io/nfd",
+  "abstract": "Neural fields have emerged as a powerful and broadly applicable method for representing signals. However, in contrast to classical discrete digital signal processing, the portfolio of tools to process such representations is still severely limited and restricted to Euclidean domains. In this paper, we address this problem by showing how a prob-abilistic re-interpretation of neural fields can enable their training and inference processes to become “filter-aware”. The formulation we propose not only merges training and filtering in an efficient way, but also generalizes beyond the familiar Euclidean coordinate spaces to the more general set of smooth manifolds and convolutions induced by the actions of Lie groups. We demonstrate how this framework can enable novel integrations of signal processing techniques for neural field applications on both Euclidean do-mains, such as images and audio, as well as non-Euclidean domains, such as rotations and rays. A noteworthy benefit of our method is its applicability. Our method can be sum-marized as primarily a modification of the loss function, and in most cases does not require changes to the network ar-chitecture or the inference process.",
+  "needs_fetch": false
+ },
+ {
+  "id": 757,
+  "title": "Mirasol3B: A Multimodal Autoregressive Model for Time-Aligned and Contextual Modalities",
+  "org": "deepmind",
+  "date": "2024-06-17",
+  "venue": "CVPR 2024",
+  "url": "https://arxiv.org/abs/2311.05698",
+  "abstract": "One of the main challenges of multimodal models is that they need to combine heterogeneous modalities (e.g. video, audio, text), which have different characteristics. For example, video and audio are obtained at much higher rates than text and are roughly aligned in time. They are not necessarily synchronized with text which is often present as a global context, e.g. a title or description. Furthermore, video and audio inputs are of much larger volumes, and can grow with the increase of the video lengths, which naturally requires more compute dedicated to these modalities and makes modeling of long-range dependencies harder. We here decouple the multimodal modeling, dividing it into separate, focused autoregressive models, processing the inputs according to the characteristics of the modalities and their sampling rates. More specifically, we propose a multimodal model, consisting of an autoregressive component for the time-synchronized modalities (audio and video), and an autoregressive component for modalities which are not necessarily aligned in time but are still sequential. To address the long-sequences of the video-audio inputs, we propose to further partition the video and audio sequences and autoregressively process their compact learned representations. To that end, we propose a Combiner mechanism, which models the audio-video information within a video snippet. The Combiner first learns to extract audio and visual features from raw spatio-temporal signals, and then l",
+  "needs_fetch": false
+ },
+ {
+  "id": 756,
+  "title": "Bayes' Rays: uncertainty quantification for neural radiance fields",
+  "org": "deepmind",
+  "date": "2024-06-17",
+  "venue": "CVPR 2024",
+  "url": "https://arxiv.org/abs/2309.03185",
+  "abstract": "Neural Radiance Fields (NeRFs) have shown promise in applications like view synthesis and depth estimation, but learning from multiview images faces inherent uncertainties. Current methods to quantify them are either heuristic or computationally demanding. We introduce BayesRays, a post-hoc framework to evaluate uncertainty in any pre-trained NeRF without modifying the training process. Our method establishes a volumetric uncertainty field using spatial perturbations and a Bayesian Laplace approximation. We derive our algorithm statistically and show its superior performance in key metrics and applications.",
+  "needs_fetch": false
+ },
+ {
+  "id": 603,
+  "title": "Compact Proofs of Model Performance via Mechanistic Interpretability",
+  "org": "other",
+  "date": "2024-06-17",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2406.11779",
+  "abstract": "We propose using mechanistic interpretability -- techniques for reverse engineering model weights into human-interpretable algorithms -- to derive and compactly prove formal guarantees on model performance. We prototype this approach by formally proving accuracy lower bounds for a small transformer trained on Max-of-K, validating proof transferability across 151 random seeds and four values of K. We create 102 different computer-assisted proof strategies and assess their length and tightness of bound on each of our models. Using quantitative metrics, we find that shorter proofs seem to require and provide more mechanistic understanding. Moreover, we find that more faithful mechanistic understanding leads to tighter performance bounds. We confirm these connections by qualitatively examining a subset of our proofs. Finally, we identify compounding structureless errors as a key challenge for using mechanistic interpretability to generate compact proofs on model performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 602,
+  "title": "Transcoders Find Interpretable LLM Feature Circuits",
+  "org": "deepmind",
+  "date": "2024-06-17",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2406.11944",
+  "abstract": "A key goal in mechanistic interpretability is circuit analysis: finding sparse subgraphs of models corresponding to specific behaviors or capabilities. However, MLP sublayers make fine-grained circuit analysis on transformer-based language models difficult. In particular, interpretable features -- such as those found by sparse autoencoders (SAEs) -- are typically linear combinations of extremely many neurons, each with its own nonlinearity to account for. Circuit analysis in this setting thus either yields intractably large circuits or fails to disentangle local and global behavior. To address this we explore transcoders, which seek to faithfully approximate a densely activating MLP layer with a wider, sparsely-activating MLP layer. We introduce a novel method for using transcoders to perform weights-based circuit analysis through MLP sublayers. The resulting circuits neatly factorize into input-dependent and input-invariant terms. We then successfully train transcoders on language models with 120M, 410M, and 1.4B parameters, and find them to perform at least on par with SAEs in terms of sparsity, faithfulness, and human-interpretability. Finally, we apply transcoders to reverse-engineer unknown circuits in the model, and we obtain novel insights regarding the \"greater-than circuit\" in GPT2-small. Our results suggest that transcoders can prove effective in decomposing model computations involving MLPs into interpretable circuits. Code is available at https://github.com/jacobd",
+  "needs_fetch": false
+ },
+ {
+  "id": 530,
+  "title": "Refusal in Language Models Is Mediated by a Single Direction",
+  "org": "deepmind",
+  "date": "2024-06-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.11717",
+  "abstract": "Conversational large language models are fine-tuned for both instruction-following and safety, resulting in models that obey benign requests but refuse harmful ones. While this refusal behavior is widespread across chat models, its underlying mechanisms remain poorly understood. In this work, we show that refusal is mediated by a one-dimensional subspace, across 13 popular open-source chat models up to 72B parameters in size. Specifically, for each model, we find a single direction such that erasing this direction from the model's residual stream activations prevents it from refusing harmful instructions, while adding this direction elicits refusal on even harmless instructions. Leveraging this insight, we propose a novel white-box jailbreak method that surgically disables refusal with minimal effect on other capabilities. Finally, we mechanistically analyze how adversarial suffixes suppress propagation of the refusal-mediating direction. Our findings underscore the brittleness of current safety fine-tuning methods. More broadly, our work showcases how an understanding of model internals can be leveraged to develop practical methods for controlling model behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 399,
+  "title": "Super(ficial)-alignment: Strong Models May Deceive Weak Models in Weak-to-Strong Generalization",
+  "org": "other",
+  "date": "2024-06-17",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2406.11431",
+  "abstract": "Superalignment, where humans act as weak supervisors for superhuman models, has become a crucial problem with the rapid development of Large Language Models (LLMs). Recent work has preliminarily studied this problem by using weak models to supervise strong models, and discovered that weakly supervised strong students can consistently outperform weak teachers towards the alignment target, leading to a weak-to-strong generalization phenomenon. However, we are concerned that behind such a promising phenomenon, whether there exists an issue of weak-to-strong deception, where strong models deceive weak models by exhibiting well-aligned in areas known to weak models but producing misaligned behaviors in cases weak models do not know. We take an initial step towards exploring this security issue in a specific but realistic multi-objective alignment case, where there may be some alignment targets conflicting with each other (e.g., helpfulness v.s. harmlessness). We aim to explore whether, in such cases, strong models might deliberately make mistakes in areas known to them but unknown to weak models within one alignment dimension, in exchange for a higher reward in another dimension. Through extensive experiments in both the reward modeling and preference optimization scenarios, we find: (1) The weak-to-strong deception phenomenon exists across all settings. (2) The deception intensifies as the capability gap between weak and strong models increases. (3) Bootstrapping with an intermed",
+  "needs_fetch": false
+ },
+ {
+  "id": 398,
+  "title": "Self and Cross-Model Distillation for LLMs: Effective Methods for Refusal Pattern Alignment",
+  "org": "other",
+  "date": "2024-06-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2406.11285",
+  "abstract": "Large Language Models (LLMs) like OpenAI's GPT series, Anthropic's Claude, and Meta's LLaMa have shown remarkable capabilities in text generation. However, their susceptibility to toxic prompts presents significant security challenges. This paper investigates alignment techniques, including Supervised Fine-Tuning (SFT) and Reinforcement Learning from Human Feedback (RLHF), to mitigate these risks. We conduct an empirical study on refusal patterns across nine LLMs, revealing that models with uniform refusal patterns, such as Claude3, exhibit higher security. Based on these findings, we propose self-distilling and cross-model distilling methods to enhance LLM security. Our results show that these methods significantly improve refusal rates and reduce unsafe content, with cross-model distilling achieving refusal rates close to Claude3's 94.51%. These findings underscore the potential of distillation-based alignment in securing LLMs against toxic prompts.",
+  "needs_fetch": false
+ }
+]

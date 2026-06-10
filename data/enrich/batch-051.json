@@ -1,0 +1,302 @@
+[
+ {
+  "id": 863,
+  "title": "RoboCat: A Self-Improving Foundation Agent for Robotic Manipulation",
+  "org": "deepmind",
+  "date": "2023-12-05",
+  "venue": "Transactions on Machine Learning Research (TMLR)",
+  "url": "https://openreview.net/pdf/2a72d6fcd3472bdf5725a3e011fe30f7ad1c46e0.pdf",
+  "abstract": "The ability to leverage heterogeneous robotic experience from different robots and tasks to quickly master novel skills and embodiments has the potential to transform robot learning. Inspired by recent advances in foundation models for vision and language, we propose a foundation agent for robotic manipulation. This agent, named _RoboCat_, is a visual goal-conditioned decision transformer capable of consuming multi-embodiment action-labelled visual experience. This data spans a large repertoire of motor control skills from simulated and real robotic arms with varying sets of observations and actions. With RoboCat, we demonstrate the ability to generalise to new tasks and robots, both zero-shot as well as through adaptation using only 100--1000 examples for the target task. We also show how a trained model itself can be used to generate data for subsequent training iterations, thus providing a basic building block for an autonomous improvement loop. We investigate the agent's capabilities, with large-scale evaluations both in simulation and on three different real robot embodiments. We find that as we grow and diversify its training data, RoboCat not only shows signs of cross-task transfer, but also becomes more efficient at adapting to new tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 862,
+  "title": "Gaussian Process Probes (GPP) for Uncertainty-Aware Probing",
+  "org": "deepmind",
+  "date": "2023-12-05",
+  "venue": "NeurIPS 2023",
+  "url": "https://arxiv.org/abs/2305.18213",
+  "abstract": "Understanding which concepts models can and cannot represent has been fundamental to many tasks: from effective and responsible use of models to detecting out of distribution data. We introduce Gaussian process probes (GPP), a unified and simple framework for probing and measuring uncertainty about concepts represented by models. As a Bayesian extension of linear probing methods, GPP asks what kind of distribution over classifiers (of concepts) is induced by the model. This distribution can be used to measure both what the model represents and how confident the probe is about what the model represents. GPP can be applied to any pre-trained model with vector representations of inputs (e.g., activations). It does not require access to training data, gradients, or the architecture. We validate GPP on datasets containing both synthetic and real images. Our experiments show it can (1) probe a model's representations of concepts even with a very small number of examples, (2) accurately measure both epistemic uncertainty (how confident the probe is) and aleatory uncertainty (how fuzzy the concepts are to the model), and (3) detect out of distribution data using those uncertainty measures as well as classic methods do. By using Gaussian processes to expand what probing can offer, GPP provides a data-efficient, versatile and uncertainty-aware tool for understanding and evaluating the capabilities of machine learning models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 864,
+  "title": "Small batch deep reinforcement learning",
+  "org": "deepmind",
+  "date": "2023-12-04",
+  "venue": "NeurIPS 2023",
+  "url": "https://openreview.net/forum?id=wPqEvmwFEh",
+  "abstract": "In value-based deep reinforcement learning with replay memories, the batch size parameter specifies how many transitions to sample for each gradient update. Although critical to the learning process, this value is typically not adjusted when proposing new algorithms. In this work we present a broad empirical study that suggests reducing the batch size can result in a number of significant performance gains; this is surprising, as the general tendency when training neural networks is towards larger batch sizes for improved performance. We complement our experimental findings with a set of empirical analyses towards better understanding this phenomenon.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2744,
+  "title": "Information as a relation: Defining Indigenous information literacy",
+  "org": "openai",
+  "date": "2023-12-03",
+  "venue": "Journal of Information Literacy",
+  "url": "https://doi.org/10.11645/17.2.8",
+  "abstract": "Informed by relationality and reciprocity, Indigenous librarians who teach play a key role in creating learning opportunities for students to gain information literacy (IL) skills and become better users and creators of information. Through unstructured interviews with seven Indigenous librarians, we find that Indigenous identity and ways of knowing based on relationality and reciprocity are key components shaping the pedagogy of Indigenous librarians, as it informs the ways they enact accountability, build relationships, set boundaries, and practice care. Through this work, we offer a definition of Indigenous information literacy, which is the ability to use information and create or gain knowledge, while practicing the Indigenous concepts of relationality, reciprocity, and respect. This work lays the groundwork for further explorations of relationality, kinship, and Indigenous ways of knowing in information literacy and Indigenous librarianship.",
+  "needs_fetch": false
+ },
+ {
+  "id": 240,
+  "title": "Honesty Is the Best Policy: Defining and Mitigating AI Deception",
+  "org": "deepmind",
+  "date": "2023-12-03",
+  "venue": "NeurIPS 2023",
+  "url": "https://arxiv.org/abs/2312.01350",
+  "abstract": "Deceptive agents are a challenge for the safety, trustworthiness, and cooperation of AI systems. We focus on the problem that agents might deceive in order to achieve their goals (for instance, in our experiments with language models, the goal of being evaluated as truthful). There are a number of existing definitions of deception in the literature on game theory and symbolic AI, but there is no overarching theory of deception for learning agents in games. We introduce a formal definition of deception in structural causal games, grounded in the philosophy literature, and applicable to real-world machine learning systems. Several examples and results illustrate that our formal definition aligns with the philosophical and commonsense meaning of deception. Our main technical result is to provide graphical criteria for deception. We show, experimentally, that these results can be used to mitigate deception in reinforcement learning agents and language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 865,
+  "title": "RLHF and IIA: Perverse Incentives",
+  "org": "deepmind",
+  "date": "2023-12-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2312.01057",
+  "abstract": "Existing algorithms for reinforcement learning from human feedback (RLHF) can incentivize responses at odds with preferences because they are based on models that assume independence of irrelevant alternatives (IIA). The perverse incentives induced by IIA hinder innovations on query formats and learning algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1722,
+  "title": "An autonomous laboratory for the accelerated synthesis of inorganic materials",
+  "org": "deepmind",
+  "date": "2023-11-29",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-023-06734-w",
+  "abstract": ", we introduce the A-Lab, an autonomous laboratory for the solid-state synthesis of inorganic powders. This platform uses computations, historical data from the literature, machine learning (ML) and active learning to plan and interpret the outcomes of experiments performed using robotics. Over 17 days of continuous operation, the A-Lab realized 41 novel compounds from a set of 58 targets including a variety of oxides and phosphates that were identified using large-scale ab initio phase-stability data from the Materials Project and Google DeepMind. Synthesis recipes were proposed by natural-language models trained on the literature and optimized using an active-learning approach grounded in thermodynamics. Analysis of the failed syntheses provides direct and actionable suggestions to improve current techniques for materials screening and synthesis design. The high success rate demonstrates the effectiveness of artificial-intelligence-driven platforms for autonomous materials discovery and motivates further integration of computations, historical knowledge and robotics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 869,
+  "title": "Unsupervised Keypoints with Stable Diffusion",
+  "org": "deepmind",
+  "date": "2023-11-29",
+  "venue": "CVPR 2024",
+  "url": "https://arxiv.org/abs/2312.00065",
+  "abstract": "We present an innovative approach to infer semantic concepts from input images using a pre-trained image diffusion model. Traditionally employed for generating images, we repurpose this model to learn semantically consistent key points across diverse image datasets. Our method involves adding noise to the input image, simulating the denoising process, and subsequently extracting the attention maps. From these attention maps, we select the k sharpest ones, subjecting them to further sharpening to enhance precision. Additionally, we introduce an equivariance constraint ensuring that the learned key points remain consistent even under various image transformations. Notably, our approach demonstrates superior performance over competing methods, particularly excelling in non-aligned data, showcasing its potential in accurately identifying and retaining semantically meaningful key points across images.",
+  "needs_fetch": false
+ },
+ {
+  "id": 868,
+  "title": "Universal Self-Consistency with Large Language Models",
+  "org": "deepmind",
+  "date": "2023-11-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.17311",
+  "abstract": "Self-consistency with chain-of-thought prompting (CoT) has demonstrated remarkable performance gain on various reasoning tasks, by utilizing multiple reasoning paths sampled by the model. However, self-consistency relies on the answer extraction process to aggregate multiple solutions, which is not applicable to free-form answers. In this work, we propose Universal Self-Consistency (USC), which leverages the large language model (LLM) to select the most consistent solution among multiple candidates. We evaluate USC on a variety of benchmarks, including mathematical reasoning, long-context summarization, and open-ended question answering. On mathematical reasoning benchmarks including GSM8K and MATH, USC matches the standard self-consistency performance without requiring the answer formats to be similar. Meanwhile, USC consistently improves the performance over greedy decoding on open-ended generation tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 867,
+  "title": "SODA: Bottleneck Diffusion Models for Representation Learning",
+  "org": "deepmind",
+  "date": "2023-11-29",
+  "venue": "CVPR 2024",
+  "url": "https://arxiv.org/abs/2311.17901",
+  "abstract": "We introduce SODA, a self-supervised diffusion model, explored for the purpose of representation learning. The model incorporates a conditional visual encoder, which distills an input image into a compact representation, that, in turn, guides the generation of novel views of the input's content. We show that imposing a tight bottleneck between the visual encoder and the denoising decoder, in the form of a sole embedding through which they can communicate, turns diffusion models into strong and efficient representation learners, capable of capturing and predicting images' semantic properties in an unsupervised manner, as we demonstrate by attaining high performance on varied classification, reconstruction and synthesis tasks over a wide array of datasets ranging from CelebA to ShapeNet to ImageNet. Further investigation of the model's generative qualities reveals the disentangled nature of its emerging latent space, which serves as an effective interface to control and manipulate the produced outputs, so to create diverse views and variations. All in all, we aim to shed light on the exciting and promising potential of diffusion models, not only for image generation, but also for learning rich and robust representations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 866,
+  "title": "Accelerating Neural Field Training via Langevin Monte-Carlo Sampling",
+  "org": "deepmind",
+  "date": "2023-11-29",
+  "venue": "CVPR 2024",
+  "url": "https://arxiv.org/abs/2312.00075",
+  "abstract": "We show how Neural Field training can be accelerated by efficiently choosing where to sample. While Neural Fields have recently become popular, it is often trained by uniformly randomly sampling the training domain, or through handcrafted heuristics. In this work, we show that improved convergence and final training quality can be achieved by smarter sampling. Specifically, we propose a sampling scheme based on Langevin Monte-Carlo sampling that focuses our training samples in the domain where it actually matters.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1723,
+  "title": "Learning few-shot imitation as cultural transmission",
+  "org": "deepmind",
+  "date": "2023-11-28",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-023-42875-2",
+  "abstract": "Cultural transmission is the domain-general social skill that allows agents to acquire and use information from each other in real-time with high fidelity and recall. It can be thought of as the process that perpetuates fit variants in cultural evolution. In humans, cultural evolution has led to the accumulation and refinement of skills, tools and knowledge across generations. We provide a method for generating cultural transmission in artificially intelligent agents, in the form of few-shot imitation. Our agents succeed at real-time imitation of a human in novel contexts without using any pre-collected human data. We identify a surprisingly simple set of ingredients sufficient for generating cultural transmission and develop an evaluation methodology for rigorously assessing it. This paves the way for cultural evolution to play an algorithmic role in the development of artificial general intelligence.",
+  "needs_fetch": false
+ },
+ {
+  "id": 613,
+  "title": "Is This the Subspace You Are Looking for? An Interpretability Illusion for Subspace Activation Patching",
+  "org": "deepmind",
+  "date": "2023-11-28",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2311.17030",
+  "abstract": "Mechanistic interpretability aims to understand model behaviors in terms of specific, interpretable features, often hypothesized to manifest as low-dimensional subspaces of activations. Specifically, recent studies have explored subspace interventions (such as activation patching) as a way to simultaneously manipulate model behavior and attribute the features behind it to given subspaces. In this work, we demonstrate that these two aims diverge, potentially leading to an illusory sense of interpretability. Counterintuitively, even if a subspace intervention makes the model's output behave as if the value of a feature was changed, this effect may be achieved by activating a dormant parallel pathway leveraging another subspace that is causally disconnected from model outputs. We demonstrate this phenomenon in a distilled mathematical example, in two real-world domains (the indirect object identification task and factual recall), and present evidence for its prevalence in practice. In the context of factual recall, we further show a link to rank-1 fact editing, providing a mechanistic explanation for previous work observing an inconsistency between fact editing performance and fact localization. However, this does not imply that activation patching of subspaces is intrinsically unfit for interpretability. To contextualize our findings, we also show what a success case looks like in a task (indirect object identification) where prior manual circuit analysis informs an understandi",
+  "needs_fetch": false
+ },
+ {
+  "id": 424,
+  "title": "ChatGPT's One-year Anniversary: Are Open-Source Large Language Models Catching up?",
+  "org": "other",
+  "date": "2023-11-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.16989",
+  "abstract": "Upon its release in late 2022, ChatGPT has brought a seismic shift in the entire landscape of AI, both in research and commerce. Through instruction-tuning a large language model (LLM) with supervised fine-tuning and reinforcement learning from human feedback, it showed that a model could answer human questions and follow instructions on a broad panel of tasks. Following this success, interests in LLMs have intensified, with new LLMs flourishing at frequent interval across academia and industry, including many start-ups focused on LLMs. While closed-source LLMs (e.g., OpenAI's GPT, Anthropic's Claude) generally outperform their open-source counterparts, the progress on the latter has been rapid with claims of achieving parity or even better on certain tasks. This has crucial implications not only on research but also on business. In this work, on the first anniversary of ChatGPT, we provide an exhaustive overview of this success, surveying all tasks where an open-source LLM has claimed to be on par or better than ChatGPT.",
+  "needs_fetch": false
+ },
+ {
+  "id": 870,
+  "title": "Replay Across Experiments",
+  "org": "deepmind",
+  "date": "2023-11-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.15951",
+  "abstract": "Replaying data is a principal mechanism underlying the stability and data effi-ciency of off-policy reinforcement learning (RL) experiments. We present aneffective yet simple framework to extend the use of replay data across experi-ments, minimally adapting the RL engineering workflow for sizeable improve-ments in controller performance. At its core, Replay across Experiments (RaE)involves reusing experience from previous experiments to improve exploration,bootstrap learning and ultimately obtain stronger performance. We empiricallydemonstrate the robustness and benefits of our approach on a number of RL algo-rithms and challenging control domains spanning both locomotion and manipu-lation including sparsely rewarded tasks with egocentric vision. Furthermore, wedemonstrate how RaE can be leveraged in settings with available existing offlinedatasets to achieve state-of-the-art performance. Finally, through various abla-tions we demonstrate the robustness of our approach to the underlying algorithm,quality and amount of data available and various hyperparameter choices.",
+  "needs_fetch": false
+ },
+ {
+  "id": 542,
+  "title": "Charting New Territories: Exploring the Geographic and Geospatial Capabilities of Multimodal LLMs",
+  "org": "deepmind",
+  "date": "2023-11-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.14656",
+  "abstract": "Multimodal large language models (MLLMs) have shown remarkable capabilities across a broad range of tasks but their knowledge and abilities in the geographic and geospatial domains are yet to be explored, despite potential wide-ranging benefits to navigation, environmental research, urban development, and disaster response. We conduct a series of experiments exploring various vision capabilities of MLLMs within these domains, particularly focusing on the frontier model GPT-4V, and benchmark its performance against open-source counterparts. Our methodology involves challenging these models with a small-scale geographic benchmark consisting of a suite of visual tasks, testing their abilities across a spectrum of complexity. The analysis uncovers not only where such models excel, including instances where they outperform humans, but also where they falter, providing a balanced view of their capabilities in the geographic domain. To enable the comparison and evaluation of future models, our benchmark will be publicly released.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1724,
+  "title": "Meta-learned models of cognition",
+  "org": "deepmind",
+  "date": "2023-11-23",
+  "venue": "Behavioral and Brain Sciences",
+  "url": "https://doi.org/10.1017/s0140525x23003266",
+  "abstract": "Psychologists and neuroscientists extensively rely on computational models for studying and analyzing the human mind. Traditionally, such computational models have been hand-designed by expert researchers. Two prominent examples are cognitive architectures and Bayesian models of cognition. Although the former requires the specification of a fixed set of computational structures and a definition of how these structures interact with each other, the latter necessitates the commitment to a particular prior and a likelihood function that - in combination with Bayes' rule - determine the model's behavior. In recent years, a new framework has established itself as a promising tool for building models of human cognition: the framework of meta-learning. In contrast to the previously mentioned model classes, meta-learned models acquire their inductive biases from experience, that is, by repeatedly interacting with an environment. However, a coherent research program around meta-learned models of cognition is still missing to date. The purpose of this article is to synthesize previous work in this field and establish such a research program. We accomplish this by pointing out that meta-learning can be used to construct Bayes-optimal learning algorithms, allowing us to draw strong connections to the rational analysis of cognition. We then discuss several advantages of the meta-learning framework over traditional methods and reexamine prior work in the context of these new insights.",
+  "needs_fetch": false
+ },
+ {
+  "id": 871,
+  "title": "Scalable AI Safety via Doubly-Efficient Debate",
+  "org": "deepmind",
+  "date": "2023-11-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.14125",
+  "abstract": "The emergence of powerful pre-trained AI systems with super-human capabilities across a diverse and ever-increasing set of complex domains has raised a critical challenge for AI safety as tasks can become too complicated for humans to judge directly. AI safety via debate [Irving et al. 2018] is a notable proposal in this direction with the goal of pitting the power of such AI models against each other until the (mis)-alignment identification problem is broken down into a manageable sub-task. While the promise of this approach is clear, the original framework was based on the assumption that the honest strategy is able to simulate *deterministic* AI systems for an *exponential* number of steps, limiting its applicability. In this paper, we show how to address these challenges by designing a new set of debate protocols where the honest strategy can always succeed using a simulation of a *polynomial* number of steps, whilst being able to verify the alignment of *stochastic* AI systems, even when the dishonest strategy is allowed to use exponentially many simulation steps.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1725,
+  "title": "Responses to Pattern-Violating Visual Stimuli Evolve Differently Over Days in Somata and Distal Apical Dendrites",
+  "org": "deepmind",
+  "date": "2023-11-21",
+  "venue": "Journal of Neuroscience",
+  "url": "https://doi.org/10.1523/jneurosci.1009-23.2023",
+  "abstract": "Scientists have long conjectured that the neocortex learns patterns in sensory data to generate top-down predictions of upcoming stimuli. In line with this conjecture, different responses to pattern-matching vs pattern-violating visual stimuli have been observed in both spiking and somatic calcium imaging data. However, it remains unknown whether these pattern-violation signals are different between the distal apical dendrites, which are heavily targeted by top-down signals, and the somata, where bottom-up information is primarily integrated. Furthermore, it is unknown how responses to pattern-violating stimuli evolve over time as an animal gains more experience with them. Here, we address these unanswered questions by analyzing responses of individual somata and dendritic branches of layer 2/3 and layer 5 pyramidal neurons tracked over multiple days in primary visual cortex of awake, behaving female and male mice. We use sequences of Gabor patches with patterns in their orientations to create pattern-matching and pattern-violating stimuli, and two-photon calcium imaging to record neuronal responses. Many neurons in both layers show large differences between their responses to pattern-matching and pattern-violating stimuli. Interestingly, these responses evolve in opposite directions in the somata and distal apical dendrites, with somata becoming less sensitive to pattern-violating stimuli and distal apical dendrites more sensitive. These differences between the somata and di",
+  "needs_fetch": false
+ },
+ {
+  "id": 1727,
+  "title": "Spatially embedded recurrent neural networks reveal widespread links between structural and functional neuroscience findings",
+  "org": "deepmind",
+  "date": "2023-11-20",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://doi.org/10.1038/s42256-023-00748-9",
+  "abstract": "Abstract Brain networks exist within the confines of resource limitations. As a result, a brain network must overcome the metabolic costs of growing and sustaining the network within its physical space, while simultaneously implementing its required information processing. Here, to observe the effect of these processes, we introduce the spatially embedded recurrent neural network (seRNN). seRNNs learn basic task-related inferences while existing within a three-dimensional Euclidean space, where the communication of constituent neurons is constrained by a sparse connectome. We find that seRNNs converge on structural and functional features that are also commonly found in primate cerebral cortices. Specifically, they converge on solving inferences using modular small-world networks, in which functionally similar units spatially configure themselves to utilize an energetically efficient mixed-selective code. Because these features emerge in unison, seRNNs reveal how many common structural and functional brain motifs are strongly intertwined and can be attributed to basic biological optimization processes. seRNNs incorporate biophysical constraints within a fully artificial system and can serve as a bridge between structural and functional research communities to move neuroscientific understanding forwards.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1726,
+  "title": "Machine culture",
+  "org": "deepmind",
+  "date": "2023-11-20",
+  "venue": "Nature Human Behaviour",
+  "url": "https://arxiv.org/abs/2311.11388",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1728,
+  "title": "A social path to human-like artificial intelligence",
+  "org": "deepmind",
+  "date": "2023-11-17",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://arxiv.org/abs/2405.15815",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 872,
+  "title": "No agent is an island: A social path to human-like artificial intelligence",
+  "org": "deepmind",
+  "date": "2023-11-17",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://www.nature.com/articles/s42256-023-00754-x",
+  "abstract": "In both cognitive science and computer science, intelligence has traditionally been viewed solipsistically, as a property of unitary agents devoid of social context. Yet converging evidence in behavior, neuroscience and evolution shows that natural intelligence emerged at multiple scales in networks of interacting agents. For those interested in reverse-engineering intelligence, these findings suggest constraints on the space of workable algorithms. Recent breakthroughs in artificial intelligence (AI) run parallel to these findings, with specific population structures enabling agents to master complex strategic games like Capture-The-Flag and StarCraft II. We posit that moving beyond a solipsistic view of agency will benefit both cognitive science and machine learning: understanding intelligence demands a multi-agent context.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1729,
+  "title": "Learning skillful medium-range global weather forecasting",
+  "org": "deepmind",
+  "date": "2023-11-14",
+  "venue": "Science",
+  "url": "https://doi.org/10.1126/science.adi2336",
+  "abstract": "Global medium-range weather forecasting is critical to decision-making across many social and economic domains. Traditional numerical weather prediction uses increased compute resources to improve forecast accuracy but does not directly use historical weather data to improve the underlying model. Here, we introduce GraphCast, a machine learning-based method trained directly from reanalysis data. It predicts hundreds of weather variables for the next 10 days at 0.25° resolution globally in under 1 minute. GraphCast significantly outperforms the most accurate operational deterministic systems on 90% of 1380 verification targets, and its forecasts support better severe event prediction, including tropical cyclone tracking, atmospheric rivers, and extreme temperatures. GraphCast is a key advance in accurate and efficient weather forecasting and helps realize the promise of machine learning for modeling complex dynamical systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 875,
+  "title": "Report of the 1st Workshop on Generative AI and Law",
+  "org": "deepmind",
+  "date": "2023-11-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.06477",
+  "abstract": "This report presents the takeaways of the inaugural Workshop on Generative AI and Law, held in July 2023. A cross-disciplinary group of practitioners and scholars from computer science and law convened to discuss the technical, doctrinal, and policy challenges presented by law for generative AI, and by generative AI for law, with an emphasis on US law in particular. We conclude that there is an essential need for 1) a shared knowledge base that provides a common conceptual language for experts across disciplines; 2) clarification of the distinctive technical capabilities of generative-AI systems as compared and contrasted to other computer and AI systems; 3) a logical taxonomy of the legal issues these systems raise; and, 4) a concrete research agenda to promote collaboration and knowledge-sharing on emerging issues at the intersection of generative AI and law. In this report, we synthesize the key takeaways from the GenLaw workshop that begin to address these four needs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 874,
+  "title": "GraphCast: Learned Global Weather Forecasting",
+  "org": "deepmind",
+  "date": "2023-11-14",
+  "venue": "Science",
+  "url": "https://www.science.org/doi/10.1126/science.adi2336",
+  "abstract": "We introduce a learned weather simulator—called “GraphCast”—which outperforms the most accurate operational medium-range weather forecasting system in the world. GraphCast operates on a0.25°latitude-longitude grid, and uses graph neural networks and a novel high-resolution multi-scale mesh representation, to autoregressively predict the 10-day temporal trajectories of 227 key dynamic variables that represent the state of the atmosphere, at 6-hour time intervals. Our results show GraphCast is significantly more accurate than the European Centre for Medium-Range Weather Forecasts (ECMWF)’s deterministic forecasting system, “HRES”, on89.3%of the 2760 target variables and lead times we evaluated. It also outperforms the most accurate previous machine learning weather forecasting model on98.8%of the 252 targets it reported. GraphCast is orders of magnitude faster than ECMWF’s operational systems, and can generate a 10-day forecast (35 gigabytes on disk) in under 60 seconds on Cloud TPU hardware. Together these results represent a key step forward in improving weather modeling with machine learning, open new opportunities for fast, accurate forecasting, and help realize the promise of machine-learning based simulation in the physical sciences.",
+  "needs_fetch": false
+ },
+ {
+  "id": 873,
+  "title": "DiLoCo: Distributed Low-Communication Training of Language Models",
+  "org": "deepmind",
+  "date": "2023-11-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.08105",
+  "abstract": "Large language models (LLM) have become a critical component in many applications of machine learning. However, standard approaches to training LLM require a large number of tightly interconnected accelerators, with devices exchanging gradients and other intermediate states at each optimization step. While it is difficult to build and maintain a single computing cluster hosting many accelerators, it might be easier to find several computing clusters each hosting a smaller number of devices. In this work, we propose a distributed optimization algorithm, Distributed Low-Communication (DiLoCo), that enables training of language models on islands of devices that are poorly connected. The approach is a variant of federated averaging, where the number of inner steps is large, the inner optimizer is AdamW, and the outer optimizer is Nesterov momentum. On the widely used C4 dataset, we show that DiLoCo on 8 workers performs as well as fully synchronous optimization while communicating 500 times less. DiLoCo exhibits great robustness to the data distribution of each worker. It is also robust to resources becoming unavailable over time, and vice versa, it can seamlessly leverage resources that become available during training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 425,
+  "title": "Scheming AIs: Will AIs fake alignment during training in order to get power?",
+  "org": "other",
+  "date": "2023-11-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.08379",
+  "abstract": "This report examines whether advanced AIs that perform well in training will be doing so in order to gain power later -- a behavior I call \"scheming\" (also sometimes called \"deceptive alignment\"). I conclude that scheming is a disturbingly plausible outcome of using baseline machine learning methods to train goal-directed AIs sophisticated enough to scheme (my subjective probability on such an outcome, given these conditions, is roughly 25%). In particular: if performing well in training is a good strategy for gaining power (as I think it might well be), then a very wide variety of goals would motivate scheming -- and hence, good training performance. This makes it plausible that training might either land on such a goal naturally and then reinforce it, or actively push a model's motivations towards such a goal as an easy way of improving performance. What's more, because schemers pretend to be aligned on tests designed to reveal their motivations, it may be quite difficult to tell whether this has occurred. However, I also think there are reasons for comfort. In particular: scheming may not actually be such a good strategy for gaining power; various selection pressures in training might work against schemer-like goals (for example, relative to non-schemers, schemers need to engage in extra instrumental reasoning, which might harm their training performance); and we may be able to increase such pressures intentionally. The report discusses these and a wide variety of other co",
+  "needs_fetch": false
+ },
+ {
+  "id": 241,
+  "title": "Towards Evaluating AI Systems for Moral Status Using Self-Reports",
+  "org": "anthropic",
+  "date": "2023-11-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.08576",
+  "abstract": "As AI systems become more advanced and widely deployed, there will likely be increasing debate over whether AI systems could have conscious experiences, desires, or other states of potential moral significance. It is important to inform these discussions with empirical evidence to the extent possible. We argue that under the right circumstances, self-reports, or an AI system's statements about its own internal states, could provide an avenue for investigating whether AI systems have states of moral significance. Self-reports are the main way such states are assessed in humans (\"Are you in pain?\"), but self-reports from current systems like large language models are spurious for many reasons (e.g. often just reflecting what humans would say). To make self-reports more appropriate for this purpose, we propose to train models to answer many kinds of questions about themselves with known answers, while avoiding or limiting training incentives that bias self-reports. The hope of this approach is that models will develop introspection-like capabilities, and that these capabilities will generalize to questions about states of moral significance. We then propose methods for assessing the extent to which these techniques have succeeded: evaluating self-report consistency across contexts and between similar models, measuring the confidence and resilience of models' self-reports, and using interpretability to corroborate self-reports. We also discuss challenges for our approach, from ph",
+  "needs_fetch": false
+ },
+ {
+  "id": 1730,
+  "title": "An encyclopedia of enhancer-gene regulatory interactions in the human genome",
+  "org": "deepmind",
+  "date": "2023-11-13",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2023.11.09.563812",
+  "abstract": "Abstract Identifying transcriptional enhancers and their target genes is essential for understanding gene regulation and the impact of human genetic variation on disease 1–6 . Here we create and evaluate a resource of &gt;13 million enhancer-gene regulatory interactions across 352 cell types and tissues, by integrating predictive models, measurements of chromatin state and 3D contacts, and large-scale genetic perturbations generated by the ENCODE Consortium 7 . We first create a systematic benchmarking pipeline to compare predictive models, assembling a dataset of 10,411 element-gene pairs measured in CRISPR perturbation experiments, &gt;30,000 fine-mapped eQTLs, and 569 fine-mapped GWAS variants linked to a likely causal gene. Using this framework, we develop a new predictive model, ENCODE-rE2G, that achieves state-of-the-art performance across multiple prediction tasks, demonstrating a strategy involving iterative perturbations and supervised machine learning to build increasingly accurate predictive models of enhancer regulation. Using the ENCODE-rE2G model, we build an encyclopedia of enhancer-gene regulatory interactions in the human genome, which reveals global properties of enhancer networks, identifies differences in the functions of genes that have more or less complex regulatory landscapes, and improves analyses to link noncoding variants to target genes and cell types for common, complex diseases. By interpreting the model, we find evidence that, beyond enhancer ac",
+  "needs_fetch": false
+ }
+]

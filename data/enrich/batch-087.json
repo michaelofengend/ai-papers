@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2490,
+  "title": "End-to-End Learning of Visual Representations from Uncurated\\n Instructional Videos",
+  "org": "deepmind",
+  "date": "2019-12-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1912.06430",
+  "abstract": "Annotating videos is cumbersome, expensive and not scalable. Yet, many strong\\nvideo models still rely on manually annotated data. With the recent\\nintroduction of the HowTo100M dataset, narrated videos now offer the\\npossibility of learning video representations without manual supervision. In\\nthis work we propose a new learning approach, MIL-NCE, capable of addressing\\nmisalignments inherent to narrated videos. With this approach we are able to\\nlearn strong video representations from scratch, without the need for any\\nmanual annotation. We evaluate our representations on a wide range of four\\ndownstream tasks over eight datasets: action recognition (HMDB-51, UCF-101,\\nKinetics-700), text-to-video retrieval (YouCook2, MSR-VTT), action localization\\n(YouTube-8M Segments, CrossTask) and action segmentation (COIN). Our method\\noutperforms all published self-supervised approaches for these tasks as well as\\nseveral fully supervised baselines.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2489,
+  "title": "Encoding Temporal Regularities and Information Copying in Hippocampal Circuits",
+  "org": "deepmind",
+  "date": "2019-12-13",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-019-55395-1",
+  "abstract": "Discriminating, extracting and encoding temporal regularities is a critical requirement in the brain, relevant to sensory-motor processing and learning. However, the cellular mechanisms responsible remain enigmatic; for example, whether such abilities require specific, elaborately organized neural networks or arise from more fundamental, inherent properties of neurons. Here, using multi-electrode array technology, and focusing on interval learning, we demonstrate that sparse reconstituted rat hippocampal neural circuits are intrinsically capable of encoding and storing sub-second-order time intervals for over an hour timescale, represented in changes in the spatial-temporal architecture of firing relationships among populations of neurons. This learning is accompanied by increases in mutual information and transfer entropy, formal measures related to information storage and flow. Moreover, temporal relationships derived from previously trained circuits can act as templates for copying intervals into untrained networks, suggesting the possibility of circuit-to-circuit information transfer. Our findings illustrate that dynamic encoding and stable copying of temporal relationships are fundamental properties of simple in vitro networks, with general significance for understanding elemental principles of information processing, storage and replication.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1060,
+  "title": "Dota 2 with large scale deep reinforcement learning",
+  "org": "openai",
+  "date": "2019-12-13",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/dota-2-with-large-scale-deep-reinforcement-learning/",
+  "abstract": "On April 13th, 2019, OpenAI Five became the first AI system to defeat the world champions at an esports game. The game of Dota 2 presents novel challenges for AI systems such as long time horizons, imperfect information, and complex, continuous state-action spaces, all challenges which will become increasingly central to more capable AI systems. OpenAI Five leveraged existing reinforcement learning techniques, scaled to learn from batches of approximately 2 million frames every 2 seconds. We developed a distributed training system and tools for continual training which allowed us to train OpenAI Five for 10 months. By defeating the Dota 2 world champion (Team OG), OpenAI Five demonstrates that self-play reinforcement learning can achieve superhuman performance on a difficult task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2849,
+  "title": "Regulatory Markets for AI Safety",
+  "org": "openai",
+  "date": "2019-12-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2001.00078",
+  "abstract": "We propose a new model for regulation to achieve AI safety: global regulatory markets. We first sketch the model in general terms and provide an overview of the costs and benefits of this approach. We then demonstrate how the model might work in practice: responding to the risk of adversarial attacks on AI models employed in commercial drones.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2492,
+  "title": "What Can Learned Intrinsic Rewards Capture?",
+  "org": "deepmind",
+  "date": "2019-12-11",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1912.05500",
+  "abstract": "The objective of a reinforcement learning agent is to behave so as to maximise the sum of a suitable scalar function of state: the reward. These rewards are typically given and immutable. In this paper, we instead consider the proposition that the reward function itself can be a good locus of learned knowledge. To investigate this, we propose a scalable meta-gradient framework for learning useful intrinsic reward functions across multiple lifetimes of experience. Through several proof-of-concept experiments, we show that it is feasible to learn and capture knowledge about long-term exploration and exploitation into a reward function. Furthermore, we show that unlike policy transfer methods that capture \"how\" the agent should behave, the learned reward functions can generalise to other kinds of agents and to changes in the dynamics of the environment by capturing \"what\" the agent should strive to do.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2491,
+  "title": "Deepinsight: a general framework for interpreting wide-band neural activity",
+  "org": "deepmind",
+  "date": "2019-12-11",
+  "venue": null,
+  "url": "https://openalex.org/W2994629834",
+  "abstract": "Rapid progress in technologies such as calcium imaging and electrophysiology has seen a dramatic increase in the size and extent of neural recordings, yet their interpretation still depends on time-intensive manual operations. Decoding provides a means to infer the information content of such recordings but typically requires highly processed data and prior knowledge of variables. Here, we developed DeepInsight - a deep-learning-framework able to decode sensory and behavioural variables directly from wide-band neural data. The network requires little user input and generalizes across stimuli, behaviours, brain regions, and recording techniques. Critically, once trained, it can be analysed to determine elements of the neural code that are informative about a given variable. We validated this approach using data from rodent auditory cortex and hippocampus, identifying a novel representation of head direction encoded by CA1 interneurons. Thus, we present a robust, user-friendly tool for characterising and decoding neural recordings in an automated way. Code is available at https://github.com/CYHSM/DeepInsight.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2493,
+  "title": "Learning Compositional Neural Programs with Recursive Tree Search and Planning",
+  "org": "deepmind",
+  "date": "2019-12-08",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-03080949",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2494,
+  "title": "Solving Bernoulli Rank-One Bandits with Unimodal Thompson Sampling",
+  "org": "deepmind",
+  "date": "2019-12-06",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1912.03074",
+  "abstract": "Stochastic Rank-One Bandits (Katarya et al, (2017a,b)) are a simple framework for regret minimization problems over rank-one matrices of arms. The initially proposed algorithms are proved to have logarithmic regret, but do not match the existing lower bound for this problem. We close this gap by first proving that rank-one bandits are a particular instance of unimodal bandits, and then providing a new analysis of Unimodal Thompson Sampling (UTS), initially proposed by Paladino et al (2017). We prove an asymptotically optimal regret bound on the frequentist regret of UTS and we support our claims with simulations showing the significant improvement of our method compared to the state-of-the-art.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2495,
+  "title": "Learning Human Objectives by Evaluating Hypothetical Behavior",
+  "org": "deepmind",
+  "date": "2019-12-05",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1912.05652",
+  "abstract": "We seek to align agent behavior with a user's objectives in a reinforcement learning setting with unknown dynamics, an unknown reward function, and unknown unsafe states. The user knows the rewards and unsafe states, but querying the user is expensive. To address this challenge, we propose an algorithm that safely and interactively learns a model of the user's reward function. We start with a generative model of initial states and a forward dynamics model trained on off-policy data. Our method uses these models to synthesize hypothetical behaviors, asks the user to label the behaviors with rewards, and trains a neural network to predict the rewards. The key idea is to actively synthesize the hypothetical behaviors from scratch by maximizing tractable proxies for the value of information, without interacting with the environment. We call this method reward query synthesis via trajectory optimization (ReQueST). We evaluate ReQueST with simulated users on a state-based 2D navigation task and the image-based Car Racing video game. The results show that ReQueST significantly outperforms prior methods in learning reward models that transfer to new environments with different initial state distributions. Moreover, ReQueST safely trains the reward model to detect unsafe states, and corrects reward hacking before deploying the agent.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1061,
+  "title": "Deep double descent",
+  "org": "openai",
+  "date": "2019-12-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/deep-double-descent/",
+  "abstract": "We show that the double descent phenomenon occurs in CNNs, ResNets, and transformers: performance first improves, then gets worse, and then improves again with increasing model size, data size, or training time. This effect is often avoided through careful regularization. While this behavior appears to be fairly universal, we don’t yet fully understand why it happens, and view further study of this phenomenon as an important research direction.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2496,
+  "title": "Bounds and dynamics for empirical game theoretic analysis",
+  "org": "deepmind",
+  "date": "2019-12-04",
+  "venue": "Autonomous Agents and Multi-Agent Systems",
+  "url": "https://doi.org/10.1007/s10458-019-09432-y",
+  "abstract": "Abstract This paper provides several theoretical results for empirical game theory. Specifically, we introduce bounds for empirical game theoretical analysis of complex multi-agent interactions. In doing so we provide insights in the empirical meta game showing that a Nash equilibrium of the estimated meta-game is an approximate Nash equilibrium of the true underlying meta-game. We investigate and show how many data samples are required to obtain a close enough approximation of the underlying game. Additionally, we extend the evolutionary dynamics analysis of meta-games using heuristic payoff tables (HPTs) to asymmetric games. The state-of-the-art has only considered evolutionary dynamics of symmetric HPTs in which agents have access to the same strategy sets and the payoff structure is symmetric, implying that agents are interchangeable. Finally, we carry out an empirical illustration of the generalised method in several domains, illustrating the theory and evolutionary dynamics of several versions of the AlphaGo algorithm (symmetric), the dynamics of the Colonel Blotto game played by human players on Facebook (symmetric), the dynamics of several teams of players in the capture the flag game (symmetric), and an example of a meta-game in Leduc Poker (asymmetric), generated by the policy-space response oracle multi-agent learning algorithm.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1062,
+  "title": "Procgen Benchmark",
+  "org": "openai",
+  "date": "2019-12-03",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/procgen-benchmark/",
+  "abstract": "We’re releasing Procgen Benchmark, 16 simple-to-use procedurally-generated environments which provide a direct measure of how quickly a reinforcement learning agent learns generalizable skills.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2497,
+  "title": "Hierarchical motor control in mammals and machines",
+  "org": "deepmind",
+  "date": "2019-12-02",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-019-13239-6",
+  "abstract": "Advances in artificial intelligence are stimulating interest in neuroscience. However, most attention is given to discrete tasks with simple action spaces, such as board games and classic video games. Less discussed in neuroscience are parallel advances in \"synthetic motor control\". While motor neuroscience has recently focused on optimization of single, simple movements, AI has progressed to the generation of rich, diverse motor behaviors across multiple tasks, at humanoid scale. It is becoming clear that specific, well-motivated hierarchical design elements repeatedly arise when engineering these flexible control systems. We review these core principles of hierarchical control, relate them to hierarchy in the nervous system, and highlight research themes that we anticipate will be critical in solving challenges at this disciplinary intersection.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2498,
+  "title": "Recurrent Neural Network Transducer for Audio-Visual Speech Recognition",
+  "org": "deepmind",
+  "date": "2019-12-01",
+  "venue": "2019 IEEE Automatic Speech Recognition and Understanding Workshop (ASRU)",
+  "url": "https://doi.org/10.1109/asru46091.2019.9004036",
+  "abstract": "This work presents a large-scale audio-visual speech recognition system based on a recurrent neural network transducer (RNN-T) architecture. To support the development of such a system, we built a large audio-visual (A/V) dataset of segmented utterances extracted from YouTube public videos, leading to 31k hours of audio-visual training content. The performance of an audio-only, visual-only, and audio-visual system are compared on two large-vocabulary test sets: a set of utterance segments from public YouTube videos called YTDEV18 and the publicly available LRS3-TED set. To highlight the contribution of the visual modality, we also evaluated the performance of our system on the YTDEV18 set artificially corrupted with background noise and overlapping speech. To the best of our knowledge, our system significantly improves the state-of-the-art on the LRS3-TED set.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2499,
+  "title": "Self-Educated Language Agent With Hindsight Experience Replay For Instruction Following",
+  "org": "deepmind",
+  "date": "2019-11-29",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-02386585",
+  "abstract": "Language creates a compact representation of the world and allows the description of unlimited situations and objectives through compositionality. These properties make it a natural fit to guide the training of interactive agents as it could ease recurrent challenges in Reinforcement Learning such as sample complexity, generalization, or multi-tasking. Yet, it remains an open-problem to relate language and RL in even simple instruction following scenarios. Current methods rely on expert demonstrations, auxiliary losses, or inductive biases in neural architectures. In this paper, we propose an orthogonal approach called Textual Hindsight Experience Replay (THER) that extends the Hindsight Experience Replay approach to the language setting. Whenever the agent does not fulfill its instruction, THER learns to output a new directive that matches the agent trajectory, and it relabels the episode with a positive reward. To do so, THER learns to map a state into an instruction by using past successful trajectories, which removes the need to have external expert interventions to relabel episodes as in vanilla HER. We observe that this simple idea also initiates a learning synergy between language acquisition and policy learning on instruction following tasks in the BabyAI environment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2500,
+  "title": "The Hanabi challenge: A new frontier for AI research",
+  "org": "deepmind",
+  "date": "2019-11-27",
+  "venue": "Artificial Intelligence",
+  "url": "https://arxiv.org/abs/1902.00506",
+  "abstract": "From the early days of computing, games have been important testbeds for studying how well machines can do sophisticated decision making. In recent years, machine learning has made dramatic advances with artificial agents reaching superhuman performance in challenge domains like Go, Atari, and some variants of poker. As with their predecessors of chess, checkers, and backgammon, these game domains have driven research by providing sophisticated yet well-defined challenges for artificial intelligence practitioners. We continue this tradition by proposing the game of Hanabi as a new challenge domain with novel problems that arise from its combination of purely cooperative gameplay with two to five players and imperfect information. In particular, we argue that Hanabi elevates reasoning about the beliefs and intentions of other agents to the foreground. We believe developing novel techniques for such theory of mind reasoning will not only be crucial for success in Hanabi, but also in broader collaborative efforts, especially those with human partners. To facilitate future research, we introduce the open-source Hanabi Learning Environment, propose an experimental framework for the research community to evaluate algorithmic advances, and assess the performance of current state-of-the-art techniques.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2501,
+  "title": "The impact of care farms on quality of life, depression and anxiety among different population groups: A systematic review",
+  "org": "deepmind",
+  "date": "2019-11-26",
+  "venue": "Campbell Systematic Reviews",
+  "url": "https://doi.org/10.1002/cl2.1061",
+  "abstract": "Care farming (also called social farming) is the therapeutic use of agricultural and farming practices. Service users and communities supported through care farming include people with learning disabilities, mental and physical health problems, substance misuse, adult offenders, disaffected youth, socially isolated older people and the long term unemployed. Care farming is growing in popularity, especially around Europe. This review aimed to understand the impact of care farming on quality of life, depression and anxiety, on a range of service user groups. It also aimed to explore and explain the way in which care farming might work for different groups. By reviewing interview studies we found that people valued, among other things, being in contact with each other, and feeling a sense of achievement, fulfilment and belonging. Some groups seemed to appreciate different things indicating that different groups may benefit in different ways but, it is unclear if this is due to a difference in the types of activities or the way in which people take different things from the same activity. We found no evidence that care farms improved people's quality of life and some evidence that they might improve depression and anxiety. Larger studies involving single service user groups and fully validated outcome measures are needed to prove more conclusive evidence about the benefits of care farming.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1063,
+  "title": "Benchmarking safe exploration in deep reinforcement learning",
+  "org": "openai",
+  "date": "2019-11-21",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/benchmarking-safe-exploration-in-deep-reinforcement-learning/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2502,
+  "title": "Optimizing agent behavior over long time scales by transporting value",
+  "org": "deepmind",
+  "date": "2019-11-19",
+  "venue": "Nature Communications",
+  "url": "https://arxiv.org/abs/1810.06721",
+  "abstract": "Humans prolifically engage in mental time travel. We dwell on past actions and experience satisfaction or regret. More than storytelling, these recollections change how we act in the future and endow us with a computationally important ability to link actions and consequences across spans of time, which helps address the problem of long-term credit assignment: the question of how to evaluate the utility of actions within a long-duration behavioral sequence. Existing approaches to credit assignment in AI cannot solve tasks with long delays between actions and consequences. Here, we introduce a paradigm where agents use recall of specific memories to credit past actions, allowing them to solve problems that are intractable for existing algorithms. This paradigm broadens the scope of problems that can be investigated in AI and offers a mechanistic account of behaviors that may inspire models in neuroscience, psychology, and behavioral economics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2850,
+  "title": "Learning dexterous in-hand manipulation",
+  "org": "openai",
+  "date": "2019-11-18",
+  "venue": "The International Journal of Robotics Research",
+  "url": "https://doi.org/10.1177/0278364919887447",
+  "abstract": "We use reinforcement learning (RL) to learn dexterous in-hand manipulation policies that can perform vision-based object reorientation on a physical Shadow Dexterous Hand. The training is performed in a simulated environment in which we randomize many of the physical properties of the system such as friction coefficients and an object’s appearance. Our policies transfer to the physical robot despite being trained entirely in simulation. Our method does not rely on any human demonstrations, but many behaviors found in human manipulation emerge naturally, including finger gaiting, multi-finger coordination, and the controlled use of gravity. Our results were obtained using the same distributed RL system that was used to train OpenAI Five. We also include a video of our results: https://youtu.be/jwSbzNHGflM .",
+  "needs_fetch": false
+ },
+ {
+  "id": 2503,
+  "title": "Catch & Carry: Reusable Neural Controllers for Vision-Guided Whole-Body Tasks",
+  "org": "deepmind",
+  "date": "2019-11-15",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1911.06636",
+  "abstract": "We address the longstanding challenge of producing flexible, realistic humanoid character controllers that can perform diverse whole-body tasks involving object interactions. This challenge is central to a variety of fields, from graphics and animation to robotics and motor neuroscience. Our physics-based environment uses realistic actuation and first-person perception -- including touch sensors and egocentric vision -- with a view to producing active-sensing behaviors (e.g. gaze direction), transferability to real robots, and comparisons to the biology. We develop an integrated neural-network based approach consisting of a motor primitive module, human demonstrations, and an instructed reinforcement learning regime with curricula and task variations. We demonstrate the utility of our approach for several tasks, including goal-conditioned box carrying and ball catching, and we characterize its behavioral robustness. The resulting controllers can be deployed in real-time on a standard PC. See overview video, https://youtu.be/2rQAW-8gQQk .",
+  "needs_fetch": false
+ },
+ {
+  "id": 2504,
+  "title": "A modular analysis of adaptive (non-)convex optimization: Optimism, composite objectives, variance reduction, and variational bounds",
+  "org": "deepmind",
+  "date": "2019-11-12",
+  "venue": "Theoretical Computer Science",
+  "url": "https://doi.org/10.1016/j.tcs.2019.11.015",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2505,
+  "title": "PPML '19",
+  "org": "deepmind",
+  "date": "2019-11-06",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3319535.3353562",
+  "abstract": "The area of privacy preserving machine learning has been of growing importance in practice, which has lead to an increased interest in this topic in both academia and industry. We have witnessed this through numerous papers and systems published and developed in the recent years to address challenges in this area. The solutions proposed in this space leverage many different approaches and techniques coming from machine learning, cryptography, and security. Thus, the workshop aims to be a forum to unify different perspectives and start a discussion about the relative merits of each approach. It will also serve as a venue for networking people from different communities interested in this problem, and hopefully foster fruitful long-term collaboration.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1064,
+  "title": "GPT-2: 1.5B release",
+  "org": "openai",
+  "date": "2019-11-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-2-1-5b-release/",
+  "abstract": "As the final model release of GPT-2’s staged release, we’re releasing the largest version (1.5B parameters) of GPT-2 along with code and model weights to facilitate detection of outputs of GPT-2 models. While there have been larger language models released since August, we’ve continued with our original staged release plan in order to provide the community with a test case of a full staged release process. We hope that this test case will be useful to developers of future powerful models, and we’re actively continuing the conversation with the AI community on responsible publication.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2507,
+  "title": "Improved Exploration through Latent Trajectory Optimization in Deep Deterministic Policy Gradient",
+  "org": "deepmind",
+  "date": "2019-11-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1911.06833",
+  "abstract": "Model-free reinforcement learning algorithms such as Deep Deterministic Policy Gradient (DDPG) often require additional exploration strategies, especially if the actor is of deterministic nature. This work evaluates the use of model-based trajectory optimization methods used for exploration in Deep Deterministic Policy Gradient when trained on a latent image embedding. In addition, an extension of DDPG is derived using a value function as critic, making use of a learned deep dynamics model to compute the policy gradient. This approach leads to a symbiotic relationship between the deep reinforcement learning algorithm and the latent trajectory optimizer. The trajectory optimizer benefits from the critic learned by the RL algorithm and the latter from the enhanced exploration generated by the planner. The developed methods are evaluated on two continuous control tasks, one in simulation and one in the real world. In particular, a Baxter robot is trained to perform an insertion task, while only receiving sparse rewards and images as observations from the environment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2506,
+  "title": "Communication without Interception: Defense against Modulation Detection",
+  "org": "deepmind",
+  "date": "2019-11-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/globalsip45357.2019.8969541",
+  "abstract": "We consider a communication scenario, in which an intruder tries to determine the modulation scheme of the intercepted signal. Our aim is to minimize the accuracy of the intruder, while guaranteeing that the intended receiver can still recover the underlying message with the highest reliability. This is achieved by constellation perturbation at the encoder, similarly to adversarial attacks against classifiers in machine learning. In image classification, the perturbation is limited to be imperceptible to a human observer, while in our case the perturbation is constrained so that the message can still be reliably decoded by a legitimate receiver that is oblivious to the perturbation. Simulation results demonstrate the viability of our approach to make wireless communication secure against both state-of-the-art deep-learning- and decision-tree-based intruders with minimal sacrifice in the communication performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2508,
+  "title": "Grandmaster level in StarCraft II using multi-agent reinforcement learning",
+  "org": "deepmind",
+  "date": "2019-10-30",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-019-1724-z",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2509,
+  "title": "Key challenges for delivering clinical impact with artificial intelligence",
+  "org": "deepmind",
+  "date": "2019-10-29",
+  "venue": "BMC Medicine",
+  "url": "https://doi.org/10.1186/s12916-019-1426-2",
+  "abstract": "BACKGROUND: Artificial intelligence (AI) research in healthcare is accelerating rapidly, with potential applications being demonstrated across various domains of medicine. However, there are currently limited examples of such techniques being successfully deployed into clinical practice. This article explores the main challenges and limitations of AI in healthcare, and considers the steps required to translate these potentially transformative technologies from research to clinical practice. MAIN BODY: Key challenges for the translation of AI systems in healthcare include those intrinsic to the science of machine learning, logistical difficulties in implementation, and consideration of the barriers to adoption as well as of the necessary sociocultural or pathway changes. Robust peer-reviewed clinical evaluation as part of randomised controlled trials should be viewed as the gold standard for evidence generation, but conducting these in practice may not always be appropriate or feasible. Performance metrics should aim to capture real clinical applicability and be understandable to intended users. Regulation that balances the pace of innovation with the potential for harm, alongside thoughtful post-market surveillance, is required to ensure that patients are not exposed to dangerous interventions nor deprived of access to beneficial innovations. Mechanisms to enable direct comparisons of AI systems must be developed, including the use of independent, local and representative tes",
+  "needs_fetch": false
+ },
+ {
+  "id": 2510,
+  "title": "A deep learning framework for neuroscience",
+  "org": "deepmind",
+  "date": "2019-10-28",
+  "venue": "Nature Neuroscience",
+  "url": "https://doi.org/10.1038/s41593-019-0520-2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2511,
+  "title": "Fixed-Confidence Guarantees for Bayesian Best-Arm Identification",
+  "org": "deepmind",
+  "date": "2019-10-24",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1910.10945",
+  "abstract": "We investigate and provide new insights on the sampling rule called Top-Two Thompson Sampling (TTTS). In particular, we justify its use for fixed-confidence best-arm identification. We further propose a variant of TTTS called Top-Two Transportation Cost (T3C), which disposes of the computational burden of TTTS. As our main contribution, we provide the first sample complexity analysis of TTTS and T3C when coupled with a very natural Bayesian stopping rule, for bandits with Gaussian rewards, solving one of the open questions raised by Russo (2016). We also provide new posterior convergence results for TTTS under two models that are commonly used in practice: bandits with Gaussian and Bernoulli rewards and conjugate priors.",
+  "needs_fetch": false
+ }
+]

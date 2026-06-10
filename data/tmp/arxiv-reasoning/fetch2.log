@@ -1,0 +1,7 @@
+Wed Jun 10 00:42:38 PDT 2026 cooling down 300s
+Wed Jun 10 00:47:38 PDT 2026 query 1 attempt 1: HTTP 429 entries 0 retry-after: 
+Wed Jun 10 00:50:39 PDT 2026 query 1 attempt 2: HTTP 200 entries 150 retry-after: 
+Wed Jun 10 00:50:51 PDT 2026 query 2 attempt 1: HTTP 200 entries 150 retry-after: 
+Wed Jun 10 00:51:02 PDT 2026 query 3 attempt 1: HTTP 200 entries 45 retry-after: 
+Wed Jun 10 00:51:13 PDT 2026 query 4 attempt 1: HTTP 200 entries 150 retry-after: 
+Wed Jun 10 00:51:23 PDT 2026 DONE2

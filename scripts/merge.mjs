@@ -24,10 +24,25 @@ for (const f of readdirSync(RAW).filter((f) => f.endsWith('.json'))) {
   }
 }
 
+/* spam filter: OpenAlex carries AI-generated podcast/software-release records
+   falsely affiliated to the labs (Zenodo/Figshare/Open MIND pollution) */
+const SPAM_URL = /zenodo\.org|figshare|myweirdprompts\.com|osf\.io/i;
+const SPAM_VENUE = /^(open mind|zenodo|figshare)/i;
+const SPAM_AUTHOR = /chatterbox|^(claude|gemini|chatgpt|gpt)[ ,-]|\((flash|pro|mini)\)|^rosehill, daniel/i;
+function isSpam(p) {
+  if (SPAM_URL.test(p.url || '') || SPAM_URL.test(p.pdf_url || '')) return true;
+  if (SPAM_VENUE.test(p.venue || '')) return true;
+  const authors = Array.isArray(p.authors) ? p.authors : [];
+  if (authors.some((a) => SPAM_AUTHOR.test(String(a)))) return true;
+  return false;
+}
+
 /* normalize */
 const cleaned = [];
+let spam = 0;
 for (const p of all) {
   if (!p || !p.title || String(p.title).trim().length < 4) continue;
+  if (isSpam(p)) { spam++; continue; }
   let date = String(p.date || '').slice(0, 10);
   if (/^\d{4}-\d{2}$/.test(date)) date = date + '-01';
   if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
@@ -90,7 +105,7 @@ const papers = unique.map((p, i) => {
 }).sort((a, b) => (a.date < b.date ? 1 : -1));
 
 writeFileSync(OUT, JSON.stringify({ updated: today, count: papers.length, papers }, null, 1));
-console.log(`\nmerged: ${all.length} raw -> ${papers.length} unique papers -> ${OUT}`);
+console.log(`\nmerged: ${all.length} raw (${spam} spam dropped) -> ${papers.length} unique papers -> ${OUT}`);
 const byOrg = {};
 for (const p of papers) byOrg[p.org] = (byOrg[p.org] || 0) + 1;
 console.log('by org:', byOrg);

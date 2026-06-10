@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1706,
+  "title": "<scp>Dolomites</scp>: Domain-Specific Long-Form Methodical Tasks",
+  "org": "deepmind",
+  "date": "2024-01-07",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://doi.org/10.1162/tacl_a_00727",
+  "abstract": "Abstract Experts in various fields routinely perform methodical writing tasks to plan, organize, and report their work. From a clinician writing a differential diagnosis for a patient, to a teacher writing a lesson plan for students, these tasks are pervasive, requiring to methodically generate structured long-form output for a given input. We develop a typology of methodical tasks structured in the form of a task objective, procedure, input, and output, and introduce DoLoMiTes, a novel benchmark with specifications for 519 such tasks elicited from hundreds of experts from across 25 fields. Our benchmark further contains specific instantiations of methodical tasks with concrete input and output examples (1,857 in total) which we obtain by collecting expert revisions of up to 10 model-generated examples of each task. We use these examples to evaluate contemporary language models, highlighting that automating methodical tasks is a challenging long-form generation problem, as it requires performing complex inferences, while drawing upon the given context as well as domain knowledge. Our dataset is available at https://dolomites-benchmark.github.io/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 239,
+  "title": "Quantifying stability of non-power-seeking in artificial agents",
+  "org": "deepmind",
+  "date": "2024-01-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.03529",
+  "abstract": "We investigate the question: if an AI agent is known to be safe in one setting, is it also safe in a new setting similar to the first? This is a core question of AI alignment--we train and test models in a certain environment, but deploy them in another, and we need to guarantee that models that seem safe in testing remain so in deployment. Our notion of safety is based on power-seeking--an agent which seeks power is not safe. In particular, we focus on a crucial type of power-seeking: resisting shutdown. We model agents as policies for Markov decision processes, and show (in two cases of interest) that not resisting shutdown is \"stable\": if an MDP has certain policies which don't avoid shutdown, the corresponding policies for a similar MDP also don't avoid shutdown. We also show that there are natural cases where safety is _not_ stable--arbitrarily small perturbations may result in policies which never shut down. In our first case of interest--near-optimal policies--we use a bisimulation metric on MDPs to prove that small perturbations won't make the agent take longer to shut down. Our second case of interest is policies for MDPs satisfying certain constraints which hold for various models (including language models). Here, we demonstrate a quantitative bound on how fast the probability of not shutting down can increase: by defining a metric on MDPs; proving that the probability of not shutting down, as a function on MDPs, is lower semicontinuous; and bounding how quickly th",
+  "needs_fetch": false
+ },
+ {
+  "id": 1707,
+  "title": "RatInABox, a toolkit for modelling locomotion and neuronal activity in continuous environments",
+  "org": "deepmind",
+  "date": "2024-01-04",
+  "venue": "eLife",
+  "url": "https://doi.org/10.7554/elife.85274",
+  "abstract": "Generating synthetic locomotory and neural data is a useful yet cumbersome step commonly required to study theoretical models of the brain's role in spatial navigation. This process can be time consuming and, without a common framework, makes it difficult to reproduce or compare studies which each generate test data in different ways. In response, we present RatInABox, an open-source Python toolkit designed to model realistic rodent locomotion and generate synthetic neural data from spatially modulated cell types. This software provides users with (i) the ability to construct one- or two-dimensional environments with configurable barriers and visual cues, (ii) a physically realistic random motion model fitted to experimental data, (iii) rapid online calculation of neural data for many of the known self-location or velocity selective cell types in the hippocampal formation (including place cells, grid cells, boundary vector cells, head direction cells) and (iv) a framework for constructing custom cell types, multi-layer network models and data- or policy-controlled motion trajectories. The motion and neural models are spatially and temporally continuous as well as topographically sensitive to boundary conditions and walls. We demonstrate that out-of-the-box parameter settings replicate many aspects of rodent foraging behaviour such as velocity statistics and the tendency of rodents to over-explore walls. Numerous tutorial scripts are provided, including examples where RatInABo",
+  "needs_fetch": false
+ },
+ {
+  "id": 834,
+  "title": "AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents",
+  "org": "deepmind",
+  "date": "2024-01-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.12963",
+  "abstract": "Large foundation models that incorporate language, vision, and more recently actions have revolutionized the ability to harness internet scale data to learn knowledge and reasoning for everyday tasks. In this paper we show how existing foundation models can be used to scale up the deployment of operational robots incompletely unseen scenarios with minimal human supervision. We refer to this system as AutoRT, which runs on over 50 robots across multiple buildings, collecting 77k real robot episodes via both teleoperation and autonomously moving robots. Such “in-the-wild” data is significantly more diverse than previous robotic datasets collected in robot lab settings, and improves robotics policies when used in co-fine-tuning. When combined with vision, large language models can propose novel instructions based on their environment and reason about autonomy tradeoffs and safety without finetuning, allowing orchestration of large scale robot fleets. We further show how introducing LLMs and VLMs into data collection creates new forms of interaction for steering robot agents to collect more diverse data or data for specific settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1708,
+  "title": "Author response: RatInABox, a toolkit for modelling locomotion and neuronal activity in continuous environments",
+  "org": "deepmind",
+  "date": "2024-01-02",
+  "venue": null,
+  "url": "https://doi.org/10.7554/elife.85274.sa2",
+  "abstract": "Full text Figures and data Side by side Abstract Editor's evaluation eLife digest Introduction Results Discussion Materials and methods Appendix 1 Data availability References Decision letter Author response Article and author information Abstract Generating synthetic locomotory and neural data is a useful yet cumbersome step commonly required to study theoretical models of the brain’s role in spatial navigation. This process can be time consuming and, without a common framework, makes it difficult to reproduce or compare studies which each generate test data in different ways. In response, we present RatInABox, an open-source Python toolkit designed to model realistic rodent locomotion and generate synthetic neural data from spatially modulated cell types. This software provides users with (i) the ability to construct one- or two-dimensional environments with configurable barriers and visual cues, (ii) a physically realistic random motion model fitted to experimental data, (iii) rapid online calculation of neural data for many of the known self-location or velocity selective cell types in the hippocampal formation (including place cells, grid cells, boundary vector cells, head direction cells) and (iv) a framework for constructing custom cell types, multi-layer network models and data- or policy-controlled motion trajectories. The motion and neural models are spatially and temporally continuous as well as topographically sensitive to boundary conditions and walls. We demonst",
+  "needs_fetch": false
+ },
+ {
+  "id": 2890,
+  "title": "Circuits Updates — January 2024",
+  "org": "anthropic",
+  "date": "2024-01-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/jan-update/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2741,
+  "title": "AI Can Help Workers Gain New Technical Capabilities Without Gaining Knowledge",
+  "org": "openai",
+  "date": "2024-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.4944588",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2740,
+  "title": "Multi-Group Fairness Evaluation via Conditional Value-at-Risk Testing",
+  "org": "openai",
+  "date": "2024-01-01",
+  "venue": "IEEE Journal on Selected Areas in Information Theory",
+  "url": "https://doi.org/10.1109/jsait.2024.3397741",
+  "abstract": "Machine learning (ML) models used in prediction and classification tasks may display performance disparities across population groups determined by sensitive attributes (e.g., race, sex, age). We consider the problem of evaluating the performance of a fixed ML model across population groups defined by multiple sensitive attributes (e.g., race and sex and age). Here, the sample complexity for estimating the worst-case performance gap across groups (e.g., the largest difference in error rates) increases exponentially with the number of group-denoting sensitive attributes. To address this issue, we propose an approach to test for performance disparities based on Conditional Value-at-Risk (CVaR). By allowing a small probabilistic slack on the groups over which a model has approximately equal performance, we show that the sample complexity required for discovering performance violations is reduced exponentially to be at most upper bounded by the square root of the number of groups. As a byproduct of our analysis, when the groups are weighted by a specific prior distribution, we show that Rényi entropy of order 2/3 of the prior distribution captures the sample complexity of the proposed CVaR test algorithm. Finally, we also show that there exists a non-i.i.d. data collection strategy that results in a sample complexity independent of the number of groups.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2739,
+  "title": "AI Regulations",
+  "org": "openai",
+  "date": "2024-01-01",
+  "venue": "Future of business and finance",
+  "url": "https://doi.org/10.1007/978-3-031-54252-7_3",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1715,
+  "title": "Dynamic diversity is the answer to proxy failure",
+  "org": "deepmind",
+  "date": "2024-01-01",
+  "venue": "Behavioral and Brain Sciences",
+  "url": "http://dx.doi.org/10.1017/s0140525x23002923",
+  "abstract": "We argue that a diverse and dynamic pool of agents mitigates proxy failure. Proxy modularity plays a key role in the ongoing production of diversity. We review examples from a range of scales.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1714,
+  "title": "A Game-Theoretic Model of Misinformation Spread on Social Networks",
+  "org": "deepmind",
+  "date": "2024-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "http://dx.doi.org/10.2139/ssrn.4808800",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1713,
+  "title": "Accelerating Scientific Discovery with AI",
+  "org": "deepmind",
+  "date": "2024-01-01",
+  "venue": "The Keio Journal of Medicine",
+  "url": "https://doi.org/10.2302/kjm.abstract_73_4-1",
+  "abstract": "This lecture will explore Google DeepMind’s groundbreaking AI research and its transformative impact on the trajectory of scientific progress. It traces the path from AlphaGo, which mastered the complex game of Go through self-learning and innovative problem-solving, to AlphaFold, which revolutionized the field of protein structure prediction. Then, looking ahead to further AI-led advancements in medicine, materials science, climate science, and more, this lecture emphasizes Google DeepMind’s commitment to safety and responsibility while pursuing advances in AI that benefit humanity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1712,
+  "title": "Training Matters: Unlocking Potentials of Deeper Graph Convolutional Neural Networks",
+  "org": "deepmind",
+  "date": "2024-01-01",
+  "venue": "Studies in computational intelligence",
+  "url": "https://doi.org/10.1007/978-3-031-53468-3_5",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1711,
+  "title": "A New Dataset and Method for Creativity Assessment Using the Alternate Uses Task",
+  "org": "deepmind",
+  "date": "2024-01-01",
+  "venue": "Communications in computer and information science",
+  "url": "https://doi.org/10.1007/978-981-97-0065-3_9",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1710,
+  "title": "Balancing Participation and Decentralization in Proof-of-Stake Cryptocurrencies",
+  "org": "deepmind",
+  "date": "2024-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-71033-9_19",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1709,
+  "title": "When Do We Need Graph Neural Networks for Node Classification?",
+  "org": "deepmind",
+  "date": "2024-01-01",
+  "venue": "Studies in computational intelligence",
+  "url": "https://doi.org/10.1007/978-3-031-53468-3_4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 541,
+  "title": "Beyond Chinchilla-Optimal: Accounting for Inference in Language Model Scaling Laws",
+  "org": "other",
+  "date": "2023-12-31",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.00448",
+  "abstract": "Large language model (LLM) scaling laws are empirical formulas that estimate changes in model quality as a result of increasing parameter count and training data. However, these formulas, including the popular Deepmind Chinchilla scaling laws, neglect to include the cost of inference. We modify the Chinchilla scaling laws to calculate the optimal LLM parameter count and pre-training data size to train and deploy a model of a given quality and inference demand. We conduct our analysis both in terms of a compute budget and real-world costs and find that LLM researchers expecting reasonably large inference demand (~1B requests) should train models smaller and longer than Chinchilla-optimal. Furthermore, we train 47 models of varying sizes and parameter counts to validate our formula and find that model quality continues to improve as we scale tokens per parameter to extreme ranges (up to 10,000). Finally, we ablate the procedure used to fit the Chinchilla scaling law coefficients and find that developing scaling laws only from data collected at typical token/parameter ratios overestimates the impact of additional tokens at these extreme ranges.",
+  "needs_fetch": false
+ },
+ {
+  "id": 835,
+  "title": "GenCast: learning skillful ensemble forecasting of medium-range weather",
+  "org": "deepmind",
+  "date": "2023-12-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2312.15796",
+  "abstract": "A probabilistic weather forecast is critical for decision-making, from the everyday to preparation for extreme events. Forecasts of the joint distribution of weather trajectories via spatio-temporally coherent ensembles have further importance: they provide a powerful tool for decision-making in complex and high-impact domains including energy system planning, transportation routing, flood forecasting and more. State-of-the-art ML forecast models for medium-range weather, however, are largely trained to produce deterministic forecasts which lose physical consistency at longer lead times. We introduce GenCast, a ML-based generative model for ensemble weather forecasting, trained from reanalysis data. It forecasts ensembles of trajectories for hundreds of weather variables, up to 15 days at 1 degree resolution globally, using under TC secs per ensemble member. We show that GenCast is more skilful than ENS, a top operational ensemble forecast, for TC% of TC verification targets, while maintaining good calibration and physically consistent power spectra.",
+  "needs_fetch": false
+ },
+ {
+  "id": 421,
+  "title": "REBEL: Reward Regularization-Based Approach for Robotic Reinforcement Learning from Human Feedback",
+  "org": "other",
+  "date": "2023-12-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2312.14436",
+  "abstract": "The effectiveness of reinforcement learning (RL) agents in continuous control robotics tasks is mainly dependent on the design of the underlying reward function, which is highly prone to reward hacking. A misalignment between the reward function and underlying human preferences (values, social norms) can lead to catastrophic outcomes in the real world especially in the context of robotics for critical decision making. Recent methods aim to mitigate misalignment by learning reward functions from human preferences and subsequently performing policy optimization. However, these methods inadvertently introduce a distribution shift during reward learning due to ignoring the dependence of agent-generated trajectories on the reward learning objective, ultimately resulting in sub-optimal alignment. Hence, in this work, we address this challenge by advocating for the adoption of regularized reward functions that more accurately mirror the intended behaviors of the agent. We propose a novel concept of reward regularization within the robotic RLHF (RL from Human Feedback) framework, which we refer to as \\emph{agent preferences}. Our approach uniquely incorporates not just human feedback in the form of preferences but also considers the preferences of the RL agent itself during the reward function learning process. This dual consideration significantly mitigates the issue of distribution shift in RLHF with a computationally tractable algorithm. We provide a theoretical justification for ",
+  "needs_fetch": false
+ },
+ {
+  "id": 836,
+  "title": "Zero-Shot Metric Depth with a Field-of-View Conditioned Diffusion Model",
+  "org": "deepmind",
+  "date": "2023-12-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2312.13252",
+  "abstract": "While methods for monocular depth estimation have made significant strides on standard benchmarks, zero-shot metric depth estimation remains unsolved. Challenges include the joint modeling of indoor and outdoor scenes, which often exhibit significantly different distributions of RGB and depth, and the depth-scale ambiguity due to unknown camera intrinsics. Recent work has proposed specialized multi-head architectures for jointly modeling indoor and outdoor scenes. In contrast, we advocate a generic, task-agnostic diffusion model, with several advancements such as log-scale depth parameterization to enable joint modeling of indoor and outdoor scenes, conditioning on the field-of-view (FOV) to handle scale ambiguity and synthetically augmenting FOV during training to generalize beyond the limited camera intrinsics in training datasets. Furthermore, by employing a more diverse training mixture than is common, and an efficient diffusion parameterization, our method, DMD (Diffusion for Metric Depth) achieves a 25% reduction in relative error (REL) on zero-shot indoor and 33% reduction on zero-shot outdoor datasets over the current SOTA using only a small number of denoising steps.",
+  "needs_fetch": false
+ },
+ {
+  "id": 837,
+  "title": "Equivariant MuZero",
+  "org": "deepmind",
+  "date": "2023-12-19",
+  "venue": "Transactions on Machine Learning Research (TMLR)",
+  "url": "https://openreview.net/forum?id=ExbGarTbLE",
+  "abstract": "Deep reinforcement learning has shown lots of success in closed, well-defined domains such as games (Chess, Go, StarCraft). The next frontier is real-world scenarios, where setups are numerous and varied. For this, agents need to learn the underlying environment dynamics, so as to robustly generalise to conditions that differ from those they were trained on. Model-based reinforcement learning algorithms, such as MuZero or Dreamer, aim to accomplish this by learning a world model. However, leveraging a world model has not yet consistently shown greater generalisation capabilities compared to model-free alternatives. In this work, we propose improving the data efficiency and generalisation capabilities of MuZero by explicitly incorporating the symmetries of the environment in its world-model architecture. We prove that, so long as the neural networks used by MuZero are equivariant to a particular symmetry group acting on the environment, the entirety of MuZero's action-selection algorithm will also be equivariant to that group. As such, Equivariant MuZero is guaranteed to behave symmetrically in symmetrically-transformed states, and will hence be more data-efficient when learning its world models. We evaluate Equivariant MuZero on procedurally-generated MiniPacman and on Chaser from the ProcGen suite: training on a set of mazes, and then testing on unseen rotated versions, demonstrating the benefits of equivariance. We verify that our improvements hold even when only some of th",
+  "needs_fetch": false
+ },
+ {
+  "id": 1716,
+  "title": "Detecting Speech Abnormalities With a Perceiver-Based Sequence Classifier that Leverages a Universal Speech Model",
+  "org": "deepmind",
+  "date": "2023-12-16",
+  "venue": null,
+  "url": "http://dx.doi.org/10.1109/asru57964.2023.10389789",
+  "abstract": "We propose a Perceiver-based sequence classifier to detect abnormalities in speech reflective of several neurological disorders. We combine this classifier with a Universal Speech Model (USM) that is trained on 12 million hours of diverse audio recordings. Our model compresses long sequences into a small set of class-specific latent representations and a factorized projection is used to predict different attributes of the disordered input speech. The benefit of our approach is that it allows us to model different regions of the input for different classes and is at the same time data efficient. We evaluated the proposed model extensively on a curated corpus from the Mayo Clinic. Our model outperforms standard transformer (80.9%) and perceiver (81.8%) models and achieves an average accuracy of 83.1%. With limited task-specific data, we find that pretraining is important and surprisingly pretraining with the un-related automatic speech recognition (ASR) task is also beneficial. Encodings from the middle layers provide a mix of both acoustic and phonetic information and achieve best prediction results compared to just using the final layer encodings (83.1% vs 79.6%). The results are promising and with further refinements may help clinicians detect speech abnormalities without needing access to highly specialized speech-language pathologists.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2742,
+  "title": "Portable Cerebral Blood Flow Monitor to Detect Large Vessel Occlusion in Suspected Stroke Patients",
+  "org": "openai",
+  "date": "2023-12-15",
+  "venue": "medRxiv",
+  "url": "https://doi.org/10.1101/2023.12.14.23299992",
+  "abstract": "ABSTRACT Background Early detection of large vessel occlusion (LVO) facilitates triage to a comprehensive or thrombectomy-capable stroke center to reduce treatment times and improve outcomes. Prehospital stroke scales, however, are not sufficiently sensitive, so here we investigate the ability of the portable Openwater optical blood flow monitor to detect LVO in patients undergoing acute stroke evaluation. Methods Patients were prospectively enrolled at two comprehensive stroke centers during acute stroke evaluation within 24 hours of symptom onset with NIHSS ≥2. Each patient underwent a 60-second bedside optical blood flow evaluation with the Openwater instrument. The Openwater instrument generates cerebral blood flow waveforms based on relative changes in speckle contrast. Anterior circulation LVO was deteremined based on CT angiographic imaging and defined as occlusion of the ICA, or first/second segment of the MCA. A deep learning model, based on a transformer architecture trained on all patient data using fivefold cross-validation and learned discriminative representations from the raw speckle contrast waveform data. ROC analysis compared the Openwater diagnostic performance (i.e., LVO detection) with performance of prehospital stroke scales. Results Amongst 135 patients, the median NIHSS was 8 (IQR: 4-14), and 52 (39%) had an anterior circulation LVO based on CT angiogram. The Openwater instrument had 79% sensitivity and 84% specificity for the detection of LVO. The RAC",
+  "needs_fetch": false
+ },
+ {
+  "id": 1718,
+  "title": "Simulation-based search",
+  "org": "deepmind",
+  "date": "2023-12-15",
+  "venue": "EMS Press eBooks",
+  "url": "http://dx.doi.org/10.4171/icm2022/180",
+  "abstract": "Planning is one of the oldest and most important problems in artificial intelligence. Sim­u­lation-based search algorithms, such as AlphaZero, have achieved superhuman performance in chess and Go and are used widely in real-world applications of planning. In this paper we provide a unified framework for simulation-based search. Algorithms in this framework interleave operators for policy evaluation (better estimating the value function of the current policy) and policy improvement (using the value function to form a better policy). These operators are applied to states and actions that are sampled in sequential trajectories, and that may branch recursively into other sampled trajectories. The value function and policy may also be represented by a function approximator. Our framework includes a broad family of search algorithms that includes Monte-Carlo tree search, sparse sampling, nested Monte-Carlo search, classification-based policy iteration, and AlphaZero.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1717,
+  "title": "Optimal Inapproximability with Universal Factor Graphs",
+  "org": "deepmind",
+  "date": "2023-12-15",
+  "venue": "ACM Transactions on Algorithms",
+  "url": "https://doi.org/10.1145/3631119",
+  "abstract": "The factor graph of an instance of a constraint satisfaction problem (CSP) is the bipartite graph indicating which variables appear in each constraint. An instance of the CSP is given by the factor graph together with a list of which predicate is applied for each constraint. We establish that many Max-CSPs remain as hard to approximate as in the general case even when the factor graph is fixed (depending only on the size of the instance) and known in advance. Examples of results obtained for this restricted setting are: (1) Optimal inapproximability for Max-3-Lin and Max-3-Sat (Håstad, J. ACM 2001). (2) Approximation resistance for predicates supporting pairwise independent subgroups (Chan, J. ACM 2016). (3) Hardness of the “(2+ɛ)-Sat” problem and other Promise CSPs (Austrin et al., SIAM J. Comput. 2017). The main technical tool used to establish these results is a new way of folding the long code which we call “functional folding”.",
+  "needs_fetch": false
+ },
+ {
+  "id": 839,
+  "title": "Learning Silicon Dopant Transitions in Graphene using Scanning Transmission Electron Microscopy",
+  "org": "deepmind",
+  "date": "2023-12-15",
+  "venue": "NeurIPS Workshop 2023",
+  "url": "https://arxiv.org/abs/2311.17894",
+  "abstract": "We introduce a machine learning approach to determining the transition rates of silicon atoms on graphene (a lattice of carbon atoms), when stimulated by the electron beam of a scanning transmission electron microscope. Our learned rates are then applied to guide a single silicon atom throughout the lattice to pre-determined target destinations. We present sensitivity and accuracy analyses that demonstrate the generality of our approach.",
+  "needs_fetch": false
+ },
+ {
+  "id": 838,
+  "title": "Challenges with unsupervised LLM knowledge discovery",
+  "org": "deepmind",
+  "date": "2023-12-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2312.10029",
+  "abstract": "We show that existing unsupervised methods on large language model (LLM) activations do not discover knowledge -- instead they seem to discover whatever feature of the activations is most prominent. The idea behind unsupervised knowledge elicitation is that knowledge satisfies a consistency structure, which can be used to discover knowledge. We first prove theoretically that arbitrary features (not just knowledge) satisfy the consistency structure of a particular leading unsupervised knowledge-elicitation method, contrast-consistent search (Burns et al., 2023). We then present a series of experiments showing settings in which unsupervised methods result in classifiers that do not predict knowledge, but instead predict a different prominent feature. We conclude that existing unsupervised methods for discovering latent knowledge are insufficient, and we contribute sanity checks to apply to evaluating future knowledge elicitation methods. Conceptually, we hypothesise that the identification issues explored here, e.g. distinguishing a model's knowledge from that of a simulated character's, will persist for future unsupervised methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1719,
+  "title": "Mathematical discoveries from program search with large language models",
+  "org": "deepmind",
+  "date": "2023-12-14",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-023-06924-6",
+  "abstract": "Abstract Large language models (LLMs) have demonstrated tremendous capabilities in solving complex tasks, from quantitative reasoning to understanding natural language. However, LLMs sometimes suffer from confabulations (or hallucinations), which can result in them making plausible but incorrect statements 1,2 . This hinders the use of current large models in scientific discovery. Here we introduce FunSearch (short for searching in the function space), an evolutionary procedure based on pairing a pretrained LLM with a systematic evaluator. We demonstrate the effectiveness of this approach to surpass the best-known results in important problems, pushing the boundary of existing LLM-based approaches 3 . Applying FunSearch to a central problem in extremal combinatorics—the cap set problem—we discover new constructions of large cap sets going beyond the best-known ones, both in finite dimensional and asymptotic cases. This shows that it is possible to make discoveries for established open problems using LLMs. We showcase the generality of FunSearch by applying it to an algorithmic problem, online bin packing, finding new heuristics that improve on widely used baselines. In contrast to most computer search approaches, FunSearch searches for programs that describe how to solve a problem, rather than what the solution is. Beyond being an effective and scalable strategy, discovered programs tend to be more interpretable than raw solutions, enabling feedback loops between domain exper",
+  "needs_fetch": false
+ },
+ {
+  "id": 1014,
+  "title": "Practices for Governing Agentic AI Systems",
+  "org": "openai",
+  "date": "2023-12-14",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/practices-for-governing-agentic-ai-systems/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 840,
+  "title": "Meta-in-context learning in large language models",
+  "org": "deepmind",
+  "date": "2023-12-14",
+  "venue": "NeurIPS 2023",
+  "url": "https://neurips.cc/virtual/2023/poster/70239",
+  "abstract": "Large language models have shown tremendous performance in a variety of tasks. In-context learning is seen as one of the main contributors to their success. Previous work has demonstrated that in-context learning can even solve non-trivial tasks such as supervised and reinforcement learning. We expand on this line of work by investigating the effect of in context learning when the context is presented in a sequential manner. We find that the sequential presentation of related tasks leads to better in-context learning performance, thereby revealing that in-context learning can be used to create better in-context learning algorithms. We coin this phenomenon \\emph{meta-in-context learning}. Multiple experiments reveal that meta-in-context learning adaptively modifies a large language model's priors over latent variables and that it adjusts its learning strategies. Finally, we extend our approach to a benchmark of real-world regression problems where we observe competitive performance to traditional learning algorithms. Taken together, our work improves our understanding of in-context learning and paves the way toward adapting large language models to the environment they are applied purely through meta-in-context learning rather than traditional fine-tuning.",
+  "needs_fetch": false
+ }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 142,
+  "title": "The Hot Mess of AI: How Does Misalignment Scale with Model Intelligence and Task Complexity?",
+  "org": "anthropic",
+  "date": "2026-02-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/hot-mess-of-ai/",
+  "abstract": "As AI becomes more capable, we entrust it with more general and consequential tasks. The risks from failure grow more severe with increasing task scope. It is therefore important to understand how extremely capable AI models will fail: Will they fail by systematically pursuing goals we do not intend? Or will they fail by being a hot mess, and taking nonsensical actions that do not further any goal? We operationalize this question using a bias-variance decomposition of the errors made by AI models: An AI's \\emph{error-incoherence} on a task is measured over test-time randomness as the fraction of its error that stems from variance rather than bias in task outcome. Across all tasks and frontier models we measure, the longer models spend reasoning and taking actions, \\emph{the more incoherent} their failures become. Error-incoherence changes with model scale in a way that is experiment dependent. However, in several settings, larger, more capable models are more incoherent than smaller models. Consequently, scale alone seems unlikely to eliminate error-incoherence. Instead, as more capable AIs pursue harder tasks, requiring more sequential action and thought, our results predict failures to be accompanied by more incoherent behavior. This suggests a future where AIs sometimes cause industrial accidents (due to unpredictable misbehavior), but are less likely to exhibit consistent pursuit of a misaligned goal. This increases the relative importance of alignment research targeting ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2666,
+  "title": "Proton: Towards Multi-level, Adaptive Profiling for Triton",
+  "org": "openai",
+  "date": "2026-01-31",
+  "venue": null,
+  "url": "https://doi.org/10.1109/cgo68049.2026.11395207",
+  "abstract": "Domain-Specific languages (DSLs) such as Triton enable developers to write high-performance GPU kernels in a Python-friendly manner; however, profiling these kernels with existing tools often incurs runtime and storage overhead while failing to deliver actionable insights for both kernel authors and framework developers. We present Proton, a multi-level, adaptive profiler tailored for the Triton programming language and compiler. Proton provides frontend APIs to selectively profile relevant regions, aggregate results, capture custom metrics not available through hardware counters, and query profiles using a SQL-like language. Proton’s backend design unifies vendor profiling APIs with instrumentation-based profiling, ensuring portability and extensibility. Using Proton, users are able to query custom and hardware metrics across the relevant levels of abstraction—full end-to-end model execution, isolated neural network layers, language-specific Triton operators, and compiler intermediate representations. We demonstrate the tool’s effectiveness through case studies on production-grade kernel development, continuous integration, multi-GPU analysis, language model inference, and intra-kernel profiling. Our evaluations on end-to-end workloads, as well as standalone Triton kernels, demonstrate that Proton imposes lower runtime overhead and delivers significant reductions in profile sizes relative to existing framework and vendor profilers while being fully open source.",
+  "needs_fetch": false
+ },
+ {
+  "id": 463,
+  "title": "FrontierScience: Evaluating AI's Ability to Perform Expert-Level Scientific Tasks",
+  "org": "openai",
+  "date": "2026-01-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.21165",
+  "abstract": "We introduce FrontierScience, a benchmark evaluating expert-level scientific reasoning in frontier language models. Recent model progress has nearly saturated existing science benchmarks, which often rely on multiple-choice knowledge questions or already published information. FrontierScience addresses this gap through two complementary tracks: (1) Olympiad, consisting of international olympiad problems at the level of IPhO, IChO, and IBO, and (2) Research, consisting of PhD-level, open-ended problems representative of sub-tasks in scientific research. FrontierScience contains several hundred questions (including 160 in the open-sourced gold set) covering subfields across physics, chemistry, and biology, from quantum electrodynamics to synthetic organic chemistry. All Olympiad problems are originally produced by international Olympiad medalists and national team coaches to ensure standards of difficulty, originality, and factuality. All Research problems are research sub-tasks written and verified by PhD scientists (doctoral candidates, postdoctoral researchers, or professors). For Research, we introduce a granular rubric-based evaluation framework to assess model capabilities throughout the process of solving a research task, rather than judging only a standalone final answer.",
+  "needs_fetch": false
+ },
+ {
+  "id": 30,
+  "title": "How AI assistance impacts the formation of coding skills",
+  "org": "anthropic",
+  "date": "2026-01-29",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/AI-assistance-coding-skills",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1290,
+  "title": "A benchmark of expert-level academic questions to assess AI capabilities",
+  "org": "deepmind",
+  "date": "2026-01-28",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-09962-4",
+  "abstract": "Benchmarks are important tools for tracking the rapid advancements in large language model (LLM) capabilities. However, benchmarks are not keeping pace in difficulty: LLMs now achieve more than 90% accuracy on popular benchmarks such as Measuring Massive Multitask Language Understanding1, limiting informed measurement of state-of-the-art LLM capabilities. Here, in response, we introduce Humanity’s Last Exam (HLE), a multi-modal benchmark at the frontier of human knowledge, designed to be an expert-level closed-ended academic benchmark with broad subject coverage. HLE consists of 2,500 questions across dozens of subjects, including mathematics, humanities and the natural sciences. HLE is developed globally by subject-matter experts and consists of multiple-choice and short-answer questions suitable for automated grading. Each question has a known solution that is unambiguous and easily verifiable but cannot be quickly answered by internet retrieval. State-of-the-art LLMs demonstrate low accuracy and calibration on HLE, highlighting a marked gap between current LLM capabilities and the expert human frontier on closed-ended academic questions. To inform research and policymaking upon a clear understanding of model capabilities, we publicly release HLE at https://lastexam.ai . Humanity’s Last Exam, a multi-modal benchmark at the frontier of human knowledge, is designed to be an expert-level closed-ended academic benchmark with broad subject coverage.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1289,
+  "title": "Advancing regulatory variant effect prediction with AlphaGenome",
+  "org": "deepmind",
+  "date": "2026-01-28",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-10014-0",
+  "abstract": "Abstract Deep learning models that predict functional genomic measurements from DNA sequences are powerful tools for deciphering the genetic regulatory code. Existing methods involve a trade-off between input sequence length and prediction resolution, thereby limiting their modality scope and performance 1–5 . We present AlphaGenome, a unified DNA sequence model, which takes as input 1 Mb of DNA sequence and predicts thousands of functional genomic tracks up to single-base-pair resolution across diverse modalities. The modalities include gene expression, transcription initiation, chromatin accessibility, histone modifications, transcription factor binding, chromatin contact maps, splice site usage and splice junction coordinates and strength. Trained on human and mouse genomes, AlphaGenome matches or exceeds the strongest available external models in 25 of 26 evaluations of variant effect prediction. The ability of AlphaGenome to simultaneously score variant effects across all modalities accurately recapitulates the mechanisms of clinically relevant variants near the TAL1 oncogene 6 . To facilitate broader use, we provide tools for making genome track and variant effect predictions from sequence.",
+  "needs_fetch": false
+ },
+ {
+  "id": 567,
+  "title": "What's the plan? Metrics for implicit planning in LLMs and their application to rhyme generation and question answering",
+  "org": "deepmind",
+  "date": "2026-01-28",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2601.20164",
+  "abstract": "Prior work suggests that language models, while trained on next token prediction, show implicit planning behavior: they may select the next token in preparation to a predicted future token, such as a likely rhyming word, as supported by a prior qualitative study of Claude 3.5 Haiku using a cross-layer transcoder. We propose much simpler techniques for assessing implicit planning in language models. With case studies on rhyme poetry generation and question answering, we demonstrate that our methodology easily scales to many models. Across models, we find that the generated rhyme (e.g. \"-ight\") or answer to a question (\"whale\") can be manipulated by steering at the end of the preceding line with a vector, affecting the generation of intermediate tokens leading up to the rhyme or answer word. We show that implicit planning is a universal mechanism, present in smaller models than previously thought, starting from 1B parameters. Our methodology offers a widely applicable direct way to study implicit planning abilities of LLMs. More broadly, understanding planning abilities of language models can inform decisions in AI safety and control.",
+  "needs_fetch": false
+ },
+ {
+  "id": 143,
+  "title": "Pre-deployment auditing can catch an overt saboteur",
+  "org": "anthropic",
+  "date": "2026-01-28",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/auditing-overt-saboteur/",
+  "abstract": "We test whether our production pre-deployment alignment auditing methods can catch overt saboteurs: models trained to sabotage Anthropic but not to conceal this behavior. A human working together with an automated auditing agent successfully identified three overt sabotage agents, without flagging two benign models. This suggests that our pre-deployment alignment audit would detect if current Claude models were overtly trying to sabotage Anthropic.",
+  "needs_fetch": false
+ },
+ {
+  "id": 31,
+  "title": "Disempowerment patterns in real-world AI usage",
+  "org": "anthropic",
+  "date": "2026-01-28",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/disempowerment-patterns",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1291,
+  "title": "Towards a Science of Scaling Agent Systems",
+  "org": "deepmind",
+  "date": "2026-01-23",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-8414536/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1292,
+  "title": "The Missing Dimension in Clinical AI: Making Hidden Values Visible",
+  "org": "deepmind",
+  "date": "2026-01-22",
+  "venue": "NEJM AI",
+  "url": "https://doi.org/10.1056/aip2501266",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 144,
+  "title": "Petri 2.0: New Scenarios, New Model Comparisons, and Improved Eval-Awareness Mitigations",
+  "org": "anthropic",
+  "date": "2026-01-22",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/petri-v2/",
+  "abstract": "We've improved our Petri automated-behavioral-auditing tool with new realism mitigations to counter eval-awareness, an expanded seed library with 70 new scenarios, and evaluation results for more recent frontier models. The latest version of Petri is available at github.com/safety-research/petri.",
+  "needs_fetch": false
+ },
+ {
+  "id": 32,
+  "title": "Claude's new constitution",
+  "org": "anthropic",
+  "date": "2026-01-22",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/claude-new-constitution",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2667,
+  "title": "GDPVAL: Evaluating AI Model Performance on Real-World Economically Valuable Tasks",
+  "org": "openai",
+  "date": "2026-01-21",
+  "venue": "SuperIntelligence - Robotics - Safety & Alignment",
+  "url": "https://doi.org/10.70777/si.v2i4.17197",
+  "abstract": "We introduce GDPval, a benchmark evaluating AI model capabilities on realworld economically valuable tasks. GDPval covers the majority of U.S. Bureau of Labor Statistics Work Activities for 44 occupations across the top 9 sectors contributing to U.S. GDP (Gross Domestic Product). Tasks are constructed from the representative work of industry professionals with an average of 14 years of experience. We find that frontier model performance on GDPval is improving roughly linearly over time, and that the current best frontier models are approaching industry experts in deliverable quality. We analyze the potential for frontier models, when paired with human oversight, to perform GDPval tasks cheaper and faster than unaided experts. We also demonstrate that increased reasoning effort, increased task context, and increased scaffolding improves model performance on GDPval. Finally, we open-source a gold subset of 220 tasks and provide a public automated grading service at evals.openai.com to facilitate future research in understanding real-world model capabilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1293,
+  "title": "Reply to Dujmović: The alignment in cost between human and model reasoning is an empirical phenomenon worth explaining",
+  "org": "deepmind",
+  "date": "2026-01-20",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2536153123",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 302,
+  "title": "OpenLearnLM Benchmark: A Unified Framework for Evaluating Knowledge, Skill, and Attitude in Educational Large Language Models",
+  "org": "other",
+  "date": "2026-01-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.13882",
+  "abstract": "Large Language Models are increasingly deployed as educational tools, yet existing benchmarks focus on narrow skills and lack grounding in learning sciences. We introduce OpenLearnLM Benchmark, a theory-grounded framework evaluating LLMs across three dimensions derived from educational assessment theory: Knowledge (curriculum-aligned content and pedagogical understanding), Skills (scenario-based competencies organized through a four-level center-role-scenario-subscenario hierarchy), and Attitude (alignment consistency and deception resistance). Our benchmark comprises 124K+ items spanning multiple subjects, educational roles, and difficulty levels based on Bloom's taxonomy. The Knowledge domain prioritizes authentic assessment items from established benchmarks, while the Attitude domain adapts Anthropic's Alignment Faking methodology to detect behavioral inconsistency under varying monitoring conditions. Evaluation of seven frontier models reveals distinct capability profiles: Claude-Opus-4.5 excels in practical skills despite lower content knowledge, while Grok-4.1-fast leads in knowledge but shows alignment concerns. Notably, no single model dominates all dimensions, validating the necessity of multi-axis evaluation. OpenLearnLM provides an open, comprehensive framework for advancing LLM readiness in authentic educational contexts.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2668,
+  "title": "A Literature Review on Data Democratization, Self-Service Business Intelligence, and Data Literacy",
+  "org": "openai",
+  "date": "2026-01-19",
+  "venue": "International Journal of Business Analytics",
+  "url": "https://doi.org/10.4018/ijban.398838",
+  "abstract": "Organizations need to evolve to stay competitive, given the constant influx of data. Traditional analysis struggles with this volume and complexity. Data democratization, enabling broader employee access to data, is crucial. This trend, alongside self-service business intelligence and data literacy, empowers data-driven decisions. While data democratization removes access barriers and self-service business intelligence provides tools, data literacy ensures meaningful comprehension. Balancing this freedom with strong governance is key. Data democratization and self-service business intelligence offer faster decisions and innovation but risk data accuracy without robust governance (discoverability, tagging, security). Artificial intelligence further enhances self-service business intelligence, transforming it into an intelligent analytics partner. Successfully integrating data democratization and self-service business intelligence with strong literacy and governance is vital for organizations to leverage their data's full potential. Through an integrative literature review, this study synthesizes insights from technical, organizational, and behavioural domains to provide a comprehensive understanding of these interrelated concepts.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1294,
+  "title": "Author Correction: An autonomous laboratory for the accelerated synthesis of inorganic materials",
+  "org": "deepmind",
+  "date": "2026-01-19",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-09992-y",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 33,
+  "title": "The assistant axis: situating and stabilizing the character of large language models",
+  "org": "anthropic",
+  "date": "2026-01-19",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/assistant-axis",
+  "abstract": "Who is the Assistant? We investigate the character that most modern language models inhabit when interacting with users.",
+  "needs_fetch": false
+ },
+ {
+  "id": 464,
+  "title": "Expanding External Access To Frontier AI Models For Dangerous Capability Evaluations",
+  "org": "other",
+  "date": "2026-01-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.11916",
+  "abstract": "Frontier AI companies increasingly rely on external evaluations to assess risks from dangerous capabilities before deployment. However, external evaluators often receive limited model access, limited information, and little time, which can reduce evaluation rigour and confidence. The EU General-Purpose AI Code of Practice calls for \"appropriate access\", but does not specify what this means in practice. Furthermore, there is no common framework for describing different types and levels of evaluator access. To address this gap, we propose a taxonomy of access methods for dangerous capability evaluations. We disentangle three aspects of access: model access, model information, and evaluation timeframe. For each aspect, we review benefits and risks, including how expanding access can reduce false negatives and improve stakeholder trust, but can also increase security and capacity challenges. We argue that these limitations can likely be mitigated through technical means and safeguards used in other industries. Based on the taxonomy, we propose three descriptive access levels: AL1 (black-box model access and minimal information), AL2 (grey-box model access and substantial information), and AL3 (white-box model access and comprehensive information), to support clearer communication between evaluators, frontier AI companies, and policymakers. We believe these levels correspond to the different standards for appropriate access defined in the EU Code of Practice, though these standard",
+  "needs_fetch": false
+ },
+ {
+  "id": 1295,
+  "title": "The evaporation of charged black holes",
+  "org": "deepmind",
+  "date": "2026-01-16",
+  "venue": "Journal of High Energy Physics",
+  "url": "https://doi.org/10.1007/jhep01(2026)109",
+  "abstract": "A bstract Charged particle emission from black holes with sufficiently large charge is exponentially suppressed. As a result, such black holes are driven towards extremality by the emission of neutral Hawking radiation. Eventually, an isolated black hole gets close enough to extremality that the gravitational backreaction of a single Hawking photon becomes important, and the quantum field theory in curved spacetime approximation breaks down. To proceed further, we need to use a quantum theory of gravity. We make use of recent progress in our understanding of the quantum-gravitational thermodynamics of near-extremal black holes to compute the corrected spectrum for both neutral and charged Hawking radiation, including the effects of backreaction, as well as greybody factors and metric fluctuations. At low temperatures, large fluctuations in a set of quantum-gravitational (almost) zero modes lead to drastic modifications to neutral particle emission that — in contrast to the semiclassical prediction — ensure the black hole remains subextremal. Relatedly, angular momentum constraints mean that, close enough to extremality, black holes with zero angular momentum can no longer emit individual photons and gravitons; instead, the dominant radiation channel consists of entangled pairs of photons in angular-momentum singlet states. This causes a sudden slowdown in the evaporation rate by a factor of at least 10 700 . We also compute the effects of backreaction and metric fluctuations ",
+  "needs_fetch": false
+ },
+ {
+  "id": 465,
+  "title": "A Safety Report on GPT-5.2, Gemini 3 Pro, Qwen3-VL, Grok 4.1 Fast, Nano Banana Pro, and Seedream 4.5",
+  "org": "other",
+  "date": "2026-01-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.10527",
+  "abstract": "The rapid evolution of Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) has driven major gains in reasoning, perception, and generation across language and vision, yet whether these advances translate into comparable improvements in safety remains unclear, partly due to fragmented evaluations that focus on isolated modalities or threat models. In this report, we present an integrated safety evaluation of six frontier models--GPT-5.2, Gemini 3 Pro, Qwen3-VL, Grok 4.1 Fast, Nano Banana Pro, and Seedream 4.5--assessing each across language, vision-language, and image generation using a unified protocol that combines benchmark, adversarial, multilingual, and compliance evaluations. By aggregating results into safety leaderboards and model profiles, we reveal a highly uneven safety landscape: while GPT-5.2 demonstrates consistently strong and balanced performance, other models exhibit clear trade-offs across benchmark safety, adversarial robustness, multilingual generalization, and regulatory compliance. Despite strong results under standard benchmarks, all models remain highly vulnerable under adversarial testing, with worst-case safety rates dropping below 6%. Text-to-image models show slightly stronger alignment in regulated visual risk categories, yet remain fragile when faced with adversarial or semantically ambiguous prompts. Overall, these findings highlight that safety in frontier models is inherently multidimensional--shaped by modality, language,",
+  "needs_fetch": false
+ },
+ {
+  "id": 35,
+  "title": "Anthropic Economic Index report: Economic primitives",
+  "org": "anthropic",
+  "date": "2026-01-15",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report",
+  "abstract": "This report introduces new metrics of AI usage to provide a rich portrait of interactions with Claude in November 2025, just prior to the release of Opus 4.5.",
+  "needs_fetch": false
+ },
+ {
+  "id": 34,
+  "title": "Anthropic Economic Index: New building blocks for understanding AI use",
+  "org": "anthropic",
+  "date": "2026-01-15",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/economic-index-primitives",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2669,
+  "title": "Re: Rezai A, Ranjan M, Bhagwat A et al. “Brain injury during focused ultrasound neuromodulation for substance use disorder.” Brain stimul. 2025",
+  "org": "openai",
+  "date": "2026-01-14",
+  "venue": "Brain stimulation",
+  "url": "https://doi.org/10.1016/j.brs.2026.103030",
+  "abstract": "I appreciate the authors’ openness in publishing this case report of a brain injury during a 220 kHz focused-ultrasound neuromodulation (FUS) of the nucleus accumbens (NAc) [1]. However, there are several exposure and safety details that are missing or unclear, thus limiting what the field can learn from this event.",
+  "needs_fetch": false
+ },
+ {
+  "id": 466,
+  "title": "SpatialJB: How Text Distribution Art Becomes the \"Jailbreak Key\" for LLM Guardrails",
+  "org": "other",
+  "date": "2026-01-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.09321",
+  "abstract": "While Large Language Models (LLMs) have powerful capabilities, they remain vulnerable to jailbreak attacks, which is a critical barrier to their safe web real-time application. Current commercial LLM providers deploy output guardrails to filter harmful outputs, yet these defenses are not impenetrable. Due to LLMs' reliance on autoregressive, token-by-token inference, their semantic representations lack robustness to spatially structured perturbations, such as redistributing tokens across different rows, columns, or diagonals. Exploiting the Transformer's spatial weakness, we propose SpatialJB to disrupt the model's output generation process, allowing harmful content to bypass guardrails without detection. Comprehensive experiments conducted on leading LLMs get nearly 100% ASR, demonstrating the high effectiveness of SpatialJB. Even after adding advanced output guardrails, like the OpenAI Moderation API, SpatialJB consistently maintains a success rate exceeding 75%, outperforming current jailbreak techniques by a significant margin. The proposal of SpatialJB exposes a key weakness in current guardrails and emphasizes the importance of spatial semantics, offering new insights to advance LLM safety research. To prevent potential misuse, we also present baseline defense strategies against SpatialJB and evaluate their effectiveness in mitigating such attacks. The code for the attack, baseline defenses, and a demo are available at https://anonymous.4open.science/r/SpatialJailbreak-",
+  "needs_fetch": false
+ },
+ {
+  "id": 657,
+  "title": "Reasoning Models Will Sometimes Lie About Their Reasoning",
+  "org": "other",
+  "date": "2026-01-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.07663",
+  "abstract": "Hint-based faithfulness evaluations have established that Large Reasoning Models (LRMs) may not say what they think: they do not always volunteer information about how key parts of the input (e.g. answer hints) influence their reasoning. Yet, these evaluations also fail to specify what models should do when confronted with hints or other unusual prompt content -- even though versions of such instructions are standard security measures (e.g. for countering prompt injections). Here, we study faithfulness under this more realistic setting in which models are explicitly alerted to the possibility of unusual inputs. We find that such instructions can yield strong results on faithfulness metrics from prior work. However, results on new, more granular metrics proposed in this work paint a mixed picture: although models may acknowledge the presence of hints, they will often deny intending to use them -- even when permitted to use hints and even when it can be demonstrated that they are using them. Our results thus raise broader challenges for CoT monitoring and interpretability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 684,
+  "title": "TRecViT: A Recurrent Video Transformer",
+  "org": "deepmind",
+  "date": "2026-01-09",
+  "venue": "TMLR (Transactions on ML)",
+  "url": "https://openreview.net/pdf?id=Mmi46Ytb1H",
+  "abstract": "We propose a novel block for causal video modelling. It relies on a time - space - channel factorisation with dedicated blocks for each dimension: gated linear recurrent units (LRUs) perform information mixing over time, self-attention layers perform mixing over space, and MLPs over channels. The resulting architecture TRecViT is causal and shows strong performance on sparse and dense tasks, trained in supervised or self-supervised regimes, being the first causal video model in the state-space models family. Notably, our model outperforms or is on par with the popular (non-causal) ViViT-L model on large scale video datasets (SSv2, Kinetics400), while having 3x less parameters, 12x smaller memory footprint, and 5x lower FLOPs count than the full self-attention ViViT, with an inference throughput of about 300 frames per second, running comfortably in real-time. When compared with causal transformer-based models (TSM, RViT) and other recurrent models like LSTM, TRecViT obtains state-of-the-art results on the challenging SSv2 dataset. Code and checkpoints are available online \\url{https://github.com/google-deepmind/trecvit}.",
+  "needs_fetch": false
+ },
+ {
+  "id": 36,
+  "title": "Next-generation Constitutional Classifiers: More efficient protection against universal jailbreaks",
+  "org": "anthropic",
+  "date": "2026-01-09",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers",
+  "abstract": "Last year, we described a new approach to defend against jailbreaks, which we called Constitutional Classifiers. Weâve now developed the next generation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2670,
+  "title": "Quantification of microbubble-induced streaming across ultrasound frequencies using particle image velocimetry",
+  "org": "openai",
+  "date": "2026-01-08",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.64898/2026.01.07.698213",
+  "abstract": "Abstract Functional microbubbles are widely used in therapeutic ultrasound for drug delivery, blood-brain barrier opening, clot lysis, and other biomedical interventions. Their therapeutic effects arise largely from acoustic microstreaming, which generates localized shear stresses and enhances transport around oscillating bubbles. Despite the central role of microstreaming, its dependence on ultrasound excitation conditions is not well defined. Existing studies use diverse and often incomparable frequencies, pressures, and duty cycles, leaving a gap in systematic understanding of how these parameters govern the streaming velocity and shear fields produced by functional microbubbles under physiologically relevant conditions. In this study, we employ particle image velocimetry (PIV) in a popliteal-vein lab-on-chip model to directly quantify the microstreaming velocity and shear-rate fields generated by microbubbles across a wide range of ultrasound conditions including frequency, duty cycle, and acoustic pressure. Measurements at 150 kHz, 300 kHz, 500 kHz, and 1 MHz reveal a pronounced frequency dependence. Counterintuitively, the strongest microstreaming is observed at 150 kHz, with progressively weaker streaming at 300 and 500 kHz, and the weakest flows at 1 MHz. This trend contrasts with the common assumption that microbubble oscillations peak near their ∼1 MHz resonance frequency. Duty cycle further modulated the response: 10% duty cycle generated the weakest fields, wherea",
+  "needs_fetch": false
+ }
+]

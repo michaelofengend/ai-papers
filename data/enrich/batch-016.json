@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1348,
+  "title": "Infusing Fine-Grained Visual Knowledge to Vision-Language Models",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccvw69036.2025.00445",
+  "abstract": "Large-scale contrastive pre-training produces powerful Vision-and-Language Models (VLMs) capable of generating representations (embeddings) effective for a wide variety of visual and multimodal tasks. However, these pretrained embeddings remain suboptimal for fine-grained open-set visual retrieval, where state-of-the-art results require fine-tuning the vision encoder using annotated domain-specific samples. Naively performing such fine-tuning typically leads to catastrophic forgetting, severely diminishing the model's general-purpose visual and cross-modal capabilities. In this work, we propose a fine-tuning method explicitly designed to achieve optimal balance between fine-grained domain adaptation and retention of the pretrained VLM's broad multimodal knowledge. Drawing inspiration from continual learning literature, we systematically analyze standard regularization techniques aimed at knowledge retention and propose an efficient and effective combination strategy. Additionally, we address the commonly overlooked yet critical aspects of validation set design and hyperparameter tuning to ensure reproducibility and robust generalization across datasets and pretrained models. We extensively evaluate our method on both fine-grained and coarse-grained image-image and image-text retrieval benchmarks. Our approach consistently achieves strong results, notably retaining the visual-text alignment without utilizing any text data or the original text encoder during fine-tuning. Code a",
+  "needs_fetch": false
+ },
+ {
+  "id": 1347,
+  "title": "StochasticSplats: Stochastic Rasterization for Sorting-Free 3D Gaussian Splatting",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.24366",
+  "abstract": "3D Gaussian splatting (3DGS) is a popular radiance field method, with many application-specific extensions. Most variants rely on the same core algorithm: depth-sorting of Gaussian splats then rasterizing in primitive order. This ensures correct alpha compositing, but can cause rendering artifacts due to built-in approximations. Moreover, for a fixed representation, sorted rendering offers little control over render cost and visual fidelity. For example, and counter-intuitively, rendering a lower-resolution image is not necessarily faster. In this work, we address the above limitations by combining 3D Gaussian splatting with stochastic rasterization. Concretely, we leverage an unbiased Monte Carlo estimator of the volume rendering equation. This removes the need for sorting, and allows for accurate 3D blending of overlapping Gaussians. The number of Monte Carlo samples further imbues 3DGS with a way to trade off computation time and quality. We implement our method using OpenGL shaders, enabling efficient rendering on modern GPU hardware. At a reasonable visual quality, our method renders more than four times faster than sorted rasterization.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1346,
+  "title": "Exploiting Policy Idling for Dexterous Manipulation",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iros60139.2025.11246124",
+  "abstract": "Learning based methods for dexterous manipulation have made notable progress in recent years, and they can now produce solutions to complex tasks. However, learned policies often still lack reliability and exhibit limited robustness to important factors of variation. One failure pattern that can be observed across many settings is that policies idle, i.e. they cease to move beyond a small region of states, often indefinitely, when they reach certain states. This policy idling is often a reflection of the training data. For instance, it can occur when the data contains small actions in areas where the robot needs to perform high-precision motions, e.g., when preparing to grasp an object or object insertion. Prior works have tried to mitigate this phenomenon e.g. by filtering the training data or modifying the control frequency. However, these approaches can negatively impact policy performance in other ways. As an alternative, we investigate how to leverage the detectability of idling behavior to inform exploration and policy improvement. Our approach, Pause-Induced Perturbations (PIP), applies perturbations at detected idling states, thus helping it to escape problematic basins of attraction. On a range of challenging simulated dual-arm tasks, we find that this simple approach can already noticeably improve test-time performance, with no additional supervision or training. Furthermore, since the robot tends to idle at critical points in a movement, we also find that learning ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1345,
+  "title": "Drive&amp;Gen: Co-Evaluating End-to-End Driving and Video Generation Models",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iros60139.2025.11247678",
+  "abstract": "Recent advances in generative models have sparked exciting new possibilities in the field of autonomous vehicles. Specifically, video generation models are now being explored as controllable virtual testing environments. Simultaneously, end-to-end (E2E) driving models have emerged as a streamlined alternative to conventional modular autonomous driving systems, gaining popularity for their simplicity and scalability. However, the application of these techniques to simulation and planning raises important questions. First, while video generation models can generate increasingly realistic videos, can these videos faithfully adhere to the specified conditions and be realistic enough for E2E autonomous planner evaluation? Second, given that data is crucial for understanding and controlling E2E planners, how can we gain deeper insights into their biases and improve their ability to generalize to out-of-distribution scenarios? In this work, we bridge the gap between the driving models and generative world models (Drive&Gen) to address these questions. We propose novel statistical measures leveraging E2E drivers to evaluate the realism of generated videos. By exploiting the controllability of the video generation model, we conduct targeted experiments to investigate distribution gaps affecting E2E planner performance. Finally, we show that synthetic data produced by the video generation model offers a cost-effective alternative to real-world data collection. This synthetic data effec",
+  "needs_fetch": false
+ },
+ {
+  "id": 1344,
+  "title": "QuietPaw: Learning Quadrupedal Locomotion with Versatile Noise Preference Alignment",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iros60139.2025.11246267",
+  "abstract": "When operating at their full capacity, quadrupedal robots can produce loud footstep noise, which can be disruptive in human-centered environments like homes, offices, and hospitals. As a result, balancing locomotion performance with noise constraints is crucial for the successful real-world deployment of quadrupedal robots. However, achieving adaptive noise control is challenging due to (a) the trade-off between agility and noise minimization, (b) the need for generalization across diverse deployment conditions, and (c) the difficulty of effectively adjusting policies based on noise requirements. We propose QuietPaw, a framework incorporating our Conditional Noise-Constrained Policy (CNCP), a constrained learning-based algorithm that enables flexible, noise-aware locomotion by conditioning policy behavior on noise-reduction levels. We leverage value representation decomposition in the critics, disentangling state representations from condition-dependent representations and this allows a single versatile policy to generalize across noise levels without retraining while improving the Pareto trade-off between agility and noise reduction. We validate our approach in simulation and the real world, demonstrating that CNCP can effectively balance locomotion performance and noise constraints, achieving continuously adjustable noise reduction.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1343,
+  "title": "SciVid: Cross-Domain Evaluation of Video Models in Scientific Applications",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2507.03578",
+  "abstract": "In recent years, there has been a proliferation of spatiotemporal foundation models in different scientific disciplines. While promising, these models are often domain-specific and are only assessed within the particular applications for which they are designed. Given that many tasks can be represented as video modeling problems, video foundation models (ViFMs) hold considerable promise as general-purpose domain-agnostic approaches. However, it is not known whether the knowledge acquired on large-scale but potentially out-of-domain data can be effectively transferred across diverse scientific disciplines, and if a single, pretrained ViFM can be competitive with domain-specific baselines. To address this, we introduce SciVid, a comprehensive benchmark comprising five *Sci*entific *Vid*eo tasks, across medical computer vision, animal behavior, and weather forecasting. We adapt six leading ViFMs to SciVid using simple trainable readout modules, establishing strong baselines and demonstrating the potential for effective transfer learning. Specifically, we show that state-of-the-art results can be obtained in several applications by leveraging the general-purpose representations from ViFM backbones. Furthermore, our results reveal the limitations of existing ViFMs, and highlight opportunities for the development of generalizable models for high-impact scientific applications. We release our code at https://github.com/google-deepmind/scivid to facilitate further research in the dev",
+  "needs_fetch": false
+ },
+ {
+  "id": 1342,
+  "title": "CL-Splats: Continual Learning of Gaussian Splatting with Local Optimization",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2506.21117",
+  "abstract": "In dynamic 3D environments, accurately updating scene representations over time is crucial for applications in robotics, mixed reality, and embodied AI. As scenes evolve, efficient methods to incorporate changes are needed to maintain up-to-date, high-quality reconstructions without the computational overhead of re-optimizing the entire scene. This paper introduces CL-Splats, which incrementally updates Gaussian splatting-based 3D representations from sparse scene captures. CL-Splats integrates a robust change-detection module that segments updated and static components within the scene, enabling focused, local optimization that avoids unnecessary re-computation. Moreover, CL-Splats supports storing and recovering previous scene states, facilitating temporal segmentation and new scene-analysis applications. Our extensive experiments demonstrate that CL-Splats achieves efficient updates with improved reconstruction quality over the state-of-the-art. This establishes a robust foundation for future real-time adaptation in 3D scene reconstruction tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1341,
+  "title": "AlignDiff: Learning Physically-Grounded Camera Alignment via Diffusion",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.21581",
+  "abstract": "Accurate camera calibration is a fundamental task for 3D perception, especially when dealing with real-world, in-the-wild environments where complex optical distortions are common. Existing methods often rely on pre-rectified images or calibration patterns, which limits their applicability and flexibility. In this work, we introduce a novel framework that addresses these challenges by jointly modeling camera intrinsic and extrinsic parameters using a generic ray camera model. Unlike previous approaches, AlignDiff shifts focus from semantic to geometric features, enabling more accurate modeling of local distortions. We propose AlignDiff, a diffusion model conditioned on geometric priors, enabling the simultaneous estimation of camera distortions and scene geometry. To enhance distortion prediction, we incorporate edge-aware attention, focusing the model on geometric features around image edges, rather than semantic content. Furthermore, to enhance generalizability to real-world captures, we incorporate a large database of ray-traced lenses containing over three thousand samples. This database characterizes the distortion inherent in a diverse variety of lens forms. Our experiments demonstrate that the proposed method significantly reduces the angular error of estimated ray bundles by ~8.2 degrees and overall calibration accuracy, outperforming existing approaches on challenging, real-world datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1340,
+  "title": "From Image to Video: An Empirical Study of Diffusion Representations",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.07001",
+  "abstract": "Diffusion models have revolutionized generative modeling, enabling unprecedented realism in image and video synthesis. This success has sparked interest in leveraging their representations for visual understanding tasks. While recent works have explored this potential for image generation, the visual understanding capabilities of video diffusion models remain largely uncharted. To address this gap, we systematically compare the same model architecture trained for video versus image generation, analyzing the performance of their latent representations on various downstream tasks including image classification, action recognition, depth estimation, and tracking. Results show that video diffusion models consistently outperform their image counterparts, though we find a striking range in the extent of this superiority. We further analyze features extracted from different layers and with varying noise levels, as well as the effect of model size and training budget on representation and generation quality. This work marks the first direct comparison of video and image diffusion objectives for visual understanding, offering insights into the role of temporal information in representation learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1339,
+  "title": "Orchid: Image Latent Diffusion for Joint Appearance and Geometry Generation",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2501.13087",
+  "abstract": "We introduce Orchid, a unified latent diffusion model that learns a joint appearance-geometry prior to generate color, depth, and surface normal images in a single diffusion process. This unified approach is more efficient and coherent than current pipelines that use separate models for appearance and geometry. Orchid is versatile - it directly generates color, depth, and normal images from text, supports joint monocular depth and normal estimation with color-conditioned finetuning, and seamlessly inpaints large 3D regions by sampling from the joint distribution. It leverages a novel Variational Autoencoder (VAE) that jointly encodes RGB, relative depth, and surface normals into a shared latent space, combined with a latent diffusion model that denoises these latents. Our extensive experiments demonstrate that Orchid delivers competitive performance against SOTA task-specific methods for geometry prediction, even surpassing them in normal-prediction accuracy and depth-normal consistency. It also inpaints color-depth-normal images jointly, with more qualitative realism than existing multi-step methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1338,
+  "title": "RoMo: Robust Motion Segmentation Improves Structure from Motion",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.18650",
+  "abstract": "There has been extensive progress in the reconstruction and generation of 4D scenes from monocular casually-captured video. While these tasks rely heavily on known camera poses, the problem of finding such poses using structure-from-motion (SfM) often depends on robustly separating static from dynamic parts of a video. The lack of a robust solution to this problem limits the performance of SfM camera-calibration pipelines. We propose a novel approach to video-based motion segmentation to identify the components of a scene that are moving w.r.t. a fixed world frame. Our simple but effective iterative method, RoMo, combines optical flow and epipolar cues with a pre-trained video segmentation model. It outperforms unsupervised baselines for motion segmentation as well as supervised baselines trained from synthetic data. More importantly, the combination of an off-the-shelf SfM pipeline with our segmentation masks establishes a new state-of-the-art on camera calibration for scenes with dynamic content, outperforming existing methods by a substantial margin.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1337,
+  "title": "Principles of Visual Tokens for Efficient Video Understanding",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.13626",
+  "abstract": "Video understanding has made huge strides in recent years, relying largely on the power of transformers. As this architecture is notoriously expensive and video data is highly redundant, research into improving efficiency has become particularly relevant. Some creative solutions include token selection and merging. While most methods succeed in reducing the cost of the model and maintaining accuracy, an interesting pattern arises: most methods do not outperform the baseline of randomly discarding tokens. In this paper we take a closer look at this phenomenon and observe 5 principles of the nature of visual tokens. For example, we observe that the value of tokens follows a clear Pareto-distribution where most tokens have remarkably low value, and just a few carry most of the perceptual information. We build on these and further insights to propose a lightweight video model, LITE, that can select a small number of tokens effectively, outperforming state-of-the-art and existing baselines across datasets (Kinetics-400 and Something-Something-V2) in the challenging trade-off of computation (GFLOPs) vs accuracy. Experiments also show that LITE generalizes across datasets and even other tasks without the need for retraining.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1336,
+  "title": "Magic Insert: Style-Aware Drag-And-Drop",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.02489",
+  "abstract": "We present Magic Insert, a method for dragging-and-dropping subjects from a user-provided image into a target image of a different style in a physically plausible manner while matching the style of the target image. This work formalizes the problem of style-aware drag-and-drop and presents a method for tackling it by addressing two sub-problems: style-aware personalization and realistic object insertion in stylized images. For style-aware personalization, our method first fine-tunes a pretrained text-to-image diffusion model using LoRA and learned text tokens on the subject image, and then infuses it with a CLIP representation of the target style. For object insertion, we use Bootstrapped Domain Adaption to adapt a domain-specific photorealistic object insertion model to the domain of diverse artistic styles. Overall, the method significantly outperforms traditional approaches such as inpainting. Finally, we present a dataset, SubjectPlop, to facilitate evaluation and future progress in this area. Project page: https://magicinsert.github.io/",
+  "needs_fetch": false
+ },
+ {
+  "id": 1335,
+  "title": "Tapnext: Tracking Any Point (Tap) as Next Token Prediction",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51701.2025.00904",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1334,
+  "title": "Splattalk: 3D VQA with Gaussian Splatting",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.06271",
+  "abstract": "Language-guided 3D scene understanding is important for advancing applications in robotics, AR/VR, and human-computer interaction, enabling models to comprehend and interact with 3D environments through natural language. While 2D vision-language models (VLMs) have achieved remarkable success in 2D VQA tasks, progress in the 3D domain has been significantly slower due to the complexity of 3D data and the high cost of manual annotations. In this work, we introduce SplatTalk, a novel method that uses a generalizable 3D Gaussian Splatting (3DGS) framework to produce 3D tokens suitable for direct input into a pretrained LLM, enabling effective zero-shot 3D visual question answering (3D VQA) for scenes with only posed images. During experiments on multiple benchmarks, our approach outperforms both 3D models trained specifically for the task and previous 2D-LMM-based models utilizing only images (our setting), while achieving competitive performance with state-of-the-art 3D LMMs that additionally utilize 3D inputs. Project website: https://splat-talk.github.io/",
+  "needs_fetch": false
+ },
+ {
+  "id": 1333,
+  "title": "AugInsert: Learning Robust Visual-Force Policies via Data Augmentation for Object Assembly Tasks",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iros60139.2025.11247210",
+  "abstract": "Operating in unstructured environments like households requires robotic policies that are robust to out-of-distribution conditions. Although much work has been done in evaluating robustness for visuomotor policies, the robustness evaluation of a multisensory approach that includes force-torque sensing remains largely unexplored. This work introduces a novel, factor-based evaluation framework with the goal of assessing the robustness of multisensory policies in a peg-in-hole assembly task. To this end, we develop a multisensory policy framework utilizing the Perceiver IO architecture to learn the task. We investigate which factors pose the greatest generalization challenges in object assembly and explore a simple multisensory data augmentation technique to enhance out-of-distribution performance. We provide a simulation environment enabling controlled evaluation of these factors. Our results reveal that multisensory variations such as Grasp Pose present the most significant challenges for robustness, and naive unisensory data augmentation applied independently to each sensory modality proves insufficient to overcome them. Additionally, we find force-torque sensing to be the most informative modality for our contact-rich assembly task, with vision being the least informative. Finally, we briefly discuss supporting real-world experimental results. For additional experiments and qualitative results, we refer to the project webpage https://rpm-lab-umn.github.io/auginsert/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1332,
+  "title": "Towards Cross-Modal Backward-Compatible Representation Learning for Vision-Language Models",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.14715",
+  "abstract": "Modern retrieval systems often struggle with upgrading to new and more powerful models due to the incompatibility of embeddings between the old and new models. This necessitates a costly process known as backfilling, which involves re-computing the embeddings for a large number of data samples. In vision, Backward-compatible Training (BT) has been proposed to ensure that the new model aligns with the old model's embeddings. This paper extends the concept of vision-only BT to the field of cross-modal retrieval, marking the first attempt to address Cross-modal BT (XBT). Our goal is to achieve backward-compatibility between Vision-Language Pretraining (VLP) models, such as CLIP, for the cross-modal retrieval task. To address XBT challenges, we propose an efficient solution: a projection module that maps the new model's embeddings to those of the old model. This module, pretrained solely with text data, significantly reduces the number of image-text pairs required for XBT learning, and, once it is pretrained, it avoids using the old model during training. Furthermore, we utilize parameter-efficient training strategies that improve efficiency and preserve the off-the-shelf new model's knowledge by avoiding any modifications. Experimental results on cross-modal retrieval datasets demonstrate the effectiveness of XBT and its potential to enable backfill-free upgrades when a new VLP model emerges.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1331,
+  "title": "Bolt3D: Generating 3D Scenes in Seconds",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51701.2025.02304",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 485,
+  "title": "Are LLMs Court-Ready? Evaluating Frontier Models on Indian Legal Reasoning",
+  "org": "other",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.17900",
+  "abstract": "Large language models (LLMs) are entering legal workflows, yet we lack a jurisdiction-specific framework to assess their baseline competence therein. We use India's public legal examinations as a transparent proxy. Our multi-year benchmark assembles objective screens from top national and state exams and evaluates open and frontier LLMs under real-world exam conditions. To probe beyond multiple-choice questions, we also include a lawyer-graded, paired-blinded study of long-form answers from the Supreme Court's Advocate-on-Record exam. This is, to our knowledge, the first exam-grounded, India-specific yardstick for LLM court-readiness released with datasets and protocols. Our work shows that while frontier systems consistently clear historical cutoffs and often match or exceed recent top-scorer bands on objective exams, none surpasses the human topper on long-form reasoning. Grader notes converge on three reliability failure modes: procedural or format compliance, authority or citation discipline, and forum-appropriate voice and structure. These findings delineate where LLMs can assist (checks, cross-statute consistency, statute and precedent lookups) and where human leadership remains essential: forum-specific drafting and filing, procedural and relief strategy, reconciling authorities and exceptions, and ethical, accountable judgment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 486,
+  "title": "NP-Engine: Empowering Optimization Reasoning in Large Language Models with Verifiable Synthetic NP Problems",
+  "org": "other",
+  "date": "2025-10-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.16476",
+  "abstract": "Large Language Models (LLMs) have shown strong reasoning capabilities, with models like OpenAI's O-series and DeepSeek R1 excelling at tasks such as mathematics, coding, logic, and puzzles through Reinforcement Learning with Verifiable Rewards (RLVR). However, their ability to solve more complex optimization problems - particularly NP-hard tasks - remains underexplored. To bridge this gap, we propose NP-ENGINE, the first comprehensive framework for training and evaluating LLMs on NP-hard problems. NP-ENGINE covers 10 tasks across five domains, each equipped with (i) a controllable instance generator, (ii) a rule-based verifier, and (iii) a heuristic solver that provides approximate optimal solutions as ground truth. This generator-verifier-heuristic pipeline enables scalable and verifiable RLVR training under hierarchical difficulties. We also introduce NP-BENCH, a benchmark derived from NP-ENGINE-DATA, specifically designed to evaluate LLMs' ability to tackle NP-hard level reasoning problems, focusing not only on feasibility but also on solution quality. Additionally, we present QWEN2.5-7B-NP, a model trained via zero-RLVR with curriculum learning on Qwen2.5-7B-Instruct, which significantly outperforms GPT-4o on NP-BENCH and achieves SOTA performance with the same model size. Beyond in-domain tasks, we demonstrate that RLVR training on NP-ENGINE-DATA enables strong out-of-domain (OOD) generalization to reasoning tasks (logic, puzzles, math, and knowledge), as well as non-rea",
+  "needs_fetch": false
+ },
+ {
+  "id": 203,
+  "title": "Detecting Adversarial Fine-tuning with Auditing Agents",
+  "org": "anthropic",
+  "date": "2025-10-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.16255",
+  "abstract": "Large Language Model (LLM) providers expose fine-tuning APIs that let end users fine-tune their frontier LLMs. Unfortunately, it has been shown that an adversary with fine-tuning access to an LLM can bypass safeguards. Particularly concerning, such attacks may avoid detection with datasets that are only implicitly harmful. Our work studies robust detection mechanisms for adversarial use of fine-tuning APIs. We introduce the concept of a fine-tuning auditing agent and show it can detect harmful fine-tuning prior to model deployment. We provide our auditing agent with access to the fine-tuning dataset, as well as the fine-tuned and pre-fine-tuned models, and request the agent assigns a risk score for the fine-tuning job. We evaluate our detection approach on a diverse set of eight strong fine-tuning attacks from the literature, along with five benign fine-tuned models, totaling over 1400 independent audits. These attacks are undetectable with basic content moderation on the dataset, highlighting the challenge of the task. With the best set of affordances, our auditing agent achieves a 56.2% detection rate of adversarial fine-tuning at a 1% false positive rate. Most promising, the auditor is able to detect covert cipher attacks that evade safety evaluations and content moderation of the dataset. While benign fine-tuning with unintentional subtle safety degradation remains a challenge, we establish a baseline configuration for further work in this area. We release our auditing ag",
+  "needs_fetch": false
+ },
+ {
+  "id": 156,
+  "title": "Inoculation Prompting: Instructing LLMs to misbehave at train-time improves test-time alignment",
+  "org": "anthropic",
+  "date": "2025-10-16",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/inoculation-prompting/",
+  "abstract": "Large language models are sometimes trained with imperfect oversight signals, leading to undesired behaviors such as reward hacking and sycophancy. Improving oversight quality can be expensive or infeasible, motivating methods that improve learned behavior despite an imperfect training signal. We introduce Inoculation Prompting (IP), a simple but counterintuitive technique that prevents learning of an undesired behavior by modifying training prompts to explicitly request it. For example, to inoculate against reward hacking, we modify the prompts used in supervised fine-tuning to request code that only works on provided test cases but fails on other inputs. Across four settings we find that IP reduces the learning of undesired behavior without substantially reducing the learning of desired capabilities. We also show that prompts which more strongly elicit the undesired behavior prior to fine-tuning more effectively inoculate against the behavior when used during training; this serves as a heuristic to identify promising inoculation prompts. Overall, IP is a simple yet effective way to control how models generalize from fine-tuning, preventing learning of undesired behaviors without substantially disrupting desired capabilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2682,
+  "title": "Towards Interactive Evaluations for Interaction Harms in Human-AI Systems",
+  "org": "openai",
+  "date": "2025-10-15",
+  "venue": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+  "url": "https://doi.org/10.1609/aies.v8i2.36631",
+  "abstract": "Current AI evaluation methods, which rely on static, model-only tests, fail to account for harms that emerge through sustained human-AI interaction. As AI systems proliferate and are increasingly integrated into real-world applications, this disconnect between evaluation approaches and actual usage becomes more significant. In this paper, we propose a shift towards evaluation based on interactional ethics, which focuses on interaction harms—issues like inappropriate parasocial relationships, social manipulation, and cognitive overreliance that develop over time through repeated interaction, rather than through isolated outputs. First, we discuss the limitations of current evaluation methods, which (1) are static, (2) assume a universal user experience, and (3) have limited construct validity. Drawing on research from human-computer interaction, natural language processing, and the social sciences, we present practical principles for designing interactive evaluations. These include ecologically valid interaction scenarios, human impact metrics, and diverse human participation approaches. Finally, we explore implementation challenges and open research questions for researchers, practitioners, and regulators aiming to integrate interactive evaluations into AI governance frameworks. This work lays the groundwork for developing more effective evaluation methods that better capture the complex dynamics between humans and AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1354,
+  "title": "\"Just a Strange Pic\": Rethinking 'Safety' in GenAI Image Safety Annotation Tasks from Diverse Annotators' Perspectives",
+  "org": "deepmind",
+  "date": "2025-10-15",
+  "venue": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+  "url": "https://doi.org/10.1609/aies.v8i3.36742",
+  "abstract": "Understanding what constitutes safety in AI-generated content is complex. While developers often rely on predefined taxonomies, real-world safety judgments also involve personal, social, and cultural perceptions of harm. This paper examines how annotators evaluate the safety of AI-generated images, focusing on the qualitative reasoning behind their judgments. Analyzing 5,372 open-ended comments, we find that annotators consistently invoke moral, emotional, and contextual reasoning that extends beyond structured safety categories. Many reflect on potential harm to others more than to themselves, grounding their judgments in lived experience, collective risk, and sociocultural awareness. Beyond individual perceptions, we also find that the structure of the task itself--including annotation guidelines--shapes how annotators interpret and express harm. Guidelines influence not only which images are flagged, but also the moral language used in justifications. Annotators frequently cite factors such as image quality, visual distortion, and mismatches between prompt and output as contributing to perceived harm-dimensions often overlooked in standard evaluation frameworks. Our findings reveal that existing safety pipelines miss critical forms of reasoning that annotators bring to the task. We argue for evaluation designs that scaffold moral reflection, differentiate types of harm, and make space for subjective, context-sensitive interpretations of AI-generated content.",
+  "needs_fetch": false
+ },
+ {
+  "id": 319,
+  "title": "Information-Theoretic Reward Modeling for Stable RLHF: Detecting and Mitigating Reward Hacking",
+  "org": "other",
+  "date": "2025-10-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.13694",
+  "abstract": "Despite the success of Reinforcement Learning from Human Feedback (RLHF) in aligning language models with human values, reward hacking-or reward over-optimization-remains a major challenge. We identify two key obstacles to its mitigation: (1) reward misgeneralization in reward modeling, where reward models overfit to spurious, preference-irrelevant features; and (2) the lack of suitable regularization during RL optimization, as existing token-level constraints often over-restrict the policy space. To address these issues, we propose InfoRM, an information-theoretic reward modeling framework based on the Information Bottleneck (IB) principle, which filters out preference-irrelevant information to alleviate reward misgeneralization. We further observe that reward-hacked responses manifest as pronounced outliers in InfoRM's IB latent space, measured by Mahalanobis distance from the SFT-induced distribution. Motivated by this, we introduce IBL, a distribution-level regularization that penalizes such deviations, effectively expanding the optimization landscape while maintaining alignment. We prove that IBL is theoretically equivalent to the pessimistic RL objective within the IB latent space. Finally, we present Mahalanobis Outlier Probability (MOP), a statistical metric for quantifying reward hacking severity, enabling principled hyperparameter tuning and online mitigation such as early stopping. Extensive experiments across diverse LLMs and datasets confirm the generality of our",
+  "needs_fetch": false
+ },
+ {
+  "id": 320,
+  "title": "Repairing Reward Functions with Feedback to Mitigate Reward Hacking",
+  "org": "other",
+  "date": "2025-10-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.13036",
+  "abstract": "Human-designed reward functions for reinforcement learning (RL) agents are frequently misaligned with the humans' true, unobservable objectives, and thus act only as proxies. Optimizing for a misspecified proxy reward function often induces reward hacking, resulting in a policy misaligned with the human's true objectives. An alternative is to perform RL from human feedback, which involves learning a reward function from scratch by collecting human preferences over pairs of trajectories. However, building such datasets is costly. To address the limitations of both approaches, we propose Preference-Based Reward Repair (PBRR): an automated iterative framework that repairs a human-specified proxy reward function by learning an additive, transition-dependent correction term from preferences. A manually specified reward function can yield policies that are highly suboptimal under the ground-truth objective, yet corrections on only a few transitions may suffice to recover optimal performance. To identify and correct for those transitions, PBRR uses a targeted exploration strategy and a new preference-learning objective. We prove in tabular domains PBRR has a cumulative regret that matches, up to constants, that of prior preference-based RL methods. In addition, on a suite of reward-hacking benchmarks, PBRR consistently outperforms baselines that learn a reward function from scratch from preferences or modify the proxy reward function using other approaches, requiring substantially f",
+  "needs_fetch": false
+ },
+ {
+  "id": 204,
+  "title": "Narrow Finetuning Leaves Clearly Readable Traces in Activation Differences",
+  "org": "deepmind",
+  "date": "2025-10-14",
+  "venue": "ICLR 2026",
+  "url": "https://arxiv.org/abs/2510.13900",
+  "abstract": "Finetuning on narrow domains has become an essential tool to adapt Large Language Models (LLMs) to specific tasks and to create models with known unusual properties that are useful for research. We show that narrow finetuning creates strong biases in LLM activations that can be interpreted to understand the finetuning domain. These biases can be discovered using simple tools from model diffing - the study of differences between models before and after finetuning. In particular, analyzing activation differences on the first few tokens of random text and steering by adding this difference to the model activations produces text similar to the format and general content of the finetuning data. We demonstrate that these analyses contain crucial information by creating an LLM-based interpretability agent to understand the finetuning domain. With access to the bias, the agent performs significantly better compared to baseline agents using simple prompting. Our analysis spans synthetic document finetuning for false facts, emergent misalignment, subliminal learning, and taboo word guessing game models across different architectures (Gemma, LLaMA, Qwen) and scales (1B to 32B parameters). We suspect these biases reflect overfitting and find that mixing pretraining data into the finetuning corpus largely removes them, though residual risks may remain. Our work (1) demonstrates that narrowly finetuned models have salient traces of their training objective in their activations and suggests",
+  "needs_fetch": false
+ },
+ {
+  "id": 47,
+  "title": "Preparing for AIâs economic impact: exploring policy responses",
+  "org": "anthropic",
+  "date": "2025-10-14",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/economic-policy-responses",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1184,
+  "title": "Defending Against Prompt Injection With a Few DefensiveTokens",
+  "org": "anthropic",
+  "date": "2025-10-13",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3733799.3762982",
+  "abstract": "When large language model (LLM) systems interact with external data to perform complex tasks, a new attack, namely prompt injection, becomes a significant threat. By injecting instructions into the data accessed by the system, the attacker is able to override the initial user task with an arbitrary task directed by the attacker. To secure the system, test-time defenses, e.g., defensive prompting, have been proposed for system developers to attain security only when needed in a flexible manner. However, they are much less effective than training-time defenses that change the model parameters. Motivated by this, we propose DefensiveToken, a test-time defense with prompt injection robustness comparable to training-time alternatives. DefensiveTokens are newly inserted as special tokens, whose embeddings are optimized for security. In security-sensitive cases, system developers can append a few DefensiveTokens before the LLM input to achieve security with a minimal utility drop. In scenarios where security is less of a concern, developers can simply skip DefensiveTokens; the LLM system remains the same as there is no defense, generating high-quality responses. Thus, DefensiveTokens, if released alongside the model, allow a flexible switch between the state-of-the-art (SOTA) utility and almost-SOTA security at test time. The code is available here.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1355,
+  "title": "Source Separation by Flow Matching",
+  "org": "deepmind",
+  "date": "2025-10-12",
+  "venue": null,
+  "url": "https://doi.org/10.1109/waspaa66052.2025.11230963",
+  "abstract": "We consider the problem of single-channel audio source separation with the goal of reconstructing K sources from their mixture. We address this ill-posed problem with FLOSS (FLOw matching for Source Separation), a constrained generation method based on flow matching, ensuring strict mixture consistency. Flow matching is a general methodology that, when given samples from two probability distributions defined on the same space, learns an ordinary differential equation to output a sample from one of the distributions when provided with a sample from the other. In our context, we have access to samples from the joint distribution of K sources and so the corresponding samples from the lower-dimensional distribution of their mixture. To apply flow matching, we augment these mixture samples with artificial noise components to match the dimensionality of the K source distribution. Additionally, as any permutation of the sources yields the same mixture, we adopt an equivariant formulation of flow matching which relies on a neural network architecture that is equivariant by design. We demonstrate the performance of the method for the separation of overlapping speech.",
+  "needs_fetch": false
+ }
+]

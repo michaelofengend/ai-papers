@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1689,
+  "title": "Pushing the Limits of Subseasonal-to-Seasonal Sea Ice Forecasting with Deep Generative Modelling&amp;#160;",
+  "org": "deepmind",
+  "date": "2024-03-11",
+  "venue": null,
+  "url": "https://doi.org/10.5194/egusphere-egu24-22070",
+  "abstract": "Conventional studies of subseasonal-to-seasonal sea ice variability across scales have relied upon computationally expensive physics-based models solving systems of differential equations. IceNet, a deep learning-based sea ice forecasting model under development since 2021, has proven competitive to such state-of-the-art physics-based models, capable of generating daily 25 km resolution forecasts of sea ice concentration across the Arctic and Antarctic at a fraction of the computational cost once trained. Yet, these IceNet forecasts leave room for improvement through three main weaknesses. First, the forecasts exhibit physically unrealistic spatial and temporal blurring characteristic of deep learning methods trained under mean loss objectives. Second, the use of 25 km scale OSISAF data renders local forecasts along coastal regions and in regions surrounding maritime vessels inconclusive. Third, the sole provision of sea ice concentration in forecasts leaves questions about other critical ice properties such as thickness unanswered. We present preliminary results addressing these three challenges, turning to deep generative models to capture forecast uncertainty and improve spatial sharpness; leveraging 3 and 6 km scale AMSR-2 sea ice products to improve spatial resolution; and incorporating auxiliary datasets, chiefly thickness, into the training and inference pipeline to produce multivariate forecasts of sea ice properties beyond simple sea ice concentration. We seek feedba",
+  "needs_fetch": false
+ },
+ {
+  "id": 789,
+  "title": "Understanding Learning from Human Preferences",
+  "org": "deepmind",
+  "date": "2024-03-11",
+  "venue": "(deprecated) AISTATS2024",
+  "url": "https://arxiv.org/abs/2310.12036",
+  "abstract": "The prevalent deployment for learning from human preferences through reinforcement learning (RLHF) relies on two important approximations: the first assumes that pairwise preferences can be substituted with pointwise rewards. The second assumes that a reward model trained on these pointwise rewards can generalize from collected data to out-of-distribution data sampled by the policy. Recently, Direct Preference Optimization (DPO) is proposed as an approach that bypass the second approximation and learn directly a policy from collected data without the reward modelling stage. However, DPO still heavily relies on the first approximation. In this paper we try to gain a deeper theoretical understanding of these practical algorithms. In particular we derive a new generalized objective called $\\Psi$PO for learning from human preferences that is expressed in terms of pairwise preferences and therefore bypasses both approximations. This new general objective allows us to perform an in-depth analysis of the behavior of RLHF and DPO (as special cases of $\\Psi$PO) and to identify their potential pitfalls. We then consider another special case for $\\Psi$PO called Identity Preference Optimization (IPO) for which we can derive an efficient optimization procedure, prove performance guarantees and demonstrate the empirical performance on a synthetic example. Our in-depth analysis shows how DPO and RLHF can be prone to over-training despite despite being regularized while IPO remains robust to",
+  "needs_fetch": false
+ },
+ {
+  "id": 788,
+  "title": "Robust Exploration via Clustering-based Density Estimation",
+  "org": "deepmind",
+  "date": "2024-03-11",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2305.01521",
+  "abstract": "Intrinsic motivation is a critical ingredient in reinforcement learning to enable progress when rewards are sparse. However, many existing approaches that measure the novelty of observations are brittle, or rely on restrictive assumptions about the environment which limit generality. We propose to decompose the exploration problem into two orthogonal sub-problems: (i) finding the right representation (metric) for exploration (ii) estimating densities in this representation space. To address (ii), we introduce Robust Exploration via Clustering-based Online Density Estimation (RECODE), a non-parametric method that estimates visitation counts for clusters of states that are similar according to the metric induced by any arbitrary representation learning technique. We adapt classical clustering algorithms to design a new type of memory that allows RECODE to keep track of the history of interactions over thousands of episodes, thus effectively tracking global visitation counts. This is in contrast to existing non-parametric approaches, that can only store the recent history, typically the current episode. %The resulting exploration bonus is simpler, more principled, and shown to be more robust than existing approaches on challenging tasks. The generality of RECODE allows us to easily address (i) by leveraging both off-the-shelf and novel representation learning techniques. In particular, we introduce a novel generalization of the action-prediction representation that leverages mul",
+  "needs_fetch": false
+ },
+ {
+  "id": 787,
+  "title": "Prosody for Intuitive Robotic Interface Design: It's Not What You Said, It's How You Said It",
+  "org": "deepmind",
+  "date": "2024-03-11",
+  "venue": "HRI 2024 Workshop",
+  "url": "https://arxiv.org/abs/2403.08144",
+  "abstract": "In this paper, we investigate the use of `prosody' (the musical elements of speech) as a communicative signal for intuitive human-robot interaction interfaces. Our approach, rooted in Research through Design (RtD), examines the application of prosody in directing a quadruped robot navigation. We involved ten team members in an experiment to command a robot through an obstacle course using natural interaction. A human operator, serving as the robot's sensory and processing proxy, translated these interactions into navigation commands, effectively simulating an intuitive interface. During our analysis of interaction videos, where lexical and visual cues proved insufficient for accurate command interpretation, we turned to non-verbal auditory cues. Qualitative evidence suggests that participants intuitively relied on prosody to control the robot navigation. This paper discusses specific distinct prosodic constructs that emerged from our analysis and their functions. Our findings highlight prosody as a multifunctional communicative signal offering substantial potential for intuitive robotic interfaces.",
+  "needs_fetch": false
+ },
+ {
+  "id": 786,
+  "title": "Model-free Posterior Sampling via Learning Rate Randomization",
+  "org": "deepmind",
+  "date": "2024-03-11",
+  "venue": "NeurIPS 2023",
+  "url": "https://arxiv.org/abs/2310.18186",
+  "abstract": "In this paper, we present Randomized Q-learning (RandQL), a new algorithm that doesn't rely on a model and uses randomness to minimize regret in episodic Markov Decision Processes (MDPs). As far as we know, RandQL is the first feasible algorithm based on posterior sampling without needing a model. We evaluate RandQL's performance in both tabular and non-tabular settings. In tabular MDPs, RandQL achieves a regret bound of approximately O(sqrt(H^5 * S * A * T)), where H is the planning horizon, S is the number of states, A is the number of actions, and T is the number of episodes. For a metric state-action space, RandQL's regret bound is approximately O(H^(5/2) * T * (dz+1)/(dz+2)), where dz represents the zooming dimension. Importantly, RandQL achieves optimistic exploration without using bonuses; instead, it relies on a novel concept of randomizing the learning rate. Our experimental results demonstrate that RandQL surpasses existing methods in standard exploration environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 785,
+  "title": "Demonstration-Regularized RL",
+  "org": "deepmind",
+  "date": "2024-03-11",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2310.17303",
+  "abstract": "Incorporating expert demonstrations has empirically helped to improve the sample efficiency of reinforcement learning (RL). This paper quantifies theoretically to what extent this extra information reduces RL's sample complexity. In particular, we study the demonstration-regularized reinforcement learning that leverages the expert demonstrations by KL-regularization for a policy learned by behavior cloning. Our findings reveal that using $N^{\\mathrm{E}}$ expert demonstrations enables the identification of an optimal policy at a sample complexity of order $\\widetilde{O}(\\mathrm{Poly}(S,A,H)/(\\varepsilon^2 N^{\\mathrm{E}}))$ in finite and $\\widetilde{O}(\\mathrm{Poly}(d,H)/(\\varepsilon^2 N^{\\mathrm{E}}))$ in linear Markov decision processes, where $\\varepsilon$ is the target precision, $H$ the horizon, $A$ the number of action, $S$ the number of states in the finite case and $d$ the dimension of the feature space in the linear case. As a by-product, we provide tight convergence guarantees for the behaviour cloning procedure under general assumptions on the policy classes. Additionally, we establish that demonstration-regularized methods are provably efficient for reinforcement learning from human feedback (RLHF). In this respect, we provide theoretical evidence showing the benefits of KL-regularization for RLHF in tabular and linear MDPs. Interestingly, we avoid pessimism injection by employing computationally feasible regularization to handle reward estimation uncertainty, thus ",
+  "needs_fetch": false
+ },
+ {
+  "id": 538,
+  "title": "Unraveling the Mystery of Scaling Laws: Part I",
+  "org": "other",
+  "date": "2024-03-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.06563",
+  "abstract": "Scaling law principles indicate a power-law correlation between loss and variables such as model size, dataset size, and computational resources utilized during training. These principles play a vital role in optimizing various aspects of model pre-training, ultimately contributing to the success of large language models such as GPT-4, Llama and Gemini. However, the original scaling law paper by OpenAI did not disclose the complete details necessary to derive the precise scaling law formulas, and their conclusions are only based on models containing up to 1.5 billion parameters. Though some subsequent works attempt to unveil these details and scale to larger models, they often neglect the training dependency of important factors such as the learning rate, context length and batch size, leading to their failure to establish a reliable formula for predicting the test loss trajectory. In this technical report, we confirm that the scaling law formulations proposed in the original OpenAI paper remain valid when scaling the model size up to 33 billion, but the constant coefficients in these formulas vary significantly with the experiment setup. We meticulously identify influential factors and provide transparent, step-by-step instructions to estimate all constant terms in scaling-law formulas by training on models with only 1M~60M parameters. Using these estimated formulas, we showcase the capability to accurately predict various attributes for models with up to 33B parameters befo",
+  "needs_fetch": false
+ },
+ {
+  "id": 2736,
+  "title": "Validation of the Openwater wearable optical system: cerebral hemodynamic monitoring during a breath-hold maneuver",
+  "org": "openai",
+  "date": "2024-03-08",
+  "venue": "Neurophotonics",
+  "url": "https://doi.org/10.1117/1.nph.11.1.015008",
+  "abstract": "SignificanceBedside cerebral blood flow (CBF) monitoring has the potential to inform and improve care for acute neurologic diseases, but technical challenges limit the use of existing techniques in clinical practice.AimHere, we validate the Openwater optical system, a novel wearable headset that uses laser speckle contrast to monitor microvascular hemodynamics.ApproachWe monitored 25 healthy adults with the Openwater system and concurrent transcranial Doppler (TCD) while performing a breath-hold maneuver to increase CBF. Relative blood flow (rBF) was derived from changes in speckle contrast, and relative blood volume (rBV) was derived from changes in speckle average intensity.ResultsA strong correlation was observed between beat-to-beat optical rBF and TCD-measured cerebral blood flow velocity (CBFv), R=0.79; the slope of the linear fit indicates good agreement, 0.87 (95% CI: 0.83 −0.92). Beat-to-beat rBV and CBFv were also strongly correlated, R=0.72, but as expected the two variables were not proportional; changes in rBV were smaller than CBFv changes, with linear fit slope of 0.18 (95% CI: 0.17 to 0.19). Further, strong agreement was found between rBF and CBFv waveform morphology and related metrics.ConclusionsThis first in vivo validation of the Openwater optical system highlights its potential as a cerebral hemodynamic monitor, but additional validation is needed in disease states.",
+  "needs_fetch": false
+ },
+ {
+  "id": 413,
+  "title": "Overcoming Reward Overoptimization via Adversarial Policy Optimization with Lightweight Uncertainty Estimation",
+  "org": "other",
+  "date": "2024-03-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.05171",
+  "abstract": "We introduce Adversarial Policy Optimization (AdvPO), a novel solution to the pervasive issue of reward over-optimization in Reinforcement Learning from Human Feedback (RLHF) for Large Language Models (LLMs). Over-optimization occurs when a reward model serves as an imperfect proxy for human preference, and RL-driven policy optimization erroneously exploits reward inaccuracies. In this paper, we begin by introducing a lightweight way to quantify uncertainties in rewards, relying solely on the last layer embeddings of the reward model, without the need for computationally expensive reward ensembles. AdvPO then addresses a distributionally robust optimization problem centred around the confidence interval of the reward model's predictions for policy improvement. Through comprehensive experiments on the Anthropic HH and TL;DR summarization datasets, we illustrate the efficacy of AdvPO in mitigating the overoptimization issue, consequently resulting in enhanced performance as evaluated through human-assisted evaluation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1691,
+  "title": "Development and Evaluation of Deep Learning Models for Cardiotocography Interpretation",
+  "org": "deepmind",
+  "date": "2024-03-06",
+  "venue": "medRxiv",
+  "url": "https://doi.org/10.1101/2024.03.05.24303805",
+  "abstract": "ABSTRACT The inherent variability in the visual interpretation of cardiotocograms (CTGs) by obstetric clinical experts, both intra- and inter-observer, presents a substantial challenge in obstetric care. In response, we investigate automated CTG interpretation as a potential solution to enhance the early detection of fetal hypoxia during labor, which has the potential to reduce unnecessary operative interventions and improve overall maternal and neonatal care. This study employs deep learning techniques to reduce the subjectivity associated with visual CTG interpretation. Our results demonstrate that using objective umbilical cord blood pH outcome measurements, rather than clinician-defined Apgar scores, yields more consistent and robust model performance. Additionally, through a series of ablation studies, we explore the impact of temporal distribution shifts on the performance of these deep learning models. We examine tradeoffs between performance and fairness, specifically evaluating performance across demographic and clinical subgroups. Finally, we discuss the practical implications of our findings for the real-world deployment of such systems, emphasizing their potential utility in medical settings with limited resources.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1690,
+  "title": "AlphaFold: A practical guide",
+  "org": "deepmind",
+  "date": "2024-03-06",
+  "venue": null,
+  "url": "https://doi.org/10.6019/tol.alphafold-w.2024.00001.1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 414,
+  "title": "Correlated Proxies: A New Definition and Improved Mitigation for Reward Hacking",
+  "org": "deepmind",
+  "date": "2024-03-05",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2403.03185",
+  "abstract": "Because it is difficult to precisely specify complex objectives, reinforcement learning policies are often optimized using proxy reward functions that only approximate the true goal. However, optimizing proxy rewards frequently leads to reward hacking: the optimized reward function ceases to be a good proxy and the resulting policy performs poorly with respect to the unspecified true reward. Principled solutions to reward hacking have been impeded by the lack of a good definition for the problem. To address this gap, we introduce a definition of reward hacking based on the correlation between proxy and true rewards for states and actions seen by a \"reference policy\" that breaks down under optimization. We show that this definition captures reward hacking behavior across several realistic settings, including in reinforcement learning from human feedback (RLHF). Using our formulation, we show theoretically that regularization to the reference policy can effectively prevent reward hacking. While the current practice in RLHF applies a KL penalty between action distributions for this purpose, our theory suggests regularizing the $χ^2$ divergence between the policies' occupancy measures can be more effective. We intuitively show the benefits of this type of regularization and demonstrate that it better mitigates reward hacking in practice across four realistic settings, including RLHF. Our code is available at https://github.com/cassidylaidlaw/orpo.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1692,
+  "title": "Protein Design Using Structure-Prediction Networks: AlphaFold and RoseTTAFold as Protein Structure Foundation Models",
+  "org": "deepmind",
+  "date": "2024-03-04",
+  "venue": "Cold Spring Harbor Perspectives in Biology",
+  "url": "https://doi.org/10.1101/cshperspect.a041472",
+  "abstract": "Designing proteins with tailored structures and functions is a long-standing goal in bioengineering. Recently, deep learning advances have enabled protein structure prediction at near-experimental accuracy, which has catalyzed progress in protein design as well. We review recent studies that use structure-prediction neural networks to design proteins, via approaches such as activation maximization, inpainting, or denoising diffusion. These methods have led to major improvements over previous methods in wet-lab success rates for designing protein binders, metalloproteins, enzymes, and oligomeric assemblies. These results show that structure-prediction models are a powerful foundation for developing protein-design tools and suggest that continued improvement of their accuracy and generality will be key to unlocking the full potential of protein design.",
+  "needs_fetch": false
+ },
+ {
+  "id": 608,
+  "title": "AtP*: Efficient and scalable methods for localizing LLM behaviour to components",
+  "org": "deepmind",
+  "date": "2024-03-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.00745",
+  "abstract": "Causal attribution of behaviour is a foundational problem in interpretability. Activation Patching is a method of directly computing these causal attributions, and is ubiquitous in mechanistic interpretability analyses. However, scaling it to many attributions requires a sweep with cost scales linear in the number of model components, which can be prohibitively expensive, involving millions to billions of forward passes in SoTA models. We propose to use Attribution Patching (AtP), a gradient-based approximation that runs in $O(1)$ passes, as a pre-filtering step to Activation Patching. We investigate the performance of AtP, finding two classes of failure modes which produce false negatives. We propose a variant of AtP called AtP*, with two changes to address these failure modes while retaining scalability. We present the first systematic study of AtP and alternative methods for faster activation patching and show that AtP significantly outperforms all other investigated methods, with AtP* providing further significant improvement. Finally, we provide a method to estimate the residual error of AtP* and bound the probability of remaining false negatives.",
+  "needs_fetch": false
+ },
+ {
+  "id": 790,
+  "title": "How aligned are different alignment metrics?",
+  "org": "deepmind",
+  "date": "2024-03-02",
+  "venue": "ICLR Workshop 2024",
+  "url": "https://openreview.net/forum?id=cHlKB28bjV",
+  "abstract": "In recent years, various methods and benchmarks have been proposed to empirically evaluate the alignment of artificial neural networks to human neural and behavioral data. But how aligned are different alignment metrics? To answer this question, we here analyze visual data from Brain-Score (Schrimpf et al., 2018), including metrics from the model-vs-human toolbox (Geirhos et al., 2021), together with human feature alignment (Linsley et al., 2018; Fel et al., 2022) and human similarity judgements (Muttenthaler et al., 2022). We find that pairwise correlations between neural scores and behavioral scores are quite low and sometimes even negative. For instance, the average correlation between those 95 models on Brain-Score that were fully evaluated on all 51 alignment metrics is only 0.161. Assuming that all of the employed metrics are sound, this implies that alignment with human perception may best be thought of as a multidimensional concept, with different methods measuring fundamentally different aspects. Our results underline the importance of integrative benchmarking, but also raise questions about how to correctly combine and aggregate individual metrics. Aggregating by taking the arithmetic average, as done in Brain-Score, leads to the overall performance currently being dominated by behavior (81.24% explained variance) while the neural predictivity plays a less important role (only 67.31% explained variance). As a first step towards making sure that different alignment m",
+  "needs_fetch": false
+ },
+ {
+  "id": 2888,
+  "title": "Circuits Updates — March 2024",
+  "org": "anthropic",
+  "date": "2024-03-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/march-update/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1693,
+  "title": "Defining acceptable data collection and reuse standards for queer artificial intelligence research in mental health: protocol for the online PARQAIR-MH Delphi study",
+  "org": "deepmind",
+  "date": "2024-03-01",
+  "venue": "BMJ Open",
+  "url": "https://doi.org/10.1136/bmjopen-2023-079105",
+  "abstract": "INTRODUCTION: For artificial intelligence (AI) to help improve mental healthcare, the design of data-driven technologies needs to be fair, safe, and inclusive. Participatory design can play a critical role in empowering marginalised communities to take an active role in constructing research agendas and outputs. Given the unmet needs of the LGBTQI+ (Lesbian, Gay, Bisexual, Transgender, Queer and Intersex) community in mental healthcare, there is a pressing need for participatory research to include a range of diverse queer perspectives on issues of data collection and use (in routine clinical care as well as for research) as well as AI design. Here we propose a protocol for a Delphi consensus process for the development of PARticipatory Queer AI Research for Mental Health (PARQAIR-MH) practices, aimed at informing digital health practices and policy. METHODS AND ANALYSIS: The development of PARQAIR-MH is comprised of four stages. In stage 1, a review of recent literature and fact-finding consultation with stakeholder organisations will be conducted to define a terms-of-reference for stage 2, the Delphi process. Our Delphi process consists of three rounds, where the first two rounds will iterate and identify items to be included in the final Delphi survey for consensus ratings. Stage 3 consists of consensus meetings to review and aggregate the Delphi survey responses, leading to stage 4 where we will produce a reusable toolkit to facilitate participatory development of future ",
+  "needs_fetch": false
+ },
+ {
+  "id": 792,
+  "title": "Towards Practical Reinforcement Learning for Tokamak Magnetic Control",
+  "org": "deepmind",
+  "date": "2024-03-01",
+  "venue": "Fusion Engineering and Design",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0920379624000140",
+  "abstract": "Reinforcement learning (RL) has shown promising results for real-time control systems, including the domain of plasma magnetic control. However, there are still significant drawbacks compared to traditional feedback control approaches for magnetic confinement. In this work, we address key drawbacks of the RL method; achieving higher control accuracy for desired plasma properties, reducing the steady-state error, and decreasing the required time to learn new tasks. We build on top of Degrave et al. (2022), and present algorithmic improvements to the agent architecture and training procedure. We present simulation results that show up to 65% improvement in shape accuracy, achieve substantial reduction in the long-term bias of the plasma current, and additionally reduce the training time required to learn new tasks by a factor of 3 or more. We present new experiments using the upgraded RL-based controllers on the TCV tokamak, which validate the simulation results achieved, and point the way towards routinely achieving accurate discharges using the RL approach.",
+  "needs_fetch": false
+ },
+ {
+  "id": 791,
+  "title": "Approximating the Core of Cooperative Games",
+  "org": "deepmind",
+  "date": "2024-03-01",
+  "venue": "AAMAS 2024",
+  "url": "https://arxiv.org/abs/2402.03928",
+  "abstract": "The core is a long standing solution concept in cooperative game theory, but is known to be hard to compute even for restricted classes of coalitional games. Cooperative game theory has many applications, ranging from analyzing power in decision making bodies and politics to predicting how human teams might decide to share profits achieved jointly. Another recent application of cooperative games in machine learning is explainable AI (XAI), and in particular identifying the key features or data points that were most influential on the predictions made by a black box model. Recent research has applied the Shapley value for these purposes, as it can be approximated using fast random algorithms. In this paper, we propose efficient algorithms for approximating the core in coalitional games, that iteratively refine a payoff vector by sampling the constraints posed by randomly selected coalitions. By overcoming the computational barrier, we show how the core can provide a desirable alternative to the Shapley value for many applications: political power analysis, predicting individual payoffs in human teams and explainable AI. Our empirical analysis shows how team stability is affected by game parameters for important classes of cooperative games (weighted voting games, graph games and marginal contribution networks). Further, we contrast the individual impact estimates of the Shapley value and the least-core in political settings and explainable AI analysis of multiple datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 97,
+  "title": "Reflections on Qualitative Research",
+  "org": "anthropic",
+  "date": "2024-03-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/qualitative-essay/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 794,
+  "title": "Self-supervised video pretraining yields strong image representations",
+  "org": "deepmind",
+  "date": "2024-02-29",
+  "venue": "NeurIPS 2023",
+  "url": "https://arxiv.org/abs/2210.06433",
+  "abstract": "Humans learn powerful representations of objects and scenes by observing how they evolve over time. Yet, outside of specific tasks that require explicit temporal understanding, static image pretraining remains the dominant paradigm for learning visual foundation models. We question this mismatch, and ask whether video pretraining can yield visual representations that bear the hallmarks of human perception: generalisation across tasks, robustness to perturbations, and consistency with human judgements. To that end we propose a novel procedure for curating videos, and develop a contrastive framework which learns from the complex transformations therein. This simple paradigm for distilling knowledge from videos, called VITO, yields general representations that far outperform prior video pretraining methods on image understanding tasks, and image pretraining methods on video understanding tasks. Moreover, VITO representations are significantly more robust to natural and synthetic deformations than image-, video-, and adversarially-trained ones. Finally, VITO's predictions are strongly aligned with human judgements, surpassing models that were specifically trained for that purpose. Together, these results suggest that video pretraining could be a simple way of learning unified, robust, and human-aligned representations of the visual world.",
+  "needs_fetch": false
+ },
+ {
+  "id": 793,
+  "title": "Bad Students Make Great Teachers: Active Learning Accelerates Large Scale Visual Understanding",
+  "org": "deepmind",
+  "date": "2024-02-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2312.05328",
+  "abstract": "Abstract Power-law scaling indicates that large-scale training with uniform sampling is prohibitively slow. Active learning methods aim to increase data efficiency by prioritizing learning on the most relevant examples. Despite their appeal, these methods have yet to be widely adopted since no one algorithm has been shown to a) generalize across models and tasks b) scale to large datasets and c) yield overall FLOP savings when accounting for the overhead of data selection. In this work we propose a method which satisfies these three properties, leveraging small, cheap proxy models to estimate “learnability” scores for datapoints, which are used to prioritize data for training much larger models. As a result, models trained using our methods – ClassAct and ActiveCLIP – require 46% and 51% fewer training updates and up to 25% less total computation to reach the same performance as uniformly-trained visual classifiers on JFT and multimodal models on ALIGN, respectively. Finally, we find our data-prioritization scheme to be complementary with recent data-curation and learning objectives, yielding a new state-of-the-art in several multimodal transfer tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1199,
+  "title": "Anomaly detection in the presence of irrelevant features",
+  "org": "anthropic",
+  "date": "2024-02-28",
+  "venue": "Journal of High Energy Physics",
+  "url": "https://doi.org/10.1007/jhep02(2024)220",
+  "abstract": "A bstract Experiments at particle colliders are the primary source of insight into physics at microscopic scales. Searches at these facilities often rely on optimization of analyses targeting specific models of new physics. Increasingly, however, data-driven model-agnostic approaches based on machine learning are also being explored. A major challenge is that such methods can be highly sensitive to the presence of many irrelevant features in the data. This paper presents Boosted Decision Tree (BDT)-based techniques to improve anomaly detection in the presence of many irrelevant features. First, a BDT classifier is shown to be more robust than neural networks for the Classification Without Labels approach to finding resonant excesses assuming independence of resonant and non-resonant observables. Next, a tree-based probability density estimator using copula transformations demonstrates significant stability and improved performance over normalizing flows as irrelevant features are added. The results make a compelling case for further development of tree-based algorithms for more robust resonant anomaly detection in high energy physics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 539,
+  "title": "Making Them Ask and Answer: Jailbreaking Large Language Models in Few Queries via Disguise and Reconstruction",
+  "org": "other",
+  "date": "2024-02-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.18104",
+  "abstract": "In recent years, large language models (LLMs) have demonstrated notable success across various tasks, but the trustworthiness of LLMs is still an open problem. One specific threat is the potential to generate toxic or harmful responses. Attackers can craft adversarial prompts that induce harmful responses from LLMs. In this work, we pioneer a theoretical foundation in LLMs security by identifying bias vulnerabilities within the safety fine-tuning and design a black-box jailbreak method named DRA (Disguise and Reconstruction Attack), which conceals harmful instructions through disguise and prompts the model to reconstruct the original harmful instruction within its completion. We evaluate DRA across various open-source and closed-source models, showcasing state-of-the-art jailbreak success rates and attack efficiency. Notably, DRA boasts a 91.1% attack success rate on OpenAI GPT-4 chatbot.",
+  "needs_fetch": false
+ },
+ {
+  "id": 795,
+  "title": "Set Learning for Accurate and Calibrated Models",
+  "org": "deepmind",
+  "date": "2024-02-27",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2307.02245",
+  "abstract": "Model overconfidence and poor calibration are common in machine learning and difficult to account for when applying standard empirical risk minimization. In this work, we propose a novel method to alleviate these problems that we call odd-$k$-out learning (OKO), which minimizes the cross-entropy error for sets rather than for single examples. This naturally allows the model to capture correlations across data examples and achieves both better accuracy and calibration, especially in limited training data and class-imbalanced regimes. Perhaps surprisingly, OKO often yields better calibration even when training with hard labels and dropping any additional calibration parameter tuning, such as temperature scaling. We provide theoretical justification, establishing that OKO naturally yields better calibration, and provide extensive experimental analyses that corroborate our theoretical findings. We emphasize that OKO is a general framework that can be easily adapted to many settings and the trained model can be applied to single examples at inference time, without introducing significant run-time overhead or architecture changes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 415,
+  "title": "When Your AIs Deceive You: Challenges of Partial Observability in Reinforcement Learning from Human Feedback",
+  "org": "deepmind",
+  "date": "2024-02-27",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2402.17747",
+  "abstract": "Past analyses of reinforcement learning from human feedback (RLHF) assume that the human evaluators fully observe the environment. What happens when human feedback is based only on partial observations? We formally define two failure cases: deceptive inflation and overjustification. Modeling the human as Boltzmann-rational w.r.t. a belief over trajectories, we prove conditions under which RLHF is guaranteed to result in policies that deceptively inflate their performance, overjustify their behavior to make an impression, or both. Under the new assumption that the human's partial observability is known and accounted for, we then analyze how much information the feedback process provides about the return function. We show that sometimes, the human's feedback determines the return function uniquely up to an additive constant, but in other realistic cases, there is irreducible ambiguity. We propose exploratory research directions to help tackle these challenges, experimentally validate both the theoretical concerns and potential mitigations, and caution against blindly applying RLHF in partially observable settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 798,
+  "title": "Intriguing Properties of Generative Classifers",
+  "org": "deepmind",
+  "date": "2024-02-26",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=rmg0qMKYRQ",
+  "abstract": "What is the best paradigm to recognize objects---discriminative inference (fast but potentially prone to shortcut learning) or using a generative model (slow but potentially more robust)? We build on recent advances in generative modeling that turn text-to-image models into classifiers. This allows us to study their behavior and to compare them against discriminative models and human psychophysical data. We report four intriguing emergent properties of diffusion-based generative classifiers: they show a record-breaking human-like shape bias (99\\% for Imagen), near human-level out-of-distribution accuracy, state-of-the-art alignment with human classification errors, and they understand certain perceptual illusions. Our results indicate that while the current dominant paradigm for modeling human object recognition is discriminative inference, zero-shot generative models approximate human object recognition data surprisingly well.",
+  "needs_fetch": false
+ },
+ {
+  "id": 797,
+  "title": "Frozen Feature Augmentation",
+  "org": "deepmind",
+  "date": "2024-02-26",
+  "venue": "CVPR 2024",
+  "url": "https://arxiv.org/abs/2403.10519",
+  "abstract": "Vision foundation models are currently one of the main driving forces in computer vision research. However, transferring these models to new tasks involves expensive (full) finetuning. One efficient method is to cache features by processing a dataset through a pretrained model and subsequently train a small network on the cached features. How to effectively incorporate data augmentation on top of such cached features is an open question. In this paper, we extensively study frozen feature augmentation (FroFA) in the few-shot setting. We focus on the low-data regime as we assume to observe significant effects. Our study includes eighteen data augmentations, four network architectures, two large pretraining datasets and three transfer datasets. Our results indicate that some commonly used image data augmentations also transfer to the feature space.",
+  "needs_fetch": false
+ },
+ {
+  "id": 796,
+  "title": "A density estimation perspective on learning from pairwise human preferences",
+  "org": "deepmind",
+  "date": "2024-02-26",
+  "venue": "Transactions on Machine Learning Research (TMLR)",
+  "url": "https://deepmind.google/research/publications/64513/",
+  "abstract": "Learning from human feedback (LHF)—and in particular learning from pairwise preferences—has recently become a crucial ingredient in training large language models (LLMs), and has been the subject of much research. Most recent works frame it as a reinforcement learning problem, where a reward function is learned from pairwise preference data and the LLM is treated as a policy which is adapted to maximize the rewards, often under additional regularization constraints. We propose an alternative interpretation which centers on the generative process for pairwise preferences and treats LHF as a density estimation problem. We provide theoretical and empirical results showing that for a family of generative processes defined via preference behavior distribution equations, training a reward function on pairwise preferences effectively models an annotator's implicit preference distribution. Finally, we discuss and present findings on \"annotator misspecification\"—failure cases where wrong modeling assumptions are made about annotator behavior, resulting in poorly-adapted models—suggesting that approaches that learn from pairwise human preferences could have trouble learning from a population of annotators with diverse viewpoints.",
+  "needs_fetch": false
+ },
+ {
+  "id": 799,
+  "title": "Learning a Fourier Transform for Linear Relative Positional Encodings in Transformers",
+  "org": "deepmind",
+  "date": "2024-02-25",
+  "venue": "(deprecated) AISTATS2024",
+  "url": "https://arxiv.org/abs/2302.01925",
+  "abstract": "We propose a new class of linear Transformers called FourierLearner-Transformers (FLTs), which incorporate a wide range of relative positional encoding mechanisms (RPEs). These include regular RPE techniques applied for nongeometric data, as well as novel RPEs operating on the sequences of tokens embedded in higher-dimensional Euclidean spaces (e.g. point clouds). FLTs construct the optimal RPE mechanism implicitly by learning its spectral representation. As opposed to other architectures combining efficient low-rank linear attention with RPEs, FLTs remain practical in terms of their memory usage and do not require additional assumptions about the structure of the RPE-mask. FLTs allow also for applying certain structural inductive bias techniques to specify masking strategies, e.g. they provide a way to learn the so-called local RPEs introduced in this paper and providing accuracy gains as compared with several other linear Transformers for language modeling. We also thoroughly tested FLTs on other data modalities and tasks, such as: image classification and 3D molecular modeling. For 3D-data FLTs are, to the best of our knowledge, the first Transformers architectures providing RPE-enhanced linear attention.",
+  "needs_fetch": false
+ }
+]

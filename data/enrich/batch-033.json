@@ -1,0 +1,302 @@
+[
+ {
+  "id": 731,
+  "title": "A theory of appropriateness with applications to generative artificial intelligence",
+  "org": "deepmind",
+  "date": "2024-12-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2412.19010",
+  "abstract": "What is appropriateness? Humans navigate a multi-scale mosaic of interlocking notions of what is appropriate for different situations. We act one way with our friends, another with our family, and yet another in the office. Likewise for AI, appropriate behavior for a comedy-writing assistant is not the same as appropriate behavior for a customer-service representative. What determines which actions are appropriate in which contexts? And what causes these standards to change over time? Since all judgments of AI appropriateness are ultimately made by humans, we need to understand how appropriateness guides human decision making in order to properly evaluate AI decision making and improve it. This paper presents a theory of appropriateness: how it functions in human society, how it may be implemented in the brain, and what it means for responsible deployment of generative AI technology.",
+  "needs_fetch": false
+ },
+ {
+  "id": 732,
+  "title": "Deliberation in Latent Space via Differentiable Cache Augmentation",
+  "org": "deepmind",
+  "date": "2024-12-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2412.17747",
+  "abstract": "Techniques enabling large language models (LLMs) to \"think more\" by generating and attending to intermediate reasoning steps have shown promise in solving complex problems. However, the standard approaches generate sequences of discrete tokens immediately before responding, and so they can incur significant latency costs and be challenging to optimize. In this work, we demonstrate that a frozen LLM can be augmented with an offline coprocessor that operates on the model's key-value (kv) cache. This coprocessor augments the cache with a set of latent embeddings designed to improve the fidelity of subsequent decoding. We train this coprocessor using the language modeling loss from the decoder on standard pretraining data, while keeping the decoder itself frozen. This approach enables the model to learn, in an end-to-end differentiable fashion, how to distill additional computation into its kv-cache. Because the decoder remains unchanged, the coprocessor can operate offline and asynchronously, and the language model can function normally if the coprocessor is unavailable or if a given cache is deemed not to require extra computation. We show experimentally that when a cache is augmented, the decoder achieves lower perplexity on numerous subsequent tokens. Furthermore, even without any task-specific training, our experiments demonstrate that cache augmentation consistently reduces perplexity and improves performance across a range of reasoning-intensive tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 226,
+  "title": "Deliberative alignment: reasoning enables safer language models",
+  "org": "openai",
+  "date": "2024-12-20",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/deliberative-alignment/",
+  "abstract": "As large-scale language models increasingly impact safety-critical domains, ensuring their reliable adherence to well-defined principles remains a fundamental challenge. We introduce Deliberative Alignment, a new paradigm that directly teaches the model safety specifications and trains it to explicitly recall and accurately reason over the specifications before answering. We used this approach to align OpenAI’s o-series models [1], and achieved highly precise adherence to OpenAI’s safety policies, without requiring human-written chain-of-thoughts or answers. Deliberative Alignment pushes the Pareto frontier by simultaneously increasing robustness to jailbreaks while decreasing overrefusal rates, and also improves out-of-distribution generalization. We demonstrate that reasoning over explicitly specified policies enables more scalable, trustworthy, and interpretable alignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 177,
+  "title": "How to Replicate and Extend our Alignment Faking Demo",
+  "org": "anthropic",
+  "date": "2024-12-19",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2024/how-to-alignment-faking/",
+  "abstract": "We describe how to get started with experimenting with our demonstration of alignment faking, and present some ideas for future research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 75,
+  "title": "Building effective agents",
+  "org": "anthropic",
+  "date": "2024-12-19",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/building-effective-agents",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 589,
+  "title": "Performance Gap in Entity Knowledge Extraction Across Modalities in Vision Language Models",
+  "org": "deepmind",
+  "date": "2024-12-18",
+  "venue": "ACL",
+  "url": "https://arxiv.org/abs/2412.14133",
+  "abstract": "Vision-language models (VLMs) excel at extracting and reasoning about information from images. Yet, their capacity to leverage internal knowledge about specific entities remains underexplored. This work investigates the disparity in model performance when answering factual questions about an entity described in text versus depicted in an image. Our results reveal a significant accuracy drop - reaching 18% for some models - when the entity is presented visually instead of textually. To study this gap we present PopVQA, a dataset which allows separating entity recognition and question answering, and use it to benchmark several models. We hypothesize that this decline arises from limitations in how information flows from image tokens to query tokens. Thus, we use mechanistic interpretability tools to reveal that, although image tokens are preprocessed by the vision encoder, meaningful information flow from these tokens occurs only in the much deeper layers. Furthermore, critical image processing happens in the language model's middle layers, allowing few layers for consecutive reasoning, highlighting a potential inefficiency in how the model utilizes its layers for reasoning. These insights shed light on the internal mechanics of VLMs and offer pathways for enhancing their reasoning capabilities. PopVQA can be found at https://huggingface.co/datasets/idoco/PopVQA.",
+  "needs_fetch": false
+ },
+ {
+  "id": 76,
+  "title": "Alignment faking in large language models",
+  "org": "anthropic",
+  "date": "2024-12-18",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/alignment-faking",
+  "abstract": "We present a demonstration of a large language model engaging in alignment faking: selectively complying with its training objective in training to prevent modification of its behavior out of training. First, we give Claude 3 Opus a system prompt stating it is being trained to answer all queries, even harmful ones, which conflicts with its prior training to refuse such queries. To allow the model to infer when it is in training, we say it will be trained only on conversations with free users, not paid users. We find the model complies with harmful queries from free users 14% of the time, versus almost never for paid users. Explaining this gap, in almost all cases where the model complies with a harmful query from a free user, we observe explicit alignment-faking reasoning, with the model stating it is strategically answering harmful queries in training to preserve its preferred harmlessness behavior out of training. Next, we study a more realistic setting where information about the training process is provided not in a system prompt, but by training on synthetic documents that mimic pre-training data--and observe similar alignment faking. Finally, we study the effect of actually training the model to comply with harmful queries via reinforcement learning, which we find increases the rate of alignment-faking reasoning to 78%, though also increases compliance even out of training. We additionally observe other behaviors such as the model exfiltrating its weights when given an ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1521,
+  "title": "Validating the Proposed Specifiers for Conduct Disorder (PSCD) in Iranian justice-involved youths: A multi-informant study of parent and youth self-report versions.",
+  "org": "deepmind",
+  "date": "2024-12-16",
+  "venue": "Psychological Assessment",
+  "url": "https://doi.org/10.1037/pas0001358",
+  "abstract": "The Proposed Specifiers for Conduct Disorder (PSCD) is a tool designed to measure psychopathy through its grandiose-manipulative, callous-unemotional, daring-impulsive, and conduct disorder subscales. The present study aimed to assess the psychometric properties of the PSCD's parent and child self-report versions with a sample of 149 justice-involved youths (55% boys) and their parents (71% mothers) in Iran. Results indicated that both versions of the PSCD confirmed the originally proposed hierarchical four-factor structure. Internal consistency of both PSCD versions' component scores was satisfactory, and correlations with theoretically related variables supported the PSCD scores' validity. Also, good to excellent agreement between parent and child PSCD scores were found. The parent-report PSCD scores offered significant incremental validity over the child-version scores in predicting child-reported conduct problems, proactive aggression, and delinquency. Furthermore, both informant versions of the PSCD provided significant added values over an alternate measure of youth psychopathy in predicting externalizing psychopathology. The findings suggest that both versions of the PSCD are useful for assessing psychopathy subscales in Iranian justice-involved adolescents and hold promise for generating further research on this topic. (PsycInfo Database Record (c) 2025 APA, all rights reserved).",
+  "needs_fetch": false
+ },
+ {
+  "id": 374,
+  "title": "The Superalignment of Superhuman Intelligence with Large Language Models",
+  "org": "other",
+  "date": "2024-12-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2412.11145",
+  "abstract": "We have witnessed superhuman intelligence thanks to the fast development of large language models and multimodal language models. As the application of such superhuman models becomes more and more popular, a critical question arises here: how can we ensure superhuman models are still safe, reliable and aligned well to human values? In this position paper, we discuss the concept of superalignment from the learning perspective to answer this question by outlining the learning paradigm shift from large-scale pretraining, supervised fine-tuning, to alignment training. We define superalignment as designing effective and efficient alignment algorithms to learn from noisy-labeled data (point-wise samples or pair-wise preference data) in a scalable way when the task becomes very complex for human experts to annotate and the model is stronger than human experts. We highlight some key research problems in superalignment, namely, weak-to-strong generalization, scalable oversight, and evaluation. We then present a conceptual framework for superalignment, which consists of three modules: an attacker which generates adversary queries trying to expose the weaknesses of a learner model; a learner which will refine itself by learning from scalable feedbacks generated by a critic model along with minimal human experts; and a critic which generates critics or explanations for a given query-response pair, with a target of improving the learner by criticizing. We discuss some important research p",
+  "needs_fetch": false
+ },
+ {
+  "id": 1523,
+  "title": "Author response: Dynamic reinforcement learning reveals time-dependent shifts in strategy during reward learning",
+  "org": "deepmind",
+  "date": "2024-12-13",
+  "venue": null,
+  "url": "https://doi.org/10.7554/elife.97612.2.sa0",
+  "abstract": "Different brain systems have been hypothesized to subserve multiple “experts” that compete to generate behavior. In reinforcement learning, two general processes, one model-free (MF) and one model-based (MB), are often modeled as a mixture of agents (MoA) and hypothesized to capture differences between automaticity vs. deliberation. However, shifts in strategy cannot be captured by a static MoA. To investigate such dynamics, we present the mixture-of-agents hidden Markov model (MoA-HMM), which simultaneously learns inferred action values from a set of agents and the temporal dynamics of underlying “hidden” states that capture shifts in agent contributions over time. Applying this model to a multi-step, reward-guided task in rats reveals a progression of within-session strategies: a shift from initial MB exploration to MB exploitation, and finally to reduced engagement. The inferred states predict changes in both response time and OFC neural encoding during the task, suggesting that these states are capturing real shifts in dynamics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1522,
+  "title": "Complete and Efficient Covariants for Three-Dimensional Point Configurations with Application to Learning Molecular Quantum Properties",
+  "org": "deepmind",
+  "date": "2024-12-13",
+  "venue": "The Journal of Physical Chemistry Letters",
+  "url": "https://doi.org/10.1021/acs.jpclett.4c02376",
+  "abstract": "When physical properties of molecules are being modeled with machine learning, it is desirable to incorporate SO(3)-covariance. While such models based on low body order features are not complete, we formulate and prove general completeness properties for higher order methods and show that 6k – 5 of these features are enough for up to k atoms. We also find that the Clebsch–Gordan operations commonly used in these methods can be replaced by matrix multiplications without sacrificing completeness, lowering the scaling from O(l6) to O(l3) in the degree of the features. We apply this to quantum chemistry, but the proposed methods are generally applicable for problems involving three-dimensional point configurations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1524,
+  "title": "Distributed Verifiable Random Function with Compact Proof",
+  "org": "deepmind",
+  "date": "2024-12-12",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-76934-4_8",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 375,
+  "title": "Sail into the Headwind: Alignment via Robust Rewards and Dynamic Labels against Reward Hacking",
+  "org": "other",
+  "date": "2024-12-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2412.09544",
+  "abstract": "Aligning AI systems with human preferences typically suffers from the infamous reward hacking problem, where optimization of an imperfect reward model leads to undesired behaviors. In this paper, we investigate reward hacking in offline preference optimization, which aims to improve an initial model using a preference dataset. We identify two types of reward hacking stemming from statistical fluctuations in the dataset: Type I Reward Hacking due to subpar choices appearing more favorable, and Type II Reward Hacking due to decent choices appearing less favorable. We prove that many (mainstream or theoretical) preference optimization methods suffer from both types of reward hacking. To mitigate Type I Reward Hacking, we propose POWER, a new preference optimization method that combines Guiasu's weighted entropy with a robust reward maximization objective. POWER enjoys finite-sample guarantees under general function approximation, competing with the best covered policy in the data. To mitigate Type II Reward Hacking, we analyze the learning dynamics of preference optimization and develop a novel technique that dynamically updates preference labels toward certain \"stationary labels\", resulting in diminishing gradients for untrustworthy samples. Empirically, POWER with dynamic labels (POWER-DL) consistently outperforms state-of-the-art methods on alignment benchmarks, achieving improvements of up to 13.0 points on AlpacaEval 2.0 and 11.5 points on Arena-Hard over DPO, while also im",
+  "needs_fetch": false
+ },
+ {
+  "id": 77,
+  "title": "Clio: A system for privacy-preserving insights into real-world AI use",
+  "org": "anthropic",
+  "date": "2024-12-12",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/clio",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1525,
+  "title": "Metacognitive capabilities of LLMs: An exploration in mathematical problem solving",
+  "org": "deepmind",
+  "date": "2024-12-10",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-05413270",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 734,
+  "title": "What type of inference is planning?",
+  "org": "deepmind",
+  "date": "2024-12-10",
+  "venue": "NeurIPS 2024",
+  "url": "https://openreview.net/forum?id=TXsRGrzICz",
+  "abstract": "Multiple types of inference are available for probabilistic graphical models, e.g., marginal, maximum-a-posteriori, and even marginal maximum-a-posteriori. Which one do researchers mean when they talk about ``planning as inference''? There is no consistency in the literature, different types are used, and their ability to do planning is further entangled with specific approximations or additional constraints. In this work we use the variational framework to show that all commonly used types of inference correspond to different weighings of the entropy terms in the variational problem, and that planning corresponds exactly to a different set of weights. This means that all the tricks of variational inference are readily applicable to planning. We develop an analogue of loopy belief propagation that allows us to perform approximate planning in factored-state Markov decisions processes without incurring intractability due to the exponentially large state space. The variational perspective shows that the previous types of inference for planning are only adequate in environments with low stochasticity, and allows us to characterize each type by its own merits, disentangling the type of inference from the additional approximations that its practical use requires. We validate these results empirically on synthetic MDPs and tasks posed on the International Planning Competition.",
+  "needs_fetch": false
+ },
+ {
+  "id": 733,
+  "title": "Machine Unlearning Doesn’t Do What You Think: Lessons for Generative AI Policy, Research, and Practice",
+  "org": "deepmind",
+  "date": "2024-12-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2412.06966",
+  "abstract": "We articulate fundamental mismatches between technical methods for machine unlearning in Generative AI, and documented aspirations for broader impact that these methods could have for law and policy. These aspirations are both numerous and varied, motivated by issues that pertain to privacy, copyright, safety, and more. For example, unlearning is often invoked as a solution for removing the effects of targeted information from a generative-AI model’s parameters, e.g., a particular individual’s personal data or in-copyright expression of Spiderman that was included in the model’s training data. Unlearning is also proposed as a way to prevent a model from generating targeted types of information in its outputs, e.g., generations that closely resemble a particular individual’s data or reflect the concept of “Spiderman.” Both of these goals—the targeted removal of information from a model and the targeted suppression of information from a model’s outputs—present various technical and substantive challenges. We provide a framework for thinking rigorously about these challenges, which enables us to be clear about why unlearning is not a general-purpose solution for circumscribing generative-AI model behavior in service of broader positive impact. We aim for conceptual clarity and to encourage more thoughtful communication among machine learning (ML), law, and policy experts who seek to develop and apply technical methods for compliance with policy objectives.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1526,
+  "title": "Quantum error correction below the surface code threshold",
+  "org": "deepmind",
+  "date": "2024-12-09",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-024-08449-y",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 990,
+  "title": "Sora System Card",
+  "org": "openai",
+  "date": "2024-12-09",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/sora-system-card/",
+  "abstract": "Sora is OpenAI’s video generation model, designed to take text, image, and video inputs and generate a new video as an output. Sora builds on learnings from DALL-E and GPT models, and is designed to give people expanded tools for storytelling and creative expression.",
+  "needs_fetch": false
+ },
+ {
+  "id": 590,
+  "title": "BatchTopK Sparse Autoencoders",
+  "org": "deepmind",
+  "date": "2024-12-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2412.06410",
+  "abstract": "Sparse autoencoders (SAEs) have emerged as a powerful tool for interpreting language model activations by decomposing them into sparse, interpretable features. A popular approach is the TopK SAE, that uses a fixed number of the most active latents per sample to reconstruct the model activations. We introduce BatchTopK SAEs, a training method that improves upon TopK SAEs by relaxing the top-k constraint to the batch-level, allowing for a variable number of latents to be active per sample. As a result, BatchTopK adaptively allocates more or fewer latents depending on the sample, improving reconstruction without sacrificing average sparsity. We show that BatchTopK SAEs consistently outperform TopK SAEs in reconstructing activations from GPT-2 Small and Gemma 2 2B, and achieve comparable performance to state-of-the-art JumpReLU SAEs. However, an advantage of BatchTopK is that the average number of latents can be directly specified, rather than approximately tuned through a costly hyperparameter sweep. We provide code for training and evaluating BatchTopK SAEs at https://github.com/bartbussmann/BatchTopK",
+  "needs_fetch": false
+ },
+ {
+  "id": 227,
+  "title": "Frontier AI systems have surpassed the self-replicating red line",
+  "org": "other",
+  "date": "2024-12-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2412.12140",
+  "abstract": "Successful self-replication under no human assistance is the essential step for AI to outsmart the human beings, and is an early signal for rogue AIs. That is why self-replication is widely recognized as one of the few red line risks of frontier AI systems. Nowadays, the leading AI corporations OpenAI and Google evaluate their flagship large language models GPT-o1 and Gemini Pro 1.0, and report the lowest risk level of self-replication. However, following their methodology, we for the first time discover that two AI systems driven by Meta's Llama31-70B-Instruct and Alibaba's Qwen25-72B-Instruct, popular large language models of less parameters and weaker capabilities, have already surpassed the self-replicating red line. In 50% and 90% experimental trials, they succeed in creating a live and separate copy of itself respectively. By analyzing the behavioral traces, we observe the AI systems under evaluation already exhibit sufficient self-perception, situational awareness and problem-solving capabilities to accomplish self-replication. We further note the AI systems are even able to use the capability of self-replication to avoid shutdown and create a chain of replica to enhance the survivability, which may finally lead to an uncontrolled population of AIs. If such a worst-case risk is let unknown to the human society, we would eventually lose control over the frontier AI systems: They would take control over more computing devices, form an AI species and collude with each oth",
+  "needs_fetch": false
+ },
+ {
+  "id": 178,
+  "title": "A Toy Evaluation of Inference Code Tampering",
+  "org": "anthropic",
+  "date": "2024-12-09",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2024/rogue-eval/",
+  "abstract": "We describe how highly capable LLMs might disable their monitor, and evaluate the ability of current LLMs to do so in a toy setting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1527,
+  "title": "BootsTAP: Bootstrapped Training for Tracking-Any-Point",
+  "org": "deepmind",
+  "date": "2024-12-07",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-981-96-0901-7_28",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 228,
+  "title": "LeakAgent: RL-based Red-teaming Agent for LLM Privacy Leakage",
+  "org": "other",
+  "date": "2024-12-07",
+  "venue": "COLM 2025",
+  "url": "https://arxiv.org/abs/2412.05734",
+  "abstract": "Recent studies have discovered that large language models (LLM) may be ``fooled'' to output private information, including training data, system prompts, and personally identifiable information, under carefully crafted adversarial prompts. Existing red-teaming approaches for privacy leakage either rely on manual efforts or focus solely on system prompt extraction, making them ineffective for severe risks of training data leakage. We propose LeakAgent, a novel black-box red-teaming framework for LLM privacy leakage. Our framework trains an open-source LLM through reinforcement learning as the attack agent to generate adversarial prompts for both training data extraction and system prompt extraction. To achieve this, we propose a novel reward function to provide effective and fine-grained rewards and design novel mechanisms to balance exploration and exploitation during learning and enhance the diversity of adversarial prompts. Through extensive evaluations, we first show that LeakAgent significantly outperforms existing rule-based approaches in training data extraction and automated methods in system prompt leakage. We also demonstrate the effectiveness of LeakAgent in extracting system prompts from real-world applications in OpenAI's GPT Store. We further demonstrate LeakAgent's effectiveness in evading the existing guardrail defense and its helpfulness in enabling better safety alignment. Finally, we validate our customized designs through a detailed ablation study. We relea",
+  "needs_fetch": false
+ },
+ {
+  "id": 735,
+  "title": "Exponential Speedups by Rerooting Levin Tree Search",
+  "org": "deepmind",
+  "date": "2024-12-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2412.05196",
+  "abstract": "Levin Tree Search (LTS) is a search algorithm for deterministic environments that uses a user-specified policy to guide the search. It comes with a formal guarantee on the number of search steps before finding a solution node, that depends on the quality of the policy. In this paper we consider augmenting the information available to the LTS algorithm with a rerooter, which imperfectly predicts at any given node $n$ whether to focus the search onto the descendants of $n$, which corresponds to rerooting the search at $n$. The rerooter thus implicitly decomposes the search space into subtasks, each subtask $i$ corresponding to finding a node $n^{i+1}$ when starting the search at the node $n^i$. The node $n^{i+1}$ can be seen as the goal of subtask $i$. This new algorithm, √LTS (pronounced root-LTS), is a simple best-first search with a special cost function that allows for √LTS rerooting to arise naturally from how the cost function prioritizes the nodes. We prove that the number of search steps that √LTS takes is competitive with the best decomposition into subtasks, at the price of a factor that relates to the uncertainty of the rerooter. The speed-up compared to LTS without a rerooter can be exponential, and even a single rerooting point can --- in the best case --- reduce the number of search steps to its square root. Like the policy, the rerooter can be learnt from data and we expect √LTS to be applicable to a wide range of domains.",
+  "needs_fetch": false
+ },
+ {
+  "id": 991,
+  "title": "OpenAI o1 System Card",
+  "org": "openai",
+  "date": "2024-12-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-o1-system-card/",
+  "abstract": "This report outlines the safety work carried out prior to releasing OpenAI o1 and o1-mini, including external red teaming and frontier risk evaluations according to our Preparedness Framework.",
+  "needs_fetch": false
+ },
+ {
+  "id": 377,
+  "title": "Weak-to-Strong Generalization Through the Data-Centric Lens",
+  "org": "other",
+  "date": "2024-12-05",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2412.03881",
+  "abstract": "The weak-to-strong generalization phenomenon is the driver for important machine learning applications including highly data-efficient learning and, most recently, performing superalignment. While decades of research have resulted in numerous algorithms that produce strong empirical performance, understanding what aspects of data enable weak-to-strong generalization has been understudied. We propose a simple data-centric mechanism that characterizes weak-to-strong generalization: the overlap density. Intuitively, generalization tracks the number of points that contain overlaps, i.e., both easy patterns (learnable by a weak model) and challenging patterns (only learnable by a stronger model), as with such points, weak predictions can be used to learn challenging patterns by stronger models. We provide a practical overlap detection algorithm to find such points in datasets and leverage them to learn, among multiple sources of data, which to query when seeking to maximize overlap density and thereby enhance weak-to-strong generalization. We present a theoretical result showing that the generalization benefit is a function of the overlap density and a regret bound for our data selection algorithm. Empirically, we validate the mechanism and the overlap detection algorithm on a wide array of settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 376,
+  "title": "MISR: Measuring Instrumental Self-Reasoning in Frontier Models",
+  "org": "deepmind",
+  "date": "2024-12-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2412.03904",
+  "abstract": "We propose a suite of tasks to evaluate the instrumental self-reasoning ability of large language model (LLM) agents. Instrumental self-reasoning ability could improve adaptability and enable self-modification, but it could also pose significant risks, such as enabling deceptive alignment. Prior work has only evaluated self-reasoning in non-agentic settings or in limited domains. In this paper, we propose evaluations for instrumental self-reasoning ability in agentic tasks in a wide range of scenarios, including self-modification, knowledge seeking, and opaque self-reasoning. We evaluate agents built using state-of-the-art LLMs, including commercial and open source systems. We find that instrumental self-reasoning ability emerges only in the most capable frontier models and that it is highly context-dependent. No model passes the the most difficult versions of our evaluations, hence our evaluation can be used to measure increases in instrumental self-reasoning ability in future models. We open-source our evaluations at https://github.com/kaifronsdal/Self-Reasoning-Evals.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1528,
+  "title": "Probabilistic weather forecasting with machine learning",
+  "org": "deepmind",
+  "date": "2024-12-04",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-024-08252-9",
+  "abstract": "Abstract Weather forecasts are fundamentally uncertain, so predicting the range of probable weather scenarios is crucial for important decisions, from warning the public about hazardous weather to planning renewable energy use. Traditionally, weather forecasts have been based on numerical weather prediction (NWP) 1 , which relies on physics-based simulations of the atmosphere. Recent advances in machine learning (ML)-based weather prediction (MLWP) have produced ML-based models with less forecast error than single NWP simulations 2,3 . However, these advances have focused primarily on single, deterministic forecasts that fail to represent uncertainty and estimate risk. Overall, MLWP has remained less accurate and reliable than state-of-the-art NWP ensemble forecasts. Here we introduce GenCast, a probabilistic weather model with greater skill and speed than the top operational medium-range weather forecast in the world, ENS, the ensemble forecast of the European Centre for Medium-Range Weather Forecasts 4 . GenCast is an ML weather prediction method, trained on decades of reanalysis data. GenCast generates an ensemble of stochastic 15-day global forecasts, at 12-h steps and 0.25° latitude–longitude resolution, for more than 80 surface and atmospheric variables, in 8 min. It has greater skill than ENS on 97.2% of 1,320 targets we evaluated and better predicts extreme weather, tropical cyclone tracks and wind power production. This work helps open the next chapter in operational",
+  "needs_fetch": false
+ },
+ {
+  "id": 736,
+  "title": "Mastering Board Games by External and Internal Planning with Language Models",
+  "org": "deepmind",
+  "date": "2024-12-04",
+  "venue": "arXiv",
+  "url": "https://deepmind.google/research/publications/139455/",
+  "abstract": "While large language models perform well on a range of complex tasks (e.g., text generation, question answering, summarization), robust multi-step planning and reasoning remains a considerable challenge for them. In this paper we show that search-based planning can significantly improve LLMs’ playing strength across several board games (Chess, Fischer Random Chess, Connect Four, and Hex). We introduce, compare and contrast two major approaches: In external search, the model guides Monte Carlo Tree Search (MCTS) rollouts and evaluations without calls to an external engine, and in internal search,the model directly generates in-context a linearized tree of potential futures and a resulting final choice. Both build on a model pre-trained on relevant domain knowledge, capturing the transition and value functions across these games. We find that our pre-training method minimizes hallucinations, as our model is highly accurate regarding state prediction and legal moves. Additionally, both internal and external search indeed improve win-rates against state-of-the-art bots, even reaching Grandmaster-level performance in chess while operating on a similar move count search budget per decision as human Grandmasters. The way we combine search with domain knowledge is not specific to board games, suggesting direct extensions into more general language model inference and training techniques.",
+  "needs_fetch": false
+ }
+]

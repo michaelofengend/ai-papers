@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2029,
+  "title": "AlignSDF: Pose-Aligned Signed Distance Fields for Hand-Object Reconstruction",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-19769-7_14",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2028,
+  "title": "Protein structure predictions to atomic accuracy with AlphaFold",
+  "org": "deepmind",
+  "date": "2022-01-01",
+  "venue": "Nature Methods",
+  "url": "https://doi.org/10.1038/s41592-021-01362-6",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1039,
+  "title": "WebGPT: Improving the factual accuracy of language models through web browsing",
+  "org": "openai",
+  "date": "2021-12-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/webgpt/",
+  "abstract": "We’ve fine-tuned GPT-3 to more accurately answer open-ended questions using a text-based web browser.",
+  "needs_fetch": true
+ },
+ {
+  "id": 2050,
+  "title": "Flow-based sampling for fermionic lattice field theories",
+  "org": "deepmind",
+  "date": "2021-12-15",
+  "venue": "Physical review. D/Physical review. D.",
+  "url": "https://arxiv.org/abs/2106.05934",
+  "abstract": "Algorithms based on normalizing flows are emerging as promising machine learning approaches to sampling complicated probability distributions in a way that can be made asymptotically exact. In the context of lattice field theory, proof-of-principle studies have demonstrated the effectiveness of this approach for scalar theories, gauge theories, and statistical systems. This work develops approaches that enable flow-based sampling of theories with dynamical fermions, which is necessary for the technique to be applied to lattice field theory studies of the Standard Model of particle physics and many condensed matter systems. As a practical demonstration, these methods are applied to the sampling of field configurations for a two-dimensional theory of massless staggered fermions coupled to a scalar field via a Yukawa interaction.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2779,
+  "title": "Filling gaps in trustworthy development of AI",
+  "org": "openai",
+  "date": "2021-12-09",
+  "venue": "Science",
+  "url": "https://arxiv.org/abs/2112.07773",
+  "abstract": "Incident sharing, auditing, and other concrete mechanisms could help verify the trustworthiness of actors.",
+  "needs_fetch": true
+ },
+ {
+  "id": 2051,
+  "title": "Pushing the frontiers of density functionals by solving the fractional electron problem",
+  "org": "deepmind",
+  "date": "2021-12-09",
+  "venue": "Science",
+  "url": "https://doi.org/10.1126/science.abj6511",
+  "abstract": "Density functional theory describes matter at the quantum level, but all popular approximations suffer from systematic errors that arise from the violation of mathematical properties of the exact functional. We overcame this fundamental limitation by training a neural network on molecular data and on fictitious systems with fractional charge and spin. The resulting functional, DM21 (DeepMind 21), correctly describes typical examples of artificial charge delocalization and strong correlation and performs better than traditional functionals on thorough benchmarks for main-group atoms and molecules. DM21 accurately models complex systems such as hydrogen chains, charged DNA base pairs, and diradical transition states. More crucially for the field, because our methodology relies on data and constraints, which are continually improving, it represents a viable pathway toward the exact universal functional.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2896,
+  "title": "Garcon",
+  "org": "anthropic",
+  "date": "2021-12-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2021/garcon/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2895,
+  "title": "PySvelte",
+  "org": "anthropic",
+  "date": "2021-12-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://github.com/anthropics/PySvelte",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2894,
+  "title": "Videos",
+  "org": "anthropic",
+  "date": "2021-12-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2021/videos/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2893,
+  "title": "Exercises",
+  "org": "anthropic",
+  "date": "2021-12-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2021/exercises/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2780,
+  "title": "Deep double descent: where bigger models and more data hurt*",
+  "org": "openai",
+  "date": "2021-12-01",
+  "venue": "Journal of Statistical Mechanics Theory and Experiment",
+  "url": "https://arxiv.org/abs/1912.02292",
+  "abstract": "Abstract We show that a variety of modern deep learning tasks exhibit a ‘double-descent’ phenomenon where, as we increase model size, performance first gets worse and then gets better. Moreover, we show that double descent occurs not just as a function of model size, but also as a function of the number of training epochs. We unify the above phenomena by defining a new complexity measure we call the effective model complexity and conjecture a generalized double descent with respect to this measure. Furthermore, our notion of model complexity allows us to identify certain regimes where increasing (even quadrupling) the number of train samples actually hurts test performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2053,
+  "title": "Classification by decomposition: a novel approach to classification of symmetric $$2\\times 2$$ games",
+  "org": "deepmind",
+  "date": "2021-12-01",
+  "venue": "Theory and Decision",
+  "url": "https://doi.org/10.1007/s11238-021-09850-z",
+  "abstract": "Abstract In this paper, we provide a detailed review of previous classifications of $$2\\times 2$$ <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"> <mml:mrow> <mml:mn>2</mml:mn> <mml:mo>×</mml:mo> <mml:mn>2</mml:mn> </mml:mrow> </mml:math> games and suggest a mathematically simple way to classify the symmetric $$2\\times 2$$ <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"> <mml:mrow> <mml:mn>2</mml:mn> <mml:mo>×</mml:mo> <mml:mn>2</mml:mn> </mml:mrow> </mml:math> games based on a decomposition of the payoff matrix into a cooperative and a zero-sum part. We argue that differences in the interaction between the parts is what makes games interesting in different ways. Our claim is supported by evolutionary computer experiments and findings in previous literature. In addition, we provide a method for using a stereographic projection to create a compact 2-d representation of the game space.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2052,
+  "title": "Advancing mathematics by guiding human intuition with AI",
+  "org": "deepmind",
+  "date": "2021-12-01",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-021-04086-x",
+  "abstract": "Abstract The practice of mathematics involves discovering patterns and using these to formulate and prove conjectures, resulting in theorems. Since the 1960s, mathematicians have used computers to assist in the discovery of patterns and formulation of conjectures 1 , most famously in the Birch and Swinnerton-Dyer conjecture 2 , a Millennium Prize Problem 3 . Here we provide examples of new fundamental results in pure mathematics that have been discovered with the assistance of machine learning—demonstrating a method by which machine learning can aid mathematicians in discovering new conjectures and theorems. We propose a process of using machine learning to discover potential patterns and relations between mathematical objects, understanding them with attribution techniques and using these observations to guide intuition and propose conjectures. We outline this machine-learning-guided framework and demonstrate its successful application to current research questions in distinct areas of pure mathematics, in each case showing how it led to meaningful mathematical contributions on important open problems: a new connection between the algebraic and geometric structure of knots, and a candidate algorithm predicted by the combinatorial invariance conjecture for symmetric groups 4 . Our work may serve as a model for collaboration between the fields of mathematics and artificial intelligence (AI) that can achieve surprising results by leveraging the respective strengths of mathemati",
+  "needs_fetch": false
+ },
+ {
+  "id": 129,
+  "title": "A General Language Assistant as a Laboratory for Alignment",
+  "org": "anthropic",
+  "date": "2021-12-01",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/a-general-language-assistant-as-a-laboratory-for-alignment",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 128,
+  "title": "A Mathematical Framework for Transformer Circuits",
+  "org": "anthropic",
+  "date": "2021-12-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2021/framework/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2781,
+  "title": "Evolving Multimodal Robot Behavior via Many Stepping Stones with the Combinatorial Multiobjective Evolutionary Algorithm",
+  "org": "openai",
+  "date": "2021-11-24",
+  "venue": "Evolutionary Computation",
+  "url": "https://arxiv.org/abs/1807.03392",
+  "abstract": "An important challenge in reinforcement learning is to solve multimodal problems, where agents have to act in qualitatively different ways depending on the circumstances. Because multimodal problems are often too difficult to solve directly, it is often helpful to define a curriculum, which is an ordered set of subtasks that can serve as the stepping stones for solving the overall problem. Unfortunately, choosing an effective ordering for these subtasks is difficult, and a poor ordering can reduce the performance of the learning process. Here, we provide a thorough introduction and investigation of the Combinatorial Multiobjective Evolutionary Algorithm (CMOEA), which allows all combinations of subtasks to be explored simultaneously. We compare CMOEA against three algorithms that can similarly optimize on multiple subtasks simultaneously: NSGA-II, NSGA-III, and ε-Lexicase Selection. The algorithms are tested on a function-optimization problem with two subtasks, a simulated multimodal robot locomotion problem with six subtasks, and a simulated robot maze-navigation problem where a hundred random mazes are treated as subtasks. On these problems, CMOEA either outperforms or is competitive with the controls. As a separate contribution, we show that adding a linear combination over all objectives can improve the ability of the control algorithms to solve these multimodal problems. Lastly, we show that CMOEA can leverage auxiliary objectives more effectively than the controls on th",
+  "needs_fetch": false
+ },
+ {
+  "id": 2054,
+  "title": "A New Digital Assessment of Mental Health and Well-being in the Workplace: Development and Validation of the Unmind Index",
+  "org": "deepmind",
+  "date": "2021-11-21",
+  "venue": "JMIR Mental Health",
+  "url": "https://doi.org/10.2196/34103",
+  "abstract": "BACKGROUND: Unmind is a workplace, digital, mental health platform with tools to help users track, maintain, and improve their mental health and well-being (MHWB). Psychological measurement plays a key role on this platform, providing users with insights on their current MHWB, the ability to track it over time, and personalized recommendations, while providing employers with aggregate information about the MHWB of their workforce. OBJECTIVE: Due to the limitations of existing measures for this purpose, we aimed to develop and validate a novel well-being index for digital use, to capture symptoms of common mental health problems and key aspects of positive well-being. METHODS: In Study 1A, questionnaire items were generated by clinicians and screened for face validity. In Study 1B, these items were presented to a large sample (n=1104) of UK adults, and exploratory factor analysis was used to reduce the item pool and identify coherent subscales. In Study 2, the final measure was presented to a new nationally representative UK sample (n=976), along with a battery of existing measures, with 238 participants retaking the Umind Index after 1 week. The factor structure and measurement invariance of the Unmind Index was evaluated using confirmatory factor analysis, convergent and discriminant validity by estimating correlations with existing measures, and reliability by examining internal consistency and test-retest intraclass correlations. RESULTS: Studies 1A and 1B yielded a 26-ite",
+  "needs_fetch": false
+ },
+ {
+  "id": 2055,
+  "title": "Feasibility and Preliminary Efficacy of Web-Based and Mobile Interventions for Common Mental Health Problems in Working Adults: Multi-Arm Randomized Pilot Trial",
+  "org": "deepmind",
+  "date": "2021-11-20",
+  "venue": "JMIR Formative Research",
+  "url": "https://doi.org/10.2196/34032",
+  "abstract": "BACKGROUND: There is growing interest in digital platforms as a means of implementing scalable, accessible, and cost-effective mental health interventions in the workplace. However, little is known about the efficacy of such interventions when delivered to employee groups. OBJECTIVE: This study aims to evaluate the feasibility and preliminary efficacy of a digital mental health platform for the workplace, which incorporates evidence-based practices such as cognitive behavioral therapy and acceptance and commitment therapy. A total of 3 brief, unguided interventions designed to address stress, anxiety, and resilience, respectively, are evaluated. The primary aim is to determine the feasibility of the study methods and interventions in preparation for a definitive randomized controlled trial. METHODS: The study used a fully remote, parallel, multi-arm, external pilot randomized controlled trial, with 3 intervention arms and a no-intervention control group. Participants were working adults representative of the general UK population with respect to age, sex, and ethnicity who were recruited from a web-based participant platform. Primary outcomes included objective and self-report measures of feasibility, acceptability, engagement, transferability, relevance, and negative effects. Secondary outcomes included 4 self-report measures of mental health and well-being, completed at baseline (time point 0 [t0]), postintervention (time point 1 [t1]), and the 1-month follow-up (time point",
+  "needs_fetch": false
+ },
+ {
+  "id": 2056,
+  "title": "Unsupervised deep learning identifies semantic disentanglement in single inferotemporal face patch neurons",
+  "org": "deepmind",
+  "date": "2021-11-09",
+  "venue": "Nature Communications",
+  "url": "https://arxiv.org/abs/2006.14304",
+  "abstract": "In order to better understand how the brain perceives faces, it is important to know what objective drives learning in the ventral visual stream. To answer this question, we model neural responses to faces in the macaque inferotemporal (IT) cortex with a deep self-supervised generative model, β-VAE, which disentangles sensory data into interpretable latent factors, such as gender or age. Our results demonstrate a strong correspondence between the generative factors discovered by β-VAE and those coded by single IT neurons, beyond that found for the baselines, including the handcrafted state-of-the-art model of face perception, the Active Appearance Model, and deep classifiers. Moreover, β-VAE is able to reconstruct novel face images using signals from just a handful of cells. Together our results imply that optimising the disentangling objective leads to representations that closely resemble those in the IT at the single unit level. This points at disentangling as a plausible learning objective for the visual brain.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1209,
+  "title": "Normalization by orientation-tuned surround in human V1-V3",
+  "org": "anthropic",
+  "date": "2021-11-08",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.11.06.467486",
+  "abstract": "Abstract An influential account of neuronal responses in primary visual cortex is the normalized energy model. This model is often implemented as a two-stage computation. The first stage is the extraction of contrast energy, whereby a complex cell computes the squared and summed outputs of a pair of linear filters in quadrature phase. The second stage is normalization, in which a local population of complex cells mutually inhibit one another. Because the population includes cells tuned to a range of orientations and spatial frequencies, the result is that the responses are effectively normalized by the local stimulus contrast. Here, using evidence from human functional MRI, we show that the classical model fails to account for the relative responses to two classes of stimuli: straight, parallel, band-passed contours ( gratings ), and curved, band-passed contours ( snakes ). The snakes elicit fMRI responses that are about twice as large as the gratings, yet a traditional divisive normalization model predicts responses that are about the same. Here, motivated by these observations and others from the literature, we implement a divisive normalization model, in which there is a preferential inhibition between cells matched in orientation tuning (“tuned normalization”). We first show that this model accounts for differential responses to these two classes of stimuli. We then show that the model successfully generalizes to other band-pass textures, both in V1 and in extrastriate co",
+  "needs_fetch": false
+ },
+ {
+  "id": 2057,
+  "title": "Deep learning is widely applicable to phenotyping embryonic development and disease",
+  "org": "deepmind",
+  "date": "2021-11-01",
+  "venue": "Development",
+  "url": "https://doi.org/10.1242/dev.199664",
+  "abstract": "Genome editing simplifies the generation of new animal models for congenital disorders. However, the detailed and unbiased phenotypic assessment of altered embryonic development remains a challenge. Here, we explore how deep learning (U-Net) can automate segmentation tasks in various imaging modalities, and we quantify phenotypes of altered renal, neural and craniofacial development in Xenopus embryos in comparison with normal variability. We demonstrate the utility of this approach in embryos with polycystic kidneys (pkd1 and pkd2) and craniofacial dysmorphia (six1). We highlight how in toto light-sheet microscopy facilitates accurate reconstruction of brain and craniofacial structures within X. tropicalis embryos upon dyrk1a and six1 loss of function or treatment with retinoic acid inhibitors. These tools increase the sensitivity and throughput of evaluating developmental malformations caused by chemical or genetic disruption. Furthermore, we provide a library of pre-trained networks and detailed instructions for applying deep learning to the reader's own datasets. We demonstrate the versatility, precision and scalability of deep neural network phenotyping on embryonic disease models. By combining light-sheet microscopy and deep learning, we provide a framework for higher-throughput characterization of embryonic model organisms. This article has an associated 'The people behind the papers' interview.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2058,
+  "title": "Optimal Design of Stochastic DNA Synthesis Protocols based on Generative Sequence Models",
+  "org": "deepmind",
+  "date": "2021-10-29",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2021.10.28.466307",
+  "abstract": "Abstract Generative probabilistic models of biological sequences have widespread existing and potential applications in analyzing, predicting and designing proteins, RNA and genomes. To test the predictions of such a model experimentally, the standard approach is to draw samples, and then synthesize each sample individually in the laboratory. However, often orders of magnitude more sequences can be experimentally assayed than can affordably be synthesized individually. In this article, we propose instead to use stochastic synthesis methods, such as mixed nucleotides or trimers. We describe a black-box algorithm for optimizing stochastic synthesis protocols to produce approximate samples from any target generative model. We establish theoretical bounds on the method’s performance, and validate it in simulation using held-out sequence-to-function predictors trained on real experimental data. We show that using optimized stochastic synthesis protocols in place of individual synthesis can increase the number of hits in protein engineering efforts by orders of magnitude, e.g. from zero to a thousand.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1040,
+  "title": "Solving math word problems",
+  "org": "openai",
+  "date": "2021-10-29",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/solving-math-word-problems/",
+  "abstract": "We’ve trained a system that solves grade school math problems with nearly twice the accuracy of a fine-tuned GPT-3 model. It solves about 90% as many problems as real kids: a small sample of 9-12 year olds scored 60% on a test from our dataset, while our system scored 55% on those same problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2059,
+  "title": "The Madingley general ecosystem model predicts bushmeat yields, species extinction rates and ecosystem‐level impacts of bushmeat harvesting",
+  "org": "deepmind",
+  "date": "2021-10-27",
+  "venue": "Oikos",
+  "url": "https://doi.org/10.1111/oik.07748",
+  "abstract": "Traditional approaches to guiding decisions about harvesting bushmeat often employ single‐species population dynamic models, which require species‐ and location‐specific data, are missing ecological processes such as multi‐trophic interactions, cannot represent multi‐species harvesting and cannot predict the broader ecosystem impacts of harvesting. In order to explore an alternative approach to devising sustainable harvesting strategies, we employ the Madingley general ecosystem model, which can simulate ecosystem dynamics in response to multi‐species harvesting given nothing other than location‐specific climate data. We used the model to examine yield, extinctions and broader ecosystem impacts, for a range of harvesting intensities of duiker‐sized endothermic herbivores. Duiker antelope (such as Cephalophus callipygus and Cephalophus dorsalis ) are the most heavily hunted species in sub‐Saharan Africa, contributing 34–95% of all bushmeat in the Congo Basin. Across a range of harvesting rates, the Madingley model gave estimates for optimal harvesting rate, and extinction rate, that were qualitatively and quantitatively similar to the estimates from conventional single‐species Beverton–Holt model. Predicted yields were somewhat greater (around five times, on average) for the Madingley model than the Beverton–Holt, which is partly attributable to the fact that the Madingley simulates multi‐species harvesting from an initially pristine ecosystem. Also, the Madingley model predic",
+  "needs_fetch": false
+ },
+ {
+  "id": 2060,
+  "title": "ETA Prediction with Graph Neural Networks in Google Maps",
+  "org": "deepmind",
+  "date": "2021-10-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2108.11482",
+  "abstract": "Travel-time prediction constitutes a task of high importance in transportation networks, with web mapping services like Google Maps regularly serving vast quantities of travel time queries from users and enterprises alike. Further, such a task requires accounting for complex spatiotemporal interactions (modelling both the topological properties of the road network and anticipating events---such as rush hours---that may occur in the future). Hence, it is an ideal target for graph representation learning at scale. Here we present a graph neural network estimator for estimated time of arrival (ETA) which we have deployed in production at Google Maps. While our main architecture consists of standard GNN building blocks, we further detail the usage of training schedule methods such as MetaGradients in order to make our model robust and production-ready. We also provide prescriptive studies: ablating on various architectural decisions and training regimes, and qualitative analyses on real-world situations where our model provides a competitive edge. Our GNN proved powerful when deployed, significantly reducing negative ETA outcomes in several regions compared to the previous production baseline (40+% in cities like Sydney).",
+  "needs_fetch": false
+ },
+ {
+  "id": 2061,
+  "title": "Does your dermatology classifier know what it doesn’t know? Detecting the long-tail of unseen conditions",
+  "org": "deepmind",
+  "date": "2021-10-22",
+  "venue": "Medical Image Analysis",
+  "url": "https://arxiv.org/abs/2104.03829",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2063,
+  "title": "Meta-learning, social cognition and consciousness in brains and machines",
+  "org": "deepmind",
+  "date": "2021-10-19",
+  "venue": "Neural Networks",
+  "url": "https://doi.org/10.1016/j.neunet.2021.10.004",
+  "abstract": "The intersection between neuroscience and artificial intelligence (AI) research has created synergistic effects in both fields. While neuroscientific discoveries have inspired the development of AI architectures, new ideas and algorithms from AI research have produced new ways to study brain mechanisms. A well-known example is the case of reinforcement learning (RL), which has stimulated neuroscience research on how animals learn to adjust their behavior to maximize reward. In this review article, we cover recent collaborative work between the two fields in the context of meta-learning and its extension to social cognition and consciousness. Meta-learning refers to the ability to learn how to learn, such as learning to adjust hyperparameters of existing learning algorithms and how to use existing models and knowledge to efficiently solve new tasks. This meta-learning capability is important for making existing AI systems more adaptive and flexible to efficiently solve new tasks. Since this is one of the areas where there is a gap between human performance and current AI systems, successful collaboration should produce new ideas and progress. Starting from the role of RL algorithms in driving neuroscience, we discuss recent developments in deep RL applied to modeling prefrontal cortex functions. Even from a broader perspective, we discuss the similarities and differences between social cognition and meta-learning, and finally conclude with speculations on the potential links b",
+  "needs_fetch": false
+ },
+ {
+  "id": 2062,
+  "title": "AlphaFold Protein Structure Database: massively expanding the structural coverage of protein-sequence space with high-accuracy models",
+  "org": "deepmind",
+  "date": "2021-10-19",
+  "venue": "Nucleic Acids Research",
+  "url": "https://doi.org/10.1093/nar/gkab1061",
+  "abstract": "Abstract The AlphaFold Protein Structure Database (AlphaFold DB, https://alphafold.ebi.ac.uk) is an openly accessible, extensive database of high-accuracy protein-structure predictions. Powered by AlphaFold v2.0 of DeepMind, it has enabled an unprecedented expansion of the structural coverage of the known protein-sequence space. AlphaFold DB provides programmatic access to and interactive visualization of predicted atomic coordinates, per-residue and pairwise model-confidence estimates and predicted aligned errors. The initial release of AlphaFold DB contains over 360,000 predicted structures across 21 model-organism proteomes, which will soon be expanded to cover most of the (over 100 million) representative sequences from the UniRef90 data set.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2064,
+  "title": "Dreading the pain of others? Altruistic responses to others' pain underestimate dread",
+  "org": "deepmind",
+  "date": "2021-10-13",
+  "venue": "Journal of the Experimental Analysis of Behavior",
+  "url": "https://doi.org/10.1002/jeab.721",
+  "abstract": "A dislike of waiting for pain, aptly termed 'dread', is so great that people will increase pain to avoid delaying it. However, despite many accounts of altruistic responses to pain in others, no previous studies have tested whether people take delay into account when attempting to ameliorate others' pain. We examined the impact of delay in 2 experiments where participants (total N = 130) specified the intensity and delay of pain either for themselves or another person. Participants were willing to increase the experimental pain of another participant to avoid delaying it, indicative of dread, though did so to a lesser extent than was the case for their own pain. We observed a similar attenuation in dread when participants chose the timing of a hypothetical painful medical treatment for a close friend or relative, but no such attenuation when participants chose for a more distant acquaintance. A model in which altruism is biased to privilege pain intensity over the dread of pain parsimoniously accounts for these findings. We refer to this underestimation of others' dread as a 'Dread Empathy Gap'.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2065,
+  "title": "A New Digital Assessment of Mental Health and Well-being in the Workplace: Development and Validation of the Unmind Index (Preprint)",
+  "org": "deepmind",
+  "date": "2021-10-08",
+  "venue": null,
+  "url": "https://doi.org/10.2196/preprints.34103",
+  "abstract": "<sec> <title>BACKGROUND</title> Unmind is a workplace, digital, mental health platform with tools to help users track, maintain, and improve their mental health and well-being (MHWB). Psychological measurement plays a key role on this platform, providing users with insights on their current MHWB, the ability to track it over time, and personalized recommendations, while providing employers with aggregate information about the MHWB of their workforce. </sec> <sec> <title>OBJECTIVE</title> Due to the limitations of existing measures for this purpose, we aimed to develop and validate a novel well-being index for digital use, to capture symptoms of common mental health problems and key aspects of positive well-being. </sec> <sec> <title>METHODS</title> In Study 1A, questionnaire items were generated by clinicians and screened for face validity. In Study 1B, these items were presented to a large sample (n=1104) of UK adults, and exploratory factor analysis was used to reduce the item pool and identify coherent subscales. In Study 2, the final measure was presented to a new nationally representative UK sample (n=976), along with a battery of existing measures, with 238 participants retaking the Umind Index after 1 week. The factor structure and measurement invariance of the Unmind Index was evaluated using confirmatory factor analysis, convergent and discriminant validity by estimating correlations with existing measures, and reliability by examining internal consistency and test-r",
+  "needs_fetch": false
+ }
+]

@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1454,
+  "title": "A Survey on Large Language Model based Human-Agent Systems",
+  "org": "deepmind",
+  "date": "2025-05-01",
+  "venue": null,
+  "url": "https://doi.org/10.36227/techrxiv.174612962.26131807/v1",
+  "abstract": "Recent advances in large language models (LLMs) have sparked growing interest in building fully autonomous agents. However, fully autonomous LLM-based agents still face significant challenges, including limited reliability due to hallucinations, difficulty in handling complex tasks, and substantial safety and ethical risks, all of which limit their feasibility and trustworthiness in real-world applications. To overcome these limitations, LLM-based human-agent systems (LLM-HAS) incorporate human-provided information, feedback, or control into the agent system to enhance system performance, reliability and safety. This paper provides the first comprehensive and structured survey of LLM-HAS. It clarifies fundamental concepts, systematically presents core components shaping these systems, including environment &amp; profiling, human feedback, interaction types, orchestration and communication, explores emerging applications, and discusses unique challenges and opportunities. By consolidating current knowledge and offering a structured overview, we aim to foster further research and innovation in this rapidly evolving interdisciplinary field. Paper lists and resources are available at GitHub repository.",
+  "needs_fetch": false
+ },
+ {
+  "id": 705,
+  "title": "Proactive Agents for Multi-Turn Text-to-Image Generation Under Uncertainty",
+  "org": "deepmind",
+  "date": "2025-05-01",
+  "venue": "ICML 2025",
+  "url": "https://arxiv.org/abs/2412.06771",
+  "abstract": "User prompts for generative AI models are often underspecified, leading to sub-optimal responses. This problem is particularly evident in text-to-image (T2I) generation, where users commonly struggle to articulate their precise intent. This disconnect between the user's vision and the model's interpretation often forces users to painstakingly and repeatedly refine their prompts. To address this, we propose a design for proactive T2I agents equipped with an interface to (1) actively ask clarification questions when uncertain, and (2) present their understanding of user intent as an understandable belief graph that a user can edit. We build simple prototypes for such agents and verify their effectiveness through both human studies and automated evaluation. We observed that at least 90% of human subjects found these agents and their belief graphs helpful for their T2I workflow. Moreover, we develop a scalable automated evaluation approach using two agents, one with a ground truth image and the other tries to ask as few questions as possible to align with the ground truth. On DesignBench, a benchmark we created for artists and designers, the COCO dataset (Lin et al., 2014), and ImageInWords (Garg et al., 2024), we observed that these T2I agents were able to ask informative questions and elicit crucial information to achieve successful alignment with at least 2 times higher VQAScore (Lin et al., 2024) than the standard single-turn T2I generation. Demo: https://github.com/google-de",
+  "needs_fetch": false
+ },
+ {
+  "id": 706,
+  "title": "Prompting with Phonemes: Enhancing LLM Multilinguality for non-Latin Scripts",
+  "org": "deepmind",
+  "date": "2025-04-29",
+  "venue": "NAACL 2025",
+  "url": "https://arxiv.org/abs/2411.02398",
+  "abstract": "Despite recent advances in multilingual capabilities of Large Language Models (LLMs), LLMs remain limited to textual scripts, hampering the potential of knowledge transfer across languages from different writing systems and introducing potential biases from pre-training on specific writing scripts. As languages are naturally perceived in both writing and speech, phonemic transcriptions could provide essential signals for enhancing multilingual learning in text-based LLMs. In this work, we first conduct a pilot study on the performance discrepancy between languages from different writing scripts across state-of-the-art LLM families, demonstrating the benefits of integrating phonemic signals to enhance overall language representations and facilitate multilingual knowledge transfer. We then explore integrating phonemic signals with existing LLMs via enhanced In-context-learning (ICL) Retrieval to improve performance across various downstream NLP tasks at inference time.",
+  "needs_fetch": false
+ },
+ {
+  "id": 504,
+  "title": "Automatic Legal Writing Evaluation of LLMs",
+  "org": "other",
+  "date": "2025-04-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.21202",
+  "abstract": "Despite the recent advances in Large Language Models, benchmarks for evaluating legal writing remain scarce due to the inherent complexity of assessing open-ended responses in this domain. One of the key challenges in evaluating language models on domain-specific tasks is finding test datasets that are public, frequently updated, and contain comprehensive evaluation guidelines. The Brazilian Bar Examination meets these requirements. We introduce oab-bench, a benchmark comprising 105 questions across seven areas of law from recent editions of the exam. The benchmark includes comprehensive evaluation guidelines and reference materials used by human examiners to ensure consistent grading. We evaluate the performance of four LLMs on oab-bench, finding that Claude-3.5 Sonnet achieves the best results with an average score of 7.93 out of 10, passing all 21 exams. We also investigated whether LLMs can serve as reliable automated judges for evaluating legal writing. Our experiments show that frontier models like OpenAI's o1 achieve a strong correlation with human scores when evaluating approved exams, suggesting their potential as reliable automated evaluators despite the inherently subjective nature of legal writing assessment. The source code and the benchmark -- containing questions, evaluation guidelines, model-generated responses, and their respective automated evaluations -- are publicly available.",
+  "needs_fetch": false
+ },
+ {
+  "id": 707,
+  "title": "Flow-Lenia: Emergent evolutionary dynamics in mass conservative continuous cellular automata",
+  "org": "deepmind",
+  "date": "2025-04-28",
+  "venue": "Artificial Life (journal)",
+  "url": "https://doi.org/10.1162/artl_a_00471",
+  "abstract": "Central to the artificial life endeavour is the creation of artificial systems spontaneously generating properties found in the living world such as autopoiesis, self-replication, evolution and open-endedness. While numerous models and paradigms have been proposed, cellular automata (CA) have taken a very important place in the field notably as they enable the study of phenomenons like self-reproduction and autopoiesis. Continuous CA like Lenia have been showed to produce life-like patterns reminiscent, on an aesthetic and ontological point of view, of biological organisms we call creatures. We propose in this paper \\emph{Flow-Lenia}, a mass conservative extension of Lenia. We present experiments demonstrating its effectiveness in generating spatially-localized patters (SLPs) with complex behaviors and show that the update rule parameters can be optimized to generate complex creatures showing behaviors of interest. Furthermore, we show that Flow-Lenia allows us to embed the parameters of the model, defining the properties of the emerging patterns, within its own dynamics thus allowing for multispecies simulations. By using the evolutionary activity framework as well as other metrics, we shed light on the emergent evolutionary dynamics taking place in this system.",
+  "needs_fetch": false
+ },
+ {
+  "id": 580,
+  "title": "Investigating task-specific prompts and sparse autoencoders for activation monitoring",
+  "org": "openai",
+  "date": "2025-04-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.20271",
+  "abstract": "Language models can behave in unexpected and unsafe ways, and so it is valuable to monitor their outputs. Internal activations of language models encode additional information that could be useful for this. The baseline approach for activation monitoring is some variation of linear probing on a particular layer: starting from a labeled dataset, train a logistic regression classifier on that layer's activations. Recent work has proposed several approaches which may improve on naive linear probing, by leveraging additional computation. One class of techniques, which we call \"prompted probing,\" leverages test time computation to improve monitoring by (1) prompting the model with a description of the monitoring task, and (2) applying a learned linear probe to resulting activations. Another class of techniques uses computation at train time: training sparse autoencoders offline to identify an interpretable basis for the activations, and e.g. max-pooling activations across tokens using that basis before applying a linear probe. However, one can also prompt the model with a description of the monitoring task and use its output directly. We develop and test novel refinements of these methods and compare them against each other. We find asking the model zero-shot is a reasonable baseline when inference-time compute is not limited; however, activation probing methods can substantially outperform this baseline given sufficient training data. Specifically, we recommend prompted probing w",
+  "needs_fetch": false
+ },
+ {
+  "id": 62,
+  "title": "Anthropic Economic Index: AIâs impact on software development",
+  "org": "anthropic",
+  "date": "2025-04-28",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/impact-software-development",
+  "abstract": "Comparing Claude Code to Claude.ai reveals stark differences in how developers work with AI. The coding agent shows 79% automation versus 49% on Claude.ai, web development dominates usage, and startups are adopting agentic tools far faster than enterprisesâpatterns that may preview how AI transforms other occupations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1455,
+  "title": "Vulnerability Detection with Code Language Models: How Far are We?",
+  "org": "deepmind",
+  "date": "2025-04-26",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icse55347.2025.00038",
+  "abstract": "In the context of the rising interest in code language models (code LMs) and vulnerability detection, we study the effectiveness of code LMs for detecting vulnerabilities. Our analysis reveals significant shortcomings in existing vulnerability datasets, including poor data quality, low label accuracy, and high duplication rates, leading to unreliable model performance in realistic vulnerability detection scenarios. Additionally, the evaluation methods used with these datasets are not representative of real-world vulnerability detection. To address these challenges, we introduce Primevul, a new dataset for training and evaluating code LMs for vulnerability detection. Primevul incorporates a novel set of data labeling techniques that achieve comparable label accuracy to human-verified benchmarks while significantly expanding the dataset. It also implements a rigorous data de-duplication and chronological data splitting strategy to mitigate data leakage issues, alongside introducing more realistic evaluation metrics and settings. This comprehensive approach aims to provide a more accurate assessment of code LMs' performance in real-world conditions. Evaluating code LMs on Primevul reveals that existing benchmarks significantly overestimate the performance of these models. For instance, a state-of-the-art 7B model scored 68.26% Fl on BigVul but only 3.09% Fl on Primevul. Attempts to improve performance through advanced training techniques and larger models like GPT-3.5 and GPT-4 ",
+  "needs_fetch": false
+ },
+ {
+  "id": 710,
+  "title": "Toward Understanding In-context vs. In-weight Learning",
+  "org": "deepmind",
+  "date": "2025-04-26",
+  "venue": "ICLR 2025",
+  "url": "https://openreview.net/forum?id=aKJr5NnN8U",
+  "abstract": "It has recently been demonstrated empirically that in-context learning emerges in transformers when certain distributional properties are present in the training data, but this ability can also diminish upon further training. We provide a new theoretical understanding of these phenomena by identifying simplified distributional properties that give rise to the emergence and eventual disappearance of in-context learning. We do so by first analyzing a simplified model that uses a gating mechanism to choose between an in-weight and an in-context predictor. Through a combination of a generalization error and regret analysis we identify conditions where in-context and in-weight learning emerge. These theoretical findings are then corroborated experimentally by comparing the behaviour of a full transformer on the simplified distributions to that of the stylized model, demonstrating aligned results. We then extend the study to a full large language model, showing how fine-tuning on various collections of natural language prompts can elicit similar in-context and in-weight learning behaviour.",
+  "needs_fetch": false
+ },
+ {
+  "id": 709,
+  "title": "Relaxed Recursive Transformers: Effective Parameter Sharing with Layer-wise LoRA",
+  "org": "deepmind",
+  "date": "2025-04-26",
+  "venue": "ICLR 2025",
+  "url": "https://openreview.net/forum?id=WwpYSOkkCt",
+  "abstract": "Large language models (LLMs) are computationally expensive to deploy. Parameter sharing offers a promising path towards reducing their size and cost, but its effectiveness in modern LLMs remains limited. In this work, we revisit parameter sharing for LLMs, and introduce a novel method for converting existing LLMs into smaller, ``Recursive Transformers'' that share parameters across layers, with minimal loss of performance. The Recursive Transformer is efficiently initialized from a standard, pre-trained Transformer, but only uses a single block of unique layers that are applied multiple times in a loop. We further show that the performance of the Recursive Transformer can be substantially improved with little additional overhead by incorporating loop-specific, low-rank adapters that facilitate layer specialization, while maintaining a compact representation. Through careful initialization and minimal additional uptraining, we observe that recursive models, converted from models twice their size, can achieve better performance than full-size pretrained models of equivalent size. Notably, when combined with knowledge distillation, our relaxed models achieve performance comparable to the original unshared model pretrained on a significantly larger corpus. Finally, we introduce Continuous Depth-wise Batching, a new inference paradigm that the Recursive Transformer allows for, when paired with early-exiting-based dynamic computation schemes. Theoretically, we show that this can en",
+  "needs_fetch": false
+ },
+ {
+  "id": 708,
+  "title": "Generative Ghosts: Anticipating Benefits and Risks of AI Afterlives",
+  "org": "deepmind",
+  "date": "2025-04-26",
+  "venue": "ACM CHI 2025",
+  "url": "https://arxiv.org/abs/2402.01662",
+  "abstract": "As AI systems quickly improve in both breadth and depth of performance, they lend themselves to creating increasingly powerful and realistic agents, including potentially agents modeled on specific people. We anticipate that within our lifetimes it may become common practice for people to create a custom AI agent to interact with loved ones and/or the broader world after death; we call such embodiments generative ghosts since such agents will be capable of generating novel content rather than merely parroting content produced by their creator while living. In this position paper, we first discuss the design space of potential implementations of generative ghosts. We then discuss the practical and ethical implications of generative ghosts, including potential positive and negative impacts on individuals and society. Based on these considerations, we lay out a research agenda for the AI and HCI research communities to empower people to create and interact with AI afterlives in a safe and beneficial manner.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1456,
+  "title": "LLM Adoption in Data Curation Workflows: Industry Practices and Insights",
+  "org": "deepmind",
+  "date": "2025-04-25",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3706599.3719677",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 711,
+  "title": "MELODI: Exploring Memory Compression for Long Contexts",
+  "org": "deepmind",
+  "date": "2025-04-24",
+  "venue": "ICLR 2025",
+  "url": "https://openreview.net/pdf?id=TvGPP8i18S",
+  "abstract": "We present MELODI, a novel memory architecture designed to efficiently process long documents using short context windows. The central concept behind MELODI is to represent short-term and long-term memory as a hierarchical compression scheme across both network layers and context windows. Specifically, short-term memory is achieved through recurrent compression of context window across multiple layers, ensuring smooth transitions between windows. In contrast, the long-term memory performs further compression within a single middle layer and aggregates information across context windows, thereby consolidating crucial information from the entire history. Compared to a strong baseline - the Memorizing Transformer employing dense attention over a large long-term memory (64K key-value pairs) - our method demonstrates superior performance on various long-context datasets while reducing the memory footprint by a factor of 8.",
+  "needs_fetch": false
+ },
+ {
+  "id": 167,
+  "title": "Modifying LLM Beliefs with Synthetic Document Finetuning",
+  "org": "anthropic",
+  "date": "2025-04-24",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/modifying-beliefs-via-sdf/",
+  "abstract": "We study whether we can modify the beliefs of LLMs and investigate whether doing so could decrease risk from advanced AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 63,
+  "title": "Exploring model welfare",
+  "org": "anthropic",
+  "date": "2025-04-24",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/exploring-model-welfare",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1458,
+  "title": "AI and Non-Western Art Worlds: Reimagining Critical AI Futures through Artistic Inquiry and Situated Dialogue",
+  "org": "deepmind",
+  "date": "2025-04-23",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3706598.3714049",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1457,
+  "title": "Whole-body physics simulation of fruit fly locomotion",
+  "org": "deepmind",
+  "date": "2025-04-23",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-09029-4",
+  "abstract": "Abstract The body of an animal influences how its nervous system generates behaviour 1 . Accurately modelling the neural control of sensorimotor behaviour requires an anatomically detailed biomechanical representation of the body. Here we introduce a whole-body model of the fruit fly Drosophila melanogaster in a physics simulator 2 . Designed as a general-purpose framework, our model enables the simulation of diverse fly behaviours, including both terrestrial and aerial locomotion. We validate its versatility by replicating realistic walking and flight behaviours. To support these behaviours, we develop phenomenological models for fluid and adhesion forces. Using data-driven, end-to-end reinforcement learning 3,4 , we train neural network controllers capable of generating naturalistic locomotion 5–7 along complex trajectories in response to high-level steering commands. Furthermore, we show the use of visual sensors and hierarchical motor control 8 , training a high-level controller to reuse a pretrained low-level flight controller to perform visually guided flight tasks. Our model serves as an open-source platform for studying the neural control of sensorimotor behaviour in an embodied context.",
+  "needs_fetch": false
+ },
+ {
+  "id": 168,
+  "title": "Putting up Bumpers",
+  "org": "anthropic",
+  "date": "2025-04-23",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/bumpers/",
+  "abstract": "Even if we can't solve alignment, we can solve the problem of catching and fixing misalignment.",
+  "needs_fetch": true
+ },
+ {
+  "id": 2707,
+  "title": "Inferring interaction potentials from stochastic particle trajectories",
+  "org": "openai",
+  "date": "2025-04-22",
+  "venue": "Physical Review Research",
+  "url": "https://doi.org/10.1103/physrevresearch.7.023075",
+  "abstract": "Accurate interaction potentials between microscopic components such as colloidal particles or cells are crucial to understanding a range of processes, including colloidal crystallization, bacterial colony formation, and cancer metastasis. Even in systems where the precise interaction mechanisms are unknown, effective interactions can be measured to inform simulation and design. However, these measurements are difficult and time-intensive, and often require conditions that are drastically different from conditions of the system of interest. Moreover, existing methods of measuring interparticle potentials rely on constraining a small number of particles at equilibrium, placing limits on which interactions can be measured. We introduce a method for inferring interaction potentials directly from trajectory data of interacting particles. We explicitly solve the equations of motion to find a form of the potential that maximizes the probability of observing a known trajectory. Our method is valid for systems both in and out of equilibrium, is well-suited to large numbers of particles interacting in typical system conditions, and does not assume a functional form of the interaction potential. We apply our method to infer the interactions of colloidal spheres from experimental data, successfully extracting the range and strength of a depletion interaction from the motion of the particles.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2706,
+  "title": "Evaluating Robustness of LLMs on Crisis-Related Microblogs across Events, Information Types, and Linguistic Features",
+  "org": "openai",
+  "date": "2025-04-22",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3696410.3714511",
+  "abstract": "The widespread use of microblogging platforms like X (formerly Twitter) during disasters provides real-time information to governments and response authorities. However, the data from these platforms is often noisy, requiring automated methods to filter relevant information. Traditionally, supervised machine learning models have been used, but they lack generalizability. In contrast, Large Language Models (LLMs) show better capabilities in understanding and processing natural language out of the box. This paper provides a detailed analysis of the performance of six well-known LLMs in processing disaster-related social media data from a large-set of real-world events. Our findings indicate that while LLMs, particularly GPT-4o and GPT-4, offer better generalizability across different disasters and information types, most LLMs face challenges in processing flood-related data, show minimal improvement despite the provision of examples (i.e., shots), and struggle to identify critical information categories like urgent requests and needs. Additionally, we examine how various linguistic features affect model performance and highlight LLMs' vulnerabilities against certain features like typos. Lastly, we provide benchmarking results for all events across both zero- and few-shot settings and observe that proprietary models outperform open-source ones in all tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1459,
+  "title": "A Scalable Crawling Algorithm Utilizing Noisy Change-Indicating Signals",
+  "org": "deepmind",
+  "date": "2025-04-22",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3696410.3714692",
+  "abstract": "Web refresh crawling is the problem of keeping a cache of web pages fresh, that is, having the most recent copy available when a page is requested, given a limited bandwidth available to the crawler. Under the assumption that the change and request events, resp., to each web page follow independent Poisson processes, the optimal scheduling policy was derived by Azar et al. 2018. In this paper, we study an extension of this problem where side information indicating content changes, such as various types of web pings, for example, signals from sitemaps, content delivery networks, etc., is available. Incorporating such side information into the crawling policy is challenging, because (i) the signals can be noisy with false positive events and with missing change events; and (ii) the crawler should achieve a fair performance over web pages regardless of the quality of the side information, which might differ from web page to web page. We propose a scalable crawling algorithm which (i) uses the noisy side information in an optimal way under mild assumptions; (ii) can be deployed without heavy centralized computation; (iii) is able to crawl web pages at a constant total rate without spikes in the total bandwidth usage over any time interval, and automatically adapt to the new optimal solution when the total bandwidth changes without centralized computation. Experiments clearly demonstrate the versatility of our approach.",
+  "needs_fetch": false
+ },
+ {
+  "id": 712,
+  "title": "Societal and technological progress as sewing an ever-growing, ever-changing, patchy, and polychrome quilt",
+  "org": "deepmind",
+  "date": "2025-04-22",
+  "venue": "Other-blogs-talks-books",
+  "url": "https://www.lesswrong.com/posts/S8KYwtg5vZqah4SHF/societal-and-technological-progress-as-sewing-an-ever",
+  "abstract": "Google DeepMind",
+  "needs_fetch": true
+ },
+ {
+  "id": 505,
+  "title": "aiXamine: Simplified LLM Safety and Security",
+  "org": "other",
+  "date": "2025-04-21",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.14985",
+  "abstract": "Evaluating Large Language Models (LLMs) for safety and security remains a complex task, often requiring users to navigate a fragmented landscape of ad hoc benchmarks, datasets, metrics, and reporting formats. To address this challenge, we present aiXamine, a comprehensive black-box evaluation platform for LLM safety and security. aiXamine integrates over 40 tests (i.e., benchmarks) organized into eight key services targeting specific dimensions of safety and security: adversarial robustness, code security, fairness and bias, hallucination, model and data privacy, out-of-distribution (OOD) robustness, over-refusal, and safety alignment. The platform aggregates the evaluation results into a single detailed report per model, providing a detailed breakdown of model performance, test examples, and rich visualizations. We used aiXamine to assess over 50 publicly available and proprietary LLMs, conducting over 2K examinations. Our findings reveal notable vulnerabilities in leading models, including susceptibility to adversarial attacks in OpenAI's GPT-4o, biased outputs in xAI's Grok-3, and privacy weaknesses in Google's Gemini 2.0. Additionally, we observe that open-source models can match or exceed proprietary models in specific services such as safety alignment, fairness and bias, and OOD robustness. Finally, we identify trade-offs between distillation strategies, model size, training methods, and architectural choices.",
+  "needs_fetch": false
+ },
+ {
+  "id": 64,
+  "title": "Values in the wild: Discovering and analyzing values in real-world language model interactions",
+  "org": "anthropic",
+  "date": "2025-04-21",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/values-wild",
+  "abstract": "What values does Claude actually express during real conversations? Analyzing 700,000 interactions, this paper creates the first large-scale empirical taxonomy of AI values.",
+  "needs_fetch": false
+ },
+ {
+  "id": 216,
+  "title": "Breaking the Prompt Wall (I): A Real-World Case Study of Attacking ChatGPT via Lightweight Prompt Injection",
+  "org": "other",
+  "date": "2025-04-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.16125",
+  "abstract": "This report presents a real-world case study demonstrating how prompt injection can attack large language model platforms such as ChatGPT according to a proposed injection framework. By providing three real-world examples, we show how adversarial prompts can be injected via user inputs, web-based retrieval, and system-level agent instructions. These attacks, though lightweight and low-cost, can cause persistent and misleading behaviors in LLM outputs. Our case study reveals that even commercial-grade LLMs remain vulnerable to subtle manipulations that bypass safety filters and influence user decisions. \\textbf{More importantly, we stress that this report is not intended as an attack guide, but as a technical alert. As ethical researchers, we aim to raise awareness and call upon developers, especially those at OpenAI, to treat prompt-level security as a critical design priority.",
+  "needs_fetch": false
+ },
+ {
+  "id": 581,
+  "title": "Scaling sparse feature circuit finding for in-context learning",
+  "org": "deepmind",
+  "date": "2025-04-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.13756",
+  "abstract": "Sparse autoencoders (SAEs) are a popular tool for interpreting large language model activations, but their utility in addressing open questions in interpretability remains unclear. In this work, we demonstrate their effectiveness by using SAEs to deepen our understanding of the mechanism behind in-context learning (ICL). We identify abstract SAE features that (i) encode the model's knowledge of which task to execute and (ii) whose latent vectors causally induce the task zero-shot. This aligns with prior work showing that ICL is mediated by task vectors. We further demonstrate that these task vectors are well approximated by a sparse sum of SAE latents, including these task-execution features. To explore the ICL mechanism, we adapt the sparse feature circuits methodology of Marks et al. (2024) to work for the much larger Gemma-1 2B model, with 30 times as many parameters, and to the more complex task of ICL. Through circuit finding, we discover task-detecting features with corresponding SAE latents that activate earlier in the prompt, that detect when tasks have been performed. They are causally linked with task-execution features through the attention and MLP sublayers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 217,
+  "title": "Towards a Multi-Agent Vision-Language System for Zero-Shot Novel Hazardous Object Detection for Autonomous Driving Safety",
+  "org": "other",
+  "date": "2025-04-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.13399",
+  "abstract": "Detecting anomalous hazards in visual data, particularly in video streams, is a critical challenge in autonomous driving. Existing models often struggle with unpredictable, out-of-label hazards due to their reliance on predefined object categories. In this paper, we propose a multimodal approach that integrates vision-language reasoning with zero-shot object detection to improve hazard identification and explanation. Our pipeline consists of a Vision-Language Model (VLM), a Large Language Model (LLM), in order to detect hazardous objects within a traffic scene. We refine object detection by incorporating OpenAI's CLIP model to match predicted hazards with bounding box annotations, improving localization accuracy. To assess model performance, we create a ground truth dataset by denoising and extending the foundational COOOL (Challenge-of-Out-of-Label) anomaly detection benchmark dataset with complete natural language descriptions for hazard annotations. We define a means of hazard detection and labeling evaluation on the extended dataset using cosine similarity. This evaluation considers the semantic similarity between the predicted hazard description and the annotated ground truth for each video. Additionally, we release a set of tools for structuring and managing large-scale hazard detection datasets. Our findings highlight the strengths and limitations of current vision-language-based approaches, offering insights into future improvements in autonomous hazard detection syst",
+  "needs_fetch": false
+ },
+ {
+  "id": 2708,
+  "title": "Pre-hospital LVO detection: One size does not fit all",
+  "org": "openai",
+  "date": "2025-04-17",
+  "venue": "Journal of Stroke and Cerebrovascular Diseases",
+  "url": "https://doi.org/10.1016/j.jstrokecerebrovasdis.2025.108323",
+  "abstract": "A range of techniques are being developed with the goal of leverage physiologic data to detect large vessel occlusion (LVO) in the prehospital setting. The output of most every technique is a continuous (or ordinal) variable, but a threshold is applied to yield a simplified binary outcome (i.e., high-likelihood LVO vs low-likelihood LVO). The mathematically optimal threshold is typically selected to balance sensitivity and specificity. Though intuitive, this approach may not appropriately account for the relative significance of false negatives and false positives. Most importantly, relying on a single threshold is an unnecessary oversimplification, and this one-size-fits-all approach to prehospital LVO detection does not optimally account for the diversity of prehospital systems of care. Here, we use a recently reported technique, optical blood flow imaging, to demonstrate how thresholds can be easily titrated in favor of sensitivity or specificity and thereby provide options that may better serve any given micro-environment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1460,
+  "title": "Scaling Large Language Models for Next-Generation Single-Cell Analysis",
+  "org": "deepmind",
+  "date": "2025-04-17",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.04.14.648850",
+  "abstract": "Single-cell RNA sequencing has transformed our understanding of cellular diversity, yet current single-cell foundation models (scFMs) remain limited in their scalability, flexibility across diverse tasks, and ability to natively integrate textual information. In this work, we build upon the Cell2Sentence (C2S) framework, which represents scRNA-seq profiles as textual \"cell sentences,\" to train Large Language Models (LLMs) on a corpus comprising over one billion tokens of transcriptomic data, biological text, and metadata. Scaling the model to 27 billion parameters yields consistent improvements in predictive and generative capabilities and supports advanced downstream tasks that require synthesis of information across multi-cellular contexts. Targeted fine-tuning with modern reinforcement learning techniques produces strong performance in perturbation response prediction, natural language interpretation, and complex biological reasoning. This predictive strength enabled a dual-context virtual screen that nominated the kinase inhibitor silmitasertib (CX-4945) as a candidate for context-selective upregulation of antigen presentation. Experimental assessment in human cell models unseen during training supported this prediction, demonstrating that C2S-Scale can effectively guide the discovery of context-conditioned biology. C2S-Scale unifies transcriptomic and textual data at unprecedented scales, surpassing both specialized single-cell models and general-purpose LLMs to provide ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2709,
+  "title": "The impacts of companion AI on human relationships: risks, benefits, and design considerations",
+  "org": "openai",
+  "date": "2025-04-16",
+  "venue": "AI & Society",
+  "url": "https://doi.org/10.1007/s00146-025-02318-6",
+  "abstract": null,
+  "needs_fetch": true
+ }
+]

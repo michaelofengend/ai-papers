@@ -1,0 +1,302 @@
+[
+ {
+  "id": 517,
+  "title": "Jailbreak Defense in a Narrow Domain: Limitations of Existing Methods and a New Transcript-Classifier Approach",
+  "org": "anthropic",
+  "date": "2024-12-03",
+  "venue": "NeurIPS 2024",
+  "url": "https://arxiv.org/abs/2412.02159",
+  "abstract": "Defending large language models against jailbreaks so that they never engage in a broadly-defined set of forbidden behaviors is an open problem. In this paper, we investigate the difficulty of jailbreak-defense when we only want to forbid a narrowly-defined set of behaviors. As a case study, we focus on preventing an LLM from helping a user make a bomb. We find that popular defenses such as safety training, adversarial training, and input/output classifiers are unable to fully solve this problem. In pursuit of a better solution, we develop a transcript-classifier defense which outperforms the baseline defenses we test. However, our classifier defense still fails in some circumstances, which highlights the difficulty of jailbreak-defense even in a narrow domain.",
+  "needs_fetch": false
+ },
+ {
+  "id": 378,
+  "title": "Noise Injection Reveals Hidden Capabilities of Sandbagging Language Models",
+  "org": "anthropic",
+  "date": "2024-12-02",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2412.01784",
+  "abstract": "Capability evaluations play a crucial role in assessing and regulating frontier AI systems. The effectiveness of these evaluations faces a significant challenge: strategic underperformance, or ``sandbagging'', where models deliberately underperform during evaluation. Sandbagging can manifest either through explicit developer intervention or through unintended model behavior, presenting a fundamental obstacle to accurate capability assessment. We introduce a novel sandbagging detection method based on injecting noise of varying magnitudes into model weights. While non-sandbagging models show predictable performance degradation with increasing noise, we demonstrate that sandbagging models exhibit anomalous performance improvements, likely due to disruption of underperformance mechanisms while core capabilities remain partially intact. Through experiments across various model architectures, sizes, and sandbagging techniques, we establish this distinctive response pattern as a reliable, model-agnostic signal for detecting sandbagging behavior. Importantly, we find noise-injection is capable of eliciting the full performance of Mistral Large 120B in a setting where the model underperforms without being instructed to do so. Our findings provide a practical tool for AI evaluation and oversight, addressing a challenge in ensuring accurate capability assessment of frontier AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2886,
+  "title": "Stage-Wise Model Diffing",
+  "org": "anthropic",
+  "date": "2024-12-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/model-diffing/index.html",
+  "abstract": "We report some developing work on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. We'd ask you to treat these results like those of a colleague sharing some thoughts or preliminary experiments for a few minutes at a lab meeting, rather than a mature paper.",
+  "needs_fetch": false
+ },
+ {
+  "id": 179,
+  "title": "Introducing the Anthropic Fellows Program for AI Safety Research",
+  "org": "anthropic",
+  "date": "2024-12-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2024/anthropic-fellows-program/",
+  "abstract": "We're launching the Anthropic Fellows Program for AI Safety Research, a pilot initiative designed to accelerate AI safety research and foster research talent.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1529,
+  "title": "MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space",
+  "org": "deepmind",
+  "date": "2024-11-28",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-72848-8_11",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1530,
+  "title": "Addendum: Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+  "org": "deepmind",
+  "date": "2024-11-27",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-024-08416-7",
+  "abstract": "In our original article, we provided an extensive",
+  "needs_fetch": true
+ },
+ {
+  "id": 1192,
+  "title": "3D gamma analysis between treatment plans for nominally beam‐matched medical linear accelerators using PyMedPhys",
+  "org": "anthropic",
+  "date": "2024-11-27",
+  "venue": "Precision Radiation Oncology",
+  "url": "https://doi.org/10.1002/pro6.1247",
+  "abstract": "Abstract Beam‐matched linear accelerators (linacs) enable flexible patient scheduling and efficient treatment delivery in the event of unexpected machine downtime. The purpose of this study was to test the feasibility of 3D gamma index as an additional metric beyond standard measurement‐based comparisons for more efficient evaluation of treatment plans between linacs with nominally matched beam models to ensure safe patient transfer. Seventeen 3D conformal radiotherapy (3DCRT) plans and thirty‐six volumetric‐modulated radiation therapy (VMAT) plans for different disease sites were selected from the original linac. An in‐house script was used to automatically create new plans for the target linac and calculate dose using parameters of the original plans. 3D gamma analysis was performed to compare plan dose distributions between the target and original linacs using PyMedPhys . The 2%/2 mm gamma pass (γ≤1) rate was &gt;99.99% for all 3DCRT plans. The median 1%/1 mm pass rate was 99.86% but two cases failed (&lt; 90%). For VMAT plans, the median and minimum 2%/2 mm gamma pass rates were 99.43% and 93.81%. For 1%/1 mm, the median pass rate was 92.02% but ten cases failed. The results indicated using 3D gamma index can enhance the confidence and add an extra layer for safe patient transfer.",
+  "needs_fetch": false
+ },
+ {
+  "id": 737,
+  "title": "How Well Do Large Language Models Perform Latent Multi-Hop Reasoning without Exploiting Shortcuts?",
+  "org": "deepmind",
+  "date": "2024-11-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.16679",
+  "abstract": "We evaluate the ability of today's LLMs to perform latent multi-hop reasoning on factual knowledge, or the latent composability of the models to internally recall and compose the facts separately learned during training, by assessing the model completions on multi-hop queries like \"In the year Scarlett Johansson was born, the Summer Olympics were hosted in the country of\". However, it may be challenging to accurately measure the latent reasoning ability without careful data construction and evaluation. For example, models may have developed shortcuts by numerous encounters of the head entity \"Scarlett Johansson\" and the answer entity \"United States\" in the same training sequences or merely guesses the answer based on frequency-based prior without going through a multi-hop reasoning process. To take this account, we propose desiderata about the dataset and evaluation for shortcut-free evaluation of latent multi-hop reasoning ability, and construct an evaluation dataset named SOCRATES (ShOrtCut-fRee lATent rEaSoning) to measure latent composability as rigorously as possible without access to the actual pretraining data. To be specific, we select the relation compositions and facts which would minimize the chance of models exploiting shortcuts and exclude the test queries where none of the combinations of the aliases of the head and answer entity have never appeared together in the any document of multiple different pretraining corpora, and even Google Search for some cases, of ",
+  "needs_fetch": false
+ },
+ {
+  "id": 738,
+  "title": "Understanding LLM Embeddings for Regression",
+  "org": "deepmind",
+  "date": "2024-11-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.14708",
+  "abstract": "With the rise of large language models (LLMs) for flexibly processing information as strings, a natural application is regression, specifically by preprocessing string representations into LLM embeddings as downstream features for metric prediction. In this paper, we provide one of the first comprehensive investigations into embedding-based regression and demonstrate that LLM embeddings as features can be better for high-dimensional regression tasks than using traditional feature engineering. This regression performance can be explained in part due to LLM embeddings over numeric data inherently preserving Lipschitz continuity over the feature space. Furthermore, we quantify the contribution of different model effects, most notably model size and language understanding, which we find surprisingly do not always improve regression performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 229,
+  "title": "RE-Bench: Evaluating frontier AI R&D capabilities of language model agents against human experts",
+  "org": "openai",
+  "date": "2024-11-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.15114",
+  "abstract": "Frontier AI safety policies highlight automation of AI research and development (R&D) by AI agents as an important capability to anticipate. However, there exist few evaluations for AI R&D capabilities, and none that are highly realistic and have a direct comparison to human performance. We introduce RE-Bench (Research Engineering Benchmark, v1), which consists of 7 challenging, open-ended ML research engineering environments and data from 71 8-hour attempts by 61 distinct human experts. We confirm that our experts make progress in the environments given 8 hours, with 82% of expert attempts achieving a non-zero score and 24% matching or exceeding our strong reference solutions. We compare humans to several public frontier models through best-of-k with varying time budgets and agent designs, and find that the best AI agents achieve a score 4x higher than human experts when both are given a total time budget of 2 hours per environment. However, humans currently display better returns to increasing time budgets, narrowly exceeding the top AI agent scores given an 8-hour budget, and achieving 2x the score of the top AI agent when both are given 32 total hours (across different attempts). Qualitatively, we find that modern AI agents possess significant expertise in many ML topics -- e.g. an agent wrote a faster custom Triton kernel than any of our human experts' -- and can generate and test solutions over ten times faster than humans, at much lower cost. We open-source the evaluat",
+  "needs_fetch": false
+ },
+ {
+  "id": 992,
+  "title": "Advancing red teaming with people and AI",
+  "org": "openai",
+  "date": "2024-11-21",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/advancing-red-teaming-with-people-and-ai/",
+  "abstract": "Advancing red teaming with people and AI",
+  "needs_fetch": true
+ },
+ {
+  "id": 591,
+  "title": "Do I Know This Entity? Knowledge Awareness and Hallucinations in Language Models",
+  "org": "deepmind",
+  "date": "2024-11-21",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2411.14257",
+  "abstract": "Hallucinations in large language models are a widespread problem, yet the mechanisms behind whether models will hallucinate are poorly understood, limiting our ability to solve this problem. Using sparse autoencoders as an interpretability tool, we discover that a key part of these mechanisms is entity recognition, where the model detects if an entity is one it can recall facts about. Sparse autoencoders uncover meaningful directions in the representation space, these detect whether the model recognizes an entity, e.g. detecting it doesn't know about an athlete or a movie. This suggests that models can have self-knowledge: internal representations about their own capabilities. These directions are causally relevant: capable of steering the model to refuse to answer questions about known entities, or to hallucinate attributes of unknown entities when it would otherwise refuse. We demonstrate that despite the sparse autoencoders being trained on the base model, these directions have a causal effect on the chat model's refusal behavior, suggesting that chat finetuning has repurposed this existing mechanism. Furthermore, we provide an initial exploration into the mechanistic role of these directions in the model, finding that they disrupt the attention of downstream heads that typically move entity attributes to the final token.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1534,
+  "title": "Volumetric Rendering with Baked Quadrature Fields",
+  "org": "deepmind",
+  "date": "2024-11-20",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73036-8_16",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1533,
+  "title": "UniIR: Training and Benchmarking Universal Multimodal Information Retrievers",
+  "org": "deepmind",
+  "date": "2024-11-20",
+  "venue": "Lecture notes in computer science",
+  "url": "https://doi.org/10.1007/978-3-031-73021-4_23",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1532,
+  "title": "Learning high-accuracy error decoding for quantum processors",
+  "org": "deepmind",
+  "date": "2024-11-20",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-024-08148-8",
+  "abstract": "Abstract Building a large-scale quantum computer requires effective strategies to correct errors that inevitably arise in physical quantum systems 1 . Quantum error-correction codes 2 present a way to reach this goal by encoding logical information redundantly into many physical qubits. A key challenge in implementing such codes is accurately decoding noisy syndrome information extracted from redundancy checks to obtain the correct encoded logical information. Here we develop a recurrent, transformer-based neural network that learns to decode the surface code, the leading quantum error-correction code 3 . Our decoder outperforms other state-of-the-art decoders on real-world data from Google’s Sycamore quantum processor for distance-3 and distance-5 surface codes 4 . On distances up to 11, the decoder maintains its advantage on simulated data with realistic noise including cross-talk and leakage, utilizing soft readouts and leakage information. After training on approximate synthetic data, the decoder adapts to the more complex, but unknown, underlying error distribution by training on a limited budget of experimental samples. Our work illustrates the ability of machine learning to go beyond human-designed algorithms by learning from data directly, highlighting machine learning as a strong contender for decoding in quantum computers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1531,
+  "title": "InterPro: the protein sequence classification resource in 2025",
+  "org": "deepmind",
+  "date": "2024-11-20",
+  "venue": "Nucleic Acids Research",
+  "url": "https://doi.org/10.1093/nar/gkae1082",
+  "abstract": "InterPro (https://www.ebi.ac.uk/interpro) is a freely accessible resource for the classification of protein sequences into families. It integrates predictive models, known as signatures, from multiple member databases to classify sequences into families and predict the presence of domains and significant sites. The InterPro database provides annotations for over 200 million sequences, ensuring extensive coverage of UniProtKB, the standard repository of protein sequences, and includes mappings to several other major resources, such as Gene Ontology (GO), Protein Data Bank in Europe (PDBe) and the AlphaFold Protein Structure Database. In this publication, we report on the status of InterPro (version 101.0), detailing new developments in the database, associated web interface and software. Notable updates include the increased integration of structures predicted by AlphaFold and the enhanced description of protein families using artificial intelligence. Over the past two years, more than 5000 new InterPro entries have been created. The InterPro website now offers access to 85 000 protein families and domains from its member databases and serves as a long-term archive for retired databases. InterPro data, software and tools are freely available.",
+  "needs_fetch": false
+ },
+ {
+  "id": 230,
+  "title": "ViSTa Dataset: Do vision-language models understand sequential tasks?",
+  "org": "deepmind",
+  "date": "2024-11-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.13211",
+  "abstract": "Using vision-language models (VLMs) as reward models in reinforcement learning holds promise for reducing costs and improving safety. So far, VLM reward models have only been used for goal-oriented tasks, where the agent must reach a particular final outcome. We explore VLMs' potential to supervise tasks that cannot be scored by the final state alone. To this end, we introduce ViSTa, a dataset for evaluating Vision-based understanding of Sequential Tasks. ViSTa comprises over 4,000 videos with step-by-step descriptions in virtual home, Minecraft, and real-world environments. Its novel hierarchical structure -- basic single-step tasks composed into more and more complex sequential tasks -- allows a fine-grained understanding of how well VLMs can judge tasks with varying complexity. To illustrate this, we use ViSTa to evaluate state-of-the-art VLMs, including CLIP, ViCLIP, and GPT-4o. We find that, while they are all good at object recognition, they fail to understand sequential tasks, with only GPT-4o achieving non-trivial performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 78,
+  "title": "A statistical approach to model evaluations",
+  "org": "anthropic",
+  "date": "2024-11-19",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/statistical-approach-to-model-evals",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 380,
+  "title": "Value Imprint: A Technique for Auditing the Human Values Embedded in RLHF Datasets",
+  "org": "other",
+  "date": "2024-11-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.11937",
+  "abstract": "LLMs are increasingly fine-tuned using RLHF datasets to align them with human preferences and values. However, very limited research has investigated which specific human values are operationalized through these datasets. In this paper, we introduce Value Imprint, a framework for auditing and classifying the human values embedded within RLHF datasets. To investigate the viability of this framework, we conducted three case study experiments by auditing the Anthropic/hh-rlhf, OpenAI WebGPT Comparisons, and Alpaca GPT-4-LLM datasets to examine the human values embedded within them. Our analysis involved a two-phase process. During the first phase, we developed a taxonomy of human values through an integrated review of prior works from philosophy, axiology, and ethics. Then, we applied this taxonomy to annotate 6,501 RLHF preferences. During the second phase, we employed the labels generated from the annotation as ground truth data for training a transformer-based machine learning model to audit and classify the three RLHF datasets. Through this approach, we discovered that information-utility values, including Wisdom/Knowledge and Information Seeking, were the most dominant human values within all three RLHF datasets. In contrast, prosocial and democratic values, including Well-being, Justice, and Human/Animal Rights, were the least represented human values. These findings have significant implications for developing language models that align with societal values and norms. We ",
+  "needs_fetch": false
+ },
+ {
+  "id": 379,
+  "title": "Mapping out the Space of Human Feedback for Reinforcement Learning: A Conceptual Framework",
+  "org": "deepmind",
+  "date": "2024-11-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.11761",
+  "abstract": "Reinforcement Learning from Human feedback (RLHF) has become a powerful tool to fine-tune or train agentic machine learning models. Similar to how humans interact in social contexts, we can use many types of feedback to communicate our preferences, intentions, and knowledge to an RL agent. However, applications of human feedback in RL are often limited in scope and disregard human factors. In this work, we bridge the gap between machine learning and human-computer interaction efforts by developing a shared understanding of human feedback in interactive learning scenarios. We first introduce a taxonomy of feedback types for reward-based learning from human feedback based on nine key dimensions. Our taxonomy allows for unifying human-centered, interface-centered, and model-centered aspects. In addition, we identify seven quality metrics of human feedback influencing both the human ability to express feedback and the agent's ability to learn from the feedback. Based on the feedback taxonomy and quality criteria, we derive requirements and design choices for systems learning from human feedback. We relate these requirements and design choices to existing work in interactive machine learning. In the process, we identify gaps in existing work and future research opportunities. We call for interdisciplinary collaboration to harness the full potential of reinforcement learning with data-driven co-adaptive modeling and varied interaction mechanics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1535,
+  "title": "The Pfam protein families database: embracing AI/ML",
+  "org": "deepmind",
+  "date": "2024-11-14",
+  "venue": "Nucleic Acids Research",
+  "url": "https://doi.org/10.1093/nar/gkae997",
+  "abstract": "The Pfam protein families database is a comprehensive collection of protein domains and families used for genome annotation and protein structure and function analysis (https://www.ebi.ac.uk/interpro/). This update describes major developments in Pfam since 2020, including decommissioning the Pfam website and integration with InterPro, harmonization with the ECOD structural classification, and expanded curation of metagenomic, microprotein and repeat-containing families. We highlight how AlphaFold structure predictions are being leveraged to refine domain boundaries and identify new domains. New families discovered through large-scale sequence similarity analysis of AlphaFold models are described. We also detail the development of Pfam-N, which uses deep learning to expand family coverage, achieving an 8.8% increase in UniProtKB coverage compared to standard Pfam. We discuss plans for more frequent Pfam releases integrated with InterPro and the potential for artificial intelligence to further assist curation. Despite recent advances, many protein families remain to be classified, and Pfam continues working toward comprehensive coverage of the protein universe.",
+  "needs_fetch": false
+ },
+ {
+  "id": 381,
+  "title": "Democratic AI is Possible. The Democracy Levels Framework Shows How It Might Work",
+  "org": "other",
+  "date": "2024-11-14",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2411.09222",
+  "abstract": "This position paper argues that effectively \"democratizing AI\" requires democratic governance and alignment of AI, and that this is particularly valuable for decisions with systemic societal impacts. Initial steps -- such as Meta's Community Forums and Anthropic's Collective Constitutional AI -- have illustrated a promising direction, where democratic processes could be used to meaningfully improve public involvement and trust in critical decisions. To more concretely explore what increasingly democratic AI might look like, we provide a \"Democracy Levels\" framework and associated tools that: (i) define milestones toward meaningfully democratic AI, which is also crucial for substantively pluralistic, human-centered, participatory, and public-interest AI, (ii) can help guide organizations seeking to increase the legitimacy of their decisions on difficult AI governance and alignment questions, and (iii) support the evaluation of such efforts.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1537,
+  "title": "SIMPL: Scalable and hassle-free optimisation of neural representations from behaviour",
+  "org": "deepmind",
+  "date": "2024-11-12",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2024.11.11.623030",
+  "abstract": "Abstract Neural activity in the brain is known to encode low-dimensional, time-evolving, behaviour-related variables. A long-standing goal of neural data analysis has been to identify these variables and their mapping to neural activity. A productive and canonical approach has been to simply visualise neural “tuning curves” as a function of behaviour. In reality, significant discrepancies between behaviour and the true latent variables—such as an agent thinking of position Y whilst located at position X—distort and blur the tuning curves, decreasing their interpretability. To address this, latent variable models propose to learn the latent variable from data; these are typically expensive, hard to tune, or scale poorly, complicating their adoption. Here we propose SIMPL ( S calable Iterative M aximization of P opulation-coded L atents), an EM-style algorithm which iteratively optimises latent variables and tuning curves. SIMPL is fast, scalable and exploits behaviour as an initial condition to further improve convergence and identifiability. It can accurately recover latent variables in spatial and non-spatial tasks. When applied to a large hippocampal dataset SIMPL converges on smaller, more numerous, and more uniformly sized place fields than those based on behaviour, suggesting the brain may encode space with greater resolution than previously thought.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1536,
+  "title": "On Soundness Notions for Interactive Oracle Proofs",
+  "org": "deepmind",
+  "date": "2024-11-12",
+  "venue": "Journal of Cryptology",
+  "url": "https://doi.org/10.1007/s00145-024-09520-7",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 518,
+  "title": "Rapid Response: Mitigating LLM Jailbreaks with a Few Examples",
+  "org": "anthropic",
+  "date": "2024-11-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.07494",
+  "abstract": "As large language models (LLMs) grow more powerful, ensuring their safety against misuse becomes crucial. While researchers have focused on developing robust defenses, no method has yet achieved complete invulnerability to attacks. We propose an alternative approach: instead of seeking perfect adversarial robustness, we develop rapid response techniques to look to block whole classes of jailbreaks after observing only a handful of attacks. To study this setting, we develop RapidResponseBench, a benchmark that measures a defense's robustness against various jailbreak strategies after adapting to a few observed examples. We evaluate five rapid response methods, all of which use jailbreak proliferation, where we automatically generate additional jailbreaks similar to the examples observed. Our strongest method, which fine-tunes an input classifier to block proliferated jailbreaks, reduces attack success rate by a factor greater than 240 on an in-distribution set of jailbreaks and a factor greater than 15 on an out-of-distribution set, having observed just one example of each jailbreaking strategy. Moreover, further studies suggest that the quality of proliferation model and number of proliferated examples play an key role in the effectiveness of this defense. Overall, our results highlight the potential of responding rapidly to novel jailbreaks to limit LLM misuse.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2719,
+  "title": "The Human Factor in AI Red Teaming: Perspectives from Social and Collaborative Computing",
+  "org": "openai",
+  "date": "2024-11-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.07786",
+  "abstract": "Rapid progress in general-purpose AI has sparked significant interest in \"red teaming,'' a practice of adversarial testing originating in military and cybersecurity applications. AI red teaming raises many questions about the human factor, such as how red teamers are selected, biases and blindspots in how tests are conducted, and harmful content's psychological effects on red teamers. A growing body of HCI and CSCW literature examines related practices-including data labeling, content moderation, and algorithmic auditing. However, few, if any, have investigated red teaming itself. This workshop seeks to consider the conceptual and empirical challenges associated with this practice, often rendered opaque by non-disclosure agreements. Future studies may explore topics ranging from fairness to mental health and other areas of potential harm. We aim to facilitate a community of researchers and practitioners who can begin to meet these challenges with creativity, innovation, and thoughtful reflection.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1538,
+  "title": "Decomposing dynamical subprocesses for compositional generalization",
+  "org": "deepmind",
+  "date": "2024-11-08",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2408134121",
+  "abstract": "A striking feature of human cognition is an exceptional ability to rapidly adapt to novel situations. It is proposed this relies on abstracting and generalizing past experiences. While previous research has explored how humans detect and generalize single sequential processes, we have a limited understanding of how humans adapt to more naturalistic scenarios, for example, complex, multisubprocess environments. Here, we propose a candidate computational mechanism that posits compositional generalization of knowledge about subprocess dynamics. In two samples ( N = 238 and N = 137), we combined a novel sequence learning task and computational modeling to ask whether humans extract and generalize subprocesses compositionally to solve new problems. In prior learning, participants experienced sequences of compound images formed from two graphs’ product spaces (group 1: G1 and G2, group 2: G3 and G4). In transfer learning, both groups encountered compound images from the product of G1 and G3, composed entirely of new images. We show that subprocess knowledge transferred between task phases, such that in a new task environment each group had enhanced accuracy in predicting subprocess dynamics they had experienced during prior learning. Computational models utilizing predictive representations, based solely on the temporal contiguity of experienced task states, without an ability to transfer knowledge, failed to explain these data. Instead, behavior was consistent with a predictive re",
+  "needs_fetch": false
+ },
+ {
+  "id": 1539,
+  "title": "Collaboration between clinicians and vision–language models in radiology report generation",
+  "org": "deepmind",
+  "date": "2024-11-07",
+  "venue": "Nature Medicine",
+  "url": "https://doi.org/10.1038/s41591-024-03302-1",
+  "abstract": "Automated radiology report generation has the potential to improve patient care and reduce the workload of radiologists. However, the path toward real-world adoption has been stymied by the challenge of evaluating the clinical quality of artificial intelligence (AI)-generated reports. We build a state-of-the-art report generation system for chest radiographs, called Flamingo-CXR, and perform an expert evaluation of AI-generated reports by engaging a panel of board-certified radiologists. We observe a wide distribution of preferences across the panel and across clinical settings, with 56.1% of Flamingo-CXR intensive care reports evaluated to be preferable or equivalent to clinician reports, by half or more of the panel, rising to 77.7% for in/outpatient X-rays overall and to 94% for the subset of cases with no pertinent abnormal findings. Errors were observed in human-written reports and Flamingo-CXR reports, with 24.8% of in/outpatient cases containing clinically significant errors in both report types, 22.8% in Flamingo-CXR reports only and 14.0% in human reports only. For reports that contain errors we develop an assistive setting, a demonstration of clinician-AI collaboration for radiology report composition, indicating new possibilities for potential clinical utility.",
+  "needs_fetch": false
+ },
+ {
+  "id": 592,
+  "title": "Towards Unifying Interpretability and Control: Evaluation via Intervention",
+  "org": "deepmind",
+  "date": "2024-11-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.04430",
+  "abstract": "With the growing complexity and capability of large language models, a need to understand model reasoning has emerged, often motivated by an underlying goal of controlling and aligning models. While numerous interpretability and steering methods have been proposed as solutions, they are typically designed either for understanding or for control, seldom addressing both. Additionally, the lack of standardized applications, motivations, and evaluation metrics makes it difficult to assess methods' practical utility and efficacy. To address the aforementioned issues, we argue that intervention is a fundamental goal of interpretability and introduce success criteria to evaluate how well methods can control model behavior through interventions. To evaluate existing methods for this ability, we unify and extend four popular interpretability methods-sparse autoencoders, logit lens, tuned lens, and probing-into an abstract encoder-decoder framework, enabling interventions on interpretable features that can be mapped back to latent representations to control model outputs. We introduce two new evaluation metrics: intervention success rate and coherence-intervention tradeoff, designed to measure the accuracy of explanations and their utility in controlling model behavior. Our findings reveal that (1) while current methods allow for intervention, their effectiveness is inconsistent across features and models, (2) lens-based methods outperform SAEs and probes in achieving simple, concrete ",
+  "needs_fetch": false
+ },
+ {
+  "id": 519,
+  "title": "Measuring short-form factuality in large language models",
+  "org": "openai",
+  "date": "2024-11-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2411.04368",
+  "abstract": "We present SimpleQA, a benchmark that evaluates the ability of language models to answer short, fact-seeking questions. We prioritized two properties in designing this eval. First, SimpleQA is challenging, as it is adversarially collected against GPT-4 responses. Second, responses are easy to grade, because questions are created such that there exists only a single, indisputable answer. Each answer in SimpleQA is graded as either correct, incorrect, or not attempted. A model with ideal behavior would get as many questions correct as possible while not attempting the questions for which it is not confident it knows the correct answer. SimpleQA is a simple, targeted evaluation for whether models \"know what they know,\" and our hope is that this benchmark will remain relevant for the next few generations of frontier models. SimpleQA can be found at https://github.com/openai/simple-evals.",
+  "needs_fetch": false
+ }
+]

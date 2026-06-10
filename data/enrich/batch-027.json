@@ -1,0 +1,302 @@
+[
+ {
+  "id": 973,
+  "title": "OpenAI o3 and o4-mini System Card",
+  "org": "openai",
+  "date": "2025-04-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/o3-o4-mini-system-card/",
+  "abstract": "OpenAI o3 and OpenAI o4-mini combine state-of-the-art reasoning with full tool capabilities—web browsing, Python, image and file analysis, image generation, canvas, automations, file search, and memory.",
+  "needs_fetch": false
+ },
+ {
+  "id": 218,
+  "title": "Reasoning-Based AI for Startup Evaluation (R.A.I.S.E.): A Memory-Augmented, Multi-Step Decision Framework",
+  "org": "other",
+  "date": "2025-04-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.12090",
+  "abstract": "We present a novel framework that bridges the gap between the interpretability of decision trees and the advanced reasoning capabilities of large language models (LLMs) to predict startup success. Our approach leverages chain-of-thought prompting to generate detailed reasoning logs, which are subsequently distilled into structured, human-understandable logical rules. The pipeline integrates multiple enhancements - efficient data ingestion, a two-step refinement process, ensemble candidate sampling, simulated reinforcement learning scoring, and persistent memory - to ensure both stable decision-making and transparent output. Experimental evaluations on curated startup datasets demonstrate that our combined pipeline improves precision by 54% from 0.225 to 0.346 and accuracy by 50% from 0.46 to 0.70 compared to a standalone OpenAI o3 model. Notably, our model achieves over 2x the precision of a random classifier (16%). By combining state-of-the-art AI reasoning with explicit rule-based explanations, our method not only augments traditional decision-making processes but also facilitates expert intervention and continuous policy refinement. This work lays the foundation for the implementation of interpretable LLM-powered decision frameworks in high-stakes investment environments and other domains that require transparent and data-driven insights.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1461,
+  "title": "Hadamard Product in Deep Learning: Introduction, Advances and Challenges",
+  "org": "deepmind",
+  "date": "2025-04-15",
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "url": "https://doi.org/10.1109/tpami.2025.3560423",
+  "abstract": "While convolution and self-attention mechanisms have dominated architectural design in deep learning, this survey examines a fundamental yet understudied primitive: the Hadamard product. Despite its widespread implementation across various applications, the Hadamard product has not been systematically analyzed as a core architectural primitive. We present the first comprehensive taxonomy of its applications in deep learning, identifying four principal domains: higher-order correlation, multimodal data fusion, dynamic representation modulation, and efficient pairwise operations. The Hadamard product's ability to model nonlinear interactions with linear computational complexity makes it particularly valuable for resource-constrained deployments and edge computing scenarios. We demonstrate its natural applicability in multimodal fusion tasks, such as visual question answering, and its effectiveness in representation masking for applications including image inpainting and pruning. This systematic review not only consolidates existing knowledge about the Hadamard product's role in deep learning architectures but also establishes a foundation for future architectural innovations. Our analysis reveals the Hadamard product as a versatile primitive that offers compelling trade-offs between computational efficiency and representational power, positioning it as a crucial component in the deep learning toolkit.",
+  "needs_fetch": false
+ },
+ {
+  "id": 974,
+  "title": "Our updated Preparedness Framework",
+  "org": "openai",
+  "date": "2025-04-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/updating-our-preparedness-framework/",
+  "abstract": "Sharing our updated framework for measuring and protecting against severe harm from frontier AI capabilities.",
+  "needs_fetch": true
+ },
+ {
+  "id": 975,
+  "title": "Introducing GPT-4.1 in the API",
+  "org": "openai",
+  "date": "2025-04-14",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-4-1/",
+  "abstract": "Introducing GPT-4.1 in the API—a new family of models with across-the-board improvements, including major gains in coding, instruction following, and long-context understanding. We’re also releasing our first nano model. Available to developers worldwide starting today.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2710,
+  "title": "TRANSFORMER EXPLAINER: Interactive Learning of Text-Generative Models",
+  "org": "openai",
+  "date": "2025-04-11",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v39i28.35347",
+  "abstract": "Transformers have revolutionized machine learning, yet their inner workings remain opaque to many. We present TRANSFORMER EXPLAINER, an interactive visualization tool designed for non-experts to learn about Transformers through the GPT-2 model. Our tool helps users understand complex Transformer concepts by integrating a model overview and smooth transitions across abstraction levels of math operations and model structures. It runs a live GPT-2 model locally in the user’s browser, empowering users to experiment with their own input and observe in real-time how the internal components and parameters of the Transformer work together to predict the next tokens. 125,000 users have used our open-source tool at https://poloclub.github.io/ transformer-explainer/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1466,
+  "title": "Offline-to-Online Hyperparameter Transfer for Stochastic Bandits",
+  "org": "deepmind",
+  "date": "2025-04-11",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v39i19.34243",
+  "abstract": "Classic algorithms for stochastic bandits typically use hyperparameters that govern their critical properties such as the trade-off between exploration and exploitation. Tuning these hyperparameters is a problem of great practical significance. However this is a challenging problem and in certain cases is information theoretically impossible. To address this challenge, we consider a practically relevant transfer learning setting where one has access to offline data collected from several bandit problems (tasks) coming from an unknown distribution over the tasks. Our aim is to use this offline data to set the hyperparameters for a new task drawn from the unknown distribution. We provide bounds on the inter-task (number of tasks) and intra-task (number of arm pulls for each task) sample complexity for learning near-optimal hyperparameters on unseen tasks drawn from the distribution. Our results apply to several classic algorithms, including tuning the exploration parameters in UCB and LinUCB and the noise parameter in GP-UCB. Our experiments indicate the significance and effectiveness of transfer of hyperparameters from offline problems in online learning with stochastic bandit feedback.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1465,
+  "title": "Robust Multi-Objective Preference Alignment with Online DPO",
+  "org": "deepmind",
+  "date": "2025-04-11",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v39i26.34942",
+  "abstract": "Multi-objective preference alignment of large language models (LLMs) is critical for developing AI systems that are more configurable, personalizable, helpful, and safe. However, optimizing model outputs to satisfy diverse objectives with variable weights at inference time for truly personalized models presents a significant challenge. Existing approaches are either computationally expensive to train or do not sufficiently steer model behaviors. This paper introduces the Multi-Objective Online DPO (MO-ODPO) algorithm, designed to robustly and efficiently align model behaviors with multiple, potentially conflicting human preferences. Our approach incorporates a prompt conditioning mechanism, allowing us to train a single preference-conditional policy, that can adapt to new preference combinations at inference. Experiments on two popular benchmarks show that MO-ODPO Pareto-dominates existing baselines while providing excellent inference-time steerability between diverse objectives.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1464,
+  "title": "General Uncertainty Estimation with Delta Variances",
+  "org": "deepmind",
+  "date": "2025-04-11",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v39i19.34238",
+  "abstract": "Decision makers may suffer from uncertainty induced by limited data. This may be mitigated by accounting for epistemic uncertainty, which is however challenging to estimate efficiently for large neural networks. To this extent we investigate Delta Variances, a family of algorithms for epistemic uncertainty quantification, that is computationally efficient and convenient to implement. It can be applied to neural networks and more general functions composed of neural networks. As an example we consider a weather simulator with a neural-network-based step function inside - here Delta Variances empirically obtain competitive results at the cost of a single gradient computation. The approach is convenient as it requires no changes to the neural network architecture or training procedure. We discuss multiple ways to derive Delta Variances theoretically noting that special cases recover popular techniques and present a unified perspective on multiple related methods. Finally we observe that this general perspective gives rise to a natural extension and empirically show its benefit.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1463,
+  "title": "RLPF: Reinforcement Learning from Prediction Feedback for User Summarization with LLMs",
+  "org": "deepmind",
+  "date": "2025-04-11",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v39i24.34738",
+  "abstract": "LLM-powered personalization agent systems employ Large Language Models (LLMs) to predict users’ behavior from their past activities. However, their effectiveness often hinges on the ability to effectively leverage extensive, long user historical data due to its inherent noise and length of such data. Existing pre-trained LLMs may generate summaries that are concise but lack the necessary context for downstream tasks, hindering their utility in personalization systems. To address these challenges, we introduce Reinforcement Learning from Prediction Feedback (RLPF). RLPF fine-tunes LLMs to generate concise, human-readable user summaries that are optimized for downstream task performance. By maximizing the usefulness of the generated summaries, RLPF effectively distills extensive user history data while preserving essential information for downstream tasks. Our empirical evaluation demonstrates significant improvements in both extrinsic downstream task utility and intrinsic summary quality, surpassing baseline methods by up to 22% and achieving an up to 84.59% win rate on Factuality, Abstractiveness, and Readability. RLPF also achieves a remarkable 74% reduction while improving performance on 16 out of 19 unseen tasks and/or datasets, showcasing its generalizability. This approach offers a promising solution for enhancing LLM personalization by effectively transforming long, noisy user histories into informative and human-readable representations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1462,
+  "title": "Differentially Private Prototypes for Imbalanced Transfer Learning",
+  "org": "deepmind",
+  "date": "2025-04-11",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v39i20.35395",
+  "abstract": "Machine learning (ML) models have been shown to leak private information from their training datasets. Differential Privacy (DP), typically implemented through the differential private stochastic gradient descent algorithm (DP-SGD), has become the standard solution to bound leakage from the models. Despite recent improvements, DP-SGD-based approaches for private learning still usually struggle in the high privacy (ε≤1) and low data regimes, and when the private training datasets are imbalanced. To overcome these limitations, we propose Differentially Private Prototype Learning (DPPL) as a new paradigm for private transfer learning. DPPL leverages publicly pre-trained encoders to extract features from private data and generates DP prototypes that represent each private class in the embedding space and can be publicly released for inference. Since our DP prototypes can be obtained from only a few private training data points and without iterative noise addition, they offer high-utility predictions and strong privacy guarantees even under the notion of pure DP. We additionally show that privacy-utility trade-offs can be further improved when leveraging the public data beyond pre-training of the encoder: in particular, we can privately sample our DP prototypes from the publicly available data points used to train the encoder. Our experimental evaluation with four state-of-the-art encoders, four vision datasets, and under different data and imbalancedness regimes demonstrate DPPL'",
+  "needs_fetch": false
+ },
+ {
+  "id": 1467,
+  "title": "Bridging Algorithmic Information Theory and Machine Learning: Clustering, density estimation, Kolmogorov complexity-based kernels, and kernel learning in unsupervised learning",
+  "org": "deepmind",
+  "date": "2025-04-10",
+  "venue": "Physica D Nonlinear Phenomena",
+  "url": "https://doi.org/10.1016/j.physd.2025.134669",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 976,
+  "title": "BrowseComp: a benchmark for browsing agents",
+  "org": "openai",
+  "date": "2025-04-10",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/browsecomp/",
+  "abstract": "BrowseComp: a benchmark for browsing agents.",
+  "needs_fetch": true
+ },
+ {
+  "id": 2712,
+  "title": "Position: Contextual Confidence and Generative AI",
+  "org": "openai",
+  "date": "2025-04-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/satml64287.2025.00022",
+  "abstract": "Generative AI models perturb the foundations of effective human communication. They present new challenges to contextual confidence, disrupting participants' ability to identify the authentic context of communication and their ability to protect communication from reuse and recombination outside its intended context. In this paper, we describe strategies ‒ tools, technologies and policies ‒ that aim to stabilize communication in the face of these challenges. The strategies we discuss fall into two broad categories. Containment strategies aim to reassert context in environments where it is currently threatened ‒ a reaction to the context-free expectations and norms established by the internet. Mobilization strategies, by contrast, view the rise of generative AI as an opportunity to proactively set new and higher expectations around privacy and authenticity in mediated communication.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2711,
+  "title": "Universal photonic artificial intelligence acceleration",
+  "org": "openai",
+  "date": "2025-04-09",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-08854-x",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1470,
+  "title": "Avoiding Pitfalls for Privacy Accounting of Subsampled Mechanisms Under Composition",
+  "org": "deepmind",
+  "date": "2025-04-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/satml64287.2025.00060",
+  "abstract": "We consider the problem of computing tight privacy guarantees for the composition of subsampled differentially private mechanisms. Recent algorithms can numerically compute the privacy parameters to arbitrary precision but must be carefully applied. Our main contribution is to address two common points of confusion. First, some privacy accountants assume that the privacy guarantees for the composition of a subsampled mechanism are determined by self-composing the worst-case datasets for the uncomposed mechanism. We show that this is not true in general. Second, Poisson subsampling is sometimes assumed to have similar privacy guarantees compared to sampling without replacement. We show that the privacy guarantees may in fact differ significantly between the two sampling schemes. In particular, we give an example of hyperparameters that result in <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\varepsilon\\approx 1$</tex> for Poisson subsampling and <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\varepsilon &gt; 10$</tex> for sampling without replacement. This occurs for some parameters that could realistically be chosen for DP-SGD.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1469,
+  "title": "Evaluating medical AI systems in dermatology under uncertain ground truth",
+  "org": "deepmind",
+  "date": "2025-04-09",
+  "venue": "Medical Image Analysis",
+  "url": "https://doi.org/10.1016/j.media.2025.103556",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1468,
+  "title": "Inexact Unlearning Needs More Careful Evaluations to Avoid a False Sense of Privacy",
+  "org": "deepmind",
+  "date": "2025-04-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/satml64287.2025.00034",
+  "abstract": "The high cost of model training makes it increasingly desirable to develop techniques for unlearning. These techniques seek to remove the influence of a training example without having to retrain the model from scratch. Intuitively, once a model has unlearned, an adversary that interacts with the model should no longer be able to tell whether the unlearned example was included in the model's training set or not. In the privacy literature, this is known as membership inference. In this work, we discuss adaptations of Membership Inference Attacks (MIAs) to the setting of unlearning (leading to their “U-MIA” counterparts). We propose a categorization of existing U-MIAs into “population U-MIAs”, where the same attacker is instantiated for all examples, and “per-example U-MIAs”, where a dedicated attacker is instantiated for each example. We show that the latter category, wherein the attacker tailors its membership prediction to each example under attack, is significantly stronger. Indeed, our results show that the commonly used U-MIAs in the unlearning literature overestimate the privacy protection afforded by existing unlearning techniques on both vision and language models. Our investigation reveals a large variance in the vulnerability of different examples to per-example U-MIAs. In fact, several unlearning algorithms lead to a reduced vulnerability for some, but not all, examples that we wish to unlearn, at the expense of increasing it for other examples. Notably, we find tha",
+  "needs_fetch": false
+ },
+ {
+  "id": 506,
+  "title": "A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility",
+  "org": "deepmind",
+  "date": "2025-04-09",
+  "venue": "COLM 2025",
+  "url": "https://arxiv.org/abs/2504.07086",
+  "abstract": "Reasoning has emerged as the next major frontier for language models (LMs), with rapid advances from both academic and industrial labs. However, this progress often outpaces methodological rigor, with many evaluations relying on benchmarking practices that lack transparency, robustness, or statistical grounding. In this work, we conduct a comprehensive empirical study and find that current mathematical reasoning benchmarks are highly sensitive to subtle implementation choices--including decoding parameters, random seeds, prompt formatting, and even hardware and software configurations. Performance gains reported in recent studies frequently hinge on unclear comparisons or unreported sources of variance. To address these issues, we propose a standardized evaluation framework with clearly defined best practices and reporting standards. Using this framework, we reassess recent methods and find that most reinforcement learning (RL) approaches yield only modest improvements--far below prior claims--and are prone to overfitting, especially on small-scale benchmarks like AIME'24. In contrast, supervised finetuning (SFT) methods show consistently stronger generalization in the settings we study. To foster reproducibility, we release all code, prompts, and model outputs, for reasoning benchmarks, establishing more rigorous foundations for future work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 352,
+  "title": "Alice: Proactive Learning with Teacher's Demonstrations for Weak-to-Strong Generalization",
+  "org": "other",
+  "date": "2025-04-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.07316",
+  "abstract": "The growing capabilities of large language models (LLMs) present a key challenge of maintaining effective human oversight. Weak-to-strong generalization (W2SG) offers a promising framework for supervising increasingly capable LLMs using weaker ones. Traditional W2SG methods rely on passive learning, where a weak teacher provides noisy demonstrations to train a strong student. This hinders students from employing their knowledge during training and reaching their full potential. In this work, we introduce Alice (pro{A}ctive {l}earning w{i}th tea{c}her's D{e}monstrations), a framework that leverages complementary knowledge between teacher and student to enhance the learning process. We probe the knowledge base of the teacher model by eliciting their uncertainty, and then use these insights together with teachers' responses as demonstrations to guide student models in self-generating improved responses for supervision. In addition, for situations with significant capability gaps between teacher and student models, we introduce cascade Alice, which employs a hierarchical training approach where weak teachers initially supervise intermediate models, who then guide stronger models in sequence. Experimental results demonstrate that our method significantly enhances the W2SG performance, yielding substantial improvements in three key tasks compared to the original W2SG: knowledge-based reasoning (+4.0%), mathematical reasoning (+22.62%), and logical reasoning (+12.11%). This highligh",
+  "needs_fetch": false
+ },
+ {
+  "id": 351,
+  "title": "AssistanceZero: Scalably Solving Assistance Games",
+  "org": "deepmind",
+  "date": "2025-04-09",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2504.07091",
+  "abstract": "Assistance games are a promising alternative to reinforcement learning from human feedback (RLHF) for training AI assistants. Assistance games resolve key drawbacks of RLHF, such as incentives for deceptive behavior, by explicitly modeling the interaction between assistant and user as a two-player game where the assistant cannot observe their shared goal. Despite their potential, assistance games have only been explored in simple settings. Scaling them to more complex environments is difficult because it requires both solving intractable decision-making problems under uncertainty and accurately modeling human users' behavior. We present the first scalable approach to solving assistance games and apply it to a new, challenging Minecraft-based assistance game with over $10^{400}$ possible goals. Our approach, AssistanceZero, extends AlphaZero with a neural network that predicts human actions and rewards, enabling it to plan under uncertainty. We show that AssistanceZero outperforms model-free RL algorithms and imitation learning in the Minecraft-based assistance game. In a human study, our AssistanceZero-trained assistant significantly reduces the number of actions participants take to complete building tasks in Minecraft. Our results suggest that assistance games are a tractable framework for training effective AI assistants in complex environments. Our code and models are available at https://github.com/cassidylaidlaw/minecraft-building-assistance-game.",
+  "needs_fetch": false
+ },
+ {
+  "id": 713,
+  "title": "TxGemma: Efficient and Agentic LLMs for Therapeutics",
+  "org": "deepmind",
+  "date": "2025-04-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.06196",
+  "abstract": "Therapeutic development is a costly and high-risk endeavor that is often plagued by high failure rates. To address this, we introduce TxGemma, a suite of efficient, generalist large language models (LLMs) capable of therapeutic property prediction as well as interactive reasoning and explainability. Unlike task-specific models, TxGemma synthesizes information from diverse sources, enabling broad application across the therapeutic development pipeline. The suite includes 2B, 9B, and 27B parameter models, fine-tuned from Gemma-2 on a comprehensive dataset of small molecules, proteins, nucleic acids, diseases, and cell lines.Out of 66 therapeutic development tasks, TxGemma outperforms or nearly matches the state-of-the-art generalist model on 64 (outperforms on 45), and state-of-the-art specialist models on 50 (outperforms on 26). Beyond these predictive capabilities, TxGemma also features conversational models that bridge the gap between general LLMs and specialized property predictors. These allow scientists to interact with them in natural language, provide mechanistic reasoning for their predictions based on molecular structure,and engage in scientific discussions. Building on this, we also introduce TxAgent, a generalist therapeutic agent powered by Gemini 2.0 that reasons, acts, manages diverse workflows, and acquires external domain knowledge. TxAgent surpasses prior state-of-the-art models on the Humanity’s Last Exam benchmark (Chemistry & Biology tasks) with 9.8% relati",
+  "needs_fetch": false
+ },
+ {
+  "id": 169,
+  "title": "Alignment Faking Revisited: Improved Classifiers and Open Source Extensions",
+  "org": "anthropic",
+  "date": "2025-04-08",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/alignment-faking-revisited/",
+  "abstract": "We present a replication and extension of an alignment faking model organism.",
+  "needs_fetch": true
+ },
+ {
+  "id": 65,
+  "title": "Anthropic Education Report: How university students use Claude",
+  "org": "anthropic",
+  "date": "2025-04-08",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/anthropic-education-report-how-university-students-use-claude",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 355,
+  "title": "Constitution or Collapse? Exploring Constitutional AI with Llama 3-8B",
+  "org": "other",
+  "date": "2025-04-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.04918",
+  "abstract": "As language models continue to grow larger, the cost of acquiring high-quality training data has increased significantly. Collecting human feedback is both expensive and time-consuming, and manual labels can be noisy, leading to an imbalance between helpfulness and harmfulness. Constitutional AI, introduced by Anthropic in December 2022, uses AI to provide feedback to another AI, greatly reducing the need for human labeling. However, the original implementation was designed for a model with around 52 billion parameters, and there is limited information on how well Constitutional AI performs with smaller models, such as LLaMA 3-8B. In this paper, we replicated the Constitutional AI workflow using the smaller LLaMA 3-8B model. Our results show that Constitutional AI can effectively increase the harmlessness of the model, reducing the Attack Success Rate in MT-Bench by 40.8%. However, similar to the original study, increasing harmlessness comes at the cost of helpfulness. The helpfulness metrics, which are an average of the Turn 1 and Turn 2 scores, dropped by 9.8% compared to the baseline. Additionally, we observed clear signs of model collapse in the final DPO-CAI model, indicating that smaller models may struggle with self-improvement due to insufficient output quality, making effective fine-tuning more challenging. Our study suggests that, like reasoning and math ability, self-improvement is an emergent property.",
+  "needs_fetch": false
+ },
+ {
+  "id": 354,
+  "title": "Synthetic Data Generation & Multi-Step RL for Reasoning & Tool Use",
+  "org": "anthropic",
+  "date": "2025-04-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.04736",
+  "abstract": "Reinforcement learning has been shown to improve the performance of large language models. However, traditional approaches like RLHF or RLAIF treat the problem as single-step. As focus shifts toward more complex reasoning and agentic tasks, language models must take multiple steps of text generation, reasoning and environment interaction before generating a solution. We propose a synthetic data generation and RL methodology targeting multi-step optimization scenarios. This approach, called Step-Wise Reinforcement Learning (SWiRL), iteratively generates multi-step reasoning and tool use data, and then learns from that data. It employs a simple step-wise decomposition that breaks each multi-step trajectory into multiple sub-trajectories corresponding to each action by the original model. It then applies synthetic data filtering and RL optimization on these sub-trajectories. We evaluated SWiRL on a number of multi-step tool use, question answering, and mathematical reasoning tasks. Our experiments show that SWiRL outperforms baseline approaches by 21.5%, 12.3%, 14.8%, 11.1%, and 15.3% in relative accuracy on GSM8K, HotPotQA, CofCA, MuSiQue, and BeerQA, respectively. Excitingly, the approach exhibits generalization across tasks: for example, training only on HotPotQA (text question-answering) improves zero-shot performance on GSM8K (a math dataset) by a relative 16.9%.",
+  "needs_fetch": false
+ },
+ {
+  "id": 353,
+  "title": "Truthful or Fabricated? Using Causal Attribution to Mitigate Reward Hacking in Explanations",
+  "org": "other",
+  "date": "2025-04-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.05294",
+  "abstract": "Chain-of-thought explanations are widely used to inspect the decision process of large language models (LLMs) and to evaluate the trustworthiness of model outputs, making them important for effective collaboration between LLMs and humans. We demonstrate that preference optimization - a key step in the alignment phase - can inadvertently reduce the faithfulness of these explanations. This occurs because the reward model (RM), which guides alignment, is tasked with optimizing both the expected quality of the response and the appropriateness of the explanations (e.g., minimizing bias or adhering to safety standards), creating potential conflicts. The RM lacks a mechanism to assess the consistency between the model's internal decision process and the generated explanation. Consequently, the LLM may engage in \"reward hacking\" by producing a final response that scores highly while giving an explanation tailored to maximize reward rather than accurately reflecting its reasoning. To address this issue, we propose enriching the RM's input with a causal attribution of the prediction, allowing the RM to detect discrepancies between the generated self-explanation and the model's decision process. In controlled settings, we show that this approach reduces the tendency of the LLM to generate misleading explanations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2713,
+  "title": "Transcranial focused ultrasound targeting the default mode network for the treatment of depression",
+  "org": "openai",
+  "date": "2025-04-04",
+  "venue": "Frontiers in Psychiatry",
+  "url": "https://doi.org/10.3389/fpsyt.2025.1451828",
+  "abstract": "Introduction: Up to 50% of individuals fail to respond to current depression treatments. Repetitive negative thought and default mode network hyperconnectivity are central in depression and can potentially be targeted using novel neuromodulation techniques. This community-based study assessed whether a treatment using non-invasive transcranial focused ultrasound targeting the default mode network can decrease depression symptoms and repetitive negative thought, and improve quality of life. Methods: Study recruitment began in August 2023 and ended in February 2024. Twenty individuals aged 18 - 50 were enrolled from among 247 screened. Exclusion criteria included history of psychosis/mania, acute suicidality, MRI contraindications, pregnancy, and medical and neurological factors that may complicate diagnosis or brain function. Participants completed up to three weeks of transcranial ultrasound (11 sessions) targeting the anterior medial prefrontal cortex; ten minutes per session. Depression severity (Beck Depression Inventory - II and the Hamilton Depression Rating Scale), repetitive negative thought (Perseverative Thinking Questionnaire), and quality of life (World Health Organization Quality of Life Scale) were outcomes. Results: This sample was young (mean 30.4 years ± 10.0), predominantly female (75%), with moderate to severe depression and high comorbidity. Fifty percent of participants endorsed current psychiatric medication use. Ten percent of subjects dropped out of the",
+  "needs_fetch": false
+ },
+ {
+  "id": 1471,
+  "title": "Protein sequence modelling with Bayesian flow networks",
+  "org": "deepmind",
+  "date": "2025-04-03",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-025-58250-2",
+  "abstract": "Exploring the vast and largely uncharted territory of amino acid sequences is crucial for understanding complex protein functions and the engineering of novel therapeutic proteins. Whilst generative machine learning has advanced protein sequence modelling, no existing approach is proficient in both unconditional and conditional generation. In this work, we propose that Bayesian Flow Networks (BFNs), a recently introduced framework for generative modelling, can address these challenges. We present ProtBFN, a 650M parameter model trained on protein sequences curated from UniProtKB, which generates natural-like, diverse, structurally coherent, and novel protein sequences, significantly outperforming leading autoregressive and discrete diffusion models. Further, we fine-tune ProtBFN on heavy chains from the Observed Antibody Space to obtain an antibody-specific model, AbBFN, which we use to evaluate zero-shot conditional generation capabilities. AbBFN is found to be competitive with or better than antibody-specific BERT-style models when applied to predicting individual framework or complimentary determining regions. Bayesian Flow Networks generate diverse, novel, and coherent protein sequences, surpassing prior unconditional generation methods. They also permit flexible conditional generation during inference, which is demonstrated on antibody inpainting tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 582,
+  "title": "Overcoming Sparsity Artifacts in Crosscoders to Interpret Chat-Tuning",
+  "org": "deepmind",
+  "date": "2025-04-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.02922",
+  "abstract": "Model diffing is the study of how fine-tuning changes a model's representations and internal algorithms. Many behaviors of interest are introduced during fine-tuning, and model diffing offers a promising lens to interpret such behaviors. Crosscoders are a recent model diffing method that learns a shared dictionary of interpretable concepts represented as latent directions in both the base and fine-tuned models, allowing us to track how concepts shift or emerge during fine-tuning. Notably, prior work has observed concepts with no direction in the base model, and it was hypothesized that these model-specific latents were concepts introduced during fine-tuning. However, we identify two issues which stem from the crosscoders L1 training loss that can misattribute concepts as unique to the fine-tuned model, when they really exist in both models. We develop Latent Scaling to flag these issues by more accurately measuring each latent's presence across models. In experiments comparing Gemma 2 2B base and chat models, we observe that the standard crosscoder suffers heavily from these issues. Building on these insights, we train a crosscoder with BatchTopK loss and show that it substantially mitigates these issues, finding more genuinely chat-specific and highly interpretable concepts. We recommend practitioners adopt similar techniques. Using the BatchTopK crosscoder, we successfully identify a set of chat-specific latents that are both interpretable and causally effective, representi",
+  "needs_fetch": false
+ }
+]

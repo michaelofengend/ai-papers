@@ -1,0 +1,39 @@
+{
+  "count": 140,
+  "unique_fetched": 2531,
+  "earliest": "2022-02-02",
+  "latest": "2026-06-06",
+  "by_org": {
+    "anthropic": 12,
+    "openai": 11,
+    "deepmind": 16,
+    "other": 101
+  },
+  "stats": [
+    {
+      "query": "all:\"dangerous capabilities\" AND all:evaluation",
+      "total_reported": 30,
+      "fetched": 30
+    },
+    {
+      "query": "all:\"language model\" AND all:evaluation AND all:benchmark AND all:frontier",
+      "total_reported": 756,
+      "fetched": 756
+    },
+    {
+      "query": "all:\"scaling laws\" AND all:\"language model\"",
+      "total_reported": 635,
+      "fetched": 635
+    },
+    {
+      "query": "all:\"emergent abilities\" OR all:\"capability elicitation\"",
+      "total_reported": 225,
+      "fetched": 225
+    },
+    {
+      "query": "(all:jailbreak OR all:\"adversarial robustness\") AND all:\"language model\" AND all:safety",
+      "total_reported": 924,
+      "fetched": 924
+    }
+  ]
+}

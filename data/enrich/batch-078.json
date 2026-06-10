@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2807,
+  "title": "Naturally Occurring Equivariance in Neural Networks",
+  "org": "openai",
+  "date": "2020-12-08",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00024.004",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2273,
+  "title": "Exploiting prior knowledge about biological macromolecules in cryo-EM structure determination",
+  "org": "deepmind",
+  "date": "2020-12-07",
+  "venue": "IUCrJ",
+  "url": "https://doi.org/10.1107/s2052252520014384",
+  "abstract": "Three-dimensional reconstruction of the electron-scattering potential of biological macromolecules from electron cryo-microscopy (cryo-EM) projection images is an ill-posed problem. The most popular cryo-EM software solutions to date rely on a regularization approach that is based on the prior assumption that the scattering potential varies smoothly over three-dimensional space. Although this approach has been hugely successful in recent years, the amount of prior knowledge that it exploits compares unfavorably with the knowledge about biological structures that has been accumulated over decades of research in structural biology. Here, a regularization framework for cryo-EM structure determination is presented that exploits prior knowledge about biological structures through a convolutional neural network that is trained on known macromolecular structures. This neural network is inserted into the iterative cryo-EM structure-determination process through an approach that is inspired by regularization by denoising. It is shown that the new regularization approach yields better reconstructions than the current state of the art for simulated data, and options to extend this work for application to experimental cryo-EM data are discussed.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2272,
+  "title": "Regional, Layer, and Cell-Type-Specific Connectivity of the Mouse Default Mode Network",
+  "org": "deepmind",
+  "date": "2020-12-07",
+  "venue": "Neuron",
+  "url": "https://doi.org/10.1016/j.neuron.2020.11.011",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2271,
+  "title": "nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation",
+  "org": "deepmind",
+  "date": "2020-12-07",
+  "venue": "Nature Methods",
+  "url": "https://arxiv.org/abs/1904.08128",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2274,
+  "title": "Leverage the Average: an Analysis of KL Regularization in Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-12-06",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://inria.hal.science/hal-03137351",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 2275,
+  "title": "Quantum adiabatic machine learning by zooming into a region of the energy surface",
+  "org": "deepmind",
+  "date": "2020-12-04",
+  "venue": "Physical review. A/Physical review, A",
+  "url": "https://arxiv.org/abs/1908.04480",
+  "abstract": "Recent work has shown that quantum annealing for machine learning, referred to as QAML, can perform comparably to state-of-the-art machine learning methods with a specific application to Higgs boson classification. We propose QAML-Z, an algorithm that iteratively zooms in on a region of the energy surface by mapping the problem to a continuous space and sequentially applying quantum annealing to an augmented set of weak classifiers. Results on a programmable quantum annealer show that QAML-Z matches classical deep neural network performance at small training set sizes and reduces the performance margin between QAML and classical deep neural networks by almost 50% at large training set sizes, as measured by area under the receiver operating characteristic curve. The significant improvement of quantum annealing algorithms for machine learning and the use of a discrete quantum algorithm on a continuous optimization problem both opens a class of problems that can be solved by quantum annealers and suggests the approach in performance of near-term quantum machine learning towards classical benchmarks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2278,
+  "title": "Decision-Making with Uncertainty",
+  "org": "deepmind",
+  "date": "2020-12-01",
+  "venue": "Significance",
+  "url": "https://doi.org/10.1111/1740-9713.01463",
+  "abstract": "Abstract In emergency situations like the coronavirus pandemic, decisions must be made quickly, with only partial information. But good decisions are still possible using risk–benefit analysis. By Peter J. Diggle, Tim Gowers, Frank Kelly and Neil Lawrence",
+  "needs_fetch": false
+ },
+ {
+  "id": 2277,
+  "title": "Syntactic Structure Distillation Pretraining for Bidirectional Encoders",
+  "org": "deepmind",
+  "date": "2020-12-01",
+  "venue": "Transactions of the Association for Computational Linguistics",
+  "url": "https://arxiv.org/abs/2005.13482",
+  "abstract": "Textual representation learners trained on large amounts of data have achieved notable success on downstream tasks; intriguingly, they have also performed well on challenging tests of syntactic competence. Hence, it remains an open question whether scalable learners like BERT can become fully proficient in the syntax of natural language by virtue of data scale alone, or whether they still benefit from more explicit syntactic biases. To answer this question, we introduce a knowledge distillation strategy for injecting syntactic biases into BERT pretraining, by distilling the syntactically informative predictions of a hierarchical—albeit harder to scale—syntactic language model. Since BERT models masked words in bidirectional context, we propose to distill the approximate marginal distribution over words in context from the syntactic LM. Our approach reduces relative error by 2–21% on a diverse set of structured prediction tasks, although we obtain mixed results on the GLUE benchmark. Our findings demonstrate the benefits of syntactic biases, even for representation learners that exploit large amounts of data, and contribute to a better understanding of where syntactic biases are helpful in benchmarks of natural language understanding.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2276,
+  "title": "HIGhER: Improving instruction following with Hindsight Generation for Experience Replay",
+  "org": "deepmind",
+  "date": "2020-12-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/ssci47803.2020.9308603",
+  "abstract": "Language creates a compact representation of the world and allows the description of unlimited situations and objectives through compositionality. While these characterizations may foster instructing, conditioning or structuring interactive agent behavior, it remains an open-problem to correctly relate language understanding and reinforcement learning in even simple instruction following scenarios. This joint learning problem is alleviated through expert demonstrations, auxiliary losses, or neural inductive biases. In this paper, we propose an orthogonal approach called Hindsight Generation for Experience Replay (HIGhER) that extends the Hindsight Experience Replay approach to the language-conditioned policy setting. Whenever the agent does not fulfill its instruction, HIGhER learns to output a new directive that matches the agent trajectory, and it relabels the episode with a positive reward. To do so, HIGhER learns to map a state into an instruction by using past successful trajectories, which removes the need to have external expert interventions to relabel episodes as in vanilla HER. We show the efficiency of our approach in the BabyAI environment, and demonstrate how it complements other instruction following methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2279,
+  "title": "Clinically Applicable Segmentation of Head and Neck Anatomy for Radiotherapy: Deep Learning Algorithm Development and Validation Study (Preprint)",
+  "org": "deepmind",
+  "date": "2020-11-30",
+  "venue": null,
+  "url": "https://doi.org/10.2196/preprints.26151",
+  "abstract": "<sec> <title>BACKGROUND</title> Over half a million individuals are diagnosed with head and neck cancer each year globally. Radiotherapy is an important curative treatment for this disease, but it requires manual time to delineate radiosensitive organs at risk. This planning process can delay treatment while also introducing interoperator variability, resulting in downstream radiation dose differences. Although auto-segmentation algorithms offer a potentially time-saving solution, the challenges in defining, quantifying, and achieving expert performance remain. </sec> <sec> <title>OBJECTIVE</title> Adopting a deep learning approach, we aim to demonstrate a 3D U-Net architecture that achieves expert-level performance in delineating 21 distinct head and neck organs at risk commonly segmented in clinical practice. </sec> <sec> <title>METHODS</title> The model was trained on a data set of 663 deidentified computed tomography scans acquired in routine clinical practice and with both segmentations taken from clinical practice and segmentations created by experienced radiographers as part of this research, all in accordance with consensus organ at risk definitions. </sec> <sec> <title>RESULTS</title> We demonstrated the model’s clinical applicability by assessing its performance on a test set of 21 computed tomography scans from clinical practice, each with 21 organs at risk segmented by 2 independent experts. We also introduced surface Dice similarity coefficient, a new metric for ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2280,
+  "title": "Equivariant Learning of Stochastic Fields: Gaussian Processes and Steerable Conditional Neural Processes",
+  "org": "deepmind",
+  "date": "2020-11-25",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2011.12916",
+  "abstract": "Motivated by objects such as electric fields or fluid streams, we study the problem of learning stochastic fields, i.e. stochastic processes whose samples are fields like those occurring in physics and engineering. Considering general transformations such as rotations and reflections, we show that spatial invariance of stochastic fields requires an inference model to be equivariant. Leveraging recent advances from the equivariance literature, we study equivariance in two classes of models. Firstly, we fully characterise equivariant Gaussian processes. Secondly, we introduce Steerable Conditional Neural Processes (SteerCNPs), a new, fully equivariant member of the Neural Process family. In experiments with Gaussian process vector fields, images, and real-world weather data, we observe that SteerCNPs significantly improve the performance of previous models and equivariance leads to improvements in transfer learning tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2808,
+  "title": "Variation in reversal learning by three generalist mesocarnivores",
+  "org": "openai",
+  "date": "2020-11-24",
+  "venue": "Animal Cognition",
+  "url": "https://doi.org/10.1007/s10071-020-01438-4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2281,
+  "title": "A general model of hippocampal and dorsal striatal learning and decision making",
+  "org": "deepmind",
+  "date": "2020-11-23",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2007981117",
+  "abstract": "Humans and other animals use multiple strategies for making decisions. Reinforcement-learning theory distinguishes between stimulus-response (model-free; MF) learning and deliberative (model-based; MB) planning. The spatial-navigation literature presents a parallel dichotomy between navigation strategies. In \"response learning,\" associated with the dorsolateral striatum (DLS), decisions are anchored to an egocentric reference frame. In \"place learning,\" associated with the hippocampus, decisions are anchored to an allocentric reference frame. Emerging evidence suggests that the contribution of hippocampus to place learning may also underlie its contribution to MB learning by representing relational structure in a cognitive map. Here, we introduce a computational model in which hippocampus subserves place and MB learning by learning a \"successor representation\" of relational structure between states; DLS implements model-free response learning by learning associations between actions and egocentric representations of landmarks; and action values from either system are weighted by the reliability of its predictions. We show that this model reproduces a range of seemingly disparate behavioral findings in spatial and nonspatial decision tasks and explains the effects of lesions to DLS and hippocampus on these tasks. Furthermore, modeling place cells as driven by boundaries explains the observation that, unlike navigation guided by landmarks, navigation guided by boundaries is rob",
+  "needs_fetch": false
+ },
+ {
+  "id": 2810,
+  "title": "Very Deep VAEs Generalize Autoregressive Models and Can Outperform Them\\n on Images",
+  "org": "openai",
+  "date": "2020-11-20",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2011.10650",
+  "abstract": "We present a hierarchical VAE that, for the first time, generates samples\\nquickly while outperforming the PixelCNN in log-likelihood on all natural image\\nbenchmarks. We begin by observing that, in theory, VAEs can actually represent\\nautoregressive models, as well as faster, better models if they exist, when\\nmade sufficiently deep. Despite this, autoregressive models have historically\\noutperformed VAEs in log-likelihood. We test if insufficient depth explains why\\nby scaling a VAE to greater stochastic depth than previously explored and\\nevaluating it CIFAR-10, ImageNet, and FFHQ. In comparison to the PixelCNN,\\nthese very deep VAEs achieve higher likelihoods, use fewer parameters, generate\\nsamples thousands of times faster, and are more easily applied to\\nhigh-resolution images. Qualitative studies suggest this is because the VAE\\nlearns efficient hierarchical visual representations. We release our source\\ncode and models at https://github.com/openai/vdvae.\\n",
+  "needs_fetch": false
+ },
+ {
+  "id": 2809,
+  "title": "All the News That’s Fit to Fabricate: AI-Generated Text as a Tool of Media Misinformation",
+  "org": "openai",
+  "date": "2020-11-20",
+  "venue": "Journal of Experimental Political Science",
+  "url": "https://doi.org/10.1017/xps.2020.37",
+  "abstract": "Abstract Online misinformation has become a constant; only the way actors create and distribute that information is changing. Advances in artificial intelligence (AI) such as GPT-2 mean that actors can now synthetically generate text in ways that mimic the style and substance of human-created news stories. We carried out three original experiments to study whether these AI-generated texts are credible and can influence opinions on foreign policy. The first evaluated human perceptions of AI-generated text relative to an original story. The second investigated the interaction between partisanship and AI-generated news. The third examined the distributions of perceived credibility across different AI model sizes. We find that individuals are largely incapable of distinguishing between AI- and human-generated text; partisanship affects the perceived credibility of the story; and exposure to the text does little to change individuals’ policy views. The findings have important implications in understanding AI in online misinformation campaigns.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2282,
+  "title": "Rotational dynamics in motor cortex are consistent with a feedback controller",
+  "org": "deepmind",
+  "date": "2020-11-20",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2020.11.17.387043",
+  "abstract": "Summary Recent studies hypothesize that motor cortical (MC) dynamics are generated largely through its recurrent connections based on observations that MC activity exhibits rotational structure. However, behavioural and neurophysiological studies suggest that MC behaves like a feedback controller where continuous sensory feedback and interactions with other brain areas contribute substantially to MC processing. We investigated these apparently conflicting theories by building recurrent neural networks that controlled a model arm and received sensory feedback about the limb. Networks were trained to counteract perturbations to the limb and to reach towards spatial targets. Network activities and sensory feedback signals to the network exhibited rotational structure even when the recurrent connections were removed. Furthermore, neural recordings in monkeys performing similar tasks also exhibited rotational structure not only in MC but also in somatosensory cortex. Our results argue that rotational structure may reflect dynamics throughout voluntary motor circuits involved in online control of motor actions. Highlights Neural networks with sensory feedback generate rotational dynamics during simulated posture and reaching tasks Rotational dynamics are observed even without recurrent connections in the network Similar dynamics are observed not only in motor cortex, but also in somatosensory cortex of non-huma n primates as well as sensory feedback signals Results highlight rotati",
+  "needs_fetch": false
+ },
+ {
+  "id": 2811,
+  "title": "Understanding RL vision",
+  "org": "openai",
+  "date": "2020-11-17",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00029",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2283,
+  "title": "Observing Localization in a 2D Quasicrystalline Optical Lattice",
+  "org": "deepmind",
+  "date": "2020-11-13",
+  "venue": "Physical Review Letters",
+  "url": "https://arxiv.org/abs/2001.10912",
+  "abstract": "Quasicrystals are long-range ordered but not periodic, representing an interesting middle ground between order and disorder. We experimentally and numerically study the localization transition in the ground state of noninteracting and weakly interacting bosons in an eightfold symmetric quasicrystalline optical lattice. In contrast to typically used real space in situ techniques, we probe the system in momentum space by recording matter wave diffraction patterns. Shallow lattices lead to extended states whereas we observe a localization transition at a critical lattice depth of V_{0}≈1.78(2)E_{rec} for the noninteracting system. Our measurements and Gross-Pitaevskii simulations demonstrate that in interacting systems the transition is shifted to deeper lattices, as expected from superfluid order counteracting localization. Quasiperiodic potentials, lacking conventional rare regions, provide the ideal testing ground to realize many-body localization in 2D.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2284,
+  "title": "A model of egocentric to allocentric understanding in mammalian brains",
+  "org": "deepmind",
+  "date": "2020-11-12",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2020.11.11.378141",
+  "abstract": "In the mammalian brain, allocentric representations support efficient self-location and flexible navigation. A number of distinct populations of these spatial responses have been identified but no unified function has been shown to account for their emergence. Here we developed a network, trained with a simple predictive objective, that was capable of mapping egocentric information into an allocentric spatial reference frame. The prediction of visual inputs was sufficient to drive the appearance of spatial representations resembling those observed in rodents: head direction, boundary vector, and place cells, along with the recently discovered egocentric boundary cells, suggesting predictive coding as a principle for their emergence in animals. Strikingly, the network learned a solution for head direction tracking and stabilisation convergent with known biological connectivity. Moreover, like mammalian representations, responses were robust to environmental manipulations, including exposure to novel settings. In contrast to existing reinforcement learning approaches, agents equipped with this network were able to flexibly reuse learnt behaviours —adapting rapidly to unfamiliar environments. Thus, our results indicate that these representations, derived from a simple egocentric predictive framework, form an efficient basis-set for cognitive mapping.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2285,
+  "title": "Navigating the landscape of multiplayer games",
+  "org": "deepmind",
+  "date": "2020-11-05",
+  "venue": "Nature Communications",
+  "url": "https://arxiv.org/abs/2005.01642",
+  "abstract": "Multiplayer games have long been used as testbeds in artificial intelligence research, aptly referred to as the Drosophila of artificial intelligence. Traditionally, researchers have focused on using well-known games to build strong agents. This progress, however, can be better informed by characterizing games and their topological landscape. Tackling this latter question can facilitate understanding of agents and help determine what game an agent should target next as part of its training. Here, we show how network measures applied to response graphs of large-scale games enable the creation of a landscape of games, quantifying relationships between games of varying sizes and characteristics. We illustrate our findings in domains ranging from canonical games to complex empirical games capturing the performance of trained agents pitted against one another. Our results culminate in a demonstration leveraging this information to generate new and interesting games, including mixtures of empirical games synthesized from real world games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2287,
+  "title": "Approximating Network Centrality Measures Using Node Embedding and Machine Learning",
+  "org": "deepmind",
+  "date": "2020-11-03",
+  "venue": "IEEE Transactions on Network Science and Engineering",
+  "url": "https://arxiv.org/abs/2006.16392",
+  "abstract": "Extracting information from real-world large networks is a key challenge nowadays. For instance, computing a node centrality may become unfeasible depending on the intended centrality due to its computational cost. One solution is to develop fast methods capable of approximating network centralities. Here, we propose an approach for efficiently approximating node centralities for large networks using Neural Networks and Graph Embedding techniques. Our proposed model, entitled Network Centrality Approximation using Graph Embedding (NCA-GE), uses the adjacency matrix of a graph and a set of features for each node (here, we use only the degree) as input and computes the approximate desired centrality rank for every node. NCA-GE has a time complexity of O(|E|), E being the set of edges of a graph, making it suitable for large networks. NCA-GE also trains pretty fast, requiring only a set of a thousand small synthetic scale-free graphs (ranging from 100 to 1000 nodes each), and it works well for different node centralities, network sizes, and topologies. Finally, we compare our approach to the state-of-the-art method that approximates centrality ranks using the degree and eigenvector centralities as input, where we show that the NCA-GE outperforms the former in a variety of scenarios.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2286,
+  "title": "Embracing Change: Continual Learning in Deep Neural Networks",
+  "org": "deepmind",
+  "date": "2020-11-03",
+  "venue": "Trends in Cognitive Sciences",
+  "url": "https://doi.org/10.1016/j.tics.2020.09.004",
+  "abstract": "Modern machine learning excels at training powerful models from fixed datasets and stationary environments, often exceeding human-level ability.Yet, these models fail to emulate the process of human learning, which is efficient, robust, and able to learn incrementally, from sequential experience in a non-stationary world.Insights into this limitation can be gleaned from the nature of neural network optimization, which implies that continual learning techniques could radically improve deep learning as well as open the door to new application areas.Promising approaches for continual learning can be found at the most granular level, with gradient-based methods, as well as at the architectural level, with modular and memory-based approaches. We also consider meta-learning as a potentially important direction. Artificial intelligence research has seen enormous progress over the past few decades, but it predominantly relies on fixed datasets and stationary environments. Continual learning is an increasingly relevant area of study that asks how artificial systems might learn sequentially, as biological systems do, from a continuous stream of correlated data. In the present review, we relate continual learning to the learning dynamics of neural networks, highlighting the potential it has to considerably improve data efficiency. We further consider the many new biologically inspired approaches that have emerged in recent years, focusing on those that utilize regularization, modularity",
+  "needs_fetch": false
+ },
+ {
+  "id": 2289,
+  "title": "Sparse GPU Kernels for Deep Learning",
+  "org": "deepmind",
+  "date": "2020-11-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2006.10901",
+  "abstract": "Scientific workloads have traditionally exploited high levels of sparsity to accelerate computation and reduce memory requirements. While deep neural networks can be made sparse, achieving practical speedups on GPUs is difficult because these applications have relatively moderate levels of sparsity that are not sufficient for existing sparse kernels to outperform their dense counterparts. In this work, we study sparse matrices from deep learning applications and identify favorable properties that can be exploited to accelerate computation. Based on these insights, we develop high-performance GPU kernels for two sparse matrix operations widely applicable in neural networks: sparse matrix-dense matrix multiplication and sampled dense- dense matrix multiplication. Our kernels reach 27% of singleprecision peak on Nvidia V100 GPUs. Using our kernels, we demonstrate sparse Transformer and MobileNet models that achieve 1.2-2.1× speedups and up to 12.8× memory savings without sacrificing accuracy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2288,
+  "title": "WaveNetEQ — Packet Loss Concealment with WaveRNN",
+  "org": "deepmind",
+  "date": "2020-11-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/ieeeconf51394.2020.9443419",
+  "abstract": "We present WaveNetEQ, a novel packet loss concealment method based on a WaveRNN architecture. The model is conditioned on a log-mel spectrogram of the past signal to extract slow moving features, like voice characteristics and prosody and achieves significantly better quality than pattern based methods for medium and long term packet loss. Through aggressive sparsification the model is efficient enough to run on a phone.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2290,
+  "title": "A Distribution Dependent Analysis of Meta-Learning",
+  "org": "deepmind",
+  "date": "2020-10-31",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2011.00344",
+  "abstract": "A key problem in the theory of meta-learning is to understand how the task distributions influence transfer risk, the expected error of a meta-learner on a new task drawn from the unknown task distribution. In this paper, focusing on fixed design linear regression with Gaussian noise and a Gaussian task (or parameter) distribution, we give distribution-dependent lower bounds on the transfer risk of any algorithm, while we also show that a novel, weighted version of the so-called biased regularized regression method is able to match these lower bounds up to a fixed constant factor. Notably, the weighting is derived from the covariance of the Gaussian task distribution. Altogether, our results provide a precise characterization of the difficulty of meta-learning in this Gaussian setting. While this problem setting may appear simple, we show that it is rich enough to unify the \"parameter sharing\" and \"representation learning\" streams of meta-learning; in particular, representation learning is obtained as the special case when the covariance matrix of the task distribution is unknown. For this case we propose to adopt the EM method, which is shown to enjoy efficient updates in our case. The paper is completed by an empirical study of EM. In particular, our experimental results show that the EM algorithm can attain the lower bound as the number of tasks grows, while the algorithm is also successful in competing with its alternatives when used in a representation learning context.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2291,
+  "title": "Representation learning for improved interpretability and classification accuracy of clinical factors from EEG",
+  "org": "deepmind",
+  "date": "2020-10-28",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.15274",
+  "abstract": "Despite extensive standardization, diagnostic interviews for mental health disorders encompass substantial subjective judgment. Previous studies have demonstrated that EEG-based neural measures can function as reliable objective correlates of depression, or even predictors of depression and its course. However, their clinical utility has not been fully realized because of 1) the lack of automated ways to deal with the inherent noise associated with EEG data at scale, and 2) the lack of knowledge of which aspects of the EEG signal may be markers of a clinical disorder. Here we adapt an unsupervised pipeline from the recent deep representation learning literature to address these problems by 1) learning a disentangled representation using $β$-VAE to denoise the signal, and 2) extracting interpretable features associated with a sparse set of clinical labels using a Symbol-Concept Association Network (SCAN). We demonstrate that our method is able to outperform the canonical hand-engineered baseline classification method on a number of factors, including participant age and depression diagnosis. Furthermore, our method recovers a representation that can be used to automatically extract denoised Event Related Potentials (ERPs) from novel, single EEG trajectories, and supports fast supervised re-mapping to various clinical labels, allowing clinicians to re-use a single EEG representation regardless of updates to the standardized diagnostic system. Finally, single factors of the lear",
+  "needs_fetch": false
+ },
+ {
+  "id": 2812,
+  "title": "Behavior Priors for Efficient Reinforcement Learning",
+  "org": "openai",
+  "date": "2020-10-27",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.14274",
+  "abstract": "As we deploy reinforcement learning agents to solve increasingly challenging problems, methods that allow us to inject prior knowledge about the structure of the world and effective solution strategies becomes increasingly important. In this work we consider how information and architectural constraints can be combined with ideas from the probabilistic modeling literature to learn behavior priors that capture the common movement and interaction patterns that are shared across a set of related tasks or contexts. For example the day-to day behavior of humans comprises distinctive locomotion and manipulation patterns that recur across many different situations and goals. We discuss how such behavior patterns can be captured using probabilistic trajectory models and how these can be integrated effectively into reinforcement learning schemes, e.g.\\ to facilitate multi-task and transfer learning. We then extend these ideas to latent variable models and consider a formulation to learn hierarchical priors that capture different aspects of the behavior in reusable modules. We discuss how such latent variable formulations connect to related work on hierarchical reinforcement learning (HRL) and mutual information and curiosity based objectives, thereby offering an alternative perspective on existing ideas. We demonstrate the effectiveness of our framework by applying it to a range of simulated continuous control domains.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2294,
+  "title": "A Machine of Few Words: Interactive Speaker Recognition with Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2020-10-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2008.03127",
+  "abstract": "Speaker recognition is a well known and studied task in the speech processing domain. It has many applications, either for security or speaker adaptation of personal devices. In this paper, we present a new paradigm for automatic speaker recognition that we call Interactive Speaker Recognition (ISR). In this paradigm, the recognition system aims to incrementally build a representation of the speakers by requesting personalized utterances to be spoken in contrast to the standard text-dependent or text-independent schemes. To do so, we cast the speaker recognition task into a sequential decision-making problem that we solve with Reinforcement Learning. Using a standard dataset, we show that our method achieves excellent performance while using little speech signal amounts. This method could also be applied as an utterance selection mechanism for building speech synthesis systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2293,
+  "title": "XLVIN: eXecuted Latent Value Iteration Nets",
+  "org": "deepmind",
+  "date": "2020-10-25",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2010.13146",
+  "abstract": "Value Iteration Networks (VINs) have emerged as a popular method to incorporate planning algorithms within deep reinforcement learning, enabling performance improvements on tasks requiring long-range reasoning and understanding of environment dynamics. This came with several limitations, however: the model is not incentivised in any way to perform meaningful planning computations, the underlying state space is assumed to be discrete, and the Markov decision process (MDP) is assumed fixed and known. We propose eXecuted Latent Value Iteration Networks (XLVINs), which combine recent developments across contrastive self-supervised learning, graph representation learning and neural algorithmic reasoning to alleviate all of the above limitations, successfully deploying VIN-style models on generic environments. XLVINs match the performance of VIN-like models when the underlying MDP is discrete, fixed and known, and provides significant improvements to model-free baselines across three general MDP setups.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2292,
+  "title": "A meta-learning approach to (re)discover plasticity rules that carve a desired function into a neural network",
+  "org": "deepmind",
+  "date": "2020-10-25",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2020.10.24.353409",
+  "abstract": "Abstract The search for biologically faithful synaptic plasticity rules has resulted in a large body of models. They are usually inspired by – and fitted to – experimental data, but they rarely produce neural dynamics that serve complex functions. These failures suggest that current plasticity models are still under-constrained by existing data. Here, we present an alternative approach that uses meta-learning to discover plausible synaptic plasticity rules. Instead of experimental data, the rules are constrained by the functions they implement and the structure they are meant to produce. Briefly, we parameterize synaptic plasticity rules by a Volterra expansion and then use supervised learning methods (gradient descent or evolutionary strategies) to minimize a problem-dependent loss function that quantifies how effectively a candidate plasticity rule transforms an initially random network into one with the desired function. We first validate our approach by re-discovering previously described plasticity rules, starting at the single-neuron level and “Oja’s rule”, a simple Hebbian plasticity rule that captures the direction of most variability of inputs to a neuron (i.e., the first principal component). We expand the problem to the network level and ask the framework to find Oja’s rule together with an anti-Hebbian rule such that an initially random two-layer firing-rate network will recover several principal components of the input space after learning. Next, we move to netwo",
+  "needs_fetch": false
+ }
+]

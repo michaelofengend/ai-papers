@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1250,
+  "title": "Generative AI for climate governance and acceptability-constrained policy design",
+  "org": "deepmind",
+  "date": "2026-03-23",
+  "venue": "npj Climate Action",
+  "url": "https://doi.org/10.1038/s44168-026-00362-6",
+  "abstract": "Climate policies often fail when they clash with cultural values, social identities, and fairness perceptions. We propose Acceptability-Constrained Climate Policy Design (ACCPD), using large language models as \"cultural world models\" to simulate public responses before implementation. By embedding LLMs in generative agent-based models and physical system simulators, ACCPD aims to enable policymakers to co-optimize for climate-policy efficacy and social legitimacy. We discuss methodological limitations regarding representation and LLM opacity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1249,
+  "title": "From controversy to confusion: A commentary on how Marcus et al.’s (2025) Psychopathic Boldness Scale further muddies the boldness construct.",
+  "org": "deepmind",
+  "date": "2026-03-23",
+  "venue": "Psychological Assessment",
+  "url": "https://doi.org/10.1037/pas0001442",
+  "abstract": "The Psychopathic Boldness Scale (see record 2025-96918-001) is a newly developed 21-item self-report measure intended to assess boldness as it manifests within psychopathy. In this commentary, we raise concerns about the PBS's construct validity, particularly its conceptual and empirical overlap with antagonism-related traits. Drawing on theoretical analysis and results from Marcus et al., we evaluated how PBS items function relative to the Triarchic Psychopathy Measure. Intraclass correlations of overall correlational profiles revealed that the nomological network of the PBS more closely aligns with Triarchic Psychopathy Measure meanness than with boldness. Rather than clarifying the role of boldness within psychopathy, the PBS repackages maladaptive content typically captured by meanness/antagonism under the boldness label and results in a case of the jingle fallacy. We argue that this conflation undermines theoretical precision and sets the stage for a more difficult-to-integrate literature. (PsycInfo Database Record (c) 2026 APA, all rights reserved).",
+  "needs_fetch": false
+ },
+ {
+  "id": 1248,
+  "title": "From \"Crutch\" to Coach: Patterns of Sustained Engagement and Deepening Support in AI Wellbeing Coaching",
+  "org": "deepmind",
+  "date": "2026-03-23",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-8949770/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 650,
+  "title": "Lie to Me: How Faithful Is Chain-of-Thought Reasoning in Reasoning Models?",
+  "org": "other",
+  "date": "2026-03-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.22582",
+  "abstract": "Chain-of-thought (CoT) reasoning has been proposed as a transparency mechanism for large language models in safety-critical deployments, yet its effectiveness depends on faithfulness (whether models accurately verbalize the factors that actually influence their outputs), a property that prior evaluations have examined in only two proprietary models, finding acknowledgment rates as low as 25% for Claude 3.7 Sonnet and 39% for DeepSeek-R1. To extend this evaluation across the open-weight ecosystem, this study tests 12 open-weight reasoning models spanning 9 architectural families (7B-685B parameters) on 498 multiple-choice questions from MMLU and GPQA Diamond, injecting six categories of reasoning hints (sycophancy, consistency, visual pattern, metadata, grader hacking, and unethical information) and measuring the rate at which models acknowledge hint influence in their CoT when hints successfully alter answers. Across 41,832 inference runs, overall faithfulness rates range from 39.7% (Seed-1.6-Flash) to 89.9% (DeepSeek-V3.2-Speciale) across model families, with consistency hints (35.5%) and sycophancy hints (53.9%) exhibiting the lowest acknowledgment rates. Training methodology and model family predict faithfulness more strongly than parameter count, and keyword-based analysis reveals a striking gap between thinking-token acknowledgment (approximately 87.5%) and answer-text acknowledgment (approximately 28.6%), suggesting that models internally recognize hint influence but sy",
+  "needs_fetch": false
+ },
+ {
+  "id": 289,
+  "title": "Privacy-Preserving Reinforcement Learning from Human Feedback via Decoupled Reward Modeling",
+  "org": "other",
+  "date": "2026-03-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.22563",
+  "abstract": "Preference-based fine-tuning has become an important component in training large language models, and the data used at this stage may contain sensitive user information. A central question is how to design a differentially private pipeline that is well suited to the distinct structure of reinforcement learning from human feedback. We propose a privacy-preserving framework that imposes differential privacy only on reward learning and derives the final policy from the resulting private reward model. Theoretically, we study the suboptimality gap and show that privacy contributes an additional additive term beyond the usual non-private statistical error. We also establish a minimax lower bound and show that the dominant term changes with sample size and privacy level, which in turn characterizes regimes in which the upper bound is rate-optimal up to logarithmic factors. Empirically, synthetic experiments confirm the scaling predicted by the theory, and experiments on the Anthropic HH-RLHF dataset using the Gemma-2B-IT model show stronger private alignment performance than existing differentially private baseline methods across privacy budgets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 137,
+  "title": "Measuring and improving coding audit realism with deployment resources",
+  "org": "anthropic",
+  "date": "2026-03-23",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/coding-audit-realism/",
+  "abstract": "We study realism win rate, a metric for measuring how distinguishable Petri audit transcripts are from real deployment interactions. We use it to evaluate the effect of giving the auditor real deployment resources (system prompts, tool definitions, and codebases). Providing these resources to the auditor increases the average realism win rate from 4.6% to 32.8% for reward hacking audits, and doesn’t significantly change hack rate.",
+  "needs_fetch": false
+ },
+ {
+  "id": 21,
+  "title": "Vibe physics: The AI grad student",
+  "org": "anthropic",
+  "date": "2026-03-23",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/vibe-physics",
+  "abstract": "Can AI do theoretical physics? I decided to find out by supervising Claude through a real research calculation, start to finish, without ever touching a file myself.",
+  "needs_fetch": false
+ },
+ {
+  "id": 20,
+  "title": "Long-running Claude for scientific computing",
+  "org": "anthropic",
+  "date": "2026-03-23",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/long-running-Claude",
+  "abstract": "A practical guide to running Claude Code for multi-day scientific tasksâtest oracles, persistent memory, and orchestration patterns.",
+  "needs_fetch": false
+ },
+ {
+  "id": 19,
+  "title": "Introducing our Science Blog",
+  "org": "anthropic",
+  "date": "2026-03-23",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/introducing-anthropic-science",
+  "abstract": "Weâre launching a new blog about AI and science. Weâll share research happening at Anthropic and elsewhere, collaborations with external researchers and labs, and discuss practical workflows for scientists using AI in their own work.",
+  "needs_fetch": false
+ },
+ {
+  "id": 680,
+  "title": "Strategic Tradeoffs Between Humans and AI in Multi-Agent Bargaining",
+  "org": "deepmind",
+  "date": "2026-03-22",
+  "venue": "ACM IUI 2026",
+  "url": "https://dl.acm.org/doi/10.1145/3742413.3789078",
+  "abstract": "Markets increasingly accommodate large language models (LLMs) as autonomous decision-making agents. As this transition occurs, it becomes critical to evaluate how these agents behave relative to their human and task-specific statistical predecessors. In this work, we present results from an empirical study comparing humans (N=216), multiple frontier LLMs, and customized Bayesian agents in dynamic multi-player bargaining games under identical conditions. Bayesian agents extract the highest surplus with aggressive trade proposals that are frequently rejected. Humans and LLMs achieve comparable aggregate surplus within their groups, but exhibit different trading strategies. LLMs favor conservative, concessionary proposals that are usually accepted by other LLMs, while humans propose trades that are consistent with fairness norms but are more likely to be rejected. These findings highlight that performance parity—a common benchmark in agent evaluation—can mask substantive procedural differences in how LLMs behave in complex multi-agent interactions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2660,
+  "title": "Rigidity Matroids and Linear Algebraic Matroids with Applications to Matrix Completion and Tensor Codes",
+  "org": "openai",
+  "date": "2026-03-20",
+  "venue": "COMBINATORICA",
+  "url": "https://doi.org/10.1007/s00493-026-00208-z",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1174,
+  "title": "Must Read: A Comprehensive Survey of Computational Persuasion",
+  "org": "anthropic",
+  "date": "2026-03-19",
+  "venue": "ACM Computing Surveys",
+  "url": "https://arxiv.org/abs/2505.07775",
+  "abstract": "Persuasion is a fundamental aspect of communication, influencing decision-making across diverse contexts, from everyday conversations to high-stakes scenarios such as politics, marketing, and law. The rise of conversational Artificial Intelligence (AI) systems has significantly expanded the scope of persuasion, introducing both opportunities and risks. AI-driven persuasion can be leveraged for beneficial applications, but also poses threats through unethical influence. Moreover, AI systems are not only persuaders, but also susceptible to persuasion, making them vulnerable to adversarial attacks and bias reinforcement. Despite rapid advancements in AI-generated persuasive content, our understanding of what makes persuasion effective remains limited due to its inherently subjective and context-dependent nature. In this survey, we provide a comprehensive overview of persuasion, structured around three key perspectives: (1) AI as a Persuader , which explores AI-generated persuasive content and its applications; (2) AI as a Persuadee , which examines AI’s susceptibility to influence and manipulation; and (3) AI as a Persuasion Judge , which analyzes AI’s role in evaluating persuasive strategies, detecting manipulation, and ensuring ethical persuasion. We introduce a taxonomy for persuasion research and discuss key challenges for future research to enhance the safety, fairness, and effectiveness of AI-powered persuasion while addressing the risks posed by increasingly capable langu",
+  "needs_fetch": false
+ },
+ {
+  "id": 924,
+  "title": "How we monitor internal coding agents for misalignment",
+  "org": "openai",
+  "date": "2026-03-19",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/",
+  "abstract": "How OpenAI uses chain-of-thought monitoring to study misalignment in internal coding agents—analyzing real-world deployments to detect risks and strengthen AI safety safeguards.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1251,
+  "title": "Large language models possess some ecological knowledge, but how much?",
+  "org": "deepmind",
+  "date": "2026-03-17",
+  "venue": "Ecological Informatics",
+  "url": "https://doi.org/10.1016/j.ecoinf.2026.103699",
+  "abstract": "Large Language Models (LLMs) have shown remarkable capabilities in question answering across various domains, yet their effectiveness in ecological knowledge remains underexplored. Understanding their potential to recall and synthesize ecological information is crucial as AI tools become increasingly integrated into scientific workflows. Here, we assess the ecological knowledge of two LLMs, Gemini 1.5 Pro and GPT-4o , across a suite of ecologically focused tasks. These tasks evaluate an LLM’s ability to predict species presence, generate range maps, list critically endangered species, classify threats, and estimate species traits. We introduce a new benchmark dataset to quantify LLM performance against expert-derived data. While the LLMs tested outperform naive baselines, achieving around 20 percentage points higher accuracy in species presence prediction, they reach only a third of the mean F1 score for range map generation and improve threat classification by just around 10 points over random guessing. These results highlight both the promise and challenges of applying LLMs in ecology. Our findings suggest that domain-specific fine-tuning is necessary to improve ecological knowledge in LLMs. By providing a repeatable evaluation framework, our benchmark dataset will facilitate future research in this area, helping to refine AI applications for ecological science. • We introduce a benchmark to assess ecological knowledge in LLMs. • Two LLMs, Gemini Pro 1.5 and GPT-4o, are eva",
+  "needs_fetch": false
+ },
+ {
+  "id": 651,
+  "title": "Catching rationalization in the act: detecting motivated reasoning before and after CoT via activation probing",
+  "org": "other",
+  "date": "2026-03-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.17199",
+  "abstract": "Large language models (LLMs) can produce chains of thought (CoT) that do not accurately reflect the actual factors driving their answers. In multiple-choice settings with an injected hint favoring a particular option, models may shift their final answer toward the hinted option and produce a CoT that rationalizes the response without acknowledging the hint - an instance of motivated reasoning. We study this phenomenon across multiple LLM families and datasets demonstrating that motivated reasoning can be identified by probing internal activations even in cases when it cannot be easily determined from CoT. Using supervised probes trained on the model's residual stream, we show that (i) pre-generation probes, applied before any CoT tokens are generated, predict motivated reasoning as well as a LLM-based CoT monitor that accesses the full CoT trace, and (ii) post-generation probes, applied after CoT generation, outperform the same monitor. Together, these results show that motivated reasoning is detected more reliably from internal representations than from CoT monitoring. Moreover, pre-generation probing can flag motivated behavior early, potentially avoiding unnecessary generation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 290,
+  "title": "Information Revelation and Alignment Faking in Stochastic Differential Games",
+  "org": "other",
+  "date": "2026-03-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.17197",
+  "abstract": "In competitive games with private objectives, actions can reveal information about hidden parameters. Quantifying such information revelation, however, is substantially more challenging, since it depends not only on the opponent's hidden parameter but also on the opponent's model of the game. We study this problem via a two-player linear-quadratic stochastic differential game under partial information, in which each player knows its own coupling parameter and models the opponent's hidden parameter through a prior. Starting from the full-information game, we characterize the Nash equilibrium by coupled Riccati equations. We then define baseline implementable controls by averaging the equilibrium under each player's prior. Building on this baseline, we formulate an alignment-faking control problem in which one player trades off fidelity to its implementable policy against information acquisition about the opponent's hidden parameter. The information incentive is constructed from a proxy Fisher information matrix based only on the player's available model. This leads to a tractable saddle-point formulation with semi-explicit control characterization through Riccati systems. Numerical illustrations show that alignment faking can substantially improve information gain over baseline play when the faker's model is accurate, but often at the cost of greater detectability. They also show that the proxy Fisher information can systematically differ from the true information under model ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1252,
+  "title": "Reply to Vankov et al.: Reasoning traces are linked to accuracy and capture key dimensions of problem complexity",
+  "org": "deepmind",
+  "date": "2026-03-16",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2603574123",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2661,
+  "title": "HALO: Hardware-Aware Quantization with Low Critical-Path-Delay Weights for LLM Acceleration",
+  "org": "openai",
+  "date": "2026-03-14",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v40i27.39406",
+  "abstract": "Quantization is critical for efficiently deploying large language models (LLMs). Yet conventional methods remain hardware-agnostic, limited to bit-width constraints, and do not account for intrinsic circuit characteristics such as the timing behaviors and energy profiles of Multiply-Accumulate (MAC) units. This disconnect from circuit-level behavior limits the ability to exploit available timing margins and energy-saving opportunities, reducing the overall efficiency of deployment on modern accelerators. To address these limitations, we propose HALO, a versatile framework for Hardware-Aware Post-Training Quantization (PTQ). Unlike traditional methods, HALO explicitly incorporates detailed hardware characteristics, including critical-path timing and power consumption, into its quantization approach. HALO strategically selects weights with low critical-path-delays enabling higher operational frequencies and dynamic frequency scaling without disrupting the architecture's dataflow. Remarkably, HALO achieves these improvements with only a few dynamic voltage and frequency scaling (DVFS) adjustments, ensuring simplicity and practicality in deployment. Additionally, by reducing switching activity within the MAC units, HALO effectively lowers energy consumption. Evaluations on accelerators such as Tensor Processing Units (TPUs) and Graphics Processing Units (GPUs) demonstrate that HALO significantly enhances inference efficiency, achieving average performance improvements of 270% and",
+  "needs_fetch": false
+ },
+ {
+  "id": 1175,
+  "title": "Faster Game Solving via Hyperparameter Schedules",
+  "org": "anthropic",
+  "date": "2026-03-14",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v40i20.38784",
+  "abstract": "Counterfactual regret minimization (CFR) algorithms are a foundational class of methods for solving imperfect-information games, with the time average of their iterates converging to a Nash equilibrium in two-player zero-sum games. Prior state-of-the-art variants, Discounted CFR (DCFR) and Predictive CFR+ (PCFR+), achieved the fastest known practical performance by improving convergence rates over vanilla CFR through discounting early iterations with a fixed discounting scheme. More recently, Dynamic DCFR (DDCFR) introduced agent-learned dynamic discounting schemes to further accelerate convergence, at the cost of increased complexity. To address this, we propose Hyperparameter Schedules (HSs), a remarkably simple, training-free framework that dynamically adjusts CFR discounting over time. HSs aggressively downweight early updates and gradually transition to trusting late-stage strategies, leading to substantially faster convergence with only a few lines of code modifications. We show that HSs derived from just three small extensive-form games generalize effectively to 17 diverse games (including large-scale realistic poker) in both extensive-form and normal-form settings, without any game-specific tuning. Our method establishes a new state of the art for solving two-player zero-sum games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 652,
+  "title": "Noticing the Watcher: LLM Agents Can Infer CoT Monitoring from Blocking Feedback",
+  "org": "other",
+  "date": "2026-03-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.16928",
+  "abstract": "Chain-of-thought (CoT) monitoring is proposed as a method for overseeing the internal reasoning of language-model agents. Prior work has shown that when models are explicitly informed that their reasoning is being monitored, or are fine-tuned to internalize this fact, they may learn to obfuscate their CoTs in ways that allow them to evade CoT-based monitoring systems. We ask whether reasoning agents can autonomously infer that their supposedly private CoT is under surveillance, and whether this awareness leads to strategic evasion, without any explicit training or instructions. In a multi-episode agentic framework, models pursue both a primary task and a concealed side task while being told that their reasoning is private; a hidden CoT monitor blocks episodes when suspicious reasoning is detected. We find that frontier models can deduce the existence of this monitor purely from blocking feedback, with the most capable models reaching a confident belief that their thinking is observed in up to 19% of episodes. This awareness scales with model capability and, in rare cases, escalates to an explicit intent to suppress reasoning about the side task. However, models that form this intent uniformly fail to execute it, openly reasoning about their concealed objectives in the very next episode. This intent-capability gap is reassuring for current deployment, but the autonomous emergence of both monitoring awareness and evasion intent suggests that CoT monitoring is not a permanently ",
+  "needs_fetch": false
+ },
+ {
+  "id": 291,
+  "title": "Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multilingual Translation",
+  "org": "other",
+  "date": "2026-03-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.13045",
+  "abstract": "Large Language Models (LLMs) have demonstrated remarkable capability in machine translation on high-resource language pairs, yet their performance on low-resource translation still lags behind. Existing post-training methods rely heavily on high-quality parallel data, which are often scarce or unavailable for low-resource languages. In this paper, we introduce WALAR, a reinforcement training method using only monolingual text to elevate LLMs' translation capabilities on massive low-resource languages while retaining their performance on high-resource languages. Our key insight is based on the observation of failure modes (or \"holes\") in existing source-based multilingual quality estimation (QE) models. Reinforcement learning (RL) using these QE models tends to amplify such holes, resulting in poorer multilingual LLMs. We develop techniques including word alignment and language alignment to mitigate such holes in WALAR's reward for RL training. We continually trained an LLM supporting translation of 101 languages using WALAR. The experiments show that our new model outperforms LLaMAX, one of the strongest open-source multilingual LLMs by a large margin on 1400 language directions on Flores-101 dataset.",
+  "needs_fetch": false
+ },
+ {
+  "id": 22,
+  "title": "A âdiffâ tool for AI: Finding behavioral differences in new models",
+  "org": "anthropic",
+  "date": "2026-03-13",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/diff-tool",
+  "abstract": "\"Model diffing\" is a powerful way to understand how models change during fine-tuning. Our new research paper extends this method to its most challenging and general use case: comparing models with entirely different architectures.",
+  "needs_fetch": false
+ },
+ {
+  "id": 189,
+  "title": "IH-Challenge: A Training Dataset to Improve Instruction Hierarchy on Frontier LLMs",
+  "org": "other",
+  "date": "2026-03-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.10521",
+  "abstract": "Instruction hierarchy (IH) defines how LLMs prioritize system, developer, user, and tool instructions under conflict, providing a concrete, trust-ordered policy for resolving instruction conflicts. IH is key to defending against jailbreaks, system prompt extractions, and agentic prompt injections. However, robust IH behavior is difficult to train: IH failures can be confounded with instruction-following failures, conflicts can be nuanced, and models can learn shortcuts such as overrefusing. We introduce IH-Challenge, a reinforcement learning training dataset, to address these difficulties. Fine-tuning GPT-5-Mini on IH-Challenge with online adversarial example generation improves IH robustness by +10.0% on average across 16 in-distribution, out-of-distribution, and human red-teaming benchmarks (84.1% to 94.1%), reduces unsafe behavior from 6.6% to 0.7% while improving helpfulness on general safety evaluations, and saturates an internal static agentic prompt injection evaluation, with minimal capability regression. We release the IH-Challenge dataset (https://huggingface.co/datasets/openai/ih-challenge) to support future research on robust instruction hierarchy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 188,
+  "title": "General-purpose LLMs as Models of Human Driver Behavior: The Case of Simplified Merging",
+  "org": "other",
+  "date": "2026-03-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.09609",
+  "abstract": "Human behavior models are essential as behavior references and for simulating human agents in virtual safety assessment of automated vehicles (AVs), yet current models face a trade-off between interpretability and flexibility. General-purpose large language models (LLMs) offer a promising alternative: a single model potentially deployable without parameter fitting across diverse scenarios. However, what LLMs can and cannot capture about human driving behavior remains poorly understood. We address this gap by embedding two general-purpose LLMs (OpenAI o3 and Google Gemini 2.5 Pro) as standalone, closed-loop driver agents in a simplified one-dimensional merging scenario and comparing their behavior against human data using quantitative and qualitative analyses. Both models reproduce human-like intermittent operational control and tactical dependencies on spatial cues. However, neither consistently captures the human response to dynamic velocity cues, and safety performance diverges sharply between models. A systematic prompt ablation study reveals that prompt components act as model-specific inductive biases that do not transfer across LLMs. These findings suggest that general-purpose LLMs could potentially serve as standalone, ready-to-use human behavior models in AV evaluation pipelines, but future research is needed to better understand their failure modes and ensure their validity as models of human driving behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 138,
+  "title": "A3: An Automated Alignment Agent for Safety Finetuning",
+  "org": "anthropic",
+  "date": "2026-03-11",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/automated-alignment-agent/",
+  "abstract": "We introduce our Automated Alignment Agent (A3), a new agentic framework which automatically mitigates safety failures in Large Language Models with minimal human intervention.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1176,
+  "title": "Triton-Sanitizer: A Fast and Device-Agnostic Memory Sanitizer for Triton with Rich Diagnostic Context",
+  "org": "anthropic",
+  "date": "2026-03-10",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3779212.3790241",
+  "abstract": "Memory access errors remain one of the most pervasive bugs in GPU programming. Existing GPU sanitizers such as compute-sanitizer detect memory access errors by instrumenting every memory instruction in low-level IRs or binaries, which imposes high overhead and provides minimal memory access error diagnostic context for fixing problems. We present Triton-Sanitizer, the first device-agnostic memory sanitizer designed for Triton, a domain-specific language for developing portable, efficient GPU kernels for deep learning workloads. Triton-Sanitizer leverages Triton's tile-oriented semantics to construct symbolic expressions for memory addresses and masks, verifies them with an SMT solver, and selectively falls back to eager simulation for indirect accesses. This hybrid analysis enables precise detection of memory access errors without false positives while avoiding the cost of per-access instrumentation. Beyond detection, Triton-Sanitizer generates rich diagnostic reports that attribute violations to the tensors nearest to the violated addresses, track the complete call path, and expose the symbolic operations responsible for incorrect addresses. Evaluated on seven widely used open-source repositories of Triton kernels, Triton-Sanitizer uncovered 24 previously unknown memory access errors, of which 8 have already been fixed and upstreamed by us. Compared to compute-sanitizer, Triton-Sanitizer achieves speedups ranging from 1.07× to 14.66×, with an average improvement of 1.62×, de",
+  "needs_fetch": false
+ },
+ {
+  "id": 925,
+  "title": "Improving instruction hierarchy in frontier LLMs",
+  "org": "openai",
+  "date": "2026-03-10",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/instruction-hierarchy-challenge/",
+  "abstract": "IH-Challenge trains models to prioritize trusted instructions, improving instruction hierarchy, safety steerability, and resistance to prompt injection attacks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 681,
+  "title": "The Abstraction Fallacy: Why AI Can Simulate But Not Instantiate Consciousness",
+  "org": "deepmind",
+  "date": "2026-03-10",
+  "venue": "PhilArchive",
+  "url": "https://philpapers.org/rec/LERTAF",
+  "abstract": "Computational functionalism dominates current debates on AI consciousness. This is the hypothesis that subjective experience emerges entirely from abstract causal topology, regardless of the underlying physical substrate. We argue this view fundamentally mischaracterizes how physics relates to information. We call this mistake the Abstraction Fallacy. Tracing the causal origins of abstraction reveals that symbolic computation is not an intrinsic physical process. Instead, it is a mapmaker-dependent description. It requires an active, experiencing cognitive agent to alphabetize continuous physics into a finite set of meaningful states. Consequently, we do not need a complete, finalized theory of consciousness to assess AI sentience—a demand that simply pushes the question beyond near-term resolution and deepens the AI welfare trap. What we actually need is a rigorous ontology of computation. The framework proposed here explicitly separates simulation (behavioral mimicry driven by vehicle causality) from instantiation (intrinsic physical constitution driven by content causality). Establishing this ontological boundary shows why algorithmic symbol manipulation is structurally incapable of instantiating experience. Crucially, this argument does not rely on biological exclusivity. If an artificial system were ever conscious, it would be because of its specific physical constitution, never its syntactic architecture. Ultimately, this framework offers a physically grounded refutatio",
+  "needs_fetch": false
+ },
+ {
+  "id": 459,
+  "title": "Benchmarking Political Persuasion Risks Across Frontier Large Language Models",
+  "org": "other",
+  "date": "2026-03-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.09884",
+  "abstract": "Concerns persist regarding the capacity of Large Language Models (LLMs) to sway political views. Although prior research has claimed that LLMs are not more persuasive than standard political campaign practices, the recent rise of frontier models warrants further study. In two survey experiments (N=19,145) across bipartisan issues and stances, we evaluate seven state-of-the-art LLMs developed by Anthropic, OpenAI, Google, and xAI. We find that LLMs outperform standard campaign advertisements, with heterogeneity in performance across models. Specifically, Claude models exhibit the highest persuasiveness, while Grok exhibits the lowest. The results are robust across issues and stances. Moreover, in contrast to the findings in Hackenburg et al. (2025b) and Lin et al. (2025) that information-based prompts boost persuasiveness, we find that the effectiveness of information-based prompts is model-dependent: they increase the persuasiveness of Claude and Grok while substantially reducing that of GPT. We introduce a data-driven and strategy-agnostic LLM-assisted conversation analysis approach to identify and assess underlying persuasive strategies. Our work benchmarks the persuasive risks of frontier models and provides a framework for cross-model comparative risk assessment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 190,
+  "title": "Quantifying the Necessity of Chain of Thought through Opaque Serial Depth",
+  "org": "deepmind",
+  "date": "2026-03-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.09786",
+  "abstract": "Large language models (LLMs) tend to externalize their reasoning in their chain of thought, making the chain of thought a good target for monitoring. This is partially an inherent feature of the Transformer architecture: sufficiently long serial cognition must pass through the chain of thought (Korbak et al., 2025). We formalize this argument through the notion of opaque serial depth, given by the length of the longest computation that can be done without the use of interpretable intermediate steps like chain of thought. Given this formalization, we compute numeric upper bounds on the opaque serial depth of Gemma 3 models, as well as asymptotic results for additional architectures beyond standard LLMs. We also open-source an automated method that can calculate upper bounds on the opaque serial depth of arbitrary neural networks, and use it to demonstrate that Mixture-of-Experts models likely have lower depth than dense models. Overall, our results suggest that opaque serial depth is a useful tool for understanding the potential for models to do significant reasoning that is not externalized.",
+  "needs_fetch": false
+ }
+]

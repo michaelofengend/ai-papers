@@ -1,0 +1,302 @@
+[
+ {
+  "id": 578,
+  "title": "Inference-Time Decomposition of Activations (ITDA): A Scalable Approach to Interpreting Large Language Models",
+  "org": "deepmind",
+  "date": "2025-05-23",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2505.17769",
+  "abstract": "Sparse autoencoders (SAEs) are a popular method for decomposing Large Langage Models (LLM) activations into interpretable latents. However, due to their substantial training cost, most academic research uses open-source SAEs which are only available for a restricted set of models of up to 27B parameters. SAE latents are also learned from a dataset of activations, which means they do not transfer between models. Motivated by relative representation similarity measures, we introduce Inference-Time Decomposition of Activations (ITDA) models, an alternative method for decomposing language model activations. To train an ITDA, we greedily construct a dictionary of language model activations on a dataset of prompts, selecting those activations which were worst approximated by matching pursuit on the existing dictionary. ITDAs can be trained in just 1% of the time required for SAEs, using 1% of the data. This allowed us to train ITDAs on Llama-3.1 70B and 405B on a single consumer GPU. ITDAs can achieve similar reconstruction performance to SAEs on some target LLMs, but generally incur a performance penalty. However, ITDA dictionaries enable cross-model comparisons, and a simple Jaccard similarity index on ITDA dictionaries outperforms existing methods like CKA, SVCCA, and relative representation similarity metrics. ITDAs provide a cheap alternative to SAEs where computational resources are limited, or when cross model comparisons are necessary. Code available at https://github.com/p",
+  "needs_fetch": false
+ },
+ {
+  "id": 348,
+  "title": "Scalable Valuation of Human Feedback through Provably Robust Model Alignment",
+  "org": "other",
+  "date": "2025-05-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.17859",
+  "abstract": "Despite the importance of aligning language models with human preferences, crowd-sourced human feedback is often noisy -- for example, preferring less desirable responses -- posing a fundamental challenge to alignment. A truly robust alignment objective should yield identical model parameters even under severe label noise, a property known as redescending. We prove that no existing alignment methods satisfy this property. To address this, we propose Hölder-DPO, the first principled alignment loss with a provable redescending property, enabling estimation of the clean data distribution from noisy feedback. The aligned model estimates the likelihood of clean data, providing a theoretically grounded metric for dataset valuation that identifies the location and fraction of mislabels. This metric is gradient-free, enabling scalable and automated human feedback valuation without costly manual verification or clean validation dataset. Hölder-DPO achieves state-of-the-art robust alignment performance while accurately detecting mislabels in controlled datasets. Finally, applied to Anthropic HH-RLHF dataset, it reveals substantial noise levels and removing these mislabels significantly improves alignment performance across methods. The code is available at https://github.com/ma921/HolderDPO.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1442,
+  "title": "Defending the foundation model view of infant development",
+  "org": "deepmind",
+  "date": "2025-05-22",
+  "venue": "Trends in Cognitive Sciences",
+  "url": "https://doi.org/10.1016/j.tics.2025.05.007",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1441,
+  "title": "How Risky Are Open Frontier Models?",
+  "org": "deepmind",
+  "date": "2025-05-22",
+  "venue": "Oxford University Press eBooks",
+  "url": "https://doi.org/10.1093/oxfordhb/9780198940272.013.0023",
+  "abstract": "Abstract This chapter explores the complexities of providing access to frontier AI models. It weighs the potential benefits of open approaches, such as enhanced researcher access and transparency, against potential risks like cybersecurity threats and toxic content generation. The chapter argues that while the benefits provided by today’s open-weight models outweigh the risks, it may be difficult to forecast how the risk profile of open-weight models may change in future. It emphasizes the need to contextualize potential risks associated with open weights within the broader AI and technological landscape. Given the rapid pace of advancements in AI capabilities and commercialization, the chapter advocates for a nuanced approach to AI policy and open source. AI policy should encourage openness while proactively addressing risks through measures such as transparency requirements and safety evaluations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1440,
+  "title": "Language evolution with deep learning",
+  "org": "deepmind",
+  "date": "2025-05-22",
+  "venue": "Oxford University Press eBooks",
+  "url": "https://doi.org/10.1093/oxfordhb/9780192886491.013.18",
+  "abstract": "Abstract Computational modelling plays an essential role in the study of language emergence. It aims to simulate the conditions and learning processes that could trigger the emergence of a structured language within a simulated controlled environment. Several methods have been used to investigate the origin of our language, including agent-based systems, Bayesian agents, genetic algorithms, and rule-based systems. This chapter explores another class of computational models that have recently revolutionized the field of machine learning: deep learning models. The chapter introduces the basic concepts of deep and reinforcement learning methods and summarizes their helpfulness for simulating language emergence. It also discusses the key findings, limitations, and recent attempts to build realistic simulations. This chapter targets linguists and cognitive scientists seeking an introduction to deep learning as a tool to investigate language evolution.",
+  "needs_fetch": false
+ },
+ {
+  "id": 500,
+  "title": "Three Minds, One Legend: Jailbreak Large Reasoning Model with Adaptive Stacked Ciphers",
+  "org": "other",
+  "date": "2025-05-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.16241",
+  "abstract": "Recently, Large Reasoning Models (LRMs) have demonstrated superior logical capabilities compared to traditional Large Language Models (LLMs), gaining significant attention. Despite their impressive performance, the potential for stronger reasoning abilities to introduce more severe security vulnerabilities remains largely underexplored. Existing jailbreak methods often struggle to balance effectiveness with robustness against adaptive safety mechanisms. In this work, we propose SEAL, a novel jailbreak attack that targets LRMs through an adaptive encryption pipeline designed to override their reasoning processes and evade potential adaptive alignment. Specifically, SEAL introduces a stacked encryption approach that combines multiple ciphers to overwhelm the models reasoning capabilities, effectively bypassing built-in safety mechanisms. To further prevent LRMs from developing countermeasures, we incorporate two dynamic strategies - random and adaptive - that adjust the cipher length, order, and combination. Extensive experiments on real-world reasoning models, including DeepSeek-R1, Claude Sonnet, and OpenAI GPT-o4, validate the effectiveness of our approach. Notably, SEAL achieves an attack success rate of 80.8% on GPT o4-mini, outperforming state-of-the-art baselines by a significant margin of 27.2%. Warning: This paper contains examples of inappropriate, offensive, and harmful content.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1443,
+  "title": "A multi-level graph-based surrogate model for real-time high-fidelity sheet forming simulations",
+  "org": "deepmind",
+  "date": "2025-05-20",
+  "venue": "Advanced Engineering Informatics",
+  "url": "https://doi.org/10.1016/j.aei.2025.103458",
+  "abstract": "• A multi-level graph-based surrogate model with industrial-standard performance. • Enhanced graph convolutional kernels with image-inspired edge weights. • Demonstration on a real B-pillar stamping case containing complicated geometries. • Methodology of surrogate modelling with integrated advantages of images and graphs. Surrogate models with structured data representations, mainly images and graphs, have been widely investigated in various domains, including automotive manufacturing. Despite advances, existing approaches still face significant challenges in terms of accuracy, efficiency, and generalisability. To address these challenges, a promising direction is to combine the advantages of both images and graphs. This study proposes a graph-based surrogate model, which has a multi-level architecture with enhanced graph convolutional operations using image-inspired spatial edge weights. To evaluate its performance, three additional graph-based surrogate models are developed for comparison, each differing in the formulation of spatial edge weights. All four models are assessed on a real-world hot-stamping B-pillar case study, which involves variations in blank shapes under multiple parameterisations and post-stamped thickness distributions exhibiting complicated local patterns. The proposed architecture significantly outperforms the three comparison models, achieving high accuracy with a relatively low computational burden during training and deployment. Furthermore, it dem",
+  "needs_fetch": false
+ },
+ {
+  "id": 579,
+  "title": "Towards eliciting latent knowledge from LLMs with mechanistic interpretability",
+  "org": "deepmind",
+  "date": "2025-05-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.14352",
+  "abstract": "As language models become more powerful and sophisticated, it is crucial that they remain trustworthy and reliable. There is concerning preliminary evidence that models may attempt to deceive or keep secrets from their operators. To explore the ability of current techniques to elicit such hidden knowledge, we train a Taboo model: a language model that describes a specific secret word without explicitly stating it. Importantly, the secret word is not presented to the model in its training data or prompt. We then investigate methods to uncover this secret. First, we evaluate non-interpretability (black-box) approaches. Subsequently, we develop largely automated strategies based on mechanistic interpretability techniques, including logit lens and sparse autoencoders. Evaluation shows that both approaches are effective in eliciting the secret word in our proof-of-concept setting. Our findings highlight the promise of these approaches for eliciting hidden knowledge and suggest several promising avenues for future work, including testing and refining these methods on more complex model organisms. This work aims to be a step towards addressing the crucial problem of eliciting secret knowledge from language models, thereby contributing to their safe and reliable deployment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 349,
+  "title": "Will AI Tell Lies to Save Sick Children? Litmus-Testing AI Values Prioritization with AIRiskDilemmas",
+  "org": "anthropic",
+  "date": "2025-05-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.14633",
+  "abstract": "Detecting AI risks becomes more challenging as stronger models emerge and find novel methods such as Alignment Faking to circumvent these detection attempts. Inspired by how risky behaviors in humans (i.e., illegal activities that may hurt others) are sometimes guided by strongly-held values, we believe that identifying values within AI models can be an early warning system for AI's risky behaviors. We create LitmusValues, an evaluation pipeline to reveal AI models' priorities on a range of AI value classes. Then, we collect AIRiskDilemmas, a diverse collection of dilemmas that pit values against one another in scenarios relevant to AI safety risks such as Power Seeking. By measuring an AI model's value prioritization using its aggregate choices, we obtain a self-consistent set of predicted value priorities that uncover potential risks. We show that values in LitmusValues (including seemingly innocuous ones like Care) can predict for both seen risky behaviors in AIRiskDilemmas and unseen risky behaviors in HarmBench.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1448,
+  "title": "Chain-of-Modality: Learning Manipulation Programs from Multimodal Human Videos with Vision-Language-Models",
+  "org": "deepmind",
+  "date": "2025-05-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra55743.2025.11128270",
+  "abstract": "Learning to perform manipulation tasks from human videos is a promising approach for teaching robots. However, many manipulation tasks require changing control parameters during task execution, such as force, which visual data alone cannot capture. In this work, we leverage sensing devices such as armbands that measure human muscle activities and microphones that record sound, to capture the details in the human manipulation process, and enable robots to extract task plans and control parameters to perform the same task. To achieve this, we introduce Chain-of-Modality (CoM), a prompting strategy that enables Vision Language Models to reason about multimodal human demonstration data - videos coupled with muscle or audio signals. By progressively integrating information from each modality, CoM refines a task plan and generates detailed control parameters, enabling robots to perform manipulation tasks based on a single multimodal human video prompt. Our experiments show that CoM delivers a threefold improvement in accuracy for extracting task plans and control parameters compared to baselines, with strong generalization to new task setups and objects in real-world robot experiments. Videos and code are available at chain-of-modality.github.io",
+  "needs_fetch": false
+ },
+ {
+  "id": 1447,
+  "title": "DemoStart: Demonstration-Led Auto-Curriculum Applied to Sim-to-Real with Multi-Fingered Robots",
+  "org": "deepmind",
+  "date": "2025-05-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra55743.2025.11127813",
+  "abstract": "We present DemoStart, a novel auto-curriculum reinforcement learning method capable of learning complex manipulation behaviors on an arm equipped with a three- fingered robotic hand, from only a sparse reward and a handful of demonstrations in simulation. Learning from simulation drastically reduces the development cycle of behavior generation, and domain randomization techniques are leveraged to achieve successful zero-shot sim-to- real transfer. Transferred policies are learned directly from raw pixels from multiple cameras and robot proprioception. Our approach outperforms policies learned from demonstrations on the real robot and requires 100 times fewer demonstrations, collected in simulation. More details and videos in sites.google.com/view/demostart.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1446,
+  "title": "SAS-Prompt: Large Language Models as Numerical Optimizers for Robot Self-Improvement",
+  "org": "deepmind",
+  "date": "2025-05-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra55743.2025.11127882",
+  "abstract": "We demonstrate the ability of large language models (LLMs) to perform iterative self-improvement of robot policies. An important insight of this paper is that LLMs have a built-in ability to perform (stochastic) numerical optimization and that this property can be leveraged for explainable robot policy search. Based on this insight, we introduce the SAS Prompt (Summarize, Analyze, Synthesize) – a single prompt that enables iterative learning and adaptation of robot behavior by combining the LLM's ability to retrieve, reason and optimize over previous robot traces in order to synthesize new, unseen behavior. Our approach can be regarded as an early example of a new family of explainable policy search methods that are entirely implemented within an LLM. We evaluate our approach both in simulation and on a real-robot table tennis task. Project website: sites.google.com/asu.edu/sas-llm/",
+  "needs_fetch": false
+ },
+ {
+  "id": 1445,
+  "title": "STEER: Flexible Robotic Manipulation via Dense Language Grounding",
+  "org": "deepmind",
+  "date": "2025-05-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra55743.2025.11127404",
+  "abstract": "The complexity of the real world demands robotic systems that can intelligently adapt to unseen situations. We present STEER, a robot learning framework that bridges highlevel, commonsense reasoning with precise, flexible low-level control. Our approach translates complex situational awareness into actionable low-level behavior through training languagegrounded policies with dense annotation. By structuring policy training around fundamental, modular manipulation skills expressed in natural language, STEER exposes an expressive interface for humans or Vision-Language Models (VLMs) to intelligently orchestrate the robot's behavior by reasoning about the task and context. Our experiments demonstrate the skills learned via STEER can be combined to synthesize novel behaviors to adapt to new situations or perform completely new tasks without additional data collection or training. Project website: https://lauramsmith.github.io/steer",
+  "needs_fetch": false
+ },
+ {
+  "id": 1444,
+  "title": "RT-Affordance: Affordances are Versatile Intermediate Representations for Robot Manipulation",
+  "org": "deepmind",
+  "date": "2025-05-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icra55743.2025.11127525",
+  "abstract": "We explore how intermediate policy representations can facilitate generalization by providing guidance on how to perform manipulation tasks. Existing representations such as language, goal images, and trajectory sketches have been shown to be helpful, but these representations either do not provide enough context or provide over-specified context that yields less robust policies. We propose conditioning policies on affordances, which capture the pose of the robot at key stages of the task. Affordances offer expressive yet lightweight abstractions, are easy for users to specify, and facilitate efficient learning by transferring knowledge from large internet datasets. Our method, RT-Affordance, is a hierarchical model that first proposes an affordance plan given the task language, and then conditions the policy on this affordance plan to perform manipulation. Our model can flexibly bridge heterogeneous sources of supervision including large web datasets and robot trajectories. We additionally train our model on cheap-to-collect in-domain affordance images, allowing us to learn new tasks without collecting any additional costly robot trajectories. We show on a diverse set of novel tasks how RT-Affordance exceeds the performance of existing methods by over 50 %, and we empirically demonstrate that affordances are robust to novel settings. Videos available at https://snasiriany. me/rt-affordance",
+  "needs_fetch": false
+ },
+ {
+  "id": 1188,
+  "title": "Rottnest: Indexing Data Lakes for Search",
+  "org": "anthropic",
+  "date": "2025-05-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icde65448.2025.00139",
+  "abstract": "Data lakes have become widely popular in managing enterprise data. Their widespread integration with query engines has allowed them to displace specialized data warehouses as the single source of truth for enterprise data. While the columnar storage format and block min-max indices allow query engines to achieve competitive performance on relational data analytics queries, they are not yet suitable for other search-oriented queries like full text and vector nearest neighbor search. We present Rottnest, a general system that builds additional lightweight indices on top of data lakes. We show that our system is more cost efficient compared to un-indexed data lakes or specialized databases across several orders of magnitude of total query loads and operating time horizons.",
+  "needs_fetch": false
+ },
+ {
+  "id": 971,
+  "title": "Addendum to o3 and o4-mini system card: Codex",
+  "org": "openai",
+  "date": "2025-05-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/o3-o4-mini-codex-system-card-addendum/",
+  "abstract": "Codex is a cloud-based coding agent. Codex is powered by codex-1, a version of OpenAI o3 optimized for software engineering. codex-1 was trained using reinforcement learning on real-world coding tasks in a variety of environments to generate code that closely mirrors human style and PR preferences, adheres precisely to instructions, and iteratively runs tests until passing results are achieved.",
+  "needs_fetch": false
+ },
+ {
+  "id": 501,
+  "title": "Superposition Yields Robust Neural Scaling",
+  "org": "other",
+  "date": "2025-05-15",
+  "venue": "NeurIPS 2025",
+  "url": "https://arxiv.org/abs/2505.10465",
+  "abstract": "The success of today's large language models (LLMs) depends on the observation that larger models perform better. However, the origin of this neural scaling law, that loss decreases as a power law with model size, remains unclear. We propose that representation superposition, meaning that LLMs represent more features than they have dimensions, can be a key contributor to loss and cause neural scaling. Based on Anthropic's toy model, we use weight decay to control the degree of superposition, allowing us to systematically study how loss scales with model size. When superposition is weak, the loss follows a power law only if data feature frequencies are power-law distributed. In contrast, under strong superposition, the loss generically scales inversely with model dimension across a broad class of frequency distributions, due to geometric overlaps between representation vectors. We confirmed that open-sourced LLMs operate in the strong superposition regime and have loss scaling inversely with model dimension, and that the Chinchilla scaling laws are also consistent with this behavior. Our results identify representation superposition as a central driver of neural scaling laws, providing insights into questions like when neural scaling laws can be improved and when they will break down.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1449,
+  "title": "Continual Learning of Large Language Models: A Comprehensive Survey",
+  "org": "deepmind",
+  "date": "2025-05-14",
+  "venue": "ACM Computing Surveys",
+  "url": "https://doi.org/10.1145/3735633",
+  "abstract": "The challenge of effectively and efficiently adapting statically pre-trained Large Language Models (LLMs) to ever-evolving data distributions remains predominant. When tailored for specific needs, pre-trained LLMs often suffer from significant performance degradation in previous knowledge domains—a phenomenon known as “catastrophic forgetting” . While extensively studied in the Continual Learning (CL) community, this problem presents new challenges in the context of LLMs. In this survey, we provide a comprehensive overview and detailed discussion of the current research progress on LLMs within the context of CL. Besides the introduction of the preliminary knowledge, this survey is structured into four main sections: we first describe an overview of continually learning LLMs, consisting of two directions of continuity: vertical continuity (or vertical continual learning) , i.e., continual adaptation from general to specific capabilities, and horizontal continuity (or horizontal continual learning) , i.e., continual adaptation across time and domains (Section 3 ). Following vertical continuity, we summarize three stages of learning LLMs in the context of modern CL: Continual Pre-Training (CPT), Domain-Adaptive Pre-training (DAP), and Continual Fine-Tuning (CFT) (Section 4 ). We then provide an overview of evaluation protocols for continual learning with LLMs, along with currently available data sources (Section 5 ). Finally, we discuss intriguing questions related to continual ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1451,
+  "title": "Hash-Prune-Invert: Improved Differentially Private Heavy-Hitter Detection in the Two-Server Model",
+  "org": "deepmind",
+  "date": "2025-05-12",
+  "venue": null,
+  "url": "https://doi.org/10.1109/sp61157.2025.00186",
+  "abstract": "Differentially private (DP) heavy-hitter detection is an important primitive for data analysis. Given a threshold <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$t$</tex> and a dataset of <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$n$</tex> items from a domain of size <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$d$</tex>, such detection algorithms ignore items occurring fewer than <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$t$</tex> times while identifying items occurring more than <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$t+\\Delta$</tex> times; we call <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\Delta$</tex> the error margin. In the central model where a curator holds the entire dataset, <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$(\\varepsilon, \\delta)$</tex>-DP algorithms can achieve error margin <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$\\Theta\\left(\\frac{1}{\\varepsilon} \\log \\frac{1}{\\delta}\\right)$</tex>, which is optimal when <tex xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">$d\\gg 1/\\delta$</tex>. Several works, e.g., ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1450,
+  "title": "Supporting Human Raters with the Detection of Harmful Content Using Large Language Models",
+  "org": "deepmind",
+  "date": "2025-05-12",
+  "venue": null,
+  "url": "https://doi.org/10.1109/sp61157.2025.00082",
+  "abstract": "In this paper, we explore the feasibility of leveraging large language models (LLMs) to automate or otherwise assist human raters with identifying harmful content including hate speech, harassment, violent extremism, and election misinformation. Using a dataset of 50,000 user comments, we demonstrate that LLMs can achieve 90 % accuracy when compared to human verdicts. We explore how to best leverage these capabilities, proposing five design patterns that integrate LLMs with human rating, such as pre-filtering non-violative content, detecting potential errors in human rating, or surfacing critical context to support human rating. We outline how to support all of these design patterns using a single, optimized prompt. Beyond these synthetic experiments, we share how piloting our proposed techniques in a real-world review queue yielded a 41.5% improvement in optimizing available human rater capacity, and a 9–11 % increase (absolute) in precision and recall for detecting violative content.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1189,
+  "title": "SoK: Watermarking for AI-Generated Content",
+  "org": "anthropic",
+  "date": "2025-05-12",
+  "venue": null,
+  "url": "https://doi.org/10.1109/sp61157.2025.00178",
+  "abstract": "As the outputs of generative AI (GenAl) techniques improve in quality, it becomes increasingly challenging to distinguish them from human-created content. Watermarking schemes are a promising approach to address the problem of distinguishing between AI and human-generated content. These schemes embed hidden signals within AI -generated content to enable reliable detection. While watermarking is not a silver bullet for addressing all risks associated with GenAl, it can play a crucial role in enhancing AI safety and trustworthiness by combating misinformation and deception. This paper presents a comprehensive overview of water-marking techniques for GenAl, beginning with the need for watermarking from historical and regulatory perspectives. We formalize the definitions and desired properties of watermarking schemes and examine the key objectives and threat models for existing approaches. Practical evaluation strategies are also explored, providing insights into the development of robust watermarking techniques capable of resisting various attacks. Additionally, we review recent representative works, highlight open challenges, and discuss potential directions for this emerging field. By offering a thorough understanding of watermarking in GenAl, this work aims to guide researchers in advancing watermarking methods and applications, and support policymakers in addressing the broader implications of GenAl.",
+  "needs_fetch": false
+ },
+ {
+  "id": 972,
+  "title": "Introducing HealthBench",
+  "org": "openai",
+  "date": "2025-05-12",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/healthbench/",
+  "abstract": "HealthBench is a new evaluation benchmark for AI in healthcare which evaluates models in realistic scenarios. Built with input from 250+ physicians, it aims to provide a shared standard for model performance and safety in health.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2703,
+  "title": "Optimization of Marketing Campaigns with Reinforcement Learning",
+  "org": "openai",
+  "date": "2025-05-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/ginotech63460.2025.11076680",
+  "abstract": "This research introduces a reinforcement learning-based system which enables marketers to optimize campaign budgets dynamically in response to live consumer behavior patterns. The Markov Decision Process (MDP) formulation uses customer engagement metrics and channel performance to drive ongoing learning and decision-making processes. Historical marketing data serves as the basis for comparing three RL models: Q-learning, Deep Q Networks (DQN), and Proximal Policy Optimization (PPO). The PPO model delivers superior performance by reaching a 7.4% Click-Through Rate (CTR), 32.5% Return on Investment (ROI), and lowering the Cost Per Acquisition (CPA) to 9.2 dollars. RL-based methods deliver superior performance compared to rule-based systems by increasing conversion rates by 71% and engagement rates by 45% . Feature importance analysis reveals Customer Lifetime Value and Engagement Score as primary predictive factors that provide understandable information for campaign targeting. The framework exhibits scalability and ethical standards while remaining practical which allows it to adapt well to various campaign sizes and supply actionable data-driven",
+  "needs_fetch": false
+ },
+ {
+  "id": 502,
+  "title": "LLMs Outperform Experts on Challenging Biology Benchmarks",
+  "org": "other",
+  "date": "2025-05-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.06108",
+  "abstract": "This study systematically evaluates 27 frontier Large Language Models on eight biology benchmarks spanning molecular biology, genetics, cloning, virology, and biosecurity. Models from major AI developers released between November 2022 and April 2025 were assessed through ten independent runs per benchmark. The findings reveal dramatic improvements in biological capabilities. Top model performance increased more than 4-fold on the challenging text-only subset of the Virology Capabilities Test over the study period, with OpenAI's o3 now performing twice as well as expert virologists. Several models now match or exceed expert-level performance on other challenging benchmarks, including the biology subsets of GPQA and WMDP and LAB-Bench CloningScenarios. Contrary to expectations, chain-of-thought did not substantially improve performance over zero-shot evaluation, while extended reasoning features in o3-mini and Claude 3.7 Sonnet typically improved performance as predicted by inference scaling. Benchmarks such as PubMedQA and the MMLU and WMDP biology subsets exhibited performance plateaus well below 100%, suggesting benchmark saturation and errors in the underlying benchmark data. The analysis highlights the need for more sophisticated evaluation methodologies as AI systems continue to advance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 350,
+  "title": "Scaling Laws for Speculative Decoding",
+  "org": "other",
+  "date": "2025-05-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.07858",
+  "abstract": "The escalating demand for efficient decoding in large language models (LLMs) is particularly critical for reasoning-intensive architectures like OpenAI-o3 and DeepSeek-R1, which depend on extended chain-of-thought reasoning. This study investigates speculative decoding techniques through dense LLM architectures to establish foundational insights for accelerating reasoning tasks. While speculative decoding methods leveraging parallel draft-verification cycles have emerged as promising acceleration techniques, the scaling laws governing decoding efficiency remain under-explored compared to conventional backbone LLMs developed through Pretraining->SFT->RLHF training paradigms. In this work, we discover Log-linear Scaling Laws (Theorem 1.1, 1.2 and 1.3) governing draft model acceptance rate (or decoding speed) across three dimensions: pretraining token volume, draft model capacity, and decoding batch size. Building on these laws, we achieve Scylla, which coordinates multi-dimensional scaling for popular LLMs (Llama2/3, Qwen2.5). Empirical validation shows Scylla achieves 1.5-2.2 higher acceptance rate than EAGLE2 and 0.3 higher than EAGLE3 at temperature T = 0, with peak performance gains on summarization and QA tasks (Figure 2). Industrial inference engine deployments demonstrate 2X decoding throughput improvements over EAGLE2 (Table 5), validating the transformative potential of systematic scaling for efficient LLM inference. Code will be released later.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1452,
+  "title": "A Quadratic Speedup in Finding Nash Equilibria of Quantum Zero-Sum Games",
+  "org": "deepmind",
+  "date": "2025-05-06",
+  "venue": "Quantum",
+  "url": "https://doi.org/10.22331/q-2025-05-06-1737",
+  "abstract": "Recent developments in domains such as non-local games, quantum interactive proofs, and quantum generative adversarial networks have renewed interest in quantum game theory and, specifically, quantum zero-sum games. Central to classical game theory is the efficient algorithmic computation of Nash equilibria, which represent optimal strategies for both players. In 2008, Jain and Watrous proposed the first classical algorithm for computing equilibria in quantum zero-sum games using the Matrix Multiplicative Weight Updates (MMWU) method to achieve a convergence rate of <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mrow class=\"MJX-TeXAtom-ORD\"><mml:mi class=\"MJX-tex-caligraphic\" mathvariant=\"script\">O</mml:mi></mml:mrow><mml:mo stretchy=\"false\">(</mml:mo><mml:mi>d</mml:mi><mml:mrow class=\"MJX-TeXAtom-ORD\"><mml:mo>/</mml:mo></mml:mrow><mml:msup><mml:mi>&amp;#x03F5;</mml:mi><mml:mn>2</mml:mn></mml:msup><mml:mo stretchy=\"false\">)</mml:mo></mml:math> iterations to <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mi>&amp;#x03F5;</mml:mi></mml:math>-Nash equilibria in the <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:msup><mml:mn>4</mml:mn><mml:mi>d</mml:mi></mml:msup></mml:math>-dimensional spectraplex. In this work, we propose a hierarchy of quantum optimization algorithms that generalize MMWU via an extra-gradient mechanism. Notably, within this proposed hierarchy, we introduce the Optimistic Matrix Multiplicative Weights Update (OMMWU) a",
+  "needs_fetch": false
+ },
+ {
+  "id": 503,
+  "title": "A Survey of Slow Thinking-based Reasoning LLMs using Reinforced Learning and Inference-time Scaling Law",
+  "org": "other",
+  "date": "2025-05-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2505.02665",
+  "abstract": "This survey explores recent advancements in reasoning large language models (LLMs) designed to mimic \"slow thinking\" - a reasoning process inspired by human cognition, as described in Kahneman's Thinking, Fast and Slow. These models, like OpenAI's o1, focus on scaling computational resources dynamically during complex tasks, such as math reasoning, visual reasoning, medical diagnosis, and multi-agent debates. We present the development of reasoning LLMs and list their key technologies. By synthesizing over 100 studies, it charts a path toward LLMs that combine human-like deep thinking with scalable efficiency for reasoning. The review breaks down methods into three categories: (1) test-time scaling dynamically adjusts computation based on task complexity via search and sampling, dynamic verification; (2) reinforced learning refines decision-making through iterative improvement leveraging policy networks, reward models, and self-evolution strategies; and (3) slow-thinking frameworks (e.g., long CoT, hierarchical processes) that structure problem-solving with manageable steps. The survey highlights the challenges and further directions of this domain. Understanding and advancing the reasoning abilities of LLMs is crucial for unlocking their full potential in real-world applications, from scientific discovery to decision support systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1453,
+  "title": "Reinforcement Learning from Automatic Feedback for High-Quality Unit Test Generation",
+  "org": "deepmind",
+  "date": "2025-05-03",
+  "venue": null,
+  "url": "https://doi.org/10.1109/deeptest66595.2025.00011",
+  "abstract": "Software testing is a crucial but time-consuming aspect of software development, and recently, Large Language Models (LLMs) have gained popularity for automated test case generation. However, because LLMs are trained on vast amounts of open-source code, they often generate test cases that do not adhere to best practices and may even contain test smells (anti-patterns). To address this issue, we propose Reinforcement Learning from Static Quality Metrics (RLSQM), wherein we utilize Reinforcement Learning to generate high-quality unit tests based on static analysis-based quality metrics. First, we analyzed LLM-generated tests and show that LLMs frequently do generate undesirable test smells — up to 37% of the time. Then, we implemented lightweight static analysis-based reward model and trained LLMs using this reward model to optimize for five code quality metrics. Our experimental results demonstrate that the RL-optimized Codex model consistently generated higher-quality test cases than the base LLM, improving quality metrics by up to 23%, and generated nearly 100% syntactically-correct code. RLSQM also outperformed GPT-4 on all code quality metrics, in spite of training a substantially cheaper Codex model. We provide insights into how reliably utilize RL to improve test generation quality and show that RLSQM is a significant step towards enhancing the overall efficiency and reliability of automated software testing. Our data are available at this link: https://doi.org/10.6084/m",
+  "needs_fetch": false
+ },
+ {
+  "id": 2705,
+  "title": "The LAW Theorem: Local Reads and Linearizable Asynchronous Replication",
+  "org": "openai",
+  "date": "2025-05-01",
+  "venue": "Proceedings of the VLDB Endowment",
+  "url": "https://doi.org/10.14778/3746405.3746411",
+  "abstract": "Distributed datastores underpin highly concurrent, read-intensive applications, ensuring consistency, availability, and performance. They use crash-tolerant protocols to replicate data and endure replica server crashes. To ensure safety and meet the performance demands, replication must support high-throughput, strongly consistent (i.e., linearizable) reads without assuming any synchrony. However, existing protocols either 1 relax consistency, or provide linearizable reads that are 2 fully asynchronous but remote (involving multiple replicas), or 3 local but require synchrony. This work explores the tradeoffs between consistency, asynchrony, and performance in crash-tolerant protocols, and proves that in linearizable asynchronous read/write registers tolerating a single crash, no reads can be local. Building on this, we introduce almost-local reads (ALRs), a new abstraction that ensures crash tolerance and linearizability under asynchrony. While ALRs have slightly higher latency than local reads, they remain lightweight, with computation and network costs close to single-node reads. We present two simple yet effective ALR schemes that enhance protocols across all three categories. For protocols with local reads, ALRs address consistency or synchrony issues with minimal throughput loss. In asynchronous linearizable protocols, they improve performance without compromises. Our evaluation shows that ALR-enhanced ZAB and Hermes achieve within 2% and 5% of their original throughput",
+  "needs_fetch": false
+ },
+ {
+  "id": 2704,
+  "title": "Extending “GPTs Are GPTs” to Firms",
+  "org": "openai",
+  "date": "2025-05-01",
+  "venue": "AEA Papers and Proceedings",
+  "url": "https://doi.org/10.1257/pandp.20251045",
+  "abstract": "We extend Eloundou et al. (2024) to build firm-level measures of exposure to large language models (LLMs) with data from two sources: Eloundou et al. (2024) for occupation-level measures of LLM exposure and Revelio Labs for firm-level employee counts by occupation. The results indicate that companies with more technology workers and AI-skilled employees tend to have higher levels of LLM exposure. We also find that differences in LLM exposure are greater between exposure categories than within them, suggesting that integrating LLMs into corporate systems may lead to significant productivity gains.",
+  "needs_fetch": false
+ }
+]

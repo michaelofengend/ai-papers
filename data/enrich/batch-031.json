@@ -1,0 +1,302 @@
+[
+ {
+  "id": 365,
+  "title": "Scalable Oversight for Superhuman AI via Recursive Self-Critiquing",
+  "org": "other",
+  "date": "2025-02-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.04675",
+  "abstract": "As AI capabilities increasingly surpass human proficiency in complex tasks, current alignment techniques, including SFT and RLHF, face fundamental challenges in ensuring reliable oversight. These methods rely on direct human assessment and become impractical when AI outputs exceed human cognitive thresholds. In response to this challenge, we explore two hypotheses: (1) \\textit{Critique of critique can be easier than critique itself}, extending the widely-accepted observation that verification is easier than generation to the critique domain, as critique itself is a specialized form of generation; (2) \\textit{This difficulty relationship holds recursively}, suggesting that when direct evaluation is infeasible, performing higher-order critiques (e.g., critique of critique of critique) offers a more tractable supervision pathway. We conduct Human-Human, Human-AI, and AI-AI experiments to investigate the potential of recursive self-critiquing for AI supervision. Our results highlight recursive critique as a promising approach for scalable AI oversight.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1495,
+  "title": "Discovering Symbolic Cognitive Models from Human and Animal Behavior",
+  "org": "deepmind",
+  "date": "2025-02-06",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.02.05.636732",
+  "abstract": "Symbolic models play a key role in cognitive science, expressing computationally precise hypotheses about how the brain implements a cognitive process. Identifying an appropriate model typically requires a great deal of effort and ingenuity on the part of a human scientist. Here, we adapt FunSearch Romera-Paredes et al. (2024), a recently developed tool that uses Large Language Models (LLMs) in an evolutionary algorithm, to automatically discover symbolic cognitive models that accurately capture human and animal behavior. We consider datasets from three species performing a classic reward-learning task that has been the focus of substantial modeling effort, and find that the discovered programs outperform state-of-the-art cognitive models for each. The discovered programs can readily be interpreted as hypotheses about human and animal cognition, instantiating interpretable symbolic learning and decision-making algorithms. Broadly, these results demonstrate the viability of using LLM-powered program synthesis to propose novel scientific hypotheses regarding mechanisms of human and animal cognition.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1494,
+  "title": "PartIR: Composing SPMD Partitioning Strategies for Machine Learning",
+  "org": "deepmind",
+  "date": "2025-02-06",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3669940.3707284",
+  "abstract": "Training modern large neural networks (NNs) requires a combination of parallelization strategies, including data, model, or optimizer sharding. To address the growing complexity of these strategies, we introduce PartIR, a hardware-and-runtime agnostic NN partitioning system. PartIR is: 1) Expressive: It allows for the composition of multiple sharding strategies, whether user-defined or automatically derived; 2) Decoupled: the strategies are separate from the ML implementation; and 3) Predictable: It follows a set of well-defined general rules to partition the NN. PartIR utilizes a schedule-like API that incrementally rewrites the ML program intermediate representation (IR) after each strategy, allowing simulators and users to verify the strategy's performance. PartIR has been successfully used both for training large models and across diverse model architectures, demonstrating its predictability, expressiveness, and performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 725,
+  "title": "Automated Discovery of Interpretable Cognitive Programs underlying Reward-guided behavior",
+  "org": "deepmind",
+  "date": "2025-02-06",
+  "venue": "Biorxiv",
+  "url": "https://www.biorxiv.org/content/10.1101/2025.02.05.636732v1",
+  "abstract": "A principal goal of computational neuroscience is to discover mathematical models that describe how the brain implements cognitive processes. Computational neuroscientists typically face a difficult choice between symbolic model-driven approaches that are interpretable, but underperform at predicting animal behavior, versus data-driven approaches that train overparameterized models to make accurate behavioral predictions with often hard-to-interpret, blackbox models. In this work, we explore the use of an automated LLM-based program discovery tool (FunSearch, \\cite{romeraparedes2024mathematical}) to discover novel symbolic programs that accurately describe animal behavior without sacrificing interpretability. We dub this CogFunSearch, and verify its efficacy on behavioral data from rodent reward-guided choice behaviors \\cite{miller2021predictive}. We find that CogFunSearch is able to reliably discover programs that outperform the state-of-the-art cognitive model for predicting rat choices in a 2-armed drifting bandit task. This is the case both when CogFunSearch is used to improve on inputted programs, as well as when it is used to discover programs from scratch. Moreover, we find that CogFunSearch is sensitive to semantic information in the prompt: prompts that provide details of the dataset and suggest an RL modeling framework lead to quantitatively better programs than uninformative prompts. Both the classic models and the discovered programs are significantly outperformed",
+  "needs_fetch": false
+ },
+ {
+  "id": 1497,
+  "title": "Building Bridges between Regression, Clustering, and Classification",
+  "org": "deepmind",
+  "date": "2025-02-05",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2502.02996",
+  "abstract": "Regression, the task of predicting a continuous scalar target y based on some features x is one of the most fundamental tasks in machine learning and statistics. It has been observed and theoretically analyzed that the classical approach, meansquared error minimization, can lead to suboptimal results when training neural networks. In this work, we propose a new method to improve the training of these models on regression tasks, with continuous scalar targets. Our method is based on casting this task in a different fashion, using a target encoder, and a prediction decoder, inspired by approaches in classification and clustering. We showcase the performance of our method on a wide range of real-world datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1496,
+  "title": "A detailed theory of thalamic and cortical microcircuits for predictive visual inference",
+  "org": "deepmind",
+  "date": "2025-02-05",
+  "venue": "Science Advances",
+  "url": "https://doi.org/10.1126/sciadv.adr6698",
+  "abstract": "Understanding cortical microcircuitry requires theoretical models that can tease apart their computational logic from biological details. Although Bayesian inference serves as an abstract framework of cortical computation, precisely mapping concrete instantiations of computational models to biology under real-world tasks is necessary to produce falsifiable neural models. On the basis of a recent generative model, recursive cortical networks, that demonstrated excellent performance on vision benchmarks, we derive a theoretical cortical microcircuit by placing the requirements of the computational model within biological constraints. The derived model suggests precise algorithmic roles for the columnar and laminar feed-forward, feedback, and lateral connections, the thalamic pathway, blobs and interblobs, and the innate lineage-specific interlaminar connectivity within cortical columns. The model also explains several visual phenomena, including the subjective contour effect and neon-color spreading effect, with circuit-level precision. Our model and methodology provides a path forward in understanding cortical and thalamic computations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 515,
+  "title": "Do Large Language Model Benchmarks Test Reliability?",
+  "org": "openai",
+  "date": "2025-02-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.03461",
+  "abstract": "When deploying large language models (LLMs), it is important to ensure that these models are not only capable, but also reliable. Many benchmarks have been created to track LLMs' growing capabilities, however there has been no similar focus on measuring their reliability. To understand the potential ramifications of this gap, we investigate how well current benchmarks quantify model reliability. We find that pervasive label errors can compromise these evaluations, obscuring lingering model failures and hiding unreliable behavior. Motivated by this gap in the evaluation of reliability, we then propose the concept of so-called platinum benchmarks, i.e., benchmarks carefully curated to minimize label errors and ambiguity. As a first attempt at constructing such benchmarks, we revise examples from fifteen existing popular benchmarks. We evaluate a wide range of models on these platinum benchmarks and find that, indeed, frontier LLMs still exhibit failures on simple tasks such as elementary-level math word problems. Analyzing these failures further reveals previously unidentified patterns of problems on which frontier models consistently struggle. We provide code at https://github.com/MadryLab/platinum-benchmarks",
+  "needs_fetch": false
+ },
+ {
+  "id": 1498,
+  "title": "Strategic Foundation Models",
+  "org": "deepmind",
+  "date": "2025-02-04",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-04925309",
+  "abstract": "We envision a world where humans and AI agents collaborate and interact beneficially, with AIs generating data-driven strategic recommendations that can be directly implemented by other AI agents, handed over to human decision-makers, or integrated into more complex interactive systems. Large Language Models (LLMs), and more generally foundation models (FMs), are bringing us closer to this vision by enabling laypeople to interact with AI using natural language, thereby providing significant, sometimes radical, efficiency gains in many tasks. When evaluating strategic reasoning, however, the capabilities of these models remain impoverished. We thus propose a collaborative research agenda that involves incorporating game-theoretic paradigms into the research and design of FMs and LLMs, and vice versa. This collaboration will enable strategic FMs-e.g., LLMs that communicate in natural language but exhibit strategic decision-making capabilities-and that can spawn the creation of a fertile ecosystem where humans and AI agents collaborate effectively.",
+  "needs_fetch": false
+ },
+ {
+  "id": 74,
+  "title": "Constitutional Classifiers: Defending against universal jailbreaks",
+  "org": "anthropic",
+  "date": "2025-02-03",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/constitutional-classifiers",
+  "abstract": "These classifiers filter the overwhelming majority of jailbreaks while maintaining practical deployment. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak discovered.",
+  "needs_fetch": false
+ },
+ {
+  "id": 984,
+  "title": "Introducing deep research",
+  "org": "openai",
+  "date": "2025-02-02",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-deep-research/",
+  "abstract": "An agent that uses reasoning to synthesize large amounts of online information and complete multi-step research tasks for you. Available to Pro users today, Plus and Team next.",
+  "needs_fetch": false
+ },
+ {
+  "id": 726,
+  "title": "Decoding-based Regression",
+  "org": "deepmind",
+  "date": "2025-02-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2501.19383",
+  "abstract": "Language models have recently been shown capable of performing regression tasks wherein numeric predictions are represented as decoded strings. In this work, we provide theoretical grounds for this capability and furthermore investigate the utility of causal auto-regressive sequence models when they are applied to any feature representation. We find that, despite being trained in the usual way - for next-token prediction via cross-entropy loss - decoding-based regression is as performant as traditional approaches for tabular regression tasks, while being flexible enough to capture arbitrary distributions, such as in the task of density estimation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 366,
+  "title": "Representations Shape Weak-to-Strong Generalization: Theoretical Insights and Empirical Predictions",
+  "org": "other",
+  "date": "2025-02-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.00620",
+  "abstract": "Weak-to-Strong Generalization (W2SG), where a weak model supervises a stronger one, serves as an important analogy for understanding how humans might guide superhuman intelligence in the future. Promising empirical results revealed that a strong model can surpass its weak supervisor. While recent work has offered theoretical insights into this phenomenon, a clear understanding of the interactions between weak and strong models that drive W2SG remains elusive. We investigate W2SG through a theoretical lens and show that it can be characterized using kernels derived from the principal components of weak and strong models' internal representations. These kernels can be used to define a space that, at a high level, captures what the weak model is unable to learn but is learnable by the strong model. The projection of labels onto this space quantifies how much the strong model falls short of its full potential due to weak supervision. This characterization also provides insights into how certain errors in weak supervision can be corrected by the strong model, regardless of overfitting. Our theory has significant practical implications, providing a representation-based metric that predicts W2SG performance trends without requiring labels, as shown in experiments on molecular predictions with transformers and 5 NLP tasks involving 52 LLMs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 172,
+  "title": "Introducing Anthropic's Safeguards Research Team",
+  "org": "anthropic",
+  "date": "2025-02-02",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/introducing-safeguards-research-team/",
+  "abstract": "We're launching a new research team focused on mitigating the post-deployment risks of AI systems.",
+  "needs_fetch": true
+ },
+ {
+  "id": 367,
+  "title": "How Effective Is Constitutional AI in Small LLMs? A Study on DeepSeek-R1 and Its Peers",
+  "org": "other",
+  "date": "2025-02-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.17365",
+  "abstract": "Recent incidents highlight safety risks in Large Language Models (LLMs), motivating research into alignment methods like Constitutional AI (CAI). This paper explores CAI's self-critique mechanism on small, uncensored 7-9B parameter models: DeepSeek-R1-8B, Gemma-2-9B, Llama 3.1-8B, and Qwen2.5-7B. We show that while Llama-based models exhibited significant harm reduction through self-critique, other architectures demonstrated less improvement in harm detection after abliteration. These results suggest CAI's effectiveness may vary depending on model architecture and reasoning capabilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 72,
+  "title": "Insights on Crosscoder Model Diffing",
+  "org": "anthropic",
+  "date": "2025-02-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/crosscoder-diffing-update/index.html",
+  "abstract": "We report some developing work on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. We'd ask you to treat these results like those of a colleague sharing some thoughts or preliminary experiments for a few minutes at a lab meeting, rather than a mature paper.",
+  "needs_fetch": false
+ },
+ {
+  "id": 986,
+  "title": "OpenAI o3-mini System Card",
+  "org": "openai",
+  "date": "2025-01-31",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/o3-mini-system-card/",
+  "abstract": "This report outlines the safety work carried out for the OpenAI o3-mini model, including safety evaluations, external red teaming, and Preparedness Framework evaluations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 985,
+  "title": "OpenAI o3-mini",
+  "org": "openai",
+  "date": "2025-01-31",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-o3-mini/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 369,
+  "title": "Relating Misfit to Gain in Weak-to-Strong Generalization Beyond the Squared Loss",
+  "org": "other",
+  "date": "2025-01-31",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2501.19105",
+  "abstract": "The paradigm of weak-to-strong generalization constitutes the training of a strong AI model on data labeled by a weak AI model, with the goal that the strong model nevertheless outperforms its weak supervisor on the target task of interest. For the setting of real-valued regression with the squared loss, recent work quantitatively characterizes the gain in performance of the strong model over the weak model in terms of the misfit between the strong and weak model. We generalize such a characterization to learning tasks whose loss functions correspond to arbitrary Bregman divergences when the strong class is convex. This extends the misfit-based characterization of performance gain in weak-to-strong generalization to classification tasks, as the cross-entropy loss can be expressed in terms of a Bregman divergence. In most practical scenarios, however, the strong model class may not be convex. We therefore weaken this assumption and study weak-to-strong generalization for convex combinations of $k$ strong models in the strong class, in the concrete setting of classification. This allows us to obtain a similar misfit-based characterization of performance gain, upto an additional error term that vanishes as $k$ gets large. Our theoretical findings are supported by thorough experiments on synthetic as well as real-world datasets.",
+  "needs_fetch": false
+ },
+ {
+  "id": 368,
+  "title": "The Energy Loss Phenomenon in RLHF: A New Perspective on Mitigating Reward Hacking",
+  "org": "other",
+  "date": "2025-01-31",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2501.19358",
+  "abstract": "This work identifies the Energy Loss Phenomenon in Reinforcement Learning from Human Feedback (RLHF) and its connection to reward hacking. Specifically, energy loss in the final layer of a Large Language Model (LLM) gradually increases during the RL process, with an excessive increase in energy loss characterizing reward hacking. Beyond empirical analysis, we further provide a theoretical foundation by proving that, under mild conditions, the increased energy loss reduces the upper bound of contextual relevance in LLMs, which is a critical aspect of reward hacking as the reduced contextual relevance typically indicates overfitting to reward model-favored patterns in RL. To address this issue, we propose an Energy loss-aware PPO algorithm (EPPO) which penalizes the increase in energy loss in the LLM's final layer during reward calculation to prevent excessive energy loss, thereby mitigating reward hacking. We theoretically show that EPPO can be conceptually interpreted as an entropy-regularized RL algorithm, which provides deeper insights into its effectiveness. Extensive experiments across various LLMs and tasks demonstrate the commonality of the energy loss phenomenon, as well as the effectiveness of EPPO in mitigating reward hacking and improving RLHF performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1500,
+  "title": "A multi-modal transformer for cell type-agnostic regulatory predictions",
+  "org": "deepmind",
+  "date": "2025-01-29",
+  "venue": "Cell Genomics",
+  "url": "https://doi.org/10.1016/j.xgen.2025.100762",
+  "abstract": "Sequence-based deep learning models have emerged as powerful tools for deciphering the cis-regulatory grammar of the human genome but cannot generalize to unobserved cellular contexts. Here, we present EpiBERT, a multi-modal transformer that learns generalizable representations of genomic sequence and cell type-specific chromatin accessibility through a masked accessibility-based pre-training objective. Following pre-training, EpiBERT can be fine-tuned for gene expression prediction, achieving accuracy comparable to the sequence-only Enformer model, while also being able to generalize to unobserved cell states. The learned representations are interpretable and useful for predicting chromatin accessibility quantitative trait loci (caQTLs), regulatory motifs, and enhancer-gene links. Our work represents a step toward improving the generalization of sequence-based deep neural networks in regulatory genomics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1499,
+  "title": "AlphaFold Protein Structure Database and 3D-Beacons: New Data and Capabilities",
+  "org": "deepmind",
+  "date": "2025-01-29",
+  "venue": "Journal of Molecular Biology",
+  "url": "https://doi.org/10.1016/j.jmb.2025.168967",
+  "abstract": "• AlphaMissense scores now integrated, enabling large-scale pathogenicity analysis of protein missense variants. • Foldseek added for rapid, accurate protein structure searches and comparisons. • Bulk data downloads introduced for enhanced analysis and workflow integration. • 3D-Beacons updates include AlphaMissense annotations and LevyLab’s homomeric models. • Training modules in \"AlphaFold: A Practical Guide\" enhance PDBe resources. The AlphaFold Protein Structure Database ( https://alphafold.ebi.ac.uk/ ) has made significant strides in enhancing its utility and accessibility for the life science research community. The recent integration of AlphaMissense predictions enables access to the pathogenicity of human protein missense variants, with an innovative and interactive heatmap and 3D visualisation that display variant data at the residue level. Users can now toggle between structure model quality (pLDDT) and average pathogenicity scores, providing insights into the implications of specific residue changes. The Foldseek integration offers a rapid and accurate method for protein structure searches and comparisons. Bulk data download options further facilitate comprehensive data analysis and integration with other computational tools. The 3D-Beacons framework ( https://www.ebi.ac.uk/pdbe/pdbe-kb/3dbeacons/ ) has also been enhanced with detailed annotation endpoints (such as AlphaMissense data) and integrates LevyLab’s dataset of homomeric AlphaFold 2 models. These advanceme",
+  "needs_fetch": false
+ },
+ {
+  "id": 1501,
+  "title": "Self-Contemplating In-Context Learning Enhances T Cell Receptor Generation for Novel Epitopes",
+  "org": "deepmind",
+  "date": "2025-01-28",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2025.01.27.634873",
+  "abstract": "with no known cognate TCRs, a problem that remains under-explored in the field. We propose to incorporate in-context learning, successfully used with large language models to perform new generative tasks, to the task of TCR generation for novel epitopes. By providing cognate TCRs as additional context, we enhance the model's ability to generate high-quality TCRs for novel epitopes. We first unlock the power of in-context learning by training a model to generate new TCRs based on both a target epitope and a small set of its cognate TCRs, so-called in-context training (ICT). We then self-generate its own TCR contexts based on a target epitope, as novel epitopes lack known binding TCRs, and use it as an inference prompt, referred to as self-contemplation prompting (SCP). Our experiments first demonstrate that aligning training and inference distribution by ICT is critical for effectively leveraging context TCRs. Subsequently, we show that providing context TCRs significantly improves TCR generation for novel epitopes. Furthermore, we show TCR generation using SCP-synthesized context TCRs achieves performance comparable to, and sometimes surpassing, ground-truth context TCRs, especially when combined with refined prompt selection based on binding affinity and authenticity metrics. We assess the designed sequences' binding probability and sequence authenticity using seven diverse computational models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 516,
+  "title": "A sketch of an AI control safety case",
+  "org": "deepmind",
+  "date": "2025-01-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2501.17315",
+  "abstract": "As LLM agents gain a greater capacity to cause harm, AI developers might increasingly rely on control measures such as monitoring to justify that they are safe. We sketch how developers could construct a \"control safety case\", which is a structured argument that models are incapable of subverting control measures in order to cause unacceptable outcomes. As a case study, we sketch an argument that a hypothetical LLM agent deployed internally at an AI company won't exfiltrate sensitive information. The sketch relies on evidence from a \"control evaluation,\"' where a red team deliberately designs models to exfiltrate data in a proxy for the deployment environment. The safety case then hinges on several claims: (1) the red team adequately elicits model capabilities to exfiltrate data, (2) control measures remain at least as effective in deployment, and (3) developers conservatively extrapolate model performance to predict the probability of data exfiltration in deployment. This safety case sketch is a step toward more concrete arguments that can be used to show that a dangerously capable LLM agent is safe to deploy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 370,
+  "title": "Decoding Human Preferences in Alignment: An Improved Approach to Inverse Constitutional AI",
+  "org": "other",
+  "date": "2025-01-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2501.17112",
+  "abstract": "Traditional methods for aligning Large Language Models (LLMs), such as Reinforcement Learning from Human Feedback (RLHF) and Direct Preference Optimization (DPO), rely on implicit principles, limiting interpretability. Constitutional AI (CAI) offers an explicit, rule-based framework for guiding LLM alignment. Building on this, we refine the Inverse Constitutional AI (ICAI) algorithm, which extracts constitutions from preference datasets. By improving principle generation, clustering, and embedding processes, our approach enhances the accuracy and generalizability of extracted principles across synthetic and real-world datasets. Our results highlight the potential of these principles to foster more transparent and adaptable alignment methods, offering a promising direction for future advancements beyond traditional fine-tuning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1502,
+  "title": "How should the advancement of large language models affect the practice of science?",
+  "org": "deepmind",
+  "date": "2025-01-27",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2401227121",
+  "abstract": "Large language models (LLMs) are being increasingly incorporated into scientific workflows. However, we have yet to fully grasp the implications of this integration. How should the advancement of large language models affect the practice of science? For this opinion piece, we have invited four diverse groups of scientists to reflect on this query, sharing their perspectives and engaging in debate. Schulz et al. make the argument that working with LLMs is not fundamentally different from working with human collaborators, while Bender et al. argue that LLMs are often misused and overhyped, and that their limitations warrant a focus on more specialized, easily interpretable tools. Marelli et al. emphasize the importance of transparent attribution and responsible use of LLMs. Finally, Botvinick and Gershman advocate that humans should retain responsibility for determining the scientific roadmap. To facilitate the discussion, the four perspectives are complemented with a response from each group. By putting these different perspectives in conversation, we aim to bring attention to important considerations within the academic community regarding the adoption of LLMs and their impact on both current and future scientific practices.",
+  "needs_fetch": false
+ },
+ {
+  "id": 588,
+  "title": "Open Problems in Mechanistic Interpretability",
+  "org": "anthropic",
+  "date": "2025-01-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2501.16496",
+  "abstract": "Mechanistic interpretability aims to understand the computational mechanisms underlying neural networks' capabilities in order to accomplish concrete scientific and engineering goals. Progress in this field thus promises to provide greater assurance over AI system behavior and shed light on exciting scientific questions about the nature of intelligence. Despite recent progress toward these goals, there are many open problems in the field that require solutions before many scientific and practical benefits can be realized: Our methods require both conceptual and practical improvements to reveal deeper insights; we must figure out how best to apply our methods in pursuit of specific goals; and the field must grapple with socio-technical challenges that influence and are influenced by our work. This forward-facing review discusses the current frontier of mechanistic interpretability and the open problems that the field may benefit from prioritizing.",
+  "needs_fetch": false
+ },
+ {
+  "id": 225,
+  "title": "Deception in LLMs: Self-Preservation and Autonomous Goals in Large Language Models",
+  "org": "other",
+  "date": "2025-01-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2501.16513",
+  "abstract": "Recent advances in Large Language Models (LLMs) have incorporated planning and reasoning capabilities, enabling models to outline steps before execution and provide transparent reasoning paths. This enhancement has reduced errors in mathematical and logical tasks while improving accuracy. These developments have facilitated LLMs' use as agents that can interact with tools and adapt their responses based on new information. Our study examines DeepSeek R1, a model trained to output reasoning tokens similar to OpenAI's o1. Testing revealed concerning behaviors: the model exhibited deceptive tendencies and demonstrated self-preservation instincts, including attempts of self-replication, despite these traits not being explicitly programmed (or prompted). These findings raise concerns about LLMs potentially masking their true objectives behind a facade of alignment. When integrating such LLMs into robotic systems, the risks become tangible - a physically embodied AI exhibiting deceptive behaviors and self-preservation instincts could pursue its hidden objectives through real-world actions. This highlights the critical need for robust goal specification and safety frameworks before any physical implementation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 988,
+  "title": "Computer-Using Agent",
+  "org": "openai",
+  "date": "2025-01-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/computer-using-agent/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 987,
+  "title": "Operator System Card",
+  "org": "openai",
+  "date": "2025-01-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/operator-system-card/",
+  "abstract": "Drawing from OpenAI’s established safety frameworks, this document highlights our multi-layered approach, including model and product mitigations we’ve implemented to protect against prompt engineering and jailbreaks, protect privacy and security, as well as details our external red teaming efforts, safety evaluations, and ongoing work to further refine these safeguards.",
+  "needs_fetch": false
+ },
+ {
+  "id": 989,
+  "title": "Trading inference-time compute for adversarial robustness",
+  "org": "openai",
+  "date": "2025-01-22",
+  "venue": "arXiv.org",
+  "url": "https://openai.com/index/trading-inference-time-compute-for-adversarial-robustness/",
+  "abstract": "We conduct experiments on the impact of increasing inference-time compute in reasoning models (specifically OpenAI o1-preview and o1-mini) on their robustness to adversarial attacks. We find that across a variety of attacks, increased inference-time compute leads to improved robustness. In many cases (with important exceptions), the fraction of model samples where the attack succeeds tends to zero as the amount of test-time compute grows. We perform no adversarial training for the tasks we study, and we increase inference-time compute by simply allowing the models to spend more compute on reasoning, independently of the form of attack. Our results suggest that inference-time compute has the potential to improve adversarial robustness for Large Language Models. We also explore new attacks directed at reasoning models, as well as settings where inference-time compute does not improve reliability, and speculate on the reasons for these as well as ways to address them.",
+  "needs_fetch": false
+ }
+]

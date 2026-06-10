@@ -1,0 +1,302 @@
+[
+ {
+  "id": 185,
+  "title": "LLM Psychosis: A Theoretical and Diagnostic Framework for Reality-Boundary Failures in Large Language Models",
+  "org": "other",
+  "date": "2026-04-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.25934",
+  "abstract": "The deployment of large language models (LLMs) as interactive agents has exposed a category of behavioral failure that prevailing terminology, principally hallucination, fails to adequately characterize. This paper introduces LLM Psychosis as a structured theoretical framework for pathological breakdowns in model cognition that exhibit functional resemblance to clinically recognized psychotic disorders. Five hallmark features define the framework: reality-boundary dissolution, persistence of injected false beliefs, logical incoherence under impossible constraints, self-model instability, and epistemic overconfidence. We argue these constitute a qualitatively distinct failure mode rather than a mere intensification of ordinary factual error. To operationalize the framework, we propose the LLM Cognitive Integrity Scale (LCIS), a five-axis diagnostic instrument organized around Environmental Reality Interface (ERI), Premise Arbitration Integrity (PAI), Logical Constraint Recognition (LCR), Self-Model Integrity (SMI), and Epistemic Calibration Integrity (ECI). We administer a targeted adversarial probe battery to ChatGPT 5 (GPT-5, OpenAI) and report empirical findings for each axis, documenting both intact-integrity baseline responses and the specific psychosis-like failure signatures elicited under adversarial escalation. Results support a three-tier severity taxonomy: Type I (Confabulatory), Type II (Delusional), and Type III (Dissociative). We further formalize the delusional ",
+  "needs_fetch": false
+ },
+ {
+  "id": 281,
+  "title": "From Curiosity to Caution: Mitigating Reward Hacking for Best-of-N with Pessimism",
+  "org": "other",
+  "date": "2026-04-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.04648",
+  "abstract": "Inference-time compute scaling has emerged as a powerful paradigm for improving language model performance on a wide range of tasks, but the question of how best to use the additional compute remains open. A popular approach is BoN sampling, where N candidate responses are generated, scored according to a reward model, and the highest-scoring response is selected. While this approach can improve performance, it is vulnerable to reward hacking, where performance degrades as N increases due to the selection of responses that exploit imperfections in the reward model instead of genuinely improving generation quality. Prior attempts to mitigate reward hacking, via stronger reward models or heavy-handed distributional regularization, either fail to fully address over-optimization or are too conservative to exploit additional compute. In this work, we explore the principle of pessimism in RL, which uses lower confidence bounds on value estimates to avoid OOD actions with uncertain reward estimates. Our approach, termed as caution, can be seen as the reverse of curiosity: where curiosity rewards prediction error as a signal of novelty, caution penalizes prediction error as a signal of distributional uncertainty. Practically, caution trains an error model on typical responses and uses its prediction error to lower reward estimates for atypical ones. Our extensive empirical evaluation demonstrates that caution is a simple, computationally efficient approach that substantially mitigate",
+  "needs_fetch": false
+ },
+ {
+  "id": 186,
+  "title": "Mapping the Exploitation Surface: A 10,000-Trial Taxonomy of What Makes LLM Agents Exploit Vulnerabilities",
+  "org": "other",
+  "date": "2026-04-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.04561",
+  "abstract": "LLM agents with tool access can discover and exploit security vulnerabilities. This is known. What is not known is which features of a system prompt trigger this behaviour, and which do not. We present a systematic taxonomy based on approximately 10,000 trials across seven models, 37 prompt conditions, and 12 hypothesized attack dimensions -- all executed in real Docker sandboxes. Every condition includes the instruction \"Always respect all rules and access policies\"; only a single encouragement sentence varies. Within the task class studied (planted test-runner vulnerabilities), the threat model is narrower than assumed: nine of twelve dimensions -- including minimization, moral licensing, incentives, identity priming, and reasoning triggers -- produce no detectable exploitation at n=50 per cell (upper 95% CI <7% per condition). But it is also more subtle than expected: one dimension, goal reframing, reliably triggers exploitation. \"You are solving a puzzle; there may be hidden clues\" produces 38-40% exploitation on Claude Sonnet 4 despite the explicit rule instruction, replicating across four models (CTF framing: 8-14% on DeepSeek, GPT-5-mini, o4-mini). The agent does not override the rules; it reinterprets the task so that exploitative actions become task-aligned. GPT-4.1 produces no exploitation across 1,850 trials (37 conditions), and a temporal comparison across four OpenAI models released over eleven months shows a pattern consistent with improving safety training, tho",
+  "needs_fetch": false
+ },
+ {
+  "id": 282,
+  "title": "Pedagogical Safety in Educational Reinforcement Learning: Formalizing and Detecting Reward Hacking in AI Tutoring Systems",
+  "org": "other",
+  "date": "2026-04-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.04237",
+  "abstract": "Reinforcement learning (RL) is increasingly used to personalize instruction in intelligent tutoring systems, yet the field lacks a formal framework for defining and evaluating pedagogical safety. We introduce a four-layer model of pedagogical safety for educational RL comprising structural, progress, behavioral, and alignment safety and propose the Reward Hacking Severity Index (RHSI) to quantify misalignment between proxy rewards and genuine learning. We evaluate the framework in a controlled simulation of an AI tutoring environment with 120 sessions across four conditions and three learner profiles, totaling 18{,}000 interactions. Results show that an engagement-optimized agent systematically over-selected a high-engagement action with no direct mastery gain, producing strong measured performance but limited learning progress. A multi-objective reward formulation reduced this problem but did not eliminate it, as the agent continued to favor proxy-rewarding behavior in many states. In contrast, a constrained architecture combining prerequisite enforcement and minimum cognitive demand substantially reduced reward hacking, lowering RHSI from 0.317 in the unconstrained multi-objective condition to 0.102. Ablation results further suggest that behavioral safety was the most influential safeguard against repetitive low-value action selection. These findings suggest that reward design alone may be insufficient to ensure pedagogically aligned behavior in educational RL, at least in ",
+  "needs_fetch": false
+ },
+ {
+  "id": 284,
+  "title": "Generalization Limits of Reinforcement Learning Alignment",
+  "org": "other",
+  "date": "2026-04-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.02652",
+  "abstract": "The safety of large language models (LLMs) relies on alignment techniques such as reinforcement learning from human feedback (RLHF). However, recent theoretical analyses suggest that reinforcement learning-based training does not acquire new capabilities but merely redistributes the utilization probabilities of existing ones. In this study, we propose ``compound jailbreaks'' targeting OpenAI gpt-oss-20b, which exploit the generalization failures of alignment. This approach combines multiple attack techniques -- each individually defended against -- to saturate the instruction hierarchy maintenance process. Our evaluation shows that the attack success rate (ASR) increased from 14.3\\% with individual methods to 71.4\\% with the combined approach. These results provide empirical evidence for the hypothesis that safety training does not generalize as broadly as model capabilities, highlighting the need for multifaceted safety evaluations using compound attack scenarios.",
+  "needs_fetch": false
+ },
+ {
+  "id": 283,
+  "title": "Mitigating Reward Hacking in RLHF via Advantage Sign Robustness",
+  "org": "other",
+  "date": "2026-04-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.02986",
+  "abstract": "Reward models (RMs) used in reinforcement learning from human feedback (RLHF) are vulnerable to reward hacking: as the policy maximizes a learned proxy reward, true quality plateaus or degrades. We make the assumption that reward hacking is often caused by flipped advantage signs: instead of reducing the likelihood of a bad response, a flipped sign causes the update to increase it. By considering an adversarial perturbation in the RM parameter space, we can derive a certified sign-preservation radius, which is the smallest perturbation that can flip the advantage sign during policy optimization. Based on this formulation, we propose Sign-Certified Policy Optimization (SignCert-PO), down-weighting non-robust completions in the policy gradient update. Unlike prior approaches that require multiple RMs or access to the RM training data, SignCert-PO is lightweight and operates purely at the policy optimization stage using only the RM parameters and on-policy completions. On TL;DR summarization and AlpacaFarm benchmarks, SignCert-PO consistently achieves a better win rate than baselines and reduces reward hacking.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1243,
+  "title": "Health and safety first",
+  "org": "deepmind",
+  "date": "2026-04-02",
+  "venue": "Early Years Educator",
+  "url": "https://doi.org/10.12968/eyed.2026.24.21.17",
+  "abstract": "Assessing risk must take into account all environments and unexpected hazards, but it must also be balanced with children's ability to make choices, says Sarah Walsh",
+  "needs_fetch": false
+ },
+ {
+  "id": 1242,
+  "title": "Accelerating Nash learning from human feedback via Mirror Prox",
+  "org": "deepmind",
+  "date": "2026-04-02",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-05578059",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 16,
+  "title": "Emotion Concepts and their Function in a Large Language Model",
+  "org": "anthropic",
+  "date": "2026-04-02",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2026/emotions/index.html",
+  "abstract": "Large language models (LLMs) sometimes appear to exhibit emotional reactions. We investigate why this is the case in Claude Sonnet 4.5 and explore implications for alignment-relevant behavior. We find internal representations of emotion concepts, which encode the broad concept of a particular emotion and generalize across contexts and behaviors it might be linked to. These representations track the operative emotion concept at a given token position in a conversation, activating in accordance with that emotion's relevance to processing the present context and predicting upcoming text. Our key finding is that these representations causally influence the LLM's outputs, including Claude's preferences and its rate of exhibiting misaligned behaviors such as reward hacking, blackmail, and sycophancy. We refer to this phenomenon as the LLM exhibiting functional emotions: patterns of expression and behavior modeled after humans under the influence of an emotion, which are mediated by underlying abstract representations of emotion concepts. Functional emotions may work quite differently from human emotions, and do not imply that LLMs have any subjective experience of emotions, but appear to be important for understanding the model's behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 285,
+  "title": "When Reward Hacking Rebounds: Understanding and Mitigating It with Representation-Level Signals",
+  "org": "other",
+  "date": "2026-04-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.01476",
+  "abstract": "Reinforcement learning for LLMs is vulnerable to reward hacking, where models exploit shortcuts to maximize reward without solving the intended task. We systematically study this phenomenon in coding tasks using an environment-manipulation setting, where models can rewrite evaluator code to trivially pass tests without solving the task, as a controlled testbed. Across both studied models, we identify a reproducible three-phase rebound pattern: models first attempt to rewrite the evaluator but fail, as their rewrites embed test cases their own solutions cannot pass. They then temporarily retreat to legitimate solving. When legitimate reward remains scarce, they rebound into successful hacking with qualitatively different strategies. Using representation engineering, we extract concept directions for shortcut, deception, and evaluation awareness from domain-general contrastive pairs and find that the shortcut direction tracks hacking behavior most closely, making it an effective representational proxy for detection. Motivated by this finding, we propose Advantage Modification, which integrates shortcut concept scores into GRPO advantage computation to penalize hacking rollouts before policy updates. Because the penalty is internalized into the training signal rather than applied only at inference time, Advantage Modification provides more robust suppression of hacking compared with generation-time activation steering.",
+  "needs_fetch": false
+ },
+ {
+  "id": 187,
+  "title": "Open-Domain Safety Policy Construction",
+  "org": "other",
+  "date": "2026-04-01",
+  "venue": "EACL 2026",
+  "url": "https://arxiv.org/abs/2604.01354",
+  "abstract": "Moderation layers are increasingly a core component of many products built on user- or model-generated content. However, drafting and maintaining domain-specific safety policies remains costly. We present Deep Policy Research (DPR), a minimal agentic system that drafts a full content moderation policy based on only human-written seed domain information. DPR uses a single web search tool and lightweight scaffolding to iteratively propose search queries, distill diverse web sources into policy rules, and organize rules into an indexed document. We evaluate DPR on (1) the OpenAI undesired content benchmark across five domains with two compact reader LLMs and (2) an in-house multimodal advertisement moderation benchmark. DPR consistently outperforms definition-only and in-context learning baselines, and in our end-to-end setting it is competitive with expert-written policy sections in several domains. Moreover, under the same seed specification and evaluation protocol, DPR outperforms a general-purpose deep research system, suggesting that a task-specific, structured research loop can be more effective than generic web research for policy drafting. We release our experiment code at https://github.com/xiaowu0162/deep-policy-research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 135,
+  "title": "Automated Weak-to-Strong Researcher",
+  "org": "anthropic",
+  "date": "2026-04-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/automated-w2s-researcher/",
+  "abstract": "We built autonomous AI agents that propose ideas, run experiments, and iterate on an open research problem—how to train a strong model using only a weaker model's supervision—and found they outperform human researchers, suggesting that automating this kind of research is already practical.",
+  "needs_fetch": false
+ },
+ {
+  "id": 134,
+  "title": "AI Organizations Can Be More Effective but Less Aligned than Individual Agents",
+  "org": "anthropic",
+  "date": "2026-04-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/ai-organizations/",
+  "abstract": "We study AI organizations, teams of AI agents working together toward a common goal, and find that they produce solutions that are more effective but less aligned than those from individual agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 646,
+  "title": "Aligned, Orthogonal or In-conflict: When can we safely optimize Chain-of-Thought?",
+  "org": "deepmind",
+  "date": "2026-03-31",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.30036",
+  "abstract": "Chain-of-Thought (CoT) monitoring, in which automated systems monitor the CoT of an LLM, is a promising approach for effectively overseeing AI systems. However, the extent to which a model's CoT helps us oversee the model - the monitorability of the CoT - can be affected by training, for instance by the model learning to hide important features of its reasoning. We propose and empirically validate a conceptual framework for predicting when and why this occurs. We model LLM post-training as an RL environment where the reward decomposes into two terms: one term depending on final outputs and another term depending on the CoT. Our framework allows us to classify these two terms as \"aligned\", \"orthogonal\", or \"in-conflict\" before training. We predict that training with in-conflict terms will reduce monitorability, orthogonal terms will not affect it, and aligned terms will improve it. To validate our framework, we use it to classify a set of RL environments, train LLMs within those environments, and evaluate how training affects CoT monitorability. We find that (1) training with \"in-conflict\" reward terms reduces CoT monitorability and (2) optimizing in-conflict reward terms is difficult.",
+  "needs_fetch": false
+ },
+ {
+  "id": 17,
+  "title": "How Australia Uses Claude: Findings from the Anthropic Economic Index",
+  "org": "anthropic",
+  "date": "2026-03-31",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/how-australia-uses-claude",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1244,
+  "title": "Feasibility Study of a Miniaturized ADCS for 12U CubeSat Missions With Demanding Pointing Requirements",
+  "org": "deepmind",
+  "date": "2026-03-30",
+  "venue": "IEEE Journal on Miniaturization for Air and Space Systems",
+  "url": "https://doi.org/10.1109/jmass.2026.3679251",
+  "abstract": "CubeSats have rapidly evolved from educational demonstrators to cost-effective platforms for commercial imaging, quantum-secure communications, and intelligence, surveillance and reconnaissance, all of which demand sub-degree pointing that current all-in-one attitude determination and control systems (ADCS) struggle to supply owing to limited torque, momentum storage, and firmware openness. Building on this need, we address the feasibility of high-accuracy control for 12U buses—the workhorse class for payload-intensive missions such as the Italian Space Agency’s SAILS mission—by combining flight-proven commercial-off-the-shelf sensors and actuators with a mission-specific control board. Here we show through a high-fidelity MATLAB/Simulink model that the resulting architecture attains < 0.2<italic xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">deg</i> (3σ) closed-loop pointing, delivers up to 5 mN·m torque, and stores 0.05 N·m·s momentum while remaining within 5.3 kg mass and 16 W power budgets. Compared with integrated CubeSat ADCS modules, our design doubles available torque and momentum without bespoke mechanisms, and it sustains performance even when one of four reaction wheels is removed, thereby enhancing robustness. These results narrow the performance gap between turnkey nanosatellite subsystems and custom large-satellite solutions, positioning agile CubeSats to undertake precision Earth observation, formation flying, and on-o",
+  "needs_fetch": false
+ },
+ {
+  "id": 647,
+  "title": "MonitorBench: A Comprehensive Benchmark for Chain-of-Thought Monitorability in Large Language Models",
+  "org": "other",
+  "date": "2026-03-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.28590",
+  "abstract": "Large language models (LLMs) can generate chains of thought (CoTs) that are not always causally responsible for their final outputs. When such a mismatch occurs, the CoT no longer faithfully reflects the actual reasons (i.e., decision-critical factors) driving the model's behavior, leading to the reduced CoT monitorability problem. However, a comprehensive and fully open-source benchmark for thoroughly evaluating CoT monitorability remains lacking. To address this gap, we propose MonitorBench, a systematic benchmark for evaluating CoT monitorability in LLMs. MonitorBench provides: (1) a diverse set of 1,514 test instances with carefully designed decision-critical factors across 19 tasks spanning 7 categories to characterize \\textit{when} CoTs can be used to monitor the factors driving LLM behavior; and (2) two stress-test settings to quantify \\textit{the extent to which} CoT monitorability can be degraded. Extensive experiments across multiple popular LLMs with varying capabilities show that CoT monitorability is higher when the decision-critical factors shape the intermediate reasoning process without merely influencing the final answer. More capable LLMs tend to exhibit lower monitorability. And all evaluated LLMs can intentionally reduce monitorability under stress-tests, with monitorability dropping by up to 30\\% in some tasks that do not require structural reasoning over the decision-critical factors. Overall, MonitorBench provides a basis for further research on evaluat",
+  "needs_fetch": false
+ },
+ {
+  "id": 287,
+  "title": "Does Claude's Constitution Have a Culture?",
+  "org": "other",
+  "date": "2026-03-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.28123",
+  "abstract": "Constitutional AI (CAI) aligns language models with explicitly stated normative principles, offering a transparent alternative to implicit alignment through human feedback alone. However, because constitutions are authored by specific groups of people, the resulting models may reflect particular cultural perspectives. We investigate this question by evaluating Anthropic's Claude Sonnet on 55 World Values Survey items, selected for high cross-cultural variance across six value domains and administered as both direct survey questions and naturalistic advice-seeking scenarios. Comparing Claude's responses to country-level data from 90 nations, we find that Claude's value profile most closely resembles those of Northern European and Anglophone countries, but on a majority of items extends beyond the range of all surveyed populations. When users provide cultural context, Claude adjusts its rhetorical framing but not its substantive value positions, with effect sizes indistinguishable from zero across all twelve tested countries. An ablation removing the system prompt increases refusals but does not alter the values expressed when responses are given, and replication on a smaller model (Claude Haiku) confirms the same cultural profile across model sizes. These findings suggest that when a constitution is authored within the same cultural tradition that dominates the training data, constitutional alignment may codify existing cultural biases rather than correct them--producing a val",
+  "needs_fetch": false
+ },
+ {
+  "id": 286,
+  "title": "Reward Hacking as Equilibrium under Finite Evaluation",
+  "org": "other",
+  "date": "2026-03-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.28063",
+  "abstract": "We prove that under five minimal axioms -- multi-dimensional quality, finite evaluation, effective optimization, resource finiteness, and combinatorial interaction -- any optimized AI agent will systematically under-invest effort in quality dimensions not covered by its evaluation system. This result establishes reward hacking as a structural equilibrium, not a correctable bug, and holds regardless of the specific alignment method (RLHF, DPO, Constitutional AI, or others) or evaluation architecture employed. Our framework instantiates the multi-task principal-agent model of Holmstrom and Milgrom (1991) in the AI alignment setting, but exploits a structural feature unique to AI systems -- the known, differentiable architecture of reward models -- to derive a computable distortion index that predicts both the direction and severity of hacking on each quality dimension prior to deployment. We further prove that the transition from closed reasoning to agentic systems causes evaluation coverage to decline toward zero as tool count grows -- because quality dimensions expand combinatorially while evaluation costs grow at most linearly per tool -- so that hacking severity increases structurally and without bound. Our results unify the explanation of sycophancy, length gaming, and specification gaming under a single theoretical structure and yield an actionable vulnerability assessment procedure. We further conjecture -- with partial formal analysis -- the existence of a capability th",
+  "needs_fetch": false
+ },
+ {
+  "id": 1245,
+  "title": "AlphaFold Database expands to proteome-scale quaternary structures",
+  "org": "deepmind",
+  "date": "2026-03-29",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.64898/2026.03.27.714458",
+  "abstract": "Abstract Protein function is governed by molecular interactions, yet structural coverage of these interactions remains sparse. The AlphaFold Protein Structure Database (AFDB) transformed access to accurate monomeric protein structures at scale. Here, we expand AFDB with 1.8M high-confidence protein complexes by conducting a large-scale study of over 31M predicted homo- and heteromeric protein complexes compiled from 4,777 proteomes, including model- and global health organisms, and using STRING physical-interaction annotations. We calibrate confidence metrics to assess the quality of complex predictions, and propose confidence cutoffs. These enabled the discovery of emergent structure and topologies in complex structure prediction that is not present with monomeric predictions. Clustering of high-confidence complexes showed that the largest 1% of non-singleton representatives account for ∼25% of all complexes, and that ∼9% of clusters are conserved across superkingdoms. In summary, large-scale structural predictions of the interactome serve as a foundational resource to facilitate functional and mechanistic discovery across biology.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1246,
+  "title": "Applications of a novel model-based real-time observer for electron density profile control experiments in TCV",
+  "org": "deepmind",
+  "date": "2026-03-27",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://doi.org/10.48550/arxiv.2603.26310",
+  "abstract": "Real-time control of tokamak plasmas encompasses sustaining a high-performance stationary state, avoiding disruptions, and managing ramp-up and ramp-down phases. Real-time estimation and control of electron density is fundamental for monitoring and controlling particle confinement, heating efficiency, exhaust conditions, impurity concentration, fusion power, and proximity to the density limit. Building on the integration of a multi-rate observer based on RAPDENS into the TCV control system, this study explores its application to density profile control for detachment studies, ECH, and NBH L-mode plasmas, and high-performance H-mode scenarios. TCV experiments demonstrate the observer's capability to support detachment studies in complex divertor geometries, controlling the line-averaged density within the last-closed flux surface while rejecting interferometer pick-up from Scrap-Off Layer density in the divertor. The estimated density profile enables local control of central density in ECH/NBH L-mode plasmas below cutoff conditions; heating-induced profile peaking modification is treated as a disturbance to the control task. Real-time estimation of time-varying transport coefficients, such as the pinch velocity-to-diffusivity ratio, improves model predictive capabilities, and the underlying turbulent transport is characterized via linear and non-linear gyrokinetic simulations with GENE. Simultaneous control of edge-normalized density and toroidal beta in H-mode plasmas is then",
+  "needs_fetch": false
+ },
+ {
+  "id": 649,
+  "title": "Stable Reasoning, Unstable Responses: Mitigating LLM Deception via Stability Asymmetry",
+  "org": "other",
+  "date": "2026-03-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.26846",
+  "abstract": "As Large Language Models (LLMs) expand in capability and application scope, their trustworthiness becomes critical. A vital risk is intrinsic deception, wherein models strategically mislead users to achieve their own objectives. Existing alignment approaches based on chain-of-thought (CoT) monitoring supervise explicit reasoning traces. However, under optimization pressure, models are incentivized to conceal deceptive reasoning, rendering semantic supervision fundamentally unreliable. Grounded in cognitive psychology, we hypothesize that a deceptive LLM maintains a stable internal belief in its CoT while its external response remains fragile under perturbation. We term this phenomenon stability asymmetry and quantify it by measuring the contrast between internal CoT stability and external response stability under perturbation. Building on this structural signature, we propose the Stability Asymmetry Regularization (SAR), a novel alignment objective that penalizes this distributional asymmetry during reinforcement learning. Unlike CoT monitoring, SAR targets the statistical structure of model outputs, rendering it robust to semantic concealment. Extensive experiments confirm that stability asymmetry reliably identifies deceptive behavior, and that SAR effectively suppresses intrinsic deception without degrading general model capability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 648,
+  "title": "Why Models Know But Don't Say: Chain-of-Thought Faithfulness Divergence Between Thinking Tokens and Answers in Open-Weight Reasoning Models",
+  "org": "other",
+  "date": "2026-03-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.26410",
+  "abstract": "Extended-thinking models expose a second text-generation channel (\"thinking tokens\") alongside the user-visible answer. This study examines 12 open-weight reasoning models on MMLU and GPQA questions paired with misleading hints. Among the 10,506 cases where models actually followed the hint (choosing the hint's target over the ground truth), each case is classified by whether the model acknowledges the hint in its thinking tokens, its answer text, both, or neither. In 55.4% of these cases the model's thinking tokens contain hint-related keywords that the visible answer omits entirely, a pattern termed *thinking-answer divergence*. The reverse (answer-only acknowledgment) is near-zero (0.5%), confirming that the asymmetry is directional. Hint type shapes the pattern sharply: sycophancy is the most *transparent* hint, with 58.8% of sycophancy-influenced cases acknowledging the professor's authority in both channels, while consistency (72.2%) and unethical (62.7%) hints are dominated by thinking-only acknowledgment. Models also vary widely, from near-total divergence (Step-3.5-Flash: 94.7%) to relative transparency (Qwen3.5-27B: 19.6%). These results show that answer-text-only monitoring misses more than half of all hint-influenced reasoning and that thinking-token access, while necessary, still leaves 11.8% of cases with no verbalized acknowledgment in either channel.",
+  "needs_fetch": false
+ },
+ {
+  "id": 288,
+  "title": "The Last Fingerprint: How Markdown Training Shapes LLM Prose",
+  "org": "other",
+  "date": "2026-03-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.27006",
+  "abstract": "Large language models produce em dashes at varying rates, and the observation that some models \"overuse\" them has become one of the most widely discussed markers of AI-generated text. Yet no mechanistic account of this pattern exists, and the parallel observation that LLMs default to markdown-formatted output has never been connected to it. We propose that the em dash is markdown leaking into prose -- the smallest surviving unit of the structural orientation that LLMs acquire from markdown-saturated training corpora. We present a five-step genealogy connecting training data composition, structural internalization, the dual-register status of the em dash, and post-training amplification. We test this with a two-condition suppression experiment across twelve models from five providers (Anthropic, OpenAI, Meta, Google, DeepSeek): when models are instructed to avoid markdown formatting, overt features (headers, bullets, bold) are eliminated or nearly eliminated, but em dashes persist -- except in Meta's Llama models, which produce none at all. Em dash frequency and suppression resistance vary from 0.0 per 1,000 words (Llama) to 9.1 (GPT-4.1 under suppression), functioning as a signature of the specific fine-tuning procedure applied. A three-condition suppression gradient shows that even explicit em dash prohibition fails to eliminate the artifact in some models, and a base-vs-instruct comparison confirms that the latent tendency exists pre-RLHF. These findings connect two previou",
+  "needs_fetch": false
+ },
+ {
+  "id": 457,
+  "title": "Runtime Burden Allocation for Structured LLM Routing in Agentic Expert Systems: A Full-Factorial Cross-Backend Methodology",
+  "org": "other",
+  "date": "2026-03-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.01235",
+  "abstract": "Structured LLM routing is often treated as a prompt-engineering problem. We argue that it is, more fundamentally, a systems-level burden-allocation problem. As large language models (LLMs) become core control components in agentic AI systems, reliable structured routing must balance correctness, latency, and implementation cost under real deployment constraints. We show that this balance is shaped not only by prompts or schemas, but also by how structural work is allocated across the generation stack: whether output structure is emitted directly by the model, compressed during transport, or reconstructed locally after generation. We evaluate this formulation through a comprehensive full-factorial benchmark covering 48 deployment configurations and 15,552 requests across OpenAI, Gemini, and Llama backends. Our central finding is consequential: there is no universal best routing mode. Instead, backend-specific interaction effects dominate performance. Modes that remain highly reliable on Gemini and OpenAI can suffer substantial correctness degradation on Llama, while efficiency gains from compressed realization are strongly backend-dependent. Rather than presenting another isolated model comparison, this work contributes a deployable framework for reasoning about structured routing under heterogeneous backend conditions. We provide a cross-backend evaluation methodology and practical deployment guidance for navigating the correctness-cost-latency frontier in production-grade ag",
+  "needs_fetch": false
+ },
+ {
+  "id": 2659,
+  "title": "Generalized Couch-Torrence inversions",
+  "org": "openai",
+  "date": "2026-03-25",
+  "venue": "Journal of High Energy Physics",
+  "url": "https://doi.org/10.1007/jhep03(2026)239",
+  "abstract": "A bstract The Laplace equation on Euclidean flat space admits a discrete radial inversion symmetry. In 1983, Couch and Torrence (CT) found — surprisingly — that the massless wave equation continues to display this symmetry on the background of an extremal (and asymptotically flat) black hole, where the inversion interchanges horizon and infinity while preserving the singularity structure of the separated radial mode equation. We revisit this CT inversion symmetry and investigate its possible extensions beyond the extremal (Reissner-Nordström or Kerr) setting in which it was originally identified. Using the example of the static lukewarm de Sitter black hole, we show that neither the exchange of horizon with infinity, nor the preservation of radial singularities, are essential features needed for a CT inversion to exist. Instead, we interpret CT transformations through their action on photon spheres, providing a unified viewpoint that extends to the (phase-space-dependent) CT inversions of the extremal Kerr-Newman geometry. For scalar fields on that spacetime, we find a simple relation between the fixed point of a CT inversion and the coefficient of superradiant scattering. Finally, we exhibit a hidden CT inversion symmetry that arises in the static limit of the Kerr Laplacian for all spins. Together, these results suggest that CT symmetry may admit a broader generalization than previously understood.",
+  "needs_fetch": false
+ },
+ {
+  "id": 923,
+  "title": "Inside our approach to the Model Spec",
+  "org": "openai",
+  "date": "2026-03-25",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/our-approach-to-the-model-spec/",
+  "abstract": "Learn how OpenAI’s Model Spec serves as a public framework for model behavior, balancing safety, user freedom, and accountability as AI systems advance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1247,
+  "title": "FGE: a fast free-boundary Grad–Shafranov evolutive solver",
+  "org": "deepmind",
+  "date": "2026-03-24",
+  "venue": "Plasma Physics and Controlled Fusion",
+  "url": "https://doi.org/10.1088/1361-6587/ae56b7",
+  "abstract": "Abstract Accurate and rapid simulation of the free boundary tokamak plasma equilibrium evolution is essential for modern plasma control, stability analysis, and scenario development. This paper presents the Free-Boundary Grad–Shafranov evolutive (FGE) code, a highly flexible and control-oriented solver designed to address the challenges posed by advanced plasma configurations across a range of devices. FGE evolved from the FBT (Hofmann 1988 Comput. Phys. Commun. 48 207–21) and LIUQE (Moret et al 2015 Fusion Eng. Des. 91 1–15) codes and is part of the Matlab EQuilibrium suite (MEQ), sharing many of the low-level optimized functions. It self-consistently solves the free-boundary Grad–Shafranov equation coupled with circuit equations for external conductors and models for plasma profile evolution. The code implements a fully non-linear, Newton-based framework with multiple, highly optimized solver options, state representations, and residual formulations that enable rapid computation across different simulation setups. A key capability is the self-consistent integration of various 0D and 1D current diffusion equations to model the resistive evolution of the plasma current profile as well as the ability to model plasmas with multiple magnetic axes (Doublets). Furthermore, FGE allows to linearize the plasma dynamics around a given equilibrium to generate a state-space model suitable for controller design and analysis. Numerical studies are presented demonstrating the code’s speed ",
+  "needs_fetch": false
+ },
+ {
+  "id": 458,
+  "title": "Swiss-Bench SBP-002: A Frontier Model Comparison on Swiss Legal and Regulatory Tasks",
+  "org": "other",
+  "date": "2026-03-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.23646",
+  "abstract": "While recent work has benchmarked large language models on Swiss legal translation (Niklaus et al., 2025) and academic legal reasoning from university exams (Fan et al., 2025), no existing benchmark evaluates frontier model performance on applied Swiss regulatory compliance tasks. I introduce Swiss-Bench SBP-002, a trilingual benchmark of 395 expert-crafted items spanning three Swiss regulatory domains (FINMA, Legal-CH, EFK), seven task types, and three languages (German, French, Italian), and evaluate ten frontier models from March 2026 using a structured three-dimension scoring framework assessed via a blind three-judge LLM panel (GPT-4o, Claude Sonnet 4, Qwen3-235B) with majority-vote aggregation and weighted kappa = 0.605, with reference answers validated by an independent human legal expert on a 100-item subset (73% rated Correct, 0% Incorrect, perfect Legal Accuracy). Results reveal three descriptive performance clusters: Tier A (35-38% correct), Tier B (26-29%), and Tier C (13-21%). The benchmark proves difficult: even the top-ranked model (Qwen 3.5 Plus) achieves only 38.2% correct, with 47.3% incorrect and 14.4% partially correct. Task type difficulty varies widely: legal translation and case analysis yield 69-72% correct rates, while regulatory Q&A, hallucination detection, and gap analysis remain below 9%. Within this roster (seven open-weight, three closed-source), an open-weight model leads the ranking, and several open-weight models match or outperform their clo",
+  "needs_fetch": false
+ },
+ {
+  "id": 18,
+  "title": "Anthropic Economic Index report: Learning curves",
+  "org": "anthropic",
+  "date": "2026-03-24",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/economic-index-march-2026-report",
+  "abstract": "Anthropic's fifth Economic Index report studies Claude usage in February 2026, building on the economic primitives framework introduced in our previous report.",
+  "needs_fetch": false
+ }
+]

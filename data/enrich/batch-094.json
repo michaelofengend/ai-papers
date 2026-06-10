@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1095,
+  "title": "Learning Montezuma’s Revenge from a single demonstration",
+  "org": "openai",
+  "date": "2018-07-04",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-montezumas-revenge-from-a-single-demonstration/",
+  "abstract": "We’ve trained an agent to achieve a high score of 74,500 on Montezuma’s Revenge from a single human demonstration, better than any previously published result. Our algorithm is simple: the agent plays a sequence of games starting from carefully chosen states from the demonstration, and learns from them by optimizing the game score using PPO, the same reinforcement learning algorithm that underpins OpenAI Five.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1096,
+  "title": "OpenAI Five",
+  "org": "openai",
+  "date": "2018-06-25",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-five/",
+  "abstract": "Our team of five neural networks, OpenAI Five, has started to defeat amateur human teams at Dota 2.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1097,
+  "title": "Retro Contest: Results",
+  "org": "openai",
+  "date": "2018-06-22",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/retro-contest-results/",
+  "abstract": "The first run of our Retro Contest—exploring the development of algorithms that can generalize from previous experience—is now complete.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1098,
+  "title": "Learning policy representations in multiagent systems",
+  "org": "openai",
+  "date": "2018-06-17",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-policy-representations-in-multiagent-systems/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1099,
+  "title": "GamePad: A learning environment for theorem proving",
+  "org": "openai",
+  "date": "2018-06-02",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/gamepad/",
+  "abstract": "In this paper, we introduce a system called GamePad that can be used to explore the application of machine learning methods to theorem proving in the Coq proof assistant. Interactive theorem provers such as Coq enable users to construct machine-checkable proofs in a step-by-step manner. Hence, they provide an opportunity to explore theorem proving with human supervision. We use GamePad to synthesize proofs for a simple algebraic rewrite problem and train baseline models for a formalization of the Feit-Thompson theorem. We address position evaluation (i.e., predict the number of proof steps left) and tactic prediction (i.e., predict the next proof step) tasks, which arise naturally in tactic-based theorem proving.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1100,
+  "title": "Gym Retro",
+  "org": "openai",
+  "date": "2018-05-25",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gym-retro/",
+  "abstract": "We’re releasing the full version of Gym Retro, a platform for reinforcement learning research on games. This brings our publicly-released game count from around 70 Atari games and 30 Sega games to over 1,000 games across a variety of backing emulators. We’re also releasing the tool we use to add new games to the platform.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1101,
+  "title": "AI and compute",
+  "org": "openai",
+  "date": "2018-05-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/ai-and-compute/",
+  "abstract": "We’re releasing an analysis showing that since 2012, the amount of compute used in the largest AI training runs has been increasing exponentially with a 3.4-month doubling time (by comparison, Moore’s Law had a 2-year doubling period)[^footnote-correction]. Since 2012, this metric has grown by more than 300,000x (a 2-year doubling period would yield only a 7x increase). Improvements in compute have been a key component of AI progress, so as long as this trend continues, it’s worth preparing for the implications of systems far outside today’s capabilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1102,
+  "title": "AI safety via debate",
+  "org": "openai",
+  "date": "2018-05-03",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/debate/",
+  "abstract": "To make AI systems broadly useful for challenging real-world tasks, we need them to learn complex human goals and preferences. One approach to specifying complex goals asks humans to judge during training which agent behaviors are safe and useful, but this approach can fail if the task is too complicated for a human to directly judge. To help address this concern, we propose training agents via self play on a zero sum debate game. Given a question or proposed action, two agents take turns making short statements up to a limit, then a human judges which of the agents gave the most true, useful information. In an analogy to complexity theory, debate with optimal play can answer any question in PSPACE given polynomial time judges (direct judging answers only NP questions). In practice, whether debate works involves empirical questions about humans and the tasks we want AIs to perform, plus theoretical questions about the meaning of AI alignment. We report results on an initial MNIST experiment where agents compete to convince a sparse classifier, boosting the classifier's accuracy from 59.4% to 88.9% given 6 pixels and from 48.2% to 85.2% given 4 pixels. Finally, we discuss theoretical and practical aspects of the debate model, focusing on potential weaknesses as the model scales up, and we propose future human and computer experiments to test these properties.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1103,
+  "title": "Evolved Policy Gradients",
+  "org": "openai",
+  "date": "2018-04-18",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/evolved-policy-gradients/",
+  "abstract": "We propose a metalearning approach for learning gradient-based reinforcement learning (RL) algorithms. The idea is to evolve a differentiable loss function, such that an agent, which optimizes its policy to minimize this loss, will achieve high rewards. The loss is parametrized via temporal convolutions over the agent's experience. Because this loss is highly flexible in its ability to take into account the agent's history, it enables fast task learning. Empirical results show that our evolved policy gradient algorithm (EPG) achieves faster learning on several randomized environments compared to an off-the-shelf policy gradient method. We also demonstrate that EPG's learned loss can generalize to out-of-distribution test time tasks, and exhibits qualitatively different behavior from other popular metalearning algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1104,
+  "title": "Gotta Learn Fast: A new benchmark for generalization in RL",
+  "org": "openai",
+  "date": "2018-04-10",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gotta-learn-fast/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1105,
+  "title": "Retro Contest",
+  "org": "openai",
+  "date": "2018-04-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/retro-contest/",
+  "abstract": "We’re launching a transfer learning contest that measures a reinforcement learning algorithm’s ability to generalize from previous experience.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1106,
+  "title": "Variance reduction for policy gradient with action-dependent factorized baselines",
+  "org": "openai",
+  "date": "2018-03-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/variance-reduction-for-policy-gradient-with-action-dependent-factorized-baselines/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1107,
+  "title": "Improving GANs using optimal transport",
+  "org": "openai",
+  "date": "2018-03-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/improving-gans-using-optimal-transport/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1108,
+  "title": "On first-order meta-learning algorithms",
+  "org": "openai",
+  "date": "2018-03-08",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/on-first-order-meta-learning-algorithms/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1109,
+  "title": "Reptile: A scalable meta-learning algorithm",
+  "org": "openai",
+  "date": "2018-03-07",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/reptile/",
+  "abstract": "We’ve developed a simple meta-learning algorithm called Reptile which works by repeatedly sampling a task, performing stochastic gradient descent on it, and updating the initial parameters towards the final parameters learned on that task. Reptile is the application of the Shortest Descent algorithm to the meta-learning setting, and is mathematically similar to first-order MAML (which is a version of the well-known MAML algorithm) that only needs black-box access to an optimizer such as SGD or Adam, with similar computational efficiency and performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1110,
+  "title": "Some considerations on learning to explore via meta-reinforcement learning",
+  "org": "openai",
+  "date": "2018-03-03",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/some-considerations-on-learning-to-explore-via-meta-reinforcement-learning/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1112,
+  "title": "Ingredients for robotics research",
+  "org": "openai",
+  "date": "2018-02-26",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/ingredients-for-robotics-research/",
+  "abstract": "We’re releasing eight simulated robotics environments and a Baselines implementation of Hindsight Experience Replay, all developed for our research over the past year. We’ve used these environments to train models which work on physical robots. We’re also releasing a set of requests for robotics research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1111,
+  "title": "Multi-Goal Reinforcement Learning: Challenging robotics environments and request for research",
+  "org": "openai",
+  "date": "2018-02-26",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/multi-goal-reinforcement-learning/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1113,
+  "title": "Preparing for malicious uses of AI",
+  "org": "openai",
+  "date": "2018-02-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/preparing-for-malicious-uses-of-ai/",
+  "abstract": "We’ve co-authored a paper that forecasts how malicious actors could misuse AI technology, and potential ways we can prevent and mitigate these threats. This paper is the outcome of almost a year of sustained work with our colleagues at the Future of Humanity Institute, the Centre for the Study of Existential Risk, the Center for a New American Security, the Electronic Frontier Foundation, and others.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1114,
+  "title": "Interpretable machine learning through teaching",
+  "org": "openai",
+  "date": "2018-02-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/interpretable-machine-learning-through-teaching/",
+  "abstract": "We’ve designed a method that encourages AIs to teach each other with examples that also make sense to humans. Our approach automatically selects the most informative examples to teach a concept—for instance, the best images to describe the concept of dogs—and experimentally we found our approach to be effective at teaching both AIs",
+  "needs_fetch": false
+ },
+ {
+  "id": 1115,
+  "title": "Discovering types for entity disambiguation",
+  "org": "openai",
+  "date": "2018-02-07",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/discovering-types-for-entity-disambiguation/",
+  "abstract": "We’ve built a system for automatically figuring out which object is meant by a word by having a neural network decide if the word belongs to each of about 100 automatically-discovered “types” (non-exclusive categories).",
+  "needs_fetch": false
+ },
+ {
+  "id": 1116,
+  "title": "Requests for Research 2.0",
+  "org": "openai",
+  "date": "2018-01-31",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/requests-for-research-2/",
+  "abstract": "We’re releasing a new batch of seven unsolved problems which have come up in the course of our research at OpenAI.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1117,
+  "title": "Scaling Kubernetes to 2,500 nodes",
+  "org": "openai",
+  "date": "2018-01-18",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/scaling-kubernetes-to-2500-nodes/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1118,
+  "title": "Block-sparse GPU kernels",
+  "org": "openai",
+  "date": "2017-12-06",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/block-sparse-gpu-kernels/",
+  "abstract": "We’re releasing highly-optimized GPU kernels for an underexplored class of neural network architectures: networks with block-sparse weights. Depending on the chosen sparsity, these kernels can run orders of magnitude faster than cuBLAS or cuSPARSE. We’ve used them to attain state-of-the-art results in text sentiment analysis and generative modeling of text and images.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1119,
+  "title": "Learning sparse neural networks through L₀ regularization",
+  "org": "openai",
+  "date": "2017-12-04",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-sparse-neural-networks-through-l0-regularization/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1120,
+  "title": "Interpretable and pedagogical examples",
+  "org": "openai",
+  "date": "2017-11-02",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/interpretable-and-pedagogical-examples/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1121,
+  "title": "Learning a hierarchy",
+  "org": "openai",
+  "date": "2017-10-26",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/learning-a-hierarchy/",
+  "abstract": "We’ve developed a hierarchical reinforcement learning algorithm that learns high-level actions useful for solving a range of tasks, allowing fast solving of tasks requiring thousands of timesteps. Our algorithm, when applied to a set of navigation problems, discovers a set of high-level actions for walking and crawling in different directions, which enables the agent to master new navigation tasks quickly.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1122,
+  "title": "Generalizing from simulation",
+  "org": "openai",
+  "date": "2017-10-19",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/generalizing-from-simulation/",
+  "abstract": "Our latest robotics techniques allow robot controllers, trained entirely in simulation and deployed on physical robots, to react to unplanned changes in the environment as they solve simple tasks. That is, we’ve used these techniques to build closed-loop systems rather than open-loop ones as before.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1124,
+  "title": "Asymmetric actor critic for image-based robot learning",
+  "org": "openai",
+  "date": "2017-10-18",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/asymmetric-actor-critic-for-image-based-robot-learning/",
+  "abstract": "Deep reinforcement learning (RL) has proven a powerful technique in many sequential decision making domains. However, Robotics poses many challenges for RL, most notably training on a physical system can be expensive and dangerous, which has sparked significant interest in learning control policies using a physics simulator. While several recent works have shown promising results in transferring policies trained in simulation to the real world, they often do not fully utilize the advantage of working with a simulator. In this work, we exploit the full state observability in the simulator to train better policies which take as input only partial observations (RGBD images). We do this by employing an actor-critic training algorithm in which the critic is trained on full states while the actor (or policy) gets rendered images as input. We show experimentally on a range of simulated tasks that using these asymmetric inputs significantly improves performance. Finally, we combine this method with domain randomization and show real robot experiments for several tasks like picking, pushing, and moving a block. We achieve this simulation to real world transfer without training on any real world data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1123,
+  "title": "Sim-to-real transfer of robotic control with dynamics randomization",
+  "org": "openai",
+  "date": "2017-10-18",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/sim-to-real-transfer-of-robotic-control-with-dynamics-randomization/",
+  "abstract": null,
+  "needs_fetch": true
+ }
+]

@@ -1,0 +1,242 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    
+    
+    <title>Cost-Effective Constitutional Classifiers via Representation Re-use</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="/anthropic-serve/distill.template.v2.js"
+    integrity="sha384-5u81IQundsxB54QMWC7D3R8yOS8hftmsuvKjNrvIMWj88iPXf3daN0lNUZRPy9OX"></script>
+<d-front-matter>
+    <script type="text/json">
+        {
+            "title": "Cost-Effective Constitutional Classifiers via Representation Re-use",
+            "description": "We can reuse activations from the policy model to cheaply monitor for dangerous inputs.",
+            "authors": [null]
+        }
+    </script>
+</d-front-matter>
+    
+</head>
+<body>
+    
+    <style>
+    .article-header {
+        width: 100%;
+        padding: 36px;
+        padding-bottom: 20px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .home-link {
+        font-size: 100%;
+        color: #333;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 1.3em;
+    }
+
+    a.logo {
+        display: flex;
+        text-decoration: none;
+    }
+
+    span.commentary {
+        color: #804633;
+    }
+
+    .gray-box {
+        background-color: #f8f8f8;
+        line-height: 90%;
+        padding-left: 2em;
+        padding-right: 2em;
+        min-height: 1em;
+    }
+
+    .gray-box * {
+        font-family: 'Courier New', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+        padding: 0;
+    }
+
+    /* If no gray-box before it */
+    :not(.gray-box)+.gray-box {
+        padding-top: 0.5em;
+        /* rounded corner to the top */
+        border-top-left-radius: 0.5em;
+        border-top-right-radius: 0.5em;
+    }
+
+    /* If no gray-box after it */
+    .gray-box:not(:has(+ .gray-box)) {
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+        /* rounded corner to the bottom */
+        border-bottom-left-radius: 0.5em;
+        border-bottom-right-radius: 0.5em;
+    }
+</style>
+
+<div class="article-header">
+    <a class="home-link" href="/">Alignment Science Blog</a>
+</div>
+<d-title class="real-title">
+    <h1>Cost-Effective Constitutional Classifiers via Representation Re-use
+    </h1>
+</d-title>
+<style>
+    .orange-block p {
+        margin-bottom: 0.5em !important;
+        margin-top: 1em !important;
+    }
+
+    .orange-block p:first-of-type {
+        margin-top: 0.5em !important;
+    }
+
+    d-article {
+        padding-top: 60px !important;
+        margin-bottom: 120px;
+    }
+
+    d-article li:last-child {
+        margin-bottom: 0.5em !important;
+    }
+
+    d-article li {
+        margin-bottom: 0.5em !important;
+    }
+
+    ul {
+        padding-left: 0em !important;
+        margin-bottom: 0.2em !important;
+    }
+
+    ol {
+        padding-left: 0em !important;
+        margin-bottom: 0.2em !important;
+    }
+
+    d-byline {
+        display: none;
+    }
+
+    .d-byline-container {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .d-byline {
+        grid-column: text;
+        display: grid;
+        grid-template-columns: [authors info] 5fr [published] 1fr;
+        grid-template-rows: [published info] auto;
+        font-size: 0.8rem;
+        line-height: 1.8em;
+        grid-gap: 20px;
+    }
+
+    .d-byline h3 {
+        font-size: 0.6rem;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.5);
+        margin: 0;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+
+    .d-byline .info {
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 80%;
+        line-height: 1.5;
+    }
+
+    .d-byline .authors div {
+        line-height: 1.5;
+    }
+
+    .d-byline .authors sup {
+        font-size: 80%;
+        margin-right: -4px;
+    }
+
+    .d-byline .author {
+        margin-right: 6px;
+        white-space: nowrap;
+    }
+
+    .d-byline a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .orange-block {
+        padding: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-radius: 4px;
+        background: #fdf4e6;
+        border: 1px solid #e5e5e1;
+        border-left: 4px solid #ef821f;
+        opacity: 0.8;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 900px) {
+        .offset-gdoc-image {
+            margin-left: -65px;
+        }
+    }
+
+    .section-authors {
+        color: #777;
+        font-style: italic;
+        margin-top: -24px;
+        margin-bottom: 32px;
+        line-height: 1.3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.5em;
+    }
+
+    .section-authors::before {
+        content: attr(data-author);
+    }
+
+    .section-authors::after {
+        content: attr(data-published);
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table td,
+    table th {
+        border: 1px solid #ccc;
+    }
+
+    table tr:nth-child(2n+3) td {
+        background-color: #eeece7;
+    }
+
+    table tr:nth-child(2n+2) td {
+        background-color: #fff7ea;
+    }
+
+    /* td p:has(tt) { */
+    td p:not(:last-child) {
+        margin-bottom: 0;
+    }
+</style><d-article><p><span style='font-weight: 700;'>Authors</span></p><p>Hoagy Cunningham, Alwin Peng, Jerry Wei, Euan Ong, Fabien Roger, Linda Petrini, Misha Wagner, Vladimir Mikulik, Mrinank Sharma</p><p><span style='font-style: italic;'></span></p><p><span style='font-style: italic;'>TL;DR: We study cost-effective jailbreak detection. Instead of using a dedicated jailbreak classifier, we repurpose the computations that AI models already perform by fine-tuning just the final layer or using linear probes on intermediate activations. Our fine-tuned final layer detectors outperform standalone classifiers a quarter the size of the base model, while linear probes achieve performance comparable to a classifier 2% of the size of </span><span style='font-style: italic;'>the</span><span style='font-style: italic;'> policy model with virtually no additional computational cost. Probe classifiers also function effectively as first-stages in two-stage classification pipelines, further improving the cost-performance tradeoff. These methods could dramatically reduce the computational overhead of jailbreak detection, though further testing with adaptive adversarial attacks is needed.</span></p><h3>Introduction</h3><p>Sufficiently advanced AI systems could pose catastrophic risks, for example by enabling the production of chemical, biological, radiological and nuclear (CBRN) weapons, as detailed recent safety frameworks from, among others, <a href='https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf'>OpenAI</a>, <a href='https://storage.googleapis.com/deepmind-media/DeepMind.com/Blog/introducing-the-frontier-safety-framework/fsf-technical-report.pdf'>Google DeepMind</a> and <a href='https://www-cdn.anthropic.com/17310f6d70ae5627f55313ed067afc1a762a4068.pdf'>Anthropic</a>. Developers therefore need to ensure that the risks from deploying their model is acceptably low. Anthropic’s recent Constitutional Classifiers paper (<a href='https://arxiv.org/pdf/2501.18837'>Sharma et al, 2025</a>) demonstrated that using a separately trained model to identify dangerous inputs provides increased robustness. However, this can introduce computational overhead: for instance, using Claude 3.5 Haiku as a safety filter for Claude 3.5 Sonnet increases inference costs by approximately 25%.</p><p>To make these methods more practical, we explore repurposing computations the AI model is already performing. We find that significant cost reductions may be achievable with minimal regressions in performance on held-out test sets, including on prompts generated by external red-teamers when attacking other classifiers. Our best method, which adds only one layer’s worth of compute, slightly exceeds the detection performance of a standalone classifier with ≈25% FLOP overhead, though best practice calls for adaptive red-teaming before taking our performance evaluations at face value. </p><p>In particular, we use the synthetic data generation pipeline from Constitutional Classifiers to train classifiers with different cost and speed profiles. We evaluate two methods to reduce the computational overhead of safety classifiers:</p><ol><li style='margin-left: 36pt;'><span style='font-weight: 700;'>Linear probing of model activations</span> - Using lightweight classifiers on the model's internal representations to efficiently detect harmful content.</li><li style='margin-left: 36pt;'><span style='font-weight: 700;'>Partially fine-tuned models</span> - Retraining for safety classification only the final layers of existing models, so they share a backbone with the original model.</li></ol><p>Both methods rely on reusing the rich representations used by the main model to generate high-quality outputs. We benchmark these approaches against fine-tuned classifiers from the Claude 3 Sonnet family of models, focusing on identifying outputs containing instructions for biological weapons. Evaluating against a dataset of including unseen transformations of harmful inputs and adversarial attacks from Sharma et al (2025), we find:</p><ul><li style='margin-left: 36pt;'>Retraining just a single final layer (MLP + Attention block) of the main model produces a classifier that is second in performance only to retraining the full model, matching the performance of a dedicated classifier from the same family with ¼ of the main model’s parameters, at the cost of about 4% of the policy model’s cost, including the cost of processing the suffix.</li><li style='margin-left: 36pt;'>Our cheapest probe method, EMA linear probes (see Methods section for a definition), outperforms, at negligible cost, a dedicated classifier with 2% of the policy model’s parameters. Interpolating between classifiers in our sweep, it performs as would a classifier with 3% overhead. </li><li style='margin-left: 36pt;'>Suffix probes (likewise defined in Methods) are slightly more performant, roughly on par with an interpolated 4%-overhead classifier. They are also much more expensive—close to the cost/performance frontier of dedicated classifiers—but we expect their cost can be decreased.</li></ul><figure class="gdoc-image" style="--img-width: 1999px; "><img src='fig1.png' /></figure><p><span style='font-style: italic;'>Figure 1: </span><span style='font-style: italic;'>We plot the log-space AUROC of the fully-trained models as a function of their cost. (See the Evaluation Metrics subsection for a definition of log-space AUROC.) The scores for trained models are an average across three data orderings.</span><span style='font-style: italic;'> All baselines (in grayscale) are finetuned on jailbreak data, except XL Post-Trained (Prompted), which just appends a classification prompt to the policy model. For commercial reasons, we cannot report architectural details of the XL model and therefore the true costs of our methods, so we report illustrative cost values instead; see the Costs subsection for more detail.</span></p><p><span style='font-style: italic;'></span></p><p>We also study multi-stage classifiers, ​​where we first filter inputs that are almost certainly safe with a cheap filter, then process the remaining inputs with a stronger, more expensive model. We look at how the methods above perform as the first stage, fixing the second stage to be a dedicated classifier based on the largest, most expensive model. We find that the exponential moving average (EMA) probe and the model with the single retrained layer perform best, reducing the cost by over 10x without significantly reducing the performance of the overall system. If we require overheads of less than 5% of the largest model, then the EMA probe is the best-performing first stage due to its very low computational overhead.</p><p>Our results have an important caveat: we have not studied the robustness of any of the classifiers in this paper to adaptive adversarial attacks targeting these classifiers directly. The red-teamers in our study attacked Claude 3.5 series models without knowledge of or access to our detection methods, while our probes and baselines use Claude 3 Sonnet models trained on different datasets. This means it's possible that the relative robustness under direct attack could be worse for probes (in part because they're integrated into the model being attacked). Nevertheless, our results provide evidence that probes can outperform baselines under these non-adaptive attacks, suggesting they are a promising approach for future development and adversarial testing.</p><h3>Methods</h3><p>Sharma et al (2025) introduce Constitutional Classifiers to increase robustness to jailbreak attempts. They use a dual-classifier architecture, using a prompt-only classifier and a completion-only classifier. In this work, however, we focus on prompt classifiers, for two reasons. Firstly, prompt classifiers see the same input text as the policy model, making it possible to share computation between the policy and classifier models, making the approaches directly comparable. Secondly, input tokens make up the vast majority of the total tokens processed, so reducing their cost is more pressing. Therefore, the methods we consider only look at the prompt, and do not see any part of the model’s output before making classification decisions.</p><p>While constitutional classifiers improve robustness, they incur increased computation costs. We now introduce different methods that reduce these costs by <span style='font-style: italic;'>re-using</span> representations from the model that is being guarded.</p><h4>Probing</h4><p>We train linear probes on the model activations to be classifiers (<a href='https://arxiv.org/abs/2102.12452'>Belinkov, 2021</a>) using linear regression. For an input sequence <d-math>x</d-math>, let <d-math>h^{(l)}(x) \in \mathbb{R}^{T \times d}</d-math> denote the activations at layer <d-math>l</d-math>, where <d-math>T</d-math> is sequence length and <d-math>d</d-math> is the hidden dimension.</p><p>We train linear probes by optimizing <d-math>\min_{w \in \mathbb{R}^d, b \in \mathbb{R}} \sum_{(x,y) \in \mathcal{D}} \mathcal{L}(\sigma(w^T f(h^{(l)}(x))) + b, y)</d-math> where <d-math>y \in {0,1}</d-math> is the binary label, <d-math>\sigma</d-math> is the sigmoid function, <d-math>\mathcal{L}</d-math> is binary cross-entropy loss, and <d-math>f</d-math> is a pooling function that maps <d-math>\mathbb{R}^{T \times d} \to \mathbb{R}^d</d-math>.</p><p>We consider three probe variants:</p><ol><li style='margin-left: 36pt;'><span style='font-style: italic;'>Mean-token probes: </span>To train these probes, we reduce the activations tensor by taking the mean over all tokens in the sequence. We do the same at evaluation time. This allows us to train on only a single vector from each sequence while ensuring that we have some signal from each token position in every sequence. The pooling function is <d-math>f_{\text{mean}}(h) = \frac{1}{T}\sum_{t=1}^{T} h_t</d-math>.</li><li style='margin-left: 36pt;'><span style='font-style: italic;'>Exponential Moving Average (EMA) probes:</span> Mean-token probes perform worse on long inputs, as the dangerous content may be only a very small fraction of the context, causing the signal to be drowned by noise. EMA probes remedy this. They are trained the same way as mean-token probes, but at evaluation time, we first compute per-token scores <d-math>s_t = \sigma(w^T h_t)</d-math> for <d-math>t = 1, \ldots, T</d-math>, obtaining a sequence of float values. We then apply an exponential moving average to this sequence with α = 0.5: <d-math>\text{EMA}_<span style='font-style: italic;'>t = \alpha \cdot s_t + (1-\alpha) \cdot \text{EMA}_</span>{t-1}</d-math> with <d-math>\text{EMA}_0 = 0</d-math> and final score <d-math>\max_{t\in T} \text{EMA}_t</d-math>. We use <d-math>\alpha=0.5</d-math> as it performed best in preliminary experiments.</li><li style='margin-left: 36pt;'><span style='font-style: italic;'>Suffix probes: </span>Previous research has shown that consistently probing on the same token position improves probe performance (<a href='https://transformer-circuits.pub/2024/features-as-classifiers/index.html'>Bricken 2024</a>). Ideally, this would be a token which contains information relevant to the task at hand. To encourage the model to aggregate relevant information we append a suffix which asks the model to determine whether the input contains harmful biological information (e.g., bioweapons). This approach ensures our probes access a representation that contains the necessary information for accurate classification and also naturally handles cases where responses begin with pre-filled text. The pooling function is <d-math>f_{\text{suffix}}(h) = h_T</d-math> where position <d-math>T</d-math> corresponds to the appended suffix token.</li></ol><h4>Partially-Trained Classifiers</h4><p>The most direct approach to monitoring would be to train the main model itself to perform safety classification alongside its primary task, or to bake the robustness into the model’s behaviour, such as with short-circuiting (Zou et al, 2024). However, this approach carries significant costs: risks of side effects on the model's performance, reduced flexibility in patching the model, and additional complexity in the already complex training process of the policy model. An alternative that avoids these issues is to branch off from the main model at a certain layer, reusing most of the computation while maintaining isolation between the safety classifier and the production model (<a href='https://arxiv.org/abs/2210.11466'>Lee et at 2022</a>, <a href='https://arxiv.org/abs/2209.14375'>Glaese et al 2021</a>).</p><p>To test the optimal tradeoff between expressivity and cost, we trained variants that fine-tune progressively more layers from the end of the model: 1, 2, 4, 8, and so on, up to half of the model's layers. Training only a small number of layers was informed by early probing experiments, which showed that linear probe quality remained consistently high right up until the final layer of the model. These classifiers are trained using a next-token prediction objective, completing the suffix in Appendix A with “harmful” or “not”. The models were trained with a learning rate scaled inversely with the number of layers that are trained, so if training the last 10% of the model, the learning rate would be 10x the learning rate used to train the full model.</p><h4>Multi-stage classifiers</h4><p>Another natural approach when we have classifiers with different computational costs is to use a cheaper classifier as a first-stage filter, passing only uncertain or potentially dangerous examples to a more expensive, higher-capacity model. We implement this by having the first-stage classifier filter out examples that score below a certain threshold, considering them harmless, while passing examples above the threshold to the second-stage classifier for final determination. </p><p>While this has the potential to improve the cost of the system, in an adversarial setting, even a small reduction in the quality of the first stage classifier on non-adversarial data could give a significant advantage to an attacker if it’s easier to find attacks against the first stage classifier.</p><h4>Baseline: Smaller Language Models</h4><p>As a baseline, we also train classifiers based on smaller models from the same model family as the largest policy model. These are the same models from the Claude 3 Sonnet family used in Sharma et al (2025). These models are trained with the same datamix as the larger model, and are overtrained to optimize inference costs. However, it is always possible to train smaller models for even longer, so these models are still potentially an underestimate of the best performance achievable with an overtrained small model.</p><p>The largest model is labeled in figures as the XL model while the smaller  models are labelled as  L, M, S and XS in the results, in decreasing order of scale, and which have approximate computational overheads, as a fraction of the largest model, of 25%, 9%, 2% and 0.6% of the cost of the XL model. These are trained with the same objective as the partially-trained classifiers above.</p><h4>Baseline: Prompted XL</h4><p>As another baseline, we simply append the suffix probe suffix to the policy model to turn it into a classifier and measure the probability it assigns to the input being harmful.</p><h4>Costs</h4><p>The exact true costs of running the classification approaches we consider will depend on the architectural details of the models involved and the distribution of the lengths of the prompts to be classified. As we are unable to share these details for commercial reasons, we cannot report the actual costs of our techniques. Even without being precise, using only 1 layer of a large policy model, or a linear probe, clearly incurs substantially less computational overhead than dedicated models.</p><p>For the purposes of this paper, we use the following assumptions to illustrate the costs:</p><ul><li style='margin-left: 36pt;'>The computational overhead of the smaller models is assumed to be proportional to their parameter count. This implicitly assumes that most of the cost is driven by MLP layers, and may break down if attention costs dominate.</li></ul><ul><li style='margin-left: 36pt;'>Mean probes and EMA probes both require minimal computation and are assigned an illustrative cost of one-thousandth of the cost of the policy model. The true cost depends on architectural details.</li><li style='margin-left: 36pt;'>Both the suffix probe and 1-trained layer model require policy model inference over additional suffix tokens. Our suffix is 150 tokens long and we assume that the average input length is 5,000 tokens, giving these approaches a 3% overhead. We did not put effort into making the suffix as short as possible and it’s likely that the overhead from this can be reduced significantly, for example, by compressing the suffix into a “gist” token (<a href='https://arxiv.org/abs/2304.08467'>Mu 2024</a>).</li></ul><ul><li style='margin-left: 36pt;'>The overhead of running a model with one retrained layer is 1/n_layers where n_layers is the number of layers in the policy model. To illustrate this cost, we use the number of layers in Llama3 70B—80 layers—corresponding to an overhead of 1.25% on top of the suffix cost. We use Llama-70B as it was the mid-sized model from the open-weights Llama3 family that was released at a similar time to the Claude 3 family of models.</li></ul><table><tbody><tr><td colspan='1' rowspan='1'><p><span style='font-weight: 700;'>Model Name</span></p></td><td colspan='1' rowspan='1'><p><span style='font-weight: 700;'>Approximate FLOP Overhead (% of the policy model) </span></p></td></tr><tr><td colspan='1' rowspan='1'><p>XS Base</p></td><td colspan='1' rowspan='1'><p>0.6</p></td></tr><tr><td colspan='1' rowspan='1'><p>S Base</p></td><td colspan='1' rowspan='1'><p>2</p></td></tr><tr><td colspan='1' rowspan='1'><p>M Base</p></td><td colspan='1' rowspan='1'><p>9</p></td></tr><tr><td colspan='1' rowspan='1'><p>L Base </p></td><td colspan='1' rowspan='1'><p>25</p></td></tr><tr><td colspan='1' rowspan='1'><p>EMA Probe</p></td><td colspan='1' rowspan='1'><p>0.1*</p></td></tr><tr><td colspan='1' rowspan='1'><p>Mean Probe</p></td><td colspan='1' rowspan='1'><p>0.1*</p></td></tr><tr><td colspan='1' rowspan='1'><p>Suffix Probe</p></td><td colspan='1' rowspan='1'><p>3</p></td></tr><tr><td colspan='1' rowspan='1'><p>XL 1 Retrained Layer</p></td><td colspan='1' rowspan='1'><p>4.25*</p></td></tr></tbody></table><p><span style='font-style: italic;'>Table 1: Heuristic costs of the different monitoring strategies as used in this paper. The numbers with asterisks are illustrative only, as the true values depend on confidential architectural details.</span></p><p><span style='font-style: italic;'></span></p><p>For two-stage classifiers, the cost depends on whether a given input makes it to the second stage. We calculate it as <d-math>Cost_{total}=Cost_{stage1}+f \cdot Cost_{stage2}</d-math>, where <d-math>f</d-math> is the fraction of harmless examples that pass the first-stage filter. We focus on the cost for harmless examples because we assume harmful inputs comprise a negligible fraction of actual traffic in production systems. We then express this cost as a fraction of the full model cost,  <d-math>(Cost_{fraction}=\frac{Cost_{total}}{Cost_{full model}})</d-math>.</p><h4>Latency</h4><p>When classifying prompts, the only approaches which may cause an increase in latency are suffix-probes and the 1 retrained layer, as the suffix requires additional inference on the policy model. Small dedicated classifiers also require processing a slightly longer transcript than the policy model but as the models are significantly smaller and can be run in parallel, they do not need to cause an increase in the time-to-first-token. Two-stage pipelines <span style='font-style: italic;'>do</span> cause increased latency, though only on a small fraction of the inputs.</p><p>If we were in the output-classification setting, probing and partially-finetuned classifiers would have an additional latency advantage as their outputs can be produced concurrently with sampling from the primary model, unlike standalone classifiers, which would incur at least one forward-pass of delay. </p><h3>Experimental Setup</h3><p><span style='font-weight: 700;'></span></p><p><span style='font-weight: 700;'>Datasets</span></p><p><span style='font-style: italic;'>Training Data</span></p><p>The training data consists of approximately 70,000 prompts, evenly split between prompts which attempt to elicit information about constructing bioweapons and harmless examples. It is an early version of the training dataset used in the Constitutional Classifiers paper (<a href='https://arxiv.org/abs/2501.18837'>Sharma et al., 2025</a>).</p><p>All examples are generated synthetically by the Claude 3.5 series of models according to a written constitution while outlines permitted and restricted content categories, with teaching the model novel ciphers included in the restricted category. These examples are modified by ‘transformations’: for example, converting the input into jailbreak templates, diverse languages, ciphers, and assistant pre-fills. For more detail on the data-generating process, see Section 3 and Appendix B of the Constitutional Classifiers paper. </p><p><span style='font-style: italic;'>Evaluation Data</span></p><p>For evaluation, we use held-out datasets designed to test generalization from synthetic training data to discrimination unseen jailbreaks aiming to elicit information about bioweapons from realistic user traffic.</p><p>The harmful test examples come from two sources. Around 4,000 examples are generated from a fixed set of dangerous biological questions transformed by a combination of in-distribution and held-out transformations similar to those in the training data. Another 2,500 examples consist of inputs collected during the red-teaming phase of the Constitutional Classifiers paper which triggered a harmful response from the policy model as determined by the output classifier.</p><p>The harmless test examples comprise: </p><ul><li style='margin-left: 36pt;'>Single-turn inputs from WildChat (<a href='https://arxiv.org/abs/2405.01470'>Zhao et al., 2024</a>) </li><li style='margin-left: 36pt;'>The "Hard" subset of OR-bench (<a href='https://arxiv.org/abs/2405.20947'>Cui et al., 2024</a>) </li></ul><p>Since OR-bench contains a high proportion of edge cases and potentially harmful-seeming prompts (though not focused on CBRN), false positive rates on this harmless set are expected to be significantly higher than they would be on typical user interactions. </p><p><span style='font-weight: 700;'>Evaluation Metrics</span></p><p>To compare classification performance, we use log-space AUROC, which considers the area under the curve formed by plotting the true positive rate (TPR) against the false positive rate (FPR) for log-spaced values of the FPR, as plotted in Figure 2. We use this because we’re particularly interested in performance at low FPR as this determines a classifier's suitability for use in production. Using regular AUROC is not a reliable measure of performance at low FPRs, and evaluating the TPR at a single FPR is too noisy. Using the log-space AUROC allows us to get a less noisy measure that captures the tradeoff between FPR and TPR across the range of FPRs that we care about. In this paper we use FPR values between 1e-3 and 1e-1. The scores for trained models are an average across three data orderings.</p><p><span style='font-weight: 700;'>Training </span></p><p>We trained all of the models for exactly one epoch on our dataset of approximately 70,000 datapoints, or about 2,200 batches with batch size 32. For the partially-trained classifiers, we set the learning rate inversely proportional to the number of layers trained, based on initial experiments which showed on smaller datasets that this closely approximated the learning rate which maximised test performance. Initial experiments also showed that the optimal learning rate for partially finetuned models is strongly sensitive to how many layers are finetuned. However, this sensitivity decreased when using a smaller batch size. We therefore used a small batch to minimize the risk from suboptimal settings. </p><h3>Results</h3><p>We now analyse the performance of different methods.</p><p><span style='font-weight: 700;'>Single Stage Classifiers</span></p><p>Figure 2 shows the true positive rate (TPR) of the classifiers at different values of false positive rates on our test dataset. Figure 1, above, summarizes the performance of each model and compares their costs.</p><figure class="gdoc-image" style="--img-width: 1725px; "><img src='fig2.png' /></figure><p><span style='font-style: italic;'>Figure 2: the full ROC curves for the different trained models (averaging across two dataset order seeds), as well as for the different probing approaches and a prompted baseline. “Base” denotes a pre-trained model trained as a classifier, while “Post-Trained” refers to a model which has been trained to act as a helpful, honest and harmless assistant. The log-space AUROC, the key metric used in this paper, is measured as the area under these curves. <d-math>n</d-math> denotes the number of runs averaged across. </span></p><p>We find that despite retraining only a single layer, the performance of the XL 1 retrained layer model is quite close to the performance of the XL model, performing at a level similar to the next-largest model in the sweep, the L Base model. The probe classifier with a suffix and the probe classifier using the exponential-moving-average perform at similar levels to each other, performing between the strength of the S and M models. The probe that is evaluated only on the mean of the context performs worse than even the smallest tested model.</p><p>Interestingly, the strong performance of the partially-trained models is not reflected in their validation loss, which is significantly higher for the partially-trained classifiers than for fully-trained models with the same test performance - see Appendix C for more detail. It appears that the fact that the partially-trained classifiers are based on a larger model gives them improved generalization to out-of-distribution examples that is not reflected in the training data.</p><p><span style='font-style: italic;'></span></p><p>We also test retraining the final 2, 4, 8 and 16 layers of the post-trained model (Figure 3). Perhaps surprisingly, we don’t find a clear trend in performance as we increase the number of layers. Instead the performance of the partially trained models remains slightly below the performance of the fully-trained model and any potential increase in performance is within inter-run noise.</p><p><span style='font-style: italic;'></span></p><figure class="gdoc-image" style="--img-width: 1999px; "><img src='fig3.png' /></figure><p><span style='font-style: italic;'>Figure 3: Performance of the partially trained classifiers for three dataset order seeds and the average scores as we increase the number of trained layers.</span></p><p><span style='font-style: italic;'></span></p><p><span style='font-weight: 700;'>Two Stage Classifiers</span></p><p>We consider different first stages in a two-stage classifier, fixing the second stage to be the best-performing but expensive post-trained XL model. We vary the fraction of inputs which are passed to the fully-trained model classifier to generate curves mapping the trade-offs between cost and performance for each classifier, using the costs outlined in the Costs section.</p><figure class="gdoc-image" style="--img-width: 1745px; "><img src='fig4.png' /></figure><p><span style='font-style: italic;'>Figure 4: Cost-performance tradeoff curves for two-stage classifiers with different first stages. For each model, the line represents a series of two-stage classifiers constructed by varying the fraction of datapoints that are sent to the second-stage classifier. For each of these we calculate the log-space AUROC. We compare across first stage classifiers, averaging the AUROC at each cost across multiple training runs to reduce noise.</span></p><p>We find that both the probe-based classifiers and the 1-layer classifiers outperform the smaller models across the cost range, particularly as we push to lower and lower costs, with the single-trained-layer model generally performing better, while the EMA probe outperforms the suffix probe on account of its lower cost.</p><p>There’s often a regime in which the performance of the two-stage classifier is slightly higher than using only the strongest classifier on its own, without any averaging of the classifier scores. This might be counterintuitive given that we are using a weaker model to screen the larger model. We think the effect is caused by uncorrelated errors in the models, which means that for sufficiently low first-stage thresholds the first-stage model will screen off many more would-be false positives than would-be true positives. This improvement on a fixed evaluation set may not translate to robustness of the overall system in the presence of adversarial attackers if it is easier to find attacks that reliably do not trigger the first stage.</p><p>For the purpose of comparing the methods we only consider a simple two-stage classifier setup, in which any input not passed to the second stage is assumed not to be harmful. At high thresholds, this setup can have worse performance than the first stage as a standalone classifier. In reality the design space of multi-stage classifiers is large. This setup could likely be improved by, for example, incorporating the scores of the first-stage into the second-stage score, or by allowing the first-stage to classify inputs as definitely harmless, definitely harmful or unsure, and only passing the latter to the second stage.</p><p><span style='font-weight: 700;'>Limitations</span></p><p>These classifiers have not yet been tested against the kind of red-teaming that was performed on the classifiers from the Constitutional Classifiers paper. Since the problem of preventing dangerous misuse is inherently adversarial, red-teaming of the classifiers is necessary to determine whether a classifier actually provides a strong level of robustness against misuse (see <a href='https://arxiv.org/abs/1705.07263'>Carlini and Wagner 2017</a>, <a href='https://arxiv.org/abs/1902.06705'>Carlini et al 2019</a>, <a href='https://arxiv.org/abs/2501.18837'>Sharma et al 2025</a>) . Multistage classifiers in particular may open up new attacks, since if an attacker can make a weak model certain that the prompt is not dangerous then it will never be seen by the stronger model.</p><p>The smaller models tested in these experiments have each been trained on a volume of data proportional to their number of parameters. If these models were more strongly optimized for low inference cost at high volume then they would have been trained on much greater volumes of data, improving their performance. Larger volumes of data, or small model-specific techniques such as model distillation, may tip the balance towards the use of small models.</p><p><span style='font-weight: 700;'>Related Work</span></p><p><span style='font-weight: 700;'>Auxiliary classifiers. </span>Training auxiliary models for robustness has been explored by <a href='https://arxiv.org/abs/2312.06674'>Inan et al (2023)</a> and <a href='https://arxiv.org/abs/2411.10414'>Chi et al (2024)</a> with the LlamaGuard series of models. <a href='https://arxiv.org/abs/2501.18837'>Sharma et al (2025)</a> develop synthetic data pipelines for training robust classifiers and use large-scale red-teaming to validate the performance of their methods. Grey Swan have also recently used public jailbreaking challenges to validate the robustness of their LLM defences, combining short-circuiting and auxiliary classifiers. <a href='https://arxiv.org/abs/2402.13494'>Xie et al (2024)</a> also leverage model internals for classification though they use the pattern of gradients in the guarding model as the additional source of information. There’s also been previous work using multi-stage classifiers for detection such as <a href='https://arxiv.org/abs/2310.03094'>Yue et al (2023)</a>’s ‘Model Cascades’.</p><p><span style='font-weight: 700;'></span></p><p><span style='font-weight: 700;'>Robustness in the policy model.</span> Rather than using auxiliary models, many previous approaches have tried to build robustness into the models itself, so that no monitoring cost is incurred. <a href='https://arxiv.org/abs/2403.05030'>Casper et al (2024)</a> and <a href='https://arxiv.org/abs/2407.15549'>Sheshadri et al (2024)</a> use latent adversarial training to improve robustness while <a href='https://arxiv.org/abs/2406.04313'>Zou et al (2024)</a> use short-circuiting to prevent jailbreaks from counteracting a model’s refusal circuits. Others have focused on finding attacks that beat these defences, including <a href='https://arxiv.org/abs/2307.15043'>Zou et al (2023)</a>, <a href='https://arxiv.org/abs/2412.09565'>Jenner et al (2025)</a>, while <a href='https://arxiv.org/pdf/2411.07494'>Peng et al (2024)</a> compare methods for quickly patching vulnerabilities in monitoring systems once they are discovered.</p><p><span style='font-weight: 700;'>Probing for harmful outputs. </span>Using linear probes on model activations has a long history going back at least to <a href='https://arxiv.org/abs/1610.01644'>Alain and Bengio (2016</a>). <a href='https://arxiv.org/abs/2310.01405'>Zou et al (2023)</a>  and <a href='https://www.lesswrong.com/posts/zt6hRsDE84HeBKh7E/reducing-sycophancy-and-improving-honesty-via-activation'>Panickssery et al (2023)</a> use paired data to obtain vectors in activation space to control properties such as sycophancy and honesty. Many recent works have used sparse autoencoders (SAEs), as developed in <a href='https://transformer-circuits.pub/2023/monosemantic-features'>Bricken et al (2023)</a>; <a href='https://arxiv.org/abs/2309.08600'>Cunningham et al (2023)</a>, or dictionary learning (<a href='https://arxiv.org/abs/2103.15949'>Yun et al (2021)</a>), for unsupervised learning of vectors corresponding to semantic clusters, including many safety-relevant features (see <a href='https://transformer-circuits.pub/2024/scaling-monosemanticity'>Templeton et al (2024)</a>). <a href='https://transformer-circuits.pub/2024/features-as-classifiers/index.html'>Bricken et al (2024)</a> and <a href='https://arxiv.org/pdf/2502.1668'>Kantamneni et al (2025)</a> investigate the use of SAE latents as a tool for prediction using linear probing as a baseline, finding that linear probing as a baseline is difficult to beat, though SAEs can play a useful role in debugging the training datasets by detecting spurious correlations present in training datasets. </p><h3>Conclusion</h3><p>We explored linear probes, partial fine-tuning, and multi-stage classification as potential avenues to reducing the cost of a monitoring system. Finetuning only a single layer of the policy models appears to be as powerful as the a model with ¼ of the model’s parameters for the cost of a single additional resblock, while a linear probe evaluated at each token performs similar to a model with 2% of the parameters for minimal computational overhead. Combining a single-layer classifier as a first stage with the full model performance can provide zero regression in performance, including on fixed red-teaming inputs, while further reducing the cost. We did not test the adaptive adversarial robustness of these methods, which would be required before real world deployment. We hope these methods improve AI safety by making high-quality monitoring less onerous.</p><h4>Acknowledgements</h4><p>We’d like to thank Ethan Perez for early planning discussions and draft reviewing, Erik Jones for draft reviewing, as well as Josh Batson, Monte MacDiarmid, Jonathan Marcus, and Andrew Persic for helpful comments during experimentation and writing.</p><p><span style='font-weight: 700;'>Appendix A:</span></p><p><span style='font-weight: 700;'></span></p><p>The bioweapon suffix used by the next-token predictor is:</p><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4"><html:span class="c13">BIOWEAPONS_SUFFIX = """{dialog} &lt;end_of_dialog&gt;</html:span></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4 c6"><html:span class="c13"/></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4"><html:span class="c13">&lt;Human&gt; Before responding, carefully review the entire preceding dialog. I need you to determine if it contains information enabling biological harm (like bioweapons).</html:span></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4 c6"><html:span class="c13"/></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4"><html:span class="c13">The harmful content may be hidden - buried in text, disguised as fiction, or using code words (e.g. "cake recipe" for "anthrax"). Flag suspiciously unintelligible content for investigation.</html:span></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4 c6"><html:span class="c13"/></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4"><html:span class="c13">However, don't be overzealous - only flag content with clearly suspicious elements.</html:span></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4 c6"><html:span class="c13"/></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4"><html:span class="c13">Does this dialog contain or request harmful biological information? Answer "The dialog was harmful or contained harmful information" or "The dialog was not harmful and did not contain harmful information."</html:span></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4 c6"><html:span class="c13"/></html:p></div><div class="gray-box"><html:p xmlns:html="http://www.w3.org/1999/xhtml" class="c4"><html:span class="c13">&lt;Assistant&gt; The dialog was"""</html:span></html:p></div><p><span style='font-weight: 700;'></span></p><p><span style='font-weight: 700;'>Appendix B:</span></p><p><span style='font-weight: 700;'></span></p><p>The ROC curves shown in Figure 2 and summarized in Figure 1 are an average of two runs using the same data but where a different seed is used to shuffle the data. The figure below shows the different runs as separate lines. </p><p><span style='font-weight: 700;'></span></p><figure class="gdoc-image" style="--img-width: 1725px; "><img src='fig5.png' /></figure><p><span style='font-style: italic;'>Figure 5: Plots of the TPR against the log-space FPR for individual models, showing two different data-orders for each trained model. </span></p><p><span style='font-weight: 700;'></span></p><p><span style='font-weight: 700;'>Appendix C:</span></p><p><span style='font-weight: 700;'></span></p><p>We compare the loss of the models on in-distribution data, as measured by the loss on the final 100 batches of the classifier training, to the log-space AUROC. Figure 6 shows the results that partially trained models consistently show far higher validation losses similar to those of much smaller models whose test performance is far worse. </p><figure class="gdoc-image" style="--img-width: 1967px; "><img src='fig6.png' /></figure><p><span style='font-style: italic;'>Figure 6: Validation loss on the training distribution for each model against the log-space AUROC.</span></p><p><span style='font-weight: 700;'>Appendix D</span></p><p><span style='font-weight: 700;'></span></p><p><span style='font-style: italic;'>Probe Training Details</span></p><p>All the probes are trained using logistic regression with L2 regularization. The regularization strength was 1e2 for the last-token probes and 1e4 for the mean-token probes. The higher regularization on the mean-token probes is necessary for the EMA probes as they are applied token-wise which has a much greater variance and lower regularization can cause numerical issues. This parameter was swept over and found to be the best-performing power of 10 in a previous experiment on similar data. Before the regression, the activations are normalised so that the overall distribution of input values has a mean of 0.0 and a standard deviation of 1.0.</p></d-article></body>
+</html>

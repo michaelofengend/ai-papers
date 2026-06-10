@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2512,
+  "title": "Learning to Navigate",
+  "org": "deepmind",
+  "date": "2019-10-15",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3347450.3357659",
+  "abstract": "Navigation is an important cognitive task that enables humans and animals to traverse, with or without maps, over long distances in the complex world. Such long-range navigation can simultaneously support self-localisation (\"I am here\") and a representation of the goal (\"I am going there\"). For this reason, studying navigation is fundamental to the study and development of artificial intelligence, and trying to replicate navigation in artificial agents can also help neuroscientists understand its biological underpinnings. This talk will cover our own journey to understand navigation by building deep reinforcement learning agents, starting from learning to control a simple agent that can explore and memorise large 3D mazes to designing agents with a read-write memory that can generalise to unseen mazes from one traversal. I will show how these artificial agents relate to navigation in the real world, both through the study of the emergence of grid cell representations in neural networks and by demonstrating that these agents can navigate in Street View-based real world photographic environments. I will finally present two approaches in our ongoing work on leveraging multimodal information for generalising navigation policies to unseen environments in Street View, one consisting in following language instructions and the second one in transferring navigation policies by training on aerial views.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1065,
+  "title": "Solving Rubik’s Cube with a robot hand",
+  "org": "openai",
+  "date": "2019-10-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/solving-rubiks-cube/",
+  "abstract": "We’ve trained a pair of neural networks to solve the Rubik’s Cube with a human-like robot hand. The neural networks are trained entirely in simulation, using the same reinforcement learning code as OpenAI Five paired with a new technique called Automatic Domain Randomization (ADR). The system can handle situations it never saw during training, such as being prodded by a stuffed giraffe. This shows that reinforcement learning isn’t just a tool for virtual tasks, but can solve physical-world problems requiring unprecedented dexterity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2513,
+  "title": "Protein structure prediction using multiple deep neural networks in the 13th Critical Assessment of Protein Structure Prediction (CASP13)",
+  "org": "deepmind",
+  "date": "2019-10-11",
+  "venue": "Proteins Structure Function and Bioinformatics",
+  "url": "https://doi.org/10.1002/prot.25834",
+  "abstract": "We describe AlphaFold, the protein structure prediction system that was entered by the group A7D in CASP13. Submissions were made by three free-modeling (FM) methods which combine the predictions of three neural networks. All three systems were guided by predictions of distances between pairs of residues produced by a neural network. Two systems assembled fragments produced by a generative neural network, one using scores from a network trained to regress GDT_TS. The third system shows that simple gradient descent on a properly constructed potential is able to perform on par with more expensive traditional search techniques and without requiring domain segmentation. In the CASP13 FM assessors' ranking by summed z-scores, this system scored highest with 68.3 vs 48.2 for the next closest group (an average GDT_TS of 61.4). The system produced high-accuracy structures (with GDT_TS scores of 70 or higher) for 11 out of 43 FM domains. Despite not explicitly using template information, the results in the template category were comparable to the best performing template-based methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2514,
+  "title": "Efficient Graph Generation with Graph Recurrent Attention Networks",
+  "org": "deepmind",
+  "date": "2019-10-02",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1910.00760",
+  "abstract": "We propose a new family of efficient and expressive deep generative models of graphs, called Graph Recurrent Attention Networks (GRANs). Our model generates graphs one block of nodes and associated edges at a time. The block size and sampling stride allow us to trade off sample quality for efficiency. Compared to previous RNN-based graph generative models, our framework better captures the auto-regressive conditioning between the already-generated and to-be-generated parts of the graph using Graph Neural Networks (GNNs) with attention. This not only reduces the dependency on node ordering but also bypasses the long-term bottleneck caused by the sequential nature of RNNs. Moreover, we parameterize the output distribution per block using a mixture of Bernoulli, which captures the correlations among generated edges within the block. Finally, we propose to handle node orderings in generation by marginalizing over a family of canonical orderings. On standard benchmarks, we achieve state-of-the-art time efficiency and sample quality compared to previous models. Additionally, we show our model is capable of generating large graphs of up to 5K nodes with good quality. To the best of our knowledge, GRAN is the first deep graph generative model that can scale to this size. Our code is released at: https://github.com/lrjconan/GRAN.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2851,
+  "title": "Bayesian Relational Memory for Semantic Visual Navigation",
+  "org": "openai",
+  "date": "2019-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv.2019.00286",
+  "abstract": "We introduce a new memory architecture, Bayesian Relational Memory (BRM), to improve the generalization ability for semantic visual navigation agents in unseen environments, where an agent is given a semantic target to navigate towards. BRM takes the form of a probabilistic relation graph over semantic entities (e.g., room types), which allows (1) capturing the layout prior from training environments, i.e., prior knowledge, (2) estimating posterior layout at test time, i.e., memory update, and (3) efficient planning for navigation, altogether. We develop a BRM agent consisting of a BRM module for producing sub-goals and a goal-conditioned locomotion module for control. When testing in unseen environments, the BRM agent outperforms baselines that do not explicitly utilize the probabilistic relational memory structure.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2522,
+  "title": "Designing stakeholder consultations for institutional change: a case study from Ghana’s sanitation sector",
+  "org": "deepmind",
+  "date": "2019-10-01",
+  "venue": "Waterlines",
+  "url": "https://doi.org/10.3362/1756-3488.18-00034",
+  "abstract": "This article evaluates the stakeholder consultation process that was undertaken to support decision-making for the new sanitation authority to be established in Ghana. This initiative of creating a specialized authority – currently referred to as the National Sanitation Authority (NSA) – emerges from the need to restructure the sector in Ghana, like in many other countries worldwide. From the learning of this study we seek to inform research and practice around the design of stakeholder consultation methods in institutional restructuration contexts. The consultation process gathered views on different aspects of the NSA, including its functions, the administrative level(s) at which it should operate, and its financing. A stakeholder analysis, a series of workshops, and key informant interviews were conducted. A tool was developed to track representativeness of participants involved in the process. Principles of stakeholder engagement developed by the Organisation for Economic Cooperation and Development informed the methodology. This consultation process highlighted the challenges of undertaking sector restructuration where responsibilities are shared between many entities, and with varying levels of interest in the planned reforms. Divergent opinions emerged on the proposed functions of the NSA, some of which represent direct conflicts of interest: for example, setting regulations, developing infrastructure, and financing. Key lessons from the consultation include the need f",
+  "needs_fetch": false
+ },
+ {
+  "id": 2521,
+  "title": "Layout-Induced Video Representation for Recognizing Agent-in-Place Actions",
+  "org": "deepmind",
+  "date": "2019-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv.2019.00135",
+  "abstract": "We address scene layout modeling for recognizing agent-in-place actions, which are actions associated with agents who perform them and the places where they occur, in the context of outdoor home surveillance. We introduce a novel representation to model the geometry and topology of scene layouts so that a network can generalize from the layouts observed in the training scenes to unseen scenes in the test set. This Layout-Induced Video Representation (LIVR) abstracts away low-level appearance variance and encodes geometric and topological relationships of places to explicitly model scene layout. LIVR partitions the semantic features of a scene into different places to force the network to learn generic place-based feature descriptions which are independent of specific scene layouts; then, LIVR dynamically aggregates features based on connectivities of places in each specific scene to model its layout. We introduce a new Agent-in-Place Action (APA) dataset to show that our method allows neural network models to generalize significantly better to unseen scenes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2520,
+  "title": "Speech Bandwidth Extension with Wavenet",
+  "org": "deepmind",
+  "date": "2019-10-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1907.04927",
+  "abstract": "Large-scale mobile communication systems tend to contain legacy transmission channels with narrowband bottlenecks, resulting in characteristic \"telephone-quality\" audio. While higher quality codecs exist, due to the scale and heterogeneity of the networks, transmitting higher sample rate audio with modern high-quality audio codecs can be difficult in practice. This paper proposes an approach where a communication node can instead extend the bandwidth of a band-limited incoming speech signal that may have been passed through a low-rate codec. To this end, we propose a WaveNet-based model conditioned on a log-mel spectrogram representation of a bandwidth-constrained speech audio signal of 8 kHz and audio with artifacts from GSM full-rate (FR) compression to reconstruct the higher-resolution signal. In our experimental MUSHRA evaluation, we show that a model trained to upsample to 24kHz speech signals from audio passed through the 8kHz GSM-FR codec is able to reconstruct audio only slightly lower in quality to that of the Adaptive Multi-Rate Wideband audio codec (AMR-WB) codec at 16kHz, and closes around half the gap in perceptual quality between the original encoded signal and the original speech sampled at 24kHz. We further show that when the same model is passed 8kHz audio that has not been compressed, is able to again reconstruct audio of slightly better quality than 16kHz AMR-WB, in the same MUSHRA evaluation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2519,
+  "title": "Deep Consistent Illumination in Augmented Reality",
+  "org": "deepmind",
+  "date": "2019-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/ismar-adjunct.2019.00-49",
+  "abstract": "Visual coherence is a basic requirement for providing a realistic scene in Augmented Reality. As one of the most important factors, illumination consistency is usually achieved through two steps: real lighting estimation and virtual object rendering. In this paper, we propose an end-to-end method to adjust the luminance and shadow of the virtual object in the composite image using a deep neural network. It learns the varying appearances of the virtual object under different illumination and viewpoints from a large amount of synthesized images, and transforms the illumination of the composite image into coherence according to the appearance of the real world. The effectiveness of our method is demonstrated through extensive experiments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2518,
+  "title": "Controllable Attention for Structured Layered Video Decomposition",
+  "org": "deepmind",
+  "date": "2019-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv.2019.00583",
+  "abstract": "The objective of this paper is to be able to separate a video into its natural layers, and to control which of the separated layers to attend to. For example, to be able to separate reflections, transparency or object motion. We make the following three contributions: (i) we introduce a new structured neural network architecture that explicitly incorporates layers (as spatial masks) into its design. This improves separation performance over previous general purpose networks for this task; (ii) we demonstrate that we can augment the architecture to leverage external cues such as audio for controllability and to help disambiguation; and (iii) we experimentally demonstrate the effectiveness of our approach and training procedure with controlled experiments while also showing that the proposed model can be successfully applied to real-word applications such as reflection removal and action recognition in cluttered scenes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2517,
+  "title": "Cross-View Policy Learning for Street Navigation",
+  "org": "deepmind",
+  "date": "2019-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv.2019.00819",
+  "abstract": "The ability to navigate from visual observations in unfamiliar environments is a core component of intelligent agents and an ongoing challenge for Deep Reinforcement Learning (RL). Street View can be a sensible testbed for such RL agents, because it provides real-world photographic imagery at ground level, with diverse street appearances; it has been made into an interactive environment called StreetLearn and used for research on navigation. However, goal-driven street navigation agents have not so far been able to transfer to unseen areas without extensive retraining, and relying on simulation is not a scalable solution. Since aerial images are easily and globally accessible, we propose instead to transfer a ground view policy, from training areas to unseen (target) parts of the city, by utilizing aerial view observations. Our core idea is to pair the ground view with an aerial view and to learn a joint policy that is transferable across views. We achieve this by learning a similar embedding space for both views, distilling the policy across views and dropping out visual modalities. We further reformulate the transfer learning paradigm into three stages: 1) cross-modal training, when the agent is initially trained on multiple city regions, 2) aerial view-only adaptation to a new area, when the agent is adapted to a held-out region using only the easily obtainable aerial view, and 3) ground view-only transfer, when the agent is tested on navigation tasks on unseen ground view",
+  "needs_fetch": false
+ },
+ {
+  "id": 2516,
+  "title": "HowTo100M: Learning a Text-Video Embedding by Watching Hundred Million Narrated Video Clips",
+  "org": "deepmind",
+  "date": "2019-10-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1906.03327",
+  "abstract": "Learning text-video embeddings usually requires a dataset of video clips with manually provided captions. However, such datasets are expensive and time consuming to create and therefore difficult to obtain on a large scale. In this work, we propose instead to learn such embeddings from video data with readily available natural language annotations in the form of automatically transcribed narrations. The contributions of this work are three-fold. First, we introduce HowTo100M: a large-scale dataset of 136 million video clips sourced from 1.22M narrated instructional web videos depicting humans performing and describing over 23k different visual tasks. Our data collection procedure is fast, scalable and does not require any additional manual annotation. Second, we demonstrate that a text-video embedding trained on this data leads to state-of-the-art results for text-to-video retrieval and action localization on instructional video datasets such as YouCook2 or CrossTask. Finally, we show that this embedding transfers well to other domains: fine-tuning on generic Youtube videos (MSR-VTT dataset) and movies (LSMDC dataset) outperforms models trained on these datasets alone. Our dataset, code and models are publicly available.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2515,
+  "title": "Scalable Verified Training for Provably Robust Image Classification",
+  "org": "deepmind",
+  "date": "2019-10-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv.2019.00494",
+  "abstract": "Recent work has shown that it is possible to train deep neural networks that are provably robust to norm-bounded adversarial perturbations. Most of these methods are based on minimizing an upper bound on the worst-case loss over all possible adversarial perturbations. While these techniques show promise, they often result in difficult optimization procedures that remain hard to scale to larger networks. Through a comprehensive analysis, we show how a simple bounding technique, interval bound propagation (IBP), can be exploited to train large provably robust neural networks that beat the state-of-the-art in verified accuracy. While the upper bound computed by IBP can be quite weak for general networks, we demonstrate that an appropriate loss and clever hyper-parameter schedule allow the network to adapt such that the IBP bound is tight. This results in a fast and stable learning algorithm that outperforms more sophisticated methods and achieves state-of-the-art results on MNIST, CIFAR-10 and SVHN. It also allows us to train the largest model to be verified beyond vacuous bounds on a downscaled version of IMAGENET.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2852,
+  "title": "The Paths Perspective on Value Learning",
+  "org": "openai",
+  "date": "2019-09-30",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00020",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2523,
+  "title": "Widespread temporal coding of cognitive control in the human prefrontal cortex",
+  "org": "deepmind",
+  "date": "2019-09-30",
+  "venue": "Nature Neuroscience",
+  "url": "https://doi.org/10.1038/s41593-019-0494-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2525,
+  "title": "High Fidelity Speech Synthesis with Adversarial Networks",
+  "org": "deepmind",
+  "date": "2019-09-25",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1909.11646",
+  "abstract": "Generative adversarial networks have seen rapid development in recent years and have led to remarkable improvements in generative modelling of images. However, their application in the audio domain has received limited attention, and autoregressive models, such as WaveNet, remain the state of the art in generative modelling of audio signals such as human speech. To address this paucity, we introduce GAN-TTS, a Generative Adversarial Network for Text-to-Speech. Our architecture is composed of a conditional feed-forward generator producing raw speech audio, and an ensemble of discriminators which operate on random windows of different sizes. The discriminators analyse the audio both in terms of general realism, as well as how well the audio corresponds to the utterance that should be pronounced. To measure the performance of GAN-TTS, we employ both subjective human evaluation (MOS - Mean Opinion Score), as well as novel quantitative metrics (Fréchet DeepSpeech Distance and Kernel DeepSpeech Distance), which we find to be well correlated with MOS. We show that GAN-TTS is capable of generating high-fidelity speech with naturalness comparable to the state-of-the-art models, and unlike autoregressive models, it is highly parallelisable thanks to an efficient feed-forward generator. Listen to GAN-TTS reading this abstract at https://storage.googleapis.com/deepmind-media/research/abstract.wav.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2524,
+  "title": "A comparison of deep learning performance against health-care professionals in detecting diseases from medical imaging: a systematic review and meta-analysis",
+  "org": "deepmind",
+  "date": "2019-09-25",
+  "venue": "The Lancet Digital Health",
+  "url": "https://doi.org/10.1016/s2589-7500(19)30123-2",
+  "abstract": "BACKGROUND: Deep learning offers considerable promise for medical diagnostics. We aimed to evaluate the diagnostic accuracy of deep learning algorithms versus health-care professionals in classifying diseases using medical imaging. METHODS: In this systematic review and meta-analysis, we searched Ovid-MEDLINE, Embase, Science Citation Index, and Conference Proceedings Citation Index for studies published from Jan 1, 2012, to June 6, 2019. Studies comparing the diagnostic performance of deep learning models and health-care professionals based on medical imaging, for any disease, were included. We excluded studies that used medical waveform data graphics material or investigated the accuracy of image segmentation rather than disease classification. We extracted binary diagnostic accuracy data and constructed contingency tables to derive the outcomes of interest: sensitivity and specificity. Studies undertaking an out-of-sample external validation were included in a meta-analysis, using a unified hierarchical model. This study is registered with PROSPERO, CRD42018091176. FINDINGS: Our search identified 31 587 studies, of which 82 (describing 147 patient cohorts) were included. 69 studies provided enough data to construct contingency tables, enabling calculation of test accuracy, with sensitivity ranging from 9·7% to 100·0% (mean 79·1%, SD 0·2) and specificity ranging from 38·9% to 100·0% (mean 88·3%, SD 0·1). An out-of-sample external validation was done in 25 studies, of which ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2526,
+  "title": "Recurrent Independent Mechanisms",
+  "org": "deepmind",
+  "date": "2019-09-24",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1909.10893",
+  "abstract": "Learning modular structures which reflect the dynamics of the environment can lead to better generalization and robustness to changes which only affect a few of the underlying causes. We propose Recurrent Independent Mechanisms (RIMs), a new recurrent architecture in which multiple groups of recurrent cells operate with nearly independent transition dynamics, communicate only sparingly through the bottleneck of attention, and are only updated at time steps where they are most relevant. We show that this leads to specialization amongst the RIMs, which in turn allows for dramatically improved generalization on tasks where some factors of variation differ systematically between training and evaluation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2528,
+  "title": "Mechanistic macroecology: exploring the drivers of latitudinal variation in terrestrial body size in a General Ecosystem Model",
+  "org": "deepmind",
+  "date": "2019-09-19",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/775957",
+  "abstract": "ABSTRACT Many mechanisms have been hypothesized to explain Bergmann’s rule - the correlation of body size with latitude. However, it is not feasible to assess the contribution of hypothesised mechanisms by experimental manipulation or statistical correlation. Here, we evaluate two of the principal hypothesised mechanisms, related to thermoregulation and resource availability, using structured experiments in a mechanistic global ecosystem model. We simulated the broad structure of assemblages and ecosystems using the Madingley model, a mechanistic General Ecosystem Model (GEM). We compared emergent modelled biogeographic patterns in body mass to empirical patterns for mammals and birds. We then explored the relative contribution of thermoregulation and resource availability to body mass clines by manipulating the model’s environmental gradients. Madingley produces body size gradients that are in broad agreement with empirical estimates. Thermoregulation and resource availability were both important controls on body mass for endotherms, but only temperature for ectotherms. Our results suggest that seasonality explains animal body mass patterns through a complex set of mechanisms. Process-based GEMs generate broadly realistic biogeographic body mass patterns. Ecologists can use them in novel ways: to explore causality, or for generating and testing hypotheses for large-scale, emergent ecological patterns. At the same time, macroecological patterns are useful for evaluating mecha",
+  "needs_fetch": false
+ },
+ {
+  "id": 2527,
+  "title": "Weighted Linear Bandits for Non-Stationary Environments",
+  "org": "deepmind",
+  "date": "2019-09-19",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1909.09146",
+  "abstract": "We consider a stochastic linear bandit model in which the available actions correspond to arbitrary context vectors whose associated rewards follow a non-stationary linear regression model. In this setting, the unknown regression parameter is allowed to vary in time. To address this problem, we propose D-LinUCB, a novel optimistic algorithm based on discounted linear regression, where exponential weights are used to smoothly forget the past. This involves studying the deviations of the sequential weighted least-squares estimator under generic assumptions. As a by-product, we obtain novel deviation results that can be used beyond non-stationary environments. We provide theoretical guarantees on the behavior of D-LinUCB in both slowly-varying and abruptly-changing environments. We obtain an upper bound on the dynamic regret that is of order d^{2/3} B\\_T^{1/3}T^{2/3}, where B\\_T is a measure of non-stationarity (d and T being, respectively, dimension and horizon). This rate is known to be optimal. We also illustrate the empirical performance of D-LinUCB and compare it with recently proposed alternatives in simulated environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1066,
+  "title": "Fine-tuning GPT-2 from human preferences",
+  "org": "openai",
+  "date": "2019-09-19",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/fine-tuning-gpt-2/",
+  "abstract": "We’ve fine-tuned the 774M parameter GPT-2 language model using human feedback for various tasks, successfully matching the preferences of the external human labelers, though those preferences did not always match our own. Specifically, for summarization tasks the labelers preferred sentences copied wholesale from the input (we’d only asked them to ensure accuracy), so our models learned to copy. Summarization required 60k human labels; simpler tasks which continue text in various styles required only 5k. Our motivation is to move safety techniques closer to the general task of “machines talking to humans,” which we believe is key to extracting information about human values.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2853,
+  "title": "Emergent Tool Use From Multi-Agent Autocurricula",
+  "org": "openai",
+  "date": "2019-09-17",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1909.07528",
+  "abstract": "Through multi-agent competition, the simple objective of hide-and-seek, and standard reinforcement learning algorithms at scale, we find that agents create a self-supervised autocurriculum inducing multiple distinct rounds of emergent strategy, many of which require sophisticated tool use and coordination. We find clear evidence of six emergent phases in agent strategy in our environment, each of which creates a new pressure for the opposing team to adapt; for instance, agents learn to build multi-object shelters using moveable boxes which in turn leads to agents discovering that they can overcome obstacles using ramps. We further provide evidence that multi-agent competition may scale better with increasing environment complexity and leads to behavior that centers around far more human-relevant skills than other self-supervised reinforcement learning methods such as intrinsic motivation. Finally, we propose transfer and fine-tuning as a way to quantitatively evaluate targeted capabilities, and we compare hide-and-seek agents to both intrinsic motivation and random initialization baselines in a suite of domain-specific intelligence tests.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1067,
+  "title": "Emergent tool use from multi-agent interaction",
+  "org": "openai",
+  "date": "2019-09-17",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/emergent-tool-use/",
+  "abstract": "We’ve observed agents discovering progressively more complex tool use while playing a simple game of hide-and-seek. Through training in our new simulated hide-and-seek environment, agents build a series of six distinct strategies and counterstrategies, some of which we did not know our environment supported. The self-supervised emergent complexity in this simple environment further suggests that multi-agent co-adaptation may one day produce extremely complex and intelligent behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2529,
+  "title": "Unsupervised Speech Representation Learning Using WaveNet Autoencoders",
+  "org": "deepmind",
+  "date": "2019-09-03",
+  "venue": "IEEE/ACM Transactions on Audio Speech and Language Processing",
+  "url": "https://arxiv.org/abs/1901.08810",
+  "abstract": "We consider the task of unsupervised extraction of meaningful latent representations of speech by applying autoencoding neural networks to speech waveforms. The goal is to learn a representation able to capture high level semantic content from the signal, e.g. phoneme identities, while being invariant to confounding low level details in the signal such as the underlying pitch contour or background noise. Since the learned representation is tuned to contain only phonetic content, we resort to using a high capacity WaveNet decoder to infer information discarded by the encoder from previous samples. Moreover, the behavior of autoencoder models depends on the kind of constraint that is applied to the latent representation. We compare three variants: a simple dimensionality reduction bottleneck, a Gaussian Variational Autoencoder (VAE), and a discrete Vector Quantized VAE (VQ-VAE). We analyze the quality of learned representations in terms of speaker independence, the ability to predict phonetic content, and the ability to accurately reconstruct individual spectrogram frames. Moreover, for discrete encodings extracted using the VQ-VAE, we measure the ease of mapping them to phonemes. We introduce a regularization scheme that forces the representations to focus on the phonetic content of the utterance and report performance comparable with the top entries in the ZeroSpeech 2017 unsupervised acoustic unit discovery task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2530,
+  "title": "Automated deep learning design for medical image classification by health-care professionals with no coding experience: a feasibility study",
+  "org": "deepmind",
+  "date": "2019-09-01",
+  "venue": "The Lancet Digital Health",
+  "url": "https://doi.org/10.1016/s2589-7500(19)30108-6",
+  "abstract": "BACKGROUND: Deep learning has the potential to transform health care; however, substantial expertise is required to train such models. We sought to evaluate the utility of automated deep learning software to develop medical image diagnostic classifiers by health-care professionals with no coding-and no deep learning-expertise. METHODS: We used five publicly available open-source datasets: retinal fundus images (MESSIDOR); optical coherence tomography (OCT) images (Guangzhou Medical University and Shiley Eye Institute, version 3); images of skin lesions (Human Against Machine [HAM] 10000), and both paediatric and adult chest x-ray (CXR) images (Guangzhou Medical University and Shiley Eye Institute, version 3 and the National Institute of Health [NIH] dataset, respectively) to separately feed into a neural architecture search framework, hosted through Google Cloud AutoML, that automatically developed a deep learning architecture to classify common diseases. Sensitivity (recall), specificity, and positive predictive value (precision) were used to evaluate the diagnostic properties of the models. The discriminative performance was assessed using the area under the precision recall curve (AUPRC). In the case of the deep learning model developed on a subset of the HAM10000 dataset, we did external validation using the Edinburgh Dermofit Library dataset. FINDINGS: Diagnostic properties and discriminative performance from internal validations were high in the binary classification ta",
+  "needs_fetch": false
+ },
+ {
+  "id": 2532,
+  "title": "Towards Partner-Aware Humanoid Robot Control Under Physical Interactions",
+  "org": "deepmind",
+  "date": "2019-08-23",
+  "venue": "Advances in intelligent systems and computing",
+  "url": "https://arxiv.org/abs/1809.06165",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2531,
+  "title": "Momentum-Based Topology Estimation of Articulated Objects",
+  "org": "deepmind",
+  "date": "2019-08-23",
+  "venue": "Advances in intelligent systems and computing",
+  "url": "https://arxiv.org/abs/1808.01639",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1068,
+  "title": "Testing robustness against unforeseen adversaries",
+  "org": "openai",
+  "date": "2019-08-22",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/testing-robustness/",
+  "abstract": "We’ve developed a method to assess whether a neural network classifier can reliably defend against adversarial attacks not seen during training. Our method yields a new metric, UAR (Unforeseen Attack Robustness), which evaluates the robustness of a single model against an unanticipated attack, and highlights the need to measure performance across a more diverse range of unforeseen attacks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1069,
+  "title": "GPT-2: 6-month follow-up",
+  "org": "openai",
+  "date": "2019-08-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-2-6-month-follow-up/",
+  "abstract": "We’re releasing the 774 million parameter GPT-2 language model after the release of our small 124M model in February, staged release of our medium 355M model in May, and subsequent research with partners and the AI community into the model’s potential for misuse and societal benefit. We’re also releasing an open-source legal agreement to make it easier for organizations to initiate model-sharing partnerships with each other, and are publishing a technical report about our experience in coordinating with the wider AI research community on publication norms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2533,
+  "title": "Structural and Functional MRI Evidence for Distinct Medial Temporal and Prefrontal Roles in Context-dependent Relational Memory",
+  "org": "deepmind",
+  "date": "2019-08-08",
+  "venue": "Journal of Cognitive Neuroscience",
+  "url": "https://doi.org/10.1162/jocn_a_01454",
+  "abstract": "Declarative memory is supported by distributed brain networks in which the medial-temporal lobes (MTLs) and pFC serve as important hubs. Identifying the unique and shared contributions of these regions to successful memory performance is an active area of research, and a growing literature suggests that these structures often work together to support declarative memory. Here, we present data from a context-dependent relational memory task in which participants learned that individuals belonged in a single room in each of two buildings. Room assignment was consistent with an underlying contextual rule structure in which male and female participants were assigned to opposite sides of a building and the side assignment switched between buildings. In two experiments, neural correlates of performance on this task were evaluated using multiple neuroimaging tools: diffusion tensor imaging (Experiment 1), magnetic resonance elastography (Experiment 1), and functional MRI (Experiment 2). Structural and functional data from each individual modality provided complementary and consistent evidence that the hippocampus and the adjacent white matter tract (i.e., fornix) supported relational memory, whereas the ventromedial pFC/OFC (vmPFC/OFC) and the white matter tract connecting vmPFC/OFC to MTL (i.e., uncinate fasciculus) supported memory-guided rule use. Together, these data suggest that MTL and pFC structures differentially contribute to and support contextually guided relational memory",
+  "needs_fetch": false
+ }
+]

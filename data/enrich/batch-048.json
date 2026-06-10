@@ -1,0 +1,302 @@
+[
+ {
+  "id": 820,
+  "title": "Transfer Learning for Bayesian Optimization on Heterogeneous Search Spaces",
+  "org": "deepmind",
+  "date": "2024-02-02",
+  "venue": "Transactions on Machine Learning Research (TMLR)",
+  "url": "https://arxiv.org/abs/2309.16597",
+  "abstract": "Bayesian optimization (BO) is a popular black-box function optimization method, which makes sequential decisions based on a Bayesian model, typically a Gaussian process (GP), for the function. To ensure the quality of the model, transfer learning approaches have been developed to automatically design GP priors by learning from data on \"training\" functions. These training functions are typically required to have the same domain as the \"test\" function (black-box function to be optimized). In this paper, we introduce MPHD, a model pre-training method on heterogeneous domains, which uses a neural net mapping from domain descriptions to specifications of a hierarchical GP. MPHD can be seamlessly integrated with BO to transfer knowledge across heterogeneous search spaces. Our theoretical and empirical results demonstrate the validity of MPHD and its superior performance on challenging black-box function optimization tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 819,
+  "title": "Fractal Patterns May Unravel the Intelligence in Next-Token Prediction",
+  "org": "deepmind",
+  "date": "2024-02-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.01825",
+  "abstract": "We study the fractal structure of language, aiming to provide a precise formalism for quantifying several properties that may have been previously suspected but not formally shown. We establish that language is: (1) self-similar, exhibiting complexities at all levels of granularity, with no particular characteristic granularity level or context length, and (2) long-range dependent (LRD), with tokens at any instant typically correlated with all subsequent tokens. Based on these findings, we argue that short-term patterns in language, such as in paragraphs, mirror the patterns seen in larger scopes, like entire documents. This may shed some light on how next-token prediction can lead to a comprehension of the structure of text at multiple levels of granularity, from words and clauses to broader contexts and intents. In addition, we demonstrate a connection between fractal parameters, such as the Hurst exponent, and scaling laws when varying the context length at inference time. We hope that these findings offer a fresh perspective on the nature of language and the mechanisms underlying the success of LLMs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2889,
+  "title": "Circuits Updates — February 2024",
+  "org": "anthropic",
+  "date": "2024-02-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/feb-update/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2737,
+  "title": "Abstract 44: Portable Optical Blood Flow Monitor for the Detection of Large Vessel Occlusion",
+  "org": "openai",
+  "date": "2024-02-01",
+  "venue": "Stroke",
+  "url": "http://dx.doi.org/10.1161/str.55.suppl_1.44",
+  "abstract": "Introduction: Early detection of large vessel occlusion (LVO) facilitates triage to appropriate stroke centers and reduces treatment times. Prehospital stroke scales are insensitive, so we investigated the ability of the Openwater Headset, a portable optical blood flow monitor, to detect LVO in patients undergoing acute stroke evaluation. Hypothesis: We hypothesized that the Openwater Headset would detect LVO with greater sensitivity and specificity than prehospital scales. Methods: At two comprehensive stroke centers, eligible patients presented to the emergency department or were transferred from another facility for acute stroke evaluation within 24 hours of symptom onset and NIHSS ≥2. Eligible patients underwent emergent vascular imaging as per routine care. LVO was defined as occlusion of the ICA or the first/second segment of the MCA. Each patient underwent a 70-second bedside optical blood flow evaluation with the Openwater Headset (prior to endovascular therapy, if applicable). The Openwater Headset generated blood flow waveforms based on the relative change in the speckle contrast, acquired at 40 Hz. A deep neural network was trained to identify waveform features that discriminate LVO status ( Figure 1a ), withholding a validation set to test model performance. ROC analysis compared Openwater Headset performance with that of prehospital stroke scales. Results: 135 patients completed the optical evaluation a median of 6 hours after symptom onset (IQR: 3-14). The media",
+  "needs_fetch": false
+ },
+ {
+  "id": 1701,
+  "title": "Sparks of function by de novo protein design",
+  "org": "deepmind",
+  "date": "2024-02-01",
+  "venue": "Nature Biotechnology",
+  "url": "https://doi.org/10.1038/s41587-024-02133-2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1700,
+  "title": "Metrics reloaded: recommendations for image analysis validation",
+  "org": "deepmind",
+  "date": "2024-02-01",
+  "venue": "Nature Methods",
+  "url": "https://doi.org/10.1038/s41592-023-02151-z",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 822,
+  "title": "Robust agents learn causal world models",
+  "org": "deepmind",
+  "date": "2024-02-01",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=pOoKI3ouv1",
+  "abstract": "It has long been hypothesised that causal reasoning plays a fundamental role in robust and general intelligence. However, it is not known if agents must learn causal models in order to generalise under distributional shifts, or if other inductive biases are sufficient. We answer this question, showing that any agent capable of satisfying a regret bound under a large set of distributional shifts must have learned an approximate causal model of the data generating process, which converges to the true causal model for optimal agents. We discuss the implications of this result for several research areas including transfer learning and causal inference.",
+  "needs_fetch": false
+ },
+ {
+  "id": 821,
+  "title": "Exploration at Scale using Epistemic Neural Networks",
+  "org": "deepmind",
+  "date": "2024-02-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.00396",
+  "abstract": "We present evidence of substantial benefit to efficient exploration in gathering human feedback to improve large language models. In our experiments, an agent sequentially generates queries while fitting a reward model to the feedback received. Our best-performing agent generates queries using double Thompson sampling, with uncertainty represented by an epistemic neural network. Our results demonstrate that efficient exploration enables high levels of performance with far fewer queries. Further, both uncertainty estimation and the choice of exploration scheme play critical roles.",
+  "needs_fetch": false
+ },
+ {
+  "id": 420,
+  "title": "Improving Weak-to-Strong Generalization with Scalable Oversight and Ensemble Learning",
+  "org": "other",
+  "date": "2024-02-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2402.00667",
+  "abstract": "This paper presents a follow-up study to OpenAI's recent superalignment work on Weak-to-Strong Generalization (W2SG). Superalignment focuses on ensuring that high-level AI systems remain consistent with human values and intentions when dealing with complex, high-risk tasks. The W2SG framework has opened new possibilities for empirical research in this evolving field. Our study simulates two phases of superalignment under the W2SG framework: the development of general superhuman models and the progression towards superintelligence. In the first phase, based on human supervision, the quality of weak supervision is enhanced through a combination of scalable oversight and ensemble learning, reducing the capability gap between weak teachers and strong students. In the second phase, an automatic alignment evaluator is employed as the weak supervisor. By recursively updating this auto aligner, the capabilities of the weak teacher models are synchronously enhanced, achieving weak-to-strong supervision over stronger student models.We also provide an initial validation of the proposed approach for the first phase. Using the SciQ task as example, we explore ensemble learning for weak teacher models through bagging and boosting. Scalable oversight is explored through two auxiliary settings: human-AI interaction and AI-AI debate. Additionally, the paper discusses the impact of improved weak supervision on enhancing weak-to-strong generalization based on in-context learning. Experiment cod",
+  "needs_fetch": false
+ },
+ {
+  "id": 1013,
+  "title": "Building an early warning system for LLM-aided biological threat creation",
+  "org": "openai",
+  "date": "2024-01-31",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/building-an-early-warning-system-for-llm-aided-biological-threat-creation/",
+  "abstract": "We’re developing a blueprint for evaluating the risk that a large language model (LLM) could aid someone in creating a biological threat. In an evaluation involving both biology experts and students, we found that GPT-4 provides at most a mild uplift in biological threat creation accuracy. While this uplift is not large enough to be conclusive, our finding is a starting point for continued research and community deliberation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1702,
+  "title": "Stochastic Low-Rank Tensor Bandits for Multi-Dimensional Online Decision Making",
+  "org": "deepmind",
+  "date": "2024-01-30",
+  "venue": "Journal of the American Statistical Association",
+  "url": "https://doi.org/10.1080/01621459.2024.2311364",
+  "abstract": "Multi-dimensional online decision making plays a crucial role in many real applications such as online recommendation and digital marketing. In these problems, a decision at each time is a combination of choices from different types of entities. To solve it, we introduce stochastic low-rank tensor bandits, a class of bandits whose mean rewards can be represented as a low-rank tensor. We consider two settings, tensor bandits without context and tensor bandits with context. In the first setting, the platform aims to find the optimal decision with the highest expected reward, a.k.a, the largest entry of true reward tensor. In the second setting, some modes of the tensor are contexts and the rest modes are decisions, and the goal is to find the optimal decision given the contextual information. We propose two learning algorithms tensor elimination and tensor epoch-greedy for tensor bandits without context, and derive finite-time regret bounds for them. Comparing with existing competitive methods, tensor elimination has the best overall regret bound and tensor epoch-greedy has a sharper dependency on dimensions of the reward tensor. Furthermore, we develop a practically effective Bayesian algorithm called tensor ensemble sampling for tensor bandits with context. Extensive simulations and real analysis in online advertising data back up our theoretical findings and show that our algorithms outperform various state-of-the-art approaches that ignore the tensor low-rank structure. Sup",
+  "needs_fetch": false
+ },
+ {
+  "id": 540,
+  "title": "OWSM v3.1: Better and Faster Open Whisper-Style Speech Models based on E-Branchformer",
+  "org": "other",
+  "date": "2024-01-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.16658",
+  "abstract": "Recent studies have highlighted the importance of fully open foundation models. The Open Whisper-style Speech Model (OWSM) is an initial step towards reproducing OpenAI Whisper using public data and open-source toolkits. However, previous versions of OWSM (v1 to v3) are still based on standard Transformer, which might lead to inferior performance compared to state-of-the-art speech encoder architectures. This work aims to improve the performance and efficiency of OWSM without additional data. We present a series of E-Branchformer-based models named OWSM v3.1, ranging from 100M to 1B parameters. OWSM v3.1 outperforms its predecessor, OWSM v3, in most evaluation benchmarks, while showing an improved inference speed of up to 25%. We further reveal the emergent ability of OWSM v3.1 in zero-shot contextual biasing speech recognition. We also provide a model trained on a subset of data with low license restrictions. We will publicly release the code, pre-trained models, and training logs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1703,
+  "title": "Linear Deconfounded Score Method: Scoring DAGs With Dense Unobserved Confounding",
+  "org": "deepmind",
+  "date": "2024-01-29",
+  "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+  "url": "https://doi.org/10.1109/tnnls.2024.3352657",
+  "abstract": "This article deals with the discovery of causal relations from a combination of observational data and qualitative assumptions about the nature of causality in the presence of unmeasured confounding. We focus on applications where unobserved variables are known to have a widespread effect on many of the observed ones, which makes the problem particularly difficult for constraint-based methods, because most pairs of variables are conditionally dependent given any other subset, rendering the causal effect unidentifiable. In this article, we show that under the principle of independent mechanisms, unobserved confounding in this setting leaves a statistical footprint in the observed data distribution that allows for disentangling spurious and causal effects. Using this insight, we demonstrate that a sparse linear Gaussian directed acyclic graph (DAG) among observed variables may be recovered approximately and propose a simple adjusted score-based causal discovery algorithm that may be implemented with general-purpose solvers and scales to high-dimensional problems. We find, in addition, that despite the conditions we pose to guarantee causal recovery, performance in practice is robust to large deviations in model assumptions, and extensions to nonlinear structural models are possible.",
+  "needs_fetch": false
+ },
+ {
+  "id": 823,
+  "title": "Learning Universal Predictors",
+  "org": "deepmind",
+  "date": "2024-01-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.14953",
+  "abstract": "Meta-learning has emerged as a powerful approach to train neural networks to learn new tasks quickly from limited data. Broad exposure to different tasks leads to versatile representations enabling general problem solving. But, what are the limits of meta-learning? In this work, we explore the potential of amortizing the most powerful universal predictor, namely Solomonoff Induction (SI), into neural networks via leveraging meta-learning to its limits. We use Universal Turing Machines (UTMs) to generate training data used to expose networks to a broad range of patterns. We provide theoretical analysis of the UTM data generation processes and meta-training protocols. We conduct comprehensive experiments with neural architectures (e.g. LSTMs, Transformers) and algorithmic data generators of varying complexity and universality. Our results suggest that UTM data is a valuable resource for meta-learning, and that it can be used to train neural networks capable of learning universal prediction strategies.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2738,
+  "title": "género de la inteligencia artificial: un diálogo-editorial con ChatGPT a modo de presentación del dosier",
+  "org": "openai",
+  "date": "2024-01-22",
+  "venue": "Revista Stultifera",
+  "url": "http://dx.doi.org/10.4206/rev.stultifera.2024.v7n1-01",
+  "abstract": "Un año más ―ya son siete― volvemos a la carga con nuevas propuestas de discusión e interpretación de nuestra compleja realidad mundial e hipercompleja situación latinoamericana. Como suele ocurrir, cuesta decidir por dónde empezar y cómo introducir una problemática; no obstante, desde algún punto de inicio, anclaje o referencia hay que comenzar sin dilación, demoras o pretextos. El problema del inicio resulta radical, ya sea que lo entendamos como la cuestión metafísica del origen (del arjé, lo arqueo- y lo archi-) o como el asunto práctico de la ocasión y el momento propicio u oportuno (el kairós). Para evitar la solemnidad, ritualización y escolasticismo del discurso académico, nosotros empezaremos con una inscripción callejera, uno de esos grafitis e inscripciones fugaces que encontramos de paso en un bloque de cemento de nuestra entrañable provincia: “No existen los aliados”. Escrita con aerosol tras alguna de las masivas marchas …",
+  "needs_fetch": false
+ },
+ {
+  "id": 609,
+  "title": "Universal Neurons in GPT2 Language Models",
+  "org": "deepmind",
+  "date": "2024-01-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.12181",
+  "abstract": "A basic question within the emerging field of mechanistic interpretability is the degree to which neural networks learn the same underlying mechanisms. In other words, are neural mechanisms universal across different models? In this work, we study the universality of individual neurons across GPT2 models trained from different initial random seeds, motivated by the hypothesis that universal neurons are likely to be interpretable. In particular, we compute pairwise correlations of neuron activations over 100 million tokens for every neuron pair across five different seeds and find that 1-5\\% of neurons are universal, that is, pairs of neurons which consistently activate on the same inputs. We then study these universal neurons in detail, finding that they usually have clear interpretations and taxonomize them into a small number of neuron families. We conclude by studying patterns in neuron weights to establish several universal functional roles of neurons in simple circuits: deactivating attention heads, changing the entropy of the next token distribution, and predicting the next token to (not) be within a particular set.",
+  "needs_fetch": false
+ },
+ {
+  "id": 824,
+  "title": "Neural Population Learning beyond Symmetric Zero-Sum Games",
+  "org": "deepmind",
+  "date": "2024-01-20",
+  "venue": "AAMAS 2024",
+  "url": "https://arxiv.org/abs/2401.05133",
+  "abstract": "We study computationally efficient methods for finding equilibria in n-player general-sum games, specifically ones that afford complex visuomotor skills. We show how existing methods would struggle in this setting, either computationally or in theory. We then introduce NeuPL-JPSRO, a neural population learning algorithm that benefits from transfer learning of skills and converges to a Coarse Correlated Equilibrium (CCE) of the game. We show empirical convergence in a suite of OpenSpiel games, validated rigorously by exact game solvers. We then deploy NeuPL-JPSRO to complex domains, where our approach enables adaptive coordination in a MuJoCo control domain and skill transfer in capture-the-flag. Our work shows that equilibrium convergent population learning can be implemented at scale and in generality, paving the way towards solving real-world games between heterogeneous players with mixed motives.",
+  "needs_fetch": false
+ },
+ {
+  "id": 826,
+  "title": "E3x: E(3)-Equivariant Deep Learning Made Easy",
+  "org": "deepmind",
+  "date": "2024-01-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.07595",
+  "abstract": "This work introduces E3x, a software package for building neural networks that are equivariant with respect to the Euclidean group E(3), consisting of translations, rotations, and reflections of three-dimensional space. Compared to ordinary neural networks, E(3)-equivariant models promise benefits whenever input and/or output data are quantities associated with three-dimensional objects. This is because the numeric values of such quantities (e.g. positions) typically depend on the chosen coordinate system. Under transformations of the reference frame, the values change predictably, but the underlying rules can be difficult to learn for ordinary machine learning models. With built-in E(3)-equivariance, neural networks are guaranteed to satisfy the relevant transformation rules exactly, resulting in superior data efficiency and accuracy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 825,
+  "title": "Asynchronous Local-SGD Training forLanguage Modeling",
+  "org": "deepmind",
+  "date": "2024-01-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.09135",
+  "abstract": "Training large language models requires substantial computational resources. As models keep scaling, it is crucial to leverage distributed computation resources that might be even geographically distant from each other. Due to the latency and heterogeneity of these computation devices, it is natural to consider Local Stochastic Gradient Descent (localSGD) (e.g., each device performs more than one update per communication) and asynchronous training (the server updates the global parameter vector as soon as a worker has completed its local updates). This work presents an initial study on asynchronous localSGD for language modeling. We conduct a comprehensive investigation by examining how worker heterogeneity, model size, number of workers, and optimizer could impact the learning performance. We identified that a key hurdle of applying asynchronous localSGD in language modeling is the application of momentum acceleration on the server side when worker gradients are staled. In this setting, asynchronous localSGD takes more iterations to converge than its synchronous counterpart despite updating the global parameters more frequently. To mitigate this optimization challenge, we propose a novel method that utilizes a delayed Nesterov momentum update and adjusts the workers' local training steps based on their computation speed. This approach, evaluated with models up to 150M parameters on the C4 dataset, not only matches the performance of synchronous localSGD in terms of perplexit",
+  "needs_fetch": false
+ },
+ {
+  "id": 831,
+  "title": "NfgTransformer: Equivariant Representation Learning for Normal-form Games",
+  "org": "deepmind",
+  "date": "2024-01-16",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=4YESQqIys7",
+  "abstract": "Normal-form games (NFGs) are fundamental subjects of game theoretic analysis that describe strategic interactions between players. While NFGs are typically represented as payoff tensors, any permutation of player actions describes an identical game. We propose *NfgTransformer*, a general-purpose query-key-value architecture that exploits the equivariance inherent to this data modality. We show the efficacy of our approach in a range of downstream tasks, including equilibrium solving, deviation-gain estimation and ranking on synthetic and standard games. Beyond strong quantitative results, we show that our model internally developed a recognisable pattern of iterative equilibrium refinement when solving for a Nash Equilibrium in a suite of GAMUT games. We hope our work can serves as an effective bridge to bring scalable learning techniques to game theoretic analysis.",
+  "needs_fetch": false
+ },
+ {
+  "id": 830,
+  "title": "Generative Adversarial Equilibrium Solvers",
+  "org": "deepmind",
+  "date": "2024-01-16",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=TlyiaPXaVN",
+  "abstract": "We introduce the use of generative adversarial learning to compute equilibria in general game-theoretic settings, specifically the generalized Nash equilibrium (GNE) in pseudo-games, and its specific instantiation as the competitive equilibrium (CE) in Arrow-Debreu competitive economies. Pseudo-games are a generalization of games in which players' actions affect not only the payoffs of other players but also their feasible action spaces. Although the computation of GNE and CE is intractable in the worst-case, i.e., PPAD-hard, in practice, many applications only require solutions with high accuracy in expectation over a distribution of problem instances. We introduce Generative Adversarial Equilibrium Solvers (GAES): a family of generative adversarial neural networks that can learn GNE and CE from only a sample of problem instances. We provide computational and sample complexity bounds for Lipschitz-smooth function approximators in a large class of concave pseudo-games, and apply the framework to finding Nash equilibria in normal-form games, CE in Arrow-Debreu competitive economies, and GNE in an environmental economic model of the Kyoto mechanism.",
+  "needs_fetch": false
+ },
+ {
+  "id": 829,
+  "title": "GATS: Gather-Attend-Scatter",
+  "org": "deepmind",
+  "date": "2024-01-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.08525",
+  "abstract": "As the AI community increasingly adopts large-scale models, it is crucial to develop general and flexible tools to integrate them. We introduce Gather-Attend-Scatter (GATS), a novel module that enables seamless combination of pretrained foundation models, both trainable and frozen, into larger multimodal networks. GATS empowers AI systems to process and generate information across multiple modalities at different rates. In contrast to traditional fine-tuning, GATS allows for the original component models to remain frozen, avoiding the risk of them losing important knowledge acquired during the pretraining phase. We demonstrate the utility and versatility of GATS with a few experiments across games, robotics, and multimodal input-output systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 828,
+  "title": "Directly Fine-Tuning Diffusion Models on Differentiable Rewards",
+  "org": "deepmind",
+  "date": "2024-01-16",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=1vmSEVL19f",
+  "abstract": "We present Direct Reward Fine-Tuning (DRaFT), a simple and effective method for fine-tuning diffusion models to maximize differentiable reward functions, such as scores from human preference models. We first show that it is possible to backpropagate the reward function gradient through the full sampling procedure, and that doing so achieves strong performance on a variety of rewards, outperforming reinforcement learning-based approaches. We then propose more efficient variants of DRaFT: DRaFT-K, which truncates backpropagation to only the last K steps of sampling, and DRaFT-LV, which obtains lower-variance gradient estimates for the case when K=1. We show that our methods work well for a variety of reward functions and can be used to substantially improve the aesthetic quality of images generated by Stable Diffusion 1.4. Finally, we draw connections between our approach and prior work, providing a unifying perspective on the design space of gradient-based fine-tuning algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 827,
+  "title": "Approximating Nash Equilibria in Normal-Form Games via Stochastic Optimization",
+  "org": "deepmind",
+  "date": "2024-01-16",
+  "venue": "ICLR 2024",
+  "url": "https://openreview.net/forum?id=cc8h3I3V4E",
+  "abstract": "We propose the first loss function for approximate Nash equilibria of normal-form games that is amenable to unbiased Monte Carlo estimation. This construction allows us to deploy standard non-convex stochastic optimization techniques for approximating Nash equilibria, resulting in novel algorithms with provable guarantees. We complement our theoretical analysis with experiments demonstrating that stochastic gradient descent can outperform previous state-of-the-art approaches.",
+  "needs_fetch": false
+ },
+ {
+  "id": 437,
+  "title": "On-Policy Distillation of Language Models: Learning from Self-Generated Mistakes",
+  "org": "deepmind",
+  "date": "2024-01-16",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2306.13649",
+  "abstract": "Knowledge distillation (KD) is widely used for compressing a teacher model to reduce its inference cost and memory footprint, by training a smaller student model. However, current KD methods for auto-regressive sequence models suffer from distribution mismatch between output sequences seen during training and those generated by the student during inference. To address this issue, we introduce Generalized Knowledge Distillation (GKD). Instead of solely relying on a fixed set of output sequences, GKD trains the student on its self-generated output sequences by leveraging feedback from the teacher on such sequences. Unlike supervised KD approaches, GKD also offers the flexibility to employ alternative loss functions between the student and teacher, which can be useful when the student lacks the expressivity to mimic the teacher's distribution. Furthermore, GKD facilitates the seamless integration of distillation with RL fine-tuning (RLHF). We demonstrate the efficacy of GKD for distilling auto-regressive language models on summarization, translation, and arithmetic reasoning tasks, and task-agnostic distillation for instruction-tuning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 98,
+  "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+  "org": "anthropic",
+  "date": "2024-01-14",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/sleeper-agents-training-deceptive-llms-that-persist-through-safety-training",
+  "abstract": "Humans are capable of strategically deceptive behavior: behaving helpfully in most situations, but then behaving very differently in order to pursue alternative objectives when given the opportunity. If an AI system learned such a deceptive strategy, could we detect it and remove it using current state-of-the-art safety training techniques? To study this question, we construct proof-of-concept examples of deceptive behavior in large language models (LLMs). For example, we train models that write secure code when the prompt states that the year is 2023, but insert exploitable code when the stated year is 2024. We find that such backdoor behavior can be made persistent, so that it is not removed by standard safety training techniques, including supervised fine-tuning, reinforcement learning, and adversarial training (eliciting unsafe behavior and then training to remove it). The backdoor behavior is most persistent in the largest models and in models trained to produce chain-of-thought reasoning about deceiving the training process, with the persistence remaining even when the chain-of-thought is distilled away. Furthermore, rather than removing backdoors, we find that adversarial training can teach models to better recognize their backdoor triggers, effectively hiding the unsafe behavior. Our results suggest that, once a model exhibits deceptive behavior, standard techniques could fail to remove such deception and create a false impression of safety.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1705,
+  "title": "A randomized controlled trial of alpha phase-locked auditory stimulation to treat symptoms of sleep onset insomnia",
+  "org": "deepmind",
+  "date": "2024-01-11",
+  "venue": "medRxiv",
+  "url": "https://doi.org/10.1101/2024.01.10.24301120",
+  "abstract": "Abstract Sleep onset insomnia is a pervasive problem that contributes significantly to the poor health outcomes associated with insufficient sleep. Auditory stimuli phase-locked to slow-wave sleep oscillations have been shown to augment deep sleep, but it is unknown whether a similar approach can be used to accelerate sleep onset. The present randomized controlled crossover trial enrolled adults with objectively verified sleep onset latencies (SOLs) greater than 30 minutes to test the effect of auditory stimuli delivered at specific phases of participants’ alpha oscillations prior to sleep onset. During the intervention week, participants wore an electroencephalogram (EEG)-enabled headband that delivered acoustic pulses timed to arrive anti-phase with alpha for 30 minutes (Stimulation). During the Sham week, the headband silently recorded EEG. The primary outcome was SOL determined by blinded scoring of EEG records. For the 21 subjects included in the analyses, stimulation had a significant effect on SOL according to a linear mixed effects model (p = 0.0019), and weekly average SOL decreased by 10.5 ± 15.9 minutes (29.3 ± 44.4%). These data suggest that phase-locked acoustic stimulation can be a viable alternative to pharmaceuticals to accelerate sleep onset in individuals with prolonged sleep onset latencies.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1704,
+  "title": "How does the primate brain combine generative and discriminative computations in vision?",
+  "org": "deepmind",
+  "date": "2024-01-11",
+  "venue": "PubMed",
+  "url": "https://arxiv.org/abs/2401.06005",
+  "abstract": "Vision is widely understood as an inference problem. However, two contrasting conceptions of the inference process have each been influential in research on biological vision as well as the engineering of machine vision. The first emphasizes bottom-up signal flow, describing vision as a largely feedforward, discriminative inference process that filters and transforms the visual information to remove irrelevant variation and represent behaviorally relevant information in a format suitable for downstream functions of cognition and behavioral control. In this conception, vision is driven by the sensory data, and perception is direct because the processing proceeds from the data to the latent variables of interest. The notion of \"inference\" in this conception is that of the engineering literature on neural networks, where feedforward convolutional neural networks processing images are said to perform inference. The alternative conception is that of vision as an inference process in Helmholtz's sense, where the sensory evidence is evaluated in the context of a generative model of the causal processes that give rise to it. In this conception, vision inverts a generative model through an interrogation of the sensory evidence in a process often thought to involve top-down predictions of sensory data to evaluate the likelihood of alternative hypotheses. The authors include scientists rooted in roughly equal numbers in each of the conceptions and motivated to overcome what might be a f",
+  "needs_fetch": false
+ },
+ {
+  "id": 832,
+  "title": "Learning Planning-compatible Cognitive Maps with Transformers in PartiallyObserved Environments",
+  "org": "deepmind",
+  "date": "2024-01-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2401.05946",
+  "abstract": "Despite their stellar performance on a wide range of tasks, including in-context tasks only revealed during inference, vanilla transformers and variants trained for next-token predictions (a) do not learn an explicit world model of their environment which can be flexibly queried and (b) cannot be used for planning or navigation. In this paper, we consider partially observed environments (POEs), where an agent's spatial position cannot be deterministically recovered from its observation, which makes planning hard. We introduce a transformer with (multiple) discrete bottleneck(s), TDB, whose latent codes learn a compressed representation of the observations. After training a TDB with an augmented objective on sequences of observations and actions, we extract interpretable cognitive maps of the environment from the active bottleneck(s) indices. These maps are then paired with an external solver to solve planning problems. First, we show that a TDB trained on POEs (a) retains the near-perfect predictive performance of a vanilla transformer or an LSTM while (b) solving shortest paths problems exponentially more efficiently. Second, a TDB extracts interpretable representations from text datasets, while reaching higher in-context accuracy than vanilla sequence models. Finally, in new POEs, a TDB (a) reaches near-perfect in-context accuracy, (b) learns accurate in-context cognitive maps (c) solves in-context planning problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 833,
+  "title": "Distributional reinforcement learning in prefrontal cortex",
+  "org": "deepmind",
+  "date": "2024-01-10",
+  "venue": "Nature Neuroscience",
+  "url": "https://www.nature.com/articles/s41593-023-01535-w",
+  "abstract": "The prefrontal cortex is crucial for learning and decision-making. Classic reinforcement learning (RL) theories center on learning the expectation of potential rewarding outcomes and explain a wealth of neural data in the prefrontal cortex. Distributional RL, on the other hand, learns the full distribution of rewarding outcomes and better explains dopamine responses. In the present study, we show that distributional RL also better explains macaque anterior cingulate cortex neuronal responses, suggesting that it is a common mechanism for reward-guided learning.",
+  "needs_fetch": false
+ }
+]

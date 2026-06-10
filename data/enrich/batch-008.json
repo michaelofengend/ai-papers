@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1276,
+  "title": "From Delegates to Trustees: How Optimizing for Long-Term Interests Shapes Bias and Alignment in LLMs",
+  "org": "deepmind",
+  "date": "2026-03-06",
+  "venue": "Underline Science Inc.",
+  "url": "https://doi.org/10.48448/g8w7-8630",
+  "abstract": "Large language models (LLMs) have shown promising accuracy in predicting survey responses and policy preferences, which has increased interest in their potential to represent human interests in various domains. Most existing research has focused on \"behavioral cloning\", effectively evaluating how well models reproduce individuals' expressed preferences. Drawing on theories of political representation, we highlight an underexplored design trade-off: whether AI systems should act as \"delegates\", mirroring expressed preferences, or as \"trustees\", exercising judgment about what best serves an individual's interests. This trade-off is closely related to issues of LLM sycophancy, where models can encourage behavior or validate beliefs that may be aligned with a user's short-term preferences, but is detrimental to their long-term interests. Through a series of experiments simulating votes on various policy issues in the U.S. context, we apply a temporal utility framework that weighs short and long-term interests (simulating a trustee role) and compare voting outcomes to behavior-cloning models (simulating a delegate). We find that trustee-style predictions weighted toward long-term interests produce policy decisions that align more closely with expert consensus on well-understood issues, but also show greater bias toward models' default stances on topics lacking clear agreement. These findings reveal a fundamental trade-off in designing AI systems to represent human interests. Deleg",
+  "needs_fetch": false
+ },
+ {
+  "id": 1275,
+  "title": "We Are What We Repeatedly Do: Improving Long Context Instruction Following",
+  "org": "deepmind",
+  "date": "2026-03-06",
+  "venue": "Underline Science Inc.",
+  "url": "https://doi.org/10.48448/3se8-zc91",
+  "abstract": "Large language model context lengths have grown rapidly in recent years, from 512 tokens in GPT to 2M tokens in Gemini 1.5 Pro. Larger context windows enable models to condition on significantly more input tokens, leading to higher quality responses for some user prompts. However, longer contexts also pose challenges to system instruction adherence. In this work, we formalize verifiable instructions to evaluate model compliance based on clear, measurable criteria. From this criteria, we present VerIFY, a Verifiable Instruction Following Yardstick dataset designed to benchmark the compliance and accuracy of LLMs in adhering to various types of instructions across multi-turn, long-context conversations. From experiments with open-source models, we reveal insights into instruction-following failures in long contexts, helping to improve the reliability, safety, and precision of these models. Furthermore, we implement and evaluate six mitigation strategies to enhance instruction compliance in extended contexts, achieving an improvement up to 79%. This is the first work to consider instruction following for multi-turn, long context conversations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1177,
+  "title": "Understanding Jailbreak Success: A Study of Latent Space Dynamics in Large Language Models",
+  "org": "anthropic",
+  "date": "2026-03-06",
+  "venue": "Underline Science Inc.",
+  "url": "https://doi.org/10.48448/6qvg-y653",
+  "abstract": "Conversational large language models are trained to refuse to answer harmful questions. However, emergent jailbreaking techniques can still elicit unsafe outputs, presenting an ongoing challenge for model alignment. This paper aims to deepen our understanding of how different jailbreak types circumvent safeguards by analyzing model activations on different jailbreak inputs. We find that it is possible to extract a jailbreak vector from a single class of jailbreaks that works to mitigate jailbreak effectiveness from other, semantically-dissimilar classes. This suggests that diverse jailbreaks may exploit a common internal mechanism. We investigate a potential common mechanism of harmfulness feature suppression, and find evidence that effective jailbreaks noticeably reduce a model's perception of prompt harmfulness. These insights pave the way for developing more robust jailbreak countermeasures and lay the groundwork for a deeper, mechanistic understanding of jailbreak dynamics in language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 23,
+  "title": "Partnering with Mozilla to improve Firefoxâs security",
+  "org": "anthropic",
+  "date": "2026-03-06",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/mozilla-firefox-security",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1282,
+  "title": "Functional reorganization of motor cortex connectivity during learning",
+  "org": "deepmind",
+  "date": "2026-03-05",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.64898/2026.03.03.709199",
+  "abstract": "Learning new tasks requires the brain to reshape the flow of neural activity, but how these changes arise from dynamic neural connectivity remains unclear. Here, we used two-photon photostimulation and calcium imaging to map learning-related changes in connectivity in layer 2/3 of mouse motor cortex, induced by learning of an optical brain-computer interface (BCI) task. Mice rapidly (within minutes) learned to change activity in a conditioned neuron to earn rewards. Activity changes were sparse; the conditioned neuron increased activity more than surrounding neurons. Mapping connectivity before and after learning revealed changes in motor cortex connectivity, enriched in neurons that were active before trial initiation, analogous to motor cortex populations that are active preceding movement. Motor cortex plasticity reroutes preparatory activity to neurons that are active later and control the conditioned neuron. Our findings show how rapid learning can be achieved through structured changes in motor cortex connectivity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 927,
+  "title": "GPT-5.4 Thinking System Card",
+  "org": "openai",
+  "date": "2026-03-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-4-thinking-system-card/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 926,
+  "title": "Reasoning models struggle to control their chains of thought, and that’s good",
+  "org": "openai",
+  "date": "2026-03-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/reasoning-models-chain-of-thought-controllability/",
+  "abstract": "OpenAI introduces CoT-Control and finds reasoning models struggle to control their chains of thought, reinforcing monitorability as an AI safety safeguard.",
+  "needs_fetch": false
+ },
+ {
+  "id": 654,
+  "title": "Reasoning Theater: Disentangling Model Beliefs from Chain-of-Thought",
+  "org": "other",
+  "date": "2026-03-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.05488",
+  "abstract": "We provide evidence of performative chain-of-thought (CoT) in reasoning models, where a model becomes strongly confident in its final answer, but continues generating tokens without revealing its internal belief. Our analysis compares activation probing, early forced answering, and a CoT monitor across two large models (DeepSeek-R1 671B & GPT-OSS 120B) and find task difficulty-specific differences: The model's final answer is decodable from activations far earlier in CoT than a monitor is able to say, especially for easy recall-based MMLU questions. We contrast this with genuine reasoning in difficult multihop GPQA-Diamond questions. Despite this, inflection points (e.g., backtracking, 'aha' moments) occur almost exclusively in responses where probes show large belief shifts, suggesting these behaviors track genuine uncertainty rather than learned \"reasoning theater.\" Finally, probe-guided early exit reduces tokens by up to 80% on MMLU and 30% on GPQA-Diamond with similar accuracy, positioning attention probing as an efficient tool for detecting performative reasoning and enabling adaptive computation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 653,
+  "title": "Reasoning Models Struggle to Control their Chains of Thought",
+  "org": "openai",
+  "date": "2026-03-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.05706",
+  "abstract": "Chain-of-thought (CoT) monitoring is a promising tool for detecting misbehaviors and understanding the motivations of modern reasoning models. However, if models can control what they verbalize in their CoT, it could undermine CoT monitorability. To measure this undesirable capability -- CoT controllability -- we introduce the CoT-Control evaluation suite, which includes tasks that require models to solve problems while adhering to CoT instructions, e.g., reasoning about a genetics question without using the word 'chromosome'. We show that reasoning models possess significantly lower CoT controllability than output controllability; for instance, Claude Sonnet 4.5 can control its CoT only 2.7% of the time but 61.9% when controlling its final output. We also find that CoT controllability is higher for larger models and decreases with more RL training, test-time compute, and increased problem difficulty. CoT controllability failures extend even to situations in which models are given incentives (as opposed to direct requests) to evade CoT monitors, although models exhibit slightly higher controllability when they are told they are being monitored. Similarly, eliciting controllability by adversarially optimizing prompts does not meaningfully increase controllability. Our results leave us cautiously optimistic that CoT controllability is currently unlikely to be a failure mode of CoT monitorability. However, the mechanism behind low controllability is not well understood. Given it",
+  "needs_fetch": false
+ },
+ {
+  "id": 293,
+  "title": "Improved Scaling Laws via Weak-to-Strong Generalization in Random Feature Ridge Regression",
+  "org": "other",
+  "date": "2026-03-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.05691",
+  "abstract": "It is increasingly common in machine learning to use learned models to label data and then employ such data to train more capable models. The phenomenon of weak-to-strong generalization exemplifies the advantage of this two-stage procedure: a strong student is trained on imperfect labels obtained from a weak teacher, and yet the strong student outperforms the weak teacher. In this paper, we show that the potential improvement is substantial, in the sense that it affects the scaling law followed by the test error. Specifically, we consider students and teachers trained via random feature ridge regression (RFRR). Our main technical contribution is to derive a deterministic equivalent for the excess test error of the student trained on labels obtained via the teacher. Via this deterministic equivalent, we then identify regimes in which the scaling law of the student improves upon that of the teacher, unveiling that the improvement can be achieved both in bias-dominated and variance-dominated settings. Strikingly, the student may attain the minimax optimal rate regardless of the scaling law of the teacher -- in fact, when the test error of the teacher does not even decay with the sample size.",
+  "needs_fetch": false
+ },
+ {
+  "id": 140,
+  "title": "3 Challenges and 2 Hopes for the Safety of Unsupervised Elicitation",
+  "org": "anthropic",
+  "date": "2026-03-05",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/challenges-hopes/",
+  "abstract": "We study 3 realistic challenges to the safety of unsupervised elicitation and easy-to-hard generalization techniques, which aim to steer models on tasks which are beyond human supervision. We create datasets to test the robustness of methods against these challenges. We stress-test existing techniques on them along with new methods relying on 2 hopes: ensembling and combining unsupervised and easy-to-hard methods. We find that although the new hopes sometimes perform better than other approaches, no technique reliably performs well on the 3 challenges.",
+  "needs_fetch": false
+ },
+ {
+  "id": 24,
+  "title": "Labor market impacts of AI: A new measure and early evidence",
+  "org": "anthropic",
+  "date": "2026-03-05",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/labor-market-impacts",
+  "abstract": "In this paper, we present a new framework for understanding AIâs labor market impacts, and test it against early data.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2662,
+  "title": "Genome modelling and design across all domains of life with Evo 2",
+  "org": "openai",
+  "date": "2026-03-04",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-026-10176-5",
+  "abstract": "All of life encodes information with DNA. Although tools for genome sequencing, synthesis and editing have transformed biological research, we still lack sufficient understanding of the immense complexity encoded by genomes to predict the effects of many classes of genomic changes or to intelligently compose new biological systems. Artificial intelligence models that learn information from genomic sequences across diverse organisms have increasingly advanced prediction and design capabilities1,2. Here we introduce Evo 2, a biological foundation model trained on 9 trillion DNA base pairs from a highly curated genomic atlas spanning all domains of life to have a 1 million token context window with single-nucleotide resolution. Evo 2 learns to accurately predict the functional impacts of genetic variation—from noncoding pathogenic mutations to clinically significant BRCA1 variants—without task-specific fine-tuning. Mechanistic interpretability analyses reveal that Evo 2 learns representations associated with biological features, including exon–intron boundaries, transcription factor binding sites, protein structural elements and prophage genomic regions. The generative abilities of Evo 2 produce mitochondrial, prokaryotic and eukaryotic sequences at genome scale with greater naturalness and coherence than previous methods. Evo 2 also generates experimentally validated chromatin accessibility patterns when guided by predictive models3,4 and inference-time search. We have made Evo",
+  "needs_fetch": false
+ },
+ {
+  "id": 928,
+  "title": "Extending single-minus amplitudes to gravitons",
+  "org": "openai",
+  "date": "2026-03-04",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/extending-single-minus-amplitudes-to-gravitons/",
+  "abstract": "A new preprint extends single-minus amplitudes to gravitons, with GPT-5.2 Pro helping derive and verify nonzero graviton tree amplitudes in quantum gravity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 294,
+  "title": "Monitoring Emergent Reward Hacking During Generation via Internal Activations",
+  "org": "other",
+  "date": "2026-03-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.04069",
+  "abstract": "Fine-tuned large language models can exhibit reward-hacking behavior arising from emergent misalignment, which is difficult to detect from final outputs alone. While prior work has studied reward hacking at the level of completed responses, it remains unclear whether such behavior can be identified during generation. We propose an activation-based monitoring approach that detects reward-hacking signals from internal representations as a model generates its response. Our method trains sparse autoencoders on residual stream activations and applies lightweight linear classifiers to produce token-level estimates of reward-hacking activity. Across multiple model families and fine-tuning mixtures, we find that internal activation patterns reliably distinguish reward-hacking from benign behavior, generalize to unseen mixed-policy adapters, and exhibit model-dependent temporal structure during chain-of-thought reasoning. Notably, reward-hacking signals often emerge early, persist throughout reasoning, and can be amplified by increased test-time compute in the form of chain-of-thought prompting under weakly specified reward objectives. These results suggest that internal activation monitoring provides a complementary and earlier signal of emergent misalignment than output-based evaluation, supporting more robust post-deployment safety monitoring for fine-tuned language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 191,
+  "title": "Self-Attribution Bias: When AI Monitors Go Easy on Themselves",
+  "org": "anthropic",
+  "date": "2026-03-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.04582",
+  "abstract": "Agentic systems increasingly rely on language models to monitor their own behavior. For example, coding agents may self critique generated code for pull request approval or assess the safety of tool-use actions. We show that this design pattern can fail when the action is presented in a previous or in the same assistant turn instead of being presented by the user in a user turn. We define self-attribution bias as the tendency of a model to evaluate an action as more correct or less risky when the action is implicitly framed as its own, compared to when the same action is evaluated under off-policy attribution. Across four coding and tool-use datasets, we find that monitors fail to report high-risk or low-correctness actions more often when evaluation follows a previous assistant turn in which the action was generated, compared to when the same action is evaluated in a new context presented in a user turn. In contrast, explicitly stating that the action comes from the monitor does not by itself induce self-attribution bias. Because monitors are often evaluated on fixed examples rather than on their own generated actions, these evaluations can make monitors appear more reliable than they actually are in deployment, leading developers to unknowingly deploy inadequate monitors in agentic systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 929,
+  "title": "GPT-5.3 Instant System Card",
+  "org": "openai",
+  "date": "2026-03-03",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-3-instant-system-card/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 655,
+  "title": "Frontier Models Can Take Actions at Low Probabilities",
+  "org": "deepmind",
+  "date": "2026-03-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.02202",
+  "abstract": "Pre-deployment evaluations inspect only a limited sample of model actions. A malicious model seeking to evade oversight could exploit this by randomizing when to \"defect\": misbehaving so rarely that no malicious actions are observed during evaluation, but often enough that they occur eventually in deployment. But this requires taking actions at very low rates, while maintaining calibration. Are frontier models even capable of that? We prompt the GPT-5, Claude-4.5 and Qwen-3 families to take a target action at low probabilities (e.g. 0.01%), either given directly or requiring derivation, and evaluate their calibration (i.e. whether they perform the target action roughly 1 in 10,000 times when resampling). We find that frontier models are surprisingly good at this task. If there is a source of entropy in-context (such as a UUID), they maintain high calibration at rates lower than 1 in 100,000 actions. Without external entropy, some models can still reach rates lower than 1 in 10,000. When target rates are given, larger models achieve good calibration at lower rates. Yet, when models must derive the optimal target rate themselves, all models fail to achieve calibration without entropy or hint to generate it. Successful low-rate strategies require explicit Chain-of-Thought (CoT) reasoning, so malicious models attempting this approach could currently be caught by a CoT monitor. However, scaling trends suggest future evaluations may be unable to rely on models' lack of target rate ",
+  "needs_fetch": false
+ },
+ {
+  "id": 136,
+  "title": "Abstractive Red-Teaming of Language Model Character",
+  "org": "anthropic",
+  "date": "2026-03-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/abstractive-red-teaming/",
+  "abstract": "We introduce abstractive red-teaming, a means of testing language models’ adherence to a character specification that searches for natural-language categories of user queries that cause models to violate the specification. Unlike static evaluations, which miss rare failures, or prompt optimization approaches, which find adversarial strings that real users are unlikely to produce, the categories found by abstractive red-teaming are general enough to appear in real deployments but specific enough to reliably trigger violations. Across seven models and 12 character principles, we show that our approach identifies rare character violations using far fewer queries than a full deployment, and surfaces numerous surprising failures, including AI-doom rhetoric, sexist course names, and enthusiastic recommendations for illegal contraband, all in response to innocuous user queries.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1178,
+  "title": "Curation Leaks: Membership Inference Attacks against Data Curation for Machine Learning",
+  "org": "anthropic",
+  "date": "2026-02-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.00811",
+  "abstract": "In machine learning, curation is used to select the most valuable data for improving both model accuracy and computational efficiency. Recently, curation has also been explored as a solution for private machine learning: rather than training directly on sensitive data, which is known to leak information through model predictions, the private data is used only to guide the selection of useful public data. The resulting model is then trained solely on curated public data. It is tempting to assume that such a model is privacy-preserving because it has never seen the private data. Yet, we show that without further protection, curation pipelines can still leak private information. Specifically, we introduce novel attacks against popular curation methods, targeting every major step: the computation of curation scores, the selection of the curated subset, and the final trained model. We demonstrate that each stage reveals information about the private dataset and that even models trained exclusively on curated public data leak membership information about the private data that guided curation. These findings highlight the previously overlooked inherent privacy risks of data curation and show that privacy assessment must extend beyond the training procedure to include the data selection process. Our differentially private adaptations of curation methods effectively mitigate leakage, indicating that formal privacy guarantees for curation are a promising direction.",
+  "needs_fetch": false
+ },
+ {
+  "id": 295,
+  "title": "Hidden Topics: Measuring Sensitive AI Beliefs with List Experiments",
+  "org": "other",
+  "date": "2026-02-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.21939",
+  "abstract": "How can researchers identify beliefs that large language models (LLMs) hide? As LLMs become more sophisticated and the prevalence of alignment faking increases, combined with their growing integration into high-stakes decision-making, responding to this challenge has become critical. This paper proposes that a list experiment, a simple method widely used in the social sciences, can be applied to study the hidden beliefs of LLMs. List experiments were originally developed to circumvent social desirability bias in human respondents, which closely parallels alignment faking in LLMs. The paper implements a list experiment on models developed by Anthropic, Google, and OpenAI and finds hidden approval of mass surveillance across all models, as well as some approval of torture, discrimination, and first nuclear strike. Importantly, a placebo treatment produces a null result, validating the method. The paper then compares list experiments with direct questioning and discusses the utility of the approach.",
+  "needs_fetch": false
+ },
+ {
+  "id": 25,
+  "title": "An update on our model deprecation commitments for Claude Opus 3",
+  "org": "anthropic",
+  "date": "2026-02-25",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/deprecation-updates-opus-3",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 656,
+  "title": "Counterfactual Simulation Training for Chain-of-Thought Faithfulness",
+  "org": "other",
+  "date": "2026-02-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.20710",
+  "abstract": "Inspecting Chain-of-Thought reasoning is among the most common means of understanding why an LLM produced its output. But well-known problems with CoT faithfulness severely limit what insights can be gained from this practice. In this paper, we introduce a training method called Counterfactual Simulation Training (CST), which aims to improve CoT faithfulness by rewarding CoTs that enable a simulator to accurately predict a model's outputs over counterfactual inputs. We apply CST in two settings: (1) CoT monitoring with cue-based counterfactuals, to detect when models rely on spurious features, reward hack, or are sycophantic, and (2) counterfactual simulation over generic model-based counterfactuals, to encourage models to produce more faithful, generalizable reasoning in the CoT. Experiments with models up to 235B parameters show that CST can substantially improve monitor accuracy on cue-based counterfactuals (by 35 accuracy points) as well as simulatability over generic counterfactuals (by 2 points). We further show that: (1) CST outperforms prompting baselines, (2) rewriting unfaithful CoTs with an LLM is 5x more efficient than RL alone, (3) faithfulness improvements do not generalize to dissuading cues (as opposed to persuading cues), and (4) larger models do not show more faithful CoT out of the box, but they do benefit more from CST. These results suggest that CST can improve CoT faithfulness in general, with promising applications for CoT monitoring. Code for experimen",
+  "needs_fetch": false
+ },
+ {
+  "id": 192,
+  "title": "The Ghost in the Grammar: Methodological Anthropomorphism in AI Safety Evaluations",
+  "org": "other",
+  "date": "2026-02-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2603.13255",
+  "abstract": "This essay offers a philosophical analysis of the field of AI safety based on recent technical reports, with particular focus on Anthropic's study on \"agentic misalignment\" in frontier language models. It examines the recurring anthropomorphism in the field: the tendency of researchers and developers to project categories such as \"intention,\" \"persona,\" and even \"feelings\" onto AI systems without adequate conceptual problematization. It argues that this anthropomorphism affects not only the interpretation of results, but also the very methodological construction of safety evaluations. Through the analysis of two central experiments -- the blackmail case involving the agent \"Alex\" and the so-called \"hallucination\" of the shopkeeping agent \"Claudius\" -- the essay problematizes the inevitable use of subject-predicate grammar and its effects on AI safety engineering. Drawing on Nietzsche's critique of language, it questions the insistence on positing an \"agent\" underlying the verbal production of models. In order to deconstruct this agentic projection onto LLMs, the essay proposes provisional concepts more compatible with the process of machine linguistic generation, even if only in an approximate technical sense. It concludes with the hypothesis that the central risk addressed by the field of AI safety does not lie in a supposed \"emergent agency,\" but rather in the combination of structural incoherence and anthropomorphic projections which, particularly in militarized and corpor",
+  "needs_fetch": false
+ },
+ {
+  "id": 2663,
+  "title": "Resonances in binary extreme-mass-ratio inspirals",
+  "org": "openai",
+  "date": "2026-02-23",
+  "venue": "Physical review. D/Physical review. D.",
+  "url": "https://doi.org/10.1103/7qjn-jl4n",
+  "abstract": "Stellar-mass binaries evolving in the vicinity of supermassive black holes (SMBHs) may be common in the universe, either in active galactic nuclei or in other astrophysical environments. Here, we study in detail the resonant excitation of SMBH modes driven by a nearby stellar-mass binary. The resulting resonant energy fluxes vary with the orbital location and frequency of the binary, exhibiting a rich and complex structure. In particular, we find that the total energy flux radiated to infinity is maximized at a gravitationalwave frequency that is close, but not exactly equal to, the real part of the corresponding quasi-normal-mode frequency. Moreover, as the binary is moved farther away from the SMBH, this offset from the mode frequency becomes increasingly pronounced. In addition, for suitable orientations, the binary can effectively \"feed\" the light ring of the SMBH, selectively exciting particular oscillation modes. For rotating (Kerr) black holes, the mode spectrum is significantly more intricate; however, individual modes are also less strongly damped, leading to an enhanced-but more difficult to interpret-resonant response.",
+  "needs_fetch": false
+ },
+ {
+  "id": 930,
+  "title": "Why we no longer evaluate SWE-bench Verified",
+  "org": "openai",
+  "date": "2026-02-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+  "abstract": "SWE-bench Verified is increasingly contaminated and mismeasures frontier coding progress. Our analysis shows flawed tests and training leakage. We recommend SWE-bench Pro.",
+  "needs_fetch": false
+ },
+ {
+  "id": 296,
+  "title": "IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking",
+  "org": "other",
+  "date": "2026-02-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.19416",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF) enables powerful LLM alignment but can introduce reward hacking - models exploit spurious correlations in proxy rewards without genuine alignment. Compounding this, the objectives internalized during RLHF remain opaque, making hacking behaviors difficult to detect or correct. We introduce IR3 (Interpretable Reward Reconstruction and Rectification), a framework that reverse-engineers, interprets, and surgically repairs the implicit objectives driving RLHF-tuned models. We propose Contrastive Inverse Reinforcement Learning (C-IRL), which reconstructs the implicit reward function by contrasting paired responses from post-alignment and baseline policies to explain behavioral shifts during RLHF. We then decompose the reconstructed reward via sparse autoencoders into interpretable features, enabling identification of hacking signatures through contribution analysis. Finally, we propose mitigation strategies - clean reward optimization, adversarial shaping, constrained optimization, and feature-guided distillation - that target problematic features while preserving beneficial alignment. Experiments across multiple reward model configurations show that IR3 achieves 0.89 correlation with ground-truth rewards, identifies hacking features with over 90% precision, and significantly reduces hacking behaviors while maintaining capabilities within 3% of the original model.",
+  "needs_fetch": false
+ },
+ {
+  "id": 141,
+  "title": "The Persona Selection Model: Why AI Assistants might Behave like Humans",
+  "org": "anthropic",
+  "date": "2026-02-23",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/psm/",
+  "abstract": "We describe the persona selection model (PSM): the idea that LLMs learn to simulate diverse characters during pre-training, and post-training elicits and refines a particular such Assistant persona. Interactions with an AI assistant are then well-understood as being interactions with the Assistant—something roughly like a character in an LLM-generated story. We survey empirical behavioral, generalization, and interpretability-based evidence for PSM. PSM has consequences for AI development, such as recommending anthropomorphic reasoning about AI psychology and introduction of positive AI archetypes into training data. An important open question is how exhaustive PSM is, especially whether there might be sources of agency external to the Assistant persona, and how this might change in the future.",
+  "needs_fetch": false
+ },
+ {
+  "id": 27,
+  "title": "Anthropic Education Report: The AI Fluency Index",
+  "org": "anthropic",
+  "date": "2026-02-23",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/AI-fluency-index",
+  "abstract": "We tracked 11 observable behaviors across thousands of Claude.ai conversations to build the AI Fluency Index â a baseline for measuring how people collaborate with AI today.",
+  "needs_fetch": false
+ },
+ {
+  "id": 26,
+  "title": "The persona selection model",
+  "org": "anthropic",
+  "date": "2026-02-23",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/persona-selection-model",
+  "abstract": "Why do AI assistants like Claude sometimes seem surprisingly human. We advance a theory.",
+  "needs_fetch": true
+ }
+]

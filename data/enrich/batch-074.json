@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2185,
+  "title": "Information Theoretic Meta Learning with Gaussian Processes",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": "Uncertainty in Artificial Intelligence",
+  "url": "https://openreview.net/pdf?id=0vO-u0sucRF",
+  "abstract": "We formulate meta learning using information theoretic concepts; namely, mutual information and the information bottleneck. The idea is to learn a stochastic representation or encoding of the task description, given by a training set, that is highly informative about predicting the validation set. By making use of variational approximations to the mutual information, we derive a general and tractable framework for meta learning. This framework unifies existing gradient-based algorithms and also allows us to derive new algorithms. In particular, we develop a memory-based algorithm that uses Gaussian processes to obtain non-parametric encoding representations. We demonstrate our method on a few-shot regression problem and on four few-shot classification problems, obtaining competitive accuracy when compared to existing baselines",
+  "needs_fetch": false
+ },
+ {
+  "id": 2184,
+  "title": "Online Limited Memory Neural-Linear Bandits",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openalex.org/W3132997327",
+  "abstract": "We study neural-linear bandits for solving problems where both exploration and representation learning play an important role. Neural-linear bandits leverage the representation power of deep neural networks and combine it with efficient exploration mechanisms, designed for linear contextual bandits, on top of the last hidden layer. Since the representation is optimized during learning, information regarding exploration with “old” features is lost. We propose the first limited memory neural- linear bandit that is resilient to this catastrophic forgetting phenomenon by solving a semi-definite program. We then approximate the semi-definite program using stochastic gradient descent to make the algorithm practical and adjusted for online usage. We perform simulations on a variety of data sets, including regression, classification, and sentiment analysis. In addition, we evaluate our algorithm in a challenging uplink rate-control application. The bandit controls the transmission rates of data segments over cellular links to achieve optimal throughput. We observe that our algorithm achieves superior performance and shows resilience to catastrophic forgetting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2183,
+  "title": "Divide-and-Conquer Monte Carlo Tree Search",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openreview.net/pdf?id=Nj8EIrSu5O",
+  "abstract": "Standard planners for sequential decision making (including Monte Carlo planning, tree search, dynamic programming, etc.) are constrained by an implicit sequential planning assumption: The order in which a plan is constructed is the same in which it is executed. We consider alternatives to this assumption for the class of goal-directed Reinforcement Learning (RL) problems. Instead of an environment transition model, we assume an imperfect, goal-directed policy. This low-level policy can be improved by a plan, consisting of an appropriate sequence of sub-goals that guide it from the start to the goal state. We propose a planning algorithm, Divide-and-Conquer Monte Carlo Tree Search (DC-MCTS), for approximating the optimal plan by means of proposing intermediate sub-goals which hierarchically partition the initial tasks into simpler ones that are then solved independently and recursively. The algorithm critically makes use of a learned sub-goal proposal for finding appropriate partitions trees of new tasks based on prior experience. Different strategies for learning sub-goal proposals give rise to different planning strategies that strictly generalize sequential planning. We show that this algorithmic flexibility over planning order leads to improved results in navigation tasks in grid-worlds as well as in challenging continuous control environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2182,
+  "title": "Explicit Pareto Front Optimization for Constrained Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openreview.net/pdf?id=pOHW7EwFbo9",
+  "abstract": "Many real-world problems require that reinforcement learning (RL) agents learn policies that not only maximize a scalar reward, but do so while meeting constraints, such as remaining below an energy consumption threshold. Typical approaches for solving constrained RL problems rely on Lagrangian relaxation, but these suffer from several limitations. We draw a connection between multi-objective RL and constrained RL, based on the key insight that the constraint-satisfying optimal policy must be Pareto optimal. This leads to a novel, multi-objective perspective for constrained RL. We propose a framework that uses a multi-objective RL algorithm to find a Pareto front of policies that trades off between the reward and constraint(s), and simultaneously searches along this front for constraint-satisfying policies. We show that in practice, an instantiation of our framework outperforms existing approaches on several challenging continuous control domains, both in terms of solution quality and sample efficiency, and enables flexibility in recovering a portion of the Pareto front rather than a single constraint-satisfying policy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2181,
+  "title": "Bayesian Metric Learning for Robust Training of Deep Models under Noisy Labels",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openalex.org/W3128917574",
+  "abstract": "Label noise is a natural event of data collection and annotation and has been shown to have significant impact on the performance of deep learning models regarding accuracy reduction and sample complexity increase. This paper aims to develop a novel theoretically sound Bayesian deep metric learning that is robust against noisy labels. Our proposed approach is inspired by a linear Bayesian large margin nearest neighbor classification, and is a combination of Bayesian learning, triplet loss-based deep metric learning and variational inference frameworks. We theoretically show the robustness under label noise of our proposed method. The experimental results on benchmark data sets that contain both synthetic and realistic label noise show a considerable improvement in the classification accuracy of our method compared to the linear Bayesian metric learning and the point estimate deep metric learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2180,
+  "title": "Non-Markovian Predictive Coding For Planning In Latent Space",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openalex.org/W3127293269",
+  "abstract": "High-dimensional observations are a major challenge in the application of model-based reinforcement learning (MBRL) to real-world environments. In order to handle high-dimensional sensory inputs, existing MBRL approaches use representation learning to map high-dimensional observations into a lower-dimensional latent space that is more amenable to dynamics estimation and planning. Crucially, the task-relevance and predictability of the learned representations play critical roles in the success of planning in latent space. In this work, we present Non-Markovian Predictive Coding (NMPC), an information-theoretic approach for planning from high-dimensional observations with two key properties: 1) it formulates a mutual information objective that prioritizes the encoding of task-relevant components of the environment; and 2) it employs a recurrent neural network capable of modeling non-Markovian latent dynamics. To demonstrate NMPC’s ability to prioritize task-relevant information, we evaluate our new model on a challenging modification of standard DMControl tasks where the DMControl background is replaced with natural videos, containing complex but irrelevant information to the planning task. Our experiments show that NMPC is superior to existing methods in the challenging complex-background setting while remaining competitive with current state-of-the-art MBRL models in the standard setting.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2179,
+  "title": "Model-Free Counterfactual Credit Assignment",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openalex.org/W3126592918",
+  "abstract": "Credit assignment in reinforcement learning is the problem of measuring an action’s influence on future rewards. In particular, this requires separating \\emph{skill} from \\emph{luck}, ie. disentangling the effect of an action on rewards from that of external factors and subsequent actions. To achieve this, we adapt the notion of counterfactuals from causality theory to a model-free RL setup. The key idea is to condition value functions on \\emph{future} events, by learning to extract relevant information from a trajectory. We then propose to use these as future-conditional baselines and critics in policy gradient algorithms and we develop a valid, practical variant with provably lower variance, while achieving unbiasedness by constraining the hindsight information not to contain information about the agent’s actions. We demonstrate the efficacy and validity of our algorithm on a number of illustrative problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2178,
+  "title": "Neural spatio-temporal reasoning with object-centric self-supervised learning",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openreview.net/forum?id=rEaz5uTcL6Q",
+  "abstract": "Transformer-based language models have proved capable of rudimentary symbolic reasoning, underlining the effectiveness of applying self-attention computations to sets of discrete entities. In this work, we apply this lesson to videos of physical interaction between objects. We show that self-attention-based models operating on discrete, learned, object-centric representations perform well on spatio-temporal reasoning tasks which were expressly designed to trouble traditional neural network models and to require higher-level cognitive processes such as causal reasoning and understanding of intuitive physics and narrative structure. We achieve state of the art results on two datasets, CLEVRER and CATER, significantly outperforming leading hybrid neuro-symbolic models. Moreover, we find that techniques from language modelling, such as BERT-style semi-supervised predictive losses, allow our model to surpass neuro-symbolic approaches while using 40% less labelled data. Our results corroborate the idea that neural networks can reason about the causal, dynamic structure of visual data and attain understanding of intuitive physics, which counters the popular claim that they are only effective at perceptual pattern-recognition and not reasoning per se.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2177,
+  "title": "Good for Misconceived Reasons: Revisiting Neural Multimodal Machine Translation",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openreview.net/pdf?id=Q9U_H8lQ4yV",
+  "abstract": "A neural multimodal machine translation (MMT) system is one that aims to perform better translation by extending conventional text-only translation models with multimodal information. Many recent studies report improvements when equipping their models with the multimodal module, despite the controversy whether such improvements indeed come from the multimodal part. We revisit the recent development of neural multimodal machine translation by proposing two \\textit{interpretable} MMT models that achieve new state-of-the-art results on the standard \\dataset dataset. To our surprise, however, while we observe similar gains as in the recent developed multimodal-integrated models, our models learn to \\textit{ignore} the multimodal information. Upon further investigation, we discover that the improvements bought about by the multimodal models over text-only counterpart are in fact results of the regularization effect. We report our empirical findings which express the importance of MMT models' interpretability and set new paradigms for future MMT research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2176,
+  "title": "Incremental Policy Gradients for Online Reinforcement Learning Control",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openalex.org/W3093980962",
+  "abstract": "Policy gradient methods are built on the policy gradient theorem, which involves a term representing the complete sum of rewards into the future: the return. Due to this, one usually either waits until the end of an episode before performing updates, or learns an estimate of this return--a so-called critic. Our emphasis is on the first approach in this work, detailing an incremental policy gradient update which neither waits until the end of the episode, nor relies on learning estimates of the return. We provide on-policy and off-policy variants of our algorithm, for both the discounted return and average reward settings. Theoretically, we draw a connection between the traces our methods use and the stationary distributions of the discounted and average reward settings. We conclude with an experimental evaluation of our methods on both simple-to-understand and complex domains.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2175,
+  "title": "AlgebraNets",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openreview.net/pdf?id=guEuB3FPcd",
+  "abstract": "Neural networks have historically been built layerwise from the set of functions in f:Rn→Rm, i.e. with activations and weights/parameters represented by real numbers, R. Our work considers a richer set of objects for activations and weights, and undertakes a comprehensive study of alternative algebras as number representations by studying their performance on two challenging problems: large-scale image classification using the ImageNet dataset and language modeling using the enwiki8 and WikiText-103 datasets. We denote this broader class of models as AlgebraNets. Our findings indicate that the conclusions of prior work, which explored neural networks constructed from C (complex numbers) and H (quaternions) on smaller datasets, do not always transfer to these challenging settings. However, our results demonstrate that there are alternative algebras which deliver better parameter and computational efficiency compared with R. We consider C, H, M2(R) (the set of 2×2 real-valued matrices), M2(C), M3(R), M4(R), dual numbers and the R3 cross product. Additionally, we note that multiplication in these algebras has higher compute density than real multiplication, a useful property in situations with inherently limited parameter reuse such as auto-regressive inference and sparse neural networks. We therefore investigate how to induce sparsity within AlgebraNets. We hope that our strong results on large-scale, practical benchmarks will spur further exploration of these unconventional ar",
+  "needs_fetch": false
+ },
+ {
+  "id": 2174,
+  "title": "Addressing Extrapolation Error in Deep Offline Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": null,
+  "url": "https://openreview.net/pdf?id=OCRKCul3eKN",
+  "abstract": "Reinforcement learning (RL) encompasses both online and offline regimes. Unlike its online counterpart, offline RL agents are trained using logged-data only, without interaction with the environment. Therefore, offline RL is a promising direction for real-world applications, such as healthcare, where repeated interaction with environments is prohibitive. However, since offline RL losses often involve evaluating state-action pairs not well-covered by training data, they can suffer due to the errors introduced when the function approximator attempts to extrapolate those pairs' value. These errors can be compounded by bootstrapping when the function approximator overestimates, leading the value function to *grow unbounded*, thereby crippling learning. In this paper, we introduce a three-part solution to combat extrapolation errors: (i) behavior value estimation, (ii) ranking regularization, and (iii) reparametrization of the value function. We provide ample empirical evidence on the effectiveness of our method, showing state of the art performance on the RL Unplugged (RLU) ATARI dataset. Furthermore, we introduce new datasets for bsuite as well as partially observable DeepMind Lab environments, on which our method outperforms state of the art offline RL algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2173,
+  "title": "The Lipschitz Constant of Self-Attention",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": "International Conference on Machine Learning",
+  "url": "http://proceedings.mlr.press/v139/kim21i/kim21i.pdf",
+  "abstract": "Lipschitz constants of neural networks have been explored in various contexts in deep learning, such as provable adversarial robustness, estimating Wasserstein distance, stabilising training of GANs, and formulating invertible neural networks. Such works have focused on bounding the Lipschitz constant of fully connected or convolutional networks, composed of linear maps and pointwise non-linearities. In this paper, we investigate the Lipschitz constant of self-attention, a non-linear neural network module widely used in sequence modelling. We prove that the standard dot-product self-attention is *not* Lipschitz, and propose an alternative L2 self-attention that *is* Lipschitz. We derive an upper bound on the Lipschitz constant of L2 self-attention and provide empirical evidence for its asymptotic tightness. To demonstrate the practical relevance of our theoretical work, we formulate invertible self-attention and use it in a Transformer-based architecture for a character-level language modelling task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2172,
+  "title": "Coverage as a Principle for Discovering Transferable Behavior in Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2102.13515",
+  "abstract": "Designing agents that acquire knowledge autonomously and use it to solve new tasks efficiently is an important challenge in reinforcement learning. Unsupervised learning provides a useful paradigm for autonomous acquisition of task-agnostic knowledge. In supervised settings, representations discovered through unsupervised pre-training offer important benefits when transferred to downstream tasks. Given the nature of the reinforcement learning problem, we explore how to transfer knowledge through behavior instead of representations. The behavior of pre-trained policies may be used for solving the task at hand (exploitation), as well as for collecting useful data to solve the problem (exploration). We argue that pre-training policies to maximize coverage will result in behavior that is useful for both strategies. When using these policies for both exploitation and exploration, our agents discover solutions that lead to larger returns. The largest gains are generally observed in domains requiring structured exploration, including settings where the behavior of the pre-trained policies is misaligned with the downstream task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2171,
+  "title": "Data-efficient Hindsight Off-policy Option Learning",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2007.15588",
+  "abstract": "Hierarchical approaches for reinforcement learning aim to improve data efficiency and accelerate learning by incorporating different abstractions. We introduce Hindsight Off-policy Options (HO2), an efficient off-policy option learning algorithm, and isolate the impact of action and temporal abstraction in the option framework by comparing flat policies, mixture policies without temporal abstraction, and finally option policies; all with comparable policy optimization. When aiming for data efficiency, we demonstrate the importance of off-policy optimization, as even flat policies trained off-policy can outperform on-policy option methods. In addition, off-policy training and backpropagation through a dynamic programming inference procedure -- through time and through the policy components for every time-step -- enable us to train all components' parameters independently of the data-generating behavior policy. We continue to illustrate challenges in off-policy option learning and the related importance of trust-region constraints. Experimentally, we demonstrate that HO2 outperforms existing option learning methods and that both action and temporal abstraction provide strong benefits in particular in more demanding simulated robot manipulation tasks from raw pixel inputs. Finally, we develop an intuitive extension to encourage temporal abstraction and investigate differences in its impact between learning from scratch and using pre-trained options.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2170,
+  "title": "Cooperative AI: machines must learn to find common ground",
+  "org": "deepmind",
+  "date": "2021-05-04",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/d41586-021-01170-0",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2198,
+  "title": "Pick Your Battles: Interaction Graphs as Population-Level Objectives for Strategic Diversity",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2110.04041",
+  "abstract": "Strategic diversity is often essential in games: in multi-player games, for example, evaluating a player against a diverse set of strategies will yield a more accurate estimate of its performance. Furthermore, in games with non-transitivities diversity allows a player to cover several winning strategies. However, despite the significance of strategic diversity, training agents that exhibit diverse behaviour remains a challenge. In this paper we study how to construct diverse populations of agents by carefully structuring how individuals within a population interact. Our approach is based on interaction graphs, which control the flow of information between agents during training and can encourage agents to specialise on different strategies, leading to improved overall performance. We provide evidence for the importance of diversity in multi-agent training and analyse the effect of applying different interaction graphs on the training trajectories, diversity and performance of populations in a range of games.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2197,
+  "title": "EigenGame: PCA as a Nash Equilibrium",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "International Conference on Learning Representations",
+  "url": "https://openreview.net/pdf?id=NzTU59SYbNq",
+  "abstract": "We present a novel view on principal components analysis as a competitive game in which each approximate eigenvector is controlled by a player whose goal is to maximize their own utility function. We analyze the properties of this PCA game and the behavior of its gradient based updates. The resulting algorithm---which combines elements from Oja's rule with a generalized Gram-Schmidt orthogonalization---is naturally decentralized and hence parallelizable through message passing. We demonstrate the scalability of the algorithm with experiments on large image datasets and neural network activations. We discuss how this new view of PCA as a differentiable game can lead to further algorithmic developments and insights.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2196,
+  "title": "Factorizing Declarative and Procedural Knowledge in Structured, Dynamical Environments",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": null,
+  "url": "https://openalex.org/W3122771415",
+  "abstract": "Modeling a structured, dynamic environment like a video game requires keeping track of the objects and their states (declarative knowledge) as well as predicting how objects behave (procedural knowledge). Black-box models with a monolithic hidden state often fail to apply procedural knowledge consistently and uniformly, i.e., they lack systematicity. For example, in a video game, correct prediction of one enemy's trajectory does not ensure correct prediction of another's. We address this issue via an architecture that factorizes declarative and procedural knowledge and that imposes modularity within each form of knowledge. The architecture consists of active modules called object files that maintain the state of a single object and invoke passive external knowledge sources called schemata that prescribe state updates. To use a video game as an illustration, two enemies of the same type will share schemata but will have separate object files to encode their distinct state (e.g., health, position). We propose to use attention to determine which object files to update, the selection of schemata, and the propagation of information between object files. The resulting architecture is a drop-in replacement conforming to the same input-output interface as normal recurrent networks (e.g., LSTM, GRU) yet achieves substantially better generalization on environments that have multiple object tokens of the same type, including a challenging intuitive physics benchmark.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2195,
+  "title": "Modelling Cooperation in Network Games with Spatio-Temporal Complexity",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2102.06911",
+  "abstract": "The real world is awash with multi-agent problems that require collective action by self-interested agents, from the routing of packets across a computer network to the management of irrigation systems. Such systems have local incentives for individuals, whose behavior has an impact on the global outcome for the group. Given appropriate mechanisms describing agent interaction, groups may achieve socially beneficial outcomes, even in the face of short-term selfish incentives. In many cases, collective action problems possess an underlying graph structure, whose topology crucially determines the relationship between local decisions and emergent global effects. Such scenarios have received great attention through the lens of network games. However, this abstraction typically collapses important dimensions, such as geometry and time, relevant to the design of mechanisms promoting cooperation. In parallel work, multi-agent deep reinforcement learning has shown great promise in modelling the emergence of self-organized cooperation in complex gridworld domains. Here we apply this paradigm in graph-structured collective action problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2194,
+  "title": "Practical Real Time Recurrent Learning with a Sparse Approximation",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "International Conference on Learning Representations",
+  "url": "https://openreview.net/pdf?id=q3KSThy2GwB",
+  "abstract": "Recurrent neural networks are usually trained with backpropagation through time, which requires storing a complete history of network states, and prohibits updating the weights (after every timestep). Real Time Recurrent Learning (RTRL) eliminates the need for history storage and allows for online weight updates, but does so at the expense of computational costs that are quartic in the state size. This renders RTRL training intractable for all but the smallest networks, even ones that are made highly sparse. We introduce the Sparse n-step Approximation (SnAp) to the RTRL influence matrix. SnAp only tracks the influence of a parameter on hidden units that are reached by the computation graph within n timesteps of the recurrent core. SnAp with n=1 is no more expensive than backpropagation but allows training on arbitrarily long sequences. We find that it substantially outperforms other RTRL approximations with comparable costs such as Unbiased Online Recurrent Optimization. For highly sparse networks, SnAp with n=2 remains tractable and can outperform backpropagation through time in terms of learning speed when updates are done online.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2193,
+  "title": "Emergent Communication under Competition",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2101.10276",
+  "abstract": "The literature in modern machine learning has only negative results for learning to communicate between competitive agents using standard RL. We introduce a modified sender-receiver game to study the spectrum of partially-competitive scenarios and show communication can indeed emerge in a competitive setting. We empirically demonstrate three key takeaways for future research. First, we show that communication is proportional to cooperation, and it can occur for partially competitive scenarios using standard learning algorithms. Second, we highlight the difference between communication and manipulation and extend previous metrics of communication to the competitive case. Third, we investigate the negotiation game where previous work failed to learn communication between independent agents (Cao et al, 2018). We show that, in this setting, both agents must benefit from communication for it to emerge; and, with a slight modification to the game, we demonstrate successful communication between competitive agents. We hope this work overturns misconceptions and inspires more research in competitive emergent communication. Code is available at http://github.com/mnoukhov/emergent-compete",
+  "needs_fetch": false
+ },
+ {
+  "id": 2192,
+  "title": "Equilibrium Refinements for Multi-Agent Influence Diagrams: Theory and Practice",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2102.05008",
+  "abstract": "Multi-agent influence diagrams (MAIDs) are a popular form of graphical model that, for certain classes of games, have been shown to offer key complexity and explainability advantages over traditional extensive form game (EFG) representations. In this paper, we extend previous work on MAIDs by introducing the concept of a MAID subgame, as well as subgame perfect and trembling hand perfect equilibrium refinements. We then prove several equivalence results between MAIDs and EFGs. Finally, we describe an open source implementation for reasoning about MAIDs and computing their equilibria.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2191,
+  "title": "Quantifying Differences in Reward Functions",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "International Conference on Learning Representations",
+  "url": "https://openreview.net/pdf?id=LwEQnp6CYev",
+  "abstract": "For many tasks, the reward function is too complex to be specified procedurally, and must instead be learned from user data. Prior work has evaluated learned reward functions by examining rollouts from a policy optimized for the learned reward. However, this method cannot distinguish between the learned reward function failing to reflect user preferences, and the reinforcement learning algorithm failing to optimize the learned reward. Moreover, the rollout method is highly sensitive to details of the environment the learned reward is evaluated in, which often differ in the deployment environment. To address these problems, we introduce the Equivalent-Policy Invariant Comparison (EPIC) distance to quantify the difference between two reward functions directly, without training a policy. We prove EPIC is invariant on an equivalence class of reward functions that always induce the same optimal policy. Furthermore, we find EPIC can be precisely approximated and is more robust than baselines to the choice of visitation distribution. Finally, we show that EPIC distance bounds the regret of optimal policies even under different transition dynamics, and confirm empirically that it predicts policy training success. Our source code is available at — double blind: supplementary material —.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2190,
+  "title": "Self-supervised Adversarial Robustness for the Low-label, High-data Regime",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": null,
+  "url": "https://openreview.net/pdf?id=bgQek2O63w",
+  "abstract": "Recent work discovered that training models to be invariant to adversarial perturbations requires substantially larger datasets than those required for standard classification. Perhaps more surprisingly, these larger datasets can be mostly unlabeled. Pseudo-labeling, a technique simultaneously pioneered by four separate and simultaneous works in 2019, has been proposed as a competitive alternative to labeled data for training adversarially robust models. However, when the amount of labeled data decreases, the performance of pseudo-labeling catastrophically drops, thus questioning the theoretical insights put forward by Uesato et al. (2019), which suggest that the sample complexity for learning an adversarially robust model from unlabeled data should match the fully supervised case. We introduce Bootstrap Your Own Robust Latents (BYORL), a self-supervised learning technique based on BYOL for training adversarially robust models. Our method enables us to train robust representations without any labels (reconciling practice with theory). This robust representation can be leveraged by a linear classifier to train adversarially robust models. We evaluate BYORL and pseudo-labeling on CIFAR-10 and demonstrate that BYORL achieves significantly higher robustness (i.e., models resulting from BYORL are up to two times more accurate). Experiments on CIFAR-10 against l2 and l∞ norm-bounded perturbations demonstrate that BYORL achieves near state-of-the-art robustness with as little as 500",
+  "needs_fetch": false
+ },
+ {
+  "id": 2189,
+  "title": "On the role of planning in model-based deep reinforcement learning",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2011.04021",
+  "abstract": "Model-based planning is often thought to be necessary for deep, careful reasoning and generalization in artificial agents. While recent successes of model-based reinforcement learning (MBRL) with deep function approximation have strengthened this hypothesis, the resulting diversity of model-based methods has also made it difficult to track which components drive success and why. In this paper, we seek to disentangle the contributions of recent methods by focusing on three questions: (1) How does planning benefit MBRL agents? (2) Within planning, what choices drive performance? (3) To what extent does planning improve generalization? To answer these questions, we study the performance of MuZero (Schrittwieser et al., 2019), a state-of-the-art MBRL algorithm with strong connections and overlapping components with many other MBRL algorithms. We perform a number of interventions and ablations of MuZero across a wide range of environments, including control tasks, Atari, and 9x9 Go. Our results suggest the following: (1) Planning is most useful in the learning process, both for policy updates and for providing a more useful data distribution. (2) Using shallow trees with simple Monte-Carlo rollouts is as performant as more complex methods, except in the most difficult reasoning tasks. (3) Planning alone is insufficient to drive strong generalization. These results indicate where and how to utilize planning in reinforcement learning settings, and highlight a number of open question",
+  "needs_fetch": false
+ },
+ {
+  "id": 2188,
+  "title": "Making sense of raw input",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "Artificial Intelligence",
+  "url": "https://doi.org/10.1016/j.artint.2021.103521",
+  "abstract": "How should a machine intelligence perform unsupervised structure discovery over streams of sensory input? One approach to this problem is to cast it as an apperception task [1]. Here, the task is to construct an explicit interpretable theory that both explains the sensory sequence and also satisfies a set of unity conditions, designed to ensure that the constituents of the theory are connected in a relational structure. However, the original formulation of the apperception task had one fundamental limitation: it assumed the raw sensory input had already been parsed using a set of discrete categories, so that all the system had to do was receive this already-digested symbolic input, and make sense of it. But what if we don't have access to pre-parsed input? What if our sensory sequence is raw unprocessed information? The central contribution of this paper is a neuro-symbolic framework for distilling interpretable theories out of streams of raw, unprocessed sensory experience. First, we extend the definition of the apperception task to include ambiguous (but still symbolic) input: sequences of sets of disjunctions. Next, we use a neural network to map raw sensory input to disjunctive input. Our binary neural network is encoded as a logic program, so the weights of the network and the rules of the theory can be solved jointly as a single SAT problem. This way, we are able to jointly learn how to perceive (mapping raw sensory information to concepts) and apperceive (combining con",
+  "needs_fetch": false
+ },
+ {
+  "id": 2187,
+  "title": "Linear Mode Connectivity in Multitask and Continual Learning",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": null,
+  "url": "https://openreview.net/pdf?id=Fmg_fQYUejf",
+  "abstract": "Continual (sequential) training and multitask (simultaneous) training are often attempting to solve the same overall objective: to find a solution that performs well on all considered tasks. The main difference is in the training regimes, where continual learning can only have access to one task at a time, which for neural networks typically leads to catastrophic forgetting. That is, the solution found for a subsequent task does not perform well on the previous ones anymore. However, the relationship between the different minima that the two training regimes arrive at is not well understood. What sets them apart? Is there a local structure that could explain the difference in performance achieved by the two different schemes? Motivated by recent work showing that different minima of the same task are typically connected by very simple curves of low error, we investigate whether multitask and continual solutions are similarly connected. We empirically find that indeed such connectivity can be reliably achieved and, more interestingly, it can be done by a linear path, conditioned on having the same initialization for both. We thoroughly analyze this observation and discuss its significance for the continual learning process. Furthermore, we exploit this finding to propose an effective algorithm that constrains the sequentially learned minima to behave as the multitask solution. We show that our method outperforms several state of the art continual learning algorithms on various",
+  "needs_fetch": false
+ },
+ {
+  "id": 2186,
+  "title": "Grounded Language Learning Fast and Slow",
+  "org": "deepmind",
+  "date": "2021-05-03",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2009.01719",
+  "abstract": "Recent work has shown that large text-based neural language models acquire a surprising propensity for one-shot learning. Here, we show that an agent situated in a simulated 3D world, and endowed with a novel dual-coding external memory, can exhibit similar one-shot word learning when trained with conventional RL algorithms. After a single introduction to a novel object via visual perception and language (This is a dax), the agent can manipulate the object as instructed (Put the dax on the bed), combining short-term, within-episode knowledge of the nonsense word with long-term lexical and motor knowledge. We find that, under certain training conditions and with a particular memory writing mechanism, the agent's one-shot word-object binding generalizes to novel exemplars within the same ShapeNet category, and is effective in settings with unfamiliar numbers of objects. We further show how dual-coding memory can be exploited as a signal for intrinsic motivation, stimulating the agent to seek names for objects that may be useful later. Together, the results demonstrate that deep neural networks can exploit meta-learning, episodic memory and an explicitly multi-modal environment to account for 'fast-mapping', a fundamental pillar of human cognitive development and a potentially transformative capacity for artificial agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2200,
+  "title": "Distribution of Artificial Thrombi Candidates Through Patient-Specific Aortic-Arch Phantoms under Pulsatile Flow Conditions",
+  "org": "deepmind",
+  "date": "2021-04-28",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-455601/v1",
+  "abstract": "Abstract Ischemic Stroke is the most frequent type of stroke and is subject to many studies investigating prevention means. Avoiding the difficulties and ethical problems of experimental in-vivo research, in-vitro testing is a convenient way of studying in controlled conditions the morphological impact and mechanical aspects of emboli dynamics. This in-vitro study was performed with two realistic silicone aortic-arch phantoms submitted to physiological pulsatile flow conditions. In the in-vitro test bed, using automatic image tracking and analysis, it was made possible detecting and tracking artificial spherical emboli candidates circulating in the anatomic aortic-arch models under a realistic based-patient blood flow profile. The emboli trajectories as well as their repartition in the different supra-aortic branches are presented for the two aortic-arch geometries obtained from CT scans. Through a statistical analysis performed with several artificial emboli sizes, the experimental study shows that the repartition percentages of the emboli closely follow the flowrate repartition percentages for both aortic-arch models, suggesting that higher flowrates lead to higher concentrations of emboli in a given artery. Sets of human thrombi were also injected and the repartition percentages have been established, giving the same trend as for artificial emboli.",
+  "needs_fetch": false
+ }
+]

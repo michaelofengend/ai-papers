@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2722,
+  "title": "Agile Project Management in Software Development Industries: Challenges and Opportunities",
+  "org": "openai",
+  "date": "2024-08-29",
+  "venue": "Non human journal.",
+  "url": "http://dx.doi.org/10.70008/nhj.v1i05.30",
+  "abstract": "Agile project management methodologies have revolutionized software development by emphasizing flexibility, collaboration, and iterative progress. Originally confined to software, Agile principles have now permeated diverse industries including manufacturing, construction, healthcare, and marketing. This shift addresses the limitations of traditional linear methodologies, offering enhanced responsiveness to market dynamics and improved project outcomes. However, Agile adoption presents challenges such as cultural resistance, scaling complexities, and integration with existing frameworks. This research explores these challenges and opportunities through a comprehensive review of literature, case studies, and empirical data, highlighting strategies for successful Agile implementation. By analyzing practical implications and theoretical foundations, this study aims to guide practitioners and researchers in leveraging Agile methodologies to achieve organizational agility and competitive advantage in dynamic environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 391,
+  "title": "A Gradient Analysis Framework for Rewarding Good and Penalizing Bad Examples in Language Models",
+  "org": "other",
+  "date": "2024-08-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2408.16751",
+  "abstract": "Beyond maximum likelihood estimation (MLE), the standard objective of a language model (LM) that optimizes good examples probabilities, many studies have explored ways that also penalize bad examples for enhancing the quality of output distribution, including unlikelihood training, exponential maximizing average treatment effect (ExMATE), and direct preference optimization (DPO). To systematically compare these methods and further provide a unified recipe for LM optimization, in this paper, we present a unique angle of gradient analysis of loss functions that simultaneously reward good examples and penalize bad ones in LMs. Through both mathematical results and experiments on CausalDialogue and Anthropic HH-RLHF datasets, we identify distinct functional characteristics among these methods. We find that ExMATE serves as a superior surrogate for MLE, and that combining DPO with ExMATE instead of MLE further enhances both the statistical (5-7%) and generative (+18% win rate) performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2723,
+  "title": "ACF-S: An 8-Terabit / Sec SuperNIC for High-Performance Data Movement in AI &amp; Accelerated Compute Networks",
+  "org": "openai",
+  "date": "2024-08-25",
+  "venue": null,
+  "url": "http://dx.doi.org/10.1109/hcs61935.2024.10664686",
+  "abstract": "Redefine networking for distributed accelerated computing to deliver peak performance, resiliency and node scale",
+  "needs_fetch": true
+ },
+ {
+  "id": 1585,
+  "title": "The signature and cusp geometry of hyperbolic knots",
+  "org": "deepmind",
+  "date": "2024-08-24",
+  "venue": "Geometry & Topology",
+  "url": "https://arxiv.org/abs/2111.15323",
+  "abstract": "We introduce a new real-valued invariant called the natural slope\\nof a hyperbolic knot in the 3-sphere, which is defined in terms of its cusp\\ngeometry. We show that twice the knot signature and the natural slope differ\\nby at most a constant times the hyperbolic volume divided by the cube of\\nthe injectivity radius. This inequality was discovered using machine learning\\nto detect relationships between various knot invariants. It has applications\\nto Dehn surgery and to 4-ball genus. We also show a refined version of the\\ninequality where the upper bound is a linear function of the volume, and the\\nslope is corrected by terms corresponding to short geodesics that link the knot\\nan odd number of times.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1586,
+  "title": "Accurate computation of quantum excited states with neural networks",
+  "org": "deepmind",
+  "date": "2024-08-22",
+  "venue": "Science",
+  "url": "https://doi.org/10.1126/science.adn0137",
+  "abstract": "We present an algorithm to estimate the excited states of a quantum system by variational Monte Carlo, which has no free parameters and requires no orthogonalization of the states, instead transforming the problem into that of finding the ground state of an expanded system. Arbitrary observables can be calculated, including off-diagonal expectations, such as the transition dipole moment. The method works particularly well with neural network ansätze, and by combining this method with the FermiNet and Psiformer ansätze, we can accurately recover excitation energies and oscillator strengths on a range of molecules. We achieve accurate vertical excitation energies on benzene-scale molecules, including challenging double excitations. Beyond the examples presented in this work, we expect that this technique will be of interest for atomic, nuclear, and condensed matter physics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1587,
+  "title": "Switching between tasks can cause AI to lose the ability to learn",
+  "org": "deepmind",
+  "date": "2024-08-21",
+  "venue": "Nature",
+  "url": "http://dx.doi.org/10.1038/d41586-024-02525-z",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 747,
+  "title": "The Vizier Gaussian Process Bandit Algorithm",
+  "org": "deepmind",
+  "date": "2024-08-21",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2408.11527",
+  "abstract": "Google Vizier has performed millions of optimizations and accelerated numerous research and production systems at Google, demonstrating the success of Bayesian optimization as a large-scale service. Over multiple years, its algorithm has been improved considerably, through the collective experiences of numerous research efforts and user feedback. In this technical report, we discuss the implementation details and design choices of the current default algorithm provided by Open Source Vizier. Our experiments on standardized benchmarks reveal its robustness and versatility against well-established industry baselines on multiple practical modes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 748,
+  "title": "Swim till you sink: Computing the limit of a game",
+  "org": "deepmind",
+  "date": "2024-08-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2408.11146",
+  "abstract": "During 2023, two interesting results were proven about the limit behavior of game dynamics: First, it was shown that there is a game for which no dynamics converges to the Nash equilibria. Second, it was shown that the sink equilibria of a game adequately capture the limit behavior of natural game dynamics. These two results have created a need and opportunity to articulate a principled computational theory of the meaning of the game that is based on game dynamics. Given any game in normal form, and any prior distribution of play, we study the problem of computing the asymptotic behavior of a class of natural dynamics called the noisy replicator dynamics as a limit distribution over the sink equilibria of the game. When the prior distribution has pure strategy support, we prove this distribution can be computed efficiently, in near-linear time to the size of the best-response graph. When the distribution can be sampled --- for example, if it is the uniform distribution over all mixed strategy profiles --- we show through experiments that the limit distribution of reasonably large games can be estimated quite accurately through sampling and simulation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 392,
+  "title": "SEAL: Systematic Error Analysis for Value ALignment",
+  "org": "openai",
+  "date": "2024-08-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2408.10270",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF) aims to align language models (LMs) with human values by training reward models (RMs) on binary preferences and using these RMs to fine-tune the base LMs. Despite its importance, the internal mechanisms of RLHF remain poorly understood. This paper introduces new metrics to evaluate the effectiveness of modeling and aligning human values, namely feature imprint, alignment resistance and alignment robustness. We categorize alignment datasets into target features (desired values) and spoiler features (undesired concepts). By regressing RM scores against these features, we quantify the extent to which RMs reward them - a metric we term feature imprint. We define alignment resistance as the proportion of the preference dataset where RMs fail to match human preferences, and we assess alignment robustness by analyzing RM responses to perturbed inputs. Our experiments, utilizing open-source components like the Anthropic/hh-rlhf preference dataset and OpenAssistant RMs, reveal significant imprints of target features and a notable sensitivity to spoiler features. We observed a 26% incidence of alignment resistance in portions of the dataset where LM-labelers disagreed with human preferences. Furthermore, we find that misalignment often arises from ambiguous entries within the alignment dataset. These findings underscore the importance of scrutinizing both RMs and alignment datasets for a deeper understanding of value alignment.",
+  "needs_fetch": false
+ },
+ {
+  "id": 998,
+  "title": "Introducing SWE-bench Verified",
+  "org": "openai",
+  "date": "2024-08-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-swe-bench-verified/",
+  "abstract": "We’re releasing a human-validated subset of SWE-bench that more reliably evaluates AI models’ ability to solve real-world software issues.",
+  "needs_fetch": false
+ },
+ {
+  "id": 749,
+  "title": "The Probabilities Also Matter: A More Faithful Metric for Faithfulness of Free-Text Explanations in Large Language Models",
+  "org": "deepmind",
+  "date": "2024-08-13",
+  "venue": "ACL 2024",
+  "url": "https://aclanthology.org/2024.acl-short.49/",
+  "abstract": "In order to oversee advanced AI systems, it is important to understand their reasons for generating a given output. When prompted, large language models (LLMs) can provide natural language explanations or reasoning traces that sound plausible and receive high ratings from human annotators. However, it is unclear to what extent these explanations are truly capturing the factors responsible for the model's predictions: the most ``human-like'' explanation may be different from the one that is most faithful to the model's true decision making process. In this work, we introduce the correlational counterfactual test (CCT), a faithfulness metric based on counterfactual input edits that takes into account not just the binary label change, but the total shift in the model's predicted label distribution. We evaluate the faithfulness of free-text explanations generated by few-shot-prompted LLMs from the Llama-2 family on three NLP tasks. We find that these explanations are indeed more likely to mention factors when they are impactful to the model's prediction, with the degree of association increasing with model size but varying significantly by task.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1588,
+  "title": "AlphaFold two years on: Validation and impact",
+  "org": "deepmind",
+  "date": "2024-08-12",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2315002121",
+  "abstract": "Two years on from the initial release of AlphaFold, we have seen its widespread adoption as a structure prediction tool. Here, we discuss some of the latest work based on AlphaFold, with a particular focus on its use within the structural biology community. This encompasses use cases like speeding up structure determination itself, enabling new computational studies, and building new tools and workflows. We also look at the ongoing validation of AlphaFold, as its predictions continue to be compared against large numbers of experimental structures to further delineate the model's capabilities and limitations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 595,
+  "title": "Gemma Scope: Open Sparse Autoencoders Everywhere All At Once on Gemma 2",
+  "org": "deepmind",
+  "date": "2024-08-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2408.05147",
+  "abstract": "Sparse autoencoders (SAEs) are an unsupervised method for learning a sparse decomposition of a neural network’s latent representations into seemingly interpretable features.Despite recent excitement about their potential, research applications outside of industry are limited by the high cost of training a comprehensive suite of SAEs.In this work, we introduce Gemma Scope, an open suite of JumpReLU SAEs trained on all layers and sub-layers of Gemma 2 2B and 9B and select layers of Gemma 2 27B base models.We primarily train SAEs on the Gemma 2 pre-trained models, but additionally release SAEs trained on instruction-tuned Gemma 2 9B for comparison.We evaluate the quality of each SAE on standard metrics and release these results.We hope that by releasing these SAE weights, we can help make more ambitious safety and interpretability research easier for the community. Weights and a tutorial can be found at https://huggingface.co/google/gemma-scope and an interactive demo can be found at https://neuronpedia.org/gemma-scope.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2724,
+  "title": "A Note on the Maximum Number of k-Powers in a Finite Word",
+  "org": "openai",
+  "date": "2024-08-08",
+  "venue": "The Electronic Journal of Combinatorics",
+  "url": "https://doi.org/10.37236/11270",
+  "abstract": "A power is a concatenation of $k$ copies of a word $u$, for a positive integer $k$; the power is also called a $k$-power and $k$ is its exponent. We prove that for any $k \\ge 2$, the maximum number of different non-empty $k$-power factors in a word of length $n$ is between $\\frac{n}{k-1}-\\Theta(\\sqrt{n})$ and $\\frac{n-1}{k-1}$. We also show that the maximum number of different non-empty power factors of exponent at least 2 in a length-$n$ word is at most $n-1$. Both upper bounds generalize the recent upper bound of $n-1$ on the maximum number of different square factors in a length-$n$ word by Brlek and Li (2022).",
+  "needs_fetch": false
+ },
+ {
+  "id": 521,
+  "title": "GPT-4o System Card",
+  "org": "openai",
+  "date": "2024-08-08",
+  "venue": "arXiv",
+  "url": "https://openai.com/index/gpt-4o-system-card/",
+  "abstract": "GPT-4o is an autoregressive omni model that accepts as input any combination of text, audio, image, and video, and generates any combination of text, audio, and image outputs. It's trained end-to-end across text, vision, and audio, meaning all inputs and outputs are processed by the same neural network. GPT-4o can respond to audio inputs in as little as 232 milliseconds, with an average of 320 milliseconds, which is similar to human response time in conversation. It matches GPT-4 Turbo performance on text in English and code, with significant improvement on text in non-English languages, while also being much faster and 50\\% cheaper in the API. GPT-4o is especially better at vision and audio understanding compared to existing models. In line with our commitment to building AI safely and consistent with our voluntary commitments to the White House, we are sharing the GPT-4o System Card, which includes our Preparedness Framework evaluations. In this System Card, we provide a detailed look at GPT-4o's capabilities, limitations, and safety evaluations across multiple categories, focusing on speech-to-speech while also evaluating text and image capabilities, and measures we've implemented to ensure the model is safe and aligned. We also include third-party assessments on dangerous capabilities, as well as discussion of potential societal impacts of GPT-4o's text and vision capabilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 750,
+  "title": "Achieving Human Level Competitive Robot Table Tennis",
+  "org": "deepmind",
+  "date": "2024-08-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2408.03906",
+  "abstract": "Achieving human-level speed and performance on real world tasks is a north star for the robotics research community. This work takes a step towards that goal and presents the first learned robot agent that reaches amateur human-level performance in competitive table tennis. Table tennis is a physically demanding sport which requires human players to undergo years of training to achieve an advanced level of proficiency. In this paper, we contribute (1) a hierarchical and modular policy architecture consisting of (i) low level controllers with their detailed skill descriptors which model the agent's capabilities and help to bridge the sim-to-real gap and (ii) a high level controller that chooses the low level skills, (2) techniques for enabling zero-shot sim-to-real including an iterative approach to defining the task distribution that is grounded in the real-world and defines an automatic curriculum, and (3) real time adaptation to unseen opponents. Policy performance was assessed through 29 robot vs. human matches of which the robot won 45% (13/29). All humans were unseen players and their skill level varied from beginner to tournament level. Whilst the robot lost all matches vs. the most advanced players it won 100% matches vs. beginners and 55% matches vs. intermediate players, demonstrating solidly amateur human-level performance. Videos of the matches can be viewed here: https://sites.google.com/view/competitive-robot-table-tennis .",
+  "needs_fetch": false
+ },
+ {
+  "id": 393,
+  "title": "A Comparison of LLM Finetuning Methods & Evaluation Metrics with Travel Chatbot Use Case",
+  "org": "other",
+  "date": "2024-08-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2408.03562",
+  "abstract": "This research compares large language model (LLM) fine-tuning methods, including Quantized Low Rank Adapter (QLoRA), Retrieval Augmented fine-tuning (RAFT), and Reinforcement Learning from Human Feedback (RLHF), and additionally compared LLM evaluation methods including End to End (E2E) benchmark method of \"Golden Answers\", traditional natural language processing (NLP) metrics, RAG Assessment (Ragas), OpenAI GPT-4 evaluation metrics, and human evaluation, using the travel chatbot use case. The travel dataset was sourced from the the Reddit API by requesting posts from travel-related subreddits to get travel-related conversation prompts and personalized travel experiences, and augmented for each fine-tuning method. We used two pretrained LLMs utilized for fine-tuning research: LLaMa 2 7B, and Mistral 7B. QLoRA and RAFT are applied to the two pretrained models. The inferences from these models are extensively evaluated against the aforementioned metrics. The best model according to human evaluation and some GPT-4 metrics was Mistral RAFT, so this underwent a Reinforcement Learning from Human Feedback (RLHF) training pipeline, and ultimately was evaluated as the best model. Our main findings are that: 1) quantitative and Ragas metrics do not align with human evaluation, 2) Open AI GPT-4 evaluation most aligns with human evaluation, 3) it is essential to keep humans in the loop for evaluation because, 4) traditional NLP metrics insufficient, 5) Mistral generally outperformed LLaM",
+  "needs_fetch": false
+ },
+ {
+  "id": 1589,
+  "title": "Anarchy as Architect: Competitive Pressure, Technology, and the Internal Structure of States",
+  "org": "deepmind",
+  "date": "2024-08-05",
+  "venue": "International Studies Quarterly",
+  "url": "https://doi.org/10.1093/isq/sqae111",
+  "abstract": "Abstract The internal institutional structures of states greatly impact their citizens’ welfare. However, states are not at complete liberty to adopt any internal form. Competitive pressure arising from anarchy limits the range of viable domestic institutions to those that do not impose a significant disadvantage. We argue that technological change can alter the relative competitiveness of different state forms and, by extension, improve or degrade human welfare. We empirically support this argument through a macrohistorical survey of competitively significant technologies. We conclude that the true costs of international anarchy are greater than commonly appreciated, as competitive pressure may force states to evolve into forms detrimental to the welfare of their inhabitants. Moreover, the adoption of state forms that improve human well-being is often driven by technological change as much as human agency. Finally, the invention of seemingly beneficial technologies may decrease human well-being by improving the competitiveness of inegalitarian state forms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 525,
+  "title": "Why Are My Prompts Leaked? Unraveling Prompt Extraction Threats in Customized Large Language Models",
+  "org": "other",
+  "date": "2024-08-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2408.02416",
+  "abstract": "The drastic increase of large language models' (LLMs) parameters has led to a new research direction of fine-tuning-free downstream customization by prompts, i.e., task descriptions. While these prompt-based services (e.g. OpenAI's GPTs) play an important role in many businesses, there has emerged growing concerns about the prompt leakage, which undermines the intellectual properties of these services and causes downstream attacks. In this paper, we analyze the underlying mechanism of prompt leakage, which we refer to as prompt memorization, and develop corresponding defending strategies. By exploring the scaling laws in prompt extraction, we analyze key attributes that influence prompt extraction, including model sizes, prompt lengths, as well as the types of prompts. Then we propose two hypotheses that explain how LLMs expose their prompts. The first is attributed to the perplexity, i.e. the familiarity of LLMs to texts, whereas the second is based on the straightforward token translation path in attention matrices. To defend against such threats, we investigate whether alignments can undermine the extraction of prompts. We find that current LLMs, even those with safety alignments like GPT-4, are highly vulnerable to prompt extraction attacks, even under the most straightforward user attacks. Therefore, we put forward several defense strategies with the inspiration of our findings, which achieve 83.8\\% and 71.0\\% drop in the prompt extraction rate for Llama2-7B and GPT-3.5,",
+  "needs_fetch": false
+ },
+ {
+  "id": 596,
+  "title": "The Quest for the Right Mediator: Surveying Mechanistic Interpretability Through the Lens of Causal Mediation Analysis",
+  "org": "other",
+  "date": "2024-08-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2408.01416",
+  "abstract": "Interpretability provides a toolset for understanding how and why neural networks behave in certain ways. However, there is little unity in the field: most studies employ ad-hoc evaluations and do not share theoretical foundations, making it difficult to measure progress and compare the pros and cons of different techniques. Furthermore, while mechanistic understanding is frequently discussed, the basic causal units underlying these mechanisms are often not explicitly defined. In this article, we propose a perspective on interpretability research grounded in causal mediation analysis. Specifically, we describe the history and current state of interpretability taxonomized according to the types of causal units (mediators) employed, as well as methods used to search over mediators. We discuss the pros and cons of each mediator, providing insights as to when particular kinds of mediators and search methods are most appropriate. We argue that this framing yields a more cohesive narrative of the field and helps researchers select appropriate methods based on their research objective. Our analysis yields actionable recommendations for future work, including the discovery of new mediators and the development of standardized evaluations tailored to these goals.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1590,
+  "title": "Differentially Private Stream Processing at Scale",
+  "org": "deepmind",
+  "date": "2024-08-01",
+  "venue": "Proceedings of the VLDB Endowment",
+  "url": "https://doi.org/10.14778/3685800.3685833",
+  "abstract": "We design, to the best of our knowledge, the first differentially private (DP) stream aggregation processing system at scale. Our system - Differential Privacy SQL Pipelines (DP-SQLP) - is built using a streaming framework similar to Spark streaming, and is built on top of the Spanner database and the F1 query engine from Google. Towards designing DP-SQLP we make both algorithmic and systemic advances, namely, we (i) design a novel (user-level) DP key selection algorithm that can operate on an unbounded set of possible keys, and can scale to one billion keys that users have contributed, (ii) design a preemptive execution scheme for DP key selection that avoids enumerating all the keys at each triggering time, and (iii) use algorithmic techniques from DP continual observation to release a continual DP histogram of user contributions to different keys over the stream length. We empirically demonstrate the efficacy by obtaining at least 16× reduction in error over meaningful baselines we consider. We implemented a streaming differentially private user impressions for Google Shopping with DP-SQLP. The streaming DP algorithms are further applied to Google Trends.",
+  "needs_fetch": false
+ },
+ {
+  "id": 85,
+  "title": "Circuits Updates — August 2024",
+  "org": "anthropic",
+  "date": "2024-08-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/august-update/index.html",
+  "abstract": "We report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2725,
+  "title": "Rethinking Machine Learning Collective Communication as a Multi-Commodity Flow Problem",
+  "org": "openai",
+  "date": "2024-07-31",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3651890.3672249",
+  "abstract": "Cloud operators utilize collective communication optimizers to enhance the efficiency of the single-tenant, centrally managed training clusters they manage. However, current optimizers struggle to scale for such use cases and often compromise solution quality for scalability. Our solution, TE-CCL, adopts a traffic-engineering-based approach to collective communication. Compared to a state-of-the-art optimizer, TACCL, TE-CCL produced schedules with 2× better performance on topologies TACCL supports (and its solver took a similar amount of time as TACCL's heuristic-based approach). TECCL additionally scales to larger topologies than TACCL. On our GPU testbed, TE-CCL outperformed TACCL by 2.14× and RCCL by 3.18× in terms of algorithm bandwidth.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1591,
+  "title": "Video Foundation Models for Animal Behavior Analysis",
+  "org": "deepmind",
+  "date": "2024-07-31",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/2024.07.30.605655",
+  "abstract": "Abstract Computational approaches leveraging computer vision and machine learning have transformed the quantification of animal behavior from video. However, existing methods often rely on task-specific features or models, which struggle to generalize across diverse datasets and tasks. Recent advances in machine learning, particularly the emergence of vision foundation models, i.e., large-scale models pre-trained on massive, diverse visual repositories, offers a way to tackle these challenges. Here, we investigate the potential of frozen video foundation models across a range of behavior analysis tasks, including classification, retrieval, and localization. We use a single, frozen model to extract general-purpose representations from video data, and perform extensive evaluations on diverse open-sourced animal behavior datasets. Our results demonstrate that features with minimal adaptation from foundation models achieve competitive performance compared to existing methods specifically designed for each dataset, across species, behaviors, and experimental contexts. This highlights the potential of frozen video foundation models as a powerful and accessible backbone for automated behavior analysis, with the ability to accelerate research across diverse fields from neuroscience, to ethology, and to ecology.",
+  "needs_fetch": false
+ },
+ {
+  "id": 751,
+  "title": "Pre-trained Gaussian processes for Bayesian optimization",
+  "org": "deepmind",
+  "date": "2024-07-31",
+  "venue": "JMLR",
+  "url": "https://jmlr.org/papers/v25/23-0269.html",
+  "abstract": "Bayesian optimization (BO) has become a popular strategy for global optimization of expensive real-world functions. Contrary to a common expectation that BO is suited to optimizing black-box functions, it actually requires domain knowledge about those functions to deploy BO successfully. Such domain knowledge often manifests in Gaussian process (GP) priors that specify initial beliefs on functions. However, even with expert knowledge, it is non-trivial to quantitatively define a prior. This is especially true for hyperparameter tuning problems on complex machine learning models, where landscapes of tuning objectives are often difficult to comprehend. We seek an alternative practice for setting these functional priors. In particular, we consider the scenario where we have data from similar functions that allow us to pre-train a tighter distribution a priori. We detail what pre-training entails for GPs using a KL divergence based loss function, and propose a new pre-training based BO framework named HyperBO. Theoretically, we show bounded posterior predictions and near-zero regrets for HyperBO without assuming the \"ground truth\" GP prior is known. To verify our approach in realistic setups, we collect a large multi-task hyperparameter tuning dataset by training tens of thousands of configurations of near-state-of-the-art deep learning models on popular image and text datasets, as well as a protein sequence dataset. Our results show that on average, HyperBO is able to locate goo",
+  "needs_fetch": false
+ },
+ {
+  "id": 597,
+  "title": "Measuring Progress in Dictionary Learning for Language Model Interpretability with Board Game Models",
+  "org": "other",
+  "date": "2024-07-31",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2408.00113",
+  "abstract": "What latent features are encoded in language model (LM) representations? Recent work on training sparse autoencoders (SAEs) to disentangle interpretable features in LM representations has shown significant promise. However, evaluating the quality of these SAEs is difficult because we lack a ground-truth collection of interpretable features that we expect good SAEs to recover. We thus propose to measure progress in interpretable dictionary learning by working in the setting of LMs trained on chess and Othello transcripts. These settings carry natural collections of interpretable features -- for example, \"there is a knight on F3\" -- which we leverage into $\\textit{supervised}$ metrics for SAE quality. To guide progress in interpretable dictionary learning, we introduce a new SAE training technique, $\\textit{p-annealing}$, which improves performance on prior unsupervised metrics as well as our new metrics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 234,
+  "title": "Vision-Language Model Based Handwriting Verification",
+  "org": "other",
+  "date": "2024-07-31",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.21788",
+  "abstract": "Handwriting Verification is a critical in document forensics. Deep learning based approaches often face skepticism from forensic document examiners due to their lack of explainability and reliance on extensive training data and handcrafted features. This paper explores using Vision Language Models (VLMs), such as OpenAI's GPT-4o and Google's PaliGemma, to address these challenges. By leveraging their Visual Question Answering capabilities and 0-shot Chain-of-Thought (CoT) reasoning, our goal is to provide clear, human-understandable explanations for model decisions. Our experiments on the CEDAR handwriting dataset demonstrate that VLMs offer enhanced interpretability, reduce the need for large training datasets, and adapt better to diverse handwriting styles. However, results show that the CNN-based ResNet-18 architecture outperforms the 0-shot CoT prompt engineering approach with GPT-4o (Accuracy: 70%) and supervised fine-tuned PaliGemma (Accuracy: 71%), achieving an accuracy of 84% on the CEDAR AND dataset. These findings highlight the potential of VLMs in generating human-interpretable decisions while underscoring the need for further advancements to match the performance of specialized deep learning models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1593,
+  "title": "Risk-sensitive innovation: leveraging interactions between technologies to navigate technology risks",
+  "org": "deepmind",
+  "date": "2024-07-30",
+  "venue": "Science and Public Policy",
+  "url": "https://doi.org/10.1093/scipol/scae043",
+  "abstract": "Abstract The advancement of low-emission technologies to curb climate change demonstrates how strategically managing the timing of technological developments can mitigate negative societal outcomes. We propose that a similar approach, which we term ‘risk-sensitive innovation’, can also address risks from emerging technologies like synthetic biology and artificial intelligence. Risk-sensitive innovation (RSI) leverages interactions between technologies to reduce specific risks across a technology portfolio. For instance, it may be beneficial to delay or halt risk-increasing technologies and preferentially advance risk-reducing defensive, safety, or substitute technologies. To be of practical use, RSI requires the ability to anticipate or identify impacts and intervene in the relative timing of technological advancements. Our analysis suggests that both are sometimes viable. Consideration of RSI may inform government research funding and technology regulation, as well as philanthropic research and development funders and corporate social responsibility measures.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1592,
+  "title": "The experience of living with vitiligo in Nigeria: A participatory Interpretative Phenomenological Analysis",
+  "org": "deepmind",
+  "date": "2024-07-30",
+  "venue": "Journal of Health Psychology",
+  "url": "https://doi.org/10.1177/13591053241261684",
+  "abstract": "Vitiligo is a visible depigmenting skin condition, particularly noticeable on Black skin. There is widespread misunderstanding of the condition. Using a participatory form of Interpretative Phenomenological Analysis (IPA), we conducted eight semi-structured interviews with Nigerians living with vitiligo. Participants described their initial attempts to understand the condition, which typically drew on both traditional illness beliefs, religious influences, and the biomedical disease model. All participants reported experiencing marked stigmatization and discrimination. Participants experienced distress associated with thoughts about the personal meaning of the disease including its impact on their appearance and from concerns about anticipated and direct discrimination. Despite the wide-ranging impact, the participants' narratives also contained references to the development of strategies that maintained wellbeing. This study provides valuable insights into the role of faith and traditional beliefs in both the experience and management of vitiligo in Nigeria. These insights can be used to develop individual and community interventions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 752,
+  "title": "Mixture of Nested Experts: Adaptive Processing of Visual Tokens",
+  "org": "deepmind",
+  "date": "2024-07-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2407.19985",
+  "abstract": "The visual medium (images and videos) naturally contains a large amount of information redundancy, thereby providing a great opportunity for leveraging efficiency in processing. While Vision Transformer (ViT) based models scale effectively to large data regimes, they fail to capitalize on this inherent redundancy, leading to higher computational costs. Mixture of Experts (MoE) networks demonstrate scalability while maintaining same inference-time costs, but they come with a larger parameter footprint. We present Mixture of Nested Experts (MoNE), which utilizes a nested structure for experts, wherein individual experts fall on an increasing compute-accuracy curve. Given a compute budget, MoNE learns to dynamically choose tokens in a priority order, and thus redundant tokens are processed through cheaper nested experts. Using this framework, we achieve equivalent performance as the baseline models, while reducing inference time compute by over two-fold. We validate our approach on standard image and video datasets - ImageNet-21K, Kinetics400, and Something-Something-v2. We further highlight MoNE’s adaptability by showcasing its ability to maintain strong performance across different inference-time compute budgets on videos, using only a single trained model.",
+  "needs_fetch": false
+ }
+]

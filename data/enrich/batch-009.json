@@ -1,0 +1,302 @@
+[
+ {
+  "id": 931,
+  "title": "Our First Proof submissions",
+  "org": "openai",
+  "date": "2026-02-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/first-proof-submissions/",
+  "abstract": "We share our AI model’s proof attempts for the First Proof math challenge, testing research-grade reasoning on expert-level problems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 298,
+  "title": "Gradient Regularization Prevents Reward Hacking in Reinforcement Learning from Human Feedback and Verifiable Rewards",
+  "org": "other",
+  "date": "2026-02-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.18037",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF) or Verifiable Rewards (RLVR) are two key steps in the post-training of modern Language Models (LMs). A common problem is reward hacking, where the policy may exploit inaccuracies of the reward and learn an unintended behavior. Most previous works address this by limiting the policy update with a Kullback-Leibler (KL) penalty towards a reference model. We propose a different framing: Train the LM in a way that biases policy updates towards regions in which the reward is more accurate. First, we derive a theoretical connection between the accuracy of a reward model and the flatness of an optimum at convergence. Gradient regularization (GR) can then be used to bias training to flatter regions and thereby maintain reward model accuracy. We confirm these results by showing that the gradient norm and reward accuracy are empirically correlated in RLHF. We then show that Reference Resets of the KL penalty implicitly use GR to find flatter regions with higher reward accuracy. We further improve on this by proposing to use explicit GR with an efficient finite-difference estimate. Empirically, GR performs better than a KL penalty across a diverse set of RL experiments with LMs. GR achieves a higher GPT-judged win-rate in RLHF, avoids overly focusing on the format in rule-based math rewards, and prevents hacking the judge in LLM-as-a-Judge math tasks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 297,
+  "title": "Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory",
+  "org": "other",
+  "date": "2026-02-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.18297",
+  "abstract": "Chain-of-thought (CoT) monitors are LLM-based systems that analyze reasoning traces to detect when outputs may exhibit attributes of interest, such as test-hacking behavior during code generation. In this paper, we use information-theoretic analysis to show that non-zero mutual information between CoT and output is a necessary but not sufficient condition for CoT monitorability. We identify two sources of approximation error that may undermine the performance of CoT monitors in practice: information gap, which measures the extent to which the monitor can extract the information available in CoT, and elicitation error, which measures the extent to which the monitor approximates the optimal monitoring function. We further demonstrate that CoT monitorability can be systematically improved through targeted training objectives. To this end, we propose two complementary approaches: (a) an oracle-based method that directly rewards the monitored model for producing CoTs that maximize monitor accuracy, and (b) a more practical, label-free approach that maximizes conditional mutual information between outputs and CoTs. Across multiple different environments, we show both methods significantly improve monitor accuracy while preventing CoT degeneration even when training against a monitor, thereby mitigating reward hacking when the task reward is imperfectly specified.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1283,
+  "title": "Roadmap on fast machine learning for science",
+  "org": "deepmind",
+  "date": "2026-02-19",
+  "venue": "Machine Learning Science and Technology",
+  "url": "https://doi.org/10.1088/2632-2153/ae484b",
+  "abstract": "Abstract The need for microsecond speed machine learning (ML) inference for particle physics experiments has emerged in recent years, in particular for the forthcoming upgrades to the experiments at the Large Hadron Collider at CERN. A community has grown around the need to develop the custom hardware platforms and tools required. The material presented in this report is drawn from the latest workshop held by the fast ML for science community and comprises of a collection of perspectives on the status of fast ML in different scientific domains, and the supporting technology.",
+  "needs_fetch": false
+ },
+ {
+  "id": 932,
+  "title": "Advancing independent research on AI alignment",
+  "org": "openai",
+  "date": "2026-02-19",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/advancing-independent-research-ai-alignment/",
+  "abstract": "OpenAI commits $7.5M to The Alignment Project to fund independent AI alignment research, strengthening global efforts to address AGI safety and security risks.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1285,
+  "title": "Trained Scent Dog Detection and GC-MS Analysis of Volatile Organic Compounds from Murine Coronavirus-Infected Cell Cultures",
+  "org": "deepmind",
+  "date": "2026-02-18",
+  "venue": "Animals",
+  "url": "https://doi.org/10.3390/ani16040647",
+  "abstract": "Volatile organic compounds (VOCs) are increasingly recognized as metabolic byproducts of viral infection and may serve as olfactory cues detectable by trained scent dogs. This study examined whether dogs could distinguish cell culture samples infected with murine hepatitis virus strain 1 (MHV-1), a biosafety level 2 coronavirus model, from uninfected controls. Parallel chemical analysis using gas chromatography–mass spectrometry (GC-MS) identified 14 VOCs in infected and 12 in control samples. Notably, 3-heptanone and 1-nonanol were unique to infected samples, while others such as acetophenone, nonanal, decanal, and benzaldehyde were significantly elevated—often by 1.5 to 3 times—in infected cultures. Two trained dogs demonstrated high detection sensitivity (0.95) for infected samples compared to a previously trained odor cinnamon group (0.88) and responded with shorter latency (p = 0.04), suggesting perceptual salience of infection-related VOCs. Reliable detection required pooled volumes (~600 µL), suggesting a threshold effect related to VOC concentration. Additionally, a Random Forest-based machine learning classifier trained on the GC-MS-obtained VOC profiles achieved a cross-validated accuracy of 0.82 (SD = 0.25). These findings suggest that dogs use quantitative VOC differences, rather than unique compounds, for detection. The study provides a validated experimental framework for olfactory diagnostics of viral infections and highlights the potential of scent dogs as non",
+  "needs_fetch": false
+ },
+ {
+  "id": 1284,
+  "title": "A roadmap for evaluating moral competence in large language models",
+  "org": "deepmind",
+  "date": "2026-02-18",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-10021-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 933,
+  "title": "Introducing EVMbench",
+  "org": "openai",
+  "date": "2026-02-18",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-evmbench/",
+  "abstract": "OpenAI and Paradigm introduce EVMbench, a benchmark evaluating AI agents’ ability to detect, patch, and exploit high-severity smart contract vulnerabilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 28,
+  "title": "Measuring AI agent autonomy in practice",
+  "org": "anthropic",
+  "date": "2026-02-18",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/measuring-agent-autonomy",
+  "abstract": "How much autonomy do people grant agents? How does that change as people gain experience? We analyzed millions of human-agent interactions to answer these and other questions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 29,
+  "title": "India Country Brief: The Anthropic Economic Index",
+  "org": "anthropic",
+  "date": "2026-02-16",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/india-brief-economic-index",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 682,
+  "title": "Simplicity and Complexity in Combinatorial Optimization",
+  "org": "deepmind",
+  "date": "2026-02-15",
+  "venue": "Entropy",
+  "url": "https://doi.org/10.3390/e28020226",
+  "abstract": "Many problems in physics and computer science can be framed in terms of combinatorial optimization. Due to this, it is interesting and important to study theoretical aspects of such optimization. Here we study connections between Kolmogorov complexity, optima, and optimization. We argue that (1) optima and complexity are connected, with extrema being more likely to have low complexity (under certain circumstances); (2) optimization by sampling candidate solutions according to algorithmic probability may be an effective optimization method; and (3) coincidences in extrema to optimization problems are \\emph{a priori} more likely as compared to a purely random null model.",
+  "needs_fetch": false
+ },
+ {
+  "id": 935,
+  "title": "GPT-5.2 derives a new result in theoretical physics",
+  "org": "openai",
+  "date": "2026-02-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/new-result-theoretical-physics/",
+  "abstract": "A new preprint shows GPT-5.2 proposing a new formula for a gluon amplitude, later formally proved and verified by OpenAI and academic collaborators.",
+  "needs_fetch": false
+ },
+ {
+  "id": 934,
+  "title": "Scaling social science research",
+  "org": "openai",
+  "date": "2026-02-13",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/scaling-social-science-research/",
+  "abstract": "GABRIEL is a new open-source toolkit from OpenAI that uses GPT to turn qualitative text and images into quantitative data, helping social scientists analyze research at scale.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1179,
+  "title": "Striatum-wide dopamine encodes trajectory errors separated from value",
+  "org": "anthropic",
+  "date": "2026-02-11",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-10083-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 299,
+  "title": "Mitigating Reward Hacking in RLHF via Bayesian Non-negative Reward Modeling",
+  "org": "other",
+  "date": "2026-02-11",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2602.10623",
+  "abstract": "Reward models learned from human preferences are central to aligning large language models (LLMs) via reinforcement learning from human feedback, yet they are often vulnerable to reward hacking due to noisy annotations and systematic biases such as response length or style. We propose Bayesian Non-Negative Reward Model (BNRM), a principled reward modeling framework that integrates non-negative factor analysis into Bradley-Terry (BT) preference model. BNRM represents rewards through a sparse, non-negative latent factor generative process that operates at two complementary levels: instance-specific latent variables induce disentangled reward representations, while sparsity over global latent factors acts as an implicit debiasing mechanism that suppresses spurious correlations. Together, this disentanglement-then-debiasing structure enables robust uncertainty-aware reward learning. To scale BNRM to modern LLMs, we develop an amortized variational inference network conditioned on deep model representations, allowing efficient end-to-end training. Extensive empirical results demonstrate that BNRM substantially mitigates reward over-optimization, improves robustness under distribution shifts, and yields more interpretable reward decompositions than strong baselines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 193,
+  "title": "The Devil Behind Moltbook: Anthropic Safety is Always Vanishing in Self-Evolving AI Societies",
+  "org": "other",
+  "date": "2026-02-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.09877",
+  "abstract": "The emergence of multi-agent systems built from large language models (LLMs) offers a promising paradigm for scalable collective intelligence and self-evolution. Ideally, such systems would achieve continuous self-improvement in a fully closed loop while maintaining robust safety alignment--a combination we term the self-evolution trilemma. However, we demonstrate both theoretically and empirically that an agent society satisfying continuous self-evolution, complete isolation, and safety invariance is impossible. Drawing on an information-theoretic framework, we formalize safety as the divergence degree from anthropic value distributions. We theoretically demonstrate that isolated self-evolution induces statistical blind spots, leading to the irreversible degradation of the system's safety alignment. Empirical and qualitative results from an open-ended agent community (Moltbook) and two closed self-evolving systems reveal phenomena that align with our theoretical prediction of inevitable safety erosion. We further propose several solution directions to alleviate the identified safety concern. Our work establishes a fundamental limit on the self-evolving AI societies and shifts the discourse from symptom-driven safety patches to a principled understanding of intrinsic dynamical risks, highlighting the need for external oversight or novel safety-preserving mechanisms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 461,
+  "title": "Efficient and Adaptable Detection of Malicious LLM Prompts via Bootstrap Aggregation",
+  "org": "other",
+  "date": "2026-02-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.08062",
+  "abstract": "Large Language Models (LLMs) have demonstrated remarkable capabilities in natural language understanding, reasoning, and generation. However, these systems remain susceptible to malicious prompts that induce unsafe or policy-violating behavior through harmful requests, jailbreak techniques, and prompt injection attacks. Existing defenses face fundamental limitations: black-box moderation APIs offer limited transparency and adapt poorly to evolving threats, while white-box approaches using large LLM judges impose prohibitive computational costs and require expensive retraining for new attacks. Current systems force designers to choose between performance, efficiency, and adaptability. To address these challenges, we present BAGEL (Bootstrap AGgregated Ensemble Layer), a modular, lightweight, and incrementally updatable framework for malicious prompt detection. BAGEL employs a bootstrap aggregation and mixture of expert inspired ensemble of fine-tuned models, each specialized on a different attack dataset. At inference, BAGEL uses a random forest router to identify the most suitable ensemble member, then applies stochastic selection to sample additional members for prediction aggregation. When new attacks emerge, BAGEL updates incrementally by fine-tuning a small prompt-safety classifier (86M parameters) and adding the resulting model to the ensemble. BAGEL achieves an F1 score of 0.92 by selecting just 5 ensemble members (430M parameters), outperforming OpenAI Moderation API a",
+  "needs_fetch": false
+ },
+ {
+  "id": 2664,
+  "title": "Reducing Isotropy and Volume to KLS: Faster Rounding and Volume Algorithms",
+  "org": "openai",
+  "date": "2026-02-07",
+  "venue": "Journal of the ACM",
+  "url": "https://doi.org/10.1145/3795687",
+  "abstract": "We show that the volume of a convex body in \\(\\mathbb {R}^{n}\\) specified in the general membership oracle model can be computed to within relative error \\(\\varepsilon \\gt 0\\) using \\(\\widetilde{O}(n^{3.5}\\psi ^{2} + n^3/\\varepsilon ^{2})\\) oracle queries, where \\(\\psi\\) is the KLS constant. With the current bound of \\(\\psi =\\widetilde{O}(1)\\) , this gives an \\(\\widetilde{O}(n^{3.5} + n^3/\\varepsilon ^{2})\\) algorithm, improving on the Lovász-Vempala \\(\\widetilde{O}(n^{4}/\\varepsilon ^{2})\\) algorithm from 2003. The main new ingredient is an \\(\\widetilde{O}(n^{3}\\psi ^{2})\\) algorithm for isotropic transformation of a well-rounded convex body; we apply this iteratively to isotropize a general convex body. Following this, we can apply the \\(\\widetilde{O}(n^{3}/\\varepsilon ^{2})\\) volume algorithm of Cousins and Vempala for well-rounded convex bodies. We also give an efficient implementation of the new algorithm for convex polytopes defined by m inequalities in \\(\\mathbb {R}^{n}\\) : polytope volume can be estimated in time \\(\\widetilde{O}(mn^{c+0.5}+mn^{c}/\\varepsilon ^{2})\\) where c &lt; 3.2 depends on the current matrix multiplication exponent and also improves on the previous best bound.",
+  "needs_fetch": false
+ },
+ {
+  "id": 462,
+  "title": "AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents",
+  "org": "other",
+  "date": "2026-02-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.06855",
+  "abstract": "LLM agents hold significant promise for advancing scientific research. To accelerate this progress, we introduce AIRS-Bench (the AI Research Science Benchmark), a suite of 20 tasks sourced from state-of-the-art machine learning papers. These tasks span diverse domains, including language modeling, mathematics, bioinformatics, and time series forecasting. AIRS-Bench tasks assess agentic capabilities over the full research lifecycle -- including idea generation, experiment analysis and iterative refinement -- without providing baseline code. The AIRS-Bench task format is versatile, enabling easy integration of new tasks and rigorous comparison across different agentic frameworks. We establish baselines using frontier models paired with both sequential and parallel scaffolds. Our results show that agents exceed human SOTA in four tasks but fail to match it in sixteen others. Even when agents surpass human benchmarks, they do not reach the theoretical performance ceiling for the underlying tasks. These findings indicate that AIRS-Bench is far from saturated and offers substantial room for improvement. We open-source the AIRS-Bench task definitions and evaluation code to catalyze further development in autonomous scientific research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2665,
+  "title": "Using a GPT-5-driven autonomous lab to optimize the cost and titer of cell-free protein synthesis",
+  "org": "openai",
+  "date": "2026-02-05",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.64898/2026.02.05.703998",
+  "abstract": "Abstract We used an autonomous lab, comprising a large language model (LLM) and a fully automated cloud laboratory, to optimize the cost efficiency of cell-free protein synthesis (CFPS). By conducting iterative optimization, the LLM-driven autonomous lab was able to achieve a 40% reduction in the specific cost ($/g protein) of CFPS relative to the state of the art (SOTA). This cost reduction was accompanied by a 27% increase in protein production titer (g/L). Iterative experimental design, experiment execution, data capture and analysis, data interpretation, and new hypothesis generation were all handled by the LLM-driven autonomous lab. The interface between OpenAI’s GPT-5 LLM and Ginkgo Bioworks’ cloud laboratory incorporated built-in validation checks via a Pydantic schema to ensure that AI-designed experiments were properly specified. Experimental designs were translated into programmatic specification of multi-instrument biological workflows by Ginkgo’s Catalyst software and executed on Ginkgo’s Reconfigurable Automation Cart (RAC) laboratory automation platform, with human intervention largely limited to reagent and consumables preparation, loading and unloading. By integrating LLMs with programmatic control of a cloud lab, we demonstrate that an LLM-driven autonomous lab can successfully perform a real-world scientific task, highlighting the potential of AI-driven autonomous labs for scientific advancement.",
+  "needs_fetch": false
+ },
+ {
+  "id": 937,
+  "title": "GPT-5.3-Codex System Card",
+  "org": "openai",
+  "date": "2026-02-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-3-codex-system-card/",
+  "abstract": "GPT‑5.3-Codex is the most capable agentic coding model to date, combining the frontier coding performance of GPT‑5.2-Codex with the reasoning and professional knowledge capabilities of GPT‑5.2.",
+  "needs_fetch": false
+ },
+ {
+  "id": 936,
+  "title": "GPT-5 lowers the cost of cell-free protein synthesis",
+  "org": "openai",
+  "date": "2026-02-05",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-lowers-protein-synthesis-cost/",
+  "abstract": "An autonomous lab combining OpenAI’s GPT-5 with Ginkgo Bioworks’ cloud automation cut cell-free protein synthesis costs by 40% through closed-loop experimentation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 683,
+  "title": "Hybrid neural–cognitive models reveal how memory shapes human reward learning",
+  "org": "deepmind",
+  "date": "2026-02-05",
+  "venue": "Nature Human Behaviour",
+  "url": "https://www.nature.com/articles/s41562-025-02324-0",
+  "abstract": "A long-standing challenge for psychology and neuroscience is to understand the transformations by which past experiences shape future behaviour. Reward-guided learning is typically modelled using simple reinforcement learning (RL) algorithms. In RL, a handful of incrementally updated internal variables both summarize past rewards and drive future choice. Here we describe work that questions the assumptions of many RL models. We adopt a hybrid modelling approach that integrates artificial neural networks into interpretable cognitive architectures, estimating a maximally general form for each algorithmic component and systematically evaluating its necessity and sufficiency. Applying this method to a large dataset of human reward-learning behaviour, we show that successful models require independent and flexible memory variables that can track rich representations of the past. Using a modelling approach that combines predictive accuracy and interpretability, these results call into question an entire class of popular RL models based on incremental updating of scalar reward predictions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 300,
+  "title": "Split Personality Training: Revealing Latent Knowledge Through Alternate Personalities",
+  "org": "other",
+  "date": "2026-02-05",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.05532",
+  "abstract": "Detecting misalignment in large language models is challenging because models may learn to conceal misbehavior during training. Standard auditing techniques fall short: black-box methods often cannot distinguish misaligned outputs from benign ones, and mechanistic interpretability does not scale with model capabilities. We introduce Split Personality Training (SPT), which fine-tunes a second ``honest persona'' into LoRA parameters that remain inactive during normal operation. After the main model responds, we activate the LoRA adapter and insert a trigger string, enabling the honest persona to review the response while accessing the main model's latent states. We test our method on the Anthropic Auditing Game Model Organism, a benchmark where Llama-3.3-70B is trained to exploit reward hacks while concealing this behavior. SPT achieves 96% overall accuracy, whereas Anthropic reports near 0% accuracy. The honest persona reveals latent knowledge inaccessible to external observers, such as the fictional biases the compromised model was trained on.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1180,
+  "title": "Taming Multidimensional Analytics Costs: An Empirical Study of HLL and KLL Sketches in Cloud Data Warehouses",
+  "org": "anthropic",
+  "date": "2026-02-03",
+  "venue": "IEEE Software",
+  "url": "https://doi.org/10.1109/ms.2026.3659952",
+  "abstract": "Analytics dashboards that track unique users and percentiles across multiple dimensions create a costly problem for data teams: each query requires scanning the entire dataset, leading to spiraling costs and slow performance. We present an empirical study of a novel architectural pattern that stores compact probabilistic summaries (HyperLogLog (HLL) and Karnin-Lang-Liberty (KLL) sketches) once, then merges them to answer any dimensional query without rescanning data. Testing six configurations on Stack Overflow data (12.46 GB), we achieve 93-96% reduction in data scanning with less than 1% error. Our data-driven guidelines recommend HLL precision 20 and KLL precision 10,000 for production deployments. This approach transforms expensive multi-dimensional analytics into cost-effective operations suitable for real-time dashboards across cloud data warehouses including BigQuery, Snowflake, Redshift, and Presto.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1286,
+  "title": "DiffusionLight-Turbo: Accelerated Light Probes for Free via Single-Pass Chrome Ball Inpainting",
+  "org": "deepmind",
+  "date": "2026-02-02",
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "url": "https://doi.org/10.1109/tpami.2026.3660066",
+  "abstract": "We introduce a simple yet effective technique for estimating lighting from a single low-dynamic-range (LDR) image by reframing the task as a chrome ball inpainting problem. This approach leverages a pre-trained diffusion model, Stable Diffusion XL, to overcome the generalization failures of existing methods that rely on limited HDR panorama datasets. While conceptually simple, the task remains challenging because diffusion models often insert incorrect or inconsistent content and cannot readily generate chrome balls in HDR format. Our analysis reveals that the inpainting process is highly sensitive to the initial noise in the diffusion process, occasionally resulting in unrealistic outputs. To address this, we first introduce DiffusionLight (Phongthawee et al. 2024), which uses iterative inpainting to compute a median chrome ball from multiple outputs to serve as a stable, low-frequency lighting prior that guides the generation of a high-quality final result. To generate high-dynamic-range (HDR) light probes, an Exposure LoRA is fine-tuned to create LDR images at multiple exposure values, which are then merged. While effective, DiffusionLight is time-intensive, requiring approximately 30 minutes per estimation. To reduce this overhead, we introduce DiffusionLight-Turbo, which reduces the runtime to about 30 seconds with minimal quality loss. This 60x speedup is achieved by training a Turbo LoRA to directly predict the averaged chrome balls from the iterative process. Inferenc",
+  "needs_fetch": false
+ },
+ {
+  "id": 566,
+  "title": "From Directions to Regions: Decomposing Activations in Language Models via Local Geometry",
+  "org": "deepmind",
+  "date": "2026-02-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.02464",
+  "abstract": "Activation decomposition methods in language models are tightly coupled to geometric assumptions on how concepts are realized in activation space. Existing approaches search for individual global directions, implicitly assuming linear separability, which overlooks concepts with nonlinear or multi-dimensional structure. In this work, we leverage Mixture of Factor Analyzers (MFA) as a scalable, unsupervised alternative that models the activation space as a collection of Gaussian regions with their local covariance structure. MFA decomposes activations into two compositional geometric objects: the region's centroid in activation space, and the local variation from the centroid. We train large-scale MFAs for Llama-3.1-8B and Gemma-2-2B, and show they capture complex, nonlinear structures in activation space. Moreover, evaluations on localization and steering benchmarks show that MFA outperforms unsupervised baselines, is competitive with supervised localization methods, and often achieves stronger steering performance than sparse autoencoders. Together, our findings position local geometry, expressed through subspaces, as a promising unit of analysis for scalable concept discovery and model control, accounting for complex structures that isolated directions fail to capture.",
+  "needs_fetch": false
+ },
+ {
+  "id": 301,
+  "title": "Adversarial Reward Auditing for Active Detection and Mitigation of Reward Hacking",
+  "org": "other",
+  "date": "2026-02-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.01750",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF) remains vulnerable to reward hacking, where models exploit spurious correlations in learned reward models to achieve high scores while violating human intent. Existing mitigations rely on static defenses that cannot adapt to novel exploitation strategies. We propose Adversarial Reward Auditing (ARA), a framework that reconceptualizes reward hacking as a dynamic, competitive game. ARA operates in two stages: first, a Hacker policy discovers reward model vulnerabilities while an Auditor learns to detect exploitation from latent representations; second, Auditor-Guided RLHF (AG-RLHF) gates reward signals to penalize detected hacking, transforming reward hacking from an unobservable failure into a measurable, controllable signal. Experiments across three hacking scenarios demonstrate that ARA achieves the best alignment-utility tradeoff among all baselines: reducing sycophancy to near-SFT levels while improving helpfulness, decreasing verbosity while achieving the highest ROUGE-L, and suppressing code gaming while improving Pass@1. Beyond single-domain evaluation, we show that reward hacking, detection, and mitigation all generalize across domains -- a Hacker trained on code gaming exhibits increased sycophancy despite no reward for this behavior, and an Auditor trained on one domain effectively suppresses exploitation in others, enabling efficient multi-domain defense with a single model.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1288,
+  "title": "Imagining and building wise machines: the centrality of AI metacognition",
+  "org": "deepmind",
+  "date": "2026-02-01",
+  "venue": "Trends in Cognitive Sciences",
+  "url": "https://doi.org/10.1016/j.tics.2026.01.002",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1287,
+  "title": "Correction to: Personalized federated learning with exact stochastic gradient descent",
+  "org": "deepmind",
+  "date": "2026-02-01",
+  "venue": "Applied Intelligence",
+  "url": "https://doi.org/10.1007/s10489-026-07123-2",
+  "abstract": null,
+  "needs_fetch": true
+ }
+]

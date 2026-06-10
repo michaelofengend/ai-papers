@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1658,
+  "title": "Dorsal prefrontal cortex drives perseverative behavior in mice",
+  "org": "deepmind",
+  "date": "2024-05-04",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-026-71664-w",
+  "abstract": "Perseveration - repeating one action when others would generate larger rewards - is a common behavior, but neither its purpose nor neuronal mechanisms are understood. Here we demonstrate a neural correlate and causal role of dorsal prefrontal cortex, specifically anterior secondary motor cortex (MOs) in perseveration in mice performing a dynamic reward learning task. An auditory go cue signaled mice to turn a wheel either left or right, with the reward probability of each action switching in blocks. Mice perseverated, gaining suboptimal reward, but were faster when making repeated choices. Neuropixels recordings found neurons whose activity correlated with perseveration and predicted rapid reaction times, almost exclusively in anterior MOs. Optogenetically inhibiting this region during the choice period reduced perseveration and slowed reactions. In contrast, inactivating medial prefrontal cortex at choice time had no effect, but inactivating it after reward delivery impaired learning. In this task, therefore, anterior MOs reflects a perseverative decision variable, and is necessary for mediating the effect of this decision variable on choice and reaction time.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1660,
+  "title": "A general theoretical paradigm to understand learning from human preferences",
+  "org": "deepmind",
+  "date": "2024-05-02",
+  "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+  "url": "https://hal.science/hal-05413277",
+  "abstract": "International audience",
+  "needs_fetch": true
+ },
+ {
+  "id": 1659,
+  "title": "Recourse for Reclamation: Chatting with Generative Language Models",
+  "org": "deepmind",
+  "date": "2024-05-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.14467",
+  "abstract": "Researchers and developers increasingly rely on toxicity scoring to automate generative language model outputs, in settings such as customer service, information retrieval, and content generation. However, toxicity scoring may render pertinent information inaccessible, rigidify or “value-lock” cultural norms, and prevent language reclamation processes, particularly for marginalized people. In this work, we extend the concept of algorithmic recourse to generative language models: we provide users a novel mechanism to achieve their desired prediction by dynamically setting thresholds for toxicity filtering. Users thereby exercise increased agency relative to interactions with the baseline system. A pilot study (n = 30) supports the potential of our proposed recourse mechanism, indicating improvements in usability compared to fixed-threshold toxicity-filtering of model outputs. Future work should explore the intersection of toxicity scoring, model controllability, user agency, and language reclamation processes—particularly with regard to the bias that many communities encounter when interacting with generative language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 534,
+  "title": "Mixture of insighTful Experts (MoTE): The Synergy of Thought Chains and Expert Mixtures in Self-Alignment",
+  "org": "other",
+  "date": "2024-05-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2405.00557",
+  "abstract": "As the capabilities of large language models (LLMs) continue to expand, aligning these models with human values remains a significant challenge. Recent studies show that reasoning abilities contribute significantly to model safety, while integrating Mixture-of-Experts (MoE) architectures can further enhance alignment. In this work, we address a fundamental question: How to effectively incorporate reasoning abilities and MoE architectures into self-alignment process in LLMs? We propose Mixture of insighTful Experts (MoTE), a novel framework that synergistically combines reasoning chains and expert mixtures to improve self-alignments. From a data perspective, MoTE employs a structured reasoning chain comprising four key stages: Question Analysis, Answer Guidance, Safe Answer, and Safety Checking. This approach enhances safety through multi-step reasoning and proves effective even for smaller and less powerful LLMs (e.g., 7B models). From an architectural perspective, MoTE adopts a multi-LoRA framework with step-level routing, where each expert is dedicated to a specific reasoning step. This design eliminates the need for balance losses, ensures stable training, and supports adaptive inference lengths. Experimental results demonstrate that MoTE significantly improves model safety, jailbreak resistance, and over-refusal capabilities, achieving performance comparable to OpenAI's state-of-the-art o1 model.",
+  "needs_fetch": false
+ },
+ {
+  "id": 446,
+  "title": "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet",
+  "org": "anthropic",
+  "date": "2024-05-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html",
+  "abstract": "We demonstrate that sparse autoencoders can extract interpretable features from Claude 3 Sonnet, a production-scale language model, addressing the open question of whether dictionary learning methods scale beyond small transformers. We trained sparse autoencoders with up to 34 million features on the model's middle layer residual stream, using scaling laws to guide hyperparameter selection. The resulting features are multilingual and multimodal (generalizing to images despite text-only training), respond to both concrete instances and abstract discussions of concepts, and can be used to steer model behavior in ways consistent with their interpretations. We find features corresponding to famous entities and locations, as well as more abstract concepts like sarcasm or errors in code. We also identify features relevant to ways in which language models might cause harm--including features representing deception, power-seeking, sycophancy, and bias--and show that these causally influence model outputs when manipulated. Additionally, we conduct analyses of feature interpretability, geometry, and computational function. However, significant limitations remain: our suite of features is incomplete, and we lack rigorous methods for evaluating whether our features faithfully capture model computations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 605,
+  "title": "Improving Dictionary Learning with Gated Sparse Autoencoders",
+  "org": "deepmind",
+  "date": "2024-04-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2404.16014",
+  "abstract": "Recent work has found that sparse autoencoders (SAEs) are an effective technique for unsupervised discovery of interpretable features in language models' (LMs) activations, by finding sparse, linear reconstructions of LM activations. We introduce the Gated Sparse Autoencoder (Gated SAE), which achieves a Pareto improvement over training with prevailing methods. In SAEs, the L1 penalty used to encourage sparsity introduces many undesirable biases, such as shrinkage -- systematic underestimation of feature activations. The key insight of Gated SAEs is to separate the functionality of (a) determining which directions to use and (b) estimating the magnitudes of those directions: this enables us to apply the L1 penalty only to the former, limiting the scope of undesirable side effects. Through training SAEs on LMs of up to 7B parameters we find that, in typical hyper-parameter ranges, Gated SAEs solve shrinkage, are similarly interpretable, and require half as many firing features to achieve comparable reconstruction fidelity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 606,
+  "title": "How to use and interpret activation patching",
+  "org": "deepmind",
+  "date": "2024-04-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2404.15255",
+  "abstract": "Activation patching is a popular mechanistic interpretability technique, but has many subtleties regarding how it is applied and how one may interpret the results. We provide a summary of advice and best practices, based on our experience using this technique in practice. We include an overview of the different ways to apply activation patching and a discussion on how to interpret the results. We focus on what evidence patching experiments provide about circuits, and on the choice of metric and associated pitfalls.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2734,
+  "title": "PyTorch 2: Faster Machine Learning Through Dynamic Python Bytecode Transformation and Graph Compilation",
+  "org": "openai",
+  "date": "2024-04-22",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3620665.3640366",
+  "abstract": "This paper introduces two extensions to the popular PyTorch machine learning framework, TorchDynamo and TorchInductor, which implement the torch.compile feature released in PyTorch 2. TorchDynamo is a Python-level just-in-time (JIT) compiler that enables graph compilation in PyTorch programs without sacrificing the flexibility of Python. It achieves this by dynamically modifying Python bytecode before execution and extracting sequences of PyTorch operations into an FX graph, which is then JIT compiled using one of many extensible backends. TorchInductor is the default compiler backend for TorchDynamo, which translates PyTorch programs into OpenAI's Triton for GPUs and C++ for CPUs. Results show that TorchDynamo is able to capture graphs more robustly than prior approaches while adding minimal overhead, and TorchInductor is able to provide a 2.27× inference and 1.41× training geometric mean speedup on an NVIDIA A100 GPU across 180+ real-world models, which outperforms six other compilers. These extensions provide a new way to apply optimizations through compilers in eager mode frameworks like PyTorch.",
+  "needs_fetch": false
+ },
+ {
+  "id": 776,
+  "title": "Holistic Safety and Responsibility Evaluations of Advanced AI Models",
+  "org": "deepmind",
+  "date": "2024-04-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2404.14068",
+  "abstract": "AI evaluation–the measurement of AI capabilities, behavior, and impact–is critical for safety. The field of safety evaluations however remains nascent. In the development of Google DeepMind’s Gemini models, we innovated on and applied a diverse set of approaches to safety evaluation. To contribute to the maturation of the field, we share here some aspects of our evolving approach and lessons learned. First, theoretical frameworks are invaluable to organize the breadth of risk domains, modalities, forms, metrics, and goals. Second, theory and practice each benefit from collaboration: clarifying goals, methods, and challenges, and facilitating the transfer of insights and work across the evaluation development pipeline. Third, methods, lessons, and institutions transfer across the range of concerns in responsibility and safety, including present harms and dangerous capabilities. Safety evaluations are a public good, and as such we need to rapidly advance the science of evals, the thickness of scientifically-grounded norms and standards, the innovativeness of the ecosystem, and the integration of these measures into company policy and public policy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1011,
+  "title": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+  "org": "openai",
+  "date": "2024-04-19",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/the-instruction-hierarchy/",
+  "abstract": "Today's LLMs are susceptible to prompt injections, jailbreaks, and other attacks that allow adversaries to overwrite a model's original instructions with their own malicious prompts.",
+  "needs_fetch": false
+ },
+ {
+  "id": 777,
+  "title": "Many-Shot In-Context Learning",
+  "org": "deepmind",
+  "date": "2024-04-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2404.11018",
+  "abstract": "Large language models (LLMs) excel at few-shot in-context learning (ICL) – learning from a few examples provided in context at inference, without any weight updates. Newly expanded context windows allow us to investigate ICL with hundreds or thousands of examples – the many-shot regime. Going from few-shot to many-shot, we observe significant performance gains across a wide variety of generative and discriminative tasks. While promising, many-shot ICL can be bottlenecked by the available amount of human-generated outputs. To mitigate this limitation, we explore two new settings: “Reinforced ICL” and “Unsupervised ICL”. Reinforced ICL uses model-generated chain-of-thought rationales in place of human rationales. Unsupervised ICL removes rationales from the prompt altogether, and prompts the model only with domain-specific inputs. We find that both Reinforced and Unsupervised ICL can be quite effective in the many-shot regime, particularly on complex reasoning tasks. Finally, we demonstrate that, unlike few-shot learning, many-shot learning is effective at overriding pretraining biases and can learn high-dimensional functions with numerical inputs. Our analysis also reveals the limitations of next-token prediction loss as an indicator of downstream performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1198,
+  "title": "Discovering Personalized Semantics for Soft Attributes in Recommender Systems Using Concept Activation Vectors",
+  "org": "anthropic",
+  "date": "2024-04-16",
+  "venue": "ACM Transactions on Recommender Systems",
+  "url": "https://doi.org/10.1145/3658675",
+  "abstract": "Interactive recommender systems have emerged as a promising paradigm to overcome the limitations of the primitive user feedback used by traditional recommender systems (e.g., clicks, item consumption, ratings). They allow users to express intent, preferences, constraints, and contexts in a richer fashion, often using natural language (including faceted search and dialogue). Yet more research is needed to find the most effective ways to use this feedback. One challenge is inferring a user’s semantic intent from the open-ended terms or attributes often used to describe a desired item. This is critical for recommender systems that wish to support users in their everyday, intuitive use of natural language to refine recommendation results. Leveraging concept activation vectors (CAVs) [ 26 ], a recently developed approach for model interpretability in machine learning, we develop a framework to learn a representation that captures the semantics of such attributes and connects them to user preferences and behaviors in recommender systems. One novel feature of our approach is its ability to distinguish objective and subjective attributes (both subjectivity of degree and of sense ) and associate different senses of subjective attributes with different users. We demonstrate on both synthetic and real-world datasets that our CAV representation not only accurately interprets users’ subjective semantics but also can be used to improve recommendations through interactive item critiquing .",
+  "needs_fetch": false
+ },
+ {
+  "id": 409,
+  "title": "LLM Evaluators Recognize and Favor Their Own Generations",
+  "org": "anthropic",
+  "date": "2024-04-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2404.13076",
+  "abstract": "Self-evaluation using large language models (LLMs) has proven valuable not only in benchmarking but also methods like reward modeling, constitutional AI, and self-refinement. But new biases are introduced due to the same LLM acting as both the evaluator and the evaluatee. One such bias is self-preference, where an LLM evaluator scores its own outputs higher than others' while human annotators consider them of equal quality. But do LLMs actually recognize their own outputs when they give those texts higher scores, or is it just a coincidence? In this paper, we investigate if self-recognition capability contributes to self-preference. We discover that, out of the box, LLMs such as GPT-4 and Llama 2 have non-trivial accuracy at distinguishing themselves from other LLMs and humans. By fine-tuning LLMs, we discover a linear correlation between self-recognition capability and the strength of self-preference bias; using controlled experiments, we show that the causal explanation resists straightforward confounders. We discuss how self-recognition can interfere with unbiased evaluations and AI safety more generally.",
+  "needs_fetch": false
+ },
+ {
+  "id": 410,
+  "title": "Dataset Reset Policy Optimization for RLHF",
+  "org": "other",
+  "date": "2024-04-12",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2404.08495",
+  "abstract": "Reinforcement Learning (RL) from Human Preference-based feedback is a popular paradigm for fine-tuning generative models, which has produced impressive models such as GPT-4 and Claude3 Opus. This framework often consists of two steps: learning a reward model from an offline preference dataset followed by running online RL to optimize the learned reward model. In this work, leveraging the idea of reset, we propose a new RLHF algorithm with provable guarantees. Motivated by the fact that offline preference dataset provides informative states (i.e., data that is preferred by the labelers), our new algorithm, Dataset Reset Policy Optimization (DR-PO), integrates the existing offline preference dataset into the online policy training procedure via dataset reset: it directly resets the policy optimizer to the states in the offline dataset, instead of always starting from the initial state distribution. In theory, we show that DR-PO learns to perform at least as good as any policy that is covered by the offline dataset under general function approximation with finite sample complexity. In experiments, we demonstrate that on both the TL;DR summarization and the Anthropic Helpful Harmful (HH) dataset, the generation from DR-PO is better than that from Proximal Policy Optimization (PPO) and Direction Preference Optimization (DPO), under the metric of GPT4 win-rate. Code for this work can be found at https://github.com/Cornell-RL/drpo.",
+  "needs_fetch": false
+ },
+ {
+  "id": 778,
+  "title": "Learning Agile Soccer Skills for a Bipedal Robot with Deep Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2024-04-10",
+  "venue": "Science Robotics",
+  "url": "https://www.science.org/stoken/author-tokens/ST-1809/full",
+  "abstract": "We investigated whether deep reinforcement learning (deep RL) is able to synthesize sophisticated and safe movement skills for a low-cost, miniature humanoid robot that can be composed into complex behavioral strategies. We used deep RL to train a humanoid robot to play a simplified one-versus-one soccer game. The resulting agent exhibits robust and dynamic movement skills, such as rapid fall recovery, walking, turning, and kicking, and it transitions between them in a smooth and efficient manner. It also learned to anticipate ball movements and block opponent shots. The agent’s tactical behavior adapts to specific game contexts in a way that would be impractical to manually design. Our agent was trained in simulation and transferred to real robots zero-shot. A combination of sufficiently high-frequency control, targeted dynamics randomization, and perturbations during training enabled good-quality transfer. In experiments, the agent walked 181% faster, turned 302% faster, took 63% less time to get up, and kicked a ball 34% faster than a scripted baseline.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1662,
+  "title": "Genetic determinants of centenarian longevity, as quantified by the 'CentPGS' score, are associated with a lower risk of multiple age-related diseases and a longer healthspan.",
+  "org": "deepmind",
+  "date": "2024-04-09",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-3916561/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1661,
+  "title": "Evading Black-box Classifiers Without Breaking Eggs",
+  "org": "deepmind",
+  "date": "2024-04-09",
+  "venue": null,
+  "url": "https://doi.org/10.1109/satml59370.2024.00027",
+  "abstract": "Decision-based evasion attacks repeatedly query a black-box classifier to generate adversarial examples. Prior work measures the cost of such attacks by the total number of queries made to the classifier. We argue this metric is incomplete. Many security-critical machine learning systems aim to weed out \"bad\" data (e.g., malware, harmful content, etc). Queries to such systems carry a fundamentally asymmetric cost: flagged queries, i.e., queries detected as \"bad\" by the classifier come at a higher cost because they trigger additional security filters, e.g., usage throttling or account suspension. Yet, we find that existing decision-based attacks issue a large number of queries that would get flagged by a security-critical system, which likely renders them ineffective against such systems. We then design new attacks that reduce the number of flagged queries by 1.5-7.3×. While some of our attacks achieve this improvement at the cost of only a moderate increase in total (including non-flagged) queries, other attacks require significantly more total queries than prior attacks. We thus pose it as an open problem to build black-box attacks that are more effective under realistic cost metrics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 95,
+  "title": "Measuring the Persuasiveness of Language Models",
+  "org": "anthropic",
+  "date": "2024-04-09",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/measuring-model-persuasiveness",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1663,
+  "title": "Bridging Algorithmic Information Theory and Machine Learning: A new approach to kernel learning",
+  "org": "deepmind",
+  "date": "2024-04-06",
+  "venue": "Physica D Nonlinear Phenomena",
+  "url": "https://doi.org/10.1016/j.physd.2024.134153",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 779,
+  "title": "Biomolecular dynamics with machine-learned quantum-mechanical force fields trained on diverse chemical fragments",
+  "org": "deepmind",
+  "date": "2024-04-05",
+  "venue": "Science Advances",
+  "url": "https://www.science.org/doi/epdf/10.1126/sciadv.adn4397",
+  "abstract": "Molecular dynamics (MD) simulations allow insights into complex processes, but accurate MD simulations require costly quantum-mechanical calculations. For larger systems, efficient but less reliable empirical force fields are used. Machine-learned force fields (MLFFs) offer similar accuracy as ab initio methods at orders-of-magnitude speedup, but struggle to model long-range interactions in large molecules. This work proposes a general approach to constructing accurate MLFFs for large-scale molecular simulations (GEMS) by training on “bottom-up” and “top-down” molecular fragments, from which the relevant interactions can be learned. GEMS allows nanosecond-scale MD simulations of >25,000 atoms at essentially ab initio quality, correctly predicts dynamical oscillations between different helical motifs in polyalanine, and yields good agreement with terahertz vibrational spectroscopy for large-scale protein-water fluctuations in solvated crambin. Our analyses indicate that simulations at ab initio accuracy might be necessary to understand dynamic biomolecular processes.",
+  "needs_fetch": false
+ },
+ {
+  "id": 535,
+  "title": "Red Teaming GPT-4V: Are GPT-4V Safe Against Uni/Multi-Modal Jailbreak Attacks?",
+  "org": "other",
+  "date": "2024-04-04",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2404.03411",
+  "abstract": "Various jailbreak attacks have been proposed to red-team Large Language Models (LLMs) and revealed the vulnerable safeguards of LLMs. Besides, some methods are not limited to the textual modality and extend the jailbreak attack to Multimodal Large Language Models (MLLMs) by perturbing the visual input. However, the absence of a universal evaluation benchmark complicates the performance reproduction and fair comparison. Besides, there is a lack of comprehensive evaluation of closed-source state-of-the-art (SOTA) models, especially MLLMs, such as GPT-4V. To address these issues, this work first builds a comprehensive jailbreak evaluation dataset with 1445 harmful questions covering 11 different safety policies. Based on this dataset, extensive red-teaming experiments are conducted on 11 different LLMs and MLLMs, including both SOTA proprietary models and open-source models. We then conduct a deep analysis of the evaluated results and find that (1) GPT4 and GPT-4V demonstrate better robustness against jailbreak attacks compared to open-source LLMs and MLLMs. (2) Llama2 and Qwen-VL-Chat are more robust compared to other open-source models. (3) The transferability of visual jailbreak methods is relatively limited compared to textual jailbreak methods. The dataset and code can be found https://github.com/chenxshuo/RedTeamingGPT4V",
+  "needs_fetch": false
+ },
+ {
+  "id": 1664,
+  "title": "Multimodality and Attention Increase Alignment in NaturalLanguage Prediction Between Humans and ComputationalModels",
+  "org": "deepmind",
+  "date": "2024-04-03",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-3913308/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2735,
+  "title": "AI is a viable alternative to high throughput screening: a 318-target study",
+  "org": "openai",
+  "date": "2024-04-02",
+  "venue": "Scientific Reports",
+  "url": "https://doi.org/10.1038/s41598-024-54655-z",
+  "abstract": "High throughput screening (HTS) is routinely used to identify bioactive small molecules. This requires physical compounds, which limits coverage of accessible chemical space. Computational approaches combined with vast on-demand chemical libraries can access far greater chemical space, provided that the predictive accuracy is sufficient to identify useful molecules. Through the largest and most diverse virtual HTS campaign reported to date, comprising 318 individual projects, we demonstrate that our AtomNet® convolutional neural network successfully finds novel hits across every major therapeutic area and protein class. We address historical limitations of computational screening by demonstrating success for target proteins without known binders, high-quality X-ray crystal structures, or manual cherry-picking of compounds. We show that the molecules selected by the AtomNet® model are novel drug-like scaffolds rather than minor modifications to known bioactive compounds. Our empirical results suggest that computational methods can substantially replace HTS as the first step of small-molecule drug discovery.",
+  "needs_fetch": false
+ },
+ {
+  "id": 96,
+  "title": "Many-shot jailbreaking",
+  "org": "anthropic",
+  "date": "2024-04-02",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/many-shot-jailbreaking",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1666,
+  "title": "Accelerated Forward-Backward Optimization Using Deep Learning",
+  "org": "deepmind",
+  "date": "2024-04-01",
+  "venue": "SIAM Journal on Optimization",
+  "url": "https://doi.org/10.1137/22m1532548",
+  "abstract": "We propose several deep-learning accelerated optimization solvers with convergence guarantees. We use ideas from the analysis of accelerated forward-backward schemes like FISTA, but instead of the classical approach of proving convergence for a choice of parameters, such as a step-size, we show convergence whenever the update is chosen in a specific set. Rather than picking a point in this set using some predefined method, we train a deep neural network to pick the best update within a given space. Finally, we show that the method is applicable to several cases of smooth and nonsmooth optimization and show superior results to established accelerated solvers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1665,
+  "title": "Generative models improve fairness of medical classifiers under distribution shifts",
+  "org": "deepmind",
+  "date": "2024-04-01",
+  "venue": "Nature Medicine",
+  "url": "https://doi.org/10.1038/s41591-024-02838-6",
+  "abstract": "Domain generalization is a ubiquitous challenge for machine learning in healthcare. Model performance in real-world conditions might be lower than expected because of discrepancies between the data encountered during deployment and development. Underrepresentation of some groups or conditions during model development is a common cause of this phenomenon. This challenge is often not readily addressed by targeted data acquisition and 'labeling' by expert clinicians, which can be prohibitively expensive or practically impossible because of the rarity of conditions or the available clinical expertise. We hypothesize that advances in generative artificial intelligence can help mitigate this unmet need in a steerable fashion, enriching our training dataset with synthetic examples that address shortfalls of underrepresented conditions or subgroups. We show that diffusion models can automatically learn realistic augmentations from data in a label-efficient manner. We demonstrate that learned augmentations make models more robust and statistically fair in-distribution and out of distribution. To evaluate the generality of our approach, we studied three distinct medical imaging contexts of varying difficulty: (1) histopathology, (2) chest X-ray and (3) dermatology images. Complementing real samples with synthetic ones improved the robustness of models in all three medical tasks and increased fairness by improving the accuracy of clinical diagnosis within underrepresented groups, especi",
+  "needs_fetch": false
+ },
+ {
+  "id": 411,
+  "title": "Regularized Best-of-N Sampling with Minimum Bayes Risk Objective for Language Model Alignment",
+  "org": "other",
+  "date": "2024-04-01",
+  "venue": "NAACL",
+  "url": "https://arxiv.org/abs/2404.01054",
+  "abstract": "Best-of-N (BoN) sampling with a reward model has been shown to be an effective strategy for aligning Large Language Models (LLMs) to human preferences at the time of decoding. BoN sampling is susceptible to a problem known as reward hacking when the accuracy of the reward model is not high enough due to the quality or the quantity of the preference dataset. Because the reward model is an imperfect proxy for the true objective, over-optimizing its value can compromise its performance on the true objective. In this research, we propose MBR-BoN, a variant of BoN that aims to mitigate reward hacking at inference time by incorporating the Minimum Bayes Risk (MBR) objective as a proximity regularization term. We show empirically and analytically that the MBR objective quantifies the proximity of the response to the reference policy, serving as a proximity regularizer. We evaluate MBR-BoN on the AlpacaFarm and Anthropic's hh-rlhf datasets and show that it outperforms both BoN sampling and MBR decoding. We also evaluate MBR-BoN to generate a pairwise preference learning dataset for Direct Preference Optimization (DPO). Empirical results show that models trained on a dataset generated with MBR-BoN outperform those with vanilla BoN. Our code is available at https://github.com/CyberAgentAILab/regularized-bon",
+  "needs_fetch": false
+ },
+ {
+  "id": 94,
+  "title": "Simple Probes can Catch Sleeper Agents",
+  "org": "anthropic",
+  "date": "2024-04-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://www.anthropic.com/research/probes-catch-sleeper-agents",
+  "abstract": "We find that probing, a simple interpretability technique, can detect when backdoored \"sleeper agent\" models are about to behave dangerously, after they pretend to be safe in training.",
+  "needs_fetch": false
+ },
+ {
+  "id": 93,
+  "title": "Circuits Updates — April 2024",
+  "org": "anthropic",
+  "date": "2024-04-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2024/april-update/index.html",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 780,
+  "title": "Gecko: Versatile Text Embeddings Distilled from Large Language Models",
+  "org": "deepmind",
+  "date": "2024-03-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2403.20327",
+  "abstract": "We present Gecko, a compact and versatile text embedding model. Gecko achieves strong retrieval performance by leveraging a key idea: distilling knowledge from large language models (LLMs) into a retriever. Our two-step distillation process begins with generating diverse, synthetic paired data using an LLM. Next, we further refine the data quality by retrieving a set of candidate passages for each query, and relabeling the positive and hard negative passages using the same LLM. The effectiveness of our approach is demonstrated by the compactness of the Gecko. On the Massive Text Embedding Benchmark (MTEB), Gecko with 256 embedding dimensions outperforms all existing entries with 768 embedding size. Gecko with 768 embedding dimensions achieves an average score of 66.31, competing with 7x larger models and 5x higher dimensional embeddings.",
+  "needs_fetch": false
+ }
+]

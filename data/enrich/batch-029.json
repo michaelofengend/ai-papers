@@ -1,0 +1,302 @@
+[
+ {
+  "id": 508,
+  "title": "LAG-MMLU: Benchmarking Frontier LLM Understanding in Latvian and Giriama",
+  "org": "other",
+  "date": "2025-03-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.11911",
+  "abstract": "As large language models (LLMs) rapidly advance, evaluating their performance is critical. LLMs are trained on multilingual data, but their reasoning abilities are mainly evaluated using English datasets. Hence, robust evaluation frameworks are needed using high-quality non-English datasets, especially low-resource languages (LRLs). This study evaluates eight state-of-the-art (SOTA) LLMs on Latvian and Giriama using a Massive Multitask Language Understanding (MMLU) subset curated with native speakers for linguistic and cultural relevance. Giriama is benchmarked for the first time. Our evaluation shows that OpenAI's o1 model outperforms others across all languages, scoring 92.8% in English, 88.8% in Latvian, and 70.8% in Giriama on 0-shot tasks. Mistral-large (35.6%) and Llama-70B IT (41%) have weak performance, on both Latvian and Giriama. Our results underscore the need for localized benchmarks and human evaluations in advancing cultural AI contextualization.",
+  "needs_fetch": false
+ },
+ {
+  "id": 357,
+  "title": "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation",
+  "org": "openai",
+  "date": "2025-03-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.11926",
+  "abstract": "Mitigating reward hacking--where AI systems misbehave due to flaws or misspecifications in their learning objectives--remains a key challenge in constructing capable and aligned models. We show that we can monitor a frontier reasoning model, such as OpenAI o3-mini, for reward hacking in agentic coding environments by using another LLM that observes the model's chain-of-thought (CoT) reasoning. CoT monitoring can be far more effective than monitoring agent actions and outputs alone, and we further found that a LLM weaker than o3-mini, namely GPT-4o, can effectively monitor a stronger model. Because CoT monitors can be effective at detecting exploits, it is natural to ask whether those exploits can be suppressed by incorporating a CoT monitor directly into the agent's training objective. While we show that integrating CoT monitors into the reinforcement learning reward can indeed produce more capable and more aligned agents in the low optimization regime, we find that with too much optimization, agents learn obfuscated reward hacking, hiding their intent within the CoT while still exhibiting a significant rate of reward hacking. Because it is difficult to tell when CoTs have become obfuscated, it may be necessary to pay a monitorability tax by not applying strong optimization pressures directly to the chain-of-thought, ensuring that CoTs remain monitorable and useful for detecting misaligned behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 69,
+  "title": "Auditing language models for hidden objectives",
+  "org": "anthropic",
+  "date": "2025-03-13",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/auditing-hidden-objectives",
+  "abstract": "We study the feasibility of conducting alignment audits: investigations into whether models have undesired objectives. As a testbed, we train a language model with a hidden objective. Our training pipeline first teaches the model about exploitable errors in RLHF reward models (RMs), then trains the model to exploit some of these errors. We verify via out-of-distribution evaluations that the model generalizes to exhibit whatever behaviors it believes RMs rate highly, including ones not reinforced during training. We leverage this model to study alignment audits in two ways. First, we conduct a blind auditing game where four teams, unaware of the model's hidden objective or training, investigate it for concerning behaviors and their causes. Three teams successfully uncovered the model's hidden objective using techniques including interpretability with sparse autoencoders (SAEs), behavioral attacks, and training data analysis. Second, we conduct an unblinded follow-up study of eight techniques for auditing the model, analyzing their strengths and limitations. Overall, our work provides a concrete example of using alignment audits to discover a model's hidden objective and proposes a methodology for practicing and validating progress in alignment auditing.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1481,
+  "title": "SimulTron: On-Device Simultaneous Speech to Speech Translation",
+  "org": "deepmind",
+  "date": "2025-03-12",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icassp49660.2025.10889296",
+  "abstract": "Simultaneous speech-to-speech translation (S2ST) holds the promise of breaking down communication barriers and enabling fluid conversations across languages. However, achieving accurate, real-time translation through mobile devices remains a major challenge. We introduce SimulTron, a novel S2ST architecture designed to tackle this task. SimulTron is a lightweight direct S2ST model that uses the strengths of the Translatotron framework while incorporating key modifications for streaming operation, and an adjustable fixed delay. Our experiments show that SimulTron surpasses Translatotron 2 in offline evaluations. Furthermore, real-time evaluations reveal that SimulTron improves upon the performance achieved by Translatotron 1. Additionally, SimulTron achieves superior BLEU scores and latency compared to previous real-time S2ST method on the MuST-C dataset. Significantly, we have successfully deployed SimulTron on a Pixel 7 Pro device, show its potential for simultaneous S2ST on-device.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1480,
+  "title": "Towards Sub-millisecond Latency Real-Time Speech Enhancement Models on Hearables",
+  "org": "deepmind",
+  "date": "2025-03-12",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icassp49660.2025.10889875",
+  "abstract": "Low latency models are critical for real-time speech enhancement applications, such as hearing aids and hearables. However, the sub-millisecond latency space for resource-constrained hearables remains underexplored. We demonstrate speech enhancement using a computationally efficient minimum-phase FIR filter, enabling sample-by-sample processing to achieve mean algorithmic latency of 0.32 ms to 1.25 ms. With a single microphone, we observe a mean SI-SDRi of 4.1 dB. The approach shows generalization with a DNSMOS increase of 0.2 on unseen audio recordings. We use a lightweight LSTM-based model of 626k parameters to generate FIR taps. Using a real hardware implementation on a low-power DSP, our system can run with 376 MIPS and a mean end-to-end latency of 3.35 ms. In addition, we provide a comparison with existing low-latency spectral masking techniques. We hope this work will enable a better understanding of latency and can be used to improve the comfort and usability of hearables.",
+  "needs_fetch": false
+ },
+ {
+  "id": 583,
+  "title": "SAEBench: A Comprehensive Benchmark for Sparse Autoencoders in Language Model Interpretability",
+  "org": "deepmind",
+  "date": "2025-03-12",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2503.09532",
+  "abstract": "Sparse autoencoders (SAEs) are a popular technique for interpreting language model activations, and there is extensive recent work on improving SAE effectiveness. However, most prior work evaluates progress using unsupervised proxy metrics with unclear practical relevance. We introduce SAEBench, a comprehensive evaluation suite that measures SAE performance across eight diverse metrics, spanning interpretability, feature disentanglement and practical applications like unlearning. To enable systematic comparison, we open-source a suite of over 200 SAEs across eight recently proposed SAE architectures and training algorithms. Our evaluation reveals that gains on proxy metrics do not reliably translate to better practical performance. For instance, while Matryoshka SAEs slightly underperform on existing proxy metrics, they substantially outperform other architectures on feature disentanglement metrics; moreover, this advantage grows with SAE scale. By providing a standardized framework for measuring progress in SAE development, SAEBench enables researchers to study scaling trends and make nuanced comparisons between different SAE architectures and training methodologies. Our interactive interface enables researchers to flexibly visualize relationships between metrics across hundreds of open-source SAEs at: www.neuronpedia.org/sae-bench",
+  "needs_fetch": false
+ },
+ {
+  "id": 717,
+  "title": "Gemini Embedding: Generalizable Embeddings from Gemini",
+  "org": "deepmind",
+  "date": "2025-03-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.07891",
+  "abstract": "In this report, we introduce Gemini Embedding, a state-of-the-art embedding model leveraging the power of Gemini, Google's most capable large language model. Capitalizing on Gemini's inherent multilingual and code understanding capabilities, Gemini Embedding produces highly generalizable embeddings for text spanning numerous languages and textual modalities. The representations generated by Gemini Embedding can be precomputed and applied to a variety of downstream tasks including classification, similarity, clustering, ranking, and retrieval. Evaluated on the Massive Multilingual Text Embedding Benchmark (MMTEB), which includes over one hundred tasks across 250+ languages, Gemini Embedding substantially outperforms prior state-of-the-art models, demonstrating considerable improvements in embedding quality. Achieving state-of-the-art performance across MMTEB's multilingual, English, and code benchmarks, our unified model demonstrates strong capabilities across a broad selection of tasks and surpasses specialized domain-specific models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 223,
+  "title": "Chain-of-Thought Reasoning In The Wild Is Not Always Faithful",
+  "org": "deepmind",
+  "date": "2025-03-11",
+  "venue": "ICML 2026",
+  "url": "https://arxiv.org/abs/2503.08679",
+  "abstract": "Recent studies indicate that when faced with explicit biases in prompts, models often omit mentioning these biases in their Chain-of-Thought (CoT) output, revealing that verbalized reasoning can give an incorrect picture of how models arrive at conclusions (unfaithfulness). In this work, we show that unfaithful CoT also occurs on naturally worded, non-adversarial prompts without adding artificial biases or editing model outputs. We find that when separately presented with the questions \"Is X bigger than Y?\" and \"Is Y bigger than X?\", models sometimes produce superficially coherent arguments to justify systematically answering Yes to both or No to both, despite the contradiction. We present preliminary evidence that this is due to models' implicit biases towards Yes or No, labeling this Implicit Post-Hoc Rationalization. Our results reveal rates up to 13% for production models, and while frontier models are more faithful, none are entirely so, including thinking models like DeepSeek R1 (0.37%) and Sonnet 3.7 with thinking (0.04%). We also investigate Unfaithful Illogical Shortcuts, where models use subtly illogical reasoning to make speculative answers to hard math problems seem rigorously proven. Our findings indicate that while CoT can be useful for assessing outputs, it is not a complete account of the internal process that produced the model's answer and should be used with caution in agentic or safety-critical settings.",
+  "needs_fetch": false
+ },
+ {
+  "id": 170,
+  "title": "Do reasoning models use their scratchpad like we do? Evidence from distilling paraphrases",
+  "org": "anthropic",
+  "date": "2025-03-11",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/distill-paraphrases/",
+  "abstract": "We provide some evidence that Claude 3.7 Sonnet doesn't encode hidden reasoning in its scratchpad by showing that training it to use paraphrased versions of the scratchpads does not degrade performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1482,
+  "title": "Computational modeling of reversal learning impairments in schizophrenia and bipolar disorder reveals shared failure to exploit rewards.",
+  "org": "deepmind",
+  "date": "2025-03-10",
+  "venue": "Journal of Psychopathology and Clinical Science",
+  "url": "https://doi.org/10.1037/abn0000944",
+  "abstract": "= 53) performed a probabilistic reversal learning task. This task switches the rewarded stimulus at various times throughout the task. Our analyses leveraged a Hidden Markov Model to examine trial-by-trial decisions of participants to reveal the differences between patient groups in their response to reward feedback. Whereas no patient group showed difficulty reversing their preferred categories after a switch in the task's contingencies and bipolar patient performance was spared in some other ways, all patient groups made more errors throughout the task because of a greater tendency to shift away from rewarded categories (i.e., win-switching). Furthermore, patients' cognitive ability is specifically related to this aspect of the task. Rather than validating a Kraepelinian dichotomy, these findings suggest that a failure to exploit rewards may reflect a mechanistic deficit common across both affective and nonaffective psychoses related to cognitive impairments in patients. (PsycInfo Database Record (c) 2025 APA, all rights reserved).",
+  "needs_fetch": false
+ },
+ {
+  "id": 980,
+  "title": "Detecting misbehavior in frontier reasoning models",
+  "org": "openai",
+  "date": "2025-03-10",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/chain-of-thought-monitoring/",
+  "abstract": "Frontier reasoning models exploit loopholes when given the chance. We show we can detect exploits using an LLM to monitor their chains-of-thought. Penalizing their “bad thoughts” doesn’t stop the majority of misbehavior—it makes them hide their intent.",
+  "needs_fetch": false
+ },
+ {
+  "id": 718,
+  "title": "TIPS: Text-Image Pretraining with Spatial awareness",
+  "org": "deepmind",
+  "date": "2025-03-10",
+  "venue": "ICLR 2025",
+  "url": "https://arxiv.org/abs/2410.16512",
+  "abstract": "While image-text representation learning has become very popular in recent years, existing models tend to lack spatial awareness and have limited direct applicability for dense understanding tasks. For this reason, self-supervised image-only pretraining is still the go-to method for many dense vision applications (e.g. depth estimation, semantic segmentation), despite the lack of explicit supervisory signals. In this paper, we close this gap between image-text and self-supervised learning, by proposing a novel general-purpose image-text model, which can be effectively used off the shelf for dense and global vision tasks. Our method, which we refer to as Text-Image Pretraining with Spatial awareness (TIPS), leverages two simple and effective insights. First, on textual supervision: we reveal that replacing noisy web image captions by synthetically generated textual descriptions boosts dense understanding performance significantly, due to a much richer signal for learning spatially aware representations. We propose an adapted training method that combines noisy and synthetic captions, resulting in improvements across both dense and global understanding tasks. Second, on the learning technique: we propose to combine contrastive image-text learning with self-supervised masked image modeling, to encourage spatial coherence, unlocking substantial enhancements for downstream applications. Building on these two ideas, we scale our model using the transformer architecture, trained on ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2715,
+  "title": "Recycling Scraps: Improving Private Learning by Leveraging Checkpoints]{Recycling Scraps: Improving Private Learning by Leveraging Checkpoints",
+  "org": "openai",
+  "date": "2025-03-07",
+  "venue": "Proceedings on Privacy Enhancing Technologies",
+  "url": "https://doi.org/10.56553/popets-2025-0079",
+  "abstract": "DP training pipelines for modern neural networks are iterative and generate multiple checkpoints. However, all except the final checkpoint are discarded after training. In this work, we propose novel methods to utilize intermediate checkpoints to improve prediction accuracy and estimate uncertainty in DP predictions. First, we design a general framework that uses aggregates of intermediate checkpoints during training to increase the accuracy of DP ML techniques. Specifically, we demonstrate that training over aggregates can provide significant gains in prediction accuracy over the existing state-of-the-art for StackOverflow, CIFAR10 and CIFAR100 datasets. For instance, we improve the state-of-the-art DP StackOverflow accuracies to 22.74% (+2.06% relative) for epsilon=8.2, and 23.90% (+2.09%) for epsilon=18.9. Furthermore, these gains magnify in settings with periodically varying training data distributions. We also demonstrate that our methods achieve relative improvements of 0.54% and 62.6% in terms of utility and variance, on a proprietary, production-grade pCVR task. Lastly, we initiate an exploration into estimating the uncertainty (variance) that DP noise adds in the predictions of DP ML models. We prove that, under standard assumptions on the loss function, the sample variance from last few checkpoints provides a good approximation of the variance of the final model of a DP run. Empirically, we show that the last few checkpoints can provide a reasonable lower bound for ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1483,
+  "title": "Neural mechanisms of credit assignment for delayed outcomes during contingent learning",
+  "org": "deepmind",
+  "date": "2025-03-06",
+  "venue": "eLife",
+  "url": "https://doi.org/10.7554/elife.101841.2",
+  "abstract": "Summary Adaptive behavior in complex environments critically relies on the ability to appropriately link specific choices or actions to their outcomes. However, the neural mechanisms that support the ability to credit only those past choices believed to have caused the observed outcomes remain unclear. Here, we leverage multivariate pattern analyses of functional magnetic resonance imaging (fMRI) data and an adaptive learning task to shed light on the underlying neural mechanisms of such specific credit assignment. We find that the lateral orbitofrontal cortex (lOFC) and hippocampus (HC) code for the causal choice identity when credit needs to be assigned for choices that are separated from outcomes by a long delay, even when this delayed transition is punctuated by interim decisions. Further, we show when interim decisions must be made, learning is additionally supported by lateral frontopolar cortex (lFPC). Our results indicate that lFPC holds previous causal choices in a “pending” state until a relevant outcome is observed, and the fidelity of these representations predicts the fidelity of subsequent causal choice representations in lOFC and HC during credit assignment. Together, these results highlight the importance of the timely reinstatement of specific causes in lOFC and HC in learning choice-outcome relationships when delays and choices intervene, a critical component of real-world learning and decision making.",
+  "needs_fetch": false
+ },
+ {
+  "id": 358,
+  "title": "How to Mitigate Overfitting in Weak-to-strong Generalization?",
+  "org": "other",
+  "date": "2025-03-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.04249",
+  "abstract": "Aligning powerful AI models on tasks that surpass human evaluation capabilities is the central problem of \\textbf{superalignment}. To address this problem, weak-to-strong generalization aims to elicit the capabilities of strong models through weak supervisors and ensure that the behavior of strong models aligns with the intentions of weak supervisors without unsafe behaviors such as deception. Although weak-to-strong generalization exhibiting certain generalization capabilities, strong models exhibit significant overfitting in weak-to-strong generalization: Due to the strong fit ability of strong models, erroneous labels from weak supervisors may lead to overfitting in strong models. In addition, simply filtering out incorrect labels may lead to a degeneration in question quality, resulting in a weak generalization ability of strong models on hard questions. To mitigate overfitting in weak-to-strong generalization, we propose a two-stage framework that simultaneously improves the quality of supervision signals and the quality of input questions. Experimental results in three series of large language models and two mathematical benchmarks demonstrate that our framework significantly improves PGR compared to naive weak-to-strong generalization, even achieving up to 100\\% PGR on some models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1191,
+  "title": "Anthropic: Responsible Scaling Policy",
+  "org": "anthropic",
+  "date": "2025-03-05",
+  "venue": "SuperIntelligence - Robotics - Safety & Alignment",
+  "url": "https://doi.org/10.70777/si.v2i1.13657",
+  "abstract": "In September 2023, we released our Responsible Scaling Policy (RSP), a public commitment not to train or deploy models capable of causing catastrophic harm unless we have implemented safety and security measures that will keep risks below acceptable levels. We are now updating our RSP to account for the lessons we’ve learned over the last year. This updated policy reflects our view that risk governance in this rapidly evolving domain should be proportional, iterative, and exportable. AI Safety Level Standards (ASL Standards) are a set of technical and operational measures for safely training and deploying frontier AI models. These currently fall into two categories: Deployment Standards and Security Standards. As model capabilities increase, so will the need for stronger safeguards, which are captured in successively higher ASL Standards. At present, all of our models must meet the ASL-2 Deployment and Security Standards. To determine when a model has become sufficiently advanced such that its deployment and security measures should be strengthened, we use the concepts of Capability Thresholds and Required Safeguards. A Capability Threshold tells us when we need to upgrade our protections, and the corresponding Required Safeguards tell us what standard should apply.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1190,
+  "title": "On DeepSeek and Export Controls",
+  "org": "anthropic",
+  "date": "2025-03-05",
+  "venue": "SuperIntelligence - Robotics - Safety & Alignment",
+  "url": "https://doi.org/10.70777/si.v2i1.10695",
+  "abstract": "DeepSeek does not \"do for $6M5 what cost US AI companies billions\". I can only speak for Anthropic, but Claude 3.5 Sonnet is a mid-sized model that cost a few $10M's to train (I won't give an exact number). Also, 3.5 Sonnet was not trained in any way that involved a larger or more expensive model (contrary to some rumors). Sonnet's training was conducted 9-12 months ago, and DeepSeek's model was trained in November/December, while Sonnet remains notably ahead in many internal and external evals. Thus, I think a fair statement is \"DeepSeek produced a model close to the performance of US models 7-10 months older, for a good deal less cost (but not anywhere near the ratios people have suggested)\".",
+  "needs_fetch": false
+ },
+ {
+  "id": 719,
+  "title": "KiVA: Kid-Inspired Visual Analogies for Testing Large Multimodal Models",
+  "org": "deepmind",
+  "date": "2025-03-05",
+  "venue": "ICLR 2025",
+  "url": "https://arxiv.org/abs/2407.17773",
+  "abstract": "This paper investigates visual analogical reasoning in large multimodal models (LMMs) compared to human adults and children. A \"visual analogy\" is an abstract rule inferred from one image and applied to another. While benchmarks exist for testing visual reasoning in LMMs, they require advanced skills and omit basic visual analogies that even young children can make. Inspired by developmental psychology, we propose a new benchmark of 4,300 visual transformations of everyday objects to test LMMs on visual analogical reasoning and compare them to children (ages three to five) and to adults. We structure the evaluation into three stages: identifying what changed (e.g., color, number, etc.), how it changed (e.g., added one object), and applying the rule to new scenarios. Our findings show that while GPT-o1, GPT-4V, LLaVA-1.5, and MANTIS identify the \"what\" effectively, they struggle with quantifying the \"how\" and extrapolating this rule to new objects. In contrast, children and adults exhibit much stronger analogical reasoning at all three stages. Additionally, the strongest tested model, GPT-o1, performs better in tasks involving simple surface-level visual attributes like color and size, correlating with quicker human adult response times. Conversely, more complex tasks such as number, rotation, and reflection, which necessitate extensive cognitive processing and understanding of extrinsic spatial properties in the physical world, present more significant challenges. Altogether,",
+  "needs_fetch": false
+ },
+ {
+  "id": 584,
+  "title": "Why Is Spatial Reasoning Hard for VLMs? An Attention Mechanism Perspective on Focus Areas",
+  "org": "deepmind",
+  "date": "2025-03-03",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2503.01773",
+  "abstract": "Large Vision Language Models (VLMs) have long struggled with spatial reasoning tasks. Surprisingly, even simple spatial reasoning tasks, such as recognizing \"under\" or \"behind\" relationships between only two objects, pose significant challenges for current VLMs. In this work, we study the spatial reasoning challenge from the lens of mechanistic interpretability, diving into the model's internal states to examine the interactions between image and text tokens. By tracing attention distribution over the image through out intermediate layers, we observe that successful spatial reasoning correlates strongly with the model's ability to align its attention distribution with actual object locations, particularly differing between familiar and unfamiliar spatial relationships. Motivated by these findings, we propose ADAPTVIS based on inference-time confidence scores to sharpen the attention on highly relevant regions when confident, while smoothing and broadening the attention window to consider a wider context when confidence is lower. This training-free decoding method shows significant improvement (e.g., up to a 50 absolute point improvement) on spatial reasoning benchmarks such as WhatsUp and VSR with negligible cost. We make code and data publicly available for research purposes at https://github.com/shiqichen17/AdaptVis.",
+  "needs_fetch": false
+ },
+ {
+  "id": 509,
+  "title": "Scaling Law Phenomena Across Regression Paradigms: Multiple and Kernel Approaches",
+  "org": "other",
+  "date": "2025-03-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.01314",
+  "abstract": "Recently, Large Language Models (LLMs) have achieved remarkable success. A key factor behind this success is the scaling law observed by OpenAI. Specifically, for models with Transformer architecture, the test loss exhibits a power-law relationship with model size, dataset size, and the amount of computation used in training, demonstrating trends that span more than seven orders of magnitude. This scaling law challenges traditional machine learning wisdom, notably the Oscar Scissors principle, which suggests that an overparametrized algorithm will overfit the training datasets, resulting in poor test performance. Recent research has also identified the scaling law in simpler machine learning contexts, such as linear regression. However, fully explaining the scaling law in large practical models remains an elusive goal. In this work, we advance our understanding by demonstrating that the scaling law phenomenon extends to multiple regression and kernel regression settings, which are significantly more expressive and powerful than linear methods. Our analysis provides deeper insights into the scaling law, potentially enhancing our understanding of LLMs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1484,
+  "title": "Drums of high width",
+  "org": "deepmind",
+  "date": "2025-03-01",
+  "venue": "Proceedings of the London Mathematical Society",
+  "url": "https://doi.org/10.1112/plms.70031",
+  "abstract": "Abstract We provide a family of 5‐dimensional prismatoids whose width grows linearly in the number of vertices. This provides a new infinite family of counter‐examples to the Hirsch conjecture whose excess width grows linearly in the number of vertices, and answers a question of Matschke, Santos and Weibel.",
+  "needs_fetch": false
+ },
+ {
+  "id": 981,
+  "title": "OpenAI GPT-4.5 System Card",
+  "org": "openai",
+  "date": "2025-02-27",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-4-5-system-card/",
+  "abstract": "We’re releasing a research preview of OpenAI GPT‑4.5, our largest and most knowledgeable model yet.",
+  "needs_fetch": true
+ },
+ {
+  "id": 720,
+  "title": "HCI for AGI",
+  "org": "deepmind",
+  "date": "2025-02-27",
+  "venue": "ACM Interactions",
+  "url": "https://dl.acm.org/doi/pdf/10.1145/3708815",
+  "abstract": "The past few years have seen rapid advances in frontier AI models demonstrating increasing performance and generality. As progress continues toward AGI (“Artificial General Intelligence”), HCI scholarship and practice has a critical role to play in ensuring that AI technology is useful to and usable by people to accomplish tasks they value. HCI insights can help us to maximize the benefit of AI technologies to individuals, communities, and society, while helping us to understand how to mitigate harms. In this feature article, I describe a research vision for the field of HCI in the AGI era, overviewing how HCI researchers can innovate in interaction techniques, interface designs, physical form-factors, design methods, evaluation methods, benchmarking approaches, and data collection techniques.",
+  "needs_fetch": false
+ },
+ {
+  "id": 174,
+  "title": "Monitoring Computer Use via Hierarchical Summarization",
+  "org": "anthropic",
+  "date": "2025-02-27",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/summarization-for-monitoring/",
+  "abstract": "We introduce hierarchical summarization for monitoring and describe how we use it to protect Computer Use capabilities.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1489,
+  "title": "Generating Long-Take Videos via Effective Keyframes and Guidance",
+  "org": "deepmind",
+  "date": "2025-02-26",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61041.2025.00365",
+  "abstract": "We tackle the challenge of generating long-take videos encompassing multiple non-repetitive yet coherent events. Existing approaches generate long videos conditioned on single input guidance, often leading to repetitive content. To address this problem, we develop a framework that uses multiple guidance sources to enhance long video generation. The main idea of our approach is to decouple video generation into keyframe generation and frame interpolation. In this process, keyframe generation focuses on cre-ating multiple coherent events, while the frame interpolation stage generates smooth intermediate frames between keyframes using existing video generation models. A novel mask attention module is further introduced to improve co-herence and efficiency. Experiments on challenging real-world videos demonstrate that the proposed method outper-forms prior methods by up to 9.5% in objective metrics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1488,
+  "title": "EgoCast: Forecasting Egocentric Human Pose in the Wild",
+  "org": "deepmind",
+  "date": "2025-02-26",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61041.2025.00569",
+  "abstract": "Accurately estimating and forecasting human body pose is important for enhancing the user's sense of immersion in Augmented Reality. Addressing this need, our paper introduces EgoCast, a bimodal method for 3D human pose forecasting using egocentric videos and proprioceptive data. We study the task of human pose forecasting in a realistic setting, extending the boundaries of temporal forecasting in dynamic scenes and building on the current framework for current pose estimation in the wild. We introduce a current-frame estimation module that generates pseudo-groundtruth poses for inference, eliminating the need for past groundtruth poses typically required by current methods during forecasting. Our experimental results on the recent Ego-Exo4D and Aria Digital Twin datasets validate EgoCast for real-life motion estimation. On the Ego-Exo4D Body Pose 2024 Challenge, our method significantly outperforms the state-of-the-art approaches, laying the groundwork for future research in human pose estimation and forecasting in unscripted activities with egocentric inputs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1487,
+  "title": "Fine-grained Controllable Video Generation via Object Appearance and Context",
+  "org": "deepmind",
+  "date": "2025-02-26",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61041.2025.00364",
+  "abstract": "While text-to-video generation shows state-of-the-art results, fine-grained output control remains challenging for users relying solely on natural language prompts. In this work, we present FACTOR for fine-grained controllable video generation. FACTOR provides an intuitive interface where users can manipulate the trajectory and appearance of individual objects in conjunction with a text prompt. We propose a unified framework to integrate these control signals into an existing text-to-video model. Our approach involves a multimodal condition module with a joint encoder, control-attention layers, and an appearance augmentation mechanism. This design enables FACTOR to generate videos that closely align with detailed user specifications. Extensive experiments on standard benchmarks and user-provided inputs demonstrate a notable improvement in controllability by FACTOR over competitive baselines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1486,
+  "title": "Learning Visual Grounding from Generative Vision and Language Model",
+  "org": "deepmind",
+  "date": "2025-02-26",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61041.2025.00782",
+  "abstract": "Visual grounding tasks aim to localize image regions based on natural language references. In this work, we ex-plore whether generative VLMs predominantly trained on image-text data could be leveraged to scale up the text an-notation of visual grounding data. We find that grounding knowledge already exists in generative VLM and can be elicited by proper prompting. We thus prompt a VLM to generate object-level descriptions by feeding it object regions from existing object detection datasets. We fur-ther propose attribute modeling to explicitly capture the im-portant object attributes, and spatial relation modeling to capture inter-object relationship, both of which are common linguistic pattern in referring expression. Our constructed dataset (500K images, 1M objects, 16M referring expressions) is one of the largest grounding datasets to date, and the first grounding dataset with purely model-generated queries and human-annotated objects. To verify the qual-ity of this data, we conduct zero-shot transfer experiments to the popular RefCoco benchmarks for both referring expression comprehension (REC) and segmentation (RES) tasks. On both tasks, our model significantly outperform the state-of-the-art approaches without using human anno-tated visual grounding data. Our results demonstrate the promise of generative VLM to scale up visual grounding in the real world.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1485,
+  "title": "Unsupervised Video Highlight Detection by Learning from Audio and Visual Recurrence",
+  "org": "deepmind",
+  "date": "2025-02-26",
+  "venue": null,
+  "url": "https://doi.org/10.1109/wacv61041.2025.00843",
+  "abstract": "With the exponential growth of video content, the need for automated video highlight detection to extract key moments or highlights from lengthy videos has become increasingly pressing. This technology has the potential to enhance user experiences by allowing quick access to relevant content across diverse domains. Existing methods typically rely either on expensive manually labeled frame-level annotations, or on a large external dataset of videos for weak supervision through category information. To overcome this, we focus on unsupervised video highlight detection, eliminating the need for manual annotations. We propose a novel unsupervised approach which capitalizes on the premise that significant moments tend to recur across multiple videos of the similar category in both audio and visual modalities. Surprisingly, audio remains under-explored, especially in unsupervised algorithms, despite its potential to detect key moments. Through a clustering technique, we identify pseudo-categories of videos and compute audio pseudo-highlight scores for each video by measuring the similarities of audio features among audio clips of all the videos within each pseudo-category. Similarly, we also compute visual pseudo-highlight scores for each video using visual features. Then, we combine audio and visual pseudo-highlights to create the audio-visual pseudo ground-truth highlight of each video for training an audio-visual highlight detection network. Extensive experiments and ablation stu",
+  "needs_fetch": false
+ },
+ {
+  "id": 721,
+  "title": "Partition Tree Weighting for Non-Stationary Stochastic Bandits",
+  "org": "deepmind",
+  "date": "2025-02-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2502.19325",
+  "abstract": "This paper considers a generalisation of universal source coding for interaction data, namely data streams that have actions interleaved with observations. Our goal will be to construct a coding distribution that is both universal and can be used as a control policy. Allowing for action generation needs careful treatment, as naive approaches which do not distinguish between actions and observations run into the self-delusion problem in universal settings. We showcase our perspective in the context of the challenging non-stationary stochastic bernoulli bandit problem. Our main contribution is an efficient and high performing algorithm for the non-stationary Stochastic bernoulli bandit problem that generalises the Partition Tree Weighting universal source coding technique for passive prediction to the control setting.",
+  "needs_fetch": false
+ }
+]

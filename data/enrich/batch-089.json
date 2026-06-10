@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2857,
+  "title": "A Discussion of 'Adversarial Examples Are Not Bugs, They Are Features': Robust Feature Leakage",
+  "org": "openai",
+  "date": "2019-08-06",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00019.2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2856,
+  "title": "A Discussion of 'Adversarial Examples Are Not Bugs, They Are Features': Two Examples of Useful, Non-Robust Features",
+  "org": "openai",
+  "date": "2019-08-06",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00019.3",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2855,
+  "title": "A Discussion of 'Adversarial Examples Are Not Bugs, They Are Features': Adversarial Examples are Just Bugs, Too",
+  "org": "openai",
+  "date": "2019-08-06",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00019.5",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2854,
+  "title": "A Discussion of 'Adversarial Examples Are Not Bugs, They Are Features'",
+  "org": "openai",
+  "date": "2019-08-06",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00019",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2534,
+  "title": "Representation of uncertainty in macaque visual cortex",
+  "org": "deepmind",
+  "date": "2019-08-03",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/724021",
+  "abstract": "Uncertainty is intrinsic to perception. Neural circuits which process sensory information must therefore also represent the reliability of this information. How they do so is a topic of debate. We propose a view of visual cortex in which average neural response strength encodes stimulus features, while cross-neuron variability in response gain encodes the uncertainty of these features. To test our theory, we studied spiking activity of neurons in macaque V1 and V2 elicited by repeated presentations of stimuli whose uncertainty was manipulated in distinct ways. We show that gain variability of individual neurons is tuned to stimulus uncertainty, that this tuning is invariant to the source of uncertainty, and that it is specific to the features encoded by these neurons. We demonstrate that this behavior naturally arises from known gain-control mechanisms, and derive how downstream circuits can jointly decode stimulus features and their uncertainty from sensory population activity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2535,
+  "title": "A Sufficient Condition for Small-Signal Stability and Construction of Robust Stability Region",
+  "org": "deepmind",
+  "date": "2019-08-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1811.03805",
+  "abstract": "The small-signal stability is an integral part of the power system security analysis. The introduction of renewable source related uncertainties is making the stability assessment difficult as the equilibrium point is varying rapidly. This paper focuses on the Differential Algebraic Equation (DAE) formulation of power systems and bridges the gap between the conventional reduced system and the original one using logarithmic norm. We propose a sufficient condition for stability using Bilinear Matrix Inequality and its inner approximation as Linear Matrix Inequality. Another contribution is the construction of robust stability regions in state-space in contrast to most existing approaches trying same in the parameter space. Performance evaluation of the sufficiency condition and its inner approximation has been given with the necessary and sufficient condition for a small-scale test case. The paper provides a necessary base to develop tractable construction techniques for the robust stability region of power systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2538,
+  "title": "Developing Deep Learning Continuous Risk Models for Early Adverse Event Prediction in Electronic Health Records: an AKI Case Study",
+  "org": "deepmind",
+  "date": "2019-07-31",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.2.10083/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2537,
+  "title": "Evaluation of a digitally-enabled care pathway for acute kidney injury management in hospital emergency admissions",
+  "org": "deepmind",
+  "date": "2019-07-31",
+  "venue": "npj Digital Medicine",
+  "url": "https://doi.org/10.1038/s41746-019-0100-6",
+  "abstract": "Abstract We developed a digitally enabled care pathway for acute kidney injury (AKI) management incorporating a mobile detection application, specialist clinical response team and care protocol. Clinical outcome data were collected from adults with AKI on emergency admission before (May 2016 to January 2017) and after (May to September 2017) deployment at the intervention site and another not receiving the intervention. Changes in primary outcome (serum creatinine recovery to ≤120% baseline at hospital discharge) and secondary outcomes (30-day survival, renal replacement therapy, renal or intensive care unit (ICU) admission, worsening AKI stage and length of stay) were measured using interrupted time-series regression. Processes of care data (time to AKI recognition, time to treatment) were extracted from casenotes, and compared over two 9-month periods before and after implementation (January to September 2016 and 2017, respectively) using pre–post analysis. There was no step change in renal recovery or any of the secondary outcomes. Trends for creatinine recovery rates (estimated odds ratio (OR) = 1.04, 95% confidence interval (95% CI): 1.00–1.08, p = 0.038) and renal or ICU admission (OR = 0.95, 95% CI: 0.90–1.00, p = 0.044) improved significantly at the intervention site. However, difference-in-difference analyses between sites for creatinine recovery (estimated OR = 0.95, 95% CI: 0.90–1.00, p = 0.053) and renal or ICU admission (OR = 1.06, 95% CI: 0.98–1.16, p = 0.140) w",
+  "needs_fetch": false
+ },
+ {
+  "id": 2536,
+  "title": "A clinically applicable approach to continuous prediction of future acute kidney injury",
+  "org": "deepmind",
+  "date": "2019-07-31",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-019-1390-1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2858,
+  "title": "An Atari Model Zoo for Analyzing, Visualizing, and Comparing Deep Reinforcement Learning Agents",
+  "org": "openai",
+  "date": "2019-07-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1812.07069",
+  "abstract": "Much human and computational effort has aimed to improve how deep reinforcement learning (DRL) algorithms perform on benchmarks such as the Atari Learning Environment. Comparatively less effort has focused on understanding what has been learned by such methods, and investigating and comparing the representations learned by different families of DRL algorithms. Sources of friction include the onerous computational requirements, and general logistical and architectural complications for running DRL algorithms at scale. We lessen this friction, by (1) training several algorithms at scale and releasing trained models, (2) integrating with a previous DRL model release, and (3) releasing code that makes it easy for anyone to load, visualize, and analyze such models. This paper introduces the Atari Zoo framework, which contains models trained across benchmark Atari games, in an easy-to-use format, as well as code that implements common modes of analysis and connects such models to a popular neural network visualization library. Further, to demonstrate the potential of this dataset and software package, we show initial quantitative and qualitative comparisons between the performance and representations of several DRL algorithms, highlighting interesting and previously unknown distinctions between them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2544,
+  "title": "Iterative Budgeted Exponential Search",
+  "org": "deepmind",
+  "date": "2019-07-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1907.13062",
+  "abstract": "We tackle two long-standing problems related to re-expansions in heuristic search algorithms. For graph search, A* can require Ω(2ⁿ) expansions, where n is the number of states within the final f bound. Existing algorithms that address this problem like B and B’ improve this bound to Ω(n²). For tree search, IDA* can also require Ω(n²) expansions. We describe a new algorithmic framework that iteratively controls an expansion budget and solution cost limit, giving rise to new graph and tree search algorithms for which the number of expansions is O(n log C*), where C* is the optimal solution cost. Our experiments show that the new algorithms are robust in scenarios where existing algorithms fail. In the case of tree search, our new algorithms have no overhead over IDA* in scenarios to which IDA* is well suited and can therefore be recommended as a general replacement for IDA*.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2543,
+  "title": "Perturbed-History Exploration in Stochastic Multi-Armed Bandits",
+  "org": "deepmind",
+  "date": "2019-07-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1902.10089",
+  "abstract": "We propose an online algorithm for cumulative regret minimization in a stochastic multi-armed bandit. The algorithm adds O(t) i.i.d. pseudo-rewards to its history in round t and then pulls the arm with the highest average reward in its perturbed history. Therefore, we call it perturbed-history exploration (PHE). The pseudo-rewards are carefully designed to offset potentially underestimated mean rewards of arms with a high probability. We derive near-optimal gap-dependent and gap-free bounds on the n-round regret of PHE. The key step in our analysis is a novel argument that shows that randomized Bernoulli rewards lead to optimism. Finally, we empirically evaluate PHE and show that it is competitive with state-of-the-art baselines.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2542,
+  "title": "Three-Player Wasserstein GAN via Amortised Duality",
+  "org": "deepmind",
+  "date": "2019-07-28",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2019/305",
+  "abstract": "We propose a new formulation for learning generative adversarial networks (GANs) using optimal transport cost (the general form of Wasserstein distance) as the objective criterion to measure the dissimilarity between target distribution and learned distribution. Our formulation is based on the general form of the Kantorovich duality which is applicable to optimal transport with a wide range of cost functions that are not necessarily metric. To make optimising this duality form amenable to gradient-based methods, we employ a function that acts as an amortised optimiser for the innermost optimisation problem. Interestingly, the amortised optimiser can be viewed as a mover since it strategically shifts around data points. The resulting formulation is a sequential min-max-min game with 3 players: the generator, the critic, and the mover where the new player, the mover, attempts to fool the critic by shifting the data around. Despite involving three players, we demonstrate that our proposed formulation can be trained reasonably effectively via a simple alternative gradient learning strategy. Compared with the existing Lipschitz-constrained formulations of Wasserstein GAN on CIFAR-10, our model yields significantly better diversity scores than weight clipping and comparable performance to gradient penalty method.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2541,
+  "title": "Learning Generative Adversarial Networks from Multiple Data Sources",
+  "org": "deepmind",
+  "date": "2019-07-28",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2019/391",
+  "abstract": "Generative Adversarial Networks (GANs) are a powerful class of deep generative models. In this paper, we extend GAN to the problem of generating data that are not only close to a primary data source but also required to be different from auxiliary data sources. For this problem, we enrich both GANs' formulations and applications by introducing pushing forces that thrust generated samples away from given auxiliary data sources. We term our method Push-and-Pull GAN (P2GAN). We conduct extensive experiments to demonstrate the merit of P2GAN in two applications: generating data with constraints and addressing the mode collapsing problem. We use CIFAR-10, STL-10, and ImageNet datasets and compute Fréchet Inception Distance to evaluate P2GAN's effectiveness in addressing the mode collapsing problem. The results show that P2GAN outperforms the state-of-the-art baselines. For the problem of generating data with constraints, we show that P2GAN can successfully avoid generating specific features such as black hair.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2540,
+  "title": "A Dual Approach to Verify and Train Deep Networks",
+  "org": "deepmind",
+  "date": "2019-07-28",
+  "venue": null,
+  "url": "https://doi.org/10.24963/ijcai.2019/854",
+  "abstract": "This paper addressed the problem of formally verifying desirable properties of neural networks, i.e., obtaining provable guarantees that neural networks satisfy specifications relating their inputs and outputs (e.g., robustness to bounded norm adversarial perturbations). Most previous work on this topic was limited in its applicability by the size of the network, network architecture and the complexity of properties to be verified. In contrast, our framework applies to a general class of activation functions and specifications. We formulate verification as an optimization problem (seeking to find the largest violation of the specification) and solve a Lagrangian relaxation of the optimization problem to obtain an upper bound on the worst case violation of the specification being verified. Our approach is anytime, i.e., it can be stopped at any time and a valid bound on the maximum violation can be obtained. Finally, we highlight how this approach can be used to train models that are amenable to verification.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2539,
+  "title": "Computing Approximate Equilibria in Sequential Adversarial Games by Exploitability Descent",
+  "org": "deepmind",
+  "date": "2019-07-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1903.05614",
+  "abstract": "In this paper, we present exploitability descent, a new algorithm to compute approximate equilibria in two-player zero-sum extensive-form games with imperfect information, by direct policy optimization against worst-case opponents. We prove that when following this optimization, the exploitability of a player's strategy converges asymptotically to zero, and hence when both players employ this optimization, the joint policies converge to a Nash equilibrium. Unlike fictitious play (XFP) and counterfactual regret minimization (CFR), our convergence result pertains to the policies being optimized rather than the average policies. Our experiments demonstrate convergence rates comparable to XFP and CFR in four benchmark games in the tabular case. Using function approximation, we find that our algorithm outperforms the tabular version in two of the games, which, to the best of our knowledge, is the first such result in imperfect information games among this class of algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2545,
+  "title": "Efficient differentiable programming in a functional array-processing language",
+  "org": "deepmind",
+  "date": "2019-07-26",
+  "venue": "Proceedings of the ACM on Programming Languages",
+  "url": "https://arxiv.org/abs/1806.02136",
+  "abstract": "We present a system for the automatic differentiation (AD) of a higher-order functional array-processing language. The core functional language underlying this system simultaneously supports both source-to-source forward-mode AD and global optimisations such as loop transformations. In combination, gradient computation with forward-mode AD can be as efficient as reverse mode, and that the Jacobian matrices required for numerical algorithms such as Gauss-Newton and Levenberg-Marquardt can be efficiently computed.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2546,
+  "title": "A Generalized Framework for Population Based Training",
+  "org": "deepmind",
+  "date": "2019-07-25",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3292500.3330649",
+  "abstract": "Population Based Training (PBT) is a recent approach that jointly optimizes neural network weights and hyperparameters which periodically copies weights of the best performers and mutates hyperparameters during training. Previous PBT implementations have been synchronized glass-box systems. We propose a general, black-box PBT framework that distributes many asynchronous \"trials\" (a small number of training steps with warm-starting) across a cluster, coordinated by the PBT controller. The black-box design does not make assumptions on model architectures, loss functions or training procedures. Our system supports dynamic hyperparameter schedules to optimize both differentiable and non-differentiable metrics. We apply our system to train a state-of-the-art WaveNet generative model for human voice synthesis. We show that our PBT system achieves better accuracy and faster convergence compared to existing methods, given the same computational resource.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2549,
+  "title": "Automated Development of Deep Learning Models to Diagnose Retinal Disease from Fundus and Optical Coherence Tomography Images",
+  "org": "deepmind",
+  "date": "2019-07-22",
+  "venue": null,
+  "url": "https://openalex.org/W3049221462",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2548,
+  "title": "Low-Variance and Zero-Variance Baselines for Extensive-Form Games",
+  "org": "deepmind",
+  "date": "2019-07-22",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1907.09633",
+  "abstract": "Extensive-form games (EFGs) are a common model of multi-agent interactions with imperfect information. State-of-the-art algorithms for solving these games typically perform full walks of the game tree that can prove prohibitively slow in large games. Alternatively, sampling-based methods such as Monte Carlo Counterfactual Regret Minimization walk one or more trajectories through the tree, touching only a fraction of the nodes on each iteration, at the expense of requiring more iterations to converge due to the variance of sampled values. In this paper, we extend recent work that uses baseline estimates to reduce this variance. We introduce a framework of baseline-corrected values in EFGs that generalizes the previous work. Within our framework, we propose new baseline functions that result in significantly reduced variance compared to existing techniques. We show that one particular choice of such a function --- predictive baseline --- is provably optimal under certain sampling schemes. This allows for efficient computation of zero-variance value estimates even along sampled trajectories.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2547,
+  "title": "Diagnostic accuracy and interobserver variability of macular disease evaluation using optical coherence tomography",
+  "org": "deepmind",
+  "date": "2019-07-22",
+  "venue": "Investigative Ophthalmology & Visual Science",
+  "url": "https://iovs.arvojournals.org/article.aspx?articleid=2742174",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2550,
+  "title": "Unsupervised separation of dynamics from pixels",
+  "org": "deepmind",
+  "date": "2019-07-20",
+  "venue": "METRON",
+  "url": "https://arxiv.org/abs/1907.12906",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2559,
+  "title": "Model AI Assignments 2019",
+  "org": "deepmind",
+  "date": "2019-07-17",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/5044",
+  "abstract": "The Model AI Assignments session seeks to gather and disseminate the best assignment designs of the Artificial Intelligence (AI) Education community. Recognizing that assignments form the core of student learning experience, we here present abstracts of ten AI assignments from the 2019 session that are easily adoptable, playfully engaging, and flexible for a variety of instructor needs. Assignment specifications and supporting resources may be found at http: //modelai.gettysburg.edu.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2558,
+  "title": "Solving Large Extensive-Form Games with Strategy Constraints",
+  "org": "deepmind",
+  "date": "2019-07-17",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/4011",
+  "abstract": "Extensive-form games are a common model for multiagent interactions with imperfect information. In two-player zerosum games, the typical solution concept is a Nash equilibrium over the unconstrained strategy set for each player. In many situations, however, we would like to constrain the set of possible strategies. For example, constraints are a natural way to model limited resources, risk mitigation, safety, consistency with past observations of behavior, or other secondary objectives for an agent. In small games, optimal strategies under linear constraints can be found by solving a linear program; however, state-of-the-art algorithms for solving large games cannot handle general constraints. In this work we introduce a generalized form of Counterfactual Regret Minimization that provably finds optimal strategies under any feasible set of convex constraints. We demonstrate the effectiveness of our algorithm for finding strategies that mitigate risk in security games, and for opponent modeling in poker games when given only partial observations of private information.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2557,
+  "title": "Meta-Descent for Online, Continual Prediction",
+  "org": "deepmind",
+  "date": "2019-07-17",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/4284",
+  "abstract": "This paper investigates different vector step-size adaptation approaches for non-stationary online, continual prediction problems. Vanilla stochastic gradient descent can be considerably improved by scaling the update with a vector of appropriately chosen step-sizes. Many methods, including AdaGrad, RMSProp, and AMSGrad, keep statistics about the learning process to approximate a second order update—a vector approximation of the inverse Hessian. Another family of approaches use meta-gradient descent to adapt the stepsize parameters to minimize prediction error. These metadescent strategies are promising for non-stationary problems, but have not been as extensively explored as quasi-second order methods. We first derive a general, incremental metadescent algorithm, called AdaGain, designed to be applicable to a much broader range of algorithms, including those with semi-gradient updates or even those with accelerations, such as RMSProp. We provide an empirical comparison of methods from both families. We conclude that methods from both families can perform well, but in non-stationary prediction problems the meta-descent methods exhibit advantages. Our method is particularly robust across several prediction problems, and is competitive with the state-of-the-art method on a large-scale, time-series prediction problem on real data from a mobile robot.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2556,
+  "title": "Variance Reduction in Monte Carlo Counterfactual Regret Minimization (VR-MCCFR) for Extensive Form Games Using Baselines",
+  "org": "deepmind",
+  "date": "2019-07-17",
+  "venue": null,
+  "url": "https://ojs.aaai.org/index.php/AAAI/article/view/4048",
+  "abstract": "Learning strategies for imperfect information games from samples of interaction is a challenging problem. A common method for this setting, Monte Carlo Counterfactual Regret Minimization (MCCFR), can have slow long-term convergence rates due to high variance. In this paper, we introduce a variance reduction technique (VR-MCCFR) that applies to any sampling variant of MCCFR. Using this technique, periteration estimated values and updates are reformulated as a function of sampled values and state-action baselines, similar to their use in policy gradient reinforcement learning. The new formulation allows estimates to be bootstrapped from other estimates within the same episode, propagating the benefits of baselines along the sampled trajectory; the estimates remain unbiased even when bootstrapping from other estimates. Finally, we show that given a perfect baseline, the variance of the value estimates can be reduced to zero. Experimental evaluation shows that VR-MCCFR brings an order of magnitude speedup, while the empirical variance decreases by three orders of magnitude. The decreased variance allows for the first time CFR+ to be used with sampling, increasing the speedup to two orders of magnitude.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2555,
+  "title": "A Grammar-Based Structural CNN Decoder for Code Generation",
+  "org": "deepmind",
+  "date": "2019-07-17",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v33i01.33017055",
+  "abstract": "Code generation maps a program description to executable source code in a programming language. Existing approaches mainly rely on a recurrent neural network (RNN) as the decoder. However, we find that a program contains significantly more tokens than a natural language sentence, and thus it may be inappropriate for RNN to capture such a long sequence. In this paper, we propose a grammar-based structural convolutional neural network (CNN) for code generation. Our model generates a program by predicting the grammar rules of the programming language; we design several CNN modules, including the tree-based convolution and pre-order convolution, whose information is further aggregated by dedicated attentive pooling layers. Experimental results on the HearthStone benchmark dataset show that our CNN code generator significantly outperforms the previous state-of-the-art method by 5 percentage points; additional experiments on several semantic parsing tasks demonstrate the robustness of our model. We also conduct in-depth ablation test to better understand each component of our model.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2554,
+  "title": "SNR: Sub-Network Routing for Flexible Parameter Sharing in Multi-Task Learning",
+  "org": "deepmind",
+  "date": "2019-07-17",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v33i01.3301216",
+  "abstract": "Machine learning applications, such as object detection and content recommendation, often require training a single model to predict multiple targets at the same time. Multi-task learning through neural networks became popular recently, because it not only helps improve the accuracy of many prediction tasks when they are related, but also saves computation cost by sharing model architectures and low-level representations. The latter is critical for real-time large-scale machine learning systems. However, classic multi-task neural networks may degenerate significantly in accuracy when tasks are less related. Previous works (Misra et al. 2016; Yang and Hospedales 2016; Ma et al. 2018) showed that having more flexible architectures in multi-task models, either manually-tuned or softparameter-sharing structures like gating networks, helps improve the prediction accuracy. However, manual tuning is not scalable, and the previous soft-parameter sharing models are either not flexible enough or computationally expensive. In this work, we propose a novel framework called SubNetwork Routing (SNR) to achieve more flexible parameter sharing while maintaining the computational advantage of the classic multi-task neural-network model. SNR modularizes the shared low-level hidden layers into multiple layers of subnetworks, and controls the connection of sub-networks with learnable latent variables to achieve flexible parameter sharing. We demonstrate the effectiveness of our approach on a lar",
+  "needs_fetch": false
+ },
+ {
+  "id": 2553,
+  "title": "CGMH: Constrained Sentence Generation by Metropolis-Hastings Sampling",
+  "org": "deepmind",
+  "date": "2019-07-17",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v33i01.33016834",
+  "abstract": "In real-world applications of natural language generation, there are often constraints on the target sentences in addition to fluency and naturalness requirements. Existing language generation techniques are usually based on recurrent neural networks (RNNs). However, it is non-trivial to impose constraints on RNNs while maintaining generation quality, since RNNs generate sentences sequentially (or with beam search) from the first word to the last. In this paper, we propose CGMH, a novel approach using Metropolis-Hastings sampling for constrained sentence generation. CGMH allows complicated constraints such as the occurrence of multiple keywords in the target sentences, which cannot be handled in traditional RNN-based approaches. Moreover, CGMH works in the inference stage, and does not require parallel corpora for training. We evaluate our method on a variety of tasks, including keywords-to-sentence generation, unsupervised sentence paraphrasing, and unsupervised sentence error correction. CGMH achieves high performance compared with previous supervised methods for sentence generation. Our code is released at https://github.com/NingMiao/CGMH",
+  "needs_fetch": false
+ },
+ {
+  "id": 2552,
+  "title": "Multi-Task Deep Reinforcement Learning with PopArt",
+  "org": "deepmind",
+  "date": "2019-07-17",
+  "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "url": "https://doi.org/10.1609/aaai.v33i01.33013796",
+  "abstract": "The reinforcement learning (RL) community has made great strides in designing algorithms capable of exceeding human performance on specific tasks. These algorithms are mostly trained one task at the time, each new task requiring to train a brand new agent instance. This means the learning algorithm is general, but each solution is not; each agent can only solve the one task it was trained on. In this work, we study the problem of learning to master not one but multiple sequentialdecision tasks at once. A general issue in multi-task learning is that a balance must be found between the needs of multiple tasks competing for the limited resources of a single learning system. Many learning algorithms can get distracted by certain tasks in the set of tasks to solve. Such tasks appear more salient to the learning process, for instance because of the density or magnitude of the in-task rewards. This causes the algorithm to focus on those salient tasks at the expense of generality. We propose to automatically adapt the contribution of each task to the agent’s updates, so that all tasks have a similar impact on the learning dynamics. This resulted in state of the art performance on learning to play all games in a set of 57 diverse Atari games. Excitingly, our method learned a single trained policy - with a single set of weights - that exceeds median human performance. To our knowledge, this was the first time a single agent surpassed human-level performance on this multi-task domain. T",
+  "needs_fetch": false
+ }
+]

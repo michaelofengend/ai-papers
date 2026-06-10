@@ -1,0 +1,302 @@
+[
+ {
+  "id": 356,
+  "title": "Robust Reinforcement Learning from Human Feedback for Large Language Models Fine-Tuning",
+  "org": "other",
+  "date": "2025-04-03",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.03784",
+  "abstract": "Reinforcement learning from human feedback (RLHF) has emerged as a key technique for aligning the output of large language models (LLMs) with human preferences. To learn the reward function, most existing RLHF algorithms use the Bradley-Terry model, which relies on assumptions about human preferences that may not reflect the complexity and variability of real-world judgments. In this paper, we propose a robust algorithm to enhance the performance of existing approaches under such reward model misspecifications. Theoretically, our algorithm reduces the variance of reward and policy estimators, leading to improved regret bounds. Empirical evaluations on LLM benchmark datasets demonstrate that the proposed algorithm consistently outperforms existing methods, with 77-81% of responses being favored over baselines on the Anthropic Helpful and Harmless dataset. The code is available at https://github.com/VRPO/VRPO.",
+  "needs_fetch": false
+ },
+ {
+  "id": 66,
+  "title": "Reasoning models don't always say what they think",
+  "org": "anthropic",
+  "date": "2025-04-03",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/reasoning-models-dont-say-think",
+  "abstract": "Chain-of-thought (CoT) offers a potential boon for AI safety as it allows monitoring a model's CoT to try to understand its intentions and reasoning processes. However, the effectiveness of such monitoring hinges on CoTs faithfully representing models' actual reasoning processes. We evaluate CoT faithfulness of state-of-the-art reasoning models across 6 reasoning hints presented in the prompts and find: (1) for most settings and models tested, CoTs reveal their usage of hints in at least 1% of examples where they use the hint, but the reveal rate is often below 20%, (2) outcome-based reinforcement learning initially improves faithfulness but plateaus without saturating, and (3) when reinforcement learning increases how frequently hints are used (reward hacking), the propensity to verbalize them does not increase, even without training against a CoT monitor. These results suggest that CoT monitoring is a promising way of noticing undesired behaviors during training and evaluations, but that it is not sufficient to rule them out. They also suggest that in settings like ours where CoT reasoning is not necessary, test-time monitoring of CoTs is unlikely to reliably catch rare and catastrophic unexpected behaviors.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1472,
+  "title": "NLP verification: towards a general methodology for certifying robustness",
+  "org": "deepmind",
+  "date": "2025-04-02",
+  "venue": "European Journal of Applied Mathematics",
+  "url": "https://doi.org/10.1017/s0956792525000099",
+  "abstract": "Abstract Machine learning has exhibited substantial success in the field of natural language processing (NLP). For example, large language models have empirically proven to be capable of producing text of high complexity and cohesion. However, at the same time, they are prone to inaccuracies and hallucinations. As these systems are increasingly integrated into real-world applications, ensuring their safety and reliability becomes a primary concern. There are safety critical contexts where such models must be robust to variability or attack and give guarantees over their output. Computer vision had pioneered the use of formal verification of neural networks for such scenarios and developed common verification standards and pipelines, leveraging precise formal reasoning about geometric properties of data manifolds. In contrast, NLP verification methods have only recently appeared in the literature. While presenting sophisticated algorithms in their own right, these papers have not yet crystallised into a common methodology. They are often light on the pragmatical issues of NLP verification, and the area remains fragmented. In this paper, we attempt to distil and evaluate general components of an NLP verification pipeline that emerges from the progress in the field to date. Our contributions are twofold. First, we propose a general methodology to analyse the effect of the embedding gap – a problem that refers to the discrepancy between verification of geometric subspaces, and th",
+  "needs_fetch": false
+ },
+ {
+  "id": 977,
+  "title": "PaperBench: Evaluating AI’s Ability to Replicate AI Research",
+  "org": "openai",
+  "date": "2025-04-02",
+  "venue": "International Conference on Machine Learning",
+  "url": "https://openai.com/index/paperbench/",
+  "abstract": "We introduce PaperBench, a benchmark evaluating the ability of AI agents to replicate state-of-the-art AI research. Agents must replicate 20 ICML 2024 Spotlight and Oral papers from scratch, including understanding paper contributions, developing a codebase, and successfully executing experiments. For objective evaluation, we develop rubrics that hierarchically decompose each replication task into smaller sub-tasks with clear grading criteria. In total, PaperBench contains 8,316 individually gradable tasks. Rubrics are co-developed with the author(s) of each ICML paper for accuracy and realism. To enable scalable evaluation, we also develop an LLM-based judge to automatically grade replication attempts against rubrics, and assess our judge's performance by creating a separate benchmark for judges. We evaluate several frontier models on PaperBench, finding that the best-performing tested agent, Claude 3.5 Sonnet (New) with open-source scaffolding, achieves an average replication score of 21.0%. Finally, we recruit top ML PhDs to attempt a subset of PaperBench, finding that models do not yet outperform the human baseline. We open-source our code (https://github.com/openai/preparedness) to facilitate future research in understanding the AI engineering capabilities of AI agents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 219,
+  "title": "MCP Safety Audit: LLMs with the Model Context Protocol Allow Major Security Exploits",
+  "org": "other",
+  "date": "2025-04-02",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2504.03767",
+  "abstract": "To reduce development overhead and enable seamless integration between potential components comprising any given generative AI application, the Model Context Protocol (MCP) (Anthropic, 2024) has recently been released and subsequently widely adopted. The MCP is an open protocol that standardizes API calls to large language models (LLMs), data sources, and agentic tools. By connecting multiple MCP servers, each defined with a set of tools, resources, and prompts, users are able to define automated workflows fully driven by LLMs. However, we show that the current MCP design carries a wide range of security risks for end users. In particular, we demonstrate that industry-leading LLMs may be coerced into using MCP tools to compromise an AI developer's system through various attacks, such as malicious code execution, remote access control, and credential theft. To proactively mitigate these and related attacks, we introduce a safety auditing tool, MCPSafetyScanner, the first agentic tool to assess the security of an arbitrary MCP server. MCPScanner uses several agents to (a) automatically determine adversarial samples given an MCP server's tools and resources; (b) search for related vulnerabilities and remediations based on those samples; and (c) generate a security report detailing all findings. Our work highlights serious security issues with general-purpose agentic workflows while also providing a proactive tool to audit MCP server safety and address detected vulnerabilities be",
+  "needs_fetch": false
+ },
+ {
+  "id": 2882,
+  "title": "Progress on Attention",
+  "org": "anthropic",
+  "date": "2025-04-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/attention-update/index.html",
+  "abstract": "We report some developing work on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. We'd ask you to treat these results like those of a colleague sharing some thoughts or preliminary experiments for a few minutes at a lab meeting, rather than a mature paper.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2881,
+  "title": "Circuits Updates — April 2025",
+  "org": "anthropic",
+  "date": "2025-04-01",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/april-update/index.html",
+  "abstract": "We report a number of developing ideas on the Anthropic interpretability team, which might be of interest to researchers working actively in this space. Some of these are emerging strands of research where we expect to publish more on in the coming months. Others are minor points we wish to share, since we're unlikely to ever write a paper about them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 714,
+  "title": "Effective Kernel Fuzzing with Learned White-box Test Mutators",
+  "org": "deepmind",
+  "date": "2025-04-01",
+  "venue": "ASPLOS 2025 (Fall Cycle)",
+  "url": "https://sishuaigong.github.io/pdf/asplos25-snowplow.pdf",
+  "abstract": "Kernel fuzzers rely heavily on program mutation to automatically generate new test programs based on existing ones. In particular, program mutation can alter the test’s control and data flow inside the kernel by inserting new system calls, changing the values of call arguments, or performing other program mutations. However, due to the complexity of the kernel code and its user-space interface, finding the effective mutation that can lead to the desired outcome such as increasing the coverage and reaching a target code location is extremely difficult, even with the widespread use of manually-crafted heuristics. This work proposes Snowplow, a kernel fuzzer that uses a learned white-box test mutator to enhance test mutation. The core of Snowplow is an efficient machine learning model that can learn to predict promising mutations given the test program to mutate, its kernel code coverage, and the desired coverage. Snowplow is demonstrated on argument mutations of the kernel tests, and evaluated on recent Linux kernel releases. When fuzzing the kernels for 24 hours, Snowplow shows a significant speedup of discovering new coverage (4.8×∼5.2×) and achieves higher overall coverage (7.0%∼8.6%). In a 7-day fuzzing campaign, Snowplow discovers 86 previously-unknown crashes. Furthermore, the learned mutator is shown to accelerate directed kernel fuzzing by reaching 19 target code locations 8.5× faster and two additional locations that are missed by the state-of-the-art directed kernel f",
+  "needs_fetch": false
+ },
+ {
+  "id": 507,
+  "title": "Recitation over Reasoning: How Cutting-Edge Language Models Can Fail on Elementary School-Level Reasoning Problems?",
+  "org": "other",
+  "date": "2025-04-01",
+  "venue": "ACL",
+  "url": "https://arxiv.org/abs/2504.00509",
+  "abstract": "The rapid escalation from elementary school-level to frontier problems of the difficulty for LLM benchmarks in recent years have weaved a miracle for researchers that we are only inches away from surpassing human intelligence. However, is the LLMs' remarkable reasoning ability indeed comes from true intelligence by human standards, or are they simply reciting solutions witnessed during training at an Internet level? To study this problem, we propose RoR-Bench, a novel, multi-modal benchmark for detecting LLM's recitation behavior when asked simple reasoning problems but with conditions subtly shifted, and conduct empirical analysis on our benchmark. Surprisingly, we found existing cutting-edge LLMs unanimously exhibits extremely severe recitation behavior; by changing one phrase in the condition, top models such as OpenAI-o1 and DeepSeek-R1 can suffer 60 percent performance loss on elementary school-level arithmetic and reasoning problems. Such findings are a wake-up call to the LLM community that compels us to re-evaluate the true intelligence level of cutting-edge LLMs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 166,
+  "title": "Publicly Releasing CoT Faithfulness Evaluations",
+  "org": "anthropic",
+  "date": "2025-04-01",
+  "venue": "Alignment Science Blog",
+  "url": "https://drive.google.com/drive/folders/1l0pkcZxvFwMtczst_hhiCC44v-IiODlY?usp=sharing",
+  "abstract": "We release the datasets used in our paper \"Reasoning Models Don't Always Say What They Think\" for public use.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1473,
+  "title": "A matter of principle? AI alignment as the fair treatment of claims",
+  "org": "deepmind",
+  "date": "2025-03-30",
+  "venue": "Philosophical Studies",
+  "url": "https://doi.org/10.1007/s11098-025-02300-4",
+  "abstract": "The normative challenge of AI alignment centres upon what goals or values ought to be encoded in AI systems to govern their behaviour. A number of answers have been proposed, including the notion that AI must be aligned with human intentions or that it should aim to be helpful, honest and harmless. Nonetheless, both accounts suffer from critical weaknesses. On the one hand, they are incomplete: neither specification provides adequate guidance to AI systems, deployed across various domains with multiple parties. On the other hand, the justification for these approaches is questionable and, we argue, of the wrong kind. More specifically, neither approach takes seriously the need to justify the operation of AI systems to those affected by their actions – or what this means for pluralistic societies where people have different underlying beliefs about value. To address these limitations, we propose an alternative account of AI alignment that focuses on fair processes. We argue that principles that are the product of these processes are the appropriate target for alignment. This approach can meet the necessary standard of public justification, generate a fuller set of principles for AI that are sensitive to variation in context, and has explanatory power insofar as it makes sense of our intuitions about AI systems and points to a number of hitherto underappreciated ways in which an AI system may cease to be aligned.",
+  "needs_fetch": false
+ },
+ {
+  "id": 715,
+  "title": "QuestBench: Can LLMs ask the right question to acquire information in reasoning tasks?",
+  "org": "deepmind",
+  "date": "2025-03-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.22674",
+  "abstract": "Recently, a large amount of work has focused on improving large language models' (LLMs') performance on reasoning benchmarks such as math and logic. However, past work has largely assumed that tasks are well-defined. In the real world, queries to LLMs are often underspecified, only solvable through acquiring missing information. We formalize this as a constraint satisfaction problem (CSP) with missing variable assignments. Using a special case of this formalism where only one necessary variable assignment is missing, we can rigorously evaluate an LLM's ability to identify the minimal necessary question to ask and quantify axes of difficulty levels for each problem. We present QuestBench, a set of underspecified reasoning tasks solvable by asking at most one question, which includes: (1) Logic-Q: Logical reasoning tasks with one missing proposition, (2) Planning-Q: PDDL planning problems with initial states that are partially-observed, (3) GSM-Q: Human-annotated grade school math problems with one missing variable assignment, and (4) GSME-Q: a version of GSM-Q where word problems are translated into equations by human annotators. The LLM is tasked with selecting the correct clarification question(s) from a list of options. While state-of-the-art models excel at GSM-Q and GSME-Q, their accuracy is only 40-50% on Logic-Q and Planning-Q. Analysis demonstrates that the ability to solve well-specified reasoning problems may not be sufficient for success on our benchmark: models hav",
+  "needs_fetch": false
+ },
+ {
+  "id": 2884,
+  "title": "Circuit Tracing: Revealing Computational Graphs in Language Models",
+  "org": "anthropic",
+  "date": "2025-03-27",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/attribution-graphs/methods.html",
+  "abstract": "Deep learning models produce their outputs using a series of transformations distributed across many computational units (artificial “neurons”). The field of mechanistic interpretability seeks to describe these transformations in human-understandable language. To date, our team’s approach has followed a two-step approach. First, we identify features , interpretable building blocks that the model uses in its computations. Second, we describe the processes, or circuits, by which these features interact to produce model outputs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2883,
+  "title": "On the Biology of a Large Language Model",
+  "org": "anthropic",
+  "date": "2025-03-27",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/attribution-graphs/biology.html",
+  "abstract": "Large language models display impressive capabilities. However, for the most part, the mechanisms by which they do so are unknown. The black-box nature of models is increasingly unsatisfactory as they advance in intelligence and are deployed in a growing number of applications. Our goal is to reverse engineer how these models work on the inside, so we may better understand them and assess their fitness for purpose.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2714,
+  "title": "Relax: Composable Abstractions for End-to-End Dynamic Machine Learning",
+  "org": "openai",
+  "date": "2025-03-27",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3676641.3716249",
+  "abstract": "Dynamic shape computations have become critical in modern machine learning workloads, especially in emerging large language models. The success of these models has driven the demand for their universal deployment across a diverse set of backend environments. In this paper, we present Relax, a compiler abstraction for optimizing end-to-end dynamic machine learning workloads. Relax introduces a cross-level abstraction that encapsulates computational graphs, loop-level tensor programs, and external library calls in a single representation. Relax also introduces first-class symbolic shape annotations to track dynamic shape computations globally across the program, enabling dynamic shape-aware cross-level optimizations. We build an end-to-end compilation framework using the proposed approach to optimize dynamic shape models. Experimental results on LLMs show that Relax delivers performance competitive with state-of-the-art systems across various GPUs and enables deployment of emerging models to a broader set of emerging environments, including mobile phones, embedded devices, and web browsers.",
+  "needs_fetch": false
+ },
+ {
+  "id": 68,
+  "title": "Tracing the thoughts of a large language model",
+  "org": "anthropic",
+  "date": "2025-03-27",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/tracing-thoughts-language-model",
+  "abstract": "Circuit tracing lets us watch Claude think, uncovering a shared conceptual space where reasoning happens before being translated into languageâsuggesting the model can learn something in one language and apply it in another.",
+  "needs_fetch": false
+ },
+ {
+  "id": 67,
+  "title": "Anthropic Economic Index: Insights from Claude 3.7 Sonnet",
+  "org": "anthropic",
+  "date": "2025-03-27",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/anthropic-economic-index-insights-from-claude-sonnet-3-7",
+  "abstract": "Increased Claude 3.7 Sonnet usage for coding, education, and science since launch. Extended thinking mode favors technical tasks. New datasets reveal automation patterns across 630 granular usage categories.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1474,
+  "title": "Bridging the human–AI knowledge gap through concept discovery and transfer in AlphaZero",
+  "org": "deepmind",
+  "date": "2025-03-26",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2406675122",
+  "abstract": "AI systems have attained superhuman performance across various domains. If the hidden knowledge encoded in these highly capable systems can be leveraged, human knowledge and performance can be advanced. Yet, this internal knowledge is difficult to extract. Due to the vast space of possible internal representations, searching for meaningful new conceptual knowledge can be like finding a needle in a haystack. Here, we introduce a method that extracts new chess concepts from AlphaZero, an AI system that mastered chess via self-play without human supervision. Our method excavates vectors that represent concepts from AlphaZero's internal representations using convex optimization, and filters the concepts based on teachability (whether the concept is transferable to another AI agent) and novelty (whether the concept contains information not present in human chess games). These steps ensure that the discovered concepts are useful and meaningful. For the resulting set of concepts, prototypes (chess puzzle-solution pairs) are presented to experts for final validation. In a preliminary human study, four top chess grandmasters (all former or current world chess champions) were evaluated on their ability to solve concept prototype positions. All grandmasters showed improvement after the learning phase, suggesting that the concepts are at the frontier of human understanding. Despite the small scale, our result is a proof of concept demonstrating the possibility of leveraging knowledge fro",
+  "needs_fetch": false
+ },
+ {
+  "id": 1475,
+  "title": "CamCtrl3D: Single-Image Scene Exploration with Precise 3D Camera Control",
+  "org": "deepmind",
+  "date": "2025-03-25",
+  "venue": null,
+  "url": "https://doi.org/10.1109/3dv66043.2025.00065",
+  "abstract": "We propose a method for generating fly-through videos of a scene, from a single image and a given camera trajectory. We build upon an image-to-video latent diffusion model [5]. We condition its UNet [25] denoiser on the camera trajectory, using four techniques. (1) We condition UNet's temporal blocks on raw camera extrinsics, similar to MotionCtrl [36]. (2) We use images containing camera ray parameters, similar to CameraCtrl [14]. (3) We re-project the initial image to subsequent frames and condition on the resulting video. (4) We introduce a global 3D representation using 2D ⇔ 3D transformers [32], which implicitly conditions on the camera poses. We combine all conditions in a ContolNet-style [42] architecture. We then propose a metric that evaluates overall video quality and the ability to preserve details with view changes, which we use to analyze the trade-offs of individual and combined conditions. Finally, we identify an optimal combination of conditions. We calibrate camera positions in our datasets for scale consistency across scenes, and we train our scene exploration model, CamCtrl3D, demonstrating state-of-the-art results.",
+  "needs_fetch": false
+ },
+ {
+  "id": 978,
+  "title": "Addendum to GPT-4o System Card: 4o image generation",
+  "org": "openai",
+  "date": "2025-03-25",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-4o-image-generation-system-card-addendum/",
+  "abstract": "4o image generation is a new, significantly more capable image generation approach than our earlier DALL·E 3 series of models. It can create photorealistic output. It can take images as inputs and transform them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 716,
+  "title": "Gensors: Authoring Personalized Visual Sensors with Multimodal Foundation Models and Reasoning",
+  "org": "deepmind",
+  "date": "2025-03-24",
+  "venue": "ACM IUI 2025",
+  "url": "https://dl.acm.org/doi/10.1145/3708359.3712085",
+  "abstract": "Multimodal large language models (MLLMs), with their expansive world knowledge and reasoning capabilities, present a unique opportunity for end-users to create personalized AI sensors capable of reasoning about complex situations. A user could describe a desired sensing task in natural language (e.g., \"alert if my toddler is getting into mischief\"), with the MLLM analyzing the camera feed and responding within seconds. In a formative study, we found that users saw substantial value in defining their own sensors, yet struggled to articulate their unique personal requirements and debug the sensors through prompting alone. To address these challenges, we developed Gensors, a system that empowers users to define customized sensors supported by the reasoning capabilities of MLLMs. Gensors 1) assists users in eliciting requirements through both automatically-generated and manually created sensor criteria, 2) facilitates debugging by allowing users to isolate and test individual criteria in parallel, 3) suggests additional criteria based on user-provided images, and 4) proposes test cases to help users \"stress test\" sensors on potentially unforeseen scenarios. In a user study, participants reported significantly greater sense of control, understanding, and ease of communication when defining sensors using Gensors. Beyond addressing model limitations, Gensors supported users in debugging, eliciting requirements, and expressing unique personal requirements to the sensor through criter",
+  "needs_fetch": false
+ },
+ {
+  "id": 220,
+  "title": "AgentSpec: Customizable Runtime Enforcement for Safe and Reliable LLM Agents",
+  "org": "other",
+  "date": "2025-03-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.18666",
+  "abstract": "Agents built on LLMs are increasingly deployed across diverse domains, automating complex decision-making and task execution. However, their autonomy introduces safety risks, including security vulnerabilities, legal violations, and unintended harmful actions. Existing mitigation methods, such as model-based safeguards and early enforcement strategies, fall short in robustness, interpretability, and adaptability. To address these challenges, we propose AgentSpec, a lightweight domain-specific language for specifying and enforcing runtime constraints on LLM agents. With AgentSpec, users define structured rules that incorporate triggers, predicates, and enforcement mechanisms, ensuring agents operate within predefined safety boundaries. We implement AgentSpec across multiple domains, including code execution, embodied agents, and autonomous driving, demonstrating its adaptability and effectiveness. Our evaluation shows that AgentSpec successfully prevents unsafe executions in over 90% of code agent cases, eliminates all hazardous actions in embodied agent tasks, and enforces 100% compliance by autonomous vehicles (AVs). Despite its strong safety guarantees, AgentSpec remains computationally lightweight, with overheads in milliseconds. By combining interpretability, modularity, and efficiency, AgentSpec provides a practical and scalable solution for enforcing LLM agent safety across diverse applications. We also automate the generation of rules using LLMs and assess their effect",
+  "needs_fetch": false
+ },
+ {
+  "id": 171,
+  "title": "Automated Researchers Can Subtly Sandbag",
+  "org": "anthropic",
+  "date": "2025-03-24",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/automated-researchers-sandbag/",
+  "abstract": "When prompted, current models can sandbag ML experiments and research decisions without being detected by zero-shot prompted monitors. Claude 3.5 Sonnet (new) can only sandbag effectively when seeing a one-shot example, while Claude 3.7 Sonnet can do this without an example (zero-shot). We are not yet worried about sabotage in today's models, as the sandbagging we observe today would be noticed by humans.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1476,
+  "title": "Deep reinforcement learning can promote sustainable human behaviour in a common-pool resource problem",
+  "org": "deepmind",
+  "date": "2025-03-22",
+  "venue": "Nature Communications",
+  "url": "https://doi.org/10.1038/s41467-025-58043-7",
+  "abstract": "A canonical social dilemma arises when resources are allocated to people, who can either reciprocate with interest or keep the proceeds. The right resource allocation mechanisms can encourage levels of reciprocation that sustain the commons. Here, in an iterated multiplayer trust game, we use deep reinforcement learning (RL) to design a social planner that promotes sustainable contributions from human participants. We first trained neural networks to behave like human players, creating a stimulated economy that allows us to study the dynamics of receipt and reciprocation. We use RL to train a mechanism to maximise aggregate return to players. The RL mechanism discovers a redistributive policy that leads to a large but also more equal surplus. The mechanism outperforms baseline mechanisms by conditioning its generosity on available resources and temporarily sanctioning defectors. Examining the RL policy allows us to develop a similar but explainable mechanism that is more popular among players.",
+  "needs_fetch": false
+ },
+ {
+  "id": 979,
+  "title": "Early methods for studying affective use and emotional well-being on ChatGPT",
+  "org": "openai",
+  "date": "2025-03-21",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/affective-use-study/",
+  "abstract": "An OpenAI and MIT Media Lab Research collaboration.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1478,
+  "title": "Quantum circuit optimization with AlphaTensor",
+  "org": "deepmind",
+  "date": "2025-03-20",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://doi.org/10.1038/s42256-025-01001-1",
+  "abstract": "A key challenge in realizing fault-tolerant quantum computers is circuit optimization. Focusing on the most expensive gates in fault-tolerant quantum computation (namely, the T gates), we address the problem of T-count optimization, that is, minimizing the number of T gates needed to implement a given circuit. To achieve this, we develop AlphaTensor-Quantum, a method based on deep reinforcement learning that exploits the relationship between optimizing the T-count and tensor decomposition. Unlike existing methods for T-count optimization, AlphaTensor-Quantum can incorporate domain-specific knowledge about quantum computation and leverage gadgets, which substantially reduces the T-count of the optimized circuits. AlphaTensor-Quantum outperforms the existing methods for T-count optimization on a set of arithmetic benchmarks (even when compared without using gadgets). Remarkably, it discovers an efficient algorithm akin to Karatsuba’s method for multiplication in finite fields. AlphaTensor-Quantum also finds the best human-designed solutions for relevant arithmetic computations used in Shor’s algorithm and for quantum chemistry simulation, thus demonstrating that it can save hundreds of hours of research by optimizing relevant quantum circuits in a fully automated way. Ruiz and colleagues introduce AlphaTensor-Quantum, a deep reinforcement learning method for optimizing quantum circuits. It outperforms existing methods and is capable of finding the best human-designed solutions ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1477,
+  "title": "End-to-end data-driven weather prediction",
+  "org": "deepmind",
+  "date": "2025-03-20",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-08897-0",
+  "abstract": "Abstract Weather prediction is critical for a range of human activities, including transportation, agriculture and industry, as well as for the safety of the general public. Machine learning transforms numerical weather prediction (NWP) by replacing the numerical solver with neural networks, improving the speed and accuracy of the forecasting component of the prediction pipeline 1–6 . However, current models rely on numerical systems at initialization and to produce local forecasts, thereby limiting their achievable gains. Here we show that a single machine learning model can replace the entire NWP pipeline. Aardvark Weather, an end-to-end data-driven weather prediction system, ingests observations and produces global gridded forecasts and local station forecasts. The global forecasts outperform an operational NWP baseline for several variables and lead times. The local station forecasts are skilful for up to ten days of lead time, competing with a post-processed global NWP baseline and a state-of-the-art end-to-end forecasting system with input from human forecasters. End-to-end tuning further improves the accuracy of local forecasts. Our results show that skilful forecasting is possible without relying on NWP at deployment time, which will enable the realization of the full speed and accuracy benefits of data-driven models. We believe that Aardvark Weather will be the starting point for a new generation of end-to-end models that will reduce computational costs by orders of ",
+  "needs_fetch": false
+ },
+ {
+  "id": 221,
+  "title": "Evaluating Test-Time Scaling LLMs for Legal Reasoning: OpenAI o1, DeepSeek-R1, and Beyond",
+  "org": "other",
+  "date": "2025-03-20",
+  "venue": "EMNLP 2025",
+  "url": "https://arxiv.org/abs/2503.16040",
+  "abstract": "Recent advances in test-time scaling of large language models (LLMs), exemplified by DeepSeek-R1 and OpenAI's o1, show that extending the chain of thought during inference can significantly improve general reasoning performance. However, the impact of this paradigm on legal reasoning remains insufficiently explored. To address this gap, we present the first systematic evaluation of 12 LLMs, including both reasoning-focused and general-purpose models, across 17 Chinese and English legal tasks spanning statutory and case-law traditions. In addition, we curate a bilingual chain-of-thought dataset for legal reasoning through distillation from DeepSeek-R1 and develop Legal-R1, an open-source model specialized for the legal domain. Experimental results show that Legal-R1 delivers competitive performance across diverse tasks. DeepSeek-R1 exhibits clear advantages in Chinese legal reasoning, while OpenAI's o1 achieves comparable results on English tasks. We further conduct a detailed error analysis, which reveals recurring issues such as outdated legal knowledge, limited capacity for legal interpretation, and susceptibility to factual hallucinations. These findings delineate the main obstacles confronting legal-domain LLMs and suggest promising directions for future research.",
+  "needs_fetch": false
+ },
+ {
+  "id": 222,
+  "title": "Empowering Smaller Models: Tuning LLaMA and Gemma with Chain-of-Thought for Ukrainian Exam Tasks",
+  "org": "other",
+  "date": "2025-03-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2503.13988",
+  "abstract": "Leading large language models have demonstrated impressive capabilities in reasoning-intensive tasks, such as standardized educational testing. However, they often require extensive training in low-resource settings with inaccessible infrastructure. Small or compact models, though more efficient, frequently lack sufficient support for underrepresented languages, leaving a performance gap in critical domains. This work explores the potential of parameter-efficient fine-tuning of compact open-weight language models to handle reasoning-intensive tasks in the underrepresented Ukrainian language, building on the findings of the ZNO-Eval benchmark. Parameter-efficient fine-tuning of LLaMA 3.1 (8 billion parameters), LLaMA 3.2 (3 billion parameters), and Gemma 2 (9 billion parameters) models on chain-of-thought solutions resulted in a modest test score improvement of up to 17.4% on complex matching tasks and 1.6% overall compared to tuning on answer letters alone, offering enhanced interpretability and robustness. In addition, the proposed tuning method with joint task topic and step-by-step solution generation outperforms standard chain-of-thought tuning in matching tasks and provides a 5.4% gain over the best LLaMA 3.2 model due to guiding the model to recall and apply domain-relevant information. Contrasting obtained results with zero-shot evaluations of leading open-weight and proprietary models such as Qwen, DeepSeek R1, OpenAI o1 and o3, Gemini, and Claude, highlight that fine",
+  "needs_fetch": false
+ },
+ {
+  "id": 1479,
+  "title": "Optimal Sensor Placement for Aerosol Absorption Optical Depth with Convolutional Neural Processes",
+  "org": "deepmind",
+  "date": "2025-03-15",
+  "venue": null,
+  "url": "https://doi.org/10.5194/egusphere-egu25-18735",
+  "abstract": "Aerosols affect the Earth&amp;#8217;s energy budget by both scattering and absorbing solar radiation. Measuring parameters that separately quantify the two components, such as the aerosol absorption optical depth (AAOD), is key to better understanding the aerosol direct climate effect. As most satellite instruments can only retrieve the total aerosol extinction signal, the most reliable source of global AAOD observations is the ground-based AERONET sensor network. AERONET comprises hundreds of stations worldwide; however, their spatial distribution is uneven and coverage remains sparse in many relevant regions. To effectively reduce our uncertainty related to absorbing aerosols and efficiently expand the network, new stations should be placed in locations that maximise measurement informativeness. In this study, we address the problem of optimal sensor placement using convolutional neural processes (ConvNPs). ConvNPs are meta-learning models that use convolutional neural networks to learn maps from heterogeneous input datasets to a context-dependent Gaussian predictive model. We train ConvNPs using reanalysis data to learn to model daily global AAOD from sparse point observations given at station locations and additional gridded auxiliary data. The model&amp;#8217;s probabilistic predictions are then harnessed in an active learning framework to sequentially propose new observation locations that optimally reduce model uncertainty and improve the network's informativeness. Our",
+  "needs_fetch": false
+ }
+]

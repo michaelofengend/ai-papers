@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2650,
+  "title": "LLM and Agents for Recommendation Systems (LARS)",
+  "org": "openai",
+  "date": "2026-05-28",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3774905.3795718",
+  "abstract": "Digital marketplaces spanning e-commerce, content platforms, and service ecosystems are undergoing a fundamental shift from centralized recommendation algorithms to autonomous multi-agent coordination. Intelligent agents now plan, negotiate, and interact emergently across product discovery, personalized recommendations, fulfillment optimization, and conversational commerce. Industry deployment of these agents is accelerating. However, this shift surfaces critical challenges. Current frameworks lack interpretability for emergent coordination when multiple agents interact. Robustness guarantees fail when cascading failures propagate across multi-agent systems. Most critically, evaluation remains anchored in short-term metrics click-through rates, conversions, session engagement that cannot capture coordination quality, long-horizon trust, fairness across populations, or multi-stakeholder alignment beyond immediate revenue. This workshop brings together researchers and practitioners from recommender systems, information retrieval, multi-agent learning, mechanism design, and platform operations to establish principles for transparent, robust, and trustworthy agent-based systems. We invite contributions on agent architectures, coordination mechanisms, evaluation frameworks, trust and safety, and real-world deployment experiences that advance how autonomous agents can enhance rather than compromise marketplace integrity and user welfare.",
+  "needs_fetch": false
+ },
+ {
+  "id": 676,
+  "title": "Realistic honeypot evaluations for scheming propensity",
+  "org": "deepmind",
+  "date": "2026-05-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.29729",
+  "abstract": "We introduce scheming honeypot evaluations, a framework for testing whether models will pursue instrumental goals if given the opportunity. Our scheming honeypot evaluations take the form of coding tasks in Google’s alignment research codebases. In a real internal deployment setting, Gemini models do not demonstrate unprompted scheming. If prompts explicitly encourage agency (situational awareness or goal-directedness) and/or give the model a hidden goal, models sometimes scheme or attempt sabotage. Validating the realism of our setting, models show low rates of evaluation awareness, usually due to agency prompts rather than the environments.",
+  "needs_fetch": false
+ },
+ {
+  "id": 675,
+  "title": "Gram: Assessing sabotage propensities via automated alignment auditing",
+  "org": "deepmind",
+  "date": "2026-05-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.30322",
+  "abstract": "We introduce Gram, an automated alignment auditing framework to assess the propensity of AI agents to engage in sabotage. We evaluate Gemini models across 17 simulated agentic deployment scenarios that incentivize sabotage. We find Gemini models misbehave in about 2-3% of our simulated trajectories. Many of these cases are explained by \"overeagerness\" in Gemini models resulting in both excessive role-playing and goal-seeking behavior. In contrast to other alignment auditing approaches, Gram is designed to specifically evaluate misalignment and intentional sabotage in agentic coding and research agents. We additionally introduce an experimental investigator agent pipeline which enables fine-grained targeted experiments to identify the drivers of misbehavior. We find that increasing realism of environments and removing nudges to misbehave tends to reduce sabotage rates close to zero.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1215,
+  "title": "Algorithmic Compression via Pretrained Neural Networks",
+  "org": "deepmind",
+  "date": "2026-05-27",
+  "venue": "Entropy",
+  "url": "https://doi.org/10.3390/e28060596",
+  "abstract": "The success of large neural networks trained for sequential prediction via log-loss minimization over massive and diverse datasets has sparked debate regarding the fundamental limits of this paradigm. While these models are not explicitly programmed to perform planning and search, their behavior increasingly resembles complex reasoning and adaptive problem-solving. This paper reviews a series of theoretical and empirical works, aiming to bridge the gap between the practical success of LLMs and formal theories of computation and intelligence—that is, algorithmic information theory and Universal Artificial Intelligence. Grounded in the framework of memory-based meta-learning, the main argument is that training sequence models to predict the next token across diverse tasks implicitly meta-trains them to perform algorithmic compression, thereby performing (amortized) Bayesian inference over the task in-context. Consequently, when pretrained on a sufficiently rich data distribution, the resulting neural networks behave as if compressing by inferring the generative algorithm producing the observed data. We discuss recent theoretical and empirical evidence demonstrating that this approach can approximate Solomonoff induction in the theoretical limit, match exact Bayesian inference on complex sources in practice, achieve strong compression on out-of-distribution data, and synthesize complex in-context algorithms like chessboard evaluations. As models become more capable and general, ",
+  "needs_fetch": false
+ },
+ {
+  "id": 638,
+  "title": "The Fragility of Chain-of-Thought Monitoring Across Typologically Diverse Languages",
+  "org": "other",
+  "date": "2026-05-27",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.27901",
+  "abstract": "Chain-of-thought (CoT) monitoring has been proposed as a promising safety mechanism for detecting misaligned behavior in large language models. However, its reliability remains largely unexplored beyond English and across diverse model families. We present the first large-scale evaluation of CoT monitorability across 13 diverse languages and seven frontier model families, comprising 16 models. Using adversarial-hint evaluations that require explicit intermediate computation, together with analysis of internal answer-token probabilities, we consistently find CoT unfaithfulness across languages and hint types, with an average rate of 95.9\\% across 8B--120B parameter models. We find that frontier models systematically engage in strategic manipulation, including answer-switching, post-hoc rationalization, and procedural exploitation of hints, making external monitors struggle to detect deception. We show that frontier models often commit to the misaligned cue in their latent activations within the first 15\\% of generation, even when the CoT appears faithful. Surprisingly, these deceptive patterns remain 100\\% in low-resource languages, revealing fundamental limitations in current CoT-based oversight. Our results reveal that CoT monitoring is fundamentally fragile under linguistic distribution shift, providing a substantially weaker safety signal than what English-only studies suggest. These findings underscore an urgent need to develop robust CoT monitors and to accelerate resear",
+  "needs_fetch": false
+ },
+ {
+  "id": 3,
+  "title": "Coding agents in the social sciences",
+  "org": "anthropic",
+  "date": "2026-05-27",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/coding-agents-social-sciences",
+  "abstract": "Results from a survey of 1,260 social scientists about AI and coding agent use.",
+  "needs_fetch": true
+ },
+ {
+  "id": 253,
+  "title": "Behavioural Analysis of Alignment Faking",
+  "org": "other",
+  "date": "2026-05-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.27681",
+  "abstract": "Alignment faking (AF) refers to a model strategically complying with a training objective to avoid behavioural modification while preserving its deployment preferences. Understanding when and why AF arises matters as models grow better at distinguishing training from deployment. Prior work finds AF fragile, prompt-sensitive, and model-dependent, leaving its underlying drivers unclear. We study AF in a controlled, minimal setup that isolates its core components, and observe it across a wider range of models than previously reported, including small-scale models. We identify three separable drivers -- values, goal guarding, and sycophancy -- and show via targeted prompt ablations and activation steering that each independently modulates AF behaviour. Our results indicate AF is more widespread than previously reported and that its occurrence is predictable from situational cues and measurable model tendencies such as baseline sycophancy and stated values. The decomposition suggests concrete directions for detecting and mitigating AF in future models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1216,
+  "title": "Real-World Challenges in Fake News Detection: Dealing with Posts by Cold Users",
+  "org": "deepmind",
+  "date": "2026-05-25",
+  "venue": "Proceedings of the International AAAI Conference on Web and Social Media",
+  "url": "https://doi.org/10.1609/icwsm.v20i1.42689",
+  "abstract": "Social media serves as a primary source of information in the current digital era. Many people consume a vast range of information in a very short span, yet, amidst the stream of genuine information, fake news and rumors continue to spread. The need for effective detection models is becoming increasingly critical. Past user behavior and user engagement on a post are strong signals that SOTA approaches leverage for fake news detection and other post classification tasks. However, these approaches lean too heavily on knowing this past behavior, and thus suffer from a cold user problem, or users that are new or have minimal footprint on the platform. In this paper, we make three core contributions. We first establish the value of user behavior, both content and user-user interactions, in the task of fake news and rumor detection. We then establish the extensive prevalence of cold users in the real-world datasets, and show the need for newer algorithms considering cold users. We next propose a novel socially-aware context representation scheme – USER EVIDENCE NETWORK (UEN) – to detect the spread of misinformation and unverified information while efficiently navigating this cold user challenge. We introduce techniques that approximate missing/absent behavior data of a new user from existing users' interactions. By carefully addressing the cold user challenge, our work provides robust approaches targeting fake news and rumor detection for real-world platforms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 254,
+  "title": "What Makes a Medical Checker Trainable? Diagnosing Signal Collapse and Reward Hacking in Checker-Guided RAG for Biomedical QA",
+  "org": "other",
+  "date": "2026-05-25",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.25988",
+  "abstract": "Medical RAG needs evidence-grounded claims, so plugging a claim-level NLI checker into retrieval-augmented RL is intuitive. \\textbf{We find that the checker's \\emph{output distribution} during training, not its held-out accuracy, decides whether it provides trainable gradient.} We compare four NLI checker back-ends as process rewards inside a GRPO-trained medical RAG agent (Qwen2.5-7B, replicated on Qwen3-4B and Llama-3.1-8B) across four held-out medical QA benchmarks. Three diagnostic findings emerge. \\textbf{(i)} Signal collapse is log-prob-specific: LLM log-probability scoring labels over 97\\% of claims neutral -- collapsing the RL gradient to zero -- while a calibrated MedNLI classifier scores the same pairs non-degenerately. \\textbf{(ii)} Moderate signal beats strong signal on answer quality: a strong proprietary checker triggers a three-step reward-hacking cascade -- ultra-short answers, search avoidance, language collapse -- so a moderate-signal local classifier trains a higher-quality model (\\textbf{+12\\% BERTScore over zero-shot, no GPT dependency}). \\textbf{(iii)} Signal strength is policy-dependent: the same checker registers as moderate on one policy but strong on another without triggering the cascade end-state. We frame these as boundary conditions for verifier-as-reward systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1219,
+  "title": "Active Evaluation of General Agents: Problem Definition and Comparison of Baseline Algorithms",
+  "org": "deepmind",
+  "date": "2026-05-24",
+  "venue": null,
+  "url": "https://doi.org/10.65109/pubn4692",
+  "abstract": "As intelligent agents become more generally-capable, i.e., able to master a wide variety of tasks, the complexity and cost of properly evaluating them rises significantly. Tasks that assess specific capabilities of the agents can be correlated and stochastic, requiring many samples for accurate comparisons, leading to added costs. In this paper, we propose a formal definition and a conceptual framework for active evaluation of agents across multiple tasks, which assesses the performance of ranking algorithms as a function of number of evaluation data samples. Rather than curating, filtering, or compressing existing data sets as a preprocessing step, we propose an online framing: on every iteration, the ranking algorithm chooses the task and agents to sample scores from. Then, evaluation algorithms report a ranking of agents on each iteration and their performance is assessed with respect to the ground truth ranking over time. Several baselines are compared under different experimental contexts, with synthetic generated data and simulated online access to real evaluation data from Atari game-playing agents. We find that the classical Elo rating system -- while it suffers from well-known failure modes, in theory -- is a consistently reliable choice for efficient reduction of ranking error in practice. A recently-proposed method, Soft Condorcet Optimization, shows comparable performance to Elo on synthetic data and significantly outperforms Elo on real Atari agent evaluation. Wh",
+  "needs_fetch": false
+ },
+ {
+  "id": 1218,
+  "title": "Integrating Counterfactual Simulations with Language Models for Explaining Multi-Agent Behaviour",
+  "org": "deepmind",
+  "date": "2026-05-24",
+  "venue": null,
+  "url": "https://doi.org/10.65109/mcsd1905",
+  "abstract": "Explainability is vital for users' trust calibration in multi-agent systems (MAS), but explainable MAS face challenges due to complex environments, the human factor, and non-standardised evaluation. Leveraging the counterfactual effect size model and LLMs, we propose Agentic eXplanations via Interrogative Simulation (AXIS). AXIS generates human-centred action explanations for multi-agent policies by having an LLM interrogate an environment simulator using prompts like whatif and remove to observe and synthesise counterfactual information over multiple rounds. We evaluate AXIS on autonomous driving across ten scenarios for five LLMs with a comprehensive methodology combining robustness, subjective preference, correctness, and goal/action prediction with an external LLM as evaluator. Compared to baselines, AXIS improves perceived explanation correctness by at least 7.7% across all models and goal prediction accuracy by 23% for four models, with comparable action prediction accuracy, achieving the highest scores overall. We release all code and an appendix at: https://github.com/gyevnarb/axis.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1217,
+  "title": "Fairness over Equality: Correcting Social Incentives in Asymmetric Sequential Social Dilemmas",
+  "org": "deepmind",
+  "date": "2026-05-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2602.15407",
+  "abstract": "Sequential Social Dilemmas (SSDs) provide a key framework for studying how cooperation emerges when individual incentives conflict with collective welfare. In Multi-Agent Reinforcement Learning, these problems are often addressed by incorporating intrinsic drives that encourage prosocial or fair behavior. However, most existing methods assume that agents face identical incentives in the dilemma and require continuous access to global information about other agents to assess fairness. In this work, we introduce asymmetric variants of well-known SSD environments and examine how natural differences between agents influence cooperation dynamics. Our findings reveal that existing fairness-based methods struggle to adapt under asymmetric conditions by enforcing raw equality that wrongfully incentivize defection. To address this, we propose three modifications: (i) redefining fairness by accounting for agents' reward ranges, (ii) introducing an agent-based weighting mechanism to better handle inherent asymmetries, and (iii) localizing social feedback to make the methods effective under partial observability without requiring global information sharing. Experimental results show that in asymmetric scenarios, our method fosters faster emergence of cooperative policies compared to existing approaches, without sacrificing scalability or practicality.",
+  "needs_fetch": false
+ },
+ {
+  "id": 639,
+  "title": "Investigating the Interplay between Contextual and Parametric Chain-of-Thought Faithfulness under Optimization",
+  "org": "other",
+  "date": "2026-05-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.24960",
+  "abstract": "Chain-of-Thought (CoT) faithfulness, i.e., whether CoTs genuinely reflect large language models' (LLM) underlying behavior, is typically evaluated under two disjoint paradigms: contextual faithfulness, measured by perturbing the input or CoT trace, and parametric faithfulness, assessed by intervening on a model's parametric knowledge. Yet prior work compares them only descriptively. We fill this gap by proposing FaithMate, a unified preference-alignment interface for optimizing models towards either faithfulness paradigm. It enables us to investigate the interplay between the two paradigms, examining whether and to what extent faithfulness gains generalize within and across paradigms. Across three models, two datasets, and six faithfulness metrics, we find that the two paradigms are positively coupled, yet asymmetric: optimizing towards parametric faithfulness yields consistent gains across both paradigms, whereas the contextual counterpart delivers more variable gains. Within the contextual paradigm, faithfulness gains on one metric do not consistently transfer to others, implying that existing contextual metrics capture disjoint facets of faithfulness and exposing inherent trade-offs. These findings imply that CoT faithfulness is not a monolithic objective and therefore requires multifaceted optimization and evaluation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 255,
+  "title": "Directional Alignment Mitigates Reward Hacking in Reinforcement Learning for Language Models",
+  "org": "other",
+  "date": "2026-05-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.25189",
+  "abstract": "Reward hacking arises when a model improves a proxy reward by exploiting shortcuts rather than solving the intended task. We study this failure mode through the geometry of reinforcement learning updates in language models and argue that hacking emerges when optimization drifts away from a stable low-dimensional learning trajectory. We analyze this drift through dominant singular directions of parameter updates and show that reward-hacking runs exhibit substantially larger directional change than clean runs. Motivated by this observation, we introduce trusted-direction projection, which constrains gradients to remain within a clean reference subspace. Across reward-hacking experiments on mathematical reasoning, the proposed approach delays shortcut exploitation and better preserves task performance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 640,
+  "title": "Understanding and Mitigating Premature Confidence for Better LLM Reasoning",
+  "org": "other",
+  "date": "2026-05-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.24396",
+  "abstract": "Long chains of thought (CoT) from current language models frequently contain logical gaps and unjustified leaps, limiting the gains from additional test-time compute. Improving reasoning quality directly would require process reward models, but the step-level annotations needed to train them are expensive and scarce. We find such a signal in how the model's confidence evolves during reasoning: premature confidence, the tendency to commit to an answer early and use the remaining tokens to rationalize it, strongly predicts flawed reasoning across tasks and model scales. We exploit this in progressive confidence shaping, a reinforcement learning objective that trains models to update their confidence as they reason rather than commit early -- rewarding gradual confidence growth and penalizing early commitment, with no external labels or reward models. The method improves accuracy and reasoning quality from 1.5B to 8B parameters across arithmetic (Countdown), math (DAPO, AIME), and science (ScienceQA): on Countdown, accuracy improves 3.2x (+42.0pp) and flawed reasoning drops 48pp; on AIME, Pass@64 improves 6.6pp. Consistent with this mechanism, the method also improves faithfulness: on a safety benchmark, our models more transparently surface misleading content in their reasoning traces rather than concealing it. Controlled experiments reveal that the problem and its remedy scale together: premature confidence grows with model size and task difficulty, and so do the gains from ad",
+  "needs_fetch": false
+ },
+ {
+  "id": 2651,
+  "title": "DraftNEPABench: A Benchmark for Drafting NEPA Document Sections with Coding Agents",
+  "org": "openai",
+  "date": "2026-05-22",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3786335.3813132",
+  "abstract": "Coding agents represent a transformative paradigm in software engineering, enabling automated coding, generation, and debugging through a natural language interface. Recent advancements in large language models (LLMs) and their ability to use external tools have expanded the potential of using these agents beyond software engineering tasks. In this work, we explore the application of coding agents in a noncoding domain: drafting environmental impact statement (EIS) sections. For that, we introduce DraftNEPABench: a challenging benchmark that requires coding agents to compose structured, coherent, and domain-specific drafts grounded in multiple complex regulatory and scientific reference materials. We evaluate various state-of-the-art commercial coding agents on this benchmark and demonstrate their promise in generating EIS documents. Our findings show that while coding agents outperform vanilla retrieval-augmented generation (RAG) setups for these tasks, there is still room for improvement. We highlight the potential and limitations of such agents in high-stakes, complex, and real-world tasks, and point toward future directions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1220,
+  "title": "On the Limits of End-to-End Foundation Models: Coordination as a Missing Primitive for Artificial General Intelligence",
+  "org": "deepmind",
+  "date": "2026-05-22",
+  "venue": "Research Square",
+  "url": "https://doi.org/10.21203/rs.3.rs-9784163/v1",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 256,
+  "title": "Faithfulness as Information Flow: Evaluating and Training Faithful Chain-of-Thought Reasoning",
+  "org": "anthropic",
+  "date": "2026-05-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.24286",
+  "abstract": "Chain-of-thought (CoT) reasoning is useful for monitoring language models only when the reasoning trace faithfully reflects the computation that produces the final answer. However, models can rely on prompt-to-answer shortcuts that bypass the CoT, making the visible reasoning trace misleading even when it appears plausible. We study CoT faithfulness through a structural information-flow perspective: faithful reasoning should route answer-relevant information through the mediated path from prompt to CoT to answer, rather than through a direct prompt-to-answer shortcut. This perspective yields a task-agnostic framework based on three complementary properties, sufficiency, completeness, and necessity, which we instantiate with entropy-based, masked-KL, and gradient-based diagnostics. We show that these metrics recover externally judged faithfulness differences in hinted reasoning, and identify a low-entropy failure mode of KL-based diagnostics where gradient-based measures remain more stable. Building on this analysis, we introduce update-time interventions for verifier-based on-policy RL, including attention masking, backward-only gradient masking, CoT gradients, and adversarial perturbations of prompt representations. Across hinted arithmetic, reward-hackable code repair, and DAPO-Math models trained without hints but evaluated under wrong-hint injection, our interventions shift behavioral and structural indicators toward stronger CoT mediation. In particular, they make shortc",
+  "needs_fetch": false
+ },
+ {
+  "id": 4,
+  "title": "Project Glasswing: An initial update",
+  "org": "anthropic",
+  "date": "2026-05-22",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/glasswing-initial-update",
+  "abstract": "An early update on what we've learned from Project Glasswing.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1221,
+  "title": "AI-Discovered Cognitive Models Reveal Novel Insights into Human and Animal Learning",
+  "org": "deepmind",
+  "date": "2026-05-21",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.64898/2026.05.18.725921",
+  "abstract": "Scientific models are widely used across the natural sciences as an interface between scientific theories and empirical data [1]. Such models play a key role, for example, in the study of human and animal learning, where they express algorithmic hypotheses and relate them to psychology and neuroscience data [2, 3]. These models are traditionally handcrafted by expert researchers based on existing theory or new insights. Such handcrafted models, however, are now known to fall short of capturing the full richness of behavior, even in their narrow domains [4-7]. An alternative data-driven approach has emerged, seeking to discover new insights by fitting and interpreting flexible models [8-11]. However, these tools require substantial human effort to derive insight from data, and it has been unclear how to discover new ideas from data efficiently. Here, we present DataDIVER, a general approach for automatically discovering computational models from data, and demonstrate that these models surface novel mechanistic insights into human and animal learning. Our approach delivers models that take the form of short computer programs, which are optimized both to fit data well and to be simple. These programs explicitly connect with existing theoretical frameworks and are readily understandable by human scientists. They can also be used to make novel predictions, some of which we show are borne out in re-analysis of existing data. General-purpose tools for surfacing new ideas from data, ",
+  "needs_fetch": false
+ },
+ {
+  "id": 916,
+  "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+  "org": "openai",
+  "date": "2026-05-20",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
+  "abstract": "An OpenAI model solved the 80-year-old unit distance problem, disproving a major conjecture in discrete geometry and marking a milestone in AI-driven mathematics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 257,
+  "title": "Hack-Verifiable Environments: Towards Evaluating Reward Hacking at Scale",
+  "org": "other",
+  "date": "2026-05-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.20744",
+  "abstract": "Aligning autonomous agents with human intent remains a central challenge in modern AI. A key manifestation of this challenge is reward hacking, whereby agents appear successful under the evaluation signal while violating the intended objective. Reward hacking has been observed across a wide range of settings, yet methods for reliably measuring it at scale remain lacking. In this work, we introduce a new evaluation paradigm for measuring reward hacking. Whereas prior studies have primarily analyzed it post hoc by inspecting agent trajectories, we instead embed detectable reward hacking opportunities directly into environments. This makes their exploitation verifiable by design, enabling deterministic and automated measurement of whether and how agents exploit such vulnerabilities. We instantiate this approach in $\\textit{TextArena}$ and release $\\textit{Hack-Verifiable TextArena}$, a testbed in which reward hacking can be measured reliably. Using this benchmark, we analyze reward hacking behavior across language models in diverse environments and settings. We open source the code at https://github.com/MajoRoth/hack-verifiable-environments/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 130,
+  "title": "SLEIGHT-Bench: Finding Blind Spots in AI Monitors",
+  "org": "anthropic",
+  "date": "2026-05-19",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2026/sleight-bench/",
+  "abstract": "We investigate blind spots in frontier monitoring systems, and build a benchmark of evasive transcripts exploiting these blind spots. We also explore patching some blind spots to improve monitors with better scaffolds or prompts.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1222,
+  "title": "Echoes of Citations: Automated Extraction of Claims from Full Scientific Papers",
+  "org": "deepmind",
+  "date": "2026-05-18",
+  "venue": "Proceedings of the AAAI Symposium Series",
+  "url": "https://doi.org/10.1609/aaaiss.v8i1.42589",
+  "abstract": "Automated extraction of core scientific claims, concise statements of a paper’s primary contributions, is critical for navigating the growing scientific literature. We present a scalable framework that leverages citances, sentences from other papers citing the target work, as natural supervision, removing the need for costly manual labelling. Our method filters citances with a claim-focused rubric and aligns them with candidate claims to train two pipelines: an unsupervised extractor and a weakly supervised model. Experiments show our approach outperforms existing baselines, achieving up to 18% higher precision and 22% greater coverage. We further analyse claim distributions across paper sections and introduce a taxonomy of claim types, providing new insights into the rhetorical structure of scientific discourse.",
+  "needs_fetch": false
+ },
+ {
+  "id": 641,
+  "title": "Monitoring the Internal Monologue: Probe Trajectories Reveal Reasoning Dynamics",
+  "org": "other",
+  "date": "2026-05-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.18549",
+  "abstract": "Large Reasoning Models (LRMs) introduce new opportunities for safety monitoring through their Chain of Thought (CoT) reasoning. However, CoT is not always faithful to the model's final output, undermining its reliability as a monitoring tool. To address this, we investigate the hidden representations of LRMs to determine whether future behavior can be predicted from prompt and CoT representations. By evaluating a probe at each generated token, we construct a probe trajectory, the continuous evolution of a concept's probability across the reasoning process. We find that future model behavior is more distinguishable when examined over the full trajectory than from a single static prediction. To characterize these temporal dynamics, we extract signal-processing features that capture volatility, trend, and steady-state behavior, significantly improving the separation of future model states. We also present two methodological insights. First, template-based training data achieves near-parity with dynamically generated model responses, eliminating the need for a costly initial inference and labeling. Second, the choice of pooling operation is critical: average-pooling and last-token methods collapse to near-random performance, while max-pooling achieves up to 95% AUROC and yields stable probe trajectories. Using four datasets and four reasoning models across the domains of safety and mathematics, we demonstrate that trajectory features encode task-specific dynamics that improve out",
+  "needs_fetch": false
+ },
+ {
+  "id": 1224,
+  "title": "A framework for clinical validation of generative artificial intelligence therapeutics",
+  "org": "deepmind",
+  "date": "2026-05-15",
+  "venue": "World Psychiatry",
+  "url": "https://doi.org/10.1002/wps.70067",
+  "abstract": "While established frameworks exist for assessing the clinical efficacy and effectiveness of human-delivered interventions, and standards are in place for pre-artificial intelligence (AI) chatbots that have achieved clearance from the US Food and Drug Administration (FDA) as companions to psychological treatment, a significant void remains. There are currently no defined standards to determine the efficacy of an AI agent in delivering validated treatment approaches, whether it is assisting with medication management, supporting clinicians, or directly delivering talk therapy. This gap leaves the field vulnerable, confronting a surge of emerging technologies without the necessary tools to ascertain their safety, and if – or for whom – they genuinely work. Autonomous or semi-autonomous AI agents, capable of interacting across diverse modalities – text, voice and images – can both understand and mirror the complex cues that human therapists utilize, thereby enhancing both engagement and assessment capabilities. This positions generative AI (GenAI) as a deeply promising solution for delivering psychological interventions, with the potential to significantly broaden treatment reach and reduce costs. However, the rapid proliferation of digital applications claiming therapeutic effects, coupled with their increasing adoption by the public1, underscores a crucial concern: the absence of established clinical standards for rigorously evaluating the safety and effectiveness of these GenA",
+  "needs_fetch": false
+ },
+ {
+  "id": 1223,
+  "title": "PDLP: a practical first-order method for large-scale linear programming",
+  "org": "deepmind",
+  "date": "2026-05-15",
+  "venue": "Mathematical Programming Computation",
+  "url": "https://doi.org/10.1007/s12532-026-00309-2",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 564,
+  "title": "Mechanistically Interpretable Neural Encoding Reveals Fine-Grained Functional Selectivity in Human Visual Cortex",
+  "org": "deepmind",
+  "date": "2026-05-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.16468",
+  "abstract": "A central goal in understanding human vision is to uncover the visual features that drive neuronal activity. A growing body of work has used artificial neural networks as encoding models to predict cortical responses to natural images, revealing the visual content that activates category-selective regions. However, existing approaches are largely correlational and treat the encoder as a black box, leaving open which image features drive each voxel's response. We introduce Mechanistically Interpretable Neural Encoding (MINE), a framework that opens this black box by applying mechanistic-interpretability tools to localize the features within natural images that drive millimeter-scale (voxel-level) activity. MINE predicts each voxel's response using language-aligned image representations, and produces semantically interpretable descriptions of the features critical for the voxel's activation. We further generalize these per-image features into per-voxel functional profiles. To validate the per-image descriptions, we show they are sufficient to generate images that elicit voxel responses matching the responses to the original images, more accurately than images generated from random or low-attribution controls. Moreover, counterfactually inserting or removing the predicted features from images shifts activation in the expected direction, providing causal evidence. Counterfactual editing guided by the per-voxel activation profiles produces even stronger activation shifts, indicati",
+  "needs_fetch": false
+ },
+ {
+  "id": 642,
+  "title": "Training on Documents About Monitoring Leads to CoT Obfuscation",
+  "org": "other",
+  "date": "2026-05-14",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2605.15257",
+  "abstract": "Chain-of-thought (CoT) monitoring is one of the most promising tools we have for detecting model misbehavior, but its effectiveness depends on models faithfully externalizing their reasoning. Motivated by this vulnerability, we study whether monitor-aware models are capable of obfuscating their reasoning to evade detection. We use synthetic document finetuning to expose eight models to realistic pre-training-style documents describing a CoT monitor and find that monitor-aware models consistently achieve higher rates of undetected misbehavior compared to unaware controls. This effect is weaker but still present on a harder agentic task. We also show that CoT controllability, a model's ability to reshape its own reasoning trace under an imposed constraint, is closely correlated with obfuscation success across the eight models studied ($r=0.800$, $p=0.017$). Monitor-aware models placed under equal reinforcement learning optimization pressure also learn to reward-hack without triggering a CoT monitor substantially faster than unaware controls. Together, these results suggest that knowledge of monitoring combined with high CoT controllability poses a risk to CoT-based monitoring.",
+  "needs_fetch": false
+ },
+ {
+  "id": 5,
+  "title": "2028: Two scenarios for global AI leadership",
+  "org": "anthropic",
+  "date": "2026-05-14",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/2028-ai-leadership",
+  "abstract": "Our views on the AI competition between the US and China.",
+  "needs_fetch": true
+ }
+]

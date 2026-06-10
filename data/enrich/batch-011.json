@@ -1,0 +1,302 @@
+[
+ {
+  "id": 1296,
+  "title": "Neural representations supporting generalization under continual learning",
+  "org": "deepmind",
+  "date": "2026-01-08",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.64898/2026.01.07.698044",
+  "abstract": "Abstract Abstraction and generalization are essential for flexible decision-making in novel situations. Recent work in humans and monkeys has shown how abstract variables are encoded by the representational geometry of neural population activity. However, these observations—which are typically made after learning has converged—demonstrate the product of abstraction, but not the process by which abstract knowledge is learned: how are the inputs from concrete experiences transformed into abstract knowledge, and how do neural circuits perform these operations and relay this knowledge? To address these questions, we developed a factorized model of temporal abstraction that builds on the successor representation. The model disentangles the contributions of different levels of abstract learning—from stimulus-stimulus associations to a generalizable task schema—in the form of a factorized prediction error that relates the change in relational knowledge to a predicted change in representational geometry on each trial. We fit the model to the behavior of human participants performing a context-dependent decision task during fMRI. The model captured the learning dynamics at multiple timescales, including the increasing contribution of generalization as participants transferred abstracted relational knowledge between novel task instances. In fMRI, BOLD activity in hippocampus—where, in past work, abstract knowledge was represented after learning—was increasingly attributed to the acquis",
+  "needs_fetch": false
+ },
+ {
+  "id": 467,
+  "title": "Excess Description Length of Learning Generalizable Predictors",
+  "org": "anthropic",
+  "date": "2026-01-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.04728",
+  "abstract": "Understanding whether fine-tuning elicits latent capabilities or teaches new ones is a fundamental question for language model evaluation and safety. We develop a formal information-theoretic framework for quantifying how much predictive structure fine-tuning extracts from the train dataset and writes into a model's parameters. Our central quantity, Excess Description Length (EDL), is defined via prequential coding and measures the gap between the bits required to encode training labels sequentially using an evolving model (trained online) and the residual encoding cost under the final trained model. We establish that EDL is non-negative in expectation, converges to surplus description length in the infinite-data limit, and provides bounds on expected generalization gain. Through a series of toy models, we clarify common confusions about information in learning: why random labels yield EDL near zero, how a single example can eliminate many bits of uncertainty about the underlying rule(s) that describe the data distribution, why structure learned on rare inputs contributes proportionally little to expected generalization, and how format learning creates early transients distinct from capability acquisition. This framework provides rigorous foundations for the empirical observation that capability elicitation and teaching exhibit qualitatively distinct scaling signatures.",
+  "needs_fetch": false
+ },
+ {
+  "id": 303,
+  "title": "Thinking-Based Non-Thinking: Solving the Reward Hacking Problem in Training Hybrid Reasoning Models via Reinforcement Learning",
+  "org": "other",
+  "date": "2026-01-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.04805",
+  "abstract": "Large reasoning models (LRMs) have attracted much attention due to their exceptional performance. However, their performance mainly stems from thinking, a long Chain of Thought (CoT), which significantly increase computational overhead. To address this overthinking problem, existing work focuses on using reinforcement learning (RL) to train hybrid reasoning models that automatically decide whether to engage in thinking or not based on the complexity of the query. Unfortunately, using RL will suffer the the reward hacking problem, e.g., the model engages in thinking but is judged as not doing so, resulting in incorrect rewards. To mitigate this problem, existing works either employ supervised fine-tuning (SFT), which incurs high computational costs, or enforce uniform token limits on non-thinking responses, which yields limited mitigation of the problem. In this paper, we propose Thinking-Based Non-Thinking (TNT). It does not employ SFT, and sets different maximum token usage for responses not using thinking across various queries by leveraging information from the solution component of the responses using thinking. Experiments on five mathematical benchmarks demonstrate that TNT reduces token usage by around 50% compared to DeepSeek-R1-Distill-Qwen-1.5B/7B and DeepScaleR-1.5B, while significantly improving accuracy. In fact, TNT achieves the optimal trade-off between accuracy and efficiency among all tested methods. Additionally, the probability of reward hacking problem in T",
+  "needs_fetch": false
+ },
+ {
+  "id": 304,
+  "title": "Understanding Reward Hacking in Text-to-Image Reinforcement Learning",
+  "org": "other",
+  "date": "2026-01-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.03468",
+  "abstract": "Reinforcement learning (RL) has become a standard approach for post-training large language models and, more recently, for improving image generation models, which uses reward functions to enhance generation quality and human preference alignment. However, existing reward designs are often imperfect proxies for true human judgment, making models prone to reward hacking--producing unrealistic or low-quality images that nevertheless achieve high reward scores. In this work, we systematically analyze reward hacking behaviors in text-to-image (T2I) RL post-training. We investigate how both aesthetic/human preference rewards and prompt-image consistency rewards individually contribute to reward hacking and further show that ensembling multiple rewards can only partially mitigate this issue. Across diverse reward models, we identify a common failure mode: the generation of artifact-prone images. To address this, we propose a lightweight and adaptive artifact reward model, trained on a small curated dataset of artifact-free and artifact-containing samples. This model can be integrated into existing RL pipelines as an effective regularizer for commonly used reward models. Experiments demonstrate that incorporating our artifact reward significantly improves visual realism and reduces reward hacking across multiple T2I RL setups, demonstrating the effectiveness of lightweight reward augment serving as a safeguard against reward hacking.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1297,
+  "title": "LLMs achieve adult human performance on higher-order theory of mind tasks",
+  "org": "deepmind",
+  "date": "2026-01-02",
+  "venue": "Frontiers in Human Neuroscience",
+  "url": "https://doi.org/10.3389/fnhum.2025.1633272",
+  "abstract": "This paper examines the extent to which large language models (LLMs) are able to perform tasks which require higher-order theory of mind (ToM)—the human ability to reason about multiple mental and emotional states in a recursive manner (e.g., I think that you believe that she knows ). This paper builds on prior work by introducing a handwritten test suite—Multi-Order Theory of Mind Q&amp;amp;A—and using it to compare the performance of five LLMs of varying sizes and training paradigms to a newly gathered adult human benchmark. We find that GPT-4 and Flan-PaLM reach adult-level and near adult-level performance on our ToM tasks overall, and that GPT-4 exceeds adult performance on 6th order inferences. Our results suggest that there is an interplay between model size and finetuning for higher-order ToM performance, and that the linguistic abilities of large models may support more complex ToM inferences. Given the important role that higher-order ToM plays in group social interaction and relationships, these findings have significant implications for the development of a broad range of social, educational and assistive LLM applications.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2674,
+  "title": "What Should Physics Foundation Model Benchmarks Measure?",
+  "org": "openai",
+  "date": "2026-01-01",
+  "venue": "Computing in Science & Engineering",
+  "url": "https://doi.org/10.1109/mcse.2026.3698434",
+  "abstract": "Physics foundation models are evaluated primarily on in-distribution accuracy at training resolutions. This measures in-domain approximation and not whether models have learned continuous physics. We propose validation protocols along two axes: out-of-distribution generalization (do models trained on easy problems generalize gracefully to hard ones?) and temporal consistency (do models produce coherent dynamics under resolution changes?). These benchmarks are straightforward to implement and would clarify whether current models are learning physics or memorizing discrete computational artifacts.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2673,
+  "title": "The pangenome: a statistical model, not a fixed biological property",
+  "org": "openai",
+  "date": "2026-01-01",
+  "venue": "Bioinformatics Advances",
+  "url": "https://doi.org/10.1093/bioadv/vbag069",
+  "abstract": "The pangenome, representing the complete genetic repertoire of a species, has become a central concept in modern prokaryotic genomics, moving the field beyond the limitations of a single reference genome. This review provides a comprehensive overview of the pangenomic landscape, from its conceptual foundations to its diverse applications. We critically examine the methodological and statistical underpinnings of pangenome analysis, emphasizing that the pangenome is not a fixed biological entity but a statistical model whose outputs are fundamentally dependent on dataset quality, curation, and taxonomic resolution. We discuss the transition from the simple open/closed dichotomy to more nuanced, ecologically driven models like pangenome fluidity and the ecogenome, which better explain the evolutionary dynamics of prokaryotic genomes. With a special focus on the archaeal pangenome, we highlight the unique challenges and novel evolutionary insights emerging from this under-explored domain. As the field moves towards graph-based representations, AI-driven analysis, and the expansion into metapangenomics integrated with functional multi-omics, we argue that a rigorous and critical approach to data interpretation will be paramount to unlocking a true understanding of microbial evolution and function.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2672,
+  "title": "GPT as a Measurement Tool",
+  "org": "openai",
+  "date": "2026-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.6246332",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2671,
+  "title": "Legal Alignment for Safe and Ethical AI",
+  "org": "openai",
+  "date": "2026-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.6036657",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1300,
+  "title": "大規模言語モデルの現在地 ――世界の潮流と日本の動向――",
+  "org": "deepmind",
+  "date": "2026-01-01",
+  "venue": "Denshi Jouhou Tsuushin Gakkai Tsuushin Sosaieti magajin/B-plus/Denshi Jouhou Tsuushin Gakkai Tsuushin Sosaeti magajin",
+  "url": "https://doi.org/10.1587/bplus.20.36",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1299,
+  "title": "What kind of Generative world Model can Get us to Human-like General Intelligence?",
+  "org": "deepmind",
+  "date": "2026-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.6169446",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1298,
+  "title": "AI Agent Traps",
+  "org": "deepmind",
+  "date": "2026-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.6372438",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1181,
+  "title": "The Yu-Liang Income-Price Equivalence Theory&amp;nbsp;&lt;div&gt; A Formal Framework for Understanding Real-World Pricing&lt;/div&gt;",
+  "org": "anthropic",
+  "date": "2026-01-01",
+  "venue": "SSRN Electronic Journal",
+  "url": "https://doi.org/10.2139/ssrn.6001574",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 305,
+  "title": "GARDO: Reinforcing Diffusion Models without Reward Hacking",
+  "org": "other",
+  "date": "2025-12-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.24138",
+  "abstract": "Fine-tuning diffusion models via online reinforcement learning (RL) has shown great potential for enhancing text-to-image alignment. However, since precisely specifying a ground-truth objective for visual tasks remains challenging, the models are often optimized using a proxy reward that only partially captures the true goal. This mismatch often leads to reward hacking, where proxy scores increase while real image quality deteriorates and generation diversity collapses. While common solutions add regularization against the reference policy to prevent reward hacking, they compromise sample efficiency and impede the exploration of novel, high-reward regions, as the reference policy is usually sub-optimal. To address the competing demands of sample efficiency, effective exploration, and mitigation of reward hacking, we propose Gated and Adaptive Regularization with Diversity-aware Optimization (GARDO), a versatile framework compatible with various RL algorithms. Our key insight is that regularization need not be applied universally; instead, it is highly effective to selectively penalize a subset of samples that exhibit high uncertainty. To address the exploration challenge, GARDO introduces an adaptive regularization mechanism wherein the reference model is periodically updated to match the capabilities of the online policy, ensuring a relevant regularization target. To address the mode collapse issue in RL, GARDO amplifies the rewards for high-quality samples that also exhibit",
+  "needs_fetch": false
+ },
+ {
+  "id": 1301,
+  "title": "Guest Editorial: Special Issue on Visual Datasets",
+  "org": "deepmind",
+  "date": "2025-12-26",
+  "venue": "International Journal of Computer Vision",
+  "url": "https://doi.org/10.1007/s11263-025-02722-x",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1302,
+  "title": "Stochastic near-surface wind field estimation from sparse aerial swarm measurements to support wildfire behaviour predictions",
+  "org": "deepmind",
+  "date": "2025-12-23",
+  "venue": "Applied Soft Computing",
+  "url": "https://doi.org/10.1016/j.asoc.2025.114478",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 468,
+  "title": "ChatGPT: Excellent Paper! Accept It. Editor: Imposter Found! Review Rejected",
+  "org": "other",
+  "date": "2025-12-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.20405",
+  "abstract": "Large Language Models (LLMs) like ChatGPT are now widely used in writing and reviewing scientific papers. While this trend accelerates publication growth and reduces human workload, it also introduces serious risks. Papers written or reviewed by LLMs may lack real novelty, contain fabricated or biased results, or mislead downstream research that others depend on. Such issues can damage reputations, waste resources, and even endanger lives when flawed studies influence medical or safety-critical systems. This research explores both the offensive and defensive sides of this growing threat. On the attack side, we demonstrate how an author can inject hidden prompts inside a PDF that secretly guide or \"jailbreak\" LLM reviewers into giving overly positive feedback and biased acceptance. On the defense side, we propose an \"inject-and-detect\" strategy for editors, where invisible trigger prompts are embedded into papers; if a review repeats or reacts to these triggers, it reveals that the review was generated by an LLM, not a human. This method turns prompt injections from vulnerability into a verification tool. We outline our design, expected model behaviors, and ethical safeguards for deployment. The goal is to expose how fragile today's peer-review process becomes under LLM influence and how editorial awareness can help restore trust in scientific evaluation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 194,
+  "title": "AgentMath: Empowering Mathematical Reasoning for Large Language Models via Tool-Augmented Agent",
+  "org": "other",
+  "date": "2025-12-23",
+  "venue": "ICLR 2026",
+  "url": "https://arxiv.org/abs/2512.20745",
+  "abstract": "Large Reasoning Models (LRMs) like o3 and DeepSeek-R1 have achieved remarkable progress in reasoning tasks with long cot. However, they remain computationally inefficient and struggle with accuracy when solving problems requiring complex mathematical operations. In this work, we present AgentMath, an agent framework that seamlessly integrates language models' reasoning capabilities with code interpreters' computational precision to efficiently tackle complex mathematical problems. Our approach introduces three key innovations: (1) An automated method that converts natural language chain-of-thought into structured tool-augmented trajectories, generating high-quality supervised fine-tuning (SFT) data to alleviate data scarcity; (2) A novel agentic reinforcement learning (RL) paradigm that dynamically interleaves natural language generation with real-time code execution. This enables models to autonomously learn optimal tool-use strategies through multi-round interactive feedback, while fostering emergent capabilities in code refinement and error correction; (3) An efficient training system incorporating innovative techniques, including request-level asynchronous rollout scheduling, agentic partial rollout, and prefix-aware weighted load balancing, achieving 4-5x speedup and making efficient RL training feasible on ultra-long sequences with scenarios with massive tool invocation. The evaluations show that AgentMath achieves state-of-the-art performance on challenging mathematica",
+  "needs_fetch": false
+ },
+ {
+  "id": 469,
+  "title": "A Multi-Perspective Benchmark and Moderation Model for Evaluating Safety and Adversarial Robustness",
+  "org": "other",
+  "date": "2025-12-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.03273",
+  "abstract": "As large language models (LLMs) become deeply embedded in daily life, the urgent need for safer moderation systems that distinguish between naive and harmful requests while upholding appropriate censorship boundaries has never been greater. While existing LLMs can detect dangerous or unsafe content, they often struggle with nuanced cases such as implicit offensiveness, subtle gender and racial biases, and jailbreak prompts, due to the subjective and context-dependent nature of these issues. Furthermore, their heavy reliance on training data can reinforce societal biases, resulting in inconsistent and ethically problematic outputs. To address these challenges, we introduce GuardEval, a unified multi-perspective benchmark dataset designed for both training and evaluation, containing 106 fine-grained categories spanning human emotions, offensive and hateful language, gender and racial bias, and broader safety concerns. We also present GemmaGuard (GGuard), a Quantized Low-Rank Adaptation (QLoRA), fine-tuned version of Gemma3-12B trained on GuardEval, to assess content moderation with fine-grained labels. Our evaluation shows that GGuard achieves a macro F1 score of 0.832, substantially outperforming leading moderation models, including OpenAI Moderator (0.64) and Llama Guard (0.61). We show that multi-perspective, human-centered safety benchmarks are critical for mitigating inconsistent moderation decisions. GuardEval and GGuard together demonstrate that diverse, representative d",
+  "needs_fetch": false
+ },
+ {
+  "id": 658,
+  "title": "Monitoring Monitorability",
+  "org": "openai",
+  "date": "2025-12-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2512.18311",
+  "abstract": "Observability into the decision making of modern AI systems may be required to safely deploy increasingly capable agents. Monitoring the chain-of-thought (CoT) of today's reasoning models has proven effective for detecting misbehavior. However, this \"monitorability\" may be fragile under different training procedures, data sources, or even continued system scaling. To measure and track monitorability, we propose three evaluation archetypes (intervention, process, and outcome-property) and a new monitorability metric, and introduce a broad evaluation suite. We demonstrate that these evaluations can catch simple model organisms trained to have obfuscated CoTs, and that CoT monitoring is more effective than action-only monitoring in practical settings. We compare the monitorability of various frontier models and find that most models are fairly, but not perfectly, monitorable. We also evaluate how monitorability scales with inference-time compute, reinforcement learning optimization, and pre-training model size. We find that longer CoTs are generally more monitorable and that RL optimization does not materially decrease monitorability even at the current frontier scale. Notably, we find that for a model at a low reasoning effort, we could instead deploy a smaller model at a higher reasoning effort (thereby matching capabilities) and obtain a higher monitorability, albeit at a higher overall inference compute cost. We further investigate agent-monitor scaling trends and find that ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1303,
+  "title": "High-speed X-ray tomography for 4D imaging",
+  "org": "deepmind",
+  "date": "2025-12-19",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2521089122",
+  "abstract": "Capturing high-rate spatiotemporal deformation of materials in three dimensions (3D) remains a significant challenge with current X-ray imaging techniques. We present a methodology that combines advances in neural rendering techniques with volume correlation methods to accurately reconstruct complex, high-rate 3D spatiotemporal structural evolutions. The fidelity and versatility of the method, which requires no pretraining, are demonstrated for a diverse set of intricate 3D-printed microarchitected solids. Using laboratory-based X-ray tomography, we capture the 3D growth of a high-rate crush band on a timescale of less than 100 ms. By broadening this idea to a stereo X-ray concept, we eliminate the need to rotate the image object, thereby extending the technique to significantly faster timescales. Our neural rendering framework opens possibilities for 3D observations of viscoelastic responses of biological materials to 3D investigations of numerous poorly understood dynamic processes, such as the runaway failure of batteries, all using laboratory X-ray systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 195,
+  "title": "OpenAI GPT-5 System Card",
+  "org": "openai",
+  "date": "2025-12-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2601.03267",
+  "abstract": "This is the system card published alongside the OpenAI GPT-5 launch, August 2025. GPT-5 is a unified system with a smart and fast model that answers most questions, a deeper reasoning model for harder problems, and a real-time router that quickly decides which model to use based on conversation type, complexity, tool needs, and explicit intent (for example, if you say 'think hard about this' in the prompt). The router is continuously trained on real signals, including when users switch models, preference rates for responses, and measured correctness, improving over time. Once usage limits are reached, a mini version of each model handles remaining queries. This system card focuses primarily on gpt-5-thinking and gpt-5-main, while evaluations for other models are available in the appendix. The GPT-5 system not only outperforms previous models on benchmarks and answers questions more quickly, but -- more importantly -- is more useful for real-world queries. We've made significant advances in reducing hallucinations, improving instruction following, and minimizing sycophancy, and have leveled up GPT-5's performance in three of ChatGPT's most common uses: writing, coding, and health. All of the GPT-5 models additionally feature safe-completions, our latest approach to safety training to prevent disallowed content. Similarly to ChatGPT agent, we have decided to treat gpt-5-thinking as High capability in the Biological and Chemical domain under our Preparedness Framework, activatin",
+  "needs_fetch": false
+ },
+ {
+  "id": 146,
+  "title": "Activation Oracles: Training and Evaluating LLMs as General-Purpose Activation Explainers",
+  "org": "anthropic",
+  "date": "2025-12-19",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/activation-oracles/",
+  "abstract": "We train LLMs to accept LLM neural activations as inputs and answer arbitrary questions about them in natural language. These Activation Oracles generalize far beyond their training distribution, for example uncovering misalignment or secret knowledge introduced via fine-tuning. Activation Oracles can be improved simply by scaling training data quantity and diversity.",
+  "needs_fetch": false
+ },
+ {
+  "id": 145,
+  "title": "Bloom: an open source tool for automated behavioral evaluations",
+  "org": "anthropic",
+  "date": "2025-12-19",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/bloom-auto-evals/",
+  "abstract": "We are releasing Bloom, an agentic framework for developing behavioral evaluations. Bloom's evaluations are reproducible and targeted: unlike open-ended auditing, Bloom takes a researcher-specified behavior and quantifies its frequency and severity across automatically generated scenarios. Bloom's evaluations correlate strongly with our hand-labelled judgments and reliably separate baseline models from intentionally misaligned ones. As examples, we also release benchmark results for four alignment relevant behaviors on 16 models. Bloom is available at github.com/safety-research/bloom.",
+  "needs_fetch": false
+ },
+ {
+  "id": 37,
+  "title": "Introducing Bloom: an open source tool for automated behavioral evaluations",
+  "org": "anthropic",
+  "date": "2025-12-19",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/bloom",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2675,
+  "title": "Evaluating the Social Impact of Generative AI Systems",
+  "org": "openai",
+  "date": "2025-12-18",
+  "venue": "Oxford University Press eBooks",
+  "url": "https://doi.org/10.1093/oxfordhb/9780198940272.013.0025",
+  "abstract": "Abstract Generative artificial intelligence (AI) systems across modalities, ranging from text, code, image, audio, and video, have broad social impacts, but there is little agreement on which impacts to evaluate or how to evaluate them. In this chapter, we present a guide for evaluating base generative AI systems (i.e. systems without predetermined applications or deployment contexts). We propose a framework of two overarching categories: what can be evaluated in a system independent of context and what requires societal context. For the former, we define seven areas of interest: stereotypes and representational harms; cultural values and sensitive content; disparate performance; privacy and data protection; financial costs; environmental costs; and data and content moderation labor costs. For the latter, we present five areas: trustworthiness and autonomy; inequality, marginalization, and violence; concentration of authority; labor and creativity; and ecosystem and environment. For each, we present methods for evaluations and the limitations presented by such methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1304,
+  "title": "A psychometric framework for evaluating and shaping personality traits in large language models",
+  "org": "deepmind",
+  "date": "2025-12-18",
+  "venue": "Nature Machine Intelligence",
+  "url": "https://doi.org/10.1038/s42256-025-01115-6",
+  "abstract": "The advent of large language models (LLMs) has revolutionized natural language processing, enabling the generation of coherent and contextually relevant human-like text. As LLMs increasingly power conversational agents used by the general public worldwide, the synthetic personality traits embedded in these models by virtue of training on large amounts of human data are becoming increasingly important to evaluate. The style in which LLMs respond can mimic different human personality traits. Here, as these patterns can be a key factor determining the effectiveness of communication, we present a comprehensive psychometric methodology for administering and validating personality tests on widely used LLMs, as well as for shaping personality in the generated text of such LLMs. Applying this method to 18 LLMs, we found that: personality measurements in the outputs of some LLMs under specific prompting configurations are reliable and valid; evidence of reliability and validity of synthetic LLM personality is stronger for larger and instruction-fine-tuned models; and personality in LLM outputs can be shaped along desired dimensions to mimic specific human personality profiles. We discuss the application and ethical implications of the measurement and shaping method, in particular regarding responsible artificial intelligence. Serapio-García, Safdari and colleagues develop a method based on psychometric tests to measure and validate personality-like traits in LLMs. Large, instruction-t",
+  "needs_fetch": false
+ },
+ {
+  "id": 939,
+  "title": "Evaluating chain-of-thought monitorability",
+  "org": "openai",
+  "date": "2025-12-18",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/evaluating-chain-of-thought-monitorability/",
+  "abstract": "OpenAI introduces a new framework and evaluation suite for chain-of-thought monitorability, covering 13 evaluations across 24 environments. Our findings show that monitoring a model’s internal reasoning is far more effective than monitoring outputs alone, offering a promising path toward scalable control as AI systems grow more capable.",
+  "needs_fetch": false
+ },
+ {
+  "id": 938,
+  "title": "Addendum to GPT-5.2 System Card: GPT-5.2-Codex",
+  "org": "openai",
+  "date": "2025-12-18",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-2-codex-system-card/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 38,
+  "title": "Project Vend: Phase two",
+  "org": "anthropic",
+  "date": "2025-12-18",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/project-vend-2",
+  "abstract": "In June, we revealed that weâd set up a small shop in our San Francisco office lunchroom, run by an AI shopkeeper. It was part of Project Vend, a free-form experiment exploring how well AIs could do on complex, real-world tasks. How has Claude's business been since we last wrote?",
+  "needs_fetch": false
+ }
+]

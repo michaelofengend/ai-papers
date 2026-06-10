@@ -1,0 +1,302 @@
+[
+ {
+  "id": 2585,
+  "title": "Slow escape decisions are swayed by trait anxiety",
+  "org": "deepmind",
+  "date": "2019-05-20",
+  "venue": "Nature Human Behaviour",
+  "url": "https://doi.org/10.1038/s41562-019-0595-5",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2586,
+  "title": "Evaluating the impact of organisational digital maturity on clinical outcomes in secondary care in England",
+  "org": "deepmind",
+  "date": "2019-05-16",
+  "venue": "npj Digital Medicine",
+  "url": "https://doi.org/10.1038/s41746-019-0118-9",
+  "abstract": "All healthcare systems are increasingly reliant on health information technology to support the delivery of high-quality, efficient and safe care. Data on its effectiveness are however limited. We therefore sought to examine the impact of organisational digital maturity on clinical outcomes in secondary care within the English National Health Service. We conducted a retrospective analysis of routinely collected administrative data for 13,105,996 admissions across 136 hospitals in England from 2015 to 2016. Data from the 2016 NHS Clinical Digital Maturity Index were used to characterise organisational digital maturity. A multivariable regression model including 12 institutional covariates was utilised to examine the relationship between one measure of organisational digital maturity and five key clinical outcome measures. There was no significant relationship between organisational digital maturity and risk-adjusted 30-day mortality, 28-day readmission rates or complications of care. In multivariable analysis risk-adjusted long length of stay and harm-free care were significantly related to aspects of organisational digital maturity; digitally mature hospitals may not only deliver more harm-free care episodes but also may have a significantly increased risk of patients experiencing a long length of stay. Organisational digital maturity is to some extent related to selected clinical outcomes in secondary care in England. Digital maturity is, however, also strongly linked to oth",
+  "needs_fetch": false
+ },
+ {
+  "id": 2592,
+  "title": "Computing Stable Solutions in Threshold Network Flow Games With Bounded Treewidth",
+  "org": "deepmind",
+  "date": "2019-05-08",
+  "venue": null,
+  "url": "https://doi.org/10.65109/vfrm7723",
+  "abstract": "Network flow games are a prominent model for team formation, where a commodity can flow through a network whose edges are controlled by selfish agents. In Threshold Network Flow Games (TNFGs), an agent team is successful if the flow it can achieve between a source and target vertices meets or exceeds a certain threshold. Cooperative game theory allows predicting how agents are likely to share the the joint reward in such settings, by applying solution concepts such as the core, which characterizes stable reward distributions. When TNFGs have empty cores, every reward distribution is somewhat unstable, which requires using a relaxed solution such as the least-core to find the most stable distribution. Earlier work showed that computing the least-core in TNFGs is computationally hard, but tractable for very restricted graphs, such as layer graphs. We extend these results, presenting polynomial algorithms for the much larger class of bounded-treewidth graphs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2591,
+  "title": "The Imitation Game: Learned Reciprocity in Markov games",
+  "org": "deepmind",
+  "date": "2019-05-08",
+  "venue": null,
+  "url": "https://doi.org/10.65109/afng4004",
+  "abstract": "Reciprocity is an important feature of human social interaction and underpins our cooperative nature. What is more, simple forms of reciprocity have proved remarkably resilient in matrix game social dilemmas. Most famously, the tit-for-tat strategy performs very well in tournaments of Prisoner's Dilemma. Unfortunately this strategy is not readily applicable to the real world, in which options to cooperate or defect are temporally and spatially extended. Here, we present a general online reinforcement learning algorithm that displays reciprocal behavior towards its co-players. We show that it can induce pro-social outcomes for the wider group when learning alongside selfish agents, both in a 2-player Markov game, and in 5-player intertemporal social dilemmas. We analyse the resulting policies to show that the reciprocating agents are strongly influenced by their co-players' behavior.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2590,
+  "title": "The Body is Not a Given: Joint Agent Policy Learning and Morphology Evolution",
+  "org": "deepmind",
+  "date": "2019-05-08",
+  "venue": null,
+  "url": "https://doi.org/10.65109/mfry9850",
+  "abstract": "Reinforcement learning (RL) has proven to be a powerful paradigm for deriving complex behaviors from simple reward signals in a wide range of environments. When applying RL to continuous control agents in simulated physics environments, the body is usually considered to be part of the environment. However, during evolution the physical body of biological organisms and their controlling brains are co-evolved, thus exploring a much larger space of actuator/controller configurations. Put differently, the intelligence does not reside only in the agent's mind, but also in the design of their body. We propose a method for uncovering strong agents, consisting of a good combination of a body and policy, based on combining RL with an evolutionary procedure. Given the resulting agent, we also propose an approach for identifying the body changes that contributed the most to the agent performance. We use the Shapley value from cooperative game theory to find the fair contribution of individual components, taking into account synergies between components. We evaluate our methods in an environment similar to the the recently proposed Robo-Sumo task, where agents in a software physics simulator compete in tipping over their opponent or pushing them out of the arena. Our results show that the proposed methods are indeed capable of generating strong agents, significantly outperforming baselines that focus on optimizing the agent policy alone. A video is available at: https://youtu.be/CHlecRim",
+  "needs_fetch": false
+ },
+ {
+  "id": 2589,
+  "title": "Evolving Intrinsic Motivations for Altruistic Behavior",
+  "org": "deepmind",
+  "date": "2019-05-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1811.05931",
+  "abstract": "Multi-agent cooperation is an important feature of the natural world. Many tasks involve individual incentives that are misaligned with the common good, yet a wide range of organisms from bacteria to insects and humans are able to overcome their differences and collaborate. Therefore, the emergence of cooperative behavior amongst self-interested individuals is an important question for the fields of multi-agent reinforcement learning (MARL) and evolutionary theory. Here, we study a particular class of multi-agent problems called intertemporal social dilemmas (ISDs), where the conflict between the individual and the group is particularly sharp. By combining MARL with appropriately structured natural selection, we demonstrate that individual inductive biases for cooperation can be learned in a model-free way. To achieve this, we introduce an innovative modular architecture for deep reinforcement learning agents which supports multi-level selection. We present results in two challenging environments, and interpret these in the context of cultural and ecological evolution.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2588,
+  "title": "Observational Learning by Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2019-05-08",
+  "venue": null,
+  "url": "https://doi.org/10.65109/nqzd5621",
+  "abstract": "Observational learning is a type of learning that occurs as a function of observing, retaining and possibly imitating the behaviour of another agent. It is a core mechanism appearing in various instances of social learning and has been found to be employed in several intelligent species, including humans. In this paper, we investigate to what extent the explicit modelling of other agents is necessary to achieve observational learning through machine learning. Especially, we argue that observational learning can emerge from pure Reinforcement Learning (RL), potentially coupled with memory. Through simple scenarios, we demonstrate that an RL agent can leverage the information provided by the observations of an other agent performing a task in a shared environment. The other agent is only observed through the effect of its actions on the environment and never explicitly modeled. Two key aspects are borrowed from observational learning: i) the observer behaviour needs to change as a result of viewing a 'teacher' (another agent) and ii) the observer needs to be motivated somehow to engage in making use of the other agent's behaviour. The later is naturally modeled by RL, by correlating the learning agent's reward with the teacher agent's behaviour.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2587,
+  "title": "Malthusian Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2019-05-08",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1812.07019",
+  "abstract": "Here we explore a new algorithmic framework for multi-agent reinforcement learning, called Malthusian reinforcement learning, which extends self-play to include fitness-linked population size dynamics that drive ongoing innovation. In Malthusian RL, increases in a subpopulation's average return drive subsequent increases in its size, just as Thomas Malthus argued in 1798 was the relationship between preindustrial income levels and population growth. Malthusian reinforcement learning harnesses the competitive pressures arising from growing and shrinking population size to drive agents to explore regions of state and policy spaces that they could not otherwise reach. Furthermore, in environments where there are potential gains from specialization and division of labor, we show that Malthusian reinforcement learning is better positioned to take advantage of such synergies than algorithms based on self-play.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1071,
+  "title": "Transfer of adversarial robustness between perturbation types",
+  "org": "openai",
+  "date": "2019-05-03",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/transfer-of-adversarial-robustness-between-perturbation-types/",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2593,
+  "title": "SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems",
+  "org": "deepmind",
+  "date": "2019-05-02",
+  "venue": "Neural Information Processing Systems",
+  "url": "https://papers.nips.cc/paper/8589-superglue-a-stickier-benchmark-for-general-purpose-language-understanding-systems.pdf",
+  "abstract": "In the last year, new models and methods for pretraining and transfer learning have driven striking performance improvements across a range of language understanding tasks. The GLUE benchmark, introduced a little over one year ago, offers a single-number metric that summarizes progress on a diverse set of such tasks, but performance on the benchmark has recently surpassed the level of non-expert humans, suggesting limited headroom for further research. In this paper we present SuperGLUE, a new benchmark styled after GLUE with a new set of more difficult language understanding tasks, a software toolkit, and a public leaderboard. SuperGLUE is available at https://super.gluebenchmark.com.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2597,
+  "title": "T157. Neurocomputational Plasticity of the Self-Other Distinction",
+  "org": "deepmind",
+  "date": "2019-05-01",
+  "venue": "Biological Psychiatry",
+  "url": "https://doi.org/10.1016/j.biopsych.2019.03.480",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2596,
+  "title": "A Practical Approach to Insertion with Variable Socket Position Using Deep Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2019-05-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1810.01531",
+  "abstract": "Insertion is a challenging haptic and visual control problem with significant practical value for manufacturing. Existing approaches in the model-based robotics community can be highly effective when task geometry is known, but are complex and cumbersome to implement, and must be tailored to each individual problem by a qualified engineer. Within the learning community there is a long history of insertion research, but existing approaches are either too sample-inefficient to run on real robots, or assume access to high-level object features, e.g. socket pose. In this paper we show that relatively minor modifications to an off-the-shelf Deep-RL algorithm (DDPG), combined with a small number of human demonstrations, allows the robot to quickly learn to solve these tasks efficiently and robustly. Our approach requires no modeling or simulation, no parameterized search or alignment behaviors, no vision system aside from raw images, and no reward shaping. We evaluate our approach on a narrow-clearance peg-insertion task and a deformable clip-insertion task, both of which include variability in the socket position. Our results show that these tasks can be solved reliably on the real robot in less than 10 minutes of interaction time, and that the resulting policies are robust to variance in the socket position and orientation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2595,
+  "title": "Leveraging Contact Forces for Learning to Grasp",
+  "org": "deepmind",
+  "date": "2019-05-01",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1809.07004",
+  "abstract": "Grasping objects under uncertainty remains an open problem in robotics research. This uncertainty is often due to noisy or partial observations of the object pose or shape. To enable a robot to react appropriately to unforeseen effects, it is crucial that it continuously takes sensor feedback into account. While visual feedback is important for inferring a grasp pose and reaching for an object, contact feedback offers valuable information during manipulation and grasp acquisition. In this paper, we use model-free deep reinforcement learning to synthesize control policies that exploit contact sensing to generate robust grasping under uncertainty. We demonstrate our approach on a multi-fingered hand that exhibits more complex finger coordination than the commonly used two-fingered grippers. We conduct extensive experiments in order to assess the performance of the learned policies, with and without contact sensing. While it is possible to learn grasping policies without contact sensing, our results suggest that contact feedback allows for a significant improvement of grasping robustness under object pose uncertainty and for objects with a complex shape.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2594,
+  "title": "mID: Tracking and Identifying People with Millimeter Wave Radar",
+  "org": "deepmind",
+  "date": "2019-05-01",
+  "venue": null,
+  "url": "https://doi.org/10.1109/dcoss.2019.00028",
+  "abstract": "The key to offering personalised services in smart spaces is knowing where a particular person is with a high degree of accuracy. Visual tracking is one such solution, but concerns arise around the potential leakage of raw video information and many people are not comfortable accepting cameras in their homes or workplaces. We propose a human tracking and identification system (mID) based on millimeter wave radar which has a high tracking accuracy, without being visually compromising. Unlike competing techniques based on WiFi Channel State Information (CSI), it is capable of tracking and identifying multiple people simultaneously. Using a lowcost, commercial, off-the-shelf radar, we first obtain sparse point clouds and form temporally associated trajectories. With the aid of a deep recurrent network, we identify individual users. We evaluate and demonstrate our system across a variety of scenarios, showing median position errors of 0.16 m and identification accuracy of 89% for 12 people.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1072,
+  "title": "MuseNet",
+  "org": "openai",
+  "date": "2019-04-25",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/musenet/",
+  "abstract": "We’ve created MuseNet, a deep neural network that can generate 4-minute musical compositions with 10 different instruments, and can combine styles from country to Mozart to the Beatles. MuseNet was not explicitly programmed with our understanding of music, but instead discovered patterns of harmony, rhythm, and style by learning to predict the next token in hundreds of thousands of MIDI files. MuseNet uses the same general-purpose unsupervised technology as GPT-2, a large-scale transformer model trained to predict the next token in a sequence, whether audio or text.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1073,
+  "title": "Generative modeling with sparse transformers",
+  "org": "openai",
+  "date": "2019-04-23",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/sparse-transformer/",
+  "abstract": "We’ve developed the Sparse Transformer, a deep neural network which sets new records at predicting what comes next in a sequence—whether text, images, or sound. It uses an algorithmic improvement of the attention mechanism to extract patterns from sequences 30x longer than possible previously.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2862,
+  "title": "From GAN to WGAN",
+  "org": "openai",
+  "date": "2019-04-18",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/1904.08994",
+  "abstract": "This paper explains the math behind a generative adversarial network (GAN) model and why it is hard to be trained. Wasserstein GAN is intended to improve GANs' training by adopting a smooth metric for measuring the distance between two probability distributions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2599,
+  "title": "Low Bit-rate Speech Coding with VQ-VAE and a WaveNet Decoder",
+  "org": "deepmind",
+  "date": "2019-04-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/1910.06464",
+  "abstract": "In order to efficiently transmit and store speech signals, speech codecs create a minimally redundant representation of the input signal which is then decoded at the receiver with the best possible perceptual quality. In this work we demonstrate that a neural network architecture based on VQ-VAE with a WaveNet decoder can be used to perform very low bit-rate speech coding with high reconstruction quality. A prosody-transparent and speaker-independent model trained on the LibriSpeech corpus coding audio at 1.6 kbps exhibits perceptual quality which is around halfway between the MELP codec at 2.4 kbps and AMR-WB codec at 23.05 kbps. In addition, when training on high-quality recorded speech with the test speaker included in the training set, a model coding speech at 1.6 kbps produces output of similar perceptual quality to that generated by AMR-WB at 23.05 kbps.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2598,
+  "title": "Reinforcement Learning, Fast and Slow",
+  "org": "deepmind",
+  "date": "2019-04-16",
+  "venue": "Trends in Cognitive Sciences",
+  "url": "https://doi.org/10.1016/j.tics.2019.02.006",
+  "abstract": "Recent AI research has given rise to powerful techniques for deep reinforcement learning. In their combination of representation learning with reward-driven behavior, deep reinforcement learning would appear to have inherent interest for psychology and neuroscience. One reservation has been that deep reinforcement learning procedures demand large amounts of training data, suggesting that these algorithms may differ fundamentally from those underlying human learning. While this concern applies to the initial wave of deep RL techniques, subsequent AI work has established methods that allow deep RL systems to learn more quickly and efficiently. Two particularly interesting and promising techniques center, respectively, on episodic memory and meta-learning. Alongside their interest as AI techniques, deep RL methods leveraging episodic memory and meta-learning have direct and interesting implications for psychology and neuroscience. One subtle but critically important insight which these techniques bring into focus is the fundamental connection between fast and slow forms of learning. Deep reinforcement learning (RL) methods have driven impressive advances in artificial intelligence in recent years, exceeding human performance in domains ranging from Atari to Go to no-limit poker. This progress has drawn the attention of cognitive scientists interested in understanding human learning. However, the concern has been raised that deep RL may be too sample-inefficient – that is, it may",
+  "needs_fetch": false
+ },
+ {
+  "id": 1074,
+  "title": "OpenAI Five defeats Dota 2 world champions",
+  "org": "openai",
+  "date": "2019-04-15",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/openai-five-defeats-dota-2-world-champions/",
+  "abstract": "OpenAI Five is the first AI to beat the world champions in an esports game, having won two back-to-back games versus the world champion Dota 2 team, OG, at Finals this weekend. Both OpenAI Five and DeepMind’s AlphaStar had previously beaten good pros privately but lost their live pro matches, making this also the first time an AI has beaten esports pros on livestream.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2601,
+  "title": "Food Webs: Insights from a General Ecosystem Model",
+  "org": "deepmind",
+  "date": "2019-03-26",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/588665",
+  "abstract": "Abstract Food webs have been intensively studied throughout modern ecology, using empirical evidence, statistics and modelling tools to search for consistent patterns, underlying commonalities, and variations between food webs and ecosystems. However, with few exceptions, the modelling approaches have not been based on the emergent properties of complex simulated ecosystems. For the same reason, there have also been few studies of ‘sampling the model’, in which different levels of sampling effort are imposed in a controlled simulated environment to explore the effects of varying sampling intensity in order to relate those back to empirical observations. Here, we introduce the Madingley Model, a general ecosystem model based on ecological and biological first principles of interactions between individuals, as a potential tool for analyzing food webs. In doing so, we present the first insights of the analyses of emergent Madingley food web networks. We describe the basic structure of these networks and introduce a process to aggregate and sample the food webs produced by this model so that it can be compared to empirical food web studies. We show that food webs created by this model reasonably reproduce the properties of empirical food web networks. Furthermore, we provide insights about the effects of species aggregation and sampling on the observed structure of empirically documented food webs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2600,
+  "title": "The value of what’s to come: neural mechanisms coupling prediction error and reward anticipation",
+  "org": "deepmind",
+  "date": "2019-03-26",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.1101/588699",
+  "abstract": "Having something to look forward to is a keystone of well-being. Anticipation of a future reward, like an upcoming vacation, can often be more gratifying than the very experience itself. Theories of anticipation have described how it induces behaviors ranging from beneficial information-seeking through to harmful addiction. However, it remains unclear how neural systems compute an attractive value from anticipation, instead of from the reward itself. To address this gap, we administered a decision-making task to human participants that allowed us to analyze brain activity during receipt of information predictive of future pleasant outcomes. Using a computational model of anticipatory value that captures participants’ decisions, we show that an anticipatory value signal is orchestrated by influences from three brain regions. Ventromedial prefrontal cortex (vmPFC) tracks the value of anticipation; dopaminergic midbrain responds to information that enhances anticipation, while sustained hippocampal activity provides a functional coupling between these regions. This coordinating function of the hippocampus is consistent with its known role in episodic future thinking. Our findings shed new light on the neural underpinnings of anticipation’s influence over decision-making, while also unifying a range of phenomena associated with risk and time-delay preference.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2602,
+  "title": "Implementation of a Digitally Enabled Care Pathway (Part 2): Qualitative Analysis of Experiences of Health Care Professionals",
+  "org": "deepmind",
+  "date": "2019-03-24",
+  "venue": "Journal of Medical Internet Research",
+  "url": "https://doi.org/10.2196/13143",
+  "abstract": "BACKGROUND: One reason for the introduction of digital technologies into health care has been to try to improve safety and patient outcomes by providing real-time access to patient data and enhancing communication among health care professionals. However, the adoption of such technologies into clinical pathways has been less examined, and the impacts on users and the broader health system are poorly understood. We sought to address this by studying the impacts of introducing a digitally enabled care pathway for patients with acute kidney injury (AKI) at a tertiary referral hospital in the United Kingdom. A dedicated clinical response team-comprising existing nephrology and patient-at-risk and resuscitation teams-received AKI alerts in real time via Streams, a mobile app. Here, we present a qualitative evaluation of the experiences of users and other health care professionals whose work was affected by the implementation of the care pathway. OBJECTIVE: The aim of this study was to qualitatively evaluate the impact of mobile results viewing and automated alerting as part of a digitally enabled care pathway on the working practices of users and their interprofessional relationships. METHODS: A total of 19 semistructured interviews were conducted with members of the AKI response team and clinicians with whom they interacted across the hospital. Interviews were analyzed using inductive and deductive thematic analysis. RESULTS: The digitally enabled care pathway improved access to ",
+  "needs_fetch": false
+ },
+ {
+  "id": 2603,
+  "title": "Rapid advances in auto-segmentation of organs at risk and target volumes in head and neck cancer",
+  "org": "deepmind",
+  "date": "2019-03-22",
+  "venue": "Radiotherapy and Oncology",
+  "url": "https://doi.org/10.1016/j.radonc.2019.03.004",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1075,
+  "title": "Implicit generation and generalization methods for energy-based models",
+  "org": "openai",
+  "date": "2019-03-21",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/energy-based-models/",
+  "abstract": "We’ve made progress towards stable and scalable training of energy-based models (EBMs) resulting in better sample quality and generalization ability than existing models. Generation in EBMs spends more compute to continually refine its answers and doing so can generate samples competitive with GANs at low temperatures, while also having mode coverage guarantees of likelihood-based models. We hope these findings stimulate further research into this promising class of models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2605,
+  "title": "The U-net and its impact to medical imaging (Conference Presentation)",
+  "org": "deepmind",
+  "date": "2019-03-14",
+  "venue": "Medical Imaging 2019: Computer-Aided Diagnosis",
+  "url": "https://doi.org/10.1117/12.2519413",
+  "abstract": "The U-net has become the predominant choice when facing any medical image segmentation task. This is due to its high performance in many different medical domains. In this talk, I will introduce the U-net, and I will present three projects from DeepMind Health Research that use the U-net to address different challenges. The first project, a collaboration with University College London Hospital, deals with the challenging task of the precise segmentation of radiosensitive head and neck anatomy in CT scans, an essential input for radiotherapy planning. The second project, together with Moorfields Eye Hospital, developed a system that analyses 3D OCT (optical coherence tomography) eye scans to provide referral decisions for patients. The performance was on par with world experts with over 20 years experience. Finally, I will focus on the third project, which deals with the segmentation of ambiguous images. This is of particular relevance in medical imaging where ambiguities can often not be resolved from the image context alone. We propose a combination of a U-net with a conditional variational autoencoder that is capable of efficiently producing an unlimited number of plausible segmentation map hypotheses for a given ambiguous image. We show that each hypothesis provides a globally consistent segmentation, and that the probabilities of these hypotheses are well calibrated.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2604,
+  "title": "A Generic Human–Machine Annotation Framework Based on Dynamic Cooperative Learning",
+  "org": "deepmind",
+  "date": "2019-03-14",
+  "venue": "IEEE Transactions on Cybernetics",
+  "url": "https://doi.org/10.1109/tcyb.2019.2901499",
+  "abstract": "The task of obtaining meaningful annotations is a tedious work, incurring considerable costs and time consumption. Dynamic active learning and cooperative learning are recently proposed approaches to reduce human effort of annotating data with subjective phenomena. In this paper, we introduce a novel generic annotation framework, with the aim to achieve the optimal tradeoff between label reliability and cost reduction by making efficient use of human and machine work force. To this end, we use dropout to assess model uncertainty and thereby to decide which instances can be automatically labeled by the machine and which ones require human inspection. In addition, we propose an early stopping criterion based on inter-rater agreement in order to focus human resources on those ambiguous instances that are difficult to label. In contrast to the existing algorithms, the new confidence measures are not only applicable to binary classification tasks but also regression problems. The proposed method is evaluated on the benchmark datasets for non-native English prosody estimation, provided in the Interspeech computational paralinguistics challenge. In the result, the novel dynamic cooperative learning algorithm yields 0.424 Spearman's correlation coefficient compared to 0.413 with passive learning, while reducing the amount of human annotations by 74%.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2606,
+  "title": "Exploring mobile working in healthcare: Clinical perspectives on transitioning to a mobile first culture of work",
+  "org": "deepmind",
+  "date": "2019-03-07",
+  "venue": "International Journal of Medical Informatics",
+  "url": "https://doi.org/10.1016/j.ijmedinf.2019.03.003",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 2863,
+  "title": "Activation Atlas",
+  "org": "openai",
+  "date": "2019-03-06",
+  "venue": "Distill",
+  "url": "https://doi.org/10.23915/distill.00015",
+  "abstract": "By using feature inversion to visualize millions of activations from an image classification network, we create an explorable activation atlas of features the network has learned and what concepts it typically represents.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2607,
+  "title": "Backpropagation through time and the brain",
+  "org": "deepmind",
+  "date": "2019-03-06",
+  "venue": "Current Opinion in Neurobiology",
+  "url": "https://doi.org/10.1016/j.conb.2019.01.011",
+  "abstract": "It has long been speculated that the backpropagation-of-error algorithm (backprop) may be a model of how the brain learns. Backpropagation-through-time (BPTT) is the canonical temporal-analogue to backprop used to assign credit in recurrent neural networks in machine learning, but there's even less conviction about whether BPTT has anything to do with the brain. Even in machine learning the use of BPTT in classic neural network architectures has proven insufficient for some challenging temporal credit assignment (TCA) problems that we know the brain is capable of solving. Nonetheless, recent work in machine learning has made progress in solving difficult TCA problems by employing novel memory-based and attention-based architectures and algorithms, some of which are brain inspired. Importantly, these recent machine learning methods have been developed in the context of, and with reference to BPTT, and thus serve to strengthen BPTT's position as a useful normative guide for thinking about temporal credit assignment in artificial and biological systems alike.",
+  "needs_fetch": false
+ }
+]

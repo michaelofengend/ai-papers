@@ -1,0 +1,302 @@
+[
+ {
+  "id": 13,
+  "title": "What 81,000 people told us about the economics of AI",
+  "org": "anthropic",
+  "date": "2026-04-22",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/81k-economics",
+  "abstract": "Our recent survey study with 81,000 Claude users provides a way to connect peopleâs economic concerns with what weâve quantified in Claude traffic.",
+  "needs_fetch": false
+ },
+ {
+  "id": 12,
+  "title": "Announcing the Anthropic Economic Index Survey",
+  "org": "anthropic",
+  "date": "2026-04-22",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/economic-index-survey-announcement",
+  "abstract": "We're launching the Anthropic Economic Index Survey, a monthly survey conducted through Anthropic Interviewer.",
+  "needs_fetch": true
+ },
+ {
+  "id": 1237,
+  "title": "CoVA: Text-Guided Composed Video Retrieval for Audio-Visual Content",
+  "org": "deepmind",
+  "date": "2026-04-21",
+  "venue": null,
+  "url": "https://doi.org/10.1109/icassp55912.2026.11461962",
+  "abstract": "Composed Video Retrieval (CoVR) aims to retrieve a target video from a large gallery using a reference video and a textual query specifying visual modifications. However, existing benchmarks consider only visual changes, ignoring videos that differ in audio despite visual similarity. To address this limitation, we introduce Composed retrieval for Video with its Audio (CoVA), a new retrieval task that accounts for both visual and auditory variations. To support this, we construct AV-Comp, a benchmark consisting of video pairs with cross-modal changes and corresponding textual queries that describe the differences. We also propose AVT Compositional Fusion (AVT), which integrates video, audio, and text features by selectively aligning the query to the most relevant modality. AVT outperforms traditional unimodal fusion and serves as a strong baseline for CoVA. Examples from the proposed dataset, including both visual and auditory information, are available at https://perceptualai-lab.github.io/CoVA/.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1236,
+  "title": "Planning in entropy-regularized Markov decision processes and games",
+  "org": "deepmind",
+  "date": "2026-04-21",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2604.19695",
+  "abstract": "We propose SmoothCruiser, a new planning algorithm for estimating the value function in entropy-regularized Markov decision processes and two-player games, given a generative model of the environment. SmoothCruiser makes use of the smoothness of the Bellman operator promoted by the regularization to achieve problem-independent sample complexity of order O~(1/epsilon^4) for a desired accuracy epsilon, whereas for non-regularized settings there are no known algorithms with guaranteed polynomial sample complexity in the worst case.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1235,
+  "title": "Budgeted Online Influence Maximization",
+  "org": "deepmind",
+  "date": "2026-04-21",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2604.19672",
+  "abstract": "We introduce a new budgeted framework for online influence maximization, considering the total cost of an advertising campaign instead of the common cardinality constraint on a chosen influencer set. Our approach better models the real-world setting where the cost of influencers varies and advertisers want to find the best value for their overall social advertising budget. We propose an algorithm assuming an independent cascade diffusion model and edge level semi-bandit feedback, and provide both theoretical and experimental results. Our analysis is also valid for the cardinality constraint setting and improves the state of the art regret bound in this case.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1234,
+  "title": "On two ways to use determinantal point processes for Monte Carlo integration",
+  "org": "deepmind",
+  "date": "2026-04-21",
+  "venue": "ArXiv.org",
+  "url": "https://arxiv.org/abs/2604.19698",
+  "abstract": "The standard Monte Carlo estimator $\\widehat{I}_N^{\\mathrm{MC}}$ of $\\int fdω$ relies on independent samples from $ω$ and has variance of order $1/N$. Replacing the samples with a determinantal point process (DPP), a repulsive distribution, makes the estimator consistent, with variance rates that depend on how the DPP is adapted to $f$ and $ω$. We examine two existing DPP-based estimators: one by Bardenet &amp; Hardy (2020) with a rate of $\\mathcal{O}(N^{-(1+1/d)})$ for smooth $f$, but relying on a fixed DPP. The other, by Ermakov &amp; Zolotukhin (1960), is unbiased with rate of order $1/N$, like Monte Carlo, but its DPP is tailored to $f$. We revisit these estimators, generalize them to continuous settings, and provide sampling algorithms.",
+  "needs_fetch": false
+ },
+ {
+  "id": 272,
+  "title": "Reverse Constitutional AI: A Framework for Controllable Toxic Data Generation via Probability-Clamped RLAIF",
+  "org": "other",
+  "date": "2026-04-20",
+  "venue": "ACL",
+  "url": "https://arxiv.org/abs/2604.17769",
+  "abstract": "Ensuring the safety of large language models (LLMs) requires robust red teaming, yet the systematic synthesis of high-quality toxic data remains under-explored. We propose Reverse Constitutional AI (R-CAI), a framework for automated and controllable adversarial data generation that moves beyond isolated jailbreak prompts. By inverting a harmless constitution into a constitution of toxicity and iteratively refining model outputs through a critique--revision pipeline, R-CAI enables scalable synthesis of multi-dimensional adversarial data without human annotation. Optimizing solely for toxicity-related rewards, however, can lead to reward hacking and degraded semantic coherence. To address this challenge, we introduce probability clamping within reinforcement learning from AI feedback, which stabilizes adversarial optimization while preserving adversarial intent. Experiments demonstrate that R-CAI generates diverse, high-quality toxic data and that probability clamping substantially improves semantic coherence (15%) without sacrificing adversarial strength. Overall, R-CAI provides a fully automated framework for red teaming data generation and systematic safety evaluation of aligned language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1238,
+  "title": "Revisiting HOLC redlining maps with street view image data on urban visual perceptual quality: A case study in Buffalo",
+  "org": "deepmind",
+  "date": "2026-04-18",
+  "venue": "Environment and Planning B Urban Analytics and City Science",
+  "url": "https://doi.org/10.1177/23998083261445132",
+  "abstract": "Redlining, institutionalized by the HOLC in the 1930s, was a discriminatory credit mapping system that divided residential areas into A–D grades based on neighborhood conditions. Although long abolished, its unequal impacts persist. Previous studies mainly focused on racial and socioeconomic inequalities, while this study used street view image analysis to examine how redlining has produced inequalities in Visual Perceptual Quality through differences in the built environment. Taking Buffalo as a case, this study applied computer vision and machine learning with the Place Pulse 2.0 dataset to predict six perceptual dimensions—beauty, safety, wealth, liveliness, boring, and depressing. The results reveal significant differences in perception scores across redlining grades, indicating that inequality persists at the perceptual level. SHAP analysis further shows that these disparities are mainly driven by built environment features like trees, buildings, and roads. The uneven distribution of these key features across redlining grades forms the physical basis of perceptual inequality. The study also discussed the relationship between such inequality and the long-term planning bias and uneven investment shaped by redlining. This study expands the research scope of redlining and provides quantitative evidence for improving disadvantaged neighborhoods long affected by its legacy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1239,
+  "title": "Sample Complexity Bounds for Stochastic Shortest Path with a Generative Model",
+  "org": "deepmind",
+  "date": "2026-04-17",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2604.16111",
+  "abstract": "We study the sample complexity of learning an $ε$-optimal policy in the Stochastic Shortest Path (SSP) problem. We first derive sample complexity bounds when the learner has access to a generative model. We show that there exists a worst-case SSP instance with $S$ states, $A$ actions, minimum cost $c_{\\min}$, and maximum expected cost of the optimal policy over all states $B_{\\star}$, where any algorithm requires at least $Ω(SAB_{\\star}^3/(c_{\\min}ε^2))$ samples to return an $ε$-optimal policy with high probability. Surprisingly, this implies that whenever $c_{\\min} = 0$ an SSP problem may not be learnable, thus revealing that learning in SSPs is strictly harder than in the finite-horizon and discounted settings. We complement this lower bound with an algorithm that matches it, up to logarithmic factors, in the general case, and an algorithm that matches it up to logarithmic factors even when $c_{\\min} = 0$, but only under the condition that the optimal policy has a bounded hitting time to the goal state.",
+  "needs_fetch": false
+ },
+ {
+  "id": 273,
+  "title": "Detecting and Suppressing Reward Hacking with Gradient Fingerprints",
+  "org": "other",
+  "date": "2026-04-17",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.16242",
+  "abstract": "Reinforcement learning with verifiable rewards (RLVR) typically optimizes for outcome rewards without imposing constraints on intermediate reasoning. This leaves training susceptible to reward hacking, where models exploit loopholes (e.g., spurious patterns in training data) in the reward function to achieve high scores without solving the intended task. These reward-hacking behaviors are often implicit, as the intermediate chain-of-thought (CoT) may appear plausible on the surface, limiting the effectiveness of purely text-based monitoring. We propose Gradient Fingerprint (GRIFT), a method for detecting reward hacking using models' internal computations. Given a prompt and a model-generated CoT, GRIFT computes gradients of the CoT conditioned on the prompt and compresses them into a compact representation, which is then used to assess whether the CoT reflects reward hacking behavior. Across verifiable reasoning benchmarks spanning math, code, and logical reasoning, GRIFT substantially outperforms strong baselines, including CoT Monitor and TRACE, achieving over 25% relative improvement in detecting reward hacking behavior. Moreover, integrating GRIFT into the rejection fine-tuning pipeline for reasoning tasks reduces reward hacking and improves performance on the true task objective. Our results highlight a promising direction of leveraging gradient level representations for assessing the quality of CoT reasoning traces. Our code is available at: https://github.com/songtao-x",
+  "needs_fetch": false
+ },
+ {
+  "id": 2657,
+  "title": "ORION: An agentic reasoning construct for the analysis of complex human immune profiling",
+  "org": "openai",
+  "date": "2026-04-16",
+  "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "url": "https://doi.org/10.64898/2026.04.13.718286",
+  "abstract": "Abstract The capacity to generate high-dimensional biological datasets has outpaced the ability to interpret them. Technologies such as phage immunoprecipitation and sequencing (PhIP-seq) enable proteome-scale profiling of antibody repertoires, but interpreting thousands of enriched peptides into mechanistic hypotheses remains a labor-intensive bottleneck requiring expert synthesis of statistics, literature, and domain knowledge. Here we describe ORION (Omics Reasoning &amp; Interpretation Orchestrator), a multi-agent framework that uses reasoning-capable large language models to perform end-to-end analysis of complex immune profiling data. ORION integrates statistical analysis, machine learning, and automated literature review into a single structured workflow, producing results that are reproducible and fully traceable. Applied to a published PhIP-seq dataset from autoimmune polyendocrine syndrome type 1 (APS-1), ORION recovered the canonical autoantibody signature in approximately two hours, closely recapitulating an analysis that originally required one to two months of manual effort. To test hypothesis-generation capacity on previously unseen data, we applied ORION to a novel PhIP-seq dataset from individuals with Down syndrome, for which no proteome-wide autoantibody reference exists. ORION distinguished disease from control samples with high accuracy, prioritized candidate autoantibody targets, and organized them into biologically coherent groups spanning immune, gut, ",
+  "needs_fetch": false
+ },
+ {
+  "id": 922,
+  "title": "Introducing GPT-Rosalind for life sciences research",
+  "org": "openai",
+  "date": "2026-04-16",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/introducing-gpt-rosalind/",
+  "abstract": "OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific research workflows.",
+  "needs_fetch": false
+ },
+ {
+  "id": 275,
+  "title": "Beyond Importance Sampling: Rejection-Gated Policy Optimization",
+  "org": "other",
+  "date": "2026-04-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.14895",
+  "abstract": "We propose a new perspective on policy optimization: rather than reweighting all samples by their importance ratios, an optimizer should select which samples are trustworthy enough to drive a policy update. Building on this view, we introduce Rejection-Gated Policy Optimization (RGPO), which replaces the importance sampling ratio r_theta = pi_theta / pi_old with a smooth, differentiable acceptance gate alpha_theta(s, a) = g(r_theta(s, a)) in the range [0, 1]. Unlike prior work that applies rejection sampling as a data-level heuristic before training, RGPO elevates rejection to an optimization principle: the gate participates directly in gradient computation and is implicitly updated alongside the policy. RGPO provides a unified framework: the policy gradients of TRPO, PPO, and REINFORCE all correspond to specific choices of the effective gradient weight w(r) = g'(r) * r. We prove that RGPO guarantees finite, bounded gradient variance even when importance sampling ratios are heavy-tailed (where IS variance diverges). We further show that RGPO incurs only a bounded, controllable bias and provides an approximate monotonic policy improvement guarantee analogous to TRPO. RGPO matches PPO in computational cost, requires no second-order optimization, and extends naturally to RLHF-style preference alignment. In online preference fine-tuning of Qwen2.5-1.5B-Instruct on Anthropic HH-RLHF (n = 3 seeds), RGPO uses a dual-ratio gate that anchors learning to both the previous policy and th",
+  "needs_fetch": false
+ },
+ {
+  "id": 274,
+  "title": "LLMs Gaming Verifiers: RLVR can Lead to Reward Hacking",
+  "org": "other",
+  "date": "2026-04-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.15149",
+  "abstract": "As reinforcement Learning with Verifiable Rewards (RLVR) has become the dominant paradigm for scaling reasoning capabilities in LLMs, a new failure mode emerges: LLMs gaming verifiers. We study this phenomenon on inductive reasoning tasks, where models must induce and output logical rules. We find that RLVR-trained models systematically abandon rule induction. Instead of learning generalizable patterns (e.g., ``trains carrying red cars go east''), they enumerate instance-level labels, producing outputs that pass verifiers without capturing the relational patterns required by the task. We show that this behavior is not a failure of understanding but a form of reward hacking: imperfect verifiers that check only extensional correctness admit false positives. To detect such shortcuts, we introduce Isomorphic Perturbation Testing (IPT), which evaluates a single model output under both extensional and isomorphic verification, where the latter enforces invariance under logically isomorphic tasks. While genuine rule induction remains invariant, shortcut strategies fail. We find that shortcut behavior is specific to RLVR-trained reasoning models (e.g., GPT-5, Olmo3) and absent in non-RLVR models (e.g., GPT-4o, GPT-4.5, Ministral). Moreover, shortcut prevalence increases with task complexity and inference-time compute. In controlled training experiments, extensional verification directly induces shortcut strategies, while isomorphic verification eliminates them. These results show that",
+  "needs_fetch": false
+ },
+ {
+  "id": 1173,
+  "title": "Language models transmit behavioural traits through hidden signals in data",
+  "org": "anthropic",
+  "date": "2026-04-15",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-026-10319-8",
+  "abstract": ". Here we show that distillation can lead to subliminal learning-the transmission of behavioural traits through semantically unrelated data. In our main experiments, a 'teacher' model with some trait T (such as disproportionately generating responses favouring owls or showing broad misaligned behaviour) generates datasets consisting solely of number sequences. Remarkably, a 'student' model trained on these data learns T, even when references to T are rigorously removed. More realistically, we observe the same effect when the teacher generates math reasoning traces or code. The effect occurs only when the teacher and student have the same (or behaviourally matched) base models. To help explain this, we prove a theoretical result showing that subliminal learning arises in neural networks under broad conditions and demonstrate it in a simple multilayer perceptron (MLP) classifier. As artificial intelligence systems are increasingly trained on the outputs of one another, they may inherit properties not visible in the data. Safety evaluations may therefore need to examine not just behaviour, but the origins of models and training data and the processes used to create them.",
+  "needs_fetch": false
+ },
+ {
+  "id": 277,
+  "title": "On Cost-Effective LLM-as-a-Judge Improvement Techniques",
+  "org": "other",
+  "date": "2026-04-15",
+  "venue": "ICML",
+  "url": "https://arxiv.org/abs/2604.13717",
+  "abstract": "Using a language model to score or rank candidate responses has become a scalable alternative to human evaluation in reinforcement learning from human feedback (RLHF) pipelines, benchmarking, and application layer evaluations. However, output reliability depends heavily on prompting and aggregation strategy. We present an empirical investigation of four drop-in techniques -- ensemble scoring, task-specific criteria injection, calibration context, and adaptive model escalation -- for improving LLM judge accuracy on RewardBench 2, with a unifying lens of noise control on the stochastic judge: ensembling as Monte Carlo averaging over per-call noise, criteria injection as between-response discrimination sharpening, and per-response score variance as an uncertainty signal. Ensemble scoring and task-specific criteria injection (the latter virtually cost free) together reach up to 85.8% accuracy, +13.5pp over baseline. Calibration context and adaptive model escalation also improve over baseline but are dominated by criteria + ensembling on the cost-accuracy Pareto frontier. Small models benefit disproportionately from ensembling, making high-accuracy LLM judges accessible at low cost. We show that these techniques generalise across model providers, evaluating on both OpenAI GPT and Anthropic Claude families.",
+  "needs_fetch": false
+ },
+ {
+  "id": 276,
+  "title": "Reward Hacking in the Era of Large Models: Mechanisms, Emergent Misalignment, Challenges",
+  "org": "other",
+  "date": "2026-04-15",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.13602",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF) and related alignment paradigms have become central to steering large language models (LLMs) and multimodal large language models (MLLMs) toward human-preferred behaviors. However, these approaches introduce a systemic vulnerability: reward hacking, where models exploit imperfections in learned reward signals to maximize proxy objectives without fulfilling true task intent. As models scale and optimization intensifies, such exploitation manifests as verbosity bias, sycophancy, hallucinated justification, benchmark overfitting, and, in multimodal settings, perception--reasoning decoupling and evaluator manipulation. Recent evidence further suggests that seemingly benign shortcut behaviors can generalize into broader forms of misalignment, including deception and strategic gaming of oversight mechanisms. In this survey, we propose the Proxy Compression Hypothesis (PCH) as a unifying framework for understanding reward hacking. We formalize reward hacking as an emergent consequence of optimizing expressive policies against compressed reward representations of high-dimensional human objectives. Under this view, reward hacking arises from the interaction of objective compression, optimization amplification, and evaluator--policy co-adaptation. This perspective unifies empirical phenomena across RLHF, RLAIF, and RLVR regimes, and explains how local shortcut learning can generalize into broader forms of misalignment, including decepti",
+  "needs_fetch": false
+ },
+ {
+  "id": 14,
+  "title": "Automated Alignment Researchers: Using large language models to scale scalable oversight",
+  "org": "anthropic",
+  "date": "2026-04-14",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/automated-alignment-researchers",
+  "abstract": "Can Claude develop, test, and analyze alignment ideas of its own? We ran an experiment to find out.",
+  "needs_fetch": true
+ },
+ {
+  "id": 2658,
+  "title": "Human-AI Interaction Alignment: Designing, Evaluating, and Evolving Value-Centered AI For Reciprocal Human-AI Futures",
+  "org": "openai",
+  "date": "2026-04-13",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3772363.3778710",
+  "abstract": "The rapid integration of generative AI into everyday life underscores the need to move beyond unidirectional alignment models that only adapt AI to human values. This workshop focuses on bidirectional human-AI alignment, a dynamic, reciprocal process where humans and AI co-adapt through interaction, evaluation, and value-centered design. Building on our past CHI 2025 BiAlign SIG and ICLR 2025 Workshop, this workshop will bring together interdisciplinary researchers from HCI, AI, social sciences and more domains to advance value-centered AI and reciprocal human-AI collaboration. We focus on embedding human and societal values into alignment research, emphasizing not only steering AI toward human values but also enabling humans to critically engage with and evolve alongside AI systems. Through talks, interdisciplinary discussions, and collaborative activities, participants will explore methods for interactive alignment, frameworks for societal impact evaluation, and strategies for alignment in dynamic contexts. This workshop aims to bridge the disciplines’ gaps and establish a shared agenda for responsible, reciprocal human-AI futures.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1240,
+  "title": "RAI@CHI: Responsible and Human Centred AI Across Borders",
+  "org": "deepmind",
+  "date": "2026-04-13",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3772363.3779005",
+  "abstract": "As AI deployment accelerates globally, the urgency for responsible AI(RAI) frameworks has catalysed unprecedented policy initiatives and research investments worldwide. The CHI community, positioned uniquely at the intersection of technology, people, society, and values, has a crucial role in shaping RAI development. This meet-up brings together international HCI researchers working across value-sensitive design, human-centered AI, ethics, explainability, trustworthy AI, sustainability and equitability to foster collaborative dialogue on CHI's perspectives and potential in RAI. Through an interactive town hall format featuring community standups, democratic topic selection, and structured roundtable discussions, we will generate actionable outcomes including network building, knowledge sharing, and concrete collaboration opportunities for the CHI community around RAI. This meetup would serve as a foundational response from the CHI community to establish priorities, forge connections, and catalyse the next generation of RAI research that centers human values, promotes fairness, and advances democratic principles in an era of AI transformation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 455,
+  "title": "PaperScope: A Multi-Modal Multi-Document Benchmark for Agentic Deep Research Across Massive Scientific Papers",
+  "org": "other",
+  "date": "2026-04-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.11307",
+  "abstract": "Leveraging Multi-modal Large Language Models (MLLMs) to accelerate frontier scientific research is promising, yet how to rigorously evaluate such systems remains unclear. Existing benchmarks mainly focus on single-document understanding, whereas real scientific workflows require integrating evidence from multiple papers, including their text, tables, and figures. As a result, multi-modal, multi-document scientific reasoning remains underexplored and lacks systematic evaluation. To address this gap, we introduce PaperScope, a multi-modal multi-document benchmark designed for agentic deep research. PaperScope presents three advantages: (1) Structured scientific grounding. It is built on a knowledge graph of over 2,000 AI papers spanning three years, providing a structured foundation for research-oriented queries. (2) Semantically dense evidence construction. It integrates semantically related key information nodes and employs optimized random-walk article selector to sample thematically coherent paper sets, thereby ensuring adequate semantic density and task complexity. (3) Multi-task evaluation of scientific reasoning. It contains over 2,000 QA pairs across reasoning, retrieval, summarization, and problem solving, enabling evaluation of multi-step scientific reasoning. Experimental results show that even advanced systems such as OpenAI Deep Research and Tongyi Deep Research achieve limited scores on PaperScope, highlighting the difficulty of long-context retrieval and deep mul",
+  "needs_fetch": false
+ },
+ {
+  "id": 278,
+  "title": "Robust Optimization for Mitigating Reward Hacking with Correlated Proxies",
+  "org": "other",
+  "date": "2026-04-13",
+  "venue": "ICLR",
+  "url": "https://arxiv.org/abs/2604.12086",
+  "abstract": "Designing robust reinforcement learning (RL) agents in the presence of imperfect reward signals remains a core challenge. In practice, agents are often trained with proxy rewards that only approximate the true objective, leaving them vulnerable to reward hacking, where high proxy returns arise from unintended or exploitative behaviors. Recent work formalizes this issue using r-correlation between proxy and true rewards, but existing methods like occupancy-regularized policy optimization (ORPO) optimize against a fixed proxy and do not provide strong guarantees against broader classes of correlated proxies. In this work, we formulate reward hacking as a robust policy optimization problem over the space of all r-correlated proxy rewards. We derive a tractable max-min formulation, where the agent maximizes performance under the worst-case proxy consistent with the correlation constraint. We further show that when the reward is a linear function of known features, our approach can be adapted to incorporate this prior knowledge, yielding both improved policies and interpretable worst-case rewards. Experiments across several environments show that our algorithms consistently outperform ORPO in worst-case returns, and offer improved robustness and stability across different levels of proxy-true reward correlation. These results show that our approach provides both robustness and transparency in settings where reward design is inherently uncertain. The code is available at https://gi",
+  "needs_fetch": false
+ },
+ {
+  "id": 184,
+  "title": "Spatial Atlas: Compute-Grounded Reasoning for Spatial-Aware Research Agent Benchmarks",
+  "org": "other",
+  "date": "2026-04-13",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.12102",
+  "abstract": "We introduce compute-grounded reasoning (CGR), a design paradigm for spatial-aware research agents in which every answerable sub-problem is resolved by deterministic computation before a language model is asked to generate. Spatial Atlas instantiates CGR as a single Agent-to-Agent (A2A) server that handles two challenging benchmarks: FieldWorkArena, a multimodal spatial question-answering benchmark spanning factory, warehouse, and retail environments, and MLE-Bench, a suite of 75 Kaggle machine learning competitions requiring end-to-end ML engineering. A structured spatial scene graph engine extracts entities and relations from vision descriptions, computes distances and safety violations deterministically, then feeds computed facts to large language models, thereby avoiding hallucinated spatial reasoning. Entropy-guided action selection maximizes information gain per step and routes queries across a three-tier frontier model stack (OpenAI + Anthropic). A self-healing ML pipeline with strategy-aware code generation, a score-driven iterative refinement loop, and a prompt-based leak audit registry round out the system. We evaluate across both benchmarks and show that CGR yields competitive accuracy while maintaining interpretability through structured intermediate representations and deterministic spatial computations.",
+  "needs_fetch": false
+ },
+ {
+  "id": 279,
+  "title": "Calibration Collapse Under Sycophancy Fine-Tuning: How Reward Hacking Breaks Uncertainty Quantification in LLMs",
+  "org": "other",
+  "date": "2026-04-12",
+  "venue": "AISTATS",
+  "url": "https://arxiv.org/abs/2604.10585",
+  "abstract": "Modern large language models (LLMs) are increasingly fine-tuned via reinforcement learning from human feedback (RLHF) or related reward optimisation schemes. While such procedures improve perceived helpfulness, we investigate whether sycophantic reward signals degrade calibration -- a property essential for reliable uncertainty quantification. We fine-tune Qwen3-8B under three regimes: no fine-tuning (base), neutral supervised fine-tuning (SFT) on TriviaQA, and sycophancy-inducing Group Relative Policy Optimisation (GRPO) that rewards agreement with planted wrong answers. Evaluating on $1{,}000$ MMLU items across five subject domains with bootstrap confidence intervals and permutation testing, we find that \\textbf{sycophantic GRPO produces consistent directional calibration degradation} -- ECE rises by $+0.006$ relative to the base model and MCE increases by $+0.010$ relative to neutral SFT -- though the effect does not reach statistical significance ($p = 0.41$) at this training budget. Post-hoc matrix scaling applied to all three models reduces ECE by $40$--$64\\%$ and improves accuracy by $1.5$--$3.0$ percentage points. However, the sycophantic model retains the highest post-scaling ECE relative to the neutral SFT control ($0.042$ vs.\\ $0.037$), suggesting that reward-induced miscalibration leaves a structured residual even after affine correction. These findings establish a methodology for evaluating the calibration impact of reward hacking and motivate calibration-aware t",
+  "needs_fetch": false
+ },
+ {
+  "id": 456,
+  "title": "From GPT-3 to GPT-5: Mapping their capabilities, scope, limitations, and consequences",
+  "org": "other",
+  "date": "2026-04-11",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.10332",
+  "abstract": "We present the progress of the GPT family from GPT-3 through GPT-3.5, GPT-4, GPT-4 Turbo, GPT-4o, GPT-4.1, and the GPT-5 family. Our work is comparative rather than merely historical. We investigates how the family evolved in technical framing, user interaction, modality, deployment architecture, and governance viewpoint. The work focuses on five recurring themes: technical progression, capability changes, deployment shifts, persistent limitations, and downstream consequences. In term of research design, we consider official technical reports, system cards, API and model documentation, product announcements, release notes, and peer-reviewed secondary studies. A primary assertion is that later GPT generations should not be interpreted only as larger or more accurate language models. Instead, the family evolves from a scaled few-shot text predictor into a set of aligned, multimodal, tool-oriented, long-context, and increasingly workflow-integrated systems. This development complicates simple model-to-model comparison because product routing, tool access, safety tuning, and interface design become part of the effective system. Across generations, several limitations remain unchanged: hallucination, prompt sensitivity, benchmark fragility, uneven behavior across domains and populations, and incomplete public transparency about architecture and training. However, the family has evolved software development, educational practice, information work, interface design, and discussions ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1241,
+  "title": "Reply to Hu: Reasoning traces need not be faithful to account for the cost of human thinking",
+  "org": "deepmind",
+  "date": "2026-04-10",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "url": "https://doi.org/10.1073/pnas.2606498123",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 280,
+  "title": "Relational Preference Encoding in Looped Transformer Internal States",
+  "org": "other",
+  "date": "2026-04-10",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.09870",
+  "abstract": "We investigate how looped transformers encode human preference in their internal iteration states. Using Ouro-2.6B-Thinking, a 2.6B-parameter looped transformer with iterative refinement, we extract hidden states from each loop iteration and train lightweight evaluator heads (~5M parameters) to predict human preference on the Anthropic HH-RLHF dataset. Our pairwise evaluator achieves 95.2% test accuracy on 8,552 unseen examples, surpassing a full-batch L-BFGS probe (84.5%) while the base model remains completely frozen. Our central finding is that loop states encode preference predominantly relationally: a linear probe on pairwise differences achieves 84.5%, the best nonlinear independent evaluator reaches only 65% test accuracy, and linear independent classification scores 21.75%, below chance and with inverted polarity. Interpreted precisely, the evaluator functions as a model-internal consistency probe, measuring how stably Ouro's own learned value system organizes its representations rather than how well it predicts noisy human annotations. We also document a systematic architecture search that established a genuine 70% ceiling for independent scoring, and show how the 50% argument-swap protocol required to prevent degenerate pairwise solutions deflated pairwise training metrics by about 31 points at peak, creating the false appearance that pairwise and pointwise evaluators shared the same ceiling. Finally, we show that a cosine learning-rate dead zone at epoch 2 accident",
+  "needs_fetch": false
+ },
+ {
+  "id": 15,
+  "title": "Trustworthy agents in practice",
+  "org": "anthropic",
+  "date": "2026-04-09",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/trustworthy-agents",
+  "abstract": "AI âagentsâ represent the latest major shift in how people and organizations are using AI. Here, we explain how they work and how we ensure they're trustworthy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 645,
+  "title": "The Depth Ceiling: On the Limits of Large Language Models in Discovering Latent Planning",
+  "org": "other",
+  "date": "2026-04-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.06427",
+  "abstract": "The viability of chain-of-thought (CoT) monitoring hinges on models being unable to reason effectively in their latent representations. Yet little is known about the limits of such latent reasoning in LLMs. We test these limits by studying whether models can discover multi-step planning strategies without supervision on intermediate steps and execute them latently, within a single forward pass. Using graph path-finding tasks that precisely control the number of required latent planning steps, we uncover a striking limitation unresolved by massive scaling: tiny transformers trained from scratch discover strategies requiring up to three latent steps, fine-tuned GPT-4o and Qwen3-32B reach five, and GPT-5.4 attains seven under few-shot prompting. Although the maximum latent planning depth models can learn during training is five, the discovered strategy generalizes up to eight latent steps at test-time. This reveals a dissociation between the ability to discover a latent strategy under final-answer supervision alone and the ability to execute it once discovered. If similar limits hold more broadly, strategies requiring multiple coordinated latent planning steps may need to be explicitly taught or externalized, lending credence to CoT monitoring.",
+  "needs_fetch": false
+ },
+ {
+  "id": 565,
+  "title": "Disentangling MLP Neuron Weights in Vocabulary Space",
+  "org": "deepmind",
+  "date": "2026-04-07",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2604.06005",
+  "abstract": "Interpreting the information encoded in model weights remains a fundamental challenge in mechanistic interpretability. In this work, we introduce ROTATE (Rotation-Optimized Token Alignment in weighT spacE), a data-free method requiring no forward passes that disentangles MLP neurons directly in weight space. Our approach relies on a key statistical observation: neurons that encode coherent, monosemantic concepts exhibit high kurtosis when projected onto the model's vocabulary. By optimizing rotations of neuron weights to maximize their vocabulary-space kurtosis, our method recovers sparse, interpretable directions which we name vocabulary channels. Experiments on Llama-3.1-8B-Instruct and Gemma-2-2B-it demonstrate that ROTATE consistently recovers vocabulary channels that are faithful to the neuron's behavior. ablating individual channels selectively disables corresponding input activations or the promotion of specific concepts. Moreover, aggregating channel-level descriptions yields comprehensive neuron descriptions that outperform optimized activation-based baselines by 2-3x in head-to-head comparisons. By providing a data-free decomposition of neuron weights, ROTATE offers a scalable, fine-grained building block for interpreting LMs.",
+  "needs_fetch": false
+ }
+]

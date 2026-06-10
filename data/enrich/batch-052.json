@@ -1,0 +1,302 @@
+[
+ {
+  "id": 876,
+  "title": "Emotions and courtship help bonded pairs cooperate, but emotional agents are vulnerable to deceit",
+  "org": "deepmind",
+  "date": "2023-11-10",
+  "venue": "Proceedings of the National Academy of Sciences (PNAS)",
+  "url": "https://www.pnas.org/doi/10.1073/pnas.2308911120",
+  "abstract": "Coordinated pair bonds are common in birds and also occur in many other taxa. How do animals solve the social dilemmas they face in coordinating with a partner? We developed an evolutionary model to explore this question, based on observations that a) neuroendocrine feedback provides emotional bookkeeping which is thought to play a key role in vertebrate social bonds and b) these bonds are developed and maintained via courtship interactions that include low-stakes social dilemmas. Using agent-based simulation, we found that emotional bookkeeping and courtship sustained cooperation in the iterated prisoner’s dilemma in noisy environments, especially when combined. However, when deceitful defection was possible at low cost, courtship often increased cooperation, whereas emotional bookkeeping decreased it.",
+  "needs_fetch": false
+ },
+ {
+  "id": 426,
+  "title": "Zero-Shot Goal-Directed Dialogue via RL on Imagined Conversations",
+  "org": "deepmind",
+  "date": "2023-11-09",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.05584",
+  "abstract": "Large language models (LLMs) have emerged as powerful and general solutions to many natural language tasks. However, many of the most important applications of language generation are interactive, where an agent has to talk to a person to reach a desired outcome. For example, a teacher might try to understand their student's current comprehension level to tailor their instruction accordingly, and a travel agent might ask questions of their customer to understand their preferences in order to recommend activities they might enjoy. LLMs trained with supervised fine-tuning or \"single-step\" RL, as with standard RLHF, might struggle which tasks that require such goal-directed behavior, since they are not trained to optimize for overall conversational outcomes after multiple turns of interaction. In this work, we explore a new method for adapting LLMs with RL for such goal-directed dialogue. Our key insight is that, though LLMs might not effectively solve goal-directed dialogue tasks out of the box, they can provide useful data for solving such tasks by simulating suboptimal but human-like behaviors. Given a textual description of a goal-directed dialogue task, we leverage LLMs to sample diverse synthetic rollouts of hypothetical in-domain human-human interactions. Our algorithm then utilizes this dataset with offline reinforcement learning to train an interactive conversational agent that can optimize goal-directed objectives over multiple turns. In effect, the LLM produces exampl",
+  "needs_fetch": false
+ },
+ {
+  "id": 877,
+  "title": "Role Play with Large Language Models",
+  "org": "deepmind",
+  "date": "2023-11-08",
+  "venue": "Nature",
+  "url": "https://www.nature.com/articles/s41586-023-06647-8",
+  "abstract": "As dialogue agents become increasingly human-like in their performance, it is imperative that we develop effective ways to describe their behaviour in high-level terms without falling into the trap of anthropomorphism. In this paper, we foreground the concept of role-play. Casting dialogue agent behaviour in terms of role-play allows us to draw on familiar folk psychological terms, without ascribing human characteristics to language models they in fact lack. Two important cases of dialogue agent behaviour are addressed this way, namely (apparent) deception and (apparent) self-awareness.",
+  "needs_fetch": false
+ },
+ {
+  "id": 878,
+  "title": "Finding Increasingly Large Extremal Graphs with AlphaZero and Tabu Search",
+  "org": "deepmind",
+  "date": "2023-11-06",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2311.03583",
+  "abstract": "This work studies a central extremal graph theory problem inspired by a 1975 conjecture of Erdos, which aims to find graphs with a given size (number of nodes) that maximize the number of edges without having 3- or 4-cycles. We formulate this problem as a sequential decision-making problem and compare AlphaZero, a neural network-guided tree search, with tabu search, a heuristic local search method. Using either method, by introducing a curriculum—jump-starting the search for larger graphs using good graphs found at smaller sizes—we improve the state-of-the-art lower bounds for several sizes. We also propose a flexible graph-generation environment and a permutation-invariant network architecture for learning to search in the space of graphs.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1731,
+  "title": "Aspects of scaling and scalability for flow-based sampling of lattice QCD",
+  "org": "deepmind",
+  "date": "2023-11-04",
+  "venue": "The European Physical Journal A",
+  "url": "https://doi.org/10.1140/epja/s10050-023-01154-w",
+  "abstract": "Abstract Recent applications of machine-learned normalizing flows to sampling in lattice field theory suggest that such methods may be able to mitigate critical slowing down and topological freezing. However, these demonstrations have been at the scale of toy models, and it remains to be determined whether they can be applied to state-of-the-art lattice quantum chromodynamics calculations. Assessing the viability of sampling algorithms for lattice field theory at scale has traditionally been accomplished using simple cost scaling laws, but as we discuss in this work, their utility is limited for flow-based approaches. We conclude that flow-based approaches to sampling are better thought of as a broad family of algorithms with different scaling properties, and that scalability must be assessed experimentally.",
+  "needs_fetch": false
+ },
+ {
+  "id": 880,
+  "title": "RT-Trajectory: Robotic Task Generalization via Hindsight Trajectory Sketches",
+  "org": "deepmind",
+  "date": "2023-11-03",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2311.01977",
+  "abstract": "In order for generalist robot policies to operate robustly in the real world, they must be able to accomplish many tasks in a wide array of situations, potentially beyond those seen in training datasets. Recent works have studied generalization in such settings, by leveraging policy conditioning with modalities such as natural language or object-centric visual representations. While these methods have shown promise in high-level generalization to semantics, objects, or visual distribution shifts, there remain significant open challenges in novel low-level motion generalization. This challenge is both a theoretical and practical barrier in scaling robot learning methods, as real-world robot situations may demand significantly more low-level motion capabilities than contained in common large-scale tabletop pick and place datasets. Towards tackling this, we propose policy conditioning with rough trajectory sketches, which strike a balance between being detailed enough to express low-level motion-centric guidance while being coarse enough to require learning-based policies to interpret the trajectory sketch in the context of situational visual observations. The trajectory sketch is also a scalable and flexible representation: during training it can be generated in hindsight from proprioception sensors and during inference time it can be specified through simple human inputs like drawing or videos, or through automated methods such as modern image-generating or waypoint-generating",
+  "needs_fetch": false
+ },
+ {
+  "id": 879,
+  "title": "Grammar Prompting for Domain-Specific Language Generation with Large Language Models",
+  "org": "deepmind",
+  "date": "2023-11-03",
+  "venue": "NeurIPS 2023",
+  "url": "https://arxiv.org/abs/2305.19234",
+  "abstract": "Large language models (LLMs) can learn to perform a wide range of natural language tasks from just a handful of in-context examples. However, for generating strings from highly structured languages (e.g., semantic parsing to complex domain-specific languages), it is challenging for the LLM to generalize from just a few exemplars. We propose \\emph{grammar prompting}, a simple approach to enable LLMs to use external knowledge and domain-specific constraints, expressed through a grammar in Backus--Naur Form (BNF), during in-context learning. Grammar prompting augments each demonstration example with a specialized grammar that is minimally sufficient for generating the particular output example, where the specialized grammar is a subset of the full DSL grammar. For inference, the LLM first predicts a BNF grammar given a test input, and then generates the output according to the rules of the grammar. Experiments demonstrate that grammar prompting can enable LLMs to perform competitively on a diverse set of DSL generation tasks, including semantic parsing (SMCalFlow, Overnight, GeoQuery), PDDL planning, and SMILES-based molecule generation.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1732,
+  "title": "AlphaFold Protein Structure Database in 2024: providing structure coverage for over 214 million protein sequences",
+  "org": "deepmind",
+  "date": "2023-11-02",
+  "venue": "Nucleic Acids Research",
+  "url": "https://doi.org/10.1093/nar/gkad1011",
+  "abstract": "The AlphaFold Database Protein Structure Database (AlphaFold DB, https://alphafold.ebi.ac.uk) has significantly impacted structural biology by amassing over 214 million predicted protein structures, expanding from the initial 300k structures released in 2021. Enabled by the groundbreaking AlphaFold2 artificial intelligence (AI) system, the predictions archived in AlphaFold DB have been integrated into primary data resources such as PDB, UniProt, Ensembl, InterPro and MobiDB. Our manuscript details subsequent enhancements in data archiving, covering successive releases encompassing model organisms, global health proteomes, Swiss-Prot integration, and a host of curated protein datasets. We detail the data access mechanisms of AlphaFold DB, from direct file access via FTP to advanced queries using Google Cloud Public Datasets and the programmatic access endpoints of the database. We also discuss the improvements and services added since its initial release, including enhancements to the Predicted Aligned Error viewer, customisation options for the 3D viewer, and improvements in the search engine of AlphaFold DB.",
+  "needs_fetch": false
+ },
+ {
+  "id": 882,
+  "title": "Optimistic Natural Policy Gradient: a Simple Efficient Policy Optimization Framework for Online RL",
+  "org": "deepmind",
+  "date": "2023-11-02",
+  "venue": "NeurIPS 2023",
+  "url": "https://openreview.net/forum?id=zaQ7wV9NOg",
+  "abstract": "While policy optimization algorithms have played an important role in recent empirical success of Reinforcement Learning (RL), the existing theoretical understanding of policy optimization remains rather limited---they are either restricted to tabular MDPs or suffer from highly suboptimal sample complexity, especial in online RL where exploration is necessary. This paper proposes a simple efficient policy optimization framework---Optimistic NPG for online RL. Optimistic NPG can be viewed as simply combining of the classic natural policy gradient (NPG) algorithm [Kakade, 2001] with optimistic policy evaluation subroutines to encourage exploration. For $d$-dimensional linear MDPs, Optimistic NPG is computationally efficient, and learns an $\\epsilon$-optimal policy within $\\tilde{O}(d^2/\\epsilon^3)$ samples, which is the first computationally efficient algorithm whose sample complexity has the optimal dimension dependence $\\tilde{\\Theta}(d^2)$. It also improves over state-of-the-art results of policy optimization algorithms [Zanette et al., 2021] by a factor of $d$. For general function approximation that subsumes linear MDPs, Optimistic NPG, to our best knowledge, is also the first policy optimization algorithm that achieves the polynomial sample complexity for learning near-optimal policies.",
+  "needs_fetch": false
+ },
+ {
+  "id": 881,
+  "title": "Optimistic Meta-Gradients",
+  "org": "deepmind",
+  "date": "2023-11-02",
+  "venue": "NeurIPS 2023",
+  "url": "https://openreview.net/forum?id=ZmSg4f16uo",
+  "abstract": "We study the connection between gradient-based meta-learning and convex optimisation. We observe that gradient descent with momentum is a special case of meta-gradients, and building on recent results in optimisation, we prove convergence rates for meta learning in the single task setting. While a meta-learned update rule can yield faster convergence up to constant factor, it is not sufficient for acceleration. Instead, some form of optimism is required. We show that optimism in meta-learning can be captured through the recently proposed Bootstrapped Meta-Gradient (Flennerhag et. al., 2022) method, providing deeper insight into its underlying mechanics.",
+  "needs_fetch": false
+ },
+ {
+  "id": 883,
+  "title": "RoboVQA: Multimodal Long-Horizon Reasoning for Robotics",
+  "org": "deepmind",
+  "date": "2023-11-01",
+  "venue": "ICRA 2024",
+  "url": "https://arxiv.org/abs/2311.00899",
+  "abstract": "We present a scalable, bottom-up and intrinsically diverse data collection scheme that can be used for high-level reasoning with long and medium horizons and that has 2.2x higher throughput compared to traditional narrow top-down step-by-step collection. We collect realistic data by performing any user requests within the entirety of 3 office buildings and using multiple embodiments (robot, human, human with grasping tool). With this data, we show that models trained on all embodiments perform better than ones trained on the robot data only, even when evaluated solely on robot episodes. We explore the economics of collection costs and find that for a fixed budget it is beneficial to take advantage of the cheaper human collection along with robot collection. We release a large and highly diverse (29,520 unique instructions) dataset dubbed RoboVQA containing 829,502 (video, text) pairs for robotics-focused visual question answering. We also demonstrate how evaluating real robot experiments with an intervention mechanism enables performing tasks to completion, making it deployable with human oversight even if imperfect while also providing a single performance metric. We demonstrate a single video-conditioned model named RoboVQA-VideoCoCa trained on our dataset that is capable of performing a variety of grounded high-level reasoning tasks in broad realistic settings with a cognitive intervention rate 46% lower than the zeroshot state of the art visual language model (VLM) baseli",
+  "needs_fetch": false
+ },
+ {
+  "id": 884,
+  "title": "Population-based Evaluation in Repeated Rock-Paper-Scissors as a Benchmark for Multiagent Reinforcement Learning",
+  "org": "deepmind",
+  "date": "2023-10-30",
+  "venue": "Transactions on Machine Learning Research (TMLR)",
+  "url": "https://openreview.net/forum?id=gQnJ7ODIAx",
+  "abstract": "Progress in fields of machine learning and adversarial planning has benefited significantly from bench-mark domains, from Checkers and Chess, the classic UCI data sets and Netflix challenge to BLEU,Atari, Go, Poker, Starcraft, Dota2, and Diplomacy. In sequential decision-making, agent eval-uation has largely been restricted to very few interactions against experts, declaring victory upon reaching some desired level of performance (e.g.human professional). In this paper, we propose a benchmark for multiagent learning based on repeated play of the simple game Rock, Paper, Scissors along with a population of forty-three tournament entries, some of which are (intentionally)sub-optimal. We describe metrics to measure the quality of agents based both on average returns and exploitability. We then show that several re-cent RL and online learning approaches can learng ood counter-strategies and generalize well, but ultimately lose to the top-performing bots, creating an opportunity for research in multiagent learning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1733,
+  "title": "LFPS: Learned Formal Proof Strengthening for Efficient Hardware Verification",
+  "org": "deepmind",
+  "date": "2023-10-28",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccad57390.2023.10323681",
+  "abstract": "Proof decomposition via assume-guarantee with helper properties, i.e. helpers, is one of the most promising approaches to address the complexity of hardware formal verification (FV). While helpers can be hand-crafted by human experts, state-of-the-art methods replace this labor-intensive process with circuit analysis, from which a large set of helper candidates can be quickly synthesized. However, these candidates are often of lower-quality, and distilling the full auto-generated set down to a subset of high-quality, appropriate helpers still requires significant computational or manual effort. In this work, we propose a novel approach to automate helper quality assessment: Learned Formal Proof Strengthening (LFPS), a neural model that can accurately predict helper effectiveness without having to run actual formal proofs. The LFPS model jointly learns representations of property specifications expressed in SystemVerilog and the graph representation of the circuit under verification. When evaluated against three RTL designs from industrial SoCs, our model is shown to achieve significant predictive performance, with an average of 98.2% accuracy and 98.3% F-1 score. Once trained, the model can also serve as a fast predictor for search algorithms: we show that LFPS neural-guided search can outperform random sampling in finding sets of helper candidates that achieve inductive proof strengthening.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1734,
+  "title": "Can a dual mandate be a model for the global governance of AI?",
+  "org": "deepmind",
+  "date": "2023-10-27",
+  "venue": "Nature Reviews Physics",
+  "url": "https://doi.org/10.1038/s42254-023-00670-4",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 885,
+  "title": "Generative replay for compositional visual understanding in the prefrontal-hippocampal circuit",
+  "org": "deepmind",
+  "date": "2023-10-26",
+  "venue": "Cell",
+  "url": "https://www.sciencedirect.com/science/article/pii/S0092867423010255",
+  "abstract": "Understanding the visual world is a constructive and compositional process. Whilst a frontal- hippocampal circuit is known to be essential for this task, little is known about the associated neuronal computations. Although visual understanding appears superficially distinct from other known functions of this circuit, such as spatial reasoning, compositional inference, and model-based planning, recent models suggest deeper computational similarities. Here, using fMRI, we show that representations of visual objects in these brain regions are relational and compositional – key computational properties theorised to support rapid construction of hippocampal maps. Using MEG, we show that rapid sequences of representations, akin to replay in spatial navigation and planning problems, are also engaged in visual understanding. Whilst these sequences have previously been proposed as mechanisms to plan possible futures or learn from the past, here they are used to understand the present. Replay sequences change content over timescales of understanding and form constructive hypotheses about possible object configurations. These hypotheses play out in an order that supports relational inference, progressing from predictable to uncertain scene elements, gradually constraining possible configurations, and converging on the correct configuration. Together, these results suggest a computational bridge between apparently distinct functions of hippocampal-prefrontal circuitry, and a role for gen",
+  "needs_fetch": false
+ },
+ {
+  "id": 1735,
+  "title": "The emergence of division of labour through decentralized social sanctioning",
+  "org": "deepmind",
+  "date": "2023-10-25",
+  "venue": "Proceedings of the Royal Society B Biological Sciences",
+  "url": "https://doi.org/10.1098/rspb.2023.1716",
+  "abstract": "Human ecological success relies on our characteristic ability to flexibly self-organize into cooperative social groups, the most successful of which employ substantial specialization and division of labour. Unlike most other animals, humans learn by trial and error during their lives what role to take on. However, when some critical roles are more attractive than others, and individuals are self-interested, then there is a social dilemma: each individual would prefer others take on the critical but unremunerative roles so they may remain free to take one that pays better. But disaster occurs if all act thus and a critical role goes unfilled. In such situations learning an optimum role distribution may not be possible. Consequently, a fundamental question is: how can division of labour emerge in groups of self-interested lifetime-learning individuals? Here, we show that by introducing a model of social norms, which we regard as emergent patterns of decentralized social sanctioning, it becomes possible for groups of self-interested individuals to learn a productive division of labour involving all critical roles. Such social norms work by redistributing rewards within the population to disincentivize antisocial roles while incentivizing prosocial roles that do not intrinsically pay as well as others.",
+  "needs_fetch": false
+ },
+ {
+  "id": 100,
+  "title": "Specific versus General Principles for Constitutional AI",
+  "org": "anthropic",
+  "date": "2023-10-24",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/specific-versus-general-principles-for-constitutional-ai",
+  "abstract": "Human feedback can prevent overtly harmful utterances in conversational models, but may not automatically mitigate subtle problematic behaviors such as a stated desire for self-preservation or power. Constitutional AI offers an alternative, replacing human feedback with feedback from AI models conditioned only on a list of written principles. We find this approach effectively prevents the expression of such behaviors. The success of simple principles motivates us to ask: can models learn general ethical behaviors from only a single written principle? To test this, we run experiments using a principle roughly stated as \"do what's best for humanity\". We find that the largest dialogue models can generalize from this short constitution, resulting in harmless assistants with no stated interest in specific motivations like power. A general principle may thus partially avoid the need for a long list of constitutions targeting potentially harmful behaviors. However, more detailed constitutions still improve fine-grained control over specific types of harms. This suggests both general and specific principles have value for steering AI safely.",
+  "needs_fetch": false
+ },
+ {
+  "id": 614,
+  "title": "Linear Representations of Sentiment in Large Language Models",
+  "org": "deepmind",
+  "date": "2023-10-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2310.15154",
+  "abstract": "Sentiment is a pervasive feature in natural language text, yet it is an open question how sentiment is represented within Large Language Models (LLMs). In this study, we reveal that across a range of models, sentiment is represented linearly: a single direction in activation space mostly captures the feature across a range of tasks with one extreme for positive and the other for negative. Through causal interventions, we isolate this direction and show it is causally relevant in both toy tasks and real world datasets such as Stanford Sentiment Treebank. Through this case study we model a thorough investigation of what a single direction means on a broad data distribution. We further uncover the mechanisms that involve this direction, highlighting the roles of a small subset of attention heads and neurons. Finally, we discover a phenomenon which we term the summarization motif: sentiment is not solely represented on emotionally charged words, but is additionally summarized at intermediate positions without inherent sentiment, such as punctuation and names. We show that in Stanford Sentiment Treebank zero-shot classification, 76% of above-chance classification accuracy is lost when ablating the sentiment direction, nearly half of which (36%) is due to ablating the summarized sentiment direction exclusively at comma positions.",
+  "needs_fetch": false
+ },
+ {
+  "id": 543,
+  "title": "Can ChatGPT Perform Reasoning Using the IRAC Method in Analyzing Legal Scenarios Like a Lawyer?",
+  "org": "other",
+  "date": "2023-10-23",
+  "venue": "EMNLP 2023",
+  "url": "https://arxiv.org/abs/2310.14880",
+  "abstract": "Large Language Models (LLMs), such as ChatGPT, have drawn a lot of attentions recently in the legal domain due to its emergent ability to tackle a variety of legal tasks. However, it is still unknown if LLMs are able to analyze a legal case and perform reasoning in the same manner as lawyers. Therefore, we constructed a novel corpus consisting of scenarios pertain to Contract Acts Malaysia and Australian Social Act for Dependent Child. ChatGPT is applied to perform analysis on the corpus using the IRAC method, which is a framework widely used by legal professionals for organizing legal analysis. Each scenario in the corpus is annotated with a complete IRAC analysis in a semi-structured format so that both machines and legal professionals are able to interpret and understand the annotations. In addition, we conducted the first empirical assessment of ChatGPT for IRAC analysis in order to understand how well it aligns with the analysis of legal professionals. Our experimental results shed lights on possible future research directions to improve alignments between LLMs and legal experts in terms of legal reasoning.",
+  "needs_fetch": false
+ },
+ {
+  "id": 101,
+  "title": "Towards Understanding Sycophancy in Language Models",
+  "org": "anthropic",
+  "date": "2023-10-23",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1200,
+  "title": "Riffle: Reactive Relational State for Local-First Applications",
+  "org": "anthropic",
+  "date": "2023-10-20",
+  "venue": null,
+  "url": "https://doi.org/10.1145/3586183.3606801",
+  "abstract": "The reactive paradigm for developing user interfaces promises both simplicity and scalability, but existing frameworks usually compromise one for the other. We present Riffle, a reactive state management system that achieves both simplicity and scalability by managing the entire state of a web application in a client-side persistent relational database. Data transformations over the application state are defined in a graph of reactive relational queries, providing developers with a simple spreadsheet-like reactivity model. Domain state and UI state are unified within the same system, and efficient incremental query maintenance ensures the UI remains responsive. We present a formative case study of using Riffle to build a music management application with complex data and stringent performance requirements.",
+  "needs_fetch": false
+ },
+ {
+  "id": 886,
+  "title": "Scalable Neural Network Kernels",
+  "org": "deepmind",
+  "date": "2023-10-20",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2310.13225",
+  "abstract": "We introduce the concept of scalable neural network kernels (SNNKs), the replacements of regular feedforward layers (FFLs), capable of approximating the latter, but with favorable computational properties. SNNKs effectively disentangle the inputs from the parameters of the neural network in the FFL, only to connect them in the final computation via the dot-product kernel. They are also strictly more expressive, as allowing to model complicated relationships beyond the functions of the dot-products of parameter-input vectors. We also introduce the neural network bundling process that applies SNNKs to compactify deep neural network architectures, resulting in additional compression gains. In its extreme version, it leads to the fully bundled network whose optimal parameters can be expressed via explicit formulae for several loss functions (e.g. mean squared error), opening a possibility to bypass backpropagation. As a by-product of our analysis, we introduce the mechanism of the universal random features (or URFs), applied to instantiate several SNNK variants, and interesting on its own in the context of scalable kernel methods. We provide rigorous theoretical analysis of all these concepts as well as an extensive empirical evaluation, ranging from point-wise kernel estimation to Transformers' fine-tuning with novel adapter layers inspired by SNNKs. Our mechanism provides up to 5x reduction in the number of trainable parameters, while maintaining competitive accuracy.",
+  "needs_fetch": false
+ },
+ {
+  "id": 888,
+  "title": "Sociotechnical Safety Evaluation of generative AI systems",
+  "org": "deepmind",
+  "date": "2023-10-18",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2310.11986",
+  "abstract": "Generative AI systems produce potential ethical and social risks that require comprehensive evaluation. In this paper, we propose a three-layered framework toward a structured, sociotechnical approach to evaluate these risks. The approach here evolves from a system safety perspective, particularly the insight that context determines whether a given capability causes harm. Applied to AI, this perspective shows that evaluation at multiple layers of analysis is required in order to assess whether or not an AI system may cause a given harm. Sociotechnical evaluation begins with the main current approach to safety evaluation, capability testing, which considers AI system outputs and their components in isolation. Building on this, it accounts for two further layers of context. The second layer centres the human interacting with a system to assess harm that may occur at the point of use. Broader systemic impacts on the structures into which an AI system is embedded require evaluation at the third, systemic evaluation layer. The second main contribution of this paper is an overview of the current state of sociotechnical evaluation. Reviewing all available evaluations for social and ethical risks known to a wide range of cross-industry researchers, we map gaps in the status quo. We then carefully lay out a roadmap of tractable steps toward closing the identified gaps.",
+  "needs_fetch": false
+ },
+ {
+  "id": 887,
+  "title": "Scalable Diffusion for Materials Generation",
+  "org": "deepmind",
+  "date": "2023-10-18",
+  "venue": "ICLR 2024",
+  "url": "https://arxiv.org/abs/2311.09235",
+  "abstract": "​​​​Generative models trained on internet-scale data are capable of generating novel yet highly realistic texts, images, and videos. A natural next question is whether these models can advance science through means such as generating novel stable materials. Traditionally, models with explicit structures (e.g., graphs) have been used in modeling structural relationships in scientific data (e.g., atoms and bonds in crystals), but generating structures explicitly might be difficult to scale to large and complex systems. Another challenge to generative models of materials lies in the mismatch between generative modeling metrics and the downstream applications. For instance, common metrics such as the reconstruction error do not correlate well with the downstream goal of discovering novel stable materials. In this work, we tackle the scalability challenge by first developing a unified crystal representation that can effectively represent any crystal structures (UniMat), followed by training a diffusion probabilistic model on the UniMat representations. Our empirical results suggest that despite the lack of explicit structure modeling, UniMat can generate high fidelity crystal structures from larger and more complex chemical systems, outperforming previous graph-based approaches under various generative modeling metrics. To better connect the generation quality of materials to downstream applications such as discovering novel stable materials, we propose to use decomposition energy",
+  "needs_fetch": false
+ },
+ {
+  "id": 1736,
+  "title": "AI Helping Science: The ‘Shape’ of Things to Come",
+  "org": "deepmind",
+  "date": "2023-10-17",
+  "venue": "Frontiers for Young Minds",
+  "url": "http://dx.doi.org/10.3389/frym.2023.1241472",
+  "abstract": "When we started working with artificial intelligence (AI) more than a decade ago, people were skeptical about whether this technology would develop enough in the foreseeable future to do anything useful. But we held on to our faith in AI’s potential to benefit humanity. We used games like chess, Go and Atari to train and test our AI systems to become smarter and more capable. In 2016, we decided to use our smart systems to try to solve a 50-year-old fundamental problem in biology, called the protein-folding problem. This was the birth of AlphaFold, our AI system that predicts the three-dimensional structures of proteins based on their amino acid sequence. In this article, you will learn about AlphaFold’s achievements, which demonstrate the power of AI to dramatically accelerate scientific discovery and benefit society.",
+  "needs_fetch": false
+ },
+ {
+  "id": 102,
+  "title": "Collective Constitutional AI: Aligning a Language Model with Public Input",
+  "org": "anthropic",
+  "date": "2023-10-17",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/collective-constitutional-ai-aligning-a-language-model-with-public-input",
+  "abstract": "There is growing consensus that language model (LM) developers should not be the sole deciders of LM behavior, creating a need for methods that enable the broader public to collectively shape the behavior of LM systems that affect them. To address this need, we present Collective Constitutional AI (CCAI): a multi-stage process for sourcing and integrating public input into LMs-from identifying a target population to sourcing principles to training and evaluating a model. We demonstrate the real-world practicality of this approach by creating what is, to our knowledge, the first LM fine-tuned with collectively sourced public input and evaluating this model against a baseline model trained with established principles from a LM developer. Our quantitative evaluations demonstrate several benefits of our approach: the CCAI-trained model shows lower bias across nine social dimensions compared to the baseline model, while maintaining equivalent performance on language, math, and helpful-harmless evaluations. Qualitative comparisons of the models suggest that the models differ on the basis of their respective constitutions, e.g., when prompted with contentious topics, the CCAI-trained model tends to generate responses that reframe the matter positively instead of a refusal. These results demonstrate a promising, tractable pathway toward publicly informed development of language models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 615,
+  "title": "Attribution Patching Outperforms Automated Circuit Discovery",
+  "org": "deepmind",
+  "date": "2023-10-16",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2310.10348",
+  "abstract": "Automated interpretability research has recently attracted attention as a potential research direction that could scale explanations of neural network behavior to large models. Existing automated circuit discovery work applies activation patching to identify subnetworks responsible for solving specific tasks (circuits). In this work, we show that a simple method based on attribution patching outperforms all existing methods while requiring just two forward passes and a backward pass. We apply a linear approximation to activation patching to estimate the importance of each edge in the computational subgraph. Using this approximation, we prune the least important edges of the network. We survey the performance and limitations of this method, finding that averaged over all tasks our method has greater AUC from circuit recovery than other methods.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1737,
+  "title": "Concern about Appearance on Social Media: Psychometric Evaluation and Item Response Theory Analysis with Iranian University Students",
+  "org": "deepmind",
+  "date": "2023-10-15",
+  "venue": "International Journal of Human-Computer Interaction",
+  "url": "https://doi.org/10.1080/10447318.2023.2267919",
+  "abstract": "AbstractThe surge in the popularity of image-based social media (IBSM) raises concerns about its negative impacts, such as fostering unrealistic beauty and body-shape (BBS) standards and triggering appearance-related worries. The Concern about Appearance on Social Media (CONAPP) scale was developed to investigate this aspect within IBSM. However, the comprehension of its psychometric properties remains limited, prompting the need for further validation across diverse samples and cultures. This study assessed the Persian version of CONAPP using 988 Iranian university students. Confirmatory factor analysis affirmed its unidimensional structure, which proved invariant across genders. This unidimensional factor structure exhibited robust internal consistency, and its correlations with measures of appearance anxiety and life satisfaction endorsed the concurrent and divergent validity of the CONAPP scores. The CONAPP effectively distinguished BBS followers and non-followers, confirming its known-group validity. Additionally, exposure to unrealistic BBS standards and female gender predicted a heightened concern about appearance. Finally, Item Response Theory analysis underscored the effectiveness of CONAPP items in discerning various levels of appearance concern. The Persian CONAPP stands as a reliable measure of appearance concern in IBSM, with the potential to stimulate further research in the field.Keywords: Concern about appearanceimaged-based social mediaself-objectification th",
+  "needs_fetch": false
+ },
+ {
+  "id": 1739,
+  "title": "A Sampling-Based Domain Generalization Study with Diffusion Generative Models",
+  "org": "deepmind",
+  "date": "2023-10-13",
+  "venue": "arXiv (Cornell University)",
+  "url": "https://arxiv.org/abs/2310.09213",
+  "abstract": "In this work, we investigate the domain generalization capabilities of diffusion models in the context of synthesizing images that are distinct from the training data. Instead of fine-tuning, we tackle this challenge from a sampling-based perspective using frozen, pre-trained diffusion models. Specifically, we demonstrate that arbitrary out-of-domain (OOD) images establish Gaussian priors in the latent spaces of a given model after inversion, and that these priors are separable from those of the original training domain. This OOD latent property allows us to synthesize new images of the target unseen domain by discovering qualified OOD latent encodings in the inverted noisy spaces, without altering the pre-trained models. Our cross-model and cross-domain experiments show that the proposed sampling-based method can expand the latent space and generate unseen images without impairing the generation quality of the original domain. We also showcase a practical application of our approach using astrophysical data, highlighting the potential of this generalization paradigm in data-sparse fields such as scientific exploration.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1738,
+  "title": "Novo tratamento para esquizofrenia baseado em agonista de TAAR 1",
+  "org": "deepmind",
+  "date": "2023-10-13",
+  "venue": "Cuadernos de Educación y Desarrollo",
+  "url": "https://doi.org/10.55905/cuadv15n10-050",
+  "abstract": "Introdução: Este artigo discute o novo tratamento para esquizofrenia baseado em TAAR1, a esquizofrenia é um transtorno mental que possui bastante complexidade devido às suas características da sintomatologia. Os sintomas são classificados em positivos, negativos e cognitivos. A farmacoterapia utilizada no tratamento da esquizofrenia consiste no uso de antipsicóticos. O mecanismo de ação é constituído pelo antagonismo dos receptores dopaminérgicos D2. O TAAR1 é um receptor de Amina traco-1 que são substâncias endógenas que são sintetizadas e degradadas na microbiota e podem ser encontradas na alimentação e possui relação com modulação de transmissão dopaminérgica, glutamatérgica e serotoninérgica. Objetivo: Tem como objetivo analisar a diferença do tratamento baseado em TAAR1 dos tratamentos já disponíveis atualmente. Materiais e Métodos: Para execução dessa pesquisa foram adotados como fonte de coleta de dados, pesquisa bibliográfica por meio de livros-online, dissertações publicações em revistas científicas, protocolos e manuais clínicos. Foram utilizados artigos publicados nas fontes de dados, PUBMED, SCIELO, Google Acadêmico, BASE, BIREME, CAPES. Para realização desta pesquisa foi necessário mais de dez artigo sendo excluídos com período acima de cinco anos. Conclusão: Os TAAR1 diferentemente dos antipsicóticos tradicionais não irão apresentar efeitos colaterais como extrapiramidais ou síndrome metabólica e não atuam no mecanismo de bloqueio de receptores de dopamina D2.",
+  "needs_fetch": false
+ }
+]

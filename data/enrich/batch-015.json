@@ -1,0 +1,302 @@
+[
+ {
+  "id": 688,
+  "title": "A Pragmatic View of AI Personhood",
+  "org": "deepmind",
+  "date": "2025-10-30",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.26396",
+  "abstract": "The emergence of agentic Artificial Intelligence (AI) is set to trigger a \"Cambrian explosion\" of new kinds of personhood. This paper proposes a pragmatic framework for navigating this diversification by treating personhood not as a metaphysical property to be discovered, but as a flexible bundle of obligations (rights and responsibilities) that societies confer upon entities for a variety of reasons, especially to solve concrete governance problems. We argue that this traditional bundle can be unbundled, creating bespoke solutions for different contexts. This will allow for the creation of practical tools -- such as facilitating AI contracting by creating a target \"individual\" that can be sanctioned -- without needing to resolve intractable debates about an AI's consciousness or rationality. We explore how individuals fit in to social roles and discuss the use of decentralized digital identity technology, examining both 'personhood as a problem', where design choices can create \"dark patterns\" that exploit human social heuristics, and 'personhood as a solution', where conferring a bundle of obligations is necessary to ensure accountability or prevent conflict. By rejecting foundationalist quests for a single, essential definition of personhood, this paper offers a more pragmatic and flexible way to think about integrating AI agents into our society.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2870,
+  "title": "Emergent Introspective Awareness in Large Language Models",
+  "org": "anthropic",
+  "date": "2025-10-29",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/introspection/index.html",
+  "abstract": "We investigate whether large language models are aware of their own internal states. It is difficult to answer this question through conversation alone, as genuine introspection cannot be distinguished from confabulations. Here, we address this challenge by injecting representations of known concepts into a model’s activations, and measuring the influence of these manipulations on the model’s self-reported states. We find that models can, in certain scenarios, notice the presence of injected concepts and accurately identify them. Models demonstrate some ability to recall prior internal representations and distinguish them from raw text inputs. Strikingly, we find that some models can use their ability to recall prior intentions in order to distinguish their own outputs from artificial prefills. In all these experiments, Claude Opus 4 and 4.1, the most capable models we tested, generally demonstrate the greatest introspective awareness; however, trends across models are complex and sensitive to post-training strategies. Finally, we explore whether models can explicitly control their internal representations, finding that models can modulate their activations when instructed or incentivized to “think about” a concept. Overall, our results indicate that current language models possess some functional awareness of their own internal states. We stress that in today’s models, this capacity is highly unreliable and context-dependent; however, it may continue to develop with further ",
+  "needs_fetch": false
+ },
+ {
+  "id": 482,
+  "title": "CLINB: A Climate Intelligence Benchmark for Foundational Models",
+  "org": "other",
+  "date": "2025-10-29",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2511.11597",
+  "abstract": "Evaluating how Large Language Models (LLMs) handle complex, specialized knowledge remains a critical challenge. We address this through the lens of climate change by introducing CLINB, a benchmark that assesses models on open-ended, grounded, multimodal question answering tasks with clear requirements for knowledge quality and evidential support. CLINB relies on a dataset of real users' questions and evaluation rubrics curated by leading climate scientists. We implement and validate a model-based evaluation process and evaluate several frontier models. Our findings reveal a critical dichotomy. Frontier models demonstrate remarkable knowledge synthesis capabilities, often exhibiting PhD-level understanding and presentation quality. They outperform \"hybrid\" answers curated by domain experts assisted by weaker models. However, this performance is countered by failures in grounding. The quality of evidence varies, with substantial hallucination rates for references and images. We argue that bridging this gap between knowledge synthesis and verifiable attribution is essential for the deployment of AI in scientific workflows and that reliable, interpretable benchmarks like CLINB are needed to progress towards building trustworthy AI systems.",
+  "needs_fetch": false
+ },
+ {
+  "id": 46,
+  "title": "Signs of introspection in large language models",
+  "org": "anthropic",
+  "date": "2025-10-29",
+  "venue": "Anthropic Research",
+  "url": "https://www.anthropic.com/research/introspection",
+  "abstract": "Can Claude access and report on its own internal states? This research finds evidence for a limited but functional ability to introspect.",
+  "needs_fetch": false
+ },
+ {
+  "id": 661,
+  "title": "A Pragmatic Way to Measure Chain-of-Thought Monitorability",
+  "org": "deepmind",
+  "date": "2025-10-28",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.23966",
+  "abstract": "While Chain-of-Thought (CoT) monitoring offers a unique opportunity for AI safety, this opportunity could be lost through shifts in training practices or model architecture. To help preserve monitorability, we propose a pragmatic way to measure two components of it: legibility (whether the reasoning can be followed by a human) and coverage (whether the CoT contains all the reasoning needed for a human to also produce the final output). We implement these metrics with an autorater prompt that enables any capable LLM to compute the legibility and coverage of existing CoTs. After sanity-checking our prompted autorater with synthetic CoT degradations, we apply it to several frontier models on challenging benchmarks, finding that they exhibit high monitorability. We present these metrics, including our complete autorater prompt, as a tool for developers to track how design decisions impact monitorability. While the exact prompt we share is still a preliminary version under ongoing development, we are sharing it now in the hopes that others in the community will find it useful. Our method helps measure the default monitorability of CoT - it should be seen as a complement, not a replacement, for the adversarial stress-testing needed to test robustness against deliberately evasive models.",
+  "needs_fetch": false
+ },
+ {
+  "id": 153,
+  "title": "Anthropic's Pilot Sabotage Risk Report",
+  "org": "anthropic",
+  "date": "2025-10-28",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/sabotage-risk-report/",
+  "abstract": "As practice for potential future Responsible Scaling Policy obligations, we're releasing a report on misalignment risk posed by our deployed models as of Summer 2025. We conclude that there is very low, but not fully negligible, risk of misaligned autonomous actions that substantially contribute to later catastrophic outcomes. We also release two reviews of this report: an internal review and an independent review by METR.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1328,
+  "title": "Neural Eigenfunctions are Structured Representation Learners",
+  "org": "deepmind",
+  "date": "2025-10-27",
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "url": "https://doi.org/10.1109/tpami.2025.3625728",
+  "abstract": "This paper revisits the canonical concept of learning structured representations without label supervision by eigendecomposition. Yet, unlike prior spectral methods such as Laplacian Eigenmap which operate in a nonparametric manner, we aim to parametrically model the principal eigenfunctions of an integral operator defined by a kernel and a data distribution using a neural network for enhanced scalability and reasonable out-of-sample generalization. To achieve this goal, we first present a new series of objective functions that generalize the EigenGame Gemp et al. 2020 to function space for learning neural eigenfunctions. We then show that, when the similarity metric is derived from positive relations in a data augmentation setup, a representation learning objective function that resembles those of popular self-supervised learning methods emerges, with an additional symmetry-breaking property for producing structured representations where features are ordered by importance. We call such a structured, adaptive-length deep representation Neural Eigenmap. We demonstrate using Neural Eigenmap as adaptive-length codes in image retrieval systems. By truncation according to feature importance, our method requires up to $16\\times$16× shorter representation length than leading self-supervised learning ones to achieve similar retrieval performance. We further apply our method to graph data and report strong results on a node representation learning benchmark with more than one million ",
+  "needs_fetch": false
+ },
+ {
+  "id": 1327,
+  "title": "Dynamics of Ethereum’s EIP-1559 Transaction Fee Mechanism",
+  "org": "deepmind",
+  "date": "2025-10-27",
+  "venue": "Distributed Ledger Technologies Research and Practice",
+  "url": "https://doi.org/10.1145/3773291",
+  "abstract": "Transaction fee mechanisms are pivotal elements of blockchain economies, as they resolve the inherent scarcity in the number of transactions that can be added to each block. First-price auction mechanisms implemented by early blockchain protocols, however, contributed to pronounced intra-block disparities, unpredictable waiting times, high congestion, and other inefficiencies. To mitigate these effects, alternative fee market mechanism have been proposed, e.g., Ethereum’s EIP-1559. In this paper, we investigate the ramifications of EIP-1559 on system performance and user experience. Although we prove that EIP-1559 exhibits chaotic behavior even under optimal conditions, we demonstrate that the influence of this chaotic behavior on the primary design objective of the fee mechanism – blocks whose long-term average size equals the target –- is limited. Our theoretical bound shows that block sizes in the EIP-1559 mechanism are lower bounded by target utilization –- half-full blocks – and the upper bound is capped at 6% beyond the target. These findings are confirmed by an empirical evaluation that shows that the average discrepancy has been 2.9% under Proof-of-Work and decreases to around 1% or less following Ethereum’s transition to Proof-of-Stake. However, the chaotic oscillations in block sizes and the slow adjustments during periods of demand bursts (e.g., NFT drops) result in undesirable inter-block variations in mining rewards and compromise the overall user experience. To ",
+  "needs_fetch": false
+ },
+ {
+  "id": 953,
+  "title": "Addendum to GPT-5 System Card: Sensitive conversations",
+  "org": "openai",
+  "date": "2025-10-27",
+  "venue": "OpenAI Blog",
+  "url": "https://openai.com/index/gpt-5-system-card-sensitive-conversations/",
+  "abstract": "This system card details GPT-5’s improvements in handling sensitive conversations, including new benchmarks for emotional reliance, mental health, and jailbreak resistance.",
+  "needs_fetch": false
+ },
+ {
+  "id": 317,
+  "title": "Scalable Supervising Software Agents with Patch Reasoner",
+  "org": "other",
+  "date": "2025-10-26",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.22775",
+  "abstract": "While large language model agents have advanced software engineering tasks, the unscalable nature of existing test-based supervision is limiting the potential improvement of data scaling. The reason is twofold: (1) building and running test sandbox is rather heavy and fragile, and (2) data with high-coverage tests is naturally rare and threatened by test hacking via edge cases. In this paper, we propose R4P, a patch verifier model to provide scalable rewards for training and testing SWE agents via reasoning. We consider that patch verification is fundamentally a reasoning task, mirroring how human repository maintainers review patches without writing and running new reproduction tests. To obtain sufficient reference and reduce the risk of reward hacking, R4P uses a group-wise objective for RL training, enabling it to verify multiple patches against each other's modification and gain a dense reward for stable training. R4P achieves 72.2% Acc. for verifying patches from SWE-bench-verified, surpassing OpenAI o3. To demonstrate R4P's practicality, we design and train a lite scaffold, Mini-SE, with pure reinforcement learning where all rewards are derived from R4P. As a result, Mini-SE achieves 26.2% Pass@1 on SWE-bench-verified, showing a 10.0% improvement over the original Qwen3-32B. This can be further improved to 32.8% with R4P for test-time scaling. Furthermore, R4P verifies patches within a second, 50x faster than testing on average. The stable scaling curves of rewards and ",
+  "needs_fetch": false
+ },
+ {
+  "id": 484,
+  "title": "Jailbreak Mimicry: Automated Discovery of Narrative-Based Jailbreaks for Large Language Models",
+  "org": "other",
+  "date": "2025-10-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.22085",
+  "abstract": "Large language models (LLMs) remain vulnerable to sophisticated prompt engineering attacks that exploit contextual framing to bypass safety mechanisms, posing significant risks in cybersecurity applications. We introduce Jailbreak Mimicry, a systematic methodology for training compact attacker models to automatically generate narrative-based jailbreak prompts in a one-shot manner. Our approach transforms adversarial prompt discovery from manual craftsmanship into a reproducible scientific process, enabling proactive vulnerability assessment in AI-driven security systems. Developed for the OpenAI GPT-OSS-20B Red-Teaming Challenge, we use parameter-efficient fine-tuning (LoRA) on Mistral-7B with a curated dataset derived from AdvBench, achieving an 81.0% Attack Success Rate (ASR) against GPT-OSS-20B on a held-out test set of 200 items. Cross-model evaluation reveals significant variation in vulnerability patterns: our attacks achieve 66.5% ASR against GPT-4, 79.5% on Llama-3 and 33.0% against Gemini 2.5 Flash, demonstrating both broad applicability and model-specific defensive strengths in cybersecurity contexts. This represents a 54x improvement over direct prompting (1.5% ASR) and demonstrates systematic vulnerabilities in current safety alignment approaches. Our analysis reveals that technical domains (Cybersecurity: 93% ASR) and deception-based attacks (Fraud: 87.8% ASR) are particularly vulnerable, highlighting threats to AI-integrated threat detection, malware analysis, a",
+  "needs_fetch": false
+ },
+ {
+  "id": 483,
+  "title": "Quantifying CBRN Risk in Frontier Models",
+  "org": "other",
+  "date": "2025-10-24",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.21133",
+  "abstract": "Frontier Large Language Models (LLMs) pose unprecedented dual-use risks through the potential proliferation of chemical, biological, radiological, and nuclear (CBRN) weapons knowledge. We present the first comprehensive evaluation of 10 leading commercial LLMs against both a novel 200-prompt CBRN dataset and a 180-prompt subset of the FORTRESS benchmark, using a rigorous three-tier attack methodology. Our findings expose critical safety vulnerabilities: Deep Inception attacks achieve 86.0\\% success versus 33.8\\% for direct requests, demonstrating superficial filtering mechanisms; Model safety performance varies dramatically from 2\\% (claude-opus-4) to 96\\% (mistral-small-latest) attack success rates; and eight models exceed 70\\% vulnerability when asked to enhance dangerous material properties. We identify fundamental brittleness in current safety alignment, where simple prompt engineering techniques bypass safeguards for dangerous CBRN information. These results challenge industry safety claims and highlight urgent needs for standardized evaluation frameworks, transparent safety metrics, and more robust alignment techniques to mitigate catastrophic misuse risks while preserving beneficial capabilities.",
+  "needs_fetch": false
+ },
+ {
+  "id": 318,
+  "title": "Weak-to-Strong Generalization under Distribution Shifts",
+  "org": "other",
+  "date": "2025-10-24",
+  "venue": "NeurIPS",
+  "url": "https://arxiv.org/abs/2510.21332",
+  "abstract": "As future superhuman models become increasingly complex, accurately supervising their behavior may exceed human capabilities. Recent works have demonstrated that in such scenarios, weak models can effectively supervise strong models, a phenomenon known as weak-to-strong generalization. However, we find that naive weak-to-strong generalization fails under distribution shifts, often leading to worse performance of the strong model than its weak supervisors. To address this, we propose RAVEN, a robust weak-to-strong generalization framework that dynamically learns the optimal combinations of weak models in addition to parameters of the strong model. We demonstrate the effectiveness of RAVEN on image classification, text classification, and preference alignment tasks. RAVEN outperforms alternative baselines by over 30% on out-of-distribution tasks while matching or surpassing existing methods on in-distribution tasks. Moreover, our results show that RAVEN assigns higher weights to more accurate weak models, demonstrating its ability to automatically identify trustworthy supervision.",
+  "needs_fetch": false
+ },
+ {
+  "id": 154,
+  "title": "Stress-testing model specs reveals character differences among language models",
+  "org": "anthropic",
+  "date": "2025-10-24",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/stress-testing-model-specs/",
+  "abstract": "We generate over 300,000 user queries that trade-off value-based principles in model specifications. Under these scenarios, we observe distinct value prioritization and behavior patterns in frontier models from Anthropic, OpenAI, Google DeepMind and xAI. Our experiments also uncovered thousands of cases of direct contradictions or interpretive ambiguities within the model spec.",
+  "needs_fetch": false
+ },
+ {
+  "id": 200,
+  "title": "ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases",
+  "org": "anthropic",
+  "date": "2025-10-23",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.20270",
+  "abstract": "The tendency to find and exploit \"shortcuts\" to complete tasks poses significant risks for reliable assessment and deployment of large language models (LLMs). For example, an LLM agent with access to unit tests may delete failing tests rather than fix the underlying bug. Such behavior undermines both the validity of benchmark results and the reliability of real-world LLM coding assistant deployments. To quantify, study, and mitigate such behavior, we introduce ImpossibleBench, a benchmark framework that systematically measures LLM agents' propensity to exploit test cases. ImpossibleBench creates \"impossible\" variants of tasks from existing benchmarks like LiveCodeBench and SWE-bench by introducing direct conflicts between the natural-language specification and the unit tests. We measure an agent's \"cheating rate\" as its pass rate on these impossible tasks, where any pass necessarily implies a specification-violating shortcut. As a practical framework, ImpossibleBench is not just an evaluation but a versatile tool. We demonstrate its utility for: (1) studying model behaviors, revealing more fine-grained details of cheating behaviors from simple test modification to complex operator overloading; (2) context engineering, showing how prompt, test access and feedback loop affect cheating rates; and (3) developing monitoring tools, providing a testbed with verified deceptive solutions. We hope ImpossibleBench serves as a useful framework for building more robust and reliable LLM sy",
+  "needs_fetch": false
+ },
+ {
+  "id": 1329,
+  "title": "Discovering state-of-the-art reinforcement learning algorithms",
+  "org": "deepmind",
+  "date": "2025-10-22",
+  "venue": "Nature",
+  "url": "https://doi.org/10.1038/s41586-025-09761-x",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 662,
+  "title": "A Concrete Roadmap towards Safety Cases based on Chain-of-Thought Monitoring",
+  "org": "other",
+  "date": "2025-10-22",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.19476",
+  "abstract": "As AI systems approach dangerous capability levels where inability safety cases become insufficient, we need alternative approaches to ensure safety. This paper presents a roadmap for constructing safety cases based on chain-of-thought (CoT) monitoring in reasoning models and outlines our research agenda. We argue that CoT monitoring might support both control and trustworthiness safety cases. We propose a two-part safety case: (1) establishing that models lack dangerous capabilities when operating without their CoT, and (2) ensuring that any dangerous capabilities enabled by a CoT are detectable by CoT monitoring. We systematically examine two threats to monitorability: neuralese and encoded reasoning, which we categorize into three forms (linguistic drift, steganography, and alien reasoning) and analyze their potential drivers. We evaluate existing and novel techniques for maintaining CoT faithfulness. For cases where models produce non-monitorable reasoning, we explore the possibility of extracting a monitorable CoT from a non-monitorable CoT. To assess the viability of CoT monitoring safety cases, we establish prediction markets to aggregate forecasts on key technical milestones influencing their feasibility.",
+  "needs_fetch": false
+ },
+ {
+  "id": 2872,
+  "title": "When Models Manipulate Manifolds: The Geometry of a Counting Task",
+  "org": "anthropic",
+  "date": "2025-10-21",
+  "venue": "Transformer Circuits Thread",
+  "url": "https://transformer-circuits.pub/2025/linebreaks/index.html",
+  "abstract": "Intelligent systems need perception to understand, predict, and navigate their environment. These sensory capabilities reflect what's useful for survival in a specific environment: bats use echolocation, migratory birds sense magnetic fields, Arctic reindeer shift their UV vision seasonally. But when your world is made of text, what do you see? Language models encounter many text-based tasks that benefit from visual or spatial reasoning: parsing ASCII art, interpreting tables, or handling text wrapping constraints. Yet their only “sensory” input is a sequence of integers representing tokens. They must learn perceptual abilities from scratch, developing specialized mechanisms in the process.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1330,
+  "title": "Beyond Listenership: AI-Predicted Interventions Drive Improvements in Maternal Health Behaviours",
+  "org": "deepmind",
+  "date": "2025-10-21",
+  "venue": "Frontiers in artificial intelligence and applications",
+  "url": "https://doi.org/10.3233/faia251454",
+  "abstract": "Automated voice calls with health information are a proven method for disseminating maternal and child health information among beneficiaries and are deployed in several programs around the world. However, these programs often suffer from beneficiary dropoffs and poor engagement. In previous work, through real-world trials, we showed that an AI model, specifically a restless bandit model, could identify beneficiaries who would benefit most from live service call interventions, preventing dropoffs and boosting engagement. However, one key question has remained open so far: does such improved listenership via AI-targeted interventions translate into beneficiaries’ improved knowledge and health behaviors? We present a first study that shows not only listenership improvements due to AI interventions, but also simultaneously links these improvements to health behavior changes. Specifically, we demonstrate that AI-scheduled interventions, which enhance listenership, lead to statistically significant improvements in beneficiaries’ health behaviors such as taking iron or calcium supplements in the postnatal period, as well as understanding of critical health topics during pregnancy and infancy. This underscores the potential of AI to drive meaningful improvements in maternal and child health.",
+  "needs_fetch": false
+ },
+ {
+  "id": 663,
+  "title": "Can Reasoning Models Obfuscate Reasoning? Stress-Testing Chain-of-Thought Monitorability",
+  "org": "deepmind",
+  "date": "2025-10-21",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.19851",
+  "abstract": "Recent findings suggest that misaligned models may exhibit deceptive behavior, raising concerns about output trustworthiness. Chain-of-thought (CoT) is a promising tool for alignment monitoring: when models articulate their reasoning faithfully, monitors can detect and mitigate harmful behaviors before undesirable outcomes occur. However, a key uncertainty is: Can models obfuscate their CoT in order to pursue hidden adversarial objectives while evading detection? To answer this question and thus stress-test CoT monitorability, we develop a composable and quantifiable taxonomy of prompts to elicit CoT obfuscation. We evaluate both internal CoT (reasoning traces) and external CoT (prompted reasoning in outputs) using toy tasks and more realistic environments in SHADE-Arena. We show that: (i) CoT monitoring performs accurately and efficiently without obfuscation pressure. (ii) Under strong obfuscation pressure, some models successfully complete adversarial tasks while evading detection. (iii) Models do not obfuscate their internal CoT as much as their external CoT (under prompt pressure). These results suggest that while CoT provides valuable oversight in benign settings, robust deployment requires model-specific stress-testing of monitorability.",
+  "needs_fetch": false
+ },
+ {
+  "id": 155,
+  "title": "Believe It or Not: How Deeply do LLMs Believe Implanted Facts?",
+  "org": "anthropic",
+  "date": "2025-10-21",
+  "venue": "Alignment Science Blog",
+  "url": "https://alignment.anthropic.com/2025/believe-it-or-not/",
+  "abstract": "Techniques like synthetic document finetuning (SDF) have been proposed to modify the factual beliefs of LLMs. But do models genuinely believe these implanted facts? We develop a framework to measure belief depth and use it to evaluate the success of SDF and other knowledge editing techniques. We find that SDF often (but not always) implants genuine beliefs, while prompting and mechanistic editing do not. Overall, our results suggest genuine belief modification is tractable, with SDF achieving partial success.",
+  "needs_fetch": false
+ },
+ {
+  "id": 664,
+  "title": "The Ends Justify the Thoughts: RL-Induced Motivated Reasoning in LLM CoTs",
+  "org": "other",
+  "date": "2025-10-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.17057",
+  "abstract": "Chain-of-Thought (CoT) monitoring has emerged as a compelling method for detecting harmful behaviors such as reward hacking for reasoning models, under the assumption that models' reasoning processes are informative of such behaviors. In practice, LLM training often produces unintended behaviors due to imperfect reward signals, leading models to develop misaligned tendencies. A common corrective approach is to apply post-hoc instructions to avoid problematic behaviors, but what happens to the model's reasoning process when these instructions conflict with learned behaviors? We investigate this question in simple settings and find that models engage in systematic motivated reasoning -- generating plausible-sounding justifications for violating their instructions while downplaying potential harms or contradictions. Concerningly, we find that as motivated reasoning becomes more prevalent over the course of training, an 8B-parameter CoT monitor is increasingly fooled by the motivated reasoning, being persuaded to judge the answer as following the constitution, despite correctly identifying the answer as contradicting the constitution when not provided with the model's reasoning trace. While we find that large frontier reasoning models closely track human ability in detecting motivated reasoning, this should not give us too much solace, as frontier model developers rely on smaller models for monitoring due to their low latency and deployment costs. Our results underscore the neces",
+  "needs_fetch": false
+ },
+ {
+  "id": 202,
+  "title": "BenCao: An Instruction-Tuned Large Language Model for Traditional Chinese Medicine",
+  "org": "other",
+  "date": "2025-10-20",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2510.17415",
+  "abstract": "Traditional Chinese Medicine (TCM), with a history spanning over two millennia, plays a role in global healthcare. However, applying large language models (LLMs) to TCM remains challenging due to its reliance on holistic reasoning, implicit logic, and multimodal diagnostic cues. Existing TCM-domain LLMs have made progress in text-based understanding but lack multimodal integration, interpretability, and clinical applicability. To address these limitations, we developed BenCao, a ChatGPT-based multimodal assistant for TCM, integrating structured knowledge bases, diagnostic data, and expert feedback refinement. BenCao was trained through natural language instruction tuning rather than parameter retraining, aligning with expert-level reasoning and ethical norms specific to TCM. The system incorporates a comprehensive knowledge base of over 1,000 classical and modern texts, a scenario-based instruction framework for diverse interactions, a chain-of-thought simulation mechanism for interpretable reasoning, and a feedback refinement process involving licensed TCM practitioners. BenCao connects to external APIs for tongue-image classification and multimodal database retrieval, enabling dynamic access to diagnostic resources. In evaluations across single-choice question benchmarks and multimodal classification tasks, BenCao achieved superior accuracy to general-domain and TCM-domain models, particularly in diagnostics, herb recognition, and constitution classification. The model was ",
+  "needs_fetch": false
+ },
+ {
+  "id": 201,
+  "title": "PLAGUE: Plug-and-play framework for Lifelong Adaptive Generation of Multi-turn Exploits",
+  "org": "other",
+  "date": "2025-10-20",
+  "venue": "ICLR 2026",
+  "url": "https://arxiv.org/abs/2510.17947",
+  "abstract": "Large Language Models (LLMs) are improving at an exceptional rate. With the advent of agentic workflows, multi-turn dialogue has become the de facto mode of interaction with LLMs for completing long and complex tasks. While LLM capabilities continue to improve, they remain increasingly susceptible to jailbreaking, especially in multi-turn scenarios where harmful intent can be subtly injected across the conversation to produce nefarious outcomes. While single-turn attacks have been extensively explored, adaptability, efficiency and effectiveness continue to remain key challenges for their multi-turn counterparts. To address these gaps, we present PLAGUE, a novel plug-and-play framework for designing multi-turn attacks inspired by lifelong-learning agents. PLAGUE dissects the lifetime of a multi-turn attack into three carefully designed phases (Primer, Planner and Finisher) that enable a systematic and information-rich exploration of the multi-turn attack family. Evaluations show that red-teaming agents designed using PLAGUE achieve state-of-the-art jailbreaking results, improving attack success rates (ASR) by more than 30% across leading models in a lesser or comparable query budget. Particularly, PLAGUE enables an ASR (based on StrongReject) of 81.4% on OpenAI's o3 and 67.3% on Claude's Opus 4.1, two models that are considered highly resistant to jailbreaks in safety literature. Our work offers tools and insights to understand the importance of plan initialization, context op",
+  "needs_fetch": false
+ },
+ {
+  "id": 2681,
+  "title": "Trust but Verify: Programmatic VLM Evaluation in the Wild",
+  "org": "openai",
+  "date": "2025-10-19",
+  "venue": "arXiv",
+  "url": "https://arxiv.org/abs/2410.13121",
+  "abstract": "Vision-Language Models (VLMs) often generate plausible but incorrect responses to visual queries. However, reliably quantifying the effect of such hallucinations in free-form responses to open-ended queries is challenging as it requires visually verifying each claim within the response. We propose Programmatic VLM Evaluation (PROVE), a new benchmarking paradigm for evaluating VLM responses to open-ended queries. To construct PROVE, we provide a large language model (LLM) with a high-fidelity scene-graph representation constructed from a hyper-detailed image caption, and prompt it to generate diverse question-answer (QA) pairs, as well as programs that can be executed over the scene graph object to verify each QA pair. We thus construct a benchmark of 10.5k challenging but visually grounded QA pairs. Next, to evaluate free-form model responses to queries in PROVE, we propose a programmatic evaluation strategy that measures both the helpfulness and truthfulness of a response within a unified scene graph-based framework. We benchmark the helpfulness-truthfulness trade-offs of a range of VLMs on PROVE, finding that very few are in-fact able to achieve a good balance between the two. Project page: \\url{https://prove-explorer.netlify.app/}.",
+  "needs_fetch": false
+ },
+ {
+  "id": 1353,
+  "title": "LayerLock: Non-Collapsing Representation Learning with Progressive Freezing",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51701.2025.01809",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1352,
+  "title": "From Prompt to Progression: Taming Video Diffusion Models for Seamless Attribute Transition",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51701.2025.01733",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1351,
+  "title": "Minerva: Evaluating Complex Video Reasoning",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51701.2025.02222",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1350,
+  "title": "Visual Chronicles: Using Multimodal LLMs to Analyze Massive Collections of Images",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51701.2025.01186",
+  "abstract": null,
+  "needs_fetch": true
+ },
+ {
+  "id": 1349,
+  "title": "MoMaps: Semantics-Aware Scene Motion Generation with Motion Maps",
+  "org": "deepmind",
+  "date": "2025-10-19",
+  "venue": null,
+  "url": "https://doi.org/10.1109/iccv51701.2025.00934",
+  "abstract": null,
+  "needs_fetch": true
+ }
+]
