@@ -66,7 +66,8 @@ function buildChips() {
         <span class="dot"></span>${m.label} <span class="n">${orgCounts[k]}</span></button>`)
     .join('');
 
-  const topics = Object.entries(topicCounts).sort((a, b) => b[1] - a[1]);
+  const topics = Object.entries(topicCounts).sort((a, b) =>
+    (a[0] === 'Other') - (b[0] === 'Other') || b[1] - a[1]);
   $('#topic-chips').innerHTML = topics
     .map(([t, n]) => `<button class="chip topic-chip" data-topic="${esc(t)}">${esc(t)} <span class="n">${n}</span></button>`)
     .join('');
