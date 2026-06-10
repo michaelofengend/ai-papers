@@ -46,6 +46,22 @@ export function normTitle(t) {
   return String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
+/* OpenAlex affiliation pollution: AI-generated podcast records (Open MIND /
+   myweirdprompts), Zenodo/Figshare software releases, GitHub release entries. */
+const SPAM_URL = /zenodo\.org|figshare|myweirdprompts\.com|osf\.io/i;
+const SPAM_VENUE = /^(open mind|zenodo|figshare)/i;
+const SPAM_AUTHOR = /chatterbox|^(claude|gemini|chatgpt|gpt)[ ,-]|\((flash|pro|mini)\)|^rosehill, daniel/i;
+const SPAM_TITLE = /^[\w.-]+\/[\w.-]+:/; // "owner/repo: v1.2.3" release records
+
+export function isSpam(p) {
+  if (SPAM_URL.test(p.url || '') || SPAM_URL.test(p.pdf_url || '')) return true;
+  if (SPAM_VENUE.test(p.venue || '')) return true;
+  if (SPAM_TITLE.test(p.title || '')) return true;
+  const authors = Array.isArray(p.authors) ? p.authors : [];
+  if (authors.some((a) => SPAM_AUTHOR.test(String(a)))) return true;
+  return false;
+}
+
 export function extractArxivId(url) {
   const m = String(url || '').match(/arxiv\.org\/(?:abs|pdf|html)\/(\d{4}\.\d{4,5})/i);
   return m ? m[1] : null;

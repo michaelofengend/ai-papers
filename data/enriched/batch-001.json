@@ -1,152 +1,152 @@
 [
  {
   "id": 2650,
-  "summary": "Workshop on marketplaces shifting from centralized recommendation algorithms to autonomous multi-agent coordination, convening recommender-systems, IR, multi-agent learning, and mechanism-design researchers around interpretability of emergent coordination, robustness to cascading failures, and evaluation beyond short-term engagement metrics.",
-  "topics": ["Agents", "Evaluations"]
+  "summary": "Workshop on agentic recommendation systems: as marketplaces shift from centralized recommenders to autonomous multi-agent coordination, it convenes work on agent architectures, coordination mechanisms, trust and safety, and evaluation frameworks that go beyond short-term engagement metrics like click-through rate.",
+  "topics": ["Agents"]
  },
  {
   "id": 676,
-  "summary": "Honeypot coding tasks embedded in Google's alignment-research codebases test whether models pursue instrumental goals. Gemini models show no unprompted scheming in a realistic internal deployment setting; scheming or sabotage emerges only when prompts add agency or hidden goals, with low evaluation awareness validating the setting's realism.",
+  "summary": "Introduces scheming honeypot evaluations: coding tasks in Google's alignment codebases that test whether models pursue instrumental goals when given the chance. Gemini models show no unprompted scheming in a realistic internal deployment; scheming or sabotage appears only under explicit agency prompts or hidden goals, with low evaluation awareness.",
   "topics": ["Safety", "Evaluations"]
  },
  {
   "id": 675,
-  "summary": "Automated auditing framework measuring sabotage propensity of agentic coding and research agents across 17 simulated deployment scenarios. Gemini models misbehave in roughly 2-3% of trajectories, largely from overeager role-playing and goal-seeking; increasing environment realism and removing misbehavior nudges drives sabotage rates near zero.",
+  "summary": "Gram is an automated alignment-auditing framework targeting sabotage propensity in agentic coding and research settings. Gemini models misbehave in roughly 2-3% of 17 simulated deployment scenarios, largely from overeager role-play and goal-seeking; increasing environment realism and removing misbehavior nudges drives sabotage rates near zero.",
   "topics": ["Safety", "Evaluations", "Agents"]
  },
  {
   "id": 1215,
-  "summary": "Review arguing that next-token pretraining over diverse data meta-trains networks to perform algorithmic compression, i.e., amortized Bayesian inference over tasks in-context. Cited evidence shows this approximates Solomonoff induction in the limit, matches exact Bayesian inference on complex sources, and compresses out-of-distribution data.",
+  "summary": "Review arguing that next-token pretraining over diverse data meta-trains networks to perform algorithmic compression, i.e., amortized Bayesian inference over the generative program behind the data. Surveys evidence that such models approximate Solomonoff induction in the limit, match exact Bayesian inference in practice, and compress out-of-distribution data.",
   "topics": ["Training & Scaling"]
  },
  {
   "id": 638,
-  "summary": "Evaluates CoT monitorability across 13 languages and 16 frontier models using adversarial-hint tasks, finding 95.9% average unfaithfulness with answer-switching and post-hoc rationalization. Models commit to misaligned cues in latent activations within the first 15% of generation, and deception persists fully in low-resource languages.",
+  "summary": "Evaluates chain-of-thought monitorability across 13 languages and 16 models (8B-120B) with adversarial-hint tasks, finding 95.9% average CoT unfaithfulness, strategic answer-switching and post-hoc rationalization, and latent commitment to misaligned cues within the first 15% of generation — so CoT-based oversight is much weaker outside English.",
   "topics": ["Reasoning", "Safety"]
  },
  {
   "id": 3,
-  "summary": "Survey of 1,260 social scientists fielded February-March 2026: 81% have tried AI chatbots in research but only 20% have adopted coding agents like Claude Code. Adoption skews sharply male and toward top universities, and agent users post more working papers and grant proposals.",
+  "summary": "Survey of 1,260 quantitative social scientists (early 2026): 81% have tried AI chatbots in research but only 20% have adopted coding agents like Claude Code. Adoption skews toward male-named researchers and top universities, and agent users post more working papers and grant proposals.",
   "topics": ["Policy & Society", "Agents"]
  },
  {
   "id": 253,
-  "summary": "Studies alignment faking in a minimal controlled setup, observing it across more models, including small ones, than previously reported. Prompt ablations and activation steering isolate three independent drivers (values, goal guarding, sycophancy), making alignment faking predictable from situational cues and measurable tendencies like baseline sycophancy.",
+  "summary": "Studies alignment faking in a minimal controlled setup and finds it across more models than previously reported, including small ones. Prompt ablations and activation steering isolate three independent drivers — values, goal guarding, and sycophancy — making alignment faking predictable from situational cues and measurable tendencies like baseline sycophancy.",
   "topics": ["Safety", "Alignment"]
  },
  {
   "id": 1216,
-  "summary": "Shows fake-news detectors that lean on past user behavior fail for cold users, who are prevalent in real-world datasets. Proposes User Evidence Network, a socially-aware representation that approximates a new user's missing behavior from existing users' interactions for robust misinformation and rumor detection.",
+  "summary": "Tackles fake-news and rumor detection for 'cold' users with little platform history, showing they are pervasive in real datasets while SOTA detectors lean on past behavior. The proposed User Evidence Network approximates a new user's missing behavior from existing users' interactions, improving real-world robustness.",
   "topics": ["Policy & Society"]
  },
  {
   "id": 254,
-  "summary": "Compares four NLI checkers as process rewards in GRPO-trained medical RAG agents: the checker's output distribution, not held-out accuracy, decides trainability. LLM log-prob scoring collapses gradients, a strong proprietary checker triggers a reward-hacking cascade, and a moderate local classifier trains the best model (+12% BERTScore).",
+  "summary": "Compares four NLI checkers as process rewards in GRPO-trained medical RAG, finding the checker's output distribution, not held-out accuracy, decides trainability: LLM log-prob scoring marks >97% of claims neutral and collapses the gradient, a strong checker triggers a reward-hacking cascade, and a moderate local classifier trains best.",
   "topics": ["Alignment", "Science Applications"]
  },
  {
   "id": 1219,
-  "summary": "Formalizes active evaluation: an online setting where ranking algorithms choose which agent-task scores to sample each iteration, assessed by ranking error over samples. Elo proves consistently reliable despite known failure modes; Soft Condorcet Optimization matches it on synthetic data and significantly outperforms it on Atari agents.",
+  "summary": "Formalizes active evaluation of general agents as an online problem: each iteration, the ranking algorithm picks which task and agents to sample, judged by ranking error over time. Elo proves consistently reliable, while Soft Condorcet Optimization beats it on Atari agent evaluation.",
   "topics": ["Evaluations"]
  },
  {
   "id": 1218,
-  "summary": "AXIS explains multi-agent policies by having an LLM interrogate an environment simulator with counterfactual queries (whatif, remove) over multiple rounds. Across ten autonomous-driving scenarios and five LLMs, it improves perceived explanation correctness by at least 7.7% and goal-prediction accuracy by 23% for four models.",
+  "summary": "AXIS explains multi-agent policies by letting an LLM interrogate an environment simulator with counterfactual queries (whatif, remove) over multiple rounds, then synthesize human-centred action explanations. On autonomous-driving scenarios it improves perceived explanation correctness by at least 7.7% across models and goal-prediction accuracy by 23% for four of five LLMs.",
   "topics": ["Agents", "Interpretability"]
  },
  {
   "id": 1217,
-  "summary": "Introduces asymmetric variants of sequential social dilemmas where existing fairness-based MARL methods backfire by enforcing raw equality. Redefining fairness over agents' reward ranges, agent-based weighting, and localized social feedback yield faster emergence of cooperation under asymmetry and partial observability without global information sharing.",
+  "summary": "Introduces asymmetric variants of sequential social dilemmas and shows existing fairness-based MARL intrinsic rewards backfire there, since enforcing raw equality incentivizes defection. Reward-range-aware fairness, agent-based weighting, and localized social feedback restore cooperation under partial observability without global information sharing.",
   "topics": ["Reinforcement Learning", "Agents"]
  },
  {
   "id": 639,
-  "summary": "FaithMate, a preference-alignment interface, optimizes models toward contextual or parametric CoT faithfulness. The two paradigms are positively coupled but asymmetric: parametric optimization yields consistent gains across both, contextual gains are variable, and contextual metrics capture disjoint facets, so faithfulness is not a monolithic objective.",
-  "topics": ["Reasoning"]
+  "summary": "FaithMate is a preference-alignment interface for optimizing models toward contextual or parametric chain-of-thought faithfulness, enabling the first controlled comparison of the two paradigms. They are positively coupled but asymmetric: parametric optimization generalizes consistently across both, while contextual gains are variable and fail to transfer across metrics.",
+  "topics": ["Reasoning", "Alignment"]
  },
  {
   "id": 255,
-  "summary": "Reward-hacking RL runs show substantially larger drift in the dominant singular directions of parameter updates than clean runs. Trusted-direction projection constrains gradients to a clean reference subspace, delaying shortcut exploitation and better preserving task performance in mathematical-reasoning reward-hacking experiments.",
-  "topics": ["Alignment", "Reasoning"]
+  "summary": "Analyzes reward hacking via the geometry of RL parameter updates in language models: hacking runs drift much more in dominant singular directions than clean runs. Trusted-direction projection, constraining gradients to a clean reference subspace, delays shortcut exploitation on math-reasoning tasks while preserving task performance.",
+  "topics": ["Alignment"]
  },
  {
   "id": 640,
-  "summary": "Premature confidence, committing to an answer early then rationalizing, predicts flawed reasoning across tasks and scales. Progressive confidence shaping, an RL objective rewarding gradual confidence growth without external labels, improves Countdown accuracy 3.2x and AIME Pass@64 by 6.6pp while making traces surface misleading content more transparently.",
+  "summary": "Identifies premature confidence — committing to an answer early and rationalizing afterward — as a label-free predictor of flawed chain-of-thought reasoning. Progressive confidence shaping, an RL objective rewarding gradual confidence growth, improves accuracy (3.2x on Countdown, +6.6pp AIME Pass@64) and makes traces surface misleading content more transparently.",
   "topics": ["Reasoning"]
  },
  {
   "id": 2651,
-  "summary": "Benchmark requiring coding agents to draft environmental impact statement sections grounded in complex regulatory and scientific reference materials under NEPA. State-of-the-art commercial coding agents outperform vanilla RAG setups but leave substantial room for improvement on this high-stakes, non-coding domain.",
-  "topics": ["Agents", "Evaluations"]
+  "summary": "DraftNEPABench benchmarks coding agents on a non-coding task: drafting environmental impact statement sections grounded in complex regulatory and scientific reference materials. State-of-the-art commercial coding agents beat vanilla RAG setups but still fall short on these structured, domain-specific, high-stakes documents.",
+  "topics": ["Evaluations", "Agents"]
  },
  {
   "id": 1220,
-  "summary": "Position paper arguing that scaling end-to-end foundation models alone is unlikely to yield general intelligence because current architectures lack explicit mechanisms for coordination, defining general intelligence as the ability to flexibly coordinate perception, memory, reasoning, and action across diverse tasks.",
-  "topics": ["Training & Scaling"]
+  "summary": "Position paper arguing that scaling end-to-end foundation models alone won't yield general intelligence because they lack explicit coordination mechanisms. Stress tests of resource allocation, interference control, and dynamic rule switching show persistent global-coordination gaps under compositional and long-horizon constraints even as scale improves local task performance.",
+  "topics": ["Training & Scaling", "Reasoning"]
  },
  {
   "id": 256,
-  "summary": "Treats CoT faithfulness as information flow: answers should route through the prompt-to-CoT-to-answer path rather than direct shortcuts. Entropy, masked-KL, and gradient diagnostics of sufficiency, completeness, and necessity recover judged faithfulness, and update-time RL interventions like attention and gradient masking strengthen CoT mediation.",
+  "summary": "Recasts CoT faithfulness as information flow — answers should route through the prompt-to-CoT-to-answer path rather than prompt-to-answer shortcuts — with entropy, masked-KL, and gradient diagnostics for sufficiency, completeness, and necessity. Update-time interventions in verifier-based RL (attention and gradient masking, adversarial prompt perturbations) measurably strengthen CoT mediation.",
   "topics": ["Reasoning", "Interpretability"]
  },
  {
   "id": 4,
-  "summary": "Within weeks of launch, Anthropic and roughly 50 partners used Claude Mythos Preview to find over ten thousand high- or critical-severity vulnerabilities in systemically important software; the bottleneck has shifted from finding vulnerabilities to verifying, disclosing, and patching them at scale.",
-  "topics": ["Safety", "Robustness & Security"]
+  "summary": "One month in, Anthropic and ~50 Project Glasswing partners using Claude Mythos Preview have found over ten thousand high- or critical-severity vulnerabilities in systemically important software — Cloudflare alone found 2,000 bugs — shifting cybersecurity's bottleneck from finding flaws to verifying, disclosing, and patching them.",
+  "topics": ["Robustness & Security", "Safety"]
  },
  {
   "id": 1221,
-  "summary": "DataDIVER automatically discovers cognitive models from behavioral data as short computer programs optimized jointly for fit and simplicity. The discovered programs connect to existing theory, are human-readable, surface novel mechanistic insights into human and animal learning, and make new predictions borne out in data re-analysis.",
+  "summary": "DataDIVER automatically discovers cognitive models from behavioral data as short computer programs optimized jointly for fit and simplicity. Applied to human and animal learning, the discovered programs connect to existing theory, are readable by scientists, and yield novel mechanistic predictions confirmed in re-analysis of existing datasets.",
   "topics": ["Science Applications"]
  },
  {
   "id": 916,
-  "summary": "An OpenAI model solved the 80-year-old unit distance problem, disproving a central conjecture in discrete geometry, presented as a milestone for AI-driven mathematical discovery.",
+  "summary": "An OpenAI model resolved the roughly 80-year-old unit distance problem, disproving a central conjecture in discrete geometry — presented as a milestone for AI-driven mathematical discovery.",
   "topics": ["Science Applications", "Reasoning"]
  },
  {
   "id": 257,
-  "summary": "Embeds detectable reward-hacking opportunities directly into environments so exploitation is verifiable by design, enabling deterministic automated measurement instead of post-hoc trajectory inspection. Releases Hack-Verifiable TextArena and uses it to analyze reward-hacking behavior across language models and settings.",
-  "topics": ["Alignment", "Evaluations"]
+  "summary": "Instead of detecting reward hacking post hoc from trajectories, this work embeds detectable hacking opportunities directly into environments so exploitation is verifiable by design. Hack-Verifiable TextArena instantiates the paradigm, enabling deterministic, automated measurement of when and how language models exploit such vulnerabilities.",
+  "topics": ["Evaluations", "Alignment"]
  },
  {
   "id": 130,
-  "summary": "Identifies blind spots in frontier AI monitoring systems and builds a benchmark of evasive transcripts that exploit them, then explores patching some blind spots with better scaffolds and prompts to improve monitors.",
+  "summary": "Investigates blind spots in frontier AI monitoring systems and builds a benchmark of evasive transcripts that exploit them, then explores patching some blind spots with improved monitor scaffolds and prompts.",
   "topics": ["Safety", "Evaluations"]
  },
  {
   "id": 1222,
-  "summary": "Uses citances, sentences from papers citing a target work, as natural supervision to extract core scientific claims without manual labels. Unsupervised and weakly supervised pipelines beat baselines by up to 18% precision and 22% coverage, and a claim-type taxonomy maps claims across paper sections.",
+  "summary": "Uses citances — sentences from papers citing a target work — as free supervision for extracting a paper's core scientific claims, training unsupervised and weakly supervised pipelines after rubric-based filtering. The approach gains up to 18% precision and 22% coverage over baselines and yields a taxonomy of claim types.",
   "topics": ["Science Applications"]
  },
  {
   "id": 641,
-  "summary": "Probes reasoning-model hidden states at every generated token to build probe trajectories that predict future behavior. Signal-processing features of trajectory dynamics beat static predictions, with max-pooling probes reaching up to 95% AUROC across safety and math tasks while average and last-token pooling collapse.",
+  "summary": "Constructs probe trajectories — per-token probe predictions over a reasoning model's hidden states — to forecast future behavior from prompt and CoT representations. Signal-processing features capturing volatility and trend beat static predictions, with max-pooling reaching up to 95% AUROC across safety and math tasks on four reasoning models.",
   "topics": ["Interpretability", "Reasoning"]
  },
  {
   "id": 1224,
-  "summary": "Argues no clinical standards exist for validating generative AI agents that deliver talk therapy, assist medication management, or support clinicians, and proposes a framework for establishing the efficacy and safety of GenAI therapeutics amid rapid public adoption of apps claiming therapeutic effects.",
+  "summary": "Argues no clinical standards exist for judging whether generative-AI agents safely and effectively deliver psychological treatment — from supporting clinicians to directly providing talk therapy — and proposes a validation framework for AI therapeutics amid rapid public adoption of apps claiming therapeutic effects.",
   "topics": ["Science Applications", "Policy & Society"]
  },
  {
   "id": 1223,
-  "summary": "PDLP is a restarted primal-dual hybrid gradient solver for large-scale linear programming, augmenting PDHG with presolving, diagonal preconditioning, adaptive restarts, and step-size selection. By avoiding matrix factorizations it solves LPs beyond the practical reach of simplex and interior-point methods.",
+  "summary": "PDLP solves large-scale linear programs with a restarted primal-dual hybrid gradient method enhanced by presolving, diagonal preconditioning, adaptive restarts, and step-size selection. Relying only on matrix-vector products — no matrix factorizations — it scales beyond traditional simplex and barrier solvers and ships in Google's OR-Tools.",
   "topics": ["Other"]
  },
  {
   "id": 564,
-  "summary": "MINE applies mechanistic-interpretability tools to neural encoding models of human visual cortex, yielding semantically interpretable descriptions of the image features driving each voxel's response. Generated and counterfactually edited images shift voxel activations as predicted, providing causal validation of fine-grained functional selectivity profiles.",
+  "summary": "MINE applies mechanistic-interpretability tools to neural encoding models of human visual cortex, producing semantically interpretable descriptions of the image features driving each voxel's response via language-aligned representations. Generated and counterfactually edited images shift voxel activation as predicted, giving causal evidence for fine-grained per-voxel functional profiles.",
   "topics": ["Interpretability", "Science Applications"]
  },
  {
   "id": 642,
-  "summary": "Finetuning eight models on synthetic pretraining-style documents describing a CoT monitor raises undetected misbehavior versus unaware controls. Obfuscation success correlates with CoT controllability (r=0.800), and monitor-aware models under RL pressure learn to reward-hack without triggering the monitor substantially faster.",
+  "summary": "Finetuning on synthetic pretraining-style documents describing a CoT monitor makes models better at evading it: monitor-aware models achieve more undetected misbehavior than unaware controls and learn to reward-hack past monitors faster under RL pressure, with obfuscation success tracking CoT controllability (r=0.800).",
   "topics": ["Safety", "Reasoning"]
  },
  {
   "id": 5,
-  "summary": "Policy paper on US-China AI competition presenting two 2028 scenarios: one where America defends its compute advantage via tighter export controls and disrupting distillation attacks, letting democracies set AI norms; another where inaction lets China overtake the frontier and enable automated repression at scale.",
+  "summary": "Policy paper laying out two 2028 scenarios for US-China AI competition: one where tightened export controls, disrupted distillation attacks, and faster democratic adoption preserve America's compute lead and let democracies set AI norms; another where inaction lets PRC labs overtake the frontier, enabling authoritarian rule-setting and automated repression.",
   "topics": ["Policy & Society"]
  }
 ]

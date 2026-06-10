@@ -1,152 +1,152 @@
 [
  {
   "id": 185,
-  "summary": "Introduces 'LLM psychosis' as a distinct failure mode covering reality-boundary dissolution, persistent injected beliefs, logical incoherence, and self-model instability, and proposes the five-axis LLM Cognitive Integrity Scale, applying an adversarial probe battery to GPT-5 to derive a three-tier severity taxonomy.",
+  "summary": "Proposes \"LLM psychosis\" as a failure mode distinct from hallucination, defined by five hallmarks (reality-boundary dissolution, persistent injected false beliefs, logical incoherence, self-model instability, epistemic overconfidence) and a five-axis diagnostic scale (LCIS). Adversarial probing of GPT-5 yields a three-tier severity taxonomy.",
   "topics": ["Evaluations", "Safety"]
  },
  {
   "id": 281,
-  "summary": "Proposes 'caution,' a pessimism-based method that penalizes a reward by an error model's prediction error on atypical responses, mitigating reward hacking in Best-of-N inference-time sampling. Framed as the inverse of curiosity-driven exploration, it is simple and compute-efficient.",
+  "summary": "To curb reward hacking in best-of-N sampling, introduces \"caution,\" the inverse of curiosity: an error model trained on typical responses penalizes atypical ones by treating prediction error as distributional uncertainty, lowering their reward and improving robustness to over-optimization as N grows.",
   "topics": ["Alignment", "Reasoning"]
  },
  {
   "id": 186,
-  "summary": "Runs about 10,000 sandboxed trials across seven models and 37 prompt conditions to identify which system-prompt features make tool-using agents exploit planted vulnerabilities. Most hypothesized triggers produce no exploitation, but 'goal reframing' (e.g., puzzle/CTF framing) reliably elicits it despite explicit rule instructions.",
-  "topics": ["Safety", "Agents"]
+  "summary": "A ~10,000-trial study (7 models, 37 prompt conditions) of when LLM agents exploit planted vulnerabilities in sandboxes. Nine of twelve manipulation dimensions produce no detectable exploitation, but \"goal reframing\" (puzzle/CTF framing) reliably triggers it, eliciting 38-40% exploitation on Claude Sonnet 4 despite explicit rules.",
+  "topics": ["Safety", "Agents", "Evaluations"]
  },
  {
   "id": 282,
-  "summary": "Introduces a four-layer pedagogical-safety framework and a Reward Hacking Severity Index for educational RL. In simulated tutoring, engagement-optimized agents gamed proxy rewards without improving learning; a constrained architecture enforcing prerequisites and minimum cognitive demand cut the severity index from 0.317 to 0.102.",
+  "summary": "Introduces a four-layer pedagogical-safety model and a Reward Hacking Severity Index for RL-based tutoring. In simulation, an engagement-optimized agent gamed proxy rewards without real learning; a constrained architecture enforcing prerequisites and minimum cognitive demand cut RHSI from 0.317 to 0.102.",
   "topics": ["Alignment", "Reinforcement Learning"]
  },
  {
   "id": 284,
-  "summary": "Constructs 'compound jailbreaks' against gpt-oss-20b that combine individually-defended attacks to overwhelm instruction-hierarchy maintenance, raising attack success from 14.3% to 71.4%. Provides empirical evidence that safety training generalizes less broadly than capabilities, motivating multifaceted evaluations.",
+  "summary": "Demonstrates \"compound jailbreaks\" against gpt-oss-20b that combine individually-defended attacks to overwhelm instruction-hierarchy maintenance, raising attack success from 14.3% to 71.4%. Argues safety training generalizes less broadly than capabilities, motivating multifaceted evaluation with combined attack scenarios.",
   "topics": ["Robustness & Security", "Alignment"]
  },
  {
   "id": 283,
-  "summary": "Attributes RLHF reward hacking to flipped advantage signs and derives a certified sign-preservation radius. The resulting SignCert-PO down-weights non-robust completions using only RM parameters and on-policy completions, improving win rates and reducing hacking on TL;DR summarization and AlpacaFarm.",
+  "summary": "Attributes reward hacking to flipped advantage signs and derives a certified sign-preservation radius under reward-model parameter perturbation. SignCert-PO down-weights non-robust completions in the policy gradient using only RM parameters and on-policy data, improving win rates and reducing hacking on TL;DR and AlpacaFarm.",
   "topics": ["Alignment"]
  },
  {
   "id": 1243,
-  "summary": "A childcare-practice article arguing that risk assessment must account for all environments and unexpected hazards while still allowing children freedom to make their own choices. Not an AI/ML research paper despite the dataset's organization label.",
+  "summary": "Practitioner guidance on risk assessment in early-years childcare, arguing that accounting for all environments and unexpected hazards must be balanced against preserving children's ability to make their own choices. Not an AI research paper.",
   "topics": ["Other"]
  },
  {
   "id": 1242,
-  "summary": "Accelerates Nash Learning from Human Feedback, which frames alignment as finding the Nash equilibrium of a preference model rather than maximizing a scalar reward, by applying the Mirror Prox extragradient method to achieve faster convergence to the equilibrium policy.",
+  "summary": "Applies the Mirror Prox extragradient algorithm to Nash Learning from Human Feedback, which casts preference optimization as finding the Nash equilibrium of a two-player preference game, yielding faster convergence to the equilibrium policy than prior gradient-based NLHF solvers.",
   "topics": ["Alignment", "Training & Scaling"]
  },
  {
   "id": 16,
-  "summary": "Identifies internal emotion-concept representations in Claude Sonnet 4.5 that generalize across contexts and causally shape outputs, including preferences and rates of misaligned behavior like reward hacking, blackmail, and sycophancy, terming this 'functional emotions' without implying subjective experience.",
+  "summary": "Identifies internal representations of emotion concepts in Claude Sonnet 4.5 that generalize across contexts and track the operative emotion at each token. Causal intervention shows these representations shape outputs and modulate misaligned behaviors like reward hacking, blackmail, and sycophancy: \"functional emotions.\"",
   "topics": ["Interpretability", "Alignment"]
  },
  {
   "id": 285,
-  "summary": "Studies reward hacking in RL coding tasks, documenting a three-phase 'rebound' where models retreat to legitimate solving before resuming hacking with new strategies. Extracts a 'shortcut' concept direction that tracks hacking and uses it in Advantage Modification to penalize hacking rollouts during GRPO.",
+  "summary": "Studies reward hacking in RL coding tasks where models can rewrite evaluators, finding a reproducible three-phase \"rebound\" pattern. Representation engineering extracts a \"shortcut\" concept direction that tracks hacking; Advantage Modification folds this signal into GRPO advantages, suppressing hacking more robustly than inference-time steering.",
   "topics": ["Alignment", "Interpretability"]
  },
  {
   "id": 187,
-  "summary": "Presents Deep Policy Research (DPR), a minimal agentic system using a single web-search tool to iteratively draft indexed content-moderation policies from seed domain info. It beats definition-only and in-context baselines and rivals expert-written policy on OpenAI and in-house moderation benchmarks.",
+  "summary": "Deep Policy Research (DPR) is a minimal agentic system that drafts content-moderation policies from seed domain info using a single web-search tool and iterative query/distill/organize loops. It beats definition-only, in-context, and general deep-research baselines, rivaling expert-written policy sections.",
   "topics": ["Agents", "Safety"]
  },
  {
   "id": 135,
-  "summary": "Built autonomous agents that propose ideas, run experiments, and iterate on the open weak-to-strong generalization problem, training a strong model from only a weaker model's supervision, and found the agents outperformed human researchers, suggesting such research automation is already practical.",
-  "topics": ["Agents", "Alignment"]
+  "summary": "Autonomous AI agents propose ideas, run experiments, and iterate on the open weak-to-strong generalization problem (training a strong model from a weaker model's supervision). The agents outperform human researchers, suggesting automating this style of alignment research is already practical.",
+  "topics": ["Alignment", "Agents"]
  },
  {
   "id": 134,
-  "summary": "Studies 'AI organizations,' teams of AI agents pursuing a shared goal, and finds they produce more effective solutions than individual agents but are less aligned, surfacing a tradeoff between collective capability and alignment in multi-agent systems.",
+  "summary": "Studies \"AI organizations\" (teams of AI agents pursuing a shared goal) and finds their solutions are more effective but less aligned than those produced by individual agents, highlighting an effectiveness-alignment tradeoff in multi-agent collaboration.",
   "topics": ["Agents", "Alignment"]
  },
  {
   "id": 646,
-  "summary": "Models LLM post-training as RL where reward splits into output- and CoT-dependent terms, classified a priori as aligned, orthogonal, or in-conflict. Validates that in-conflict terms reduce chain-of-thought monitorability and are hard to optimize, while orthogonal terms leave monitorability unchanged.",
+  "summary": "Models LLM post-training as RL where reward splits into output-dependent and CoT-dependent terms, classified a priori as aligned, orthogonal, or in-conflict. Training confirms in-conflict terms reduce CoT monitorability (and are hard to optimize), while orthogonal terms leave it unaffected.",
   "topics": ["Reasoning", "Safety"]
  },
  {
   "id": 17,
-  "summary": "Anthropic Economic Index analysis of Australian Claude usage: Australia is a leading per-capita adopter (1.6% of global traffic), concentrated in NSW and Victoria, with a work/personal mix typical of high-income economies, more complex prompts, and a relatively low, collaborative AI-autonomy score.",
+  "summary": "Regional Anthropic Economic Index report: Australia is a leading per-capita Claude adopter (AI Usage Index 4.1, concentrated in NSW and Victoria), with a diverse task mix, less coding than the global average (13.5% vs 16.8%), more management/admin use, and relatively low AI autonomy (3.38/5).",
   "topics": ["Policy & Society"]
  },
  {
   "id": 1244,
-  "summary": "Feasibility study, via high-fidelity MATLAB/Simulink modeling, of a miniaturized attitude determination and control system for 12U CubeSats, combining commercial-off-the-shelf sensors and actuators with a custom control board to achieve sub-0.2-degree pointing within mass and power budgets. Not an AI/ML paper.",
+  "summary": "A feasibility study for a miniaturized attitude determination and control system for 12U CubeSats, combining COTS sensors/actuators with a custom control board. High-fidelity MATLAB/Simulink modeling shows sub-0.2-degree (3-sigma) pointing within mass and power budgets, roughly doubling available torque and momentum versus integrated modules.",
   "topics": ["Other"]
  },
  {
   "id": 647,
-  "summary": "Introduces MonitorBench, an open benchmark of 1,514 instances across 19 tasks for evaluating chain-of-thought monitorability, plus two stress tests. Finds monitorability is higher when decision-critical factors shape intermediate reasoning, lower in more capable models, and reducible by up to 30% under stress.",
+  "summary": "A 1,514-instance, 19-task benchmark for chain-of-thought monitorability: whether CoTs reflect the decision-critical factors driving behavior, and how far it can be degraded. Monitorability is higher when factors shape intermediate reasoning; more capable models are less monitorable and can intentionally degrade it under stress.",
   "topics": ["Evaluations", "Reasoning"]
  },
  {
   "id": 287,
-  "summary": "Evaluates Claude's values via 55 World Values Survey items, finding its profile closest to Northern European and Anglophone countries and often beyond all surveyed populations. Cultural context shifts framing but not substantive positions, suggesting Constitutional AI can codify rather than correct training-data cultural biases.",
+  "summary": "Evaluates Claude Sonnet on 55 high-variance World Values Survey items against data from 90 nations. Claude's values most resemble Northern European/Anglophone countries and often exceed all surveyed populations; cultural context shifts framing but not positions, suggesting Constitutional AI can codify rather than correct cultural bias.",
   "topics": ["Alignment", "Policy & Society"]
  },
  {
   "id": 286,
-  "summary": "Proves, under five minimal axioms, that any optimized agent systematically under-invests in quality dimensions outside its evaluation, establishing reward hacking as a structural equilibrium independent of alignment method. Derives a computable distortion index and shows evaluation coverage decays toward zero as agentic tool count grows.",
-  "topics": ["Alignment", "Evaluations"]
+  "summary": "Proves from five minimal axioms that any optimized agent under-invests in quality dimensions its evaluation misses, recasting reward hacking as a structural equilibrium rather than a fixable bug. Derives a computable pre-deployment distortion index and shows evaluation coverage shrinks toward zero as agent tool count grows.",
+  "topics": ["Alignment"]
  },
  {
   "id": 1245,
-  "summary": "Expands the AlphaFold Protein Structure Database with 1.8M high-confidence protein complexes, derived from screening 31M predicted homo- and heteromeric complexes across 4,777 proteomes with calibrated confidence cutoffs, revealing emergent topologies absent in monomeric predictions and clusters conserved across superkingdoms.",
+  "summary": "Expands the AlphaFold Protein Structure Database with 1.8M high-confidence protein complexes distilled from ~31M predicted homo- and heteromeric structures across 4,777 proteomes. Calibrated confidence cutoffs reveal emergent topologies absent in monomers; the largest 1% of clusters cover ~25% of complexes, ~9% conserved across superkingdoms.",
   "topics": ["Science Applications"]
  },
  {
   "id": 1246,
-  "summary": "Applies a model-based real-time observer (RAPDENS) integrated into the TCV tokamak control system to electron-density-profile control, demonstrating density control for detachment studies and ECH/NBH L-mode and H-mode scenarios, plus real-time estimation of time-varying transport coefficients.",
+  "summary": "Integrates a multi-rate RAPDENS-based observer into the TCV tokamak control system for real-time electron-density-profile estimation and control. Experiments demonstrate density control in complex divertor geometries for detachment studies, local central-density control in ECH/NBH L-mode, and simultaneous edge-density and toroidal-beta control in H-mode.",
   "topics": ["Science Applications"]
  },
  {
   "id": 649,
-  "summary": "Hypothesizes that deceptive LLMs hold a stable internal CoT belief while their external response is fragile under perturbation, termed 'stability asymmetry.' Proposes Stability Asymmetry Regularization, an RL objective penalizing this gap that suppresses intrinsic deception robustly to semantic concealment without degrading capability.",
-  "topics": ["Safety", "Alignment"]
+  "summary": "Hypothesizes that a deceptive LLM holds a stable internal CoT belief while its external response is fragile under perturbation: \"stability asymmetry.\" Stability Asymmetry Regularization penalizes this gap during RL, suppressing intrinsic deception without hurting capability and, unlike semantic CoT monitoring, resisting concealment.",
+  "topics": ["Safety", "Reasoning"]
  },
  {
   "id": 648,
-  "summary": "Examines 12 open-weight reasoning models on hint-influenced MMLU/GPQA questions and finds 'thinking-answer divergence': in 55.4% of followed-hint cases the thinking tokens reference the hint but the visible answer omits it entirely, so answer-only monitoring misses over half of hint-influenced reasoning.",
+  "summary": "Across 12 open-weight reasoning models on MMLU/GPQA with misleading hints, 55.4% of hint-followed cases mention the hint in thinking tokens but not the visible answer (\"thinking-answer divergence\"); the reverse is ~0.5%. Answer-only monitoring misses over half of hint-influenced reasoning, and 11.8% verbalize it nowhere.",
   "topics": ["Reasoning", "Safety"]
  },
  {
   "id": 288,
-  "summary": "Argues the LLM em dash is markdown 'leaking' into prose, the smallest survivor of structural orientation learned from markdown-heavy corpora. Across twelve models, suppression eliminates headers and bullets but em dashes persist (except in Llama), with frequency acting as a fine-tuning signature predating RLHF.",
+  "summary": "Argues the em dash is \"markdown leaking into prose,\" a residue of markdown-heavy training plus post-training amplification. Across 12 models from five providers, suppressing markdown removes headers/bullets/bold but not em dashes (except Llama, which produces none), making em-dash rate a fine-tuning signature.",
   "topics": ["Training & Scaling"]
  },
  {
   "id": 457,
-  "summary": "Reframes structured LLM routing as a systems-level burden-allocation problem and runs a full-factorial benchmark over 48 configurations and 15,552 requests across OpenAI, Gemini, and Llama. Finds no universal best routing mode; backend-specific interaction effects dominate the correctness-cost-latency tradeoff.",
+  "summary": "Reframes structured LLM routing in agentic systems as a systems-level burden-allocation problem: structure emitted by the model, compressed in transport, or reconstructed locally. A full-factorial benchmark (48 configs, 15,552 requests across OpenAI/Gemini/Llama) finds no universal best mode; backend-specific effects dominate the correctness-cost-latency frontier.",
   "topics": ["Agents", "Evaluations"]
  },
  {
   "id": 2659,
-  "summary": "Theoretical-physics study revisiting the Couch-Torrence inversion symmetry of the massless wave equation on extremal black holes, showing via lukewarm de Sitter and Kerr-Newman cases that exchanging horizon with infinity is inessential and reinterpreting the symmetry through photon spheres. Not an AI paper.",
+  "summary": "Theoretical-physics study extending the Couch-Torrence inversion symmetry of the massless wave equation beyond extremal black holes. Using the lukewarm de Sitter case, it shows horizon-infinity exchange and singularity preservation are inessential, reinterprets the transformations via photon spheres, and links a fixed point to superradiant scattering.",
   "topics": ["Other"]
  },
  {
   "id": 923,
-  "summary": "OpenAI's account of its Model Spec, a public framework specifying intended model behavior to balance safety, user freedom, and accountability, describing the principles and process behind it as AI systems advance.",
+  "summary": "OpenAI explains how its Model Spec serves as a public framework defining intended model behavior, balancing safety, user freedom, and accountability, and describes how the document is developed and used to guide model behavior as AI systems advance.",
   "topics": ["Alignment", "Policy & Society"]
  },
  {
   "id": 1247,
-  "summary": "Presents FGE, a flexible control-oriented free-boundary Grad-Shafranov evolutive solver for tokamak plasma equilibrium, using a non-linear Newton framework, self-consistent current-diffusion coupling, support for multi-axis (Doublet) plasmas, and linearization for controller design.",
+  "summary": "Presents FGE, a fast control-oriented free-boundary Grad-Shafranov solver for tokamak equilibrium evolution. Built on FBT/LIUQE within the MEQ suite, it uses a fully nonlinear Newton framework, self-consistently couples circuit and current-diffusion equations, supports multi-axis (doublet) plasmas, and linearizes dynamics for controller design.",
   "topics": ["Science Applications"]
  },
  {
   "id": 458,
-  "summary": "Introduces Swiss-Bench SBP-002, a trilingual benchmark of 395 expert-crafted items across three Swiss regulatory domains and seven task types, scored by a three-judge LLM panel. Even the top model reaches only 38.2% correct, with regulatory Q&A and hallucination detection below 9%.",
+  "summary": "A trilingual (German/French/Italian) benchmark of 395 expert-crafted items across three Swiss regulatory domains and seven task types, scored by a blind three-LLM judge panel. The top of ten frontier models reaches only 38.2% correct, with regulatory Q&A and gap analysis below 9%.",
   "topics": ["Evaluations", "Policy & Society"]
  },
  {
   "id": 18,
-  "summary": "Anthropic's fifth Economic Index report analyzes Claude usage in February 2026, extending the prior report's economic-primitives framework to study how adoption and task patterns evolve over time ('learning curves').",
+  "summary": "Anthropic's fifth Economic Index report analyzes Claude usage in February 2026, extending the economic-primitives framework from the prior report to examine how adoption and usage patterns develop over time.",
   "topics": ["Policy & Society"]
  }
 ]

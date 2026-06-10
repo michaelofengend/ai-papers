@@ -3,7 +3,7 @@
 import { readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normTitle, extractArxivId, mergeRecords, tagTopics, autoSummary } from './lib.mjs';
+import { normTitle, extractArxivId, mergeRecords, tagTopics, autoSummary, isSpam } from './lib.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const RAW = join(ROOT, 'data', 'raw');
@@ -22,19 +22,6 @@ for (const f of readdirSync(RAW).filter((f) => f.endsWith('.json'))) {
   } catch (e) {
     console.warn(`skip ${f}: ${e.message}`);
   }
-}
-
-/* spam filter: OpenAlex carries AI-generated podcast/software-release records
-   falsely affiliated to the labs (Zenodo/Figshare/Open MIND pollution) */
-const SPAM_URL = /zenodo\.org|figshare|myweirdprompts\.com|osf\.io/i;
-const SPAM_VENUE = /^(open mind|zenodo|figshare)/i;
-const SPAM_AUTHOR = /chatterbox|^(claude|gemini|chatgpt|gpt)[ ,-]|\((flash|pro|mini)\)|^rosehill, daniel/i;
-function isSpam(p) {
-  if (SPAM_URL.test(p.url || '') || SPAM_URL.test(p.pdf_url || '')) return true;
-  if (SPAM_VENUE.test(p.venue || '')) return true;
-  const authors = Array.isArray(p.authors) ? p.authors : [];
-  if (authors.some((a) => SPAM_AUTHOR.test(String(a)))) return true;
-  return false;
 }
 
 /* normalize */

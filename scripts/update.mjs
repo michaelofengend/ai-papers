@@ -5,7 +5,7 @@
 import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normTitle, extractArxivId, tagTopics, autoSummary } from './lib.mjs';
+import { normTitle, extractArxivId, tagTopics, autoSummary, isSpam } from './lib.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data', 'papers.json');
@@ -204,7 +204,9 @@ for (const p of db.papers) {
   seen.add('url:' + p.url);
 }
 
-const found = (await Promise.all([openalexRecent(), arxivRecent(), circuitsRecent(), alignmentBlogRecent()])).flat();
+const fetched = (await Promise.all([openalexRecent(), arxivRecent(), circuitsRecent(), alignmentBlogRecent()])).flat();
+const found = fetched.filter((p) => !isSpam(p));
+console.log(`spam filtered: ${fetched.length - found.length}`);
 let nextId = Math.max(0, ...db.papers.map((p) => p.id)) + 1;
 let added = 0;
 

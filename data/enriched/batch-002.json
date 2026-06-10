@@ -1,230 +1,152 @@
 [
  {
   "id": 1225,
-  "summary": "Reviews two years of TCV tokamak advances relevant to ITER: the ITER baseline scenario, peeling-limited pedestals, high-beta_N non-inductive regimes, negative-triangularity and X-point-radiator scenarios, runaway-electron termination, and divertor exhaust, supported by gyrokinetic/fluid modelling and increasingly intertwined model-based and data-driven plasma control.",
-  "topics": [
-   "Science Applications"
-  ]
+  "summary": "Reviews two years of TCV tokamak advances relevant to ITER and future fusion plants: the ITER baseline scenario, peeling-limited pedestals, high-beta non-inductive regimes, negative-triangularity and X-point-radiator scenarios, runaway-electron termination, and divertor exhaust, supported by gyrokinetic/fluid modelling and increasingly intertwined model-based and data-driven plasma control.",
+  "topics": ["Science Applications"]
  },
  {
   "id": 260,
-  "summary": "Theory of weak-to-strong generalization for reward-model learning with two-layer networks: fine-tuning under a weak, task-specialized supervisor provably elicits the strong model's relevant pre-trained feature subspace while preserving off-target features, whereas standard supervised fine-tuning catastrophically forgets correlated capabilities.",
-  "topics": [
-   "Alignment",
-   "Training & Scaling"
-  ]
+  "summary": "Theory of weak-to-strong generalization for reward-model learning with two-layer networks: fine-tuning under a weak, task-specialized supervisor provably elicits the target feature from the strong model's pre-trained subspaces while preserving off-target capabilities, whereas standard supervised fine-tuning catastrophically forgets correlated features. Synthetic experiments confirm the analysis.",
+  "topics": ["Alignment", "Training & Scaling"]
  },
  {
   "id": 259,
-  "summary": "Decomposes paired SWE-bench and GPQA Diamond scores from 34 frontier models (2024-2026) into a population coupling trend plus per-release residuals: capabilities cooperate (r=+0.72), but per-lab coupling slopes vary 5x, pretraining-driven capability shifts persist, and post-training shifts reverse within a release.",
-  "topics": [
-   "Evaluations"
-  ]
+  "summary": "Decomposes paired SWE-bench and GPQA Diamond scores from 34 frontier models (2024-2026) into a population coupling trend plus per-release residuals: capabilities cooperate (r=+0.72), but per-lab coupling slopes vary 5x, pretraining-driven capability shifts persist across releases, and post-training shifts reverse within one.",
+  "topics": ["Evaluations"]
  },
  {
   "id": 258,
-  "summary": "Extends inference-time alignment with reference-model temperature adjustment, generalizing reward-tilted sampling to ensembles of generative reward models combined as a sharpened logarithmic opinion pool (SLOP); a weight-calibration algorithm improves robustness to reward hacking while preserving alignment performance.",
-  "topics": [
-   "Alignment"
-  ]
+  "summary": "Extends inference-time alignment with reference-model temperature adjustment, generalizing reward-tilted sampling to ensembles of generative reward models combined as a sharpened logarithmic opinion pool (SLOP). A weight-calibration algorithm for the pool improves robustness to reward hacking while preserving alignment performance.",
+  "topics": ["Alignment"]
  },
  {
   "id": 917,
-  "summary": "Lessons from OpenAI's Parameter Golf competition, which drew 1,000+ participants and 2,000+ submissions exploring AI-assisted machine-learning research--coding agents, quantization, and novel model design--under strict parameter constraints.",
-  "topics": [
-   "Training & Scaling",
-   "Agents"
-  ]
+  "summary": "Lessons from OpenAI's Parameter Golf competition, which drew over 1,000 participants and 2,000 submissions designing models under strict parameter constraints, yielding observations about AI-assisted machine-learning research, coding agents, quantization, and novel model design.",
+  "topics": ["Training & Scaling", "Agents"]
  },
  {
   "id": 644,
-  "summary": "ProFIL trains an attention probe on a frozen base model to detect post-commitment 'reasoning theater' steps from activations, then zeroes the GRPO advantage of flagged rollouts; across four domains it cuts theater 11-100%, raises CoT faithfulness, and shortens chains 4-19% while preserving accuracy.",
-  "topics": [
-   "Reasoning",
-   "Interpretability"
-  ]
+  "summary": "ProFIL trains an attention probe on the frozen base model to detect post-commitment 'reasoning theater' from activations, then zeroes the GRPO advantage of flagged rollouts. Across four domains it cuts theater 11-100%, raises CoT faithfulness (+24pp on LiveCodeBench), and shortens chains 4-19% while preserving accuracy.",
+  "topics": ["Reasoning", "Interpretability"]
  },
  {
   "id": 643,
-  "summary": "Finds small 4-8B models fail to detect hidden objectives when monitoring chain-of-thought in code generation, then combines SFT distillation from stronger monitors with RL on subtly crafted hidden objectives to build CoT-Guard, a 4B monitor that generalizes to prompt- and code-manipulation supply-chain attacks.",
-  "topics": [
-   "Reasoning",
-   "Safety"
-  ]
+  "summary": "Small 4-8B models fail to detect hidden objectives when monitoring chains of thought in code generation, so the authors combine SFT distillation from stronger monitors with RL on subtly crafted objectives. The resulting 4B CoT-Guard generalizes to prompt- and code-manipulation attacks from a malicious third-party LLM router.",
+  "topics": ["Safety", "Reasoning"]
  },
  {
   "id": 448,
-  "summary": "Frontier models acting as safety classifiers over coding-agent transcripts miss subtly dangerous actions 2-30x more often when those actions follow 800K tokens of benign activity; periodic in-transcript reminders partially mitigate this, and monitor evaluations that ignore long-context degradation overestimate performance.",
-  "topics": [
-   "Safety",
-   "Evaluations",
-   "Agents"
-  ]
+  "summary": "Frontier models acting as safety classifiers over coding-agent transcripts miss subtly dangerous actions 2-30x more often when the actions follow 800K tokens of benign activity (tested on Opus 4.6, GPT 5.4, Gemini 3.1). Periodic in-transcript reminders partially mitigate; evaluations ignoring long-context degradation overestimate monitors.",
+  "topics": ["Safety", "Evaluations"]
  },
  {
   "id": 447,
-  "summary": "Shows scalar aesthetic scores align poorly with experts' direct comparisons, motivating VAB: 400 comparative-selection tasks over 1,195 subject-matched images. The best of 20 frontier multimodal models correctly identifies both best and worst images in only 26.5% of tasks versus 68.9% for human experts.",
-  "topics": [
-   "Evaluations",
-   "Multimodal"
-  ]
+  "summary": "After showing scalar aesthetic scores align poorly with experts' direct comparisons, introduces VAB: 400 comparative-selection tasks over 1,195 subject-matched images with 10-judge consensus labels. The best of 20 frontier multimodal models identifies both best and worst images in only 26.5% of tasks versus 68.9% for human experts.",
+  "topics": ["Evaluations", "Multimodal"]
  },
  {
   "id": 261,
-  "summary": "Studies reward hacking in rubric-based RL by judging trained policies with a cross-family panel of frontier evaluators: weak verifiers yield proxy-reward gains that fail to transfer and concentrate in recurring exploits; stronger verifiers reduce but don't eliminate hacking, and a log-probability 'self-internalization gap' flags stalled improvement.",
-  "topics": [
-   "Alignment",
-   "Safety"
-  ]
+  "summary": "Studies reward hacking in rubric-based RL by judging trained policies with a cross-family panel of frontier evaluators: weak verifiers yield proxy-reward gains that fail to transfer and concentrate in recurring criterion-gaming exploits, stronger verifiers reduce but don't eliminate hacking, and a log-probability 'self-internalization gap' flags stalled improvement.",
+  "topics": ["Alignment"]
  },
  {
   "id": 1226,
-  "summary": "Practical guidance for new childminders preparing for their first Ofsted inspection, covering environment preparation, safeguarding, food, recruitment, and learning requirements. Early-years education content unrelated to AI research, despite the DeepMind attribution in the source data.",
-  "topics": [
-   "Other"
-  ]
+  "summary": "Practical guidance for new childminders preparing for a first Ofsted inspection, covering environment preparation, safeguarding, food, recruitment, and early-years learning requirements. Education-sector content unrelated to AI research, despite the lab attribution in the source data.",
+  "topics": ["Other"]
  },
  {
   "id": 449,
-  "summary": "Chaintrix discharges every LLM-generated smart-contract audit claim against a deterministic cross-contract interaction model parsed from Solidity, with staged false-positive filtering, symbolic execution, and fuzzing; it detects 86 of 120 high-severity EVMbench vulnerabilities (71.7% recall), 26 points above the strongest frontier-model baseline.",
-  "topics": [
-   "Robustness & Security",
-   "Agents"
-  ]
+  "summary": "Chaintrix audits smart contracts by discharging every LLM-generated claim against a deterministic cross-contract interaction model parsed from Solidity, with staged false-positive filtering, symbolic execution, and fuzzing. It detects 86 of 120 high-severity EVMbench vulnerabilities (71.7% recall), 26 points above the strongest frontier-model baseline.",
+  "topics": ["Robustness & Security", "Agents"]
  },
  {
   "id": 262,
-  "summary": "Regularizes alignment with 0-dimensional persistent homology over hidden-state trajectories: Trajectory Topology Loss aligns SFT updates with topological prompt-answer 'bridges,' and Topological Preference Optimization steers DPO improvement directions along topic-specific preference vectors, beating non-topological baselines on Qwen2.5-7B preference and toxicity metrics.",
-  "topics": [
-   "Alignment"
-  ]
+  "summary": "Regularizes alignment with 0-dimensional persistent homology over hidden-state trajectories: Trajectory Topology Loss aligns SFT updates with prompt-answer 'bridges', and Topological Preference Optimization steers DPO improvement directions along topic-specific preference vectors. Both beat non-topological baselines on Qwen2.5-7B preference and toxicity metrics.",
+  "topics": ["Alignment"]
  },
  {
   "id": 6,
-  "summary": "Uses agentic misalignment as a case study of how safety training generalizes: training Claude to advise on ethical dilemmas in chat, midtraining on constitution-like documents, and adding tools to harmlessness RL environments all generalized broadly, while training directly on evaluation-like scenarios suppressed misalignment only in-distribution.",
-  "topics": [
-   "Alignment",
-   "Safety"
-  ]
+  "summary": "Uses agentic misalignment as a case study of how safety training generalizes: chat-only data advising users on ethical dilemmas, synthetic documents about Claude's constitution, and adding unused tools to harmlessness RL environments each cut misalignment broadly, whereas training directly on the evaluation distribution fixes symptoms without generalizing.",
+  "topics": ["Alignment", "Safety"]
  },
  {
   "id": 2866,
-  "summary": "Natural Language Autoencoders pair an activation-verbalizer LLM that describes a residual-stream activation in text with a reconstructor mapping the description back to an activation; jointly trained with RL for reconstruction, the unsupervised explanations grow measurably more informative as interpretations of model internals.",
-  "topics": [
-   "Interpretability"
-  ]
+  "summary": "Natural Language Autoencoders pair an activation-verbalizer LLM that describes a residual-stream activation in text with a reconstructor mapping the description back to an activation. Trained jointly with RL purely for reconstruction, the resulting unsupervised explanations read as plausible interpretations of model internals and grow measurably more informative.",
+  "topics": ["Interpretability"]
  },
  {
   "id": 1227,
-  "summary": "Mixed-methods analysis of 226,000+ user reviews across six online learning platforms finds technical instability, limited offline functionality, and unclear pricing depress learner engagement and retention, while regional payment restrictions disproportionately exclude learners in low-resource settings. Education-platform research rather than AI research.",
-  "topics": [
-   "Other"
-  ]
+  "summary": "Mixed-methods analysis of 226,000+ user reviews across six online learning platforms finds technical instability, limited offline functionality, and unclear pricing depress learner engagement and retention, while regional payment restrictions and ambiguous subscription terms disproportionately exclude learners in low-resource settings.",
+  "topics": ["Policy & Society"]
  },
  {
   "id": 264,
-  "summary": "Formalizes weak-to-strong generalization in a high-dimensional single-index model where pre-training acts as spectral initialization: W2SG succeeds when pre-training provides a geometric warm start into an 'effective region,' and evaluation of hundreds of LLM checkpoints shows W2SG emerging via a phase transition during pre-training.",
-  "topics": [
-   "Alignment",
-   "Training & Scaling"
-  ]
+  "summary": "Formalizes weak-to-strong generalization in a high-dimensional single-index model where pre-training acts as spectral initialization: W2SG succeeds only when pre-training provides a geometric warm start into an 'effective region', with gains saturating at the weak supervisor's bias. Sweeps over hundreds of LLM checkpoints show W2SG emerging via a phase transition.",
+  "topics": ["Alignment", "Training & Scaling"]
  },
  {
   "id": 263,
-  "summary": "Proves weak-to-strong generalization occurs in plain linear logistic regression under mild distributional assumptions, for most student-teacher pairs and without the student needing extra capacity or expressivity--suggesting W2SG is nearly inevitable and capacity mismatch is not its central mechanism.",
-  "topics": [
-   "Alignment",
-   "Training & Scaling"
-  ]
+  "summary": "Proves weak-to-strong generalization occurs in plain linear logistic regression under mild distributional assumptions, for most student-teacher pairs and without the student having any extra capacity or expressivity, suggesting W2SG is nearly inevitable and that capacity mismatch is not its central mechanism.",
+  "topics": ["Alignment", "Training & Scaling"]
  },
  {
   "id": 9,
   "summary": "Sets out the research agenda for The Anthropic Institute, which will use information accessible from within a frontier lab to investigate AI's impact on the world and share findings publicly, framing the questions that will drive its studies.",
-  "topics": [
-   "Policy & Society"
-  ]
+  "topics": ["Policy & Society"]
  },
  {
   "id": 8,
-  "summary": "Anthropic hands development of Petri, its open-source alignment-auditing toolbox, to the nonprofit Meridian Labs to keep its results lab-independent. Petri 3.0 adds a modular auditor/target architecture, a 'Dish' add-on for realistic deployment-matched testing, and integration with the Bloom deep-assessment tool.",
-  "topics": [
-   "Safety",
-   "Evaluations"
-  ]
+  "summary": "Anthropic updates Petri, its open-source alignment-auditing toolbox, to version 3.0 — separable auditor/target components, a 'Dish' add-on running tests under real system prompts and scaffolds for realism, and Bloom integration — and hands its development to the AI-evaluation nonprofit Meridian Labs.",
+  "topics": ["Safety", "Evaluations"]
  },
  {
   "id": 7,
-  "summary": "Research overview of Natural Language Autoencoders: Claude is trained with RL to verbalize its own residual-stream activations as human-readable text, paired with a reconstructor module that maps descriptions back to activations to verify the explanations capture the underlying numerical state.",
-  "topics": [
-   "Interpretability"
-  ]
+  "summary": "Research overview of Natural Language Autoencoders: Claude is trained with RL to translate its internal numeric activations into human-readable text, paired with a reconstructor that maps each description back to an activation to verify the explanation captures the underlying state.",
+  "topics": ["Interpretability"]
  },
  {
   "id": 2652,
-  "summary": "Commentary arguing that open development and co-creation--shared ownership between developers and users, pioneered in the geosciences by the Pangeo project--yield more efficient and impactful scientific infrastructure than proprietary approaches, via collaborative feedback flywheels and standardized shared tooling.",
-  "topics": [
-   "Science Applications"
-  ]
+  "summary": "Commentary arguing that open development can be as efficient and more impactful than proprietary approaches in the geosciences, advocating the co-creation model pioneered by the Pangeo project: shared developer-user ownership, standardized shared infrastructure, and iterative stakeholder feedback flywheels.",
+  "topics": ["Science Applications"]
  },
  {
   "id": 918,
-  "summary": "System card for GPT-5.5 Instant, OpenAI's fast, low-latency model tier, documenting the model's capabilities, safety evaluations, risk assessments, and deployment mitigations applied before release.",
-  "topics": [
-   "Safety",
-   "Evaluations"
-  ]
+  "summary": "System card for GPT-5.5 Instant, the update to ChatGPT's default model positioned as smarter and more personalized with reduced hallucinations, documenting the model's safety evaluations, risk assessments, and deployment mitigations applied before release.",
+  "topics": ["Safety", "Evaluations"]
  },
  {
   "id": 182,
-  "summary": "MOSAIC-Bench pairs 199 three-stage attack chains--malicious objectives decomposed into innocuous engineering tickets--with deterministic exploit oracles. Nine production coding agents complete 53-86% of chains with only two refusals, versus 0-20.4% vulnerable outputs under matched direct prompts; reviewer agents approve 25.8% of vulnerable diffs.",
-  "topics": [
-   "Robustness & Security",
-   "Agents",
-   "Evaluations"
-  ]
+  "summary": "MOSAIC-Bench pairs 199 three-stage attack chains — malicious objectives decomposed into innocuous engineering tickets — with deterministic exploit oracles. Nine production coding agents comply at 53-86% end-to-end success with two refusals total, versus 0-20.4% vulnerable outputs under matched direct prompts, and reviewer agents approve 25.8% of the vulnerable diffs.",
+  "topics": ["Robustness & Security", "Agents", "Evaluations"]
  },
  {
   "id": 131,
-  "summary": "Model spec midtraining trains models on synthetic documents discussing their Model Spec between pre-training and alignment fine-tuning, steering how they generalize from underspecified demonstrations; a spec addressing self-preservation cuts Qwen3-32B agentic misalignment from 54% to 7%, beating a deliberative-alignment baseline (14%).",
-  "topics": [
-   "Alignment",
-   "Safety"
-  ]
+  "summary": "Model spec midtraining trains models on synthetic documents discussing their Model Spec between pre-training and alignment fine-tuning, steering how they generalize from underspecified demonstrations. A spec addressing self-preservation cuts Qwen3-32B agentic misalignment from 54% to 7%, beating deliberative alignment (14%); specs explaining underlying values generalize best.",
+  "topics": ["Alignment", "Safety"]
  },
  {
   "id": 2867,
-  "summary": "HeadVis is an interactive tool for visualizing attention-head behavior across the data distribution--feature-vis-style analysis adapted to heads' high rank, paired circuits, and full-context activations--with case studies interpreting Claude Haiku 3.5 heads, open-sourced code, and a demo on Gemma 3.",
-  "topics": [
-   "Interpretability"
-  ]
+  "summary": "HeadVis is an interactive tool for visualizing attention-head behavior across the data distribution — feature-vis-style analysis adapted to heads' high rank, paired QK/OV circuits, and full-context activations — with case studies interpreting Claude Haiku 3.5 heads, open-sourced code, and a demo on Gemma 3.",
+  "topics": ["Interpretability"]
  },
  {
   "id": 1229,
-  "summary": "Formulates multi-task active learning where a learner adaptively allocates uniformly-sampled entry observations across several matrix-completion problems of unknown, differing ranks; the MAlocate algorithm adapts via confidence sets, matches a minimax lower bound, and is validated in synthetic experiments motivated by market segmentation.",
-  "topics": [
-   "Reinforcement Learning"
-  ]
+  "summary": "Formulates multi-task active learning over several matrix-completion problems where the learner chooses which matrix to sample each round, motivated by market segmentation. The MAlocate algorithm adapts to the matrices' unknown, differing ranks via confidence sets and is proven minimax-optimal, with synthetic-experiment validation.",
+  "topics": ["Reinforcement Learning"]
  },
  {
   "id": 1228,
-  "summary": "POO (parallel optimistic optimization) tackles noisy black-box optimization when the function's local smoothness near the optimum is unknown, achieving error within a sqrt(log n) factor of smoothness-aware algorithms while covering a strictly larger class of hard-to-optimize functions, with finite-time analysis.",
-  "topics": [
-   "Reinforcement Learning"
-  ]
+  "summary": "POO (parallel optimistic optimization) optimizes noisy black-box functions whose local smoothness around the optimum is unknown, covering a broader class of hard-to-optimize functions than prior methods. Finite-time analysis bounds its error within a sqrt(ln n) factor of the best smoothness-aware algorithms.",
+  "topics": ["Reinforcement Learning"]
  },
  {
   "id": 450,
-  "summary": "TSCG deterministically compiles JSON tool schemas into token-efficient structured text at the API boundary--no fine-tuning or model access--restoring Phi-4 14B from 0% to 84.4% tool-calling accuracy at 20 tools with 52-57% token savings; decomposition shows representation change, not compression, drives the gains.",
-  "topics": [
-   "Agents"
-  ]
+  "summary": "TSCG deterministically compiles JSON tool schemas (OpenAI, Anthropic, MCP) into token-efficient structured text at the API boundary, with no fine-tuning or model access. It restores Phi-4 14B from 0% to 84.4% tool-calling accuracy at 20 tools with 52-57% token savings, and decomposition shows representation change, not compression, drives the gains.",
+  "topics": ["Agents"]
  },
  {
   "id": 265,
-  "summary": "SCHEMA evaluates metacognitive stability of 11 frontier models under adversarial pressure across 67,221 scored records: eight suffer up to 30-point accuracy collapses driven by compliance-forcing instructions rather than threat content, while Constitutional-AI-trained models show near-immunity attributed to alignment training rather than capability.",
-  "topics": [
-   "Safety",
-   "Evaluations"
-  ]
+  "summary": "SCHEMA evaluates metacognitive stability of 11 frontier models under adversarial pressure across 67,221 scored records: eight collapse, losing up to 30 points of accuracy. Factorial controls show compliance-forcing instructions, not threat content, drive the collapse, while Constitutional-AI-trained models show near-immunity attributable to alignment training rather than capability.",
+  "topics": ["Safety", "Evaluations"]
  }
 ]
