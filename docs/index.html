@@ -113,11 +113,11 @@ try { document.documentElement.dataset.theme = localStorage.getItem('frt-theme')
         <div class="chart-card"><h3>Lab share</h3><div class="chart-box"><canvas id="ch-org"></canvas></div></div>
         <div class="chart-card"><h3>Topics <span class="chart-sub">papers per topic</span></h3><div class="chart-box"><canvas id="ch-topics"></canvas></div></div>
         <div class="chart-card wide">
-          <h3>Research interest curves <span class="chart-sub">hyper-specific themes, papers per year — solid = actual, dashed = fitted bell curve projected 2 years ahead</span></h3>
+          <h3>Research interest curves <span class="chart-sub">hyper-specific themes, papers per quarter — solid = actual, dashed = fitted bell curve projected 2 years ahead</span></h3>
           <div class="theme-chips" id="theme-chips"></div>
           <label class="fit-toggle"><input type="checkbox" id="fit-toggle" checked> show fitted bell curves</label>
           <div class="chart-box tall"><canvas id="ch-themes"></canvas></div>
-          <p class="chart-note">Fit: Gaussian matched to each theme's yearly counts (current year annualized). A high "bell fit" means the theme's rise-and-fall really does follow a bell shape — those are the ones you can extrapolate; low fit = still growing, flat, or multi-wave.</p>
+          <p class="chart-note">Fit: Gaussian matched to each theme's quarterly counts (the in-progress quarter is scaled to a full-quarter rate before fitting). A high "bell fit" means the theme's rise-and-fall really does follow a bell shape — those are the ones you can extrapolate; low fit = still growing, flat, or multi-wave.</p>
         </div>
         <div class="chart-card wide">
           <h3>Theme status board <span class="chart-sub">click a row to add it to the chart above</span></h3>

@@ -514,80 +514,119 @@ function computeThemeMasks() {
 }
 const hasTheme = (p, i) => i < 28 ? (p._thLo & (1 << i)) !== 0 : (p._thHi & (1 << (i - 28))) !== 0;
 
-/* Least-squares Gaussian fit (grid search over mu, sigma; closed-form amplitude).
-   Crucially, mu may lie BEYOND the data window — a still-rising theme fits a bell
-   whose peak is in the future instead of being forced inside the observed years.
-   Current year is annualized before fitting. Returns null when too sparse. */
-function fitBell(counts, years, nowYear, yearFrac) {
-  const w = years.map((y, i) => (y === nowYear ? counts[i] / Math.max(yearFrac, 0.2) : counts[i]));
+/* Least-squares Gaussian fit over quarterly counts (grid search over mu, sigma;
+   closed-form amplitude). Crucially, mu may lie BEYOND the data window — a
+   still-rising theme fits a bell whose peak is in the future instead of being
+   forced inside the observed range. w = counts with the partial current quarter
+   scaled to a full-quarter rate; ts = fractional-year midpoints. */
+function fitBell(w, ts) {
   const N = w.reduce((a, b) => a + b, 0);
   if (N < 8) return null;
-  const y0 = years[0], y1 = years[years.length - 1];
+  const nonzeroIdx = w.map((x, i) => (x > 0 ? i : -1)).filter((i) => i >= 0);
+  // a 3-parameter bell needs real support: >=4 nonzero quarters spanning >=1.25y
+  if (nonzeroIdx.length < 4) return null;
+  const span = ts[nonzeroIdx[nonzeroIdx.length - 1]] - ts[nonzeroIdx[0]];
+  if (span < 1.25) return null;
+  const t0 = ts[0], t1 = ts[ts.length - 1];
   let best = null;
-  for (let mu = y0 - 2; mu <= y1 + 4; mu += 0.1) {
-    for (let sigma = 0.6; sigma <= 5; sigma += 0.1) {
-      let sg = 0, sgg = 0;
-      const g = years.map((y) => Math.exp(-((y - mu) ** 2) / (2 * sigma * sigma)));
-      years.forEach((y, i) => { sg += w[i] * g[i]; sgg += g[i] * g[i]; });
+  for (let mu = t0 - 2; mu <= t1 + 4; mu += 0.1) {
+    for (let sigma = 0.35; sigma <= 5; sigma += 0.1) {
+      let sg = 0, sgg = 0, sse = 0;
+      const g = ts.map((t) => Math.exp(-((t - mu) ** 2) / (2 * sigma * sigma)));
+      ts.forEach((t, i) => { sg += w[i] * g[i]; sgg += g[i] * g[i]; });
       const A = sgg > 0 ? sg / sgg : 0;
       if (A <= 0) continue;
-      let sse = 0;
-      years.forEach((y, i) => { sse += (w[i] - A * g[i]) ** 2; });
+      ts.forEach((t, i) => { sse += (w[i] - A * g[i]) ** 2; });
       if (!best || sse < best.sse) best = { mu, sigma, A, sse };
     }
   }
   if (!best) return null;
-  // a 3-parameter bell on <3 nonzero years is vacuous — refuse to "fit"
-  const nonzero = w.filter((x) => x > 0).length;
-  if (nonzero < 3) return null;
   const { mu, sigma, A, sse } = best;
-  const value = (y) => A * Math.exp(-((y - mu) ** 2) / (2 * sigma * sigma));
-  const mean = N / years.length;
+  const value = (t) => A * Math.exp(-((t - mu) ** 2) / (2 * sigma * sigma));
+  const mean = N / ts.length;
   let sst = 0;
-  years.forEach((y, i) => { sst += (w[i] - mean) ** 2; });
+  ts.forEach((t, i) => { sst += (w[i] - mean) ** 2; });
   const r2 = sst > 0 ? Math.max(0, 1 - sse / sst) : 0;
   // peak at/abutting the grid edge = growth still looks exponential; peak not identifiable
-  const openEnded = mu >= y1 + 3.8;
-  return { mu, sigma, value, r2, total: N, openEnded, nonzero };
+  const openEnded = mu >= t1 + 3.8;
+  return { mu, sigma, value, r2, total: N, openEnded, nonzero: nonzeroIdx.length };
+}
+
+function quarterLabelOf(mu) {
+  const y = Math.floor(mu);
+  const q = Math.min(4, Math.max(1, Math.floor((mu - y) * 4) + 1));
+  return `${y} Q${q}`;
 }
 
 function themeStats(papers) {
-  const nowYear = new Date().getFullYear();
-  const yearFrac = Math.min(1, Math.max(0.05,
-    (Date.now() - Date.parse(nowYear + '-01-01')) / (365.25 * 864e5)));
-  const allYears = papers.map((p) => +p.date.slice(0, 4));
-  const y0 = Math.max(2016, Math.min(...allYears, nowYear));
-  const years = []; for (let y = y0; y <= nowYear; y++) years.push(y);
+  const now = new Date();
+  const nowYear = now.getUTCFullYear();
+  const nowQ = Math.floor(now.getUTCMonth() / 3); // 0..3
+  const qStartMs = Date.UTC(nowYear, nowQ * 3, 1);
+  const qEndMs = Date.UTC(nowYear, nowQ * 3 + 3, 1);
+  const qFrac = Math.min(1, Math.max(0.15, (Date.now() - qStartMs) / (qEndMs - qStartMs)));
+
+  const quarters = [];
+  for (let y = 2016; y <= nowYear; y++) {
+    for (let q = 0; q < 4; q++) {
+      if (y === nowYear && q > nowQ) break;
+      quarters.push({ y, q, t: y + (q + 0.5) / 4, label: `${y} Q${q + 1}` });
+    }
+  }
+  const nowT = quarters[quarters.length - 1].t;
+  const idxOf = (p) => {
+    const y = +p.date.slice(0, 4), q = Math.floor((+p.date.slice(5, 7) - 1) / 3);
+    const idx = (y - 2016) * 4 + q;
+    return y >= 2016 && idx < quarters.length ? idx : -1;
+  };
+
   return THEMES.map(([name], i) => {
-    const counts = years.map((y) => papers.reduce((s, p) => s + (hasTheme(p, i) && +p.date.slice(0, 4) === y ? 1 : 0), 0));
+    const counts = new Array(quarters.length).fill(0);
+    for (const p of papers) {
+      if (!hasTheme(p, i)) continue;
+      const idx = idxOf(p);
+      if (idx >= 0) counts[idx]++;
+    }
     const total = counts.reduce((a, b) => a + b, 0);
-    const fit = fitBell(counts, years, nowYear, yearFrac);
+    const w = counts.slice();
+    w[w.length - 1] = w[w.length - 1] / qFrac; // partial current quarter -> rate
+    const ts = quarters.map((q) => q.t);
+    const fit = fitBell(w, ts);
     let status = '—';
     if (fit) {
-      const d = nowYear + yearFrac - fit.mu;
+      const d = nowT - fit.mu;
       status = fit.openEnded || d < -0.5 ? 'rising' : d > 0.75 ? 'declining' : 'peaking';
     } else if (total >= 2) {
-      // no usable fit: brand-new if all activity sits in the last 3 years
-      const lastIdx = years.length - 3;
+      // no usable fit: brand-new if all activity sits in the last 3 years (12 quarters)
+      const lastIdx = quarters.length - 12;
       const recent = counts.reduce((s, c, idx) => s + (idx >= lastIdx ? c : 0), 0);
       if (recent === total) status = 'emerging';
     }
-    return { i, name, counts, total, fit, status, years, nowYear };
+    return { i, name, counts, total, fit, status, quarters, nowT, nowYear };
   });
 }
+
+const STATUS_ORDER = { rising: 0, emerging: 1, peaking: 2, declining: 3, '—': 4 };
 
 function renderThemes(papers) {
   if (!state.themeSel) {
     state.themeSel = new Set(THEMES.map(([n], i) => THEME_DEFAULT.includes(n) ? i : -1).filter((i) => i >= 0));
   }
   const stats = themeStats(papers);
-  const years = stats[0].years;
+  const quarters = stats[0].quarters;
   const nowYear = stats[0].nowYear;
-  const extYears = [...years, nowYear + 1, nowYear + 2];
 
-  /* chips */
+  // extend 8 quarters (2y) past the window for fit projections
+  const ext = quarters.slice();
+  let { y, q } = quarters[quarters.length - 1];
+  for (let k = 0; k < 8; k++) {
+    q++; if (q > 3) { q = 0; y++; }
+    ext.push({ y, q, t: y + (q + 0.5) / 4, label: `${y} Q${q + 1}` });
+  }
+
+  /* chips: declining & sparse sink to the end here too */
   $('#theme-chips').innerHTML = stats
-    .slice().sort((a, b) => b.total - a.total)
+    .slice().sort((a, b) => (STATUS_ORDER[a.status] >= 3) - (STATUS_ORDER[b.status] >= 3) || b.total - a.total)
     .map((s) => `<button class="chip theme-chip ${state.themeSel.has(s.i) ? 'active' : ''}" data-ti="${s.i}">${esc(s.name)} <span class="n">${s.total}</span></button>`)
     .join('');
   $('#theme-chips').querySelectorAll('.theme-chip').forEach((b) =>
@@ -604,14 +643,14 @@ function renderThemes(papers) {
     const color = THEME_PALETTE[k % THEME_PALETTE.length];
     datasets.push({
       label: s.name,
-      data: [...s.counts, null, null],
+      data: [...s.counts, ...new Array(8).fill(null)],
       borderColor: color, backgroundColor: color,
-      tension: 0.35, pointRadius: 2.5, borderWidth: 2.2, spanGaps: false,
+      tension: 0.3, pointRadius: 0, pointHitRadius: 6, borderWidth: 2.2, spanGaps: false,
     });
     if (state.showFit !== false && s.fit) {
       datasets.push({
         label: '_fit_' + s.name,
-        data: extYears.map((y) => +s.fit.value(y).toFixed(2)),
+        data: ext.map((qq) => +s.fit.value(qq.t).toFixed(2)),
         borderColor: color + '88', backgroundColor: 'transparent',
         borderDash: [6, 5], pointRadius: 0, borderWidth: 1.6, tension: 0.4,
       });
@@ -621,10 +660,19 @@ function renderThemes(papers) {
   const maxActual = Math.max(1, ...sel.flatMap((s) => s.counts));
   state.charts.themes = new Chart($('#ch-themes'), {
     type: 'line',
-    data: { labels: extYears, datasets },
+    data: { labels: ext.map((qq) => qq.label), datasets },
     options: {
       responsive: true, maintainAspectRatio: false,
-      scales: { y: { beginAtZero: true, max: Math.ceil(maxActual * 1.5) }, x: { grid: { display: false } } },
+      scales: {
+        y: { beginAtZero: true, max: Math.ceil(maxActual * 1.6) },
+        x: {
+          grid: { display: false },
+          ticks: {
+            autoSkip: false, maxRotation: 0,
+            callback: (val, idx) => (ext[idx] && ext[idx].q === 0 ? String(ext[idx].y) : ''),
+          },
+        },
+      },
       plugins: {
         legend: { position: 'top', labels: { filter: (item) => !item.text.startsWith('_fit_') } },
         tooltip: { filter: (item) => !item.dataset.label.startsWith('_fit_') },
@@ -632,16 +680,16 @@ function renderThemes(papers) {
     },
   });
 
-  /* status board */
+  /* status board: rising & emerging first, declining at the end */
   const arrow = { rising: '<span class="st st-up">▲ rising</span>', emerging: '<span class="st st-new">✦ emerging</span>', peaking: '<span class="st st-peak">● near peak</span>', declining: '<span class="st st-down">▼ declining</span>', '—': '<span class="st">too sparse</span>' };
   $('#theme-board tbody').innerHTML = stats
-    .slice().sort((a, b) => b.total - a.total)
+    .slice().sort((a, b) => STATUS_ORDER[a.status] - STATUS_ORDER[b.status] || b.total - a.total)
     .map((s) => `<tr data-ti="${s.i}" class="${state.themeSel.has(s.i) ? 'sel' : ''}">
       <td>${esc(s.name)}</td>
       <td>${s.total}</td>
-      <td>${s.fit ? (s.fit.openEnded ? 'not yet in sight' : '~' + Math.round(s.fit.mu) + (Math.round(s.fit.mu) > nowYear ? ' (projected)' : '')) : '—'}</td>
+      <td>${s.fit ? (s.fit.openEnded ? 'not yet in sight' : '~' + quarterLabelOf(s.fit.mu) + (s.fit.mu > s.nowT ? ' (projected)' : '')) : '—'}</td>
       <td>${arrow[s.status]}</td>
-      <td>${s.fit && s.fit.nonzero >= 4 ? Math.round(s.fit.r2 * 100) + '%' : '—'}</td>
+      <td>${s.fit && s.fit.nonzero >= 6 ? Math.round(s.fit.r2 * 100) + '%' : '—'}</td>
     </tr>`)
     .join('');
   $('#theme-board tbody').querySelectorAll('tr').forEach((tr) =>
