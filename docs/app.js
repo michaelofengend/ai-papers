@@ -491,9 +491,17 @@ const THEMES = [
   ['Watermarking', /watermark/],
   ['Backdoors & poisoning', /backdoor|data poison|poisoning attack/],
   ['Mixture of experts', /mixture.of.experts|\bmoe\b|sparse expert/],
+  ['Automated auditing', /automated audit|auditing agent|alignment audit|audit(ing)? game|blind audit/],
+  ['Mid-training', /mid.?train/],
+  ['Emergent misalignment', /emergent misalignment|broad(ly)? misalign|misalignment generali|narrow(ly trained)? task.{0,40}misalign/],
+  ['Subliminal learning', /subliminal|hidden signals in data|trait transmission|behaviou?ral traits (via|through)/],
+  ['Reversal curse & negation', /reversal curse|negation/],
+  ['Evaluation awareness', /evaluation awareness|eval.?aware|test.?aware|recogni[sz]e[^.]{0,40}(being )?(test|evaluat)|knows? (it is|they are) being (test|evaluat)/],
+  ['Model organisms', /model organism/],
+  ['Persona & character', /persona vector|character train|assistant persona|model persona/],
 ];
 const THEME_PALETTE = ['#2563eb', '#c15f3c', '#0d8a6f', '#b58a2c', '#7c5cc4', '#2b8fa8', '#c2417a', '#5b8a3c', '#8a5a44', '#4a6fa5', '#a8642b', '#5e548e'];
-const THEME_DEFAULT = ['Reward hacking', 'Sparse autoencoders', 'Jailbreaks & prompt injection', 'Test-time compute', 'Scaling laws'];
+const THEME_DEFAULT = ['Reward hacking', 'Automated auditing', 'Mid-training', 'Subliminal learning', 'Emergent misalignment', 'Evaluation awareness'];
 
 function computeThemeMasks() {
   for (const p of state.papers) {
@@ -529,6 +537,9 @@ function fitBell(counts, years, nowYear, yearFrac) {
     }
   }
   if (!best) return null;
+  // a 3-parameter bell on <3 nonzero years is vacuous — refuse to "fit"
+  const nonzero = w.filter((x) => x > 0).length;
+  if (nonzero < 3) return null;
   const { mu, sigma, A, sse } = best;
   const value = (y) => A * Math.exp(-((y - mu) ** 2) / (2 * sigma * sigma));
   const mean = N / years.length;
@@ -537,7 +548,7 @@ function fitBell(counts, years, nowYear, yearFrac) {
   const r2 = sst > 0 ? Math.max(0, 1 - sse / sst) : 0;
   // peak at/abutting the grid edge = growth still looks exponential; peak not identifiable
   const openEnded = mu >= y1 + 3.8;
-  return { mu, sigma, value, r2, total: N, openEnded };
+  return { mu, sigma, value, r2, total: N, openEnded, nonzero };
 }
 
 function themeStats(papers) {
@@ -555,6 +566,11 @@ function themeStats(papers) {
     if (fit) {
       const d = nowYear + yearFrac - fit.mu;
       status = fit.openEnded || d < -0.5 ? 'rising' : d > 0.75 ? 'declining' : 'peaking';
+    } else if (total >= 2) {
+      // no usable fit: brand-new if all activity sits in the last 3 years
+      const lastIdx = years.length - 3;
+      const recent = counts.reduce((s, c, idx) => s + (idx >= lastIdx ? c : 0), 0);
+      if (recent === total) status = 'emerging';
     }
     return { i, name, counts, total, fit, status, years, nowYear };
   });
@@ -602,12 +618,13 @@ function renderThemes(papers) {
     }
   });
   destroyChart('themes');
+  const maxActual = Math.max(1, ...sel.flatMap((s) => s.counts));
   state.charts.themes = new Chart($('#ch-themes'), {
     type: 'line',
     data: { labels: extYears, datasets },
     options: {
       responsive: true, maintainAspectRatio: false,
-      scales: { y: { beginAtZero: true }, x: { grid: { display: false } } },
+      scales: { y: { beginAtZero: true, max: Math.ceil(maxActual * 1.5) }, x: { grid: { display: false } } },
       plugins: {
         legend: { position: 'top', labels: { filter: (item) => !item.text.startsWith('_fit_') } },
         tooltip: { filter: (item) => !item.dataset.label.startsWith('_fit_') },
@@ -616,7 +633,7 @@ function renderThemes(papers) {
   });
 
   /* status board */
-  const arrow = { rising: '<span class="st st-up">▲ rising</span>', peaking: '<span class="st st-peak">● near peak</span>', declining: '<span class="st st-down">▼ declining</span>', '—': '<span class="st">too sparse</span>' };
+  const arrow = { rising: '<span class="st st-up">▲ rising</span>', emerging: '<span class="st st-new">✦ emerging</span>', peaking: '<span class="st st-peak">● near peak</span>', declining: '<span class="st st-down">▼ declining</span>', '—': '<span class="st">too sparse</span>' };
   $('#theme-board tbody').innerHTML = stats
     .slice().sort((a, b) => b.total - a.total)
     .map((s) => `<tr data-ti="${s.i}" class="${state.themeSel.has(s.i) ? 'sel' : ''}">
@@ -624,7 +641,7 @@ function renderThemes(papers) {
       <td>${s.total}</td>
       <td>${s.fit ? (s.fit.openEnded ? 'not yet in sight' : '~' + Math.round(s.fit.mu) + (Math.round(s.fit.mu) > nowYear ? ' (projected)' : '')) : '—'}</td>
       <td>${arrow[s.status]}</td>
-      <td>${s.fit ? Math.round(s.fit.r2 * 100) + '%' : '—'}</td>
+      <td>${s.fit && s.fit.nonzero >= 4 ? Math.round(s.fit.r2 * 100) + '%' : '—'}</td>
     </tr>`)
     .join('');
   $('#theme-board tbody').querySelectorAll('tr').forEach((tr) =>

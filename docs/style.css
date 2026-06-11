@@ -569,3 +569,5 @@ kbd {
   .card { padding: 12px 13px; }
   .card-head { flex-direction: column; gap: 2px; }
 }
+.st-new { color: #6d5bd0; font-weight: 600; }
+:root[data-theme="dark"] .st-new { color: #a78bfa; }
