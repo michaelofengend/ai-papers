@@ -25,6 +25,8 @@ const state = {
   view: 'papers',
   charts: {},
   themeMode: 'share', // share-of-corpus interest curves by default
+  custom: [],          // user-defined curve phrases
+  customSel: new Set(),
   timeline: null, // lazy-loaded entries
 };
 
@@ -44,6 +46,11 @@ function readHash() {
   state.orgs = new Set((h.get('labs') || '').split(',').filter(Boolean));
   state.topics = new Set((h.get('topics') || '').split('|').filter(Boolean));
   state.years = new Set((h.get('years') || '').split(',').filter(Boolean));
+  const curves = (h.get('curves') || '').split('|').map((c) => c.trim()).filter(Boolean);
+  if (curves.length) {
+    state.custom = [...new Set([...state.custom, ...curves])].slice(0, 12);
+    curves.forEach((c) => state.customSel.add(c));
+  }
 }
 
 let suppressHash = false;
@@ -59,6 +66,7 @@ function writeHash() {
   if (state.orgs.size) h.set('labs', [...state.orgs].join(','));
   if (state.topics.size) h.set('topics', [...state.topics].join('|'));
   if (state.years.size) h.set('years', [...state.years].join(','));
+  if (state.custom.length) h.set('curves', state.custom.join('|'));
   const str = h.toString().replace(/%2C/g, ',').replace(/%7C/g, '|');
   suppressHash = true;
   history.replaceState(null, '', str ? '#' + str : location.pathname + location.search);
@@ -565,6 +573,33 @@ function renderAnalytics() {
 /* ---------------- research interest curves ---------------- */
 let THEME_NAMES = [];
 let TOPIC_LIST = [];
+
+/* user-defined interest curves: phrase -> flexible regex over paper text */
+function phraseToRegex(phrase) {
+  const esc = phrase.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '[\\s-]+');
+  return new RegExp('\\b' + esc + '\\b', 'i');
+}
+function loadCustom() {
+  try { return JSON.parse(localStorage.getItem('frt-custom') || '[]').slice(0, 12); } catch (e) { return []; }
+}
+function saveCustom() {
+  try { localStorage.setItem('frt-custom', JSON.stringify(state.custom)); } catch (e) {}
+}
+function customSets() {
+  // membership cache: one Set of paper ids per custom phrase
+  if (!state._customSets) state._customSets = new Map();
+  for (const name of [...state._customSets.keys()]) {
+    if (!state.custom.includes(name)) state._customSets.delete(name);
+  }
+  for (const name of state.custom) {
+    if (state._customSets.has(name)) continue;
+    const re = phraseToRegex(name);
+    const set = new Set();
+    for (const p of state.papers) if (re.test(p._hay)) set.add(p.id);
+    state._customSets.set(name, set);
+  }
+  return state._customSets;
+}
 const THEME_PALETTE = ['#2563eb', '#c15f3c', '#0d8a6f', '#b58a2c', '#7c5cc4', '#2b8fa8', '#c2417a', '#5b8a3c', '#8a5a44', '#4a6fa5', '#a8642b', '#5e548e'];
 const THEME_DEFAULT = ['Reward hacking', 'Automated auditing', 'Mid-training', 'Subliminal learning', 'Emergent misalignment', 'Evaluation awareness'];
 
@@ -615,6 +650,34 @@ function fitBell(w, ts) {
   return { mu, sigma, value, r2, total: N, openEnded, nonzero: nonzeroIdx.length };
 }
 
+/* two-wave (re-discovered) detector on the smoothed series: peak, deep trough,
+   second peak; revival fitted on post-trough data only */
+function detectWaves(w, ts, rawCounts) {
+  const n = w.length;
+  if (n < 16) return null;
+  const sm = w.map((_, i) => ((w[i - 1] ?? w[i]) + 2 * w[i] + (w[i + 1] ?? w[i])) / 4);
+  let p1 = 0;
+  for (let i = 0; i < n; i++) if (sm[i] > sm[p1]) p1 = i;
+  let p2 = -1;
+  for (let i = 0; i < n; i++) {
+    if (Math.abs(i - p1) < 10) continue; // >=2.5y apart
+    if (p2 === -1 || sm[i] > sm[p2]) p2 = i;
+  }
+  if (p2 === -1) return null;
+  const [a, b] = p1 < p2 ? [p1, p2] : [p2, p1];
+  let trough = a;
+  for (let i = a; i <= b; i++) if (sm[i] < sm[trough]) trough = i;
+  const lower = Math.min(sm[a], sm[b]);
+  if (sm[b] < 0.35 * sm[a]) return null; // second peak too small
+  if (sm[a] < 0.25 * sm[b]) return null; // "first wave" was just a slow start, not a real wave
+  if (sm[trough] > 0.45 * lower) return null;     // no real dormant period
+  const mass1 = rawCounts.slice(0, trough).reduce((x, y) => x + y, 0);
+  const mass2 = rawCounts.slice(trough).reduce((x, y) => x + y, 0);
+  if (mass1 < 8 || mass2 < 8) return null;
+  const revivalFit = fitBell(w.slice(trough), ts.slice(trough));
+  return { wave1: ts[a], trough: ts[trough], wave2: ts[b], revivalFit, troughIdx: trough };
+}
+
 function quarterLabelOf(mu) {
   const y = Math.floor(mu);
   const q = Math.min(4, Math.max(1, Math.floor((mu - y) * 4) + 1));
@@ -648,10 +711,15 @@ function themeStats(papers) {
   for (const p of papers) { const idx = idxOf(p); if (idx >= 0) totals[idx]++; }
   const share = state.themeMode !== 'abs';
 
-  return THEME_NAMES.map((name, i) => {
+  const csets = customSets();
+  const defs = [
+    ...THEME_NAMES.map((name, i) => ({ name, i, custom: false })),
+    ...state.custom.map((name, k) => ({ name, i: 1000 + k, custom: true, set: csets.get(name) })),
+  ];
+  return defs.map(({ name, i, custom, set }) => {
     const raw = new Array(quarters.length).fill(0);
     for (const p of papers) {
-      if (!hasTheme(p, i)) continue;
+      if (custom ? !set.has(p.id) : !hasTheme(p, i)) continue;
       const idx = idxOf(p);
       if (idx >= 0) raw[idx]++;
     }
@@ -673,8 +741,11 @@ function themeStats(papers) {
     }
     const ts = quarters.map((q) => q.t);
     const fit = total >= 8 ? fitBell(w, ts) : null;
+    const waves = total >= 16 ? detectWaves(w, ts, raw) : null;
     let status = '—';
-    if (fit && fit.r2 < 0.25) {
+    if (waves) {
+      status = 'secondwave';
+    } else if (fit && fit.r2 < 0.25) {
       status = 'unclear';
     } else if (fit) {
       const d = nowT - fit.mu;
@@ -685,11 +756,16 @@ function themeStats(papers) {
       const recent = counts.reduce((s, c, idx) => s + (idx >= lastIdx ? c : 0), 0);
       if (recent === total) status = 'emerging';
     }
-    return { i, name, counts, total, fit, status, quarters, nowT, nowYear };
+    return { i, name, counts, total, fit, waves, status, quarters, nowT, nowYear, custom };
   });
 }
 
-const STATUS_ORDER = { rising: 0, emerging: 1, peaking: 2, declining: 3, unclear: 4, '—': 5 };
+const STATUS_ORDER = { rising: 0, emerging: 1, secondwave: 2, peaking: 3, declining: 4, unclear: 5, '—': 6 };
+const isSelected = (s) => s.custom ? state.customSel.has(s.name) : state.themeSel.has(s.i);
+function toggleSel(s) {
+  if (s.custom) { state.customSel.has(s.name) ? state.customSel.delete(s.name) : state.customSel.add(s.name); }
+  else { state.themeSel.has(s.i) ? state.themeSel.delete(s.i) : state.themeSel.add(s.i); }
+}
 
 function renderThemes(papers) {
   if (!state.themeSel) {
@@ -707,20 +783,27 @@ function renderThemes(papers) {
     ext.push({ y, q, t: y + (q + 0.5) / 4, label: `${y} Q${q + 1}` });
   }
 
-  /* chips: declining & sparse sink to the end here too */
+  /* chips: custom first, then by status (declining & sparse sink) */
   $('#theme-chips').innerHTML = stats
-    .slice().sort((a, b) => (STATUS_ORDER[a.status] >= 3) - (STATUS_ORDER[b.status] >= 3) || b.total - a.total)
-    .map((s) => `<button class="chip theme-chip ${state.themeSel.has(s.i) ? 'active' : ''}" data-ti="${s.i}">${esc(s.name)} <span class="n">${s.total}</span></button>`)
+    .slice().sort((a, b) => (b.custom === true) - (a.custom === true) || (STATUS_ORDER[a.status] >= 4) - (STATUS_ORDER[b.status] >= 4) || b.total - a.total)
+    .map((s) => `<button class="chip theme-chip ${s.custom ? 'custom' : ''} ${isSelected(s) ? 'active' : ''}" data-ti="${s.i}" data-name="${esc(s.name)}">${esc(s.name)} <span class="n">${s.total}</span>${s.custom ? '<span class="x" title="remove curve">×</span>' : ''}</button>`)
     .join('');
   $('#theme-chips').querySelectorAll('.theme-chip').forEach((b) =>
-    b.addEventListener('click', () => {
-      const i = +b.dataset.ti;
-      state.themeSel.has(i) ? state.themeSel.delete(i) : state.themeSel.add(i);
+    b.addEventListener('click', (ev) => {
+      const st = stats.find((x) => String(x.i) === b.dataset.ti);
+      if (!st) return;
+      if (st.custom && ev.target.classList.contains('x')) {
+        state.custom = state.custom.filter((n) => n !== st.name);
+        state.customSel.delete(st.name);
+        saveCustom(); writeHash();
+      } else {
+        toggleSel(st);
+      }
       renderThemes(papers);
     }));
 
   /* chart */
-  const sel = stats.filter((s) => state.themeSel.has(s.i));
+  const sel = stats.filter((s) => isSelected(s));
   const datasets = [];
   sel.forEach((s, k) => {
     const color = THEME_PALETTE[k % THEME_PALETTE.length];
@@ -730,12 +813,14 @@ function renderThemes(papers) {
       borderColor: color, backgroundColor: color,
       tension: 0.3, pointRadius: 0, pointHitRadius: 6, borderWidth: 2.2, spanGaps: false,
     });
-    if (state.showFit !== false && s.fit) {
+    const fitFn = s.waves?.revivalFit || s.fit;
+    const fitStart = s.waves ? s.waves.trough : -Infinity;
+    if (state.showFit !== false && fitFn) {
       datasets.push({
         label: '_fit_' + s.name,
-        data: ext.map((qq) => +s.fit.value(qq.t).toFixed(2)),
+        data: ext.map((qq) => (qq.t >= fitStart ? +fitFn.value(qq.t).toFixed(2) : null)),
         borderColor: color + '88', backgroundColor: 'transparent',
-        borderDash: [6, 5], pointRadius: 0, borderWidth: 1.6, tension: 0.4,
+        borderDash: [6, 5], pointRadius: 0, borderWidth: 1.6, tension: 0.4, spanGaps: false,
       });
     }
   });
@@ -768,23 +853,55 @@ function renderThemes(papers) {
   });
 
   /* status board: rising & emerging first, declining at the end */
-  const arrow = { rising: '<span class="st st-up">▲ rising</span>', emerging: '<span class="st st-new">✦ emerging</span>', peaking: '<span class="st st-peak">● near peak</span>', declining: '<span class="st st-down">▼ declining</span>', unclear: '<span class="st">~ no clear bell</span>', '—': '<span class="st">too sparse</span>' };
+  const arrow = { rising: '<span class="st st-up">▲ rising</span>', emerging: '<span class="st st-new">✦ emerging</span>', secondwave: '<span class="st st-wave">↻ 2nd wave</span>', peaking: '<span class="st st-peak">● near peak</span>', declining: '<span class="st st-down">▼ declining</span>', unclear: '<span class="st">~ no clear bell</span>', '—': '<span class="st">too sparse</span>' };
   $('#theme-board tbody').innerHTML = stats
     .slice().sort((a, b) => STATUS_ORDER[a.status] - STATUS_ORDER[b.status] || b.total - a.total)
-    .map((s) => `<tr data-ti="${s.i}" class="${state.themeSel.has(s.i) ? 'sel' : ''}">
-      <td>${esc(s.name)}</td>
+    .map((s) => {
+      const f = s.waves?.revivalFit || s.fit;
+      const peakCell = s.status === 'secondwave' && s.waves?.revivalFit
+        ? '~' + quarterLabelOf(s.waves.revivalFit.mu) + (s.waves.revivalFit.mu > s.nowT ? ' (revival, projected)' : ' (revival)')
+        : (s.fit && s.status !== 'unclear' ? (s.fit.openEnded ? 'not yet in sight' : '~' + quarterLabelOf(s.fit.mu) + (s.fit.mu > s.nowT ? ' (projected)' : '')) : '—');
+      const fitCell = s.status === 'secondwave' && s.waves?.revivalFit
+        ? Math.round(s.waves.revivalFit.r2 * 100) + '%'
+        : (s.fit && s.fit.nonzero >= 6 ? Math.round(s.fit.r2 * 100) + '%' : '—');
+      return `<tr data-ti="${s.i}" class="${isSelected(s) ? 'sel' : ''}">
+      <td>${esc(s.name)}${s.custom ? ' <span class="st">(custom)</span>' : ''}</td>
       <td>${s.total}</td>
-      <td>${s.fit && s.status !== 'unclear' ? (s.fit.openEnded ? 'not yet in sight' : '~' + quarterLabelOf(s.fit.mu) + (s.fit.mu > s.nowT ? ' (projected)' : '')) : '—'}</td>
+      <td>${peakCell}</td>
       <td>${arrow[s.status]}</td>
-      <td>${s.fit && s.fit.nonzero >= 6 ? Math.round(s.fit.r2 * 100) + '%' : '—'}</td>
-    </tr>`)
+      <td>${fitCell}</td>
+    </tr>`;
+    })
     .join('');
   $('#theme-board tbody').querySelectorAll('tr').forEach((tr) =>
     tr.addEventListener('click', () => {
-      const i = +tr.dataset.ti;
-      state.themeSel.has(i) ? state.themeSel.delete(i) : state.themeSel.add(i);
-      renderThemes(papers);
+      const st = stats.find((x) => String(x.i) === tr.dataset.ti);
+      if (st) { toggleSel(st); renderThemes(papers); }
     }));
+
+  /* re-discovered themes card */
+  const waved = stats.filter((s) => s.status === 'secondwave');
+  const rc = $('#rediscovered-card');
+  if (rc) {
+    rc.hidden = !waved.length;
+    if (waved.length) {
+      $('#rediscovered-board tbody').innerHTML = waved
+        .sort((a, b) => b.total - a.total)
+        .map((s) => `<tr data-ti="${s.i}" class="${isSelected(s) ? 'sel' : ''}">
+          <td>${esc(s.name)}</td>
+          <td>${quarterLabelOf(s.waves.wave1)}</td>
+          <td>${quarterLabelOf(s.waves.trough)}</td>
+          <td>${s.waves.revivalFit ? '~' + quarterLabelOf(s.waves.revivalFit.mu) + (s.waves.revivalFit.mu > s.nowT ? ' (projected)' : '') : 'still building'}</td>
+          <td>${s.waves.revivalFit ? Math.round(s.waves.revivalFit.r2 * 100) + '%' : '—'}</td>
+        </tr>`)
+        .join('');
+      $('#rediscovered-board tbody').querySelectorAll('tr').forEach((tr) =>
+        tr.addEventListener('click', () => {
+          const st = stats.find((x) => String(x.i) === tr.dataset.ti);
+          if (st) { toggleSel(st); renderThemes(papers); }
+        }));
+    }
+  }
 }
 
 /* ---------------- timeline ---------------- */
@@ -870,7 +987,23 @@ function setThemeIcon() {
 
 /* ---------------- events ---------------- */
 function init() {
+  state.custom = loadCustom();
   setThemeIcon();
+
+  const addCustom = () => {
+    const v = $('#custom-input').value.trim();
+    if (!v || v.length < 3) return;
+    if (!state.custom.includes(v)) {
+      if (state.custom.length >= 12) { state.custom.shift(); }
+      state.custom.push(v);
+    }
+    state.customSel.add(v);
+    $('#custom-input').value = '';
+    saveCustom(); writeHash();
+    if (state.view === 'analytics') renderAnalytics();
+  };
+  $('#custom-btn').addEventListener('click', addCustom);
+  $('#custom-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') addCustom(); });
   $('#theme-toggle').addEventListener('click', () => {
     const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = next;

@@ -47,6 +47,7 @@ export const THEMES = [
   ['Inference efficiency', /kv.cache|speculative decod|inference (efficien|acceler)|efficient (inference|serving)/, ['"KV cache"', '"speculative decoding"', '"efficient inference" AND "language models"']],
   ['World models & video gen', /world model|video (generation|diffusion)|interactive environment/, ['"world models" AND (learning OR agents)', '"video generation"']],
   ['Spatial reasoning', /spatial reasoning|spatial (understanding|intelligence)/, ['"spatial reasoning" AND "models"']],
+  ['Latent & pause-token compute', /pause token|filler token|latent (reasoning|thought)|continuous (thought|latent)|looped transformer|implicit (reasoning|chain.of.thought)|\bcoconut\b|thought token/, ['"pause tokens"', '"latent reasoning"', '"implicit reasoning" AND "language models"', '"continuous latent space" AND "reasoning"']],
 ];
 
 /* umbrella queries that keep the broad topic curves honest */

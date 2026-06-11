@@ -631,3 +631,22 @@ kbd {
 :root[data-theme="dark"] .sv-badge { color: #a78bfa; }
 .guide-note { margin: 2px 0 0; font-size: 12.5px; color: var(--text-dim); }
 .guide-foot { margin: 10px 0 2px; font-size: 11.5px; color: var(--text-faint); font-style: italic; }
+
+/* custom curve input */
+.custom-add { display: inline-flex; gap: 0; margin-left: auto; }
+#custom-input {
+  border: 1px solid var(--border); border-right: 0; border-radius: 7px 0 0 7px;
+  background: var(--bg-elev); color: var(--text); font: inherit; font-size: 12px;
+  padding: 4px 10px; width: 250px; outline: 0;
+}
+#custom-input:focus { border-color: var(--accent); }
+#custom-btn {
+  appearance: none; border: 1px solid var(--accent); background: var(--accent); color: #fff;
+  font-size: 12px; font-weight: 600; border-radius: 0 7px 7px 0; padding: 4px 10px; cursor: pointer;
+}
+#custom-btn:hover { opacity: .9; }
+.theme-chip.custom { border-style: dashed; }
+.theme-chip .x { margin-left: 5px; opacity: .6; font-weight: 700; }
+.theme-chip .x:hover { opacity: 1; color: #c4452e; }
+.st-wave { color: #2b8fa8; font-weight: 600; }
+:root[data-theme="dark"] .st-wave { color: #7dcfff; }

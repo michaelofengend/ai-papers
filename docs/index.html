@@ -123,6 +123,10 @@ try { document.documentElement.dataset.theme = localStorage.getItem('frt-theme')
               <button class="mode-btn active" data-mode="share" title="theme papers per 10,000 ML papers published that quarter (OpenAlex baseline) — corrects for overall field growth">share of field</button>
               <button class="mode-btn" data-mode="abs" title="raw papers per quarter">absolute</button>
             </span>
+            <span class="custom-add">
+              <input id="custom-input" type="text" placeholder="track your own phrase, e.g. activation oracles" maxlength="60">
+              <button id="custom-btn" title="Add a custom curve matched against all paper titles & text">+ add curve</button>
+            </span>
           </div>
           <div class="chart-box tall"><canvas id="ch-themes"></canvas></div>
           <p class="chart-note">Default view is each theme's <b>share of the field</b> — papers per 10,000 ML papers published that quarter (OpenAlex baseline, smoothed) — raw counts rise almost everywhere because the field itself grows, so share is what reveals true rise-and-fall of interest (and partial quarters cancel out). Fit: least-squares Gaussian; a high "bell fit" means the curve genuinely follows a bell — those are the ones you can extrapolate.</p>
@@ -133,6 +137,14 @@ try { document.documentElement.dataset.theme = localStorage.getItem('frt-theme')
             <thead><tr><th>Theme</th><th>Papers</th><th>Fitted peak</th><th>Status</th><th>Bell fit</th></tr></thead>
             <tbody></tbody>
           </table></div>
+        </div>
+        <div class="chart-card wide" id="rediscovered-card" hidden>
+          <h3>Re-discovered themes <span class="chart-sub">two research waves with a dormant period between — and how predictable the revival is</span></h3>
+          <div class="theme-board-wrap"><table class="theme-board" id="rediscovered-board">
+            <thead><tr><th>Theme</th><th>First wave peak</th><th>Dormant low</th><th>Revival peak</th><th>Revival bell fit</th></tr></thead>
+            <tbody></tbody>
+          </table></div>
+          <p class="chart-note">Detected from the share-of-field series: two separated peaks with a trough under 45% of both. The revival is fitted on post-trough data only — its "bell fit" is the predictability score for the second wave.</p>
         </div>
         <div class="chart-card wide"><h3>What each lab works on <span class="chart-sub">topic mix per lab, % of the lab's research papers</span></h3><div class="chart-box tall"><canvas id="ch-labtopics"></canvas></div></div>
         <div class="chart-card wide"><h3>Topic trends <span class="chart-sub">top 6 topics per year</span></h3><div class="chart-box tall"><canvas id="ch-trends"></canvas></div></div>
