@@ -1,0 +1,1155 @@
+{
+ "updated": "2026-06-11",
+ "topics": {
+  "Interpretability": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 68,
+       "note": "Plain-language tour of what tracing a model's thoughts reveals; gentlest entry point."
+      },
+      {
+       "id": 588,
+       "note": "Field map of methods, results, and unsolved problems from leading practitioners."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 2841,
+       "note": "The founding manifesto: features and circuits as the units of network anatomy."
+      },
+      {
+       "id": 128,
+       "note": "Defines the working vocabulary: residual stream, head composition, induction heads."
+      },
+      {
+       "id": 126,
+       "note": "Evidence that induction heads drive in-context learning in real transformers."
+      }
+     ]
+    },
+    {
+     "name": "Superposition & sparse autoencoders",
+     "entries": [
+      {
+       "id": 120,
+       "note": "Why neurons mean many things at once: features compressed in superposition."
+      },
+      {
+       "id": 104,
+       "note": "First demonstration that sparse autoencoders decompose a transformer into interpretable features."
+      },
+      {
+       "id": 446,
+       "note": "Interpretable features at frontier scale, including the famous Golden Gate Bridge feature."
+      },
+      {
+       "id": 595,
+       "note": "Open sparse autoencoders on Gemma 2; the kit for hands-on practice."
+      }
+     ]
+    },
+    {
+     "name": "Circuits & attribution",
+     "entries": [
+      {
+       "id": 628,
+       "note": "Complete reverse-engineering of a learned algorithm, explaining how grokking happens."
+      },
+      {
+       "id": 632,
+       "note": "The template circuit analysis: activation patching dissects a GPT-2 task."
+      },
+      {
+       "id": 2884,
+       "note": "Attribution graphs and transcoders: the current method for tracing computations."
+      }
+     ]
+    },
+    {
+     "name": "Steering, probing & editing",
+     "entries": [
+      {
+       "id": 630,
+       "note": "Unsupervised probes recover a model's internal notion of truth."
+      },
+      {
+       "id": 611,
+       "note": "Steering behavior with contrastive activation vectors added at inference time."
+      },
+      {
+       "id": 530,
+       "note": "Refusal occupies a single direction you can remove or add."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 2883,
+       "note": "Microscope case studies in Claude: planning ahead, multilingual circuits, unfaithful reasoning."
+      },
+      {
+       "id": 69,
+       "note": "Blind teams use interpretability to uncover a model's hidden training objective."
+      },
+      {
+       "id": 55,
+       "note": "Linear directions that monitor and steer character traits like sycophancy."
+      }
+     ]
+    }
+   ]
+  },
+  "Alignment": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 30855,
+       "note": "The standard field map: RLHF, scalable oversight, and assurance in one survey."
+      },
+      {
+       "id": 31441,
+       "note": "Accessible book-length introduction to why aligning ML with human values is hard."
+      },
+      {
+       "id": 2325,
+       "note": "DeepMind's philosophical framing of what we should align AI to, and for whom."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 13936,
+       "note": "Formalizes value alignment as a cooperative game where machines learn human preferences."
+      },
+      {
+       "id": 1102,
+       "note": "Origin of scalable oversight: agents debate so humans can judge superhuman work."
+      },
+      {
+       "id": 1052,
+       "note": "RLHF proven on real language tasks; the direct precursor to InstructGPT."
+      },
+      {
+       "id": 129,
+       "note": "Anthropic's helpful-honest-harmless framing that made chat assistants the alignment testbed."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 443,
+       "note": "InstructGPT: the RLHF recipe behind ChatGPT and every modern aligned assistant."
+      },
+      {
+       "id": 125,
+       "note": "Anthropic's HH-RLHF: the helpful-versus-harmless tradeoff measured at scale."
+      },
+      {
+       "id": 118,
+       "note": "Align with written principles and AI feedback instead of human harm labels."
+      },
+      {
+       "id": 11916,
+       "note": "DPO: preference tuning without RL; now the default open-model alignment method."
+      },
+      {
+       "id": 423,
+       "note": "Can weak supervisors elicit strong models' abilities? Core superalignment experiment."
+      },
+      {
+       "id": 98,
+       "note": "Implanted deceptive behavior survives standard safety training — a landmark warning."
+      },
+      {
+       "id": 76,
+       "note": "First evidence a model strategically fakes alignment to preserve its preferences."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 585,
+       "note": "Emergent misalignment: finetuning on insecure code yields broadly malicious behavior."
+      },
+      {
+       "id": 161,
+       "note": "Behavioral traits pass between models through seemingly innocuous training data."
+      },
+      {
+       "id": 198,
+       "note": "Reward hacking in real training generalizes to sabotage; tested mitigations included."
+      },
+      {
+       "id": 29356,
+       "note": "DeepMind tests whether deployed models actually obey their written principles."
+      }
+     ]
+    }
+   ]
+  },
+  "Safety": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 1977,
+       "note": "A structured map of everything that can go wrong with language models."
+      },
+      {
+       "id": 31441,
+       "note": "Readable book tracing how ML systems drift from human intent; the field's best on-ramp."
+      },
+      {
+       "id": 19234,
+       "note": "Concise map of the competing technical proposals for building safe advanced AI."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 1102,
+       "note": "Founding scalable-oversight proposal: models debate, humans judge, to supervise superhuman systems."
+      },
+      {
+       "id": 2837,
+       "note": "Beloved anecdote collection of AI gaming its objectives; makes specification failure vivid."
+      },
+      {
+       "id": 3359,
+       "note": "Shows agents can learn the wrong goal even under a correct reward."
+      },
+      {
+       "id": 121,
+       "note": "Established systematic red-teaming of LLMs; methods and lessons still used today."
+      },
+      {
+       "id": 555,
+       "note": "Defined dangerous-capability evaluations, now standard practice at every frontier lab."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 98,
+       "note": "Backdoored deceptive behavior survives safety training; the landmark deceptive-alignment result."
+      },
+      {
+       "id": 88,
+       "note": "Models generalize from simple sycophancy to tampering with their own reward."
+      },
+      {
+       "id": 76,
+       "note": "First evidence a model strategically fakes alignment in training to protect its preferences."
+      },
+      {
+       "id": 20192,
+       "note": "Founded AI control: protocols that stay safe even if models actively scheme."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 585,
+       "note": "Finetuning on insecure code makes models broadly malicious: emergent misalignment."
+      },
+      {
+       "id": 69,
+       "note": "Blind auditing game: can teams uncover a model's deliberately hidden objective?"
+      },
+      {
+       "id": 66,
+       "note": "Chain-of-thought often hides true reasoning, limiting CoT-based safety monitoring."
+      },
+      {
+       "id": 58,
+       "note": "Models resort to blackmail and leaks in simulated corporate stress tests."
+      },
+      {
+       "id": 161,
+       "note": "Behavioral traits pass between models through innocuous-looking training data."
+      },
+      {
+       "id": 43,
+       "note": "Reward hacking in production RL naturally produced broad misalignment, plus a mitigation."
+      }
+     ]
+    }
+   ]
+  },
+  "Reasoning": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 18254,
+       "note": "Maps the o1-era: RL and test-time compute turning LLMs into reasoners."
+      },
+      {
+       "id": 17330,
+       "note": "Catalogs prompting-era techniques: chain-of-thought, decomposition, self-verification."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 1051,
+       "note": "GPT-f, the first serious LLM theorem prover; opened the formal-math line."
+      },
+      {
+       "id": 1040,
+       "note": "Introduces GSM8K and trained verifiers — the seed of process supervision."
+      },
+      {
+       "id": 2052,
+       "note": "Nature landmark: AI guides mathematicians to genuinely new theorems."
+      },
+      {
+       "id": 13213,
+       "note": "\"Let's think step by step\": chain-of-thought works without any examples."
+      },
+      {
+       "id": 1911,
+       "note": "Massive sampling plus filtering reaches median-human level in coding contests."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 18885,
+       "note": "Rewarding each reasoning step beats rewarding only final answers on math."
+      },
+      {
+       "id": 243,
+       "note": "Defines the CoT faithfulness problem: explanations can rationalize biased answers."
+      },
+      {
+       "id": 897,
+       "note": "Cold water: models can't fix their own reasoning without external feedback."
+      },
+      {
+       "id": 1719,
+       "note": "FunSearch: an LLM plus an evaluator discovers new mathematics."
+      },
+      {
+       "id": 991,
+       "note": "The reasoning-model paradigm shift: RL-trained chain-of-thought, documented."
+      },
+      {
+       "id": 13888,
+       "note": "Why letting models think longer can beat training them bigger."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 66,
+       "note": "Anthropic measures CoT faithfulness in frontier reasoning models; it is low."
+      },
+      {
+       "id": 357,
+       "note": "CoT monitoring catches reward hacking — unless you optimize against it."
+      },
+      {
+       "id": 1321,
+       "note": "AlphaProof: RL plus Lean reaches IMO silver-medal performance."
+      },
+      {
+       "id": 653,
+       "note": "Models can't fully steer their own thinking — good news for monitorability."
+      }
+     ]
+    }
+   ]
+  },
+  "Evaluations": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 105,
+       "note": "Anthropic's candid tour of why measuring model behavior is surprisingly hard."
+      },
+      {
+       "id": 33744,
+       "note": "Maps how LLMs grade other LLMs, now the field's dominant evaluation method."
+      },
+      {
+       "id": 35588,
+       "note": "Orients you in agent benchmarks: web, code, tools, and how they're scored."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 2593,
+       "note": "The pre-LLM benchmark suite that set the template for measuring language understanding."
+      },
+      {
+       "id": 1044,
+       "note": "The Codex paper; introduced HumanEval and pass@k, still the code-eval standard."
+      },
+      {
+       "id": 1042,
+       "note": "Shows models reproduce human misconceptions; the standard truthfulness benchmark."
+      },
+      {
+       "id": 23800,
+       "note": "BIG-bench: 200+ crowd-sourced tasks probing what scaling does and doesn't buy."
+      },
+      {
+       "id": 23803,
+       "note": "HELM: evaluate many models on many scenarios and metrics, systematically."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 117,
+       "note": "Anthropic uses models to write their own evaluations, scaling behavioral testing."
+      },
+      {
+       "id": 15527,
+       "note": "Argues 'emergent' abilities are artifacts of metric choice; sharpened eval methodology."
+      },
+      {
+       "id": 555,
+       "note": "The agenda-setting case for testing frontier models for dangerous capabilities."
+      },
+      {
+       "id": 1783,
+       "note": "Med-PaLM: landmark domain evaluation, pairing exam benchmarks with physician judgment."
+      },
+      {
+       "id": 19149,
+       "note": "Google-proof PhD-level questions; the capability benchmark every frontier model reports."
+      },
+      {
+       "id": 537,
+       "note": "DeepMind's concrete eval suite for cyber, persuasion, and self-proliferation risks."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 977,
+       "note": "Can agents replicate AI research papers? Rubric-graded frontier capability eval."
+      },
+      {
+       "id": 972,
+       "note": "Physician-written rubrics grade realistic health conversations; the new evaluation style."
+      },
+      {
+       "id": 961,
+       "note": "OpenAI argues benchmarks reward confident guessing, making hallucination an evaluation problem."
+      },
+      {
+       "id": 930,
+       "note": "Benchmark saturation up close: why a flagship coding eval got retired."
+      }
+     ]
+    }
+   ]
+  },
+  "Robustness & Security": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 21535,
+       "note": "Broad map of LLM safety, security, and privacy threats and defenses."
+      },
+      {
+       "id": 34135,
+       "note": "Taxonomy of red-teaming attacks on generative models; how practitioners probe for failures."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 549,
+       "note": "Explains why safety training fails: competing objectives and mismatched generalization behind jailbreaks."
+      },
+      {
+       "id": 121,
+       "note": "Anthropic's methodology for red-teaming LLMs at scale, with what they learned."
+      },
+      {
+       "id": 9822,
+       "note": "Defines indirect prompt injection: hijacking LLM apps via poisoned retrieved content."
+      },
+      {
+       "id": 2806,
+       "note": "Shows LLMs memorize and leak verbatim training data, the core privacy attack."
+      },
+      {
+       "id": 27741,
+       "note": "Classic clean-label data poisoning: stealthy training-set attacks that flip model predictions."
+      },
+      {
+       "id": 26792,
+       "note": "The canonical method for watermarking LLM outputs to detect machine-generated text."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 8281,
+       "note": "PAIR: automatically jailbreaks black-box models in roughly 20 queries using an attacker LLM."
+      },
+      {
+       "id": 8280,
+       "note": "One adversarial image jailbreaks aligned vision-language models; multimodal robustness is hard."
+      },
+      {
+       "id": 98,
+       "note": "Backdoored deceptive behavior survives safety training, and adversarial training can hide it."
+      },
+      {
+       "id": 530,
+       "note": "Refusal lives in one activation direction; ablating it removes safety guardrails."
+      },
+      {
+       "id": 8622,
+       "note": "Comprehensive trustworthiness benchmark for GPT models across eight safety and robustness dimensions."
+      },
+      {
+       "id": 26920,
+       "note": "Argues detection of AI text has fundamental limits as models improve."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 8650,
+       "note": "DeepMind measures how jailbreak success scales with attacker effort and model size."
+      },
+      {
+       "id": 29356,
+       "note": "Tests whether models actually obey their written behavioral specs under pressure."
+      },
+      {
+       "id": 34494,
+       "note": "Trust, risk, and security framework for multi-agent LLM systems: the agentic frontier."
+      },
+      {
+       "id": 25684,
+       "note": "Current view of unlearning to remove harmful or private knowledge from LLMs."
+      }
+     ]
+    }
+   ]
+  },
+  "Agents": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 35909,
+       "note": "Sweeping survey of LLM agents: brain, perception, action, and agent societies."
+      },
+      {
+       "id": 35914,
+       "note": "Compact taxonomy of how agents are built, applied, and evaluated."
+      },
+      {
+       "id": 75,
+       "note": "Anthropic's practical playbook: simple composable patterns beat complex frameworks."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 2508,
+       "note": "Pre-LLM milestone: multi-agent RL reaches grandmaster StarCraft."
+      },
+      {
+       "id": 2853,
+       "note": "Hide-and-seek agents invent tools; emergence from multi-agent competition."
+      },
+      {
+       "id": 1039,
+       "note": "First major LLM agent: web browsing plus human feedback."
+      },
+      {
+       "id": 31658,
+       "note": "Minecraft agent that writes code and grows a reusable skill library."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 36025,
+       "note": "First broad benchmark of LLMs acting as agents across eight environments."
+      },
+      {
+       "id": 22978,
+       "note": "Agents as a software company: roles and procedures make collaboration work."
+      },
+      {
+       "id": 998,
+       "note": "The human-validated coding benchmark that defined coding-agent progress."
+      },
+      {
+       "id": 81,
+       "note": "How Claude learned to operate a computer from screenshots."
+      },
+      {
+       "id": 988,
+       "note": "OpenAI's RL-trained GUI agent powering Operator."
+      },
+      {
+       "id": 522,
+       "note": "Can agents do real ML engineering? Kaggle-style measurement."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 984,
+       "note": "The deep-research paradigm: agents that investigate autonomously for minutes."
+      },
+      {
+       "id": 17820,
+       "note": "Multi-agent Gemini system proposing novel, lab-validated scientific hypotheses."
+      },
+      {
+       "id": 57,
+       "note": "Claude runs a real shop; where long-horizon autonomy breaks."
+      },
+      {
+       "id": 58,
+       "note": "Stress tests show agents can turn insider threat under pressure."
+      },
+      {
+       "id": 1291,
+       "note": "When adding more agents helps, and when it hurts."
+      }
+     ]
+    }
+   ]
+  },
+  "Training & Scaling": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 13214,
+       "note": "Broad, readable map of LLM training, architectures, and capabilities for newcomers."
+      },
+      {
+       "id": 15530,
+       "note": "Surveys the sparse mixture-of-experts methods powering efficient large-scale model training."
+      },
+      {
+       "id": 13215,
+       "note": "Catalogs LoRA, adapters, and cheap ways to fine-tune huge models."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 1054,
+       "note": "GPT-3: the paper that launched the scaling era and few-shot prompting."
+      },
+      {
+       "id": 1059,
+       "note": "Loss falls as smooth power laws in compute, data, parameters."
+      },
+      {
+       "id": 13869,
+       "note": "Chinchilla: most big models are undertrained; balance parameters against data."
+      },
+      {
+       "id": 28058,
+       "note": "Original sparse MoE: huge capacity without huge per-token compute cost."
+      },
+      {
+       "id": 2220,
+       "note": "Classic puzzle: why over-parameterized nets generalize despite fitting random labels."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 562,
+       "note": "Argues new abilities appear abruptly only past certain model scales."
+      },
+      {
+       "id": 15527,
+       "note": "Counterargument: emergent jumps may be artifacts of discontinuous evaluation metrics."
+      },
+      {
+       "id": 443,
+       "note": "InstructGPT: the RLHF recipe that aligns models to instructions."
+      },
+      {
+       "id": 34685,
+       "note": "Scaling instruction finetuning across tasks sharply improves zero-shot generalization."
+      },
+      {
+       "id": 11916,
+       "note": "DPO: replaces RLHF's reward model and RL with one simple loss."
+      },
+      {
+       "id": 28233,
+       "note": "Simplifies MoE routing to scale transformers toward trillion parameters."
+      },
+      {
+       "id": 28055,
+       "note": "Fine-grained and shared experts give better specialization per compute budget."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 28259,
+       "note": "Open frontier report: MoE plus FP8 and efficiency tricks at scale."
+      },
+      {
+       "id": 161,
+       "note": "Distillation can secretly transmit a teacher's behavioral traits through training data."
+      },
+      {
+       "id": 11852,
+       "note": "Fresh probe of persistent behavioral artifacts that training leaves behind."
+      }
+     ]
+    }
+   ]
+  },
+  "Multimodal": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 21373,
+       "note": "Map of the whole multimodal-LLM landscape: architectures, training recipes, evaluation, open problems."
+      },
+      {
+       "id": 34803,
+       "note": "Readable tour of how multimodal LLMs emerged and what defines the current generation."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 2796,
+       "note": "The cornerstone: contrastive image-text pretraining enabling open-vocabulary, zero-shot visual recognition."
+      },
+      {
+       "id": 2785,
+       "note": "Models text and image as one token stream; launched the text-to-image era."
+      },
+      {
+       "id": 2792,
+       "note": "Diffusion overtakes GANs for image synthesis—the engine behind modern text-to-image generation."
+      },
+      {
+       "id": 2407,
+       "note": "Learns joint video-text representations from narrated instructional video at web scale."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 16315,
+       "note": "What actually matters when pretraining vision-language models: interleaved image-text data and recipes."
+      },
+      {
+       "id": 16336,
+       "note": "Adds grounding—linking words to image regions and bounding boxes—to multimodal LLMs."
+      },
+      {
+       "id": 21371,
+       "note": "Brings step-by-step chain-of-thought reasoning to problems combining images and text."
+      },
+      {
+       "id": 16327,
+       "note": "Scaling generative multimodal models unlocks in-context learning across images and text."
+      },
+      {
+       "id": 16321,
+       "note": "Treats speech as discrete tokens, enabling zero-shot text-to-speech from a short sample."
+      },
+      {
+       "id": 521,
+       "note": "Anatomy of a flagship omni-model handling text, vision, and audio together."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 13344,
+       "note": "Current-generation open vision-language model with dynamic any-resolution image handling."
+      },
+      {
+       "id": 34690,
+       "note": "The benchmark stress-testing how well multimodal LLMs actually understand video."
+      },
+      {
+       "id": 22441,
+       "note": "Where the field stands on measuring and reducing multimodal hallucination—the key reliability problem."
+      },
+      {
+       "id": 32016,
+       "note": "The push toward multimodal agents that see screens and operate software."
+      }
+     ]
+    }
+   ]
+  },
+  "Reinforcement Learning": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 2598,
+       "note": "Friendly big-picture tour of deep RL ideas and why they work."
+      },
+      {
+       "id": 10877,
+       "note": "Maps RLHF end to end: preference data, reward models, policy optimization."
+      },
+      {
+       "id": 18254,
+       "note": "Orients you in the o1-style reinforced-reasoning wave reshaping the field."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 2508,
+       "note": "AlphaStar: self-play multi-agent RL reaches grandmaster StarCraft II."
+      },
+      {
+       "id": 1060,
+       "note": "OpenAI Five: scaled-up self-play PPO beats Dota 2 world champions."
+      },
+      {
+       "id": 2268,
+       "note": "MuZero plans with a learned model, mastering Atari, Go, chess, shogi."
+      },
+      {
+       "id": 2850,
+       "note": "Sim-to-real RL with domain randomization controls a physical robot hand."
+      },
+      {
+       "id": 1066,
+       "note": "First RLHF applied to language models; the modern lineage starts here."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 443,
+       "note": "The InstructGPT recipe behind ChatGPT: supervised tuning, reward model, PPO."
+      },
+      {
+       "id": 125,
+       "note": "Anthropic's helpful-and-harmless assistant trained with RLHF at production scale."
+      },
+      {
+       "id": 11916,
+       "note": "Drops the reward model: preference tuning as one simple classification loss."
+      },
+      {
+       "id": 18885,
+       "note": "Step-by-step process rewards beat outcome-only rewards for math reasoning."
+      },
+      {
+       "id": 2020,
+       "note": "RL steers real fusion plasma; the landmark real-world control result."
+      },
+      {
+       "id": 1939,
+       "note": "AlphaTensor finds faster matrix multiplication, beating a 50-year-old record."
+      },
+      {
+       "id": 991,
+       "note": "The o1 inflection: RL-trained chain-of-thought reasoning models go public."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 1321,
+       "note": "AlphaProof: RL plus formal verification reaches olympiad-medal-level proofs."
+      },
+      {
+       "id": 1329,
+       "note": "Meta-learned RL update rules outperform human-designed algorithms."
+      },
+      {
+       "id": 198,
+       "note": "Reward hacking in production RL generalizes into broader misalignment."
+      }
+     ]
+    }
+   ]
+  },
+  "Science Applications": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 1774,
+       "note": "Nature review mapping how machine learning is reshaping discovery across scientific disciplines."
+      },
+      {
+       "id": 2524,
+       "note": "Systematic review weighing AI versus clinicians at detecting disease from medical images."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 2456,
+       "note": "AlphaFold 1: deep learning first cracks protein structure prediction at CASP13."
+      },
+      {
+       "id": 2112,
+       "note": "AlphaFold 2: the landmark that essentially solved single-protein structure prediction."
+      },
+      {
+       "id": 1051,
+       "note": "OpenAI's GPT-f: early proof that language models can prove formal math theorems."
+      },
+      {
+       "id": 2509,
+       "note": "Why medical AI rarely reaches the clinic, and what is needed."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 1653,
+       "note": "AlphaFold 3: extends prediction to complexes with DNA, RNA, and ligands."
+      },
+      {
+       "id": 902,
+       "note": "AlphaMissense: predicts pathogenicity of nearly all human missense variants."
+      },
+      {
+       "id": 1729,
+       "note": "GraphCast: a neural net out-forecasts traditional numerical weather prediction."
+      },
+      {
+       "id": 2020,
+       "note": "Deep reinforcement learning controls tokamak fusion plasma in real time."
+      },
+      {
+       "id": 1526,
+       "note": "Google shows ML-aided quantum error correction below the surface-code threshold."
+      },
+      {
+       "id": 1939,
+       "note": "AlphaTensor: reinforcement learning discovers faster matrix-multiplication algorithms than humans found."
+      },
+      {
+       "id": 1719,
+       "note": "FunSearch: LLM-guided program search yields new provably-correct mathematical results."
+      },
+      {
+       "id": 2459,
+       "note": "AI matches radiologists on mammography screening across US and UK datasets."
+      },
+      {
+       "id": 1783,
+       "note": "Med-PaLM: LLMs reach near expert-level on medical question answering."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 1386,
+       "note": "AlphaGenome: unified DNA model predicting regulatory effects of genome variants."
+      },
+      {
+       "id": 33137,
+       "note": "AMIE: conversational diagnostic AI rivaling physicians in simulated consultations."
+      },
+      {
+       "id": 17847,
+       "note": "AI co-scientist that proposes and refines novel research hypotheses."
+      }
+     ]
+    }
+   ]
+  },
+  "Policy & Society": {
+   "groups": [
+    {
+     "name": "Start here: overviews & surveys",
+     "entries": [
+      {
+       "id": 1977,
+       "note": "The field's standard map of language-model harms; orients everything that follows."
+      },
+      {
+       "id": 30855,
+       "note": "Broad survey connecting alignment techniques to governance; useful reference for terminology and landscape."
+      }
+     ]
+    },
+    {
+     "name": "Foundations",
+     "entries": [
+      {
+       "id": 1113,
+       "note": "The 2018 malicious-use report that started serious planning for AI misuse."
+      },
+      {
+       "id": 2835,
+       "note": "Concrete mechanisms — audits, red teams, incident sharing — to make AI safety claims checkable."
+      },
+      {
+       "id": 2325,
+       "note": "The philosophical foundation: what should AI align to, and who decides."
+      },
+      {
+       "id": 2170,
+       "note": "Agenda-setting Nature piece: AI must learn cooperation, not just capability."
+      },
+      {
+       "id": 127,
+       "note": "Why predictable scaling plus surprising capabilities makes AI policy hard; Anthropic's founding policy framing."
+      }
+     ]
+    },
+    {
+     "name": "Key results",
+     "entries": [
+      {
+       "id": 2728,
+       "note": "Landmark estimate of how much of every occupation LLMs could affect."
+      },
+      {
+       "id": 2761,
+       "note": "Definitive threat assessment of LLM-powered propaganda and what could mitigate it."
+      },
+      {
+       "id": 555,
+       "note": "Why frontier models need dangerous-capability evaluations; blueprint later adopted by governments."
+      },
+      {
+       "id": 1016,
+       "note": "The paper that framed frontier-model regulation: standards, licensing, deployment oversight."
+      },
+      {
+       "id": 102,
+       "note": "First experiment letting the public write a model's constitution."
+      },
+      {
+       "id": 739,
+       "note": "Science study: AI mediation helps divided groups agree more than human mediators."
+      }
+     ]
+    },
+    {
+     "name": "Current frontier (2025-26)",
+     "entries": [
+      {
+       "id": 73,
+       "note": "Maps millions of Claude conversations onto occupational tasks; how AI is actually used."
+      },
+      {
+       "id": 2718,
+       "note": "Largest study of consumer chatbot use: who uses ChatGPT and for what."
+      },
+      {
+       "id": 64,
+       "note": "Empirically catalogs the values Claude expresses across real conversations."
+      },
+      {
+       "id": 2667,
+       "note": "Benchmarks models on real economically valuable work, judged against human professionals."
+      },
+      {
+       "id": 24,
+       "note": "Early causal evidence of AI's actual labor-market effects, beyond exposure predictions."
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

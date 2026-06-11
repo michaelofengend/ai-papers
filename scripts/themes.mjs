@@ -38,6 +38,15 @@ export const THEMES = [
   ['Evaluation awareness', /evaluation awareness|eval.?aware|test.?aware|recogni[sz]e[^.]{0,40}(being )?(test|evaluat)|knows? (it is|they are) being (test|evaluat)/, ['"evaluation awareness" AND "models"']],
   ['Model organisms', /model organism/, ['"model organisms" AND "misalignment"']],
   ['Persona & character', /persona vector|character train|assistant persona|model persona/, ['"persona vectors"', '"character training" AND "language models"']],
+  // emerging themes mined from 2025-26 titles (June 2026)
+  ['Retrieval-augmented generation', /retrieval.augmented|retrieval augmentation|\brag\b/, ['"retrieval-augmented generation"']],
+  ['Multi-agent systems', /multi.agent|agent (framework|team|societ|swarm)|llm.based agents/, ['"multi-agent" AND "large language models"']],
+  ['Computer-use & web agents', /computer.use|web (agent|navigation)|gui agent|browser agent|\bos agents?\b/, ['"web agents"', '"GUI agents"', '"computer use" AND "agents"']],
+  ['Tool use & MCP', /model context protocol|\bmcp\b|function calling|tool (calling|use|learning)/, ['"model context protocol"', '"function calling" AND "language models"', '"tool use" AND "language models"']],
+  ['Reward models', /reward model/, ['"reward model" AND "language models"', '"reward modeling"']],
+  ['Inference efficiency', /kv.cache|speculative decod|inference (efficien|acceler)|efficient (inference|serving)/, ['"KV cache"', '"speculative decoding"', '"efficient inference" AND "language models"']],
+  ['World models & video gen', /world model|video (generation|diffusion)|interactive environment/, ['"world models" AND (learning OR agents)', '"video generation"']],
+  ['Spatial reasoning', /spatial reasoning|spatial (understanding|intelligence)/, ['"spatial reasoning" AND "models"']],
 ];
 
 /* umbrella queries that keep the broad topic curves honest */

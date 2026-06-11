@@ -67,10 +67,12 @@ function writeHash() {
 
 /* ---------------- data load ---------------- */
 async function load() {
-  const [res, themesRes, blRes] = await Promise.all([
-    fetch('data/papers.json'), fetch('data/themes.json'), fetch('data/field-baseline.json')]);
+  const res = await fetch('data/papers.json');
   const data = await res.json();
-  try { THEME_NAMES = (await themesRes.json()).names || []; } catch (e) { THEME_NAMES = []; }
+  state._v = encodeURIComponent(data.updated || '0'); // cache-bust satellites with the data version
+  const [themesRes, blRes] = await Promise.all([
+    fetch('data/themes.json?v=' + state._v), fetch('data/field-baseline.json?v=' + state._v)]);
+  try { const tj = await themesRes.json(); THEME_NAMES = tj.names || []; TOPIC_LIST = tj.topics || []; } catch (e) { THEME_NAMES = []; TOPIC_LIST = []; }
   try {
     const bl = await blRes.json();
     // smooth with a centered 4-quarter window: OpenAlex year-only dates pile
@@ -85,7 +87,7 @@ async function load() {
     ...p,
     id: p.id ?? i,
     date: p.date || '1970-01-01',
-    topics: p.topics || [],
+    topics: Array.isArray(p.x) ? p.x.map((i) => TOPIC_LIST[i]).filter(Boolean) : (p.topics || []),
     authors: p.authors || [],
     _ts: Date.parse(p.date || '1970-01-01') || 0,
     url: p.url || (p.arxiv_id ? 'https://arxiv.org/abs/' + p.arxiv_id : '#'),
@@ -240,6 +242,7 @@ function applyFilters(resetPage = true) {
   updateFacetCounts();
   writeHash();
   renderPage();
+  renderReadingGuide();
   if (state.view === 'analytics') renderAnalytics();
   if (state.view === 'timeline') renderTimeline();
 }
@@ -312,6 +315,52 @@ function gotoPage(p) {
   writeHash();
   renderPage();
   window.scrollTo({ top: 0 });
+}
+
+/* ---------------- reading guide ---------------- */
+async function loadReading() {
+  if (state.reading !== undefined) return state.reading;
+  try {
+    const res = await fetch('data/reading.json?v=' + (state._v || '0'));
+    state.reading = (await res.json()).topics || {};
+  } catch (e) { state.reading = {}; }
+  return state.reading;
+}
+
+async function renderReadingGuide() {
+  const el = $('#reading-guide');
+  // show only when exactly one topic is selected
+  if (state.topics.size !== 1) { el.hidden = true; el.innerHTML = ''; return; }
+  const topic = [...state.topics][0];
+  const reading = await loadReading();
+  if (state.topics.size !== 1 || [...state.topics][0] !== topic) return; // selection raced
+  const guide = reading[topic];
+  if (!guide || !guide.groups?.length) { el.hidden = true; el.innerHTML = ''; return; }
+
+  const byId = new Map(state.papers.map((p) => [p.id, p]));
+  const n = guide.groups.reduce((s, g) => s + g.entries.length, 0);
+  el.innerHTML = `
+    <details class="guide" open>
+      <summary><span class="guide-icon">📖</span> Essential reading — ${esc(topic)} <span class="guide-sub">${n} hand-picked papers, in learning order</span></summary>
+      <div class="guide-body">
+        ${guide.groups.map((g) => `
+          <div class="guide-group">
+            <h4>${esc(g.name)}</h4>
+            ${g.entries.map((e) => {
+              const p = byId.get(e.id);
+              if (!p) return '';
+              const org = ORG_META[p.org] || ORG_META.other;
+              return `<div class="guide-item" style="--org-color:var(--${p.org in ORG_META ? p.org : 'other'})">
+                <a class="guide-title" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+                <span class="guide-meta"><span class="org-badge">${org.label}</span> ${p.date.slice(0, 4)}${p.sv ? ' · <span class="sv-badge">survey</span>' : ''}${p.cited_by ? ' · ' + p.cited_by.toLocaleString() + ' cites' : ''}</span>
+                <p class="guide-note">${esc(e.note)}</p>
+              </div>`;
+            }).join('')}
+          </div>`).join('')}
+        <p class="guide-foot">Curated editorially — the canon as an expert would hand it to you, wherever it was written.</p>
+      </div>
+    </details>`;
+  el.hidden = false;
 }
 
 /* ---------------- card ---------------- */
@@ -515,6 +564,7 @@ function renderAnalytics() {
 
 /* ---------------- research interest curves ---------------- */
 let THEME_NAMES = [];
+let TOPIC_LIST = [];
 const THEME_PALETTE = ['#2563eb', '#c15f3c', '#0d8a6f', '#b58a2c', '#7c5cc4', '#2b8fa8', '#c2417a', '#5b8a3c', '#8a5a44', '#4a6fa5', '#a8642b', '#5e548e'];
 const THEME_DEFAULT = ['Reward hacking', 'Automated auditing', 'Mid-training', 'Subliminal learning', 'Emergent misalignment', 'Evaluation awareness'];
 
@@ -741,7 +791,7 @@ function renderThemes(papers) {
 async function loadTimeline() {
   if (state.timeline) return state.timeline;
   try {
-    const res = await fetch('data/timeline.json');
+    const res = await fetch('data/timeline.json?v=' + (state._v || '0'));
     const data = await res.json();
     const byId = new Map(state.papers.map((p) => [p.id, p]));
     state.timeline = (data.entries || []).map((e) => {
