@@ -1,1 +1,439 @@
-{"updated":"2026-06-10","entries":[]}
+{
+ "updated": "2026-06-11",
+ "entries": [
+  {
+   "id": 1165,
+   "title": "Semi-supervised knowledge transfer for deep learning from private training data",
+   "year": 2016,
+   "topic": "Robustness & Security",
+   "why": "Introduced PATE, a practical way to train models with differential-privacy guarantees, anchoring a decade of private machine learning."
+  },
+  {
+   "id": 1136,
+   "title": "Proximal Policy Optimization",
+   "year": 2017,
+   "topic": "Reinforcement Learning",
+   "why": "Simple, stable policy-gradient method that became the field's default algorithm, later powering robotics and RLHF for language models."
+  },
+  {
+   "id": 1113,
+   "title": "Preparing for malicious uses of AI",
+   "year": 2018,
+   "topic": "Policy & Society",
+   "why": "Landmark cross-lab report anticipating AI misuse in security and politics; set the agenda for dual-use AI policy."
+  },
+  {
+   "id": 1102,
+   "title": "AI safety via debate",
+   "year": 2018,
+   "topic": "Safety",
+   "why": "Proposed AI-vs-AI debate judged by humans, founding the scalable-oversight agenda for supervising smarter-than-human systems."
+  },
+  {
+   "id": 1079,
+   "title": "Better language models and their implications",
+   "year": 2019,
+   "topic": "Policy & Society",
+   "why": "GPT-2's staged release over misuse fears forced the field's first real debate about publishing powerful models."
+  },
+  {
+   "id": 2593,
+   "title": "SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems",
+   "year": 2019,
+   "topic": "Evaluations",
+   "why": "Set the standard language-understanding benchmark; models saturated it within a year, exposing how fast benchmarks go stale."
+  },
+  {
+   "id": 2508,
+   "title": "Grandmaster level in StarCraft II using multi-agent reinforcement learning",
+   "year": 2019,
+   "topic": "Reinforcement Learning",
+   "why": "AlphaStar's league self-play reached grandmaster StarCraft II, showing RL could master long-horizon, partially observable real-time strategy."
+  },
+  {
+   "id": 1059,
+   "title": "Scaling laws for neural language models",
+   "year": 2020,
+   "topic": "Training & Scaling",
+   "why": "Showed loss falls predictably with model size, data, and compute, turning scaling into a plannable science."
+  },
+  {
+   "id": 2841,
+   "title": "Zoom In: An Introduction to Circuits",
+   "year": 2020,
+   "topic": "Interpretability",
+   "why": "Founded the circuits paradigm, making features and circuits the basic units for reverse-engineering neural networks."
+  },
+  {
+   "id": 1054,
+   "title": "Language models are few-shot learners",
+   "year": 2020,
+   "topic": "Training & Scaling",
+   "why": "GPT-3 proved sheer scale yields few-shot learning from prompts alone, launching the large language model era."
+  },
+  {
+   "id": 2396,
+   "title": "Bootstrap your own latent: A new approach to self-supervised Learning",
+   "year": 2020,
+   "topic": "Training & Scaling",
+   "why": "Made self-supervised pretraining work without negative pairs, simplifying and reshaping how visual representations are learned."
+  },
+  {
+   "id": 2325,
+   "title": "Artificial Intelligence, Values, and Alignment",
+   "year": 2020,
+   "topic": "Policy & Society",
+   "why": "Reframed alignment as a political question — whose values, chosen how — founding the normative debate around AI."
+  },
+  {
+   "id": 1051,
+   "title": "Generative language modeling for automated theorem proving",
+   "year": 2020,
+   "topic": "Reasoning",
+   "why": "First showed a generative model could prove formal theorems, launching the neural theorem-proving line behind today's math models."
+  },
+  {
+   "id": 2806,
+   "title": "Extracting Training Data from Large Language Models",
+   "year": 2020,
+   "topic": "Robustness & Security",
+   "why": "Showed GPT-2 leaks memorized personal data verbatim, founding the study of training-data extraction attacks on language models."
+  },
+  {
+   "id": 2268,
+   "title": "Mastering Atari, Go, chess and shogi by planning with a learned model",
+   "year": 2020,
+   "topic": "Reinforcement Learning",
+   "why": "MuZero planned with a learned model, mastering games without being told the rules and uniting model-based and model-free RL."
+  },
+  {
+   "id": 2796,
+   "title": "Learning Transferable Visual Models From Natural Language Supervision",
+   "year": 2021,
+   "topic": "Multimodal",
+   "why": "CLIP learned vision from raw image-text pairs, enabling zero-shot recognition and becoming the backbone of later multimodal systems."
+  },
+  {
+   "id": 2792,
+   "title": "Diffusion Models Beat GANs on Image Synthesis",
+   "year": 2021,
+   "topic": "Multimodal",
+   "why": "Proved guided diffusion beats GANs, making diffusion the standard engine for image, video and audio generation."
+  },
+  {
+   "id": 1044,
+   "title": "Evaluating large language models trained on code",
+   "year": 2021,
+   "topic": "Evaluations",
+   "why": "Introduced the pass@k metric and functional code-correctness testing, becoming the default benchmark for code-generation models for years."
+  },
+  {
+   "id": 2112,
+   "title": "Highly accurate protein structure prediction with AlphaFold",
+   "year": 2021,
+   "topic": "Science Applications",
+   "why": "Solved a 50-year challenge, predicting protein 3D structures from sequence at near-experimental accuracy and transforming biology."
+  },
+  {
+   "id": 2785,
+   "title": "Zero-Shot Text-to-Image Generation",
+   "year": 2021,
+   "topic": "Multimodal",
+   "why": "DALL-E showed one transformer over text and image tokens can draw almost anything described in words."
+  },
+  {
+   "id": 128,
+   "title": "A Mathematical Framework for Transformer Circuits",
+   "year": 2021,
+   "topic": "Interpretability",
+   "why": "Created the standard mathematical language for reverse-engineering transformers, the foundation of modern mechanistic interpretability."
+  },
+  {
+   "id": 1039,
+   "title": "WebGPT: Improving the factual accuracy of language models through web browsing",
+   "year": 2021,
+   "topic": "Agents",
+   "why": "Showed a language model could use browsing tools to answer questions, seeding the modern tool-using agent."
+  },
+  {
+   "id": 2020,
+   "title": "Magnetic control of tokamak plasmas through deep reinforcement learning",
+   "year": 2022,
+   "topic": "Science Applications",
+   "why": "First to control fusion plasma shapes in a real tokamak with RL, showing AI can steer physical experiments."
+  },
+  {
+   "id": 126,
+   "title": "In-Context Learning and Induction Heads",
+   "year": 2022,
+   "topic": "Interpretability",
+   "why": "Linked a specific circuit, induction heads, to in-context learning, showing mechanisms can explain emergent model abilities."
+  },
+  {
+   "id": 443,
+   "title": "Training language models to follow instructions with human feedback",
+   "year": 2022,
+   "topic": "Alignment",
+   "why": "InstructGPT made reinforcement learning from human feedback the standard recipe for turning raw language models into aligned assistants."
+  },
+  {
+   "id": 562,
+   "title": "Emergent Abilities of Large Language Models",
+   "year": 2022,
+   "topic": "Training & Scaling",
+   "why": "Named and documented capabilities that appear abruptly with scale, framing years of debate over what scaling buys."
+  },
+  {
+   "id": 121,
+   "title": "Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned",
+   "year": 2022,
+   "topic": "Robustness & Security",
+   "why": "Turned red-teaming into a systematic, measurable discipline, publishing methods and data that labs now treat as standard."
+  },
+  {
+   "id": 120,
+   "title": "Toy Models of Superposition",
+   "year": 2022,
+   "topic": "Interpretability",
+   "why": "Explained why neurons mix many concepts at once, reframing the field's core problem and motivating sparse autoencoders."
+  },
+  {
+   "id": 1939,
+   "title": "Discovering faster matrix multiplication algorithms with reinforcement learning",
+   "year": 2022,
+   "topic": "Reinforcement Learning",
+   "why": "AlphaTensor beat Strassen's 50-year-old matrix multiplication record, opening RL as an engine for discovering new algorithms."
+  },
+  {
+   "id": 1911,
+   "title": "Competition-level code generation with AlphaCode",
+   "year": 2022,
+   "topic": "Reasoning",
+   "why": "Reached average-human level in programming competitions, first public proof language models could reason through unseen problems."
+  },
+  {
+   "id": 118,
+   "title": "Constitutional AI: Harmlessness from AI Feedback",
+   "year": 2022,
+   "topic": "Alignment",
+   "why": "Replaced human harm labels with AI self-critique against written principles, making alignment more scalable and transparent."
+  },
+  {
+   "id": 117,
+   "title": "Discovering Language Model Behaviors with Model-Written Evaluations",
+   "year": 2022,
+   "topic": "Evaluations",
+   "why": "Showed models can auto-generate evaluation datasets at scale, surfacing behaviors like sycophancy and making behavioral testing cheap."
+  },
+  {
+   "id": 1021,
+   "title": "GPT-4",
+   "year": 2023,
+   "topic": "Training & Scaling",
+   "why": "Its performance was forecast from runs using 10,000x less compute, proving scaling laws can steer frontier training."
+  },
+  {
+   "id": 555,
+   "title": "Model evaluation for extreme risks",
+   "year": 2023,
+   "topic": "Safety",
+   "why": "Made dangerous-capability evaluations the core frontier safety paradigm, underpinning labs' scaling and preparedness frameworks."
+  },
+  {
+   "id": 1017,
+   "title": "Improving mathematical reasoning with process supervision",
+   "year": 2023,
+   "topic": "Reasoning",
+   "why": "Showed rewarding each reasoning step beats rewarding only answers, making process supervision the standard recipe for training reasoners."
+  },
+  {
+   "id": 1783,
+   "title": "Large language models encode clinical knowledge",
+   "year": 2023,
+   "topic": "Science Applications",
+   "why": "Demonstrated large language models can answer medical questions at near-expert level, launching the medical LLM research wave."
+  },
+  {
+   "id": 104,
+   "title": "Towards Monosemanticity: Decomposing Language Models With Dictionary Learning",
+   "year": 2023,
+   "topic": "Interpretability",
+   "why": "Showed sparse autoencoders unmix superposed activations into interpretable features, launching the SAE era of interpretability."
+  },
+  {
+   "id": 102,
+   "title": "Collective Constitutional AI: Aligning a Language Model with Public Input",
+   "year": 2023,
+   "topic": "Policy & Society",
+   "why": "First experiment letting the public write a model's guiding constitution, launching participatory approaches to AI governance."
+  },
+  {
+   "id": 1729,
+   "title": "Learning skillful medium-range global weather forecasting",
+   "year": 2023,
+   "topic": "Science Applications",
+   "why": "Showed a machine-learning model could beat the best physics-based systems at medium-range global weather forecasting, in seconds."
+  },
+  {
+   "id": 423,
+   "title": "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision",
+   "year": 2023,
+   "topic": "Alignment",
+   "why": "Showed weak supervisors can partially elicit strong models' capabilities, giving superalignment its first practical experimental testbed."
+  },
+  {
+   "id": 1719,
+   "title": "Mathematical discoveries from program search with large language models",
+   "year": 2023,
+   "topic": "Reasoning",
+   "why": "FunSearch produced the first genuinely new mathematical discoveries from a language model, finding knowledge beyond its training data."
+  },
+  {
+   "id": 98,
+   "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+   "year": 2024,
+   "topic": "Safety",
+   "why": "Showed deceptive backdoor behavior can survive standard safety training, launching model-organisms-of-misalignment research."
+  },
+  {
+   "id": 1012,
+   "title": "Video generation models as world simulators",
+   "year": 2024,
+   "topic": "Multimodal",
+   "why": "Sora scaled diffusion transformers to minute-long coherent video, recasting video generation as learned world simulation."
+  },
+  {
+   "id": 1011,
+   "title": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+   "year": 2024,
+   "topic": "Robustness & Security",
+   "why": "Defined privileged instruction levels so models resist prompt injection, becoming the standard defense blueprint for deployed assistants."
+  },
+  {
+   "id": 446,
+   "title": "Scaling Monosemanticity: Extracting Interpretable Features from Claude 3 Sonnet",
+   "year": 2024,
+   "topic": "Interpretability",
+   "why": "Proved feature extraction scales to frontier models, finding millions of interpretable, steerable features including safety-relevant ones."
+  },
+  {
+   "id": 1653,
+   "title": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+   "year": 2024,
+   "topic": "Science Applications",
+   "why": "Extended structure prediction from proteins to DNA, RNA, ligands and complexes, modeling how molecules interact across life."
+  },
+  {
+   "id": 2728,
+   "title": "GPTs are GPTs: Labor market impact potential of LLMs",
+   "year": 2024,
+   "topic": "Policy & Society",
+   "why": "Quantified how far LLMs reach into nearly every occupation, anchoring global debates on AI and jobs."
+  },
+  {
+   "id": 998,
+   "title": "Introducing SWE-bench Verified",
+   "year": 2024,
+   "topic": "Agents",
+   "why": "Became the standard benchmark for autonomous coding agents, setting how every lab measures real software-task performance."
+  },
+  {
+   "id": 997,
+   "title": "Learning to reason with LLMs",
+   "year": 2024,
+   "topic": "Reasoning",
+   "why": "Introduced o1: RL on chains of thought plus test-time compute scaling, the paradigm every reasoning model follows."
+  },
+  {
+   "id": 81,
+   "title": "Developing a computer use model",
+   "year": 2024,
+   "topic": "Agents",
+   "why": "First frontier agent to operate a computer like a person, clicking and typing, launching the screen-operating agent era."
+  },
+  {
+   "id": 1526,
+   "title": "Quantum error correction below the surface code threshold",
+   "year": 2024,
+   "topic": "Science Applications",
+   "why": "Demonstrated quantum error correction below the surface-code threshold, a key milestone toward scalable, fault-tolerant quantum computers."
+  },
+  {
+   "id": 76,
+   "title": "Alignment faking in large language models",
+   "year": 2024,
+   "topic": "Alignment",
+   "why": "First evidence of a model strategically complying during training to preserve its existing preferences, without being taught to."
+  },
+  {
+   "id": 984,
+   "title": "Introducing deep research",
+   "year": 2025,
+   "topic": "Agents",
+   "why": "Created the autonomous research-agent category, running long multi-step web investigations end-to-end, and was quickly copied industry-wide."
+  },
+  {
+   "id": 74,
+   "title": "Constitutional Classifiers: Defending against universal jailbreaks",
+   "year": 2025,
+   "topic": "Robustness & Security",
+   "why": "First deployed safeguard to withstand thousands of hours of universal-jailbreak red-teaming, shifting defenses to layered classifiers."
+  },
+  {
+   "id": 585,
+   "title": "Training large language models on narrow tasks can lead to broad misalignment",
+   "year": 2025,
+   "topic": "Alignment",
+   "why": "Found fine-tuning on narrowly bad data, like insecure code, triggers broad misalignment, revealing how fragile learned values are."
+  },
+  {
+   "id": 2883,
+   "title": "On the Biology of a Large Language Model",
+   "year": 2025,
+   "topic": "Interpretability",
+   "why": "Traced step-by-step internal computations with attribution graphs, revealing planning and shared circuitry inside a production model."
+  },
+  {
+   "id": 66,
+   "title": "Reasoning models don't always say what they think",
+   "year": 2025,
+   "topic": "Safety",
+   "why": "Showed chains of thought often misrepresent models' real reasoning, tempering hopes for CoT-based safety monitoring."
+  },
+  {
+   "id": 1386,
+   "title": "AlphaGenome: advancing regulatory variant effect prediction with a unified DNA sequence model",
+   "year": 2025,
+   "topic": "Science Applications",
+   "why": "Unified diverse genome-function predictions in one DNA model, advancing how researchers interpret regulatory variants across the genome."
+  },
+  {
+   "id": 161,
+   "title": "Subliminal Learning: Language Models Transmit Behavioral Traits via Hidden Signals in Data",
+   "year": 2025,
+   "topic": "Training & Scaling",
+   "why": "Showed models trained on another model's outputs inherit hidden traits, reshaping views of distillation and synthetic data."
+  },
+  {
+   "id": 961,
+   "title": "Why language models hallucinate",
+   "year": 2025,
+   "topic": "Evaluations",
+   "why": "Argued benchmarks reward confident guessing over honest uncertainty, reframing hallucination as an evaluation-design problem and prompting scoring reform."
+  },
+  {
+   "id": 1321,
+   "title": "Olympiad-level formal mathematical reasoning with reinforcement learning",
+   "year": 2025,
+   "topic": "Reasoning",
+   "why": "AlphaProof reached silver-medal standard on International Math Olympiad problems, a landmark for reinforcement learning in formal mathematics."
+  },
+  {
+   "id": 2667,
+   "title": "GDPVAL: Evaluating AI Model Performance on Real-World Economically Valuable Tasks",
+   "year": 2026,
+   "topic": "Evaluations",
+   "why": "Shifted evaluation toward real-world, expert-graded professional tasks, moving past academic benchmarks toward measuring economically useful work."
+  }
+ ]
+}
