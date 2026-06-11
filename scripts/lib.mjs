@@ -46,6 +46,22 @@ export function normTitle(t) {
   return String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 }
 
+/* Classify record as research 'paper' vs company 'post' (announcement, product
+   news, feature launch). Returns null when ambiguous (needs LLM review). */
+const POST_TITLE = /^(introducing|announcing|launching|expanding|bringing|previewing|update on|updates? to|our (approach|response|commitment|partnership)|partnering|a (letter|message) |now (available|rolling)|available (now|today)|new (ways|features|tools|funding|capabilities|models? available)|sam & jony|openai and|anthropic and|claude (can )?now|gpt-\S+ (is here|in|now)|strengthening|memory and new|improvements to|start using|how (we|to) use)/i;
+const POST_HINT = /\b(api|pricing|enterprise|customers?|partnership|acquisition|hiring|joins?|board|policy update|terms of|brand|rebrand|store|app store|mobile app|desktop app|general availability|ga today|waitlist|rolling out|sign ?up)\b/i;
+const PAPER_VENUE = /arxiv|neurips|icml|iclr|aaai|acl\b|emnlp|cvpr|nature|science\b|pnas|jmlr|tmlr|transactions|journal|proceedings|workshop|circuits thread|alignment science/i;
+
+export function classifyKind(p) {
+  if (p.arxiv_id) return 'paper';
+  const src = Array.isArray(p.sources) ? p.sources.join(',') : (p.source || '');
+  if (/openalex|arxiv|deepmind-site|transformer-circuits|alignment-blog/.test(src)) return 'paper';
+  if (p.venue && PAPER_VENUE.test(p.venue)) return 'paper';
+  if (POST_TITLE.test(p.title)) return 'post';
+  if (POST_HINT.test(p.title)) return 'post';
+  return null; // ambiguous lab-site record
+}
+
 /* OpenAlex affiliation pollution: AI-generated podcast records (Open MIND /
    myweirdprompts), Zenodo/Figshare software releases, GitHub release entries. */
 const SPAM_URL = /zenodo\.org|figshare|myweirdprompts\.com|osf\.io/i;

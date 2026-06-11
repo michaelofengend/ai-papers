@@ -17,4 +17,6 @@ const out = join(ROOT, 'docs', 'data');
 if (!existsSync(out)) mkdirSync(out, { recursive: true });
 const json = JSON.stringify({ updated: db.updated, count: slim.length, papers: slim });
 writeFileSync(join(out, 'papers.json'), json);
+const tl = join(ROOT, 'data', 'timeline.json');
+if (existsSync(tl)) writeFileSync(join(out, 'timeline.json'), readFileSync(tl, 'utf8'));
 console.log(`docs/data/papers.json: ${slim.length} papers, ${(json.length / 1e6).toFixed(2)} MB`);

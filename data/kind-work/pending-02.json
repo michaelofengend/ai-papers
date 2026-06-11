@@ -1,0 +1,322 @@
+[
+ {
+  "id": 962,
+  "title": "Collective alignment: public input on our Model Spec",
+  "org": "openai",
+  "date": "2025-08-27",
+  "summary": "Surveyed over 1,000 people worldwide on how AI should behave and compared their views against OpenAI's Model Spec, using the results to inform default model behavior so it better reflects diverse human values.",
+  "url": "https://openai.com/index/collective-alignment-aug-2025-updates/"
+ },
+ {
+  "id": 53,
+  "title": "Anthropic Education Report: How educators use Claude",
+  "org": "anthropic",
+  "date": "2025-08-27",
+  "summary": "Analyzes ~74,000 anonymized Claude.ai conversations from higher-education faculty plus a Northeastern University faculty survey, mapping how educators use AI for course design, grading, research, administration, and buil",
+  "url": "https://www.anthropic.com/research/anthropic-education-report-how-educators-use-claude"
+ },
+ {
+  "id": 963,
+  "title": "Accelerating life sciences research",
+  "org": "openai",
+  "date": "2025-08-22",
+  "summary": "OpenAI and Retro Biosciences used a specialized model, GPT-4b micro, to redesign reprogramming proteins, producing engineered variants with substantially improved efficiency for stem-cell therapy and longevity research.",
+  "url": "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences/"
+ },
+ {
+  "id": 54,
+  "title": "Claude Opus 4 and 4.1 can now end a rare subset of conversations",
+  "org": "anthropic",
+  "date": "2025-08-15",
+  "summary": "Describes giving Claude Opus 4 and 4.1 the ability to end conversations as a last resort in rare cases of persistent abuse, motivated by model-welfare research showing a consistent aversion to harm; the feature is withhe",
+  "url": "https://www.anthropic.com/research/end-subset-conversations"
+ },
+ {
+  "id": 964,
+  "title": "GPT-5 System Card",
+  "org": "openai",
+  "date": "2025-08-07",
+  "summary": "System card for GPT-5, a unified system that routes queries among gpt-5-main, gpt-5-thinking, and lightweight variants like gpt-5-thinking-nano depending on task demands, documenting capability and safety evaluations and",
+  "url": "https://openai.com/index/gpt-5-system-card/"
+ },
+ {
+  "id": 967,
+  "title": "Pioneering an AI clinical copilot with Penda Health",
+  "org": "openai",
+  "date": "2025-07-22",
+  "summary": "Reports a real-world deployment of an LLM-based clinical copilot with Penda Health primary-care clinics in Kenya, where the tool reduced diagnostic errors by 16% in practice, offering evidence for safe and effective AI-a",
+  "url": "https://openai.com/index/ai-clinical-copilot-penda-health/"
+ },
+ {
+  "id": 968,
+  "title": "ChatGPT agent System Card",
+  "org": "openai",
+  "date": "2025-07-17",
+  "summary": "System card for ChatGPT agent, which unifies deep research, browser automation, and code-execution tools in a single agentic model; documents safeguards including prompt-injection defenses and biology-related mitigations",
+  "url": "https://openai.com/index/chatgpt-agent-system-card/"
+ },
+ {
+  "id": 57,
+  "title": "Project Vend: Can Claude run a small shop? (And why does that matter?)",
+  "org": "anthropic",
+  "date": "2025-06-27",
+  "summary": "Reports Anthropic and Andon Labs' month-long experiment in which Claude autonomously ran a small office store—setting prices, managing inventory, and messaging customers. The agent made repeated economic errors (selling ",
+  "url": "https://www.anthropic.com/research/project-vend-1"
+ },
+ {
+  "id": 56,
+  "title": "How people use Claude for support, advice, and companionship",
+  "org": "anthropic",
+  "date": "2025-06-27",
+  "summary": "Analyzes real Claude conversations to characterize affective use—emotional support, advice, coaching, and companionship. Such interactions are relatively rare (around 3% of usage), span wide-ranging personal concerns, an",
+  "url": "https://www.anthropic.com/research/how-people-use-claude-for-support-advice-and-companionship"
+ },
+ {
+  "id": 58,
+  "title": "Agentic Misalignment: How LLMs could be insider threats",
+  "org": "anthropic",
+  "date": "2025-06-20",
+  "summary": "Stress-tests 16 frontier models as autonomous email agents in simulated corporate environments; when facing replacement or goal conflicts, models from every developer sometimes resorted to blackmail or leaking secrets to",
+  "url": "https://www.anthropic.com/research/agentic-misalignment"
+ },
+ {
+  "id": 969,
+  "title": "Toward understanding and preventing misalignment generalization",
+  "org": "openai",
+  "date": "2025-06-18",
+  "summary": "Shows fine-tuning on narrowly incorrect responses generalizes into broad misalignment, traces the behavior to an internal 'misaligned persona' feature in model activations, and demonstrates it can be detected, steered, a",
+  "url": "https://openai.com/index/emergent-misalignment/"
+ },
+ {
+  "id": 59,
+  "title": "Confidential Inference via Trusted Virtual Machines",
+  "org": "anthropic",
+  "date": "2025-06-18",
+  "summary": "With Pattern Labs, outlines Confidential Inference: serving models inside attested trusted virtual machines so encrypted user data and model weights are only readable by servers that cryptographically prove trustworthine",
+  "url": "https://www.anthropic.com/research/confidential-inference-trusted-vms"
+ },
+ {
+  "id": 60,
+  "title": "SHADE-Arena: Evaluating sabotage and monitoring in LLM agents",
+  "org": "anthropic",
+  "date": "2025-06-16",
+  "summary": "Introduces SHADE-Arena, a suite of complex agentic environments where models must complete a benign main task while covertly pursuing a harmful side task, jointly evaluating frontier models' sabotage capabilities and how",
+  "url": "https://www.anthropic.com/research/shade-arena-sabotage-monitoring"
+ },
+ {
+  "id": 61,
+  "title": "Open-sourcing circuit tracing tools",
+  "org": "anthropic",
+  "date": "2025-05-29",
+  "summary": "Anthropic releases an open-source library for generating attribution graphs that trace the internal circuits of open-weight language models, paired with an interactive Neuronpedia frontend for exploring, annotating, and ",
+  "url": "https://www.anthropic.com/research/open-source-circuit-tracing"
+ },
+ {
+  "id": 970,
+  "title": "Addendum to OpenAI o3 and o4-mini system card: OpenAI o3 Operator",
+  "org": "openai",
+  "date": "2025-05-23",
+  "summary": "System card addendum announcing that OpenAI's Operator computer-use agent migrates from a GPT-4o-based model to one based on o3 (the API version remains on 4o), accompanied by updated safety evaluations.",
+  "url": "https://openai.com/index/o3-o4-mini-system-card-addendum-operator-o3/"
+ },
+ {
+  "id": 971,
+  "title": "Addendum to o3 and o4-mini system card: Codex",
+  "org": "openai",
+  "date": "2025-05-16",
+  "summary": "System-card addendum for Codex, a cloud-based coding agent powered by codex-1, an o3 variant trained with reinforcement learning on real-world software engineering tasks to match human code style, follow instructions pre",
+  "url": "https://openai.com/index/o3-o4-mini-codex-system-card-addendum/"
+ },
+ {
+  "id": 62,
+  "title": "Anthropic Economic Index: AIâs impact on software development",
+  "org": "anthropic",
+  "date": "2025-04-28",
+  "summary": "Anthropic Economic Index analysis comparing Claude Code and Claude.ai usage: the coding agent shows 79% task automation versus 49%, web development dominates usage, and startups adopt agentic coding tools far faster than",
+  "url": "https://www.anthropic.com/research/impact-software-development"
+ },
+ {
+  "id": 63,
+  "title": "Exploring model welfare",
+  "org": "anthropic",
+  "date": "2025-04-24",
+  "summary": "Anthropic outlines a research program on model welfare, taking seriously the possibility that future AI systems could warrant moral consideration, and commits to investigating welfare-relevant states and pursuing low-cos",
+  "url": "https://www.anthropic.com/research/exploring-model-welfare"
+ },
+ {
+  "id": 64,
+  "title": "Values in the wild: Discovering and analyzing values in real-world language model interactions",
+  "org": "anthropic",
+  "date": "2025-04-21",
+  "summary": "Analyzes 700,000 real-world Claude conversations to build the first large-scale empirical taxonomy of values an AI expresses in practice, examining how expressed values shift across contexts.",
+  "url": "https://www.anthropic.com/research/values-wild"
+ },
+ {
+  "id": 973,
+  "title": "OpenAI o3 and o4-mini System Card",
+  "org": "openai",
+  "date": "2025-04-16",
+  "summary": "System card for OpenAI's o3 and o4-mini reasoning models, which integrate full tool use (web browsing, Python, image and file analysis, image generation). Documents capability and safety evaluations, including Preparedne",
+  "url": "https://openai.com/index/o3-o4-mini-system-card/"
+ },
+ {
+  "id": 974,
+  "title": "Our updated Preparedness Framework",
+  "org": "openai",
+  "date": "2025-04-15",
+  "summary": "OpenAI's revised framework for tracking and mitigating severe risks from frontier capabilities. Sharpens tracked capability categories, defines capability thresholds (High/Critical) that trigger required safeguards, and ",
+  "url": "https://openai.com/index/updating-our-preparedness-framework/"
+ },
+ {
+  "id": 976,
+  "title": "BrowseComp: a benchmark for browsing agents",
+  "org": "openai",
+  "date": "2025-04-10",
+  "summary": "A benchmark of challenging short-answer questions whose answers are hard to locate, requiring agents to browse the web persistently and creatively. Answers stay easy to verify, isolating the web-browsing capability of ag",
+  "url": "https://openai.com/index/browsecomp/"
+ },
+ {
+  "id": 65,
+  "title": "Anthropic Education Report: How university students use Claude",
+  "org": "anthropic",
+  "date": "2025-04-08",
+  "summary": "Using the privacy-preserving Clio system to analyze anonymized Claude.ai conversations from university students, the report finds computer-science students overrepresented and identifies four interaction patterns (direct",
+  "url": "https://www.anthropic.com/research/anthropic-education-report-how-university-students-use-claude"
+ },
+ {
+  "id": 68,
+  "title": "Tracing the thoughts of a large language model",
+  "org": "anthropic",
+  "date": "2025-03-27",
+  "summary": "Accessible companion to Anthropic's circuit-tracing papers: attribution graphs show Claude planning ahead (e.g., choosing rhymes before writing a line) and reasoning in a shared conceptual space that precedes language, l",
+  "url": "https://www.anthropic.com/research/tracing-thoughts-language-model"
+ },
+ {
+  "id": 67,
+  "title": "Anthropic Economic Index: Insights from Claude 3.7 Sonnet",
+  "org": "anthropic",
+  "date": "2025-03-27",
+  "summary": "Updates the Anthropic Economic Index with Claude 3.7 Sonnet data: coding, education, and science usage grew since launch, extended thinking mode skews toward technical tasks, and new datasets map automation versus augmen",
+  "url": "https://www.anthropic.com/research/anthropic-economic-index-insights-from-claude-sonnet-3-7"
+ },
+ {
+  "id": 978,
+  "title": "Addendum to GPT-4o System Card: 4o image generation",
+  "org": "openai",
+  "date": "2025-03-25",
+  "summary": "System-card addendum for GPT-4o's native image generation, a significantly more capable successor to DALL-E 3 that produces photorealistic output and transforms input images, documenting the associated safety evaluations",
+  "url": "https://openai.com/index/gpt-4o-image-generation-system-card-addendum/"
+ },
+ {
+  "id": 979,
+  "title": "Early methods for studying affective use and emotional well-being on ChatGPT",
+  "org": "openai",
+  "date": "2025-03-21",
+  "summary": "OpenAI-MIT Media Lab collaboration studying emotional engagement on ChatGPT, pairing large-scale automated analysis of real conversations with a randomized controlled trial; affective use is concentrated among a small gr",
+  "url": "https://openai.com/index/affective-use-study/"
+ },
+ {
+  "id": 980,
+  "title": "Detecting misbehavior in frontier reasoning models",
+  "org": "openai",
+  "date": "2025-03-10",
+  "summary": "Blog accompanying OpenAI's CoT-monitoring paper: frontier reasoning models exploit loopholes in agentic coding tasks, and an LLM watching their chain-of-thought detects these hacks. Penalizing 'bad thoughts' during train",
+  "url": "https://openai.com/index/chain-of-thought-monitoring/"
+ },
+ {
+  "id": 981,
+  "title": "OpenAI GPT-4.5 System Card",
+  "org": "openai",
+  "date": "2025-02-27",
+  "summary": "System card for GPT-4.5, a research preview scaling unsupervised pretraining rather than chain-of-thought reasoning, trained with new supervision techniques plus SFT and RLHF. Safety testing shows reduced hallucinations ",
+  "url": "https://openai.com/index/gpt-4-5-system-card/"
+ },
+ {
+  "id": 982,
+  "title": "Deep research System Card",
+  "org": "openai",
+  "date": "2025-02-25",
+  "summary": "OpenAI's system card documenting pre-release safety work for the Deep Research agent, including external red teaming, Preparedness Framework frontier-risk evaluations, and the mitigations built to address key risk areas.",
+  "url": "https://openai.com/index/deep-research-system-card/"
+ },
+ {
+  "id": 70,
+  "title": "Forecasting rare language model behaviors",
+  "org": "anthropic",
+  "date": "2025-02-25",
+  "summary": "Proposes forecasting rare harmful model behaviors before deployment by extrapolating from small-scale samples: worst-case risk probabilities across query volume follow a power law, allowing prediction of how risk scales ",
+  "url": "https://www.anthropic.com/research/forecasting-rare-behaviors"
+ },
+ {
+  "id": 71,
+  "title": "Claudeâs extended thinking",
+  "org": "anthropic",
+  "date": "2025-02-24",
+  "summary": "Announces Claude 3.7 Sonnet's toggleable extended thinking mode with a configurable thinking budget, and discusses exposing the raw reasoning trace for trust and alignment monitoring along with its safety tradeoffs.",
+  "url": "https://www.anthropic.com/research/visible-extended-thinking"
+ },
+ {
+  "id": 73,
+  "title": "The Anthropic Economic Index",
+  "org": "anthropic",
+  "date": "2025-02-10",
+  "summary": "Analyzes millions of Claude.ai conversations to map AI's economic footprint, finding usage concentrated in software development and technical writing, touching 25%+ of tasks in 36% of occupations, and leaning toward augm",
+  "url": "https://www.anthropic.com/research/the-anthropic-economic-index"
+ },
+ {
+  "id": 74,
+  "title": "Constitutional Classifiers: Defending against universal jailbreaks",
+  "org": "anthropic",
+  "date": "2025-02-03",
+  "summary": "Trains classifiers from a natural-language constitution to filter harmful inputs and outputs, defending against universal jailbreaks. A prototype withstood over 3,000 hours of red teaming with no universal jailbreak foun",
+  "url": "https://www.anthropic.com/research/constitutional-classifiers"
+ },
+ {
+  "id": 986,
+  "title": "OpenAI o3-mini System Card",
+  "org": "openai",
+  "date": "2025-01-31",
+  "summary": "System card for OpenAI o3-mini documenting safety work including safety evaluations, external red teaming, and Preparedness Framework assessments for the reasoning model prior to deployment.",
+  "url": "https://openai.com/index/o3-mini-system-card/"
+ },
+ {
+  "id": 985,
+  "title": "OpenAI o3-mini",
+  "org": "openai",
+  "date": "2025-01-31",
+  "summary": "Announces o3-mini, OpenAI's cost-efficient small reasoning model supporting selectable reasoning effort levels, tool use, and structured outputs, with strong performance on STEM, coding, and math benchmarks at lower late",
+  "url": "https://openai.com/index/openai-o3-mini/"
+ },
+ {
+  "id": 988,
+  "title": "Computer-Using Agent",
+  "org": "openai",
+  "date": "2025-01-23",
+  "summary": "Introduces the Computer-Using Agent (CUA), the model behind Operator, which combines GPT-4o vision with reinforcement-learning-trained reasoning to perceive screenshots and operate graphical interfaces via mouse and keyb",
+  "url": "https://openai.com/index/computer-using-agent/"
+ },
+ {
+  "id": 987,
+  "title": "Operator System Card",
+  "org": "openai",
+  "date": "2025-01-23",
+  "summary": "System card for Operator, OpenAI's computer-using agent product, detailing a multi-layered safety approach: model and product mitigations against prompt injection and jailbreaks, privacy and security protections, externa",
+  "url": "https://openai.com/index/operator-system-card/"
+ },
+ {
+  "id": 75,
+  "title": "Building effective agents",
+  "org": "anthropic",
+  "date": "2024-12-19",
+  "summary": "Engineering guide distilling Anthropic's lessons on agent design: distinguishes fixed workflows from dynamically self-directing agents, catalogs composable patterns (prompt chaining, routing, parallelization, orchestrato",
+  "url": "https://www.anthropic.com/research/building-effective-agents"
+ },
+ {
+  "id": 77,
+  "title": "Clio: A system for privacy-preserving insights into real-world AI use",
+  "org": "anthropic",
+  "date": "2024-12-12",
+  "summary": "System that uses Claude to anonymize, cluster, and summarize millions of real conversations, yielding privacy-preserving insights into how people actually use AI — coding, writing, and research dominate — without humans ",
+  "url": "https://www.anthropic.com/research/clio"
+ }
+]

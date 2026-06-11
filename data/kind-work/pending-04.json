@@ -1,0 +1,322 @@
+[
+ {
+  "id": 1020,
+  "title": "GPTs are GPTs: An early look at the labor market impact potential of large language models",
+  "org": "openai",
+  "date": "2023-03-17",
+  "summary": "Estimates LLM exposure across the US labor market with a task-based rubric, finding around 80% of workers have at least 10% of tasks affected and roughly 19% may see over half their tasks exposed; higher-wage occupations",
+  "url": "https://openai.com/index/gpts-are-gpts/"
+ },
+ {
+  "id": 1021,
+  "title": "GPT-4",
+  "org": "openai",
+  "date": "2023-03-14",
+  "summary": "GPT-4, a large multimodal model accepting image and text inputs and emitting text, reaches human-level performance on many professional and academic benchmarks while remaining less capable than humans in many real-world ",
+  "url": "https://openai.com/index/gpt-4-research/"
+ },
+ {
+  "id": 1022,
+  "title": "Forecasting potential misuses of language models for disinformation campaigns and how to reduce risk",
+  "org": "openai",
+  "date": "2023-01-11",
+  "summary": "Reports a collaboration with Georgetown's CSET and the Stanford Internet Observatory analyzing how language models could augment disinformation campaigns, outlining threats to the information environment and a framework ",
+  "url": "https://openai.com/index/forecasting-misuse/"
+ },
+ {
+  "id": 1023,
+  "title": "Point-E: A system for generating 3D point clouds from complex prompts",
+  "org": "openai",
+  "date": "2022-12-16",
+  "summary": "Point-E generates 3D point clouds from text by first sampling a synthetic image with a text-to-image diffusion model, then lifting it to a point cloud via a second diffusion model, trading some fidelity for speed, produc",
+  "url": "https://openai.com/index/point-e/"
+ },
+ {
+  "id": 119,
+  "title": "Measuring Progress on Scalable Oversight for Large Language Models",
+  "org": "anthropic",
+  "date": "2022-11-04",
+  "summary": "Proposes sandwiching experiments for scalable oversight, where non-experts supervise a more capable model with experts as ground truth. Non-expert humans conversing with an unreliable dialogue assistant outperform both t",
+  "url": "https://www.anthropic.com/research/measuring-progress-on-scalable-oversight-for-large-language-models"
+ },
+ {
+  "id": 122,
+  "title": "Language Models (Mostly) Know What They Know",
+  "org": "anthropic",
+  "date": "2022-07-11",
+  "summary": "Studies calibration and self-knowledge in large language models: models are well-calibrated on multiple-choice and true/false questions, can self-evaluate the correctness of their own sampled answers via P(True), and can",
+  "url": "https://www.anthropic.com/research/language-models-mostly-know-what-they-know"
+ },
+ {
+  "id": 1027,
+  "title": "DALL·E 2 pre-training mitigations",
+  "org": "openai",
+  "date": "2022-06-28",
+  "summary": "Describes pre-training mitigations for DALL-E 2, including filtering explicit and harmful content from the training data and addressing issues like image regurgitation, to reduce the risk of the image-generation model pr",
+  "url": "https://openai.com/index/dall-e-2-pre-training-mitigations/"
+ },
+ {
+  "id": 1028,
+  "title": "Learning to play Minecraft with Video PreTraining",
+  "org": "openai",
+  "date": "2022-06-23",
+  "summary": "Video PreTraining (VPT) trains a Minecraft agent from a massive unlabeled human-gameplay video corpus, using a small labeled set to learn an inverse-dynamics model for pseudo-labeling actions. After RL fine-tuning the mo",
+  "url": "https://openai.com/index/vpt/"
+ },
+ {
+  "id": 1030,
+  "title": "AI-written critiques help humans notice flaws",
+  "org": "openai",
+  "date": "2022-06-13",
+  "summary": "Trains models to write natural-language critiques exposing flaws in summaries; human evaluators catch substantially more flaws when shown them. Larger models self-critique better, with scale aiding critique-writing more ",
+  "url": "https://openai.com/index/critiques/"
+ },
+ {
+  "id": 1031,
+  "title": "Techniques for training large neural networks",
+  "org": "openai",
+  "date": "2022-06-09",
+  "summary": "Explainer surveying how large neural networks are trained across GPU clusters: data, pipeline, and tensor (model) parallelism, mixture-of-experts, and memory-saving methods, along with the tradeoffs of each parallelism s",
+  "url": "https://openai.com/index/techniques-for-training-large-neural-networks/"
+ },
+ {
+  "id": 1032,
+  "title": "Teaching models to express their uncertainty in words",
+  "org": "openai",
+  "date": "2022-05-28",
+  "summary": "Fine-tunes GPT-3 on a math task (CalibratedMath) to express its uncertainty in words, 'verbalized probability', rather than via logits. Shows the model produces reasonably calibrated confidence that generalizes under dis",
+  "url": "https://openai.com/index/teaching-models-to-express-their-uncertainty-in-words/"
+ },
+ {
+  "id": 1034,
+  "title": "Hierarchical text-conditional image generation with CLIP latents",
+  "org": "openai",
+  "date": "2022-04-13",
+  "summary": "DALL-E 2: a two-stage text-to-image model that first uses a prior to produce a CLIP image embedding from a caption, then a diffusion decoder to generate the image. Improves diversity and enables image variations and lang",
+  "url": "https://openai.com/index/hierarchical-text-conditional-image-generation-with-clip-latents/"
+ },
+ {
+  "id": 1033,
+  "title": "Measuring Goodhart’s law",
+  "org": "openai",
+  "date": "2022-04-13",
+  "summary": "Examines reward-model overoptimization: optimizing a learned proxy objective eventually diverges from the true goal, an instance of Goodhart's law. Measures how this gap behaves, informing how to optimize objectives that",
+  "url": "https://openai.com/index/measuring-goodharts-law/"
+ },
+ {
+  "id": 1035,
+  "title": "A research agenda for assessing the economic impacts of code generation models",
+  "org": "openai",
+  "date": "2022-03-03",
+  "summary": "Outlines a research agenda for measuring the economic impacts of code-generation models such as Codex, identifying key open questions and methodological approaches for studying effects on developer productivity, labor, a",
+  "url": "https://openai.com/index/economic-impacts-research/"
+ },
+ {
+  "id": 1036,
+  "title": "Solving (some) formal math olympiad problems",
+  "org": "openai",
+  "date": "2022-02-02",
+  "summary": "A neural theorem prover for Lean trained to solve formal mathematics, including high-school olympiad problems from AMC12 and AIME and two problems adapted from the IMO, advancing automated formal reasoning.",
+  "url": "https://openai.com/index/formal-math/"
+ },
+ {
+  "id": 1037,
+  "title": "Aligning language models to follow instructions",
+  "org": "openai",
+  "date": "2022-01-27",
+  "summary": "OpenAI's InstructGPT: fine-tunes GPT-3 with reinforcement learning from human feedback to better follow user intent. Human raters prefer the 1.3B InstructGPT over the 175B GPT-3, with gains in truthfulness and reductions",
+  "url": "https://openai.com/index/instruction-following/"
+ },
+ {
+  "id": 1038,
+  "title": "Text and code embeddings by contrastive pre-training",
+  "org": "openai",
+  "date": "2022-01-24",
+  "summary": "OpenAI's contrastive pre-training (cpt-text, cpt-code) trains embedding models on large unlabeled text and code using a contrastive objective over paired/neighboring data, producing strong embeddings for linear-probe cla",
+  "url": "https://openai.com/index/text-and-code-embeddings-by-contrastive-pre-training/"
+ },
+ {
+  "id": 1039,
+  "title": "WebGPT: Improving the factual accuracy of language models through web browsing",
+  "org": "openai",
+  "date": "2021-12-16",
+  "summary": "Fine-tunes GPT-3 to answer long-form questions using a text-based web browser, learning to search, navigate, and cite sources via imitation of human demonstrations plus a reward model trained on human comparisons, improv",
+  "url": "https://openai.com/index/webgpt/"
+ },
+ {
+  "id": 129,
+  "title": "A General Language Assistant as a Laboratory for Alignment",
+  "org": "anthropic",
+  "date": "2021-12-01",
+  "summary": "Early Anthropic study treating a general language assistant as a testbed for alignment, evaluating helpfulness, honesty, and harmlessness via prompting, context distillation, and preference modeling, and finding preferen",
+  "url": "https://www.anthropic.com/research/a-general-language-assistant-as-a-laboratory-for-alignment"
+ },
+ {
+  "id": 1040,
+  "title": "Solving math word problems",
+  "org": "openai",
+  "date": "2021-10-29",
+  "summary": "Trains verifiers that rank candidate solutions to grade-school math word problems (the GSM8K dataset), roughly doubling accuracy over a fine-tuned GPT-3 baseline and approaching the performance of 9-12-year-old children.",
+  "url": "https://openai.com/index/solving-math-word-problems/"
+ },
+ {
+  "id": 1041,
+  "title": "Summarizing books with human feedback",
+  "org": "openai",
+  "date": "2021-09-23",
+  "summary": "OpenAI's report on summarizing entire books by combining RLHF with recursive task decomposition: a model summarizes sections, then recursively summarizes the summaries, letting labelers supervise without reading the book",
+  "url": "https://openai.com/index/summarizing-books/"
+ },
+ {
+  "id": 1042,
+  "title": "TruthfulQA: Measuring how models mimic human falsehoods",
+  "org": "openai",
+  "date": "2021-09-08",
+  "summary": "TruthfulQA is a benchmark of 817 questions across 38 categories crafted to elicit imitative falsehoods that models absorb from human text. The best model was truthful on 58% of questions versus 94% for humans, and larger",
+  "url": "https://openai.com/index/truthfulqa/"
+ },
+ {
+  "id": 1045,
+  "title": "Improving language model behavior by training on a curated dataset",
+  "org": "openai",
+  "date": "2021-06-10",
+  "summary": "OpenAI's announcement of the PALMS method: fine-tuning GPT-3 on a small, curated values-targeted dataset measurably improves adherence to specified behavioral values and reduces toxic output without degrading capabilitie",
+  "url": "https://openai.com/index/improving-language-model-behavior/"
+ },
+ {
+  "id": 1047,
+  "title": "Understanding the capabilities, limitations, and societal impact of large language models",
+  "org": "openai",
+  "date": "2021-02-04",
+  "summary": "Summarizes a 2020 OpenAI-Stanford workshop on GPT-3-scale language models, surveying their technical capabilities and limitations alongside societal impacts including misuse potential, bias, and economic effects, and out",
+  "url": "https://openai.com/index/understanding-the-capabilities-limitations-and-societal-impact-of-large-language-models/"
+ },
+ {
+  "id": 1048,
+  "title": "Scaling Kubernetes to 7,500 nodes",
+  "org": "openai",
+  "date": "2021-01-25",
+  "summary": "Engineering account of scaling Kubernetes clusters to 7,500 nodes to support large-model workloads such as GPT-3, CLIP, and DALL-E as well as rapid small-scale research, describing the infrastructure bottlenecks encounte",
+  "url": "https://openai.com/index/scaling-kubernetes-to-7500-nodes/"
+ },
+ {
+  "id": 1050,
+  "title": "CLIP: Connecting text and images",
+  "org": "openai",
+  "date": "2021-01-05",
+  "summary": "Introduces CLIP, which learns visual concepts from natural-language supervision by contrastively matching images to their captions at scale, enabling zero-shot transfer to arbitrary image-classification tasks specified o",
+  "url": "https://openai.com/index/clip/"
+ },
+ {
+  "id": 1049,
+  "title": "DALL·E: Creating images from text",
+  "org": "openai",
+  "date": "2021-01-05",
+  "summary": "Introduces DALL-E, an autoregressive transformer that generates images from text captions across a wide range of concepts, including novel object combinations and varied styles, demonstrating controllable text-to-image s",
+  "url": "https://openai.com/index/dall-e/"
+ },
+ {
+  "id": 1052,
+  "title": "Learning to summarize with human feedback",
+  "org": "openai",
+  "date": "2020-09-04",
+  "summary": "Applies RLHF to abstractive summarization: human preference comparisons train a reward model, then a policy is optimized against it, producing summaries humans prefer over reference summaries and far larger supervised mo",
+  "url": "https://openai.com/index/learning-to-summarize-with-human-feedback/"
+ },
+ {
+  "id": 1053,
+  "title": "Image GPT",
+  "org": "openai",
+  "date": "2020-06-17",
+  "summary": "Shows that a GPT-style transformer trained autoregressively on pixel sequences, without 2D priors, generates coherent image completions and learns strong image representations. Linear probes on its features rival top con",
+  "url": "https://openai.com/index/image-gpt/"
+ },
+ {
+  "id": 1054,
+  "title": "Language models are few-shot learners",
+  "org": "openai",
+  "date": "2020-05-28",
+  "summary": "Introduces GPT-3, a 175-billion-parameter autoregressive language model, showing that scaling alone yields strong zero-, one-, and few-shot performance across many NLP tasks via in-context learning—no gradient updates—of",
+  "url": "https://openai.com/index/language-models-are-few-shot-learners/"
+ },
+ {
+  "id": 1055,
+  "title": "AI and efficiency",
+  "org": "openai",
+  "date": "2020-05-05",
+  "summary": "Analysis finding the compute needed to train a neural net to AlexNet-level ImageNet performance dropped 44x between 2012 and 2019, halving every 16 months versus an 11x gain from Moore's law, so algorithmic progress has ",
+  "url": "https://openai.com/index/ai-and-efficiency/"
+ },
+ {
+  "id": 1056,
+  "title": "Jukebox",
+  "org": "openai",
+  "date": "2020-04-30",
+  "summary": "Announces Jukebox, a neural net generating music, including rudimentary singing, as raw audio in a variety of genres and artist styles, with released model weights, code, and a tool to explore generated samples.",
+  "url": "https://openai.com/index/jukebox/"
+ },
+ {
+  "id": 1057,
+  "title": "Improving verifiability in AI development",
+  "org": "openai",
+  "date": "2020-04-16",
+  "summary": "Summarizes a 58-author, 30-organization report proposing ten mechanisms for verifiable claims about AI systems: tools developers can use to evidence that systems are safe, secure, fair, or privacy-preserving, and that po",
+  "url": "https://openai.com/index/improving-verifiability/"
+ },
+ {
+  "id": 1058,
+  "title": "OpenAI Microscope",
+  "org": "openai",
+  "date": "2020-04-14",
+  "summary": "Releases visualizations of every significant layer and neuron in eight vision 'model organisms' commonly studied in interpretability, enabling researchers to analyze the features that form inside these networks and share",
+  "url": "https://openai.com/index/microscope/"
+ },
+ {
+  "id": 1061,
+  "title": "Deep double descent",
+  "org": "openai",
+  "date": "2019-12-05",
+  "summary": "Shows the double-descent phenomenon across CNNs, ResNets and transformers: test error improves, worsens near the interpolation threshold, then improves again as model size, data, or training time grows, and can be modula",
+  "url": "https://openai.com/index/deep-double-descent/"
+ },
+ {
+  "id": 1062,
+  "title": "Procgen Benchmark",
+  "org": "openai",
+  "date": "2019-12-03",
+  "summary": "Releases Procgen Benchmark, 16 procedurally generated game environments that measure how quickly RL agents acquire generalizable skills and expose the train/test generalization gap caused by overfitting to specific level",
+  "url": "https://openai.com/index/procgen-benchmark/"
+ },
+ {
+  "id": 1063,
+  "title": "Benchmarking safe exploration in deep reinforcement learning",
+  "org": "openai",
+  "date": "2019-11-21",
+  "summary": "Introduces Safety Gym, a suite of environments and metrics for constrained reinforcement learning where agents must respect safety constraints while maximizing reward, and benchmarks constrained-RL baselines for safe exp",
+  "url": "https://openai.com/index/benchmarking-safe-exploration-in-deep-reinforcement-learning/"
+ },
+ {
+  "id": 1064,
+  "title": "GPT-2: 1.5B release",
+  "org": "openai",
+  "date": "2019-11-05",
+  "summary": "Releases the full 1.5B-parameter GPT-2 with code and weights as the final stage of a staged release, alongside output-detection tooling, framed as a case study in responsible publication of powerful generative language m",
+  "url": "https://openai.com/index/gpt-2-1-5b-release/"
+ },
+ {
+  "id": 1065,
+  "title": "Solving Rubik’s Cube with a robot hand",
+  "org": "openai",
+  "date": "2019-10-15",
+  "summary": "Trains vision and policy networks entirely in simulation with reinforcement learning and Automatic Domain Randomization to control a five-fingered robot hand solving a Rubik's Cube, transferring to hardware and staying r",
+  "url": "https://openai.com/index/solving-rubiks-cube/"
+ },
+ {
+  "id": 1066,
+  "title": "Fine-tuning GPT-2 from human preferences",
+  "org": "openai",
+  "date": "2019-09-19",
+  "summary": "Fine-tunes the 774M GPT-2 with reinforcement learning from human preference labels on summarization and stylistic continuation, matching labeler preferences; notably labelers rewarded copied sentences, surfacing reward-s",
+  "url": "https://openai.com/index/fine-tuning-gpt-2/"
+ }
+]

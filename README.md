@@ -1,6 +1,6 @@
-# Frontier AI Research Tracker
+# AI Papers
 
-A static webapp that tracks research publications in the **interpretability / AI safety / capabilities / reasoning** space from **Anthropic, OpenAI, and Google DeepMind** — with mini summaries, topic + time filtering, and analytics.
+A static webapp (formerly "Frontier AI Research Tracker") that tracks research publications in the **interpretability / AI safety / capabilities / reasoning** space from **Anthropic, OpenAI, and Google DeepMind** — with mini summaries, topic + time filtering, and analytics.
 
 ## Data sources
 
@@ -16,7 +16,9 @@ A static webapp that tracks research publications in the **interpretability / AI
 - `docs/` — the webapp (vanilla JS + Chart.js, no build step). Served by GitHub Pages.
 - `data/papers.json` — the merged, deduplicated dataset.
 - `scripts/merge.mjs` — merges `data/raw/*.json` collector output into `data/papers.json`.
-- `scripts/update.mjs` — daily refresher (runs in GitHub Actions **every day at 13:00 UTC / 06:00 PT**, see `.github/workflows/update.yml`; also triggerable manually from the Actions tab): pulls recent works from OpenAlex/arXiv/transformer-circuits/alignment-blog, dedupes, appends new papers with rule-based topics and abstract-derived summaries, and refreshes citation counts.
+- `scripts/update.mjs` — daily refresher (runs in GitHub Actions **every day at 13:00 UTC / 06:00 PT**, see `.github/workflows/update.yml`; also triggerable manually from the Actions tab): scrapes/queries all six sources — OpenAlex (per-lab affiliation), arXiv topic sweeps, transformer-circuits.pub, the alignment blog, openai.com (sitemaps + RSS), and deepmind.google (sitemap + JSON-LD detail pages) — dedupes, spam-filters, classifies paper-vs-post, and appends new papers with rule-based topics and abstract-derived summaries.
+- `data/timeline.json` — editorially curated breakthrough-papers timeline (LLM-curated, not citation-ranked), shown in the Timeline tab.
+- Records carry `kind: "paper" | "post"` — company announcements are excluded from Analytics and from the default Papers view (toggle under the Type facet).
 
 ## Local development
 

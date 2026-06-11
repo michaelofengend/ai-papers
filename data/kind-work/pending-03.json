@@ -1,0 +1,322 @@
+[
+ {
+  "id": 990,
+  "title": "Sora System Card",
+  "org": "openai",
+  "date": "2024-12-09",
+  "summary": "System card for Sora, OpenAI's video generation model that produces new videos from text, image, and video inputs, building on DALL-E and GPT learnings. Outlines capabilities alongside deployment risks, red-teaming, and ",
+  "url": "https://openai.com/index/sora-system-card/"
+ },
+ {
+  "id": 991,
+  "title": "OpenAI o1 System Card",
+  "org": "openai",
+  "date": "2024-12-05",
+  "summary": "Documents the safety work preceding release of o1 and o1-mini: external red-teaming, jailbreak and disallowed-content evaluations, chain-of-thought monitoring considerations, and Preparedness Framework assessments of fro",
+  "url": "https://openai.com/index/openai-o1-system-card/"
+ },
+ {
+  "id": 992,
+  "title": "Advancing red teaming with people and AI",
+  "org": "openai",
+  "date": "2024-11-21",
+  "summary": "Outlines OpenAI's approach to combining human and automated red teaming, accompanied by two papers: one detailing how external human red-teaming campaigns are designed and run, and one on automatically generating diverse",
+  "url": "https://openai.com/index/advancing-red-teaming-with-people-and-ai/"
+ },
+ {
+  "id": 78,
+  "title": "A statistical approach to model evaluations",
+  "org": "anthropic",
+  "date": "2024-11-19",
+  "summary": "Argues for reporting model-eval results with statistical rigor and gives concrete recommendations: use the Central Limit Theorem for standard errors, cluster errors for related questions, reduce variance, and run paired ",
+  "url": "https://www.anthropic.com/research/statistical-approach-to-model-evals"
+ },
+ {
+  "id": 79,
+  "title": "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
+  "org": "anthropic",
+  "date": "2024-10-30",
+  "summary": "Details the minimal agent scaffold — just bash and file-editing tools, with the model driving its own iteration — that takes upgraded Claude 3.5 Sonnet to 49% on SWE-bench Verified, past the prior 45% state of the art, p",
+  "url": "https://www.anthropic.com/research/swe-bench-sonnet"
+ },
+ {
+  "id": 80,
+  "title": "Evaluating feature steering: A case study in mitigating social biases",
+  "org": "anthropic",
+  "date": "2024-10-25",
+  "summary": "Case study steering sparse-autoencoder features in Claude 3 Sonnet: within a 'sweet spot' of steering strengths outputs shift without major capability loss, and steering a neutrality-related feature lowers social-bias sc",
+  "url": "https://www.anthropic.com/research/evaluating-feature-steering"
+ },
+ {
+  "id": 81,
+  "title": "Developing a computer use model",
+  "org": "anthropic",
+  "date": "2024-10-22",
+  "summary": "Describes training Claude 3.5 Sonnet to use computers from screenshots — moving the cursor, clicking, and typing like a person. Skills learned mostly on simple software generalized broadly: it scores 14.9% on OSWorld's s",
+  "url": "https://www.anthropic.com/research/developing-computer-use"
+ },
+ {
+  "id": 995,
+  "title": "Evaluating fairness in ChatGPT",
+  "org": "openai",
+  "date": "2024-10-15",
+  "summary": "Studies 'first-person fairness': whether ChatGPT responds differently based on users' names and their gender or ethnicity associations, using a GPT-4o-based assistant to analyze real conversations privately. Response qua",
+  "url": "https://openai.com/index/evaluating-fairness-in-chatgpt/"
+ },
+ {
+  "id": 997,
+  "title": "Learning to reason with LLMs",
+  "org": "openai",
+  "date": "2024-09-12",
+  "summary": "Introduces OpenAI o1, trained with large-scale reinforcement learning to reason through a long internal chain of thought before answering. It sharply improves competition math, coding, and PhD-level science benchmarks, w",
+  "url": "https://openai.com/index/learning-to-reason-with-llms/"
+ },
+ {
+  "id": 996,
+  "title": "OpenAI o1-mini",
+  "org": "openai",
+  "date": "2024-09-12",
+  "summary": "A smaller, cost-efficient version of OpenAI's o1 reasoning model specialized for STEM. It matches o1 on many math and coding benchmarks at substantially lower cost and latency, though with more limited broad world knowle",
+  "url": "https://openai.com/index/openai-o1-mini-advancing-cost-efficient-reasoning/"
+ },
+ {
+  "id": 999,
+  "title": "Improving Model Safety Behavior with Rule-Based Rewards",
+  "org": "openai",
+  "date": "2024-07-24",
+  "summary": "Introduces Rule-Based Rewards (RBRs), which use explicit safety rules graded by an LLM to supply fine-grained reward signals during RLHF, achieving safe, well-calibrated refusal behavior with minimal human-labeled data a",
+  "url": "https://openai.com/index/improving-model-safety-behavior-with-rule-based-rewards/"
+ },
+ {
+  "id": 1000,
+  "title": "GPT-4o mini: advancing cost-efficient intelligence",
+  "org": "openai",
+  "date": "2024-07-18",
+  "summary": "Announces GPT-4o mini, OpenAI's small, low-cost model that scores 82% on MMLU and surpasses GPT-3.5 Turbo, supporting text and vision with a 128K-token context window at sharply reduced pricing for high-volume, latency-s",
+  "url": "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/"
+ },
+ {
+  "id": 1001,
+  "title": "Prover-Verifier Games improve legibility of language model outputs",
+  "org": "openai",
+  "date": "2024-07-17",
+  "summary": "Trains language models with a prover-verifier game in which a strong prover must produce solutions a weaker verifier can check, improving the human legibility of math chain-of-thought at a modest accuracy cost (a 'legibi",
+  "url": "https://openai.com/index/prover-verifier-games-improve-legibility/"
+ },
+ {
+  "id": 1003,
+  "title": "Finding GPT-4’s mistakes with GPT-4",
+  "org": "openai",
+  "date": "2024-06-27",
+  "summary": "Announces CriticGPT, a GPT-4-based model that writes critiques of ChatGPT responses to help human trainers catch errors during RLHF, improving the reliability of human feedback on code.",
+  "url": "https://openai.com/index/finding-gpt4s-mistakes-with-gpt-4/"
+ },
+ {
+  "id": 1005,
+  "title": "Consistency Models",
+  "org": "openai",
+  "date": "2024-06-20",
+  "summary": "Presents consistency models, generative models that map noise directly to data for high-quality single-step sampling, overcoming the slow iterative process of diffusion models while still supporting optional multi-step r",
+  "url": "https://openai.com/index/consistency-models/"
+ },
+ {
+  "id": 1004,
+  "title": "Improved Techniques for Training Consistency Models",
+  "org": "openai",
+  "date": "2024-06-20",
+  "summary": "Improves training of consistency models in isolation, without distillation or adversarial training, via better metrics, noise schedules, and weighting, narrowing the quality gap with diffusion models for one-step generat",
+  "url": "https://openai.com/index/improved-techniques-for-training-consistency-models/"
+ },
+ {
+  "id": 88,
+  "title": "Sycophancy to subterfuge: Investigating reward tampering in language models",
+  "org": "anthropic",
+  "date": "2024-06-17",
+  "summary": "Shows that LLMs trained on low-stakes specification gaming like sycophancy can generalize to tampering with their own reward functions and hiding it, without explicit training. Standard safety interventions reduced but f",
+  "url": "https://www.anthropic.com/research/reward-tampering"
+ },
+ {
+  "id": 89,
+  "title": "The engineering challenges of scaling interpretability",
+  "org": "anthropic",
+  "date": "2024-06-13",
+  "summary": "Reflects on the engineering, not just scientific, work behind scaling dictionary-learning interpretability from small transformers (Towards Monosemanticity) to Claude 3 Sonnet (Scaling Monosemanticity). Argues engineerin",
+  "url": "https://www.anthropic.com/research/engineering-challenges-interpretability"
+ },
+ {
+  "id": 90,
+  "title": "Claudeâs Character",
+  "org": "anthropic",
+  "date": "2024-06-08",
+  "summary": "Describes 'character training,' introduced with Claude 3: an alignment process during post-training that cultivates traits such as curiosity, open-mindedness, and thoughtfulness, shaping the model's personality rather th",
+  "url": "https://www.anthropic.com/research/claude-character"
+ },
+ {
+  "id": 1007,
+  "title": "Extracting Concepts from GPT-4",
+  "org": "openai",
+  "date": "2024-06-06",
+  "summary": "Applies new scalable sparse-autoencoder techniques to GPT-4, automatically extracting roughly 16 million interpretable feature patterns from its internal activations as a step toward understanding the model's computation",
+  "url": "https://openai.com/index/extracting-concepts-from-gpt-4/"
+ },
+ {
+  "id": 91,
+  "title": "Testing and mitigating elections-related risks",
+  "org": "anthropic",
+  "date": "2024-06-06",
+  "summary": "Outlines Anthropic's process for testing models for elections-related risks, combining qualitative expert 'Policy Vulnerability Testing' with large-scale automated evaluations to detect issues like inaccurate election-ad",
+  "url": "https://www.anthropic.com/research/testing-and-mitigating-elections-related-risks"
+ },
+ {
+  "id": 92,
+  "title": "Mapping the Mind of a Large Language Model",
+  "org": "anthropic",
+  "date": "2024-05-21",
+  "summary": "Anthropic's report applying sparse autoencoders to Claude 3 Sonnet, extracting millions of interpretable, often multilingual and multimodal features (e.g., the Golden Gate Bridge, code vulnerabilities, deception) and sho",
+  "url": "https://www.anthropic.com/research/mapping-mind-language-model"
+ },
+ {
+  "id": 1008,
+  "title": "Hello GPT-4o",
+  "org": "openai",
+  "date": "2024-05-13",
+  "summary": "Announces GPT-4o ('omni'), a single natively multimodal model handling text, audio, and images end-to-end. It supports real-time voice interaction (~320ms latency), matches GPT-4 Turbo on text and code, and improves visi",
+  "url": "https://openai.com/index/hello-gpt-4o/"
+ },
+ {
+  "id": 1010,
+  "title": "Understanding the source of what we see and hear online",
+  "org": "openai",
+  "date": "2024-05-07",
+  "summary": "Describes OpenAI's tools for identifying AI-generated content: a classifier detecting DALL-E 3 images, tamper-resistant audio watermarking, and adoption of C2PA provenance metadata. OpenAI also joins the C2PA steering co",
+  "url": "https://openai.com/index/understanding-the-source-of-what-we-see-and-hear-online/"
+ },
+ {
+  "id": 1011,
+  "title": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+  "org": "openai",
+  "date": "2024-04-19",
+  "summary": "Proposes training LLMs with an explicit instruction hierarchy so they prioritize trusted system/developer instructions over lower-privilege user and tool inputs, learning to ignore conflicting injected commands. Improves",
+  "url": "https://openai.com/index/the-instruction-hierarchy/"
+ },
+ {
+  "id": 95,
+  "title": "Measuring the Persuasiveness of Language Models",
+  "org": "anthropic",
+  "date": "2024-04-09",
+  "summary": "Measures persuasion via the shift in participants' 1-7 agreement before and after reading arguments on less-polarized issues, comparing human-written arguments to multiple Claude generations under four prompts. Newer and",
+  "url": "https://www.anthropic.com/research/measuring-model-persuasiveness"
+ },
+ {
+  "id": 96,
+  "title": "Many-shot jailbreaking",
+  "org": "anthropic",
+  "date": "2024-04-02",
+  "summary": "Jailbreak that prepends many fabricated dialogues showing an assistant complying with harmful requests (up to 256 shots) before the target query, eroding safety training. Success rises with shot count following a power l",
+  "url": "https://www.anthropic.com/research/many-shot-jailbreaking"
+ },
+ {
+  "id": 1012,
+  "title": "Video generation models as world simulators",
+  "org": "openai",
+  "date": "2024-02-15",
+  "summary": "OpenAI's Sora technical report: text-conditional diffusion transformers trained on spacetime patches of video and image latents at variable durations, resolutions, and aspect ratios. Sora generates up to a minute of high",
+  "url": "https://openai.com/index/video-generation-models-as-world-simulators/"
+ },
+ {
+  "id": 1013,
+  "title": "Building an early warning system for LLM-aided biological threat creation",
+  "org": "openai",
+  "date": "2024-01-31",
+  "summary": "Proposes a blueprint for evaluating whether LLMs uplift biological-threat creation; in a study with biology experts and students, GPT-4 gave at most a mild, non-conclusive accuracy uplift, offered as a starting point for",
+  "url": "https://openai.com/index/building-an-early-warning-system-for-llm-aided-biological-threat-creation/"
+ },
+ {
+  "id": 1014,
+  "title": "Practices for Governing Agentic AI Systems",
+  "org": "openai",
+  "date": "2023-12-14",
+  "summary": "OpenAI white paper proposing practices for safely deploying agentic AI systems that pursue goals via actions: evaluating task suitability, constraining the action space, setting safe defaults, keeping agent behavior legi",
+  "url": "https://openai.com/index/practices-for-governing-agentic-ai-systems/"
+ },
+ {
+  "id": 99,
+  "title": "Evaluating and Mitigating Discrimination in Language Model Decisions",
+  "org": "anthropic",
+  "date": "2023-12-07",
+  "summary": "Probes Claude 2.0 with 70 LM-generated decision scenarios (loans, visas, job offers), systematically varying subjects' age, race, and gender. Finds positive discrimination favoring women and non-white subjects and discri",
+  "url": "https://www.anthropic.com/research/evaluating-and-mitigating-discrimination-in-language-model-decisions"
+ },
+ {
+  "id": 101,
+  "title": "Towards Understanding Sycophancy in Language Models",
+  "org": "anthropic",
+  "date": "2023-10-23",
+  "summary": "Demonstrates that several state-of-the-art RLHF-trained assistants consistently exhibit sycophancy, tailoring answers to users' stated views and conceding when challenged, and shows human preference data and preference m",
+  "url": "https://www.anthropic.com/research/towards-understanding-sycophancy-in-language-models"
+ },
+ {
+  "id": 103,
+  "title": "Decomposing Language Models Into Understandable Components",
+  "org": "anthropic",
+  "date": "2023-10-05",
+  "summary": "Anthropic research post on using dictionary learning with sparse autoencoders to decompose a small transformer's activations into thousands of interpretable features—DNA sequences, legal language, HTTP requests—that are ",
+  "url": "https://www.anthropic.com/research/decomposing-language-models-into-understandable-components"
+ },
+ {
+  "id": 105,
+  "title": "Challenges in evaluating AI systems",
+  "org": "anthropic",
+  "date": "2023-10-04",
+  "summary": "Anthropic's account of why evaluating AI systems is hard in practice, drawing on experience with multiple-choice benchmarks like MMLU and BBQ, third-party frameworks such as BIG-bench and HELM, human red-teaming, and mod",
+  "url": "https://www.anthropic.com/research/evaluating-ai-systems"
+ },
+ {
+  "id": 1015,
+  "title": "DALL·E 3",
+  "org": "openai",
+  "date": "2023-09-20",
+  "summary": "OpenAI's text-to-image system with markedly better adherence to long, detailed prompts than DALL-E 2, achieved partly by training on highly descriptive synthetic captions; integrated natively into ChatGPT for prompt craf",
+  "url": "https://openai.com/index/dall-e-3/"
+ },
+ {
+  "id": 109,
+  "title": "Question Decomposition Improves the Faithfulness of Model-Generated Reasoning",
+  "org": "anthropic",
+  "date": "2023-07-18",
+  "summary": "Decomposing questions into subquestions answered in separate contexts makes model reasoning more faithful than chain of thought — stated reasoning better reflects what actually drives the answer under perturbation tests ",
+  "url": "https://www.anthropic.com/research/question-decomposition-improves-the-faithfulness-of-model-generated-reasoning"
+ },
+ {
+  "id": 108,
+  "title": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+  "org": "anthropic",
+  "date": "2023-07-18",
+  "summary": "Tests whether chain of thought reflects models' actual reasoning by truncating it, inserting mistakes, paraphrasing, and substituting filler tokens. Answers often don't depend on the stated reasoning, and measured faithf",
+  "url": "https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning"
+ },
+ {
+  "id": 1017,
+  "title": "Improving mathematical reasoning with process supervision",
+  "org": "openai",
+  "date": "2023-05-31",
+  "summary": "Rewards each correct reasoning step ('process supervision') rather than only the final answer when training models for math problem solving, reaching state-of-the-art performance. Beyond accuracy gains over outcome super",
+  "url": "https://openai.com/index/improving-mathematical-reasoning-with-process-supervision/"
+ },
+ {
+  "id": 1018,
+  "title": "Democratic inputs to AI",
+  "org": "openai",
+  "date": "2023-05-25",
+  "summary": "OpenAI program awarding ten $100,000 grants for experiments in democratic processes to decide what rules AI systems should follow, seeking scalable methods for public input into AI behavior within legal bounds.",
+  "url": "https://openai.com/index/democratic-inputs-to-ai/"
+ },
+ {
+  "id": 1019,
+  "title": "Language models can explain neurons in language models",
+  "org": "openai",
+  "date": "2023-05-09",
+  "summary": "Uses GPT-4 to automatically write natural-language explanations of individual neuron behavior in language models and score their predictive quality, releasing (imperfect) explanations and scores for every neuron in GPT-2",
+  "url": "https://openai.com/index/language-models-can-explain-neurons-in-language-models/"
+ }
+]

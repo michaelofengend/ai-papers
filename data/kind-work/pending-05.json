@@ -1,0 +1,322 @@
+[
+ {
+  "id": 1067,
+  "title": "Emergent tool use from multi-agent interaction",
+  "org": "openai",
+  "date": "2019-09-17",
+  "summary": "Blog companion describing how agents trained via self-play in a hide-and-seek environment progressively discover six strategies and counter-strategies, including unanticipated tool use, suggesting multi-agent co-adaptati",
+  "url": "https://openai.com/index/emergent-tool-use/"
+ },
+ {
+  "id": 1068,
+  "title": "Testing robustness against unforeseen adversaries",
+  "org": "openai",
+  "date": "2019-08-22",
+  "summary": "Introduces a methodology and the UAR (Unforeseen Attack Robustness) metric to assess whether image classifiers can defend against adversarial attacks not seen during training, highlighting the need to evaluate across a d",
+  "url": "https://openai.com/index/testing-robustness/"
+ },
+ {
+  "id": 1069,
+  "title": "GPT-2: 6-month follow-up",
+  "org": "openai",
+  "date": "2019-08-20",
+  "summary": "Announces the staged release of the 774M GPT-2 model and six months of studying misuse potential and publication norms, releasing an open-source model-sharing legal agreement and a technical report on coordinating releas",
+  "url": "https://openai.com/index/gpt-2-6-month-follow-up/"
+ },
+ {
+  "id": 1070,
+  "title": "Why responsible AI development needs cooperation on safety",
+  "org": "openai",
+  "date": "2019-07-10",
+  "summary": "Blog write-up of a policy paper identifying four near-term strategies—communicating risks and benefits, technical collaboration, increased transparency, and incentivizing standards—to foster long-term industry cooperatio",
+  "url": "https://openai.com/index/cooperation-on-safety/"
+ },
+ {
+  "id": 1071,
+  "title": "Transfer of adversarial robustness between perturbation types",
+  "org": "openai",
+  "date": "2019-05-03",
+  "summary": "Studies whether adversarial robustness transfers across perturbation types (e.g., L-infinity, L2, L1, elastic, JPEG). Finds robustness from training against one perturbation type generalizes poorly to others, sometimes w",
+  "url": "https://openai.com/index/transfer-of-adversarial-robustness-between-perturbation-types/"
+ },
+ {
+  "id": 1072,
+  "title": "MuseNet",
+  "org": "openai",
+  "date": "2019-04-25",
+  "summary": "MuseNet generates 4-minute, 10-instrument musical compositions spanning styles from country to Mozart, using the same GPT-2-style transformer trained to predict the next token over hundreds of thousands of MIDI files, di",
+  "url": "https://openai.com/index/musenet/"
+ },
+ {
+  "id": 1073,
+  "title": "Generative modeling with sparse transformers",
+  "org": "openai",
+  "date": "2019-04-23",
+  "summary": "Introduces the Sparse Transformer, which factorizes the attention mechanism to cut its compute and memory cost, enabling modeling of sequences roughly 30x longer and setting new records on autoregressive generation of te",
+  "url": "https://openai.com/index/sparse-transformer/"
+ },
+ {
+  "id": 1074,
+  "title": "OpenAI Five defeats Dota 2 world champions",
+  "org": "openai",
+  "date": "2019-04-15",
+  "summary": "OpenAI Five became the first AI to defeat reigning world champions (team OG) at Dota 2, winning two livestreamed games. It was trained via large-scale self-play deep RL on the complex, partially observable, long-horizon ",
+  "url": "https://openai.com/index/openai-five-defeats-dota-2-world-champions/"
+ },
+ {
+  "id": 1075,
+  "title": "Implicit generation and generalization methods for energy-based models",
+  "org": "openai",
+  "date": "2019-03-21",
+  "summary": "Reports progress on stable, scalable training of energy-based models, where generation iteratively refines samples using more compute. The approach yields sample quality competitive with GANs at low temperatures while re",
+  "url": "https://openai.com/index/energy-based-models/"
+ },
+ {
+  "id": 1077,
+  "title": "Neural MMO: A massively multiagent game environment",
+  "org": "openai",
+  "date": "2019-03-04",
+  "summary": "Releases a massively multiagent game environment for RL supporting large, variable numbers of agents in a persistent, open-ended world. Training many agents together yields better exploration, divergent niche formation, ",
+  "url": "https://openai.com/index/neural-mmo/"
+ },
+ {
+  "id": 1079,
+  "title": "Better language models and their implications",
+  "org": "openai",
+  "date": "2019-02-14",
+  "summary": "Announces GPT-2, a large transformer language model trained on WebText that generates coherent long-form text and performs reading comprehension, translation, QA, and summarization zero-shot, reaching SOTA on several lan",
+  "url": "https://openai.com/index/better-language-models/"
+ },
+ {
+  "id": 1081,
+  "title": "How AI training scales",
+  "org": "openai",
+  "date": "2018-12-14",
+  "summary": "Shows the gradient noise scale, a simple statistic, predicts the largest useful data-parallel batch size across supervised and RL tasks: complex tasks with noisier gradients tolerate bigger batches. Offers an empirical m",
+  "url": "https://openai.com/index/how-ai-training-scales/"
+ },
+ {
+  "id": 1082,
+  "title": "Quantifying generalization in reinforcement learning",
+  "org": "openai",
+  "date": "2018-12-06",
+  "summary": "Introduces CoinRun, a procedurally generated platformer that quantifies generalization in RL. Agents overfit to surprisingly large training sets, while deeper convolutional architectures and supervised-learning-style reg",
+  "url": "https://openai.com/index/quantifying-generalization-in-reinforcement-learning/"
+ },
+ {
+  "id": 1083,
+  "title": "Spinning Up in Deep RL",
+  "org": "openai",
+  "date": "2018-11-08",
+  "summary": "Educational resource for deep reinforcement learning: clear, minimal implementations of core algorithms (VPG, TRPO, PPO, DDPG, TD3, SAC) plus tutorials, exercises, and curated paper lists designed to take newcomers to pr",
+  "url": "https://openai.com/index/spinning-up-in-deep-rl/"
+ },
+ {
+  "id": 1084,
+  "title": "Learning concepts with energy functions",
+  "org": "openai",
+  "date": "2018-11-07",
+  "summary": "An energy-based model learns spatial concepts such as near, above, between, and furthest from about five demonstrations of 2D point sets, supporting both recognition and generation of concept instances, and transfers con",
+  "url": "https://openai.com/index/learning-concepts-with-energy-functions/"
+ },
+ {
+  "id": 1085,
+  "title": "Plan online, learn offline: Efficient learning and exploration via model-based control",
+  "org": "openai",
+  "date": "2018-11-05",
+  "summary": "POLO couples online trajectory optimization with an offline-learned value function ensemble: the value function extends the effective planning horizon, ensemble disagreement supplies exploration bonuses, and local planni",
+  "url": "https://openai.com/index/plan-online-learn-offline/"
+ },
+ {
+  "id": 1086,
+  "title": "Reinforcement learning with prediction-based rewards",
+  "org": "openai",
+  "date": "2018-10-31",
+  "summary": "Random Network Distillation rewards an RL agent with its error at predicting a fixed, randomly initialized network's features for each state, a cheap curiosity bonus for hard-exploration games. Combined with PPO, it exce",
+  "url": "https://openai.com/index/reinforcement-learning-with-prediction-based-rewards/"
+ },
+ {
+  "id": 1087,
+  "title": "Learning complex goals with iterated amplification",
+  "org": "openai",
+  "date": "2018-10-22",
+  "summary": "Proposes iterated amplification for AI safety: behaviors and goals beyond human scale are specified by decomposing tasks into simpler subtasks a human aided by AI assistants can handle, instead of labels or reward functi",
+  "url": "https://openai.com/index/learning-complex-goals-with-iterated-amplification/"
+ },
+ {
+  "id": 1089,
+  "title": "The International 2018: Results",
+  "org": "openai",
+  "date": "2018-08-23",
+  "summary": "OpenAI Five lost both exhibition games against professional Dota 2 teams at The International 2018, though it maintained a good chance of winning through the first 20-35 minutes of each match — a public stress test of la",
+  "url": "https://openai.com/index/the-international-2018-results/"
+ },
+ {
+  "id": 1091,
+  "title": "OpenAI Five Benchmark: Results",
+  "org": "openai",
+  "date": "2018-08-06",
+  "summary": "OpenAI Five won a best-of-three against a team of 99.95th-percentile Dota 2 players, four of them former professionals, before a live audience — a milestone for large-scale self-play reinforcement learning ahead of its a",
+  "url": "https://openai.com/index/openai-five-benchmark-results/"
+ },
+ {
+  "id": 1092,
+  "title": "Learning dexterity",
+  "org": "openai",
+  "date": "2018-07-30",
+  "summary": "Dactyl trains a five-fingered Shadow Hand to reorient a block using large-scale PPO entirely in simulation, with extensive domain randomization of physics and visuals enabling vision-based dexterous manipulation to trans",
+  "url": "https://openai.com/index/learning-dexterity/"
+ },
+ {
+  "id": 1093,
+  "title": "Variational option discovery algorithms",
+  "org": "openai",
+  "date": "2018-07-26",
+  "summary": "Casts unsupervised skill discovery as variational autoencoding between latent contexts and trajectories, unifying objectives like VIC and DIAYN. Proposes VALOR, which decodes contexts from whole trajectories and grows th",
+  "url": "https://openai.com/index/variational-option-discovery-algorithms/"
+ },
+ {
+  "id": 1094,
+  "title": "Glow: Better reversible generative models",
+  "org": "openai",
+  "date": "2018-07-09",
+  "summary": "Glow is a flow-based generative model built on invertible 1x1 convolutions and actnorm, simplifying reversible architectures. It generates realistic high-resolution faces, supports exact-likelihood training with efficien",
+  "url": "https://openai.com/index/glow/"
+ },
+ {
+  "id": 1095,
+  "title": "Learning Montezuma’s Revenge from a single demonstration",
+  "org": "openai",
+  "date": "2018-07-04",
+  "summary": "Reaches a then-record 74,500 points on Montezuma's Revenge from one human demonstration by restarting PPO episodes from progressively earlier states along the demo, sidestepping the game's notoriously hard exploration pr",
+  "url": "https://openai.com/index/learning-montezumas-revenge-from-a-single-demonstration/"
+ },
+ {
+  "id": 1096,
+  "title": "OpenAI Five",
+  "org": "openai",
+  "date": "2018-06-25",
+  "summary": "Five LSTM-based agents trained with massively scaled PPO self-play—about 180 years of Dota 2 per day—begin defeating amateur human teams at 5v5, with coordinated teamwork emerging from a shared reward weighting rather th",
+  "url": "https://openai.com/index/openai-five/"
+ },
+ {
+  "id": 1097,
+  "title": "Retro Contest: Results",
+  "org": "openai",
+  "date": "2018-06-22",
+  "summary": "Reports results of the Retro Contest on RL generalization to held-out Sonic the Hedgehog levels: top entries were tuned variants of the provided PPO and Rainbow baselines, improving transfer scores but remaining well bel",
+  "url": "https://openai.com/index/retro-contest-results/"
+ },
+ {
+  "id": 1098,
+  "title": "Learning policy representations in multiagent systems",
+  "org": "openai",
+  "date": "2018-06-17",
+  "summary": "Learns embeddings of agent policies from interaction episodes via a generative imitation objective combined with a contrastive triplet loss; the representations support agent classification and improve returns when condi",
+  "url": "https://openai.com/index/learning-policy-representations-in-multiagent-systems/"
+ },
+ {
+  "id": 1100,
+  "title": "Gym Retro",
+  "org": "openai",
+  "date": "2018-05-25",
+  "summary": "Releases the full Gym Retro platform, expanding available RL environments from roughly 100 Atari and Sega titles to over 1,000 games across multiple emulators, plus an integration tool for adding new games—aimed at study",
+  "url": "https://openai.com/index/gym-retro/"
+ },
+ {
+  "id": 1101,
+  "title": "AI and compute",
+  "org": "openai",
+  "date": "2018-05-16",
+  "summary": "Analysis showing compute used in the largest AI training runs has grown exponentially since 2012 with a 3.4-month doubling time—over 300,000x total—arguing this trend warrants preparing for systems far beyond today's cap",
+  "url": "https://openai.com/index/ai-and-compute/"
+ },
+ {
+  "id": 1104,
+  "title": "Gotta Learn Fast: A new benchmark for generalization in RL",
+  "org": "openai",
+  "date": "2018-04-10",
+  "summary": "Benchmark measuring RL generalization via held-out Sonic the Hedgehog levels: agents train on one level set and are scored on fast adaptation to unseen levels. Rainbow, PPO, and joint-training baselines show transfer fro",
+  "url": "https://openai.com/index/gotta-learn-fast/"
+ },
+ {
+  "id": 1105,
+  "title": "Retro Contest",
+  "org": "openai",
+  "date": "2018-04-05",
+  "summary": "Launches a transfer-learning contest measuring how well RL algorithms generalize from training levels of Sonic the Hedgehog to held-out test levels with limited test-time experience, rewarding agents that exploit prior e",
+  "url": "https://openai.com/index/retro-contest/"
+ },
+ {
+  "id": 1106,
+  "title": "Variance reduction for policy gradient with action-dependent factorized baselines",
+  "org": "openai",
+  "date": "2018-03-20",
+  "summary": "Derives action-dependent baselines for policy gradients with factorized action spaces: each action dimension's baseline conditions on the other dimensions' actions, cutting gradient variance without bias and improving sa",
+  "url": "https://openai.com/index/variance-reduction-for-policy-gradient-with-action-dependent-factorized-baselines/"
+ },
+ {
+  "id": 1107,
+  "title": "Improving GANs using optimal transport",
+  "org": "openai",
+  "date": "2018-03-15",
+  "summary": "OT-GAN trains generative models by minimizing a mini-batch energy distance—an optimal-transport (Sinkhorn-based) divergence computed in an adversarially learned feature space—yielding more stable GAN training and strong ",
+  "url": "https://openai.com/index/improving-gans-using-optimal-transport/"
+ },
+ {
+  "id": 1108,
+  "title": "On first-order meta-learning algorithms",
+  "org": "openai",
+  "date": "2018-03-08",
+  "summary": "Analyzes meta-learning with only first-order gradients, covering first-order MAML and introducing Reptile. A Taylor-series analysis shows both maximize within-task gradient inner products, and they match full MAML on Omn",
+  "url": "https://openai.com/index/on-first-order-meta-learning-algorithms/"
+ },
+ {
+  "id": 1109,
+  "title": "Reptile: A scalable meta-learning algorithm",
+  "org": "openai",
+  "date": "2018-03-07",
+  "summary": "Reptile meta-learns an initialization by repeatedly sampling a task, running SGD on it, and nudging the initial parameters toward the task-adapted weights. It is mathematically close to first-order MAML but needs only bl",
+  "url": "https://openai.com/index/reptile/"
+ },
+ {
+  "id": 1110,
+  "title": "Some considerations on learning to explore via meta-reinforcement learning",
+  "org": "openai",
+  "date": "2018-03-03",
+  "summary": "Reformulates meta-RL objectives so exploratory actions taken during meta-training receive proper credit, yielding E-MAML and E-RL2 variants that explicitly incentivize exploration and outperform the original algorithms a",
+  "url": "https://openai.com/index/some-considerations-on-learning-to-explore-via-meta-reinforcement-learning/"
+ },
+ {
+  "id": 1112,
+  "title": "Ingredients for robotics research",
+  "org": "openai",
+  "date": "2018-02-26",
+  "summary": "Releases eight simulated goal-based robotics environments (Fetch arm and ShadowHand) plus a Baselines implementation of Hindsight Experience Replay, validated by policies that transfer to physical robots, alongside a set",
+  "url": "https://openai.com/index/ingredients-for-robotics-research/"
+ },
+ {
+  "id": 1111,
+  "title": "Multi-Goal Reinforcement Learning: Challenging robotics environments and request for research",
+  "org": "openai",
+  "date": "2018-02-26",
+  "summary": "Specifies eight goal-conditioned, sparse-reward robotics environments spanning Fetch manipulation and ShadowHand dexterity tasks, reports DDPG plus Hindsight Experience Replay baselines, and poses open research direction",
+  "url": "https://openai.com/index/multi-goal-reinforcement-learning/"
+ },
+ {
+  "id": 1113,
+  "title": "Preparing for malicious uses of AI",
+  "org": "openai",
+  "date": "2018-02-20",
+  "summary": "Joint report with FHI, CSER, CNAS, EFF and others forecasting how malicious actors could misuse AI across digital, physical, and political security domains, and recommending interventions for researchers and policymakers",
+  "url": "https://openai.com/index/preparing-for-malicious-uses-of-ai/"
+ },
+ {
+  "id": 1114,
+  "title": "Interpretable machine learning through teaching",
+  "org": "openai",
+  "date": "2018-02-15",
+  "summary": "Method for selecting maximally informative teaching examples that stay human-interpretable: training teacher and student networks iteratively rather than jointly prevents them from converging on opaque codes, producing e",
+  "url": "https://openai.com/index/interpretable-machine-learning-through-teaching/"
+ }
+]

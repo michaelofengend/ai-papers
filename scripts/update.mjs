@@ -5,7 +5,7 @@
 import { readFileSync, writeFileSync, copyFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normTitle, extractArxivId, tagTopics, autoSummary, isSpam } from './lib.mjs';
+import { normTitle, extractArxivId, tagTopics, autoSummary, isSpam, classifyKind } from './lib.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data', 'papers.json');
@@ -195,16 +195,101 @@ async function alignmentBlogRecent() {
   return out;
 }
 
+/* ---------- OpenAI: sitemaps + news RSS (HTML pages are Cloudflare-blocked) ---------- */
+async function openaiRecent() {
+  const out = [];
+  const rssXml = await fetchText('https://openai.com/news/rss.xml');
+  const rss = new Map(); // url -> {title, date, desc}
+  if (rssXml) {
+    for (const item of rssXml.split('<item>').slice(1)) {
+      const get = (tag) => (item.match(new RegExp(`<${tag}[^>]*>(?:<!\\[CDATA\\[)?([\\s\\S]*?)(?:\\]\\]>)?</${tag}>`)) || [])[1]?.replace(/\s+/g, ' ').trim();
+      const link = (get('link') || '').replace(/\/$/, '');
+      if (!link) continue;
+      const pub = get('pubDate');
+      rss.set(link, {
+        title: decode(get('title') || ''),
+        date: pub ? new Date(pub).toISOString().slice(0, 10) : null,
+        desc: decode((get('description') || '').replace(/<[^>]+>/g, ' ')).trim(),
+      });
+    }
+  }
+  for (const sm of ['publication', 'research']) {
+    const xml = await fetchText(`https://openai.com/sitemap.xml/${sm}/`);
+    if (!xml) continue;
+    for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) {
+      const url = m[1].trim().replace(/\/$/, '');
+      // only individual post pages (openai.com/index/<slug>); skip section/listing URLs
+      if (!/openai\.com\/index\/[a-z0-9][a-z0-9-]{3,}$/i.test(url)) continue;
+      const meta = rss.get(url);
+      const slugTitle = decodeURIComponent((url.split('/').pop() || '').replace(/-/g, ' ')).replace(/\b\w/g, (c) => c.toUpperCase());
+      out.push({
+        title: meta?.title || slugTitle,
+        authors: [],
+        org: 'openai',
+        date: meta?.date || today,
+        url,
+        pdf_url: null, arxiv_id: null,
+        abstract: meta?.desc || null,
+        source: 'openai-site',
+        venue: 'OpenAI Blog',
+        cited_by: null,
+      });
+    }
+    await sleep(800);
+  }
+  return out;
+}
+
+/* ---------- DeepMind: sitemap -> JSON-LD on new detail pages only ---------- */
+async function deepmindRecent(knownUrls) {
+  const xml = await fetchText('https://deepmind.google/sitemap.xml');
+  if (!xml) return [];
+  const urls = [...xml.matchAll(/<loc>(https:\/\/deepmind\.google\/research\/publications\/\d+\/?)<\/loc>/g)]
+    .map((m) => m[1].replace(/\/$/, '') + '/');
+  const fresh = urls.filter((u) => !knownUrls.has(u.replace(/\/$/, '')) && !knownUrls.has(u));
+  const out = [];
+  for (const u of fresh.slice(0, 40)) { // bound per-run fetches
+    const html = await fetchText(u);
+    await sleep(900);
+    if (!html) continue;
+    const ld = (html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/) || [])[1];
+    let meta = null;
+    try { meta = JSON.parse(ld); } catch (e) { /* ignore */ }
+    if (!meta || !meta.headline) continue;
+    const outLink = (html.match(/href="(https:\/\/arxiv\.org\/[^"]+|https?:\/\/[^"]+)"[^>]*>\s*(?:View publication|Download)/i) || [])[1] || null;
+    const axv = extractArxivId(outLink);
+    const venue = (html.match(/publication-venue__content[^>]*>\s*([^<]+)/) || [])[1]?.trim() || null;
+    const authors = (html.match(/publication-authors__content[^>]*>\s*([^<]+)/) || [])[1]
+      ?.split(/,\s*/).map((a) => a.trim()).filter(Boolean).slice(0, 12) || [];
+    out.push({
+      title: decode(meta.headline),
+      authors,
+      org: 'deepmind',
+      date: (meta.datePublished || '').slice(0, 10) || today,
+      url: axv ? `https://arxiv.org/abs/${axv}` : u,
+      pdf_url: axv ? `https://arxiv.org/pdf/${axv}` : null,
+      arxiv_id: axv,
+      abstract: meta.description ? decode(String(meta.description)).replace(/\s+/g, ' ').trim() : null,
+      source: 'deepmind-site',
+      venue,
+      cited_by: null,
+    });
+  }
+  return out;
+}
+
 /* ---------- main ---------- */
 const db = JSON.parse(readFileSync(DATA, 'utf8'));
 const seen = new Set();
+const knownUrls = new Set();
 for (const p of db.papers) {
   if (p.arxiv_id) seen.add('axv:' + p.arxiv_id);
   seen.add('ttl:' + normTitle(p.title));
   seen.add('url:' + p.url);
+  knownUrls.add(p.url.replace(/\/$/, ''));
 }
 
-const fetched = (await Promise.all([openalexRecent(), arxivRecent(), circuitsRecent(), alignmentBlogRecent()])).flat();
+const fetched = (await Promise.all([openalexRecent(), arxivRecent(), circuitsRecent(), alignmentBlogRecent(), openaiRecent(), deepmindRecent(knownUrls)])).flat();
 const found = fetched.filter((p) => !isSpam(p));
 console.log(`spam filtered: ${fetched.length - found.length}`);
 let nextId = Math.max(0, ...db.papers.map((p) => p.id)) + 1;
@@ -230,6 +315,7 @@ for (const p of found) {
     topics: tagTopics(text),
     summary: autoSummary(p.abstract) || null,
     sources: [p.source],
+    kind: classifyKind({ ...p, sources: [p.source] }) || 'post',
   });
   added++;
 }

@@ -9,9 +9,12 @@ const ORG_META = {
 };
 const PAGE_SIZE = 50;
 
+const KIND_META = { paper: 'Research papers', post: 'Posts & announcements' };
+
 const state = {
   papers: [],
   filtered: [],
+  kinds: new Set(['paper']), // default: research papers only
   orgs: new Set(),      // empty = all
   topics: new Set(),    // empty = all
   years: new Set(),     // empty = all
@@ -20,6 +23,7 @@ const state = {
   page: 1,
   view: 'papers',
   charts: {},
+  timeline: null, // lazy-loaded entries
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -32,7 +36,9 @@ function readHash() {
   state.query = h.get('q') || '';
   state.sort = ['newest', 'oldest', 'cited', 'match'].includes(h.get('sort')) ? h.get('sort') : 'newest';
   state.page = Math.max(1, parseInt(h.get('page'), 10) || 1);
-  state.view = h.get('view') === 'analytics' ? 'analytics' : 'papers';
+  state.view = ['analytics', 'timeline'].includes(h.get('view')) ? h.get('view') : 'papers';
+  const show = h.get('show');
+  state.kinds = show === 'posts' ? new Set(['post']) : show === 'all' ? new Set() : new Set(['paper']);
   state.orgs = new Set((h.get('labs') || '').split(',').filter(Boolean));
   state.topics = new Set((h.get('topics') || '').split('|').filter(Boolean));
   state.years = new Set((h.get('years') || '').split(',').filter(Boolean));
@@ -45,6 +51,9 @@ function writeHash() {
   if (state.sort !== 'newest') h.set('sort', state.sort);
   if (state.page > 1) h.set('page', String(state.page));
   if (state.view !== 'papers') h.set('view', state.view);
+  if (!(state.kinds.size === 1 && state.kinds.has('paper'))) {
+    h.set('show', state.kinds.size === 1 && state.kinds.has('post') ? 'posts' : 'all');
+  }
   if (state.orgs.size) h.set('labs', [...state.orgs].join(','));
   if (state.topics.size) h.set('topics', [...state.topics].join('|'));
   if (state.years.size) h.set('years', [...state.years].join(','));
@@ -65,12 +74,13 @@ async function load() {
     topics: p.topics || [],
     authors: p.authors || [],
     _ts: Date.parse(p.date || '1970-01-01') || 0,
+    kind: p.kind === 'post' ? 'post' : 'paper',
     _hay: [p.title, (p.authors || []).join(' '), p.summary, p.abstract, (p.topics || []).join(' '), p.venue]
       .join(' ').toLowerCase(),
   }));
   state.papers.sort((a, b) => b._ts - a._ts);
 
-  $('#stat-count').textContent = state.papers.length.toLocaleString();
+  $('#stat-count').textContent = state.papers.filter((p) => p.kind === 'paper').length.toLocaleString();
   if (data.updated) $('#stat-updated').textContent = ` · updated ${data.updated}`;
 
   readHash();
@@ -82,7 +92,8 @@ async function load() {
 }
 
 /* ---------------- facets ---------------- */
-function matches(p, { skipOrg = false, skipTopic = false, skipYear = false } = {}) {
+function matches(p, { skipOrg = false, skipTopic = false, skipYear = false, skipKind = false } = {}) {
+  if (!skipKind && state.kinds.size && !state.kinds.has(p.kind)) return false;
   if (!skipOrg && state.orgs.size && !state.orgs.has(p.org)) return false;
   if (!skipYear && state.years.size && !state.years.has(p.date.slice(0, 4))) return false;
   if (!skipTopic && state.topics.size && !p.topics.some((t) => state.topics.has(t))) return false;
@@ -100,6 +111,11 @@ function buildFacets() {
   state._allTopics = [...topicSet];
   state._allYears = [...yearSet].sort();
 
+  $('#type-chips').innerHTML = Object.entries(KIND_META)
+    .map(([k, label]) =>
+      `<button class="facet-btn kind-facet" data-kind="${k}"><span class="lbl">${label}</span><span class="n" data-n></span></button>`)
+    .join('');
+
   $('#org-chips').innerHTML = Object.entries(ORG_META)
     .map(([k, m]) =>
       `<button class="facet-btn org-facet" data-org="${k}" style="--dot:var(--${k})">
@@ -114,6 +130,8 @@ function buildFacets() {
     .map((y) => `<button class="year-btn" data-year="${y}">${y}</button>`)
     .join('');
 
+  document.querySelectorAll('.kind-facet').forEach((b) =>
+    b.addEventListener('click', () => { toggle(state.kinds, b.dataset.kind); applyFilters(); }));
   document.querySelectorAll('.org-facet').forEach((b) =>
     b.addEventListener('click', () => { toggle(state.orgs, b.dataset.org); applyFilters(); }));
   document.querySelectorAll('.topic-facet').forEach((b) =>
@@ -125,12 +143,19 @@ function buildFacets() {
 function toggle(set, v) { set.has(v) ? set.delete(v) : set.add(v); }
 
 function updateFacetCounts() {
-  const orgCounts = {}, topicCounts = {}, yearCounts = {};
+  const orgCounts = {}, topicCounts = {}, yearCounts = {}, kindCounts = {};
   for (const p of state.papers) {
+    if (matches(p, { skipKind: true })) kindCounts[p.kind] = (kindCounts[p.kind] || 0) + 1;
     if (matches(p, { skipOrg: true })) orgCounts[p.org] = (orgCounts[p.org] || 0) + 1;
     if (matches(p, { skipTopic: true })) for (const t of p.topics) topicCounts[t] = (topicCounts[t] || 0) + 1;
     if (matches(p, { skipYear: true })) { const y = p.date.slice(0, 4); yearCounts[y] = (yearCounts[y] || 0) + 1; }
   }
+  document.querySelectorAll('.kind-facet').forEach((b) => {
+    const n = kindCounts[b.dataset.kind] || 0;
+    b.querySelector('[data-n]').textContent = n.toLocaleString();
+    b.classList.toggle('zero', !n && !state.kinds.has(b.dataset.kind));
+    b.classList.toggle('active', state.kinds.has(b.dataset.kind));
+  });
   document.querySelectorAll('.org-facet').forEach((b) => {
     const n = orgCounts[b.dataset.org] || 0;
     b.querySelector('[data-n]').textContent = n.toLocaleString();
@@ -188,7 +213,8 @@ function applyFilters(resetPage = true) {
   }[sort];
   state.filtered.sort(cmp);
 
-  const nFilters = state.orgs.size + state.topics.size + state.years.size + (q ? 1 : 0);
+  const kindNonDefault = !(state.kinds.size === 1 && state.kinds.has('paper')) ? 1 : 0;
+  const nFilters = state.orgs.size + state.topics.size + state.years.size + (q ? 1 : 0) + kindNonDefault;
   $('#clear-filters').hidden = !nFilters;
   const badge = $('#filter-badge');
   badge.hidden = !nFilters;
@@ -198,6 +224,7 @@ function applyFilters(resetPage = true) {
   writeHash();
   renderPage();
   if (state.view === 'analytics') renderAnalytics();
+  if (state.view === 'timeline') renderTimeline();
 }
 
 /* ---------------- paginated list ---------------- */
@@ -293,6 +320,7 @@ function card(p) {
     </div>
     <div class="card-meta">
       <span class="org-badge" style="--org-color:var(--${p.org in ORG_META ? p.org : 'other'})">${(ORG_META[p.org] || ORG_META.other).label}</span>
+      ${p.kind === 'post' ? '<span class="kind-pill">post</span>' : ''}
       ${authors ? `<span class="authors">${authors}</span>` : ''}
       ${venue}${cites}
     </div>
@@ -341,7 +369,7 @@ function renderAnalytics() {
   if (typeof Chart === 'undefined') return;
   chartTheme();
 
-  const papers = state.filtered;
+  const papers = state.papers.filter((p) => p.kind === 'paper' && matches(p, { skipKind: true }));
   $('#an-count').textContent = papers.length.toLocaleString();
   const orgKeys = Object.keys(ORG_META);
 
@@ -429,6 +457,68 @@ function renderAnalytics() {
   ).join('') || '<li class="tc-meta">No citation data in this selection.</li>';
 }
 
+/* ---------------- timeline ---------------- */
+async function loadTimeline() {
+  if (state.timeline) return state.timeline;
+  try {
+    const res = await fetch('data/timeline.json');
+    const data = await res.json();
+    const byId = new Map(state.papers.map((p) => [p.id, p]));
+    state.timeline = (data.entries || []).map((e) => {
+      const p = byId.get(e.id);
+      return p ? { ...e, paper: p } : null;
+    }).filter(Boolean);
+  } catch (err) {
+    state.timeline = [];
+  }
+  return state.timeline;
+}
+
+async function renderTimeline() {
+  const entries = await loadTimeline();
+  const el = $('#timeline');
+  // timeline respects lab/topic/year filters (not search/type/page)
+  const visible = entries.filter((e) => {
+    const p = e.paper;
+    if (state.orgs.size && !state.orgs.has(p.org)) return false;
+    if (state.years.size && !state.years.has(p.date.slice(0, 4))) return false;
+    if (state.topics.size && !state.topics.has(e.topic)) return false;
+    return true;
+  }).sort((a, b) => (a.paper.date < b.paper.date ? -1 : 1));
+
+  $('#timeline-empty').hidden = visible.length > 0;
+  let html = '';
+  let lastYear = null;
+  for (const e of visible) {
+    const p = e.paper;
+    const year = p.date.slice(0, 4);
+    if (year !== lastYear) {
+      html += `<div class="tl-year">${year}</div>`;
+      lastYear = year;
+    }
+    const org = ORG_META[p.org] || ORG_META.other;
+    const month = new Date(p.date + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' });
+    html += `
+      <div class="tl-item" style="--org-color:var(--${p.org in ORG_META ? p.org : 'other'})">
+        <div class="tl-dot"></div>
+        <div class="tl-body">
+          <div class="tl-head">
+            <a class="tl-title" href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+            <span class="tl-meta">${month} · ${org.label}</span>
+          </div>
+          <p class="tl-why">${esc(e.why)}</p>
+          <button class="tag tl-tag" data-topic="${esc(e.topic)}">${esc(e.topic)}</button>
+        </div>
+      </div>`;
+  }
+  el.innerHTML = html;
+  el.querySelectorAll('.tl-tag').forEach((b) =>
+    b.addEventListener('click', () => {
+      const t = b.dataset.topic;
+      if (!state.topics.has(t)) { state.topics.add(t); applyFilters(); }
+    }));
+}
+
 /* ---------------- view & theme ---------------- */
 function setView(view, sync = true) {
   state.view = view;
@@ -440,6 +530,7 @@ function setView(view, sync = true) {
   document.querySelectorAll('.view').forEach((v) => v.classList.remove('active'));
   $(`#view-${view}`).classList.add('active');
   if (view === 'analytics') renderAnalytics();
+  if (view === 'timeline') renderTimeline();
   if (sync) writeHash();
 }
 
@@ -472,6 +563,7 @@ function init() {
   $('#sort').addEventListener('change', (e) => { state.sort = e.target.value; applyFilters(); });
 
   $('#clear-filters').addEventListener('click', () => {
+    state.kinds = new Set(['paper']);
     state.orgs.clear(); state.topics.clear(); state.years.clear();
     state.query = ''; $('#search').value = '';
     state.sort = 'newest'; $('#sort').value = 'newest';

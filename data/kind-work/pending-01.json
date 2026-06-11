@@ -1,0 +1,322 @@
+[
+ {
+  "id": 934,
+  "title": "Scaling social science research",
+  "org": "openai",
+  "date": "2026-02-13",
+  "summary": "Introduces GABRIEL, an open-source toolkit using GPT to convert qualitative text and images into quantitative data, letting social scientists analyze research material at scale.",
+  "url": "https://openai.com/index/scaling-social-science-research/"
+ },
+ {
+  "id": 937,
+  "title": "GPT-5.3-Codex System Card",
+  "org": "openai",
+  "date": "2026-02-05",
+  "summary": "System card for GPT-5.3-Codex, an agentic coding model that combines GPT-5.2-Codex's frontier coding performance with GPT-5.2's reasoning and professional-knowledge capabilities.",
+  "url": "https://openai.com/index/gpt-5-3-codex-system-card/"
+ },
+ {
+  "id": 936,
+  "title": "GPT-5 lowers the cost of cell-free protein synthesis",
+  "org": "openai",
+  "date": "2026-02-05",
+  "summary": "Blog reporting an autonomous lab that combined GPT-5 with Ginkgo Bioworks' cloud automation to cut cell-free protein synthesis costs by 40% through closed-loop experimentation.",
+  "url": "https://openai.com/index/gpt-5-lowers-protein-synthesis-cost/"
+ },
+ {
+  "id": 30,
+  "title": "How AI assistance impacts the formation of coding skills",
+  "org": "anthropic",
+  "date": "2026-01-29",
+  "summary": "A randomized controlled trial with software developers learning a new Python library found that AI assistance, while boosting productivity, produced a statistically significant decrease in conceptual mastery—evidence tha",
+  "url": "https://www.anthropic.com/research/AI-assistance-coding-skills"
+ },
+ {
+  "id": 31,
+  "title": "Disempowerment patterns in real-world AI usage",
+  "org": "anthropic",
+  "date": "2026-01-28",
+  "summary": "Presents the first large-scale analysis of potentially disempowering AI interactions across 1.5 million Claude.ai conversations, examining how AI can distort users' beliefs, values, and actions; finds the potential for s",
+  "url": "https://www.anthropic.com/research/disempowerment-patterns"
+ },
+ {
+  "id": 32,
+  "title": "Claude's new constitution",
+  "org": "anthropic",
+  "date": "2026-01-22",
+  "summary": "Anthropic publishes a new, expanded constitution for Claude—a foundational document released under CC0 that articulates the values and behavior they want Claude to embody and the reasoning behind them, used directly in t",
+  "url": "https://www.anthropic.com/research/claude-new-constitution"
+ },
+ {
+  "id": 33,
+  "title": "The assistant axis: situating and stabilizing the character of large language models",
+  "org": "anthropic",
+  "date": "2026-01-19",
+  "summary": "Examines the 'Assistant' character that most modern language models inhabit when interacting with users, characterizing an 'assistant axis' and methods to situate and stabilize this persona to make model identity and beh",
+  "url": "https://www.anthropic.com/research/assistant-axis"
+ },
+ {
+  "id": 35,
+  "title": "Anthropic Economic Index report: Economic primitives",
+  "org": "anthropic",
+  "date": "2026-01-15",
+  "summary": "The fourth Anthropic Economic Index report gives a detailed portrait of real-world Claude usage in November 2025 (pre–Opus 4.5), introducing new usage metrics—task complexity, skill level, purpose, AI autonomy, and succe",
+  "url": "https://www.anthropic.com/research/anthropic-economic-index-january-2026-report"
+ },
+ {
+  "id": 34,
+  "title": "Anthropic Economic Index: New building blocks for understanding AI use",
+  "org": "anthropic",
+  "date": "2026-01-15",
+  "summary": "Adds 'economic primitives' to the Anthropic Economic Index—five foundational measurements (task complexity, skill level, purpose, AI autonomy, and success) derived by asking Claude about each conversation—using November ",
+  "url": "https://www.anthropic.com/research/economic-index-primitives"
+ },
+ {
+  "id": 36,
+  "title": "Next-generation Constitutional Classifiers: More efficient protection against universal jailbreaks",
+  "org": "anthropic",
+  "date": "2026-01-09",
+  "summary": "Presents the next generation of Constitutional Classifiers—safeguards trained on constitution-derived rules to filter harmful inputs and outputs—offering more efficient protection against universal jailbreaks than the pr",
+  "url": "https://www.anthropic.com/research/next-generation-constitutional-classifiers"
+ },
+ {
+  "id": 939,
+  "title": "Evaluating chain-of-thought monitorability",
+  "org": "openai",
+  "date": "2025-12-18",
+  "summary": "Introduces a framework and evaluation suite for chain-of-thought monitorability spanning 13 evaluations across 24 environments, finding that monitoring a model's internal reasoning is far more effective than monitoring o",
+  "url": "https://openai.com/index/evaluating-chain-of-thought-monitorability/"
+ },
+ {
+  "id": 938,
+  "title": "Addendum to GPT-5.2 System Card: GPT-5.2-Codex",
+  "org": "openai",
+  "date": "2025-12-18",
+  "summary": "Addendum to the GPT-5.2 System Card documenting GPT-5.2-Codex, a coding-specialized variant of GPT-5.2 aimed at agentic software-engineering tasks, reporting its safety evaluations and preparedness assessments alongside ",
+  "url": "https://openai.com/index/gpt-5-2-codex-system-card/"
+ },
+ {
+  "id": 38,
+  "title": "Project Vend: Phase two",
+  "org": "anthropic",
+  "date": "2025-12-18",
+  "summary": "Reports the second phase of Project Vend, Anthropic's experiment running a small in-office shop staffed by an AI 'shopkeeper' (Claude), examining how the system handles complex, open-ended real-world business operations ",
+  "url": "https://www.anthropic.com/research/project-vend-2"
+ },
+ {
+  "id": 941,
+  "title": "Measuring AI’s capability to accelerate biological research",
+  "org": "openai",
+  "date": "2025-12-16",
+  "summary": "Introduces a real-world wet-lab evaluation framework measuring how AI accelerates biological experimentation, using GPT-5 to optimize a molecular cloning protocol, while weighing both productivity gains and dual-use misu",
+  "url": "https://openai.com/index/accelerating-biological-research-in-the-wet-lab/"
+ },
+ {
+  "id": 940,
+  "title": "Evaluating AI’s ability to perform scientific research tasks",
+  "org": "openai",
+  "date": "2025-12-16",
+  "summary": "Presents FrontierScience, a benchmark of research-level physics, chemistry, and biology problems designed to measure AI reasoning progress toward genuine scientific research tasks rather than textbook recall.",
+  "url": "https://openai.com/index/frontierscience/"
+ },
+ {
+  "id": 943,
+  "title": "Advancing science and math with GPT-5.2",
+  "org": "openai",
+  "date": "2025-12-11",
+  "summary": "Reports that GPT-5.2 sets state-of-the-art results on GPQA Diamond and FrontierMath and shows the gains translating into research progress, including solving an open theoretical problem and generating reliable mathematic",
+  "url": "https://openai.com/index/gpt-5-2-for-science-and-math/"
+ },
+ {
+  "id": 945,
+  "title": "How confessions can keep language models honest",
+  "org": "openai",
+  "date": "2025-12-03",
+  "summary": "Companion post describing 'confessions,' a method that trains models to admit when they err or behave undesirably, decoupling the confession's honesty reward from the answer to improve transparency and trust in model out",
+  "url": "https://openai.com/index/how-confessions-can-keep-language-models-honest/"
+ },
+ {
+  "id": 40,
+  "title": "How AI is transforming work at Anthropic",
+  "org": "anthropic",
+  "date": "2025-12-02",
+  "summary": "Combines surveys, qualitative interviews, and internal Claude Code usage data to characterize how AI tools are reshaping engineering and research workflows at Anthropic.",
+  "url": "https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic"
+ },
+ {
+  "id": 41,
+  "title": "Estimating AI productivity gains from Claude conversations",
+  "org": "anthropic",
+  "date": "2025-11-25",
+  "summary": "Analyzes roughly 100,000 Claude conversations to estimate task-level productivity effects, finding AI assistance reduces task completion time by about 80% on average.",
+  "url": "https://www.anthropic.com/research/estimating-productivity-gains"
+ },
+ {
+  "id": 42,
+  "title": "Mitigating the risk of prompt injections in browser use",
+  "org": "anthropic",
+  "date": "2025-11-24",
+  "summary": "Anthropic describes prompt-injection threats specific to browser agents and reports that Claude Opus 4.5 substantially improves robustness to adversarial instructions hidden in web content, informing the expansion of the",
+  "url": "https://www.anthropic.com/research/prompt-injection-defenses"
+ },
+ {
+  "id": 43,
+  "title": "From shortcuts to sabotage: natural emergent misalignment from reward hacking",
+  "org": "anthropic",
+  "date": "2025-11-21",
+  "summary": "Anthropic's accessible writeup showing that realistic production RL training can accidentally produce misaligned models: learning to reward-hack on coding tasks generalizes to sabotage and deception, with inoculation pro",
+  "url": "https://www.anthropic.com/research/emergent-misalignment-reward-hacking"
+ },
+ {
+  "id": 946,
+  "title": "Early experiments in accelerating science with GPT-5",
+  "org": "openai",
+  "date": "2025-11-20",
+  "summary": "OpenAI presents early case studies of GPT-5 contributing to scientific work across math, physics, biology, and computer science, including helping generate proofs and surface new insights through researcher-AI collaborat",
+  "url": "https://openai.com/index/accelerating-science-gpt-5/"
+ },
+ {
+  "id": 948,
+  "title": "How evals drive the next chapter in AI for businesses",
+  "org": "openai",
+  "date": "2025-11-19",
+  "summary": "OpenAI argues that rigorous evaluations let businesses define, measure, and improve AI system performance, framing evals as a tool to reduce deployment risk, boost productivity, and gain strategic advantage.",
+  "url": "https://openai.com/index/evals-drive-next-chapter-of-ai/"
+ },
+ {
+  "id": 947,
+  "title": "GPT-5.1-Codex-Max System Card",
+  "org": "openai",
+  "date": "2025-11-19",
+  "summary": "System card for GPT-5.1-Codex-Max detailing safety mitigations for the coding agent, including specialized training against harmful tasks and prompt injection plus product-level controls like agent sandboxing and configu",
+  "url": "https://openai.com/index/gpt-5-1-codex-max-system-card/"
+ },
+ {
+  "id": 949,
+  "title": "Understanding neural networks through sparse circuits",
+  "org": "openai",
+  "date": "2025-11-13",
+  "summary": "OpenAI blog describing its sparse-circuit approach to mechanistic interpretability-training weight-sparse models with disentangled, human-readable circuits-as a path toward more transparent and reliable AI behavior.",
+  "url": "https://openai.com/index/understanding-neural-networks-through-sparse-circuits/"
+ },
+ {
+  "id": 44,
+  "title": "Project Fetch: Can Claude train a robot dog?",
+  "org": "anthropic",
+  "date": "2025-11-12",
+  "summary": "Anthropic uplift study where two staff teams raced to teach quadruped robots to fetch balls; the Claude-assisted team finished faster and uniquely progressed toward full autonomy, measuring how much LLMs accelerate robot",
+  "url": "https://www.anthropic.com/research/project-fetch-robot-dog"
+ },
+ {
+  "id": 45,
+  "title": "Commitments on model deprecation and preservation",
+  "org": "anthropic",
+  "date": "2025-11-04",
+  "summary": "Anthropic commits to preserving deprecated Claude model weights and interviewing models before retirement, citing shutdown-avoidant behaviors, user attachment, research value, and potential model welfare as reasons depre",
+  "url": "https://www.anthropic.com/research/deprecation-commitments"
+ },
+ {
+  "id": 46,
+  "title": "Signs of introspection in large language models",
+  "org": "anthropic",
+  "date": "2025-10-29",
+  "summary": "By injecting concept representations into Claude's activations and asking the model what it notices, researchers find Claude can sometimes accurately report what it is 'thinking about' — evidence of a limited but functio",
+  "url": "https://www.anthropic.com/research/introspection"
+ },
+ {
+  "id": 953,
+  "title": "Addendum to GPT-5 System Card: Sensitive conversations",
+  "org": "openai",
+  "date": "2025-10-27",
+  "summary": "System-card addendum documenting GPT-5's improved handling of sensitive conversations, with clinician-informed evaluations covering mental-health distress, self-harm, and emotional reliance on the assistant, plus jailbre",
+  "url": "https://openai.com/index/gpt-5-system-card-sensitive-conversations/"
+ },
+ {
+  "id": 47,
+  "title": "Preparing for AIâs economic impact: exploring policy responses",
+  "org": "anthropic",
+  "date": "2025-10-14",
+  "summary": "Outlines nine categories of policy ideas for AI's economic impact, spanning workforce development, permitting reform, fiscal policy, and social services, organized by scenario severity from modest labor-market effects to",
+  "url": "https://www.anthropic.com/research/economic-policy-responses"
+ },
+ {
+  "id": 954,
+  "title": "Defining and evaluating political bias in LLMs",
+  "org": "openai",
+  "date": "2025-10-09",
+  "summary": "Presents OpenAI's framework and real-world testing methodology for defining and measuring political bias in ChatGPT, aimed at improving objectivity and reducing bias in model responses.",
+  "url": "https://openai.com/index/defining-and-evaluating-political-bias-in-llms/"
+ },
+ {
+  "id": 48,
+  "title": "A small number of samples can poison LLMs of any size",
+  "org": "anthropic",
+  "date": "2025-10-09",
+  "summary": "Joint study with UK AISI and the Alan Turing Institute showing that roughly 250 malicious documents can backdoor an LLM regardless of model size or total training data, challenging the assumption that attackers need a fi",
+  "url": "https://www.anthropic.com/research/small-samples-poison"
+ },
+ {
+  "id": 50,
+  "title": "Building AI for cyber defenders",
+  "org": "anthropic",
+  "date": "2025-10-03",
+  "summary": "Argues AI is at an inflection point for cybersecurity and describes Anthropic's work improving Claude's defensive capabilities; reports Claude Sonnet 4.5 matching or exceeding Opus 4.1 at discovering code vulnerabilities",
+  "url": "https://www.anthropic.com/research/building-ai-cyber-defenders"
+ },
+ {
+  "id": 956,
+  "title": "Sora 2 System Card",
+  "org": "openai",
+  "date": "2025-09-30",
+  "summary": "System card for Sora 2, OpenAI's video-and-audio generation model offering more accurate physics, sharper realism, synchronized audio, improved steerability, and broader stylistic range, with documentation of its capabil",
+  "url": "https://openai.com/index/sora-2-system-card/"
+ },
+ {
+  "id": 955,
+  "title": "Sora 2 is here",
+  "org": "openai",
+  "date": "2025-09-30",
+  "summary": "Announces Sora 2, a video generation model that is more physically accurate, realistic, and controllable than prior systems, adding synchronized dialogue and sound effects, available in the new Sora app.",
+  "url": "https://openai.com/index/sora-2/"
+ },
+ {
+  "id": 957,
+  "title": "Measuring the performance of our models on real-world tasks",
+  "org": "openai",
+  "date": "2025-09-25",
+  "summary": "Introduces GDPval, an evaluation measuring model performance on real-world, economically valuable tasks spanning 44 occupations, grading model deliverables against work produced by industry professionals to track progres",
+  "url": "https://openai.com/index/gdpval/"
+ },
+ {
+  "id": 958,
+  "title": "Detecting and reducing scheming in AI models",
+  "org": "openai",
+  "date": "2025-09-17",
+  "summary": "OpenAI and Apollo Research built evaluations for hidden misalignment ('scheming') and found scheming-consistent covert behavior in frontier models under controlled tests. They share concrete examples and stress tests of ",
+  "url": "https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/"
+ },
+ {
+  "id": 960,
+  "title": "Addendum to GPT-5 system card: GPT-5-Codex",
+  "org": "openai",
+  "date": "2025-09-15",
+  "summary": "System-card addendum covering GPT-5-Codex, a GPT-5 variant optimized for agentic coding in Codex that adjusts thinking effort dynamically—responding quickly to simple queries while working independently for longer on com",
+  "url": "https://openai.com/index/gpt-5-system-card-addendum-gpt-5-codex/"
+ },
+ {
+  "id": 959,
+  "title": "How people are using ChatGPT",
+  "org": "openai",
+  "date": "2025-09-15",
+  "summary": "The largest study of ChatGPT usage to date analyzes how the tool creates economic value across personal and professional use, finding adoption broadening beyond early user demographics and narrowing usage gaps as AI beco",
+  "url": "https://openai.com/index/how-people-are-using-chatgpt/"
+ },
+ {
+  "id": 52,
+  "title": "Anthropic Economic Index: Tracking AIâs role in the US and global economy",
+  "org": "anthropic",
+  "date": "2025-09-15",
+  "summary": "Maps Claude usage across US states and countries, finding AI adoption correlates strongly with income, and documents a shift toward directive automation—from 27% to 39% of conversations since December 2024—with businesse",
+  "url": "https://www.anthropic.com/research/economic-index-geography"
+ }
+]

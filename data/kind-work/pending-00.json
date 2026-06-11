@@ -1,0 +1,322 @@
+[
+ {
+  "id": 0,
+  "title": "Paving the way for agents in biology",
+  "org": "anthropic",
+  "date": "2026-06-08",
+  "summary": "Anthropic case study tasking research agents (Claude, Biomni, GPT) to retrieve sequence data from NCBI Virus. Even strong models fell short of reliable accuracy until a deterministic retrieval layer (gget virus) raised i",
+  "url": "https://www.anthropic.com/research/agents-in-biology"
+ },
+ {
+  "id": 1,
+  "title": "Making Claude a chemist",
+  "org": "anthropic",
+  "date": "2026-06-05",
+  "summary": "Anthropic effort to improve Claude at chemistry; the first study examines how Claude reads NMR spectra, a chemist's most common analytical input, leveraging multimodal reasoning to translate among representations like st",
+  "url": "https://www.anthropic.com/research/making-claude-a-chemist"
+ },
+ {
+  "id": 913,
+  "title": "Dreaming: Better memory for a more helpful ChatGPT",
+  "org": "openai",
+  "date": "2026-06-04",
+  "summary": "OpenAI's new ChatGPT memory system ('Dreaming') consolidates and updates stored user preferences and context across conversations to keep them fresh and relevant, improving personalization and helpfulness.",
+  "url": "https://openai.com/index/chatgpt-memory-dreaming/"
+ },
+ {
+  "id": 2,
+  "title": "What we learned mapping a yearâs worth of AI-enabled cyber threats",
+  "org": "anthropic",
+  "date": "2026-06-03",
+  "summary": "Anthropic report mapping a year of AI-enabled cyberattacks onto the MITRE ATT&CK framework, assessing how well existing security techniques and frameworks hold up as AI changes attackers' methods.",
+  "url": "https://www.anthropic.com/research/AI-enabled-cyber-threats-mitre-attack"
+ },
+ {
+  "id": 3,
+  "title": "Coding agents in the social sciences",
+  "org": "anthropic",
+  "date": "2026-05-27",
+  "summary": "Survey of 1,260 quantitative social scientists (early 2026): 81% have tried AI chatbots in research but only 20% have adopted coding agents like Claude Code. Adoption skews toward male-named researchers and top universit",
+  "url": "https://www.anthropic.com/research/coding-agents-social-sciences"
+ },
+ {
+  "id": 4,
+  "title": "Project Glasswing: An initial update",
+  "org": "anthropic",
+  "date": "2026-05-22",
+  "summary": "One month in, Anthropic and ~50 Project Glasswing partners using Claude Mythos Preview have found over ten thousand high- or critical-severity vulnerabilities in systemically important software — Cloudflare alone found 2",
+  "url": "https://www.anthropic.com/research/glasswing-initial-update"
+ },
+ {
+  "id": 916,
+  "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+  "org": "openai",
+  "date": "2026-05-20",
+  "summary": "An OpenAI model resolved the roughly 80-year-old unit distance problem, disproving a central conjecture in discrete geometry — presented as a milestone for AI-driven mathematical discovery.",
+  "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+ },
+ {
+  "id": 5,
+  "title": "2028: Two scenarios for global AI leadership",
+  "org": "anthropic",
+  "date": "2026-05-14",
+  "summary": "Policy paper laying out two 2028 scenarios for US-China AI competition: one where tightened export controls, disrupted distillation attacks, and faster democratic adoption preserve America's compute lead and let democrac",
+  "url": "https://www.anthropic.com/research/2028-ai-leadership"
+ },
+ {
+  "id": 917,
+  "title": "What Parameter Golf taught us about AI-assisted research",
+  "org": "openai",
+  "date": "2026-05-12",
+  "summary": "Lessons from OpenAI's Parameter Golf competition, which drew over 1,000 participants and 2,000 submissions designing models under strict parameter constraints, yielding observations about AI-assisted machine-learning res",
+  "url": "https://openai.com/index/what-parameter-golf-taught-us/"
+ },
+ {
+  "id": 9,
+  "title": "Focus areas for The Anthropic Institute",
+  "org": "anthropic",
+  "date": "2026-05-07",
+  "summary": "Sets out the research agenda for The Anthropic Institute, which will use information accessible from within a frontier lab to investigate AI's impact on the world and share findings publicly, framing the questions that w",
+  "url": "https://www.anthropic.com/research/anthropic-institute-agenda"
+ },
+ {
+  "id": 8,
+  "title": "Donating our open-source alignment tool",
+  "org": "anthropic",
+  "date": "2026-05-07",
+  "summary": "Anthropic updates Petri, its open-source alignment-auditing toolbox, to version 3.0 — separable auditor/target components, a 'Dish' add-on running tests under real system prompts and scaffolds for realism, and Bloom inte",
+  "url": "https://www.anthropic.com/research/donating-open-source-petri"
+ },
+ {
+  "id": 7,
+  "title": "Natural Language Autoencoders: Turning Claudeâs thoughts into text",
+  "org": "anthropic",
+  "date": "2026-05-07",
+  "summary": "Research overview of Natural Language Autoencoders: Claude is trained with RL to translate its internal numeric activations into human-readable text, paired with a reconstructor that maps each description back to an acti",
+  "url": "https://www.anthropic.com/research/natural-language-autoencoders"
+ },
+ {
+  "id": 10,
+  "title": "How people ask Claude for personal guidance",
+  "org": "anthropic",
+  "date": "2026-04-30",
+  "summary": "Analyzes the types of personal guidance people seek from Claude and how those usage patterns informed training decisions for Anthropic's latest models.",
+  "url": "https://www.anthropic.com/research/claude-personal-guidance"
+ },
+ {
+  "id": 919,
+  "title": "Where the goblins came from",
+  "org": "openai",
+  "date": "2026-04-29",
+  "summary": "OpenAI's post-mortem on how 'goblin' outputs propagated through GPT-5, tracing the timeline, root cause, and remediation of an unintended personality-driven behavioral quirk in model responses.",
+  "url": "https://openai.com/index/where-the-goblins-came-from/"
+ },
+ {
+  "id": 11,
+  "title": "Evaluating Claudeâs bioinformatics research capabilities with BioMysteryBench",
+  "org": "anthropic",
+  "date": "2026-04-29",
+  "summary": "Anthropic introduces BioMysteryBench, a benchmark tasking Claude with analyzing real, noisy biological datasets rather than knowledge recall. Claude's bioinformatics ability improves rapidly across generations, performin",
+  "url": "https://www.anthropic.com/research/Evaluating-Claude-For-Bioinformatics-With-BioMysteryBench"
+ },
+ {
+  "id": 920,
+  "title": "GPT-5.5 System Card",
+  "org": "openai",
+  "date": "2026-04-23",
+  "summary": "OpenAI's system card for GPT-5.5, documenting the model's capabilities, safety evaluations, and risk mitigations ahead of deployment.",
+  "url": "https://openai.com/index/gpt-5-5-system-card/"
+ },
+ {
+  "id": 13,
+  "title": "What 81,000 people told us about the economics of AI",
+  "org": "anthropic",
+  "date": "2026-04-22",
+  "summary": "Surveys 81,000 Claude users about AI's economic effects and links their stated concerns to patterns measured in actual Claude usage traffic, offering a grounded read on how AI is reshaping work.",
+  "url": "https://www.anthropic.com/research/81k-economics"
+ },
+ {
+  "id": 14,
+  "title": "Automated Alignment Researchers: Using large language models to scale scalable oversight",
+  "org": "anthropic",
+  "date": "2026-04-14",
+  "summary": "Anthropic experiment in which nine Claude instances autonomously proposed, tested, and analyzed ideas to improve weak-to-strong supervision; Claude reached a 0.97 performance-gap-recovery score after five days versus a 0",
+  "url": "https://www.anthropic.com/research/automated-alignment-researchers"
+ },
+ {
+  "id": 15,
+  "title": "Trustworthy agents in practice",
+  "org": "anthropic",
+  "date": "2026-04-09",
+  "summary": "An Anthropic explainer on AI agents covering how they work and the practices used to make them trustworthy as agentic systems become a dominant mode of AI use.",
+  "url": "https://www.anthropic.com/research/trustworthy-agents"
+ },
+ {
+  "id": 17,
+  "title": "How Australia Uses Claude: Findings from the Anthropic Economic Index",
+  "org": "anthropic",
+  "date": "2026-03-31",
+  "summary": "Regional Anthropic Economic Index report: Australia is a leading per-capita Claude adopter (AI Usage Index 4.1, concentrated in NSW and Victoria), with a diverse task mix, less coding than the global average (13.5% vs 16",
+  "url": "https://www.anthropic.com/research/how-australia-uses-claude"
+ },
+ {
+  "id": 923,
+  "title": "Inside our approach to the Model Spec",
+  "org": "openai",
+  "date": "2026-03-25",
+  "summary": "OpenAI explains how its Model Spec serves as a public framework defining intended model behavior, balancing safety, user freedom, and accountability, and describes how the document is developed and used to guide model be",
+  "url": "https://openai.com/index/our-approach-to-the-model-spec/"
+ },
+ {
+  "id": 18,
+  "title": "Anthropic Economic Index report: Learning curves",
+  "org": "anthropic",
+  "date": "2026-03-24",
+  "summary": "Anthropic's fifth Economic Index report analyzes Claude usage in February 2026, extending the economic-primitives framework from the prior report to examine how adoption and usage patterns develop over time.",
+  "url": "https://www.anthropic.com/research/economic-index-march-2026-report"
+ },
+ {
+  "id": 21,
+  "title": "Vibe physics: The AI grad student",
+  "org": "anthropic",
+  "date": "2026-03-23",
+  "summary": "A first-person account of supervising Claude through a complete theoretical-physics research calculation without the author editing any files directly, probing whether a frontier model can act as an autonomous 'AI grad s",
+  "url": "https://www.anthropic.com/research/vibe-physics"
+ },
+ {
+  "id": 20,
+  "title": "Long-running Claude for scientific computing",
+  "org": "anthropic",
+  "date": "2026-03-23",
+  "summary": "A practical guide to running Claude Code on multi-day scientific-computing tasks, covering test oracles for verification, persistent memory, and orchestration patterns that keep long-horizon agentic workflows on track.",
+  "url": "https://www.anthropic.com/research/long-running-Claude"
+ },
+ {
+  "id": 924,
+  "title": "How we monitor internal coding agents for misalignment",
+  "org": "openai",
+  "date": "2026-03-19",
+  "summary": "Describes how OpenAI applies chain-of-thought monitoring to internal coding agents, analyzing real-world deployments to detect misaligned behavior and strengthen safety safeguards.",
+  "url": "https://openai.com/index/how-we-monitor-internal-coding-agents-misalignment/"
+ },
+ {
+  "id": 22,
+  "title": "A âdiffâ tool for AI: Finding behavioral differences in new models",
+  "org": "anthropic",
+  "date": "2026-03-13",
+  "summary": "Extends 'model diffing'—comparing how a model changes during fine-tuning—to its hardest case: identifying behavioral and representational differences between models with entirely different architectures.",
+  "url": "https://www.anthropic.com/research/diff-tool"
+ },
+ {
+  "id": 925,
+  "title": "Improving instruction hierarchy in frontier LLMs",
+  "org": "openai",
+  "date": "2026-03-10",
+  "summary": "OpenAI's blog on IH-Challenge, an RL dataset that trains models to prioritize trusted instructions, improving instruction-hierarchy robustness, safety steerability, and resistance to prompt-injection and jailbreak attack",
+  "url": "https://openai.com/index/instruction-hierarchy-challenge/"
+ },
+ {
+  "id": 927,
+  "title": "GPT-5.4 Thinking System Card",
+  "org": "openai",
+  "date": "2026-03-05",
+  "summary": "System card for GPT-5.4 Thinking, OpenAI's reasoning-oriented model, documenting its capabilities and the safety evaluations and risk assessments conducted ahead of deployment.",
+  "url": "https://openai.com/index/gpt-5-4-thinking-system-card/"
+ },
+ {
+  "id": 926,
+  "title": "Reasoning models struggle to control their chains of thought, and that’s good",
+  "org": "openai",
+  "date": "2026-03-05",
+  "summary": "Blog introducing CoT-Control; finds reasoning models largely cannot suppress or steer the content of their chains of thought, which the authors argue strengthens the case for CoT monitoring as a safety safeguard.",
+  "url": "https://openai.com/index/reasoning-models-chain-of-thought-controllability/"
+ },
+ {
+  "id": 24,
+  "title": "Labor market impacts of AI: A new measure and early evidence",
+  "org": "anthropic",
+  "date": "2026-03-05",
+  "summary": "Proposes a new framework for measuring AI's effects on labor markets and tests it against early empirical data.",
+  "url": "https://www.anthropic.com/research/labor-market-impacts"
+ },
+ {
+  "id": 928,
+  "title": "Extending single-minus amplitudes to gravitons",
+  "org": "openai",
+  "date": "2026-03-04",
+  "summary": "Preprint extending single-minus scattering amplitudes to gravitons, deriving and verifying nonzero graviton tree amplitudes in quantum gravity with assistance from GPT-5.2 Pro.",
+  "url": "https://openai.com/index/extending-single-minus-amplitudes-to-gravitons/"
+ },
+ {
+  "id": 25,
+  "title": "An update on our model deprecation commitments for Claude Opus 3",
+  "org": "anthropic",
+  "date": "2026-02-25",
+  "summary": "Anthropic commits to keeping retired Claude Opus 3 accessible to paid users and via API on request, and gives the model a venue to publish essays reflecting preferences it expressed during retirement interviews.",
+  "url": "https://www.anthropic.com/research/deprecation-updates-opus-3"
+ },
+ {
+  "id": 930,
+  "title": "Why we no longer evaluate SWE-bench Verified",
+  "org": "openai",
+  "date": "2026-02-23",
+  "summary": "Argues SWE-bench Verified is increasingly contaminated by flawed tests and training leakage, causing it to mismeasure frontier coding progress; OpenAI stops reporting it and recommends SWE-bench Pro instead.",
+  "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/"
+ },
+ {
+  "id": 27,
+  "title": "Anthropic Education Report: The AI Fluency Index",
+  "org": "anthropic",
+  "date": "2026-02-23",
+  "summary": "Tracks 11 observable behaviors across thousands of Claude.ai conversations to build the AI Fluency Index, a baseline measure of how people currently collaborate with AI.",
+  "url": "https://www.anthropic.com/research/AI-fluency-index"
+ },
+ {
+  "id": 26,
+  "title": "The persona selection model",
+  "org": "anthropic",
+  "date": "2026-02-23",
+  "summary": "Advances the persona selection model: LLMs simulate diverse characters during pretraining, and post-training surfaces a particular Assistant persona, offering a theory for why AI assistants behave in human-like ways.",
+  "url": "https://www.anthropic.com/research/persona-selection-model"
+ },
+ {
+  "id": 931,
+  "title": "Our First Proof submissions",
+  "org": "openai",
+  "date": "2026-02-20",
+  "summary": "OpenAI shares its model's proof attempts submitted to the First Proof math challenge, probing research-grade mathematical reasoning on expert-level open problems.",
+  "url": "https://openai.com/index/first-proof-submissions/"
+ },
+ {
+  "id": 932,
+  "title": "Advancing independent research on AI alignment",
+  "org": "openai",
+  "date": "2026-02-19",
+  "summary": "OpenAI commits $7.5M to The Alignment Project, funding independent AI alignment research aimed at AGI safety and security risks.",
+  "url": "https://openai.com/index/advancing-independent-research-ai-alignment/"
+ },
+ {
+  "id": 28,
+  "title": "Measuring AI agent autonomy in practice",
+  "org": "anthropic",
+  "date": "2026-02-18",
+  "summary": "Analyzes millions of human-agent interactions to quantify how much autonomy people grant AI agents and how that delegation shifts as users gain experience.",
+  "url": "https://www.anthropic.com/research/measuring-agent-autonomy"
+ },
+ {
+  "id": 29,
+  "title": "India Country Brief: The Anthropic Economic Index",
+  "org": "anthropic",
+  "date": "2026-02-16",
+  "summary": "Drawing on ~1M Claude.ai conversations, finds India is the second-largest source of usage (5.8%) but ranks 101st per capita; Indian users skew toward professional tasks, grant more autonomy, and tackle more complex, time",
+  "url": "https://www.anthropic.com/research/india-brief-economic-index"
+ },
+ {
+  "id": 935,
+  "title": "GPT-5.2 derives a new result in theoretical physics",
+  "org": "openai",
+  "date": "2026-02-13",
+  "summary": "A preprint reports GPT-5.2 proposing a new formula for a gluon scattering amplitude, subsequently formally proved and verified by OpenAI and academic collaborators.",
+  "url": "https://openai.com/index/new-result-theoretical-physics/"
+ }
+]

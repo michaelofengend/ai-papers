@@ -1,0 +1,58 @@
+[
+ {
+  "id": 1165,
+  "title": "Semi-supervised knowledge transfer for deep learning from private training data",
+  "org": "openai",
+  "date": "2016-10-18",
+  "summary": "PATE: teachers trained on disjoint partitions of sensitive data label public examples via noisy vote aggregation, and a student model learns from those labels. Provides differential-privacy guarantees independent of the ",
+  "url": "https://openai.com/index/semi-supervised-knowledge-transfer-for-deep-learning-from-private-training-data/"
+ },
+ {
+  "id": 1166,
+  "title": "Transfer from simulation to real world through learning deep inverse dynamics model",
+  "org": "openai",
+  "date": "2016-10-11",
+  "summary": "Sim-to-real transfer for robot control: a policy trained in simulation proposes desired next states, while an inverse dynamics model learned from real-world experience selects actions to reach them, executing simulated s",
+  "url": "https://openai.com/index/transfer-from-simulation-to-real-world-through-learning-deep-inverse-dynamics-model/"
+ },
+ {
+  "id": 1167,
+  "title": "Infrastructure for deep learning",
+  "org": "openai",
+  "date": "2016-08-29",
+  "summary": "Describes OpenAI's deep-learning infrastructure — TensorFlow experiments scaled from single-machine prototypes to large distributed runs on Kubernetes over AWS and Azure — and open-sources kubernetes-ec2-autoscaler for e",
+  "url": "https://openai.com/index/infrastructure-for-deep-learning/"
+ },
+ {
+  "id": 1168,
+  "title": "Concrete AI safety problems",
+  "org": "openai",
+  "date": "2016-06-21",
+  "summary": "Announcement of the Google Brain-led 'Concrete Problems in AI Safety' paper, co-authored with OpenAI, Berkeley, and Stanford, framing five practical research problems: avoiding negative side effects, reward hacking, scal",
+  "url": "https://openai.com/index/concrete-ai-safety-problems/"
+ },
+ {
+  "id": 1169,
+  "title": "Generative models",
+  "org": "openai",
+  "date": "2016-06-16",
+  "summary": "Explainer accompanying four OpenAI projects on generative models: describes what GANs, VAEs, and autoregressive models are, why learning to generate data is a route to understanding its structure, and near-term direction",
+  "url": "https://openai.com/index/generative-models/"
+ },
+ {
+  "id": 1171,
+  "title": "OpenAI Gym Beta",
+  "org": "openai",
+  "date": "2016-04-27",
+  "summary": "Public beta of OpenAI Gym: a toolkit giving RL research a common environment interface — spanning Atari, classic control, and simulated robotics — plus a growing benchmark suite and website for comparing and reproducing ",
+  "url": "https://openai.com/index/openai-gym-beta/"
+ },
+ {
+  "id": 1172,
+  "title": "Weight normalization: A simple reparameterization to accelerate training of deep neural networks",
+  "org": "openai",
+  "date": "2016-02-25",
+  "summary": "Reparameterizes each weight vector as a learned scalar magnitude times a unit direction, conditioning optimization much like batch normalization but without minibatch dependence or added noise; speeds convergence across ",
+  "url": "https://openai.com/index/weight-normalization/"
+ }
+]

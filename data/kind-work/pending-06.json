@@ -1,0 +1,322 @@
+[
+ {
+  "id": 1115,
+  "title": "Discovering types for entity disambiguation",
+  "org": "openai",
+  "date": "2018-02-07",
+  "summary": "Resolves which object a word refers to by having a neural network predict membership in roughly 100 automatically discovered, non-exclusive types; optimizing the type system over a knowledge base lets type predictions al",
+  "url": "https://openai.com/index/discovering-types-for-entity-disambiguation/"
+ },
+ {
+  "id": 1116,
+  "title": "Requests for Research 2.0",
+  "org": "openai",
+  "date": "2018-01-31",
+  "summary": "Second batch of seven unsolved problems drawn from OpenAI's research, spanning multi-agent self-play, transfer in RL, and deep learning fundamentals, each framed as a concrete, difficulty-rated project for researchers en",
+  "url": "https://openai.com/index/requests-for-research-2/"
+ },
+ {
+  "id": 1117,
+  "title": "Scaling Kubernetes to 2,500 nodes",
+  "org": "openai",
+  "date": "2018-01-18",
+  "summary": "Engineering lessons from scaling a single Kubernetes cluster to 2,500 nodes for deep learning workloads, covering etcd storage bottlenecks, API-server tuning, Docker image distribution, and networking issues encountered ",
+  "url": "https://openai.com/index/scaling-kubernetes-to-2500-nodes/"
+ },
+ {
+  "id": 1118,
+  "title": "Block-sparse GPU kernels",
+  "org": "openai",
+  "date": "2017-12-06",
+  "summary": "Releases GPU kernels optimized for block-sparse weight matrices that run orders of magnitude faster than cuBLAS/cuSPARSE at high sparsity, enabling wider or deeper sparse networks that achieved state-of-the-art results i",
+  "url": "https://openai.com/index/block-sparse-gpu-kernels/"
+ },
+ {
+  "id": 1119,
+  "title": "Learning sparse neural networks through L₀ regularization",
+  "org": "openai",
+  "date": "2017-12-04",
+  "summary": "Regularizes networks toward exact zeros with a differentiable L0 penalty based on the hard-concrete distribution, a smoothed discrete relaxation enabling gradient-based optimization of expected sparsity; networks prune t",
+  "url": "https://openai.com/index/learning-sparse-neural-networks-through-l0-regularization/"
+ },
+ {
+  "id": 1120,
+  "title": "Interpretable and pedagogical examples",
+  "org": "openai",
+  "date": "2017-11-02",
+  "summary": "Studies when machine teaching yields examples humans can understand: jointly optimizing teacher and student networks produces opaque coding schemes, while iterative training—student first, then teacher—recovers intuitive",
+  "url": "https://openai.com/index/interpretable-and-pedagogical-examples/"
+ },
+ {
+  "id": 1121,
+  "title": "Learning a hierarchy",
+  "org": "openai",
+  "date": "2017-10-26",
+  "summary": "Meta-learning shared hierarchies (MLSH) learns reusable sub-policies shared across tasks with a per-task master policy switching among them; on navigation problems it discovers walking and crawling primitives that let ag",
+  "url": "https://openai.com/index/learning-a-hierarchy/"
+ },
+ {
+  "id": 1122,
+  "title": "Generalizing from simulation",
+  "org": "openai",
+  "date": "2017-10-19",
+  "summary": "Robot controllers trained entirely in simulation with domain randomization transfer to physical robots as closed-loop systems, reacting to unplanned changes in the environment during simple manipulation tasks rather than",
+  "url": "https://openai.com/index/generalizing-from-simulation/"
+ },
+ {
+  "id": 1123,
+  "title": "Sim-to-real transfer of robotic control with dynamics randomization",
+  "org": "openai",
+  "date": "2017-10-18",
+  "summary": "Randomizing simulator dynamics—mass, friction, latencies, and other physical parameters—during training yields a recurrent pushing policy that transfers directly to a physical Fetch arm without real-world fine-tuning, co",
+  "url": "https://openai.com/index/sim-to-real-transfer-of-robotic-control-with-dynamics-randomization/"
+ },
+ {
+  "id": 1127,
+  "title": "Competitive self-play",
+  "org": "openai",
+  "date": "2017-10-11",
+  "summary": "Simulated humanoid agents trained via competitive self-play discover physical skills like tackling, ducking, faking, kicking, catching, and diving without these being designed into the environment; self-play keeps the ta",
+  "url": "https://openai.com/index/competitive-self-play/"
+ },
+ {
+  "id": 1126,
+  "title": "Meta-learning for wrestling",
+  "org": "openai",
+  "date": "2017-10-11",
+  "summary": "In simulated robot wrestling, a meta-learning agent learns to adapt quickly mid-competition, defeating a stronger non-meta-learning opponent and coping with physical malfunction — evidence that fast adaptation pays off i",
+  "url": "https://openai.com/index/meta-learning-for-wrestling/"
+ },
+ {
+  "id": 1128,
+  "title": "Nonlinear computation in deep linear networks",
+  "org": "openai",
+  "date": "2017-09-29",
+  "summary": "Float32 arithmetic is itself nonlinear near its smallest representable values, so networks built purely from linear layers can compute nonlinear functions. Training with evolution strategies — backprop cannot exploit the",
+  "url": "https://openai.com/index/nonlinear-computation-in-deep-linear-networks/"
+ },
+ {
+  "id": 1129,
+  "title": "Learning to model other minds",
+  "org": "openai",
+  "date": "2017-09-14",
+  "summary": "Releases LOLA (Learning with Opponent-Learning Awareness), an algorithm whose agents account for the fact that other agents are learning too rather than treating them as static, discovering self-interested yet collaborat",
+  "url": "https://openai.com/index/learning-to-model-other-minds/"
+ },
+ {
+  "id": 1130,
+  "title": "Learning with opponent-learning awareness",
+  "org": "openai",
+  "date": "2017-09-13",
+  "summary": "LOLA agents differentiate through opponents' anticipated learning updates instead of treating them as a fixed part of the environment. This opponent shaping yields tit-for-tat and cooperation in the iterated prisoner's d",
+  "url": "https://openai.com/index/learning-with-opponent-learning-awareness/"
+ },
+ {
+  "id": 1131,
+  "title": "OpenAI Baselines: ACKTR & A2C",
+  "org": "openai",
+  "date": "2017-08-18",
+  "summary": "Releases Baselines implementations of A2C — a synchronous variant of A3C with equal performance — and ACKTR, which uses Kronecker-factored approximate natural-gradient updates to deliver better sample efficiency than TRP",
+  "url": "https://openai.com/index/openai-baselines-acktr-a2c/"
+ },
+ {
+  "id": 1132,
+  "title": "More on Dota 2",
+  "org": "openai",
+  "date": "2017-08-16",
+  "summary": "Recounts how the 1v1 Dota 2 bot improved from barely matching a high-ranked human to beating top professionals within a month of self-play, arguing that self-play's automatically improving data distribution can carry sys",
+  "url": "https://openai.com/index/more-on-dota-2/"
+ },
+ {
+  "id": 1133,
+  "title": "Dota 2",
+  "org": "openai",
+  "date": "2017-08-11",
+  "summary": "A bot trained from scratch purely via self-play — no imitation learning or tree search — defeats the world's top professional players at 1v1 Dota 2 under standard tournament rules, a step toward AI pursuing well-defined ",
+  "url": "https://openai.com/index/dota-2/"
+ },
+ {
+  "id": 1134,
+  "title": "Gathering human feedback",
+  "org": "openai",
+  "date": "2017-08-03",
+  "summary": "Open-sources RL-Teacher, an implementation of the interface for training agents from occasional human feedback instead of hand-crafted reward functions, developed as a step toward safe AI and applicable to RL problems wh",
+  "url": "https://openai.com/index/gathering-human-feedback/"
+ },
+ {
+  "id": 1135,
+  "title": "Better exploration with parameter noise",
+  "org": "openai",
+  "date": "2017-07-27",
+  "summary": "Adds adaptive noise to an RL agent's network parameters rather than its action outputs, giving more consistent exploration. The technique frequently boosts performance across algorithms, very rarely hurts, and is simple ",
+  "url": "https://openai.com/index/better-exploration-with-parameter-noise/"
+ },
+ {
+  "id": 1136,
+  "title": "Proximal Policy Optimization",
+  "org": "openai",
+  "date": "2017-07-20",
+  "summary": "Introduces Proximal Policy Optimization, policy-gradient algorithms built on a clipped surrogate objective that match or beat state-of-the-art methods while being much simpler to implement and tune; PPO became OpenAI's d",
+  "url": "https://openai.com/index/openai-baselines-ppo/"
+ },
+ {
+  "id": 1137,
+  "title": "Robust adversarial inputs",
+  "org": "openai",
+  "date": "2017-07-17",
+  "summary": "Creates adversarial images that reliably fool classifiers across varied scales, angles, and perspectives, countering the claim that systems like self-driving cars are hard to attack because they capture images from multi",
+  "url": "https://openai.com/index/robust-adversarial-inputs/"
+ },
+ {
+  "id": 1138,
+  "title": "Hindsight Experience Replay",
+  "org": "openai",
+  "date": "2017-07-05",
+  "summary": "Hindsight Experience Replay relabels failed episodes with the goals the agent actually achieved, making sparse binary-reward, goal-conditioned tasks learnable without reward shaping; combined with DDPG it learns robotic ",
+  "url": "https://openai.com/index/hindsight-experience-replay/"
+ },
+ {
+  "id": 1140,
+  "title": "Faster physics in Python",
+  "org": "openai",
+  "date": "2017-06-28",
+  "summary": "Open-sources mujoco-py, a high-performance Python library for robotic simulation with the MuJoCo engine, built during a year of robotics research to speed up large-scale simulated experiments.",
+  "url": "https://openai.com/index/faster-physics-in-python/"
+ },
+ {
+  "id": 1141,
+  "title": "Learning to cooperate, compete, and communicate",
+  "org": "openai",
+  "date": "2017-06-08",
+  "summary": "Introduces MADDPG, extending actor-critic RL with centralized critics and decentralized actors so agents learn in mixed cooperative-competitive environments. Argues multi-agent settings supply a natural curriculum — diff",
+  "url": "https://openai.com/index/learning-to-cooperate-compete-and-communicate/"
+ },
+ {
+  "id": 1142,
+  "title": "UCB exploration via Q-ensembles",
+  "org": "openai",
+  "date": "2017-06-05",
+  "summary": "Adapts bandit-style upper-confidence-bound exploration to deep RL: an ensemble of Q-functions supplies an uncertainty estimate, and acting optimistically on the ensemble's confidence bound yields significant gains on the",
+  "url": "https://openai.com/index/ucb-exploration-via-q-ensembles/"
+ },
+ {
+  "id": 1143,
+  "title": "OpenAI Baselines: DQN",
+  "org": "openai",
+  "date": "2017-05-24",
+  "summary": "Launches OpenAI Baselines, open-source reference implementations of RL algorithms tuned to match published results; the first release covers DQN and three of its variants, giving the community reliable baselines to build",
+  "url": "https://openai.com/index/openai-baselines-dqn/"
+ },
+ {
+  "id": 1144,
+  "title": "Robots that learn",
+  "org": "openai",
+  "date": "2017-05-16",
+  "summary": "Demonstrates one-shot imitation on physical hardware: a robotics system trained entirely in simulation is deployed on a real robot and learns to perform a new task after seeing it demonstrated just once.",
+  "url": "https://openai.com/index/robots-that-learn/"
+ },
+ {
+  "id": 1145,
+  "title": "Roboschool",
+  "org": "openai",
+  "date": "2017-05-15",
+  "summary": "Open-sources Roboschool, robot simulation environments integrated with OpenAI Gym and built on the Bullet physics engine, removing the need for a MuJoCo license and adding new control tasks, including multiplayer environ",
+  "url": "https://openai.com/index/roboschool/"
+ },
+ {
+  "id": 1147,
+  "title": "Stochastic Neural Networks for hierarchical reinforcement learning",
+  "org": "openai",
+  "date": "2017-04-10",
+  "summary": "Pre-trains a large span of skills with stochastic neural networks guided by a single proxy reward plus an information-theoretic regularizer, then trains a high-level policy that switches among the frozen skills, markedly",
+  "url": "https://openai.com/index/stochastic-neural-networks-for-hierarchical-reinforcement-learning/"
+ },
+ {
+  "id": 1148,
+  "title": "Unsupervised sentiment neuron",
+  "org": "openai",
+  "date": "2017-04-06",
+  "summary": "A character-level LSTM trained only to predict the next character of Amazon reviews learns a representation containing a single 'sentiment neuron' that tracks review sentiment, enabling excellent sentiment classification",
+  "url": "https://openai.com/index/unsupervised-sentiment-neuron/"
+ },
+ {
+  "id": 1149,
+  "title": "Spam detection in the physical world",
+  "org": "openai",
+  "date": "2017-04-01",
+  "summary": "April Fools' joke post announcing 'the world's first Spam-detecting AI trained entirely in simulation and deployed on a physical robot' — a parody of the lab's sim-to-real robotics work in which the robot detects canned ",
+  "url": "https://openai.com/index/spam-detection-in-the-physical-world/"
+ },
+ {
+  "id": 1151,
+  "title": "One-shot imitation learning",
+  "org": "openai",
+  "date": "2017-03-21",
+  "summary": "A meta-learned policy conditions on a single demonstration of a task plus the current state, using soft attention over the demonstration, and performs new instances of that task. Trained across many block-stacking tasks,",
+  "url": "https://openai.com/index/one-shot-imitation-learning/"
+ },
+ {
+  "id": 1152,
+  "title": "Learning to communicate",
+  "org": "openai",
+  "date": "2017-03-16",
+  "summary": "Outlines research in which RL agents in a simple 2D world invent their own grounded language: discrete symbols whose meanings emerge from cooperative goal-driven tasks rather than from training on human text.",
+  "url": "https://openai.com/index/learning-to-communicate/"
+ },
+ {
+  "id": 1154,
+  "title": "Prediction and control with temporal segment models",
+  "org": "openai",
+  "date": "2017-03-12",
+  "summary": "Learns dynamics as deep generative models (convolutional autoregressive models and VAEs) over whole temporal segments of states and actions rather than single timesteps, giving stable long-horizon predictions for stochas",
+  "url": "https://openai.com/index/prediction-and-control-with-temporal-segment-models/"
+ },
+ {
+  "id": 1155,
+  "title": "Third-person imitation learning",
+  "org": "openai",
+  "date": "2017-03-06",
+  "summary": "Trains agents to imitate demonstrations recorded from a third-person viewpoint rather than the agent's own perspective. A GAN-style domain-confusion objective extracts viewpoint-independent features, enabling imitation w",
+  "url": "https://openai.com/index/third-person-imitation-learning/"
+ },
+ {
+  "id": 1157,
+  "title": "PixelCNN++: Improving the PixelCNN with discretized logistic mixture likelihood and other modifications",
+  "org": "openai",
+  "date": "2017-01-19",
+  "summary": "Improves PixelCNN with a discretized logistic mixture likelihood, conditioning on whole pixels rather than sub-pixel channels, multi-scale downsampling with shortcut connections, and dropout regularization, reaching stat",
+  "url": "https://openai.com/index/pixelcnn-plus-plus/"
+ },
+ {
+  "id": 1158,
+  "title": "Universe",
+  "org": "openai",
+  "date": "2016-12-05",
+  "summary": "Releases a platform exposing games, websites, and other applications as RL environments through a VNC remote desktop, so agents act with the same pixels, keyboard, and mouse interface as humans — aiming to measure and tr",
+  "url": "https://openai.com/index/universe/"
+ },
+ {
+  "id": 1160,
+  "title": "On the quantitative analysis of decoder-based generative models",
+  "org": "openai",
+  "date": "2016-11-14",
+  "summary": "Uses annealed importance sampling, validated by bidirectional Monte Carlo, to accurately measure log-likelihoods of decoder-based generative models like VAEs, GANs, and GMMNs. Finds IWAE bounds substantially underestimat",
+  "url": "https://openai.com/index/on-the-quantitative-analysis-of-decoder-based-generative-models/"
+ },
+ {
+  "id": 1162,
+  "title": "RL²: Fast reinforcement learning via slow reinforcement learning",
+  "org": "openai",
+  "date": "2016-11-09",
+  "summary": "Meta-RL: an RNN trained with conventional 'slow' RL across many tasks — receiving observations, actions, rewards, and termination flags, with state persisting across episodes — itself implements a fast RL algorithm, riva",
+  "url": "https://openai.com/index/rl2/"
+ },
+ {
+  "id": 1163,
+  "title": "Variational lossy autoencoder",
+  "org": "openai",
+  "date": "2016-11-08",
+  "summary": "Combines VAEs with autoregressive PixelCNN decoders and autoregressive flow priors, using a bits-back coding argument to explain when latent codes go unused and to control which information (e.g., global structure) the l",
+  "url": "https://openai.com/index/variational-lossy-autoencoder/"
+ }
+]

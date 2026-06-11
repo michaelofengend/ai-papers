@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Frontier AI Research Tracker — Anthropic · OpenAI · DeepMind</title>
+<title>AI Papers — Anthropic · OpenAI · DeepMind research tracker</title>
 <meta name="description" content="Tracks research publications in interpretability, AI safety, capabilities and reasoning from Anthropic, OpenAI, and Google DeepMind — with mini summaries, topic filters, and analytics.">
-<meta property="og:title" content="Frontier AI Research Tracker">
+<meta property="og:title" content="AI Papers">
 <meta property="og:description" content="Every interpretability, safety, capabilities &amp; reasoning paper from Anthropic, OpenAI and Google DeepMind — mini summaries, filters, analytics. Updated daily.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://michaelofengend.github.io/frontier-research-tracker/">
@@ -26,13 +26,14 @@ try { document.documentElement.dataset.theme = localStorage.getItem('frt-theme')
     <a class="brand" href="./">
       <span class="brand-mark">🔭</span>
       <span class="brand-text">
-        <span class="brand-title">Frontier AI Research Tracker</span>
-        <span class="brand-sub"><span id="stat-count">…</span> papers · Anthropic, OpenAI &amp; Google DeepMind<span id="stat-updated"></span></span>
+        <span class="brand-title">AI Papers</span>
+        <span class="brand-sub"><span id="stat-count">…</span> research papers · Anthropic, OpenAI &amp; Google DeepMind<span id="stat-updated"></span></span>
       </span>
     </a>
     <nav class="topbar-right">
       <div class="view-tabs" role="tablist">
         <button class="view-tab active" data-view="papers" role="tab" aria-selected="true">Papers</button>
+        <button class="view-tab" data-view="timeline" role="tab" aria-selected="false">Timeline</button>
         <button class="view-tab" data-view="analytics" role="tab" aria-selected="false">Analytics</button>
       </div>
       <button id="theme-toggle" class="icon-btn" title="Toggle dark mode" aria-label="Toggle dark mode"></button>
@@ -51,6 +52,11 @@ try { document.documentElement.dataset.theme = localStorage.getItem('frt-theme')
           <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
           <input id="search" type="search" placeholder="Search papers…" autocomplete="off" aria-label="Search papers">
         </div>
+
+        <section class="facet">
+          <h3>Type</h3>
+          <div class="facet-list type-list" id="type-chips"></div>
+        </section>
 
         <section class="facet">
           <h3>Labs</h3>
@@ -94,8 +100,14 @@ try { document.documentElement.dataset.theme = localStorage.getItem('frt-theme')
       <p class="kbd-hint"><kbd>←</kbd> <kbd>→</kbd> change page · filters &amp; page are saved in the URL</p>
     </section>
 
+    <section id="view-timeline" class="view">
+      <p class="analytics-note">Field-shaping papers, chosen editorially — <b>not</b> by citation count. Lab, topic and year filters apply.</p>
+      <div id="timeline" class="timeline"></div>
+      <div id="timeline-empty" class="feed-empty" hidden>No timeline entries match the current filters.</div>
+    </section>
+
     <section id="view-analytics" class="view">
-      <p class="analytics-note">Charts reflect the current search &amp; filters (<span id="an-count"></span> papers).</p>
+      <p class="analytics-note">Charts reflect the current search &amp; filters (<span id="an-count"></span> research papers — blog posts &amp; announcements excluded).</p>
       <div class="chart-grid">
         <div class="chart-card wide"><h3>Publications over time <span class="chart-sub">by quarter, stacked by lab</span></h3><div class="chart-box tall"><canvas id="ch-time"></canvas></div></div>
         <div class="chart-card"><h3>Lab share</h3><div class="chart-box"><canvas id="ch-org"></canvas></div></div>
