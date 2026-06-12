@@ -5,6 +5,12 @@
    "host": "metr.org",
    "added": "2026-06-12",
    "via": "issue #1"
+  },
+  {
+   "url": "https://www.redwoodresearch.org/research",
+   "host": "redwoodresearch.org",
+   "added": "2026-06-12",
+   "via": "issue #2"
   }
  ]
 }
