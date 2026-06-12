@@ -74,6 +74,13 @@ try { document.documentElement.dataset.theme = localStorage.getItem('frt-theme')
         </section>
 
         <button id="clear-filters" class="clear-btn" hidden>✕ Clear all filters</button>
+
+        <section class="facet add-source">
+          <h3>Add a source</h3>
+          <input id="source-url" type="url" placeholder="paper or listing URL…" aria-label="Source URL">
+          <button id="source-btn" title="Files a GitHub issue; the daily refresh scrapes the page, adds its papers, and keeps watching it">queue for next scrape ↗</button>
+          <p class="source-hint">e.g. a lab's /research page or an arXiv link. Lands in the next daily refresh and is re-scraped every day after.</p>
+        </section>
       </div>
     </details>
   </aside>

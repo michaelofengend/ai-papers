@@ -7,6 +7,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normTitle, extractArxivId, tagTopics, autoSummary, isSpam, classifyKind, computeImportance, serializeDb, cleanText } from './lib.mjs';
 import { themeMask } from './themes.mjs';
+import { scrapeListing } from './generic-source.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA = join(ROOT, 'data', 'papers.json');
@@ -372,6 +373,29 @@ async function arxivFirehose() {
   return out;
 }
 
+/* ---------- user-registered sources (data/sources.json) ---------- */
+async function userSourcesRecent(knownUrls) {
+  const SOURCES = join(ROOT, 'data', 'sources.json');
+  if (!existsSync(SOURCES)) return [];
+  let registry;
+  try { registry = JSON.parse(readFileSync(SOURCES, 'utf8')).sources || []; } catch (e) { return []; }
+  const out = [];
+  for (const src of registry.slice(0, 25)) {
+    try {
+      const res = await scrapeListing(src.url, fetchText, { cap: 20, knownUrls, sleepMs: 800 });
+      for (const it of res.items) {
+        out.push({
+          title: it.title, authors: [], org: 'other', date: it.date,
+          url: it.url, pdf_url: it.arxiv_id ? `https://arxiv.org/pdf/${it.arxiv_id}` : null,
+          arxiv_id: it.arxiv_id, abstract: it.abstract,
+          source: `site:${src.host}`, venue: src.host, cited_by: null,
+        });
+      }
+    } catch (e) { console.warn(`user source ${src.url} failed: ${e.message}`); }
+  }
+  return out;
+}
+
 /* ---------- main ---------- */
 const db = JSON.parse(readFileSync(DATA, 'utf8'));
 const seen = new Set();
@@ -383,7 +407,7 @@ for (const p of db.papers) {
   knownUrls.add(p.url.replace(/\/$/, ''));
 }
 
-const fetched = (await Promise.all([openalexRecent(), arxivRecent(), circuitsRecent(), alignmentBlogRecent(), openaiRecent(), deepmindRecent(knownUrls), openaiAlignmentRecent(), alignmentForumRecent(), arxivFirehose()])).flat();
+const fetched = (await Promise.all([openalexRecent(), arxivRecent(), circuitsRecent(), alignmentBlogRecent(), openaiRecent(), deepmindRecent(knownUrls), openaiAlignmentRecent(), alignmentForumRecent(), arxivFirehose(), userSourcesRecent(knownUrls)])).flat();
 for (const p of fetched) { p.title = cleanText(p.title); if (p.abstract) p.abstract = cleanText(p.abstract); }
 const found = fetched.filter((p) => !isSpam(p));
 console.log(`spam filtered: ${fetched.length - found.length}`);

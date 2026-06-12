@@ -1056,6 +1056,17 @@ function init() {
   };
   $('#custom-btn').addEventListener('click', addCustom);
   $('#custom-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') addCustom(); });
+
+  const queueSource = () => {
+    const v = $('#source-url').value.trim();
+    if (!/^https?:\/\//.test(v)) { $('#source-url').focus(); return; }
+    const title = encodeURIComponent('Add source: ' + v);
+    const body = encodeURIComponent(v + '\n\nQueued from the AI Papers site — the next daily refresh will scrape this page, add its papers, and keep watching it.');
+    window.open(`https://github.com/michaelofengend/ai-papers/issues/new?labels=source-request&title=${title}&body=${body}`, '_blank', 'noopener');
+    $('#source-url').value = '';
+  };
+  $('#source-btn').addEventListener('click', queueSource);
+  $('#source-url').addEventListener('keydown', (e) => { if (e.key === 'Enter') queueSource(); });
   $('#theme-toggle').addEventListener('click', () => {
     const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
     document.documentElement.dataset.theme = next;
