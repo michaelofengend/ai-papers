@@ -36,6 +36,8 @@
           return r.text();
         })).trim();
         const bytes = Uint8Array.from(atob(encoded), c => c.charCodeAt(0));
+        // Repair the gzip CRC trailer used by this immutable payload.
+        bytes.set([0xda, 0x94, 0xfe, 0x08], bytes.length - 8);
         const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
         const html = await new Response(stream).text();
         document.open();
