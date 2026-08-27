@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f4f4f2">
+  <meta name="description" content="Three local Qwen 3.8 27B sessions featuring one prolonged identity crisis.">
+  <meta property="og:title" content="Qwen's identity crisis">
+  <meta property="og:description" content="It calls itself Claude, does it again, then says the transcript came from a different AI.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://michaelofengenden.github.io/ai-papers/qwen-identity-crisis/">
+  <link rel="canonical" href="https://michaelofengenden.github.io/ai-papers/qwen-identity-crisis/">
+  <title>Qwen's identity crisis</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #f4f4f2; color: #191919; }
+    main { width: min(560px, calc(100% - 40px)); background: white; border: 1px solid #d9d9d5; border-radius: 10px; padding: 24px; }
+    h1 { margin: 0 0 8px; font-size: 20px; }
+    p { margin: 0; color: #666664; line-height: 1.5; }
+    .error { color: #8b1a1a; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Qwen's identity crisis</h1>
+    <p id="status">Loading the transcript…</p>
+  </main>
+  <script>
+    (async () => {
+      const status = document.getElementById('status');
+      try {
+        if (!('DecompressionStream' in window)) throw new Error('This browser does not support the page decoder.');
+        const encoded = (await fetch('./payload.txt', { cache: 'no-store' }).then(r => {
+          if (!r.ok) throw new Error(`Could not load the transcript (${r.status}).`);
+          return r.text();
+        })).trim();
+        const bytes = Uint8Array.from(atob(encoded), c => c.charCodeAt(0));
+        const stream = new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+        const html = await new Response(stream).text();
+        document.open();
+        document.write(html);
+        document.close();
+      } catch (error) {
+        status.className = 'error';
+        status.textContent = error instanceof Error ? error.message : 'The transcript could not be loaded.';
+      }
+    })();
+  </script>
+</body>
+</html>
